@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/ValueSet/ImagingAngio> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ImagingAngio"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ImagingAngio</b></p><a name=\"ImagingAngio\"> </a><a name=\"hcImagingAngio\"> </a><a name=\"ImagingAngio-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-MedicalScanningTypes.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/MedicalScanningTypes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-MedicalScanningTypes.html#MedicalScanningTypes-ct_angio\">ct_angio</a></td><td>CT angio</td><td>CT angio</td></tr><tr><td><a href=\"CodeSystem-MedicalScanningTypes.html#MedicalScanningTypes-mri_angio\">mri_angio</a></td><td>MR angio</td><td>MR angio</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/ValueSet/ImagingAngio"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "ImagingAngio"] ; # 
+  fhir:title [ fhir:v "Imaging Angio"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-04-29T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Imaging Angio"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/MedicalScanningTypes"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "ct_angio" ] ;
+         fhir:display [ fhir:v "CT angio" ]
+       ] [
+         fhir:code [ fhir:v "mri_angio" ] ;
+         fhir:display [ fhir:v "MR angio" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,75 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/ValueSet/NerveBlockTypeLower> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "NerveBlockTypeLower"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet NerveBlockTypeLower</b></p><a name=\"NerveBlockTypeLower\"> </a><a name=\"hcNerveBlockTypeLower\"> </a><a name=\"NerveBlockTypeLower-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-BlockTypes.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/BlockTypes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-BlockTypes.html#BlockTypes-plexus_lumbalis\">plexus_lumbalis</a></td><td>Plexus lumbalis</td><td>Plexus lumbalis</td></tr><tr><td><a href=\"CodeSystem-BlockTypes.html#BlockTypes-plexus_lumbosacralis\">plexus_lumbosacralis</a></td><td>Plexus lumbosacralis</td><td>Plexus lumbosacralis</td></tr><tr><td><a href=\"CodeSystem-BlockTypes.html#BlockTypes-plexus_sacralis\">plexus_sacralis</a></td><td>Plexus sacralis</td><td>Plexus sacralis</td></tr><tr><td><a href=\"CodeSystem-BlockTypes.html#BlockTypes-femoralis\">femoralis</a></td><td>N. Femoralis</td><td>N. Femoralis</td></tr><tr><td><a href=\"CodeSystem-BlockTypes.html#BlockTypes-cutaneus_femoris_lateralis\">cutaneus_femoris_lateralis</a></td><td>N. Cutaneus femoris lateralis</td><td>N. Cutaneus femoris lateralis</td></tr><tr><td><a href=\"CodeSystem-BlockTypes.html#BlockTypes-saphenus\">saphenus</a></td><td>N. Saphenus</td><td>N. Saphenus</td></tr><tr><td><a href=\"CodeSystem-BlockTypes.html#BlockTypes-obturatorius\">obturatorius</a></td><td>N. Obturatoriusblock</td><td>N. Obturatoriusblokade</td></tr><tr><td><a href=\"CodeSystem-BlockTypes.html#BlockTypes-ischiadicus_poplitea\">ischiadicus_poplitea</a></td><td>N. Ischiadicus/poplitea blokade</td><td>N. Ischiadicus/poplitea blokade</td></tr><tr><td><a href=\"CodeSystem-BlockTypes.html#BlockTypes-tibialis\">tibialis</a></td><td>N. Tibialis</td><td>N. Tibialis</td></tr><tr><td><a href=\"CodeSystem-BlockTypes.html#BlockTypes-peroneus\">peroneus</a></td><td>Peroneus (communis) blokade</td><td>Peroneus (communis) blokade</td></tr><tr><td><a href=\"CodeSystem-BlockTypes.html#BlockTypes-other\">other</a></td><td>Anden</td><td>Anden blokadetype</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/ValueSet/NerveBlockTypeLower"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "NerveBlockTypeLower"] ; # 
+  fhir:title [ fhir:v "Typer af blokade underekstremiteter"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-06-09T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Typer af perifer nerveblokade - underekstremiteter"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/BlockTypes"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "plexus_lumbalis" ] ;
+         fhir:display [ fhir:v "Plexus lumbalis" ]
+       ] [
+         fhir:code [ fhir:v "plexus_lumbosacralis" ] ;
+         fhir:display [ fhir:v "Plexus lumbosacralis" ]
+       ] [
+         fhir:code [ fhir:v "plexus_sacralis" ] ;
+         fhir:display [ fhir:v "Plexus sacralis" ]
+       ] [
+         fhir:code [ fhir:v "femoralis" ] ;
+         fhir:display [ fhir:v "N. Femoralis" ]
+       ] [
+         fhir:code [ fhir:v "cutaneus_femoris_lateralis" ] ;
+         fhir:display [ fhir:v "N. Cutaneus femoris lateralis" ]
+       ] [
+         fhir:code [ fhir:v "saphenus" ] ;
+         fhir:display [ fhir:v "N. Saphenus" ]
+       ] [
+         fhir:code [ fhir:v "obturatorius" ] ;
+         fhir:display [ fhir:v "N. Obturatoriusblock" ]
+       ] [
+         fhir:code [ fhir:v "ischiadicus_poplitea" ] ;
+         fhir:display [ fhir:v "N. Ischiadicus/poplitea blokade" ]
+       ] [
+         fhir:code [ fhir:v "tibialis" ] ;
+         fhir:display [ fhir:v "N. Tibialis" ]
+       ] [
+         fhir:code [ fhir:v "peroneus" ] ;
+         fhir:display [ fhir:v "Peroneus (communis) blokade" ]
+       ] [
+         fhir:code [ fhir:v "other" ] ;
+         fhir:display [ fhir:v "Anden" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

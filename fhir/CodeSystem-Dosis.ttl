@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/Dosis> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Dosis"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem Dosis</b></p><a name=\"Dosis\"> </a><a name=\"hcDosis\"> </a><a name=\"Dosis-en-US\"> </a><p>This  code system <code>https://kip.sundk.dk/fhir/CodeSystem/Dosis</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">le5000ie<a name=\"Dosis-le5000ie\"> </a></td><td>&lt;= 5000</td><td>&lt;= 5000 IE</td></tr><tr><td style=\"white-space:nowrap\">gt5000ie<a name=\"Dosis-gt5000ie\"> </a></td><td>&gt; 5000</td><td>&gt; 5000 IE</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/Dosis"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "Dosis"] ; # 
+  fhir:title [ fhir:v "Dosis"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-12-19T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Dosis i givne mængder"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "le5000ie" ] ;
+     fhir:display [ fhir:v "<= 5000" ] ;
+     fhir:definition [ fhir:v "<= 5000 IE" ]
+  ] [
+     fhir:code [ fhir:v "gt5000ie" ] ;
+     fhir:display [ fhir:v "> 5000" ] ;
+     fhir:definition [ fhir:v "> 5000 IE" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "OperationssideKAR",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet OperationssideKAR</b></p><a name=\"OperationssideKAR\"> </a><a name=\"hcOperationssideKAR\"> </a><a name=\"OperationssideKAR-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-SKS.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/SKS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-TUL1\">TUL1</a></td><td>Højre</td><td>TUL1 - højresidig</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-TUL2\">TUL2</a></td><td>Venstre</td><td>TUL2 - venstresidig</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-central\">central</a></td><td>Centralt</td><td>Central / Centralt / SNOMED-CT: 26216008</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.sundk.dk/fhir/ValueSet/OperationssideKAR",
+  "version" : "0.0.9",
+  "name" : "OperationssideKAR",
+  "title" : "Operationsside (højre/venstre/centralt) (KAR)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-09-27T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Operationsside (højre/venstre/centralt) (KAR)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/SKS",
+      "concept" : [{
+        "code" : "TUL1",
+        "display" : "Højre"
+      },
+      {
+        "code" : "TUL2",
+        "display" : "Venstre"
+      }]
+    },
+    {
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "central",
+        "display" : "Centralt"
+      }]
+    }]
+  }
+}

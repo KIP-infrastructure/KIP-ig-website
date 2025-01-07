@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "BoligformDAP",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet BoligformDAP</b></p><a name=\"BoligformDAP\"> </a><a name=\"hcBoligformDAP\"> </a><a name=\"BoligformDAP-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-HousingType.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/HousingType</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-HousingType.html#HousingType-house.47apartment\">house/apartment</a></td><td>Egen bolig (Hus/lejlighed)</td><td>Hus/lejlighed (privat bolig)</td></tr><tr><td><a href=\"CodeSystem-HousingType.html#HousingType-nursinghome\">nursinghome</a></td><td>Plejebolig</td><td>Plejebolig</td></tr><tr><td><a href=\"CodeSystem-HousingType.html#HousingType-other\">other</a></td><td>Andet</td><td>Andet</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.sundk.dk/fhir/ValueSet/BoligformDAP",
+  "version" : "0.0.9",
+  "name" : "BoligformDAP",
+  "title" : "Boligform [DAP]",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-06-23T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Boligform for Apopleksi [DAP]",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/HousingType",
+      "concept" : [{
+        "code" : "house/apartment",
+        "display" : "Egen bolig (Hus/lejlighed)"
+      },
+      {
+        "code" : "nursinghome",
+        "display" : "Plejebolig"
+      },
+      {
+        "code" : "other",
+        "display" : "Andet"
+      }]
+    }]
+  }
+}

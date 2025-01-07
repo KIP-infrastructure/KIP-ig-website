@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/Rytme1Obs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Rytme1Obs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem Rytme1Obs</b></p><a name=\"Rytme1Obs\"> </a><a name=\"hcRytme1Obs\"> </a><a name=\"Rytme1Obs-en-US\"> </a><p>This  code system <code>https://kip.sundk.dk/fhir/CodeSystem/Rytme1Obs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">vf<a name=\"Rytme1Obs-vf\"> </a></td><td>VF</td><td>VF</td></tr><tr><td style=\"white-space:nowrap\">pulslos_vt<a name=\"Rytme1Obs-pulslos_vt\"> </a></td><td>Pulsløs VT</td><td>Pulsløs VT</td></tr><tr><td style=\"white-space:nowrap\">pea<a name=\"Rytme1Obs-pea\"> </a></td><td>PEA</td><td>PEA</td></tr><tr><td style=\"white-space:nowrap\">asystoli<a name=\"Rytme1Obs-asystoli\"> </a></td><td>Asystoli</td><td>Asystoli</td></tr><tr><td style=\"white-space:nowrap\">ingen_man<a name=\"Rytme1Obs-ingen_man\"> </a></td><td>Ingen manuel rytmeanalyse</td><td>Ingen manuel rytmeanalyse</td></tr><tr><td style=\"white-space:nowrap\">pulsgiv<a name=\"Rytme1Obs-pulsgiv\"> </a></td><td>Pulsgivende</td><td>Pulsgivende</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/Rytme1Obs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "Rytme1Obs"] ; # 
+  fhir:title [ fhir:v "Hjerterytme - første obs"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-29T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Første observerede hjerterytme"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "vf" ] ;
+     fhir:display [ fhir:v "VF" ] ;
+     fhir:definition [ fhir:v "VF" ]
+  ] [
+     fhir:code [ fhir:v "pulslos_vt" ] ;
+     fhir:display [ fhir:v "Pulsløs VT" ] ;
+     fhir:definition [ fhir:v "Pulsløs VT" ]
+  ] [
+     fhir:code [ fhir:v "pea" ] ;
+     fhir:display [ fhir:v "PEA" ] ;
+     fhir:definition [ fhir:v "PEA" ]
+  ] [
+     fhir:code [ fhir:v "asystoli" ] ;
+     fhir:display [ fhir:v "Asystoli" ] ;
+     fhir:definition [ fhir:v "Asystoli" ]
+  ] [
+     fhir:code [ fhir:v "ingen_man" ] ;
+     fhir:display [ fhir:v "Ingen manuel rytmeanalyse" ] ;
+     fhir:definition [ fhir:v "Ingen manuel rytmeanalyse" ]
+  ] [
+     fhir:code [ fhir:v "pulsgiv" ] ;
+     fhir:display [ fhir:v "Pulsgivende" ] ;
+     fhir:definition [ fhir:v "Pulsgivende" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/ClinicalProtocolNotParticipated> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ClinicalProtocolNotParticipated"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ClinicalProtocolNotParticipated</b></p><a name=\"ClinicalProtocolNotParticipated\"> </a><a name=\"hcClinicalProtocolNotParticipated\"> </a><a name=\"ClinicalProtocolNotParticipated-en-US\"> </a><p>This case-insensitive code system <code>https://kip.sundk.dk/fhir/CodeSystem/ClinicalProtocolNotParticipated</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">rejected<a name=\"ClinicalProtocolNotParticipated-rejected\"> </a></td><td>Patient rejected invitation</td><td>Patient rejected invitation</td></tr><tr><td style=\"white-space:nowrap\">deselected<a name=\"ClinicalProtocolNotParticipated-deselected\"> </a></td><td>Health department deselected patient</td><td>Health department deselected patient</td></tr><tr><td style=\"white-space:nowrap\">no_invitation<a name=\"ClinicalProtocolNotParticipated-no_invitation\"> </a></td><td>Patient was not invited</td><td>Patient was not invited</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/ClinicalProtocolNotParticipated"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "ClinicalProtocolNotParticipated"] ; # 
+  fhir:title [ fhir:v "Clinical protocol - patient did not participated; cause"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-07-11T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Clinical protocol -  patient did not participated; cause"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "rejected" ] ;
+     fhir:display [ fhir:v "Patient rejected invitation" ] ;
+     fhir:definition [ fhir:v "Patient rejected invitation" ]
+  ] [
+     fhir:code [ fhir:v "deselected" ] ;
+     fhir:display [ fhir:v "Health department deselected patient" ] ;
+     fhir:definition [ fhir:v "Health department deselected patient" ]
+  ] [
+     fhir:code [ fhir:v "no_invitation" ] ;
+     fhir:display [ fhir:v "Patient was not invited" ] ;
+     fhir:definition [ fhir:v "Patient was not invited" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

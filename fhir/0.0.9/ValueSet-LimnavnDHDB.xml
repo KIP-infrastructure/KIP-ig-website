@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="LimnavnDHDB"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet LimnavnDHDB</b></p><a name="LimnavnDHDB"> </a><a name="hcLimnavnDHDB"> </a><a name="LimnavnDHDB-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-MedicalFixationClosing.html"><code>https://kip.sundk.dk/fhir/CodeSystem/MedicalFixationClosing</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-MedicalFixationClosing.html#MedicalFixationClosing-histoacryl">histoacryl</a></td><td>Histoacryl</td><td>Histoacryl</td></tr><tr><td><a href="CodeSystem-MedicalFixationClosing.html#MedicalFixationClosing-tisseel">tisseel</a></td><td>Tisseel</td><td>Tisseel</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-GenericValues.html"><code>https://kip.sundk.dk/fhir/CodeSystem/GenericValues</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-GenericValues.html#GenericValues-other">other</a></td><td>Anden</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.sundk.dk/fhir/ValueSet/LimnavnDHDB"/>
+  <version value="0.0.9"/>
+  <name value="LimnavnDHDB"/>
+  <title value="Limnavn (DHDB)"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-07-20T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Limnavn (DHDB)"/>
+  <compose>
+    <include>
+      <system value="https://kip.sundk.dk/fhir/CodeSystem/MedicalFixationClosing"/>
+      <concept>
+        <code value="histoacryl"/>
+        <display value="Histoacryl"/>
+      </concept>
+      <concept>
+        <code value="tisseel"/>
+        <display value="Tisseel"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://kip.sundk.dk/fhir/CodeSystem/GenericValues"/>
+      <concept>
+        <code value="other"/>
+        <display value="Anden"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

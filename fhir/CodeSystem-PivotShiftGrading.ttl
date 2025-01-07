@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/PivotShiftGrading> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PivotShiftGrading"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PivotShiftGrading</b></p><a name=\"PivotShiftGrading\"> </a><a name=\"hcPivotShiftGrading\"> </a><a name=\"PivotShiftGrading-en-US\"> </a><p>This case-insensitive code system <code>https://kip.sundk.dk/fhir/CodeSystem/PivotShiftGrading</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">grade_0<a name=\"PivotShiftGrading-grade_0\"> </a></td><td>Grade 0: Equal</td><td>Grade 0: Equal</td></tr><tr><td style=\"white-space:nowrap\">grade_1<a name=\"PivotShiftGrading-grade_1\"> </a></td><td>Grade 1: Glide+</td><td>Grade 1: Glide+</td></tr><tr><td style=\"white-space:nowrap\">grade_2<a name=\"PivotShiftGrading-grade_2\"> </a></td><td>Grade 2: Clunk++</td><td>Grade 2: Clunk++</td></tr><tr><td style=\"white-space:nowrap\">grade_3<a name=\"PivotShiftGrading-grade_3\"> </a></td><td>Grade 3: Gross+++</td><td>Grade 3: Gross+++</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/PivotShiftGrading"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "PivotShiftGrading"] ; # 
+  fhir:title [ fhir:v "Pivot Shift grading"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-09-15T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Pivot Shift grading"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "grade_0" ] ;
+     fhir:display [ fhir:v "Grade 0: Equal" ] ;
+     fhir:definition [ fhir:v "Grade 0: Equal" ]
+  ] [
+     fhir:code [ fhir:v "grade_1" ] ;
+     fhir:display [ fhir:v "Grade 1: Glide+" ] ;
+     fhir:definition [ fhir:v "Grade 1: Glide+" ]
+  ] [
+     fhir:code [ fhir:v "grade_2" ] ;
+     fhir:display [ fhir:v "Grade 2: Clunk++" ] ;
+     fhir:definition [ fhir:v "Grade 2: Clunk++" ]
+  ] [
+     fhir:code [ fhir:v "grade_3" ] ;
+     fhir:display [ fhir:v "Grade 3: Gross+++" ] ;
+     fhir:definition [ fhir:v "Grade 3: Gross+++" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KonferenceDPD",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KonferenceDPD</b></p><a name=\"KonferenceDPD\"> </a><a name=\"hcKonferenceDPD\"> </a><a name=\"KonferenceDPD-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-ConferenceParticipants.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/ConferenceParticipants</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ConferenceParticipants.html#ConferenceParticipants-2-3\">2-3</a></td><td>Afholdt med 2-3 specificerede faggrupper og konklusion</td><td>2 - 3 specificerede faggrupper</td></tr><tr><td><a href=\"CodeSystem-ConferenceParticipants.html#ConferenceParticipants-4.43\">4+</a></td><td>Afholdt med minimum 4 specificerede faggrupper og konklusion</td><td>minimum 4 specificerede faggrupper</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-none\">none</a></td><td>Ikke dokumenteret i journal</td><td>None - used to choose none of the available values</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.sundk.dk/fhir/ValueSet/KonferenceDPD",
+  "version" : "0.0.9",
+  "name" : "KonferenceDPD",
+  "title" : "Konference DPD",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-09-26T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Tværfaglig konference",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/ConferenceParticipants",
+      "concept" : [{
+        "code" : "2-3",
+        "display" : "Afholdt med 2-3 specificerede faggrupper og konklusion"
+      },
+      {
+        "code" : "4+",
+        "display" : "Afholdt med minimum 4 specificerede faggrupper og konklusion"
+      }]
+    },
+    {
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "none",
+        "display" : "Ikke dokumenteret i journal"
+      }]
+    }]
+  }
+}

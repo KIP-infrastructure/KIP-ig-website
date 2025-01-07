@@ -1,0 +1,60 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "DoedsaarsagLYFO",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet DoedsaarsagLYFO</b></p><a name=\"DoedsaarsagLYFO\"> </a><a name=\"hcDoedsaarsagLYFO\"> </a><a name=\"DoedsaarsagLYFO-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-CauseOfDeath.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/CauseOfDeath</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-CauseOfDeath.html#CauseOfDeath-therapy_related_progression\">therapy_related_progression</a></td><td>Terapirelateret dødsfald MED sygdomsprogression</td><td>Terapirelateret dødsfald MED sygdomsprogression</td></tr><tr><td><a href=\"CodeSystem-CauseOfDeath.html#CauseOfDeath-therapy_related\">therapy_related</a></td><td>Terapirelateret dødsfald uden sygdomsprogression</td><td>Terapirelateret dødsfald uden sygdomsprogression</td></tr><tr><td><a href=\"CodeSystem-CauseOfDeath.html#CauseOfDeath-progressive_disease\">progressive_disease</a></td><td>Progressiv sygdom</td><td>Progressive disease</td></tr><tr><td><a href=\"CodeSystem-CauseOfDeath.html#CauseOfDeath-other_complete_remissiong\">other_complete_remissiong</a></td><td>Anden årsag, død i komplet remission (CR)</td><td>Anden årsag, død i komplet remission (CR)</td></tr><tr><td><a href=\"CodeSystem-CauseOfDeath.html#CauseOfDeath-other_not_complete_remissiong\">other_not_complete_remissiong</a></td><td>Anden årsag, IKKE i komplet remision (CR) ved død</td><td>Anden årsag, IKKE i komplet remision (CR) ved død</td></tr></table></li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0532</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html#v2-0532-UKN\">UKN</a></td><td>Ukendt</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.sundk.dk/fhir/ValueSet/DoedsaarsagLYFO",
+  "version" : "0.0.9",
+  "name" : "DoedsaarsagLYFO",
+  "title" : "Dødsårsag (LYFO)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-07-18T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Dødsårsag (LYFO)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/CauseOfDeath",
+      "concept" : [{
+        "code" : "therapy_related_progression",
+        "display" : "Terapirelateret dødsfald MED sygdomsprogression"
+      },
+      {
+        "code" : "therapy_related",
+        "display" : "Terapirelateret dødsfald uden sygdomsprogression"
+      },
+      {
+        "code" : "progressive_disease",
+        "display" : "Progressiv sygdom"
+      },
+      {
+        "code" : "other_complete_remissiong",
+        "display" : "Anden årsag, død i komplet remission (CR)"
+      },
+      {
+        "code" : "other_not_complete_remissiong",
+        "display" : "Anden årsag, IKKE i komplet remision (CR) ved død"
+      }]
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0532",
+      "concept" : [{
+        "code" : "UKN",
+        "display" : "Ukendt"
+      }]
+    }]
+  }
+}

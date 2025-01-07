@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="CytogeneticStemCellType"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet CytogeneticStemCellType</b></p><a name="CytogeneticStemCellType"> </a><a name="hcCytogeneticStemCellType"> </a><a name="CytogeneticStemCellType-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-StemCellType.html"><code>https://kip.sundk.dk/fhir/CodeSystem/StemCellType</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-StemCellType.html#StemCellType-bone_marrow">bone_marrow</a></td><td>Knoglemarv</td><td>Bone marrow stromal stem cell / SNOMED-CT: 418460001</td></tr><tr><td><a href="CodeSystem-StemCellType.html#StemCellType-peripheral_blood">peripheral_blood</a></td><td>Perifert blod</td><td>Peripheral blood stem cell / SNOMED-CT: 419583006</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-GenericValues.html"><code>https://kip.sundk.dk/fhir/CodeSystem/GenericValues</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-GenericValues.html#GenericValues-other">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.sundk.dk/fhir/ValueSet/CytogeneticStemCellType"/>
+  <version value="0.0.9"/>
+  <name value="CytogeneticStemCellType"/>
+  <title value="Stamcelle type"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-07-13T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Hvor kommer stamcellerne fra"/>
+  <compose>
+    <include>
+      <system value="https://kip.sundk.dk/fhir/CodeSystem/StemCellType"/>
+      <concept>
+        <code value="bone_marrow"/>
+        <display value="Knoglemarv"/>
+      </concept>
+      <concept>
+        <code value="peripheral_blood"/>
+        <display value="Perifert blod"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://kip.sundk.dk/fhir/CodeSystem/GenericValues"/>
+      <concept>
+        <code value="other"/>
+        <display value="Andet"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

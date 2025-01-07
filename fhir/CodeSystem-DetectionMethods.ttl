@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/DetectionMethods> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DetectionMethods"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DetectionMethods</b></p><a name=\"DetectionMethods\"> </a><a name=\"hcDetectionMethods\"> </a><a name=\"DetectionMethods-en-US\"> </a><p>This case-insensitive code system <code>https://kip.sundk.dk/fhir/CodeSystem/DetectionMethods</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">doppler<a name=\"DetectionMethods-doppler\"> </a></td><td>Doppler</td><td>Transcraniel doppler</td></tr><tr><td style=\"white-space:nowrap\">clinical<a name=\"DetectionMethods-clinical\"> </a></td><td>Klinisk</td><td>Kliniske</td></tr><tr><td style=\"white-space:nowrap\">radiological<a name=\"DetectionMethods-radiological\"> </a></td><td>Radiologisk</td><td>Radiologisk bekræftet</td></tr><tr><td style=\"white-space:nowrap\">splenomegaly_clinical<a name=\"DetectionMethods-splenomegaly_clinical\"> </a></td><td>Splenomegali, klinisk bedømt</td><td>Splenomegali, klinisk bedømt</td></tr><tr><td style=\"white-space:nowrap\">splenomegaly_radiological<a name=\"DetectionMethods-splenomegaly_radiological\"> </a></td><td>Splenomegali, radiologisk påvist</td><td>Splenomegali, radiologisk påvist</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/DetectionMethods"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "DetectionMethods"] ; # 
+  fhir:title [ fhir:v "Detection methods"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-29T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Detection methods (vasospasms etc.)"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "doppler" ] ;
+     fhir:display [ fhir:v "Doppler" ] ;
+     fhir:definition [ fhir:v "Transcraniel doppler" ]
+  ] [
+     fhir:code [ fhir:v "clinical" ] ;
+     fhir:display [ fhir:v "Klinisk" ] ;
+     fhir:definition [ fhir:v "Kliniske" ]
+  ] [
+     fhir:code [ fhir:v "radiological" ] ;
+     fhir:display [ fhir:v "Radiologisk" ] ;
+     fhir:definition [ fhir:v "Radiologisk bekræftet" ]
+  ] [
+     fhir:code [ fhir:v "splenomegaly_clinical" ] ;
+     fhir:display [ fhir:v "Splenomegali, klinisk bedømt" ] ;
+     fhir:definition [ fhir:v "Splenomegali, klinisk bedømt" ]
+  ] [
+     fhir:code [ fhir:v "splenomegaly_radiological" ] ;
+     fhir:display [ fhir:v "Splenomegali, radiologisk påvist" ] ;
+     fhir:definition [ fhir:v "Splenomegali, radiologisk påvist" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

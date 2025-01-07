@@ -1,0 +1,52 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ATCAntibiotikaprofylakseDKR",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ATCAntibiotikaprofylakseDKR</b></p><a name=\"ATCAntibiotikaprofylakseDKR\"> </a><a name=\"hcATCAntibiotikaprofylakseDKR\"> </a><a name=\"ATCAntibiotikaprofylakseDKR-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-ATC.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/ATC</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-J01DC02\">J01DC02</a></td><td>Cefuroxim</td><td>J01DC02 - cefuroxime</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-J01CF01\">J01CF01</a></td><td>Dicloxacillin</td><td>J01CF01 - dicloxacillin</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-J01XA01\">J01XA01</a></td><td>Vancomycin</td><td>J01XA01 - vancomycin</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.sundk.dk/fhir/ValueSet/ATCAntibiotikaprofylakseDKR",
+  "version" : "0.0.9",
+  "name" : "ATCAntibiotikaprofylakseDKR",
+  "title" : "ATC - Antibiotikaprofylakse (DKR)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-10-14T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "ATC - Antibiotikaprofylakse (DKR)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/ATC",
+      "concept" : [{
+        "code" : "J01DC02",
+        "display" : "Cefuroxim"
+      },
+      {
+        "code" : "J01CF01",
+        "display" : "Dicloxacillin"
+      },
+      {
+        "code" : "J01XA01",
+        "display" : "Vancomycin"
+      }]
+    },
+    {
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "other",
+        "display" : "Andet"
+      }]
+    }]
+  }
+}

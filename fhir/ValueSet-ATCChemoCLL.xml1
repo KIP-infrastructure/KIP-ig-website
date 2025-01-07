@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ATCChemoCLL"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ATCChemoCLL</b></p><a name="ATCChemoCLL"> </a><a name="hcATCChemoCLL"> </a><a name="ATCChemoCLL-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-GenericValues.html"><code>https://kip.sundk.dk/fhir/CodeSystem/GenericValues</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-GenericValues.html#GenericValues-none">none</a></td><td>Ingen kemoterapi</td><td>None - used to choose none of the available values</td></tr><tr><td><a href="CodeSystem-GenericValues.html#GenericValues-other">other</a></td><td>Andet (incl behandling for evt. anden malignitet)</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-ATC.html"><code>https://kip.sundk.dk/fhir/CodeSystem/ATC</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-ATC.html#ATC-L01BB05">L01BB05</a></td><td>Fludarabin</td><td>L01BB05 - fludarabine</td></tr><tr><td><a href="CodeSystem-ATC.html#ATC-L01AA01">L01AA01</a></td><td>Cyklofosmamid</td><td>L01AA01 - cyclophosphamide</td></tr><tr><td><a href="CodeSystem-ATC.html#ATC-L01AA02">L01AA02</a></td><td>Chlorambucil</td><td>L01AA02 - chlorambucil</td></tr><tr><td><a href="CodeSystem-ATC.html#ATC-L01AA09">L01AA09</a></td><td>Bendamustin</td><td>L01AA09 - bendamustine</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.sundk.dk/fhir/ValueSet/ATCChemoCLL"/>
+  <version value="0.0.9"/>
+  <name value="ATCChemoCLL"/>
+  <title value="ATC_CLL_kemo"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-07-13T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="ATC koder kemoterapi - [CLL]"/>
+  <compose>
+    <include>
+      <system value="https://kip.sundk.dk/fhir/CodeSystem/GenericValues"/>
+      <concept>
+        <code value="none"/>
+        <display value="Ingen kemoterapi"/>
+      </concept>
+      <concept>
+        <code value="other"/>
+        <display value="Andet (incl behandling for evt. anden malignitet)"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://kip.sundk.dk/fhir/CodeSystem/ATC"/>
+      <concept>
+        <code value="L01BB05"/>
+        <display value="Fludarabin"/>
+      </concept>
+      <concept>
+        <code value="L01AA01"/>
+        <display value="Cyklofosmamid"/>
+      </concept>
+      <concept>
+        <code value="L01AA02"/>
+        <display value="Chlorambucil"/>
+      </concept>
+      <concept>
+        <code value="L01AA09"/>
+        <display value="Bendamustin"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

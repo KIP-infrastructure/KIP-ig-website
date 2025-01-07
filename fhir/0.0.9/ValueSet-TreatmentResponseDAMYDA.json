@@ -1,0 +1,79 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "TreatmentResponseDAMYDA",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet TreatmentResponseDAMYDA</b></p><a name=\"TreatmentResponseDAMYDA\"> </a><a name=\"hcTreatmentResponseDAMYDA\"> </a><a name=\"TreatmentResponseDAMYDA-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-TreatmentResponseEvaluation.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/TreatmentResponseEvaluation</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-stringent_complete_response\">stringent_complete_response</a></td><td>Stringent Complete Response</td><td>Stringent Complete Response</td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-complete_response\">complete_response</a></td><td>Complete Response</td><td>Complete Response</td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-presumed_complete_response\">presumed_complete_response</a></td><td>Formodet CR</td><td>Presumed Complete Response</td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-very_good_partial_response\">very_good_partial_response</a></td><td>Very Good Partiel Response</td><td>Very Good Partial Response</td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-partial_response\">partial_response</a></td><td>Partiel Response</td><td>Partial response (PR)</td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-minimal_response\">minimal_response</a></td><td>Minimal Response</td><td>Minimal response</td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-stable_disease\">stable_disease</a></td><td>Stable Disease (No change/plateau)</td><td>Stable disease (SD/NC)</td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-progressive_disease\">progressive_disease</a></td><td>Progressive Disease</td><td>Progressive disease (PD)</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-Complications.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/Complications</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-mors\">mors</a></td><td>Mors</td><td>Mors, uventet</td></tr></table></li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0532</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html#v2-0532-UKN\">UKN</a></td><td>Ukendt</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.sundk.dk/fhir/ValueSet/TreatmentResponseDAMYDA",
+  "version" : "0.0.9",
+  "name" : "TreatmentResponseDAMYDA",
+  "title" : "Patient respons på behandling (DAMYDA)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-07-14T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Hvordan reagerer patienten på behandlingen [DAMYDA]",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/TreatmentResponseEvaluation",
+      "concept" : [{
+        "code" : "stringent_complete_response",
+        "display" : "Stringent Complete Response"
+      },
+      {
+        "code" : "complete_response",
+        "display" : "Complete Response"
+      },
+      {
+        "code" : "presumed_complete_response",
+        "display" : "Formodet CR"
+      },
+      {
+        "code" : "very_good_partial_response",
+        "display" : "Very Good Partiel Response"
+      },
+      {
+        "code" : "partial_response",
+        "display" : "Partiel Response"
+      },
+      {
+        "code" : "minimal_response",
+        "display" : "Minimal Response"
+      },
+      {
+        "code" : "stable_disease",
+        "display" : "Stable Disease (No change/plateau)"
+      },
+      {
+        "code" : "progressive_disease",
+        "display" : "Progressive Disease"
+      }]
+    },
+    {
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/Complications",
+      "concept" : [{
+        "code" : "mors",
+        "display" : "Mors"
+      }]
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0532",
+      "concept" : [{
+        "code" : "UKN",
+        "display" : "Ukendt"
+      }]
+    }]
+  }
+}

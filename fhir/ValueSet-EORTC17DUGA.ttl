@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/ValueSet/EORTC17DUGA> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EORTC17DUGA"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet EORTC17DUGA</b></p><a name=\"EORTC17DUGA\"> </a><a name=\"hcEORTC17DUGA\"> </a><a name=\"EORTC17DUGA-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-EORTCQLQC1517.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/EORTCQLQC1517</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-EORTCQLQC1517.html#EORTCQLQC1517-grade_7\">grade_7</a></td><td>Rigtig meget bedre</td><td>7. Særdeles god</td></tr><tr><td><a href=\"CodeSystem-EORTCQLQC1517.html#EORTCQLQC1517-grade_6\">grade_6</a></td><td>Meget bedre</td><td>6. God</td></tr><tr><td><a href=\"CodeSystem-EORTCQLQC1517.html#EORTCQLQC1517-grade_5\">grade_5</a></td><td>Lidt bedre</td><td>5. Mindre god</td></tr><tr><td><a href=\"CodeSystem-EORTCQLQC1517.html#EORTCQLQC1517-grade_4\">grade_4</a></td><td>Ingen ændring</td><td>4. Hverken god eller dårlig</td></tr><tr><td><a href=\"CodeSystem-EORTCQLQC1517.html#EORTCQLQC1517-grade_3\">grade_3</a></td><td>Lidt værre</td><td>3. Mindre dårlig</td></tr><tr><td><a href=\"CodeSystem-EORTCQLQC1517.html#EORTCQLQC1517-grade_2\">grade_2</a></td><td>Meget værre</td><td>2. Dårlig</td></tr><tr><td><a href=\"CodeSystem-EORTCQLQC1517.html#EORTCQLQC1517-grade_1\">grade_1</a></td><td>Betydeligt værre</td><td>1. Meget dårlig</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/ValueSet/EORTC17DUGA"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "EORTC17DUGA"] ; # 
+  fhir:title [ fhir:v "EORTC Grad 1-7 (DUGA)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-03-06T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "EORTC Grad 1-7 - Livskvalitetssvurdering (DUGA)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/EORTCQLQC1517"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "grade_7" ] ;
+         fhir:display [ fhir:v "Rigtig meget bedre" ]
+       ] [
+         fhir:code [ fhir:v "grade_6" ] ;
+         fhir:display [ fhir:v "Meget bedre" ]
+       ] [
+         fhir:code [ fhir:v "grade_5" ] ;
+         fhir:display [ fhir:v "Lidt bedre" ]
+       ] [
+         fhir:code [ fhir:v "grade_4" ] ;
+         fhir:display [ fhir:v "Ingen ændring" ]
+       ] [
+         fhir:code [ fhir:v "grade_3" ] ;
+         fhir:display [ fhir:v "Lidt værre" ]
+       ] [
+         fhir:code [ fhir:v "grade_2" ] ;
+         fhir:display [ fhir:v "Meget værre" ]
+       ] [
+         fhir:code [ fhir:v "grade_1" ] ;
+         fhir:display [ fhir:v "Betydeligt værre" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/ValueSet/StraalebehandlingTAAll> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "StraalebehandlingTAAll"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet StraalebehandlingTAAll</b></p><a name=\"StraalebehandlingTAAll\"> </a><a name=\"hcStraalebehandlingTAAll\"> </a><a name=\"StraalebehandlingTAAll-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-StraalebehandlingTA.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/StraalebehandlingTA</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-StraalebehandlingTA.html#StraalebehandlingTA-priTum\">priTum</a></td><td>Primær tumor</td><td>Hvis den primære tumor var målet</td></tr><tr><td><a href=\"CodeSystem-StraalebehandlingTA.html#StraalebehandlingTA-kngTast\">kngTast</a></td><td>Knoglemetastase</td><td>Hvis knoglemetastase var målet</td></tr><tr><td><a href=\"CodeSystem-StraalebehandlingTA.html#StraalebehandlingTA-cns\">cns</a></td><td>CNS</td><td>Hvis CNS var målet</td></tr><tr><td><a href=\"CodeSystem-StraalebehandlingTA.html#StraalebehandlingTA-anden\">anden</a></td><td>Anden/Ikke specificeret</td><td>Hvis andet eller ikke specificeret mål blev valgt</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/ValueSet/StraalebehandlingTAAll"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "StraalebehandlingTAAll"] ; # 
+  fhir:title [ fhir:v "Strålebehandlinger mål - alle"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-05-16T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Alle mål for strålebehandling"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/StraalebehandlingTA"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "priTum" ] ;
+         fhir:display [ fhir:v "Primær tumor" ]
+       ] [
+         fhir:code [ fhir:v "kngTast" ] ;
+         fhir:display [ fhir:v "Knoglemetastase" ]
+       ] [
+         fhir:code [ fhir:v "cns" ] ;
+         fhir:display [ fhir:v "CNS" ]
+       ] [
+         fhir:code [ fhir:v "anden" ] ;
+         fhir:display [ fhir:v "Anden/Ikke specificeret" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

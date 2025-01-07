@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/HarrisHipScoreSitting> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HarrisHipScoreSitting"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem HarrisHipScoreSitting</b></p><a name=\"HarrisHipScoreSitting\"> </a><a name=\"hcHarrisHipScoreSitting\"> </a><a name=\"HarrisHipScoreSitting-en-US\"> </a><p>This case-insensitive code system <code>https://kip.sundk.dk/fhir/CodeSystem/HarrisHipScoreSitting</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"HarrisHipScoreSitting-5\"> </a></td><td>Comfortably, ordinary chair for one hour</td><td>Comfortably, ordinary chair for one hour (5)</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"HarrisHipScoreSitting-3\"> </a></td><td>On a high chair for 30 minutes</td><td>On a high chair for 30 minutes (3)</td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"HarrisHipScoreSitting-0\"> </a></td><td>Unable to sit comfortably on any chair</td><td>Unable to sit comfortably on any chair (0)</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/HarrisHipScoreSitting"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "HarrisHipScoreSitting"] ; # 
+  fhir:title [ fhir:v "Harris Hip Score (HHS) - Sitting"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-07-06T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Harris Hip Score (HHS) - Sitting. Link: https://www.orthopaedicscore.com/scorepages/harris_hip_score.html"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "5" ] ;
+     fhir:display [ fhir:v "Comfortably, ordinary chair for one hour" ] ;
+     fhir:definition [ fhir:v "Comfortably, ordinary chair for one hour (5)" ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "On a high chair for 30 minutes" ] ;
+     fhir:definition [ fhir:v "On a high chair for 30 minutes (3)" ]
+  ] [
+     fhir:code [ fhir:v "0" ] ;
+     fhir:display [ fhir:v "Unable to sit comfortably on any chair" ] ;
+     fhir:definition [ fhir:v "Unable to sit comfortably on any chair (0)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

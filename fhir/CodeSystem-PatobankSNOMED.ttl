@@ -1,0 +1,430 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/PatobankSNOMED> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PatobankSNOMED"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PatobankSNOMED</b></p><a name=\"PatobankSNOMED\"> </a><a name=\"hcPatobankSNOMED\"> </a><a name=\"PatobankSNOMED-en-US\"> </a><p>This case-sensitive code system <code>https://kip.sundk.dk/fhir/CodeSystem/PatobankSNOMED</code> provides <b>a fragment</b> that includes following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">M96103<a name=\"PatobankSNOMED-M96103\"> </a></td><td>B-cellelymfom</td><td>B-cellelymfom</td></tr><tr><td style=\"white-space:nowrap\">M96503<a name=\"PatobankSNOMED-M96503\"> </a></td><td>Hodgkin lymfom, klassisk type</td><td>Hodgkin lymfom, klassisk type</td></tr><tr><td style=\"white-space:nowrap\">M96513<a name=\"PatobankSNOMED-M96513\"> </a></td><td>Hodgkin lymfom, klassisk type, lymfocytrig</td><td>Hodgkin lymfom, klassisk type, lymfocytrig</td></tr><tr><td style=\"white-space:nowrap\">M96523<a name=\"PatobankSNOMED-M96523\"> </a></td><td>Hodgkin lymfom, klassisk type, mixed cellularitet</td><td>Hodgkin lymfom, klassisk type, mixed cellularitet</td></tr><tr><td style=\"white-space:nowrap\">M96533<a name=\"PatobankSNOMED-M96533\"> </a></td><td>Hodgkin lymfom, klassisk type, lymfocytdepleteret</td><td>Hodgkin lymfom, klassisk type, lymfocytdepleteret</td></tr><tr><td style=\"white-space:nowrap\">M96593<a name=\"PatobankSNOMED-M96593\"> </a></td><td>Hodgkin lymfom, nodulær, lymfocyt dominans</td><td>Hodgkin lymfom, nodulær, lymfocyt dominans</td></tr><tr><td style=\"white-space:nowrap\">M96633<a name=\"PatobankSNOMED-M96633\"> </a></td><td>Hodgkin lymfom, klassisk type, nodulær sklerose</td><td>Hodgkin lymfom, klassisk type, nodulær sklerose</td></tr><tr><td style=\"white-space:nowrap\">M96703<a name=\"PatobankSNOMED-M96703\"> </a></td><td>Småcellet lymfocytært lymfom</td><td>Småcellet lymfocytært lymfom</td></tr><tr><td style=\"white-space:nowrap\">M96783<a name=\"PatobankSNOMED-M96783\"> </a></td><td>primært effusionslymfom</td><td>primært effusionslymfom</td></tr><tr><td style=\"white-space:nowrap\">M96793<a name=\"PatobankSNOMED-M96793\"> </a></td><td>mediastinalt storcellet B-cellelymfom</td><td>mediastinalt storcellet B-cellelymfom</td></tr><tr><td style=\"white-space:nowrap\">M96873<a name=\"PatobankSNOMED-M96873\"> </a></td><td>Burkitt lymfom</td><td>Burkitt lymfom</td></tr><tr><td style=\"white-space:nowrap\">M968H3<a name=\"PatobankSNOMED-M968H3\"> </a></td><td>high-grade B-lymfom</td><td>high-grade B-lymfom</td></tr><tr><td style=\"white-space:nowrap\">M968I3<a name=\"PatobankSNOMED-M968I3\"> </a></td><td>high-grade B-lymfom med MYC og BCL2 og/eller BCL6 rearr.</td><td>high-grade B-lymfom med MYC og BCL2 og/eller BCL6 rearr.</td></tr><tr><td style=\"white-space:nowrap\">M96903<a name=\"PatobankSNOMED-M96903\"> </a></td><td>follikulært lymfom</td><td>follikulært lymfom</td></tr><tr><td style=\"white-space:nowrap\">M96993<a name=\"PatobankSNOMED-M96993\"> </a></td><td>marginalzone B-cellelymfom</td><td>marginalzone B-cellelymfom</td></tr><tr><td style=\"white-space:nowrap\">M97003<a name=\"PatobankSNOMED-M97003\"> </a></td><td>mycosis fungoides</td><td>mycosis fungoides</td></tr><tr><td style=\"white-space:nowrap\">M97013<a name=\"PatobankSNOMED-M97013\"> </a></td><td>Sezarys syndrom</td><td>Sezarys syndrom</td></tr><tr><td style=\"white-space:nowrap\">M97023<a name=\"PatobankSNOMED-M97023\"> </a></td><td>perifert T-cellelymfom</td><td>perifert T-cellelymfom</td></tr><tr><td style=\"white-space:nowrap\">M97053<a name=\"PatobankSNOMED-M97053\"> </a></td><td>angioimmunoblastisk T-cellelymfom</td><td>angioimmunoblastisk T-cellelymfom</td></tr><tr><td style=\"white-space:nowrap\">M97083<a name=\"PatobankSNOMED-M97083\"> </a></td><td>subkutant panniculit-lignende T-cellelymfom</td><td>subkutant panniculit-lignende T-cellelymfom</td></tr><tr><td style=\"white-space:nowrap\">M97143<a name=\"PatobankSNOMED-M97143\"> </a></td><td>anaplastisk storcellet lymfom</td><td>anaplastisk storcellet lymfom</td></tr><tr><td style=\"white-space:nowrap\">M97163<a name=\"PatobankSNOMED-M97163\"> </a></td><td>hepatosplenisk T-cellelymfom</td><td>hepatosplenisk T-cellelymfom</td></tr><tr><td style=\"white-space:nowrap\">M97173<a name=\"PatobankSNOMED-M97173\"> </a></td><td>enteropati-associeret T-cellelymfom</td><td>enteropati-associeret T-cellelymfom</td></tr><tr><td style=\"white-space:nowrap\">M97183<a name=\"PatobankSNOMED-M97183\"> </a></td><td>primært kutant anaplastisk storcellet lymfom</td><td>primært kutant anaplastisk storcellet lymfom</td></tr><tr><td style=\"white-space:nowrap\">M97193<a name=\"PatobankSNOMED-M97193\"> </a></td><td>ekstranodalt NK/T-cellelymfom, nasal type</td><td>ekstranodalt NK/T-cellelymfom, nasal type</td></tr><tr><td style=\"white-space:nowrap\">M97263<a name=\"PatobankSNOMED-M97263\"> </a></td><td>primært kutant gamma-delta T-cellelymfom</td><td>primært kutant gamma-delta T-cellelymfom</td></tr><tr><td style=\"white-space:nowrap\">M97293<a name=\"PatobankSNOMED-M97293\"> </a></td><td>precursor T-lymfoblastisk lymfom</td><td>precursor T-lymfoblastisk lymfom</td></tr><tr><td style=\"white-space:nowrap\">M97353<a name=\"PatobankSNOMED-M97353\"> </a></td><td>plasmablastisk lymfom</td><td>plasmablastisk lymfom</td></tr><tr><td style=\"white-space:nowrap\">M97373<a name=\"PatobankSNOMED-M97373\"> </a></td><td>storcellet B-cellelymfom, ALK-positivt</td><td>storcellet B-cellelymfom, ALK-positivt</td></tr><tr><td style=\"white-space:nowrap\">M96713<a name=\"PatobankSNOMED-M96713\"> </a></td><td>Lymfoplasmacytært lymfom</td><td>Lymfoplasmacytært lymfom</td></tr><tr><td style=\"white-space:nowrap\">M96733<a name=\"PatobankSNOMED-M96733\"> </a></td><td>Mantlecellelymfom</td><td>Mantlecellelymfom</td></tr><tr><td style=\"white-space:nowrap\">M96803<a name=\"PatobankSNOMED-M96803\"> </a></td><td>Diffust storcellet B-cellelymfom</td><td>Diffust storcellet B-cellelymfom</td></tr><tr><td style=\"white-space:nowrap\">M96893<a name=\"PatobankSNOMED-M96893\"> </a></td><td>Splenisk marginalzone B-cellelymfom</td><td>Splenisk marginalzone B-cellelymfom</td></tr><tr><td style=\"white-space:nowrap\">M97283<a name=\"PatobankSNOMED-M97283\"> </a></td><td>Precursor B-lymfoblastisk lymfom</td><td>Precursor B-lymfoblastisk lymfom</td></tr><tr><td style=\"white-space:nowrap\">M98013<a name=\"PatobankSNOMED-M98013\"> </a></td><td>akut udifferentieret leukæmi</td><td>akut udifferentieret leukæmi</td></tr><tr><td style=\"white-space:nowrap\">M98053<a name=\"PatobankSNOMED-M98053\"> </a></td><td>akut leukæmi af ubestemmelig celletype</td><td>akut leukæmi af ubestemmelig celletype</td></tr><tr><td style=\"white-space:nowrap\">M98063<a name=\"PatobankSNOMED-M98063\"> </a></td><td>bl. fænotype akut leukæmi m. t(9;22); BCR-ABL1</td><td>bl. fænotype akut leukæmi m. t(9;22); BCR-ABL1</td></tr><tr><td style=\"white-space:nowrap\">M98073<a name=\"PatobankSNOMED-M98073\"> </a></td><td>bl. fænotype akut leukæmi m. t(v;11q); KMT2A rearr.</td><td>bl. fænotype akut leukæmi m. t(v;11q); KMT2A rearr.</td></tr><tr><td style=\"white-space:nowrap\">M98143<a name=\"PatobankSNOMED-M98143\"> </a></td><td>B-lymfobl. leukæmi/lymfom m. t(12;21); ETV6-RUNX1</td><td>B-lymfobl. leukæmi/lymfom m. t(12;21); ETV6-RUNX1</td></tr><tr><td style=\"white-space:nowrap\">M98153<a name=\"PatobankSNOMED-M98153\"> </a></td><td>B-lymfobl. leukæmi/lymfom med hyperdiploidi</td><td>B-lymfobl. leukæmi/lymfom med hyperdiploidi</td></tr><tr><td style=\"white-space:nowrap\">M98173<a name=\"PatobankSNOMED-M98173\"> </a></td><td>B-lymfobl. leukæmi/lymfom m. t(5;14); IgH/IL3</td><td>B-lymfobl. leukæmi/lymfom m. t(5;14); IgH/IL3</td></tr><tr><td style=\"white-space:nowrap\">M98183<a name=\"PatobankSNOMED-M98183\"> </a></td><td>B-lymfobl. leukæmi/lymfom m. t(1;19); TCF3-PBX1</td><td>B-lymfobl. leukæmi/lymfom m. t(1;19); TCF3-PBX1</td></tr><tr><td style=\"white-space:nowrap\">M98273<a name=\"PatobankSNOMED-M98273\"> </a></td><td>adult T-cellelymfom/leukæmi</td><td>adult T-cellelymfom/leukæmi</td></tr><tr><td style=\"white-space:nowrap\">M98353<a name=\"PatobankSNOMED-M98353\"> </a></td><td>precursor B-lymfoblastisk leukæmi</td><td>precursor B-lymfoblastisk leukæmi</td></tr><tr><td style=\"white-space:nowrap\">M98373<a name=\"PatobankSNOMED-M98373\"> </a></td><td>precursor T-lymfoblastisk leukæmi</td><td>precursor T-lymfoblastisk leukæmi</td></tr><tr><td style=\"white-space:nowrap\">M98403<a name=\"PatobankSNOMED-M98403\"> </a></td><td>erytroleukæmi (FAB-type M6)</td><td>erytroleukæmi (FAB-type M6)</td></tr><tr><td style=\"white-space:nowrap\">M98613<a name=\"PatobankSNOMED-M98613\"> </a></td><td>akut myeloid leukæmi</td><td>akut myeloid leukæmi</td></tr><tr><td style=\"white-space:nowrap\">M98653<a name=\"PatobankSNOMED-M98653\"> </a></td><td>AML m. t(6;9); DEK-NUP214</td><td>AML m. t(6;9); DEK-NUP214</td></tr><tr><td style=\"white-space:nowrap\">M98663<a name=\"PatobankSNOMED-M98663\"> </a></td><td>akut promyelocyt leukæmi m. t(15;17); PML-RARa</td><td>akut promyelocyt leukæmi m. t(15;17); PML-RARa</td></tr><tr><td style=\"white-space:nowrap\">M98673<a name=\"PatobankSNOMED-M98673\"> </a></td><td>akut myelomonocytær leukæmi</td><td>akut myelomonocytær leukæmi</td></tr><tr><td style=\"white-space:nowrap\">M98693<a name=\"PatobankSNOMED-M98693\"> </a></td><td>AML m inv(3)(q21q26.2)el t(3;3)(q21;q26.2);RPN1-EVI1</td><td>AML m inv(3)(q21q26.2)el t(3;3)(q21;q26.2);RPN1-EVI1</td></tr><tr><td style=\"white-space:nowrap\">M98703<a name=\"PatobankSNOMED-M98703\"> </a></td><td>akut basofil leukæmi</td><td>akut basofil leukæmi</td></tr><tr><td style=\"white-space:nowrap\">M98713<a name=\"PatobankSNOMED-M98713\"> </a></td><td>AML m. inv(16) el. t(16;16); CBFß-MYH11</td><td>AML m. inv(16) el. t(16;16); CBFß-MYH11</td></tr><tr><td style=\"white-space:nowrap\">M98723<a name=\"PatobankSNOMED-M98723\"> </a></td><td>Akut myeloid leukæmi, minimalt differentieret</td><td>Akut myeloid leukæmi, minimalt differentieret</td></tr><tr><td style=\"white-space:nowrap\">M98733<a name=\"PatobankSNOMED-M98733\"> </a></td><td>Akut myeloid leukæmi, uden modning</td><td>Akut myeloid leukæmi, uden modning</td></tr><tr><td style=\"white-space:nowrap\">M98743<a name=\"PatobankSNOMED-M98743\"> </a></td><td>Akut myeloid leukæmi, med modning</td><td>Akut myeloid leukæmi, med modning</td></tr><tr><td style=\"white-space:nowrap\">M98753<a name=\"PatobankSNOMED-M98753\"> </a></td><td>Kronisk myeloid leukæmi, BCR-ABL1 positiv</td><td>Kronisk myeloid leukæmi, BCR-ABL1 positiv</td></tr><tr><td style=\"white-space:nowrap\">M98913<a name=\"PatobankSNOMED-M98913\"> </a></td><td>Akut monoblastisk/monocytær leukæmi</td><td>Akut monoblastisk/monocytær leukæmi</td></tr><tr><td style=\"white-space:nowrap\">M98953<a name=\"PatobankSNOMED-M98953\"> </a></td><td>AML m. myelodysplasi-relaterede forandringer</td><td>AML m. myelodysplasi-relaterede forandringer</td></tr><tr><td style=\"white-space:nowrap\">M98963<a name=\"PatobankSNOMED-M98963\"> </a></td><td>AML m. t(8;21); RUNX1-RUNX1T1</td><td>AML m. t(8;21); RUNX1-RUNX1T1</td></tr><tr><td style=\"white-space:nowrap\">M98973<a name=\"PatobankSNOMED-M98973\"> </a></td><td>AML m. t(9;11); KMT2A-MLLT3</td><td>AML m. t(9;11); KMT2A-MLLT3</td></tr><tr><td style=\"white-space:nowrap\">M99103<a name=\"PatobankSNOMED-M99103\"> </a></td><td>akut megakaryoblastleukæmi</td><td>akut megakaryoblastleukæmi</td></tr><tr><td style=\"white-space:nowrap\">M99113<a name=\"PatobankSNOMED-M99113\"> </a></td><td>AML(megakaryoblastisk)m t(1;22)(p13;q13);RBM15-MLK1</td><td>AML(megakaryoblastisk)m t(1;22)(p13;q13);RBM15-MLK1</td></tr><tr><td style=\"white-space:nowrap\">M99203<a name=\"PatobankSNOMED-M99203\"> </a></td><td>terapirelateret myeloid neoplasi</td><td>terapirelateret myeloid neoplasi</td></tr><tr><td style=\"white-space:nowrap\">M99303<a name=\"PatobankSNOMED-M99303\"> </a></td><td>myeloidt sarkom</td><td>myeloidt sarkom</td></tr><tr><td style=\"white-space:nowrap\">M99313<a name=\"PatobankSNOMED-M99313\"> </a></td><td>panmyeloid proliferation med myelofibrose</td><td>panmyeloid proliferation med myelofibrose</td></tr><tr><td style=\"white-space:nowrap\">M99453<a name=\"PatobankSNOMED-M99453\"> </a></td><td>kronisk myelomonocytær leukæmi</td><td>kronisk myelomonocytær leukæmi</td></tr><tr><td style=\"white-space:nowrap\">M99503<a name=\"PatobankSNOMED-M99503\"> </a></td><td>polycytæmia vera</td><td>polycytæmia vera</td></tr><tr><td style=\"white-space:nowrap\">M99613<a name=\"PatobankSNOMED-M99613\"> </a></td><td>myelofibrose</td><td>myelofibrose</td></tr><tr><td style=\"white-space:nowrap\">M99623<a name=\"PatobankSNOMED-M99623\"> </a></td><td>essentiel trombocytæmi</td><td>essentiel trombocytæmi</td></tr><tr><td style=\"white-space:nowrap\">M99711<a name=\"PatobankSNOMED-M99711\"> </a></td><td>post-transplantation lymfoproliferativ sygdom</td><td>post-transplantation lymfoproliferativ sygdom</td></tr><tr><td style=\"white-space:nowrap\">M99753<a name=\"PatobankSNOMED-M99753\"> </a></td><td>uklassificerbar myelodysplastisk/myeloproliferativ sygdom</td><td>uklassificerbar myelodysplastisk/myeloproliferativ sygdom</td></tr><tr><td style=\"white-space:nowrap\">M99803<a name=\"PatobankSNOMED-M99803\"> </a></td><td>MDS med unilinie dysplasi</td><td>MDS med unilinie dysplasi</td></tr><tr><td style=\"white-space:nowrap\">M99823<a name=\"PatobankSNOMED-M99823\"> </a></td><td>MDS med ringsideroblaster og unilinie dysplasi</td><td>MDS med ringsideroblaster og unilinie dysplasi</td></tr><tr><td style=\"white-space:nowrap\">M99833<a name=\"PatobankSNOMED-M99833\"> </a></td><td>MDS med overskud af blaster</td><td>MDS med overskud af blaster</td></tr><tr><td style=\"white-space:nowrap\">M99853<a name=\"PatobankSNOMED-M99853\"> </a></td><td>MDS med multilineær dysplasi</td><td>MDS med multilineær dysplasi</td></tr><tr><td style=\"white-space:nowrap\">M99863<a name=\"PatobankSNOMED-M99863\"> </a></td><td>MDS med isoleret del(5q) kromosomafvigelse</td><td>MDS med isoleret del(5q) kromosomafvigelse</td></tr><tr><td style=\"white-space:nowrap\">M99893<a name=\"PatobankSNOMED-M99893\"> </a></td><td>myelodysplastisk syndrom</td><td>myelodysplastisk syndrom</td></tr><tr><td style=\"white-space:nowrap\">AEF1810<a name=\"PatobankSNOMED-AEF1810\"> </a></td><td>pTis</td><td>ÆF1810 - pTis</td></tr><tr><td style=\"white-space:nowrap\">AEF1820<a name=\"PatobankSNOMED-AEF1820\"> </a></td><td>pT0</td><td>ÆF1820 - pT0</td></tr><tr><td style=\"white-space:nowrap\">AEF1830<a name=\"PatobankSNOMED-AEF1830\"> </a></td><td>pT1</td><td>ÆF1830 - pT1</td></tr><tr><td style=\"white-space:nowrap\">AEF1831<a name=\"PatobankSNOMED-AEF1831\"> </a></td><td>pT1a</td><td>ÆF1831 - pT1a</td></tr><tr><td style=\"white-space:nowrap\">AEF1832<a name=\"PatobankSNOMED-AEF1832\"> </a></td><td>pT1b</td><td>ÆF1832 - pT1b</td></tr><tr><td style=\"white-space:nowrap\">AEF1840<a name=\"PatobankSNOMED-AEF1840\"> </a></td><td>pT2</td><td>ÆF1840 - pT2</td></tr><tr><td style=\"white-space:nowrap\">AEF1850<a name=\"PatobankSNOMED-AEF1850\"> </a></td><td>pT3</td><td>ÆF1850 - pT3</td></tr><tr><td style=\"white-space:nowrap\">AEF1860<a name=\"PatobankSNOMED-AEF1860\"> </a></td><td>pT4</td><td>ÆF1860 - pT4</td></tr><tr><td style=\"white-space:nowrap\">AEF1861<a name=\"PatobankSNOMED-AEF1861\"> </a></td><td>pT4a</td><td>ÆF1861 - pT4a</td></tr><tr><td style=\"white-space:nowrap\">AEF1862<a name=\"PatobankSNOMED-AEF1862\"> </a></td><td>pT4b</td><td>ÆF1862 - pT4b</td></tr><tr><td style=\"white-space:nowrap\">AEF1870<a name=\"PatobankSNOMED-AEF1870\"> </a></td><td>pTx</td><td>ÆF1870 - pTx</td></tr><tr><td style=\"white-space:nowrap\">AEF1900<a name=\"PatobankSNOMED-AEF1900\"> </a></td><td>pN0</td><td>ÆF1900 - pN0</td></tr><tr><td style=\"white-space:nowrap\">AEF1910<a name=\"PatobankSNOMED-AEF1910\"> </a></td><td>pN1</td><td>ÆF1910 - pN1</td></tr><tr><td style=\"white-space:nowrap\">AEF1920<a name=\"PatobankSNOMED-AEF1920\"> </a></td><td>pN2</td><td>ÆF1920 - pN2</td></tr><tr><td style=\"white-space:nowrap\">AEF1930<a name=\"PatobankSNOMED-AEF1930\"> </a></td><td>pN3</td><td>ÆF1930 - pN3</td></tr><tr><td style=\"white-space:nowrap\">AEF1931<a name=\"PatobankSNOMED-AEF1931\"> </a></td><td>pN3a</td><td>ÆF1931 - pN3a</td></tr><tr><td style=\"white-space:nowrap\">AEF1932<a name=\"PatobankSNOMED-AEF1932\"> </a></td><td>pN3b</td><td>ÆF1932 - pN3b</td></tr><tr><td style=\"white-space:nowrap\">AEF1950<a name=\"PatobankSNOMED-AEF1950\"> </a></td><td>pNx</td><td>ÆF1950 - pNx</td></tr><tr><td style=\"white-space:nowrap\">AEF2000<a name=\"PatobankSNOMED-AEF2000\"> </a></td><td>pM0</td><td>ÆF2000 - pM0</td></tr><tr><td style=\"white-space:nowrap\">AEF2010<a name=\"PatobankSNOMED-AEF2010\"> </a></td><td>pM1</td><td>ÆF2010 - pM1</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/PatobankSNOMED"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "PatobankSNOMED"] ; # 
+  fhir:title [ fhir:v "Den Danske SNOMED for Patologi"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-07T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Den Danske SNOMED for Patologi - Udvalgte koder i RKKP. Link: https://www.patobank.dk/snomed/"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "fragment"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "M96103" ] ;
+     fhir:display [ fhir:v "B-cellelymfom" ] ;
+     fhir:definition [ fhir:v "B-cellelymfom" ]
+  ] [
+     fhir:code [ fhir:v "M96503" ] ;
+     fhir:display [ fhir:v "Hodgkin lymfom, klassisk type" ] ;
+     fhir:definition [ fhir:v "Hodgkin lymfom, klassisk type" ]
+  ] [
+     fhir:code [ fhir:v "M96513" ] ;
+     fhir:display [ fhir:v "Hodgkin lymfom, klassisk type, lymfocytrig" ] ;
+     fhir:definition [ fhir:v "Hodgkin lymfom, klassisk type, lymfocytrig" ]
+  ] [
+     fhir:code [ fhir:v "M96523" ] ;
+     fhir:display [ fhir:v "Hodgkin lymfom, klassisk type, mixed cellularitet" ] ;
+     fhir:definition [ fhir:v "Hodgkin lymfom, klassisk type, mixed cellularitet" ]
+  ] [
+     fhir:code [ fhir:v "M96533" ] ;
+     fhir:display [ fhir:v "Hodgkin lymfom, klassisk type, lymfocytdepleteret" ] ;
+     fhir:definition [ fhir:v "Hodgkin lymfom, klassisk type, lymfocytdepleteret" ]
+  ] [
+     fhir:code [ fhir:v "M96593" ] ;
+     fhir:display [ fhir:v "Hodgkin lymfom, nodulær, lymfocyt dominans" ] ;
+     fhir:definition [ fhir:v "Hodgkin lymfom, nodulær, lymfocyt dominans" ]
+  ] [
+     fhir:code [ fhir:v "M96633" ] ;
+     fhir:display [ fhir:v "Hodgkin lymfom, klassisk type, nodulær sklerose" ] ;
+     fhir:definition [ fhir:v "Hodgkin lymfom, klassisk type, nodulær sklerose" ]
+  ] [
+     fhir:code [ fhir:v "M96703" ] ;
+     fhir:display [ fhir:v "Småcellet lymfocytært lymfom" ] ;
+     fhir:definition [ fhir:v "Småcellet lymfocytært lymfom" ]
+  ] [
+     fhir:code [ fhir:v "M96783" ] ;
+     fhir:display [ fhir:v "primært effusionslymfom" ] ;
+     fhir:definition [ fhir:v "primært effusionslymfom" ]
+  ] [
+     fhir:code [ fhir:v "M96793" ] ;
+     fhir:display [ fhir:v "mediastinalt storcellet B-cellelymfom" ] ;
+     fhir:definition [ fhir:v "mediastinalt storcellet B-cellelymfom" ]
+  ] [
+     fhir:code [ fhir:v "M96873" ] ;
+     fhir:display [ fhir:v "Burkitt lymfom" ] ;
+     fhir:definition [ fhir:v "Burkitt lymfom" ]
+  ] [
+     fhir:code [ fhir:v "M968H3" ] ;
+     fhir:display [ fhir:v "high-grade B-lymfom" ] ;
+     fhir:definition [ fhir:v "high-grade B-lymfom" ]
+  ] [
+     fhir:code [ fhir:v "M968I3" ] ;
+     fhir:display [ fhir:v "high-grade B-lymfom med MYC og BCL2 og/eller BCL6 rearr." ] ;
+     fhir:definition [ fhir:v "high-grade B-lymfom med MYC og BCL2 og/eller BCL6 rearr." ]
+  ] [
+     fhir:code [ fhir:v "M96903" ] ;
+     fhir:display [ fhir:v "follikulært lymfom" ] ;
+     fhir:definition [ fhir:v "follikulært lymfom" ]
+  ] [
+     fhir:code [ fhir:v "M96993" ] ;
+     fhir:display [ fhir:v "marginalzone B-cellelymfom" ] ;
+     fhir:definition [ fhir:v "marginalzone B-cellelymfom" ]
+  ] [
+     fhir:code [ fhir:v "M97003" ] ;
+     fhir:display [ fhir:v "mycosis fungoides" ] ;
+     fhir:definition [ fhir:v "mycosis fungoides" ]
+  ] [
+     fhir:code [ fhir:v "M97013" ] ;
+     fhir:display [ fhir:v "Sezarys syndrom" ] ;
+     fhir:definition [ fhir:v "Sezarys syndrom" ]
+  ] [
+     fhir:code [ fhir:v "M97023" ] ;
+     fhir:display [ fhir:v "perifert T-cellelymfom" ] ;
+     fhir:definition [ fhir:v "perifert T-cellelymfom" ]
+  ] [
+     fhir:code [ fhir:v "M97053" ] ;
+     fhir:display [ fhir:v "angioimmunoblastisk T-cellelymfom" ] ;
+     fhir:definition [ fhir:v "angioimmunoblastisk T-cellelymfom" ]
+  ] [
+     fhir:code [ fhir:v "M97083" ] ;
+     fhir:display [ fhir:v "subkutant panniculit-lignende T-cellelymfom" ] ;
+     fhir:definition [ fhir:v "subkutant panniculit-lignende T-cellelymfom" ]
+  ] [
+     fhir:code [ fhir:v "M97143" ] ;
+     fhir:display [ fhir:v "anaplastisk storcellet lymfom" ] ;
+     fhir:definition [ fhir:v "anaplastisk storcellet lymfom" ]
+  ] [
+     fhir:code [ fhir:v "M97163" ] ;
+     fhir:display [ fhir:v "hepatosplenisk T-cellelymfom" ] ;
+     fhir:definition [ fhir:v "hepatosplenisk T-cellelymfom" ]
+  ] [
+     fhir:code [ fhir:v "M97173" ] ;
+     fhir:display [ fhir:v "enteropati-associeret T-cellelymfom" ] ;
+     fhir:definition [ fhir:v "enteropati-associeret T-cellelymfom" ]
+  ] [
+     fhir:code [ fhir:v "M97183" ] ;
+     fhir:display [ fhir:v "primært kutant anaplastisk storcellet lymfom" ] ;
+     fhir:definition [ fhir:v "primært kutant anaplastisk storcellet lymfom" ]
+  ] [
+     fhir:code [ fhir:v "M97193" ] ;
+     fhir:display [ fhir:v "ekstranodalt NK/T-cellelymfom, nasal type" ] ;
+     fhir:definition [ fhir:v "ekstranodalt NK/T-cellelymfom, nasal type" ]
+  ] [
+     fhir:code [ fhir:v "M97263" ] ;
+     fhir:display [ fhir:v "primært kutant gamma-delta T-cellelymfom" ] ;
+     fhir:definition [ fhir:v "primært kutant gamma-delta T-cellelymfom" ]
+  ] [
+     fhir:code [ fhir:v "M97293" ] ;
+     fhir:display [ fhir:v "precursor T-lymfoblastisk lymfom" ] ;
+     fhir:definition [ fhir:v "precursor T-lymfoblastisk lymfom" ]
+  ] [
+     fhir:code [ fhir:v "M97353" ] ;
+     fhir:display [ fhir:v "plasmablastisk lymfom" ] ;
+     fhir:definition [ fhir:v "plasmablastisk lymfom" ]
+  ] [
+     fhir:code [ fhir:v "M97373" ] ;
+     fhir:display [ fhir:v "storcellet B-cellelymfom, ALK-positivt" ] ;
+     fhir:definition [ fhir:v "storcellet B-cellelymfom, ALK-positivt" ]
+  ] [
+     fhir:code [ fhir:v "M96713" ] ;
+     fhir:display [ fhir:v "Lymfoplasmacytært lymfom" ] ;
+     fhir:definition [ fhir:v "Lymfoplasmacytært lymfom" ]
+  ] [
+     fhir:code [ fhir:v "M96733" ] ;
+     fhir:display [ fhir:v "Mantlecellelymfom" ] ;
+     fhir:definition [ fhir:v "Mantlecellelymfom" ]
+  ] [
+     fhir:code [ fhir:v "M96803" ] ;
+     fhir:display [ fhir:v "Diffust storcellet B-cellelymfom" ] ;
+     fhir:definition [ fhir:v "Diffust storcellet B-cellelymfom" ]
+  ] [
+     fhir:code [ fhir:v "M96893" ] ;
+     fhir:display [ fhir:v "Splenisk marginalzone B-cellelymfom" ] ;
+     fhir:definition [ fhir:v "Splenisk marginalzone B-cellelymfom" ]
+  ] [
+     fhir:code [ fhir:v "M97283" ] ;
+     fhir:display [ fhir:v "Precursor B-lymfoblastisk lymfom" ] ;
+     fhir:definition [ fhir:v "Precursor B-lymfoblastisk lymfom" ]
+  ] [
+     fhir:code [ fhir:v "M98013" ] ;
+     fhir:display [ fhir:v "akut udifferentieret leukæmi" ] ;
+     fhir:definition [ fhir:v "akut udifferentieret leukæmi" ]
+  ] [
+     fhir:code [ fhir:v "M98053" ] ;
+     fhir:display [ fhir:v "akut leukæmi af ubestemmelig celletype" ] ;
+     fhir:definition [ fhir:v "akut leukæmi af ubestemmelig celletype" ]
+  ] [
+     fhir:code [ fhir:v "M98063" ] ;
+     fhir:display [ fhir:v "bl. fænotype akut leukæmi m. t(9;22); BCR-ABL1" ] ;
+     fhir:definition [ fhir:v "bl. fænotype akut leukæmi m. t(9;22); BCR-ABL1" ]
+  ] [
+     fhir:code [ fhir:v "M98073" ] ;
+     fhir:display [ fhir:v "bl. fænotype akut leukæmi m. t(v;11q); KMT2A rearr." ] ;
+     fhir:definition [ fhir:v "bl. fænotype akut leukæmi m. t(v;11q); KMT2A rearr." ]
+  ] [
+     fhir:code [ fhir:v "M98143" ] ;
+     fhir:display [ fhir:v "B-lymfobl. leukæmi/lymfom m. t(12;21); ETV6-RUNX1" ] ;
+     fhir:definition [ fhir:v "B-lymfobl. leukæmi/lymfom m. t(12;21); ETV6-RUNX1" ]
+  ] [
+     fhir:code [ fhir:v "M98153" ] ;
+     fhir:display [ fhir:v "B-lymfobl. leukæmi/lymfom med hyperdiploidi" ] ;
+     fhir:definition [ fhir:v "B-lymfobl. leukæmi/lymfom med hyperdiploidi" ]
+  ] [
+     fhir:code [ fhir:v "M98173" ] ;
+     fhir:display [ fhir:v "B-lymfobl. leukæmi/lymfom m. t(5;14); IgH/IL3" ] ;
+     fhir:definition [ fhir:v "B-lymfobl. leukæmi/lymfom m. t(5;14); IgH/IL3" ]
+  ] [
+     fhir:code [ fhir:v "M98183" ] ;
+     fhir:display [ fhir:v "B-lymfobl. leukæmi/lymfom m. t(1;19); TCF3-PBX1" ] ;
+     fhir:definition [ fhir:v "B-lymfobl. leukæmi/lymfom m. t(1;19); TCF3-PBX1" ]
+  ] [
+     fhir:code [ fhir:v "M98273" ] ;
+     fhir:display [ fhir:v "adult T-cellelymfom/leukæmi" ] ;
+     fhir:definition [ fhir:v "adult T-cellelymfom/leukæmi" ]
+  ] [
+     fhir:code [ fhir:v "M98353" ] ;
+     fhir:display [ fhir:v "precursor B-lymfoblastisk leukæmi" ] ;
+     fhir:definition [ fhir:v "precursor B-lymfoblastisk leukæmi" ]
+  ] [
+     fhir:code [ fhir:v "M98373" ] ;
+     fhir:display [ fhir:v "precursor T-lymfoblastisk leukæmi" ] ;
+     fhir:definition [ fhir:v "precursor T-lymfoblastisk leukæmi" ]
+  ] [
+     fhir:code [ fhir:v "M98403" ] ;
+     fhir:display [ fhir:v "erytroleukæmi (FAB-type M6)" ] ;
+     fhir:definition [ fhir:v "erytroleukæmi (FAB-type M6)" ]
+  ] [
+     fhir:code [ fhir:v "M98613" ] ;
+     fhir:display [ fhir:v "akut myeloid leukæmi" ] ;
+     fhir:definition [ fhir:v "akut myeloid leukæmi" ]
+  ] [
+     fhir:code [ fhir:v "M98653" ] ;
+     fhir:display [ fhir:v "AML m. t(6;9); DEK-NUP214" ] ;
+     fhir:definition [ fhir:v "AML m. t(6;9); DEK-NUP214" ]
+  ] [
+     fhir:code [ fhir:v "M98663" ] ;
+     fhir:display [ fhir:v "akut promyelocyt leukæmi m. t(15;17); PML-RARa" ] ;
+     fhir:definition [ fhir:v "akut promyelocyt leukæmi m. t(15;17); PML-RARa" ]
+  ] [
+     fhir:code [ fhir:v "M98673" ] ;
+     fhir:display [ fhir:v "akut myelomonocytær leukæmi" ] ;
+     fhir:definition [ fhir:v "akut myelomonocytær leukæmi" ]
+  ] [
+     fhir:code [ fhir:v "M98693" ] ;
+     fhir:display [ fhir:v "AML m inv(3)(q21q26.2)el t(3;3)(q21;q26.2);RPN1-EVI1" ] ;
+     fhir:definition [ fhir:v "AML m inv(3)(q21q26.2)el t(3;3)(q21;q26.2);RPN1-EVI1" ]
+  ] [
+     fhir:code [ fhir:v "M98703" ] ;
+     fhir:display [ fhir:v "akut basofil leukæmi" ] ;
+     fhir:definition [ fhir:v "akut basofil leukæmi" ]
+  ] [
+     fhir:code [ fhir:v "M98713" ] ;
+     fhir:display [ fhir:v "AML m. inv(16) el. t(16;16); CBFß-MYH11" ] ;
+     fhir:definition [ fhir:v "AML m. inv(16) el. t(16;16); CBFß-MYH11" ]
+  ] [
+     fhir:code [ fhir:v "M98723" ] ;
+     fhir:display [ fhir:v "Akut myeloid leukæmi, minimalt differentieret" ] ;
+     fhir:definition [ fhir:v "Akut myeloid leukæmi, minimalt differentieret" ]
+  ] [
+     fhir:code [ fhir:v "M98733" ] ;
+     fhir:display [ fhir:v "Akut myeloid leukæmi, uden modning" ] ;
+     fhir:definition [ fhir:v "Akut myeloid leukæmi, uden modning" ]
+  ] [
+     fhir:code [ fhir:v "M98743" ] ;
+     fhir:display [ fhir:v "Akut myeloid leukæmi, med modning" ] ;
+     fhir:definition [ fhir:v "Akut myeloid leukæmi, med modning" ]
+  ] [
+     fhir:code [ fhir:v "M98753" ] ;
+     fhir:display [ fhir:v "Kronisk myeloid leukæmi, BCR-ABL1 positiv" ] ;
+     fhir:definition [ fhir:v "Kronisk myeloid leukæmi, BCR-ABL1 positiv" ]
+  ] [
+     fhir:code [ fhir:v "M98913" ] ;
+     fhir:display [ fhir:v "Akut monoblastisk/monocytær leukæmi" ] ;
+     fhir:definition [ fhir:v "Akut monoblastisk/monocytær leukæmi" ]
+  ] [
+     fhir:code [ fhir:v "M98953" ] ;
+     fhir:display [ fhir:v "AML m. myelodysplasi-relaterede forandringer" ] ;
+     fhir:definition [ fhir:v "AML m. myelodysplasi-relaterede forandringer" ]
+  ] [
+     fhir:code [ fhir:v "M98963" ] ;
+     fhir:display [ fhir:v "AML m. t(8;21); RUNX1-RUNX1T1" ] ;
+     fhir:definition [ fhir:v "AML m. t(8;21); RUNX1-RUNX1T1" ]
+  ] [
+     fhir:code [ fhir:v "M98973" ] ;
+     fhir:display [ fhir:v "AML m. t(9;11); KMT2A-MLLT3" ] ;
+     fhir:definition [ fhir:v "AML m. t(9;11); KMT2A-MLLT3" ]
+  ] [
+     fhir:code [ fhir:v "M99103" ] ;
+     fhir:display [ fhir:v "akut megakaryoblastleukæmi" ] ;
+     fhir:definition [ fhir:v "akut megakaryoblastleukæmi" ]
+  ] [
+     fhir:code [ fhir:v "M99113" ] ;
+     fhir:display [ fhir:v "AML(megakaryoblastisk)m t(1;22)(p13;q13);RBM15-MLK1" ] ;
+     fhir:definition [ fhir:v "AML(megakaryoblastisk)m t(1;22)(p13;q13);RBM15-MLK1" ]
+  ] [
+     fhir:code [ fhir:v "M99203" ] ;
+     fhir:display [ fhir:v "terapirelateret myeloid neoplasi" ] ;
+     fhir:definition [ fhir:v "terapirelateret myeloid neoplasi" ]
+  ] [
+     fhir:code [ fhir:v "M99303" ] ;
+     fhir:display [ fhir:v "myeloidt sarkom" ] ;
+     fhir:definition [ fhir:v "myeloidt sarkom" ]
+  ] [
+     fhir:code [ fhir:v "M99313" ] ;
+     fhir:display [ fhir:v "panmyeloid proliferation med myelofibrose" ] ;
+     fhir:definition [ fhir:v "panmyeloid proliferation med myelofibrose" ]
+  ] [
+     fhir:code [ fhir:v "M99453" ] ;
+     fhir:display [ fhir:v "kronisk myelomonocytær leukæmi" ] ;
+     fhir:definition [ fhir:v "kronisk myelomonocytær leukæmi" ]
+  ] [
+     fhir:code [ fhir:v "M99503" ] ;
+     fhir:display [ fhir:v "polycytæmia vera" ] ;
+     fhir:definition [ fhir:v "polycytæmia vera" ]
+  ] [
+     fhir:code [ fhir:v "M99613" ] ;
+     fhir:display [ fhir:v "myelofibrose" ] ;
+     fhir:definition [ fhir:v "myelofibrose" ]
+  ] [
+     fhir:code [ fhir:v "M99623" ] ;
+     fhir:display [ fhir:v "essentiel trombocytæmi" ] ;
+     fhir:definition [ fhir:v "essentiel trombocytæmi" ]
+  ] [
+     fhir:code [ fhir:v "M99711" ] ;
+     fhir:display [ fhir:v "post-transplantation lymfoproliferativ sygdom" ] ;
+     fhir:definition [ fhir:v "post-transplantation lymfoproliferativ sygdom" ]
+  ] [
+     fhir:code [ fhir:v "M99753" ] ;
+     fhir:display [ fhir:v "uklassificerbar myelodysplastisk/myeloproliferativ sygdom" ] ;
+     fhir:definition [ fhir:v "uklassificerbar myelodysplastisk/myeloproliferativ sygdom" ]
+  ] [
+     fhir:code [ fhir:v "M99803" ] ;
+     fhir:display [ fhir:v "MDS med unilinie dysplasi" ] ;
+     fhir:definition [ fhir:v "MDS med unilinie dysplasi" ]
+  ] [
+     fhir:code [ fhir:v "M99823" ] ;
+     fhir:display [ fhir:v "MDS med ringsideroblaster og unilinie dysplasi" ] ;
+     fhir:definition [ fhir:v "MDS med ringsideroblaster og unilinie dysplasi" ]
+  ] [
+     fhir:code [ fhir:v "M99833" ] ;
+     fhir:display [ fhir:v "MDS med overskud af blaster" ] ;
+     fhir:definition [ fhir:v "MDS med overskud af blaster" ]
+  ] [
+     fhir:code [ fhir:v "M99853" ] ;
+     fhir:display [ fhir:v "MDS med multilineær dysplasi" ] ;
+     fhir:definition [ fhir:v "MDS med multilineær dysplasi" ]
+  ] [
+     fhir:code [ fhir:v "M99863" ] ;
+     fhir:display [ fhir:v "MDS med isoleret del(5q) kromosomafvigelse" ] ;
+     fhir:definition [ fhir:v "MDS med isoleret del(5q) kromosomafvigelse" ]
+  ] [
+     fhir:code [ fhir:v "M99893" ] ;
+     fhir:display [ fhir:v "myelodysplastisk syndrom" ] ;
+     fhir:definition [ fhir:v "myelodysplastisk syndrom" ]
+  ] [
+     fhir:code [ fhir:v "AEF1810" ] ;
+     fhir:display [ fhir:v "pTis" ] ;
+     fhir:definition [ fhir:v "ÆF1810 - pTis" ]
+  ] [
+     fhir:code [ fhir:v "AEF1820" ] ;
+     fhir:display [ fhir:v "pT0" ] ;
+     fhir:definition [ fhir:v "ÆF1820 - pT0" ]
+  ] [
+     fhir:code [ fhir:v "AEF1830" ] ;
+     fhir:display [ fhir:v "pT1" ] ;
+     fhir:definition [ fhir:v "ÆF1830 - pT1" ]
+  ] [
+     fhir:code [ fhir:v "AEF1831" ] ;
+     fhir:display [ fhir:v "pT1a" ] ;
+     fhir:definition [ fhir:v "ÆF1831 - pT1a" ]
+  ] [
+     fhir:code [ fhir:v "AEF1832" ] ;
+     fhir:display [ fhir:v "pT1b" ] ;
+     fhir:definition [ fhir:v "ÆF1832 - pT1b" ]
+  ] [
+     fhir:code [ fhir:v "AEF1840" ] ;
+     fhir:display [ fhir:v "pT2" ] ;
+     fhir:definition [ fhir:v "ÆF1840 - pT2" ]
+  ] [
+     fhir:code [ fhir:v "AEF1850" ] ;
+     fhir:display [ fhir:v "pT3" ] ;
+     fhir:definition [ fhir:v "ÆF1850 - pT3" ]
+  ] [
+     fhir:code [ fhir:v "AEF1860" ] ;
+     fhir:display [ fhir:v "pT4" ] ;
+     fhir:definition [ fhir:v "ÆF1860 - pT4" ]
+  ] [
+     fhir:code [ fhir:v "AEF1861" ] ;
+     fhir:display [ fhir:v "pT4a" ] ;
+     fhir:definition [ fhir:v "ÆF1861 - pT4a" ]
+  ] [
+     fhir:code [ fhir:v "AEF1862" ] ;
+     fhir:display [ fhir:v "pT4b" ] ;
+     fhir:definition [ fhir:v "ÆF1862 - pT4b" ]
+  ] [
+     fhir:code [ fhir:v "AEF1870" ] ;
+     fhir:display [ fhir:v "pTx" ] ;
+     fhir:definition [ fhir:v "ÆF1870 - pTx" ]
+  ] [
+     fhir:code [ fhir:v "AEF1900" ] ;
+     fhir:display [ fhir:v "pN0" ] ;
+     fhir:definition [ fhir:v "ÆF1900 - pN0" ]
+  ] [
+     fhir:code [ fhir:v "AEF1910" ] ;
+     fhir:display [ fhir:v "pN1" ] ;
+     fhir:definition [ fhir:v "ÆF1910 - pN1" ]
+  ] [
+     fhir:code [ fhir:v "AEF1920" ] ;
+     fhir:display [ fhir:v "pN2" ] ;
+     fhir:definition [ fhir:v "ÆF1920 - pN2" ]
+  ] [
+     fhir:code [ fhir:v "AEF1930" ] ;
+     fhir:display [ fhir:v "pN3" ] ;
+     fhir:definition [ fhir:v "ÆF1930 - pN3" ]
+  ] [
+     fhir:code [ fhir:v "AEF1931" ] ;
+     fhir:display [ fhir:v "pN3a" ] ;
+     fhir:definition [ fhir:v "ÆF1931 - pN3a" ]
+  ] [
+     fhir:code [ fhir:v "AEF1932" ] ;
+     fhir:display [ fhir:v "pN3b" ] ;
+     fhir:definition [ fhir:v "ÆF1932 - pN3b" ]
+  ] [
+     fhir:code [ fhir:v "AEF1950" ] ;
+     fhir:display [ fhir:v "pNx" ] ;
+     fhir:definition [ fhir:v "ÆF1950 - pNx" ]
+  ] [
+     fhir:code [ fhir:v "AEF2000" ] ;
+     fhir:display [ fhir:v "pM0" ] ;
+     fhir:definition [ fhir:v "ÆF2000 - pM0" ]
+  ] [
+     fhir:code [ fhir:v "AEF2010" ] ;
+     fhir:display [ fhir:v "pM1" ] ;
+     fhir:definition [ fhir:v "ÆF2010 - pM1" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

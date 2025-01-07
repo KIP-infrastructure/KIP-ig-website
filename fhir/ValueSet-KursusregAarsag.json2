@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KursusregAarsag",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KursusregAarsag</b></p><a name=\"KursusregAarsag\"> </a><a name=\"hcKursusregAarsag\"> </a><a name=\"KursusregAarsag-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-not_performed\">not_performed</a></td><td>Gennemførsel af genoplivningskurser registreres ikke systematisk.</td><td>Not performed - used to indicate, if a procedure or test has not been performed</td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-na\">na</a></td><td>Gennemførsel af genoplivningskurser registreres systematisk, men tallene er ikke umiddelbart tilgængelige, og/eller der er ikke ressourcer til at fremskaffe dem.</td><td>Not available</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.sundk.dk/fhir/ValueSet/KursusregAarsag",
+  "version" : "0.0.9",
+  "name" : "KursusregAarsag",
+  "title" : "Kursusregistrering - årsag",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-10-29T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Kursusregistrering - årsag til manglende oplysninger",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "not_performed",
+        "display" : "Gennemførsel af genoplivningskurser registreres ikke systematisk."
+      },
+      {
+        "code" : "na",
+        "display" : "Gennemførsel af genoplivningskurser registreres systematisk, men tallene er ikke umiddelbart tilgængelige, og/eller der er ikke ressourcer til at fremskaffe dem."
+      }]
+    }]
+  }
+}

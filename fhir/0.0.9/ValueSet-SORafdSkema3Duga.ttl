@@ -1,0 +1,237 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/ValueSet/SORafdSkema3Duga> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SORafdSkema3Duga"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SORafdSkema3Duga</b></p><a name=\"SORafdSkema3Duga\"> </a><a name=\"hcSORafdSkema3Duga\"> </a><a name=\"SORafdSkema3Duga-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-SOR.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/SOR</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-590021000016006\">590021000016006</a></td><td>Amager og Hvidovre Hospital, Gynækologisk sengeafdeling (590021000016006)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-590371000016007\">590371000016007</a></td><td>Amager og Hvidovre Hospital, Gynækologisk dagkirurgisk afsnit (590371000016007)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-265661000016007\">265661000016007</a></td><td>Bornholms Hospital, Kirurgisk sengeafd. (265661000016007)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-264671000016001\">264671000016001</a></td><td>Herlev og gentofte Hospital, Gynækologisk afdeling G-1 (264671000016001)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-264711000016000\">264711000016000</a></td><td>Herlev og gentofte Hospital, Gynækologisk ambulatorium G-1a (264711000016000)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-219021000016009\">219021000016009</a></td><td>Nordsjællands Hospital, HI Gynækologisk Afd., senge (219021000016009)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-218901000016007\">218901000016007</a></td><td>Nordsjællands Hospital, HI Gynækologisk Afd., amb. (218901000016007)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-976201000016009\">976201000016009</a></td><td>Rigshospitalet, Gynækologisk Klinik GYN, heldøgn (976201000016009)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-226461000016007\">226461000016007</a></td><td>Holbæk Gyn afd., HOL Gynækologisk Afd. (226461000016007)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-226531000016003\">226531000016003</a></td><td>Holbæk Gyn afd., HOL Gynækologisk Amb. (226531000016003)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-229981000016001\">229981000016001</a></td><td>Nykøbing F, NFS Gynækologisk Afd. (229981000016001)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-230071000016009\">230071000016009</a></td><td>Nykøbing F, NFS Gynækologisk Amb. (230071000016009)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-222641000016008\">222641000016008</a></td><td>Roskilde, ROS Gynækologisk Afd. (222641000016008)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-222751000016004\">222751000016004</a></td><td>Roskilde Gyn afd. (222751000016004)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-229441000016002\">229441000016002</a></td><td>Slagelse, SLA Gynækologisk Afd. (229441000016002)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-229591000016006\">229591000016006</a></td><td>Slagelse, SLA Gynækologisk Amb. (229591000016006)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-246971000016008\">246971000016008</a></td><td>Kolding Sygehus, SLB Kvindesygdomme og Fødsler (Kolding) (246971000016008)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-246931000016006\">246931000016006</a></td><td>Kolding Sygehus, SLB Kvindesygdomme Ambulatorium (Kolding) (246931000016006)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-238721000016006\">238721000016006</a></td><td>OUH Gynækologisk Afsnit (Odense) (238721000016006)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-238741000016001\">238741000016001</a></td><td>OUH Gynækologisk Ambulatorium (OUH Gynækologisk Ambulatorium (238741000016001))</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-239391000016000\">239391000016000</a></td><td>OUH Kirurgisk Afsnit A (239391000016000)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-241141000016008\">241141000016008</a></td><td>OUH Urinvejskirurgisk Ambulatorium L (241141000016008)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-501671000016009\">501671000016009</a></td><td>SHS Kvindesygdomme Sengeafsnit (Aabenraa) (501671000016009)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-501711000016005\">501711000016005</a></td><td>SHS Kvindesygdomme Dagkirurgi (Sønderborg) (501711000016005)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-245971000016004\">245971000016004</a></td><td>SVS Kvindesygdomme Afsnit (Esbjerg) (245971000016004)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-245951000016006\">245951000016006</a></td><td>SVS Kvindesygdomme Ambulatorium (Esbjerg) (245951000016006)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-453211000016004\">453211000016004</a></td><td>AUH Kvindesygdomme (453211000016004)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-453221000016008\">453221000016008</a></td><td>AUH, Dagkirurgi - Kvindesygdomme og Fødsler (453221000016008)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-455661000016001\">455661000016001</a></td><td>AUH Urinvejskirurgi (455661000016001)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-507481000016002\">507481000016002</a></td><td>Hospitalsenhed Midt, Kvindesygdomme og Fødsler Viborg (507481000016002)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-485441000016009\">485441000016009</a></td><td>Hospitalsenhed Midt, Kvindeklinikken Viborg (485441000016009)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-899591000016008\">899591000016008</a></td><td>Regionshospitalet Gødstrup, Afsnit for Kvindesygdomme Gødstrup - RHG (899591000016008)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-899651000016003\">899651000016003</a></td><td>Regionshospitalet Gødstrup, Klinik for Kvindesygdomme Gødstrup - RHG (899651000016003)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-899781000016001\">899781000016001</a></td><td>Regionshospitalet Gødstrup, Kvindesygdomme Ambulant Kirurgi Gødstrup - RHG (899781000016001)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-265971000016007\">265971000016007</a></td><td>Regionshospitalet Horsens, Sengeafdeling for Kvindesygdomme og Fødsler (265971000016007)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-266001000016005\">266001000016005</a></td><td>Regionshospitalet Horsens, Dagkirurgi, Kvindesygdomme (266001000016005)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-271211000016002\">271211000016002</a></td><td>Regionshospitalet Randers, Kvindesygdomme og Fødsler - Randers (271211000016002)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-271221000016006\">271221000016006</a></td><td>Regionshospitalet Randers, Kvindesygdomsklinikken - Randers (271221000016006)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-275611000016002\">275611000016002</a></td><td>Aalborg Universitetshospital, Alb Gyn.-Obst. Afdeling (275611000016002)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-275641000016001\">275641000016001</a></td><td>Aalborg Universitetshospital, Alb Gyn. Ambulatorium (275641000016001)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-276431000016003\">276431000016003</a></td><td>Aalborg Universitetshospital, Alb Urologisk afd. (276431000016003)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-275661000016000\">275661000016000</a></td><td>Aalborg Universitetshospital, Hob Gyn. Ambulatorium Hobro (275661000016000)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-274781000016002\">274781000016002</a></td><td>Aalborg Universitetshospital, Thisted, Thy Gyn.-Obst. sengeafd. (274781000016002)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-277201000016005\">277201000016005</a></td><td>Regionshospital Nordjylland, Hjr Gyn.Obst. Amb. (277201000016005)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-277161000016004\">277161000016004</a></td><td>Regionshospital Nordjylland, Hjr Gyn.-Obst. Sengeafd. (277161000016004)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-464271000016003\">464271000016003</a></td><td>Regionshospital Nordjylland, Hjr Dagafsnit for Kvindesygdomme (464271000016003)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-606291000016007\">606291000016007</a></td><td>Regionshospital Nordjylland, Hjr Uro-gyn Amb (606291000016007)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-1041431000016004\">1041431000016004</a></td><td>Adeas Parken (1041431000016004)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-492011000016005\">492011000016005</a></td><td>Aleris Privathospitaler, Esbjerg (492011000016005)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-652991000016006\">652991000016006</a></td><td>Aleris Privathospitaler, Ringsted (652991000016006)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-491731000016006\">491731000016006</a></td><td>Aleris Privathospitaler, København (491731000016006)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-491911000016003\">491911000016003</a></td><td>Aleris Privathospitaler, Aalborg (491911000016003)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-491831000016002\">491831000016002</a></td><td>Aleris Hospitaler, Aarhus, urologi og gynækologi (491831000016002)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-302311000016004\">302311000016004</a></td><td>AROS privathospital, beh. Afsnit (302311000016004)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-293191000016008\">293191000016008</a></td><td>Capio A/S - Hellerup sengeafsnit (293191000016008)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-293271000016004\">293271000016004</a></td><td>Capio A/S - Odense sengeafsnit (293271000016004)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-596991000016007\">596991000016007</a></td><td>Capio A/S - Odense ambulatorium (596991000016007)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-688881000016009\">688881000016009</a></td><td>CPH Privathospital A/S, kirurgisk afsnit (688881000016009)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-299421000016004\">299421000016004</a></td><td>Gråbrødreklinikken, beh. afsnit (299421000016004)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-293511000016005\">293511000016005</a></td><td>Privathospitalet Danmark, Charlottenlund (293511000016005)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-574681000016001\">574681000016001</a></td><td>Privathospitalet Mølholm Aarhus, Højbjerg beh.afsnit (574681000016001)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-300771000016007\">300771000016007</a></td><td>Privathospitalet Mølholm Vejle, beh. afsnit (300771000016007)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-298241000016003\">298241000016003</a></td><td>Privathospitalet Møn, Gynækologisk sengeafsnit (298241000016003)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-1048581000016009\">1048581000016009</a></td><td>Søernes Privathospital, beh.afsnit (1048581000016009)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-106021000016002\">106021000016002</a></td><td>Aagaard Gynækologiske Klinik (106021000016002)</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/ValueSet/SORafdSkema3Duga"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "SORafdSkema3Duga"] ; # 
+  fhir:title [ fhir:v "SOR: afd_Skema3DUGA (DUGA)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-05-17T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "SOR: afd_Skema3DUGA (DUGA)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/SOR"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "590021000016006" ] ;
+         fhir:display [ fhir:v "Amager og Hvidovre Hospital, Gynækologisk sengeafdeling (590021000016006)" ]
+       ] [
+         fhir:code [ fhir:v "590371000016007" ] ;
+         fhir:display [ fhir:v "Amager og Hvidovre Hospital, Gynækologisk dagkirurgisk afsnit (590371000016007)" ]
+       ] [
+         fhir:code [ fhir:v "265661000016007" ] ;
+         fhir:display [ fhir:v "Bornholms Hospital, Kirurgisk sengeafd. (265661000016007)" ]
+       ] [
+         fhir:code [ fhir:v "264671000016001" ] ;
+         fhir:display [ fhir:v "Herlev og gentofte Hospital, Gynækologisk afdeling G-1 (264671000016001)" ]
+       ] [
+         fhir:code [ fhir:v "264711000016000" ] ;
+         fhir:display [ fhir:v "Herlev og gentofte Hospital, Gynækologisk ambulatorium G-1a (264711000016000)" ]
+       ] [
+         fhir:code [ fhir:v "219021000016009" ] ;
+         fhir:display [ fhir:v "Nordsjællands Hospital, HI Gynækologisk Afd., senge (219021000016009)" ]
+       ] [
+         fhir:code [ fhir:v "218901000016007" ] ;
+         fhir:display [ fhir:v "Nordsjællands Hospital, HI Gynækologisk Afd., amb. (218901000016007)" ]
+       ] [
+         fhir:code [ fhir:v "976201000016009" ] ;
+         fhir:display [ fhir:v "Rigshospitalet, Gynækologisk Klinik GYN, heldøgn (976201000016009)" ]
+       ] [
+         fhir:code [ fhir:v "226461000016007" ] ;
+         fhir:display [ fhir:v "Holbæk Gyn afd., HOL Gynækologisk Afd. (226461000016007)" ]
+       ] [
+         fhir:code [ fhir:v "226531000016003" ] ;
+         fhir:display [ fhir:v "Holbæk Gyn afd., HOL Gynækologisk Amb. (226531000016003)" ]
+       ] [
+         fhir:code [ fhir:v "229981000016001" ] ;
+         fhir:display [ fhir:v "Nykøbing F, NFS Gynækologisk Afd. (229981000016001)" ]
+       ] [
+         fhir:code [ fhir:v "230071000016009" ] ;
+         fhir:display [ fhir:v "Nykøbing F, NFS Gynækologisk Amb. (230071000016009)" ]
+       ] [
+         fhir:code [ fhir:v "222641000016008" ] ;
+         fhir:display [ fhir:v "Roskilde, ROS Gynækologisk Afd. (222641000016008)" ]
+       ] [
+         fhir:code [ fhir:v "222751000016004" ] ;
+         fhir:display [ fhir:v "Roskilde Gyn afd. (222751000016004)" ]
+       ] [
+         fhir:code [ fhir:v "229441000016002" ] ;
+         fhir:display [ fhir:v "Slagelse, SLA Gynækologisk Afd. (229441000016002)" ]
+       ] [
+         fhir:code [ fhir:v "229591000016006" ] ;
+         fhir:display [ fhir:v "Slagelse, SLA Gynækologisk Amb. (229591000016006)" ]
+       ] [
+         fhir:code [ fhir:v "246971000016008" ] ;
+         fhir:display [ fhir:v "Kolding Sygehus, SLB Kvindesygdomme og Fødsler (Kolding) (246971000016008)" ]
+       ] [
+         fhir:code [ fhir:v "246931000016006" ] ;
+         fhir:display [ fhir:v "Kolding Sygehus, SLB Kvindesygdomme Ambulatorium (Kolding) (246931000016006)" ]
+       ] [
+         fhir:code [ fhir:v "238721000016006" ] ;
+         fhir:display [ fhir:v "OUH Gynækologisk Afsnit (Odense) (238721000016006)" ]
+       ] [
+         fhir:code [ fhir:v "238741000016001" ] ;
+         fhir:display [ fhir:v "OUH Gynækologisk Ambulatorium (OUH Gynækologisk Ambulatorium (238741000016001))" ]
+       ] [
+         fhir:code [ fhir:v "239391000016000" ] ;
+         fhir:display [ fhir:v "OUH Kirurgisk Afsnit A (239391000016000)" ]
+       ] [
+         fhir:code [ fhir:v "241141000016008" ] ;
+         fhir:display [ fhir:v "OUH Urinvejskirurgisk Ambulatorium L (241141000016008)" ]
+       ] [
+         fhir:code [ fhir:v "501671000016009" ] ;
+         fhir:display [ fhir:v "SHS Kvindesygdomme Sengeafsnit (Aabenraa) (501671000016009)" ]
+       ] [
+         fhir:code [ fhir:v "501711000016005" ] ;
+         fhir:display [ fhir:v "SHS Kvindesygdomme Dagkirurgi (Sønderborg) (501711000016005)" ]
+       ] [
+         fhir:code [ fhir:v "245971000016004" ] ;
+         fhir:display [ fhir:v "SVS Kvindesygdomme Afsnit (Esbjerg) (245971000016004)" ]
+       ] [
+         fhir:code [ fhir:v "245951000016006" ] ;
+         fhir:display [ fhir:v "SVS Kvindesygdomme Ambulatorium (Esbjerg) (245951000016006)" ]
+       ] [
+         fhir:code [ fhir:v "453211000016004" ] ;
+         fhir:display [ fhir:v "AUH Kvindesygdomme (453211000016004)" ]
+       ] [
+         fhir:code [ fhir:v "453221000016008" ] ;
+         fhir:display [ fhir:v "AUH, Dagkirurgi - Kvindesygdomme og Fødsler (453221000016008)" ]
+       ] [
+         fhir:code [ fhir:v "455661000016001" ] ;
+         fhir:display [ fhir:v "AUH Urinvejskirurgi (455661000016001)" ]
+       ] [
+         fhir:code [ fhir:v "507481000016002" ] ;
+         fhir:display [ fhir:v "Hospitalsenhed Midt, Kvindesygdomme og Fødsler Viborg (507481000016002)" ]
+       ] [
+         fhir:code [ fhir:v "485441000016009" ] ;
+         fhir:display [ fhir:v "Hospitalsenhed Midt, Kvindeklinikken Viborg (485441000016009)" ]
+       ] [
+         fhir:code [ fhir:v "899591000016008" ] ;
+         fhir:display [ fhir:v "Regionshospitalet Gødstrup, Afsnit for Kvindesygdomme Gødstrup - RHG (899591000016008)" ]
+       ] [
+         fhir:code [ fhir:v "899651000016003" ] ;
+         fhir:display [ fhir:v "Regionshospitalet Gødstrup, Klinik for Kvindesygdomme Gødstrup - RHG (899651000016003)" ]
+       ] [
+         fhir:code [ fhir:v "899781000016001" ] ;
+         fhir:display [ fhir:v "Regionshospitalet Gødstrup, Kvindesygdomme Ambulant Kirurgi Gødstrup - RHG (899781000016001)" ]
+       ] [
+         fhir:code [ fhir:v "265971000016007" ] ;
+         fhir:display [ fhir:v "Regionshospitalet Horsens, Sengeafdeling for Kvindesygdomme og Fødsler (265971000016007)" ]
+       ] [
+         fhir:code [ fhir:v "266001000016005" ] ;
+         fhir:display [ fhir:v "Regionshospitalet Horsens, Dagkirurgi, Kvindesygdomme (266001000016005)" ]
+       ] [
+         fhir:code [ fhir:v "271211000016002" ] ;
+         fhir:display [ fhir:v "Regionshospitalet Randers, Kvindesygdomme og Fødsler - Randers (271211000016002)" ]
+       ] [
+         fhir:code [ fhir:v "271221000016006" ] ;
+         fhir:display [ fhir:v "Regionshospitalet Randers, Kvindesygdomsklinikken - Randers (271221000016006)" ]
+       ] [
+         fhir:code [ fhir:v "275611000016002" ] ;
+         fhir:display [ fhir:v "Aalborg Universitetshospital, Alb Gyn.-Obst. Afdeling (275611000016002)" ]
+       ] [
+         fhir:code [ fhir:v "275641000016001" ] ;
+         fhir:display [ fhir:v "Aalborg Universitetshospital, Alb Gyn. Ambulatorium (275641000016001)" ]
+       ] [
+         fhir:code [ fhir:v "276431000016003" ] ;
+         fhir:display [ fhir:v "Aalborg Universitetshospital, Alb Urologisk afd. (276431000016003)" ]
+       ] [
+         fhir:code [ fhir:v "275661000016000" ] ;
+         fhir:display [ fhir:v "Aalborg Universitetshospital, Hob Gyn. Ambulatorium Hobro (275661000016000)" ]
+       ] [
+         fhir:code [ fhir:v "274781000016002" ] ;
+         fhir:display [ fhir:v "Aalborg Universitetshospital, Thisted, Thy Gyn.-Obst. sengeafd. (274781000016002)" ]
+       ] [
+         fhir:code [ fhir:v "277201000016005" ] ;
+         fhir:display [ fhir:v "Regionshospital Nordjylland, Hjr Gyn.Obst. Amb. (277201000016005)" ]
+       ] [
+         fhir:code [ fhir:v "277161000016004" ] ;
+         fhir:display [ fhir:v "Regionshospital Nordjylland, Hjr Gyn.-Obst. Sengeafd. (277161000016004)" ]
+       ] [
+         fhir:code [ fhir:v "464271000016003" ] ;
+         fhir:display [ fhir:v "Regionshospital Nordjylland, Hjr Dagafsnit for Kvindesygdomme (464271000016003)" ]
+       ] [
+         fhir:code [ fhir:v "606291000016007" ] ;
+         fhir:display [ fhir:v "Regionshospital Nordjylland, Hjr Uro-gyn Amb (606291000016007)" ]
+       ] [
+         fhir:code [ fhir:v "1041431000016004" ] ;
+         fhir:display [ fhir:v "Adeas Parken (1041431000016004)" ]
+       ] [
+         fhir:code [ fhir:v "492011000016005" ] ;
+         fhir:display [ fhir:v "Aleris Privathospitaler, Esbjerg (492011000016005)" ]
+       ] [
+         fhir:code [ fhir:v "652991000016006" ] ;
+         fhir:display [ fhir:v "Aleris Privathospitaler, Ringsted (652991000016006)" ]
+       ] [
+         fhir:code [ fhir:v "491731000016006" ] ;
+         fhir:display [ fhir:v "Aleris Privathospitaler, København (491731000016006)" ]
+       ] [
+         fhir:code [ fhir:v "491911000016003" ] ;
+         fhir:display [ fhir:v "Aleris Privathospitaler, Aalborg (491911000016003)" ]
+       ] [
+         fhir:code [ fhir:v "491831000016002" ] ;
+         fhir:display [ fhir:v "Aleris Hospitaler, Aarhus, urologi og gynækologi (491831000016002)" ]
+       ] [
+         fhir:code [ fhir:v "302311000016004" ] ;
+         fhir:display [ fhir:v "AROS privathospital, beh. Afsnit (302311000016004)" ]
+       ] [
+         fhir:code [ fhir:v "293191000016008" ] ;
+         fhir:display [ fhir:v "Capio A/S - Hellerup sengeafsnit (293191000016008)" ]
+       ] [
+         fhir:code [ fhir:v "293271000016004" ] ;
+         fhir:display [ fhir:v "Capio A/S - Odense sengeafsnit (293271000016004)" ]
+       ] [
+         fhir:code [ fhir:v "596991000016007" ] ;
+         fhir:display [ fhir:v "Capio A/S - Odense ambulatorium (596991000016007)" ]
+       ] [
+         fhir:code [ fhir:v "688881000016009" ] ;
+         fhir:display [ fhir:v "CPH Privathospital A/S, kirurgisk afsnit (688881000016009)" ]
+       ] [
+         fhir:code [ fhir:v "299421000016004" ] ;
+         fhir:display [ fhir:v "Gråbrødreklinikken, beh. afsnit (299421000016004)" ]
+       ] [
+         fhir:code [ fhir:v "293511000016005" ] ;
+         fhir:display [ fhir:v "Privathospitalet Danmark, Charlottenlund (293511000016005)" ]
+       ] [
+         fhir:code [ fhir:v "574681000016001" ] ;
+         fhir:display [ fhir:v "Privathospitalet Mølholm Aarhus, Højbjerg beh.afsnit (574681000016001)" ]
+       ] [
+         fhir:code [ fhir:v "300771000016007" ] ;
+         fhir:display [ fhir:v "Privathospitalet Mølholm Vejle, beh. afsnit (300771000016007)" ]
+       ] [
+         fhir:code [ fhir:v "298241000016003" ] ;
+         fhir:display [ fhir:v "Privathospitalet Møn, Gynækologisk sengeafsnit (298241000016003)" ]
+       ] [
+         fhir:code [ fhir:v "1048581000016009" ] ;
+         fhir:display [ fhir:v "Søernes Privathospital, beh.afsnit (1048581000016009)" ]
+       ] [
+         fhir:code [ fhir:v "106021000016002" ] ;
+         fhir:display [ fhir:v "Aagaard Gynækologiske Klinik (106021000016002)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

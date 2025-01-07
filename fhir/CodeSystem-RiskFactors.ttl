@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/RiskFactors> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RiskFactors"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem RiskFactors</b></p><a name=\"RiskFactors\"> </a><a name=\"hcRiskFactors\"> </a><a name=\"RiskFactors-en-US\"> </a><p>This  code system <code>https://kip.sundk.dk/fhir/CodeSystem/RiskFactors</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">behavioural<a name=\"RiskFactors-behavioural\"> </a></td><td>Behavioural</td><td>Behavioural</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">physiological<a name=\"RiskFactors-physiological\"> </a></td><td>Physiological</td><td>Physiological</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  bmi<a name=\"RiskFactors-bmi\"> </a></td><td>Body mass index (BMI)</td><td>Body mass index (BMI)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  hypertension<a name=\"RiskFactors-hypertension\"> </a></td><td>Hypertension</td><td>Hypertension</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  hyperlipidemia<a name=\"RiskFactors-hyperlipidemia\"> </a></td><td>Hyperlipidemia</td><td>Hyperlipidemia / Hyperlipidæmi</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">environmental<a name=\"RiskFactors-environmental\"> </a></td><td>Environmental</td><td>Environmental</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">genetic<a name=\"RiskFactors-genetic\"> </a></td><td>Genetic</td><td>Genetic</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/RiskFactors"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "RiskFactors"] ; # 
+  fhir:title [ fhir:v "Risk factors"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-07-11T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Risk factors"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "behavioural" ] ;
+     fhir:display [ fhir:v "Behavioural" ] ;
+     fhir:definition [ fhir:v "Behavioural" ]
+  ] [
+     fhir:code [ fhir:v "physiological" ] ;
+     fhir:display [ fhir:v "Physiological" ] ;
+     fhir:definition [ fhir:v "Physiological" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "bmi" ] ;
+       fhir:display [ fhir:v "Body mass index (BMI)" ] ;
+       fhir:definition [ fhir:v "Body mass index (BMI)" ]
+     ] [
+       fhir:code [ fhir:v "hypertension" ] ;
+       fhir:display [ fhir:v "Hypertension" ] ;
+       fhir:definition [ fhir:v "Hypertension" ]
+     ] [
+       fhir:code [ fhir:v "hyperlipidemia" ] ;
+       fhir:display [ fhir:v "Hyperlipidemia" ] ;
+       fhir:definition [ fhir:v "Hyperlipidemia / Hyperlipidæmi" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "environmental" ] ;
+     fhir:display [ fhir:v "Environmental" ] ;
+     fhir:definition [ fhir:v "Environmental" ]
+  ] [
+     fhir:code [ fhir:v "genetic" ] ;
+     fhir:display [ fhir:v "Genetic" ] ;
+     fhir:definition [ fhir:v "Genetic" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

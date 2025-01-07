@@ -1,0 +1,129 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/ValueSet/AlleMaaleEnheder> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AlleMaaleEnheder"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet AlleMaaleEnheder</b></p><a name=\"AlleMaaleEnheder\"> </a><a name=\"hcAlleMaaleEnheder\"> </a><a name=\"AlleMaaleEnheder-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-MaaleEnheder.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/MaaleEnheder</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-MaaleEnheder.html#MaaleEnheder-procent\">procent</a></td><td>% procent</td><td>Procent</td></tr><tr><td><a href=\"CodeSystem-MaaleEnheder.html#MaaleEnheder-nm\">nm</a></td><td>nm Nanometer</td><td>Nanometer</td></tr><tr><td><a href=\"CodeSystem-MaaleEnheder.html#MaaleEnheder-.956m\">μm</a></td><td>μm Micrometer</td><td>Micrometer</td></tr><tr><td><a href=\"CodeSystem-MaaleEnheder.html#MaaleEnheder-mm\">mm</a></td><td>mm Millimeter</td><td>Millimeter</td></tr><tr><td><a href=\"CodeSystem-MaaleEnheder.html#MaaleEnheder-cm\">cm</a></td><td>cm Centimeter</td><td>Centimeter</td></tr><tr><td><a href=\"CodeSystem-MaaleEnheder.html#MaaleEnheder-mg\">mg</a></td><td>mg Milligram</td><td>Milligram</td></tr><tr><td><a href=\"CodeSystem-MaaleEnheder.html#MaaleEnheder-g\">g</a></td><td>g Gram</td><td>Gram</td></tr><tr><td><a href=\"CodeSystem-MaaleEnheder.html#MaaleEnheder-kg\">kg</a></td><td>kg Kilogram</td><td>Kilogram</td></tr><tr><td><a href=\"CodeSystem-MaaleEnheder.html#MaaleEnheder-mol-l\">mol-l</a></td><td>mol/l Molær koncentration per liter</td><td>Molær koncentration per liter</td></tr><tr><td><a href=\"CodeSystem-MaaleEnheder.html#MaaleEnheder-mmol-l\">mmol-l</a></td><td>mmol/l Millimol per liter</td><td>Millimol per liter</td></tr><tr><td><a href=\"CodeSystem-MaaleEnheder.html#MaaleEnheder-.956mol-l\">μmol-l</a></td><td>μmol/l Mikromol per liter</td><td>Mikromol per liter</td></tr><tr><td><a href=\"CodeSystem-MaaleEnheder.html#MaaleEnheder-nmol-l\">nmol-l</a></td><td>nmol/l Nanomol per liter</td><td>Nanomol per liter</td></tr><tr><td><a href=\"CodeSystem-MaaleEnheder.html#MaaleEnheder-u-l\">u-l</a></td><td>u/l Enhed U per liter</td><td>Enhed U per liter</td></tr><tr><td><a href=\"CodeSystem-MaaleEnheder.html#MaaleEnheder-kiu-l\">kiu-l</a></td><td>kiu/l Kilo antistof enhed per liter</td><td>Kilo antistof enhed per liter</td></tr><tr><td><a href=\"CodeSystem-MaaleEnheder.html#MaaleEnheder-mia-L\">mia-L</a></td><td>mia/L Antal milliarder per liter</td><td>Antal milliarder per liter</td></tr><tr><td><a href=\"CodeSystem-MaaleEnheder.html#MaaleEnheder-fl\">fl</a></td><td>fl 10^-15 L</td><td>10^-15 L</td></tr><tr><td><a href=\"CodeSystem-MaaleEnheder.html#MaaleEnheder-g-l\">g-l</a></td><td>g/l Gram per liter</td><td>Gram per liter</td></tr><tr><td><a href=\"CodeSystem-MaaleEnheder.html#MaaleEnheder-arb-enh\">arb-enh</a></td><td>Arbejdsenheder</td><td>Arbejdsenheder</td></tr><tr><td><a href=\"CodeSystem-MaaleEnheder.html#MaaleEnheder-g-24h\">g-24h</a></td><td>g/24h Gram per døgn</td><td>Gram per døgn</td></tr><tr><td><a href=\"CodeSystem-MaaleEnheder.html#MaaleEnheder-mg-l\">mg-l</a></td><td>mg/l Milligram per liter</td><td>Milligram per liter</td></tr><tr><td><a href=\"CodeSystem-MaaleEnheder.html#MaaleEnheder-.956g-l\">μg-l</a></td><td>μg/l Mikrogram per liter</td><td>Mikrogram per liter</td></tr><tr><td><a href=\"CodeSystem-MaaleEnheder.html#MaaleEnheder-microglobulin-l\">microglobulin-l</a></td><td>Microglobulin per liter</td><td>Microglobulin per liter</td></tr><tr><td><a href=\"CodeSystem-MaaleEnheder.html#MaaleEnheder-volfr\">volfr</a></td><td>vol.fr volumenfraktion</td><td>volumenfraktion</td></tr><tr><td><a href=\"CodeSystem-MaaleEnheder.html#MaaleEnheder-mCi-kg\">mCi-kg</a></td><td>mCi/kg milliCurie/kg</td><td>milliCurie/kg</td></tr><tr><td><a href=\"CodeSystem-MaaleEnheder.html#MaaleEnheder-gy\">gy</a></td><td>gy Gray</td><td>Gray</td></tr><tr><td><a href=\"CodeSystem-MaaleEnheder.html#MaaleEnheder-liter\">liter</a></td><td>l Liter</td><td>Liter</td></tr><tr><td><a href=\"CodeSystem-MaaleEnheder.html#MaaleEnheder-deciliter\">deciliter</a></td><td>dl Deciliter</td><td>Deciliter</td></tr><tr><td><a href=\"CodeSystem-MaaleEnheder.html#MaaleEnheder-centiliter\">centiliter</a></td><td>cl Centiliter</td><td>Centiliter</td></tr><tr><td><a href=\"CodeSystem-MaaleEnheder.html#MaaleEnheder-milliliter\">milliliter</a></td><td>ml Milliliter</td><td>Milliliter</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/ValueSet/AlleMaaleEnheder"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "AlleMaaleEnheder"] ; # 
+  fhir:title [ fhir:v "Alle Måleenheder"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-08-04T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Alle måleenheder"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/MaaleEnheder"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "procent" ] ;
+         fhir:display [ fhir:v "% procent" ]
+       ] [
+         fhir:code [ fhir:v "nm" ] ;
+         fhir:display [ fhir:v "nm Nanometer" ]
+       ] [
+         fhir:code [ fhir:v "μm" ] ;
+         fhir:display [ fhir:v "μm Micrometer" ]
+       ] [
+         fhir:code [ fhir:v "mm" ] ;
+         fhir:display [ fhir:v "mm Millimeter" ]
+       ] [
+         fhir:code [ fhir:v "cm" ] ;
+         fhir:display [ fhir:v "cm Centimeter" ]
+       ] [
+         fhir:code [ fhir:v "mg" ] ;
+         fhir:display [ fhir:v "mg Milligram" ]
+       ] [
+         fhir:code [ fhir:v "g" ] ;
+         fhir:display [ fhir:v "g Gram" ]
+       ] [
+         fhir:code [ fhir:v "kg" ] ;
+         fhir:display [ fhir:v "kg Kilogram" ]
+       ] [
+         fhir:code [ fhir:v "mol-l" ] ;
+         fhir:display [ fhir:v "mol/l Molær koncentration per liter" ]
+       ] [
+         fhir:code [ fhir:v "mmol-l" ] ;
+         fhir:display [ fhir:v "mmol/l Millimol per liter" ]
+       ] [
+         fhir:code [ fhir:v "μmol-l" ] ;
+         fhir:display [ fhir:v "μmol/l Mikromol per liter" ]
+       ] [
+         fhir:code [ fhir:v "nmol-l" ] ;
+         fhir:display [ fhir:v "nmol/l Nanomol per liter" ]
+       ] [
+         fhir:code [ fhir:v "u-l" ] ;
+         fhir:display [ fhir:v "u/l Enhed U per liter" ]
+       ] [
+         fhir:code [ fhir:v "kiu-l" ] ;
+         fhir:display [ fhir:v "kiu/l Kilo antistof enhed per liter" ]
+       ] [
+         fhir:code [ fhir:v "mia-L" ] ;
+         fhir:display [ fhir:v "mia/L Antal milliarder per liter" ]
+       ] [
+         fhir:code [ fhir:v "fl" ] ;
+         fhir:display [ fhir:v "fl 10^-15 L" ]
+       ] [
+         fhir:code [ fhir:v "g-l" ] ;
+         fhir:display [ fhir:v "g/l Gram per liter" ]
+       ] [
+         fhir:code [ fhir:v "arb-enh" ] ;
+         fhir:display [ fhir:v "Arbejdsenheder" ]
+       ] [
+         fhir:code [ fhir:v "g-24h" ] ;
+         fhir:display [ fhir:v "g/24h Gram per døgn" ]
+       ] [
+         fhir:code [ fhir:v "mg-l" ] ;
+         fhir:display [ fhir:v "mg/l Milligram per liter" ]
+       ] [
+         fhir:code [ fhir:v "μg-l" ] ;
+         fhir:display [ fhir:v "μg/l Mikrogram per liter" ]
+       ] [
+         fhir:code [ fhir:v "microglobulin-l" ] ;
+         fhir:display [ fhir:v "Microglobulin per liter" ]
+       ] [
+         fhir:code [ fhir:v "volfr" ] ;
+         fhir:display [ fhir:v "vol.fr volumenfraktion" ]
+       ] [
+         fhir:code [ fhir:v "mCi-kg" ] ;
+         fhir:display [ fhir:v "mCi/kg milliCurie/kg" ]
+       ] [
+         fhir:code [ fhir:v "gy" ] ;
+         fhir:display [ fhir:v "gy Gray" ]
+       ] [
+         fhir:code [ fhir:v "liter" ] ;
+         fhir:display [ fhir:v "l Liter" ]
+       ] [
+         fhir:code [ fhir:v "deciliter" ] ;
+         fhir:display [ fhir:v "dl Deciliter" ]
+       ] [
+         fhir:code [ fhir:v "centiliter" ] ;
+         fhir:display [ fhir:v "cl Centiliter" ]
+       ] [
+         fhir:code [ fhir:v "milliliter" ] ;
+         fhir:display [ fhir:v "ml Milliliter" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/ValueSet/InterventionsgruppeDialysePeritonealDNSL> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "InterventionsgruppeDialysePeritonealDNSL"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet InterventionsgruppeDialysePeritonealDNSL</b></p><a name=\"InterventionsgruppeDialysePeritonealDNSL\"> </a><a name=\"hcInterventionsgruppeDialysePeritonealDNSL\"> </a><a name=\"InterventionsgruppeDialysePeritonealDNSL-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Interventionsgruppe.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/Interventionsgruppe</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Interventionsgruppe.html#Interventionsgruppe-510\">510</a></td><td>Peritonealdialyse</td><td>Peritonealdialyse</td></tr><tr><td><a href=\"CodeSystem-Interventionsgruppe.html#Interventionsgruppe-110\">110</a></td><td>Genvunden funktion</td><td>Genvunden funktion</td></tr><tr><td><a href=\"CodeSystem-Interventionsgruppe.html#Interventionsgruppe-100\">100</a></td><td>Ophør med aktiv behandling</td><td>Ophør med aktiv behandling</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/ValueSet/InterventionsgruppeDialysePeritonealDNSL"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "InterventionsgruppeDialysePeritonealDNSL"] ; # 
+  fhir:title [ fhir:v "Interventionsgruppe Peritonealdialyse (DNSL)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-01-10T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Interventionsgruppe Peritonealdialyse (DNSL)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/Interventionsgruppe"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "510" ] ;
+         fhir:display [ fhir:v "Peritonealdialyse" ]
+       ] [
+         fhir:code [ fhir:v "110" ] ;
+         fhir:display [ fhir:v "Genvunden funktion" ]
+       ] [
+         fhir:code [ fhir:v "100" ] ;
+         fhir:display [ fhir:v "Ophør med aktiv behandling" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

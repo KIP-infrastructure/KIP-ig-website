@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/Registry> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Registry"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem Registry</b></p><a name=\"Registry\"> </a><a name=\"hcRegistry\"> </a><a name=\"Registry-en-US\"> </a><p>This case-insensitive code system <code>https://kip.sundk.dk/fhir/CodeSystem/Registry</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">ej_reg_pligtig<a name=\"Registry-ej_reg_pligtig\"> </a></td><td>Ej registreringspligtig hæmatologisk sygdom</td><td>Ej registreringspligtig hæmatologisk sygdom</td></tr><tr><td style=\"white-space:nowrap\">eksisterende<a name=\"Registry-eksisterende\"> </a></td><td>Eksisterende registreringer dækker over de(n) hæmatologiske sygdomme pt har</td><td>Eksisterende registreringer dækker over de(n) hæmatologiske sygdomme pt har</td></tr><tr><td style=\"white-space:nowrap\">udland<a name=\"Registry-udland\"> </a></td><td>Bosiddende i udlandet på diagnosetidspunktet</td><td>Bosiddende i udlandet på diagnosetidspunktet</td></tr><tr><td style=\"white-space:nowrap\">flyttet<a name=\"Registry-flyttet\"> </a></td><td>Patientforløb flyttet til anden hæmatologisk afdeling</td><td>Patientforløb flyttet til anden hæmatologisk afdeling</td></tr><tr><td style=\"white-space:nowrap\">barn<a name=\"Registry-barn\"> </a></td><td>Behandlet på børneafdeling el anden IKKE hæmatologisk afd</td><td>Behandlet på børneafdeling el anden IKKE hæmatologisk afd</td></tr><tr><td style=\"white-space:nowrap\">ej_relaps<a name=\"Registry-ej_relaps\"> </a></td><td>Pt har ikke relaps/progression</td><td>Pt har ikke relaps/progression</td></tr><tr><td style=\"white-space:nowrap\">afsluttet<a name=\"Registry-afsluttet\"> </a></td><td>Afsluttet: Patientens forløb er afsluttet fra afdeling og følges IKKE på anden hæmatologisk afdeling</td><td>Afsluttet: Patientens forløb er afsluttet fra afdeling og følges IKKE på anden hæmatologisk afdeling</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/Registry"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "Registry"] ; # 
+  fhir:title [ fhir:v "Registry - Unspecified codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-08-22T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Registry - Unspecified codes"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "ej_reg_pligtig" ] ;
+     fhir:display [ fhir:v "Ej registreringspligtig hæmatologisk sygdom" ] ;
+     fhir:definition [ fhir:v "Ej registreringspligtig hæmatologisk sygdom" ]
+  ] [
+     fhir:code [ fhir:v "eksisterende" ] ;
+     fhir:display [ fhir:v "Eksisterende registreringer dækker over de(n) hæmatologiske sygdomme pt har" ] ;
+     fhir:definition [ fhir:v "Eksisterende registreringer dækker over de(n) hæmatologiske sygdomme pt har" ]
+  ] [
+     fhir:code [ fhir:v "udland" ] ;
+     fhir:display [ fhir:v "Bosiddende i udlandet på diagnosetidspunktet" ] ;
+     fhir:definition [ fhir:v "Bosiddende i udlandet på diagnosetidspunktet" ]
+  ] [
+     fhir:code [ fhir:v "flyttet" ] ;
+     fhir:display [ fhir:v "Patientforløb flyttet til anden hæmatologisk afdeling" ] ;
+     fhir:definition [ fhir:v "Patientforløb flyttet til anden hæmatologisk afdeling" ]
+  ] [
+     fhir:code [ fhir:v "barn" ] ;
+     fhir:display [ fhir:v "Behandlet på børneafdeling el anden IKKE hæmatologisk afd" ] ;
+     fhir:definition [ fhir:v "Behandlet på børneafdeling el anden IKKE hæmatologisk afd" ]
+  ] [
+     fhir:code [ fhir:v "ej_relaps" ] ;
+     fhir:display [ fhir:v "Pt har ikke relaps/progression" ] ;
+     fhir:definition [ fhir:v "Pt har ikke relaps/progression" ]
+  ] [
+     fhir:code [ fhir:v "afsluttet" ] ;
+     fhir:display [ fhir:v "Afsluttet: Patientens forløb er afsluttet fra afdeling og følges IKKE på anden hæmatologisk afdeling" ] ;
+     fhir:definition [ fhir:v "Afsluttet: Patientens forløb er afsluttet fra afdeling og følges IKKE på anden hæmatologisk afdeling" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

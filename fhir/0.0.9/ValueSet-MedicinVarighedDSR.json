@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "MedicinVarighedDSR",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet MedicinVarighedDSR</b></p><a name=\"MedicinVarighedDSR\"> </a><a name=\"hcMedicinVarighedDSR\"> </a><a name=\"MedicinVarighedDSR-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-MedicalTreatmentDuration.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/MedicalTreatmentDuration</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-MedicalTreatmentDuration.html#MedicalTreatmentDuration-preoperative_peroperative\">preoperative_peroperative</a></td><td>Kun Præ-/peroperativt</td><td>Præ-/peroperativt</td></tr><tr><td><a href=\"CodeSystem-MedicalTreatmentDuration.html#MedicalTreatmentDuration-postoperative_1_day\">postoperative_1_day</a></td><td>1 døgn postopr.</td><td>Postoperativ, 1 døgn</td></tr><tr><td><a href=\"CodeSystem-MedicalTreatmentDuration.html#MedicalTreatmentDuration-postoperative_multiple_days\">postoperative_multiple_days</a></td><td>Flere døgn postopr.</td><td>Postoperativ, flere døgn</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.sundk.dk/fhir/ValueSet/MedicinVarighedDSR",
+  "version" : "0.0.9",
+  "name" : "MedicinVarighedDSR",
+  "title" : "Medicin varighed (DSR)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-10-06T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Medicin varighed (DSR)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/MedicalTreatmentDuration",
+      "concept" : [{
+        "code" : "preoperative_peroperative",
+        "display" : "Kun Præ-/peroperativt"
+      },
+      {
+        "code" : "postoperative_1_day",
+        "display" : "1 døgn postopr."
+      },
+      {
+        "code" : "postoperative_multiple_days",
+        "display" : "Flere døgn postopr."
+      }]
+    }]
+  }
+}

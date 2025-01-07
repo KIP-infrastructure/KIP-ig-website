@@ -1,0 +1,60 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KomplikationerDKRR",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KomplikationerDKRR</b></p><a name=\"KomplikationerDKRR\"> </a><a name=\"hcKomplikationerDKRR\"> </a><a name=\"KomplikationerDKRR-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-Complications.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/Complications</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-infection\">infection</a></td><td>Infektion</td><td>Sårinfektion</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-dvt\">dvt</a></td><td>DVT</td><td>Dyb vene trombose</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-movement_restriction\">movement_restriction</a></td><td>Bevægeindskrænkning(&gt; 5 graders ext., &gt; 10 graders fleksion indskrækning)</td><td>Movement restriction / Bevægelsesindskrænkning</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-chronic_pain\">chronic_pain</a></td><td>Kronisk smerter</td><td>Chronic pain / Kronisk smerte</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-reoperation\">reoperation</a></td><td>Reoperation</td><td>Reoperation</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Anden komplikation</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.sundk.dk/fhir/ValueSet/KomplikationerDKRR",
+  "version" : "0.0.9",
+  "name" : "KomplikationerDKRR",
+  "title" : "Komplikationer (DKRR)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-09-19T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Komplikationer (DKRR)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/Complications",
+      "concept" : [{
+        "code" : "infection",
+        "display" : "Infektion"
+      },
+      {
+        "code" : "dvt",
+        "display" : "DVT"
+      },
+      {
+        "code" : "movement_restriction",
+        "display" : "Bevægeindskrænkning(> 5 graders ext., > 10 graders fleksion indskrækning)"
+      },
+      {
+        "code" : "chronic_pain",
+        "display" : "Kronisk smerter"
+      },
+      {
+        "code" : "reoperation",
+        "display" : "Reoperation"
+      }]
+    },
+    {
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "other",
+        "display" : "Anden komplikation"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,123 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/TreatmentType> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TreatmentType"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem TreatmentType</b></p><a name=\"TreatmentType\"> </a><a name=\"hcTreatmentType\"> </a><a name=\"TreatmentType-en-US\"> </a><p>This  code system <code>https://kip.sundk.dk/fhir/CodeSystem/TreatmentType</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">endovascular<a name=\"TreatmentType-endovascular\"> </a></td><td>Endovascular</td><td>Endovascular treatment</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  coil<a name=\"TreatmentType-coil\"> </a></td><td>Coil</td><td>Coil</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  intrasakkulat<a name=\"TreatmentType-intrasakkulat\"> </a></td><td>Intrasakkulat flowdiversion</td><td>Intrasakkulat flowdiversion</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  ekstrasakkulat<a name=\"TreatmentType-ekstrasakkulat\"> </a></td><td>Ekstrasakkulat flowdiversion</td><td>Ekstrasakkulat flowdiversion</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">surgical<a name=\"TreatmentType-surgical\"> </a></td><td>Surgical</td><td>Surgical treatment</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">operation<a name=\"TreatmentType-operation\"> </a></td><td>Operation</td><td>Operation</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">radiotherapy<a name=\"TreatmentType-radiotherapy\"> </a></td><td>radiotherapy</td><td>Radiation / Strålebehandling</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">chemotherapy<a name=\"TreatmentType-chemotherapy\"> </a></td><td>Chemoterapy</td><td>Chemotherapy / Kemoterapi</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">chemoradiationtherapy<a name=\"TreatmentType-chemoradiationtherapy\"> </a></td><td>Chemoradiationtherapy</td><td>Chemoradiationtherapy / Kemostråleterapi</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">immunotherapy<a name=\"TreatmentType-immunotherapy\"> </a></td><td>Immunotherapy</td><td>Immunotherapy / Immunterapi</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">neoadjuvant<a name=\"TreatmentType-neoadjuvant\"> </a></td><td>Neoadjuvant</td><td>Neoadjuvant / Neoadjuverende</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">watchfull_waiting<a name=\"TreatmentType-watchfull_waiting\"> </a></td><td>Watchfull waiting</td><td>Watchfull waiting</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">cerclage<a name=\"TreatmentType-cerclage\"> </a></td><td>Cerclage</td><td>Cerclage / SNOMED-CT: 1455007</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">trochantergrip<a name=\"TreatmentType-trochantergrip\"> </a></td><td>Trochantergrip</td><td>Trochantergrip</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">splint<a name=\"TreatmentType-splint\"> </a></td><td>Splint</td><td>Splint / SNOMED-CT: 16650009</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">skinne<a name=\"TreatmentType-skinne\"> </a></td><td>Skinne</td><td>Skinne</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">stem<a name=\"TreatmentType-stem\"> </a></td><td>Stem</td><td>Stem</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">uns<a name=\"TreatmentType-uns\"> </a></td><td>UNS</td><td>UNS</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">retrahere<a name=\"TreatmentType-retrahere\"> </a></td><td>Retrahere</td><td>Retraheret - Tilbagetrækning, skrumpning</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">exidere<a name=\"TreatmentType-exidere\"> </a></td><td>Exidere</td><td>Exideret - Fjerne</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">in_situ<a name=\"TreatmentType-in_situ\"> </a></td><td>Left in situ</td><td>Efterladt in situ</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/TreatmentType"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "TreatmentType"] ; # 
+  fhir:title [ fhir:v "Treatment type"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-03T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Treatment type"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "21"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "endovascular" ] ;
+     fhir:display [ fhir:v "Endovascular" ] ;
+     fhir:definition [ fhir:v "Endovascular treatment" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "coil" ] ;
+       fhir:display [ fhir:v "Coil" ] ;
+       fhir:definition [ fhir:v "Coil" ]
+     ] [
+       fhir:code [ fhir:v "intrasakkulat" ] ;
+       fhir:display [ fhir:v "Intrasakkulat flowdiversion" ] ;
+       fhir:definition [ fhir:v "Intrasakkulat flowdiversion" ]
+     ] [
+       fhir:code [ fhir:v "ekstrasakkulat" ] ;
+       fhir:display [ fhir:v "Ekstrasakkulat flowdiversion" ] ;
+       fhir:definition [ fhir:v "Ekstrasakkulat flowdiversion" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "surgical" ] ;
+     fhir:display [ fhir:v "Surgical" ] ;
+     fhir:definition [ fhir:v "Surgical treatment" ]
+  ] [
+     fhir:code [ fhir:v "operation" ] ;
+     fhir:display [ fhir:v "Operation" ] ;
+     fhir:definition [ fhir:v "Operation" ]
+  ] [
+     fhir:code [ fhir:v "radiotherapy" ] ;
+     fhir:display [ fhir:v "radiotherapy" ] ;
+     fhir:definition [ fhir:v "Radiation / Strålebehandling" ]
+  ] [
+     fhir:code [ fhir:v "chemotherapy" ] ;
+     fhir:display [ fhir:v "Chemoterapy" ] ;
+     fhir:definition [ fhir:v "Chemotherapy / Kemoterapi" ]
+  ] [
+     fhir:code [ fhir:v "chemoradiationtherapy" ] ;
+     fhir:display [ fhir:v "Chemoradiationtherapy" ] ;
+     fhir:definition [ fhir:v "Chemoradiationtherapy / Kemostråleterapi" ]
+  ] [
+     fhir:code [ fhir:v "immunotherapy" ] ;
+     fhir:display [ fhir:v "Immunotherapy" ] ;
+     fhir:definition [ fhir:v "Immunotherapy / Immunterapi" ]
+  ] [
+     fhir:code [ fhir:v "neoadjuvant" ] ;
+     fhir:display [ fhir:v "Neoadjuvant" ] ;
+     fhir:definition [ fhir:v "Neoadjuvant / Neoadjuverende" ]
+  ] [
+     fhir:code [ fhir:v "watchfull_waiting" ] ;
+     fhir:display [ fhir:v "Watchfull waiting" ] ;
+     fhir:definition [ fhir:v "Watchfull waiting" ]
+  ] [
+     fhir:code [ fhir:v "cerclage" ] ;
+     fhir:display [ fhir:v "Cerclage" ] ;
+     fhir:definition [ fhir:v "Cerclage / SNOMED-CT: 1455007" ]
+  ] [
+     fhir:code [ fhir:v "trochantergrip" ] ;
+     fhir:display [ fhir:v "Trochantergrip" ] ;
+     fhir:definition [ fhir:v "Trochantergrip" ]
+  ] [
+     fhir:code [ fhir:v "splint" ] ;
+     fhir:display [ fhir:v "Splint" ] ;
+     fhir:definition [ fhir:v "Splint / SNOMED-CT: 16650009" ]
+  ] [
+     fhir:code [ fhir:v "skinne" ] ;
+     fhir:display [ fhir:v "Skinne" ] ;
+     fhir:definition [ fhir:v "Skinne" ]
+  ] [
+     fhir:code [ fhir:v "stem" ] ;
+     fhir:display [ fhir:v "Stem" ] ;
+     fhir:definition [ fhir:v "Stem" ]
+  ] [
+     fhir:code [ fhir:v "uns" ] ;
+     fhir:display [ fhir:v "UNS" ] ;
+     fhir:definition [ fhir:v "UNS" ]
+  ] [
+     fhir:code [ fhir:v "retrahere" ] ;
+     fhir:display [ fhir:v "Retrahere" ] ;
+     fhir:definition [ fhir:v "Retraheret - Tilbagetrækning, skrumpning" ]
+  ] [
+     fhir:code [ fhir:v "exidere" ] ;
+     fhir:display [ fhir:v "Exidere" ] ;
+     fhir:definition [ fhir:v "Exideret - Fjerne" ]
+  ] [
+     fhir:code [ fhir:v "in_situ" ] ;
+     fhir:display [ fhir:v "Left in situ" ] ;
+     fhir:definition [ fhir:v "Efterladt in situ" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

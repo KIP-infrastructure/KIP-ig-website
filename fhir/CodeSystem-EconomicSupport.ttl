@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/EconomicSupport> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EconomicSupport"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem EconomicSupport</b></p><a name=\"EconomicSupport\"> </a><a name=\"hcEconomicSupport\"> </a><a name=\"EconomicSupport-en-US\"> </a><p>This case-insensitive code system <code>https://kip.sundk.dk/fhir/CodeSystem/EconomicSupport</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">salary<a name=\"EconomicSupport-salary\"> </a></td><td>Salary</td><td>Salary / Lønindkomst</td></tr><tr><td style=\"white-space:nowrap\">education_support<a name=\"EconomicSupport-education_support\"> </a></td><td>Education support</td><td>Education support / Uddannelsesstøtte</td></tr><tr><td style=\"white-space:nowrap\">cash_assistance<a name=\"EconomicSupport-cash_assistance\"> </a></td><td>Cash assistance</td><td>Cash assistance / Kontanthjælp</td></tr><tr><td style=\"white-space:nowrap\">pension<a name=\"EconomicSupport-pension\"> </a></td><td>Pension</td><td>Pension</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/EconomicSupport"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "EconomicSupport"] ; # 
+  fhir:title [ fhir:v "Economic support"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-09-30T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Economic support"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "salary" ] ;
+     fhir:display [ fhir:v "Salary" ] ;
+     fhir:definition [ fhir:v "Salary / Lønindkomst" ]
+  ] [
+     fhir:code [ fhir:v "education_support" ] ;
+     fhir:display [ fhir:v "Education support" ] ;
+     fhir:definition [ fhir:v "Education support / Uddannelsesstøtte" ]
+  ] [
+     fhir:code [ fhir:v "cash_assistance" ] ;
+     fhir:display [ fhir:v "Cash assistance" ] ;
+     fhir:definition [ fhir:v "Cash assistance / Kontanthjælp" ]
+  ] [
+     fhir:code [ fhir:v "pension" ] ;
+     fhir:display [ fhir:v "Pension" ] ;
+     fhir:definition [ fhir:v "Pension" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

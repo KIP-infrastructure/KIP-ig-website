@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="Undervisning"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet Undervisning</b></p><a name="Undervisning"> </a><a name="hcUndervisning"> </a><a name="Undervisning-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-EducationType.html"><code>https://kip.sundk.dk/fhir/CodeSystem/EducationType</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-EducationType.html#EducationType-onsite">onsite</a></td><td>Personligt fremmøde</td><td>Personligt fremmøde</td></tr><tr><td><a href="CodeSystem-EducationType.html#EducationType-elearn">elearn</a></td><td>e-læring</td><td>e-læring</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-GenericValues.html"><code>https://kip.sundk.dk/fhir/CodeSystem/GenericValues</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-GenericValues.html#GenericValues-all">all</a></td><td>Begge dele</td><td>All - used to indicate all values of a question</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.sundk.dk/fhir/ValueSet/Undervisning"/>
+  <version value="0.0.9"/>
+  <name value="Undervisning"/>
+  <title value="Undervisningstype"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2023-09-05T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Undervisningstype"/>
+  <compose>
+    <include>
+      <system value="https://kip.sundk.dk/fhir/CodeSystem/EducationType"/>
+      <concept>
+        <code value="onsite"/>
+        <display value="Personligt fremmøde"/>
+      </concept>
+      <concept>
+        <code value="elearn"/>
+        <display value="e-læring"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://kip.sundk.dk/fhir/CodeSystem/GenericValues"/>
+      <concept>
+        <code value="all"/>
+        <display value="Begge dele"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

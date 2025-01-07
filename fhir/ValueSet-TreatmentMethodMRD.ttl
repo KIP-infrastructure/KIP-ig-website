@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/ValueSet/TreatmentMethodMRD> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TreatmentMethodMRD"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet TreatmentMethodMRD</b></p><a name=\"TreatmentMethodMRD\"> </a><a name=\"hcTreatmentMethodMRD\"> </a><a name=\"TreatmentMethodMRD-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-TreatmentMethodMRD.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/TreatmentMethodMRD</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-TreatmentMethodMRD.html#TreatmentMethodMRD-flow\">flow</a></td><td>Flow</td><td>Flow</td></tr><tr><td><a href=\"CodeSystem-TreatmentMethodMRD.html#TreatmentMethodMRD-ngs\">ngs</a></td><td>NGS</td><td>NGS</td></tr><tr><td><a href=\"CodeSystem-TreatmentMethodMRD.html#TreatmentMethodMRD-pct\">pct</a></td><td>PCT</td><td>PCT</td></tr><tr><td><a href=\"CodeSystem-TreatmentMethodMRD.html#TreatmentMethodMRD-pet\">pet</a></td><td>PET</td><td>PET</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/ValueSet/TreatmentMethodMRD"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "TreatmentMethodMRD"] ; # 
+  fhir:title [ fhir:v "Behandlingsmetode MRD"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-07-14T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Anvendt behandlingsmetode MRD [DAMYDA]"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/TreatmentMethodMRD"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "flow" ] ;
+         fhir:display [ fhir:v "Flow" ]
+       ] [
+         fhir:code [ fhir:v "ngs" ] ;
+         fhir:display [ fhir:v "NGS" ]
+       ] [
+         fhir:code [ fhir:v "pct" ] ;
+         fhir:display [ fhir:v "PCT" ]
+       ] [
+         fhir:code [ fhir:v "pet" ] ;
+         fhir:display [ fhir:v "PET" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

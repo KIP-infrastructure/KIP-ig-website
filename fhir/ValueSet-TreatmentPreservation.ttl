@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/ValueSet/TreatmentPreservation> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TreatmentPreservation"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet TreatmentPreservation</b></p><a name=\"TreatmentPreservation\"> </a><a name=\"hcTreatmentPreservation\"> </a><a name=\"TreatmentPreservation-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-ATC.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/ATC</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L04AX04\">L04AX04</a></td><td>Lenalidomid</td><td>L04AX04 - lenalidomide</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L04AX06\">L04AX06</a></td><td>Pomalidomid</td><td>L04AX06 - pomalidomide</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L04AX02\">L04AX02</a></td><td>Thalidomid</td><td>L04AX02 - thalidomide</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01XG01\">L01XG01</a></td><td>Bortezomib</td><td>L01XG01 - bortezomib</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01XG02\">L01XG02</a></td><td>Carfilzomib</td><td>L01XG02 - carfilzomib</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-H02\">H02</a></td><td>Steroid (mono)</td><td>H02 - CORTICOSTEROIDS FOR SYSTEMIC USE</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/ValueSet/TreatmentPreservation"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "TreatmentPreservation"] ; # 
+  fhir:title [ fhir:v "Vedligeholdelsesbehandling"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-12-07T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Hvilken vedligeholdelsesbehandling er der påbegyndt"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/ATC"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "L04AX04" ] ;
+         fhir:display [ fhir:v "Lenalidomid" ]
+       ] [
+         fhir:code [ fhir:v "L04AX06" ] ;
+         fhir:display [ fhir:v "Pomalidomid" ]
+       ] [
+         fhir:code [ fhir:v "L04AX02" ] ;
+         fhir:display [ fhir:v "Thalidomid" ]
+       ] [
+         fhir:code [ fhir:v "L01XG01" ] ;
+         fhir:display [ fhir:v "Bortezomib" ]
+       ] [
+         fhir:code [ fhir:v "L01XG02" ] ;
+         fhir:display [ fhir:v "Carfilzomib" ]
+       ] [
+         fhir:code [ fhir:v "H02" ] ;
+         fhir:display [ fhir:v "Steroid (mono)" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/GenericValues"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "other" ] ;
+         fhir:display [ fhir:v "Andet" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

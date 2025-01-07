@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/ValueSet/Operationserfaring> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Operationserfaring"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Operationserfaring</b></p><a name=\"Operationserfaring\"> </a><a name=\"hcOperationserfaring\"> </a><a name=\"Operationserfaring-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Operationserfaring.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/Operationserfaring</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Operationserfaring.html#Operationserfaring-le10\">le10</a></td><td>A (0-10)</td><td>0-10 operationer</td></tr><tr><td><a href=\"CodeSystem-Operationserfaring.html#Operationserfaring-11-25\">11-25</a></td><td>B (11-25)</td><td>11-25 operationer</td></tr><tr><td><a href=\"CodeSystem-Operationserfaring.html#Operationserfaring-26-50\">26-50</a></td><td>C (26-50)</td><td>26-50 operationer</td></tr><tr><td><a href=\"CodeSystem-Operationserfaring.html#Operationserfaring-51-75\">51-75</a></td><td>D (51-75)</td><td>51-75 operationer</td></tr><tr><td><a href=\"CodeSystem-Operationserfaring.html#Operationserfaring-76-100\">76-100</a></td><td>E (76-100)</td><td>76-100 operationer</td></tr><tr><td><a href=\"CodeSystem-Operationserfaring.html#Operationserfaring-gt100\">gt100</a></td><td>F (&gt;100)</td><td>Mere end 100 operationer</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/ValueSet/Operationserfaring"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "Operationserfaring"] ; # 
+  fhir:title [ fhir:v "Operationserfaring"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-02-14T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Operationserfaring for operatører og assistenter"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/Operationserfaring"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "le10" ] ;
+         fhir:display [ fhir:v "A (0-10)" ]
+       ] [
+         fhir:code [ fhir:v "11-25" ] ;
+         fhir:display [ fhir:v "B (11-25)" ]
+       ] [
+         fhir:code [ fhir:v "26-50" ] ;
+         fhir:display [ fhir:v "C (26-50)" ]
+       ] [
+         fhir:code [ fhir:v "51-75" ] ;
+         fhir:display [ fhir:v "D (51-75)" ]
+       ] [
+         fhir:code [ fhir:v "76-100" ] ;
+         fhir:display [ fhir:v "E (76-100)" ]
+       ] [
+         fhir:code [ fhir:v "gt100" ] ;
+         fhir:display [ fhir:v "F (>100)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

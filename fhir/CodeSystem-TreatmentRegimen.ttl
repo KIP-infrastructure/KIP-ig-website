@@ -1,0 +1,187 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/TreatmentRegimen> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TreatmentRegimen"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem TreatmentRegimen</b></p><a name=\"TreatmentRegimen\"> </a><a name=\"hcTreatmentRegimen\"> </a><a name=\"TreatmentRegimen-en-US\"> </a><p>This case-insensitive code system <code>https://kip.sundk.dk/fhir/CodeSystem/TreatmentRegimen</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">toplusfem<a name=\"TreatmentRegimen-toplusfem\"> </a></td><td>2+5 eller lign, eks. CT</td><td>2+5 eller lign, eks. CT</td></tr><tr><td style=\"white-space:nowrap\">aida<a name=\"TreatmentRegimen-aida\"> </a></td><td>AIDA</td><td>AIDA</td></tr><tr><td style=\"white-space:nowrap\">all_ved<a name=\"TreatmentRegimen-all_ved\"> </a></td><td>ALL vedligehold</td><td>ALL vedligehold</td></tr><tr><td style=\"white-space:nowrap\">atoatra<a name=\"TreatmentRegimen-atoatra\"> </a></td><td>ATO+ATRA</td><td>ATO+ATRA</td></tr><tr><td style=\"white-space:nowrap\">azacitidinmono<a name=\"TreatmentRegimen-azacitidinmono\"> </a></td><td>Azacitidin monoterapi</td><td>Azacitidin monoterapi</td></tr><tr><td style=\"white-space:nowrap\">azacitidinvene<a name=\"TreatmentRegimen-azacitidinvene\"> </a></td><td>Azacitidin-venetoclax</td><td>Azacitidin-venetoclax</td></tr><tr><td style=\"white-space:nowrap\">hydrea<a name=\"TreatmentRegimen-hydrea\"> </a></td><td>Hydrea</td><td>Hydrea</td></tr><tr><td style=\"white-space:nowrap\">hdara_c<a name=\"TreatmentRegimen-hdara_c\"> </a></td><td>Hd-Ara-c +- supplement</td><td>Hd-Ara-c +- supplement</td></tr><tr><td style=\"white-space:nowrap\">ade<a name=\"TreatmentRegimen-ade\"> </a></td><td>ADE +- supplement</td><td>ADE +- supplement</td></tr><tr><td style=\"white-space:nowrap\">da<a name=\"TreatmentRegimen-da\"> </a></td><td>DA +- supplement</td><td>DA +- supplement</td></tr><tr><td style=\"white-space:nowrap\">da31087<a name=\"TreatmentRegimen-da31087\"> </a></td><td>DA inkl. 3+10, 3+8, 3+7</td><td>DA inkl. 3+10, 3+8, 3+7</td></tr><tr><td style=\"white-space:nowrap\">da31087my<a name=\"TreatmentRegimen-da31087my\"> </a></td><td>DA inkl. 3+10, 3+8, 3+7 + mylotarg</td><td>DA inkl. 3+10, 3+8, 3+7 + mylotarg</td></tr><tr><td style=\"white-space:nowrap\">da31087mi<a name=\"TreatmentRegimen-da31087mi\"> </a></td><td>DA inkl. 3+10, 3+8, 3+7 + midostaurin</td><td>DA inkl. 3+10, 3+8, 3+7 + midostaurin</td></tr><tr><td style=\"white-space:nowrap\">flag<a name=\"TreatmentRegimen-flag\"> </a></td><td>FLAG +- supplement</td><td>FLAG +- supplement</td></tr><tr><td style=\"white-space:nowrap\">flagmito<a name=\"TreatmentRegimen-flagmito\"> </a></td><td>FLAG-Ida eller lign inkl FLAG, Mito-FLAG</td><td>FLAG-Ida eller lign inkl FLAG, Mito-FLAG</td></tr><tr><td style=\"white-space:nowrap\">flagmitovene<a name=\"TreatmentRegimen-flagmitovene\"> </a></td><td>FLAG-Ida eller lign inkl FLAG, Mito-FLAG + venetoclax</td><td>FLAG-Ida eller lign inkl FLAG, Mito-FLAG + venetoclax</td></tr><tr><td style=\"white-space:nowrap\">gilteritinib<a name=\"TreatmentRegimen-gilteritinib\"> </a></td><td>Gilteritinib</td><td>Gilteritinib</td></tr><tr><td style=\"white-space:nowrap\">idarac<a name=\"TreatmentRegimen-idarac\"> </a></td><td>IdAraC</td><td>IdAraC</td></tr><tr><td style=\"white-space:nowrap\">inotuzumab<a name=\"TreatmentRegimen-inotuzumab\"> </a></td><td>Inotuzumab ozogamicin</td><td>Inotuzumab ozogamicin</td></tr><tr><td style=\"white-space:nowrap\">mace<a name=\"TreatmentRegimen-mace\"> </a></td><td>MACE +- supplement</td><td>MACE +- supplement</td></tr><tr><td style=\"white-space:nowrap\">midac<a name=\"TreatmentRegimen-midac\"> </a></td><td>MidAC</td><td>MidAC</td></tr><tr><td style=\"white-space:nowrap\">midostaurin_ved<a name=\"TreatmentRegimen-midostaurin_ved\"> </a></td><td>Midostaurin vedligehold</td><td>Midostaurin vedligehold</td></tr><tr><td style=\"white-space:nowrap\">ldara<a name=\"TreatmentRegimen-ldara\"> </a></td><td>LdARA-C +- supplement</td><td>LdARA-C +- supplement</td></tr><tr><td style=\"white-space:nowrap\">atra<a name=\"TreatmentRegimen-atra\"> </a></td><td>ATRA</td><td>ATRA</td></tr><tr><td style=\"white-space:nowrap\">apl_mt<a name=\"TreatmentRegimen-apl_mt\"> </a></td><td>APL-vedligeholdsbehandling</td><td>APL-vedligeholdsbehandling</td></tr><tr><td style=\"white-space:nowrap\">azacytidin_supplement<a name=\"TreatmentRegimen-azacytidin_supplement\"> </a></td><td>5-Azacytidin +- supplement</td><td>5-Azacytidin +- supplement</td></tr><tr><td style=\"white-space:nowrap\">blinatumomab<a name=\"TreatmentRegimen-blinatumomab\"> </a></td><td>Blinatumomab</td><td>Blinatumomab</td></tr><tr><td style=\"white-space:nowrap\">vyxeos<a name=\"TreatmentRegimen-vyxeos\"> </a></td><td>Vyxeos +- supplement</td><td>Vyxeos +- supplement</td></tr><tr><td style=\"white-space:nowrap\">nopho_2008<a name=\"TreatmentRegimen-nopho_2008\"> </a></td><td>NOPHO-2008</td><td>NOPHO-2008</td></tr><tr><td style=\"white-space:nowrap\">all_mt<a name=\"TreatmentRegimen-all_mt\"> </a></td><td>ALL vedligeholdelsesbehandling</td><td>ALL vedligeholdelsesbehandling</td></tr><tr><td style=\"white-space:nowrap\">other_ikke<a name=\"TreatmentRegimen-other_ikke\"> </a></td><td>Anden ikke-intensiv</td><td>Anden ikke-intensiv</td></tr><tr><td style=\"white-space:nowrap\">other_eks<a name=\"TreatmentRegimen-other_eks\"> </a></td><td>Anden eksperimentel</td><td>Anden eksperimentel</td></tr><tr><td style=\"white-space:nowrap\">other_semi<a name=\"TreatmentRegimen-other_semi\"> </a></td><td>Anden semiintensiv (f.eks. Plan B)</td><td>Anden semiintensiv (f.eks. Plan B)</td></tr><tr><td style=\"white-space:nowrap\">other_int<a name=\"TreatmentRegimen-other_int\"> </a></td><td>Anden intensiv (f.eks. BISHOP, Plan A)</td><td>Anden intensiv (f.eks. BISHOP, Plan A)</td></tr><tr><td style=\"white-space:nowrap\">hyper_cvad<a name=\"TreatmentRegimen-hyper_cvad\"> </a></td><td>Hyper-CVAD</td><td>Hyper-CVAD</td></tr><tr><td style=\"white-space:nowrap\">alltogether_mt<a name=\"TreatmentRegimen-alltogether_mt\"> </a></td><td>ALLtogether</td><td>ALLtogether</td></tr><tr><td style=\"white-space:nowrap\">experimental<a name=\"TreatmentRegimen-experimental\"> </a></td><td>anden behl incl anden experimentel</td><td>anden behl incl anden experimentel</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/TreatmentRegimen"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "TreatmentRegimen"] ; # 
+  fhir:title [ fhir:v "Treatment regimen"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-07-12T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Treatment regimen"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "37"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "toplusfem" ] ;
+     fhir:display [ fhir:v "2+5 eller lign, eks. CT" ] ;
+     fhir:definition [ fhir:v "2+5 eller lign, eks. CT" ]
+  ] [
+     fhir:code [ fhir:v "aida" ] ;
+     fhir:display [ fhir:v "AIDA" ] ;
+     fhir:definition [ fhir:v "AIDA" ]
+  ] [
+     fhir:code [ fhir:v "all_ved" ] ;
+     fhir:display [ fhir:v "ALL vedligehold" ] ;
+     fhir:definition [ fhir:v "ALL vedligehold" ]
+  ] [
+     fhir:code [ fhir:v "atoatra" ] ;
+     fhir:display [ fhir:v "ATO+ATRA" ] ;
+     fhir:definition [ fhir:v "ATO+ATRA" ]
+  ] [
+     fhir:code [ fhir:v "azacitidinmono" ] ;
+     fhir:display [ fhir:v "Azacitidin monoterapi" ] ;
+     fhir:definition [ fhir:v "Azacitidin monoterapi" ]
+  ] [
+     fhir:code [ fhir:v "azacitidinvene" ] ;
+     fhir:display [ fhir:v "Azacitidin-venetoclax" ] ;
+     fhir:definition [ fhir:v "Azacitidin-venetoclax" ]
+  ] [
+     fhir:code [ fhir:v "hydrea" ] ;
+     fhir:display [ fhir:v "Hydrea" ] ;
+     fhir:definition [ fhir:v "Hydrea" ]
+  ] [
+     fhir:code [ fhir:v "hdara_c" ] ;
+     fhir:display [ fhir:v "Hd-Ara-c +- supplement" ] ;
+     fhir:definition [ fhir:v "Hd-Ara-c +- supplement" ]
+  ] [
+     fhir:code [ fhir:v "ade" ] ;
+     fhir:display [ fhir:v "ADE +- supplement" ] ;
+     fhir:definition [ fhir:v "ADE +- supplement" ]
+  ] [
+     fhir:code [ fhir:v "da" ] ;
+     fhir:display [ fhir:v "DA +- supplement" ] ;
+     fhir:definition [ fhir:v "DA +- supplement" ]
+  ] [
+     fhir:code [ fhir:v "da31087" ] ;
+     fhir:display [ fhir:v "DA inkl. 3+10, 3+8, 3+7" ] ;
+     fhir:definition [ fhir:v "DA inkl. 3+10, 3+8, 3+7" ]
+  ] [
+     fhir:code [ fhir:v "da31087my" ] ;
+     fhir:display [ fhir:v "DA inkl. 3+10, 3+8, 3+7 + mylotarg" ] ;
+     fhir:definition [ fhir:v "DA inkl. 3+10, 3+8, 3+7 + mylotarg" ]
+  ] [
+     fhir:code [ fhir:v "da31087mi" ] ;
+     fhir:display [ fhir:v "DA inkl. 3+10, 3+8, 3+7 + midostaurin" ] ;
+     fhir:definition [ fhir:v "DA inkl. 3+10, 3+8, 3+7 + midostaurin" ]
+  ] [
+     fhir:code [ fhir:v "flag" ] ;
+     fhir:display [ fhir:v "FLAG +- supplement" ] ;
+     fhir:definition [ fhir:v "FLAG +- supplement" ]
+  ] [
+     fhir:code [ fhir:v "flagmito" ] ;
+     fhir:display [ fhir:v "FLAG-Ida eller lign inkl FLAG, Mito-FLAG" ] ;
+     fhir:definition [ fhir:v "FLAG-Ida eller lign inkl FLAG, Mito-FLAG" ]
+  ] [
+     fhir:code [ fhir:v "flagmitovene" ] ;
+     fhir:display [ fhir:v "FLAG-Ida eller lign inkl FLAG, Mito-FLAG + venetoclax" ] ;
+     fhir:definition [ fhir:v "FLAG-Ida eller lign inkl FLAG, Mito-FLAG + venetoclax" ]
+  ] [
+     fhir:code [ fhir:v "gilteritinib" ] ;
+     fhir:display [ fhir:v "Gilteritinib" ] ;
+     fhir:definition [ fhir:v "Gilteritinib" ]
+  ] [
+     fhir:code [ fhir:v "idarac" ] ;
+     fhir:display [ fhir:v "IdAraC" ] ;
+     fhir:definition [ fhir:v "IdAraC" ]
+  ] [
+     fhir:code [ fhir:v "inotuzumab" ] ;
+     fhir:display [ fhir:v "Inotuzumab ozogamicin" ] ;
+     fhir:definition [ fhir:v "Inotuzumab ozogamicin" ]
+  ] [
+     fhir:code [ fhir:v "mace" ] ;
+     fhir:display [ fhir:v "MACE +- supplement" ] ;
+     fhir:definition [ fhir:v "MACE +- supplement" ]
+  ] [
+     fhir:code [ fhir:v "midac" ] ;
+     fhir:display [ fhir:v "MidAC" ] ;
+     fhir:definition [ fhir:v "MidAC" ]
+  ] [
+     fhir:code [ fhir:v "midostaurin_ved" ] ;
+     fhir:display [ fhir:v "Midostaurin vedligehold" ] ;
+     fhir:definition [ fhir:v "Midostaurin vedligehold" ]
+  ] [
+     fhir:code [ fhir:v "ldara" ] ;
+     fhir:display [ fhir:v "LdARA-C +- supplement" ] ;
+     fhir:definition [ fhir:v "LdARA-C +- supplement" ]
+  ] [
+     fhir:code [ fhir:v "atra" ] ;
+     fhir:display [ fhir:v "ATRA" ] ;
+     fhir:definition [ fhir:v "ATRA" ]
+  ] [
+     fhir:code [ fhir:v "apl_mt" ] ;
+     fhir:display [ fhir:v "APL-vedligeholdsbehandling" ] ;
+     fhir:definition [ fhir:v "APL-vedligeholdsbehandling" ]
+  ] [
+     fhir:code [ fhir:v "azacytidin_supplement" ] ;
+     fhir:display [ fhir:v "5-Azacytidin +- supplement" ] ;
+     fhir:definition [ fhir:v "5-Azacytidin +- supplement" ]
+  ] [
+     fhir:code [ fhir:v "blinatumomab" ] ;
+     fhir:display [ fhir:v "Blinatumomab" ] ;
+     fhir:definition [ fhir:v "Blinatumomab" ]
+  ] [
+     fhir:code [ fhir:v "vyxeos" ] ;
+     fhir:display [ fhir:v "Vyxeos +- supplement" ] ;
+     fhir:definition [ fhir:v "Vyxeos +- supplement" ]
+  ] [
+     fhir:code [ fhir:v "nopho_2008" ] ;
+     fhir:display [ fhir:v "NOPHO-2008" ] ;
+     fhir:definition [ fhir:v "NOPHO-2008" ]
+  ] [
+     fhir:code [ fhir:v "all_mt" ] ;
+     fhir:display [ fhir:v "ALL vedligeholdelsesbehandling" ] ;
+     fhir:definition [ fhir:v "ALL vedligeholdelsesbehandling" ]
+  ] [
+     fhir:code [ fhir:v "other_ikke" ] ;
+     fhir:display [ fhir:v "Anden ikke-intensiv" ] ;
+     fhir:definition [ fhir:v "Anden ikke-intensiv" ]
+  ] [
+     fhir:code [ fhir:v "other_eks" ] ;
+     fhir:display [ fhir:v "Anden eksperimentel" ] ;
+     fhir:definition [ fhir:v "Anden eksperimentel" ]
+  ] [
+     fhir:code [ fhir:v "other_semi" ] ;
+     fhir:display [ fhir:v "Anden semiintensiv (f.eks. Plan B)" ] ;
+     fhir:definition [ fhir:v "Anden semiintensiv (f.eks. Plan B)" ]
+  ] [
+     fhir:code [ fhir:v "other_int" ] ;
+     fhir:display [ fhir:v "Anden intensiv (f.eks. BISHOP, Plan A)" ] ;
+     fhir:definition [ fhir:v "Anden intensiv (f.eks. BISHOP, Plan A)" ]
+  ] [
+     fhir:code [ fhir:v "hyper_cvad" ] ;
+     fhir:display [ fhir:v "Hyper-CVAD" ] ;
+     fhir:definition [ fhir:v "Hyper-CVAD" ]
+  ] [
+     fhir:code [ fhir:v "alltogether_mt" ] ;
+     fhir:display [ fhir:v "ALLtogether" ] ;
+     fhir:definition [ fhir:v "ALLtogether" ]
+  ] [
+     fhir:code [ fhir:v "experimental" ] ;
+     fhir:display [ fhir:v "anden behl incl anden experimentel" ] ;
+     fhir:definition [ fhir:v "anden behl incl anden experimentel" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

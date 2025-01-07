@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ErklaeringRETSPSYK"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ErklaeringRETSPSYK</b></p><a name="ErklaeringRETSPSYK"> </a><a name="hcErklaeringRETSPSYK"> </a><a name="ErklaeringRETSPSYK-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-MentalDeclaration.html"><code>https://kip.sundk.dk/fhir/CodeSystem/MentalDeclaration</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-MentalDeclaration.html#MentalDeclaration-new_mental_examination">new_mental_examination</a></td><td>Ny mentalundersøgelse er foretaget i forbindelse med aktuelle dom</td><td>Ny mentalundersøgelse er foretaget i forbindelse med aktuelle dom</td></tr><tr><td><a href="CodeSystem-MentalDeclaration.html#MentalDeclaration-previous_mental_examination">previous_mental_examination</a></td><td>Der foreligger mentalundersøgelse fra tidligere, der anvendes i aktuel sag</td><td>Der foreligger mentalundersøgelse fra tidligere, der anvendes i aktuel sag</td></tr><tr><td><a href="CodeSystem-MentalDeclaration.html#MentalDeclaration-statement">statement</a></td><td>Udtalelse givet efter igangværende undersøgelse af behandlingsansvarlig i henhold til dom</td><td>Udtalelse givet efter igangværende undersøgelse af behandlingsansvarlig i henhold til dom</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-GenericValues.html"><code>https://kip.sundk.dk/fhir/CodeSystem/GenericValues</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-GenericValues.html#GenericValues-other">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.sundk.dk/fhir/ValueSet/ErklaeringRETSPSYK"/>
+  <version value="0.0.9"/>
+  <name value="ErklaeringRETSPSYK"/>
+  <title value="Erklæring (RETSPSYK)"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-09-30T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Erklæring (RETSPSYK)"/>
+  <compose>
+    <include>
+      <system value="https://kip.sundk.dk/fhir/CodeSystem/MentalDeclaration"/>
+      <concept>
+        <code value="new_mental_examination"/>
+        <display value="Ny mentalundersøgelse er foretaget i forbindelse med aktuelle dom"/>
+      </concept>
+      <concept>
+        <code value="previous_mental_examination"/>
+        <display value="Der foreligger mentalundersøgelse fra tidligere, der anvendes i aktuel sag"/>
+      </concept>
+      <concept>
+        <code value="statement"/>
+        <display value="Udtalelse givet efter igangværende undersøgelse af behandlingsansvarlig i henhold til dom"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://kip.sundk.dk/fhir/CodeSystem/GenericValues"/>
+      <concept>
+        <code value="other"/>
+        <display value="Andet"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

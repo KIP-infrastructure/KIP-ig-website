@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="BehandlingDHR"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet BehandlingDHR</b></p><a name="BehandlingDHR"> </a><a name="hcBehandlingDHR"> </a><a name="BehandlingDHR-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-TreatmentType.html"><code>https://kip.sundk.dk/fhir/CodeSystem/TreatmentType</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-TreatmentType.html#TreatmentType-cerclage">cerclage</a></td><td>Cerclage</td><td>Cerclage / SNOMED-CT: 1455007</td></tr><tr><td><a href="CodeSystem-TreatmentType.html#TreatmentType-trochantergrip">trochantergrip</a></td><td>Trochantergrip</td><td>Trochantergrip</td></tr><tr><td><a href="CodeSystem-TreatmentType.html#TreatmentType-skinne">skinne</a></td><td>Skinne</td><td>Skinne</td></tr><tr><td><a href="CodeSystem-TreatmentType.html#TreatmentType-stem">stem</a></td><td>Langt stem</td><td>Stem</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-GenericValues.html"><code>https://kip.sundk.dk/fhir/CodeSystem/GenericValues</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-GenericValues.html#GenericValues-other">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.sundk.dk/fhir/ValueSet/BehandlingDHR"/>
+  <version value="0.0.9"/>
+  <name value="BehandlingDHR"/>
+  <title value="Behandling (DHR)"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-11-08T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Behandling (DHR)"/>
+  <compose>
+    <include>
+      <system value="https://kip.sundk.dk/fhir/CodeSystem/TreatmentType"/>
+      <concept>
+        <code value="cerclage"/>
+        <display value="Cerclage"/>
+      </concept>
+      <concept>
+        <code value="trochantergrip"/>
+        <display value="Trochantergrip"/>
+      </concept>
+      <concept>
+        <code value="skinne"/>
+        <display value="Skinne"/>
+      </concept>
+      <concept>
+        <code value="stem"/>
+        <display value="Langt stem"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://kip.sundk.dk/fhir/CodeSystem/GenericValues"/>
+      <concept>
+        <code value="other"/>
+        <display value="Andet"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

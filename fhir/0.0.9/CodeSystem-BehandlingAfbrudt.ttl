@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/BehandlingAfbrudt> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BehandlingAfbrudt"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem BehandlingAfbrudt</b></p><a name=\"BehandlingAfbrudt\"> </a><a name=\"hcBehandlingAfbrudt\"> </a><a name=\"BehandlingAfbrudt-en-US\"> </a><p>This case-insensitive code system <code>https://kip.sundk.dk/fhir/CodeSystem/BehandlingAfbrudt</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">transplant<a name=\"BehandlingAfbrudt-transplant\"> </a></td><td>Transplantation</td><td>Transplantation</td></tr><tr><td style=\"white-space:nowrap\">peritonitis<a name=\"BehandlingAfbrudt-peritonitis\"> </a></td><td>Peritonitis</td><td>Peritonitis</td></tr><tr><td style=\"white-space:nowrap\">ultrafilt_svigt<a name=\"BehandlingAfbrudt-ultrafilt_svigt\"> </a></td><td>Ultrafiltrationssvigt</td><td>Ultrafiltrationssvigt</td></tr><tr><td style=\"white-space:nowrap\">inadekvat_dialyse<a name=\"BehandlingAfbrudt-inadekvat_dialyse\"> </a></td><td>Inadekvat dialyse</td><td>Inadekvat dialyse</td></tr><tr><td style=\"white-space:nowrap\">hernia<a name=\"BehandlingAfbrudt-hernia\"> </a></td><td>Hernia (inkl Diafragma)</td><td>Hernia (inkl Diafragma)</td></tr><tr><td style=\"white-space:nowrap\">teknisk<a name=\"BehandlingAfbrudt-teknisk\"> </a></td><td>Teknisk (fx kateterproblem)</td><td>Teknisk (fx kateterproblem)</td></tr><tr><td style=\"white-space:nowrap\">anden_medicinsk<a name=\"BehandlingAfbrudt-anden_medicinsk\"> </a></td><td>Andre medicinske årsager (fx apopleksi)</td><td>Andre medicinske årsager (fx apopleksi)</td></tr><tr><td style=\"white-space:nowrap\">patient_valg<a name=\"BehandlingAfbrudt-patient_valg\"> </a></td><td>Patient valg</td><td>Patient valg</td></tr><tr><td style=\"white-space:nowrap\">socialt<a name=\"BehandlingAfbrudt-socialt\"> </a></td><td>Socialt</td><td>Socialt</td></tr><tr><td style=\"white-space:nowrap\">abdominal_op<a name=\"BehandlingAfbrudt-abdominal_op\"> </a></td><td>Abdominal operation</td><td>Abdominal operation</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/BehandlingAfbrudt"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "BehandlingAfbrudt"] ; # 
+  fhir:title [ fhir:v "Behandling afbrudt/ophørt"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-01-10T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Årsager til behandling eller forløb er afbrudt/ophørt"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "transplant" ] ;
+     fhir:display [ fhir:v "Transplantation" ] ;
+     fhir:definition [ fhir:v "Transplantation" ]
+  ] [
+     fhir:code [ fhir:v "peritonitis" ] ;
+     fhir:display [ fhir:v "Peritonitis" ] ;
+     fhir:definition [ fhir:v "Peritonitis" ]
+  ] [
+     fhir:code [ fhir:v "ultrafilt_svigt" ] ;
+     fhir:display [ fhir:v "Ultrafiltrationssvigt" ] ;
+     fhir:definition [ fhir:v "Ultrafiltrationssvigt" ]
+  ] [
+     fhir:code [ fhir:v "inadekvat_dialyse" ] ;
+     fhir:display [ fhir:v "Inadekvat dialyse" ] ;
+     fhir:definition [ fhir:v "Inadekvat dialyse" ]
+  ] [
+     fhir:code [ fhir:v "hernia" ] ;
+     fhir:display [ fhir:v "Hernia (inkl Diafragma)" ] ;
+     fhir:definition [ fhir:v "Hernia (inkl Diafragma)" ]
+  ] [
+     fhir:code [ fhir:v "teknisk" ] ;
+     fhir:display [ fhir:v "Teknisk (fx kateterproblem)" ] ;
+     fhir:definition [ fhir:v "Teknisk (fx kateterproblem)" ]
+  ] [
+     fhir:code [ fhir:v "anden_medicinsk" ] ;
+     fhir:display [ fhir:v "Andre medicinske årsager (fx apopleksi)" ] ;
+     fhir:definition [ fhir:v "Andre medicinske årsager (fx apopleksi)" ]
+  ] [
+     fhir:code [ fhir:v "patient_valg" ] ;
+     fhir:display [ fhir:v "Patient valg" ] ;
+     fhir:definition [ fhir:v "Patient valg" ]
+  ] [
+     fhir:code [ fhir:v "socialt" ] ;
+     fhir:display [ fhir:v "Socialt" ] ;
+     fhir:definition [ fhir:v "Socialt" ]
+  ] [
+     fhir:code [ fhir:v "abdominal_op" ] ;
+     fhir:display [ fhir:v "Abdominal operation" ] ;
+     fhir:definition [ fhir:v "Abdominal operation" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="DomAnbefalingRETSPSYK"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet DomAnbefalingRETSPSYK</b></p><a name="DomAnbefalingRETSPSYK"> </a><a name="hcDomAnbefalingRETSPSYK"> </a><a name="DomAnbefalingRETSPSYK-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-Verdict.html"><code>https://kip.sundk.dk/fhir/CodeSystem/Verdict</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-Verdict.html#Verdict-sustainment">sustainment</a></td><td>Opretholdelse</td><td>Sustainment / Opretholdelse</td></tr><tr><td><a href="CodeSystem-Verdict.html#Verdict-extension_time">extension_time</a></td><td>Forlængelse af længstetid</td><td>Extension, time / Forlængelse af længstetid</td></tr><tr><td><a href="CodeSystem-Verdict.html#Verdict-extension_measure">extension_measure</a></td><td>Forlængelse af foranstaltning</td><td>Extension, measure / Forlængelse af foranstaltning</td></tr><tr><td><a href="CodeSystem-Verdict.html#Verdict-cancellation">cancellation</a></td><td>Ophævelse</td><td>Cancellation / Ophævelse</td></tr><tr><td><a href="CodeSystem-Verdict.html#Verdict-intensification">intensification</a></td><td>Skærpelse</td><td>Intensification / Skærpelse</td></tr><tr><td><a href="CodeSystem-Verdict.html#Verdict-relaxation">relaxation</a></td><td>Lempelse</td><td>Relaxation / Lempelse</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-GenericValues.html"><code>https://kip.sundk.dk/fhir/CodeSystem/GenericValues</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-GenericValues.html#GenericValues-other">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.sundk.dk/fhir/ValueSet/DomAnbefalingRETSPSYK"/>
+  <version value="0.0.9"/>
+  <name value="DomAnbefalingRETSPSYK"/>
+  <title value="Dom - Anbefaling (RETSPSYK)"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-10-03T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Dom - Anbefaling (RETSPSYK)"/>
+  <compose>
+    <include>
+      <system value="https://kip.sundk.dk/fhir/CodeSystem/Verdict"/>
+      <concept>
+        <code value="sustainment"/>
+        <display value="Opretholdelse"/>
+      </concept>
+      <concept>
+        <code value="extension_time"/>
+        <display value="Forlængelse af længstetid"/>
+      </concept>
+      <concept>
+        <code value="extension_measure"/>
+        <display value="Forlængelse af foranstaltning"/>
+      </concept>
+      <concept>
+        <code value="cancellation"/>
+        <display value="Ophævelse"/>
+      </concept>
+      <concept>
+        <code value="intensification"/>
+        <display value="Skærpelse"/>
+      </concept>
+      <concept>
+        <code value="relaxation"/>
+        <display value="Lempelse"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://kip.sundk.dk/fhir/CodeSystem/GenericValues"/>
+      <concept>
+        <code value="other"/>
+        <display value="Andet"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

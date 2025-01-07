@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/TreatmentNotGiven> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TreatmentNotGiven"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem TreatmentNotGiven</b></p><a name=\"TreatmentNotGiven\"> </a><a name=\"hcTreatmentNotGiven\"> </a><a name=\"TreatmentNotGiven-en-US\"> </a><p>This case-insensitive code system <code>https://kip.sundk.dk/fhir/CodeSystem/TreatmentNotGiven</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">unsuitable<a name=\"TreatmentNotGiven-unsuitable\"> </a></td><td>Unsuitable for treatment</td><td>Unsuitable for treatment / Uegnet til behandling</td></tr><tr><td style=\"white-space:nowrap\">unwanted<a name=\"TreatmentNotGiven-unwanted\"> </a></td><td>Unwanted treatment</td><td>Unwanted treatment / Ønskede ikke behandling</td></tr><tr><td style=\"white-space:nowrap\">died<a name=\"TreatmentNotGiven-died\"> </a></td><td>Died before treatment</td><td>Died before treatment / Døde før behandling</td></tr><tr><td style=\"white-space:nowrap\">lack_capacity<a name=\"TreatmentNotGiven-lack_capacity\"> </a></td><td>Lack of capacity</td><td>Lack of capacity / Manglende kapacitet</td></tr><tr><td style=\"white-space:nowrap\">other_palliative_department<a name=\"TreatmentNotGiven-other_palliative_department\"> </a></td><td>Other palliative department</td><td>Other palliative department / Behandlet af anden palliativ enhed</td></tr><tr><td style=\"white-space:nowrap\">bad_condition<a name=\"TreatmentNotGiven-bad_condition\"> </a></td><td>Bad condition</td><td>Bad condition / For dårlig</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/TreatmentNotGiven"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "TreatmentNotGiven"] ; # 
+  fhir:title [ fhir:v "Treatment not given; cause"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-08-23T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Treatment not given; cause"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "unsuitable" ] ;
+     fhir:display [ fhir:v "Unsuitable for treatment" ] ;
+     fhir:definition [ fhir:v "Unsuitable for treatment / Uegnet til behandling" ]
+  ] [
+     fhir:code [ fhir:v "unwanted" ] ;
+     fhir:display [ fhir:v "Unwanted treatment" ] ;
+     fhir:definition [ fhir:v "Unwanted treatment / Ønskede ikke behandling" ]
+  ] [
+     fhir:code [ fhir:v "died" ] ;
+     fhir:display [ fhir:v "Died before treatment" ] ;
+     fhir:definition [ fhir:v "Died before treatment / Døde før behandling" ]
+  ] [
+     fhir:code [ fhir:v "lack_capacity" ] ;
+     fhir:display [ fhir:v "Lack of capacity" ] ;
+     fhir:definition [ fhir:v "Lack of capacity / Manglende kapacitet" ]
+  ] [
+     fhir:code [ fhir:v "other_palliative_department" ] ;
+     fhir:display [ fhir:v "Other palliative department" ] ;
+     fhir:definition [ fhir:v "Other palliative department / Behandlet af anden palliativ enhed" ]
+  ] [
+     fhir:code [ fhir:v "bad_condition" ] ;
+     fhir:display [ fhir:v "Bad condition" ] ;
+     fhir:definition [ fhir:v "Bad condition / For dårlig" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

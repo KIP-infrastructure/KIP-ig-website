@@ -1,0 +1,56 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ManglendeVisitation",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ManglendeVisitation</b></p><a name=\"ManglendeVisitation\"> </a><a name=\"hcManglendeVisitation\"> </a><a name=\"ManglendeVisitation-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-VisitationCriteriaNotMet.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/VisitationCriteriaNotMet</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-VisitationCriteriaNotMet.html#VisitationCriteriaNotMet-not_terminally_ill\">not_terminally_ill</a></td><td>Ikke uhelbredeligt syg</td><td>Not terminally ill / Ikke uhelbredeligt syg</td></tr><tr><td><a href=\"CodeSystem-VisitationCriteriaNotMet.html#VisitationCriteriaNotMet-no_symptomatology\">no_symptomatology</a></td><td>Ikke symptomatologi, som kræver en specialiseret/tværfaglig indsats</td><td>No symptomatology / Ikke symptomatologi, som kræver en specialiseret/tværfaglig indsats</td></tr><tr><td><a href=\"CodeSystem-VisitationCriteriaNotMet.html#VisitationCriteriaNotMet-not_diagnostically_completed\">not_diagnostically_completed</a></td><td>Ikke diagnostisk færdigudredt</td><td>Not diagnostically completed / Ikke diagnostisk færdigudredt</td></tr><tr><td><a href=\"CodeSystem-VisitationCriteriaNotMet.html#VisitationCriteriaNotMet-not_informed\">not_informed</a></td><td>Patienten ikke velinformeret om sin sygdom</td><td>Patient not well informed / Patienten ikke velinformeret om sin sygdom</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.sundk.dk/fhir/ValueSet/ManglendeVisitation",
+  "version" : "0.0.9",
+  "name" : "ManglendeVisitation",
+  "title" : "Visitationskriterier uopfyldt",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-09-06T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Hvilke visitationskriterier var ikke opfyldt",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/VisitationCriteriaNotMet",
+      "concept" : [{
+        "code" : "not_terminally_ill",
+        "display" : "Ikke uhelbredeligt syg"
+      },
+      {
+        "code" : "no_symptomatology",
+        "display" : "Ikke symptomatologi, som kræver en specialiseret/tværfaglig indsats"
+      },
+      {
+        "code" : "not_diagnostically_completed",
+        "display" : "Ikke diagnostisk færdigudredt"
+      },
+      {
+        "code" : "not_informed",
+        "display" : "Patienten ikke velinformeret om sin sygdom"
+      }]
+    },
+    {
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "other",
+        "display" : "Andet"
+      }]
+    }]
+  }
+}

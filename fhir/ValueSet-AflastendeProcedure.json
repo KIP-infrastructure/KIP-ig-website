@@ -1,0 +1,56 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "AflastendeProcedure",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet AflastendeProcedure</b></p><a name=\"AflastendeProcedure\"> </a><a name=\"hcAflastendeProcedure\"> </a><a name=\"AflastendeProcedure-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-none\">none</a></td><td>Ingen</td><td>None - used to choose none of the available values</td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Anden</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-ProcedureType.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/ProcedureType</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-stent\">stent</a></td><td>Stent</td><td>Stent / SNOMED-CT: 65818007</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-stoma_shunt\">stoma_shunt</a></td><td>Aflastende stomi</td><td>Kun aflastende stomi eller intern shunt</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-damage_control\">damage_control</a></td><td>Damage controle</td><td>Damage control</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.sundk.dk/fhir/ValueSet/AflastendeProcedure",
+  "version" : "0.0.9",
+  "name" : "AflastendeProcedure",
+  "title" : "Aflastende procedure DCCG",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-09-07T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Aflastende procedure DCCG",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "none",
+        "display" : "Ingen"
+      },
+      {
+        "code" : "other",
+        "display" : "Anden"
+      }]
+    },
+    {
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/ProcedureType",
+      "concept" : [{
+        "code" : "stent",
+        "display" : "Stent"
+      },
+      {
+        "code" : "stoma_shunt",
+        "display" : "Aflastende stomi"
+      },
+      {
+        "code" : "damage_control",
+        "display" : "Damage controle"
+      }]
+    }]
+  }
+}

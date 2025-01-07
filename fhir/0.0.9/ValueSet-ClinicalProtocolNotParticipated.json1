@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ClinicalProtocolNotParticipated",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ClinicalProtocolNotParticipated</b></p><a name=\"ClinicalProtocolNotParticipated\"> </a><a name=\"hcClinicalProtocolNotParticipated\"> </a><a name=\"ClinicalProtocolNotParticipated-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-ClinicalProtocolNotParticipated.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/ClinicalProtocolNotParticipated</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ClinicalProtocolNotParticipated.html#ClinicalProtocolNotParticipated-rejected\">rejected</a></td><td>Tilbudt klinisk forsøg, men deltagelse afvist af patient</td><td>Patient rejected invitation</td></tr><tr><td><a href=\"CodeSystem-ClinicalProtocolNotParticipated.html#ClinicalProtocolNotParticipated-deselected\">deselected</a></td><td>Patienten var kandidat til et klinisk forsøg, men deltagelse fravalgt af afdelingen</td><td>Health department deselected patient</td></tr><tr><td><a href=\"CodeSystem-ClinicalProtocolNotParticipated.html#ClinicalProtocolNotParticipated-no_invitation\">no_invitation</a></td><td>Afdelingen har ikke et tilbud om deltagelse i klinisk forsøg</td><td>Patient was not invited</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.sundk.dk/fhir/ValueSet/ClinicalProtocolNotParticipated",
+  "version" : "0.0.9",
+  "name" : "ClinicalProtocolNotParticipated",
+  "title" : "Hvorfor er patienten ikke involveret",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-06-07T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Hvorfor er patienten ikke involveret",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/ClinicalProtocolNotParticipated",
+      "concept" : [{
+        "code" : "rejected",
+        "display" : "Tilbudt klinisk forsøg, men deltagelse afvist af patient"
+      },
+      {
+        "code" : "deselected",
+        "display" : "Patienten var kandidat til et klinisk forsøg, men deltagelse fravalgt af afdelingen"
+      },
+      {
+        "code" : "no_invitation",
+        "display" : "Afdelingen har ikke et tilbud om deltagelse i klinisk forsøg"
+      }]
+    }]
+  }
+}

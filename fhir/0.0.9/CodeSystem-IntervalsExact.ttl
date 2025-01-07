@@ -1,0 +1,243 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/IntervalsExact> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "IntervalsExact"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IntervalsExact</b></p><a name=\"IntervalsExact\"> </a><a name=\"hcIntervalsExact\"> </a><a name=\"IntervalsExact-en-US\"> </a><p>This case-insensitive code system <code>https://kip.sundk.dk/fhir/CodeSystem/IntervalsExact</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">m10<a name=\"IntervalsExact-m10\"> </a></td><td>-10</td><td>-10,0</td></tr><tr><td style=\"white-space:nowrap\">m9-5<a name=\"IntervalsExact-m9-5\"> </a></td><td>-9,5</td><td>-9,5</td></tr><tr><td style=\"white-space:nowrap\">m9<a name=\"IntervalsExact-m9\"> </a></td><td>-9</td><td>-9,0</td></tr><tr><td style=\"white-space:nowrap\">m8-5<a name=\"IntervalsExact-m8-5\"> </a></td><td>-8,5</td><td>-8,5</td></tr><tr><td style=\"white-space:nowrap\">m8<a name=\"IntervalsExact-m8\"> </a></td><td>-8</td><td>-8,0</td></tr><tr><td style=\"white-space:nowrap\">m7-5<a name=\"IntervalsExact-m7-5\"> </a></td><td>-7,5</td><td>-7,5</td></tr><tr><td style=\"white-space:nowrap\">m7<a name=\"IntervalsExact-m7\"> </a></td><td>-7</td><td>-7,0</td></tr><tr><td style=\"white-space:nowrap\">m6-5<a name=\"IntervalsExact-m6-5\"> </a></td><td>-6,5</td><td>-6,5</td></tr><tr><td style=\"white-space:nowrap\">m6<a name=\"IntervalsExact-m6\"> </a></td><td>-6</td><td>-6,0</td></tr><tr><td style=\"white-space:nowrap\">m5-5<a name=\"IntervalsExact-m5-5\"> </a></td><td>-5,5</td><td>-5,5</td></tr><tr><td style=\"white-space:nowrap\">m5<a name=\"IntervalsExact-m5\"> </a></td><td>-5</td><td>-5,0</td></tr><tr><td style=\"white-space:nowrap\">m4-5<a name=\"IntervalsExact-m4-5\"> </a></td><td>-4,5</td><td>-4,5</td></tr><tr><td style=\"white-space:nowrap\">m4<a name=\"IntervalsExact-m4\"> </a></td><td>-4</td><td>-4,0</td></tr><tr><td style=\"white-space:nowrap\">m3-5<a name=\"IntervalsExact-m3-5\"> </a></td><td>-3,5</td><td>-3,5</td></tr><tr><td style=\"white-space:nowrap\">m3<a name=\"IntervalsExact-m3\"> </a></td><td>-3</td><td>-3,0</td></tr><tr><td style=\"white-space:nowrap\">m2-5<a name=\"IntervalsExact-m2-5\"> </a></td><td>-2,5</td><td>-2,5</td></tr><tr><td style=\"white-space:nowrap\">m2<a name=\"IntervalsExact-m2\"> </a></td><td>-2</td><td>-2,0</td></tr><tr><td style=\"white-space:nowrap\">m1-5<a name=\"IntervalsExact-m1-5\"> </a></td><td>-1,5</td><td>-1,5</td></tr><tr><td style=\"white-space:nowrap\">m1<a name=\"IntervalsExact-m1\"> </a></td><td>-1</td><td>-1,0</td></tr><tr><td style=\"white-space:nowrap\">m0-5<a name=\"IntervalsExact-m0-5\"> </a></td><td>-0,5</td><td>-0,5</td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"IntervalsExact-0\"> </a></td><td>0</td><td>0,0</td></tr><tr><td style=\"white-space:nowrap\">0-5<a name=\"IntervalsExact-0-5\"> </a></td><td>0,5</td><td>0,5</td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"IntervalsExact-1\"> </a></td><td>1</td><td>1,0</td></tr><tr><td style=\"white-space:nowrap\">1-5<a name=\"IntervalsExact-1-5\"> </a></td><td>1,5</td><td>1,5</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"IntervalsExact-2\"> </a></td><td>2</td><td>2,0</td></tr><tr><td style=\"white-space:nowrap\">2-5<a name=\"IntervalsExact-2-5\"> </a></td><td>2,5</td><td>2,5</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"IntervalsExact-3\"> </a></td><td>3</td><td>3,0</td></tr><tr><td style=\"white-space:nowrap\">3-5<a name=\"IntervalsExact-3-5\"> </a></td><td>3,5</td><td>3,5</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"IntervalsExact-4\"> </a></td><td>4</td><td>4,0</td></tr><tr><td style=\"white-space:nowrap\">4-5<a name=\"IntervalsExact-4-5\"> </a></td><td>4,5</td><td>4,5</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"IntervalsExact-5\"> </a></td><td>5</td><td>5,0</td></tr><tr><td style=\"white-space:nowrap\">5-5<a name=\"IntervalsExact-5-5\"> </a></td><td>5,5</td><td>5,5</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"IntervalsExact-6\"> </a></td><td>6</td><td>6,0</td></tr><tr><td style=\"white-space:nowrap\">6-5<a name=\"IntervalsExact-6-5\"> </a></td><td>6,5</td><td>6,5</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"IntervalsExact-7\"> </a></td><td>7</td><td>7,0</td></tr><tr><td style=\"white-space:nowrap\">7-5<a name=\"IntervalsExact-7-5\"> </a></td><td>7,5</td><td>7,5</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"IntervalsExact-8\"> </a></td><td>8</td><td>8,0</td></tr><tr><td style=\"white-space:nowrap\">8-5<a name=\"IntervalsExact-8-5\"> </a></td><td>8,5</td><td>8,5</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"IntervalsExact-9\"> </a></td><td>9</td><td>9,0</td></tr><tr><td style=\"white-space:nowrap\">9-5<a name=\"IntervalsExact-9-5\"> </a></td><td>9,5</td><td>9,5</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"IntervalsExact-10\"> </a></td><td>10</td><td>10,0</td></tr><tr><td style=\"white-space:nowrap\">10-5<a name=\"IntervalsExact-10-5\"> </a></td><td>10,5</td><td>10,5</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"IntervalsExact-11\"> </a></td><td>11</td><td>11,0</td></tr><tr><td style=\"white-space:nowrap\">11-5<a name=\"IntervalsExact-11-5\"> </a></td><td>11,5</td><td>1,5</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"IntervalsExact-12\"> </a></td><td>12</td><td>12,0</td></tr><tr><td style=\"white-space:nowrap\">12-5<a name=\"IntervalsExact-12-5\"> </a></td><td>12,5</td><td>2,5</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"IntervalsExact-13\"> </a></td><td>13</td><td>13,0</td></tr><tr><td style=\"white-space:nowrap\">13-5<a name=\"IntervalsExact-13-5\"> </a></td><td>13,5</td><td>3,5</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"IntervalsExact-14\"> </a></td><td>14</td><td>14,0</td></tr><tr><td style=\"white-space:nowrap\">14-5<a name=\"IntervalsExact-14-5\"> </a></td><td>14,5</td><td>4,5</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"IntervalsExact-15\"> </a></td><td>15</td><td>15,0</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/IntervalsExact"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "IntervalsExact"] ; # 
+  fhir:title [ fhir:v "Intervaller eksakte værdier"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-02-13T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Intervaller med varierende eksakte værdier"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "51"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "m10" ] ;
+     fhir:display [ fhir:v "-10" ] ;
+     fhir:definition [ fhir:v "-10,0" ]
+  ] [
+     fhir:code [ fhir:v "m9-5" ] ;
+     fhir:display [ fhir:v "-9,5" ] ;
+     fhir:definition [ fhir:v "-9,5" ]
+  ] [
+     fhir:code [ fhir:v "m9" ] ;
+     fhir:display [ fhir:v "-9" ] ;
+     fhir:definition [ fhir:v "-9,0" ]
+  ] [
+     fhir:code [ fhir:v "m8-5" ] ;
+     fhir:display [ fhir:v "-8,5" ] ;
+     fhir:definition [ fhir:v "-8,5" ]
+  ] [
+     fhir:code [ fhir:v "m8" ] ;
+     fhir:display [ fhir:v "-8" ] ;
+     fhir:definition [ fhir:v "-8,0" ]
+  ] [
+     fhir:code [ fhir:v "m7-5" ] ;
+     fhir:display [ fhir:v "-7,5" ] ;
+     fhir:definition [ fhir:v "-7,5" ]
+  ] [
+     fhir:code [ fhir:v "m7" ] ;
+     fhir:display [ fhir:v "-7" ] ;
+     fhir:definition [ fhir:v "-7,0" ]
+  ] [
+     fhir:code [ fhir:v "m6-5" ] ;
+     fhir:display [ fhir:v "-6,5" ] ;
+     fhir:definition [ fhir:v "-6,5" ]
+  ] [
+     fhir:code [ fhir:v "m6" ] ;
+     fhir:display [ fhir:v "-6" ] ;
+     fhir:definition [ fhir:v "-6,0" ]
+  ] [
+     fhir:code [ fhir:v "m5-5" ] ;
+     fhir:display [ fhir:v "-5,5" ] ;
+     fhir:definition [ fhir:v "-5,5" ]
+  ] [
+     fhir:code [ fhir:v "m5" ] ;
+     fhir:display [ fhir:v "-5" ] ;
+     fhir:definition [ fhir:v "-5,0" ]
+  ] [
+     fhir:code [ fhir:v "m4-5" ] ;
+     fhir:display [ fhir:v "-4,5" ] ;
+     fhir:definition [ fhir:v "-4,5" ]
+  ] [
+     fhir:code [ fhir:v "m4" ] ;
+     fhir:display [ fhir:v "-4" ] ;
+     fhir:definition [ fhir:v "-4,0" ]
+  ] [
+     fhir:code [ fhir:v "m3-5" ] ;
+     fhir:display [ fhir:v "-3,5" ] ;
+     fhir:definition [ fhir:v "-3,5" ]
+  ] [
+     fhir:code [ fhir:v "m3" ] ;
+     fhir:display [ fhir:v "-3" ] ;
+     fhir:definition [ fhir:v "-3,0" ]
+  ] [
+     fhir:code [ fhir:v "m2-5" ] ;
+     fhir:display [ fhir:v "-2,5" ] ;
+     fhir:definition [ fhir:v "-2,5" ]
+  ] [
+     fhir:code [ fhir:v "m2" ] ;
+     fhir:display [ fhir:v "-2" ] ;
+     fhir:definition [ fhir:v "-2,0" ]
+  ] [
+     fhir:code [ fhir:v "m1-5" ] ;
+     fhir:display [ fhir:v "-1,5" ] ;
+     fhir:definition [ fhir:v "-1,5" ]
+  ] [
+     fhir:code [ fhir:v "m1" ] ;
+     fhir:display [ fhir:v "-1" ] ;
+     fhir:definition [ fhir:v "-1,0" ]
+  ] [
+     fhir:code [ fhir:v "m0-5" ] ;
+     fhir:display [ fhir:v "-0,5" ] ;
+     fhir:definition [ fhir:v "-0,5" ]
+  ] [
+     fhir:code [ fhir:v "0" ] ;
+     fhir:display [ fhir:v "0" ] ;
+     fhir:definition [ fhir:v "0,0" ]
+  ] [
+     fhir:code [ fhir:v "0-5" ] ;
+     fhir:display [ fhir:v "0,5" ] ;
+     fhir:definition [ fhir:v "0,5" ]
+  ] [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "1" ] ;
+     fhir:definition [ fhir:v "1,0" ]
+  ] [
+     fhir:code [ fhir:v "1-5" ] ;
+     fhir:display [ fhir:v "1,5" ] ;
+     fhir:definition [ fhir:v "1,5" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "2" ] ;
+     fhir:definition [ fhir:v "2,0" ]
+  ] [
+     fhir:code [ fhir:v "2-5" ] ;
+     fhir:display [ fhir:v "2,5" ] ;
+     fhir:definition [ fhir:v "2,5" ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "3" ] ;
+     fhir:definition [ fhir:v "3,0" ]
+  ] [
+     fhir:code [ fhir:v "3-5" ] ;
+     fhir:display [ fhir:v "3,5" ] ;
+     fhir:definition [ fhir:v "3,5" ]
+  ] [
+     fhir:code [ fhir:v "4" ] ;
+     fhir:display [ fhir:v "4" ] ;
+     fhir:definition [ fhir:v "4,0" ]
+  ] [
+     fhir:code [ fhir:v "4-5" ] ;
+     fhir:display [ fhir:v "4,5" ] ;
+     fhir:definition [ fhir:v "4,5" ]
+  ] [
+     fhir:code [ fhir:v "5" ] ;
+     fhir:display [ fhir:v "5" ] ;
+     fhir:definition [ fhir:v "5,0" ]
+  ] [
+     fhir:code [ fhir:v "5-5" ] ;
+     fhir:display [ fhir:v "5,5" ] ;
+     fhir:definition [ fhir:v "5,5" ]
+  ] [
+     fhir:code [ fhir:v "6" ] ;
+     fhir:display [ fhir:v "6" ] ;
+     fhir:definition [ fhir:v "6,0" ]
+  ] [
+     fhir:code [ fhir:v "6-5" ] ;
+     fhir:display [ fhir:v "6,5" ] ;
+     fhir:definition [ fhir:v "6,5" ]
+  ] [
+     fhir:code [ fhir:v "7" ] ;
+     fhir:display [ fhir:v "7" ] ;
+     fhir:definition [ fhir:v "7,0" ]
+  ] [
+     fhir:code [ fhir:v "7-5" ] ;
+     fhir:display [ fhir:v "7,5" ] ;
+     fhir:definition [ fhir:v "7,5" ]
+  ] [
+     fhir:code [ fhir:v "8" ] ;
+     fhir:display [ fhir:v "8" ] ;
+     fhir:definition [ fhir:v "8,0" ]
+  ] [
+     fhir:code [ fhir:v "8-5" ] ;
+     fhir:display [ fhir:v "8,5" ] ;
+     fhir:definition [ fhir:v "8,5" ]
+  ] [
+     fhir:code [ fhir:v "9" ] ;
+     fhir:display [ fhir:v "9" ] ;
+     fhir:definition [ fhir:v "9,0" ]
+  ] [
+     fhir:code [ fhir:v "9-5" ] ;
+     fhir:display [ fhir:v "9,5" ] ;
+     fhir:definition [ fhir:v "9,5" ]
+  ] [
+     fhir:code [ fhir:v "10" ] ;
+     fhir:display [ fhir:v "10" ] ;
+     fhir:definition [ fhir:v "10,0" ]
+  ] [
+     fhir:code [ fhir:v "10-5" ] ;
+     fhir:display [ fhir:v "10,5" ] ;
+     fhir:definition [ fhir:v "10,5" ]
+  ] [
+     fhir:code [ fhir:v "11" ] ;
+     fhir:display [ fhir:v "11" ] ;
+     fhir:definition [ fhir:v "11,0" ]
+  ] [
+     fhir:code [ fhir:v "11-5" ] ;
+     fhir:display [ fhir:v "11,5" ] ;
+     fhir:definition [ fhir:v "1,5" ]
+  ] [
+     fhir:code [ fhir:v "12" ] ;
+     fhir:display [ fhir:v "12" ] ;
+     fhir:definition [ fhir:v "12,0" ]
+  ] [
+     fhir:code [ fhir:v "12-5" ] ;
+     fhir:display [ fhir:v "12,5" ] ;
+     fhir:definition [ fhir:v "2,5" ]
+  ] [
+     fhir:code [ fhir:v "13" ] ;
+     fhir:display [ fhir:v "13" ] ;
+     fhir:definition [ fhir:v "13,0" ]
+  ] [
+     fhir:code [ fhir:v "13-5" ] ;
+     fhir:display [ fhir:v "13,5" ] ;
+     fhir:definition [ fhir:v "3,5" ]
+  ] [
+     fhir:code [ fhir:v "14" ] ;
+     fhir:display [ fhir:v "14" ] ;
+     fhir:definition [ fhir:v "14,0" ]
+  ] [
+     fhir:code [ fhir:v "14-5" ] ;
+     fhir:display [ fhir:v "14,5" ] ;
+     fhir:definition [ fhir:v "4,5" ]
+  ] [
+     fhir:code [ fhir:v "15" ] ;
+     fhir:display [ fhir:v "15" ] ;
+     fhir:definition [ fhir:v "15,0" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

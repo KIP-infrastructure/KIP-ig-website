@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/MeshTechnique> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MeshTechnique"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem MeshTechnique</b></p><a name=\"MeshTechnique\"> </a><a name=\"hcMeshTechnique\"> </a><a name=\"MeshTechnique-en-US\"> </a><p>This case-insensitive code system <code>https://kip.sundk.dk/fhir/CodeSystem/MeshTechnique</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">keyhole<a name=\"MeshTechnique-keyhole\"> </a></td><td>Keyhole technique</td><td>Keyhole technique / Keyhole teknik</td></tr><tr><td style=\"white-space:nowrap\">sugarbaker<a name=\"MeshTechnique-sugarbaker\"> </a></td><td>Sugarbaker technique</td><td>Sugarbaker technique / Sugarbaker teknik</td></tr><tr><td style=\"white-space:nowrap\">combined<a name=\"MeshTechnique-combined\"> </a></td><td>Combined Keyhole and Sugerbaker technique</td><td>Combined Keyhole and Sugerbaker technique / Kombineret Keyhole og Sugarbaker teknik</td></tr><tr><td style=\"white-space:nowrap\">preperitoneal<a name=\"MeshTechnique-preperitoneal\"> </a></td><td>Preperitoneal technique</td><td>Preperitoneal technique / Præperitoneal teknik</td></tr><tr><td style=\"white-space:nowrap\">retromuscular<a name=\"MeshTechnique-retromuscular\"> </a></td><td>Retromuscular mesh repair technique (Pauli)</td><td>Retromuscular technique / Retromuskulær teknik</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/MeshTechnique"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "MeshTechnique"] ; # 
+  fhir:title [ fhir:v "Mesh technique"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-07-21T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Mesh technique"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "keyhole" ] ;
+     fhir:display [ fhir:v "Keyhole technique" ] ;
+     fhir:definition [ fhir:v "Keyhole technique / Keyhole teknik" ]
+  ] [
+     fhir:code [ fhir:v "sugarbaker" ] ;
+     fhir:display [ fhir:v "Sugarbaker technique" ] ;
+     fhir:definition [ fhir:v "Sugarbaker technique / Sugarbaker teknik" ]
+  ] [
+     fhir:code [ fhir:v "combined" ] ;
+     fhir:display [ fhir:v "Combined Keyhole and Sugerbaker technique" ] ;
+     fhir:definition [ fhir:v "Combined Keyhole and Sugerbaker technique / Kombineret Keyhole og Sugarbaker teknik" ]
+  ] [
+     fhir:code [ fhir:v "preperitoneal" ] ;
+     fhir:display [ fhir:v "Preperitoneal technique" ] ;
+     fhir:definition [ fhir:v "Preperitoneal technique / Præperitoneal teknik" ]
+  ] [
+     fhir:code [ fhir:v "retromuscular" ] ;
+     fhir:display [ fhir:v "Retromuscular mesh repair technique (Pauli)" ] ;
+     fhir:definition [ fhir:v "Retromuscular technique / Retromuskulær teknik" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

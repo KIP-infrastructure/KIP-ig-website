@@ -1,0 +1,31 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "QuestionnaireResponseOnCarePlan",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter QuestionnaireResponseOnCarePlan</b></p><a name=\"QuestionnaireResponseOnCarePlan\"> </a><a name=\"hcQuestionnaireResponseOnCarePlan\"> </a><a name=\"QuestionnaireResponseOnCarePlan-en-US\"> </a><h2>QuestionnaireResponseOnCarePlan</h2><p>Parameter <code>questionnaire-response-reference</code>:<code>reference</code></p><div><p>Search by a QuestionnaireResponse reference for a CarePlan</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/careplan.html\">CarePlan</a></td></tr><tr><td>Expression</td><td><code>CarePlan.activity.outcomeReference</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true</li></ul></td></tr><tr><td>Comparators</td><td>Allowed: eq</td></tr></table></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/SearchParameter/QuestionnaireResponseOnCarePlan",
+  "version" : "0.0.9",
+  "name" : "QuestionnaireResponseOnCarePlan",
+  "status" : "active",
+  "date" : "2025-01-07T12:32:34+00:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Search by a QuestionnaireResponse reference for a CarePlan",
+  "code" : "questionnaire-response-reference",
+  "base" : ["CarePlan"],
+  "type" : "reference",
+  "expression" : "CarePlan.activity.outcomeReference",
+  "comparator" : ["eq"]
+}

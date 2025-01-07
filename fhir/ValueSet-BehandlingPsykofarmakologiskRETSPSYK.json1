@@ -1,0 +1,64 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "BehandlingPsykofarmakologiskRETSPSYK",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet BehandlingPsykofarmakologiskRETSPSYK</b></p><a name=\"BehandlingPsykofarmakologiskRETSPSYK\"> </a><a name=\"hcBehandlingPsykofarmakologiskRETSPSYK\"> </a><a name=\"BehandlingPsykofarmakologiskRETSPSYK-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-TreatmentPsychopharmacological.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/TreatmentPsychopharmacological</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-TreatmentPsychopharmacological.html#TreatmentPsychopharmacological-antipsychotics\">antipsychotics</a></td><td>Antipsykotika</td><td>Antipsychotics / Antipsykotika</td></tr><tr><td><a href=\"CodeSystem-TreatmentPsychopharmacological.html#TreatmentPsychopharmacological-antipsychotics_depot\">antipsychotics_depot</a></td><td>Antipsykotika, depot</td><td>Antipsychotics, depot / Antipsykotika, depot</td></tr><tr><td><a href=\"CodeSystem-TreatmentPsychopharmacological.html#TreatmentPsychopharmacological-antidepressants\">antidepressants</a></td><td>Antidepressiva</td><td>Antidepressants / Antidepressiva</td></tr><tr><td><a href=\"CodeSystem-TreatmentPsychopharmacological.html#TreatmentPsychopharmacological-mood_stabilizer\">mood_stabilizer</a></td><td>Stemningsstabiliserende</td><td>Mood stabilizer / Stemningsstabiliserende</td></tr><tr><td><a href=\"CodeSystem-TreatmentPsychopharmacological.html#TreatmentPsychopharmacological-benzodiazepines\">benzodiazepines</a></td><td>Benzodiazepiner</td><td>Benzodiazepines / Benzodiazepiner</td></tr><tr><td><a href=\"CodeSystem-TreatmentPsychopharmacological.html#TreatmentPsychopharmacological-central_stimulants\">central_stimulants</a></td><td>Centralstimulerende medicin</td><td>Central stimulants / Centralstimulerende medicin</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet (anfør hvilke)</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.sundk.dk/fhir/ValueSet/BehandlingPsykofarmakologiskRETSPSYK",
+  "version" : "0.0.9",
+  "name" : "BehandlingPsykofarmakologiskRETSPSYK",
+  "title" : "Behandling: Psykofarmakologisk (RETSPSYK)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-09-30T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Behandling: Psykofarmakologisk (RETSPSYK)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/TreatmentPsychopharmacological",
+      "concept" : [{
+        "code" : "antipsychotics",
+        "display" : "Antipsykotika"
+      },
+      {
+        "code" : "antipsychotics_depot",
+        "display" : "Antipsykotika, depot"
+      },
+      {
+        "code" : "antidepressants",
+        "display" : "Antidepressiva"
+      },
+      {
+        "code" : "mood_stabilizer",
+        "display" : "Stemningsstabiliserende"
+      },
+      {
+        "code" : "benzodiazepines",
+        "display" : "Benzodiazepiner"
+      },
+      {
+        "code" : "central_stimulants",
+        "display" : "Centralstimulerende medicin"
+      }]
+    },
+    {
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "other",
+        "display" : "Andet (anfør hvilke)"
+      }]
+    }]
+  }
+}

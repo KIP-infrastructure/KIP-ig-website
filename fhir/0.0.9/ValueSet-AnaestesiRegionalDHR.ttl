@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/ValueSet/AnaestesiRegionalDHR> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AnaestesiRegionalDHR"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet AnaestesiRegionalDHR</b></p><a name=\"AnaestesiRegionalDHR\"> </a><a name=\"hcAnaestesiRegionalDHR\"> </a><a name=\"AnaestesiRegionalDHR-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-AnasthesiaService.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/AnasthesiaService</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-AnasthesiaService.html#AnasthesiaService-spinal\">spinal</a></td><td>Spinalanæstesi</td><td>Spinal</td></tr><tr><td><a href=\"CodeSystem-AnasthesiaService.html#AnasthesiaService-normotensive\">normotensive</a></td><td>Normotensiv epiduralanæstesi</td><td>Normotensive epidural anaesthesia</td></tr><tr><td><a href=\"CodeSystem-AnasthesiaService.html#AnasthesiaService-hypotensive\">hypotensive</a></td><td>Hypotensiv epiduralanæstesi</td><td>Hypotensive epidural anaesthesia</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/ValueSet/AnaestesiRegionalDHR"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "AnaestesiRegionalDHR"] ; # 
+  fhir:title [ fhir:v "Anæstesi - Regional [DHR]"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-06-09T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Anæstesi - Regional [DHR]"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/AnasthesiaService"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "spinal" ] ;
+         fhir:display [ fhir:v "Spinalanæstesi" ]
+       ] [
+         fhir:code [ fhir:v "normotensive" ] ;
+         fhir:display [ fhir:v "Normotensiv epiduralanæstesi" ]
+       ] [
+         fhir:code [ fhir:v "hypotensive" ] ;
+         fhir:display [ fhir:v "Hypotensiv epiduralanæstesi" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

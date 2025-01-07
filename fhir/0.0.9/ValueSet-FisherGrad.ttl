@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/ValueSet/FisherGrad> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "FisherGrad"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet FisherGrad</b></p><a name=\"FisherGrad\"> </a><a name=\"hcFisherGrad\"> </a><a name=\"FisherGrad-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-FisherGradingScale.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/FisherGradingScale</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-FisherGradingScale.html#FisherGradingScale-grade1\">grade1</a></td><td>Intet synligt blod</td><td>Grade 1: No SAH detected</td></tr><tr><td><a href=\"CodeSystem-FisherGradingScale.html#FisherGradingScale-grade2\">grade2</a></td><td>SAH &lt; 1 mm</td><td>Grade 2: Diffuse or vertical layer of subarachnoid blood &lt; 1mm thick</td></tr><tr><td><a href=\"CodeSystem-FisherGradingScale.html#FisherGradingScale-grade3\">grade3</a></td><td>SAH &gt; 1 mm</td><td>Grade 3: Localized clot and/or vertical layer within the subarachnoid space &gt; 1mm thick</td></tr><tr><td><a href=\"CodeSystem-FisherGradingScale.html#FisherGradingScale-grade4\">grade4</a></td><td>SAH med IVH eller ICH</td><td>Grade 4: Intracerebral hemorrhage (ICH) or intraventricular hemorrhage (IVH) with diffuse or no SAH</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/ValueSet/FisherGrad"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "FisherGrad"] ; # 
+  fhir:title [ fhir:v "Fisher grad for SAH"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-06-28T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Fisher grad for SAH"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/FisherGradingScale"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "grade1" ] ;
+         fhir:display [ fhir:v "Intet synligt blod" ]
+       ] [
+         fhir:code [ fhir:v "grade2" ] ;
+         fhir:display [ fhir:v "SAH < 1 mm" ]
+       ] [
+         fhir:code [ fhir:v "grade3" ] ;
+         fhir:display [ fhir:v "SAH > 1 mm" ]
+       ] [
+         fhir:code [ fhir:v "grade4" ] ;
+         fhir:display [ fhir:v "SAH med IVH eller ICH" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

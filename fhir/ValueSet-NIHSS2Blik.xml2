@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="NIHSS2Blik"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet NIHSS2Blik</b></p><a name="NIHSS2Blik"> </a><a name="hcNIHSS2Blik"> </a><a name="NIHSS2Blik-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-NIHSS2Gaze.html"><code>https://kip.sundk.dk/fhir/CodeSystem/NIHSS2Gaze</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-NIHSS2Gaze.html#NIHSS2Gaze-0">0</a></td><td>0 = Normale øjenbevægelser</td><td>Normal.</td></tr><tr><td><a href="CodeSystem-NIHSS2Gaze.html#NIHSS2Gaze-1">1</a></td><td>1 = Partiel blikparese</td><td>Partial gaze palsy; gaze is abnormal in one or both eyes, but forced deviation or total gaze paresis is not present.</td></tr><tr><td><a href="CodeSystem-NIHSS2Gaze.html#NIHSS2Gaze-2">2</a></td><td>2 = Total blikparese eller blikdeviation</td><td>Forced deviation, or total gaze paresis not overcome by the oculocephalic maneuver.</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.sundk.dk/fhir/ValueSet/NIHSS2Blik"/>
+  <version value="0.0.9"/>
+  <name value="NIHSS2Blik"/>
+  <title value="NIHSS - 2. Blik"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-06-27T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="The National Institute of Health Stroke Scale (NIHSS) - 2. Blik (kun horisontale øjenbevægelser)"/>
+  <compose>
+    <include>
+      <system value="https://kip.sundk.dk/fhir/CodeSystem/NIHSS2Gaze"/>
+      <concept>
+        <code value="0"/>
+        <display value="0 = Normale øjenbevægelser"/>
+      </concept>
+      <concept>
+        <code value="1"/>
+        <display value="1 = Partiel blikparese"/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="2 = Total blikparese eller blikdeviation"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

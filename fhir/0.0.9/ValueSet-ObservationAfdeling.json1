@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ObservationAfdeling",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ObservationAfdeling</b></p><a name=\"ObservationAfdeling\"> </a><a name=\"hcObservationAfdeling\"> </a><a name=\"ObservationAfdeling-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Observationssted.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/Observationssted</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Observationssted.html#Observationssted-egenafd\">egenafd</a></td><td>Egen afdeling</td><td>Egen afdeling</td></tr><tr><td><a href=\"CodeSystem-Observationssted.html#Observationssted-andet\">andet</a></td><td>Anden afdeling</td><td>Andet</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.sundk.dk/fhir/ValueSet/ObservationAfdeling",
+  "version" : "0.0.9",
+  "name" : "ObservationAfdeling",
+  "title" : "Observation afdeling",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-02-21T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Observation af patienten på egen eller anden afdeling",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/Observationssted",
+      "concept" : [{
+        "code" : "egenafd",
+        "display" : "Egen afdeling"
+      },
+      {
+        "code" : "andet",
+        "display" : "Anden afdeling"
+      }]
+    }]
+  }
+}

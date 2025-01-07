@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="SygdomMedicinskBehandletDHDB"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet SygdomMedicinskBehandletDHDB</b></p><a name="SygdomMedicinskBehandletDHDB"> </a><a name="hcSygdomMedicinskBehandletDHDB"> </a><a name="SygdomMedicinskBehandletDHDB-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-DiseasesUnspecified.html"><code>https://kip.sundk.dk/fhir/CodeSystem/DiseasesUnspecified</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-diabetes">diabetes</a></td><td>Diabetes mellitus</td><td>Diabetes / Diabetes</td></tr><tr><td><a href="CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-heart_disease">heart_disease</a></td><td>Hjertesygdom (dog ikke velbeh. hypertension)</td><td>Heart disease / Hjertesygdom</td></tr><tr><td><a href="CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-lung_disease">lung_disease</a></td><td>Lungesygdom</td><td>Lung disease / Lungesygdom</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-GenericValues.html"><code>https://kip.sundk.dk/fhir/CodeSystem/GenericValues</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-GenericValues.html#GenericValues-other">other</a></td><td>Andre (eks. lever, nyrer, hjerne, thyroidea)</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.sundk.dk/fhir/ValueSet/SygdomMedicinskBehandletDHDB"/>
+  <version value="0.0.9"/>
+  <name value="SygdomMedicinskBehandletDHDB"/>
+  <title value="Sygdom; medicinsk behandlet (DHDB)"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-07-20T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Sygdom; medicinsk behandlet (DHDB)"/>
+  <compose>
+    <include>
+      <system value="https://kip.sundk.dk/fhir/CodeSystem/DiseasesUnspecified"/>
+      <concept>
+        <code value="diabetes"/>
+        <display value="Diabetes mellitus"/>
+      </concept>
+      <concept>
+        <code value="heart_disease"/>
+        <display value="Hjertesygdom (dog ikke velbeh. hypertension)"/>
+      </concept>
+      <concept>
+        <code value="lung_disease"/>
+        <display value="Lungesygdom"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://kip.sundk.dk/fhir/CodeSystem/GenericValues"/>
+      <concept>
+        <code value="other"/>
+        <display value="Andre (eks. lever, nyrer, hjerne, thyroidea)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

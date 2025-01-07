@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/ResidualTumorGrading> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ResidualTumorGrading"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ResidualTumorGrading</b></p><a name=\"ResidualTumorGrading\"> </a><a name=\"hcResidualTumorGrading\"> </a><a name=\"ResidualTumorGrading-en-US\"> </a><p>This  code system <code>https://kip.sundk.dk/fhir/CodeSystem/ResidualTumorGrading</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">gradei<a name=\"ResidualTumorGrading-gradei\"> </a></td><td>Grad I</td><td>Grad I - Veldifferentieret</td></tr><tr><td style=\"white-space:nowrap\">gradeii<a name=\"ResidualTumorGrading-gradeii\"> </a></td><td>Grad II</td><td>Grad II - Moderat differentieret</td></tr><tr><td style=\"white-space:nowrap\">gradeiii<a name=\"ResidualTumorGrading-gradeiii\"> </a></td><td>Grad III</td><td>Grad III - Lavt differentieret</td></tr><tr><td style=\"white-space:nowrap\">gradex<a name=\"ResidualTumorGrading-gradex\"> </a></td><td>Grad X</td><td>Grad X - Gradering ikke mulig</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/ResidualTumorGrading"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "ResidualTumorGrading"] ; # 
+  fhir:title [ fhir:v "Residual Tumor Grading"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-07T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Gradering hvis der er registreret resttumor i histologisk klassifikation"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "gradei" ] ;
+     fhir:display [ fhir:v "Grad I" ] ;
+     fhir:definition [ fhir:v "Grad I - Veldifferentieret" ]
+  ] [
+     fhir:code [ fhir:v "gradeii" ] ;
+     fhir:display [ fhir:v "Grad II" ] ;
+     fhir:definition [ fhir:v "Grad II - Moderat differentieret" ]
+  ] [
+     fhir:code [ fhir:v "gradeiii" ] ;
+     fhir:display [ fhir:v "Grad III" ] ;
+     fhir:definition [ fhir:v "Grad III - Lavt differentieret" ]
+  ] [
+     fhir:code [ fhir:v "gradex" ] ;
+     fhir:display [ fhir:v "Grad X" ] ;
+     fhir:definition [ fhir:v "Grad X - Gradering ikke mulig" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

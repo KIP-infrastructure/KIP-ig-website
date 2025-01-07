@@ -1,0 +1,171 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/BasicDisorder> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BasicDisorder"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem BasicDisorder</b></p><a name=\"BasicDisorder\"> </a><a name=\"hcBasicDisorder\"> </a><a name=\"BasicDisorder-en-US\"> </a><p>This  code system <code>https://kip.sundk.dk/fhir/CodeSystem/BasicDisorder</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">arthrosis<a name=\"BasicDisorder-arthrosis\"> </a></td><td>Artrose</td><td>Artrose</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  secondary_arthrosis<a name=\"BasicDisorder-secondary_arthrosis\"> </a></td><td>Sekundær artrose</td><td>Sekundær artrose</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  instability<a name=\"BasicDisorder-instability\"> </a></td><td>Instabilitet</td><td>Instabilitet</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">fracture<a name=\"BasicDisorder-fracture\"> </a></td><td>Fraktur</td><td>Fraktur</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  fracture_tibia<a name=\"BasicDisorder-fracture_tibia\"> </a></td><td>Tibiafraktur</td><td>Tibiafraktur</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  fresh_fracture_tibia_condyle<a name=\"BasicDisorder-fresh_fracture_tibia_condyle\"> </a></td><td>Frisk tibiakondylfraktur</td><td>Frisk tibiakondylfraktur</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  fracture_tibia_condyle<a name=\"BasicDisorder-fracture_tibia_condyle\"> </a></td><td>Følger efter tibiakondylfraktur</td><td>Følger efter tibiakondylfraktur</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  fracture_femur<a name=\"BasicDisorder-fracture_femur\"> </a></td><td>Femurfraktur</td><td>Femurfraktur</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  fresh_fracture_femoral_condyle<a name=\"BasicDisorder-fresh_fracture_femoral_condyle\"> </a></td><td>Frisk femurkondylfraktur</td><td>Frisk femurkondylfraktur</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  fracture_femoral_condyle<a name=\"BasicDisorder-fracture_femoral_condyle\"> </a></td><td>Følger efter tibiakondylfraktur</td><td>Følger efter tibiakondylfraktur</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  fracture_patella<a name=\"BasicDisorder-fracture_patella\"> </a></td><td>Følger efter patellafraktur</td><td>Følger efter patellafraktur</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">femoral_fracture<a name=\"BasicDisorder-femoral_fracture\"> </a></td><td>Femoral fracture</td><td>Femoral fracture</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  femoral_no_operation<a name=\"BasicDisorder-femoral_no_operation\"> </a></td><td>Prox femurfraktur: uden OP (tidl ostesyntese eller hemi)</td><td>Prox femurfraktur: uden OP (tidl ostesyntese eller hemi)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  femoral_previous_operation<a name=\"BasicDisorder-femoral_previous_operation\"> </a></td><td>Prox femurfraktur: uden OP (tidl ostesyntese eller hemi)</td><td>Prox femurfraktur: med tidl. OP (osteosyntese eller hemi)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">acetabulum_fracture<a name=\"BasicDisorder-acetabulum_fracture\"> </a></td><td>Acetabulumfraktur</td><td>Acetabulumfraktur</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">hip_dislocation<a name=\"BasicDisorder-hip_dislocation\"> </a></td><td>Hofteluksation</td><td>Hofteluksation</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  traumatic<a name=\"BasicDisorder-traumatic\"> </a></td><td>Traumatisk</td><td>Traumatisk hofteluksation</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  congenital<a name=\"BasicDisorder-congenital\"> </a></td><td>Kongenit</td><td>Kongenit hofteluksation</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">caputnecrosis<a name=\"BasicDisorder-caputnecrosis\"> </a></td><td>Caputnekrose</td><td>Caputnekrose</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">osteonecrosis<a name=\"BasicDisorder-osteonecrosis\"> </a></td><td>Osteonekrose</td><td>Osteonekrose</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">arthritis<a name=\"BasicDisorder-arthritis\"> </a></td><td>Artrit</td><td>Artrit</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  rheumatoid<a name=\"BasicDisorder-rheumatoid\"> </a></td><td>Reumatoid</td><td>Reumatoid artrit</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  other_arthritis<a name=\"BasicDisorder-other_arthritis\"> </a></td><td>Anden</td><td>Anden artrit</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">mb_bechterew<a name=\"BasicDisorder-mb_bechterew\"> </a></td><td>Mb. Bechterew</td><td>Mb. Bechterew</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">mb_calve_legg_perthes<a name=\"BasicDisorder-mb_calve_legg_perthes\"> </a></td><td>Mb. Calvé-Legg-Perthes</td><td>Mb. Calvé-Legg-Perthes</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">epiphysiolysis<a name=\"BasicDisorder-epiphysiolysis\"> </a></td><td>Epifysiolyse</td><td>Epifysiolyse</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">acetabulum_dysplasia<a name=\"BasicDisorder-acetabulum_dysplasia\"> </a></td><td>Acetabulumdysplasi</td><td>Acetabulumdysplasi</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">primary_tumor<a name=\"BasicDisorder-primary_tumor\"> </a></td><td>Primær tumor</td><td>Primær tumor</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">metastases<a name=\"BasicDisorder-metastases\"> </a></td><td>Metastaser</td><td>Metastaser</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">cuff_rupture<a name=\"BasicDisorder-cuff_rupture\"> </a></td><td>Flersenet rotator cuff ruptur uden degenerative forandringer</td><td>Flersenet rotator cuff ruptur uden degenerative forandringer</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">cuff_rupture_degenerative<a name=\"BasicDisorder-cuff_rupture_degenerative\"> </a></td><td>Cuff artopati (Flersenet rotator cuff ruptur med degenerative forandringer)</td><td>Cuff artopati (Flersenet rotator cuff ruptur med degenerative forandringer)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">hemophilia<a name=\"BasicDisorder-hemophilia\"> </a></td><td>Hæmofili</td><td>Hæmofili</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/BasicDisorder"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "BasicDisorder"] ; # 
+  fhir:title [ fhir:v "Basic disorder"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-07-04T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Basic disorder"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "32"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "arthrosis" ] ;
+     fhir:display [ fhir:v "Artrose" ] ;
+     fhir:definition [ fhir:v "Artrose" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "secondary_arthrosis" ] ;
+       fhir:display [ fhir:v "Sekundær artrose" ] ;
+       fhir:definition [ fhir:v "Sekundær artrose" ]
+     ] [
+       fhir:code [ fhir:v "instability" ] ;
+       fhir:display [ fhir:v "Instabilitet" ] ;
+       fhir:definition [ fhir:v "Instabilitet" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "fracture" ] ;
+     fhir:display [ fhir:v "Fraktur" ] ;
+     fhir:definition [ fhir:v "Fraktur" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "fracture_tibia" ] ;
+       fhir:display [ fhir:v "Tibiafraktur" ] ;
+       fhir:definition [ fhir:v "Tibiafraktur" ]
+     ] [
+       fhir:code [ fhir:v "fresh_fracture_tibia_condyle" ] ;
+       fhir:display [ fhir:v "Frisk tibiakondylfraktur" ] ;
+       fhir:definition [ fhir:v "Frisk tibiakondylfraktur" ]
+     ] [
+       fhir:code [ fhir:v "fracture_tibia_condyle" ] ;
+       fhir:display [ fhir:v "Følger efter tibiakondylfraktur" ] ;
+       fhir:definition [ fhir:v "Følger efter tibiakondylfraktur" ]
+     ] [
+       fhir:code [ fhir:v "fracture_femur" ] ;
+       fhir:display [ fhir:v "Femurfraktur" ] ;
+       fhir:definition [ fhir:v "Femurfraktur" ]
+     ] [
+       fhir:code [ fhir:v "fresh_fracture_femoral_condyle" ] ;
+       fhir:display [ fhir:v "Frisk femurkondylfraktur" ] ;
+       fhir:definition [ fhir:v "Frisk femurkondylfraktur" ]
+     ] [
+       fhir:code [ fhir:v "fracture_femoral_condyle" ] ;
+       fhir:display [ fhir:v "Følger efter tibiakondylfraktur" ] ;
+       fhir:definition [ fhir:v "Følger efter tibiakondylfraktur" ]
+     ] [
+       fhir:code [ fhir:v "fracture_patella" ] ;
+       fhir:display [ fhir:v "Følger efter patellafraktur" ] ;
+       fhir:definition [ fhir:v "Følger efter patellafraktur" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "femoral_fracture" ] ;
+     fhir:display [ fhir:v "Femoral fracture" ] ;
+     fhir:definition [ fhir:v "Femoral fracture" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "femoral_no_operation" ] ;
+       fhir:display [ fhir:v "Prox femurfraktur: uden OP (tidl ostesyntese eller hemi)" ] ;
+       fhir:definition [ fhir:v "Prox femurfraktur: uden OP (tidl ostesyntese eller hemi)" ]
+     ] [
+       fhir:code [ fhir:v "femoral_previous_operation" ] ;
+       fhir:display [ fhir:v "Prox femurfraktur: uden OP (tidl ostesyntese eller hemi)" ] ;
+       fhir:definition [ fhir:v "Prox femurfraktur: med tidl. OP (osteosyntese eller hemi)" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "acetabulum_fracture" ] ;
+     fhir:display [ fhir:v "Acetabulumfraktur" ] ;
+     fhir:definition [ fhir:v "Acetabulumfraktur" ]
+  ] [
+     fhir:code [ fhir:v "hip_dislocation" ] ;
+     fhir:display [ fhir:v "Hofteluksation" ] ;
+     fhir:definition [ fhir:v "Hofteluksation" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "traumatic" ] ;
+       fhir:display [ fhir:v "Traumatisk" ] ;
+       fhir:definition [ fhir:v "Traumatisk hofteluksation" ]
+     ] [
+       fhir:code [ fhir:v "congenital" ] ;
+       fhir:display [ fhir:v "Kongenit" ] ;
+       fhir:definition [ fhir:v "Kongenit hofteluksation" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "caputnecrosis" ] ;
+     fhir:display [ fhir:v "Caputnekrose" ] ;
+     fhir:definition [ fhir:v "Caputnekrose" ]
+  ] [
+     fhir:code [ fhir:v "osteonecrosis" ] ;
+     fhir:display [ fhir:v "Osteonekrose" ] ;
+     fhir:definition [ fhir:v "Osteonekrose" ]
+  ] [
+     fhir:code [ fhir:v "arthritis" ] ;
+     fhir:display [ fhir:v "Artrit" ] ;
+     fhir:definition [ fhir:v "Artrit" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "rheumatoid" ] ;
+       fhir:display [ fhir:v "Reumatoid" ] ;
+       fhir:definition [ fhir:v "Reumatoid artrit" ]
+     ] [
+       fhir:code [ fhir:v "other_arthritis" ] ;
+       fhir:display [ fhir:v "Anden" ] ;
+       fhir:definition [ fhir:v "Anden artrit" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "mb_bechterew" ] ;
+     fhir:display [ fhir:v "Mb. Bechterew" ] ;
+     fhir:definition [ fhir:v "Mb. Bechterew" ]
+  ] [
+     fhir:code [ fhir:v "mb_calve_legg_perthes" ] ;
+     fhir:display [ fhir:v "Mb. Calvé-Legg-Perthes" ] ;
+     fhir:definition [ fhir:v "Mb. Calvé-Legg-Perthes" ]
+  ] [
+     fhir:code [ fhir:v "epiphysiolysis" ] ;
+     fhir:display [ fhir:v "Epifysiolyse" ] ;
+     fhir:definition [ fhir:v "Epifysiolyse" ]
+  ] [
+     fhir:code [ fhir:v "acetabulum_dysplasia" ] ;
+     fhir:display [ fhir:v "Acetabulumdysplasi" ] ;
+     fhir:definition [ fhir:v "Acetabulumdysplasi" ]
+  ] [
+     fhir:code [ fhir:v "primary_tumor" ] ;
+     fhir:display [ fhir:v "Primær tumor" ] ;
+     fhir:definition [ fhir:v "Primær tumor" ]
+  ] [
+     fhir:code [ fhir:v "metastases" ] ;
+     fhir:display [ fhir:v "Metastaser" ] ;
+     fhir:definition [ fhir:v "Metastaser" ]
+  ] [
+     fhir:code [ fhir:v "cuff_rupture" ] ;
+     fhir:display [ fhir:v "Flersenet rotator cuff ruptur uden degenerative forandringer" ] ;
+     fhir:definition [ fhir:v "Flersenet rotator cuff ruptur uden degenerative forandringer" ]
+  ] [
+     fhir:code [ fhir:v "cuff_rupture_degenerative" ] ;
+     fhir:display [ fhir:v "Cuff artopati (Flersenet rotator cuff ruptur med degenerative forandringer)" ] ;
+     fhir:definition [ fhir:v "Cuff artopati (Flersenet rotator cuff ruptur med degenerative forandringer)" ]
+  ] [
+     fhir:code [ fhir:v "hemophilia" ] ;
+     fhir:display [ fhir:v "Hæmofili" ] ;
+     fhir:definition [ fhir:v "Hæmofili" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/ValueSet/GradAkutDHDB> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "GradAkutDHDB"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet GradAkutDHDB</b></p><a name=\"GradAkutDHDB\"> </a><a name=\"hcGradAkutDHDB\"> </a><a name=\"GradAkutDHDB-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Priority.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/Priority</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Priority.html#Priority-24hrs\">24hrs</a></td><td>Indenfor 24 timer</td><td>Indenfor 24 timer</td></tr><tr><td><a href=\"CodeSystem-Priority.html#Priority-72hrs\">72hrs</a></td><td>Indenfor 72 timer</td><td>Indenfor 72 timer</td></tr><tr><td><a href=\"CodeSystem-Priority.html#Priority-14days\">14days</a></td><td>Indenfor 14 dage</td><td>Indenfor 14 dage</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/ValueSet/GradAkutDHDB"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "GradAkutDHDB"] ; # 
+  fhir:title [ fhir:v "Grad af akut (DHDB)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-09-10T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Grad af akut (DHDB)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/Priority"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "24hrs" ] ;
+         fhir:display [ fhir:v "Indenfor 24 timer" ]
+       ] [
+         fhir:code [ fhir:v "72hrs" ] ;
+         fhir:display [ fhir:v "Indenfor 72 timer" ]
+       ] [
+         fhir:code [ fhir:v "14days" ] ;
+         fhir:display [ fhir:v "Indenfor 14 dage" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,171 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/ValueSet/BehandlingsindikationKAR> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BehandlingsindikationKAR"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet BehandlingsindikationKAR</b></p><a name=\"BehandlingsindikationKAR\"> </a><a name=\"hcBehandlingsindikationKAR\"> </a><a name=\"BehandlingsindikationKAR-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-DiseasesUnspecified.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/DiseasesUnspecified</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-acute_extremity_ischaemia\">acute_extremity_ischaemia</a></td><td>akut ekstremitetsiskæmi</td><td>akut ekstremitetsiskæmi</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-amurosis_fugax\">amurosis_fugax</a></td><td>amaurosis fugax</td><td>amaurosis fugax</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-aneurysm_asymptomatic\">aneurysm_asymptomatic</a></td><td>aneurisme - asymptomatisk</td><td>aneurisme - asymptomatisk</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-aneurysm_symptomatic\">aneurysm_symptomatic</a></td><td>aneurisme - symptomatisk</td><td>aneurisme - symptomatisk</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-aneurysm_ruptured\">aneurysm_ruptured</a></td><td>aneurisme - rumperet</td><td>aneurisme - rumperet</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-aneurysm_clotted\">aneurysm_clotted</a></td><td>aneurisme - tromboseret</td><td>aneurisme - tromboseret</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-aneurysm_pseudo\">aneurysm_pseudo</a></td><td>aneurisme - pseudo</td><td>aneurisme - pseudo</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-aneurysm_mycotic\">aneurysm_mycotic</a></td><td>aneurisme - mykotisk</td><td>aneurisme - mykotisk</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-bleeding\">bleeding</a></td><td>blødning / hæmatom</td><td>blødning / hæmatom</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-infection\">infection</a></td><td>infektion (ikke proteseinfektion = 55)</td><td>infektion (ikke proteseinfektion = 55)</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-intestinal_ischaemia\">intestinal_ischaemia</a></td><td>intestinal iskæmi, angina abdominalis</td><td>intestinal iskæmi, angina abdominalis</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-function_dependent_ischaemia\">function_dependent_ischaemia</a></td><td>funktionsbetinget iskæmi, claudicatio intermittens</td><td>funktionsbetinget iskæmi, claudicatio intermittens</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-chronic_ischaemia_rest_pain\">chronic_ischaemia_rest_pain</a></td><td>kronisk iskæmi - hvilesmerter</td><td>kronisk iskæmi - hvilesmerter</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-chronic_ischaemia_wound\">chronic_ischaemia_wound</a></td><td>kronisk iskæmi - sår</td><td>kronisk iskæmi - sår</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-chronic_ischaemia_gangrene\">chronic_ischaemia_gangrene</a></td><td>kronisk iskæmi - gangræn</td><td>kronisk iskæmi - gangræn</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-hypertension_renovascular\">hypertension_renovascular</a></td><td>renovaskulær hypertension</td><td>renovaskulær hypertension</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-stroke\">stroke</a></td><td>stroke</td><td>stroke</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-tos\">tos</a></td><td>thoracic outlet syndrom (TOS)</td><td>thoracic outlet syndrom (TOS)</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-tia\">tia</a></td><td>transitorisk iskæmisk attack (TIA)</td><td>transitorisk iskæmisk attack (TIA)</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-trauma\">trauma</a></td><td>traume</td><td>traume</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-thrombosis_vascular_reconstruction\">thrombosis_vascular_reconstruction</a></td><td>trombose af karrekonstruktion</td><td>trombose af karrekonstruktion</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-uremia\">uremia</a></td><td>uræmi</td><td>uræmi</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-varices\">varices</a></td><td>varicer</td><td>varicer</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-vasospasms\">vasospasms</a></td><td>vasospasme/ Raynaud</td><td>vasospasme/ Raynaud</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-venus_thrombosis\">venus_thrombosis</a></td><td>venetrombose</td><td>venetrombose</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-reconstruction_failure\">reconstruction_failure</a></td><td>truende rekonstruktionssvigt</td><td>truende rekonstruktionssvigt</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-permanent_central_venous_access\">permanent_central_venous_access</a></td><td>permanent central venøs adgang</td><td>permanent central venøs adgang</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-wound_complication\">wound_complication</a></td><td>sårkomplikation</td><td>sårkomplikation</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-fascial_rupture\">fascial_rupture</a></td><td>fascieruptur</td><td>fascieruptur</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-ileus\">ileus</a></td><td>ileus</td><td>ileus</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-intestine_ischaemia\">intestine_ischaemia</a></td><td>tarmiskæmi</td><td>tarmiskæmi</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-aorto.47prosthesis_intestinal_fistula\">aorto/prosthesis_intestinal_fistula</a></td><td>aorto/protese-instestinal fistel</td><td>aorto/protese-instestinal fistel</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-prosthetic_infection\">prosthetic_infection</a></td><td>proteseinfektion</td><td>proteseinfektion</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-extremity_compartment\">extremity_compartment</a></td><td>ekstremittets kompartment</td><td>ekstremittets kompartment</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-prolonged_intubation\">prolonged_intubation</a></td><td>langvarig intubation</td><td>langvarig intubation</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-retroperitoneal_fibrosis\">retroperitoneal_fibrosis</a></td><td>retroperitoneal fibrose</td><td>retroperitoneal fibrose</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-abdominal_compartment\">abdominal_compartment</a></td><td>abdominal kompartment</td><td>abdominal kompartment</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-entrapment\">entrapment</a></td><td>entrapment</td><td>entrapment</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-emergency_aortic_dissection\">emergency_aortic_dissection</a></td><td>akut aortadissektion</td><td>akut aortadissektion</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-chronic_aortic_dissection\">chronic_aortic_dissection</a></td><td>kronisk aortadissektion</td><td>kronisk aortadissektion</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-dissection_unspecified\">dissection_unspecified</a></td><td>dissektion uden nærmere specifikation</td><td>dissektion uden nærmere specifikation</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>anden indikation</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/ValueSet/BehandlingsindikationKAR"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "BehandlingsindikationKAR"] ; # 
+  fhir:title [ fhir:v "Behandlingsindikation (KAR)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-09-27T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Behandlingsindikation (KAR)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/DiseasesUnspecified"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "acute_extremity_ischaemia" ] ;
+         fhir:display [ fhir:v "akut ekstremitetsiskæmi" ]
+       ] [
+         fhir:code [ fhir:v "amurosis_fugax" ] ;
+         fhir:display [ fhir:v "amaurosis fugax" ]
+       ] [
+         fhir:code [ fhir:v "aneurysm_asymptomatic" ] ;
+         fhir:display [ fhir:v "aneurisme - asymptomatisk" ]
+       ] [
+         fhir:code [ fhir:v "aneurysm_symptomatic" ] ;
+         fhir:display [ fhir:v "aneurisme - symptomatisk" ]
+       ] [
+         fhir:code [ fhir:v "aneurysm_ruptured" ] ;
+         fhir:display [ fhir:v "aneurisme - rumperet" ]
+       ] [
+         fhir:code [ fhir:v "aneurysm_clotted" ] ;
+         fhir:display [ fhir:v "aneurisme - tromboseret" ]
+       ] [
+         fhir:code [ fhir:v "aneurysm_pseudo" ] ;
+         fhir:display [ fhir:v "aneurisme - pseudo" ]
+       ] [
+         fhir:code [ fhir:v "aneurysm_mycotic" ] ;
+         fhir:display [ fhir:v "aneurisme - mykotisk" ]
+       ] [
+         fhir:code [ fhir:v "bleeding" ] ;
+         fhir:display [ fhir:v "blødning / hæmatom" ]
+       ] [
+         fhir:code [ fhir:v "infection" ] ;
+         fhir:display [ fhir:v "infektion (ikke proteseinfektion = 55)" ]
+       ] [
+         fhir:code [ fhir:v "intestinal_ischaemia" ] ;
+         fhir:display [ fhir:v "intestinal iskæmi, angina abdominalis" ]
+       ] [
+         fhir:code [ fhir:v "function_dependent_ischaemia" ] ;
+         fhir:display [ fhir:v "funktionsbetinget iskæmi, claudicatio intermittens" ]
+       ] [
+         fhir:code [ fhir:v "chronic_ischaemia_rest_pain" ] ;
+         fhir:display [ fhir:v "kronisk iskæmi - hvilesmerter" ]
+       ] [
+         fhir:code [ fhir:v "chronic_ischaemia_wound" ] ;
+         fhir:display [ fhir:v "kronisk iskæmi - sår" ]
+       ] [
+         fhir:code [ fhir:v "chronic_ischaemia_gangrene" ] ;
+         fhir:display [ fhir:v "kronisk iskæmi - gangræn" ]
+       ] [
+         fhir:code [ fhir:v "hypertension_renovascular" ] ;
+         fhir:display [ fhir:v "renovaskulær hypertension" ]
+       ] [
+         fhir:code [ fhir:v "stroke" ] ;
+         fhir:display [ fhir:v "stroke" ]
+       ] [
+         fhir:code [ fhir:v "tos" ] ;
+         fhir:display [ fhir:v "thoracic outlet syndrom (TOS)" ]
+       ] [
+         fhir:code [ fhir:v "tia" ] ;
+         fhir:display [ fhir:v "transitorisk iskæmisk attack (TIA)" ]
+       ] [
+         fhir:code [ fhir:v "trauma" ] ;
+         fhir:display [ fhir:v "traume" ]
+       ] [
+         fhir:code [ fhir:v "thrombosis_vascular_reconstruction" ] ;
+         fhir:display [ fhir:v "trombose af karrekonstruktion" ]
+       ] [
+         fhir:code [ fhir:v "uremia" ] ;
+         fhir:display [ fhir:v "uræmi" ]
+       ] [
+         fhir:code [ fhir:v "varices" ] ;
+         fhir:display [ fhir:v "varicer" ]
+       ] [
+         fhir:code [ fhir:v "vasospasms" ] ;
+         fhir:display [ fhir:v "vasospasme/ Raynaud" ]
+       ] [
+         fhir:code [ fhir:v "venus_thrombosis" ] ;
+         fhir:display [ fhir:v "venetrombose" ]
+       ] [
+         fhir:code [ fhir:v "reconstruction_failure" ] ;
+         fhir:display [ fhir:v "truende rekonstruktionssvigt" ]
+       ] [
+         fhir:code [ fhir:v "permanent_central_venous_access" ] ;
+         fhir:display [ fhir:v "permanent central venøs adgang" ]
+       ] [
+         fhir:code [ fhir:v "wound_complication" ] ;
+         fhir:display [ fhir:v "sårkomplikation" ]
+       ] [
+         fhir:code [ fhir:v "fascial_rupture" ] ;
+         fhir:display [ fhir:v "fascieruptur" ]
+       ] [
+         fhir:code [ fhir:v "ileus" ] ;
+         fhir:display [ fhir:v "ileus" ]
+       ] [
+         fhir:code [ fhir:v "intestine_ischaemia" ] ;
+         fhir:display [ fhir:v "tarmiskæmi" ]
+       ] [
+         fhir:code [ fhir:v "aorto/prosthesis_intestinal_fistula" ] ;
+         fhir:display [ fhir:v "aorto/protese-instestinal fistel" ]
+       ] [
+         fhir:code [ fhir:v "prosthetic_infection" ] ;
+         fhir:display [ fhir:v "proteseinfektion" ]
+       ] [
+         fhir:code [ fhir:v "extremity_compartment" ] ;
+         fhir:display [ fhir:v "ekstremittets kompartment" ]
+       ] [
+         fhir:code [ fhir:v "prolonged_intubation" ] ;
+         fhir:display [ fhir:v "langvarig intubation" ]
+       ] [
+         fhir:code [ fhir:v "retroperitoneal_fibrosis" ] ;
+         fhir:display [ fhir:v "retroperitoneal fibrose" ]
+       ] [
+         fhir:code [ fhir:v "abdominal_compartment" ] ;
+         fhir:display [ fhir:v "abdominal kompartment" ]
+       ] [
+         fhir:code [ fhir:v "entrapment" ] ;
+         fhir:display [ fhir:v "entrapment" ]
+       ] [
+         fhir:code [ fhir:v "emergency_aortic_dissection" ] ;
+         fhir:display [ fhir:v "akut aortadissektion" ]
+       ] [
+         fhir:code [ fhir:v "chronic_aortic_dissection" ] ;
+         fhir:display [ fhir:v "kronisk aortadissektion" ]
+       ] [
+         fhir:code [ fhir:v "dissection_unspecified" ] ;
+         fhir:display [ fhir:v "dissektion uden nærmere specifikation" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/GenericValues"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "other" ] ;
+         fhir:display [ fhir:v "anden indikation" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

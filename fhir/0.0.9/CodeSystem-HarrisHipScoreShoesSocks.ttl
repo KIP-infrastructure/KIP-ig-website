@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/HarrisHipScoreShoesSocks> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HarrisHipScoreShoesSocks"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem HarrisHipScoreShoesSocks</b></p><a name=\"HarrisHipScoreShoesSocks\"> </a><a name=\"hcHarrisHipScoreShoesSocks\"> </a><a name=\"HarrisHipScoreShoesSocks-en-US\"> </a><p>This case-insensitive code system <code>https://kip.sundk.dk/fhir/CodeSystem/HarrisHipScoreShoesSocks</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"HarrisHipScoreShoesSocks-4\"> </a></td><td>With ease</td><td>With ease (4)</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"HarrisHipScoreShoesSocks-2\"> </a></td><td>With difficulty</td><td>With difficulty (2)</td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"HarrisHipScoreShoesSocks-0\"> </a></td><td>Unable to fit or tie</td><td>Unable to fit or tie (0)</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/HarrisHipScoreShoesSocks"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "HarrisHipScoreShoesSocks"] ; # 
+  fhir:title [ fhir:v "Harris Hip Score (HHS) - Activities - shoes, socks"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-07-06T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Harris Hip Score (HHS) - Activities - shoes socks. Link: https://www.orthopaedicscore.com/scorepages/harris_hip_score.html"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "4" ] ;
+     fhir:display [ fhir:v "With ease" ] ;
+     fhir:definition [ fhir:v "With ease (4)" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "With difficulty" ] ;
+     fhir:definition [ fhir:v "With difficulty (2)" ]
+  ] [
+     fhir:code [ fhir:v "0" ] ;
+     fhir:display [ fhir:v "Unable to fit or tie" ] ;
+     fhir:definition [ fhir:v "Unable to fit or tie (0)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

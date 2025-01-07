@@ -1,0 +1,75 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/Medicine> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Medicine"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem Medicine</b></p><a name=\"Medicine\"> </a><a name=\"hcMedicine\"> </a><a name=\"Medicine-en-US\"> </a><p>This case-insensitive code system <code>https://kip.sundk.dk/fhir/CodeSystem/Medicine</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">beh-vitamin_k<a name=\"Medicine-beh-vitamin_k\"> </a></td><td>Vitamin-K-antagonist</td><td>Behandling med vitamin-K-antagonist</td></tr><tr><td style=\"white-space:nowrap\">noak_a<a name=\"Medicine-noak_a\"> </a></td><td>NOAK halv dosis</td><td>NOAK halv dosis</td></tr><tr><td style=\"white-space:nowrap\">noak_b<a name=\"Medicine-noak_b\"> </a></td><td>NOAK fuld dosis</td><td>NOAK fuld dosis</td></tr><tr><td style=\"white-space:nowrap\">antibiotics<a name=\"Medicine-antibiotics\"> </a></td><td>Antibiotics</td><td>Antibiotics / Antibiotika</td></tr><tr><td style=\"white-space:nowrap\">penicillin<a name=\"Medicine-penicillin\"> </a></td><td>Penicillin</td><td>Penicillin</td></tr><tr><td style=\"white-space:nowrap\">penicillinase_stabile<a name=\"Medicine-penicillinase_stabile\"> </a></td><td>Penicillinasestabilt penicilin</td><td>Penicillinasestabilt penicilin</td></tr><tr><td style=\"white-space:nowrap\">cephalosporin<a name=\"Medicine-cephalosporin\"> </a></td><td>Cefalosporin</td><td>Cefalosporin</td></tr><tr><td style=\"white-space:nowrap\">alteplase<a name=\"Medicine-alteplase\"> </a></td><td>Actilyse (alteplase)</td><td>Actilyse (alteplase)</td></tr><tr><td style=\"white-space:nowrap\">tenecteplase<a name=\"Medicine-tenecteplase\"> </a></td><td>Metalyse (tenecteplase)</td><td>Metalyse (tenecteplase)</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/Medicine"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "Medicine"] ; # 
+  fhir:title [ fhir:v "Medicine"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-10-06T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Medicine"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "9"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "beh-vitamin_k" ] ;
+     fhir:display [ fhir:v "Vitamin-K-antagonist" ] ;
+     fhir:definition [ fhir:v "Behandling med vitamin-K-antagonist" ]
+  ] [
+     fhir:code [ fhir:v "noak_a" ] ;
+     fhir:display [ fhir:v "NOAK halv dosis" ] ;
+     fhir:definition [ fhir:v "NOAK halv dosis" ]
+  ] [
+     fhir:code [ fhir:v "noak_b" ] ;
+     fhir:display [ fhir:v "NOAK fuld dosis" ] ;
+     fhir:definition [ fhir:v "NOAK fuld dosis" ]
+  ] [
+     fhir:code [ fhir:v "antibiotics" ] ;
+     fhir:display [ fhir:v "Antibiotics" ] ;
+     fhir:definition [ fhir:v "Antibiotics / Antibiotika" ]
+  ] [
+     fhir:code [ fhir:v "penicillin" ] ;
+     fhir:display [ fhir:v "Penicillin" ] ;
+     fhir:definition [ fhir:v "Penicillin" ]
+  ] [
+     fhir:code [ fhir:v "penicillinase_stabile" ] ;
+     fhir:display [ fhir:v "Penicillinasestabilt penicilin" ] ;
+     fhir:definition [ fhir:v "Penicillinasestabilt penicilin" ]
+  ] [
+     fhir:code [ fhir:v "cephalosporin" ] ;
+     fhir:display [ fhir:v "Cefalosporin" ] ;
+     fhir:definition [ fhir:v "Cefalosporin" ]
+  ] [
+     fhir:code [ fhir:v "alteplase" ] ;
+     fhir:display [ fhir:v "Actilyse (alteplase)" ] ;
+     fhir:definition [ fhir:v "Actilyse (alteplase)" ]
+  ] [
+     fhir:code [ fhir:v "tenecteplase" ] ;
+     fhir:display [ fhir:v "Metalyse (tenecteplase)" ] ;
+     fhir:definition [ fhir:v "Metalyse (tenecteplase)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

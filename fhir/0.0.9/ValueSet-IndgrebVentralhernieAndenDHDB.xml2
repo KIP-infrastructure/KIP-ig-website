@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="IndgrebVentralhernieAndenDHDB"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet IndgrebVentralhernieAndenDHDB</b></p><a name="IndgrebVentralhernieAndenDHDB"> </a><a name="hcIndgrebVentralhernieAndenDHDB"> </a><a name="IndgrebVentralhernieAndenDHDB-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-ProcedureType.html"><code>https://kip.sundk.dk/fhir/CodeSystem/ProcedureType</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-ProcedureType.html#ProcedureType-milos">milos</a></td><td>MILOS</td><td>MILOS</td></tr><tr><td><a href="CodeSystem-ProcedureType.html#ProcedureType-emilos">emilos</a></td><td>eMILOS</td><td>eMILOS</td></tr><tr><td><a href="CodeSystem-ProcedureType.html#ProcedureType-etep">etep</a></td><td>eTEP</td><td>eTEP - Robot-assisteret metode</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-GenericValues.html"><code>https://kip.sundk.dk/fhir/CodeSystem/GenericValues</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-GenericValues.html#GenericValues-other">other</a></td><td>Anden - specificér</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.sundk.dk/fhir/ValueSet/IndgrebVentralhernieAndenDHDB"/>
+  <version value="0.0.9"/>
+  <name value="IndgrebVentralhernieAndenDHDB"/>
+  <title value="Indgreb - ventralhernie anden minimal indgreb (DHDB)"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-07-20T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Indgreb - ventralhernie anden minimal indgreb (DHDB)"/>
+  <compose>
+    <include>
+      <system value="https://kip.sundk.dk/fhir/CodeSystem/ProcedureType"/>
+      <concept>
+        <code value="milos"/>
+        <display value="MILOS"/>
+      </concept>
+      <concept>
+        <code value="emilos"/>
+        <display value="eMILOS"/>
+      </concept>
+      <concept>
+        <code value="etep"/>
+        <display value="eTEP"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://kip.sundk.dk/fhir/CodeSystem/GenericValues"/>
+      <concept>
+        <code value="other"/>
+        <display value="Anden - specificér"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

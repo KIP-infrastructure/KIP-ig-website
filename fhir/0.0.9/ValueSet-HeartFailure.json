@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "HeartFailure",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet HeartFailure</b></p><a name=\"HeartFailure\"> </a><a name=\"hcHeartFailure\"> </a><a name=\"HeartFailure-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Complications.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/Complications</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-heart_failur_class_2\">heart_failur_class_2</a></td><td>Killip klasse 2 (Væskeraslen ved respiration/halsvenestase)</td><td>--</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-heart_failur_class_3\">heart_failur_class_3</a></td><td>Killip klasse 3 (Lungeødem)</td><td>--</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-heart_failur_class_4\">heart_failur_class_4</a></td><td>Killip klasse 4 (Kardiogent shock)</td><td>--</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.sundk.dk/fhir/ValueSet/HeartFailure",
+  "version" : "0.0.9",
+  "name" : "HeartFailure",
+  "title" : "Killip sværhedsgrad",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-06-07T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Killip sværhedsgrad af hjertestop",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/Complications",
+      "concept" : [{
+        "code" : "heart_failur_class_2",
+        "display" : "Killip klasse 2 (Væskeraslen ved respiration/halsvenestase)"
+      },
+      {
+        "code" : "heart_failur_class_3",
+        "display" : "Killip klasse 3 (Lungeødem)"
+      },
+      {
+        "code" : "heart_failur_class_4",
+        "display" : "Killip klasse 4 (Kardiogent shock)"
+      }]
+    }]
+  }
+}

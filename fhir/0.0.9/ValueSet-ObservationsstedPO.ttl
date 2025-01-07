@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/ValueSet/ObservationsstedPO> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ObservationsstedPO"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ObservationsstedPO</b></p><a name=\"ObservationsstedPO\"> </a><a name=\"hcObservationsstedPO\"> </a><a name=\"ObservationsstedPO-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Observationssted.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/Observationssted</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Observationssted.html#Observationssted-central_obs\">central_obs</a></td><td>Centralt observationsafsnit</td><td>Centralt observationsafsnit</td></tr><tr><td><a href=\"CodeSystem-Observationssted.html#Observationssted-andet_obs\">andet_obs</a></td><td>Andet observationsafsnit</td><td>Andet observationsafsnit</td></tr><tr><td><a href=\"CodeSystem-Observationssted.html#Observationssted-opergang\">opergang</a></td><td>Operationsgangen</td><td>Operationsgangen</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/ValueSet/ObservationsstedPO"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "ObservationsstedPO"] ; # 
+  fhir:title [ fhir:v "Observationssted postoperativt"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-05-16T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Observationssted for postoperativ anæstesi observation"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/Observationssted"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "central_obs" ] ;
+         fhir:display [ fhir:v "Centralt observationsafsnit" ]
+       ] [
+         fhir:code [ fhir:v "andet_obs" ] ;
+         fhir:display [ fhir:v "Andet observationsafsnit" ]
+       ] [
+         fhir:code [ fhir:v "opergang" ] ;
+         fhir:display [ fhir:v "Operationsgangen" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

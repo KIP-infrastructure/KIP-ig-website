@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "Status",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Status</b></p><a name=\"Status\"> </a><a name=\"hcStatus\"> </a><a name=\"Status-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-none\">none</a></td><td>Ingen</td><td>None - used to choose none of the available values</td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-temporary\">temporary</a></td><td>Midlertidig</td><td>Temporary / Midlertidig</td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-permanent\">permanent</a></td><td>Permanent</td><td>Permanent / SNOMED-CT: 6934004</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.sundk.dk/fhir/ValueSet/Status",
+  "version" : "0.0.9",
+  "name" : "Status",
+  "title" : "Status",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-10-11T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Status",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "none",
+        "display" : "Ingen"
+      },
+      {
+        "code" : "temporary",
+        "display" : "Midlertidig"
+      },
+      {
+        "code" : "permanent",
+        "display" : "Permanent"
+      }]
+    }]
+  }
+}

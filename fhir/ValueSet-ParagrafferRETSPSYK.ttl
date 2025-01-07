@@ -1,0 +1,198 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/ValueSet/ParagrafferRETSPSYK> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ParagrafferRETSPSYK"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ParagrafferRETSPSYK</b></p><a name=\"ParagrafferRETSPSYK\"> </a><a name=\"hcParagrafferRETSPSYK\"> </a><a name=\"ParagrafferRETSPSYK-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-Paragraph.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/Paragraph</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167.167237-241\">§§237-241</a></td><td>Manddrab §§ 237-241</td><td>Manddrab §§ 237-241</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167.167237-241_.16721\">§§237-241_§21</a></td><td>Manddrab, forsøg §§ 237-241, jf. § 21</td><td>Manddrab, forsøg §§ 237-241, jf. § 21</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167244\">§244</a></td><td>Vold § 244</td><td>Vold § 244</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167244_.16721\">§244_§21</a></td><td>Vold, forsøg § 244, jf. § 21</td><td>Vold, forsøg § 244, jf. § 21</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167245\">§245</a></td><td>Kvalificeret vold m/skade på legeme eller helbred § 245</td><td>Kvalificeret vold m/skade på legeme eller helbred § 245</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167245_.16721\">§245_§21</a></td><td>Kvalificeret vold m/skade på legeme eller helbred, forsøg § 245, jf. § 21</td><td>Kvalificeret vold m/skade på legeme eller helbred, forsøg § 245, jf. § 21</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167246\">§246</a></td><td>Kvalificeret vold m/grov skade § 246</td><td>Kvalificeret vold m/grov skade § 246</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167246_.16721\">§246_§21</a></td><td>Kvalificeret vold m/grov skade, forsøg § 246, jf. § 21</td><td>Kvalificeret vold m/grov skade, forsøg § 246, jf. § 21</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167119\">§119</a></td><td>Vold og lign. mod nogen i offentlig tjeneste § 119</td><td>Vold og lign. mod nogen i offentlig tjeneste § 119</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167119_.16721\">§119_§21</a></td><td>Vold og lign. mod nogen i offentlig tjeneste, forsøg § 119, jf. § 21</td><td>Vold og lign. mod nogen i offentlig tjeneste, forsøg § 119, jf. § 21</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167.167249-255\">§§249-255</a></td><td>Anden personfarlig kriminalitet § 249-255</td><td>Anden personfarlig kriminalitet § 249-255</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167.167249-255_.16721\">§§249-255_§21</a></td><td>Anden personfarlig kriminalitet, forsøg § 249-255, jf. § 21</td><td>Anden personfarlig kriminalitet, forsøg § 249-255, jf. § 21</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167.167265-266\">§§265-266</a></td><td>Trusler § 265-266</td><td>Trusler § 265-266</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167.167265-266_attempt\">§§265-266_attempt</a></td><td>Trusler, forsøg § 265-266</td><td>Trusler, forsøg § 265-266</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167123\">§123</a></td><td>Trusler, vidnetrusler §123</td><td>Trusler, vidnetrusler §123</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167.167260-262\">§§260-262</a></td><td>Ulovlig tvang §§ 260-262</td><td>Ulovlig tvang §§ 260-262</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167.167260-262_attempt\">§§260-262_attempt</a></td><td>Ulovlig tvang, forsøg §§ 260-262</td><td>Ulovlig tvang, forsøg §§ 260-262</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167180\">§180</a></td><td>Brandstiftelse, kvalificeret § 180</td><td>Brandstiftelse, kvalificeret § 180</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167180_.16721\">§180_§21</a></td><td>Brandstiftelse, kvalificeret, forsøg § 180, jf. § 21</td><td>Brandstiftelse, kvalificeret, forsøg § 180, jf. § 21</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167181\">§181</a></td><td>Brandstiftelse, forsætlig § 181</td><td>Brandstiftelse, forsætlig § 181</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167181_.16721\">§181_§21</a></td><td>Brandstiftelse, forsætlig, forsøg § 181, jf. § 21</td><td>Brandstiftelse, forsætlig, forsøg § 181, jf. § 21</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167216\">§216</a></td><td>Voldtægt § 216</td><td>Voldtægt § 216</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167216_.16721\">§216_§21</a></td><td>Voldtægt, forsøg § 216, jf. § 21</td><td>Voldtægt, forsøg § 216, jf. § 21</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167.167210-236\">§§210-236</a></td><td>Anden sædelighed §§ 210-236 (- § 216)</td><td>Anden sædelighed §§ 210-236 (- § 216)</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167.167210-236_.16721\">§§210-236_§21</a></td><td>Anden sædelighed, forsøg §§ 210-236 (- § 216), jf. § 21</td><td>Anden sædelighed, forsøg §§ 210-236 (- § 216), jf. § 21</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167191\">§191</a></td><td>Narkotikakriminalitet § 191</td><td>Narkotikakriminalitet § 191</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167191_.16721\">§191_§21</a></td><td>Narkotikakriminalitet, forsøg § 191, jf. § 21</td><td>Narkotikakriminalitet, forsøg § 191, jf. § 21</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-narcotics\">narcotics</a></td><td>Lov om euforiserende stoffer</td><td>Lov om euforiserende stoffer</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-narcotics_attempt\">narcotics_attempt</a></td><td>Lov om euforiserende stoffer, forsøg</td><td>Lov om euforiserende stoffer, forsøg</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167288\">§288</a></td><td>Røveri §288</td><td>Røveri §288</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167288_1\">§288_1</a></td><td>Røveri § 288, stk. 1</td><td>Røveri § 288, stk. 1</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167288_1_.16721\">§288_1_§21</a></td><td>Røveri, forsøg § 288, stk. 1, jf. § 21</td><td>Røveri, forsøg § 288, stk. 1, jf. § 21</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167288_2\">§288_2</a></td><td>Røveri, særligt farligt, § 288, stk. 2</td><td>Røveri, særligt farligt, § 288, stk. 2</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167288_2_.16721\">§288_2_§21</a></td><td>Røveri, særligt farligt, forsøg § 288, stk. 2, jf. § 21</td><td>Røveri, særligt farligt, forsøg § 288, stk. 2, jf. § 21</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167276\">§276</a></td><td>Tyveri § 276</td><td>Tyveri § 276</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167276_.16721\">§276_§21</a></td><td>Tyveri, forsøg § 276, jf. § 21</td><td>Tyveri, forsøg § 276, jf. § 21</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167.167278-280\">§§278-280</a></td><td>Bedrageri mv. §§ 278-280</td><td>Bedrageri mv. §§ 278-280</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167.167278-280_.16721\">§§278-280_§21</a></td><td>Bedrageri mv., forsøg §§ 278-280, jf. § 21</td><td>Bedrageri mv., forsøg §§ 278-280, jf. § 21</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167291\">§291</a></td><td>Hærværk § 291</td><td>Hærværk § 291</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-.167291_.16721\">§291_§21</a></td><td>Hærværk, forsøg § 291, jf. § 21</td><td>Hærværk, forsøg § 291, jf. § 21</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-criminal_law_other\">criminal_law_other</a></td><td>Straffeloven, øvrige</td><td>Straffeloven, øvrige</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-criminal_law_other_attempt\">criminal_law_other_attempt</a></td><td>Straffeloven, øvrige, forsøg</td><td>Straffeloven, øvrige, forsøg</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-weapons_decree\">weapons_decree</a></td><td>Våbenbekendtgørelsen</td><td>Våbenbekendtgørelsen</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-weapons_decree_attempt\">weapons_decree_attempt</a></td><td>Våbenbekendtgørelsen, forsøg</td><td>Våbenbekendtgørelsen, forsøg</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-traffic_law\">traffic_law</a></td><td>Færdselsloven</td><td>Færdselsloven</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-traffic_law_attempt\">traffic_law_attempt</a></td><td>Færdselsloven, forsøg</td><td>Færdselsloven, forsøg</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-special_law\">special_law</a></td><td>Særloven, øvrige</td><td>Særloven, øvrige</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-special_law_attempt\">special_law_attempt</a></td><td>Særloven, øvrige, forsøg</td><td>Særloven, øvrige, forsøg</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-pardon_petition\">pardon_petition</a></td><td>Benådningsandragende</td><td>Benådningsandragende</td></tr><tr><td><a href=\"CodeSystem-Paragraph.html#Paragraph-asylum_seeker\">asylum_seeker</a></td><td>Asylansøger</td><td>Asylansøger</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/ValueSet/ParagrafferRETSPSYK"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "ParagrafferRETSPSYK"] ; # 
+  fhir:title [ fhir:v "Paragraffer (RETSPSYK)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-09-28T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Paragraffer (RETSPSYK)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/Paragraph"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "§§237-241" ] ;
+         fhir:display [ fhir:v "Manddrab §§ 237-241" ]
+       ] [
+         fhir:code [ fhir:v "§§237-241_§21" ] ;
+         fhir:display [ fhir:v "Manddrab, forsøg §§ 237-241, jf. § 21" ]
+       ] [
+         fhir:code [ fhir:v "§244" ] ;
+         fhir:display [ fhir:v "Vold § 244" ]
+       ] [
+         fhir:code [ fhir:v "§244_§21" ] ;
+         fhir:display [ fhir:v "Vold, forsøg § 244, jf. § 21" ]
+       ] [
+         fhir:code [ fhir:v "§245" ] ;
+         fhir:display [ fhir:v "Kvalificeret vold m/skade på legeme eller helbred § 245" ]
+       ] [
+         fhir:code [ fhir:v "§245_§21" ] ;
+         fhir:display [ fhir:v "Kvalificeret vold m/skade på legeme eller helbred, forsøg § 245, jf. § 21" ]
+       ] [
+         fhir:code [ fhir:v "§246" ] ;
+         fhir:display [ fhir:v "Kvalificeret vold m/grov skade § 246" ]
+       ] [
+         fhir:code [ fhir:v "§246_§21" ] ;
+         fhir:display [ fhir:v "Kvalificeret vold m/grov skade, forsøg § 246, jf. § 21" ]
+       ] [
+         fhir:code [ fhir:v "§119" ] ;
+         fhir:display [ fhir:v "Vold og lign. mod nogen i offentlig tjeneste § 119" ]
+       ] [
+         fhir:code [ fhir:v "§119_§21" ] ;
+         fhir:display [ fhir:v "Vold og lign. mod nogen i offentlig tjeneste, forsøg § 119, jf. § 21" ]
+       ] [
+         fhir:code [ fhir:v "§§249-255" ] ;
+         fhir:display [ fhir:v "Anden personfarlig kriminalitet § 249-255" ]
+       ] [
+         fhir:code [ fhir:v "§§249-255_§21" ] ;
+         fhir:display [ fhir:v "Anden personfarlig kriminalitet, forsøg § 249-255, jf. § 21" ]
+       ] [
+         fhir:code [ fhir:v "§§265-266" ] ;
+         fhir:display [ fhir:v "Trusler § 265-266" ]
+       ] [
+         fhir:code [ fhir:v "§§265-266_attempt" ] ;
+         fhir:display [ fhir:v "Trusler, forsøg § 265-266" ]
+       ] [
+         fhir:code [ fhir:v "§123" ] ;
+         fhir:display [ fhir:v "Trusler, vidnetrusler §123" ]
+       ] [
+         fhir:code [ fhir:v "§§260-262" ] ;
+         fhir:display [ fhir:v "Ulovlig tvang §§ 260-262" ]
+       ] [
+         fhir:code [ fhir:v "§§260-262_attempt" ] ;
+         fhir:display [ fhir:v "Ulovlig tvang, forsøg §§ 260-262" ]
+       ] [
+         fhir:code [ fhir:v "§180" ] ;
+         fhir:display [ fhir:v "Brandstiftelse, kvalificeret § 180" ]
+       ] [
+         fhir:code [ fhir:v "§180_§21" ] ;
+         fhir:display [ fhir:v "Brandstiftelse, kvalificeret, forsøg § 180, jf. § 21" ]
+       ] [
+         fhir:code [ fhir:v "§181" ] ;
+         fhir:display [ fhir:v "Brandstiftelse, forsætlig § 181" ]
+       ] [
+         fhir:code [ fhir:v "§181_§21" ] ;
+         fhir:display [ fhir:v "Brandstiftelse, forsætlig, forsøg § 181, jf. § 21" ]
+       ] [
+         fhir:code [ fhir:v "§216" ] ;
+         fhir:display [ fhir:v "Voldtægt § 216" ]
+       ] [
+         fhir:code [ fhir:v "§216_§21" ] ;
+         fhir:display [ fhir:v "Voldtægt, forsøg § 216, jf. § 21" ]
+       ] [
+         fhir:code [ fhir:v "§§210-236" ] ;
+         fhir:display [ fhir:v "Anden sædelighed §§ 210-236 (- § 216)" ]
+       ] [
+         fhir:code [ fhir:v "§§210-236_§21" ] ;
+         fhir:display [ fhir:v "Anden sædelighed, forsøg §§ 210-236 (- § 216), jf. § 21" ]
+       ] [
+         fhir:code [ fhir:v "§191" ] ;
+         fhir:display [ fhir:v "Narkotikakriminalitet § 191" ]
+       ] [
+         fhir:code [ fhir:v "§191_§21" ] ;
+         fhir:display [ fhir:v "Narkotikakriminalitet, forsøg § 191, jf. § 21" ]
+       ] [
+         fhir:code [ fhir:v "narcotics" ] ;
+         fhir:display [ fhir:v "Lov om euforiserende stoffer" ]
+       ] [
+         fhir:code [ fhir:v "narcotics_attempt" ] ;
+         fhir:display [ fhir:v "Lov om euforiserende stoffer, forsøg" ]
+       ] [
+         fhir:code [ fhir:v "§288" ] ;
+         fhir:display [ fhir:v "Røveri §288" ]
+       ] [
+         fhir:code [ fhir:v "§288_1" ] ;
+         fhir:display [ fhir:v "Røveri § 288, stk. 1" ]
+       ] [
+         fhir:code [ fhir:v "§288_1_§21" ] ;
+         fhir:display [ fhir:v "Røveri, forsøg § 288, stk. 1, jf. § 21" ]
+       ] [
+         fhir:code [ fhir:v "§288_2" ] ;
+         fhir:display [ fhir:v "Røveri, særligt farligt, § 288, stk. 2" ]
+       ] [
+         fhir:code [ fhir:v "§288_2_§21" ] ;
+         fhir:display [ fhir:v "Røveri, særligt farligt, forsøg § 288, stk. 2, jf. § 21" ]
+       ] [
+         fhir:code [ fhir:v "§276" ] ;
+         fhir:display [ fhir:v "Tyveri § 276" ]
+       ] [
+         fhir:code [ fhir:v "§276_§21" ] ;
+         fhir:display [ fhir:v "Tyveri, forsøg § 276, jf. § 21" ]
+       ] [
+         fhir:code [ fhir:v "§§278-280" ] ;
+         fhir:display [ fhir:v "Bedrageri mv. §§ 278-280" ]
+       ] [
+         fhir:code [ fhir:v "§§278-280_§21" ] ;
+         fhir:display [ fhir:v "Bedrageri mv., forsøg §§ 278-280, jf. § 21" ]
+       ] [
+         fhir:code [ fhir:v "§291" ] ;
+         fhir:display [ fhir:v "Hærværk § 291" ]
+       ] [
+         fhir:code [ fhir:v "§291_§21" ] ;
+         fhir:display [ fhir:v "Hærværk, forsøg § 291, jf. § 21" ]
+       ] [
+         fhir:code [ fhir:v "criminal_law_other" ] ;
+         fhir:display [ fhir:v "Straffeloven, øvrige" ]
+       ] [
+         fhir:code [ fhir:v "criminal_law_other_attempt" ] ;
+         fhir:display [ fhir:v "Straffeloven, øvrige, forsøg" ]
+       ] [
+         fhir:code [ fhir:v "weapons_decree" ] ;
+         fhir:display [ fhir:v "Våbenbekendtgørelsen" ]
+       ] [
+         fhir:code [ fhir:v "weapons_decree_attempt" ] ;
+         fhir:display [ fhir:v "Våbenbekendtgørelsen, forsøg" ]
+       ] [
+         fhir:code [ fhir:v "traffic_law" ] ;
+         fhir:display [ fhir:v "Færdselsloven" ]
+       ] [
+         fhir:code [ fhir:v "traffic_law_attempt" ] ;
+         fhir:display [ fhir:v "Færdselsloven, forsøg" ]
+       ] [
+         fhir:code [ fhir:v "special_law" ] ;
+         fhir:display [ fhir:v "Særloven, øvrige" ]
+       ] [
+         fhir:code [ fhir:v "special_law_attempt" ] ;
+         fhir:display [ fhir:v "Særloven, øvrige, forsøg" ]
+       ] [
+         fhir:code [ fhir:v "pardon_petition" ] ;
+         fhir:display [ fhir:v "Benådningsandragende" ]
+       ] [
+         fhir:code [ fhir:v "asylum_seeker" ] ;
+         fhir:display [ fhir:v "Asylansøger" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/GenericValues"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "other" ] ;
+         fhir:display [ fhir:v "Andet" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

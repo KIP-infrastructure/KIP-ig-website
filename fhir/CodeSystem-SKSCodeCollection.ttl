@@ -1,0 +1,119 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/SKSCodeCollection> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SKSCodeCollection"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem SKSCodeCollection</b></p><a name=\"SKSCodeCollection\"> </a><a name=\"hcSKSCodeCollection\"> </a><a name=\"SKSCodeCollection-en-US\"> </a><p>This  code system <code>https://kip.sundk.dk/fhir/CodeSystem/SKSCodeCollection</code> provides <b>a fragment</b> that includes following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">cancer_diseases<a name=\"SKSCodeCollection-cancer_diseases\"> </a></td><td>Kræft sygdomme</td><td>Kræft sygdomme</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  lips_mouth_throat<a name=\"SKSCodeCollection-lips_mouth_throat\"> </a></td><td>Kræft i læber, mundhule og svælg (DC00-DC14)</td><td>Kræft i læber, mundhule og svælg (DC00-DC14)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  colon_rectum<a name=\"SKSCodeCollection-colon_rectum\"> </a></td><td>Kræft i tyktarm og endetarm (DC18-DC20)</td><td>Kræft i tyktarm og endetarm (DC18-DC20)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  trachea_bronchi_lung<a name=\"SKSCodeCollection-trachea_bronchi_lung\"> </a></td><td>Kræft i luftrøret og bronkier og lunge (DC33-DC34)</td><td>Kræft i luftrøret og bronkier og lunge (DC33-DC34)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  uterus<a name=\"SKSCodeCollection-uterus\"> </a></td><td>Kræft i livmoderen (inkl. uspecifik) (DC54-DC55)</td><td>Kræft i livmoderen (inkl. uspecifik) (DC54-DC55)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  ovary_fallopian_tube<a name=\"SKSCodeCollection-ovary_fallopian_tube\"> </a></td><td>Kræft i æggestok og æggeleder (DC56+DC570-DC574)</td><td>Kræft i æggestok og æggeleder (DC56+DC570-DC574)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  kidney_pelvis_ureter<a name=\"SKSCodeCollection-kidney_pelvis_ureter\"> </a></td><td>Kræft i nyre, nyrebækken og urinleder (DC64-DC66)</td><td>Kræft i nyre, nyrebækken og urinleder (DC64-DC66)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  central_nervous_system<a name=\"SKSCodeCollection-central_nervous_system\"> </a></td><td>Kræft i centralnervesystem (DC70-DC72+DC751-DC753)</td><td>Kræft i centralnervesystem (DC70-DC72+DC751-DC753)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  non_hodgkin<a name=\"SKSCodeCollection-non_hodgkin\"> </a></td><td>Non-hodgkin malignt lymform (DC82-DC85)</td><td>Non-hodking malignt lymform (DC82-DC85)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  leukemia<a name=\"SKSCodeCollection-leukemia\"> </a></td><td>Leukæmi (DC91-DC95)</td><td>Leukæmi (DC91-DC95)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  mesotel_tissue<a name=\"SKSCodeCollection-mesotel_tissue\"> </a></td><td>Kræft i mesotel, bindevæv og andet bløddelsvæv (DC45-DC49)</td><td>Kræft i mesotel, bindevæv og andet bløddelsvæv (DC45-DC49)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  unspecific<a name=\"SKSCodeCollection-unspecific\"> </a></td><td>Kræft med dårligt specificerede, sekundære, ikke specificerede og ukendte lokalisationer (DC76-DC80+DD37-DD48)</td><td>Kræft med dårligt specificerede, sekundære, ikke specificerede og ukendte lokalisationer (DC76-DC80+DD37-DD48)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  other_cancer_diseases<a name=\"SKSCodeCollection-other_cancer_diseases\"> </a></td><td>Ikke-kræft sygdomme</td><td>Ikke-kræft sygdomme</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">non_cancer_diseases<a name=\"SKSCodeCollection-non_cancer_diseases\"> </a></td><td>Ikke kræft</td><td>Ikke kræft</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  heart_vessel<a name=\"SKSCodeCollection-heart_vessel\"> </a></td><td>Hjertekar sygdom (DI00-DI52+DI70-DI99)</td><td>Hjertekar sygdom (DI00-DI52+DI70-DI99)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  neurological<a name=\"SKSCodeCollection-neurological\"> </a></td><td>Neurologisk sygdom (ikke apopleksi) (DI64-DI69+DG00-DG99+DF00-DF03)</td><td>Neurologisk sygdom (ikke apopleksi) (DI64-DI69+DG00-DG99+DF00-DF03)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  apoplexia<a name=\"SKSCodeCollection-apoplexia\"> </a></td><td>Apopleksi (cerebral thrombose/hæmorrhagi) (DI60-DI63)</td><td>Apopleksi (cerebral thrombose/hæmorrhagi) (DI60-DI63)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  lung<a name=\"SKSCodeCollection-lung\"> </a></td><td>Lungesygdomme (DJ00-DJ99+DE84)</td><td>Lungesygdomme (DJ00-DJ99+DE84)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  kidney<a name=\"SKSCodeCollection-kidney\"> </a></td><td>Nyresygdomme (DN00-DN29)</td><td>Nyresygdomme (DN00-DN29)</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/SKSCodeCollection"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:1.2.208.176.2.4" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "SKSCodeCollection"] ; # 
+  fhir:title [ fhir:v "Sundhedsvæsenets klassifikationssystem (SKS) - Samlinger af koder"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-07T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sundhedsvæsenets klassifikationssystem (SKS) - Udvalgte samlinger af koder i RKKP. Link: urn:oid:1.2.208.176.2.4"] ; # 
+  fhir:content [ fhir:v "fragment"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "cancer_diseases" ] ;
+     fhir:display [ fhir:v "Kræft sygdomme" ] ;
+     fhir:definition [ fhir:v "Kræft sygdomme" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "lips_mouth_throat" ] ;
+       fhir:display [ fhir:v "Kræft i læber, mundhule og svælg (DC00-DC14)" ] ;
+       fhir:definition [ fhir:v "Kræft i læber, mundhule og svælg (DC00-DC14)" ]
+     ] [
+       fhir:code [ fhir:v "colon_rectum" ] ;
+       fhir:display [ fhir:v "Kræft i tyktarm og endetarm (DC18-DC20)" ] ;
+       fhir:definition [ fhir:v "Kræft i tyktarm og endetarm (DC18-DC20)" ]
+     ] [
+       fhir:code [ fhir:v "trachea_bronchi_lung" ] ;
+       fhir:display [ fhir:v "Kræft i luftrøret og bronkier og lunge (DC33-DC34)" ] ;
+       fhir:definition [ fhir:v "Kræft i luftrøret og bronkier og lunge (DC33-DC34)" ]
+     ] [
+       fhir:code [ fhir:v "uterus" ] ;
+       fhir:display [ fhir:v "Kræft i livmoderen (inkl. uspecifik) (DC54-DC55)" ] ;
+       fhir:definition [ fhir:v "Kræft i livmoderen (inkl. uspecifik) (DC54-DC55)" ]
+     ] [
+       fhir:code [ fhir:v "ovary_fallopian_tube" ] ;
+       fhir:display [ fhir:v "Kræft i æggestok og æggeleder (DC56+DC570-DC574)" ] ;
+       fhir:definition [ fhir:v "Kræft i æggestok og æggeleder (DC56+DC570-DC574)" ]
+     ] [
+       fhir:code [ fhir:v "kidney_pelvis_ureter" ] ;
+       fhir:display [ fhir:v "Kræft i nyre, nyrebækken og urinleder (DC64-DC66)" ] ;
+       fhir:definition [ fhir:v "Kræft i nyre, nyrebækken og urinleder (DC64-DC66)" ]
+     ] [
+       fhir:code [ fhir:v "central_nervous_system" ] ;
+       fhir:display [ fhir:v "Kræft i centralnervesystem (DC70-DC72+DC751-DC753)" ] ;
+       fhir:definition [ fhir:v "Kræft i centralnervesystem (DC70-DC72+DC751-DC753)" ]
+     ] [
+       fhir:code [ fhir:v "non_hodgkin" ] ;
+       fhir:display [ fhir:v "Non-hodgkin malignt lymform (DC82-DC85)" ] ;
+       fhir:definition [ fhir:v "Non-hodking malignt lymform (DC82-DC85)" ]
+     ] [
+       fhir:code [ fhir:v "leukemia" ] ;
+       fhir:display [ fhir:v "Leukæmi (DC91-DC95)" ] ;
+       fhir:definition [ fhir:v "Leukæmi (DC91-DC95)" ]
+     ] [
+       fhir:code [ fhir:v "mesotel_tissue" ] ;
+       fhir:display [ fhir:v "Kræft i mesotel, bindevæv og andet bløddelsvæv (DC45-DC49)" ] ;
+       fhir:definition [ fhir:v "Kræft i mesotel, bindevæv og andet bløddelsvæv (DC45-DC49)" ]
+     ] [
+       fhir:code [ fhir:v "unspecific" ] ;
+       fhir:display [ fhir:v "Kræft med dårligt specificerede, sekundære, ikke specificerede og ukendte lokalisationer (DC76-DC80+DD37-DD48)" ] ;
+       fhir:definition [ fhir:v "Kræft med dårligt specificerede, sekundære, ikke specificerede og ukendte lokalisationer (DC76-DC80+DD37-DD48)" ]
+     ] [
+       fhir:code [ fhir:v "other_cancer_diseases" ] ;
+       fhir:display [ fhir:v "Ikke-kræft sygdomme" ] ;
+       fhir:definition [ fhir:v "Ikke-kræft sygdomme" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "non_cancer_diseases" ] ;
+     fhir:display [ fhir:v "Ikke kræft" ] ;
+     fhir:definition [ fhir:v "Ikke kræft" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "heart_vessel" ] ;
+       fhir:display [ fhir:v "Hjertekar sygdom (DI00-DI52+DI70-DI99)" ] ;
+       fhir:definition [ fhir:v "Hjertekar sygdom (DI00-DI52+DI70-DI99)" ]
+     ] [
+       fhir:code [ fhir:v "neurological" ] ;
+       fhir:display [ fhir:v "Neurologisk sygdom (ikke apopleksi) (DI64-DI69+DG00-DG99+DF00-DF03)" ] ;
+       fhir:definition [ fhir:v "Neurologisk sygdom (ikke apopleksi) (DI64-DI69+DG00-DG99+DF00-DF03)" ]
+     ] [
+       fhir:code [ fhir:v "apoplexia" ] ;
+       fhir:display [ fhir:v "Apopleksi (cerebral thrombose/hæmorrhagi) (DI60-DI63)" ] ;
+       fhir:definition [ fhir:v "Apopleksi (cerebral thrombose/hæmorrhagi) (DI60-DI63)" ]
+     ] [
+       fhir:code [ fhir:v "lung" ] ;
+       fhir:display [ fhir:v "Lungesygdomme (DJ00-DJ99+DE84)" ] ;
+       fhir:definition [ fhir:v "Lungesygdomme (DJ00-DJ99+DE84)" ]
+     ] [
+       fhir:code [ fhir:v "kidney" ] ;
+       fhir:display [ fhir:v "Nyresygdomme (DN00-DN29)" ] ;
+       fhir:definition [ fhir:v "Nyresygdomme (DN00-DN29)" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

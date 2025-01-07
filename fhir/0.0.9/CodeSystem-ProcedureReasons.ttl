@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/ProcedureReasons> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ProcedureReasons"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ProcedureReasons</b></p><a name=\"ProcedureReasons\"> </a><a name=\"hcProcedureReasons\"> </a><a name=\"ProcedureReasons-en-US\"> </a><p>This case-insensitive code system <code>https://kip.sundk.dk/fhir/CodeSystem/ProcedureReasons</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">patients_wish<a name=\"ProcedureReasons-patients_wish\"> </a></td><td>Patient's wish</td><td>Patient's wish / Patientønske</td></tr><tr><td style=\"white-space:nowrap\">non_resectable<a name=\"ProcedureReasons-non_resectable\"> </a></td><td>Non resectable</td><td>Non resectable / Ikke resektabel</td></tr><tr><td style=\"white-space:nowrap\">non_operable<a name=\"ProcedureReasons-non_operable\"> </a></td><td>Non operable</td><td>Patienten er blevet non-operabel</td></tr><tr><td style=\"white-space:nowrap\">disseminated_disease<a name=\"ProcedureReasons-disseminated_disease\"> </a></td><td>Disseminated disease</td><td>Disseminated disease / Dissemineret sygdom</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/ProcedureReasons"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "ProcedureReasons"] ; # 
+  fhir:title [ fhir:v "Reasons for procedure"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-03T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Reasons for procedure"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "patients_wish" ] ;
+     fhir:display [ fhir:v "Patient's wish" ] ;
+     fhir:definition [ fhir:v "Patient's wish / Patientønske" ]
+  ] [
+     fhir:code [ fhir:v "non_resectable" ] ;
+     fhir:display [ fhir:v "Non resectable" ] ;
+     fhir:definition [ fhir:v "Non resectable / Ikke resektabel" ]
+  ] [
+     fhir:code [ fhir:v "non_operable" ] ;
+     fhir:display [ fhir:v "Non operable" ] ;
+     fhir:definition [ fhir:v "Patienten er blevet non-operabel" ]
+  ] [
+     fhir:code [ fhir:v "disseminated_disease" ] ;
+     fhir:display [ fhir:v "Disseminated disease" ] ;
+     fhir:definition [ fhir:v "Disseminated disease / Dissemineret sygdom" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

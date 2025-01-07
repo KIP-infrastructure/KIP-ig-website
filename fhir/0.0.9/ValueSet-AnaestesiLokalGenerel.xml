@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="AnaestesiLokalGenerel"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet AnaestesiLokalGenerel</b></p><a name="AnaestesiLokalGenerel"> </a><a name="hcAnaestesiLokalGenerel"> </a><a name="AnaestesiLokalGenerel-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-AnasthesiaService.html"><code>https://kip.sundk.dk/fhir/CodeSystem/AnasthesiaService</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-AnasthesiaService.html#AnasthesiaService-gen_anesthesia">gen_anesthesia</a></td><td>Generel anæstesi (GA)</td><td>Generel anæstesi / SNOMED-CT: 50697003</td></tr><tr><td><a href="CodeSystem-AnasthesiaService.html#AnasthesiaService-local_anesthesia">local_anesthesia</a></td><td>Lokal anæstesi (LA)</td><td>Lokal anæstesi / SNOMED-CT: 386761002</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.sundk.dk/fhir/ValueSet/AnaestesiLokalGenerel"/>
+  <version value="0.0.9"/>
+  <name value="AnaestesiLokalGenerel"/>
+  <title value="Anæstesi - Generel og lokal anæstesi"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-06-28T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Værdier for generel og lokal anæstesi."/>
+  <compose>
+    <include>
+      <system value="https://kip.sundk.dk/fhir/CodeSystem/AnasthesiaService"/>
+      <concept>
+        <code value="gen_anesthesia"/>
+        <display value="Generel anæstesi (GA)"/>
+      </concept>
+      <concept>
+        <code value="local_anesthesia"/>
+        <display value="Lokal anæstesi (LA)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

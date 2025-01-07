@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/ValueSet/ManglendeBehandling> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ManglendeBehandling"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ManglendeBehandling</b></p><a name=\"ManglendeBehandling\"> </a><a name=\"hcManglendeBehandling\"> </a><a name=\"ManglendeBehandling-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-TreatmentNotGiven.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/TreatmentNotGiven</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-TreatmentNotGiven.html#TreatmentNotGiven-unsuitable\">unsuitable</a></td><td>Uegnet til behandling</td><td>Unsuitable for treatment / Uegnet til behandling</td></tr><tr><td><a href=\"CodeSystem-TreatmentNotGiven.html#TreatmentNotGiven-unwanted\">unwanted</a></td><td>Ønskede ikke behandling</td><td>Unwanted treatment / Ønskede ikke behandling</td></tr><tr><td><a href=\"CodeSystem-TreatmentNotGiven.html#TreatmentNotGiven-died\">died</a></td><td>Døde før behandling</td><td>Died before treatment / Døde før behandling</td></tr><tr><td><a href=\"CodeSystem-TreatmentNotGiven.html#TreatmentNotGiven-lack_capacity\">lack_capacity</a></td><td>Manglende kapacitet</td><td>Lack of capacity / Manglende kapacitet</td></tr><tr><td><a href=\"CodeSystem-TreatmentNotGiven.html#TreatmentNotGiven-other_palliative_department\">other_palliative_department</a></td><td>Behandlet af anden palliativ enhed</td><td>Other palliative department / Behandlet af anden palliativ enhed</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Anden årsag</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/ValueSet/ManglendeBehandling"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "ManglendeBehandling"] ; # 
+  fhir:title [ fhir:v "Grund til manglende behandling"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-09-06T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Årsag til manglende behandling"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/TreatmentNotGiven"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "unsuitable" ] ;
+         fhir:display [ fhir:v "Uegnet til behandling" ]
+       ] [
+         fhir:code [ fhir:v "unwanted" ] ;
+         fhir:display [ fhir:v "Ønskede ikke behandling" ]
+       ] [
+         fhir:code [ fhir:v "died" ] ;
+         fhir:display [ fhir:v "Døde før behandling" ]
+       ] [
+         fhir:code [ fhir:v "lack_capacity" ] ;
+         fhir:display [ fhir:v "Manglende kapacitet" ]
+       ] [
+         fhir:code [ fhir:v "other_palliative_department" ] ;
+         fhir:display [ fhir:v "Behandlet af anden palliativ enhed" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/GenericValues"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "other" ] ;
+         fhir:display [ fhir:v "Anden årsag" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

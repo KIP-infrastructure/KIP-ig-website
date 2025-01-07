@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/ValueSet/MedicinalBehandlingPaabegyndtDHR> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MedicinalBehandlingPaabegyndtDHR"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet MedicinalBehandlingPaabegyndtDHR</b></p><a name=\"MedicinalBehandlingPaabegyndtDHR\"> </a><a name=\"hcMedicinalBehandlingPaabegyndtDHR\"> </a><a name=\"MedicinalBehandlingPaabegyndtDHR-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-MedicalTreatmentStartOf.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/MedicalTreatmentStartOf</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-MedicalTreatmentStartOf.html#MedicalTreatmentStartOf-before_operation\">before_operation</a></td><td>Påbegyndt før operation</td><td>Before operation</td></tr><tr><td><a href=\"CodeSystem-MedicalTreatmentStartOf.html#MedicalTreatmentStartOf-after_operation\">after_operation</a></td><td>Påbegyndt efter operation på OP-dag</td><td>After operation</td></tr><tr><td><a href=\"CodeSystem-MedicalTreatmentStartOf.html#MedicalTreatmentStartOf-day_after_operation\">day_after_operation</a></td><td>Påbegyndt første postoperative dag</td><td>The day after the operation</td></tr><tr><td><a href=\"CodeSystem-MedicalTreatmentStartOf.html#MedicalTreatmentStartOf-during_admission\">during_admission</a></td><td>Kun under indlæggelse</td><td>During admission</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/ValueSet/MedicinalBehandlingPaabegyndtDHR"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "MedicinalBehandlingPaabegyndtDHR"] ; # 
+  fhir:title [ fhir:v "Medicinal behandling - Hvornår bliver dette giver i forhold til proceduren/operatioen? [DHR]"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-07-07T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Medicinal behandling - Hvornår bliver dette giver i forhold til proceduren/operatioen? [DHR]"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/MedicalTreatmentStartOf"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "before_operation" ] ;
+         fhir:display [ fhir:v "Påbegyndt før operation" ]
+       ] [
+         fhir:code [ fhir:v "after_operation" ] ;
+         fhir:display [ fhir:v "Påbegyndt efter operation på OP-dag" ]
+       ] [
+         fhir:code [ fhir:v "day_after_operation" ] ;
+         fhir:display [ fhir:v "Påbegyndt første postoperative dag" ]
+       ] [
+         fhir:code [ fhir:v "during_admission" ] ;
+         fhir:display [ fhir:v "Kun under indlæggelse" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

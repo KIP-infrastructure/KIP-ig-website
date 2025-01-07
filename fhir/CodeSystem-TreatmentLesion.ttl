@@ -1,0 +1,71 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/TreatmentLesion> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TreatmentLesion"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem TreatmentLesion</b></p><a name=\"TreatmentLesion\"> </a><a name=\"hcTreatmentLesion\"> </a><a name=\"TreatmentLesion-en-US\"> </a><p>This case-insensitive code system <code>https://kip.sundk.dk/fhir/CodeSystem/TreatmentLesion</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">resection<a name=\"TreatmentLesion-resection\"> </a></td><td>Resection</td><td>Resection / Resektion</td></tr><tr><td style=\"white-space:nowrap\">suture<a name=\"TreatmentLesion-suture\"> </a></td><td>Suture</td><td>Suture / Sutur</td></tr><tr><td style=\"white-space:nowrap\">all_inside<a name=\"TreatmentLesion-all_inside\"> </a></td><td>All inside</td><td>All inside</td></tr><tr><td style=\"white-space:nowrap\">debridement<a name=\"TreatmentLesion-debridement\"> </a></td><td>Debridement</td><td>Debridement</td></tr><tr><td style=\"white-space:nowrap\">microfracture<a name=\"TreatmentLesion-microfracture\"> </a></td><td>Microfracture</td><td>Microfracture / Mikrofraktur</td></tr><tr><td style=\"white-space:nowrap\">mosaic_plastic<a name=\"TreatmentLesion-mosaic_plastic\"> </a></td><td>Mosaic plastic</td><td>Mosaic plastic / Mosaikplastik</td></tr><tr><td style=\"white-space:nowrap\">synthetic_scaffold<a name=\"TreatmentLesion-synthetic_scaffold\"> </a></td><td>Synthetic scaffold</td><td>Synthetic scaffold / Syntetisk scaffold</td></tr><tr><td style=\"white-space:nowrap\">cell_transplantation<a name=\"TreatmentLesion-cell_transplantation\"> </a></td><td>Cell transplantation</td><td>Cell transplantation / Celletransplantation</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/TreatmentLesion"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "TreatmentLesion"] ; # 
+  fhir:title [ fhir:v "Treatment lesion"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-09-19T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Treatment lesion"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "resection" ] ;
+     fhir:display [ fhir:v "Resection" ] ;
+     fhir:definition [ fhir:v "Resection / Resektion" ]
+  ] [
+     fhir:code [ fhir:v "suture" ] ;
+     fhir:display [ fhir:v "Suture" ] ;
+     fhir:definition [ fhir:v "Suture / Sutur" ]
+  ] [
+     fhir:code [ fhir:v "all_inside" ] ;
+     fhir:display [ fhir:v "All inside" ] ;
+     fhir:definition [ fhir:v "All inside" ]
+  ] [
+     fhir:code [ fhir:v "debridement" ] ;
+     fhir:display [ fhir:v "Debridement" ] ;
+     fhir:definition [ fhir:v "Debridement" ]
+  ] [
+     fhir:code [ fhir:v "microfracture" ] ;
+     fhir:display [ fhir:v "Microfracture" ] ;
+     fhir:definition [ fhir:v "Microfracture / Mikrofraktur" ]
+  ] [
+     fhir:code [ fhir:v "mosaic_plastic" ] ;
+     fhir:display [ fhir:v "Mosaic plastic" ] ;
+     fhir:definition [ fhir:v "Mosaic plastic / Mosaikplastik" ]
+  ] [
+     fhir:code [ fhir:v "synthetic_scaffold" ] ;
+     fhir:display [ fhir:v "Synthetic scaffold" ] ;
+     fhir:definition [ fhir:v "Synthetic scaffold / Syntetisk scaffold" ]
+  ] [
+     fhir:code [ fhir:v "cell_transplantation" ] ;
+     fhir:display [ fhir:v "Cell transplantation" ] ;
+     fhir:definition [ fhir:v "Cell transplantation / Celletransplantation" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

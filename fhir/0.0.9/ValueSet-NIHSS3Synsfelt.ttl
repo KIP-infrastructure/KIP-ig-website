@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/ValueSet/NIHSS3Synsfelt> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "NIHSS3Synsfelt"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet NIHSS3Synsfelt</b></p><a name=\"NIHSS3Synsfelt\"> </a><a name=\"hcNIHSS3Synsfelt\"> </a><a name=\"NIHSS3Synsfelt-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-NIHSS3Visual.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/NIHSS3Visual</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-NIHSS3Visual.html#NIHSS3Visual-0\">0</a></td><td>0 = Normalt synsfelt</td><td>No visual loss.</td></tr><tr><td><a href=\"CodeSystem-NIHSS3Visual.html#NIHSS3Visual-1\">1</a></td><td>1 = Partiel hemianopsi</td><td>Partial hemianopia.</td></tr><tr><td><a href=\"CodeSystem-NIHSS3Visual.html#NIHSS3Visual-2\">2</a></td><td>2 = Komplet hemianopsi</td><td>Complete hemianopia.</td></tr><tr><td><a href=\"CodeSystem-NIHSS3Visual.html#NIHSS3Visual-3\">3</a></td><td>3 = Bilateral blindhed (blind inkl. kortikal blindhed)</td><td>Bilateral hemianopia (blind including cortical blindness).</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/ValueSet/NIHSS3Synsfelt"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "NIHSS3Synsfelt"] ; # 
+  fhir:title [ fhir:v "NIHSS - 3. Test af synsfelt"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-06-27T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The National Institute of Health Stroke Scale (NIHSS) - 3. Test af synsfelt"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/NIHSS3Visual"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "0" ] ;
+         fhir:display [ fhir:v "0 = Normalt synsfelt" ]
+       ] [
+         fhir:code [ fhir:v "1" ] ;
+         fhir:display [ fhir:v "1 = Partiel hemianopsi" ]
+       ] [
+         fhir:code [ fhir:v "2" ] ;
+         fhir:display [ fhir:v "2 = Komplet hemianopsi" ]
+       ] [
+         fhir:code [ fhir:v "3" ] ;
+         fhir:display [ fhir:v "3 = Bilateral blindhed (blind inkl. kortikal blindhed)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

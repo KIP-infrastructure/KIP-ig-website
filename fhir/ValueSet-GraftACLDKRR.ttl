@@ -1,0 +1,96 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/ValueSet/GraftACLDKRR> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "GraftACLDKRR"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet GraftACLDKRR</b></p><a name=\"GraftACLDKRR\"> </a><a name=\"hcGraftACLDKRR\"> </a><a name=\"GraftACLDKRR-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-GraftCruciateLigaments.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/GraftCruciateLigaments</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GraftCruciateLigaments.html#GraftCruciateLigaments-acl_repair_synthetic_reinforced\">acl_repair_synthetic_reinforced</a></td><td>ACL repair med syntetisk forstærkning</td><td>ACL repair med syntetisk forstærkning</td></tr><tr><td><a href=\"CodeSystem-GraftCruciateLigaments.html#GraftCruciateLigaments-bach-allo\">bach-allo</a></td><td>BACH-Allo</td><td>BACH-Allo</td></tr><tr><td><a href=\"CodeSystem-GraftCruciateLigaments.html#GraftCruciateLigaments-bptb\">bptb</a></td><td>BPTB</td><td>BPTB</td></tr><tr><td><a href=\"CodeSystem-GraftCruciateLigaments.html#GraftCruciateLigaments-bptb-allo\">bptb-allo</a></td><td>BPTB-Allo</td><td>BPTB-Allo</td></tr><tr><td><a href=\"CodeSystem-GraftCruciateLigaments.html#GraftCruciateLigaments-bqt\">bqt</a></td><td>BQT</td><td>BQT</td></tr><tr><td><a href=\"CodeSystem-GraftCruciateLigaments.html#GraftCruciateLigaments-bqt-allo\">bqt-allo</a></td><td>BQT-Allo</td><td>BQT-Allo</td></tr><tr><td><a href=\"CodeSystem-GraftCruciateLigaments.html#GraftCruciateLigaments-direct_suture\">direct_suture</a></td><td>Direkte sutur</td><td>Direkte sutur</td></tr><tr><td><a href=\"CodeSystem-GraftCruciateLigaments.html#GraftCruciateLigaments-double-bundle_bqt\">double-bundle_bqt</a></td><td>Double-bundle BQT</td><td>Double-bundle BQT</td></tr><tr><td><a href=\"CodeSystem-GraftCruciateLigaments.html#GraftCruciateLigaments-double-bundle_st\">double-bundle_st</a></td><td>Double-bundle ST</td><td>Double-bundle ST</td></tr><tr><td><a href=\"CodeSystem-GraftCruciateLigaments.html#GraftCruciateLigaments-qt_without_bone_block\">qt_without_bone_block</a></td><td>QT uden knogleklods</td><td>QT uden knogleklods</td></tr><tr><td><a href=\"CodeSystem-GraftCruciateLigaments.html#GraftCruciateLigaments-st_double\">st_double</a></td><td>ST - Double</td><td>ST - Double</td></tr><tr><td><a href=\"CodeSystem-GraftCruciateLigaments.html#GraftCruciateLigaments-st_quadro\">st_quadro</a></td><td>ST - Quadro</td><td>ST - Quadro</td></tr><tr><td><a href=\"CodeSystem-GraftCruciateLigaments.html#GraftCruciateLigaments-st_triple\">st_triple</a></td><td>ST - Triple</td><td>ST - Triple</td></tr><tr><td><a href=\"CodeSystem-GraftCruciateLigaments.html#GraftCruciateLigaments-st.47gr\">st/gr</a></td><td>ST/GR</td><td>ST/GR</td></tr><tr><td><a href=\"CodeSystem-GraftCruciateLigaments.html#GraftCruciateLigaments-st.47gr_allo\">st/gr_allo</a></td><td>ST/GR allo</td><td>ST/GR allo</td></tr><tr><td><a href=\"CodeSystem-GraftCruciateLigaments.html#GraftCruciateLigaments-synthetic\">synthetic</a></td><td>Syntetisk graft</td><td>Syntetisk graft</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/ValueSet/GraftACLDKRR"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "GraftACLDKRR"] ; # 
+  fhir:title [ fhir:v "Graft, ACL (DKRR)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-09-19T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Graft, ACL (DKRR)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/GraftCruciateLigaments"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "acl_repair_synthetic_reinforced" ] ;
+         fhir:display [ fhir:v "ACL repair med syntetisk forstærkning" ]
+       ] [
+         fhir:code [ fhir:v "bach-allo" ] ;
+         fhir:display [ fhir:v "BACH-Allo" ]
+       ] [
+         fhir:code [ fhir:v "bptb" ] ;
+         fhir:display [ fhir:v "BPTB" ]
+       ] [
+         fhir:code [ fhir:v "bptb-allo" ] ;
+         fhir:display [ fhir:v "BPTB-Allo" ]
+       ] [
+         fhir:code [ fhir:v "bqt" ] ;
+         fhir:display [ fhir:v "BQT" ]
+       ] [
+         fhir:code [ fhir:v "bqt-allo" ] ;
+         fhir:display [ fhir:v "BQT-Allo" ]
+       ] [
+         fhir:code [ fhir:v "direct_suture" ] ;
+         fhir:display [ fhir:v "Direkte sutur" ]
+       ] [
+         fhir:code [ fhir:v "double-bundle_bqt" ] ;
+         fhir:display [ fhir:v "Double-bundle BQT" ]
+       ] [
+         fhir:code [ fhir:v "double-bundle_st" ] ;
+         fhir:display [ fhir:v "Double-bundle ST" ]
+       ] [
+         fhir:code [ fhir:v "qt_without_bone_block" ] ;
+         fhir:display [ fhir:v "QT uden knogleklods" ]
+       ] [
+         fhir:code [ fhir:v "st_double" ] ;
+         fhir:display [ fhir:v "ST - Double" ]
+       ] [
+         fhir:code [ fhir:v "st_quadro" ] ;
+         fhir:display [ fhir:v "ST - Quadro" ]
+       ] [
+         fhir:code [ fhir:v "st_triple" ] ;
+         fhir:display [ fhir:v "ST - Triple" ]
+       ] [
+         fhir:code [ fhir:v "st/gr" ] ;
+         fhir:display [ fhir:v "ST/GR" ]
+       ] [
+         fhir:code [ fhir:v "st/gr_allo" ] ;
+         fhir:display [ fhir:v "ST/GR allo" ]
+       ] [
+         fhir:code [ fhir:v "synthetic" ] ;
+         fhir:display [ fhir:v "Syntetisk graft" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/GenericValues"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "other" ] ;
+         fhir:display [ fhir:v "Andet" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

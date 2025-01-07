@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/IkkeBesvaret> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "IkkeBesvaret"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IkkeBesvaret</b></p><a name=\"IkkeBesvaret\"> </a><a name=\"hcIkkeBesvaret\"> </a><a name=\"IkkeBesvaret-en-US\"> </a><p>This  code system <code>https://kip.sundk.dk/fhir/CodeSystem/IkkeBesvaret</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">ej_tilg<a name=\"IkkeBesvaret-ej_tilg\"> </a></td><td>Ikke tilgængelig</td><td>Data ikke tilgængelig</td></tr><tr><td style=\"white-space:nowrap\">ej_udt<a name=\"IkkeBesvaret-ej_udt\"> </a></td><td>Ikke udtømmende</td><td>Svarmuligheder er ikke udtømmende</td></tr><tr><td style=\"white-space:nowrap\">na<a name=\"IkkeBesvaret-na\"> </a></td><td>ikke relevant</td><td>Ikke relevant</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/IkkeBesvaret"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "IkkeBesvaret"] ; # 
+  fhir:title [ fhir:v "Ikke besvaret"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-10-19T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Årsager til ikke-besvaret spørgsmål"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "ej_tilg" ] ;
+     fhir:display [ fhir:v "Ikke tilgængelig" ] ;
+     fhir:definition [ fhir:v "Data ikke tilgængelig" ]
+  ] [
+     fhir:code [ fhir:v "ej_udt" ] ;
+     fhir:display [ fhir:v "Ikke udtømmende" ] ;
+     fhir:definition [ fhir:v "Svarmuligheder er ikke udtømmende" ]
+  ] [
+     fhir:code [ fhir:v "na" ] ;
+     fhir:display [ fhir:v "ikke relevant" ] ;
+     fhir:definition [ fhir:v "Ikke relevant" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

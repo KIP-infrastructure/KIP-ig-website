@@ -1,0 +1,49 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ScoreCentralBlock",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ScoreCentralBlock</b></p><a name=\"ScoreCentralBlock\"> </a><a name=\"hcScoreCentralBlock\"> </a><a name=\"ScoreCentralBlock-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-ScoreCentralBlock.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/ScoreCentralBlock</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ScoreCentralBlock.html#ScoreCentralBlock-attempt_LE3\">attempt_LE3</a></td><td>Forsøgt anlagt antal &lt;=3 gange</td><td>Forsøgt anlagt antal &lt;=3 gange</td></tr><tr><td><a href=\"CodeSystem-ScoreCentralBlock.html#ScoreCentralBlock-attempt_GT3\">attempt_GT3</a></td><td>Forsøgt anlagt &gt;3 gange</td><td>Forsøgt anlagt &gt;3 gange</td></tr><tr><td><a href=\"CodeSystem-ScoreCentralBlock.html#ScoreCentralBlock-epidural_on_arr\">epidural_on_arr</a></td><td>Ankommet med anlagt epidural kateter</td><td>Ankommet med anlagt epidural kateter</td></tr><tr><td><a href=\"CodeSystem-ScoreCentralBlock.html#ScoreCentralBlock-abandon\">abandon</a></td><td>Opgivet</td><td>Opgivet</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.sundk.dk/fhir/ValueSet/ScoreCentralBlock",
+  "version" : "0.0.9",
+  "name" : "ScoreCentralBlock",
+  "title" : "Central blokade score",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-06-09T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Regional score ved central nerveblokade",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/ScoreCentralBlock",
+      "concept" : [{
+        "code" : "attempt_LE3",
+        "display" : "Forsøgt anlagt antal <=3 gange"
+      },
+      {
+        "code" : "attempt_GT3",
+        "display" : "Forsøgt anlagt >3 gange"
+      },
+      {
+        "code" : "epidural_on_arr",
+        "display" : "Ankommet med anlagt epidural kateter"
+      },
+      {
+        "code" : "abandon",
+        "display" : "Opgivet"
+      }]
+    }]
+  }
+}

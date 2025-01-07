@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "TackernavnNonAbsorberbarDHDB",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet TackernavnNonAbsorberbarDHDB</b></p><a name=\"TackernavnNonAbsorberbarDHDB\"> </a><a name=\"hcTackernavnNonAbsorberbarDHDB\"> </a><a name=\"TackernavnNonAbsorberbarDHDB-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-MedicalFixationClosing.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/MedicalFixationClosing</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-MedicalFixationClosing.html#MedicalFixationClosing-capsure\">capsure</a></td><td>Capsure</td><td>Capsure</td></tr><tr><td><a href=\"CodeSystem-MedicalFixationClosing.html#MedicalFixationClosing-protack\">protack</a></td><td>Protack</td><td>Protack</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Anden</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.sundk.dk/fhir/ValueSet/TackernavnNonAbsorberbarDHDB",
+  "version" : "0.0.9",
+  "name" : "TackernavnNonAbsorberbarDHDB",
+  "title" : "Tackernavn; Non-absorberbare tackers (DHDB)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-07-20T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Tackernavn; Non-absorberbare tackers (DHDB)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/MedicalFixationClosing",
+      "concept" : [{
+        "code" : "capsure",
+        "display" : "Capsure"
+      },
+      {
+        "code" : "protack",
+        "display" : "Protack"
+      }]
+    },
+    {
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "other",
+        "display" : "Anden"
+      }]
+    }]
+  }
+}

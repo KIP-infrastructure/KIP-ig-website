@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/ValueSet/MorsDiagnoseKardialDNSL> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MorsDiagnoseKardialDNSL"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet MorsDiagnoseKardialDNSL</b></p><a name=\"MorsDiagnoseKardialDNSL\"> </a><a name=\"hcMorsDiagnoseKardialDNSL\"> </a><a name=\"MorsDiagnoseKardialDNSL-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-MorsDiagnosekoder.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/MorsDiagnosekoder</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-MorsDiagnosekoder.html#MorsDiagnosekoder-DE875\">DE875</a></td><td>DE875: Kaliumoverskud</td></tr><tr><td><a href=\"CodeSystem-MorsDiagnosekoder.html#MorsDiagnosekoder-DE876A\">DE876A</a></td><td>DE876A: Hypokaliæmi</td></tr><tr><td><a href=\"CodeSystem-MorsDiagnosekoder.html#MorsDiagnosekoder-DE877\">DE877</a></td><td>DE877: Væskeoverskud</td></tr><tr><td><a href=\"CodeSystem-MorsDiagnosekoder.html#MorsDiagnosekoder-DI110\">DI110</a></td><td>DI110: Incompensatio corids hypertensiva</td></tr><tr><td><a href=\"CodeSystem-MorsDiagnosekoder.html#MorsDiagnosekoder-DI219\">DI219</a></td><td>DI219: Akut myokardieinfarkt (AMI uden specifikation</td></tr><tr><td><a href=\"CodeSystem-MorsDiagnosekoder.html#MorsDiagnosekoder-DI461\">DI461</a></td><td>DI461: Pludselig hjertedød</td></tr><tr><td><a href=\"CodeSystem-MorsDiagnosekoder.html#MorsDiagnosekoder-DI509\">DI509</a></td><td>DI509: Hjerteinkompensation uden specifikation</td></tr><tr><td><a href=\"CodeSystem-MorsDiagnosekoder.html#MorsDiagnosekoder-DN188B\">DN188B</a></td><td>DN188B: Pericarditis, uræmisk</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/ValueSet/MorsDiagnoseKardialDNSL"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "MorsDiagnoseKardialDNSL"] ; # 
+  fhir:title [ fhir:v "Mors Diagnosekode - Kardial (DNSL)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-01-10T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Mors Diagnosekode - Kardiale årsager (DNSL)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/MorsDiagnosekoder"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "DE875" ] ;
+         fhir:display [ fhir:v "DE875: Kaliumoverskud" ]
+       ] [
+         fhir:code [ fhir:v "DE876A" ] ;
+         fhir:display [ fhir:v "DE876A: Hypokaliæmi" ]
+       ] [
+         fhir:code [ fhir:v "DE877" ] ;
+         fhir:display [ fhir:v "DE877: Væskeoverskud" ]
+       ] [
+         fhir:code [ fhir:v "DI110" ] ;
+         fhir:display [ fhir:v "DI110: Incompensatio corids hypertensiva" ]
+       ] [
+         fhir:code [ fhir:v "DI219" ] ;
+         fhir:display [ fhir:v "DI219: Akut myokardieinfarkt (AMI uden specifikation" ]
+       ] [
+         fhir:code [ fhir:v "DI461" ] ;
+         fhir:display [ fhir:v "DI461: Pludselig hjertedød" ]
+       ] [
+         fhir:code [ fhir:v "DI509" ] ;
+         fhir:display [ fhir:v "DI509: Hjerteinkompensation uden specifikation" ]
+       ] [
+         fhir:code [ fhir:v "DN188B" ] ;
+         fhir:display [ fhir:v "DN188B: Pericarditis, uræmisk" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

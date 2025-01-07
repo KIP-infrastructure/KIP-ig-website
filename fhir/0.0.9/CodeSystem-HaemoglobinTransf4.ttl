@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/HaemoglobinTransf4> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HaemoglobinTransf4"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem HaemoglobinTransf4</b></p><a name=\"HaemoglobinTransf4\"> </a><a name=\"hcHaemoglobinTransf4\"> </a><a name=\"HaemoglobinTransf4-en-US\"> </a><p>This  code system <code>https://kip.sundk.dk/fhir/CodeSystem/HaemoglobinTransf4</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">hgb_trfGE56<a name=\"HaemoglobinTransf4-hgb_trfGE56\"> </a></td><td>=&gt;5,6 mmol/L</td><td>=&gt;5,6 mmol/L</td></tr><tr><td style=\"white-space:nowrap\">hgb_trfGE43<a name=\"HaemoglobinTransf4-hgb_trfGE43\"> </a></td><td>=&gt;4,3 mmol/L og &lt;5,6 mmol/L</td><td>=&gt;4,3 mmol/L og &lt;5,6 mmol/L</td></tr><tr><td style=\"white-space:nowrap\">hgb_trfLT43<a name=\"HaemoglobinTransf4-hgb_trfLT43\"> </a></td><td>&lt;4,3 mmol/L</td><td>&lt;4,3 mmol/L</td></tr><tr><td style=\"white-space:nowrap\">hgb_novalue<a name=\"HaemoglobinTransf4-hgb_novalue\"> </a></td><td>Ikke målt</td><td>Ikke målt</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/HaemoglobinTransf4"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "HaemoglobinTransf4"] ; # 
+  fhir:title [ fhir:v "HGBTransfusion4"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-13T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Hæmoglobinværdi før blodtransfusion"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "hgb_trfGE56" ] ;
+     fhir:display [ fhir:v "=>5,6 mmol/L" ] ;
+     fhir:definition [ fhir:v "=>5,6 mmol/L" ]
+  ] [
+     fhir:code [ fhir:v "hgb_trfGE43" ] ;
+     fhir:display [ fhir:v "=>4,3 mmol/L og <5,6 mmol/L" ] ;
+     fhir:definition [ fhir:v "=>4,3 mmol/L og <5,6 mmol/L" ]
+  ] [
+     fhir:code [ fhir:v "hgb_trfLT43" ] ;
+     fhir:display [ fhir:v "<4,3 mmol/L" ] ;
+     fhir:definition [ fhir:v "<4,3 mmol/L" ]
+  ] [
+     fhir:code [ fhir:v "hgb_novalue" ] ;
+     fhir:display [ fhir:v "Ikke målt" ] ;
+     fhir:definition [ fhir:v "Ikke målt" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/ValueSet/NIHSS4Facialisparese> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "NIHSS4Facialisparese"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet NIHSS4Facialisparese</b></p><a name=\"NIHSS4Facialisparese\"> </a><a name=\"hcNIHSS4Facialisparese\"> </a><a name=\"NIHSS4Facialisparese-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-NIHSS4FacialPalsy.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/NIHSS4FacialPalsy</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-NIHSS4FacialPalsy.html#NIHSS4FacialPalsy-0\">0</a></td><td>0 = Normale, symmetriske ansigtsbevægelser</td><td>Normal symmetrical movements.</td></tr><tr><td><a href=\"CodeSystem-NIHSS4FacialPalsy.html#NIHSS4FacialPalsy-1\">1</a></td><td>1 = Let parese (udglattet nasolabialfure eller asymmetri ved smil)</td><td>Minor paralysis (flattened nasolabial fold, asymmetry on smiling).</td></tr><tr><td><a href=\"CodeSystem-NIHSS4FacialPalsy.html#NIHSS4FacialPalsy-2\">2</a></td><td>2 = Partiel parese (svær eller total parese af nedre ansigtshalvdel)</td><td>Partial paralysis (total or near-total paralysis of lower face).</td></tr><tr><td><a href=\"CodeSystem-NIHSS4FacialPalsy.html#NIHSS4FacialPalsy-3\">3</a></td><td>3 = Total paralyse af én eller begge sider</td><td>Complete paralysis of one or both sides (absence of facial movement in the upper and lower face).</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/ValueSet/NIHSS4Facialisparese"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "NIHSS4Facialisparese"] ; # 
+  fhir:title [ fhir:v "NIHSS - 4. Facialisparese"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-06-27T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The National Institute of Health Stroke Scale (NIHSS) - 4. Facialisparese (bed patienten om at vise tænder/løfte øjenbryn og lukke øjnene fast i)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/NIHSS4FacialPalsy"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "0" ] ;
+         fhir:display [ fhir:v "0 = Normale, symmetriske ansigtsbevægelser" ]
+       ] [
+         fhir:code [ fhir:v "1" ] ;
+         fhir:display [ fhir:v "1 = Let parese (udglattet nasolabialfure eller asymmetri ved smil)" ]
+       ] [
+         fhir:code [ fhir:v "2" ] ;
+         fhir:display [ fhir:v "2 = Partiel parese (svær eller total parese af nedre ansigtshalvdel)" ]
+       ] [
+         fhir:code [ fhir:v "3" ] ;
+         fhir:display [ fhir:v "3 = Total paralyse af én eller begge sider" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

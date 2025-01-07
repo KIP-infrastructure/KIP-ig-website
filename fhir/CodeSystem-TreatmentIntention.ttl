@@ -1,0 +1,71 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/TreatmentIntention> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TreatmentIntention"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem TreatmentIntention</b></p><a name=\"TreatmentIntention\"> </a><a name=\"hcTreatmentIntention\"> </a><a name=\"TreatmentIntention-en-US\"> </a><p>This  code system <code>https://kip.sundk.dk/fhir/CodeSystem/TreatmentIntention</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">curative<a name=\"TreatmentIntention-curative\"> </a></td><td>Kurativt</td><td>Kurativt intenderet</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  surgical/endoscopic<a name=\"TreatmentIntention-surgical.47endoscopic\"> </a></td><td>Kirurgi/endoskopi</td><td>Kurativt intenderet, kirurgi/endoskopi</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  oncological<a name=\"TreatmentIntention-oncological\"> </a></td><td>Onkologisk</td><td>Kurativt intenderet, definitiv onkologisk</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">palliative<a name=\"TreatmentIntention-palliative\"> </a></td><td>Palliativt</td><td>Palliativt intenderet</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">compromised_resection<a name=\"TreatmentIntention-compromised_resection\"> </a></td><td>Compromised resection</td><td>Compromised resection</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">recidiv<a name=\"TreatmentIntention-recidiv\"> </a></td><td>Recurrent</td><td>Recidiv</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">semiintensiv<a name=\"TreatmentIntention-semiintensiv\"> </a></td><td>Semiintensiv</td><td>Semiintensiv</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">intensive<a name=\"TreatmentIntention-intensive\"> </a></td><td>Intensiv</td><td>Intensiv</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/TreatmentIntention"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "TreatmentIntention"] ; # 
+  fhir:title [ fhir:v "TreatmentIntention"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-03T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Behandlingsintention for kræft databaserne"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "curative" ] ;
+     fhir:display [ fhir:v "Kurativt" ] ;
+     fhir:definition [ fhir:v "Kurativt intenderet" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "surgical/endoscopic" ] ;
+       fhir:display [ fhir:v "Kirurgi/endoskopi" ] ;
+       fhir:definition [ fhir:v "Kurativt intenderet, kirurgi/endoskopi" ]
+     ] [
+       fhir:code [ fhir:v "oncological" ] ;
+       fhir:display [ fhir:v "Onkologisk" ] ;
+       fhir:definition [ fhir:v "Kurativt intenderet, definitiv onkologisk" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "palliative" ] ;
+     fhir:display [ fhir:v "Palliativt" ] ;
+     fhir:definition [ fhir:v "Palliativt intenderet" ]
+  ] [
+     fhir:code [ fhir:v "compromised_resection" ] ;
+     fhir:display [ fhir:v "Compromised resection" ] ;
+     fhir:definition [ fhir:v "Compromised resection" ]
+  ] [
+     fhir:code [ fhir:v "recidiv" ] ;
+     fhir:display [ fhir:v "Recurrent" ] ;
+     fhir:definition [ fhir:v "Recidiv" ]
+  ] [
+     fhir:code [ fhir:v "semiintensiv" ] ;
+     fhir:display [ fhir:v "Semiintensiv" ] ;
+     fhir:definition [ fhir:v "Semiintensiv" ]
+  ] [
+     fhir:code [ fhir:v "intensive" ] ;
+     fhir:display [ fhir:v "Intensiv" ] ;
+     fhir:definition [ fhir:v "Intensiv" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

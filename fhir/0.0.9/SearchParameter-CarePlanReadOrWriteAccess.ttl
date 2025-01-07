@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/SearchParameter/CarePlanReadOrWriteAccess> a fhir:SearchParameter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CarePlanReadOrWriteAccess"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter CarePlanReadOrWriteAccess</b></p><a name=\"CarePlanReadOrWriteAccess\"> </a><a name=\"hcCarePlanReadOrWriteAccess\"> </a><a name=\"CarePlanReadOrWriteAccess-en-US\"> </a><h2>CarePlanReadOrWriteAccess</h2><p>Parameter <code>access-sor-code</code>:<code>string</code></p><div><p>Search a CarePlan for readAccess or writeAccess SOR code</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/careplan.html\">CarePlan</a></td></tr><tr><td>Expression</td><td><code>CarePlan.activity.extension.where($this.url='readAccess' or $this.url='writeAccess').value</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true</li></ul></td></tr><tr><td>Comparators</td><td>Allowed: eq</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/SearchParameter/CarePlanReadOrWriteAccess"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "CarePlanReadOrWriteAccess"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-01-07T12:32:34+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Search a CarePlan for readAccess or writeAccess SOR code"] ; # 
+  fhir:code [ fhir:v "access-sor-code"] ; # 
+  fhir:base ( [ fhir:v "CarePlan"] ) ; # 
+  fhir:type [ fhir:v "string"] ; # 
+  fhir:expression [ fhir:v "CarePlan.activity.extension.where($this.url='readAccess' or $this.url='writeAccess').value"] ; # 
+  fhir:comparator ( [ fhir:v "eq"] ) . # 
+
+# -------------------------------------------------------------------------------------
+

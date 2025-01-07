@@ -1,0 +1,83 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/Cyclus> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Cyclus"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem Cyclus</b></p><a name=\"Cyclus\"> </a><a name=\"hcCyclus\"> </a><a name=\"Cyclus-en-US\"> </a><p>This case-insensitive code system <code>https://kip.sundk.dk/fhir/CodeSystem/Cyclus</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">0-6-dage<a name=\"Cyclus-0-6-dage\"> </a></td><td>0-6 dage</td><td>0-6 dage</td></tr><tr><td style=\"white-space:nowrap\">1-2-dage<a name=\"Cyclus-1-2-dage\"> </a></td><td>1-2 dage</td><td>1-2 dage</td></tr><tr><td style=\"white-space:nowrap\">3-4-dage<a name=\"Cyclus-3-4-dage\"> </a></td><td>3-4 dage</td><td>3-4 dage</td></tr><tr><td style=\"white-space:nowrap\">le5-dage<a name=\"Cyclus-le5-dage\"> </a></td><td>&lt;=5 dage</td><td>&lt;=5 dage</td></tr><tr><td style=\"white-space:nowrap\">5-6-dage<a name=\"Cyclus-5-6-dage\"> </a></td><td>5-6 dage</td><td>5-6 dage</td></tr><tr><td style=\"white-space:nowrap\">6-10-dage<a name=\"Cyclus-6-10-dage\"> </a></td><td>6-10 dage</td><td>6-10 dage</td></tr><tr><td style=\"white-space:nowrap\">ge7-dage<a name=\"Cyclus-ge7-dage\"> </a></td><td>&gt;=7 dage</td><td>&gt;=7 dage</td></tr><tr><td style=\"white-space:nowrap\">gt10-dage<a name=\"Cyclus-gt10-dage\"> </a></td><td>&gt;10 dage</td><td>&gt;10 dage</td></tr><tr><td style=\"white-space:nowrap\">14-dage<a name=\"Cyclus-14-dage\"> </a></td><td>14 dage</td><td>14 dage</td></tr><tr><td style=\"white-space:nowrap\">21-dage<a name=\"Cyclus-21-dage\"> </a></td><td>21 dage</td><td>21 dage</td></tr><tr><td style=\"white-space:nowrap\">28-dage<a name=\"Cyclus-28-dage\"> </a></td><td>28 dage</td><td>28 dage</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/Cyclus"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "Cyclus"] ; # 
+  fhir:title [ fhir:v "Cyclus"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-05-17T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Cyclus længde"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "11"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "0-6-dage" ] ;
+     fhir:display [ fhir:v "0-6 dage" ] ;
+     fhir:definition [ fhir:v "0-6 dage" ]
+  ] [
+     fhir:code [ fhir:v "1-2-dage" ] ;
+     fhir:display [ fhir:v "1-2 dage" ] ;
+     fhir:definition [ fhir:v "1-2 dage" ]
+  ] [
+     fhir:code [ fhir:v "3-4-dage" ] ;
+     fhir:display [ fhir:v "3-4 dage" ] ;
+     fhir:definition [ fhir:v "3-4 dage" ]
+  ] [
+     fhir:code [ fhir:v "le5-dage" ] ;
+     fhir:display [ fhir:v "<=5 dage" ] ;
+     fhir:definition [ fhir:v "<=5 dage" ]
+  ] [
+     fhir:code [ fhir:v "5-6-dage" ] ;
+     fhir:display [ fhir:v "5-6 dage" ] ;
+     fhir:definition [ fhir:v "5-6 dage" ]
+  ] [
+     fhir:code [ fhir:v "6-10-dage" ] ;
+     fhir:display [ fhir:v "6-10 dage" ] ;
+     fhir:definition [ fhir:v "6-10 dage" ]
+  ] [
+     fhir:code [ fhir:v "ge7-dage" ] ;
+     fhir:display [ fhir:v ">=7 dage" ] ;
+     fhir:definition [ fhir:v ">=7 dage" ]
+  ] [
+     fhir:code [ fhir:v "gt10-dage" ] ;
+     fhir:display [ fhir:v ">10 dage" ] ;
+     fhir:definition [ fhir:v ">10 dage" ]
+  ] [
+     fhir:code [ fhir:v "14-dage" ] ;
+     fhir:display [ fhir:v "14 dage" ] ;
+     fhir:definition [ fhir:v "14 dage" ]
+  ] [
+     fhir:code [ fhir:v "21-dage" ] ;
+     fhir:display [ fhir:v "21 dage" ] ;
+     fhir:definition [ fhir:v "21 dage" ]
+  ] [
+     fhir:code [ fhir:v "28-dage" ] ;
+     fhir:display [ fhir:v "28 dage" ] ;
+     fhir:definition [ fhir:v "28 dage" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

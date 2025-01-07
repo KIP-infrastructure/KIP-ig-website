@@ -1,0 +1,126 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/SNOMEDCT> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SNOMEDCT"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem SNOMEDCT</b></p><a name=\"SNOMEDCT\"> </a><a name=\"hcSNOMEDCT\"> </a><a name=\"SNOMEDCT-en-US\"> </a><p>This case-sensitive code system <code>https://kip.sundk.dk/fhir/CodeSystem/SNOMEDCT</code> provides <b>a fragment</b> that includes following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">58158008<a name=\"SNOMEDCT-58158008\"> </a></td><td>Stable</td><td>Stable</td></tr><tr><td style=\"white-space:nowrap\">64957009<a name=\"SNOMEDCT-64957009\"> </a></td><td>Uncertain</td><td>Uncertain</td></tr><tr><td style=\"white-space:nowrap\">75134009<a name=\"SNOMEDCT-75134009\"> </a></td><td>Not examined for</td><td>Not examined for</td></tr><tr><td style=\"white-space:nowrap\">103337004<a name=\"SNOMEDCT-103337004\"> </a></td><td>In partial remission</td><td>In partial remission</td></tr><tr><td style=\"white-space:nowrap\">103338009<a name=\"SNOMEDCT-103338009\"> </a></td><td>In full remission</td><td>In full remission</td></tr><tr><td style=\"white-space:nowrap\">255314001<a name=\"SNOMEDCT-255314001\"> </a></td><td>Progressive</td><td>Progressive</td></tr><tr><td style=\"white-space:nowrap\">278179005<a name=\"SNOMEDCT-278179005\"> </a></td><td>Accelerated phase</td><td>Accelerated phase</td></tr><tr><td style=\"white-space:nowrap\">278177007<a name=\"SNOMEDCT-278177007\"> </a></td><td>Chronic phase</td><td>Chronic phase</td></tr><tr><td style=\"white-space:nowrap\">419099009<a name=\"SNOMEDCT-419099009\"> </a></td><td>Dead</td><td>Dead</td></tr><tr><td style=\"white-space:nowrap\">438949009<a name=\"SNOMEDCT-438949009\"> </a></td><td>Alive</td><td>Alive</td></tr><tr><td style=\"white-space:nowrap\">303071001<a name=\"SNOMEDCT-303071001\"> </a></td><td>Person in the family</td><td>Person in the family</td></tr><tr><td style=\"white-space:nowrap\">394863008<a name=\"SNOMEDCT-394863008\"> </a></td><td>Non-family member</td><td>Non-family member</td></tr><tr><td style=\"white-space:nowrap\">40683002<a name=\"SNOMEDCT-40683002\"> </a></td><td>Parent</td><td>Forælder</td></tr><tr><td style=\"white-space:nowrap\">375005<a name=\"SNOMEDCT-375005\"> </a></td><td>Sibling</td><td>Søster/Bror</td></tr><tr><td style=\"white-space:nowrap\">11286003<a name=\"SNOMEDCT-11286003\"> </a></td><td>Twin sibling</td><td>Tvilling</td></tr><tr><td style=\"white-space:nowrap\">10896006<a name=\"SNOMEDCT-10896006\"> </a></td><td>Identical twin sibling</td><td>Tvilling (monocygot)</td></tr><tr><td style=\"white-space:nowrap\">713369009<a name=\"SNOMEDCT-713369009\"> </a></td><td>Live related kidney donor</td><td>Levende familiedonor</td></tr><tr><td style=\"white-space:nowrap\">105457003<a name=\"SNOMEDCT-105457003\"> </a></td><td>Cadaver donor</td><td>Afdød donor</td></tr><tr><td style=\"white-space:nowrap\">713183000<a name=\"SNOMEDCT-713183000\"> </a></td><td>Cadaver donor for kidney transplant</td><td>Afdød donor (Nekronyre)</td></tr><tr><td style=\"white-space:nowrap\">418460001<a name=\"SNOMEDCT-418460001\"> </a></td><td>Bone marrow stromal stem cell</td><td>Bone marrow stromal stem cell</td></tr><tr><td style=\"white-space:nowrap\">419583006<a name=\"SNOMEDCT-419583006\"> </a></td><td>Peripheral blood stem cell</td><td>Peripheral blood stem cell</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/SNOMEDCT"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.6.96" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "SNOMEDCT"] ; # 
+  fhir:title [ fhir:v "SNOMED-CT"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-07T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "SNOMED-CT - Codes used in databases. Link: https://browser.ihtsdotools.org/"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "fragment"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "58158008" ] ;
+     fhir:display [ fhir:v "Stable" ] ;
+     fhir:definition [ fhir:v "Stable" ]
+  ] [
+     fhir:code [ fhir:v "64957009" ] ;
+     fhir:display [ fhir:v "Uncertain" ] ;
+     fhir:definition [ fhir:v "Uncertain" ]
+  ] [
+     fhir:code [ fhir:v "75134009" ] ;
+     fhir:display [ fhir:v "Not examined for" ] ;
+     fhir:definition [ fhir:v "Not examined for" ]
+  ] [
+     fhir:code [ fhir:v "103337004" ] ;
+     fhir:display [ fhir:v "In partial remission" ] ;
+     fhir:definition [ fhir:v "In partial remission" ]
+  ] [
+     fhir:code [ fhir:v "103338009" ] ;
+     fhir:display [ fhir:v "In full remission" ] ;
+     fhir:definition [ fhir:v "In full remission" ]
+  ] [
+     fhir:code [ fhir:v "255314001" ] ;
+     fhir:display [ fhir:v "Progressive" ] ;
+     fhir:definition [ fhir:v "Progressive" ]
+  ] [
+     fhir:code [ fhir:v "278179005" ] ;
+     fhir:display [ fhir:v "Accelerated phase" ] ;
+     fhir:definition [ fhir:v "Accelerated phase" ]
+  ] [
+     fhir:code [ fhir:v "278177007" ] ;
+     fhir:display [ fhir:v "Chronic phase" ] ;
+     fhir:definition [ fhir:v "Chronic phase" ]
+  ] [
+     fhir:code [ fhir:v "419099009" ] ;
+     fhir:display [ fhir:v "Dead" ] ;
+     fhir:definition [ fhir:v "Dead" ]
+  ] [
+     fhir:code [ fhir:v "438949009" ] ;
+     fhir:display [ fhir:v "Alive" ] ;
+     fhir:definition [ fhir:v "Alive" ]
+  ] [
+     fhir:code [ fhir:v "303071001" ] ;
+     fhir:display [ fhir:v "Person in the family" ] ;
+     fhir:definition [ fhir:v "Person in the family" ]
+  ] [
+     fhir:code [ fhir:v "394863008" ] ;
+     fhir:display [ fhir:v "Non-family member" ] ;
+     fhir:definition [ fhir:v "Non-family member" ]
+  ] [
+     fhir:code [ fhir:v "40683002" ] ;
+     fhir:display [ fhir:v "Parent" ] ;
+     fhir:definition [ fhir:v "Forælder" ]
+  ] [
+     fhir:code [ fhir:v "375005" ] ;
+     fhir:display [ fhir:v "Sibling" ] ;
+     fhir:definition [ fhir:v "Søster/Bror" ]
+  ] [
+     fhir:code [ fhir:v "11286003" ] ;
+     fhir:display [ fhir:v "Twin sibling" ] ;
+     fhir:definition [ fhir:v "Tvilling" ]
+  ] [
+     fhir:code [ fhir:v "10896006" ] ;
+     fhir:display [ fhir:v "Identical twin sibling" ] ;
+     fhir:definition [ fhir:v "Tvilling (monocygot)" ]
+  ] [
+     fhir:code [ fhir:v "713369009" ] ;
+     fhir:display [ fhir:v "Live related kidney donor" ] ;
+     fhir:definition [ fhir:v "Levende familiedonor" ]
+  ] [
+     fhir:code [ fhir:v "105457003" ] ;
+     fhir:display [ fhir:v "Cadaver donor" ] ;
+     fhir:definition [ fhir:v "Afdød donor" ]
+  ] [
+     fhir:code [ fhir:v "713183000" ] ;
+     fhir:display [ fhir:v "Cadaver donor for kidney transplant" ] ;
+     fhir:definition [ fhir:v "Afdød donor (Nekronyre)" ]
+  ] [
+     fhir:code [ fhir:v "418460001" ] ;
+     fhir:display [ fhir:v "Bone marrow stromal stem cell" ] ;
+     fhir:definition [ fhir:v "Bone marrow stromal stem cell" ]
+  ] [
+     fhir:code [ fhir:v "419583006" ] ;
+     fhir:display [ fhir:v "Peripheral blood stem cell" ] ;
+     fhir:definition [ fhir:v "Peripheral blood stem cell" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

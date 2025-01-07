@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/ValueSet/VancouverKlassifikationDHR> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "VancouverKlassifikationDHR"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VancouverKlassifikationDHR</b></p><a name=\"VancouverKlassifikationDHR\"> </a><a name=\"hcVancouverKlassifikationDHR\"> </a><a name=\"VancouverKlassifikationDHR-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-VancouverClassification.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/VancouverClassification</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-VancouverClassification.html#VancouverClassification-type_ag\">type_ag</a></td><td>A1. Fraktur svarende til trochanter major</td><td>Type A(G): greater trochanter</td></tr><tr><td><a href=\"CodeSystem-VancouverClassification.html#VancouverClassification-type_al\">type_al</a></td><td>A2. Fraktur svarende til trochanter minor</td><td>Type A(L): lesser trochanter</td></tr><tr><td><a href=\"CodeSystem-VancouverClassification.html#VancouverClassification-type_b1\">type_b1</a></td><td>B1. Fraktur omkring fastsiddende stem eller lige nedenfor stem spids</td><td>Type B1: stem stable</td></tr><tr><td><a href=\"CodeSystem-VancouverClassification.html#VancouverClassification-type_b2\">type_b2</a></td><td>B2. Fraktur omkring løst stem eller lige nedenfor stem spids med god knoglekvalitet</td><td>Type B2: stem loose</td></tr><tr><td><a href=\"CodeSystem-VancouverClassification.html#VancouverClassification-type_b3\">type_b3</a></td><td>B3. Fraktur omkring løst stem eller lige nedenfor stem spids med dårlig knoglekvalitet</td><td>Type B3: stem loose, bone stock inadequate</td></tr><tr><td><a href=\"CodeSystem-VancouverClassification.html#VancouverClassification-type_c1\">type_c1</a></td><td>C1. Fraktur klart distalt for stemmet uden osteosynteseyntese</td><td>Type C1</td></tr><tr><td><a href=\"CodeSystem-VancouverClassification.html#VancouverClassification-type_c2\">type_c2</a></td><td>C2. Fraktur klart distalt for stemmet med osteosyntese</td><td>Type C2</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/ValueSet/VancouverKlassifikationDHR"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "VancouverKlassifikationDHR"] ; # 
+  fhir:title [ fhir:v "Vancouver klassifikation (DHR)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-07-20T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Vancouver klassifikation (DHR)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/VancouverClassification"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "type_ag" ] ;
+         fhir:display [ fhir:v "A1. Fraktur svarende til trochanter major" ]
+       ] [
+         fhir:code [ fhir:v "type_al" ] ;
+         fhir:display [ fhir:v "A2. Fraktur svarende til trochanter minor" ]
+       ] [
+         fhir:code [ fhir:v "type_b1" ] ;
+         fhir:display [ fhir:v "B1. Fraktur omkring fastsiddende stem eller lige nedenfor stem spids" ]
+       ] [
+         fhir:code [ fhir:v "type_b2" ] ;
+         fhir:display [ fhir:v "B2. Fraktur omkring løst stem eller lige nedenfor stem spids med god knoglekvalitet" ]
+       ] [
+         fhir:code [ fhir:v "type_b3" ] ;
+         fhir:display [ fhir:v "B3. Fraktur omkring løst stem eller lige nedenfor stem spids med dårlig knoglekvalitet" ]
+       ] [
+         fhir:code [ fhir:v "type_c1" ] ;
+         fhir:display [ fhir:v "C1. Fraktur klart distalt for stemmet uden osteosynteseyntese" ]
+       ] [
+         fhir:code [ fhir:v "type_c2" ] ;
+         fhir:display [ fhir:v "C2. Fraktur klart distalt for stemmet med osteosyntese" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

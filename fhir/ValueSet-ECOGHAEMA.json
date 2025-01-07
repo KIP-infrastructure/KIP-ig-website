@@ -1,0 +1,53 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ECOGHAEMA",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ECOGHAEMA</b></p><a name=\"ECOGHAEMA\"> </a><a name=\"hcECOGHAEMA\"> </a><a name=\"ECOGHAEMA-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-PerformanceStatusScore.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/PerformanceStatusScore</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-PerformanceStatusScore.html#PerformanceStatusScore-grade_0\">grade_0</a></td><td>0: Fuldt daglig aktiv</td><td>Fully active, able to carry on all pre-disease performance without restriction</td></tr><tr><td><a href=\"CodeSystem-PerformanceStatusScore.html#PerformanceStatusScore-grade_1\">grade_1</a></td><td>1: Oppegående</td><td>Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g., light house work, office work</td></tr><tr><td><a href=\"CodeSystem-PerformanceStatusScore.html#PerformanceStatusScore-grade_2\">grade_2</a></td><td>2: Sengeliggende mindre end 50%</td><td>Ambulatory and capable of all selfcare but unable to carry out any work activities; up and about more than 50% of waking hours</td></tr><tr><td><a href=\"CodeSystem-PerformanceStatusScore.html#PerformanceStatusScore-grade_3\">grade_3</a></td><td>3: Sengeliggende mere end 50%</td><td>Capable of only limited selfcare; confined to bed or chair more than 50% of waking hours</td></tr><tr><td><a href=\"CodeSystem-PerformanceStatusScore.html#PerformanceStatusScore-grade_4\">grade_4</a></td><td>4: 100% Sengeliggende</td><td>Completely disabled; cannot carry on any selfcare; totally confined to bed or chair</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.sundk.dk/fhir/ValueSet/ECOGHAEMA",
+  "version" : "0.0.9",
+  "name" : "ECOGHAEMA",
+  "title" : "ECOG Performance Status Skala til HÆMA specialerne",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-07-08T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Denne ECOG er specifik udarbejdet til HÆMA specialerne",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/PerformanceStatusScore",
+      "concept" : [{
+        "code" : "grade_0",
+        "display" : "0: Fuldt daglig aktiv"
+      },
+      {
+        "code" : "grade_1",
+        "display" : "1: Oppegående"
+      },
+      {
+        "code" : "grade_2",
+        "display" : "2: Sengeliggende mindre end 50%"
+      },
+      {
+        "code" : "grade_3",
+        "display" : "3: Sengeliggende mere end 50%"
+      },
+      {
+        "code" : "grade_4",
+        "display" : "4: 100% Sengeliggende"
+      }]
+    }]
+  }
+}

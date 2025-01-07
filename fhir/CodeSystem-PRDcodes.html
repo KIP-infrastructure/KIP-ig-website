@@ -1,0 +1,1161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>ERA PRD Codes - KIP Infracstructure v0.0.9</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3.783"}
+    h3,h4,h5,h6{--heading-prefix:"3.783"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">KIP Infracstructure</span>
+            <br/>
+            <span style="display:inline-block;">0.0.9 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Search Parameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Extension Definitions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Code Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ERA PRD Codes</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KIP Infrastructure (v0.0.9: Releases Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="https://kip.sundk.dk/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-PRDcodes.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-PRDcodes.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-PRDcodes.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: ERA PRD Codes
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://kip.sundk.dk/fhir/CodeSystem/PRDcodes<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://kip.sundk.dk/fhir/CodeSystem/PRDcodes"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.0.9<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://kip.sundk.dk/fhir/CodeSystem/PRDcodes|0.0.9"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2024-01-10
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">PRDcodes</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>European Renal Association (ERA)  Primary Renal Disease (PRD)</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-PRDcodes.html">PRDcodes</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem PRDcodes</b></p><a name="PRDcodes"> </a><a name="hcPRDcodes"> </a><a name="PRDcodes-en-US"> </a><p>This case-insensitive code system <code>https://kip.sundk.dk/fhir/CodeSystem/PRDcodes</code> defines the following codes:</p>
+<table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>
+<tr><td style="white-space:nowrap">prd1003<a name="PRDcodes-prd1003"> </a></td>
+<td>Adult nephrotic syndrome - no histology (1003)</td>
+<td>Adult nephrotic syndrome - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd1019<a name="PRDcodes-prd1019"> </a></td>
+<td>Nephrotic syndrome of childhood - steroid sensitive - no histology (1019)</td>
+<td>Nephrotic syndrome of childhood - steroid sensitive - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd1026<a name="PRDcodes-prd1026"> </a></td>
+<td>Congenital nephrotic syndrome (CNS) - no histology (1026)</td>
+<td>Congenital nephrotic syndrome (CNS) - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd1035<a name="PRDcodes-prd1035"> </a></td>
+<td>Congenital nephrotic syndrome (CNS) - Finnish type - no histology (1035)</td>
+<td>Congenital nephrotic syndrome (CNS) - Finnish type - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd1042<a name="PRDcodes-prd1042"> </a></td>
+<td>Congenital nephrotic syndrome (CNS) - Finnish type - histologically proven (1042)</td>
+<td>Congenital nephrotic syndrome (CNS) - Finnish type - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd1057<a name="PRDcodes-prd1057"> </a></td>
+<td>Congenital nephrotic syndrome (CNS) - diffuse mesangial sclerosis (1057)</td>
+<td>Congenital nephrotic syndrome (CNS) - diffuse mesangial sclerosis</td></tr>
+<tr><td style="white-space:nowrap">prd1061<a name="PRDcodes-prd1061"> </a></td>
+<td>Congenital nephrotic syndrome (CNS) - focal segmental glomerulosclerosis (FSGS) (1061)</td>
+<td>Congenital nephrotic syndrome (CNS) - focal segmental glomerulosclerosis (FSGS)</td></tr>
+<tr><td style="white-space:nowrap">prd1074<a name="PRDcodes-prd1074"> </a></td>
+<td>Denys-Drash syndrome (1074)</td>
+<td>Denys-Drash syndrome</td></tr>
+<tr><td style="white-space:nowrap">prd1088<a name="PRDcodes-prd1088"> </a></td>
+<td>Congenital nephrotic syndrome (CNS) - congenital infection (1088)</td>
+<td>Congenital nephrotic syndrome (CNS) - congenital infection</td></tr>
+<tr><td style="white-space:nowrap">prd1090<a name="PRDcodes-prd1090"> </a></td>
+<td>Minimal change nephropathy - no histology (1090)</td>
+<td>Minimal change nephropathy - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd1100<a name="PRDcodes-prd1100"> </a></td>
+<td>Minimal change nephropathy - histologically proven (1100)</td>
+<td>Minimal change nephropathy - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd1116<a name="PRDcodes-prd1116"> </a></td>
+<td>IgA nephropathy - no histology (1116)</td>
+<td>IgA nephropathy - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd1128<a name="PRDcodes-prd1128"> </a></td>
+<td>IgA nephropathy - histologically proven (1128)</td>
+<td>IgA nephropathy - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd1137<a name="PRDcodes-prd1137"> </a></td>
+<td>Familial IgA nephropathy - no histology (1137)</td>
+<td>Familial IgA nephropathy - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd1144<a name="PRDcodes-prd1144"> </a></td>
+<td>Familial IgA nephropathy - histologically proven (1144)</td>
+<td>Familial IgA nephropathy - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd1159<a name="PRDcodes-prd1159"> </a></td>
+<td>IgA nephropathy secondary to liver cirrhosis - no histology (1159)</td>
+<td>IgA nephropathy secondary to liver cirrhosis - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd1163<a name="PRDcodes-prd1163"> </a></td>
+<td>IgA nephropathy secondary to liver cirrhosis - histologically proven (1163)</td>
+<td>IgA nephropathy secondary to liver cirrhosis - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd1171<a name="PRDcodes-prd1171"> </a></td>
+<td>IgM - associated nephropathy (1171)</td>
+<td>IgM - associated nephropathy</td></tr>
+<tr><td style="white-space:nowrap">prd1185<a name="PRDcodes-prd1185"> </a></td>
+<td>Membranous nephropathy - idiopathic (1185)</td>
+<td>Membranous nephropathy - idiopathic</td></tr>
+<tr><td style="white-space:nowrap">prd1192<a name="PRDcodes-prd1192"> </a></td>
+<td>Membranous nephropathy - malignancy associated (1192)</td>
+<td>Membranous nephropathy - malignancy associated</td></tr>
+<tr><td style="white-space:nowrap">prd1205<a name="PRDcodes-prd1205"> </a></td>
+<td>Membranous nephropathy - drug induced (1205)</td>
+<td>Membranous nephropathy - drug induced</td></tr>
+<tr><td style="white-space:nowrap">prd1214<a name="PRDcodes-prd1214"> </a></td>
+<td>Membranous nephropathy - infection associated (1214)</td>
+<td>Membranous nephropathy - infection associated</td></tr>
+<tr><td style="white-space:nowrap">prd1222<a name="PRDcodes-prd1222"> </a></td>
+<td>Mesangiocapillary glomerulonephritis type 1 (1222)</td>
+<td>Mesangiocapillary glomerulonephritis type 1</td></tr>
+<tr><td style="white-space:nowrap">prd1233<a name="PRDcodes-prd1233"> </a></td>
+<td>Mesangiocapillary glomerulonephritis type 2 (dense deposit disease) (1233)</td>
+<td>Mesangiocapillary glomerulonephritis type 2 (dense deposit disease)</td></tr>
+<tr><td style="white-space:nowrap">prd1246<a name="PRDcodes-prd1246"> </a></td>
+<td>Mesangiocapillary glomerulonephritis type 3 (1246)</td>
+<td>Mesangiocapillary glomerulonephritis type 3</td></tr>
+<tr><td style="white-space:nowrap">prd1251<a name="PRDcodes-prd1251"> </a></td>
+<td>Idiopathic rapidly progressive (crescentic) glomerulonephritis (1251)</td>
+<td>Idiopathic rapidly progressive (crescentic) glomerulonephritis</td></tr>
+<tr><td style="white-space:nowrap">prd1267<a name="PRDcodes-prd1267"> </a></td>
+<td>Primary focal segmental glomerulosclerosis (FSGS) (1267)</td>
+<td>Primary focal segmental glomerulosclerosis (FSGS)</td></tr>
+<tr><td style="white-space:nowrap">prd1279<a name="PRDcodes-prd1279"> </a></td>
+<td>Familial focal segmental glomerulosclerosis (FSGS) - autosomal recessive - no histology (1279)</td>
+<td>Familial focal segmental glomerulosclerosis (FSGS) - autosomal recessive - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd1280<a name="PRDcodes-prd1280"> </a></td>
+<td>Familial focal segmental glomerulosclerosis (FSGS) - autosomal recessive - histologically proven (1280)</td>
+<td>Familial focal segmental glomerulosclerosis (FSGS) - autosomal recessive - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd1298<a name="PRDcodes-prd1298"> </a></td>
+<td>Familial focal segmental glomerulosclerosis (FSGS) - autosomal dominant - no histology (1298)</td>
+<td>Familial focal segmental glomerulosclerosis (FSGS) - autosomal dominant - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd1308<a name="PRDcodes-prd1308"> </a></td>
+<td>Familial focal segmental glomerulosclerosis (FSGS) - autosomal dominant - histologically proven (1308)</td>
+<td>Familial focal segmental glomerulosclerosis (FSGS) - autosomal dominant - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd1312<a name="PRDcodes-prd1312"> </a></td>
+<td>Focal segmental glomerulosclerosis (FSGS) secondary to obesity - no histology (1312)</td>
+<td>Focal segmental glomerulosclerosis (FSGS) secondary to obesity - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd1320<a name="PRDcodes-prd1320"> </a></td>
+<td>Focal segmental glomerulosclerosis (FSGS) secondary to obesity - histologically proven (1320)</td>
+<td>Focal segmental glomerulosclerosis (FSGS) secondary to obesity - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd1331<a name="PRDcodes-prd1331"> </a></td>
+<td>Diffuse endocapillary glomerulonephritis (1331)</td>
+<td>Diffuse endocapillary glomerulonephritis</td></tr>
+<tr><td style="white-space:nowrap">prd1349<a name="PRDcodes-prd1349"> </a></td>
+<td>Mesangial proliferative glomerulonephritis  (1349)</td>
+<td>Mesangial proliferative glomerulonephritis</td></tr>
+<tr><td style="white-space:nowrap">prd1354<a name="PRDcodes-prd1354"> </a></td>
+<td>Focal and segmental proliferative glomerulonephritis (1354)</td>
+<td>Focal and segmental proliferative glomerulonephritis</td></tr>
+<tr><td style="white-space:nowrap">prd1365<a name="PRDcodes-prd1365"> </a></td>
+<td>Glomerulonephritis - secondary to systemic disease  (1365)</td>
+<td>Glomerulonephritis - secondary to systemic disease</td></tr>
+<tr><td style="white-space:nowrap">prd1377<a name="PRDcodes-prd1377"> </a></td>
+<td>Glomerulonephritis - histologically indeterminate (1377)</td>
+<td>Glomerulonephritis - histologically indeterminate</td></tr>
+<tr><td style="white-space:nowrap">prd1383<a name="PRDcodes-prd1383"> </a></td>
+<td>Systemic vasculitis - ANCA negative - histologically proven (1383)</td>
+<td>Systemic vasculitis - ANCA negative - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd1396<a name="PRDcodes-prd1396"> </a></td>
+<td>Systemic vasculitis - ANCA positive - no histology (1396)</td>
+<td>Systemic vasculitis - ANCA positive - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd1401<a name="PRDcodes-prd1401"> </a></td>
+<td>Granulomatosis with polyangiitis - no histology (1401)</td>
+<td>Granulomatosis with polyangiitis - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd1417<a name="PRDcodes-prd1417"> </a></td>
+<td>Granulomatosis with polyangiitis - histologically proven (1417)</td>
+<td>Granulomatosis with polyangiitis - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd1429<a name="PRDcodes-prd1429"> </a></td>
+<td>Microscopic polyangiitis - histologically proven (1429)</td>
+<td>Microscopic polyangiitis - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd1438<a name="PRDcodes-prd1438"> </a></td>
+<td>Churg-Strauss syndrome - no histology (1438)</td>
+<td>Churg-Strauss syndrome - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd1440<a name="PRDcodes-prd1440"> </a></td>
+<td>Churg-Strauss syndrome - histologically proven (1440)</td>
+<td>Churg-Strauss syndrome - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd1455<a name="PRDcodes-prd1455"> </a></td>
+<td>Polyarteritis nodosa (1455)</td>
+<td>Polyarteritis nodosa</td></tr>
+<tr><td style="white-space:nowrap">prd1464<a name="PRDcodes-prd1464"> </a></td>
+<td>Anti-Glomerular basement membrane (GBM) disease / Goodpasture's syndrome - no histology (1464)</td>
+<td>Anti-Glomerular basement membrane (GBM) disease / Goodpasture's syndrome - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd1472<a name="PRDcodes-prd1472"> </a></td>
+<td>Anti-Glomerular basement membrane (GBM) disease / Goodpasture's syndrome - histologically proven (1472)</td>
+<td>Anti-Glomerular basement membrane (GBM) disease / Goodpasture's syndrome - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd1486<a name="PRDcodes-prd1486"> </a></td>
+<td>Systemic lupus erythematosus / nephritis - no histology (1486)</td>
+<td>Systemic lupus erythematosus / nephritis - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd1493<a name="PRDcodes-prd1493"> </a></td>
+<td>Systemic lupus erythematosus / nephritis - histologically proven (1493)</td>
+<td>Systemic lupus erythematosus / nephritis - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd1504<a name="PRDcodes-prd1504"> </a></td>
+<td>Henoch-Schönlein purpura / nephritis - no histology (1504)</td>
+<td>Henoch-Schönlein purpura / nephritis - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd1515<a name="PRDcodes-prd1515"> </a></td>
+<td>Henoch-Schönlein purpura / nephritis - histologically proven (1515)</td>
+<td>Henoch-Schönlein purpura / nephritis - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd1527<a name="PRDcodes-prd1527"> </a></td>
+<td>Renal scleroderma / systemic sclerosis - no histology (1527)</td>
+<td>Renal scleroderma / systemic sclerosis - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd1536<a name="PRDcodes-prd1536"> </a></td>
+<td>Renal scleroderma / systemic sclerosis - histologically proven (1536)</td>
+<td>Renal scleroderma / systemic sclerosis - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd1543<a name="PRDcodes-prd1543"> </a></td>
+<td>Essential mixed cryoglobulinaemia - no histology (1543)</td>
+<td>Essential mixed cryoglobulinaemia - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd1558<a name="PRDcodes-prd1558"> </a></td>
+<td>Essential mixed cryoglobulinaemia - histologically proven (1558)</td>
+<td>Essential mixed cryoglobulinaemia - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd1562<a name="PRDcodes-prd1562"> </a></td>
+<td>Cryoglobulinaemia secondary to hepatitis C - no histology (1562)</td>
+<td>Cryoglobulinaemia secondary to hepatitis C - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd1570<a name="PRDcodes-prd1570"> </a></td>
+<td>Cryoglobulinaemia secondary to hepatitis C - histologically proven (1570)</td>
+<td>Cryoglobulinaemia secondary to hepatitis C - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd1589<a name="PRDcodes-prd1589"> </a></td>
+<td>Cryoglobulinaemia secondary to systemic disease - no histology (1589)</td>
+<td>Cryoglobulinaemia secondary to systemic disease - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd1591<a name="PRDcodes-prd1591"> </a></td>
+<td>Cryoglobulinaemia secondary to systemic disease - histologically proven (1591)</td>
+<td>Cryoglobulinaemia secondary to systemic disease - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd1602<a name="PRDcodes-prd1602"> </a></td>
+<td>Primary reflux nephropathy - sporadic (1602)</td>
+<td>Primary reflux nephropathy - sporadic</td></tr>
+<tr><td style="white-space:nowrap">prd1618<a name="PRDcodes-prd1618"> </a></td>
+<td>Familial reflux nephropathy (1618)</td>
+<td>Familial reflux nephropathy</td></tr>
+<tr><td style="white-space:nowrap">prd1625<a name="PRDcodes-prd1625"> </a></td>
+<td>Congenital dysplasia / hypoplasia (1625)</td>
+<td>Congenital dysplasia / hypoplasia</td></tr>
+<tr><td style="white-space:nowrap">prd1639<a name="PRDcodes-prd1639"> </a></td>
+<td>Multicystic dysplastic kidneys (1639)</td>
+<td>Multicystic dysplastic kidneys</td></tr>
+<tr><td style="white-space:nowrap">prd1641<a name="PRDcodes-prd1641"> </a></td>
+<td>Renal dysplasia due to fetal ACE-inhibitor exposure (1641)</td>
+<td>Renal dysplasia due to fetal ACE-inhibitor exposure</td></tr>
+<tr><td style="white-space:nowrap">prd1656<a name="PRDcodes-prd1656"> </a></td>
+<td>Glomerulocystic disease (1656)</td>
+<td>Glomerulocystic disease</td></tr>
+<tr><td style="white-space:nowrap">prd1660<a name="PRDcodes-prd1660"> </a></td>
+<td>Congenital pelvi-ureteric junction obstruction (1660)</td>
+<td>Congenital pelvi-ureteric junction obstruction</td></tr>
+<tr><td style="white-space:nowrap">prd1673<a name="PRDcodes-prd1673"> </a></td>
+<td>Congenital vesico-ureteric junction obstruction (1673)</td>
+<td>Congenital vesico-ureteric junction obstruction</td></tr>
+<tr><td style="white-space:nowrap">prd1687<a name="PRDcodes-prd1687"> </a></td>
+<td>Posterior urethral valves (1687)</td>
+<td>Posterior urethral valves</td></tr>
+<tr><td style="white-space:nowrap">prd1694<a name="PRDcodes-prd1694"> </a></td>
+<td>Syndrome of agenesis of abdominal muscles - prune belly syndrome (1694)</td>
+<td>Syndrome of agenesis of abdominal muscles - prune belly syndrome</td></tr>
+<tr><td style="white-space:nowrap">prd1706<a name="PRDcodes-prd1706"> </a></td>
+<td>Congenital neurogenic bladder (1706)</td>
+<td>Congenital neurogenic bladder</td></tr>
+<tr><td style="white-space:nowrap">prd1710<a name="PRDcodes-prd1710"> </a></td>
+<td>Bladder exstrophy (1710)</td>
+<td>Bladder exstrophy</td></tr>
+<tr><td style="white-space:nowrap">prd1723<a name="PRDcodes-prd1723"> </a></td>
+<td>Megacystis-megaureter (1723)</td>
+<td>Megacystis-megaureter</td></tr>
+<tr><td style="white-space:nowrap">prd1734<a name="PRDcodes-prd1734"> </a></td>
+<td>Oligomeganephronia (1734)</td>
+<td>Oligomeganephronia</td></tr>
+<tr><td style="white-space:nowrap">prd1747<a name="PRDcodes-prd1747"> </a></td>
+<td>Renal papillary necrosis (1747)</td>
+<td>Renal papillary necrosis</td></tr>
+<tr><td style="white-space:nowrap">prd1752<a name="PRDcodes-prd1752"> </a></td>
+<td>Acquired obstructive uropathy / nephropathy (1752)</td>
+<td>Acquired obstructive uropathy / nephropathy</td></tr>
+<tr><td style="white-space:nowrap">prd1768<a name="PRDcodes-prd1768"> </a></td>
+<td>Acquired obstructive nephropathy due to neurogenic bladder (1768)</td>
+<td>Acquired obstructive nephropathy due to neurogenic bladder</td></tr>
+<tr><td style="white-space:nowrap">prd1775<a name="PRDcodes-prd1775"> </a></td>
+<td>Obstructive nephropathy due to prostatic hypertrophy (1775)</td>
+<td>Obstructive nephropathy due to prostatic hypertrophy</td></tr>
+<tr><td style="white-space:nowrap">prd1781<a name="PRDcodes-prd1781"> </a></td>
+<td>Obstructive nephropathy due to prostate cancer (1781)</td>
+<td>Obstructive nephropathy due to prostate cancer</td></tr>
+<tr><td style="white-space:nowrap">prd1799<a name="PRDcodes-prd1799"> </a></td>
+<td>Obstructive nephropathy due to bladder cancer (1799)</td>
+<td>Obstructive nephropathy due to bladder cancer</td></tr>
+<tr><td style="white-space:nowrap">prd1809<a name="PRDcodes-prd1809"> </a></td>
+<td>Obstructive nephropathy due to other malignancies (1809)</td>
+<td>Obstructive nephropathy due to other malignancies</td></tr>
+<tr><td style="white-space:nowrap">prd1813<a name="PRDcodes-prd1813"> </a></td>
+<td>Idiopathic retroperitoneal fibrosis (1813)</td>
+<td>Idiopathic retroperitoneal fibrosis</td></tr>
+<tr><td style="white-space:nowrap">prd1821<a name="PRDcodes-prd1821"> </a></td>
+<td>Retroperitoneal fibrosis secondary to malignancies (1821)</td>
+<td>Retroperitoneal fibrosis secondary to malignancies</td></tr>
+<tr><td style="white-space:nowrap">prd1832<a name="PRDcodes-prd1832"> </a></td>
+<td>Calculus nephropathy / urolithiasis (1832)</td>
+<td>Calculus nephropathy / urolithiasis</td></tr>
+<tr><td style="white-space:nowrap">prd1845<a name="PRDcodes-prd1845"> </a></td>
+<td>Calcium oxalate urolithiasis (1845)</td>
+<td>Calcium oxalate urolithiasis</td></tr>
+<tr><td style="white-space:nowrap">prd1850<a name="PRDcodes-prd1850"> </a></td>
+<td>Enteric hyperoxaluria  (1850)</td>
+<td>Enteric hyperoxaluria</td></tr>
+<tr><td style="white-space:nowrap">prd1866<a name="PRDcodes-prd1866"> </a></td>
+<td>Magnesium ammonium phosphate (struvite) urolithiasis (1866)</td>
+<td>Magnesium ammonium phosphate (struvite) urolithiasis</td></tr>
+<tr><td style="white-space:nowrap">prd1878<a name="PRDcodes-prd1878"> </a></td>
+<td>Uric acid urolithiasis (1878)</td>
+<td>Uric acid urolithiasis</td></tr>
+<tr><td style="white-space:nowrap">prd1884<a name="PRDcodes-prd1884"> </a></td>
+<td>Tubulointerstitial nephritis - no histology (1884)</td>
+<td>Tubulointerstitial nephritis - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd1897<a name="PRDcodes-prd1897"> </a></td>
+<td>Tubulointerstitial nephritis - histologically proven (1897)</td>
+<td>Tubulointerstitial nephritis - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd1907<a name="PRDcodes-prd1907"> </a></td>
+<td>Familial interstitial nephropathy - no histology (1907)</td>
+<td>Familial interstitial nephropathy - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd1911<a name="PRDcodes-prd1911"> </a></td>
+<td>Familial interstitial nephropathy - histologically proven (1911)</td>
+<td>Familial interstitial nephropathy - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd1924<a name="PRDcodes-prd1924"> </a></td>
+<td>Tubulointerstitial nephritis associated with autoimmune disease - no histology (1924)</td>
+<td>Tubulointerstitial nephritis associated with autoimmune disease - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd1930<a name="PRDcodes-prd1930"> </a></td>
+<td>Tubulointerstitial nephritis associated with autoimmune disease - histologically proven (1930)</td>
+<td>Tubulointerstitial nephritis associated with autoimmune disease - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd1948<a name="PRDcodes-prd1948"> </a></td>
+<td>Tubulointerstitial nephritis with uveitis (TINU) - no histology (1948)</td>
+<td>Tubulointerstitial nephritis with uveitis (TINU) - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd1953<a name="PRDcodes-prd1953"> </a></td>
+<td>Tubulointerstitial nephritis with uveitis (TINU) - histologically proven (1953)</td>
+<td>Tubulointerstitial nephritis with uveitis (TINU) - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd1969<a name="PRDcodes-prd1969"> </a></td>
+<td>Renal sarcoidosis - no histology (1969)</td>
+<td>Renal sarcoidosis - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd1976<a name="PRDcodes-prd1976"> </a></td>
+<td>Renal sarcoidosis - histologically proven (1976)</td>
+<td>Renal sarcoidosis - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd1982<a name="PRDcodes-prd1982"> </a></td>
+<td>Aristolochic acid nephropathy (Balkan / Chinese herb / endemic nephropathy) - no histology (1982)</td>
+<td>Aristolochic acid nephropathy (Balkan / Chinese herb / endemic nephropathy) - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd1995<a name="PRDcodes-prd1995"> </a></td>
+<td>Aristolochic acid nephropathy (Balkan / Chinese herb / endemic nephropathy) - histologically proven (1995)</td>
+<td>Aristolochic acid nephropathy (Balkan / Chinese herb / endemic nephropathy) - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd2005<a name="PRDcodes-prd2005"> </a></td>
+<td>Drug-induced tubulointerstitial nephritis  - no histology (2005)</td>
+<td>Drug-induced tubulointerstitial nephritis  - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd2014<a name="PRDcodes-prd2014"> </a></td>
+<td>Drug-induced tubulointerstitial nephritis - histologically proven (2014)</td>
+<td>Drug-induced tubulointerstitial nephritis - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd2022<a name="PRDcodes-prd2022"> </a></td>
+<td>Nephropathy due to analgesic drugs - no histology (2022)</td>
+<td>Nephropathy due to analgesic drugs - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd2033<a name="PRDcodes-prd2033"> </a></td>
+<td>Nephropathy due to analgesic drugs - histologically proven (2033)</td>
+<td>Nephropathy due to analgesic drugs - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd2046<a name="PRDcodes-prd2046"> </a></td>
+<td>Nephropathy due to ciclosporin - no histology (2046)</td>
+<td>Nephropathy due to ciclosporin - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd2051<a name="PRDcodes-prd2051"> </a></td>
+<td>Nephropathy due to ciclosporin - histologically proven (2051)</td>
+<td>Nephropathy due to ciclosporin - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd2067<a name="PRDcodes-prd2067"> </a></td>
+<td>Nephropathy due to tacrolimus - no histology (2067)</td>
+<td>Nephropathy due to tacrolimus - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd2079<a name="PRDcodes-prd2079"> </a></td>
+<td>Nephropathy due to tacrolimus - histologically proven (2079)</td>
+<td>Nephropathy due to tacrolimus - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd2080<a name="PRDcodes-prd2080"> </a></td>
+<td>Nephropathy due to aminoglycosides - no histology (2080)</td>
+<td>Nephropathy due to aminoglycosides - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd2098<a name="PRDcodes-prd2098"> </a></td>
+<td>Nephropathy due to aminoglycosides - histologically proven (2098)</td>
+<td>Nephropathy due to aminoglycosides - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd2108<a name="PRDcodes-prd2108"> </a></td>
+<td>Nephropathy due to amphotericin - no histology (2108)</td>
+<td>Nephropathy due to amphotericin - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd2112<a name="PRDcodes-prd2112"> </a></td>
+<td>Nephropathy due to amphotericin - histologically proven (2112)</td>
+<td>Nephropathy due to amphotericin - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd2120<a name="PRDcodes-prd2120"> </a></td>
+<td>Nephropathy due to cisplatin - no histology (2120)</td>
+<td>Nephropathy due to cisplatin - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd2131<a name="PRDcodes-prd2131"> </a></td>
+<td>Nephropathy due to cisplatin - histologically proven (2131)</td>
+<td>Nephropathy due to cisplatin - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd2149<a name="PRDcodes-prd2149"> </a></td>
+<td>Nephropathy due to lithium - no histology (2149)</td>
+<td>Nephropathy due to lithium - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd2154<a name="PRDcodes-prd2154"> </a></td>
+<td>Nephropathy due to lithium - histologically proven (2154)</td>
+<td>Nephropathy due to lithium - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd2165<a name="PRDcodes-prd2165"> </a></td>
+<td>Lead induced nephropathy - no histology (2165)</td>
+<td>Lead induced nephropathy - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd2177<a name="PRDcodes-prd2177"> </a></td>
+<td>Lead induced nephropathy - histologically proven (2177)</td>
+<td>Lead induced nephropathy - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd2183<a name="PRDcodes-prd2183"> </a></td>
+<td>Acute urate nephropathy - no histology (2183)</td>
+<td>Acute urate nephropathy - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd2196<a name="PRDcodes-prd2196"> </a></td>
+<td>Acute urate nephropathy - histologically proven (2196)</td>
+<td>Acute urate nephropathy - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd2203<a name="PRDcodes-prd2203"> </a></td>
+<td>Chronic urate nephropathy - histologically proven (2203)</td>
+<td>Chronic urate nephropathy - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd2219<a name="PRDcodes-prd2219"> </a></td>
+<td>Radiation nephritis (2219)</td>
+<td>Radiation nephritis</td></tr>
+<tr><td style="white-space:nowrap">prd2226<a name="PRDcodes-prd2226"> </a></td>
+<td>Renal / perinephric abscess (2226)</td>
+<td>Renal / perinephric abscess</td></tr>
+<tr><td style="white-space:nowrap">prd2235<a name="PRDcodes-prd2235"> </a></td>
+<td>Renal tuberculosis (2235)</td>
+<td>Renal tuberculosis</td></tr>
+<tr><td style="white-space:nowrap">prd2242<a name="PRDcodes-prd2242"> </a></td>
+<td>Leptospirosis (2242)</td>
+<td>Leptospirosis</td></tr>
+<tr><td style="white-space:nowrap">prd2257<a name="PRDcodes-prd2257"> </a></td>
+<td>Hantavirus nephropathy (2257)</td>
+<td>Hantavirus nephropathy</td></tr>
+<tr><td style="white-space:nowrap">prd2261<a name="PRDcodes-prd2261"> </a></td>
+<td>Xanthogranulomatous pyelonephritis (2261)</td>
+<td>Xanthogranulomatous pyelonephritis</td></tr>
+<tr><td style="white-space:nowrap">prd2274<a name="PRDcodes-prd2274"> </a></td>
+<td>Nephropathy related to HIV - no histology (2274)</td>
+<td>Nephropathy related to HIV - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd2288<a name="PRDcodes-prd2288"> </a></td>
+<td>Nephropathy related to HIV - histologically proven (2288)</td>
+<td>Nephropathy related to HIV - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd2290<a name="PRDcodes-prd2290"> </a></td>
+<td>Schistosomiasis (2290)</td>
+<td>Schistosomiasis</td></tr>
+<tr><td style="white-space:nowrap">prd2300<a name="PRDcodes-prd2300"> </a></td>
+<td>Other specific infection (2300)</td>
+<td>Other specific infection</td></tr>
+<tr><td style="white-space:nowrap">prd2316<a name="PRDcodes-prd2316"> </a></td>
+<td>Diabetic nephropathy in type I diabetes - no histology (2316)</td>
+<td>Diabetic nephropathy in type I diabetes - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd2328<a name="PRDcodes-prd2328"> </a></td>
+<td>Diabetic nephropathy in type I diabetes - histologically proven (2328)</td>
+<td>Diabetic nephropathy in type I diabetes - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd2337<a name="PRDcodes-prd2337"> </a></td>
+<td>Diabetic nephropathy in type II diabetes - no histology (2337)</td>
+<td>Diabetic nephropathy in type II diabetes - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd2344<a name="PRDcodes-prd2344"> </a></td>
+<td>Diabetic nephropathy in type II diabetes - histologically proven (2344)</td>
+<td>Diabetic nephropathy in type II diabetes - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd2359<a name="PRDcodes-prd2359"> </a></td>
+<td>Chronic hypertensive nephropathy - no histology (2359)</td>
+<td>Chronic hypertensive nephropathy - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd2363<a name="PRDcodes-prd2363"> </a></td>
+<td>Chronic hypertensive nephropathy - histologically proven (2363)</td>
+<td>Chronic hypertensive nephropathy - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd2371<a name="PRDcodes-prd2371"> </a></td>
+<td>Malignant hypertensive nephropathy / accelerated hypertensive nephropathy - no histology (2371)</td>
+<td>Malignant hypertensive nephropathy / accelerated hypertensive nephropathy - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd2385<a name="PRDcodes-prd2385"> </a></td>
+<td>Malignant hypertensive nephropathy / accelerated hypertensive nephropathy - histologically proven (2385)</td>
+<td>Malignant hypertensive nephropathy / accelerated hypertensive nephropathy - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd2392<a name="PRDcodes-prd2392"> </a></td>
+<td>Ageing kidney - no histology (2392)</td>
+<td>Ageing kidney - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd2407<a name="PRDcodes-prd2407"> </a></td>
+<td>Ischaemic nephropathy - no histology (2407)</td>
+<td>Ischaemic nephropathy - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd2411<a name="PRDcodes-prd2411"> </a></td>
+<td>Ischaemic nephropathy / microvascular disease - histologically proven (2411)</td>
+<td>Ischaemic nephropathy / microvascular disease - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd2424<a name="PRDcodes-prd2424"> </a></td>
+<td>Renal artery stenosis (2424)</td>
+<td>Renal artery stenosis</td></tr>
+<tr><td style="white-space:nowrap">prd2430<a name="PRDcodes-prd2430"> </a></td>
+<td>Atheroembolic renal disease - no histology (2430)</td>
+<td>Atheroembolic renal disease - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd2448<a name="PRDcodes-prd2448"> </a></td>
+<td>Atheroembolic renal disease - histologically proven (2448)</td>
+<td>Atheroembolic renal disease - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd2453<a name="PRDcodes-prd2453"> </a></td>
+<td>Fibromuscular dysplasia of renal artery (2453)</td>
+<td>Fibromuscular dysplasia of renal artery</td></tr>
+<tr><td style="white-space:nowrap">prd2469<a name="PRDcodes-prd2469"> </a></td>
+<td>Renal arterial thrombosis / occlusion (2469)</td>
+<td>Renal arterial thrombosis / occlusion</td></tr>
+<tr><td style="white-space:nowrap">prd2476<a name="PRDcodes-prd2476"> </a></td>
+<td>Renal vein thrombosis (2476)</td>
+<td>Renal vein thrombosis</td></tr>
+<tr><td style="white-space:nowrap">prd2482<a name="PRDcodes-prd2482"> </a></td>
+<td>Cardiorenal syndrome (2482)</td>
+<td>Cardiorenal syndrome</td></tr>
+<tr><td style="white-space:nowrap">prd2495<a name="PRDcodes-prd2495"> </a></td>
+<td>Hepatorenal syndrome (2495)</td>
+<td>Hepatorenal syndrome</td></tr>
+<tr><td style="white-space:nowrap">prd2509<a name="PRDcodes-prd2509"> </a></td>
+<td>Renal amyloidosis (2509)</td>
+<td>Renal amyloidosis</td></tr>
+<tr><td style="white-space:nowrap">prd2513<a name="PRDcodes-prd2513"> </a></td>
+<td>AA amyloid secondary to chronic inflammation (2513)</td>
+<td>AA amyloid secondary to chronic inflammation</td></tr>
+<tr><td style="white-space:nowrap">prd2521<a name="PRDcodes-prd2521"> </a></td>
+<td>AL amyloid secondary to plasma cell dyscrasia (2521)</td>
+<td>AL amyloid secondary to plasma cell dyscrasia</td></tr>
+<tr><td style="white-space:nowrap">prd2532<a name="PRDcodes-prd2532"> </a></td>
+<td>Familial amyloid secondary to protein mutations - no histology (2532)</td>
+<td>Familial amyloid secondary to protein mutations - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd2545<a name="PRDcodes-prd2545"> </a></td>
+<td>Familial amyloid secondary to protein mutations - histologically proven (2545)</td>
+<td>Familial amyloid secondary to protein mutations - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd2550<a name="PRDcodes-prd2550"> </a></td>
+<td>Familial AA amyloid secondary to familial Mediterranean fever / TRAPS (Hibernian fever) - no histology (2550)</td>
+<td>Familial AA amyloid secondary to familial Mediterranean fever / TRAPS (Hibernian fever) - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd2566<a name="PRDcodes-prd2566"> </a></td>
+<td>Familial AA amyloid secondary to familial Mediterranean fever / TRAPS (Hibernian fever) - histologically proven (2566)</td>
+<td>Familial AA amyloid secondary to familial Mediterranean fever / TRAPS (Hibernian fever) - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd2578<a name="PRDcodes-prd2578"> </a></td>
+<td>Myeloma kidney - no histology (2578)</td>
+<td>Myeloma kidney - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd2584<a name="PRDcodes-prd2584"> </a></td>
+<td>Myeloma cast nephropathy - histologically proven (2584)</td>
+<td>Myeloma cast nephropathy - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd2597<a name="PRDcodes-prd2597"> </a></td>
+<td>Light chain deposition disease (2597)</td>
+<td>Light chain deposition disease</td></tr>
+<tr><td style="white-space:nowrap">prd2606<a name="PRDcodes-prd2606"> </a></td>
+<td>Immunotactoid / fibrillary nephropathy (2606)</td>
+<td>Immunotactoid / fibrillary nephropathy</td></tr>
+<tr><td style="white-space:nowrap">prd2610<a name="PRDcodes-prd2610"> </a></td>
+<td>Haemolytic uraemic syndrome (HUS) - diarrhoea associated (2610)</td>
+<td>Haemolytic uraemic syndrome (HUS) - diarrhoea associated</td></tr>
+<tr><td style="white-space:nowrap">prd2623<a name="PRDcodes-prd2623"> </a></td>
+<td>Atypical haemolytic uraemic syndrome (HUS) - diarrhoea negative (2623)</td>
+<td>Atypical haemolytic uraemic syndrome (HUS) - diarrhoea negative</td></tr>
+<tr><td style="white-space:nowrap">prd2634<a name="PRDcodes-prd2634"> </a></td>
+<td>Thrombotic thrombocytopenic purpura (TTP) (2634)</td>
+<td>Thrombotic thrombocytopenic purpura (TTP)</td></tr>
+<tr><td style="white-space:nowrap">prd2647<a name="PRDcodes-prd2647"> </a></td>
+<td>Haemolytic uraemic syndrome (HUS) secondary to systemic disease (2647)</td>
+<td>Haemolytic uraemic syndrome (HUS) secondary to systemic disease</td></tr>
+<tr><td style="white-space:nowrap">prd2652<a name="PRDcodes-prd2652"> </a></td>
+<td>Congenital haemolytic uraemic syndrome (HUS)  (2652)</td>
+<td>Congenital haemolytic uraemic syndrome (HUS)</td></tr>
+<tr><td style="white-space:nowrap">prd2668<a name="PRDcodes-prd2668"> </a></td>
+<td>Familial haemolytic uraemic syndrome (HUS) (2668)</td>
+<td>Familial haemolytic uraemic syndrome (HUS)</td></tr>
+<tr><td style="white-space:nowrap">prd2675<a name="PRDcodes-prd2675"> </a></td>
+<td>Familial thrombotic thrombocytopenic purpura (TTP) (2675)</td>
+<td>Familial thrombotic thrombocytopenic purpura (TTP)</td></tr>
+<tr><td style="white-space:nowrap">prd2681<a name="PRDcodes-prd2681"> </a></td>
+<td>Nephropathy due to eclampsia (2681)</td>
+<td>Nephropathy due to eclampsia</td></tr>
+<tr><td style="white-space:nowrap">prd2699<a name="PRDcodes-prd2699"> </a></td>
+<td>Sickle cell nephropathy - no histology (2699)</td>
+<td>Sickle cell nephropathy - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd2702<a name="PRDcodes-prd2702"> </a></td>
+<td>Sickle cell nephropathy - histologically proven (2702)</td>
+<td>Sickle cell nephropathy - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd2718<a name="PRDcodes-prd2718"> </a></td>
+<td>Autosomal dominant (AD) polycystic kidney disease (2718)</td>
+<td>Autosomal dominant (AD) polycystic kidney disease</td></tr>
+<tr><td style="white-space:nowrap">prd2725<a name="PRDcodes-prd2725"> </a></td>
+<td>Autosomal dominant (AD) polycystic kidney disease type I (2725)</td>
+<td>Autosomal dominant (AD) polycystic kidney disease type I</td></tr>
+<tr><td style="white-space:nowrap">prd2739<a name="PRDcodes-prd2739"> </a></td>
+<td>Autosomal dominant (AD) polycystic kidney disease type II (2739)</td>
+<td>Autosomal dominant (AD) polycystic kidney disease type II</td></tr>
+<tr><td style="white-space:nowrap">prd2741<a name="PRDcodes-prd2741"> </a></td>
+<td>Autosomal recessive (AR) polycystic kidney disease (2741)</td>
+<td>Autosomal recessive (AR) polycystic kidney disease</td></tr>
+<tr><td style="white-space:nowrap">prd2756<a name="PRDcodes-prd2756"> </a></td>
+<td>Alport syndrome - no histology (2756)</td>
+<td>Alport syndrome - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd2760<a name="PRDcodes-prd2760"> </a></td>
+<td>Alport syndrome - histologically proven (2760)</td>
+<td>Alport syndrome - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd2773<a name="PRDcodes-prd2773"> </a></td>
+<td>Benign familial haematuria (2773)</td>
+<td>Benign familial haematuria</td></tr>
+<tr><td style="white-space:nowrap">prd2787<a name="PRDcodes-prd2787"> </a></td>
+<td>Thin basement membrane disease (2787)</td>
+<td>Thin basement membrane disease</td></tr>
+<tr><td style="white-space:nowrap">prd2794<a name="PRDcodes-prd2794"> </a></td>
+<td>Cystic kidney disease (2794)</td>
+<td>Cystic kidney disease</td></tr>
+<tr><td style="white-space:nowrap">prd2804<a name="PRDcodes-prd2804"> </a></td>
+<td>Medullary cystic kidney disease type I (2804)</td>
+<td>Medullary cystic kidney disease type I</td></tr>
+<tr><td style="white-space:nowrap">prd2815<a name="PRDcodes-prd2815"> </a></td>
+<td>Medullary cystic kidney disease type II (2815)</td>
+<td>Medullary cystic kidney disease type II</td></tr>
+<tr><td style="white-space:nowrap">prd2827<a name="PRDcodes-prd2827"> </a></td>
+<td>Uromodulin-associated nephropathy (familial juvenile hyperuricaemic nephropathy) (2827)</td>
+<td>Uromodulin-associated nephropathy (familial juvenile hyperuricaemic nephropathy)</td></tr>
+<tr><td style="white-space:nowrap">prd2836<a name="PRDcodes-prd2836"> </a></td>
+<td>Nephronophthisis (2836)</td>
+<td>Nephronophthisis</td></tr>
+<tr><td style="white-space:nowrap">prd2843<a name="PRDcodes-prd2843"> </a></td>
+<td>Nephronophthisis - type 1 (juvenile type) (2843)</td>
+<td>Nephronophthisis - type 1 (juvenile type)</td></tr>
+<tr><td style="white-space:nowrap">prd2858<a name="PRDcodes-prd2858"> </a></td>
+<td>Nephronophthisis - type 2 (infantile type) (2858)</td>
+<td>Nephronophthisis - type 2 (infantile type)</td></tr>
+<tr><td style="white-space:nowrap">prd2862<a name="PRDcodes-prd2862"> </a></td>
+<td>Nephronophthisis - type 3 (adolescent type) (2862)</td>
+<td>Nephronophthisis - type 3 (adolescent type)</td></tr>
+<tr><td style="white-space:nowrap">prd2870<a name="PRDcodes-prd2870"> </a></td>
+<td>Nephronophthisis - type 4 (juvenile type) (2870)</td>
+<td>Nephronophthisis - type 4 (juvenile type)</td></tr>
+<tr><td style="white-space:nowrap">prd2889<a name="PRDcodes-prd2889"> </a></td>
+<td>Nephronophthisis - type 5 (2889)</td>
+<td>Nephronophthisis - type 5</td></tr>
+<tr><td style="white-space:nowrap">prd2891<a name="PRDcodes-prd2891"> </a></td>
+<td>Nephronophthisis - type 6 (2891)</td>
+<td>Nephronophthisis - type 6</td></tr>
+<tr><td style="white-space:nowrap">prd2901<a name="PRDcodes-prd2901"> </a></td>
+<td>Primary Fanconi syndrome (2901)</td>
+<td>Primary Fanconi syndrome</td></tr>
+<tr><td style="white-space:nowrap">prd2917<a name="PRDcodes-prd2917"> </a></td>
+<td>Tubular disorder as part of inherited metabolic diseases (2917)</td>
+<td>Tubular disorder as part of inherited metabolic diseases</td></tr>
+<tr><td style="white-space:nowrap">prd2929<a name="PRDcodes-prd2929"> </a></td>
+<td>Dent disease (2929)</td>
+<td>Dent disease</td></tr>
+<tr><td style="white-space:nowrap">prd2938<a name="PRDcodes-prd2938"> </a></td>
+<td>Lowe syndrome (oculocerebrorenal syndrome) (2938)</td>
+<td>Lowe syndrome (oculocerebrorenal syndrome)</td></tr>
+<tr><td style="white-space:nowrap">prd2940<a name="PRDcodes-prd2940"> </a></td>
+<td>Inherited aminoaciduria (2940)</td>
+<td>Inherited aminoaciduria</td></tr>
+<tr><td style="white-space:nowrap">prd2955<a name="PRDcodes-prd2955"> </a></td>
+<td>Cystinuria (2955)</td>
+<td>Cystinuria</td></tr>
+<tr><td style="white-space:nowrap">prd2964<a name="PRDcodes-prd2964"> </a></td>
+<td>Cystinosis (2964)</td>
+<td>Cystinosis</td></tr>
+<tr><td style="white-space:nowrap">prd2972<a name="PRDcodes-prd2972"> </a></td>
+<td>Inherited renal glycosuria (2972)</td>
+<td>Inherited renal glycosuria</td></tr>
+<tr><td style="white-space:nowrap">prd2986<a name="PRDcodes-prd2986"> </a></td>
+<td>Hypophosphataemic rickets X-linked (XL) (2986)</td>
+<td>Hypophosphataemic rickets X-linked (XL)</td></tr>
+<tr><td style="white-space:nowrap">prd2993<a name="PRDcodes-prd2993"> </a></td>
+<td>Hypophosphataemic rickets autosomal recessive (AR) (2993)</td>
+<td>Hypophosphataemic rickets autosomal recessive (AR)</td></tr>
+<tr><td style="white-space:nowrap">prd3000<a name="PRDcodes-prd3000"> </a></td>
+<td>Primary renal tubular acidosis (RTA) (3000)</td>
+<td>Primary renal tubular acidosis (RTA)</td></tr>
+<tr><td style="white-space:nowrap">prd3016<a name="PRDcodes-prd3016"> </a></td>
+<td>Proximal renal tubular acidosis (RTA) - type II (3016)</td>
+<td>Proximal renal tubular acidosis (RTA) - type II</td></tr>
+<tr><td style="white-space:nowrap">prd3028<a name="PRDcodes-prd3028"> </a></td>
+<td>Distal renal tubular acidosis (RTA) - type I (3028)</td>
+<td>Distal renal tubular acidosis (RTA) - type I</td></tr>
+<tr><td style="white-space:nowrap">prd3037<a name="PRDcodes-prd3037"> </a></td>
+<td>Distal renal tubular acidosis with sensorineural deafness - gene mutations (3037)</td>
+<td>Distal renal tubular acidosis with sensorineural deafness - gene mutations</td></tr>
+<tr><td style="white-space:nowrap">prd3044<a name="PRDcodes-prd3044"> </a></td>
+<td>Nephrogenic diabetes insipidus (3044)</td>
+<td>Nephrogenic diabetes insipidus</td></tr>
+<tr><td style="white-space:nowrap">prd3059<a name="PRDcodes-prd3059"> </a></td>
+<td>Lesch Nyhan syndrome - hypoxanthine guanine phosphoribosyl transferase deficiency  (3059)</td>
+<td>Lesch Nyhan syndrome - hypoxanthine guanine phosphoribosyl transferase deficiency</td></tr>
+<tr><td style="white-space:nowrap">prd3063<a name="PRDcodes-prd3063"> </a></td>
+<td>Phosphoribosyl pyrophosphate synthetase (PRPPS) superactivity (3063)</td>
+<td>Phosphoribosyl pyrophosphate synthetase (PRPPS) superactivity</td></tr>
+<tr><td style="white-space:nowrap">prd3071<a name="PRDcodes-prd3071"> </a></td>
+<td>Alagille syndrome (3071)</td>
+<td>Alagille syndrome</td></tr>
+<tr><td style="white-space:nowrap">prd3085<a name="PRDcodes-prd3085"> </a></td>
+<td>Bartter syndrome (3085)</td>
+<td>Bartter syndrome</td></tr>
+<tr><td style="white-space:nowrap">prd3092<a name="PRDcodes-prd3092"> </a></td>
+<td>Gitelman syndrome (3092)</td>
+<td>Gitelman syndrome</td></tr>
+<tr><td style="white-space:nowrap">prd3102<a name="PRDcodes-prd3102"> </a></td>
+<td>Liddle syndrome (3102)</td>
+<td>Liddle syndrome</td></tr>
+<tr><td style="white-space:nowrap">prd3118<a name="PRDcodes-prd3118"> </a></td>
+<td>Apparent mineralocorticoid excess (3118)</td>
+<td>Apparent mineralocorticoid excess</td></tr>
+<tr><td style="white-space:nowrap">prd3125<a name="PRDcodes-prd3125"> </a></td>
+<td>Glucocorticoid suppressible hyperaldosteronism (3125)</td>
+<td>Glucocorticoid suppressible hyperaldosteronism</td></tr>
+<tr><td style="white-space:nowrap">prd3139<a name="PRDcodes-prd3139"> </a></td>
+<td>Inherited / genetic diabetes mellitus type II (3139)</td>
+<td>Inherited / genetic diabetes mellitus type II</td></tr>
+<tr><td style="white-space:nowrap">prd3141<a name="PRDcodes-prd3141"> </a></td>
+<td>Pseudohypoaldosteronism type 1 (3141)</td>
+<td>Pseudohypoaldosteronism type 1</td></tr>
+<tr><td style="white-space:nowrap">prd3156<a name="PRDcodes-prd3156"> </a></td>
+<td>Pseudohypoaldosteronism type 2 (Gordon syndrome) (3156)</td>
+<td>Pseudohypoaldosteronism type 2 (Gordon syndrome)</td></tr>
+<tr><td style="white-space:nowrap">prd3160<a name="PRDcodes-prd3160"> </a></td>
+<td>Familial hypocalciuric hypercalcaemia (3160)</td>
+<td>Familial hypocalciuric hypercalcaemia</td></tr>
+<tr><td style="white-space:nowrap">prd3173<a name="PRDcodes-prd3173"> </a></td>
+<td>Familial hypercalciuric hypocalcaemia (3173)</td>
+<td>Familial hypercalciuric hypocalcaemia</td></tr>
+<tr><td style="white-space:nowrap">prd3187<a name="PRDcodes-prd3187"> </a></td>
+<td>Familial hypomagnesaemia (3187)</td>
+<td>Familial hypomagnesaemia</td></tr>
+<tr><td style="white-space:nowrap">prd3194<a name="PRDcodes-prd3194"> </a></td>
+<td>Primary hyperoxaluria (3194)</td>
+<td>Primary hyperoxaluria</td></tr>
+<tr><td style="white-space:nowrap">prd3207<a name="PRDcodes-prd3207"> </a></td>
+<td>Primary hyperoxaluria type I (3207)</td>
+<td>Primary hyperoxaluria type I</td></tr>
+<tr><td style="white-space:nowrap">prd3211<a name="PRDcodes-prd3211"> </a></td>
+<td>Primary hyperoxaluria type II (3211)</td>
+<td>Primary hyperoxaluria type II</td></tr>
+<tr><td style="white-space:nowrap">prd3224<a name="PRDcodes-prd3224"> </a></td>
+<td>Fabry disease - no histology (3224)</td>
+<td>Fabry disease - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd3230<a name="PRDcodes-prd3230"> </a></td>
+<td>Fabry disease - histologically proven (3230)</td>
+<td>Fabry disease - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd3248<a name="PRDcodes-prd3248"> </a></td>
+<td>Xanthinuria (3248)</td>
+<td>Xanthinuria</td></tr>
+<tr><td style="white-space:nowrap">prd3253<a name="PRDcodes-prd3253"> </a></td>
+<td>Nail-patella syndrome (3253)</td>
+<td>Nail-patella syndrome</td></tr>
+<tr><td style="white-space:nowrap">prd3269<a name="PRDcodes-prd3269"> </a></td>
+<td>Rubinstein-Taybi syndrome (3269)</td>
+<td>Rubinstein-Taybi syndrome</td></tr>
+<tr><td style="white-space:nowrap">prd3276<a name="PRDcodes-prd3276"> </a></td>
+<td>Tuberous sclerosis (3276)</td>
+<td>Tuberous sclerosis</td></tr>
+<tr><td style="white-space:nowrap">prd3282<a name="PRDcodes-prd3282"> </a></td>
+<td>Von Hippel-Lindau disease (3282)</td>
+<td>Von Hippel-Lindau disease</td></tr>
+<tr><td style="white-space:nowrap">prd3295<a name="PRDcodes-prd3295"> </a></td>
+<td>Medullary sponge kidneys (3295)</td>
+<td>Medullary sponge kidneys</td></tr>
+<tr><td style="white-space:nowrap">prd3305<a name="PRDcodes-prd3305"> </a></td>
+<td>Horse-shoe kidney (3305)</td>
+<td>Horse-shoe kidney</td></tr>
+<tr><td style="white-space:nowrap">prd3314<a name="PRDcodes-prd3314"> </a></td>
+<td>Frasier syndrome (3314)</td>
+<td>Frasier syndrome</td></tr>
+<tr><td style="white-space:nowrap">prd3322<a name="PRDcodes-prd3322"> </a></td>
+<td>Branchio-oto-renal syndrome (3322)</td>
+<td>Branchio-oto-renal syndrome</td></tr>
+<tr><td style="white-space:nowrap">prd3333<a name="PRDcodes-prd3333"> </a></td>
+<td>Williams syndrome (3333)</td>
+<td>Williams syndrome</td></tr>
+<tr><td style="white-space:nowrap">prd3346<a name="PRDcodes-prd3346"> </a></td>
+<td>Townes-Brocks syndrome (3346)</td>
+<td>Townes-Brocks syndrome</td></tr>
+<tr><td style="white-space:nowrap">prd3351<a name="PRDcodes-prd3351"> </a></td>
+<td>Lawrence-Moon-Biedl / Bardet-Biedl syndrome (3351)</td>
+<td>Lawrence-Moon-Biedl / Bardet-Biedl syndrome</td></tr>
+<tr><td style="white-space:nowrap">prd3367<a name="PRDcodes-prd3367"> </a></td>
+<td>Mitochondrial cytopathy (3367)</td>
+<td>Mitochondrial cytopathy</td></tr>
+<tr><td style="white-space:nowrap">prd3379<a name="PRDcodes-prd3379"> </a></td>
+<td>Familial nephropathy (3379)</td>
+<td>Familial nephropathy</td></tr>
+<tr><td style="white-space:nowrap">prd3380<a name="PRDcodes-prd3380"> </a></td>
+<td>Acute kidney injury (3380)</td>
+<td>Acute kidney injury</td></tr>
+<tr><td style="white-space:nowrap">prd3398<a name="PRDcodes-prd3398"> </a></td>
+<td>Acute kidney injury due to hypovolaemia  (3398)</td>
+<td>Acute kidney injury due to hypovolaemia</td></tr>
+<tr><td style="white-space:nowrap">prd3403<a name="PRDcodes-prd3403"> </a></td>
+<td>Acute kidney injury due to circulatory failure (3403)</td>
+<td>Acute kidney injury due to circulatory failure</td></tr>
+<tr><td style="white-space:nowrap">prd3419<a name="PRDcodes-prd3419"> </a></td>
+<td>Acute kidney injury due to sepsis (3419)</td>
+<td>Acute kidney injury due to sepsis</td></tr>
+<tr><td style="white-space:nowrap">prd3426<a name="PRDcodes-prd3426"> </a></td>
+<td>Acute kidney injury due to rhabdomyolysis (3426)</td>
+<td>Acute kidney injury due to rhabdomyolysis</td></tr>
+<tr><td style="white-space:nowrap">prd3435<a name="PRDcodes-prd3435"> </a></td>
+<td>Acute kidney injury due to nephrotoxicity (3435)</td>
+<td>Acute kidney injury due to nephrotoxicity</td></tr>
+<tr><td style="white-space:nowrap">prd3442<a name="PRDcodes-prd3442"> </a></td>
+<td>Acute cortical necrosis (3442)</td>
+<td>Acute cortical necrosis</td></tr>
+<tr><td style="white-space:nowrap">prd3457<a name="PRDcodes-prd3457"> </a></td>
+<td>Acute pyelonephritis (3457)</td>
+<td>Acute pyelonephritis</td></tr>
+<tr><td style="white-space:nowrap">prd3461<a name="PRDcodes-prd3461"> </a></td>
+<td>Kidney tumour (3461)</td>
+<td>Kidney tumour</td></tr>
+<tr><td style="white-space:nowrap">prd3474<a name="PRDcodes-prd3474"> </a></td>
+<td>Renal cell carcinoma - histologically proven (3474)</td>
+<td>Renal cell carcinoma - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd3488<a name="PRDcodes-prd3488"> </a></td>
+<td>Transitional cell carcinoma - histologically proven (3488)</td>
+<td>Transitional cell carcinoma - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd3490<a name="PRDcodes-prd3490"> </a></td>
+<td>Wilms tumour - histologically proven (3490)</td>
+<td>Wilms tumour - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd3501<a name="PRDcodes-prd3501"> </a></td>
+<td>Mesoblastic nephroma - histologically proven (3501)</td>
+<td>Mesoblastic nephroma - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd3517<a name="PRDcodes-prd3517"> </a></td>
+<td>Single kidney identified in adulthood (3517)</td>
+<td>Single kidney identified in adulthood</td></tr>
+<tr><td style="white-space:nowrap">prd3529<a name="PRDcodes-prd3529"> </a></td>
+<td>Chronic kidney disease (CKD) / chronic renal failure (CRF) caused by tumour nephrectomy (3529)</td>
+<td>Chronic kidney disease (CKD) / chronic renal failure (CRF) caused by tumour nephrectomy</td></tr>
+<tr><td style="white-space:nowrap">prd3538<a name="PRDcodes-prd3538"> </a></td>
+<td>Chronic kidney disease (CKD) / chronic renal failure (CRF) due to traumatic loss of kidney (3538)</td>
+<td>Chronic kidney disease (CKD) / chronic renal failure (CRF) due to traumatic loss of kidney</td></tr>
+<tr><td style="white-space:nowrap">prd3540<a name="PRDcodes-prd3540"> </a></td>
+<td>Chronic kidney disease (CKD) / chronic renal failure (CRF) due to donor nephrectomy (3540)</td>
+<td>Chronic kidney disease (CKD) / chronic renal failure (CRF) due to donor nephrectomy</td></tr>
+<tr><td style="white-space:nowrap">prd3555<a name="PRDcodes-prd3555"> </a></td>
+<td>Chronic kidney disease (CKD) / chronic renal failure (CRF) - aetiology uncertain / unknown - no histology (3555)</td>
+<td>Chronic kidney disease (CKD) / chronic renal failure (CRF) - aetiology uncertain / unknown - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd3564<a name="PRDcodes-prd3564"> </a></td>
+<td>Chronic kidney disease (CKD) / chronic renal failure (CRF) - aetiology uncertain / unknown - histologically proven (3564)</td>
+<td>Chronic kidney disease (CKD) / chronic renal failure (CRF) - aetiology uncertain / unknown - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd3572<a name="PRDcodes-prd3572"> </a></td>
+<td>Haematuria and proteinuria - no histology (3572)</td>
+<td>Haematuria and proteinuria - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd3604<a name="PRDcodes-prd3604"> </a></td>
+<td>Nephrotic syndrome of childhood - steroid resistant - no histology (3604)</td>
+<td>Nephrotic syndrome of childhood - steroid resistant - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd3615<a name="PRDcodes-prd3615"> </a></td>
+<td>Nephrotic syndrome of childhood - no trial of steroids - no histology (3615)</td>
+<td>Nephrotic syndrome of childhood - no trial of steroids - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd3627<a name="PRDcodes-prd3627"> </a></td>
+<td>Renal cysts and diabetes syndrome (3627)</td>
+<td>Renal cysts and diabetes syndrome</td></tr>
+<tr><td style="white-space:nowrap">prd3636<a name="PRDcodes-prd3636"> </a></td>
+<td>Chronic urate nephropathy - no histology (3636)</td>
+<td>Chronic urate nephropathy - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd3643<a name="PRDcodes-prd3643"> </a></td>
+<td>Chronic renal failure due to systemic infection (3643)</td>
+<td>Chronic renal failure due to systemic infection</td></tr>
+<tr><td style="white-space:nowrap">prd3658<a name="PRDcodes-prd3658"> </a></td>
+<td>Renal coloboma syndrome (3658)</td>
+<td>Renal coloboma syndrome</td></tr>
+<tr><td style="white-space:nowrap">prd3662<a name="PRDcodes-prd3662"> </a></td>
+<td>Hypercalcaemic nephropathy  (3662)</td>
+<td>Hypercalcaemic nephropathy</td></tr>
+<tr><td style="white-space:nowrap">prd3670<a name="PRDcodes-prd3670"> </a></td>
+<td>Retroperitoneal fibrosis secondary to peri-aortitis (3670)</td>
+<td>Retroperitoneal fibrosis secondary to peri-aortitis</td></tr>
+<tr><td style="white-space:nowrap">prd3689<a name="PRDcodes-prd3689"> </a></td>
+<td>Retroperitoneal fibrosis secondary to drugs (3689)</td>
+<td>Retroperitoneal fibrosis secondary to drugs</td></tr>
+<tr><td style="white-space:nowrap">prd3691<a name="PRDcodes-prd3691"> </a></td>
+<td>Renal failure (3691)</td>
+<td>Renal failure</td></tr>
+<tr><td style="white-space:nowrap">prd3708<a name="PRDcodes-prd3708"> </a></td>
+<td>Chronic renal failure (3708)</td>
+<td>Chronic renal failure</td></tr>
+<tr><td style="white-space:nowrap">prd3712<a name="PRDcodes-prd3712"> </a></td>
+<td>Isolated haematuria - no histology (3712)</td>
+<td>Isolated haematuria - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd3720<a name="PRDcodes-prd3720"> </a></td>
+<td>Isolated proteinuria - no histology (3720)</td>
+<td>Isolated proteinuria - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd3731<a name="PRDcodes-prd3731"> </a></td>
+<td>Primary hyperoxaluria type III (3731)</td>
+<td>Primary hyperoxaluria type III</td></tr>
+<tr><td style="white-space:nowrap">prd3749<a name="PRDcodes-prd3749"> </a></td>
+<td>Glomerulonephritis - no histology (3749)</td>
+<td>Glomerulonephritis - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd3754<a name="PRDcodes-prd3754"> </a></td>
+<td>Focal segmental glomerulosclerosis (FSGS) secondary to HIV  (3754)</td>
+<td>Focal segmental glomerulosclerosis (FSGS) secondary to HIV</td></tr>
+<tr><td style="white-space:nowrap">prd3765<a name="PRDcodes-prd3765"> </a></td>
+<td>Focal segmental glomerulosclerosis (FSGS) secondary to lithium  (3765)</td>
+<td>Focal segmental glomerulosclerosis (FSGS) secondary to lithium</td></tr>
+<tr><td style="white-space:nowrap">prd3777<a name="PRDcodes-prd3777"> </a></td>
+<td>Focal segmental glomerulosclerosis (FSGS) secondary to sickle cell (3777)</td>
+<td>Focal segmental glomerulosclerosis (FSGS) secondary to sickle cell</td></tr>
+<tr><td style="white-space:nowrap">prd3783<a name="PRDcodes-prd3783"> </a></td>
+<td>Renal papillary necrosis caused by diabetes (3783)</td>
+<td>Renal papillary necrosis caused by diabetes</td></tr>
+<tr><td style="white-space:nowrap">prd3796<a name="PRDcodes-prd3796"> </a></td>
+<td>Renal papillary necrosis caused by analgesics (3796)</td>
+<td>Renal papillary necrosis caused by analgesics</td></tr>
+<tr><td style="white-space:nowrap">prd3806<a name="PRDcodes-prd3806"> </a></td>
+<td>Renal papillary necrosis caused by sickle cell (3806)</td>
+<td>Renal papillary necrosis caused by sickle cell</td></tr>
+<tr><td style="white-space:nowrap">prd3810<a name="PRDcodes-prd3810"> </a></td>
+<td>Kidney stones due to ARPT deficiency (3810)</td>
+<td>Kidney stones due to ARPT deficiency</td></tr>
+<tr><td style="white-space:nowrap">prd3823<a name="PRDcodes-prd3823"> </a></td>
+<td>Infiltration by lymphoma - histologically proven (3823)</td>
+<td>Infiltration by lymphoma - histologically proven</td></tr>
+<tr><td style="white-space:nowrap">prd3834<a name="PRDcodes-prd3834"> </a></td>
+<td>Nephropathy due to pre-eclampsia (3834)</td>
+<td>Nephropathy due to pre-eclampsia</td></tr>
+<tr><td style="white-space:nowrap">prd3847<a name="PRDcodes-prd3847"> </a></td>
+<td>Systemic vasculitis - ANCA negative - no histology (3847)</td>
+<td>Systemic vasculitis - ANCA negative - no histology</td></tr>
+<tr><td style="white-space:nowrap">prd3852<a name="PRDcodes-prd3852"> </a></td>
+<td>Systemic vasculitis - ANCA positive - histologically proven (3852)</td>
+<td>Systemic vasculitis - ANCA positive - histologically proven</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://trifork.com">Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S</a>.  Package dk.kip.sundk.fhir.ig.core#0.0.9 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 7, 2025 12:36+0000">2025-01-07</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

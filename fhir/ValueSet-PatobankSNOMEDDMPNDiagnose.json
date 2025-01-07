@@ -1,0 +1,64 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "PatobankSNOMEDDMPNDiagnose",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet PatobankSNOMEDDMPNDiagnose</b></p><a name=\"PatobankSNOMEDDMPNDiagnose\"> </a><a name=\"hcPatobankSNOMEDDMPNDiagnose\"> </a><a name=\"PatobankSNOMEDDMPNDiagnose-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-PatobankSNOMED.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/PatobankSNOMED</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M98753\">M98753</a></td><td>Kronisk myeloid leukæmi, BCR-ABL1 positiv (CML)</td><td>Kronisk myeloid leukæmi, BCR-ABL1 positiv</td></tr><tr><td><a href=\"CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M99453\">M99453</a></td><td>Kronisk myelomonocytær leukæmi (CMML)</td><td>kronisk myelomonocytær leukæmi</td></tr><tr><td><a href=\"CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M99503\">M99503</a></td><td>Polycytæmia vera</td><td>polycytæmia vera</td></tr><tr><td><a href=\"CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M99613\">M99613</a></td><td>Primær Myelofibrose</td><td>myelofibrose</td></tr><tr><td><a href=\"CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M99623\">M99623</a></td><td>Essentiel trombocytæmi</td><td>essentiel trombocytæmi</td></tr><tr><td><a href=\"CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M99753\">M99753</a></td><td>Uklassificerbar myelodysplastisk/myeloproliferativ sygdom</td><td>uklassificerbar myelodysplastisk/myeloproliferativ sygdom</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-DiseasesUnspecified.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/DiseasesUnspecified</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-prefibrotic\">prefibrotic</a></td><td>Præfibrotisk Myelofibrose</td><td>Prefibrotic myelofibrosis / Præfibrotisk Myelofibrose</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.sundk.dk/fhir/ValueSet/PatobankSNOMEDDMPNDiagnose",
+  "version" : "0.0.9",
+  "name" : "PatobankSNOMEDDMPNDiagnose",
+  "title" : "Patobank SNOMED DMPN Diagnose",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-07-14T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "DMPN diagnoser (Patobank SNOMED)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/PatobankSNOMED",
+      "concept" : [{
+        "code" : "M98753",
+        "display" : "Kronisk myeloid leukæmi, BCR-ABL1 positiv (CML)"
+      },
+      {
+        "code" : "M99453",
+        "display" : "Kronisk myelomonocytær leukæmi (CMML)"
+      },
+      {
+        "code" : "M99503",
+        "display" : "Polycytæmia vera"
+      },
+      {
+        "code" : "M99613",
+        "display" : "Primær Myelofibrose"
+      },
+      {
+        "code" : "M99623",
+        "display" : "Essentiel trombocytæmi"
+      },
+      {
+        "code" : "M99753",
+        "display" : "Uklassificerbar myelodysplastisk/myeloproliferativ sygdom"
+      }]
+    },
+    {
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/DiseasesUnspecified",
+      "concept" : [{
+        "code" : "prefibrotic",
+        "display" : "Præfibrotisk Myelofibrose"
+      }]
+    }]
+  }
+}

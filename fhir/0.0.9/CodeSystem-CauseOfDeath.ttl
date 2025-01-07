@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/CauseOfDeath> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CauseOfDeath"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem CauseOfDeath</b></p><a name=\"CauseOfDeath\"> </a><a name=\"hcCauseOfDeath\"> </a><a name=\"CauseOfDeath-en-US\"> </a><p>This  code system <code>https://kip.sundk.dk/fhir/CodeSystem/CauseOfDeath</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">early<a name=\"CauseOfDeath-early\"> </a></td><td>Early death</td><td>Early death (&lt;1 week after induction/reinduction incl. relapse)</td></tr><tr><td style=\"white-space:nowrap\">hypoplasia<a name=\"CauseOfDeath-hypoplasia\"> </a></td><td>Hypoplasia</td><td>Hypoplasia (&gt;1 week after induction/reinduction incl. relapse)</td></tr><tr><td style=\"white-space:nowrap\">progressive_disease<a name=\"CauseOfDeath-progressive_disease\"> </a></td><td>Progressive disease</td><td>Progressive disease</td></tr><tr><td style=\"white-space:nowrap\">progressive_refractory_disease<a name=\"CauseOfDeath-progressive_refractory_disease\"> </a></td><td>Progressive or refractory disease</td><td>Progressive or refractory disease</td></tr><tr><td style=\"white-space:nowrap\">treatment_related_complete_remission<a name=\"CauseOfDeath-treatment_related_complete_remission\"> </a></td><td>Treatment related (complete remission)</td><td>Treatment related (complete remission)</td></tr><tr><td style=\"white-space:nowrap\">cll<a name=\"CauseOfDeath-cll\"> </a></td><td>CLL</td><td>CLL</td></tr><tr><td style=\"white-space:nowrap\">uremia<a name=\"CauseOfDeath-uremia\"> </a></td><td>Uremia</td><td>Uremia / Uræmi / SNOMED-CT: 44730006</td></tr><tr><td style=\"white-space:nowrap\">infection<a name=\"CauseOfDeath-infection\"> </a></td><td>Infectious disease</td><td>Infectious disease / Infektionssygdom / SNOMED-CT: 40733004</td></tr><tr><td style=\"white-space:nowrap\">bleeding<a name=\"CauseOfDeath-bleeding\"> </a></td><td>Bleeding</td><td>Bleeding / Blødning / SNOMED-CT: 50960005</td></tr><tr><td style=\"white-space:nowrap\">therapy_related_progression<a name=\"CauseOfDeath-therapy_related_progression\"> </a></td><td>Terapirelateret dødsfald MED sygdomsprogression</td><td>Terapirelateret dødsfald MED sygdomsprogression</td></tr><tr><td style=\"white-space:nowrap\">therapy_related<a name=\"CauseOfDeath-therapy_related\"> </a></td><td>Terapirelateret dødsfald uden sygdomsprogression</td><td>Terapirelateret dødsfald uden sygdomsprogression</td></tr><tr><td style=\"white-space:nowrap\">other_complete_remissiong<a name=\"CauseOfDeath-other_complete_remissiong\"> </a></td><td>Anden årsag, død i komplet remission (CR)</td><td>Anden årsag, død i komplet remission (CR)</td></tr><tr><td style=\"white-space:nowrap\">other_not_complete_remissiong<a name=\"CauseOfDeath-other_not_complete_remissiong\"> </a></td><td>Anden årsag, IKKE i komplet remision (CR) ved død</td><td>Anden årsag, IKKE i komplet remision (CR) ved død</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/CauseOfDeath"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "CauseOfDeath"] ; # 
+  fhir:title [ fhir:v "Cause of death"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-07-12T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Cause of death"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "13"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "early" ] ;
+     fhir:display [ fhir:v "Early death" ] ;
+     fhir:definition [ fhir:v "Early death (<1 week after induction/reinduction incl. relapse)" ]
+  ] [
+     fhir:code [ fhir:v "hypoplasia" ] ;
+     fhir:display [ fhir:v "Hypoplasia" ] ;
+     fhir:definition [ fhir:v "Hypoplasia (>1 week after induction/reinduction incl. relapse)" ]
+  ] [
+     fhir:code [ fhir:v "progressive_disease" ] ;
+     fhir:display [ fhir:v "Progressive disease" ] ;
+     fhir:definition [ fhir:v "Progressive disease" ]
+  ] [
+     fhir:code [ fhir:v "progressive_refractory_disease" ] ;
+     fhir:display [ fhir:v "Progressive or refractory disease" ] ;
+     fhir:definition [ fhir:v "Progressive or refractory disease" ]
+  ] [
+     fhir:code [ fhir:v "treatment_related_complete_remission" ] ;
+     fhir:display [ fhir:v "Treatment related (complete remission)" ] ;
+     fhir:definition [ fhir:v "Treatment related (complete remission)" ]
+  ] [
+     fhir:code [ fhir:v "cll" ] ;
+     fhir:display [ fhir:v "CLL" ] ;
+     fhir:definition [ fhir:v "CLL" ]
+  ] [
+     fhir:code [ fhir:v "uremia" ] ;
+     fhir:display [ fhir:v "Uremia" ] ;
+     fhir:definition [ fhir:v "Uremia / Uræmi / SNOMED-CT: 44730006" ]
+  ] [
+     fhir:code [ fhir:v "infection" ] ;
+     fhir:display [ fhir:v "Infectious disease" ] ;
+     fhir:definition [ fhir:v "Infectious disease / Infektionssygdom / SNOMED-CT: 40733004" ]
+  ] [
+     fhir:code [ fhir:v "bleeding" ] ;
+     fhir:display [ fhir:v "Bleeding" ] ;
+     fhir:definition [ fhir:v "Bleeding / Blødning / SNOMED-CT: 50960005" ]
+  ] [
+     fhir:code [ fhir:v "therapy_related_progression" ] ;
+     fhir:display [ fhir:v "Terapirelateret dødsfald MED sygdomsprogression" ] ;
+     fhir:definition [ fhir:v "Terapirelateret dødsfald MED sygdomsprogression" ]
+  ] [
+     fhir:code [ fhir:v "therapy_related" ] ;
+     fhir:display [ fhir:v "Terapirelateret dødsfald uden sygdomsprogression" ] ;
+     fhir:definition [ fhir:v "Terapirelateret dødsfald uden sygdomsprogression" ]
+  ] [
+     fhir:code [ fhir:v "other_complete_remissiong" ] ;
+     fhir:display [ fhir:v "Anden årsag, død i komplet remission (CR)" ] ;
+     fhir:definition [ fhir:v "Anden årsag, død i komplet remission (CR)" ]
+  ] [
+     fhir:code [ fhir:v "other_not_complete_remissiong" ] ;
+     fhir:display [ fhir:v "Anden årsag, IKKE i komplet remision (CR) ved død" ] ;
+     fhir:definition [ fhir:v "Anden årsag, IKKE i komplet remision (CR) ved død" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

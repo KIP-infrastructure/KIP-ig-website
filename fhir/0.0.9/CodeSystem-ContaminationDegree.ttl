@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/ContaminationDegree> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ContaminationDegree"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ContaminationDegree</b></p><a name=\"ContaminationDegree\"> </a><a name=\"hcContaminationDegree\"> </a><a name=\"ContaminationDegree-en-US\"> </a><p>This case-insensitive code system <code>https://kip.sundk.dk/fhir/CodeSystem/ContaminationDegree</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">clean<a name=\"ContaminationDegree-clean\"> </a></td><td>Clean</td><td>Clean / Ren</td></tr><tr><td style=\"white-space:nowrap\">potentially_contaminated<a name=\"ContaminationDegree-potentially_contaminated\"> </a></td><td>Potentially contaminated</td><td>Potentially contaminated / Potentielt kontamineret</td></tr><tr><td style=\"white-space:nowrap\">contaminated<a name=\"ContaminationDegree-contaminated\"> </a></td><td>Contaminated</td><td>Contaminated / Kontamineret</td></tr><tr><td style=\"white-space:nowrap\">dirty<a name=\"ContaminationDegree-dirty\"> </a></td><td>Dirty</td><td>Dirty / Snavset</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/ContaminationDegree"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "ContaminationDegree"] ; # 
+  fhir:title [ fhir:v "Contamination degree"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-28T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Contamination degree"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "clean" ] ;
+     fhir:display [ fhir:v "Clean" ] ;
+     fhir:definition [ fhir:v "Clean / Ren" ]
+  ] [
+     fhir:code [ fhir:v "potentially_contaminated" ] ;
+     fhir:display [ fhir:v "Potentially contaminated" ] ;
+     fhir:definition [ fhir:v "Potentially contaminated / Potentielt kontamineret" ]
+  ] [
+     fhir:code [ fhir:v "contaminated" ] ;
+     fhir:display [ fhir:v "Contaminated" ] ;
+     fhir:definition [ fhir:v "Contaminated / Kontamineret" ]
+  ] [
+     fhir:code [ fhir:v "dirty" ] ;
+     fhir:display [ fhir:v "Dirty" ] ;
+     fhir:definition [ fhir:v "Dirty / Snavset" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,49 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "Priority",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Priority</b></p><a name=\"Priority\"> </a><a name=\"hcPriority\"> </a><a name=\"Priority-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Priority.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/Priority</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Priority.html#Priority-elective\">elective</a></td><td>Elektiv</td><td>Elective / Elektiv / SNOMED-CT: 103390000</td></tr><tr><td><a href=\"CodeSystem-Priority.html#Priority-hasten\">hasten</a></td><td>Fremskyndet (dage)</td><td>Fremskyndet (dage)</td></tr><tr><td><a href=\"CodeSystem-Priority.html#Priority-urgent\">urgent</a></td><td>Hastende (timer)</td><td>Hastende (timer) / SNOMED-CT: 103391001</td></tr><tr><td><a href=\"CodeSystem-Priority.html#Priority-lethal\">lethal</a></td><td>Umiddelbart livstruende</td><td>Umiddelbart livstruende</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.sundk.dk/fhir/ValueSet/Priority",
+  "version" : "0.0.9",
+  "name" : "Priority",
+  "title" : "Priority",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-05-31T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Vurdering af patientens behov",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/Priority",
+      "concept" : [{
+        "code" : "elective",
+        "display" : "Elektiv"
+      },
+      {
+        "code" : "hasten",
+        "display" : "Fremskyndet (dage)"
+      },
+      {
+        "code" : "urgent",
+        "display" : "Hastende (timer)"
+      },
+      {
+        "code" : "lethal",
+        "display" : "Umiddelbart livstruende"
+      }]
+    }]
+  }
+}

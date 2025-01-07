@@ -1,0 +1,351 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/CodeSystem/Complications> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Complications"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem Complications</b></p><a name=\"Complications\"> </a><a name=\"hcComplications\"> </a><a name=\"Complications-en-US\"> </a><p>This case-insensitive code system <code>https://kip.sundk.dk/fhir/CodeSystem/Complications</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">ami<a name=\"Complications-ami\"> </a></td><td>AMI</td><td>AMI - Myocardieinfarkt</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">chylothorax<a name=\"Complications-chylothorax\"> </a></td><td>Chylothorax</td><td>Chylothorax</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">fascierupture<a name=\"Complications-fascierupture\"> </a></td><td>Fascieruptur</td><td>Fascieruptur</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">ileus<a name=\"Complications-ileus\"> </a></td><td>Ileus</td><td>Ileus</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">intrathoracicbleeding<a name=\"Complications-intrathoracicbleeding\"> </a></td><td>Intrathorakal blødning</td><td>Intrathorakal blødning</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">intraabdominalabscess<a name=\"Complications-intraabdominalabscess\"> </a></td><td>Intraabdominal absces</td><td>Intraabdominal absces</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">intraabdominalbleeding<a name=\"Complications-intraabdominalbleeding\"> </a></td><td>Intraabdominal blødning</td><td>Intraabdominal blødning</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">pulmonaryembolism<a name=\"Complications-pulmonaryembolism\"> </a></td><td>Lungeemboli</td><td>Lungeemboli</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">perforation<a name=\"Complications-perforation\"> </a></td><td>Perforation</td><td>Perforation</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  bloodvessel/aneurysm<a name=\"Complications-bloodvessel.47aneurysm\"> </a></td><td>Kar/anurisme</td><td>Perforation af kar eller aneurisme</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">pleuraexudate<a name=\"Complications-pleuraexudate\"> </a></td><td>Pleuraeksudat</td><td>Pleuraeksudat</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">pneumonia<a name=\"Complications-pneumonia\"> </a></td><td>Pneumoni</td><td>Pneumoni</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">infection<a name=\"Complications-infection\"> </a></td><td>Sårinfektion</td><td>Sårinfektion</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">anafylSchock<a name=\"Complications-anafylSchock\"> </a></td><td>Anafylaktisk reaktion/shock</td><td>Anafylaktisk reaktion/shock</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">anInterrupt<a name=\"Complications-anInterrupt\"> </a></td><td>Anæstesi afbrudt</td><td>Anæstesi afbrudt</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">appFailure<a name=\"Complications-appFailure\"> </a></td><td>Apparaturfejl</td><td>Apparaturfejl</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">aspiration<a name=\"Complications-aspiration\"> </a></td><td>Aspiration</td><td>Aspiration</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">duraptAcc<a name=\"Complications-duraptAcc\"> </a></td><td>Durapunktur accidentel</td><td>Durapunktur accidentel</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">heartFail<a name=\"Complications-heartFail\"> </a></td><td>Hjertestop</td><td>Hjertestop</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">huskeAN<a name=\"Complications-huskeAN\"> </a></td><td>Huskeanæstesi</td><td>Huskeanæstesi</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">malignHyp<a name=\"Complications-malignHyp\"> </a></td><td>Malign Hypertermi mistanke</td><td>Malign Hypertermi mistanke</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">medFail<a name=\"Complications-medFail\"> </a></td><td>Medicineringsfejl</td><td>Medicineringsfejl</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">neuMuscBlock<a name=\"Complications-neuMuscBlock\"> </a></td><td>Neuromuskulær blokade, forlænget virkning</td><td>Neuromuskulær blokade, forlænget virkning</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">dentInj<a name=\"Complications-dentInj\"> </a></td><td>Tandskade</td><td>Tandskade</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">mors<a name=\"Complications-mors\"> </a></td><td>Mors, uventet</td><td>Mors, uventet</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">dissection<a name=\"Complications-dissection\"> </a></td><td>Dissektion</td><td>Dissektion</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">thromboembolic<a name=\"Complications-thromboembolic\"> </a></td><td>Tromboemboliske komplikationer</td><td>Tromboemboliske komplikationer som medfører infarkt inden for 24 timer</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">groinbleeding<a name=\"Complications-groinbleeding\"> </a></td><td>Blødning fra lysken</td><td>Alvorlig blødning fra lysken</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">mechanical<a name=\"Complications-mechanical\"> </a></td><td>Mekaniske</td><td>Mekaniske komplikationer</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">bloodvesselocclusion<a name=\"Complications-bloodvesselocclusion\"> </a></td><td>Aflukning af kar</td><td>Aflukning af kar medførende infarkt indenfor 24 timer</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">peroperativebleeding<a name=\"Complications-peroperativebleeding\"> </a></td><td>Peroperativ blødning</td><td>Livstruende peroperativ blødning, der ikke kan kontrolleres inden for få sekunder</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">other<a name=\"Complications-other\"> </a></td><td>Other</td><td>Other</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">vascular-unspecific<a name=\"Complications-vascular-unspecific\"> </a></td><td>Vascular, unspecific</td><td>Vascular, unspecific</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">infarction-unspecific<a name=\"Complications-infarction-unspecific\"> </a></td><td>Cerebral infarction and bleeding, unspecific</td><td>Cerebral infarction and bleeding, unspecific</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">post_polypectomy_syndrome<a name=\"Complications-post_polypectomy_syndrome\"> </a></td><td>Post polypectomy syndrome</td><td>Post polypectomy syndrome / Postpolypektomisyndrom</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">urinary_retention<a name=\"Complications-urinary_retention\"> </a></td><td>Urinary retention</td><td>Urinary retention / Urinretention</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">medical<a name=\"Complications-medical\"> </a></td><td>Medical complication</td><td>Medical complication / Medicinsk komplikation</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">movement_restriction<a name=\"Complications-movement_restriction\"> </a></td><td>Movement restriction</td><td>Movement restriction / Bevægelsesindskrænkning</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">chronic_pain<a name=\"Complications-chronic_pain\"> </a></td><td>Chronic pain</td><td>Chronic pain / Kronisk smerte</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">reoperation<a name=\"Complications-reoperation\"> </a></td><td>Reoperation</td><td>Reoperation</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">rupture<a name=\"Complications-rupture\"> </a></td><td>Rupture</td><td>Rupture / Ruptur</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  rupture_patella_ligament<a name=\"Complications-rupture_patella_ligament\"> </a></td><td>Rupture of patella ligament</td><td>Rupture of patella ligament / Ruptur af patellasene</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">thrombosis<a name=\"Complications-thrombosis\"> </a></td><td>Thrombosis</td><td>Thrombosis / Trombose</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  dvt<a name=\"Complications-dvt\"> </a></td><td>Dyb vene trombose</td><td>Dyb vene trombose</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  abdominal<a name=\"Complications-abdominal\"> </a></td><td>Abdominal /hepatisk/milt trombose</td><td>Abdominal /hepatisk/milt trombose</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">marrow_relapse<a name=\"Complications-marrow_relapse\"> </a></td><td>Marrow relapse</td><td>Marrow relapse / Marv relaps</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">rising_m_component<a name=\"Complications-rising_m_component\"> </a></td><td>Rising M-component</td><td>Rising M-component / Stigende M-komponent</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">hypercalcemia<a name=\"Complications-hypercalcemia\"> </a></td><td>Hypercalcemia</td><td>Hypercalcemia / Hypercalcæmi</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">osteolytic_foci<a name=\"Complications-osteolytic_foci\"> </a></td><td>Progressive osteolytic foci</td><td>Progressive osteolytic foci / Progression af osteolytiske foci</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">medullary_cross_sectional_syndrome<a name=\"Complications-medullary_cross_sectional_syndrome\"> </a></td><td>Medullary cross-sectional syndrome</td><td>Medullary cross-sectional syndrome / Medullært tværsnitssyndrom</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">extremedullery_myeloma<a name=\"Complications-extremedullery_myeloma\"> </a></td><td>Extremedullary Myeloma</td><td>Extremedullary Myeloma / Ekstramedullære Myelomer</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">plasma_cell_leukemia<a name=\"Complications-plasma_cell_leukemia\"> </a></td><td>Plasma cell leukemia</td><td>Plasma cell leukemia / Plasmacelle leukæmi</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">uremia<a name=\"Complications-uremia\"> </a></td><td>Uremia</td><td>Uremia / Uræmi / SNOMED-CT: 44730006</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  uremia_clinically<a name=\"Complications-uremia_clinically\"> </a></td><td>Uremia (clinically significant)</td><td>Uremia (clinically significant) / Uræmi (klinisk betydende)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  uremia_dialysis<a name=\"Complications-uremia_dialysis\"> </a></td><td>Uremia (chronic dialysis requiring)</td><td>Uremia (chronic dialysis requiring) / Uræmi (kronisk dialysekrævende)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">amyloidosis<a name=\"Complications-amyloidosis\"> </a></td><td>Amyloidosis</td><td>Amyloidosis / Amyloidose / SNOMED-CT: 17602002</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">neuropathy<a name=\"Complications-neuropathy\"> </a></td><td>Neuropathy</td><td>Neuropathy / Neuropati / SNOMED-CT: 386033004</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">hyperviscosity<a name=\"Complications-hyperviscosity\"> </a></td><td>Hyperviscosity</td><td>Hyperviscosity / Hyperviskositet / SNOMED-CT: 64088006</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">tci<a name=\"Complications-tci\"> </a></td><td>TCI</td><td>TCI</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">bleeding<a name=\"Complications-bleeding\"> </a></td><td>Bleeding</td><td>Bleeding / Blødning</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">apoplexia_cerebri<a name=\"Complications-apoplexia_cerebri\"> </a></td><td>Apopleksi cerebri</td><td>Apopleksi cerebri</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">hematoma<a name=\"Complications-hematoma\"> </a></td><td>Surgery required hematoma</td><td>Surgery required hematoma / operationskrævende hæmatom</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">lymph_leakage<a name=\"Complications-lymph_leakage\"> </a></td><td>Lymph leakage over 2 days</td><td>Lymph leakage over 2 days / lymfesiven over 2 døgn (forlænger indlæggelsen)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">necrosis<a name=\"Complications-necrosis\"> </a></td><td>Surgery required necrosis</td><td>Surgery required necrosis / operationskrævende randnekrose</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">lymphocele<a name=\"Complications-lymphocele\"> </a></td><td>Surgery required lymphocele</td><td>Surgery required lymphocele / operationskrævende lymfocele</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">superficial_subcutaneous_infection<a name=\"Complications-superficial_subcutaneous_infection\"> </a></td><td>Superficial/subcutaneous infection</td><td>overfladisk / subcutan infektion (ved antibiotika eller operation)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">deep_prosthesis_infection<a name=\"Complications-deep_prosthesis_infection\"> </a></td><td>Deep/prosthesis infection</td><td>Deep/prosthesis infection / dyb / protese infektion (ved antibiotika eller operation)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">segment_elevation_myocardial_infarction<a name=\"Complications-segment_elevation_myocardial_infarction\"> </a></td><td>Type of heart attack</td><td>Type of heart attack that mainly affects your hearts lower chambers</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">bundle_branch_block_myocardial_infarction<a name=\"Complications-bundle_branch_block_myocardial_infarction\"> </a></td><td>Type of heart attack</td><td>--</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">non_segment_elevation_myocardial_infarction<a name=\"Complications-non_segment_elevation_myocardial_infarction\"> </a></td><td>Type of heart attack</td><td>--</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">unstable_agina<a name=\"Complications-unstable_agina\"> </a></td><td>Heart failure?</td><td>--</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">rulled_out_heart_attack<a name=\"Complications-rulled_out_heart_attack\"> </a></td><td>No heart attack/failur</td><td>--</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">anterior_segment_elevation_myocardial_infarction<a name=\"Complications-anterior_segment_elevation_myocardial_infarction\"> </a></td><td>Postion</td><td>--</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">non_anterior_segment_elevation_myocardial_infarction<a name=\"Complications-non_anterior_segment_elevation_myocardial_infarction\"> </a></td><td>Position</td><td>--</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">heart_failur_class_2<a name=\"Complications-heart_failur_class_2\"> </a></td><td>Class 2 heartfailure</td><td>--</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">heart_failur_class_3<a name=\"Complications-heart_failur_class_3\"> </a></td><td>Class 3 heartfailure</td><td>--</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">heart_failur_class_4<a name=\"Complications-heart_failur_class_4\"> </a></td><td>Class 4 heartfailure</td><td>--</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/Complications"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "Complications"] ; # 
+  fhir:title [ fhir:v "Complications"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-07T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Complications - several procedures"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "77"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "ami" ] ;
+     fhir:display [ fhir:v "AMI" ] ;
+     fhir:definition [ fhir:v "AMI - Myocardieinfarkt" ]
+  ] [
+     fhir:code [ fhir:v "chylothorax" ] ;
+     fhir:display [ fhir:v "Chylothorax" ] ;
+     fhir:definition [ fhir:v "Chylothorax" ]
+  ] [
+     fhir:code [ fhir:v "fascierupture" ] ;
+     fhir:display [ fhir:v "Fascieruptur" ] ;
+     fhir:definition [ fhir:v "Fascieruptur" ]
+  ] [
+     fhir:code [ fhir:v "ileus" ] ;
+     fhir:display [ fhir:v "Ileus" ] ;
+     fhir:definition [ fhir:v "Ileus" ]
+  ] [
+     fhir:code [ fhir:v "intrathoracicbleeding" ] ;
+     fhir:display [ fhir:v "Intrathorakal blødning" ] ;
+     fhir:definition [ fhir:v "Intrathorakal blødning" ]
+  ] [
+     fhir:code [ fhir:v "intraabdominalabscess" ] ;
+     fhir:display [ fhir:v "Intraabdominal absces" ] ;
+     fhir:definition [ fhir:v "Intraabdominal absces" ]
+  ] [
+     fhir:code [ fhir:v "intraabdominalbleeding" ] ;
+     fhir:display [ fhir:v "Intraabdominal blødning" ] ;
+     fhir:definition [ fhir:v "Intraabdominal blødning" ]
+  ] [
+     fhir:code [ fhir:v "pulmonaryembolism" ] ;
+     fhir:display [ fhir:v "Lungeemboli" ] ;
+     fhir:definition [ fhir:v "Lungeemboli" ]
+  ] [
+     fhir:code [ fhir:v "perforation" ] ;
+     fhir:display [ fhir:v "Perforation" ] ;
+     fhir:definition [ fhir:v "Perforation" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "bloodvessel/aneurysm" ] ;
+       fhir:display [ fhir:v "Kar/anurisme" ] ;
+       fhir:definition [ fhir:v "Perforation af kar eller aneurisme" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "pleuraexudate" ] ;
+     fhir:display [ fhir:v "Pleuraeksudat" ] ;
+     fhir:definition [ fhir:v "Pleuraeksudat" ]
+  ] [
+     fhir:code [ fhir:v "pneumonia" ] ;
+     fhir:display [ fhir:v "Pneumoni" ] ;
+     fhir:definition [ fhir:v "Pneumoni" ]
+  ] [
+     fhir:code [ fhir:v "infection" ] ;
+     fhir:display [ fhir:v "Sårinfektion" ] ;
+     fhir:definition [ fhir:v "Sårinfektion" ]
+  ] [
+     fhir:code [ fhir:v "anafylSchock" ] ;
+     fhir:display [ fhir:v "Anafylaktisk reaktion/shock" ] ;
+     fhir:definition [ fhir:v "Anafylaktisk reaktion/shock" ]
+  ] [
+     fhir:code [ fhir:v "anInterrupt" ] ;
+     fhir:display [ fhir:v "Anæstesi afbrudt" ] ;
+     fhir:definition [ fhir:v "Anæstesi afbrudt" ]
+  ] [
+     fhir:code [ fhir:v "appFailure" ] ;
+     fhir:display [ fhir:v "Apparaturfejl" ] ;
+     fhir:definition [ fhir:v "Apparaturfejl" ]
+  ] [
+     fhir:code [ fhir:v "aspiration" ] ;
+     fhir:display [ fhir:v "Aspiration" ] ;
+     fhir:definition [ fhir:v "Aspiration" ]
+  ] [
+     fhir:code [ fhir:v "duraptAcc" ] ;
+     fhir:display [ fhir:v "Durapunktur accidentel" ] ;
+     fhir:definition [ fhir:v "Durapunktur accidentel" ]
+  ] [
+     fhir:code [ fhir:v "heartFail" ] ;
+     fhir:display [ fhir:v "Hjertestop" ] ;
+     fhir:definition [ fhir:v "Hjertestop" ]
+  ] [
+     fhir:code [ fhir:v "huskeAN" ] ;
+     fhir:display [ fhir:v "Huskeanæstesi" ] ;
+     fhir:definition [ fhir:v "Huskeanæstesi" ]
+  ] [
+     fhir:code [ fhir:v "malignHyp" ] ;
+     fhir:display [ fhir:v "Malign Hypertermi mistanke" ] ;
+     fhir:definition [ fhir:v "Malign Hypertermi mistanke" ]
+  ] [
+     fhir:code [ fhir:v "medFail" ] ;
+     fhir:display [ fhir:v "Medicineringsfejl" ] ;
+     fhir:definition [ fhir:v "Medicineringsfejl" ]
+  ] [
+     fhir:code [ fhir:v "neuMuscBlock" ] ;
+     fhir:display [ fhir:v "Neuromuskulær blokade, forlænget virkning" ] ;
+     fhir:definition [ fhir:v "Neuromuskulær blokade, forlænget virkning" ]
+  ] [
+     fhir:code [ fhir:v "dentInj" ] ;
+     fhir:display [ fhir:v "Tandskade" ] ;
+     fhir:definition [ fhir:v "Tandskade" ]
+  ] [
+     fhir:code [ fhir:v "mors" ] ;
+     fhir:display [ fhir:v "Mors, uventet" ] ;
+     fhir:definition [ fhir:v "Mors, uventet" ]
+  ] [
+     fhir:code [ fhir:v "dissection" ] ;
+     fhir:display [ fhir:v "Dissektion" ] ;
+     fhir:definition [ fhir:v "Dissektion" ]
+  ] [
+     fhir:code [ fhir:v "thromboembolic" ] ;
+     fhir:display [ fhir:v "Tromboemboliske komplikationer" ] ;
+     fhir:definition [ fhir:v "Tromboemboliske komplikationer som medfører infarkt inden for 24 timer" ]
+  ] [
+     fhir:code [ fhir:v "groinbleeding" ] ;
+     fhir:display [ fhir:v "Blødning fra lysken" ] ;
+     fhir:definition [ fhir:v "Alvorlig blødning fra lysken" ]
+  ] [
+     fhir:code [ fhir:v "mechanical" ] ;
+     fhir:display [ fhir:v "Mekaniske" ] ;
+     fhir:definition [ fhir:v "Mekaniske komplikationer" ]
+  ] [
+     fhir:code [ fhir:v "bloodvesselocclusion" ] ;
+     fhir:display [ fhir:v "Aflukning af kar" ] ;
+     fhir:definition [ fhir:v "Aflukning af kar medførende infarkt indenfor 24 timer" ]
+  ] [
+     fhir:code [ fhir:v "peroperativebleeding" ] ;
+     fhir:display [ fhir:v "Peroperativ blødning" ] ;
+     fhir:definition [ fhir:v "Livstruende peroperativ blødning, der ikke kan kontrolleres inden for få sekunder" ]
+  ] [
+     fhir:code [ fhir:v "other" ] ;
+     fhir:display [ fhir:v "Other" ] ;
+     fhir:definition [ fhir:v "Other" ]
+  ] [
+     fhir:code [ fhir:v "vascular-unspecific" ] ;
+     fhir:display [ fhir:v "Vascular, unspecific" ] ;
+     fhir:definition [ fhir:v "Vascular, unspecific" ]
+  ] [
+     fhir:code [ fhir:v "infarction-unspecific" ] ;
+     fhir:display [ fhir:v "Cerebral infarction and bleeding, unspecific" ] ;
+     fhir:definition [ fhir:v "Cerebral infarction and bleeding, unspecific" ]
+  ] [
+     fhir:code [ fhir:v "post_polypectomy_syndrome" ] ;
+     fhir:display [ fhir:v "Post polypectomy syndrome" ] ;
+     fhir:definition [ fhir:v "Post polypectomy syndrome / Postpolypektomisyndrom" ]
+  ] [
+     fhir:code [ fhir:v "urinary_retention" ] ;
+     fhir:display [ fhir:v "Urinary retention" ] ;
+     fhir:definition [ fhir:v "Urinary retention / Urinretention" ]
+  ] [
+     fhir:code [ fhir:v "medical" ] ;
+     fhir:display [ fhir:v "Medical complication" ] ;
+     fhir:definition [ fhir:v "Medical complication / Medicinsk komplikation" ]
+  ] [
+     fhir:code [ fhir:v "movement_restriction" ] ;
+     fhir:display [ fhir:v "Movement restriction" ] ;
+     fhir:definition [ fhir:v "Movement restriction / Bevægelsesindskrænkning" ]
+  ] [
+     fhir:code [ fhir:v "chronic_pain" ] ;
+     fhir:display [ fhir:v "Chronic pain" ] ;
+     fhir:definition [ fhir:v "Chronic pain / Kronisk smerte" ]
+  ] [
+     fhir:code [ fhir:v "reoperation" ] ;
+     fhir:display [ fhir:v "Reoperation" ] ;
+     fhir:definition [ fhir:v "Reoperation" ]
+  ] [
+     fhir:code [ fhir:v "rupture" ] ;
+     fhir:display [ fhir:v "Rupture" ] ;
+     fhir:definition [ fhir:v "Rupture / Ruptur" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "rupture_patella_ligament" ] ;
+       fhir:display [ fhir:v "Rupture of patella ligament" ] ;
+       fhir:definition [ fhir:v "Rupture of patella ligament / Ruptur af patellasene" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "thrombosis" ] ;
+     fhir:display [ fhir:v "Thrombosis" ] ;
+     fhir:definition [ fhir:v "Thrombosis / Trombose" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "dvt" ] ;
+       fhir:display [ fhir:v "Dyb vene trombose" ] ;
+       fhir:definition [ fhir:v "Dyb vene trombose" ]
+     ] [
+       fhir:code [ fhir:v "abdominal" ] ;
+       fhir:display [ fhir:v "Abdominal /hepatisk/milt trombose" ] ;
+       fhir:definition [ fhir:v "Abdominal /hepatisk/milt trombose" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "marrow_relapse" ] ;
+     fhir:display [ fhir:v "Marrow relapse" ] ;
+     fhir:definition [ fhir:v "Marrow relapse / Marv relaps" ]
+  ] [
+     fhir:code [ fhir:v "rising_m_component" ] ;
+     fhir:display [ fhir:v "Rising M-component" ] ;
+     fhir:definition [ fhir:v "Rising M-component / Stigende M-komponent" ]
+  ] [
+     fhir:code [ fhir:v "hypercalcemia" ] ;
+     fhir:display [ fhir:v "Hypercalcemia" ] ;
+     fhir:definition [ fhir:v "Hypercalcemia / Hypercalcæmi" ]
+  ] [
+     fhir:code [ fhir:v "osteolytic_foci" ] ;
+     fhir:display [ fhir:v "Progressive osteolytic foci" ] ;
+     fhir:definition [ fhir:v "Progressive osteolytic foci / Progression af osteolytiske foci" ]
+  ] [
+     fhir:code [ fhir:v "medullary_cross_sectional_syndrome" ] ;
+     fhir:display [ fhir:v "Medullary cross-sectional syndrome" ] ;
+     fhir:definition [ fhir:v "Medullary cross-sectional syndrome / Medullært tværsnitssyndrom" ]
+  ] [
+     fhir:code [ fhir:v "extremedullery_myeloma" ] ;
+     fhir:display [ fhir:v "Extremedullary Myeloma" ] ;
+     fhir:definition [ fhir:v "Extremedullary Myeloma / Ekstramedullære Myelomer" ]
+  ] [
+     fhir:code [ fhir:v "plasma_cell_leukemia" ] ;
+     fhir:display [ fhir:v "Plasma cell leukemia" ] ;
+     fhir:definition [ fhir:v "Plasma cell leukemia / Plasmacelle leukæmi" ]
+  ] [
+     fhir:code [ fhir:v "uremia" ] ;
+     fhir:display [ fhir:v "Uremia" ] ;
+     fhir:definition [ fhir:v "Uremia / Uræmi / SNOMED-CT: 44730006" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "uremia_clinically" ] ;
+       fhir:display [ fhir:v "Uremia (clinically significant)" ] ;
+       fhir:definition [ fhir:v "Uremia (clinically significant) / Uræmi (klinisk betydende)" ]
+     ] [
+       fhir:code [ fhir:v "uremia_dialysis" ] ;
+       fhir:display [ fhir:v "Uremia (chronic dialysis requiring)" ] ;
+       fhir:definition [ fhir:v "Uremia (chronic dialysis requiring) / Uræmi (kronisk dialysekrævende)" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "amyloidosis" ] ;
+     fhir:display [ fhir:v "Amyloidosis" ] ;
+     fhir:definition [ fhir:v "Amyloidosis / Amyloidose / SNOMED-CT: 17602002" ]
+  ] [
+     fhir:code [ fhir:v "neuropathy" ] ;
+     fhir:display [ fhir:v "Neuropathy" ] ;
+     fhir:definition [ fhir:v "Neuropathy / Neuropati / SNOMED-CT: 386033004" ]
+  ] [
+     fhir:code [ fhir:v "hyperviscosity" ] ;
+     fhir:display [ fhir:v "Hyperviscosity" ] ;
+     fhir:definition [ fhir:v "Hyperviscosity / Hyperviskositet / SNOMED-CT: 64088006" ]
+  ] [
+     fhir:code [ fhir:v "tci" ] ;
+     fhir:display [ fhir:v "TCI" ] ;
+     fhir:definition [ fhir:v "TCI" ]
+  ] [
+     fhir:code [ fhir:v "bleeding" ] ;
+     fhir:display [ fhir:v "Bleeding" ] ;
+     fhir:definition [ fhir:v "Bleeding / Blødning" ]
+  ] [
+     fhir:code [ fhir:v "apoplexia_cerebri" ] ;
+     fhir:display [ fhir:v "Apopleksi cerebri" ] ;
+     fhir:definition [ fhir:v "Apopleksi cerebri" ]
+  ] [
+     fhir:code [ fhir:v "hematoma" ] ;
+     fhir:display [ fhir:v "Surgery required hematoma" ] ;
+     fhir:definition [ fhir:v "Surgery required hematoma / operationskrævende hæmatom" ]
+  ] [
+     fhir:code [ fhir:v "lymph_leakage" ] ;
+     fhir:display [ fhir:v "Lymph leakage over 2 days" ] ;
+     fhir:definition [ fhir:v "Lymph leakage over 2 days / lymfesiven over 2 døgn (forlænger indlæggelsen)" ]
+  ] [
+     fhir:code [ fhir:v "necrosis" ] ;
+     fhir:display [ fhir:v "Surgery required necrosis" ] ;
+     fhir:definition [ fhir:v "Surgery required necrosis / operationskrævende randnekrose" ]
+  ] [
+     fhir:code [ fhir:v "lymphocele" ] ;
+     fhir:display [ fhir:v "Surgery required lymphocele" ] ;
+     fhir:definition [ fhir:v "Surgery required lymphocele / operationskrævende lymfocele" ]
+  ] [
+     fhir:code [ fhir:v "superficial_subcutaneous_infection" ] ;
+     fhir:display [ fhir:v "Superficial/subcutaneous infection" ] ;
+     fhir:definition [ fhir:v "overfladisk / subcutan infektion (ved antibiotika eller operation)" ]
+  ] [
+     fhir:code [ fhir:v "deep_prosthesis_infection" ] ;
+     fhir:display [ fhir:v "Deep/prosthesis infection" ] ;
+     fhir:definition [ fhir:v "Deep/prosthesis infection / dyb / protese infektion (ved antibiotika eller operation)" ]
+  ] [
+     fhir:code [ fhir:v "segment_elevation_myocardial_infarction" ] ;
+     fhir:display [ fhir:v "Type of heart attack" ] ;
+     fhir:definition [ fhir:v "Type of heart attack that mainly affects your hearts lower chambers" ]
+  ] [
+     fhir:code [ fhir:v "bundle_branch_block_myocardial_infarction" ] ;
+     fhir:display [ fhir:v "Type of heart attack" ] ;
+     fhir:definition [ fhir:v "--" ]
+  ] [
+     fhir:code [ fhir:v "non_segment_elevation_myocardial_infarction" ] ;
+     fhir:display [ fhir:v "Type of heart attack" ] ;
+     fhir:definition [ fhir:v "--" ]
+  ] [
+     fhir:code [ fhir:v "unstable_agina" ] ;
+     fhir:display [ fhir:v "Heart failure?" ] ;
+     fhir:definition [ fhir:v "--" ]
+  ] [
+     fhir:code [ fhir:v "rulled_out_heart_attack" ] ;
+     fhir:display [ fhir:v "No heart attack/failur" ] ;
+     fhir:definition [ fhir:v "--" ]
+  ] [
+     fhir:code [ fhir:v "anterior_segment_elevation_myocardial_infarction" ] ;
+     fhir:display [ fhir:v "Postion" ] ;
+     fhir:definition [ fhir:v "--" ]
+  ] [
+     fhir:code [ fhir:v "non_anterior_segment_elevation_myocardial_infarction" ] ;
+     fhir:display [ fhir:v "Position" ] ;
+     fhir:definition [ fhir:v "--" ]
+  ] [
+     fhir:code [ fhir:v "heart_failur_class_2" ] ;
+     fhir:display [ fhir:v "Class 2 heartfailure" ] ;
+     fhir:definition [ fhir:v "--" ]
+  ] [
+     fhir:code [ fhir:v "heart_failur_class_3" ] ;
+     fhir:display [ fhir:v "Class 3 heartfailure" ] ;
+     fhir:definition [ fhir:v "--" ]
+  ] [
+     fhir:code [ fhir:v "heart_failur_class_4" ] ;
+     fhir:display [ fhir:v "Class 4 heartfailure" ] ;
+     fhir:definition [ fhir:v "--" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

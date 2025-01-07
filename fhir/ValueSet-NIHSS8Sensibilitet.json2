@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "NIHSS8Sensibilitet",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet NIHSS8Sensibilitet</b></p><a name=\"NIHSS8Sensibilitet\"> </a><a name=\"hcNIHSS8Sensibilitet\"> </a><a name=\"NIHSS8Sensibilitet-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-NIHSS8Sensory.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/NIHSS8Sensory</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-NIHSS8Sensory.html#NIHSS8Sensory-0\">0</a></td><td>0 = Normal sensibilitet for stik</td><td>Normal; no sensory loss.</td></tr><tr><td><a href=\"CodeSystem-NIHSS8Sensory.html#NIHSS8Sensory-1\">1</a></td><td>1 = Let til moderat nedsat sensibilitet for prik</td><td>Mild-to-moderate sensory loss; patient feels pinprick is less sharp or is dull on the affected side; or there is a loss of superficial pain with pinprick, but patient is aware of being touched.</td></tr><tr><td><a href=\"CodeSystem-NIHSS8Sensory.html#NIHSS8Sensory-2\">2</a></td><td>2 = Svær til total sensibilitetstab</td><td>Severe to total sensory loss; patient is not aware of being touched in the face, arm, and leg.</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.sundk.dk/fhir/ValueSet/NIHSS8Sensibilitet",
+  "version" : "0.0.9",
+  "name" : "NIHSS8Sensibilitet",
+  "title" : "NIHSS - 8. Sensibilitet",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-06-27T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "The National Institute of Health Stroke Scale (NIHSS) - 8. Sensibilitet (brug pinprick til at teste arme, ben, trunkus og ansigt - sammenlign side for side)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.sundk.dk/fhir/CodeSystem/NIHSS8Sensory",
+      "concept" : [{
+        "code" : "0",
+        "display" : "0 = Normal sensibilitet for stik"
+      },
+      {
+        "code" : "1",
+        "display" : "1 = Let til moderat nedsat sensibilitet for prik"
+      },
+      {
+        "code" : "2",
+        "display" : "2 = Svær til total sensibilitetstab"
+      }]
+    }]
+  }
+}

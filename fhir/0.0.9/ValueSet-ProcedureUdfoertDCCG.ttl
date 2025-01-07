@@ -1,0 +1,162 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/ValueSet/ProcedureUdfoertDCCG> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ProcedureUdfoertDCCG"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ProcedureUdfoertDCCG</b></p><a name=\"ProcedureUdfoertDCCG\"> </a><a name=\"hcProcedureUdfoertDCCG\"> </a><a name=\"ProcedureUdfoertDCCG-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-SKS.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/SKS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-KJFB20\">KJFB20</a></td><td>Ileocækal resektion - KJFB20</td><td>KJFB20 - Ileocækal resektion</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-KJFB30\">KJFB30</a></td><td>Højresidig hemikolektomi - KJFB30</td><td>KJFB30 - Højresidig hemikolektomi</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-KJFB30A\">KJFB30A</a></td><td>Udvidet højresidig hemikolektomi - KJFB30A</td><td>KJFB30A - Udvidet højresidig hemikolektomi</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-KJFB34\">KJFB34</a></td><td>Anden laparoskopisk samtidig resektion af tyndtarm og tyktarm - KJFB34</td><td>KJFB34 - Anden laparoskopisk samtidig resektion af tyndtarm og tyktarm</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-KJFB40\">KJFB40</a></td><td>Resektion af colon transversum - KJFB40</td><td>KJFB40 - Resektion af colon transversum</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-KJFB43\">KJFB43</a></td><td>Venstresidig hemikolektomi - KJFB43</td><td>KJFB43 - Venstresidig hemikolektomi</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-KJFB46\">KJFB46</a></td><td>Resektion af colon sigmoideum - KJFB46</td><td>KJFB46 - Resektion af colon sigmoideum</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-KJFB50\">KJFB50</a></td><td>Anden colonresektion - KJFB50</td><td>KJFB50 - Anden colonresektion</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-KJFB53\">KJFB53</a></td><td>Resektion af venstre fleksur - KJFB53</td><td>KJFB53 - Resektion af venstre fleksur</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-KJFB60\">KJFB60</a></td><td>Resektion af colon sigmoideum med kolostomi - KJFB60</td><td>KJFB60 - Resektion af colon sigmoideum med kolostomi</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-KJFB63\">KJFB63</a></td><td>Anden tyktarmsresektion med kolostomi og distal lukning - KJFB63</td><td>KJFB63 - Anden tyktarmsresektion med kolostomi og distal lukning</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-KJFH00\">KJFH00</a></td><td>Kolektomi og ileorektostomi - KJFH00</td><td>KJFH00 - Kolektomi og ileorektostomi</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-KJFH10\">KJFH10</a></td><td>Kolektomi og ileostomi - KJFH10</td><td>KJFH10 - Kolektomi og ileostomi</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-KJFH20\">KJFH20</a></td><td>Proktokolektomi og ileostomi - KJFH20</td><td>KJFH20 - Proktokolektomi og ileostomi</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-KJGB00\">KJGB00</a></td><td>Resektion af endetarm - KJGB00</td><td>KJGB00 - Resektion af endetarm</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-KJGB10\">KJGB10</a></td><td>Resektion af endetarm med kolostomi - KJGB10</td><td>KJGB10 - Resektion af endetarm med kolostomi</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-KJGB32\">KJGB32</a></td><td>Abdominal og intersphincterisk excision af endetarm - KJGB32</td><td>KJGB32 - Abdominal og intersphincterisk excision af endetarm</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-KJGB35\">KJGB35</a></td><td>Abdominal og ischioanal excision af endetarm - KJGB35</td><td>KJGB35 - Abdominal og ischioanal excision af endetarm</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-KJGB36\">KJGB36</a></td><td>Abdominal og ekstralevatorisk excision af endetarm - KJGB36</td><td>KJGB36 - Abdominal og ekstralevatorisk excision af endetarm</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-ProcedureType.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/ProcedureType</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-ape_conventional\">ape_conventional</a></td><td>APE, konventionel</td><td>APE, konventionel</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-proctocolectomy_pouch\">proctocolectomy_pouch</a></td><td>Proktokolektomi med ileoanal pouch</td><td>Proktokolektomi med ileoanal pouch</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-stoma_shunt\">stoma_shunt</a></td><td>Kun aflastende stomi eller intern shunt</td><td>Kun aflastende stomi eller intern shunt</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-exploratory_intervention\">exploratory_intervention</a></td><td>Kun eksplorativt indgreb</td><td>Kun eksplorativt indgreb</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-tem\">tem</a></td><td>TEM</td><td>TEM</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-local_resection\">local_resection</a></td><td>Andre lokalresektioner inkl. polypfjernelse/EMR</td><td>Local ressection / Lokalresektion</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-stent_rectum\">stent_rectum</a></td><td>Stentanlæggelse i rektum</td><td>Stentanlæggelse i rektum</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-stent_colon\">stent_colon</a></td><td>Stentanlæggelse i colon</td><td>Stentanlæggelse i colon</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-cels\">cels</a></td><td>Kombineret endoskopisk og laparoskopisk procedure (CELS)</td><td>Kombineret endoskopisk og laparoskopisk procedure (CELS)</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-polypectomy\">polypectomy</a></td><td>Polypektomi</td><td>Polypektomi</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-emr\">emr</a></td><td>EMR inkl. piecemeal EMR</td><td>EMR inkl. piecemeal EMR</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-esd\">esd</a></td><td>ESD inkl. piecemeal ESD</td><td>ESD inkl. piecemeal ESD</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-piecemeal_resection\">piecemeal_resection</a></td><td>Piecemeal resektion</td><td>Piecemeal resektion</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-full_wall_resection\">full_wall_resection</a></td><td>Endoskopisk fuldvægsresektion</td><td>Endoskopisk fuldvægsresektion</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-other_endoscopic\">other_endoscopic</a></td><td>Anden endoskopisk procedure</td><td>Anden endoskopisk procedure</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-tamis\">tamis</a></td><td>TAMIS</td><td>TAMIS</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-teo\">teo</a></td><td>TEO</td><td>TEO</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-other_transanal\">other_transanal</a></td><td>Anden transanal adgang/teknik</td><td>Anden transanal adgang/teknik</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Anden aflastende procedure</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/ValueSet/ProcedureUdfoertDCCG"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "ProcedureUdfoertDCCG"] ; # 
+  fhir:title [ fhir:v "Udført procedure (DCCG)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-11-09T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Udført procedure (DCCG)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/SKS"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "KJFB20" ] ;
+         fhir:display [ fhir:v "Ileocækal resektion - KJFB20" ]
+       ] [
+         fhir:code [ fhir:v "KJFB30" ] ;
+         fhir:display [ fhir:v "Højresidig hemikolektomi - KJFB30" ]
+       ] [
+         fhir:code [ fhir:v "KJFB30A" ] ;
+         fhir:display [ fhir:v "Udvidet højresidig hemikolektomi - KJFB30A" ]
+       ] [
+         fhir:code [ fhir:v "KJFB34" ] ;
+         fhir:display [ fhir:v "Anden laparoskopisk samtidig resektion af tyndtarm og tyktarm - KJFB34" ]
+       ] [
+         fhir:code [ fhir:v "KJFB40" ] ;
+         fhir:display [ fhir:v "Resektion af colon transversum - KJFB40" ]
+       ] [
+         fhir:code [ fhir:v "KJFB43" ] ;
+         fhir:display [ fhir:v "Venstresidig hemikolektomi - KJFB43" ]
+       ] [
+         fhir:code [ fhir:v "KJFB46" ] ;
+         fhir:display [ fhir:v "Resektion af colon sigmoideum - KJFB46" ]
+       ] [
+         fhir:code [ fhir:v "KJFB50" ] ;
+         fhir:display [ fhir:v "Anden colonresektion - KJFB50" ]
+       ] [
+         fhir:code [ fhir:v "KJFB53" ] ;
+         fhir:display [ fhir:v "Resektion af venstre fleksur - KJFB53" ]
+       ] [
+         fhir:code [ fhir:v "KJFB60" ] ;
+         fhir:display [ fhir:v "Resektion af colon sigmoideum med kolostomi - KJFB60" ]
+       ] [
+         fhir:code [ fhir:v "KJFB63" ] ;
+         fhir:display [ fhir:v "Anden tyktarmsresektion med kolostomi og distal lukning - KJFB63" ]
+       ] [
+         fhir:code [ fhir:v "KJFH00" ] ;
+         fhir:display [ fhir:v "Kolektomi og ileorektostomi - KJFH00" ]
+       ] [
+         fhir:code [ fhir:v "KJFH10" ] ;
+         fhir:display [ fhir:v "Kolektomi og ileostomi - KJFH10" ]
+       ] [
+         fhir:code [ fhir:v "KJFH20" ] ;
+         fhir:display [ fhir:v "Proktokolektomi og ileostomi - KJFH20" ]
+       ] [
+         fhir:code [ fhir:v "KJGB00" ] ;
+         fhir:display [ fhir:v "Resektion af endetarm - KJGB00" ]
+       ] [
+         fhir:code [ fhir:v "KJGB10" ] ;
+         fhir:display [ fhir:v "Resektion af endetarm med kolostomi - KJGB10" ]
+       ] [
+         fhir:code [ fhir:v "KJGB32" ] ;
+         fhir:display [ fhir:v "Abdominal og intersphincterisk excision af endetarm - KJGB32" ]
+       ] [
+         fhir:code [ fhir:v "KJGB35" ] ;
+         fhir:display [ fhir:v "Abdominal og ischioanal excision af endetarm - KJGB35" ]
+       ] [
+         fhir:code [ fhir:v "KJGB36" ] ;
+         fhir:display [ fhir:v "Abdominal og ekstralevatorisk excision af endetarm - KJGB36" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/ProcedureType"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "ape_conventional" ] ;
+         fhir:display [ fhir:v "APE, konventionel" ]
+       ] [
+         fhir:code [ fhir:v "proctocolectomy_pouch" ] ;
+         fhir:display [ fhir:v "Proktokolektomi med ileoanal pouch" ]
+       ] [
+         fhir:code [ fhir:v "stoma_shunt" ] ;
+         fhir:display [ fhir:v "Kun aflastende stomi eller intern shunt" ]
+       ] [
+         fhir:code [ fhir:v "exploratory_intervention" ] ;
+         fhir:display [ fhir:v "Kun eksplorativt indgreb" ]
+       ] [
+         fhir:code [ fhir:v "tem" ] ;
+         fhir:display [ fhir:v "TEM" ]
+       ] [
+         fhir:code [ fhir:v "local_resection" ] ;
+         fhir:display [ fhir:v "Andre lokalresektioner inkl. polypfjernelse/EMR" ]
+       ] [
+         fhir:code [ fhir:v "stent_rectum" ] ;
+         fhir:display [ fhir:v "Stentanlæggelse i rektum" ]
+       ] [
+         fhir:code [ fhir:v "stent_colon" ] ;
+         fhir:display [ fhir:v "Stentanlæggelse i colon" ]
+       ] [
+         fhir:code [ fhir:v "cels" ] ;
+         fhir:display [ fhir:v "Kombineret endoskopisk og laparoskopisk procedure (CELS)" ]
+       ] [
+         fhir:code [ fhir:v "polypectomy" ] ;
+         fhir:display [ fhir:v "Polypektomi" ]
+       ] [
+         fhir:code [ fhir:v "emr" ] ;
+         fhir:display [ fhir:v "EMR inkl. piecemeal EMR" ]
+       ] [
+         fhir:code [ fhir:v "esd" ] ;
+         fhir:display [ fhir:v "ESD inkl. piecemeal ESD" ]
+       ] [
+         fhir:code [ fhir:v "piecemeal_resection" ] ;
+         fhir:display [ fhir:v "Piecemeal resektion" ]
+       ] [
+         fhir:code [ fhir:v "full_wall_resection" ] ;
+         fhir:display [ fhir:v "Endoskopisk fuldvægsresektion" ]
+       ] [
+         fhir:code [ fhir:v "other_endoscopic" ] ;
+         fhir:display [ fhir:v "Anden endoskopisk procedure" ]
+       ] [
+         fhir:code [ fhir:v "tamis" ] ;
+         fhir:display [ fhir:v "TAMIS" ]
+       ] [
+         fhir:code [ fhir:v "teo" ] ;
+         fhir:display [ fhir:v "TEO" ]
+       ] [
+         fhir:code [ fhir:v "other_transanal" ] ;
+         fhir:display [ fhir:v "Anden transanal adgang/teknik" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/GenericValues"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "other" ] ;
+         fhir:display [ fhir:v "Anden aflastende procedure" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

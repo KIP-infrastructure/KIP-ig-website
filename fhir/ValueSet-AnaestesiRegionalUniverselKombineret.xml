@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="AnaestesiRegionalUniverselKombineret"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet AnaestesiRegionalUniverselKombineret</b></p><a name="AnaestesiRegionalUniverselKombineret"> </a><a name="hcAnaestesiRegionalUniverselKombineret"> </a><a name="AnaestesiRegionalUniverselKombineret-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-AnasthesiaService.html"><code>https://kip.sundk.dk/fhir/CodeSystem/AnasthesiaService</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-AnasthesiaService.html#AnasthesiaService-regional">regional</a></td><td>Regional (spinal/epidural)</td><td>Regional (spinal/epidural) / SNOMED-CT: 231262009</td></tr><tr><td><a href="CodeSystem-AnasthesiaService.html#AnasthesiaService-universal">universal</a></td><td>Universel</td><td>Universal</td></tr><tr><td><a href="CodeSystem-AnasthesiaService.html#AnasthesiaService-combined">combined</a></td><td>Kombineret</td><td>Combined</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-GenericValues.html"><code>https://kip.sundk.dk/fhir/CodeSystem/GenericValues</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-GenericValues.html#GenericValues-other">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.sundk.dk/fhir/ValueSet/AnaestesiRegionalUniverselKombineret"/>
+  <version value="0.0.9"/>
+  <name value="AnaestesiRegionalUniverselKombineret"/>
+  <title value="Anæstesi - Regional, universel, kombineret"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-10-13T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Anæstesi - Regional, universel, kombineret"/>
+  <compose>
+    <include>
+      <system value="https://kip.sundk.dk/fhir/CodeSystem/AnasthesiaService"/>
+      <concept>
+        <code value="regional"/>
+        <display value="Regional (spinal/epidural)"/>
+      </concept>
+      <concept>
+        <code value="universal"/>
+        <display value="Universel"/>
+      </concept>
+      <concept>
+        <code value="combined"/>
+        <display value="Kombineret"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://kip.sundk.dk/fhir/CodeSystem/GenericValues"/>
+      <concept>
+        <code value="other"/>
+        <display value="Andet"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

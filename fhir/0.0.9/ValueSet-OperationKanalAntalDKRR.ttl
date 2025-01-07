@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.sundk.dk/fhir/ValueSet/OperationKanalAntalDKRR> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "OperationKanalAntalDKRR"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet OperationKanalAntalDKRR</b></p><a name=\"OperationKanalAntalDKRR\"> </a><a name=\"hcOperationKanalAntalDKRR\"> </a><a name=\"OperationKanalAntalDKRR-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-OperationCanal.html\"><code>https://kip.sundk.dk/fhir/CodeSystem/OperationCanal</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-OperationCanal.html#OperationCanal-1_canal\">1_canal</a></td><td>1 kanal</td><td>1 canal / 1 kanal</td></tr><tr><td><a href=\"CodeSystem-OperationCanal.html#OperationCanal-2_canals\">2_canals</a></td><td>2 kanaler</td><td>2 canals / 2 kanaler</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.sundk.dk/fhir/ValueSet/OperationKanalAntalDKRR"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.9"] ; # 
+  fhir:name [ fhir:v "OperationKanalAntalDKRR"] ; # 
+  fhir:title [ fhir:v "Operation kanal - antal (DKRR)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-09-19T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Public A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Operation kanal - antal (DKRR)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.sundk.dk/fhir/CodeSystem/OperationCanal"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "1_canal" ] ;
+         fhir:display [ fhir:v "1 kanal" ]
+       ] [
+         fhir:code [ fhir:v "2_canals" ] ;
+         fhir:display [ fhir:v "2 kanaler" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
