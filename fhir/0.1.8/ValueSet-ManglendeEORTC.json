@@ -1,0 +1,52 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ManglendeEORTC",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ManglendeEORTC</b></p><a name=\"ManglendeEORTC\"> </a><a name=\"hcManglendeEORTC\"> </a><a name=\"ManglendeEORTC-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-TreatmentNotGiven.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/TreatmentNotGiven</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-TreatmentNotGiven.html#TreatmentNotGiven-bad_condition\">bad_condition</a></td><td>For dårlig</td><td>Bad condition / For dårlig</td></tr><tr><td><a href=\"CodeSystem-TreatmentNotGiven.html#TreatmentNotGiven-unwanted\">unwanted</a></td><td>Afslog</td><td>Unwanted treatment / Ønskede ikke behandling</td></tr><tr><td><a href=\"CodeSystem-TreatmentNotGiven.html#TreatmentNotGiven-died\">died</a></td><td>Ikke i live</td><td>Died before treatment / Døde før behandling</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-none\">none</a></td><td>Ikke begrundet</td><td>None - used to choose none of the available values</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/ManglendeEORTC",
+  "version" : "0.1.8",
+  "name" : "ManglendeEORTC",
+  "title" : "EORTC skema mangler",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-09-06T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Årsag til manglende EORTC skema",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/TreatmentNotGiven",
+      "concept" : [{
+        "code" : "bad_condition",
+        "display" : "For dårlig"
+      },
+      {
+        "code" : "unwanted",
+        "display" : "Afslog"
+      },
+      {
+        "code" : "died",
+        "display" : "Ikke i live"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "none",
+        "display" : "Ikke begrundet"
+      }]
+    }]
+  }
+}

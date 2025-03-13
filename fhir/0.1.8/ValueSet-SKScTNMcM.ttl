@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/SKScTNMcM> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SKScTNMcM"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SKScTNMcM</b></p><a name=\"SKScTNMcM\"> </a><a name=\"hcSKScTNMcM\"> </a><a name=\"SKScTNMcM-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-SKS.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/SKS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-AZCD40\">AZCD40</a></td><td>cM0: Ingen fjernmetastaser</td><td>AZCD40 - cM0: Ingen fjernmetastaser</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-AZCD41\">AZCD41</a></td><td>cM1: Fjernmetastase</td><td>AZCD41 - cM1: Fjernmetastase</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/SKScTNMcM"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "SKScTNMcM"] ; # 
+  fhir:title [ fhir:v "SKS: cTNM klassifikation, cM"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-06-08T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "SKS koderne relevante cM tillægskoder"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/SKS"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "AZCD40" ] ;
+         fhir:display [ fhir:v "cM0: Ingen fjernmetastaser" ]
+       ] [
+         fhir:code [ fhir:v "AZCD41" ] ;
+         fhir:display [ fhir:v "cM1: Fjernmetastase" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/ModifiedRaymondRoyKlassification> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ModifiedRaymondRoyKlassification"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ModifiedRaymondRoyKlassification</b></p><a name=\"ModifiedRaymondRoyKlassification\"> </a><a name=\"hcModifiedRaymondRoyKlassification\"> </a><a name=\"ModifiedRaymondRoyKlassification-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-RaymondRoyClassification.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/RaymondRoyClassification</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-RaymondRoyClassification.html#RaymondRoyClassification-classi\">classi</a></td><td>I, komplet aflukning</td><td>Class I: Complete obliteration</td></tr><tr><td><a href=\"CodeSystem-RaymondRoyClassification.html#RaymondRoyClassification-classii\">classii</a></td><td>II, hals rest</td><td>Class II: Residual neck</td></tr><tr><td><a href=\"CodeSystem-RaymondRoyClassification.html#RaymondRoyClassification-classiiia\">classiiia</a></td><td>IIIa, rest aneurisme - kontrastopløb centralt i coilpakken</td><td>Class IIIa: Contrast opacification within the coil interstices of a residual aneurysm (only in MRRC)</td></tr><tr><td><a href=\"CodeSystem-RaymondRoyClassification.html#RaymondRoyClassification-classiiib\">classiiib</a></td><td>IIIb, rest aneurisme - kontrastopløb langs aneurismevæggen</td><td>Class IIIb: contrast opacification outside the coil interstices, along the residual aneurysm wall (only in MRRC)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/ModifiedRaymondRoyKlassification"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "ModifiedRaymondRoyKlassification"] ; # 
+  fhir:title [ fhir:v "Modified Raymond-Roy klassifikation (MRRC)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-06-29T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Modified Raymond-Roy klassifikation (MRRC)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/RaymondRoyClassification"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "classi" ] ;
+         fhir:display [ fhir:v "I, komplet aflukning" ]
+       ] [
+         fhir:code [ fhir:v "classii" ] ;
+         fhir:display [ fhir:v "II, hals rest" ]
+       ] [
+         fhir:code [ fhir:v "classiiia" ] ;
+         fhir:display [ fhir:v "IIIa, rest aneurisme - kontrastopløb centralt i coilpakken" ]
+       ] [
+         fhir:code [ fhir:v "classiiib" ] ;
+         fhir:display [ fhir:v "IIIb, rest aneurisme - kontrastopløb langs aneurismevæggen" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ChromosomPairs"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ChromosomPairs</b></p><a name="ChromosomPairs"> </a><a name="hcChromosomPairs"> </a><a name="ChromosomPairs-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-ChromosomPair.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/ChromosomPair</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-ChromosomPair.html#ChromosomPair-pair_13">pair_13</a></td><td>Kromosom 13 forandringer</td><td>Chromosom pair 13 / Kromosompar 13 / SNOMED-CT: 55401003</td></tr><tr><td><a href="CodeSystem-ChromosomPair.html#ChromosomPair-pair_17">pair_17</a></td><td>Kromosom 17 forandringer</td><td>Chromosom pair 17 / Kromosompar 17 / SNOMED-CT: 45201007</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-GenericValues.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-GenericValues.html#GenericValues-none">none</a></td><td>Ingen</td><td>None - used to choose none of the available values</td></tr><tr><td><a href="CodeSystem-GenericValues.html#GenericValues-other">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.rkkp.dk/fhir/ValueSet/ChromosomPairs"/>
+  <version value="0.1.8"/>
+  <name value="ChromosomPairs"/>
+  <title value="Kromosom par"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-07-14T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Kromosom par"/>
+  <compose>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/ChromosomPair"/>
+      <concept>
+        <code value="pair_13"/>
+        <display value="Kromosom 13 forandringer"/>
+      </concept>
+      <concept>
+        <code value="pair_17"/>
+        <display value="Kromosom 17 forandringer"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"/>
+      <concept>
+        <code value="none"/>
+        <display value="Ingen"/>
+      </concept>
+      <concept>
+        <code value="other"/>
+        <display value="Andet"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

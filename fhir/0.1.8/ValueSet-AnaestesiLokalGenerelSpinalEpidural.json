@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "AnaestesiLokalGenerelSpinalEpidural",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet AnaestesiLokalGenerelSpinalEpidural</b></p><a name=\"AnaestesiLokalGenerelSpinalEpidural\"> </a><a name=\"hcAnaestesiLokalGenerelSpinalEpidural\"> </a><a name=\"AnaestesiLokalGenerelSpinalEpidural-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-AnasthesiaService.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/AnasthesiaService</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-AnasthesiaService.html#AnasthesiaService-regional\">regional</a></td><td>Spinal/epidural</td><td>Regional (spinal/epidural) / SNOMED-CT: 231262009</td></tr><tr><td><a href=\"CodeSystem-AnasthesiaService.html#AnasthesiaService-gen_anesthesia\">gen_anesthesia</a></td><td>Generel anæstesi</td><td>Generel anæstesi / SNOMED-CT: 50697003</td></tr><tr><td><a href=\"CodeSystem-AnasthesiaService.html#AnasthesiaService-local_anesthesia\">local_anesthesia</a></td><td>Lokal anæstesi, alene</td><td>Lokal anæstesi / SNOMED-CT: 386761002</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/AnaestesiLokalGenerelSpinalEpidural",
+  "version" : "0.1.8",
+  "name" : "AnaestesiLokalGenerelSpinalEpidural",
+  "title" : "Anæstesi - Generel, lokal og spinal/epidural anæstesi",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-07-20T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Værdier for generel, lokal og spinal/epidural anæstesi.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/AnasthesiaService",
+      "concept" : [{
+        "code" : "regional",
+        "display" : "Spinal/epidural"
+      },
+      {
+        "code" : "gen_anesthesia",
+        "display" : "Generel anæstesi"
+      },
+      {
+        "code" : "local_anesthesia",
+        "display" : "Lokal anæstesi, alene"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,136 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/Intervals> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Intervals"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem Intervals</b></p><a name=\"Intervals\"> </a><a name=\"hcIntervals\"> </a><a name=\"Intervals-en-US\"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/Intervals</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">&lt;0<a name=\"Intervals-.600\"> </a></td><td>&lt;0</td></tr><tr><td style=\"white-space:nowrap\">=&lt;1<a name=\"Intervals-.61.601\"> </a></td><td>=&lt;1</td></tr><tr><td style=\"white-space:nowrap\">&gt;1<a name=\"Intervals-.621\"> </a></td><td>&gt;1</td></tr><tr><td style=\"white-space:nowrap\">=&lt;2<a name=\"Intervals-.61.602\"> </a></td><td>=&lt;2</td></tr><tr><td style=\"white-space:nowrap\">&gt;2<a name=\"Intervals-.622\"> </a></td><td>&gt;2</td></tr><tr><td style=\"white-space:nowrap\">&gt;3<a name=\"Intervals-.623\"> </a></td><td>&gt;3</td></tr><tr><td style=\"white-space:nowrap\">&lt;5<a name=\"Intervals-.605\"> </a></td><td>&lt;5</td></tr><tr><td style=\"white-space:nowrap\">=&lt;5<a name=\"Intervals-.61.605\"> </a></td><td>=&lt;5</td></tr><tr><td style=\"white-space:nowrap\">&gt;5<a name=\"Intervals-.625\"> </a></td><td>&gt;5</td></tr><tr><td style=\"white-space:nowrap\">=&lt;6<a name=\"Intervals-.61.606\"> </a></td><td>=&lt;6</td></tr><tr><td style=\"white-space:nowrap\">&gt;6<a name=\"Intervals-.626\"> </a></td><td>&gt;6</td></tr><tr><td style=\"white-space:nowrap\">&lt;8<a name=\"Intervals-.608\"> </a></td><td>&lt;8</td></tr><tr><td style=\"white-space:nowrap\">=&gt;8<a name=\"Intervals-.61.628\"> </a></td><td>=&gt;8</td></tr><tr><td style=\"white-space:nowrap\">&gt;10<a name=\"Intervals-.6210\"> </a></td><td>&gt;10</td></tr><tr><td style=\"white-space:nowrap\">&gt;14<a name=\"Intervals-.6214\"> </a></td><td>&gt;14</td></tr><tr><td style=\"white-space:nowrap\">=&lt;15<a name=\"Intervals-.61.6015\"> </a></td><td>=&lt;15</td></tr><tr><td style=\"white-space:nowrap\">&gt;15<a name=\"Intervals-.6215\"> </a></td><td>&gt;15</td></tr><tr><td style=\"white-space:nowrap\">1-2<a name=\"Intervals-1-2\"> </a></td><td>1-2</td></tr><tr><td style=\"white-space:nowrap\">2-3<a name=\"Intervals-2-3\"> </a></td><td>2-3</td></tr><tr><td style=\"white-space:nowrap\">0-4<a name=\"Intervals-0-4\"> </a></td><td>0-4</td></tr><tr><td style=\"white-space:nowrap\">5-9<a name=\"Intervals-5-9\"> </a></td><td>5-9</td></tr><tr><td style=\"white-space:nowrap\">5-10<a name=\"Intervals-5-10\"> </a></td><td>5-10</td></tr><tr><td style=\"white-space:nowrap\">10-14<a name=\"Intervals-10-14\"> </a></td><td>10-14</td></tr><tr><td style=\"white-space:nowrap\">11-15<a name=\"Intervals-11-15\"> </a></td><td>11-15</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/Intervals"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "Intervals"] ; # 
+  fhir:title [ fhir:v "Intervals"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-09-19T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Intervals. Generic intervals."] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "24"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "<0" ] ;
+     fhir:display [ fhir:v "<0" ] ;
+     fhir:definition [ fhir:v "<0" ]
+  ] [
+     fhir:code [ fhir:v "=<1" ] ;
+     fhir:display [ fhir:v "=<1" ] ;
+     fhir:definition [ fhir:v "=<1" ]
+  ] [
+     fhir:code [ fhir:v ">1" ] ;
+     fhir:display [ fhir:v ">1" ] ;
+     fhir:definition [ fhir:v ">1" ]
+  ] [
+     fhir:code [ fhir:v "=<2" ] ;
+     fhir:display [ fhir:v "=<2" ] ;
+     fhir:definition [ fhir:v "=<2" ]
+  ] [
+     fhir:code [ fhir:v ">2" ] ;
+     fhir:display [ fhir:v ">2" ] ;
+     fhir:definition [ fhir:v ">2" ]
+  ] [
+     fhir:code [ fhir:v ">3" ] ;
+     fhir:display [ fhir:v ">3" ] ;
+     fhir:definition [ fhir:v ">3" ]
+  ] [
+     fhir:code [ fhir:v "<5" ] ;
+     fhir:display [ fhir:v "<5" ] ;
+     fhir:definition [ fhir:v "<5" ]
+  ] [
+     fhir:code [ fhir:v "=<5" ] ;
+     fhir:display [ fhir:v "=<5" ] ;
+     fhir:definition [ fhir:v "=<5" ]
+  ] [
+     fhir:code [ fhir:v ">5" ] ;
+     fhir:display [ fhir:v ">5" ] ;
+     fhir:definition [ fhir:v ">5" ]
+  ] [
+     fhir:code [ fhir:v "=<6" ] ;
+     fhir:display [ fhir:v "=<6" ] ;
+     fhir:definition [ fhir:v "=<6" ]
+  ] [
+     fhir:code [ fhir:v ">6" ] ;
+     fhir:display [ fhir:v ">6" ] ;
+     fhir:definition [ fhir:v ">6" ]
+  ] [
+     fhir:code [ fhir:v "<8" ] ;
+     fhir:display [ fhir:v "<8" ] ;
+     fhir:definition [ fhir:v "<8" ]
+  ] [
+     fhir:code [ fhir:v "=>8" ] ;
+     fhir:display [ fhir:v "=>8" ] ;
+     fhir:definition [ fhir:v "=>8" ]
+  ] [
+     fhir:code [ fhir:v ">10" ] ;
+     fhir:display [ fhir:v ">10" ] ;
+     fhir:definition [ fhir:v ">10" ]
+  ] [
+     fhir:code [ fhir:v ">14" ] ;
+     fhir:display [ fhir:v ">14" ] ;
+     fhir:definition [ fhir:v ">14" ]
+  ] [
+     fhir:code [ fhir:v "=<15" ] ;
+     fhir:display [ fhir:v "=<15" ] ;
+     fhir:definition [ fhir:v "=<15" ]
+  ] [
+     fhir:code [ fhir:v ">15" ] ;
+     fhir:display [ fhir:v ">15" ] ;
+     fhir:definition [ fhir:v ">15" ]
+  ] [
+     fhir:code [ fhir:v "1-2" ] ;
+     fhir:display [ fhir:v "1-2" ] ;
+     fhir:definition [ fhir:v "1-2" ]
+  ] [
+     fhir:code [ fhir:v "2-3" ] ;
+     fhir:display [ fhir:v "2-3" ] ;
+     fhir:definition [ fhir:v "2-3" ]
+  ] [
+     fhir:code [ fhir:v "0-4" ] ;
+     fhir:display [ fhir:v "0-4" ] ;
+     fhir:definition [ fhir:v "0-4" ]
+  ] [
+     fhir:code [ fhir:v "5-9" ] ;
+     fhir:display [ fhir:v "5-9" ] ;
+     fhir:definition [ fhir:v "5-9" ]
+  ] [
+     fhir:code [ fhir:v "5-10" ] ;
+     fhir:display [ fhir:v "5-10" ] ;
+     fhir:definition [ fhir:v "5-10" ]
+  ] [
+     fhir:code [ fhir:v "10-14" ] ;
+     fhir:display [ fhir:v "10-14" ] ;
+     fhir:definition [ fhir:v "10-14" ]
+  ] [
+     fhir:code [ fhir:v "11-15" ] ;
+     fhir:display [ fhir:v "11-15" ] ;
+     fhir:definition [ fhir:v "11-15" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

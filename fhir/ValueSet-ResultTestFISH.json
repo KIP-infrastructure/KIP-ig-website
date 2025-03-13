@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ResultTestFISH",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ResultTestFISH</b></p><a name=\"ResultTestFISH\"> </a><a name=\"hcResultTestFISH\"> </a><a name=\"ResultTestFISH-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-ResultTest.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ResultTest</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ResultTest.html#ResultTest-normal\">normal</a></td><td>Normal</td><td>Normal / Normal [FISH]</td></tr><tr><td><a href=\"CodeSystem-ResultTest.html#ResultTest-changes\">changes</a></td><td>Forandringer</td><td>Changes / Forandringer [FISH]</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-not_performed\">not_performed</a></td><td>Ikke udført</td><td>Not performed - used to indicate, if a procedure or test has not been performed</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/ResultTestFISH",
+  "version" : "0.1.8",
+  "name" : "ResultTestFISH",
+  "title" : "ResultTest_FISH",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-07-12T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Resultat af test (FISH)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/ResultTest",
+      "concept" : [{
+        "code" : "normal",
+        "display" : "Normal"
+      },
+      {
+        "code" : "changes",
+        "display" : "Forandringer"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "not_performed",
+        "display" : "Ikke udført"
+      }]
+    }]
+  }
+}

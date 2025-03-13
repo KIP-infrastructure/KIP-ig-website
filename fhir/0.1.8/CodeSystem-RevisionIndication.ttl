@@ -1,0 +1,166 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/RevisionIndication> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RevisionIndication"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem RevisionIndication</b></p><a name=\"RevisionIndication\"> </a><a name=\"hcRevisionIndication\"> </a><a name=\"RevisionIndication-en-US\"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/RevisionIndication</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">aseptic_solution<a name=\"RevisionIndication-aseptic_solution\"> </a></td><td>Aseptisk løsning</td><td>Aseptisk løsning</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  glenoid<a name=\"RevisionIndication-glenoid\"> </a></td><td>Glenoid</td><td>Glenoid</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  humerus<a name=\"RevisionIndication-humerus\"> </a></td><td>Humerus</td><td>Humerus</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  acetabulum<a name=\"RevisionIndication-acetabulum\"> </a></td><td>Acetabulum</td><td>Acetabulum</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  acetabulum_osteolysis<a name=\"RevisionIndication-acetabulum_osteolysis\"> </a></td><td>Acetabulum med osteolyse</td><td>Acetabulum med osteolyse</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  femur<a name=\"RevisionIndication-femur\"> </a></td><td>Femur</td><td>Femur</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  femur_osteolysis<a name=\"RevisionIndication-femur_osteolysis\"> </a></td><td>Femur med osteolyse</td><td>Femur med osteolyse</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  femur_acetabulum<a name=\"RevisionIndication-femur_acetabulum\"> </a></td><td>Femur og acetabulum</td><td>Femur og acetabulum</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  femur_acetabulum_osteolysis<a name=\"RevisionIndication-femur_acetabulum_osteolysis\"> </a></td><td>Femur og acetabulum med osteolyse</td><td>Femur og acetabulum med osteolyse</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">osteolysis<a name=\"RevisionIndication-osteolysis\"> </a></td><td>Osteolyse</td><td>Osteolyse</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">suspected_infection<a name=\"RevisionIndication-suspected_infection\"> </a></td><td>Mistænkt eller manifest infektion</td><td>Mistænkt eller manifest infektion</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">infection<a name=\"RevisionIndication-infection\"> </a></td><td>Infection</td><td>Infection / Infektion</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">instability<a name=\"RevisionIndication-instability\"> </a></td><td>Instabilitet</td><td>Instabilitet</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">dislocation<a name=\"RevisionIndication-dislocation\"> </a></td><td>Luksation</td><td>Luksation</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">rotator_cuff<a name=\"RevisionIndication-rotator_cuff\"> </a></td><td>Rotator cuff ruptur / insufficiens</td><td>Rotator cuff ruptur / insufficiens</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">cavitas_erosion<a name=\"RevisionIndication-cavitas_erosion\"> </a></td><td>Cavitas erosion</td><td>Cavitas erosion</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">prosthetic_joint_fracture<a name=\"RevisionIndication-prosthetic_joint_fracture\"> </a></td><td>Protesenær fraktur</td><td>Protesenær fraktur</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">periprosthetic_fracture<a name=\"RevisionIndication-periprosthetic_fracture\"> </a></td><td>Periprostetisk fraktur</td><td>Periprostetisk fraktur</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">malplaced_component<a name=\"RevisionIndication-malplaced_component\"> </a></td><td>Malplaceret komponent</td><td>Malplaceret komponent</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">component_failure<a name=\"RevisionIndication-component_failure\"> </a></td><td>Komponentsvigt</td><td>Komponentsvigt</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">implant_failure<a name=\"RevisionIndication-implant_failure\"> </a></td><td>Implantat failure</td><td>Implantat failure</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">pain<a name=\"RevisionIndication-pain\"> </a></td><td>Pain</td><td>Pain / Smerter</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">constrained_mobility<a name=\"RevisionIndication-constrained_mobility\"> </a></td><td>Indskrænket bevægelighed</td><td>Indskrænket bevægelighed</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">arthrosis_progression<a name=\"RevisionIndication-arthrosis_progression\"> </a></td><td>Athrosis progression</td><td>Athrosis progression / Artrose progression</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">second_part_two_stage_revision<a name=\"RevisionIndication-second_part_two_stage_revision\"> </a></td><td>2. del af 2-stadie revision</td><td>2. del af 2-stadie revision</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">secondary_insertion<a name=\"RevisionIndication-secondary_insertion\"> </a></td><td>Sekundær isættelse</td><td>Sekundær isættelse</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">polyethylene_wear<a name=\"RevisionIndication-polyethylene_wear\"> </a></td><td>Polyethylenslitage</td><td>Polyethylenslitage</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">polyethylene_failure<a name=\"RevisionIndication-polyethylene_failure\"> </a></td><td>Polyethylen-svigt</td><td>Polyethylen-svigt</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  polyethylene_failure_tibia<a name=\"RevisionIndication-polyethylene_failure_tibia\"> </a></td><td>Polyethylen-svigt (tibia)</td><td>Polyethylen-svigt (tibia)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  polyethylene_failure_patella<a name=\"RevisionIndication-polyethylene_failure_patella\"> </a></td><td>Polyethylen-svigt (patella)</td><td>Polyethylen-svigt (patella)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">femur_fracture<a name=\"RevisionIndication-femur_fracture\"> </a></td><td>Femurfraktur</td><td>Femurfraktur</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/RevisionIndication"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "RevisionIndication"] ; # 
+  fhir:title [ fhir:v "Revision; indication"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-10-07T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Revision; indication"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "31"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "aseptic_solution" ] ;
+     fhir:display [ fhir:v "Aseptisk løsning" ] ;
+     fhir:definition [ fhir:v "Aseptisk løsning" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "glenoid" ] ;
+       fhir:display [ fhir:v "Glenoid" ] ;
+       fhir:definition [ fhir:v "Glenoid" ]
+     ] [
+       fhir:code [ fhir:v "humerus" ] ;
+       fhir:display [ fhir:v "Humerus" ] ;
+       fhir:definition [ fhir:v "Humerus" ]
+     ] [
+       fhir:code [ fhir:v "acetabulum" ] ;
+       fhir:display [ fhir:v "Acetabulum" ] ;
+       fhir:definition [ fhir:v "Acetabulum" ]
+     ] [
+       fhir:code [ fhir:v "acetabulum_osteolysis" ] ;
+       fhir:display [ fhir:v "Acetabulum med osteolyse" ] ;
+       fhir:definition [ fhir:v "Acetabulum med osteolyse" ]
+     ] [
+       fhir:code [ fhir:v "femur" ] ;
+       fhir:display [ fhir:v "Femur" ] ;
+       fhir:definition [ fhir:v "Femur" ]
+     ] [
+       fhir:code [ fhir:v "femur_osteolysis" ] ;
+       fhir:display [ fhir:v "Femur med osteolyse" ] ;
+       fhir:definition [ fhir:v "Femur med osteolyse" ]
+     ] [
+       fhir:code [ fhir:v "femur_acetabulum" ] ;
+       fhir:display [ fhir:v "Femur og acetabulum" ] ;
+       fhir:definition [ fhir:v "Femur og acetabulum" ]
+     ] [
+       fhir:code [ fhir:v "femur_acetabulum_osteolysis" ] ;
+       fhir:display [ fhir:v "Femur og acetabulum med osteolyse" ] ;
+       fhir:definition [ fhir:v "Femur og acetabulum med osteolyse" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "osteolysis" ] ;
+     fhir:display [ fhir:v "Osteolyse" ] ;
+     fhir:definition [ fhir:v "Osteolyse" ]
+  ] [
+     fhir:code [ fhir:v "suspected_infection" ] ;
+     fhir:display [ fhir:v "Mistænkt eller manifest infektion" ] ;
+     fhir:definition [ fhir:v "Mistænkt eller manifest infektion" ]
+  ] [
+     fhir:code [ fhir:v "infection" ] ;
+     fhir:display [ fhir:v "Infection" ] ;
+     fhir:definition [ fhir:v "Infection / Infektion" ]
+  ] [
+     fhir:code [ fhir:v "instability" ] ;
+     fhir:display [ fhir:v "Instabilitet" ] ;
+     fhir:definition [ fhir:v "Instabilitet" ]
+  ] [
+     fhir:code [ fhir:v "dislocation" ] ;
+     fhir:display [ fhir:v "Luksation" ] ;
+     fhir:definition [ fhir:v "Luksation" ]
+  ] [
+     fhir:code [ fhir:v "rotator_cuff" ] ;
+     fhir:display [ fhir:v "Rotator cuff ruptur / insufficiens" ] ;
+     fhir:definition [ fhir:v "Rotator cuff ruptur / insufficiens" ]
+  ] [
+     fhir:code [ fhir:v "cavitas_erosion" ] ;
+     fhir:display [ fhir:v "Cavitas erosion" ] ;
+     fhir:definition [ fhir:v "Cavitas erosion" ]
+  ] [
+     fhir:code [ fhir:v "prosthetic_joint_fracture" ] ;
+     fhir:display [ fhir:v "Protesenær fraktur" ] ;
+     fhir:definition [ fhir:v "Protesenær fraktur" ]
+  ] [
+     fhir:code [ fhir:v "periprosthetic_fracture" ] ;
+     fhir:display [ fhir:v "Periprostetisk fraktur" ] ;
+     fhir:definition [ fhir:v "Periprostetisk fraktur" ]
+  ] [
+     fhir:code [ fhir:v "malplaced_component" ] ;
+     fhir:display [ fhir:v "Malplaceret komponent" ] ;
+     fhir:definition [ fhir:v "Malplaceret komponent" ]
+  ] [
+     fhir:code [ fhir:v "component_failure" ] ;
+     fhir:display [ fhir:v "Komponentsvigt" ] ;
+     fhir:definition [ fhir:v "Komponentsvigt" ]
+  ] [
+     fhir:code [ fhir:v "implant_failure" ] ;
+     fhir:display [ fhir:v "Implantat failure" ] ;
+     fhir:definition [ fhir:v "Implantat failure" ]
+  ] [
+     fhir:code [ fhir:v "pain" ] ;
+     fhir:display [ fhir:v "Pain" ] ;
+     fhir:definition [ fhir:v "Pain / Smerter" ]
+  ] [
+     fhir:code [ fhir:v "constrained_mobility" ] ;
+     fhir:display [ fhir:v "Indskrænket bevægelighed" ] ;
+     fhir:definition [ fhir:v "Indskrænket bevægelighed" ]
+  ] [
+     fhir:code [ fhir:v "arthrosis_progression" ] ;
+     fhir:display [ fhir:v "Athrosis progression" ] ;
+     fhir:definition [ fhir:v "Athrosis progression / Artrose progression" ]
+  ] [
+     fhir:code [ fhir:v "second_part_two_stage_revision" ] ;
+     fhir:display [ fhir:v "2. del af 2-stadie revision" ] ;
+     fhir:definition [ fhir:v "2. del af 2-stadie revision" ]
+  ] [
+     fhir:code [ fhir:v "secondary_insertion" ] ;
+     fhir:display [ fhir:v "Sekundær isættelse" ] ;
+     fhir:definition [ fhir:v "Sekundær isættelse" ]
+  ] [
+     fhir:code [ fhir:v "polyethylene_wear" ] ;
+     fhir:display [ fhir:v "Polyethylenslitage" ] ;
+     fhir:definition [ fhir:v "Polyethylenslitage" ]
+  ] [
+     fhir:code [ fhir:v "polyethylene_failure" ] ;
+     fhir:display [ fhir:v "Polyethylen-svigt" ] ;
+     fhir:definition [ fhir:v "Polyethylen-svigt" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "polyethylene_failure_tibia" ] ;
+       fhir:display [ fhir:v "Polyethylen-svigt (tibia)" ] ;
+       fhir:definition [ fhir:v "Polyethylen-svigt (tibia)" ]
+     ] [
+       fhir:code [ fhir:v "polyethylene_failure_patella" ] ;
+       fhir:display [ fhir:v "Polyethylen-svigt (patella)" ] ;
+       fhir:definition [ fhir:v "Polyethylen-svigt (patella)" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "femur_fracture" ] ;
+     fhir:display [ fhir:v "Femurfraktur" ] ;
+     fhir:definition [ fhir:v "Femurfraktur" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

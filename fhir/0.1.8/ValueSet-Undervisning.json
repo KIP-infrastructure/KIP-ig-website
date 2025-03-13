@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "Undervisning",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Undervisning</b></p><a name=\"Undervisning\"> </a><a name=\"hcUndervisning\"> </a><a name=\"Undervisning-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-EducationType.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/EducationType</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-EducationType.html#EducationType-onsite\">onsite</a></td><td>Personligt fremmøde</td><td>Personligt fremmøde</td></tr><tr><td><a href=\"CodeSystem-EducationType.html#EducationType-elearn\">elearn</a></td><td>e-læring</td><td>e-læring</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-all\">all</a></td><td>Begge dele</td><td>All - used to indicate all values of a question</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/Undervisning",
+  "version" : "0.1.8",
+  "name" : "Undervisning",
+  "title" : "Undervisningstype",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2023-09-05T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Undervisningstype",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/EducationType",
+      "concept" : [{
+        "code" : "onsite",
+        "display" : "Personligt fremmøde"
+      },
+      {
+        "code" : "elearn",
+        "display" : "e-læring"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "all",
+        "display" : "Begge dele"
+      }]
+    }]
+  }
+}

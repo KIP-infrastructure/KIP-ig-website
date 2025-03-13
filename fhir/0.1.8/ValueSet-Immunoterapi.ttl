@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/Immunoterapi> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Immunoterapi"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Immunoterapi</b></p><a name=\"Immunoterapi\"> </a><a name=\"hcImmunoterapi\"> </a><a name=\"Immunoterapi-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-none\">none</a></td><td>Ingen immunoterapi</td><td>None - used to choose none of the available values</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-ATC.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ATC</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01FA01\">L01FA01</a></td><td>Rituximab</td><td>L01FA01 - rituximab</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01FA03\">L01FA03</a></td><td>Obinutuzumab</td><td>L01FA03 - obinutuzumab</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01FA02\">L01FA02</a></td><td>Ofatumumab</td><td>L01FA02 - ofatumumab</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L04AA\">L04AA</a></td><td>MabCampath</td><td>L04AA - Selective immunosuppressants</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01FX05\">L01FX05</a></td><td>Brentuximab vedotin (Adcetris)</td><td>L01FX05 - brentuximab vedotin</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01FX14\">L01FX14</a></td><td>Polatuzumab incl evt. Rituximab</td><td>L01FX14 - polatuzumab vedotin</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01FF\">L01FF</a></td><td>PD(L)1 hæmmere</td><td>L01FF - PD-1/PDL-1 (Programmed cell death protein 1/death ligand 1) inhibitors</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-TreatmentUnspecified.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/TreatmentUnspecified</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-TreatmentUnspecified.html#TreatmentUnspecified-glofitamab\">glofitamab</a></td><td>Glofitamabel Epcoritamab Incl evt. Rituximab</td><td>Glofitamab</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/Immunoterapi"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "Immunoterapi"] ; # 
+  fhir:title [ fhir:v "Immunoterapi"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-07-18T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Immunoterapi"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "none" ] ;
+         fhir:display [ fhir:v "Ingen immunoterapi" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/ATC"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "L01FA01" ] ;
+         fhir:display [ fhir:v "Rituximab" ]
+       ] [
+         fhir:code [ fhir:v "L01FA03" ] ;
+         fhir:display [ fhir:v "Obinutuzumab" ]
+       ] [
+         fhir:code [ fhir:v "L01FA02" ] ;
+         fhir:display [ fhir:v "Ofatumumab" ]
+       ] [
+         fhir:code [ fhir:v "L04AA" ] ;
+         fhir:display [ fhir:v "MabCampath" ]
+       ] [
+         fhir:code [ fhir:v "L01FX05" ] ;
+         fhir:display [ fhir:v "Brentuximab vedotin (Adcetris)" ]
+       ] [
+         fhir:code [ fhir:v "L01FX14" ] ;
+         fhir:display [ fhir:v "Polatuzumab incl evt. Rituximab" ]
+       ] [
+         fhir:code [ fhir:v "L01FF" ] ;
+         fhir:display [ fhir:v "PD(L)1 hæmmere" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/TreatmentUnspecified"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "glofitamab" ] ;
+         fhir:display [ fhir:v "Glofitamabel Epcoritamab Incl evt. Rituximab" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

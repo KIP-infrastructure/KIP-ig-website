@@ -1,0 +1,87 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/WalchClassification> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "WalchClassification"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem WalchClassification</b></p><a name=\"WalchClassification\"> </a><a name=\"hcWalchClassification\"> </a><a name=\"WalchClassification-en-US\"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/WalchClassification</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">type_a<a name=\"WalchClassification-type_a\"> </a></td><td>Type A</td><td>Type A: centered humeral head, concentric wear, no subluxation of the humeral head</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  type_a1<a name=\"WalchClassification-type_a1\"> </a></td><td>Type A1</td><td>Type A1: minor central erosion</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  type_a2<a name=\"WalchClassification-type_a2\"> </a></td><td>Type A2</td><td>Type A2: major central erosion, humeral head protruding into the glenoid cavity</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">type_b<a name=\"WalchClassification-type_b\"> </a></td><td>Type B</td><td>Type B: humeral head subluxated posteriorly, biconcave glenoid with asymmetric wear</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  type_b1<a name=\"WalchClassification-type_b1\"> </a></td><td>Type B1</td><td>Type B1: narrowing of the posterior joint space, subchondral sclerosis, osteophytes</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  type_b2<a name=\"WalchClassification-type_b2\"> </a></td><td>Type B2</td><td>Type B2: biconcave aspect of the glenoid with posterior rim erosion and retroverted glenoid</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  type_b3<a name=\"WalchClassification-type_b3\"> </a></td><td>Type B3</td><td>Type B3: monoconcave and posterior wear with &gt;15° retroversion or &gt;70% posterior humeral head subluxation, or both</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">type_c<a name=\"WalchClassification-type_c\"> </a></td><td>Type C</td><td>Type C: Dysplastic glenoid with at least 25° of retroversion not caused by erosion</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  type_c1<a name=\"WalchClassification-type_c1\"> </a></td><td>Type C1</td><td>Type C1: dysplastic glenoid with &gt;25° retroversion regardless of the erosion</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  type_c2<a name=\"WalchClassification-type_c2\"> </a></td><td>Type C2</td><td>Type C2: biconcave, posterior bone loss, posterior translation of the humeral head</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">type_d<a name=\"WalchClassification-type_d\"> </a></td><td>Type D</td><td>Type D: glenoid anteversion or anterior humeral head subluxation &lt;40°</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/WalchClassification"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "WalchClassification"] ; # 
+  fhir:title [ fhir:v "Walch classification"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-10-06T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Walch classification; Link: https://radiopaedia.org/articles/walch-classification-of-glenoid-morphology-1"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "11"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "type_a" ] ;
+     fhir:display [ fhir:v "Type A" ] ;
+     fhir:definition [ fhir:v "Type A: centered humeral head, concentric wear, no subluxation of the humeral head" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "type_a1" ] ;
+       fhir:display [ fhir:v "Type A1" ] ;
+       fhir:definition [ fhir:v "Type A1: minor central erosion" ]
+     ] [
+       fhir:code [ fhir:v "type_a2" ] ;
+       fhir:display [ fhir:v "Type A2" ] ;
+       fhir:definition [ fhir:v "Type A2: major central erosion, humeral head protruding into the glenoid cavity" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "type_b" ] ;
+     fhir:display [ fhir:v "Type B" ] ;
+     fhir:definition [ fhir:v "Type B: humeral head subluxated posteriorly, biconcave glenoid with asymmetric wear" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "type_b1" ] ;
+       fhir:display [ fhir:v "Type B1" ] ;
+       fhir:definition [ fhir:v "Type B1: narrowing of the posterior joint space, subchondral sclerosis, osteophytes" ]
+     ] [
+       fhir:code [ fhir:v "type_b2" ] ;
+       fhir:display [ fhir:v "Type B2" ] ;
+       fhir:definition [ fhir:v "Type B2: biconcave aspect of the glenoid with posterior rim erosion and retroverted glenoid" ]
+     ] [
+       fhir:code [ fhir:v "type_b3" ] ;
+       fhir:display [ fhir:v "Type B3" ] ;
+       fhir:definition [ fhir:v "Type B3: monoconcave and posterior wear with >15° retroversion or >70% posterior humeral head subluxation, or both" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "type_c" ] ;
+     fhir:display [ fhir:v "Type C" ] ;
+     fhir:definition [ fhir:v "Type C: Dysplastic glenoid with at least 25° of retroversion not caused by erosion" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "type_c1" ] ;
+       fhir:display [ fhir:v "Type C1" ] ;
+       fhir:definition [ fhir:v "Type C1: dysplastic glenoid with >25° retroversion regardless of the erosion" ]
+     ] [
+       fhir:code [ fhir:v "type_c2" ] ;
+       fhir:display [ fhir:v "Type C2" ] ;
+       fhir:definition [ fhir:v "Type C2: biconcave, posterior bone loss, posterior translation of the humeral head" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "type_d" ] ;
+     fhir:display [ fhir:v "Type D" ] ;
+     fhir:definition [ fhir:v "Type D: glenoid anteversion or anterior humeral head subluxation <40°" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

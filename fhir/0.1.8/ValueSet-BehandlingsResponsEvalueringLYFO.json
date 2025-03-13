@@ -1,0 +1,75 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "BehandlingsResponsEvalueringLYFO",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet BehandlingsResponsEvalueringLYFO</b></p><a name=\"BehandlingsResponsEvalueringLYFO\"> </a><a name=\"hcBehandlingsResponsEvalueringLYFO\"> </a><a name=\"BehandlingsResponsEvalueringLYFO-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-TreatmentResponseEvaluation.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/TreatmentResponseEvaluation</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-complete_remission_metabolic_structurally\">complete_remission_metabolic_structurally</a></td><td>CR (metabolisk og skrukturelt CR, bedømt med PET/CT)</td><td>Metabolic and strukturally CR / CR (metabolisk og skrukturelt CR, bedømt med PET/CT)</td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-complete_remission_metabolic\">complete_remission_metabolic</a></td><td>CR (metabolisk CR, men med strukturel restsygdom, bedømt med PET/CT)</td><td>Metabolic CR / CR (metabolisk CR, men med strukturel restsygdom, bedømt med PET/CT)</td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-complete_remission\">complete_remission</a></td><td>CR (bedømt med CT og/eller klinisk)</td><td>Complete remission (CR)</td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-uncertain_complete_remission\">uncertain_complete_remission</a></td><td>Cru</td><td>Uncertain complete remission (CRu)</td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-partial_remission\">partial_remission</a></td><td>PR</td><td>Partial remission (PR)</td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-stable_disease\">stable_disease</a></td><td>SD/NC</td><td>Stable disease (SD/NC)</td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-progressive_disease\">progressive_disease</a></td><td>PD</td><td>Progressive disease (PD)</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-not_performed\">not_performed</a></td><td>Ej evalueret</td><td>Not performed - used to indicate, if a procedure or test has not been performed</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-Complications.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Complications</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-mors\">mors</a></td><td>Mors (før evaluering)</td><td>Mors, uventet</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/BehandlingsResponsEvalueringLYFO",
+  "version" : "0.1.8",
+  "name" : "BehandlingsResponsEvalueringLYFO",
+  "title" : "Responsevaluering på behandling (LYFO)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-07-18T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Responsevaluering på behandling (LYFO)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/TreatmentResponseEvaluation",
+      "concept" : [{
+        "code" : "complete_remission_metabolic_structurally",
+        "display" : "CR (metabolisk og skrukturelt CR, bedømt med PET/CT)"
+      },
+      {
+        "code" : "complete_remission_metabolic",
+        "display" : "CR (metabolisk CR, men med strukturel restsygdom, bedømt med PET/CT)"
+      },
+      {
+        "code" : "complete_remission",
+        "display" : "CR (bedømt med CT og/eller klinisk)"
+      },
+      {
+        "code" : "uncertain_complete_remission",
+        "display" : "Cru"
+      },
+      {
+        "code" : "partial_remission",
+        "display" : "PR"
+      },
+      {
+        "code" : "stable_disease",
+        "display" : "SD/NC"
+      },
+      {
+        "code" : "progressive_disease",
+        "display" : "PD"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "not_performed",
+        "display" : "Ej evalueret"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/Complications",
+      "concept" : [{
+        "code" : "mors",
+        "display" : "Mors (før evaluering)"
+      }]
+    }]
+  }
+}

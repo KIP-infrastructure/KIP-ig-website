@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/ECOG> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ECOG"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ECOG</b></p><a name=\"ECOG\"> </a><a name=\"hcECOG\"> </a><a name=\"ECOG-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-PerformanceStatusScore.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/PerformanceStatusScore</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-PerformanceStatusScore.html#PerformanceStatusScore-grade_0\">grade_0</a></td><td>0: Ingen symptomer</td><td>Fully active, able to carry on all pre-disease performance without restriction</td></tr><tr><td><a href=\"CodeSystem-PerformanceStatusScore.html#PerformanceStatusScore-grade_1\">grade_1</a></td><td>1: Klarer ikke svær fysisk aktivitet</td><td>Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g., light house work, office work</td></tr><tr><td><a href=\"CodeSystem-PerformanceStatusScore.html#PerformanceStatusScore-grade_2\">grade_2</a></td><td>2: Klarer ikke moderat fysisk aktivitet</td><td>Ambulatory and capable of all selfcare but unable to carry out any work activities; up and about more than 50% of waking hours</td></tr><tr><td><a href=\"CodeSystem-PerformanceStatusScore.html#PerformanceStatusScore-grade_3\">grade_3</a></td><td>3: Klarer ikke let fysisk aktivitet</td><td>Capable of only limited selfcare; confined to bed or chair more than 50% of waking hours</td></tr><tr><td><a href=\"CodeSystem-PerformanceStatusScore.html#PerformanceStatusScore-grade_4\">grade_4</a></td><td>4: Sengeliggende</td><td>Completely disabled; cannot carry on any selfcare; totally confined to bed or chair</td></tr><tr><td><a href=\"CodeSystem-PerformanceStatusScore.html#PerformanceStatusScore-grade_5\">grade_5</a></td><td>5: Død</td><td>Dead</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/ECOG"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "ECOG"] ; # 
+  fhir:title [ fhir:v "ECOG Performance Status Scale"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-06-08T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Valueset for ECOG skalaen"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/PerformanceStatusScore"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "grade_0" ] ;
+         fhir:display [ fhir:v "0: Ingen symptomer" ]
+       ] [
+         fhir:code [ fhir:v "grade_1" ] ;
+         fhir:display [ fhir:v "1: Klarer ikke svær fysisk aktivitet" ]
+       ] [
+         fhir:code [ fhir:v "grade_2" ] ;
+         fhir:display [ fhir:v "2: Klarer ikke moderat fysisk aktivitet" ]
+       ] [
+         fhir:code [ fhir:v "grade_3" ] ;
+         fhir:display [ fhir:v "3: Klarer ikke let fysisk aktivitet" ]
+       ] [
+         fhir:code [ fhir:v "grade_4" ] ;
+         fhir:display [ fhir:v "4: Sengeliggende" ]
+       ] [
+         fhir:code [ fhir:v "grade_5" ] ;
+         fhir:display [ fhir:v "5: Død" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

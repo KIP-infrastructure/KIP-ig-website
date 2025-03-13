@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/HarrisHipScorePublicTransportation> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HarrisHipScorePublicTransportation"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem HarrisHipScorePublicTransportation</b></p><a name=\"HarrisHipScorePublicTransportation\"> </a><a name=\"hcHarrisHipScorePublicTransportation\"> </a><a name=\"HarrisHipScorePublicTransportation-en-US\"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/HarrisHipScorePublicTransportation</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"HarrisHipScorePublicTransportation-1\"> </a></td><td>Able to use transportation (bus)</td><td>Able to use transportation (bus) (1)</td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"HarrisHipScorePublicTransportation-0\"> </a></td><td>Unable to use public transportation (bus)</td><td>Unable to use public transportation (bus) (0)</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/HarrisHipScorePublicTransportation"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "HarrisHipScorePublicTransportation"] ; # 
+  fhir:title [ fhir:v "Harris Hip Score (HHS) - Public transportation"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-07-06T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Harris Hip Score (HHS) - Public transportation. Link: https://www.orthopaedicscore.com/scorepages/harris_hip_score.html"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "Able to use transportation (bus)" ] ;
+     fhir:definition [ fhir:v "Able to use transportation (bus) (1)" ]
+  ] [
+     fhir:code [ fhir:v "0" ] ;
+     fhir:display [ fhir:v "Unable to use public transportation (bus)" ] ;
+     fhir:definition [ fhir:v "Unable to use public transportation (bus) (0)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

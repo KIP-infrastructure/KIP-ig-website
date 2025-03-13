@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "PerioderMK",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet PerioderMK</b></p><a name=\"PerioderMK\"> </a><a name=\"hcPerioderMK\"> </a><a name=\"PerioderMK-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Periods.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Periods</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Periods.html#Periods-month\">month</a></td><td>Måned</td><td>Måned</td></tr><tr><td><a href=\"CodeSystem-Periods.html#Periods-quarter\">quarter</a></td><td>Kvartal</td><td>Kvartal</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/PerioderMK",
+  "version" : "0.1.8",
+  "name" : "PerioderMK",
+  "title" : "Perioder Måned / Kvartal",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-11-21T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Perioder Måned / Kvartal",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/Periods",
+      "concept" : [{
+        "code" : "month",
+        "display" : "Måned"
+      },
+      {
+        "code" : "quarter",
+        "display" : "Kvartal"
+      }]
+    }]
+  }
+}

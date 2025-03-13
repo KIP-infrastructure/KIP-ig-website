@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/FISHSamples> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "FISHSamples"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet FISHSamples</b></p><a name=\"FISHSamples\"> </a><a name=\"hcFISHSamples\"> </a><a name=\"FISHSamples-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-FISHVariables.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/FISHVariables</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-igh_fgfr3\">igh_fgfr3</a></td><td>t(4;14)/IGH-FGFR3</td><td>t(4;14)/IGH-FGFR3</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-igh_ccnd1\">igh_ccnd1</a></td><td>t(11;14)/IGH-CCND1</td><td>t(11;14)/IGH-CCND1</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-igh_mbf\">igh_mbf</a></td><td>t(14;16)/IGH-MBF</td><td>t(14;16)/IGH-MBF</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-igh_mafb\">igh_mafb</a></td><td>t(14;20)/IGH-MAFB</td><td>t(14;20)/IGH-MAFB</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-igh_split_signal\">igh_split_signal</a></td><td>IgH split signal</td><td>IgH split signal</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-13q_deletion\">13q_deletion</a></td><td>13q deletion</td><td>13q deletion</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-tp53_deletion\">tp53_deletion</a></td><td>TP53 deletion</td><td>TP53 deletion</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-1q21\">1q21</a></td><td>1q21 amplifikation</td><td>1q21 amplifikation</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-11q22\">11q22</a></td><td>11q22/ATM amplifikation</td><td>11q22/ATM amplifikation</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Anden IGH translokation</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/FISHSamples"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "FISHSamples"] ; # 
+  fhir:title [ fhir:v "Anvendte FISH prober"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-07-15T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Anvendte FISH prober"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/FISHVariables"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "igh_fgfr3" ] ;
+         fhir:display [ fhir:v "t(4;14)/IGH-FGFR3" ]
+       ] [
+         fhir:code [ fhir:v "igh_ccnd1" ] ;
+         fhir:display [ fhir:v "t(11;14)/IGH-CCND1" ]
+       ] [
+         fhir:code [ fhir:v "igh_mbf" ] ;
+         fhir:display [ fhir:v "t(14;16)/IGH-MBF" ]
+       ] [
+         fhir:code [ fhir:v "igh_mafb" ] ;
+         fhir:display [ fhir:v "t(14;20)/IGH-MAFB" ]
+       ] [
+         fhir:code [ fhir:v "igh_split_signal" ] ;
+         fhir:display [ fhir:v "IgH split signal" ]
+       ] [
+         fhir:code [ fhir:v "13q_deletion" ] ;
+         fhir:display [ fhir:v "13q deletion" ]
+       ] [
+         fhir:code [ fhir:v "tp53_deletion" ] ;
+         fhir:display [ fhir:v "TP53 deletion" ]
+       ] [
+         fhir:code [ fhir:v "1q21" ] ;
+         fhir:display [ fhir:v "1q21 amplifikation" ]
+       ] [
+         fhir:code [ fhir:v "11q22" ] ;
+         fhir:display [ fhir:v "11q22/ATM amplifikation" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "other" ] ;
+         fhir:display [ fhir:v "Anden IGH translokation" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/MedicalTreatmentStartOf> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MedicalTreatmentStartOf"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem MedicalTreatmentStartOf</b></p><a name=\"MedicalTreatmentStartOf\"> </a><a name=\"hcMedicalTreatmentStartOf\"> </a><a name=\"MedicalTreatmentStartOf-en-US\"> </a><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/MedicalTreatmentStartOf</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">before_operation<a name=\"MedicalTreatmentStartOf-before_operation\"> </a></td><td>Before operation</td><td>Before operation</td></tr><tr><td style=\"white-space:nowrap\">after_operation<a name=\"MedicalTreatmentStartOf-after_operation\"> </a></td><td>After operation</td><td>After operation</td></tr><tr><td style=\"white-space:nowrap\">day_after_operation<a name=\"MedicalTreatmentStartOf-day_after_operation\"> </a></td><td>The day after the operation</td><td>The day after the operation</td></tr><tr><td style=\"white-space:nowrap\">during_admission<a name=\"MedicalTreatmentStartOf-during_admission\"> </a></td><td>During admission</td><td>During admission</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/MedicalTreatmentStartOf"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "MedicalTreatmentStartOf"] ; # 
+  fhir:title [ fhir:v "Medical treatment: when did the treatment begin"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-07-06T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Medical treatment: when did the treatment begin compared to operation/procedure"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "before_operation" ] ;
+     fhir:display [ fhir:v "Before operation" ] ;
+     fhir:definition [ fhir:v "Before operation" ]
+  ] [
+     fhir:code [ fhir:v "after_operation" ] ;
+     fhir:display [ fhir:v "After operation" ] ;
+     fhir:definition [ fhir:v "After operation" ]
+  ] [
+     fhir:code [ fhir:v "day_after_operation" ] ;
+     fhir:display [ fhir:v "The day after the operation" ] ;
+     fhir:definition [ fhir:v "The day after the operation" ]
+  ] [
+     fhir:code [ fhir:v "during_admission" ] ;
+     fhir:display [ fhir:v "During admission" ] ;
+     fhir:definition [ fhir:v "During admission" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="Radioimmunoterapi"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet Radioimmunoterapi</b></p><a name="Radioimmunoterapi"> </a><a name="hcRadioimmunoterapi"> </a><a name="Radioimmunoterapi-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-GenericValues.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-GenericValues.html#GenericValues-none">none</a></td><td>Ingen radioimmunoterapi</td><td>None - used to choose none of the available values</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-ATC.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/ATC</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-ATC.html#ATC-V10XA53">V10XA53</a></td><td>Bexxar</td><td>V10XA53 - tositumomab/iodine (131I) tositumomab</td></tr><tr><td><a href="CodeSystem-ATC.html#ATC-V10XX02">V10XX02</a></td><td>Zevalin</td><td>V10XX02 - ibritumomab tiuxetan (90Y)</td></tr><tr><td><a href="CodeSystem-ATC.html#ATC-V10X">V10X</a></td><td>Anden RIT</td><td>V10X - OTHER THERAPEUTIC RADIOPHARMACEUTICALS</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.rkkp.dk/fhir/ValueSet/Radioimmunoterapi"/>
+  <version value="0.1.8"/>
+  <name value="Radioimmunoterapi"/>
+  <title value="Radioimmunoterapi"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-07-18T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Radioimmunoterapi"/>
+  <compose>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"/>
+      <concept>
+        <code value="none"/>
+        <display value="Ingen radioimmunoterapi"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/ATC"/>
+      <concept>
+        <code value="V10XA53"/>
+        <display value="Bexxar"/>
+      </concept>
+      <concept>
+        <code value="V10XX02"/>
+        <display value="Zevalin"/>
+      </concept>
+      <concept>
+        <code value="V10X"/>
+        <display value="Anden RIT"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/LokalBloedningDAP> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "LokalBloedningDAP"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet LokalBloedningDAP</b></p><a name=\"LokalBloedningDAP\"> </a><a name=\"hcLokalBloedningDAP\"> </a><a name=\"LokalBloedningDAP-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-BleedingStroke.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/BleedingStroke</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-BleedingStroke.html#BleedingStroke-hi_1\">hi_1</a></td><td>HI 1</td><td>HI 1</td></tr><tr><td><a href=\"CodeSystem-BleedingStroke.html#BleedingStroke-hi_2\">hi_2</a></td><td>HI 2</td><td>HI 2</td></tr><tr><td><a href=\"CodeSystem-BleedingStroke.html#BleedingStroke-ph_1\">ph_1</a></td><td>PH 1</td><td>PH 1</td></tr><tr><td><a href=\"CodeSystem-BleedingStroke.html#BleedingStroke-ph_2\">ph_2</a></td><td>PH 2</td><td>PH 2</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/LokalBloedningDAP"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "LokalBloedningDAP"] ; # 
+  fhir:title [ fhir:v "Lokal blødning (DAP)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-09-02T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Lokal blødning fundet i forbindelse med billeddiagnostisk undersøgelse (DAP)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/BleedingStroke"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "hi_1" ] ;
+         fhir:display [ fhir:v "HI 1" ]
+       ] [
+         fhir:code [ fhir:v "hi_2" ] ;
+         fhir:display [ fhir:v "HI 2" ]
+       ] [
+         fhir:code [ fhir:v "ph_1" ] ;
+         fhir:display [ fhir:v "PH 1" ]
+       ] [
+         fhir:code [ fhir:v "ph_2" ] ;
+         fhir:display [ fhir:v "PH 2" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

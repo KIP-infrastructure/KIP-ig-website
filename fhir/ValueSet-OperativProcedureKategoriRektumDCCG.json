@@ -1,0 +1,56 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "OperativProcedureKategoriRektumDCCG",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet OperativProcedureKategoriRektumDCCG</b></p><a name=\"OperativProcedureKategoriRektumDCCG\"> </a><a name=\"hcOperativProcedureKategoriRektumDCCG\"> </a><a name=\"OperativProcedureKategoriRektumDCCG-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-ProcedureType.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-tumor_resection\">tumor_resection</a></td><td>Resektion af tumorbærende tarmsegment</td><td>Resektion af tumorbærende tarmsegment</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-local_resection_ex_tes\">local_resection_ex_tes</a></td><td>Endoskopisk lokalresektion ekskl. TES</td><td>Local ressection (excl. TES) / Endoskopisk lokalresektion (ekskl. TES)</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-local_resection_tes\">local_resection_tes</a></td><td>Transanal endoskopisk resektion (TES)</td><td>Local ressection followed by TES / Lokalresektion efterfulgt af TES</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Anden/aflastende procedure</td><td>Other - used to choose unspecific value not in a valueset</td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-not_performed\">not_performed</a></td><td>Planlagt operation ikke gennemført</td><td>Not performed - used to indicate, if a procedure or test has not been performed</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/OperativProcedureKategoriRektumDCCG",
+  "version" : "0.1.8",
+  "name" : "OperativProcedureKategoriRektumDCCG",
+  "title" : "Operativ procedurekategori (Rektum) (DCCG)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2023-04-13T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Operativ procedurekategori (Rektum) (DCCG)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType",
+      "concept" : [{
+        "code" : "tumor_resection",
+        "display" : "Resektion af tumorbærende tarmsegment"
+      },
+      {
+        "code" : "local_resection_ex_tes",
+        "display" : "Endoskopisk lokalresektion ekskl. TES"
+      },
+      {
+        "code" : "local_resection_tes",
+        "display" : "Transanal endoskopisk resektion (TES)"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "other",
+        "display" : "Anden/aflastende procedure"
+      },
+      {
+        "code" : "not_performed",
+        "display" : "Planlagt operation ikke gennemført"
+      }]
+    }]
+  }
+}

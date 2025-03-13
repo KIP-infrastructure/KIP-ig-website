@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/CoronaryArteryGraph> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CoronaryArteryGraph"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet CoronaryArteryGraph</b></p><a name=\"CoronaryArteryGraph\"> </a><a name=\"hcCoronaryArteryGraph\"> </a><a name=\"CoronaryArteryGraph-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-CoronaryArteryGraph.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/CoronaryArteryGraph</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-CoronaryArteryGraph.html#CoronaryArteryGraph-coronary_artery_graph_instant_KAG\">coronary_artery_graph_instant_KAG</a></td><td>Meget Høj Risiko: Akut KAG</td><td>Do a KAG Instantantly</td></tr><tr><td><a href=\"CodeSystem-CoronaryArteryGraph.html#CoronaryArteryGraph-coronary_artery_graph_high_risk\">coronary_artery_graph_high_risk</a></td><td>Høj risiko: KAG &lt; 24 timer</td><td>Do a KAG within 24 hours</td></tr><tr><td><a href=\"CodeSystem-CoronaryArteryGraph.html#CoronaryArteryGraph-coronary_artery_graph_low_risk\">coronary_artery_graph_low_risk</a></td><td>Lav risiko: Selektiv invasiv strategi</td><td>Selectiv strategy</td></tr><tr><td><a href=\"CodeSystem-CoronaryArteryGraph.html#CoronaryArteryGraph-coronary_artery_graph_unknown_risk\">coronary_artery_graph_unknown_risk</a></td><td>Risikoestimering er ikke foretaget: Klinisk vurderet at KAG ikke er relevant</td><td>Assment that KAG isnt relevent</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/CoronaryArteryGraph"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "CoronaryArteryGraph"] ; # 
+  fhir:title [ fhir:v "KAG vurdering"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-06-07T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Skal patienten få et KAG"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/CoronaryArteryGraph"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "coronary_artery_graph_instant_KAG" ] ;
+         fhir:display [ fhir:v "Meget Høj Risiko: Akut KAG" ]
+       ] [
+         fhir:code [ fhir:v "coronary_artery_graph_high_risk" ] ;
+         fhir:display [ fhir:v "Høj risiko: KAG < 24 timer" ]
+       ] [
+         fhir:code [ fhir:v "coronary_artery_graph_low_risk" ] ;
+         fhir:display [ fhir:v "Lav risiko: Selektiv invasiv strategi" ]
+       ] [
+         fhir:code [ fhir:v "coronary_artery_graph_unknown_risk" ] ;
+         fhir:display [ fhir:v "Risikoestimering er ikke foretaget: Klinisk vurderet at KAG ikke er relevant" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

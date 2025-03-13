@@ -1,0 +1,113 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/AnasthesiaService> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AnasthesiaService"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem AnasthesiaService</b></p><a name=\"AnasthesiaService\"> </a><a name=\"hcAnasthesiaService\"> </a><a name=\"AnasthesiaService-en-US\"> </a><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/AnasthesiaService</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">gen_anesthesia<a name=\"AnasthesiaService-gen_anesthesia\"> </a></td><td>General anesthesia</td><td>Generel anæstesi / SNOMED-CT: 50697003</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">gen_anesthesia_spc<a name=\"AnasthesiaService-gen_anesthesia_spc\"> </a></td><td>General anasthesia after insufficient local anasthesia and/or central block</td><td>Generel anæstesi efter insufficient regional anæstesi og/eller central blokade</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">local_anesthesia<a name=\"AnasthesiaService-local_anesthesia\"> </a></td><td>Local anesthesia</td><td>Lokal anæstesi / SNOMED-CT: 386761002</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">local_analgesia<a name=\"AnasthesiaService-local_analgesia\"> </a></td><td>Local analgesia</td><td>Lokal analgesi</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">nerve_block<a name=\"AnasthesiaService-nerve_block\"> </a></td><td>Peripheral nerve block</td><td>Perifer nerveblokade</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">central_block<a name=\"AnasthesiaService-central_block\"> </a></td><td>Central block</td><td>Central blokade</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">sedation<a name=\"AnasthesiaService-sedation\"> </a></td><td>Sedation</td><td>Sedation</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">surveillance<a name=\"AnasthesiaService-surveillance\"> </a></td><td>Surveillance</td><td>Overvågning</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">regional<a name=\"AnasthesiaService-regional\"> </a></td><td>Regional (spinal/epidural)</td><td>Regional (spinal/epidural) / SNOMED-CT: 231262009</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  spinal<a name=\"AnasthesiaService-spinal\"> </a></td><td>Spinal</td><td>Spinal</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  epidural<a name=\"AnasthesiaService-epidural\"> </a></td><td>Epidural</td><td>Epidural</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    normotensive<a name=\"AnasthesiaService-normotensive\"> </a></td><td>Normotensive epidural anaesthesia</td><td>Normotensive epidural anaesthesia</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    hypotensive<a name=\"AnasthesiaService-hypotensive\"> </a></td><td>Hypotensive epidural anaesthesia</td><td>Hypotensive epidural anaesthesia</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    normo_hypotensive<a name=\"AnasthesiaService-normo_hypotensive\"> </a></td><td>Normo- or Hypotensive epidural anaesthesia</td><td>Normo- eller Hypotensiv epidural anæstesi</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">universal<a name=\"AnasthesiaService-universal\"> </a></td><td>Universal</td><td>Universal</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">combined<a name=\"AnasthesiaService-combined\"> </a></td><td>Combined</td><td>Combined</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">uni_combined<a name=\"AnasthesiaService-uni_combined\"> </a></td><td>Universal_Combined</td><td>Universel/Kombineret</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">rus<a name=\"AnasthesiaService-rus\"> </a></td><td>Rus</td><td>Rus</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/AnasthesiaService"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "AnasthesiaService"] ; # 
+  fhir:title [ fhir:v "Anæstesiydelse"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-09T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Anæstesiydelse"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "18"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "gen_anesthesia" ] ;
+     fhir:display [ fhir:v "General anesthesia" ] ;
+     fhir:definition [ fhir:v "Generel anæstesi / SNOMED-CT: 50697003" ]
+  ] [
+     fhir:code [ fhir:v "gen_anesthesia_spc" ] ;
+     fhir:display [ fhir:v "General anasthesia after insufficient local anasthesia and/or central block" ] ;
+     fhir:definition [ fhir:v "Generel anæstesi efter insufficient regional anæstesi og/eller central blokade" ]
+  ] [
+     fhir:code [ fhir:v "local_anesthesia" ] ;
+     fhir:display [ fhir:v "Local anesthesia" ] ;
+     fhir:definition [ fhir:v "Lokal anæstesi / SNOMED-CT: 386761002" ]
+  ] [
+     fhir:code [ fhir:v "local_analgesia" ] ;
+     fhir:display [ fhir:v "Local analgesia" ] ;
+     fhir:definition [ fhir:v "Lokal analgesi" ]
+  ] [
+     fhir:code [ fhir:v "nerve_block" ] ;
+     fhir:display [ fhir:v "Peripheral nerve block" ] ;
+     fhir:definition [ fhir:v "Perifer nerveblokade" ]
+  ] [
+     fhir:code [ fhir:v "central_block" ] ;
+     fhir:display [ fhir:v "Central block" ] ;
+     fhir:definition [ fhir:v "Central blokade" ]
+  ] [
+     fhir:code [ fhir:v "sedation" ] ;
+     fhir:display [ fhir:v "Sedation" ] ;
+     fhir:definition [ fhir:v "Sedation" ]
+  ] [
+     fhir:code [ fhir:v "surveillance" ] ;
+     fhir:display [ fhir:v "Surveillance" ] ;
+     fhir:definition [ fhir:v "Overvågning" ]
+  ] [
+     fhir:code [ fhir:v "regional" ] ;
+     fhir:display [ fhir:v "Regional (spinal/epidural)" ] ;
+     fhir:definition [ fhir:v "Regional (spinal/epidural) / SNOMED-CT: 231262009" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "spinal" ] ;
+       fhir:display [ fhir:v "Spinal" ] ;
+       fhir:definition [ fhir:v "Spinal" ]
+     ] [
+       fhir:code [ fhir:v "epidural" ] ;
+       fhir:display [ fhir:v "Epidural" ] ;
+       fhir:definition [ fhir:v "Epidural" ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "normotensive" ] ;
+         fhir:display [ fhir:v "Normotensive epidural anaesthesia" ] ;
+         fhir:definition [ fhir:v "Normotensive epidural anaesthesia" ]
+       ] [
+         fhir:code [ fhir:v "hypotensive" ] ;
+         fhir:display [ fhir:v "Hypotensive epidural anaesthesia" ] ;
+         fhir:definition [ fhir:v "Hypotensive epidural anaesthesia" ]
+       ] [
+         fhir:code [ fhir:v "normo_hypotensive" ] ;
+         fhir:display [ fhir:v "Normo- or Hypotensive epidural anaesthesia" ] ;
+         fhir:definition [ fhir:v "Normo- eller Hypotensiv epidural anæstesi" ]
+       ] )
+     ] )
+  ] [
+     fhir:code [ fhir:v "universal" ] ;
+     fhir:display [ fhir:v "Universal" ] ;
+     fhir:definition [ fhir:v "Universal" ]
+  ] [
+     fhir:code [ fhir:v "combined" ] ;
+     fhir:display [ fhir:v "Combined" ] ;
+     fhir:definition [ fhir:v "Combined" ]
+  ] [
+     fhir:code [ fhir:v "uni_combined" ] ;
+     fhir:display [ fhir:v "Universal_Combined" ] ;
+     fhir:definition [ fhir:v "Universel/Kombineret" ]
+  ] [
+     fhir:code [ fhir:v "rus" ] ;
+     fhir:display [ fhir:v "Rus" ] ;
+     fhir:definition [ fhir:v "Rus" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

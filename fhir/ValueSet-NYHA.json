@@ -1,0 +1,49 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "NYHA",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet NYHA</b></p><a name=\"NYHA\"> </a><a name=\"hcNYHA\"> </a><a name=\"NYHA-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-NYHA.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/NYHA</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-NYHA.html#NYHA-NYHAI\">NYHAI</a></td><td>NYHA klasse I</td><td>No limitation of physical activity. Ordinary physical activity does not cause undue fatigue, palpitation, dyspnea (shortness of breath).</td></tr><tr><td><a href=\"CodeSystem-NYHA.html#NYHA-NYHAII\">NYHAII</a></td><td>NYHA klasse II</td><td>Slight limitation of physical activity. Comfortable at rest. Ordinary physical activity results in fatigue, palpitation, dyspnea (shortness of breath).</td></tr><tr><td><a href=\"CodeSystem-NYHA.html#NYHA-NYHAIII\">NYHAIII</a></td><td>NYHA klasse III</td><td>Marked limitation of physical activity. Comfortable at rest. Less than ordinary activity causes fatigue, palpitation, or dyspnea.</td></tr><tr><td><a href=\"CodeSystem-NYHA.html#NYHA-NYHAIV\">NYHAIV</a></td><td>NYHA klasse IV</td><td>Unable to carry on any physical activity without discomfort. Symptoms of heart failure at rest. If any physical activity is undertaken, discomfort increases.</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/NYHA",
+  "version" : "0.1.8",
+  "name" : "NYHA",
+  "title" : "NYHA klasser - hjertesvigt",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-07-21T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Udfald for NYHA klasser",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/NYHA",
+      "concept" : [{
+        "code" : "NYHAI",
+        "display" : "NYHA klasse I"
+      },
+      {
+        "code" : "NYHAII",
+        "display" : "NYHA klasse II"
+      },
+      {
+        "code" : "NYHAIII",
+        "display" : "NYHA klasse III"
+      },
+      {
+        "code" : "NYHAIV",
+        "display" : "NYHA klasse IV"
+      }]
+    }]
+  }
+}

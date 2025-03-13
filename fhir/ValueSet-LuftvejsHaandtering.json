@@ -1,0 +1,57 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "LuftvejsHaandtering",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet LuftvejsHaandtering</b></p><a name=\"LuftvejsHaandtering\"> </a><a name=\"hcLuftvejsHaandtering\"> </a><a name=\"LuftvejsHaandtering-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Respiration.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Respiration</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Respiration.html#Respiration-spontane_resp_only\">spontane_resp_only</a></td><td>KUN spontan respiration</td><td>KUN spontan respiration</td></tr><tr><td><a href=\"CodeSystem-Respiration.html#Respiration-mask_vent\">mask_vent</a></td><td>Maskeventilation</td><td>Maskeventilation</td></tr><tr><td><a href=\"CodeSystem-Respiration.html#Respiration-larynx_all\">larynx_all</a></td><td>Larynxmaske (alle typer)</td><td>Larynxmaske (alle typer)</td></tr><tr><td><a href=\"CodeSystem-Respiration.html#Respiration-intubation\">intubation</a></td><td>Intubation</td><td>Intubation</td></tr><tr><td><a href=\"CodeSystem-Respiration.html#Respiration-tracheostomi\">tracheostomi</a></td><td>Tracheostomi</td><td>Tracheostomi</td></tr><tr><td><a href=\"CodeSystem-Respiration.html#Respiration-is_intub_trach\">is_intub_trach</a></td><td>Er intuberet/tracheostomeret</td><td>Er intuberet/tracheostomeret</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/LuftvejsHaandtering",
+  "version" : "0.1.8",
+  "name" : "LuftvejsHaandtering",
+  "title" : "Luftvejshåndtering",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-06-01T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Anvendte indgreb til luftvejsunderstøttelse",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/Respiration",
+      "concept" : [{
+        "code" : "spontane_resp_only",
+        "display" : "KUN spontan respiration"
+      },
+      {
+        "code" : "mask_vent",
+        "display" : "Maskeventilation"
+      },
+      {
+        "code" : "larynx_all",
+        "display" : "Larynxmaske (alle typer)"
+      },
+      {
+        "code" : "intubation",
+        "display" : "Intubation"
+      },
+      {
+        "code" : "tracheostomi",
+        "display" : "Tracheostomi"
+      },
+      {
+        "code" : "is_intub_trach",
+        "display" : "Er intuberet/tracheostomeret"
+      }]
+    }]
+  }
+}

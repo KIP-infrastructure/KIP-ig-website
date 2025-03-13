@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="DoedsaarsagALD"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet DoedsaarsagALD</b></p><a name="DoedsaarsagALD"> </a><a name="hcDoedsaarsagALD"> </a><a name="DoedsaarsagALD-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-CauseOfDeath.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/CauseOfDeath</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-CauseOfDeath.html#CauseOfDeath-early">early</a></td><td>Tidlig død (&lt; 1uge efter induktion/reinduktion inkl. relaps)</td><td>Early death (&lt;1 week after induction/reinduction incl. relapse)</td></tr><tr><td><a href="CodeSystem-CauseOfDeath.html#CauseOfDeath-hypoplasia">hypoplasia</a></td><td>Død i hypoplasi (&gt;1 uge efter induktion/reinduktion inkl. relaps)</td><td>Hypoplasia (&gt;1 week after induction/reinduction incl. relapse)</td></tr><tr><td><a href="CodeSystem-CauseOfDeath.html#CauseOfDeath-progressive_disease">progressive_disease</a></td><td>Progressiv sygdom</td><td>Progressive disease</td></tr><tr><td><a href="CodeSystem-CauseOfDeath.html#CauseOfDeath-progressive_refractory_disease">progressive_refractory_disease</a></td><td>Refraktær sygdom</td><td>Progressive or refractory disease</td></tr><tr><td><a href="CodeSystem-CauseOfDeath.html#CauseOfDeath-treatment_related_complete_remission">treatment_related_complete_remission</a></td><td>Behandlingsrelateret død i komplet remission</td><td>Treatment related (complete remission)</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-Complications.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/Complications</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-Complications.html#Complications-other">other</a></td><td>Død af anden årsag</td><td>Other</td></tr></table></li><li>Include these codes as defined in <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html"><code>http://terminology.hl7.org/CodeSystem/v2-0532</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html#v2-0532-UNK">UNK</a></td><td>Usikker dødsårsag</td><td>unknown</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.rkkp.dk/fhir/ValueSet/DoedsaarsagALD"/>
+  <version value="0.1.8"/>
+  <name value="DoedsaarsagALD"/>
+  <title value="Dødsårsager [ALD]"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-05-16T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Dødsårsager [ALD]"/>
+  <compose>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/CauseOfDeath"/>
+      <concept>
+        <code value="early"/>
+        <display value="Tidlig død (&lt; 1uge efter induktion/reinduktion inkl. relaps)"/>
+      </concept>
+      <concept>
+        <code value="hypoplasia"/>
+        <display value="Død i hypoplasi (&gt;1 uge efter induktion/reinduktion inkl. relaps)"/>
+      </concept>
+      <concept>
+        <code value="progressive_disease"/>
+        <display value="Progressiv sygdom"/>
+      </concept>
+      <concept>
+        <code value="progressive_refractory_disease"/>
+        <display value="Refraktær sygdom"/>
+      </concept>
+      <concept>
+        <code value="treatment_related_complete_remission"/>
+        <display value="Behandlingsrelateret død i komplet remission"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/Complications"/>
+      <concept>
+        <code value="other"/>
+        <display value="Død af anden årsag"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+      <concept>
+        <code value="UNK"/>
+        <display value="Usikker dødsårsag"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

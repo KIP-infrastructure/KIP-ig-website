@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "EHSVentralHernieType",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet EHSVentralHernieType</b></p><a name=\"EHSVentralHernieType\"> </a><a name=\"hcEHSVentralHernieType\"> </a><a name=\"EHSVentralHernieType-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-EHSIncisionalHerniaClassificationType.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/EHSIncisionalHerniaClassificationType</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-EHSIncisionalHerniaClassificationType.html#EHSIncisionalHerniaClassificationType-ehslr\">ehslr</a></td><td>EHS-klassifikation lateral - Højre</td><td>EHS Klassifikation Lateral - Højre</td></tr><tr><td><a href=\"CodeSystem-EHSIncisionalHerniaClassificationType.html#EHSIncisionalHerniaClassificationType-ehsm\">ehsm</a></td><td>EHS-klassifikation - Midtlinje</td><td>EHS Klassifikation - Midtlinje</td></tr><tr><td><a href=\"CodeSystem-EHSIncisionalHerniaClassificationType.html#EHSIncisionalHerniaClassificationType-ehsll\">ehsll</a></td><td>EHS-klassifikation lateral - Venstre</td><td>EHS Klassifikation Lateral - Venstre</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/EHSVentralHernieType",
+  "version" : "0.1.8",
+  "name" : "EHSVentralHernieType",
+  "title" : "EHS ventral hernie type",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2023-07-06T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "EHS ventral hernie type - lateral højre/venstre og midtlinje",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/EHSIncisionalHerniaClassificationType",
+      "concept" : [{
+        "code" : "ehslr",
+        "display" : "EHS-klassifikation lateral - Højre"
+      },
+      {
+        "code" : "ehsm",
+        "display" : "EHS-klassifikation - Midtlinje"
+      },
+      {
+        "code" : "ehsll",
+        "display" : "EHS-klassifikation lateral - Venstre"
+      }]
+    }]
+  }
+}

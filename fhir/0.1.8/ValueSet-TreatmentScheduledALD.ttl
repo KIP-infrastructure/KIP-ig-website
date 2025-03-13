@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/TreatmentScheduledALD> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TreatmentScheduledALD"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet TreatmentScheduledALD</b></p><a name=\"TreatmentScheduledALD\"> </a><a name=\"hcTreatmentScheduledALD\"> </a><a name=\"TreatmentScheduledALD-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-TreatmentSchedule.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/TreatmentSchedule</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-TreatmentSchedule.html#TreatmentSchedule-implemented\">implemented</a></td><td>Ja</td><td>Implemented or planned implementation of treatment / Iværksat eller planlagt iværksættelse af behandling</td></tr><tr><td><a href=\"CodeSystem-TreatmentSchedule.html#TreatmentSchedule-wait_and_watch\">wait_and_watch</a></td><td>Wait-and-watch strategi.</td><td>Wait and watch (WAW) strategy / Wait and watch strategi</td></tr><tr><td><a href=\"CodeSystem-TreatmentSchedule.html#TreatmentSchedule-no_planned_treatment\">no_planned_treatment</a></td><td>Nej</td><td>No planned treatment / Ingen planlagt behandling er iværksat</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/TreatmentScheduledALD"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "TreatmentScheduledALD"] ; # 
+  fhir:title [ fhir:v "Planlagt eller iværksat behandling"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-12-07T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Planlagt eller iværksat behandling"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/TreatmentSchedule"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "implemented" ] ;
+         fhir:display [ fhir:v "Ja" ]
+       ] [
+         fhir:code [ fhir:v "wait_and_watch" ] ;
+         fhir:display [ fhir:v "Wait-and-watch strategi." ]
+       ] [
+         fhir:code [ fhir:v "no_planned_treatment" ] ;
+         fhir:display [ fhir:v "Nej" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

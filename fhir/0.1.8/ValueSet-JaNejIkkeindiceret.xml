@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="JaNejIkkeindiceret"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet JaNejIkkeindiceret</b></p><a name="JaNejIkkeindiceret"> </a><a name="hcJaNejIkkeindiceret"> </a><a name="JaNejIkkeindiceret-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html"><code>http://terminology.hl7.org/CodeSystem/v2-0532</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html#v2-0532-Y">Y</a></td><td>Ja</td><td>Yes</td></tr><tr><td><a href="http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html#v2-0532-N">N</a></td><td>Nej</td><td>No</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-GenericValues.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-GenericValues.html#GenericValues-not_indicated">not_indicated</a></td><td>Ikke indiceret</td><td>Not indicated / Ikke indiceret</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.rkkp.dk/fhir/ValueSet/JaNejIkkeindiceret"/>
+  <version value="0.1.8"/>
+  <name value="JaNejIkkeindiceret"/>
+  <title value="Ja / Nej / Ikke indiceret"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-09-01T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Muligheden for ja, nej og ikke indiceret"/>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+      <concept>
+        <code value="Y"/>
+        <display value="Ja"/>
+      </concept>
+      <concept>
+        <code value="N"/>
+        <display value="Nej"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"/>
+      <concept>
+        <code value="not_indicated"/>
+        <display value="Ikke indiceret"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

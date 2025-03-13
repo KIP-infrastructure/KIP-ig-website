@@ -1,0 +1,113 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/AlloplastyTypes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AlloplastyTypes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem AlloplastyTypes</b></p><a name=\"AlloplastyTypes\"> </a><a name=\"hcAlloplastyTypes\"> </a><a name=\"AlloplastyTypes-en-US\"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/AlloplastyTypes</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">hemialloplasty<a name=\"AlloplastyTypes-hemialloplasty\"> </a></td><td>Hemialloplasty</td><td>Hemialloplasty</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  cemented<a name=\"AlloplastyTypes-cemented\"> </a></td><td>Cemented component</td><td>Cementet component</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  uncemented<a name=\"AlloplastyTypes-uncemented\"> </a></td><td>Uncemented component</td><td>Uncemented component</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">acetabulum_fracture<a name=\"AlloplastyTypes-acetabulum_fracture\"> </a></td><td>Acetabulum fracture</td><td>Acetabulum fracture</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">osteosynthesis<a name=\"AlloplastyTypes-osteosynthesis\"> </a></td><td>Osteosynthesis</td><td>Osteosynthesis</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">periacetabular_osteotomy<a name=\"AlloplastyTypes-periacetabular_osteotomy\"> </a></td><td>Periacetabulær osteotomi</td><td>Periacetabulær osteotomi</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">proximal_femur_osteotomy<a name=\"AlloplastyTypes-proximal_femur_osteotomy\"> </a></td><td>Proximal femur osteotomy</td><td>Proximal femur osteotomy</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">total_alloplasty<a name=\"AlloplastyTypes-total_alloplasty\"> </a></td><td>Total alloplasty</td><td>Total alloplasty</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">medial_unilateral_knee<a name=\"AlloplastyTypes-medial_unilateral_knee\"> </a></td><td>Medial UKA</td><td>Medial UKA</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">lateral_unitaleral_knee<a name=\"AlloplastyTypes-lateral_unitaleral_knee\"> </a></td><td>Lateral UKA</td><td>Lateral UKA</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">patellofemoral_unitaleral_knee<a name=\"AlloplastyTypes-patellofemoral_unitaleral_knee\"> </a></td><td>Patellofemoral UKA</td><td>Patellofemoral UKA</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">hinge_knee<a name=\"AlloplastyTypes-hinge_knee\"> </a></td><td>Roterende hængselalloplastik</td><td>Roterende hængselalloplastik</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">hinge_knee_resection<a name=\"AlloplastyTypes-hinge_knee_resection\"> </a></td><td>Roterende hængselsalloplastik m. kondylresektion</td><td>Roterende hængselsalloplastik m. kondylresektion</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">partial_resurfacing<a name=\"AlloplastyTypes-partial_resurfacing\"> </a></td><td>Partiel resurfacing</td><td>Partiel resurfacing</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">cement_spacer_articulated<a name=\"AlloplastyTypes-cement_spacer_articulated\"> </a></td><td>Cementspacer, artikuleret</td><td>Cementspacer, artikuleret</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">cement_spacer_fixated<a name=\"AlloplastyTypes-cement_spacer_fixated\"> </a></td><td>Cementspacer, fikseret</td><td>Cementspacer, fikseret</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">artrodesis<a name=\"AlloplastyTypes-artrodesis\"> </a></td><td>Artrodese</td><td>Artrodese</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">femoral_amputation<a name=\"AlloplastyTypes-femoral_amputation\"> </a></td><td>Femuramputation</td><td>Femuramputation</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/AlloplastyTypes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "AlloplastyTypes"] ; # 
+  fhir:title [ fhir:v "Alloplasty operation types"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-07-04T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Alloplasty operation types"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "18"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "hemialloplasty" ] ;
+     fhir:display [ fhir:v "Hemialloplasty" ] ;
+     fhir:definition [ fhir:v "Hemialloplasty" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "cemented" ] ;
+       fhir:display [ fhir:v "Cemented component" ] ;
+       fhir:definition [ fhir:v "Cementet component" ]
+     ] [
+       fhir:code [ fhir:v "uncemented" ] ;
+       fhir:display [ fhir:v "Uncemented component" ] ;
+       fhir:definition [ fhir:v "Uncemented component" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "acetabulum_fracture" ] ;
+     fhir:display [ fhir:v "Acetabulum fracture" ] ;
+     fhir:definition [ fhir:v "Acetabulum fracture" ]
+  ] [
+     fhir:code [ fhir:v "osteosynthesis" ] ;
+     fhir:display [ fhir:v "Osteosynthesis" ] ;
+     fhir:definition [ fhir:v "Osteosynthesis" ]
+  ] [
+     fhir:code [ fhir:v "periacetabular_osteotomy" ] ;
+     fhir:display [ fhir:v "Periacetabulær osteotomi" ] ;
+     fhir:definition [ fhir:v "Periacetabulær osteotomi" ]
+  ] [
+     fhir:code [ fhir:v "proximal_femur_osteotomy" ] ;
+     fhir:display [ fhir:v "Proximal femur osteotomy" ] ;
+     fhir:definition [ fhir:v "Proximal femur osteotomy" ]
+  ] [
+     fhir:code [ fhir:v "total_alloplasty" ] ;
+     fhir:display [ fhir:v "Total alloplasty" ] ;
+     fhir:definition [ fhir:v "Total alloplasty" ]
+  ] [
+     fhir:code [ fhir:v "medial_unilateral_knee" ] ;
+     fhir:display [ fhir:v "Medial UKA" ] ;
+     fhir:definition [ fhir:v "Medial UKA" ]
+  ] [
+     fhir:code [ fhir:v "lateral_unitaleral_knee" ] ;
+     fhir:display [ fhir:v "Lateral UKA" ] ;
+     fhir:definition [ fhir:v "Lateral UKA" ]
+  ] [
+     fhir:code [ fhir:v "patellofemoral_unitaleral_knee" ] ;
+     fhir:display [ fhir:v "Patellofemoral UKA" ] ;
+     fhir:definition [ fhir:v "Patellofemoral UKA" ]
+  ] [
+     fhir:code [ fhir:v "hinge_knee" ] ;
+     fhir:display [ fhir:v "Roterende hængselalloplastik" ] ;
+     fhir:definition [ fhir:v "Roterende hængselalloplastik" ]
+  ] [
+     fhir:code [ fhir:v "hinge_knee_resection" ] ;
+     fhir:display [ fhir:v "Roterende hængselsalloplastik m. kondylresektion" ] ;
+     fhir:definition [ fhir:v "Roterende hængselsalloplastik m. kondylresektion" ]
+  ] [
+     fhir:code [ fhir:v "partial_resurfacing" ] ;
+     fhir:display [ fhir:v "Partiel resurfacing" ] ;
+     fhir:definition [ fhir:v "Partiel resurfacing" ]
+  ] [
+     fhir:code [ fhir:v "cement_spacer_articulated" ] ;
+     fhir:display [ fhir:v "Cementspacer, artikuleret" ] ;
+     fhir:definition [ fhir:v "Cementspacer, artikuleret" ]
+  ] [
+     fhir:code [ fhir:v "cement_spacer_fixated" ] ;
+     fhir:display [ fhir:v "Cementspacer, fikseret" ] ;
+     fhir:definition [ fhir:v "Cementspacer, fikseret" ]
+  ] [
+     fhir:code [ fhir:v "artrodesis" ] ;
+     fhir:display [ fhir:v "Artrodese" ] ;
+     fhir:definition [ fhir:v "Artrodese" ]
+  ] [
+     fhir:code [ fhir:v "femoral_amputation" ] ;
+     fhir:display [ fhir:v "Femuramputation" ] ;
+     fhir:definition [ fhir:v "Femuramputation" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

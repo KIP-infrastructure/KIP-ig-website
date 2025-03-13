@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/KneeLoosenessGrading> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KneeLoosenessGrading"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KneeLoosenessGrading</b></p><a name=\"KneeLoosenessGrading\"> </a><a name=\"hcKneeLoosenessGrading\"> </a><a name=\"KneeLoosenessGrading-en-US\"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/KneeLoosenessGrading</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">grade_0<a name=\"KneeLoosenessGrading-grade_0\"> </a></td><td>Grade 0: 0-2 mm</td><td>Grade 0: 0-2 mm</td></tr><tr><td style=\"white-space:nowrap\">grade_1<a name=\"KneeLoosenessGrading-grade_1\"> </a></td><td>Grade 1: 2-5 mm</td><td>Grade 1: 2-5 mm</td></tr><tr><td style=\"white-space:nowrap\">grade_2<a name=\"KneeLoosenessGrading-grade_2\"> </a></td><td>Grade 2: 6-10 mm</td><td>Grade 2: 6-10 mm</td></tr><tr><td style=\"white-space:nowrap\">grade_3<a name=\"KneeLoosenessGrading-grade_3\"> </a></td><td>Grade 3: &gt;10 mm</td><td>Grade 3: &gt;10 mm</td></tr><tr><td style=\"white-space:nowrap\">0-5<a name=\"KneeLoosenessGrading-0-5\"> </a></td><td>0-5 degrees</td><td>0-5 degrees / 0-5 grader</td></tr><tr><td style=\"white-space:nowrap\">6-10<a name=\"KneeLoosenessGrading-6-10\"> </a></td><td>6-10 degrees</td><td>6-10 degrees / 6-10 grader</td></tr><tr><td style=\"white-space:nowrap\">11-19<a name=\"KneeLoosenessGrading-11-19\"> </a></td><td>11-19 degrees</td><td>11-19 degrees / 11-19 grader</td></tr><tr><td style=\"white-space:nowrap\">&gt;20<a name=\"KneeLoosenessGrading-.6220\"> </a></td><td>&gt;20 degrees</td><td>&gt;20 degrees / &gt;20 grader</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/KneeLoosenessGrading"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "KneeLoosenessGrading"] ; # 
+  fhir:title [ fhir:v "Knee looseness grading"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-09-15T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Knee looseness grading"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "grade_0" ] ;
+     fhir:display [ fhir:v "Grade 0: 0-2 mm" ] ;
+     fhir:definition [ fhir:v "Grade 0: 0-2 mm" ]
+  ] [
+     fhir:code [ fhir:v "grade_1" ] ;
+     fhir:display [ fhir:v "Grade 1: 2-5 mm" ] ;
+     fhir:definition [ fhir:v "Grade 1: 2-5 mm" ]
+  ] [
+     fhir:code [ fhir:v "grade_2" ] ;
+     fhir:display [ fhir:v "Grade 2: 6-10 mm" ] ;
+     fhir:definition [ fhir:v "Grade 2: 6-10 mm" ]
+  ] [
+     fhir:code [ fhir:v "grade_3" ] ;
+     fhir:display [ fhir:v "Grade 3: >10 mm" ] ;
+     fhir:definition [ fhir:v "Grade 3: >10 mm" ]
+  ] [
+     fhir:code [ fhir:v "0-5" ] ;
+     fhir:display [ fhir:v "0-5 degrees" ] ;
+     fhir:definition [ fhir:v "0-5 degrees / 0-5 grader" ]
+  ] [
+     fhir:code [ fhir:v "6-10" ] ;
+     fhir:display [ fhir:v "6-10 degrees" ] ;
+     fhir:definition [ fhir:v "6-10 degrees / 6-10 grader" ]
+  ] [
+     fhir:code [ fhir:v "11-19" ] ;
+     fhir:display [ fhir:v "11-19 degrees" ] ;
+     fhir:definition [ fhir:v "11-19 degrees / 11-19 grader" ]
+  ] [
+     fhir:code [ fhir:v ">20" ] ;
+     fhir:display [ fhir:v ">20 degrees" ] ;
+     fhir:definition [ fhir:v ">20 degrees / >20 grader" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

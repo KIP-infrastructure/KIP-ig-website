@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/BrusklaesionPlaceringDKRR> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BrusklaesionPlaceringDKRR"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet BrusklaesionPlaceringDKRR</b></p><a name=\"BrusklaesionPlaceringDKRR\"> </a><a name=\"hcBrusklaesionPlaceringDKRR\"> </a><a name=\"BrusklaesionPlaceringDKRR-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-AnatomicalLocations.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/AnatomicalLocations</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-Patella_medial\">Patella_medial</a></td><td>Patella (mediale facet)</td><td>Patella (mediale facet)</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-Patella_lateral\">Patella_lateral</a></td><td>Patella (laterale facet)</td><td>Patella (laterale facet)</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-Trochlea_femoris\">Trochlea_femoris</a></td><td>Trochlea femoris</td><td>Trochlea femoris</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-Med_femur_kondyl\">Med_femur_kondyl</a></td><td>Med. femur kondyl</td><td>Med. femur kondyl</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-Med_tibia_plateau\">Med_tibia_plateau</a></td><td>Med. tibia plateau</td><td>Med. tibia plateau</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-Lat_femur_kondyl\">Lat_femur_kondyl</a></td><td>Lat. femur kondyl</td><td>Lat. femur kondyl</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-Lat_tibia_plateau\">Lat_tibia_plateau</a></td><td>Lat. tibia plateau</td><td>Lat. tibia plateau</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/BrusklaesionPlaceringDKRR"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "BrusklaesionPlaceringDKRR"] ; # 
+  fhir:title [ fhir:v "Placering af brusklæsioner (DKRR)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2023-03-23T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Placering af brusklæsioner (DKRR)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/AnatomicalLocations"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "Patella_medial" ] ;
+         fhir:display [ fhir:v "Patella (mediale facet)" ]
+       ] [
+         fhir:code [ fhir:v "Patella_lateral" ] ;
+         fhir:display [ fhir:v "Patella (laterale facet)" ]
+       ] [
+         fhir:code [ fhir:v "Trochlea_femoris" ] ;
+         fhir:display [ fhir:v "Trochlea femoris" ]
+       ] [
+         fhir:code [ fhir:v "Med_femur_kondyl" ] ;
+         fhir:display [ fhir:v "Med. femur kondyl" ]
+       ] [
+         fhir:code [ fhir:v "Med_tibia_plateau" ] ;
+         fhir:display [ fhir:v "Med. tibia plateau" ]
+       ] [
+         fhir:code [ fhir:v "Lat_femur_kondyl" ] ;
+         fhir:display [ fhir:v "Lat. femur kondyl" ]
+       ] [
+         fhir:code [ fhir:v "Lat_tibia_plateau" ] ;
+         fhir:display [ fhir:v "Lat. tibia plateau" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

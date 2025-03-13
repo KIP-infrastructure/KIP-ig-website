@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/Resektionstype> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Resektionstype"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Resektionstype</b></p><a name=\"Resektionstype\"> </a><a name=\"hcResektionstype\"> </a><a name=\"Resektionstype-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-ResectionType.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ResectionType</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ResectionType.html#ResectionType-gastrectomy\">gastrectomy</a></td><td>Gastrektomi og øsofagojejunostomi (Roux) [KJDD00]</td><td>Gastrektomi og øsofagojejunostomi (Roux) [KJDD00]</td></tr><tr><td><a href=\"CodeSystem-ResectionType.html#ResectionType-ventricular\">ventricular</a></td><td>Ventrikelresektion med gastrojejunostomi [KJDC20/KJCD30]</td><td>Ventrikelresektion med gastrojejunostomi [KJDC20/KJCD30]</td></tr><tr><td><a href=\"CodeSystem-ResectionType.html#ResectionType-transthoracic_ventricular\">transthoracic_ventricular</a></td><td>Transtorakal øsofagustresektion og ventrikelresektion med øsofagogastrostomi [KJCC10/KJCC11]</td><td>Transtorakal øsofagustresektion og ventrikelresektion med øsofagogastrostomi [KJCC10/KJCC11]</td></tr><tr><td><a href=\"CodeSystem-ResectionType.html#ResectionType-transhiatal_ventricular\">transhiatal_ventricular</a></td><td>Transhiatal øsofagusresektion og ventrikelresektion med øsofagogastrostomi [KJCC00/KJDC40]</td><td>Transhiatal øsofagusresektion og ventrikelresektion med øsofagogastrostomi [KJCC00/KJDC40]</td></tr><tr><td><a href=\"CodeSystem-ResectionType.html#ResectionType-transthoracic_intestine\">transthoracic_intestine</a></td><td>Transtorakal øsofagusresektion med interposition af tarm [KJCC30]</td><td>Transtorakal øsofagusresektion med interposition af tarm [KJCC30]</td></tr><tr><td><a href=\"CodeSystem-ResectionType.html#ResectionType-transhiatal_intestine\">transhiatal_intestine</a></td><td>Transhiatal øsofagusresektion med interposition af tarm [KJCC20]</td><td>Transhiatal øsofagusresektion med interposition af tarm [KJCC20]</td></tr><tr><td><a href=\"CodeSystem-ResectionType.html#ResectionType-endoscopic\">endoscopic</a></td><td>Endoskopisk [KJCA52/KJCA52A/KJCA52B/KJCA52C]</td><td>Endoskopisk [KJCA52/KJCA52A/KJCA52B/KJCA52C]</td></tr><tr><td><a href=\"CodeSystem-ResectionType.html#ResectionType-otheresophagus\">otheresophagus</a></td><td>Anden resektion af øsofagus med rekonstruktion med frit transplantat</td><td>Anden resektion af øsofagus med rekonstruktion med frit transplantat</td></tr><tr><td><a href=\"CodeSystem-ResectionType.html#ResectionType-other\">other</a></td><td>Andet</td><td>Andet</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/Resektionstype"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "Resektionstype"] ; # 
+  fhir:title [ fhir:v "Resektionstype"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-06-08T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Resektionstype for kræft databaser (DEGC)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/ResectionType"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "gastrectomy" ] ;
+         fhir:display [ fhir:v "Gastrektomi og øsofagojejunostomi (Roux) [KJDD00]" ]
+       ] [
+         fhir:code [ fhir:v "ventricular" ] ;
+         fhir:display [ fhir:v "Ventrikelresektion med gastrojejunostomi [KJDC20/KJCD30]" ]
+       ] [
+         fhir:code [ fhir:v "transthoracic_ventricular" ] ;
+         fhir:display [ fhir:v "Transtorakal øsofagustresektion og ventrikelresektion med øsofagogastrostomi [KJCC10/KJCC11]" ]
+       ] [
+         fhir:code [ fhir:v "transhiatal_ventricular" ] ;
+         fhir:display [ fhir:v "Transhiatal øsofagusresektion og ventrikelresektion med øsofagogastrostomi [KJCC00/KJDC40]" ]
+       ] [
+         fhir:code [ fhir:v "transthoracic_intestine" ] ;
+         fhir:display [ fhir:v "Transtorakal øsofagusresektion med interposition af tarm [KJCC30]" ]
+       ] [
+         fhir:code [ fhir:v "transhiatal_intestine" ] ;
+         fhir:display [ fhir:v "Transhiatal øsofagusresektion med interposition af tarm [KJCC20]" ]
+       ] [
+         fhir:code [ fhir:v "endoscopic" ] ;
+         fhir:display [ fhir:v "Endoskopisk [KJCA52/KJCA52A/KJCA52B/KJCA52C]" ]
+       ] [
+         fhir:code [ fhir:v "otheresophagus" ] ;
+         fhir:display [ fhir:v "Anden resektion af øsofagus med rekonstruktion med frit transplantat" ]
+       ] [
+         fhir:code [ fhir:v "other" ] ;
+         fhir:display [ fhir:v "Andet" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

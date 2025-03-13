@@ -1,0 +1,113 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/MComponentType> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MComponentType"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem MComponentType</b></p><a name=\"MComponentType\"> </a><a name=\"hcMComponentType\"> </a><a name=\"MComponentType-en-US\"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/MComponentType</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">iga<a name=\"MComponentType-iga\"> </a></td><td>IgA</td><td>IgA</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  iga_kappa<a name=\"MComponentType-iga_kappa\"> </a></td><td>IgA kappa</td><td>IgA kappa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  iga_lambda<a name=\"MComponentType-iga_lambda\"> </a></td><td>IgA lambda</td><td>IgA lambda</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">igg<a name=\"MComponentType-igg\"> </a></td><td>IgG</td><td>IgG</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  igg_kappa<a name=\"MComponentType-igg_kappa\"> </a></td><td>IgG kappa</td><td>IgG kappa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  igg_lambda<a name=\"MComponentType-igg_lambda\"> </a></td><td>IgG lambda</td><td>IgG lambda</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">igm<a name=\"MComponentType-igm\"> </a></td><td>IgM</td><td>IgM</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  igm_kappa<a name=\"MComponentType-igm_kappa\"> </a></td><td>IgM kappa</td><td>IgM kappa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  igm_lambda<a name=\"MComponentType-igm_lambda\"> </a></td><td>IgM lambda</td><td>IgM lambda</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">igd<a name=\"MComponentType-igd\"> </a></td><td>IgD</td><td>IgD</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  igd_kappa<a name=\"MComponentType-igd_kappa\"> </a></td><td>IgD kappa</td><td>IgD kappa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  igd_lambda<a name=\"MComponentType-igd_lambda\"> </a></td><td>IgD lambda</td><td>IgD lambda</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">ige<a name=\"MComponentType-ige\"> </a></td><td>IgE</td><td>IgE</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  ige_kappa<a name=\"MComponentType-ige_kappa\"> </a></td><td>IgE kappa</td><td>IgE kappa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  ige_lambda<a name=\"MComponentType-ige_lambda\"> </a></td><td>IgE lambda</td><td>IgE lambda</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">kappa<a name=\"MComponentType-kappa\"> </a></td><td>Kappa (frie kæder)</td><td>Kappa (frie kæder)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">lambda<a name=\"MComponentType-lambda\"> </a></td><td>Lambda (frie kæder)</td><td>Lambda (frie kæder)</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/MComponentType"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "MComponentType"] ; # 
+  fhir:title [ fhir:v "M component (Myeloma protein) type"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-27T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "M component (Myeloma protein) type"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "17"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "iga" ] ;
+     fhir:display [ fhir:v "IgA" ] ;
+     fhir:definition [ fhir:v "IgA" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "iga_kappa" ] ;
+       fhir:display [ fhir:v "IgA kappa" ] ;
+       fhir:definition [ fhir:v "IgA kappa" ]
+     ] [
+       fhir:code [ fhir:v "iga_lambda" ] ;
+       fhir:display [ fhir:v "IgA lambda" ] ;
+       fhir:definition [ fhir:v "IgA lambda" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "igg" ] ;
+     fhir:display [ fhir:v "IgG" ] ;
+     fhir:definition [ fhir:v "IgG" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "igg_kappa" ] ;
+       fhir:display [ fhir:v "IgG kappa" ] ;
+       fhir:definition [ fhir:v "IgG kappa" ]
+     ] [
+       fhir:code [ fhir:v "igg_lambda" ] ;
+       fhir:display [ fhir:v "IgG lambda" ] ;
+       fhir:definition [ fhir:v "IgG lambda" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "igm" ] ;
+     fhir:display [ fhir:v "IgM" ] ;
+     fhir:definition [ fhir:v "IgM" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "igm_kappa" ] ;
+       fhir:display [ fhir:v "IgM kappa" ] ;
+       fhir:definition [ fhir:v "IgM kappa" ]
+     ] [
+       fhir:code [ fhir:v "igm_lambda" ] ;
+       fhir:display [ fhir:v "IgM lambda" ] ;
+       fhir:definition [ fhir:v "IgM lambda" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "igd" ] ;
+     fhir:display [ fhir:v "IgD" ] ;
+     fhir:definition [ fhir:v "IgD" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "igd_kappa" ] ;
+       fhir:display [ fhir:v "IgD kappa" ] ;
+       fhir:definition [ fhir:v "IgD kappa" ]
+     ] [
+       fhir:code [ fhir:v "igd_lambda" ] ;
+       fhir:display [ fhir:v "IgD lambda" ] ;
+       fhir:definition [ fhir:v "IgD lambda" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "ige" ] ;
+     fhir:display [ fhir:v "IgE" ] ;
+     fhir:definition [ fhir:v "IgE" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "ige_kappa" ] ;
+       fhir:display [ fhir:v "IgE kappa" ] ;
+       fhir:definition [ fhir:v "IgE kappa" ]
+     ] [
+       fhir:code [ fhir:v "ige_lambda" ] ;
+       fhir:display [ fhir:v "IgE lambda" ] ;
+       fhir:definition [ fhir:v "IgE lambda" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "kappa" ] ;
+     fhir:display [ fhir:v "Kappa (frie kæder)" ] ;
+     fhir:definition [ fhir:v "Kappa (frie kæder)" ]
+  ] [
+     fhir:code [ fhir:v "lambda" ] ;
+     fhir:display [ fhir:v "Lambda (frie kæder)" ] ;
+     fhir:definition [ fhir:v "Lambda (frie kæder)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

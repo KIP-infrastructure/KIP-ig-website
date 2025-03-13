@@ -1,0 +1,67 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "PraeoperativPlanlaegningDSR",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet PraeoperativPlanlaegningDSR</b></p><a name=\"PraeoperativPlanlaegningDSR\"> </a><a name=\"hcPraeoperativPlanlaegningDSR\"> </a><a name=\"PraeoperativPlanlaegningDSR-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-MedicalScanningTypes.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/MedicalScanningTypes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-MedicalScanningTypes.html#MedicalScanningTypes-x-ray\">x-ray</a></td><td>Røntgen &lt;½ år</td><td>X-ray / Røntgen</td></tr><tr><td><a href=\"CodeSystem-MedicalScanningTypes.html#MedicalScanningTypes-ct\">ct</a></td><td>CT</td><td>Computed tomography (CT)</td></tr><tr><td><a href=\"CodeSystem-MedicalScanningTypes.html#MedicalScanningTypes-mri\">mri</a></td><td>MR</td><td>Magnetic Resonance imaging (MRI)</td></tr><tr><td><a href=\"CodeSystem-MedicalScanningTypes.html#MedicalScanningTypes-ultrasound\">ultrasound</a></td><td>Ultralyd</td><td>Medical ultrasound</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-ProcedureType.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-templating\">templating</a></td><td>Templating</td><td>Templating</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-psi\">psi</a></td><td>PSI (Patient specifikke instrumenter)</td><td>PSI (Patient specific instruments) / PSI (Patientspecifikke instrumenter)</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/PraeoperativPlanlaegningDSR",
+  "version" : "0.1.8",
+  "name" : "PraeoperativPlanlaegningDSR",
+  "title" : "Præoperativ planlægning (DSR)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-10-06T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Præoperativ planlægning (DSR)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/MedicalScanningTypes",
+      "concept" : [{
+        "code" : "x-ray",
+        "display" : "Røntgen <½ år"
+      },
+      {
+        "code" : "ct",
+        "display" : "CT"
+      },
+      {
+        "code" : "mri",
+        "display" : "MR"
+      },
+      {
+        "code" : "ultrasound",
+        "display" : "Ultralyd"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType",
+      "concept" : [{
+        "code" : "templating",
+        "display" : "Templating"
+      },
+      {
+        "code" : "psi",
+        "display" : "PSI (Patient specifikke instrumenter)"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "other",
+        "display" : "Andet"
+      }]
+    }]
+  }
+}

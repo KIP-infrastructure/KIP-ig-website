@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/Rytme1Obs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Rytme1Obs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Rytme1Obs</b></p><a name=\"Rytme1Obs\"> </a><a name=\"hcRytme1Obs\"> </a><a name=\"Rytme1Obs-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Rytme1Obs.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Rytme1Obs</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Rytme1Obs.html#Rytme1Obs-vf\">vf</a></td><td>VF</td><td>VF</td></tr><tr><td><a href=\"CodeSystem-Rytme1Obs.html#Rytme1Obs-pulslos_vt\">pulslos_vt</a></td><td>Pulsløs VT</td><td>Pulsløs VT</td></tr><tr><td><a href=\"CodeSystem-Rytme1Obs.html#Rytme1Obs-pea\">pea</a></td><td>PEA</td><td>PEA</td></tr><tr><td><a href=\"CodeSystem-Rytme1Obs.html#Rytme1Obs-asystoli\">asystoli</a></td><td>Asystoli</td><td>Asystoli</td></tr><tr><td><a href=\"CodeSystem-Rytme1Obs.html#Rytme1Obs-ingen_man\">ingen_man</a></td><td>Ingen manuel rytmeanalyse</td><td>Ingen manuel rytmeanalyse</td></tr><tr><td><a href=\"CodeSystem-Rytme1Obs.html#Rytme1Obs-pulsgiv\">pulsgiv</a></td><td>Pulsgivende</td><td>Pulsgivende</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/Rytme1Obs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "Rytme1Obs"] ; # 
+  fhir:title [ fhir:v "Hjerterytme - første obs"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-06-29T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Første observerede hjerterytme"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/Rytme1Obs"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "vf" ] ;
+         fhir:display [ fhir:v "VF" ]
+       ] [
+         fhir:code [ fhir:v "pulslos_vt" ] ;
+         fhir:display [ fhir:v "Pulsløs VT" ]
+       ] [
+         fhir:code [ fhir:v "pea" ] ;
+         fhir:display [ fhir:v "PEA" ]
+       ] [
+         fhir:code [ fhir:v "asystoli" ] ;
+         fhir:display [ fhir:v "Asystoli" ]
+       ] [
+         fhir:code [ fhir:v "ingen_man" ] ;
+         fhir:display [ fhir:v "Ingen manuel rytmeanalyse" ]
+       ] [
+         fhir:code [ fhir:v "pulsgiv" ] ;
+         fhir:display [ fhir:v "Pulsgivende" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

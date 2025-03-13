@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/IndgrebIngvinalhernieDHDB> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "IndgrebIngvinalhernieDHDB"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet IndgrebIngvinalhernieDHDB</b></p><a name=\"IndgrebIngvinalhernieDHDB\"> </a><a name=\"hcIndgrebIngvinalhernieDHDB\"> </a><a name=\"IndgrebIngvinalhernieDHDB-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-ProcedureType.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-laparoscopic\">laparoscopic</a></td><td>Laparoskopisk</td><td>Laparoscopic / Laparoskopisk</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-lichtenstein\">lichtenstein</a></td><td>Lichtenstein</td><td>Lichtenstein</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-robot_laparoscopic\">robot_laparoscopic</a></td><td>Robot-assisteret laparoskopisk</td><td>Robot assisted laparoscopic / Robot-assisteret laparoskopisk</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-converted_open\">converted_open</a></td><td>Laparoskopisk konverteret til åben</td><td>Converted to open from laparoscopic / Konverteret til åben fra laparoskopisk</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-open_mesh\">open_mesh</a></td><td>Anden åben mesh</td><td>Open mesh / Åbent mesh</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-open\">open</a></td><td>Åben, uden mesh</td><td>Open / Åbent</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-robot_converted_laparoscopic\">robot_converted_laparoscopic</a></td><td>Robot-assisteret laparoskopisk konverteret til laparoskopisk</td><td>Robot assisted laparoscopic converted to laparoscopic / Robot-assisteret laparoskopisk konverteret til laparoskopisk</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-robot_converted_open\">robot_converted_open</a></td><td>Robot-assisteret laparoskopisk konverteret til åben</td><td>Robot assisted laparoscopic converted to open / Robot-assisteret laparoskopisk konverteret til åben</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-onstep\">onstep</a></td><td>Onstep</td><td>Onstep</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet indgreb</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/IndgrebIngvinalhernieDHDB"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "IndgrebIngvinalhernieDHDB"] ; # 
+  fhir:title [ fhir:v "Indgreb - ingvinalhernie (DHDB)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-07-20T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Indgreb - ingvinalhernie (DHDB)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "laparoscopic" ] ;
+         fhir:display [ fhir:v "Laparoskopisk" ]
+       ] [
+         fhir:code [ fhir:v "lichtenstein" ] ;
+         fhir:display [ fhir:v "Lichtenstein" ]
+       ] [
+         fhir:code [ fhir:v "robot_laparoscopic" ] ;
+         fhir:display [ fhir:v "Robot-assisteret laparoskopisk" ]
+       ] [
+         fhir:code [ fhir:v "converted_open" ] ;
+         fhir:display [ fhir:v "Laparoskopisk konverteret til åben" ]
+       ] [
+         fhir:code [ fhir:v "open_mesh" ] ;
+         fhir:display [ fhir:v "Anden åben mesh" ]
+       ] [
+         fhir:code [ fhir:v "open" ] ;
+         fhir:display [ fhir:v "Åben, uden mesh" ]
+       ] [
+         fhir:code [ fhir:v "robot_converted_laparoscopic" ] ;
+         fhir:display [ fhir:v "Robot-assisteret laparoskopisk konverteret til laparoskopisk" ]
+       ] [
+         fhir:code [ fhir:v "robot_converted_open" ] ;
+         fhir:display [ fhir:v "Robot-assisteret laparoskopisk konverteret til åben" ]
+       ] [
+         fhir:code [ fhir:v "onstep" ] ;
+         fhir:display [ fhir:v "Onstep" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "other" ] ;
+         fhir:display [ fhir:v "Andet indgreb" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

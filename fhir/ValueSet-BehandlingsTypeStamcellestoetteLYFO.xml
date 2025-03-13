@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="BehandlingsTypeStamcellestoetteLYFO"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet BehandlingsTypeStamcellestoetteLYFO</b></p><a name="BehandlingsTypeStamcellestoetteLYFO"> </a><a name="hcBehandlingsTypeStamcellestoetteLYFO"> </a><a name="BehandlingsTypeStamcellestoetteLYFO-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-SKS.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/SKS</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-SKS.html#SKS-BWHA310">BWHA310</a></td><td>BEAM</td><td>Behandling med BEAM (konditionering)</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-ATC.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/ATC</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-ATC.html#ATC-L01AD01">L01AD01</a></td><td>BCNU-thiotepa</td><td>L01AD01 - carmustine</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-GenericValues.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-GenericValues.html#GenericValues-other">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.rkkp.dk/fhir/ValueSet/BehandlingsTypeStamcellestoetteLYFO"/>
+  <version value="0.1.8"/>
+  <name value="BehandlingsTypeStamcellestoetteLYFO"/>
+  <title value="Behandlingsttype - Stamcellestøtte (LYFO)"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-07-18T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Behandlingsttype - Stamcellestøtte (LYFO)"/>
+  <compose>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/SKS"/>
+      <concept>
+        <code value="BWHA310"/>
+        <display value="BEAM"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/ATC"/>
+      <concept>
+        <code value="L01AD01"/>
+        <display value="BCNU-thiotepa"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"/>
+      <concept>
+        <code value="other"/>
+        <display value="Andet"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

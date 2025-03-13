@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/MeshTeknikDHDB> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MeshTeknikDHDB"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet MeshTeknikDHDB</b></p><a name=\"MeshTeknikDHDB\"> </a><a name=\"hcMeshTeknikDHDB\"> </a><a name=\"MeshTeknikDHDB-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-MeshTechnique.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/MeshTechnique</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-MeshTechnique.html#MeshTechnique-keyhole\">keyhole</a></td><td>Keyhole teknik</td><td>Keyhole technique / Keyhole teknik</td></tr><tr><td><a href=\"CodeSystem-MeshTechnique.html#MeshTechnique-sugarbaker\">sugarbaker</a></td><td>Sugarbaker teknik</td><td>Sugarbaker technique / Sugarbaker teknik</td></tr><tr><td><a href=\"CodeSystem-MeshTechnique.html#MeshTechnique-combined\">combined</a></td><td>Kombineret Keyhole og Sugarbaker teknik</td><td>Combined Keyhole and Sugerbaker technique / Kombineret Keyhole og Sugarbaker teknik</td></tr><tr><td><a href=\"CodeSystem-MeshTechnique.html#MeshTechnique-preperitoneal\">preperitoneal</a></td><td>Præperitoneal</td><td>Preperitoneal technique / Præperitoneal teknik</td></tr><tr><td><a href=\"CodeSystem-MeshTechnique.html#MeshTechnique-retromuscular\">retromuscular</a></td><td>Retromuskulær</td><td>Retromuscular technique / Retromuskulær teknik</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/MeshTeknikDHDB"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "MeshTeknikDHDB"] ; # 
+  fhir:title [ fhir:v "Mesh teknik (DHDB)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-07-21T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Mesh teknik (DHDB)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/MeshTechnique"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "keyhole" ] ;
+         fhir:display [ fhir:v "Keyhole teknik" ]
+       ] [
+         fhir:code [ fhir:v "sugarbaker" ] ;
+         fhir:display [ fhir:v "Sugarbaker teknik" ]
+       ] [
+         fhir:code [ fhir:v "combined" ] ;
+         fhir:display [ fhir:v "Kombineret Keyhole og Sugarbaker teknik" ]
+       ] [
+         fhir:code [ fhir:v "preperitoneal" ] ;
+         fhir:display [ fhir:v "Præperitoneal" ]
+       ] [
+         fhir:code [ fhir:v "retromuscular" ] ;
+         fhir:display [ fhir:v "Retromuskulær" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

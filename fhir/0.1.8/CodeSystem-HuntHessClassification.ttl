@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/HuntHessClassification> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HuntHessClassification"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem HuntHessClassification</b></p><a name=\"HuntHessClassification\"> </a><a name=\"hcHuntHessClassification\"> </a><a name=\"HuntHessClassification-en-US\"> </a><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/HuntHessClassification</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">grade_1<a name=\"HuntHessClassification-grade_1\"> </a></td><td>Grade 1</td><td>Grade 1: Asymptomatic or minimal headache and slight neck stiffness</td></tr><tr><td style=\"white-space:nowrap\">grade_2<a name=\"HuntHessClassification-grade_2\"> </a></td><td>Grade 2</td><td>Grade 2: Moderate to severe headache; neck stiffness; no neurologic deficit except cranial nerve palsy</td></tr><tr><td style=\"white-space:nowrap\">grade_3<a name=\"HuntHessClassification-grade_3\"> </a></td><td>Grade 3</td><td>Grade 3: Drowsy; minimal neurologic deficit</td></tr><tr><td style=\"white-space:nowrap\">grade_4<a name=\"HuntHessClassification-grade_4\"> </a></td><td>Grade 4</td><td>Grade 4: Stuporous; moderate to severe hemiparesis; possibly early decerebrate rigidity and vegetative disturbances</td></tr><tr><td style=\"white-space:nowrap\">grade_5<a name=\"HuntHessClassification-grade_5\"> </a></td><td>Grade 5</td><td>Grade 5: Deep coma; decerebrate rigidity; moribund</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/HuntHessClassification"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "HuntHessClassification"] ; # 
+  fhir:title [ fhir:v "Hunt and Hess scale"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-28T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Hunt and Hess scale; Link: https://radiopaedia.org/articles/hunt-and-hess-grading-system"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "grade_1" ] ;
+     fhir:display [ fhir:v "Grade 1" ] ;
+     fhir:definition [ fhir:v "Grade 1: Asymptomatic or minimal headache and slight neck stiffness" ]
+  ] [
+     fhir:code [ fhir:v "grade_2" ] ;
+     fhir:display [ fhir:v "Grade 2" ] ;
+     fhir:definition [ fhir:v "Grade 2: Moderate to severe headache; neck stiffness; no neurologic deficit except cranial nerve palsy" ]
+  ] [
+     fhir:code [ fhir:v "grade_3" ] ;
+     fhir:display [ fhir:v "Grade 3" ] ;
+     fhir:definition [ fhir:v "Grade 3: Drowsy; minimal neurologic deficit" ]
+  ] [
+     fhir:code [ fhir:v "grade_4" ] ;
+     fhir:display [ fhir:v "Grade 4" ] ;
+     fhir:definition [ fhir:v "Grade 4: Stuporous; moderate to severe hemiparesis; possibly early decerebrate rigidity and vegetative disturbances" ]
+  ] [
+     fhir:code [ fhir:v "grade_5" ] ;
+     fhir:display [ fhir:v "Grade 5" ] ;
+     fhir:definition [ fhir:v "Grade 5: Deep coma; decerebrate rigidity; moribund" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

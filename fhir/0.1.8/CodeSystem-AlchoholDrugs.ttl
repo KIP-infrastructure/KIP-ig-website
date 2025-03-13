@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/AlchoholDrugs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AlchoholDrugs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem AlchoholDrugs</b></p><a name=\"AlchoholDrugs\"> </a><a name=\"hcAlchoholDrugs\"> </a><a name=\"AlchoholDrugs-en-US\"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/AlchoholDrugs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">alchohol<a name=\"AlchoholDrugs-alchohol\"> </a></td><td>Alchohol</td><td>Alchohol / Alkohol</td></tr><tr><td style=\"white-space:nowrap\">cannabis<a name=\"AlchoholDrugs-cannabis\"> </a></td><td>Cannabis</td><td>Cannabis</td></tr><tr><td style=\"white-space:nowrap\">central_stimulants<a name=\"AlchoholDrugs-central_stimulants\"> </a></td><td>Central stimulants</td><td>Central stimulants / Centralstimulerende stoffer</td></tr><tr><td style=\"white-space:nowrap\">opioids<a name=\"AlchoholDrugs-opioids\"> </a></td><td>Opiods</td><td>Opioids / Opioider</td></tr><tr><td style=\"white-space:nowrap\">benzodiazepines<a name=\"AlchoholDrugs-benzodiazepines\"> </a></td><td>Benzodiazepines</td><td>Benzodiazepines / Benzodiazepiner</td></tr><tr><td style=\"white-space:nowrap\">steroids<a name=\"AlchoholDrugs-steroids\"> </a></td><td>Steroids</td><td>Steroids / Steroider</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/AlchoholDrugs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "AlchoholDrugs"] ; # 
+  fhir:title [ fhir:v "Alchohol or drugs"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-09-30T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Alchohol or drugs"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "alchohol" ] ;
+     fhir:display [ fhir:v "Alchohol" ] ;
+     fhir:definition [ fhir:v "Alchohol / Alkohol" ]
+  ] [
+     fhir:code [ fhir:v "cannabis" ] ;
+     fhir:display [ fhir:v "Cannabis" ] ;
+     fhir:definition [ fhir:v "Cannabis" ]
+  ] [
+     fhir:code [ fhir:v "central_stimulants" ] ;
+     fhir:display [ fhir:v "Central stimulants" ] ;
+     fhir:definition [ fhir:v "Central stimulants / Centralstimulerende stoffer" ]
+  ] [
+     fhir:code [ fhir:v "opioids" ] ;
+     fhir:display [ fhir:v "Opiods" ] ;
+     fhir:definition [ fhir:v "Opioids / Opioider" ]
+  ] [
+     fhir:code [ fhir:v "benzodiazepines" ] ;
+     fhir:display [ fhir:v "Benzodiazepines" ] ;
+     fhir:definition [ fhir:v "Benzodiazepines / Benzodiazepiner" ]
+  ] [
+     fhir:code [ fhir:v "steroids" ] ;
+     fhir:display [ fhir:v "Steroids" ] ;
+     fhir:definition [ fhir:v "Steroids / Steroider" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

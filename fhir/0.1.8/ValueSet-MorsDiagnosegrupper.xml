@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="MorsDiagnosegrupper"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet MorsDiagnosegrupper</b></p><a name="MorsDiagnosegrupper"> </a><a name="hcMorsDiagnosegrupper"> </a><a name="MorsDiagnosegrupper-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-GenericValues.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-GenericValues.html#GenericValues-various">various</a></td><td>Forskelligt</td><td>Forskelligt</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-MorsDiagnosegrupper.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/MorsDiagnosegrupper</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-MorsDiagnosegrupper.html#MorsDiagnosegrupper-infektion">infektion</a></td><td>Infektioner</td></tr><tr><td><a href="CodeSystem-MorsDiagnosegrupper.html#MorsDiagnosegrupper-kardinal">kardinal</a></td><td>Kardiale årsager</td></tr><tr><td><a href="CodeSystem-MorsDiagnosegrupper.html#MorsDiagnosegrupper-Lever">Lever</a></td><td>Leverlidelser</td></tr><tr><td><a href="CodeSystem-MorsDiagnosegrupper.html#MorsDiagnosegrupper-social">social</a></td><td>Socialt</td></tr><tr><td><a href="CodeSystem-MorsDiagnosegrupper.html#MorsDiagnosegrupper-ulykker">ulykker</a></td><td>Ulykke</td></tr><tr><td><a href="CodeSystem-MorsDiagnosegrupper.html#MorsDiagnosegrupper-vaskulaer">vaskulaer</a></td><td>Vaskulære årsager</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.rkkp.dk/fhir/ValueSet/MorsDiagnosegrupper"/>
+  <version value="0.1.8"/>
+  <name value="MorsDiagnosegrupper"/>
+  <title value="Mors Diagnosegrupper (DNSL)"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-01-10T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Vurdering af en given behandling"/>
+  <compose>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"/>
+      <concept>
+        <code value="various"/>
+        <display value="Forskelligt"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/MorsDiagnosegrupper"/>
+      <concept>
+        <code value="infektion"/>
+        <display value="Infektioner"/>
+      </concept>
+      <concept>
+        <code value="kardinal"/>
+        <display value="Kardiale årsager"/>
+      </concept>
+      <concept>
+        <code value="Lever"/>
+        <display value="Leverlidelser"/>
+      </concept>
+      <concept>
+        <code value="social"/>
+        <display value="Socialt"/>
+      </concept>
+      <concept>
+        <code value="ulykker"/>
+        <display value="Ulykke"/>
+      </concept>
+      <concept>
+        <code value="vaskulaer"/>
+        <display value="Vaskulære årsager"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

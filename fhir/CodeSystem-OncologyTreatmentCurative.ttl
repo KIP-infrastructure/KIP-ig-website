@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/OncologyTreatmentCurative> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "OncologyTreatmentCurative"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem OncologyTreatmentCurative</b></p><a name=\"OncologyTreatmentCurative\"> </a><a name=\"hcOncologyTreatmentCurative\"> </a><a name=\"OncologyTreatmentCurative-en-US\"> </a><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/OncologyTreatmentCurative</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">adjuvant<a name=\"OncologyTreatmentCurative-adjuvant\"> </a></td><td>Adjuverende behandling</td><td>Hvis Adjuverende behandling</td></tr><tr><td style=\"white-space:nowrap\">neoadjuvant<a name=\"OncologyTreatmentCurative-neoadjuvant\"> </a></td><td>Neo-adjuverende behandling</td><td>Hvis Neo-adjuverende behandling</td></tr><tr><td style=\"white-space:nowrap\">perioperative<a name=\"OncologyTreatmentCurative-perioperative\"> </a></td><td>Perioperativ behandling</td><td>Hvis Perioperativ behandling</td></tr><tr><td style=\"white-space:nowrap\">radio/chemo<a name=\"OncologyTreatmentCurative-radio.47chemo\"> </a></td><td>Definitiv kemo/radioterapi behandling</td><td>Hvis Definitiv kemo/radioterapi behandling</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/OncologyTreatmentCurative"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "OncologyTreatmentCurative"] ; # 
+  fhir:title [ fhir:v "Oncology Treatment (curative)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-04-28T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Types of oncology treatments for curative treatment intention"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "adjuvant" ] ;
+     fhir:display [ fhir:v "Adjuverende behandling" ] ;
+     fhir:definition [ fhir:v "Hvis Adjuverende behandling" ]
+  ] [
+     fhir:code [ fhir:v "neoadjuvant" ] ;
+     fhir:display [ fhir:v "Neo-adjuverende behandling" ] ;
+     fhir:definition [ fhir:v "Hvis Neo-adjuverende behandling" ]
+  ] [
+     fhir:code [ fhir:v "perioperative" ] ;
+     fhir:display [ fhir:v "Perioperativ behandling" ] ;
+     fhir:definition [ fhir:v "Hvis Perioperativ behandling" ]
+  ] [
+     fhir:code [ fhir:v "radio/chemo" ] ;
+     fhir:display [ fhir:v "Definitiv kemo/radioterapi behandling" ] ;
+     fhir:definition [ fhir:v "Hvis Definitiv kemo/radioterapi behandling" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

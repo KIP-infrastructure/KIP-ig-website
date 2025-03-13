@@ -1,0 +1,56 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ForsoergelsesgrundlagRETSPSYK",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ForsoergelsesgrundlagRETSPSYK</b></p><a name=\"ForsoergelsesgrundlagRETSPSYK\"> </a><a name=\"hcForsoergelsesgrundlagRETSPSYK\"> </a><a name=\"ForsoergelsesgrundlagRETSPSYK-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-EconomicSupport.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/EconomicSupport</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-EconomicSupport.html#EconomicSupport-salary\">salary</a></td><td>Lønindkomst (Inkl. sygepenge/understøttelse)</td><td>Salary / Lønindkomst</td></tr><tr><td><a href=\"CodeSystem-EconomicSupport.html#EconomicSupport-education_support\">education_support</a></td><td>Overførselsindkomst - SU/uddannelsesstøtte/uddannelsesløn</td><td>Education support / Uddannelsesstøtte</td></tr><tr><td><a href=\"CodeSystem-EconomicSupport.html#EconomicSupport-cash_assistance\">cash_assistance</a></td><td>Overførselsindkomst - Kontanthjælp</td><td>Cash assistance / Kontanthjælp</td></tr><tr><td><a href=\"CodeSystem-EconomicSupport.html#EconomicSupport-pension\">pension</a></td><td>Overførselsindkomst - Pension/Førtidspension</td><td>Pension</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-none\">none</a></td><td>Ingen indkomst</td><td>None - used to choose none of the available values</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/ForsoergelsesgrundlagRETSPSYK",
+  "version" : "0.1.8",
+  "name" : "ForsoergelsesgrundlagRETSPSYK",
+  "title" : "Forsørgelsesgrundlag (RETSPSYK)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-09-30T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Forsørgelsesgrundlag (RETSPSYK)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/EconomicSupport",
+      "concept" : [{
+        "code" : "salary",
+        "display" : "Lønindkomst (Inkl. sygepenge/understøttelse)"
+      },
+      {
+        "code" : "education_support",
+        "display" : "Overførselsindkomst - SU/uddannelsesstøtte/uddannelsesløn"
+      },
+      {
+        "code" : "cash_assistance",
+        "display" : "Overførselsindkomst - Kontanthjælp"
+      },
+      {
+        "code" : "pension",
+        "display" : "Overførselsindkomst - Pension/Førtidspension"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "none",
+        "display" : "Ingen indkomst"
+      }]
+    }]
+  }
+}

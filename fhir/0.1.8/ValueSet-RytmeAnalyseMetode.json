@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "RytmeAnalyseMetode",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet RytmeAnalyseMetode</b></p><a name=\"RytmeAnalyseMetode\"> </a><a name=\"hcRytmeAnalyseMetode\"> </a><a name=\"RytmeAnalyseMetode-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-DefibrilleringAnalyse.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/DefibrilleringAnalyse</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-DefibrilleringAnalyse.html#DefibrilleringAnalyse-aed\">aed</a></td><td>AED</td><td>AED</td></tr><tr><td><a href=\"CodeSystem-DefibrilleringAnalyse.html#DefibrilleringAnalyse-man_defibr\">man_defibr</a></td><td>Manuel defibrillator</td><td>Manuel defibrillering</td></tr><tr><td><a href=\"CodeSystem-DefibrilleringAnalyse.html#DefibrilleringAnalyse-ekg\">ekg</a></td><td>Anden EKG-monitorering</td><td>Anden EKG-monitorering</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/RytmeAnalyseMetode",
+  "version" : "0.1.8",
+  "name" : "RytmeAnalyseMetode",
+  "title" : "RytmeAnalyseMetode",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-06-29T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Metode til analyse af hjerterytme",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/DefibrilleringAnalyse",
+      "concept" : [{
+        "code" : "aed",
+        "display" : "AED"
+      },
+      {
+        "code" : "man_defibr",
+        "display" : "Manuel defibrillator"
+      },
+      {
+        "code" : "ekg",
+        "display" : "Anden EKG-monitorering"
+      }]
+    }]
+  }
+}

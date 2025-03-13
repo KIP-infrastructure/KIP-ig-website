@@ -1,0 +1,56 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ResektionUdfoerelseDCCG",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ResektionUdfoerelseDCCG</b></p><a name=\"ResektionUdfoerelseDCCG\"> </a><a name=\"hcResektionUdfoerelseDCCG\"> </a><a name=\"ResektionUdfoerelseDCCG-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-ResectionCompletion.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ResectionCompletion</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ResectionCompletion.html#ResectionCompletion-missing_radicality_sektion\">missing_radicality_sektion</a></td><td>Manglende radikalitet af endoskopiske lokalresektion</td><td>Manglende radikalitet af endoskopiske lokalresektion</td></tr><tr><td><a href=\"CodeSystem-ResectionCompletion.html#ResectionCompletion-undeterminable_radicality_piecemeal\">undeterminable_radicality_piecemeal</a></td><td>Radikalitet af lokalresektionen kan ikke vurderes på grund af piecemeal teknik</td><td>Radikalitet af lokalresektionen kan ikke vurderes på grund af piecemeal teknik</td></tr><tr><td><a href=\"CodeSystem-ResectionCompletion.html#ResectionCompletion-pathology_risk_factors\">pathology_risk_factors</a></td><td>Tilstedeværelse af en eller flere patologirisikofaktorer</td><td>Tilstedeværelse af en eller flere patologirisikofaktorer</td></tr><tr><td><a href=\"CodeSystem-ResectionCompletion.html#ResectionCompletion-missing_radicality_risk\">missing_radicality_risk</a></td><td>Manglende radikalitet og tilstedeværelse af risikofaktorer</td><td>Manglende radikalitet og tilstedeværelse af risikofaktorer</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Anden begrundelse inkl. patientønske</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/ResektionUdfoerelseDCCG",
+  "version" : "0.1.8",
+  "name" : "ResektionUdfoerelseDCCG",
+  "title" : "Udførelse af resektion DCCG",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-09-07T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Udførelse af resektion DCCG",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/ResectionCompletion",
+      "concept" : [{
+        "code" : "missing_radicality_sektion",
+        "display" : "Manglende radikalitet af endoskopiske lokalresektion"
+      },
+      {
+        "code" : "undeterminable_radicality_piecemeal",
+        "display" : "Radikalitet af lokalresektionen kan ikke vurderes på grund af piecemeal teknik"
+      },
+      {
+        "code" : "pathology_risk_factors",
+        "display" : "Tilstedeværelse af en eller flere patologirisikofaktorer"
+      },
+      {
+        "code" : "missing_radicality_risk",
+        "display" : "Manglende radikalitet og tilstedeværelse af risikofaktorer"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "other",
+        "display" : "Anden begrundelse inkl. patientønske"
+      }]
+    }]
+  }
+}

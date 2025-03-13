@@ -1,0 +1,79 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "OperationerDKRR",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet OperationerDKRR</b></p><a name=\"OperationerDKRR\"> </a><a name=\"hcOperationerDKRR\"> </a><a name=\"OperationerDKRR-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-AnatomicalLocations.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/AnatomicalLocations</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-acl\">acl</a></td><td>ACL</td><td>ACL</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-pcl\">pcl</a></td><td>PCL</td><td>PCL</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-mcl\">mcl</a></td><td>MCL</td><td>MCL</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-lcl\">lcl</a></td><td>LCL</td><td>LCL</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-plc\">plc</a></td><td>PLC</td><td>PLC</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-lateral_meniscus\">lateral_meniscus</a></td><td>Laterale menisk</td><td>Lateral meniscus / Laterale menisk</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-medial_meniscus\">medial_meniscus</a></td><td>Mediale menisk</td><td>Medial meniscus / Mediale menisk</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-cartilage\">cartilage</a></td><td>Bruskskade</td><td>Cartilage / Brusk</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-ProcedureType.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-transplant\">transplant</a></td><td>Optransplantering før ACL</td><td>Transplant / Transplantation</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/OperationerDKRR",
+  "version" : "0.1.8",
+  "name" : "OperationerDKRR",
+  "title" : "Operationer (DKRR)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-09-19T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Operationer (DKRR)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/AnatomicalLocations",
+      "concept" : [{
+        "code" : "acl",
+        "display" : "ACL"
+      },
+      {
+        "code" : "pcl",
+        "display" : "PCL"
+      },
+      {
+        "code" : "mcl",
+        "display" : "MCL"
+      },
+      {
+        "code" : "lcl",
+        "display" : "LCL"
+      },
+      {
+        "code" : "plc",
+        "display" : "PLC"
+      },
+      {
+        "code" : "lateral_meniscus",
+        "display" : "Laterale menisk"
+      },
+      {
+        "code" : "medial_meniscus",
+        "display" : "Mediale menisk"
+      },
+      {
+        "code" : "cartilage",
+        "display" : "Bruskskade"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType",
+      "concept" : [{
+        "code" : "transplant",
+        "display" : "Optransplantering før ACL"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "other",
+        "display" : "Andet"
+      }]
+    }]
+  }
+}

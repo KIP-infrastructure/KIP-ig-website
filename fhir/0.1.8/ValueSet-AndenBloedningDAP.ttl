@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/AndenBloedningDAP> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AndenBloedningDAP"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet AndenBloedningDAP</b></p><a name=\"AndenBloedningDAP\"> </a><a name=\"hcAndenBloedningDAP\"> </a><a name=\"AndenBloedningDAP-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-BleedingStroke.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/BleedingStroke</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-BleedingStroke.html#BleedingStroke-phr_1\">phr_1</a></td><td>PHr 1</td><td>PHr 1</td></tr><tr><td><a href=\"CodeSystem-BleedingStroke.html#BleedingStroke-phr_2\">phr_2</a></td><td>PHr 2</td><td>PHr 2</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/AndenBloedningDAP"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "AndenBloedningDAP"] ; # 
+  fhir:title [ fhir:v "Anden blødning (DAP)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-09-02T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Anden blødning fundet i forbindelse med billeddiagnostisk undersøgelse (DAP)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/BleedingStroke"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "phr_1" ] ;
+         fhir:display [ fhir:v "PHr 1" ]
+       ] [
+         fhir:code [ fhir:v "phr_2" ] ;
+         fhir:display [ fhir:v "PHr 2" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/Splenomegali> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Splenomegali"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Splenomegali</b></p><a name=\"Splenomegali\"> </a><a name=\"hcSplenomegali\"> </a><a name=\"Splenomegali-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-DetectionMethods.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/DetectionMethods</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-DetectionMethods.html#DetectionMethods-splenomegaly_radiological\">splenomegaly_radiological</a></td><td>Ja - radiologisk påvist</td><td>Splenomegali, radiologisk påvist</td></tr><tr><td><a href=\"CodeSystem-DetectionMethods.html#DetectionMethods-splenomegaly_clinical\">splenomegaly_clinical</a></td><td>Ja - udelukkende klinisk bedømt</td><td>Splenomegali, klinisk bedømt</td></tr><tr><td><a href=\"CodeSystem-DetectionMethods.html#DetectionMethods-radiological\">radiological</a></td><td>Nej - radiologisk bekræftet</td><td>Radiologisk bekræftet</td></tr><tr><td><a href=\"CodeSystem-DetectionMethods.html#DetectionMethods-clinical\">clinical</a></td><td>Nej - udelukkende klinisk bedømt</td><td>Kliniske</td></tr></table></li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0532</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html#v2-0532-UNK\">UNK</a></td><td>Uoplyst</td><td>unknown</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/Splenomegali"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "Splenomegali"] ; # 
+  fhir:title [ fhir:v "Splenomegali, udvikling og konstatering"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-07-18T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Splenomegali, udvikling og konstatering"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/DetectionMethods"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "splenomegaly_radiological" ] ;
+         fhir:display [ fhir:v "Ja - radiologisk påvist" ]
+       ] [
+         fhir:code [ fhir:v "splenomegaly_clinical" ] ;
+         fhir:display [ fhir:v "Ja - udelukkende klinisk bedømt" ]
+       ] [
+         fhir:code [ fhir:v "radiological" ] ;
+         fhir:display [ fhir:v "Nej - radiologisk bekræftet" ]
+       ] [
+         fhir:code [ fhir:v "clinical" ] ;
+         fhir:display [ fhir:v "Nej - udelukkende klinisk bedømt" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0532"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "UNK" ] ;
+         fhir:display [ fhir:v "Uoplyst" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,172 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/MeshTypeVentralhernieDHDB> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MeshTypeVentralhernieDHDB"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet MeshTypeVentralhernieDHDB</b></p><a name=\"MeshTypeVentralhernieDHDB\"> </a><a name=\"hcMeshTypeVentralhernieDHDB\"> </a><a name=\"MeshTypeVentralhernieDHDB-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-MeshType.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/MeshType</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-adhesix_bard\">adhesix_bard</a></td><td>Adhesix, BARD</td><td>Adhesix, BARD</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-bard_flatmesh\">bard_flatmesh</a></td><td>BARD Flatmesh</td><td>BARD Flatmesh</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-bio_a\">bio_a</a></td><td>BIO-A</td><td>BIO-A</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-cabs_air\">cabs_air</a></td><td>CABS AIR Composite, Cousin Biotech</td><td>CABS AIR Composite, Cousin Biotech</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-dynamesh_kebomed\">dynamesh_kebomed</a></td><td>Dynamesh, Kebomed</td><td>Dynamesh, Kebomed</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-dynamesh_ipom\">dynamesh_ipom</a></td><td>Dynamesh IPOM, Kebomed</td><td>Dynamesh IPOM, Kebomed</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-galmesh_light\">galmesh_light</a></td><td>Galmesh Light</td><td>Galmesh Light</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-galmesh_umbilical\">galmesh_umbilical</a></td><td>Galmesh Umbilical</td><td>Galmesh Umbilical</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-gore_dualmesh\">gore_dualmesh</a></td><td>Gore Dualmesh, ViCare Medical</td><td>Gore Dualmesh, ViCare Medical</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-intramesh\">intramesh</a></td><td>Intramesh (T1/P8/W3), Cousin Biotech</td><td>Intramesh (T1/P8/W3), Cousin Biotech</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-optilene_mesh\">optilene_mesh</a></td><td>Optilene Mesh</td><td>Optilene Mesh</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-optilene_mesh_elastic\">optilene_mesh_elastic</a></td><td>Optilene Mesh Elastic</td><td>Optilene Mesh Elastic</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-optilene_mesh_lp\">optilene_mesh_lp</a></td><td>Optilene Mesh LP</td><td>Optilene Mesh LP</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-parietene_composite\">parietene_composite</a></td><td>Parietene Composite</td><td>Parietene Composite</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-parietene_covidien\">parietene_covidien</a></td><td>Parietene Covidien</td><td>Parietene Covidien</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-parietex_ventral\">parietex_ventral</a></td><td>Parietex Ventral Patch</td><td>Parietex Ventral Patch</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-parietex_covidien\">parietex_covidien</a></td><td>Parietex Covidien</td><td>Parietex Covidien</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-parietex_composite\">parietex_composite</a></td><td>Parietex Composite (incl. Optimized), Covidien</td><td>Parietex Composite (incl. Optimized), Covidien</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-parietex_progrip\">parietex_progrip</a></td><td>Parietex Progrip, Covidien</td><td>Parietex Progrip</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-permacol_covidien\">permacol_covidien</a></td><td>Permacol, Covidien</td><td>Permacol, Covidien</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-phasix\">phasix</a></td><td>Phasix</td><td>Phasix</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-phasix_st\">phasix_st</a></td><td>Phasix ST</td><td>Phasix ST</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-physiomesh_ethicon\">physiomesh_ethicon</a></td><td>Physiomesh, Ethicon</td><td>Physiomesh, Ethicon</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-proceed_ventral\">proceed_ventral</a></td><td>Proceed Ventral Patch, Ethicon</td><td>Proceed Ventral Patch, Ethicon</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-proceed_ehticon\">proceed_ehticon</a></td><td>Proceed, Ethicon</td><td>Proceed, Ethicon</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-prolene\">prolene</a></td><td>Prolene</td><td>Prolene</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-softmesh_bard\">softmesh_bard</a></td><td>SoftMesh, BARD</td><td>SoftMesh, BARD</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-strattice_lifecell\">strattice_lifecell</a></td><td>Strattice, Lifecell</td><td>Strattice, Lifecell</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-supromesh\">supromesh</a></td><td>Supromesh</td><td>Supromesh</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-symbotex_composite\">symbotex_composite</a></td><td>Symbotex Composite</td><td>Symbotex Composite</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-tigr\">tigr</a></td><td>TIGR</td><td>TIGR</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-ultrapro_ethicon\">ultrapro_ethicon</a></td><td>Ultrapro, Ethicon</td><td>Ultrapro, Ethicon</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-ultrapro_advanced\">ultrapro_advanced</a></td><td>Ultrapro Advanced</td><td>Ultrapro Advanced</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-ventralex_st_bard\">ventralex_st_bard</a></td><td>Ventralex ST, BARD</td><td>Ventralex ST, BARD</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-ventralight_st_bard\">ventralight_st_bard</a></td><td>Ventralight ST, BARD</td><td>Ventralight ST, BARD</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-ventrio_hernia_st_bard\">ventrio_hernia_st_bard</a></td><td>Ventrio Hernia ST, BARD</td><td>Ventrio Hernia ST, BARD</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-versatex\">versatex</a></td><td>Versatex</td><td>Versatex</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-vypro_ethicon\">vypro_ethicon</a></td><td>Vypro, Ethicon</td><td>Vypro, Ethicon</td></tr><tr><td><a href=\"CodeSystem-MeshType.html#MeshType-xenmatrix\">xenmatrix</a></td><td>Xenmatrix</td><td>Xenmatrix</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Anden mesh</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0532</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html#v2-0532-UNK\">UNK</a></td><td>Uoplyst</td><td>unknown</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/MeshTypeVentralhernieDHDB"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "MeshTypeVentralhernieDHDB"] ; # 
+  fhir:title [ fhir:v "Mesh type - Ventralhernie (DHDB)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-07-21T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Mesh type - Ventralhernie (DHDB)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/MeshType"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "adhesix_bard" ] ;
+         fhir:display [ fhir:v "Adhesix, BARD" ]
+       ] [
+         fhir:code [ fhir:v "bard_flatmesh" ] ;
+         fhir:display [ fhir:v "BARD Flatmesh" ]
+       ] [
+         fhir:code [ fhir:v "bio_a" ] ;
+         fhir:display [ fhir:v "BIO-A" ]
+       ] [
+         fhir:code [ fhir:v "cabs_air" ] ;
+         fhir:display [ fhir:v "CABS AIR Composite, Cousin Biotech" ]
+       ] [
+         fhir:code [ fhir:v "dynamesh_kebomed" ] ;
+         fhir:display [ fhir:v "Dynamesh, Kebomed" ]
+       ] [
+         fhir:code [ fhir:v "dynamesh_ipom" ] ;
+         fhir:display [ fhir:v "Dynamesh IPOM, Kebomed" ]
+       ] [
+         fhir:code [ fhir:v "galmesh_light" ] ;
+         fhir:display [ fhir:v "Galmesh Light" ]
+       ] [
+         fhir:code [ fhir:v "galmesh_umbilical" ] ;
+         fhir:display [ fhir:v "Galmesh Umbilical" ]
+       ] [
+         fhir:code [ fhir:v "gore_dualmesh" ] ;
+         fhir:display [ fhir:v "Gore Dualmesh, ViCare Medical" ]
+       ] [
+         fhir:code [ fhir:v "intramesh" ] ;
+         fhir:display [ fhir:v "Intramesh (T1/P8/W3), Cousin Biotech" ]
+       ] [
+         fhir:code [ fhir:v "optilene_mesh" ] ;
+         fhir:display [ fhir:v "Optilene Mesh" ]
+       ] [
+         fhir:code [ fhir:v "optilene_mesh_elastic" ] ;
+         fhir:display [ fhir:v "Optilene Mesh Elastic" ]
+       ] [
+         fhir:code [ fhir:v "optilene_mesh_lp" ] ;
+         fhir:display [ fhir:v "Optilene Mesh LP" ]
+       ] [
+         fhir:code [ fhir:v "parietene_composite" ] ;
+         fhir:display [ fhir:v "Parietene Composite" ]
+       ] [
+         fhir:code [ fhir:v "parietene_covidien" ] ;
+         fhir:display [ fhir:v "Parietene Covidien" ]
+       ] [
+         fhir:code [ fhir:v "parietex_ventral" ] ;
+         fhir:display [ fhir:v "Parietex Ventral Patch" ]
+       ] [
+         fhir:code [ fhir:v "parietex_covidien" ] ;
+         fhir:display [ fhir:v "Parietex Covidien" ]
+       ] [
+         fhir:code [ fhir:v "parietex_composite" ] ;
+         fhir:display [ fhir:v "Parietex Composite (incl. Optimized), Covidien" ]
+       ] [
+         fhir:code [ fhir:v "parietex_progrip" ] ;
+         fhir:display [ fhir:v "Parietex Progrip, Covidien" ]
+       ] [
+         fhir:code [ fhir:v "permacol_covidien" ] ;
+         fhir:display [ fhir:v "Permacol, Covidien" ]
+       ] [
+         fhir:code [ fhir:v "phasix" ] ;
+         fhir:display [ fhir:v "Phasix" ]
+       ] [
+         fhir:code [ fhir:v "phasix_st" ] ;
+         fhir:display [ fhir:v "Phasix ST" ]
+       ] [
+         fhir:code [ fhir:v "physiomesh_ethicon" ] ;
+         fhir:display [ fhir:v "Physiomesh, Ethicon" ]
+       ] [
+         fhir:code [ fhir:v "proceed_ventral" ] ;
+         fhir:display [ fhir:v "Proceed Ventral Patch, Ethicon" ]
+       ] [
+         fhir:code [ fhir:v "proceed_ehticon" ] ;
+         fhir:display [ fhir:v "Proceed, Ethicon" ]
+       ] [
+         fhir:code [ fhir:v "prolene" ] ;
+         fhir:display [ fhir:v "Prolene" ]
+       ] [
+         fhir:code [ fhir:v "softmesh_bard" ] ;
+         fhir:display [ fhir:v "SoftMesh, BARD" ]
+       ] [
+         fhir:code [ fhir:v "strattice_lifecell" ] ;
+         fhir:display [ fhir:v "Strattice, Lifecell" ]
+       ] [
+         fhir:code [ fhir:v "supromesh" ] ;
+         fhir:display [ fhir:v "Supromesh" ]
+       ] [
+         fhir:code [ fhir:v "symbotex_composite" ] ;
+         fhir:display [ fhir:v "Symbotex Composite" ]
+       ] [
+         fhir:code [ fhir:v "tigr" ] ;
+         fhir:display [ fhir:v "TIGR" ]
+       ] [
+         fhir:code [ fhir:v "ultrapro_ethicon" ] ;
+         fhir:display [ fhir:v "Ultrapro, Ethicon" ]
+       ] [
+         fhir:code [ fhir:v "ultrapro_advanced" ] ;
+         fhir:display [ fhir:v "Ultrapro Advanced" ]
+       ] [
+         fhir:code [ fhir:v "ventralex_st_bard" ] ;
+         fhir:display [ fhir:v "Ventralex ST, BARD" ]
+       ] [
+         fhir:code [ fhir:v "ventralight_st_bard" ] ;
+         fhir:display [ fhir:v "Ventralight ST, BARD" ]
+       ] [
+         fhir:code [ fhir:v "ventrio_hernia_st_bard" ] ;
+         fhir:display [ fhir:v "Ventrio Hernia ST, BARD" ]
+       ] [
+         fhir:code [ fhir:v "versatex" ] ;
+         fhir:display [ fhir:v "Versatex" ]
+       ] [
+         fhir:code [ fhir:v "vypro_ethicon" ] ;
+         fhir:display [ fhir:v "Vypro, Ethicon" ]
+       ] [
+         fhir:code [ fhir:v "xenmatrix" ] ;
+         fhir:display [ fhir:v "Xenmatrix" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "other" ] ;
+         fhir:display [ fhir:v "Anden mesh" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0532"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "UNK" ] ;
+         fhir:display [ fhir:v "Uoplyst" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

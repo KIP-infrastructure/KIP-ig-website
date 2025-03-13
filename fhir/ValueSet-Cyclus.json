@@ -1,0 +1,63 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "Cyclus",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Cyclus</b></p><a name=\"Cyclus\"> </a><a name=\"hcCyclus\"> </a><a name=\"Cyclus-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-Cyclus.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Cyclus</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Cyclus.html#Cyclus-14-dage\">14-dage</a></td><td>14 dage</td><td>14 dage</td></tr><tr><td><a href=\"CodeSystem-Cyclus.html#Cyclus-21-dage\">21-dage</a></td><td>21 dage</td><td>21 dage</td></tr><tr><td><a href=\"CodeSystem-Cyclus.html#Cyclus-28-dage\">28-dage</a></td><td>28 dage</td><td>28 dage</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-continuous\">continuous</a></td><td>Kontinuerligt</td><td>Continuous / Kontinuerlig</td></tr></table></li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0532</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html#v2-0532-UNK\">UNK</a></td><td>Uoplyst</td><td>unknown</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/Cyclus",
+  "version" : "0.1.8",
+  "name" : "Cyclus",
+  "title" : "Cyclus længde",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2023-05-17T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Cyclus længde",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/Cyclus",
+      "concept" : [{
+        "code" : "14-dage",
+        "display" : "14 dage"
+      },
+      {
+        "code" : "21-dage",
+        "display" : "21 dage"
+      },
+      {
+        "code" : "28-dage",
+        "display" : "28 dage"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "other",
+        "display" : "Andet"
+      },
+      {
+        "code" : "continuous",
+        "display" : "Kontinuerligt"
+      }]
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0532",
+      "concept" : [{
+        "code" : "UNK",
+        "display" : "Uoplyst"
+      }]
+    }]
+  }
+}

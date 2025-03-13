@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/UdredningDANDEM> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "UdredningDANDEM"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet UdredningDANDEM</b></p><a name=\"UdredningDANDEM\"> </a><a name=\"hcUdredningDANDEM\"> </a><a name=\"UdredningDANDEM-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-AssessmentType.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/AssessmentType</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-AssessmentType.html#AssessmentType-primary_dementia_assessment\">primary_dementia_assessment</a></td><td>Primær demensudredning, henvist direkte</td><td>Primary dementia assessment / Primær demensudredning</td></tr><tr><td><a href=\"CodeSystem-AssessmentType.html#AssessmentType-second_opinion\">second_opinion</a></td><td>Second opinion</td><td>Second opinion</td></tr><tr><td><a href=\"CodeSystem-AssessmentType.html#AssessmentType-referred_again_behavioral_problems\">referred_again_behavioral_problems</a></td><td>Genhenvist pga. adfærdsforstyrrelser og har sikker diagnose</td><td>Referred again beacause of behavioral problems / Genhenvist pga. adfærdsforstyrrelser</td></tr><tr><td><a href=\"CodeSystem-AssessmentType.html#AssessmentType-referred_again_dementia_treatment\">referred_again_dementia_treatment</a></td><td>Genhenvist pga. demensbehandling og har en sikker diagnose</td><td>Referred again beacause of dementia treatment / Genhenvist pga. demensbehandling</td></tr><tr><td><a href=\"CodeSystem-AssessmentType.html#AssessmentType-revisited_primary_assessment\">revisited_primary_assessment</a></td><td>Omvisiteret fritvalgspatient til primær udredning</td><td>Revisited for primary assessment / Omvisiteret til primær udredning</td></tr><tr><td><a href=\"CodeSystem-AssessmentType.html#AssessmentType-no_wish_for_assessment\">no_wish_for_assessment</a></td><td>Patient ønsker ikke yderligere undersøgelser</td><td>Patient wishes for no further assessment / Patient ønsker ikke yderligere undersøgelser</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/UdredningDANDEM"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "UdredningDANDEM"] ; # 
+  fhir:title [ fhir:v "Udredning (DANDEM)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-07-19T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Udredning (DANDEM)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/AssessmentType"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "primary_dementia_assessment" ] ;
+         fhir:display [ fhir:v "Primær demensudredning, henvist direkte" ]
+       ] [
+         fhir:code [ fhir:v "second_opinion" ] ;
+         fhir:display [ fhir:v "Second opinion" ]
+       ] [
+         fhir:code [ fhir:v "referred_again_behavioral_problems" ] ;
+         fhir:display [ fhir:v "Genhenvist pga. adfærdsforstyrrelser og har sikker diagnose" ]
+       ] [
+         fhir:code [ fhir:v "referred_again_dementia_treatment" ] ;
+         fhir:display [ fhir:v "Genhenvist pga. demensbehandling og har en sikker diagnose" ]
+       ] [
+         fhir:code [ fhir:v "revisited_primary_assessment" ] ;
+         fhir:display [ fhir:v "Omvisiteret fritvalgspatient til primær udredning" ]
+       ] [
+         fhir:code [ fhir:v "no_wish_for_assessment" ] ;
+         fhir:display [ fhir:v "Patient ønsker ikke yderligere undersøgelser" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

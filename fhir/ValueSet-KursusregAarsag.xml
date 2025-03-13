@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="KursusregAarsag"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet KursusregAarsag</b></p><a name="KursusregAarsag"> </a><a name="hcKursusregAarsag"> </a><a name="KursusregAarsag-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-GenericValues.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-GenericValues.html#GenericValues-not_performed">not_performed</a></td><td>Gennemførsel af genoplivningskurser registreres ikke systematisk.</td><td>Not performed - used to indicate, if a procedure or test has not been performed</td></tr><tr><td><a href="CodeSystem-GenericValues.html#GenericValues-na">na</a></td><td>Gennemførsel af genoplivningskurser registreres systematisk, men tallene er ikke umiddelbart tilgængelige, og/eller der er ikke ressourcer til at fremskaffe dem.</td><td>Not available</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.rkkp.dk/fhir/ValueSet/KursusregAarsag"/>
+  <version value="0.1.8"/>
+  <name value="KursusregAarsag"/>
+  <title value="Kursusregistrering - årsag"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-10-29T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Kursusregistrering - årsag til manglende oplysninger"/>
+  <compose>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"/>
+      <concept>
+        <code value="not_performed"/>
+        <display value="Gennemførsel af genoplivningskurser registreres ikke systematisk."/>
+      </concept>
+      <concept>
+        <code value="na"/>
+        <display value="Gennemførsel af genoplivningskurser registreres systematisk, men tallene er ikke umiddelbart tilgængelige, og/eller der er ikke ressourcer til at fremskaffe dem."/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

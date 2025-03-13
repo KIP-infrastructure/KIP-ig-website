@@ -1,0 +1,132 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/EDTACodes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EDTACodes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem EDTACodes</b></p><a name=\"EDTACodes\"> </a><a name=\"hcEDTACodes\"> </a><a name=\"EDTACodes-en-US\"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/EDTACodes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">EDTA10<a name=\"EDTACodes-EDTA10\"> </a></td><td>EDTA10, Center-hæmodialyse</td><td>EDTA 10, Center-hæmodialyse</td></tr><tr><td style=\"white-space:nowrap\">EDTA11<a name=\"EDTACodes-EDTA11\"> </a></td><td>EDTA11, Limited-care dialyse</td><td>EDTA 11, Limited-care dialyse</td></tr><tr><td style=\"white-space:nowrap\">EDTA20<a name=\"EDTACodes-EDTA20\"> </a></td><td>EDTA20, Hjemme-hæmodialyse</td><td>EDTA 20, Hjemme-hæmodialyse</td></tr><tr><td style=\"white-space:nowrap\">EDTA30<a name=\"EDTACodes-EDTA30\"> </a></td><td>EDTA30, IPD-dialyse (hospital)</td><td>EDTA 30, IPD-dialyse (hospital)</td></tr><tr><td style=\"white-space:nowrap\">EDTA40<a name=\"EDTACodes-EDTA40\"> </a></td><td>EDTA40, CAPD-dialyse</td><td>EDTA 40, CAPD-dialyse</td></tr><tr><td style=\"white-space:nowrap\">EDTA41<a name=\"EDTACodes-EDTA41\"> </a></td><td>EDTA41, APD-dialyse</td><td>EDTA 41, APD-dialyse</td></tr><tr><td style=\"white-space:nowrap\">EDTA45<a name=\"EDTACodes-EDTA45\"> </a></td><td>EDTA45, Blandet PDHD-dialyse</td><td>EDTA 45, Blandet PDHD-dialyse</td></tr><tr><td style=\"white-space:nowrap\">EDTA46<a name=\"EDTACodes-EDTA46\"> </a></td><td>EDTA46, Assisteret PD (kun professionel; husk også at indtaste APD(CAPD))</td><td>EDTA 46, Assisteret PD (kun professionel; husk også at indtaste APD(CAPD))</td></tr><tr><td style=\"white-space:nowrap\">EDTA46a<a name=\"EDTACodes-EDTA46a\"> </a></td><td>EDTA46a, Assisteret CAPD (kun professionel)</td><td>EDTA 46a, Assisteret CAPD (kun professionel)</td></tr><tr><td style=\"white-space:nowrap\">EDTA46b<a name=\"EDTACodes-EDTA46b\"> </a></td><td>EDTA46b, Assisteret APD (kun professionel)</td><td>EDTA 46b, Assisteret APD (kun professionel)</td></tr><tr><td style=\"white-space:nowrap\">EDTA50<a name=\"EDTACodes-EDTA50\"> </a></td><td>EDTA50, Transplantation</td><td>EDTA50, Transplantation</td></tr><tr><td style=\"white-space:nowrap\">EDTA60<a name=\"EDTACodes-EDTA60\"> </a></td><td>EDTA60, Nyrefunktion start</td><td>EDTA60, Nyrefunktion start</td></tr><tr><td style=\"white-space:nowrap\">EDTA61<a name=\"EDTACodes-EDTA61\"> </a></td><td>EDTA61, Akut rejektion</td><td>EDTA61, Akut rejektion</td></tr><tr><td style=\"white-space:nowrap\">EDTA70<a name=\"EDTACodes-EDTA70\"> </a></td><td>EDTA70, Grafttab, irreversibelt (årsag ukendt)</td><td>EDTA70, Grafttab, irreversibelt (årsag ukendt)</td></tr><tr><td style=\"white-space:nowrap\">EDTA71<a name=\"EDTACodes-EDTA71\"> </a></td><td>EDTA71, Grafttab, hyperakut rejektion</td><td>EDTA71, Grafttab, hyperakut rejektion</td></tr><tr><td style=\"white-space:nowrap\">EDTA72<a name=\"EDTACodes-EDTA72\"> </a></td><td>EDTA72, Grafttab, rejektion (med immunosuppressiv beh.)</td><td>EDTA72, Grafttab, rejektion (med immunosuppressiv beh.)</td></tr><tr><td style=\"white-space:nowrap\">EDTA73<a name=\"EDTACodes-EDTA73\"> </a></td><td>EDTA73, Grafttab, rejektion (uden immunosuppressiv beh.)</td><td>EDTA73, Grafttab, rejektion (uden immunosuppressiv beh.)</td></tr><tr><td style=\"white-space:nowrap\">EDTA74<a name=\"EDTACodes-EDTA74\"> </a></td><td>EDTA74, Grafttab, reccurent primær leverlidelse</td><td>EDTA74, Grafttab, reccurent primær leverlidelse</td></tr><tr><td style=\"white-space:nowrap\">EDTA75<a name=\"EDTACodes-EDTA75\"> </a></td><td>EDTA75, Grafttab, vasculær/ureter operativt problem</td><td>EDTA75, Grafttab, vasculær/ureter operativt problem</td></tr><tr><td style=\"white-space:nowrap\">EDTA76<a name=\"EDTACodes-EDTA76\"> </a></td><td>EDTA76, Grafttab, vasculær thrombose uden op problem</td><td>EDTA76, Grafttab, vasculær thrombose uden op problem</td></tr><tr><td style=\"white-space:nowrap\">EDTA77<a name=\"EDTACodes-EDTA77\"> </a></td><td>EDTA77, Grafttab, infektion</td><td>EDTA77, Grafttab, infektion</td></tr><tr><td style=\"white-space:nowrap\">EDTA78<a name=\"EDTACodes-EDTA78\"> </a></td><td>EDTA78, Grafttab, fjernelse af fungerende graft</td><td>EDTA78, Grafttab, fjernelse af fungerende graft</td></tr><tr><td style=\"white-space:nowrap\">EDTA79<a name=\"EDTACodes-EDTA79\"> </a></td><td>EDTA79, Grafttab, ikke-fungerende graft</td><td>EDTA79, Grafttab, ikke-fungerende graft</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/EDTACodes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "EDTACodes"] ; # 
+  fhir:title [ fhir:v "EDTA koder (DNSL)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-01-10T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "EDTA koder (DNSL)"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "23"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "EDTA10" ] ;
+     fhir:display [ fhir:v "EDTA10, Center-hæmodialyse" ] ;
+     fhir:definition [ fhir:v "EDTA 10, Center-hæmodialyse" ]
+  ] [
+     fhir:code [ fhir:v "EDTA11" ] ;
+     fhir:display [ fhir:v "EDTA11, Limited-care dialyse" ] ;
+     fhir:definition [ fhir:v "EDTA 11, Limited-care dialyse" ]
+  ] [
+     fhir:code [ fhir:v "EDTA20" ] ;
+     fhir:display [ fhir:v "EDTA20, Hjemme-hæmodialyse" ] ;
+     fhir:definition [ fhir:v "EDTA 20, Hjemme-hæmodialyse" ]
+  ] [
+     fhir:code [ fhir:v "EDTA30" ] ;
+     fhir:display [ fhir:v "EDTA30, IPD-dialyse (hospital)" ] ;
+     fhir:definition [ fhir:v "EDTA 30, IPD-dialyse (hospital)" ]
+  ] [
+     fhir:code [ fhir:v "EDTA40" ] ;
+     fhir:display [ fhir:v "EDTA40, CAPD-dialyse" ] ;
+     fhir:definition [ fhir:v "EDTA 40, CAPD-dialyse" ]
+  ] [
+     fhir:code [ fhir:v "EDTA41" ] ;
+     fhir:display [ fhir:v "EDTA41, APD-dialyse" ] ;
+     fhir:definition [ fhir:v "EDTA 41, APD-dialyse" ]
+  ] [
+     fhir:code [ fhir:v "EDTA45" ] ;
+     fhir:display [ fhir:v "EDTA45, Blandet PDHD-dialyse" ] ;
+     fhir:definition [ fhir:v "EDTA 45, Blandet PDHD-dialyse" ]
+  ] [
+     fhir:code [ fhir:v "EDTA46" ] ;
+     fhir:display [ fhir:v "EDTA46, Assisteret PD (kun professionel; husk også at indtaste APD(CAPD))" ] ;
+     fhir:definition [ fhir:v "EDTA 46, Assisteret PD (kun professionel; husk også at indtaste APD(CAPD))" ]
+  ] [
+     fhir:code [ fhir:v "EDTA46a" ] ;
+     fhir:display [ fhir:v "EDTA46a, Assisteret CAPD (kun professionel)" ] ;
+     fhir:definition [ fhir:v "EDTA 46a, Assisteret CAPD (kun professionel)" ]
+  ] [
+     fhir:code [ fhir:v "EDTA46b" ] ;
+     fhir:display [ fhir:v "EDTA46b, Assisteret APD (kun professionel)" ] ;
+     fhir:definition [ fhir:v "EDTA 46b, Assisteret APD (kun professionel)" ]
+  ] [
+     fhir:code [ fhir:v "EDTA50" ] ;
+     fhir:display [ fhir:v "EDTA50, Transplantation" ] ;
+     fhir:definition [ fhir:v "EDTA50, Transplantation" ]
+  ] [
+     fhir:code [ fhir:v "EDTA60" ] ;
+     fhir:display [ fhir:v "EDTA60, Nyrefunktion start" ] ;
+     fhir:definition [ fhir:v "EDTA60, Nyrefunktion start" ]
+  ] [
+     fhir:code [ fhir:v "EDTA61" ] ;
+     fhir:display [ fhir:v "EDTA61, Akut rejektion" ] ;
+     fhir:definition [ fhir:v "EDTA61, Akut rejektion" ]
+  ] [
+     fhir:code [ fhir:v "EDTA70" ] ;
+     fhir:display [ fhir:v "EDTA70, Grafttab, irreversibelt (årsag ukendt)" ] ;
+     fhir:definition [ fhir:v "EDTA70, Grafttab, irreversibelt (årsag ukendt)" ]
+  ] [
+     fhir:code [ fhir:v "EDTA71" ] ;
+     fhir:display [ fhir:v "EDTA71, Grafttab, hyperakut rejektion" ] ;
+     fhir:definition [ fhir:v "EDTA71, Grafttab, hyperakut rejektion" ]
+  ] [
+     fhir:code [ fhir:v "EDTA72" ] ;
+     fhir:display [ fhir:v "EDTA72, Grafttab, rejektion (med immunosuppressiv beh.)" ] ;
+     fhir:definition [ fhir:v "EDTA72, Grafttab, rejektion (med immunosuppressiv beh.)" ]
+  ] [
+     fhir:code [ fhir:v "EDTA73" ] ;
+     fhir:display [ fhir:v "EDTA73, Grafttab, rejektion (uden immunosuppressiv beh.)" ] ;
+     fhir:definition [ fhir:v "EDTA73, Grafttab, rejektion (uden immunosuppressiv beh.)" ]
+  ] [
+     fhir:code [ fhir:v "EDTA74" ] ;
+     fhir:display [ fhir:v "EDTA74, Grafttab, reccurent primær leverlidelse" ] ;
+     fhir:definition [ fhir:v "EDTA74, Grafttab, reccurent primær leverlidelse" ]
+  ] [
+     fhir:code [ fhir:v "EDTA75" ] ;
+     fhir:display [ fhir:v "EDTA75, Grafttab, vasculær/ureter operativt problem" ] ;
+     fhir:definition [ fhir:v "EDTA75, Grafttab, vasculær/ureter operativt problem" ]
+  ] [
+     fhir:code [ fhir:v "EDTA76" ] ;
+     fhir:display [ fhir:v "EDTA76, Grafttab, vasculær thrombose uden op problem" ] ;
+     fhir:definition [ fhir:v "EDTA76, Grafttab, vasculær thrombose uden op problem" ]
+  ] [
+     fhir:code [ fhir:v "EDTA77" ] ;
+     fhir:display [ fhir:v "EDTA77, Grafttab, infektion" ] ;
+     fhir:definition [ fhir:v "EDTA77, Grafttab, infektion" ]
+  ] [
+     fhir:code [ fhir:v "EDTA78" ] ;
+     fhir:display [ fhir:v "EDTA78, Grafttab, fjernelse af fungerende graft" ] ;
+     fhir:definition [ fhir:v "EDTA78, Grafttab, fjernelse af fungerende graft" ]
+  ] [
+     fhir:code [ fhir:v "EDTA79" ] ;
+     fhir:display [ fhir:v "EDTA79, Grafttab, ikke-fungerende graft" ] ;
+     fhir:definition [ fhir:v "EDTA79, Grafttab, ikke-fungerende graft" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

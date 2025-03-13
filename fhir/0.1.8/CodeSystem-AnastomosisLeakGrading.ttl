@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/AnastomosisLeakGrading> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AnastomosisLeakGrading"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem AnastomosisLeakGrading</b></p><a name=\"AnastomosisLeakGrading\"> </a><a name=\"hcAnastomosisLeakGrading\"> </a><a name=\"AnastomosisLeakGrading-en-US\"> </a><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/AnastomosisLeakGrading</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">grade_a<a name=\"AnastomosisLeakGrading-grade_a\"> </a></td><td>Grade A</td><td>Grad A - Kræver ikke nogen form for aktiv terapeutisk behandling</td></tr><tr><td style=\"white-space:nowrap\">grade_b<a name=\"AnastomosisLeakGrading-grade_b\"> </a></td><td>Grade B</td><td>Grad B - Kræver aktiv terapeutisk behandling men ikke re-labaroskopi eller re-laparotomi</td></tr><tr><td style=\"white-space:nowrap\">grade_c<a name=\"AnastomosisLeakGrading-grade_c\"> </a></td><td>Grade C</td><td>Grad C - Kræver aktiv terapeutisk behandling med re-labaroskopi eller re-laparotomi</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/AnastomosisLeakGrading"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "AnastomosisLeakGrading"] ; # 
+  fhir:title [ fhir:v "Anastomosis leak grading"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-08-17T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Anastomosis leak grading"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "grade_a" ] ;
+     fhir:display [ fhir:v "Grade A" ] ;
+     fhir:definition [ fhir:v "Grad A - Kræver ikke nogen form for aktiv terapeutisk behandling" ]
+  ] [
+     fhir:code [ fhir:v "grade_b" ] ;
+     fhir:display [ fhir:v "Grade B" ] ;
+     fhir:definition [ fhir:v "Grad B - Kræver aktiv terapeutisk behandling men ikke re-labaroskopi eller re-laparotomi" ]
+  ] [
+     fhir:code [ fhir:v "grade_c" ] ;
+     fhir:display [ fhir:v "Grade C" ] ;
+     fhir:definition [ fhir:v "Grad C - Kræver aktiv terapeutisk behandling med re-labaroskopi eller re-laparotomi" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

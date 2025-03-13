@@ -1,0 +1,56 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "OperationssaarKomplikationerKAR",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet OperationssaarKomplikationerKAR</b></p><a name=\"OperationssaarKomplikationerKAR\"> </a><a name=\"hcOperationssaarKomplikationerKAR\"> </a><a name=\"OperationssaarKomplikationerKAR-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-Complications.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Complications</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-hematoma\">hematoma</a></td><td>operationskrævende hæmatom</td><td>Surgery required hematoma / operationskrævende hæmatom</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-lymph_leakage\">lymph_leakage</a></td><td>lymfesiven over 2 døgn (forlænger indlæggelsen)</td><td>Lymph leakage over 2 days / lymfesiven over 2 døgn (forlænger indlæggelsen)</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-necrosis\">necrosis</a></td><td>operationskrævende randnekrose</td><td>Surgery required necrosis / operationskrævende randnekrose</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-lymphocele\">lymphocele</a></td><td>operationskrævende lymfocele</td><td>Surgery required lymphocele / operationskrævende lymfocele</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/OperationssaarKomplikationerKAR",
+  "version" : "0.1.8",
+  "name" : "OperationssaarKomplikationerKAR",
+  "title" : "Operationssår komplikationer (KAR)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-09-27T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Operationssår komplikationer (KAR)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/Complications",
+      "concept" : [{
+        "code" : "hematoma",
+        "display" : "operationskrævende hæmatom"
+      },
+      {
+        "code" : "lymph_leakage",
+        "display" : "lymfesiven over 2 døgn (forlænger indlæggelsen)"
+      },
+      {
+        "code" : "necrosis",
+        "display" : "operationskrævende randnekrose"
+      },
+      {
+        "code" : "lymphocele",
+        "display" : "operationskrævende lymfocele"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "other",
+        "display" : "Andet"
+      }]
+    }]
+  }
+}

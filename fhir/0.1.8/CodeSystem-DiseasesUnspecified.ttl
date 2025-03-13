@@ -1,0 +1,621 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/DiseasesUnspecified> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DiseasesUnspecified"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DiseasesUnspecified</b></p><a name=\"DiseasesUnspecified\"> </a><a name=\"hcDiseasesUnspecified\"> </a><a name=\"DiseasesUnspecified-en-US\"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/DiseasesUnspecified</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">diabetes<a name=\"DiseasesUnspecified-diabetes\"> </a></td><td>Diabetes</td><td>Diabetes / Diabetes</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">heart_disease<a name=\"DiseasesUnspecified-heart_disease\"> </a></td><td>Heart disease</td><td>Heart disease / Hjertesygdom</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">lung_disease<a name=\"DiseasesUnspecified-lung_disease\"> </a></td><td>Lung disease</td><td>Lung disease / Lungesygdom</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">al<a name=\"DiseasesUnspecified-al\"> </a></td><td>Akut leukæmi (AL)</td><td>Akut leumæmi (AL)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">cll<a name=\"DiseasesUnspecified-cll\"> </a></td><td>Kronisk lymfatisk leukæmi (CLL)</td><td>Kronisk lymfatisk leukæmi (CLL)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">lymfom<a name=\"DiseasesUnspecified-lymfom\"> </a></td><td>Lymfom (LYFO)</td><td>Lymfom (LYFO)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">mds<a name=\"DiseasesUnspecified-mds\"> </a></td><td>Myelodysplasi (MDS)</td><td>Myelodysplasi (MDS)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">myeloproliferativ_sygdom<a name=\"DiseasesUnspecified-myeloproliferativ_sygdom\"> </a></td><td>Myeloproliferativ sygdom</td><td>Myeloproliferativ sygdom</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">myelomatose<a name=\"DiseasesUnspecified-myelomatose\"> </a></td><td>Myelomatose</td><td>Myelomatose</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">M96903<a name=\"DiseasesUnspecified-M96903\"> </a></td><td>Follikulært lymfom ukendt grad</td><td>Follikulært lymfom ukendt grad</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">M96913<a name=\"DiseasesUnspecified-M96913\"> </a></td><td>Follikulært lymfom grad 1</td><td>Follikulært lymfom grad 1</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">M96953<a name=\"DiseasesUnspecified-M96953\"> </a></td><td>Follikulært lymfom grad 2</td><td>Follikulært lymfom grad 2</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">M96983<a name=\"DiseasesUnspecified-M96983\"> </a></td><td>Follikulært lymfom grad 3</td><td>Follikulært lymfom grad 3</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">amyloidose&lt;2012<a name=\"DiseasesUnspecified-amyloidose.602012\"> </a></td><td>Amyloidose før 2012</td><td>Amyloidose før 2012</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">all&lt;2005<a name=\"DiseasesUnspecified-all.602005\"> </a></td><td>ALL før 2005</td><td>ALL før 2005</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">all&lt;2000<a name=\"DiseasesUnspecified-all.602000\"> </a></td><td>AML før 2000</td><td>AML før 2000</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">cll&lt;2008<a name=\"DiseasesUnspecified-cll.602008\"> </a></td><td>CLL før 2008</td><td>CLL før 2008</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">hodgkin&lt;1998<a name=\"DiseasesUnspecified-hodgkin.601998\"> </a></td><td>Hodgkin diagnosticeret før 1998 (2000 ØstDK)</td><td>Hodgkin diagnosticeret før 1998 (2000 ØstDK)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">lymfom&lt;1983<a name=\"DiseasesUnspecified-lymfom.601983\"> </a></td><td>Lymfom diagnosticeret før 1983 (2000 ØstDK)</td><td>Lymfom diagnosticeret før 1983 (2000 ØstDK)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">mds&lt;2010<a name=\"DiseasesUnspecified-mds.602010\"> </a></td><td>MDS diagnosticeret før 2010</td><td>MDS diagnosticeret før 2010</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">mgus&lt;2013<a name=\"DiseasesUnspecified-mgus.602013\"> </a></td><td>MGUS eller Amyloidose før 2013</td><td>MGUS eller Amyloidose før 2013</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">myelom&lt;2005<a name=\"DiseasesUnspecified-myelom.602005\"> </a></td><td>Myelomatose diagnosticeret før 2005</td><td>Myelomatose diagnosticeret før 2005</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">mpn&lt;2010<a name=\"DiseasesUnspecified-mpn.602010\"> </a></td><td>Myeloproliferativ sygdom diagnosticeret før 2010</td><td>Myeloproliferativ sygdom diagnosticeret før 2010</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">leukaemi_haarcelle<a name=\"DiseasesUnspecified-leukaemi_haarcelle\"> </a></td><td>Hårcelle leukæmi</td><td>Hårcelle leukæmi</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">lgl<a name=\"DiseasesUnspecified-lgl\"> </a></td><td>Large Granular Leukemia (LGL)</td><td>Large Granular Leukemia (LGL)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">t_pll<a name=\"DiseasesUnspecified-t_pll\"> </a></td><td>T-Prolymfocytleukæmi</td><td>T-Prolymfocytleukæmi</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">myelodysplastic_syndrome<a name=\"DiseasesUnspecified-myelodysplastic_syndrome\"> </a></td><td>Myelodysplastic syndrome</td><td>Myelodysplastic syndrome / Myelodyspl. syndrom (undt. CMML)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">chronic_myelomonocytic_leukemia<a name=\"DiseasesUnspecified-chronic_myelomonocytic_leukemia\"> </a></td><td>Chronic myelomonocytic leukemia (CMML)</td><td>Chronic myelomonocytic leukemia / CMML (Kronisk MyeloMonocytLeuk.)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">essential_thrombocytosis<a name=\"DiseasesUnspecified-essential_thrombocytosis\"> </a></td><td>Essential thrombocytosis</td><td>Essential thrombocytosis / Ess. thrombocytose</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">polycythemia_vera<a name=\"DiseasesUnspecified-polycythemia_vera\"> </a></td><td>Polycythemia vera</td><td>Polycythemia vera / Polycytæmia vera</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">myelofibrosis<a name=\"DiseasesUnspecified-myelofibrosis\"> </a></td><td>Myelofibrosis</td><td>Myelofibrosis / Myelofibrose</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  primary<a name=\"DiseasesUnspecified-primary\"> </a></td><td>Primary myelofibrosis</td><td>Primary myelofibrosis / Primær Myelofibrose</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  prefibrotic<a name=\"DiseasesUnspecified-prefibrotic\"> </a></td><td>Prefibrotic myelofibrosis</td><td>Prefibrotic myelofibrosis / Præfibrotisk Myelofibrose</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">smouldering_mm<a name=\"DiseasesUnspecified-smouldering_mm\"> </a></td><td>Smouldering MM</td><td>Smouldering MM</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">myelomatosis<a name=\"DiseasesUnspecified-myelomatosis\"> </a></td><td>Myelomatosis</td><td>Myelomatosis / Myelomatose</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">solitary_myelom_osseus<a name=\"DiseasesUnspecified-solitary_myelom_osseus\"> </a></td><td>Solitary myelom (osseus)</td><td>Solitary myelom (osseus) / Solitært myelom (ossøst)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">solitary_myelom_extra_osseus<a name=\"DiseasesUnspecified-solitary_myelom_extra_osseus\"> </a></td><td>Solitary myelom (extra osseus)</td><td>Solitary myelom (extra osseus) / Solitært myelom (ekstraossøst)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">plasma_cell_leukemia<a name=\"DiseasesUnspecified-plasma_cell_leukemia\"> </a></td><td>Plasma cell leukemia</td><td>Plasma cell leukemia / Plasmacelleleukæmi</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">DD472<a name=\"DiseasesUnspecified-DD472\"> </a></td><td>Monoklonal gammopati med ubestemt signifikans (MGUS)</td><td>Monoklonal gammopati med ubestemt signifikans (MGUS)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">ZM973A3<a name=\"DiseasesUnspecified-ZM973A3\"> </a></td><td>Osteosklerotisk myelom (POEMS syndrom)</td><td>Osteosklerotisk myelom (POEMS syndrom)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">paraprotein_associated_polyneuropathy<a name=\"DiseasesUnspecified-paraprotein_associated_polyneuropathy\"> </a></td><td>Paraprotein associated polyneuropathy</td><td>Paraprotein associated polyneuropathy / Paraprotein associeret polyneuropati</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">chronic_myeloid_leukemia<a name=\"DiseasesUnspecified-chronic_myeloid_leukemia\"> </a></td><td>Chronic myeloid leukemia</td><td>Chronic myeloid leukemia / Kronisk Myeloid Leukæmi (BCR-ABL1 positiv) (CML)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">myeloproliferative_unclassified<a name=\"DiseasesUnspecified-myeloproliferative_unclassified\"> </a></td><td>Unclassified myeloproliferative</td><td>Unclassified myeloproliferative / Uklassificerbar Myeloproliferativ sygdom</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">anemia<a name=\"DiseasesUnspecified-anemia\"> </a></td><td>Anemia</td><td>Anemia / Anæmi</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">thrombocytopenic_disorder<a name=\"DiseasesUnspecified-thrombocytopenic_disorder\"> </a></td><td>Thrombocytopenic disorder</td><td>Thrombocytopenic disorder / Trombocytopeni</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">neutropenia<a name=\"DiseasesUnspecified-neutropenia\"> </a></td><td>Neutropenia</td><td>Neutropenia / Neutropeni</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">alzheimers_dementia<a name=\"DiseasesUnspecified-alzheimers_dementia\"> </a></td><td>Alzheimers demens</td><td>Alzheimers demens</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">lewy_body_dementia<a name=\"DiseasesUnspecified-lewy_body_dementia\"> </a></td><td>Lewy Body demens</td><td>Lewy Body demens</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">parkinson_dementia<a name=\"DiseasesUnspecified-parkinson_dementia\"> </a></td><td>Parkinson demens</td><td>Parkinson demens</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">vascular_dementia<a name=\"DiseasesUnspecified-vascular_dementia\"> </a></td><td>Vaskulær demens</td><td>Vaskulær demens</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">mixed_dementia<a name=\"DiseasesUnspecified-mixed_dementia\"> </a></td><td>Mixed demens (Alzheimers + vaskulær)</td><td>Mixed demens (Alzheimers + vaskulær)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">frontotemporal_dementia<a name=\"DiseasesUnspecified-frontotemporal_dementia\"> </a></td><td>Frontotemporal demens</td><td>Frontotemporal demens</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">atypical_parkinson_dementia<a name=\"DiseasesUnspecified-atypical_parkinson_dementia\"> </a></td><td>Atypisk Parkinson demens</td><td>Atypisk Parkinson demens</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">hydrocephalus_dementia<a name=\"DiseasesUnspecified-hydrocephalus_dementia\"> </a></td><td>Normaltryks hydrocephalus demens</td><td>Normaltryks hydrocephalus demens</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">huntingtons_chorea_dementia<a name=\"DiseasesUnspecified-huntingtons_chorea_dementia\"> </a></td><td>Huntingtons Chorea demens</td><td>Huntingtons Chorea demens</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">alchohol_dementia<a name=\"DiseasesUnspecified-alchohol_dementia\"> </a></td><td>Alkohol demens</td><td>Alkohol demens</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">neurodegenerative_dementia<a name=\"DiseasesUnspecified-neurodegenerative_dementia\"> </a></td><td>Neurodegenerativ demens</td><td>Neurodegenerativ demens</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">not_affective_dementia<a name=\"DiseasesUnspecified-not_affective_dementia\"> </a></td><td>Ikke-affektiv demens</td><td>Ikke-affektiv demens</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">affective_dementia<a name=\"DiseasesUnspecified-affective_dementia\"> </a></td><td>Affektiv demens</td><td>Affektiv demens</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">ventral_hernia<a name=\"DiseasesUnspecified-ventral_hernia\"> </a></td><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  incisional<a name=\"DiseasesUnspecified-incisional\"> </a></td><td>Incisional</td><td>Incisional / Incisionelt</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    length_cicatrice<a name=\"DiseasesUnspecified-length_cicatrice\"> </a></td><td/><td/></tr><tr><td>3</td><td style=\"white-space:nowrap\">    cross_cicatrice<a name=\"DiseasesUnspecified-cross_cicatrice\"> </a></td><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  umbilical<a name=\"DiseasesUnspecified-umbilical\"> </a></td><td>Umbilical</td><td>Umbilical / Umbilicalt</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  linea_alba<a name=\"DiseasesUnspecified-linea_alba\"> </a></td><td>Linea alba</td><td>Linea alba</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  spiegel<a name=\"DiseasesUnspecified-spiegel\"> </a></td><td>Spiegel</td><td>Spiegel</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  stomi<a name=\"DiseasesUnspecified-stomi\"> </a></td><td>Stomi</td><td>Stomi</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    stomi_herniotomi<a name=\"DiseasesUnspecified-stomi_herniotomi\"> </a></td><td>Stomi and herniotomi</td><td>Stomi and herniotomi / Stomi og herniotomi</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  port<a name=\"DiseasesUnspecified-port\"> </a></td><td>Port</td><td>Port</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">colostomy<a name=\"DiseasesUnspecified-colostomy\"> </a></td><td>Colostomy</td><td>Colostomy / Colostomi / SNOMED-CT: 264585001</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">ileostomy<a name=\"DiseasesUnspecified-ileostomy\"> </a></td><td>Ileostomy</td><td>Ileostomy / Ileostomi / SNOMED-CT: 264364002</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">urologicalstomy<a name=\"DiseasesUnspecified-urologicalstomy\"> </a></td><td>Urological stomy</td><td>Urological stomy / Urostomi / SNOMED-CT: 281601009</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC00-DC14<a name=\"DiseasesUnspecified-DC00-DC14\"> </a></td><td>Kræft i læber, mundhule og svælg</td><td>Kræft i læber, mundhule og svælg</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC15<a name=\"DiseasesUnspecified-DC15\"> </a></td><td>Kræft i spiserøret</td><td>Kræft i spiserøret</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC16<a name=\"DiseasesUnspecified-DC16\"> </a></td><td>Kræft i mavesækken</td><td>Kræft i mavesækken</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC17<a name=\"DiseasesUnspecified-DC17\"> </a></td><td>Kræft i tyndtarmen</td><td>Kræft i tyndtarmen</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC18-DC20<a name=\"DiseasesUnspecified-DC18-DC20\"> </a></td><td>Kræft i tyktarm og endetarm</td><td>Kræft i tyktarm og endetarm</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC22<a name=\"DiseasesUnspecified-DC22\"> </a></td><td>Kræft i leveren og intrahepatiske galdegange</td><td>Kræft i leveren og intrahepatiske galdegange</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC25<a name=\"DiseasesUnspecified-DC25\"> </a></td><td>Kræft i bugspytkirtlen</td><td>Kræft i bugspytkirtlen</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC32<a name=\"DiseasesUnspecified-DC32\"> </a></td><td>Kræft i strubehovedet</td><td>Kræft i strubehovedet</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC33-DC34<a name=\"DiseasesUnspecified-DC33-DC34\"> </a></td><td>Kræft i luftrøret og bronkier og lunge</td><td>Kræft i luftrøret og bronkier og lunge</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC43<a name=\"DiseasesUnspecified-DC43\"> </a></td><td>Modermærkekræft i huden</td><td>Modermærkekræft i huden</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC50<a name=\"DiseasesUnspecified-DC50\"> </a></td><td>Brystkræft</td><td>Brystkræft</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC53<a name=\"DiseasesUnspecified-DC53\"> </a></td><td>Kræft i livmoderhalsen</td><td>Kræft i livmoderhalsen</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC54-DC55<a name=\"DiseasesUnspecified-DC54-DC55\"> </a></td><td>Kræft i livmoderen (inkl. uspecifik)</td><td>Kræft i livmoderen (inkl. uspecifik)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC56+DC570-DC574<a name=\"DiseasesUnspecified-DC56.43DC570-DC574\"> </a></td><td>Kræft i æggestok og æggeleder</td><td>Kræft i æggestok og æggeleder</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC61<a name=\"DiseasesUnspecified-DC61\"> </a></td><td>Kræft i blærehalskirtlen</td><td>Kræft i blærehalskirtlen</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC62<a name=\"DiseasesUnspecified-DC62\"> </a></td><td>Testikelkræft</td><td>Testikelkræft</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC67<a name=\"DiseasesUnspecified-DC67\"> </a></td><td>Kræft i urinblæren</td><td>Kræft i urinblæren</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC64-DC66<a name=\"DiseasesUnspecified-DC64-DC66\"> </a></td><td>Kræft i nyre, nyrebækken og urinleder</td><td>Kræft i nyre, nyrebækken og urinleder</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC70-DC72+DC751-DC753<a name=\"DiseasesUnspecified-DC70-DC72.43DC751-DC753\"> </a></td><td>Kræft i centralnervesystem</td><td>Kræft i centralnervesystem</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC73<a name=\"DiseasesUnspecified-DC73\"> </a></td><td>Kræft i skjoldbruskkirtlen</td><td>Kræft i skjoldbruskkirtlen</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC81<a name=\"DiseasesUnspecified-DC81\"> </a></td><td>Hodgkin lymfomer</td><td>Hodgkin lymfomer</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC82-DC85<a name=\"DiseasesUnspecified-DC82-DC85\"> </a></td><td>Non-hodking malignt lymform</td><td>Non-hodking malignt lymform</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC90<a name=\"DiseasesUnspecified-DC90\"> </a></td><td>Maligne plasmacelle neoplasier</td><td>Maligne plasmacelle neoplasier</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC91-DC95<a name=\"DiseasesUnspecified-DC91-DC95\"> </a></td><td>Leukæmi</td><td>Leukæmi</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC45-DC49<a name=\"DiseasesUnspecified-DC45-DC49\"> </a></td><td>Kræft i mesotel, bindevæv og andet bløddelsvæv</td><td>Kræft i mesotel, bindevæv og andet bløddelsvæv</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC76-DC80<a name=\"DiseasesUnspecified-DC76-DC80\"> </a></td><td>Kræft med dårligt specificerede, sekundære og ikke specificerede lokalisationer</td><td>Kræft med dårligt specificerede, sekundære og ikke specificerede lokalisationer</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">acute_extremity_ischaemia<a name=\"DiseasesUnspecified-acute_extremity_ischaemia\"> </a></td><td>akut ekstremitetsiskæmi</td><td>akut ekstremitetsiskæmi</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">amurosis_fugax<a name=\"DiseasesUnspecified-amurosis_fugax\"> </a></td><td>amaurosis fugax</td><td>amaurosis fugax</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">aneurysm_asymptomatic<a name=\"DiseasesUnspecified-aneurysm_asymptomatic\"> </a></td><td>aneurisme - asymptomatisk</td><td>aneurisme - asymptomatisk</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">aneurysm_symptomatic<a name=\"DiseasesUnspecified-aneurysm_symptomatic\"> </a></td><td>aneurisme - symptomatisk</td><td>aneurisme - symptomatisk</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">aneurysm_ruptured<a name=\"DiseasesUnspecified-aneurysm_ruptured\"> </a></td><td>aneurisme - rumperet</td><td>aneurisme - rumperet</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">aneurysm_clotted<a name=\"DiseasesUnspecified-aneurysm_clotted\"> </a></td><td>aneurisme - tromboseret</td><td>aneurisme - tromboseret</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">aneurysm_pseudo<a name=\"DiseasesUnspecified-aneurysm_pseudo\"> </a></td><td>aneurisme - pseudo</td><td>aneurisme - pseudo</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">aneurysm_mycotic<a name=\"DiseasesUnspecified-aneurysm_mycotic\"> </a></td><td>aneurisme - mykotisk</td><td>aneurisme - mykotisk</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">bleeding<a name=\"DiseasesUnspecified-bleeding\"> </a></td><td>blødning / hæmatom</td><td>blødning / hæmatom</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">infection<a name=\"DiseasesUnspecified-infection\"> </a></td><td>infektion (ikke proteseinfektion = 55)</td><td>infektion (ikke proteseinfektion = 55)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">intestinal_ischaemia<a name=\"DiseasesUnspecified-intestinal_ischaemia\"> </a></td><td>intestinal iskæmi, angina abdominalis</td><td>intestinal iskæmi, angina abdominalis</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">function_dependent_ischaemia<a name=\"DiseasesUnspecified-function_dependent_ischaemia\"> </a></td><td>funktionsbetinget iskæmi, claudicatio intermittens</td><td>funktionsbetinget iskæmi, claudicatio intermittens</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">chronic_ischaemia_rest_pain<a name=\"DiseasesUnspecified-chronic_ischaemia_rest_pain\"> </a></td><td>kronisk iskæmi - hvilesmerter</td><td>kronisk iskæmi - hvilesmerter</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">chronic_ischaemia_wound<a name=\"DiseasesUnspecified-chronic_ischaemia_wound\"> </a></td><td>kronisk iskæmi - sår</td><td>kronisk iskæmi - sår</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">chronic_ischaemia_gangrene<a name=\"DiseasesUnspecified-chronic_ischaemia_gangrene\"> </a></td><td>kronisk iskæmi - gangræn</td><td>kronisk iskæmi - gangræn</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">hypertension_renovascular<a name=\"DiseasesUnspecified-hypertension_renovascular\"> </a></td><td>renovaskulær hypertension</td><td>renovaskulær hypertension</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">stroke<a name=\"DiseasesUnspecified-stroke\"> </a></td><td>stroke</td><td>stroke</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">tos<a name=\"DiseasesUnspecified-tos\"> </a></td><td>thoracic outlet syndrom (TOS)</td><td>thoracic outlet syndrom (TOS)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">tia<a name=\"DiseasesUnspecified-tia\"> </a></td><td>transitorisk iskæmisk attack (TIA)</td><td>transitorisk iskæmisk attack (TIA)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">trauma<a name=\"DiseasesUnspecified-trauma\"> </a></td><td>traume</td><td>traume</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">thrombosis_vascular_reconstruction<a name=\"DiseasesUnspecified-thrombosis_vascular_reconstruction\"> </a></td><td>trombose af karrekonstruktion</td><td>trombose af karrekonstruktion</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">uremia<a name=\"DiseasesUnspecified-uremia\"> </a></td><td>uræmi</td><td>uræmi</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">varices<a name=\"DiseasesUnspecified-varices\"> </a></td><td>varicer</td><td>varicer</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">vasospasms<a name=\"DiseasesUnspecified-vasospasms\"> </a></td><td>vasospasme/ Raynaud</td><td>vasospasme/ Raynaud</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">venus_thrombosis<a name=\"DiseasesUnspecified-venus_thrombosis\"> </a></td><td>venetrombose</td><td>venetrombose</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">reconstruction_failure<a name=\"DiseasesUnspecified-reconstruction_failure\"> </a></td><td>truende rekonstruktionssvigt</td><td>truende rekonstruktionssvigt</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">permanent_central_venous_access<a name=\"DiseasesUnspecified-permanent_central_venous_access\"> </a></td><td>permanent central venøs adgang</td><td>permanent central venøs adgang</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">wound_complication<a name=\"DiseasesUnspecified-wound_complication\"> </a></td><td>sårkomplikation</td><td>sårkomplikation</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">fascial_rupture<a name=\"DiseasesUnspecified-fascial_rupture\"> </a></td><td>fascieruptur</td><td>fascieruptur</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">ileus<a name=\"DiseasesUnspecified-ileus\"> </a></td><td>ileus</td><td>ileus</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">intestine_ischaemia<a name=\"DiseasesUnspecified-intestine_ischaemia\"> </a></td><td>tarmiskæmi</td><td>tarmiskæmi</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">aorto/prosthesis_intestinal_fistula<a name=\"DiseasesUnspecified-aorto.47prosthesis_intestinal_fistula\"> </a></td><td>aorto/protese-instestinal fistel</td><td>aorto/protese-instestinal fistel</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">prosthetic_infection<a name=\"DiseasesUnspecified-prosthetic_infection\"> </a></td><td>proteseinfektion</td><td>proteseinfektion</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">extremity_compartment<a name=\"DiseasesUnspecified-extremity_compartment\"> </a></td><td>ekstremittets kompartment</td><td>ekstremittets kompartment</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">prolonged_intubation<a name=\"DiseasesUnspecified-prolonged_intubation\"> </a></td><td>langvarig intubation</td><td>langvarig intubation</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">retroperitoneal_fibrosis<a name=\"DiseasesUnspecified-retroperitoneal_fibrosis\"> </a></td><td>retroperitoneal fibrose</td><td>retroperitoneal fibrose</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">abdominal_compartment<a name=\"DiseasesUnspecified-abdominal_compartment\"> </a></td><td>abdominal kompartment</td><td>abdominal kompartment</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">entrapment<a name=\"DiseasesUnspecified-entrapment\"> </a></td><td>entrapment</td><td>entrapment</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">emergency_aortic_dissection<a name=\"DiseasesUnspecified-emergency_aortic_dissection\"> </a></td><td>akut aortadissektion</td><td>akut aortadissektion</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">chronic_aortic_dissection<a name=\"DiseasesUnspecified-chronic_aortic_dissection\"> </a></td><td>kronisk aortadissektion</td><td>kronisk aortadissektion</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">dissection_unspecified<a name=\"DiseasesUnspecified-dissection_unspecified\"> </a></td><td>dissektion uden nærmere specifikation</td><td>dissektion uden nærmere specifikation</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">High_grade_B_lymfom_NOS<a name=\"DiseasesUnspecified-High_grade_B_lymfom_NOS\"> </a></td><td>High-grade B-lymfom NOS</td><td>High-grade B-lymfom NOS </td></tr><tr><td>1</td><td style=\"white-space:nowrap\">Primært_kutant_CD4_positivt_små_medium_T_celle_lymfom<a name=\"DiseasesUnspecified-Prim.230rt_kutant_CD4_positivt_sm.229_medium_T_celle_lymfom\"> </a></td><td>Primært kutant CD4-positivt små/medium T-celle lymfom</td><td>Primært kutant CD4-positivt små/medium T-celle lymfom</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">Malignt_lymfom<a name=\"DiseasesUnspecified-Malignt_lymfom\"> </a></td><td>Malignt lymfom</td><td>Malignt lymfom</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">non-Hodgkin_malignt_lymfom<a name=\"DiseasesUnspecified-non-Hodgkin_malignt_lymfom\"> </a></td><td>non-Hodgkin malignt lymfom</td><td>non-Hodgkin malignt lymfom</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">ascites_lymfom<a name=\"DiseasesUnspecified-ascites_lymfom\"> </a></td><td>Ascites med lymfomceller</td><td>Ascites med lymfomceller</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">perikardieeksudat_lymfom<a name=\"DiseasesUnspecified-perikardieeksudat_lymfom\"> </a></td><td>Perikardieeksudat med lymfomceller</td><td>Perikardieeksudat med lymfomceller</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">pleuraeksudat_lymfom<a name=\"DiseasesUnspecified-pleuraeksudat_lymfom\"> </a></td><td>Pleuraeksudat med lymfomceller</td><td/></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/DiseasesUnspecified"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "DiseasesUnspecified"] ; # 
+  fhir:title [ fhir:v "Diseases - Unspecified without a code"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-07T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Diseases - Unspecified without a code"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "146"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "diabetes" ] ;
+     fhir:display [ fhir:v "Diabetes" ] ;
+     fhir:definition [ fhir:v "Diabetes / Diabetes" ]
+  ] [
+     fhir:code [ fhir:v "heart_disease" ] ;
+     fhir:display [ fhir:v "Heart disease" ] ;
+     fhir:definition [ fhir:v "Heart disease / Hjertesygdom" ]
+  ] [
+     fhir:code [ fhir:v "lung_disease" ] ;
+     fhir:display [ fhir:v "Lung disease" ] ;
+     fhir:definition [ fhir:v "Lung disease / Lungesygdom" ]
+  ] [
+     fhir:code [ fhir:v "al" ] ;
+     fhir:display [ fhir:v "Akut leukæmi (AL)" ] ;
+     fhir:definition [ fhir:v "Akut leumæmi (AL)" ]
+  ] [
+     fhir:code [ fhir:v "cll" ] ;
+     fhir:display [ fhir:v "Kronisk lymfatisk leukæmi (CLL)" ] ;
+     fhir:definition [ fhir:v "Kronisk lymfatisk leukæmi (CLL)" ]
+  ] [
+     fhir:code [ fhir:v "lymfom" ] ;
+     fhir:display [ fhir:v "Lymfom (LYFO)" ] ;
+     fhir:definition [ fhir:v "Lymfom (LYFO)" ]
+  ] [
+     fhir:code [ fhir:v "mds" ] ;
+     fhir:display [ fhir:v "Myelodysplasi (MDS)" ] ;
+     fhir:definition [ fhir:v "Myelodysplasi (MDS)" ]
+  ] [
+     fhir:code [ fhir:v "myeloproliferativ_sygdom" ] ;
+     fhir:display [ fhir:v "Myeloproliferativ sygdom" ] ;
+     fhir:definition [ fhir:v "Myeloproliferativ sygdom" ]
+  ] [
+     fhir:code [ fhir:v "myelomatose" ] ;
+     fhir:display [ fhir:v "Myelomatose" ] ;
+     fhir:definition [ fhir:v "Myelomatose" ]
+  ] [
+     fhir:code [ fhir:v "M96903" ] ;
+     fhir:display [ fhir:v "Follikulært lymfom ukendt grad" ] ;
+     fhir:definition [ fhir:v "Follikulært lymfom ukendt grad" ]
+  ] [
+     fhir:code [ fhir:v "M96913" ] ;
+     fhir:display [ fhir:v "Follikulært lymfom grad 1" ] ;
+     fhir:definition [ fhir:v "Follikulært lymfom grad 1" ]
+  ] [
+     fhir:code [ fhir:v "M96953" ] ;
+     fhir:display [ fhir:v "Follikulært lymfom grad 2" ] ;
+     fhir:definition [ fhir:v "Follikulært lymfom grad 2" ]
+  ] [
+     fhir:code [ fhir:v "M96983" ] ;
+     fhir:display [ fhir:v "Follikulært lymfom grad 3" ] ;
+     fhir:definition [ fhir:v "Follikulært lymfom grad 3" ]
+  ] [
+     fhir:code [ fhir:v "amyloidose<2012" ] ;
+     fhir:display [ fhir:v "Amyloidose før 2012" ] ;
+     fhir:definition [ fhir:v "Amyloidose før 2012" ]
+  ] [
+     fhir:code [ fhir:v "all<2005" ] ;
+     fhir:display [ fhir:v "ALL før 2005" ] ;
+     fhir:definition [ fhir:v "ALL før 2005" ]
+  ] [
+     fhir:code [ fhir:v "all<2000" ] ;
+     fhir:display [ fhir:v "AML før 2000" ] ;
+     fhir:definition [ fhir:v "AML før 2000" ]
+  ] [
+     fhir:code [ fhir:v "cll<2008" ] ;
+     fhir:display [ fhir:v "CLL før 2008" ] ;
+     fhir:definition [ fhir:v "CLL før 2008" ]
+  ] [
+     fhir:code [ fhir:v "hodgkin<1998" ] ;
+     fhir:display [ fhir:v "Hodgkin diagnosticeret før 1998 (2000 ØstDK)" ] ;
+     fhir:definition [ fhir:v "Hodgkin diagnosticeret før 1998 (2000 ØstDK)" ]
+  ] [
+     fhir:code [ fhir:v "lymfom<1983" ] ;
+     fhir:display [ fhir:v "Lymfom diagnosticeret før 1983 (2000 ØstDK)" ] ;
+     fhir:definition [ fhir:v "Lymfom diagnosticeret før 1983 (2000 ØstDK)" ]
+  ] [
+     fhir:code [ fhir:v "mds<2010" ] ;
+     fhir:display [ fhir:v "MDS diagnosticeret før 2010" ] ;
+     fhir:definition [ fhir:v "MDS diagnosticeret før 2010" ]
+  ] [
+     fhir:code [ fhir:v "mgus<2013" ] ;
+     fhir:display [ fhir:v "MGUS eller Amyloidose før 2013" ] ;
+     fhir:definition [ fhir:v "MGUS eller Amyloidose før 2013" ]
+  ] [
+     fhir:code [ fhir:v "myelom<2005" ] ;
+     fhir:display [ fhir:v "Myelomatose diagnosticeret før 2005" ] ;
+     fhir:definition [ fhir:v "Myelomatose diagnosticeret før 2005" ]
+  ] [
+     fhir:code [ fhir:v "mpn<2010" ] ;
+     fhir:display [ fhir:v "Myeloproliferativ sygdom diagnosticeret før 2010" ] ;
+     fhir:definition [ fhir:v "Myeloproliferativ sygdom diagnosticeret før 2010" ]
+  ] [
+     fhir:code [ fhir:v "leukaemi_haarcelle" ] ;
+     fhir:display [ fhir:v "Hårcelle leukæmi" ] ;
+     fhir:definition [ fhir:v "Hårcelle leukæmi" ]
+  ] [
+     fhir:code [ fhir:v "lgl" ] ;
+     fhir:display [ fhir:v "Large Granular Leukemia (LGL)" ] ;
+     fhir:definition [ fhir:v "Large Granular Leukemia (LGL)" ]
+  ] [
+     fhir:code [ fhir:v "t_pll" ] ;
+     fhir:display [ fhir:v "T-Prolymfocytleukæmi" ] ;
+     fhir:definition [ fhir:v "T-Prolymfocytleukæmi" ]
+  ] [
+     fhir:code [ fhir:v "myelodysplastic_syndrome" ] ;
+     fhir:display [ fhir:v "Myelodysplastic syndrome" ] ;
+     fhir:definition [ fhir:v "Myelodysplastic syndrome / Myelodyspl. syndrom (undt. CMML)" ]
+  ] [
+     fhir:code [ fhir:v "chronic_myelomonocytic_leukemia" ] ;
+     fhir:display [ fhir:v "Chronic myelomonocytic leukemia (CMML)" ] ;
+     fhir:definition [ fhir:v "Chronic myelomonocytic leukemia / CMML (Kronisk MyeloMonocytLeuk.)" ]
+  ] [
+     fhir:code [ fhir:v "essential_thrombocytosis" ] ;
+     fhir:display [ fhir:v "Essential thrombocytosis" ] ;
+     fhir:definition [ fhir:v "Essential thrombocytosis / Ess. thrombocytose" ]
+  ] [
+     fhir:code [ fhir:v "polycythemia_vera" ] ;
+     fhir:display [ fhir:v "Polycythemia vera" ] ;
+     fhir:definition [ fhir:v "Polycythemia vera / Polycytæmia vera" ]
+  ] [
+     fhir:code [ fhir:v "myelofibrosis" ] ;
+     fhir:display [ fhir:v "Myelofibrosis" ] ;
+     fhir:definition [ fhir:v "Myelofibrosis / Myelofibrose" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "primary" ] ;
+       fhir:display [ fhir:v "Primary myelofibrosis" ] ;
+       fhir:definition [ fhir:v "Primary myelofibrosis / Primær Myelofibrose" ]
+     ] [
+       fhir:code [ fhir:v "prefibrotic" ] ;
+       fhir:display [ fhir:v "Prefibrotic myelofibrosis" ] ;
+       fhir:definition [ fhir:v "Prefibrotic myelofibrosis / Præfibrotisk Myelofibrose" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "smouldering_mm" ] ;
+     fhir:display [ fhir:v "Smouldering MM" ] ;
+     fhir:definition [ fhir:v "Smouldering MM" ]
+  ] [
+     fhir:code [ fhir:v "myelomatosis" ] ;
+     fhir:display [ fhir:v "Myelomatosis" ] ;
+     fhir:definition [ fhir:v "Myelomatosis / Myelomatose" ]
+  ] [
+     fhir:code [ fhir:v "solitary_myelom_osseus" ] ;
+     fhir:display [ fhir:v "Solitary myelom (osseus)" ] ;
+     fhir:definition [ fhir:v "Solitary myelom (osseus) / Solitært myelom (ossøst)" ]
+  ] [
+     fhir:code [ fhir:v "solitary_myelom_extra_osseus" ] ;
+     fhir:display [ fhir:v "Solitary myelom (extra osseus)" ] ;
+     fhir:definition [ fhir:v "Solitary myelom (extra osseus) / Solitært myelom (ekstraossøst)" ]
+  ] [
+     fhir:code [ fhir:v "plasma_cell_leukemia" ] ;
+     fhir:display [ fhir:v "Plasma cell leukemia" ] ;
+     fhir:definition [ fhir:v "Plasma cell leukemia / Plasmacelleleukæmi" ]
+  ] [
+     fhir:code [ fhir:v "DD472" ] ;
+     fhir:display [ fhir:v "Monoklonal gammopati med ubestemt signifikans (MGUS)" ] ;
+     fhir:definition [ fhir:v "Monoklonal gammopati med ubestemt signifikans (MGUS)" ]
+  ] [
+     fhir:code [ fhir:v "ZM973A3" ] ;
+     fhir:display [ fhir:v "Osteosklerotisk myelom (POEMS syndrom)" ] ;
+     fhir:definition [ fhir:v "Osteosklerotisk myelom (POEMS syndrom)" ]
+  ] [
+     fhir:code [ fhir:v "paraprotein_associated_polyneuropathy" ] ;
+     fhir:display [ fhir:v "Paraprotein associated polyneuropathy" ] ;
+     fhir:definition [ fhir:v "Paraprotein associated polyneuropathy / Paraprotein associeret polyneuropati" ]
+  ] [
+     fhir:code [ fhir:v "chronic_myeloid_leukemia" ] ;
+     fhir:display [ fhir:v "Chronic myeloid leukemia" ] ;
+     fhir:definition [ fhir:v "Chronic myeloid leukemia / Kronisk Myeloid Leukæmi (BCR-ABL1 positiv) (CML)" ]
+  ] [
+     fhir:code [ fhir:v "myeloproliferative_unclassified" ] ;
+     fhir:display [ fhir:v "Unclassified myeloproliferative" ] ;
+     fhir:definition [ fhir:v "Unclassified myeloproliferative / Uklassificerbar Myeloproliferativ sygdom" ]
+  ] [
+     fhir:code [ fhir:v "anemia" ] ;
+     fhir:display [ fhir:v "Anemia" ] ;
+     fhir:definition [ fhir:v "Anemia / Anæmi" ]
+  ] [
+     fhir:code [ fhir:v "thrombocytopenic_disorder" ] ;
+     fhir:display [ fhir:v "Thrombocytopenic disorder" ] ;
+     fhir:definition [ fhir:v "Thrombocytopenic disorder / Trombocytopeni" ]
+  ] [
+     fhir:code [ fhir:v "neutropenia" ] ;
+     fhir:display [ fhir:v "Neutropenia" ] ;
+     fhir:definition [ fhir:v "Neutropenia / Neutropeni" ]
+  ] [
+     fhir:code [ fhir:v "alzheimers_dementia" ] ;
+     fhir:display [ fhir:v "Alzheimers demens" ] ;
+     fhir:definition [ fhir:v "Alzheimers demens" ]
+  ] [
+     fhir:code [ fhir:v "lewy_body_dementia" ] ;
+     fhir:display [ fhir:v "Lewy Body demens" ] ;
+     fhir:definition [ fhir:v "Lewy Body demens" ]
+  ] [
+     fhir:code [ fhir:v "parkinson_dementia" ] ;
+     fhir:display [ fhir:v "Parkinson demens" ] ;
+     fhir:definition [ fhir:v "Parkinson demens" ]
+  ] [
+     fhir:code [ fhir:v "vascular_dementia" ] ;
+     fhir:display [ fhir:v "Vaskulær demens" ] ;
+     fhir:definition [ fhir:v "Vaskulær demens" ]
+  ] [
+     fhir:code [ fhir:v "mixed_dementia" ] ;
+     fhir:display [ fhir:v "Mixed demens (Alzheimers + vaskulær)" ] ;
+     fhir:definition [ fhir:v "Mixed demens (Alzheimers + vaskulær)" ]
+  ] [
+     fhir:code [ fhir:v "frontotemporal_dementia" ] ;
+     fhir:display [ fhir:v "Frontotemporal demens" ] ;
+     fhir:definition [ fhir:v "Frontotemporal demens" ]
+  ] [
+     fhir:code [ fhir:v "atypical_parkinson_dementia" ] ;
+     fhir:display [ fhir:v "Atypisk Parkinson demens" ] ;
+     fhir:definition [ fhir:v "Atypisk Parkinson demens" ]
+  ] [
+     fhir:code [ fhir:v "hydrocephalus_dementia" ] ;
+     fhir:display [ fhir:v "Normaltryks hydrocephalus demens" ] ;
+     fhir:definition [ fhir:v "Normaltryks hydrocephalus demens" ]
+  ] [
+     fhir:code [ fhir:v "huntingtons_chorea_dementia" ] ;
+     fhir:display [ fhir:v "Huntingtons Chorea demens" ] ;
+     fhir:definition [ fhir:v "Huntingtons Chorea demens" ]
+  ] [
+     fhir:code [ fhir:v "alchohol_dementia" ] ;
+     fhir:display [ fhir:v "Alkohol demens" ] ;
+     fhir:definition [ fhir:v "Alkohol demens" ]
+  ] [
+     fhir:code [ fhir:v "neurodegenerative_dementia" ] ;
+     fhir:display [ fhir:v "Neurodegenerativ demens" ] ;
+     fhir:definition [ fhir:v "Neurodegenerativ demens" ]
+  ] [
+     fhir:code [ fhir:v "not_affective_dementia" ] ;
+     fhir:display [ fhir:v "Ikke-affektiv demens" ] ;
+     fhir:definition [ fhir:v "Ikke-affektiv demens" ]
+  ] [
+     fhir:code [ fhir:v "affective_dementia" ] ;
+     fhir:display [ fhir:v "Affektiv demens" ] ;
+     fhir:definition [ fhir:v "Affektiv demens" ]
+  ] [
+     fhir:code [ fhir:v "ventral_hernia" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "incisional" ] ;
+       fhir:display [ fhir:v "Incisional" ] ;
+       fhir:definition [ fhir:v "Incisional / Incisionelt" ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "length_cicatrice" ]
+       ] [
+         fhir:code [ fhir:v "cross_cicatrice" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "umbilical" ] ;
+       fhir:display [ fhir:v "Umbilical" ] ;
+       fhir:definition [ fhir:v "Umbilical / Umbilicalt" ]
+     ] [
+       fhir:code [ fhir:v "linea_alba" ] ;
+       fhir:display [ fhir:v "Linea alba" ] ;
+       fhir:definition [ fhir:v "Linea alba" ]
+     ] [
+       fhir:code [ fhir:v "spiegel" ] ;
+       fhir:display [ fhir:v "Spiegel" ] ;
+       fhir:definition [ fhir:v "Spiegel" ]
+     ] [
+       fhir:code [ fhir:v "stomi" ] ;
+       fhir:display [ fhir:v "Stomi" ] ;
+       fhir:definition [ fhir:v "Stomi" ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "stomi_herniotomi" ] ;
+         fhir:display [ fhir:v "Stomi and herniotomi" ] ;
+         fhir:definition [ fhir:v "Stomi and herniotomi / Stomi og herniotomi" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "port" ] ;
+       fhir:display [ fhir:v "Port" ] ;
+       fhir:definition [ fhir:v "Port" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "colostomy" ] ;
+     fhir:display [ fhir:v "Colostomy" ] ;
+     fhir:definition [ fhir:v "Colostomy / Colostomi / SNOMED-CT: 264585001" ]
+  ] [
+     fhir:code [ fhir:v "ileostomy" ] ;
+     fhir:display [ fhir:v "Ileostomy" ] ;
+     fhir:definition [ fhir:v "Ileostomy / Ileostomi / SNOMED-CT: 264364002" ]
+  ] [
+     fhir:code [ fhir:v "urologicalstomy" ] ;
+     fhir:display [ fhir:v "Urological stomy" ] ;
+     fhir:definition [ fhir:v "Urological stomy / Urostomi / SNOMED-CT: 281601009" ]
+  ] [
+     fhir:code [ fhir:v "DC00-DC14" ] ;
+     fhir:display [ fhir:v "Kræft i læber, mundhule og svælg" ] ;
+     fhir:definition [ fhir:v "Kræft i læber, mundhule og svælg" ]
+  ] [
+     fhir:code [ fhir:v "DC15" ] ;
+     fhir:display [ fhir:v "Kræft i spiserøret" ] ;
+     fhir:definition [ fhir:v "Kræft i spiserøret" ]
+  ] [
+     fhir:code [ fhir:v "DC16" ] ;
+     fhir:display [ fhir:v "Kræft i mavesækken" ] ;
+     fhir:definition [ fhir:v "Kræft i mavesækken" ]
+  ] [
+     fhir:code [ fhir:v "DC17" ] ;
+     fhir:display [ fhir:v "Kræft i tyndtarmen" ] ;
+     fhir:definition [ fhir:v "Kræft i tyndtarmen" ]
+  ] [
+     fhir:code [ fhir:v "DC18-DC20" ] ;
+     fhir:display [ fhir:v "Kræft i tyktarm og endetarm" ] ;
+     fhir:definition [ fhir:v "Kræft i tyktarm og endetarm" ]
+  ] [
+     fhir:code [ fhir:v "DC22" ] ;
+     fhir:display [ fhir:v "Kræft i leveren og intrahepatiske galdegange" ] ;
+     fhir:definition [ fhir:v "Kræft i leveren og intrahepatiske galdegange" ]
+  ] [
+     fhir:code [ fhir:v "DC25" ] ;
+     fhir:display [ fhir:v "Kræft i bugspytkirtlen" ] ;
+     fhir:definition [ fhir:v "Kræft i bugspytkirtlen" ]
+  ] [
+     fhir:code [ fhir:v "DC32" ] ;
+     fhir:display [ fhir:v "Kræft i strubehovedet" ] ;
+     fhir:definition [ fhir:v "Kræft i strubehovedet" ]
+  ] [
+     fhir:code [ fhir:v "DC33-DC34" ] ;
+     fhir:display [ fhir:v "Kræft i luftrøret og bronkier og lunge" ] ;
+     fhir:definition [ fhir:v "Kræft i luftrøret og bronkier og lunge" ]
+  ] [
+     fhir:code [ fhir:v "DC43" ] ;
+     fhir:display [ fhir:v "Modermærkekræft i huden" ] ;
+     fhir:definition [ fhir:v "Modermærkekræft i huden" ]
+  ] [
+     fhir:code [ fhir:v "DC50" ] ;
+     fhir:display [ fhir:v "Brystkræft" ] ;
+     fhir:definition [ fhir:v "Brystkræft" ]
+  ] [
+     fhir:code [ fhir:v "DC53" ] ;
+     fhir:display [ fhir:v "Kræft i livmoderhalsen" ] ;
+     fhir:definition [ fhir:v "Kræft i livmoderhalsen" ]
+  ] [
+     fhir:code [ fhir:v "DC54-DC55" ] ;
+     fhir:display [ fhir:v "Kræft i livmoderen (inkl. uspecifik)" ] ;
+     fhir:definition [ fhir:v "Kræft i livmoderen (inkl. uspecifik)" ]
+  ] [
+     fhir:code [ fhir:v "DC56+DC570-DC574" ] ;
+     fhir:display [ fhir:v "Kræft i æggestok og æggeleder" ] ;
+     fhir:definition [ fhir:v "Kræft i æggestok og æggeleder" ]
+  ] [
+     fhir:code [ fhir:v "DC61" ] ;
+     fhir:display [ fhir:v "Kræft i blærehalskirtlen" ] ;
+     fhir:definition [ fhir:v "Kræft i blærehalskirtlen" ]
+  ] [
+     fhir:code [ fhir:v "DC62" ] ;
+     fhir:display [ fhir:v "Testikelkræft" ] ;
+     fhir:definition [ fhir:v "Testikelkræft" ]
+  ] [
+     fhir:code [ fhir:v "DC67" ] ;
+     fhir:display [ fhir:v "Kræft i urinblæren" ] ;
+     fhir:definition [ fhir:v "Kræft i urinblæren" ]
+  ] [
+     fhir:code [ fhir:v "DC64-DC66" ] ;
+     fhir:display [ fhir:v "Kræft i nyre, nyrebækken og urinleder" ] ;
+     fhir:definition [ fhir:v "Kræft i nyre, nyrebækken og urinleder" ]
+  ] [
+     fhir:code [ fhir:v "DC70-DC72+DC751-DC753" ] ;
+     fhir:display [ fhir:v "Kræft i centralnervesystem" ] ;
+     fhir:definition [ fhir:v "Kræft i centralnervesystem" ]
+  ] [
+     fhir:code [ fhir:v "DC73" ] ;
+     fhir:display [ fhir:v "Kræft i skjoldbruskkirtlen" ] ;
+     fhir:definition [ fhir:v "Kræft i skjoldbruskkirtlen" ]
+  ] [
+     fhir:code [ fhir:v "DC81" ] ;
+     fhir:display [ fhir:v "Hodgkin lymfomer" ] ;
+     fhir:definition [ fhir:v "Hodgkin lymfomer" ]
+  ] [
+     fhir:code [ fhir:v "DC82-DC85" ] ;
+     fhir:display [ fhir:v "Non-hodking malignt lymform" ] ;
+     fhir:definition [ fhir:v "Non-hodking malignt lymform" ]
+  ] [
+     fhir:code [ fhir:v "DC90" ] ;
+     fhir:display [ fhir:v "Maligne plasmacelle neoplasier" ] ;
+     fhir:definition [ fhir:v "Maligne plasmacelle neoplasier" ]
+  ] [
+     fhir:code [ fhir:v "DC91-DC95" ] ;
+     fhir:display [ fhir:v "Leukæmi" ] ;
+     fhir:definition [ fhir:v "Leukæmi" ]
+  ] [
+     fhir:code [ fhir:v "DC45-DC49" ] ;
+     fhir:display [ fhir:v "Kræft i mesotel, bindevæv og andet bløddelsvæv" ] ;
+     fhir:definition [ fhir:v "Kræft i mesotel, bindevæv og andet bløddelsvæv" ]
+  ] [
+     fhir:code [ fhir:v "DC76-DC80" ] ;
+     fhir:display [ fhir:v "Kræft med dårligt specificerede, sekundære og ikke specificerede lokalisationer" ] ;
+     fhir:definition [ fhir:v "Kræft med dårligt specificerede, sekundære og ikke specificerede lokalisationer" ]
+  ] [
+     fhir:code [ fhir:v "acute_extremity_ischaemia" ] ;
+     fhir:display [ fhir:v "akut ekstremitetsiskæmi" ] ;
+     fhir:definition [ fhir:v "akut ekstremitetsiskæmi" ]
+  ] [
+     fhir:code [ fhir:v "amurosis_fugax" ] ;
+     fhir:display [ fhir:v "amaurosis fugax" ] ;
+     fhir:definition [ fhir:v "amaurosis fugax" ]
+  ] [
+     fhir:code [ fhir:v "aneurysm_asymptomatic" ] ;
+     fhir:display [ fhir:v "aneurisme - asymptomatisk" ] ;
+     fhir:definition [ fhir:v "aneurisme - asymptomatisk" ]
+  ] [
+     fhir:code [ fhir:v "aneurysm_symptomatic" ] ;
+     fhir:display [ fhir:v "aneurisme - symptomatisk" ] ;
+     fhir:definition [ fhir:v "aneurisme - symptomatisk" ]
+  ] [
+     fhir:code [ fhir:v "aneurysm_ruptured" ] ;
+     fhir:display [ fhir:v "aneurisme - rumperet" ] ;
+     fhir:definition [ fhir:v "aneurisme - rumperet" ]
+  ] [
+     fhir:code [ fhir:v "aneurysm_clotted" ] ;
+     fhir:display [ fhir:v "aneurisme - tromboseret" ] ;
+     fhir:definition [ fhir:v "aneurisme - tromboseret" ]
+  ] [
+     fhir:code [ fhir:v "aneurysm_pseudo" ] ;
+     fhir:display [ fhir:v "aneurisme - pseudo" ] ;
+     fhir:definition [ fhir:v "aneurisme - pseudo" ]
+  ] [
+     fhir:code [ fhir:v "aneurysm_mycotic" ] ;
+     fhir:display [ fhir:v "aneurisme - mykotisk" ] ;
+     fhir:definition [ fhir:v "aneurisme - mykotisk" ]
+  ] [
+     fhir:code [ fhir:v "bleeding" ] ;
+     fhir:display [ fhir:v "blødning / hæmatom" ] ;
+     fhir:definition [ fhir:v "blødning / hæmatom" ]
+  ] [
+     fhir:code [ fhir:v "infection" ] ;
+     fhir:display [ fhir:v "infektion (ikke proteseinfektion = 55)" ] ;
+     fhir:definition [ fhir:v "infektion (ikke proteseinfektion = 55)" ]
+  ] [
+     fhir:code [ fhir:v "intestinal_ischaemia" ] ;
+     fhir:display [ fhir:v "intestinal iskæmi, angina abdominalis" ] ;
+     fhir:definition [ fhir:v "intestinal iskæmi, angina abdominalis" ]
+  ] [
+     fhir:code [ fhir:v "function_dependent_ischaemia" ] ;
+     fhir:display [ fhir:v "funktionsbetinget iskæmi, claudicatio intermittens" ] ;
+     fhir:definition [ fhir:v "funktionsbetinget iskæmi, claudicatio intermittens" ]
+  ] [
+     fhir:code [ fhir:v "chronic_ischaemia_rest_pain" ] ;
+     fhir:display [ fhir:v "kronisk iskæmi - hvilesmerter" ] ;
+     fhir:definition [ fhir:v "kronisk iskæmi - hvilesmerter" ]
+  ] [
+     fhir:code [ fhir:v "chronic_ischaemia_wound" ] ;
+     fhir:display [ fhir:v "kronisk iskæmi - sår" ] ;
+     fhir:definition [ fhir:v "kronisk iskæmi - sår" ]
+  ] [
+     fhir:code [ fhir:v "chronic_ischaemia_gangrene" ] ;
+     fhir:display [ fhir:v "kronisk iskæmi - gangræn" ] ;
+     fhir:definition [ fhir:v "kronisk iskæmi - gangræn" ]
+  ] [
+     fhir:code [ fhir:v "hypertension_renovascular" ] ;
+     fhir:display [ fhir:v "renovaskulær hypertension" ] ;
+     fhir:definition [ fhir:v "renovaskulær hypertension" ]
+  ] [
+     fhir:code [ fhir:v "stroke" ] ;
+     fhir:display [ fhir:v "stroke" ] ;
+     fhir:definition [ fhir:v "stroke" ]
+  ] [
+     fhir:code [ fhir:v "tos" ] ;
+     fhir:display [ fhir:v "thoracic outlet syndrom (TOS)" ] ;
+     fhir:definition [ fhir:v "thoracic outlet syndrom (TOS)" ]
+  ] [
+     fhir:code [ fhir:v "tia" ] ;
+     fhir:display [ fhir:v "transitorisk iskæmisk attack (TIA)" ] ;
+     fhir:definition [ fhir:v "transitorisk iskæmisk attack (TIA)" ]
+  ] [
+     fhir:code [ fhir:v "trauma" ] ;
+     fhir:display [ fhir:v "traume" ] ;
+     fhir:definition [ fhir:v "traume" ]
+  ] [
+     fhir:code [ fhir:v "thrombosis_vascular_reconstruction" ] ;
+     fhir:display [ fhir:v "trombose af karrekonstruktion" ] ;
+     fhir:definition [ fhir:v "trombose af karrekonstruktion" ]
+  ] [
+     fhir:code [ fhir:v "uremia" ] ;
+     fhir:display [ fhir:v "uræmi" ] ;
+     fhir:definition [ fhir:v "uræmi" ]
+  ] [
+     fhir:code [ fhir:v "varices" ] ;
+     fhir:display [ fhir:v "varicer" ] ;
+     fhir:definition [ fhir:v "varicer" ]
+  ] [
+     fhir:code [ fhir:v "vasospasms" ] ;
+     fhir:display [ fhir:v "vasospasme/ Raynaud" ] ;
+     fhir:definition [ fhir:v "vasospasme/ Raynaud" ]
+  ] [
+     fhir:code [ fhir:v "venus_thrombosis" ] ;
+     fhir:display [ fhir:v "venetrombose" ] ;
+     fhir:definition [ fhir:v "venetrombose" ]
+  ] [
+     fhir:code [ fhir:v "reconstruction_failure" ] ;
+     fhir:display [ fhir:v "truende rekonstruktionssvigt" ] ;
+     fhir:definition [ fhir:v "truende rekonstruktionssvigt" ]
+  ] [
+     fhir:code [ fhir:v "permanent_central_venous_access" ] ;
+     fhir:display [ fhir:v "permanent central venøs adgang" ] ;
+     fhir:definition [ fhir:v "permanent central venøs adgang" ]
+  ] [
+     fhir:code [ fhir:v "wound_complication" ] ;
+     fhir:display [ fhir:v "sårkomplikation" ] ;
+     fhir:definition [ fhir:v "sårkomplikation" ]
+  ] [
+     fhir:code [ fhir:v "fascial_rupture" ] ;
+     fhir:display [ fhir:v "fascieruptur" ] ;
+     fhir:definition [ fhir:v "fascieruptur" ]
+  ] [
+     fhir:code [ fhir:v "ileus" ] ;
+     fhir:display [ fhir:v "ileus" ] ;
+     fhir:definition [ fhir:v "ileus" ]
+  ] [
+     fhir:code [ fhir:v "intestine_ischaemia" ] ;
+     fhir:display [ fhir:v "tarmiskæmi" ] ;
+     fhir:definition [ fhir:v "tarmiskæmi" ]
+  ] [
+     fhir:code [ fhir:v "aorto/prosthesis_intestinal_fistula" ] ;
+     fhir:display [ fhir:v "aorto/protese-instestinal fistel" ] ;
+     fhir:definition [ fhir:v "aorto/protese-instestinal fistel" ]
+  ] [
+     fhir:code [ fhir:v "prosthetic_infection" ] ;
+     fhir:display [ fhir:v "proteseinfektion" ] ;
+     fhir:definition [ fhir:v "proteseinfektion" ]
+  ] [
+     fhir:code [ fhir:v "extremity_compartment" ] ;
+     fhir:display [ fhir:v "ekstremittets kompartment" ] ;
+     fhir:definition [ fhir:v "ekstremittets kompartment" ]
+  ] [
+     fhir:code [ fhir:v "prolonged_intubation" ] ;
+     fhir:display [ fhir:v "langvarig intubation" ] ;
+     fhir:definition [ fhir:v "langvarig intubation" ]
+  ] [
+     fhir:code [ fhir:v "retroperitoneal_fibrosis" ] ;
+     fhir:display [ fhir:v "retroperitoneal fibrose" ] ;
+     fhir:definition [ fhir:v "retroperitoneal fibrose" ]
+  ] [
+     fhir:code [ fhir:v "abdominal_compartment" ] ;
+     fhir:display [ fhir:v "abdominal kompartment" ] ;
+     fhir:definition [ fhir:v "abdominal kompartment" ]
+  ] [
+     fhir:code [ fhir:v "entrapment" ] ;
+     fhir:display [ fhir:v "entrapment" ] ;
+     fhir:definition [ fhir:v "entrapment" ]
+  ] [
+     fhir:code [ fhir:v "emergency_aortic_dissection" ] ;
+     fhir:display [ fhir:v "akut aortadissektion" ] ;
+     fhir:definition [ fhir:v "akut aortadissektion" ]
+  ] [
+     fhir:code [ fhir:v "chronic_aortic_dissection" ] ;
+     fhir:display [ fhir:v "kronisk aortadissektion" ] ;
+     fhir:definition [ fhir:v "kronisk aortadissektion" ]
+  ] [
+     fhir:code [ fhir:v "dissection_unspecified" ] ;
+     fhir:display [ fhir:v "dissektion uden nærmere specifikation" ] ;
+     fhir:definition [ fhir:v "dissektion uden nærmere specifikation" ]
+  ] [
+     fhir:code [ fhir:v "High_grade_B_lymfom_NOS" ] ;
+     fhir:display [ fhir:v "High-grade B-lymfom NOS" ] ;
+     fhir:definition [ fhir:v "High-grade B-lymfom NOS " ]
+  ] [
+     fhir:code [ fhir:v "Primært_kutant_CD4_positivt_små_medium_T_celle_lymfom" ] ;
+     fhir:display [ fhir:v "Primært kutant CD4-positivt små/medium T-celle lymfom" ] ;
+     fhir:definition [ fhir:v "Primært kutant CD4-positivt små/medium T-celle lymfom" ]
+  ] [
+     fhir:code [ fhir:v "Malignt_lymfom" ] ;
+     fhir:display [ fhir:v "Malignt lymfom" ] ;
+     fhir:definition [ fhir:v "Malignt lymfom" ]
+  ] [
+     fhir:code [ fhir:v "non-Hodgkin_malignt_lymfom" ] ;
+     fhir:display [ fhir:v "non-Hodgkin malignt lymfom" ] ;
+     fhir:definition [ fhir:v "non-Hodgkin malignt lymfom" ]
+  ] [
+     fhir:code [ fhir:v "ascites_lymfom" ] ;
+     fhir:display [ fhir:v "Ascites med lymfomceller" ] ;
+     fhir:definition [ fhir:v "Ascites med lymfomceller" ]
+  ] [
+     fhir:code [ fhir:v "perikardieeksudat_lymfom" ] ;
+     fhir:display [ fhir:v "Perikardieeksudat med lymfomceller" ] ;
+     fhir:definition [ fhir:v "Perikardieeksudat med lymfomceller" ]
+  ] [
+     fhir:code [ fhir:v "pleuraeksudat_lymfom" ] ;
+     fhir:display [ fhir:v "Pleuraeksudat med lymfomceller" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

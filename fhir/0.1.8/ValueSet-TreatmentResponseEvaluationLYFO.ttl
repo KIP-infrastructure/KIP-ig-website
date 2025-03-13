@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/TreatmentResponseEvaluationLYFO> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TreatmentResponseEvaluationLYFO"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet TreatmentResponseEvaluationLYFO</b></p><a name=\"TreatmentResponseEvaluationLYFO\"> </a><a name=\"hcTreatmentResponseEvaluationLYFO\"> </a><a name=\"TreatmentResponseEvaluationLYFO-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-TreatmentResponseEvaluation.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/TreatmentResponseEvaluation</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-complete_remission\">complete_remission</a></td><td>Komplet remission (CR)</td><td>Complete remission (CR)</td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-uncertain_complete_remission\">uncertain_complete_remission</a></td><td>Usikker komplet remission (CRu)</td><td>Uncertain complete remission (CRu)</td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-partial_remission\">partial_remission</a></td><td>Partiel remission (PR)</td><td>Partial remission (PR)</td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-stable_disease\">stable_disease</a></td><td>Stabil sygdom (SD/NC)</td><td>Stable disease (SD/NC)</td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-progressive_disease\">progressive_disease</a></td><td>Progressiv sygdom (PD)</td><td>Progressive disease (PD)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/TreatmentResponseEvaluationLYFO"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "TreatmentResponseEvaluationLYFO"] ; # 
+  fhir:title [ fhir:v "Treatment_Response_Evaluation_LYFO"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-07-27T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Indikation for kemoterapi/behandling - LYFO"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/TreatmentResponseEvaluation"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "complete_remission" ] ;
+         fhir:display [ fhir:v "Komplet remission (CR)" ]
+       ] [
+         fhir:code [ fhir:v "uncertain_complete_remission" ] ;
+         fhir:display [ fhir:v "Usikker komplet remission (CRu)" ]
+       ] [
+         fhir:code [ fhir:v "partial_remission" ] ;
+         fhir:display [ fhir:v "Partiel remission (PR)" ]
+       ] [
+         fhir:code [ fhir:v "stable_disease" ] ;
+         fhir:display [ fhir:v "Stabil sygdom (SD/NC)" ]
+       ] [
+         fhir:code [ fhir:v "progressive_disease" ] ;
+         fhir:display [ fhir:v "Progressiv sygdom (PD)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

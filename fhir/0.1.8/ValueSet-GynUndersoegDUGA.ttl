@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/GynUndersoegDUGA> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "GynUndersoegDUGA"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet GynUndersoegDUGA</b></p><a name=\"GynUndersoegDUGA\"> </a><a name=\"hcGynUndersoegDUGA\"> </a><a name=\"GynUndersoegDUGA-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-GynUndersoegDUGA.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GynUndersoegDUGA</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GynUndersoegDUGA.html#GynUndersoegDUGA-popq\">popq</a></td><td>POPQ</td><td>POPQ</td></tr><tr><td><a href=\"CodeSystem-GynUndersoegDUGA.html#GynUndersoegDUGA-hymscore\">hymscore</a></td><td>Undersøg score (i forhold til hymenal plan)</td><td>Score i forhold til hymenal plan</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/GynUndersoegDUGA"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "GynUndersoegDUGA"] ; # 
+  fhir:title [ fhir:v "Gynækologisk undersøgelsesmetode (DUGA)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2024-02-13T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Gynækologisk undersøgelsesmetode (DUGA)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/GynUndersoegDUGA"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "popq" ] ;
+         fhir:display [ fhir:v "POPQ" ]
+       ] [
+         fhir:code [ fhir:v "hymscore" ] ;
+         fhir:display [ fhir:v "Undersøg score (i forhold til hymenal plan)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

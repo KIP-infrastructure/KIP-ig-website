@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "Rygning",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Rygning</b></p><a name=\"Rygning\"> </a><a name=\"hcRygning\"> </a><a name=\"Rygning-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Smoking.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Smoking</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Smoking.html#Smoking-smoker\">smoker</a></td><td>Ryger</td><td>Ryger</td></tr><tr><td><a href=\"CodeSystem-Smoking.html#Smoking-formersmoker\">formersmoker</a></td><td>Tidligere ryger</td><td>Tidligere ryger</td></tr><tr><td><a href=\"CodeSystem-Smoking.html#Smoking-never-smoker\">never-smoker</a></td><td>Aldrig ryger</td><td>Aldrig ryger</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/Rygning",
+  "version" : "0.1.8",
+  "name" : "Rygning",
+  "title" : "Rygning",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-06-08T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Udfald for rygning",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/Smoking",
+      "concept" : [{
+        "code" : "smoker",
+        "display" : "Ryger"
+      },
+      {
+        "code" : "formersmoker",
+        "display" : "Tidligere ryger"
+      },
+      {
+        "code" : "never-smoker",
+        "display" : "Aldrig ryger"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="DoedsaarsagLYFO"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet DoedsaarsagLYFO</b></p><a name="DoedsaarsagLYFO"> </a><a name="hcDoedsaarsagLYFO"> </a><a name="DoedsaarsagLYFO-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-CauseOfDeath.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/CauseOfDeath</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-CauseOfDeath.html#CauseOfDeath-therapy_related_progression">therapy_related_progression</a></td><td>Terapirelateret dødsfald MED sygdomsprogression</td><td>Terapirelateret dødsfald MED sygdomsprogression</td></tr><tr><td><a href="CodeSystem-CauseOfDeath.html#CauseOfDeath-therapy_related">therapy_related</a></td><td>Terapirelateret dødsfald uden sygdomsprogression</td><td>Terapirelateret dødsfald uden sygdomsprogression</td></tr><tr><td><a href="CodeSystem-CauseOfDeath.html#CauseOfDeath-progressive_disease">progressive_disease</a></td><td>Progressiv sygdom</td><td>Progressive disease</td></tr><tr><td><a href="CodeSystem-CauseOfDeath.html#CauseOfDeath-other_complete_remissiong">other_complete_remissiong</a></td><td>Anden årsag, død i komplet remission (CR)</td><td>Anden årsag, død i komplet remission (CR)</td></tr><tr><td><a href="CodeSystem-CauseOfDeath.html#CauseOfDeath-other_not_complete_remissiong">other_not_complete_remissiong</a></td><td>Anden årsag, IKKE i komplet remision (CR) ved død</td><td>Anden årsag, IKKE i komplet remision (CR) ved død</td></tr></table></li><li>Include these codes as defined in <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html"><code>http://terminology.hl7.org/CodeSystem/v2-0532</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html#v2-0532-UKN">UKN</a></td><td>Ukendt</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.rkkp.dk/fhir/ValueSet/DoedsaarsagLYFO"/>
+  <version value="0.1.8"/>
+  <name value="DoedsaarsagLYFO"/>
+  <title value="Dødsårsag (LYFO)"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-07-18T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Dødsårsag (LYFO)"/>
+  <compose>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/CauseOfDeath"/>
+      <concept>
+        <code value="therapy_related_progression"/>
+        <display value="Terapirelateret dødsfald MED sygdomsprogression"/>
+      </concept>
+      <concept>
+        <code value="therapy_related"/>
+        <display value="Terapirelateret dødsfald uden sygdomsprogression"/>
+      </concept>
+      <concept>
+        <code value="progressive_disease"/>
+        <display value="Progressiv sygdom"/>
+      </concept>
+      <concept>
+        <code value="other_complete_remissiong"/>
+        <display value="Anden årsag, død i komplet remission (CR)"/>
+      </concept>
+      <concept>
+        <code value="other_not_complete_remissiong"/>
+        <display value="Anden årsag, IKKE i komplet remision (CR) ved død"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+      <concept>
+        <code value="UKN"/>
+        <display value="Ukendt"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

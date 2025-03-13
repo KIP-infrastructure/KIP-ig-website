@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/WOOS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "WOOS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem WOOS</b></p><a name=\"WOOS\"> </a><a name=\"hcWOOS\"> </a><a name=\"WOOS-en-US\"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/WOOS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">unable_to_life_arm<a name=\"WOOS-unable_to_life_arm\"> </a></td><td>Kan slet ikke løfte armen</td><td>Kan slet ikke løfte armen</td></tr><tr><td style=\"white-space:nowrap\">left_handed<a name=\"WOOS-left_handed\"> </a></td><td>Venstrehåndet</td><td>Venstrehåndet</td></tr><tr><td style=\"white-space:nowrap\">right_handed<a name=\"WOOS-right_handed\"> </a></td><td>Højrehåndet</td><td>Højrehåndet</td></tr><tr><td style=\"white-space:nowrap\">both_hands<a name=\"WOOS-both_hands\"> </a></td><td>Bruger begge hænder lige godt</td><td>Bruger begge hænder lige godt</td></tr><tr><td style=\"white-space:nowrap\">no_physiotherapy<a name=\"WOOS-no_physiotherapy\"> </a></td><td>Ingen fysioterapi</td><td>Ingen fysioterapi</td></tr><tr><td style=\"white-space:nowrap\">home_training<a name=\"WOOS-home_training\"> </a></td><td>Hjemmetræning efter instruks</td><td>Hjemmetræning efter instruks</td></tr><tr><td style=\"white-space:nowrap\">supervised_municipality<a name=\"WOOS-supervised_municipality\"> </a></td><td>Superviseret fysioterapi via kommunen  (træning eller noget af denne foregår hos fysioterapeut i kommunen hvor du bor)</td><td>Superviseret fysioterapi via kommunen  (træning eller noget af denne foregår hos fysioterapeut i kommunen hvor du bor)</td></tr><tr><td style=\"white-space:nowrap\">supervised_hospital<a name=\"WOOS-supervised_hospital\"> </a></td><td>Superviseret fysioterapi på sygehus/hospital  (træningen eller noget af denne foregår hos fysioterapi på sygehus)</td><td>Superviseret fysioterapi på sygehus/hospital  (træningen eller noget af denne foregår hos fysioterapi på sygehus)</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/WOOS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "WOOS"] ; # 
+  fhir:title [ fhir:v "WOOS"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-10-07T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "WOOS"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "unable_to_life_arm" ] ;
+     fhir:display [ fhir:v "Kan slet ikke løfte armen" ] ;
+     fhir:definition [ fhir:v "Kan slet ikke løfte armen" ]
+  ] [
+     fhir:code [ fhir:v "left_handed" ] ;
+     fhir:display [ fhir:v "Venstrehåndet" ] ;
+     fhir:definition [ fhir:v "Venstrehåndet" ]
+  ] [
+     fhir:code [ fhir:v "right_handed" ] ;
+     fhir:display [ fhir:v "Højrehåndet" ] ;
+     fhir:definition [ fhir:v "Højrehåndet" ]
+  ] [
+     fhir:code [ fhir:v "both_hands" ] ;
+     fhir:display [ fhir:v "Bruger begge hænder lige godt" ] ;
+     fhir:definition [ fhir:v "Bruger begge hænder lige godt" ]
+  ] [
+     fhir:code [ fhir:v "no_physiotherapy" ] ;
+     fhir:display [ fhir:v "Ingen fysioterapi" ] ;
+     fhir:definition [ fhir:v "Ingen fysioterapi" ]
+  ] [
+     fhir:code [ fhir:v "home_training" ] ;
+     fhir:display [ fhir:v "Hjemmetræning efter instruks" ] ;
+     fhir:definition [ fhir:v "Hjemmetræning efter instruks" ]
+  ] [
+     fhir:code [ fhir:v "supervised_municipality" ] ;
+     fhir:display [ fhir:v "Superviseret fysioterapi via kommunen  (træning eller noget af denne foregår hos fysioterapeut i kommunen hvor du bor)" ] ;
+     fhir:definition [ fhir:v "Superviseret fysioterapi via kommunen  (træning eller noget af denne foregår hos fysioterapeut i kommunen hvor du bor)" ]
+  ] [
+     fhir:code [ fhir:v "supervised_hospital" ] ;
+     fhir:display [ fhir:v "Superviseret fysioterapi på sygehus/hospital  (træningen eller noget af denne foregår hos fysioterapi på sygehus)" ] ;
+     fhir:definition [ fhir:v "Superviseret fysioterapi på sygehus/hospital  (træningen eller noget af denne foregår hos fysioterapi på sygehus)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

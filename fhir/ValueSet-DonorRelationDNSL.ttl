@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/DonorRelationDNSL> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DonorRelationDNSL"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet DonorRelationDNSL</b></p><a name=\"DonorRelationDNSL\"> </a><a name=\"hcDonorRelationDNSL\"> </a><a name=\"DonorRelationDNSL-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-SNOMEDCT.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/SNOMEDCT</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-SNOMEDCT.html#SNOMEDCT-40683002\">40683002</a></td><td>Forælder</td><td>Forælder</td></tr><tr><td><a href=\"CodeSystem-SNOMEDCT.html#SNOMEDCT-375005\">375005</a></td><td>Søster/Bror</td><td>Søster/Bror</td></tr><tr><td><a href=\"CodeSystem-SNOMEDCT.html#SNOMEDCT-10896006\">10896006</a></td><td>Tvilling (monozygot)</td><td>Tvilling (monocygot)</td></tr><tr><td><a href=\"CodeSystem-SNOMEDCT.html#SNOMEDCT-713369009\">713369009</a></td><td>Anden levende familiedonor</td><td>Levende familiedonor</td></tr><tr><td><a href=\"CodeSystem-SNOMEDCT.html#SNOMEDCT-394863008\">394863008</a></td><td>Levende non-related donor</td><td>Non-family member</td></tr><tr><td><a href=\"CodeSystem-SNOMEDCT.html#SNOMEDCT-713183000\">713183000</a></td><td>Nekronyre</td><td>Afdød donor (Nekronyre)</td></tr><tr><td><a href=\"CodeSystem-SNOMEDCT.html#SNOMEDCT-105457003\">105457003</a></td><td>Afdød</td><td>Afdød donor</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/DonorRelationDNSL"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "DonorRelationDNSL"] ; # 
+  fhir:title [ fhir:v "Relationen til donor (DNSL)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2024-10-01T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Familie relation til donor (DNSL)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/SNOMEDCT"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "40683002" ] ;
+         fhir:display [ fhir:v "Forælder" ]
+       ] [
+         fhir:code [ fhir:v "375005" ] ;
+         fhir:display [ fhir:v "Søster/Bror" ]
+       ] [
+         fhir:code [ fhir:v "10896006" ] ;
+         fhir:display [ fhir:v "Tvilling (monozygot)" ]
+       ] [
+         fhir:code [ fhir:v "713369009" ] ;
+         fhir:display [ fhir:v "Anden levende familiedonor" ]
+       ] [
+         fhir:code [ fhir:v "394863008" ] ;
+         fhir:display [ fhir:v "Levende non-related donor" ]
+       ] [
+         fhir:code [ fhir:v "713183000" ] ;
+         fhir:display [ fhir:v "Nekronyre" ]
+       ] [
+         fhir:code [ fhir:v "105457003" ] ;
+         fhir:display [ fhir:v "Afdød" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

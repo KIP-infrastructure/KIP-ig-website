@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/HousingType> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HousingType"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem HousingType</b></p><a name=\"HousingType\"> </a><a name=\"hcHousingType\"> </a><a name=\"HousingType-en-US\"> </a><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/HousingType</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">private<a name=\"HousingType-private\"> </a></td><td>Private</td><td>Private / Privat</td></tr><tr><td style=\"white-space:nowrap\">house/apartment<a name=\"HousingType-house.47apartment\"> </a></td><td>Hus/lejlighed</td><td>Hus/lejlighed (privat bolig)</td></tr><tr><td style=\"white-space:nowrap\">nursinghome<a name=\"HousingType-nursinghome\"> </a></td><td>Plejebolig</td><td>Plejebolig</td></tr><tr><td style=\"white-space:nowrap\">own_residence<a name=\"HousingType-own_residence\"> </a></td><td>Own residence</td><td>Own residence / Egen bolig</td></tr><tr><td style=\"white-space:nowrap\">institution<a name=\"HousingType-institution\"> </a></td><td>Institution</td><td>Institution</td></tr><tr><td style=\"white-space:nowrap\">homeless<a name=\"HousingType-homeless\"> </a></td><td>Homeless</td><td>Homeless / Hjemløs</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"HousingType-other\"> </a></td><td>Andet</td><td>Andet</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/HousingType"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "HousingType"] ; # 
+  fhir:title [ fhir:v "Housing type"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-21T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Housing type"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "private" ] ;
+     fhir:display [ fhir:v "Private" ] ;
+     fhir:definition [ fhir:v "Private / Privat" ]
+  ] [
+     fhir:code [ fhir:v "house/apartment" ] ;
+     fhir:display [ fhir:v "Hus/lejlighed" ] ;
+     fhir:definition [ fhir:v "Hus/lejlighed (privat bolig)" ]
+  ] [
+     fhir:code [ fhir:v "nursinghome" ] ;
+     fhir:display [ fhir:v "Plejebolig" ] ;
+     fhir:definition [ fhir:v "Plejebolig" ]
+  ] [
+     fhir:code [ fhir:v "own_residence" ] ;
+     fhir:display [ fhir:v "Own residence" ] ;
+     fhir:definition [ fhir:v "Own residence / Egen bolig" ]
+  ] [
+     fhir:code [ fhir:v "institution" ] ;
+     fhir:display [ fhir:v "Institution" ] ;
+     fhir:definition [ fhir:v "Institution" ]
+  ] [
+     fhir:code [ fhir:v "homeless" ] ;
+     fhir:display [ fhir:v "Homeless" ] ;
+     fhir:definition [ fhir:v "Homeless / Hjemløs" ]
+  ] [
+     fhir:code [ fhir:v "other" ] ;
+     fhir:display [ fhir:v "Andet" ] ;
+     fhir:definition [ fhir:v "Andet" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

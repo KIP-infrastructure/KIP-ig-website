@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="DoedsaarsagSAH"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet DoedsaarsagSAH</b></p><a name="DoedsaarsagSAH"> </a><a name="hcDoedsaarsagSAH"> </a><a name="DoedsaarsagSAH-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-SKS.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/SKS</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-SKS.html#SKS-DI63">DI63</a></td><td>Hjerneinfarkt</td><td>DI63 - Hjerneinfarkt</td></tr><tr><td><a href="CodeSystem-SKS.html#SKS-DI61">DI61</a></td><td>Hjerneblødning</td><td>DI61 - Hjerneblødning</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-Complications.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/Complications</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-Complications.html#Complications-infarction-unspecific">infarction-unspecific</a></td><td>Hjerneinfarkt og blødning - ingen specifikation</td><td>Cerebral infarction and bleeding, unspecific</td></tr><tr><td><a href="CodeSystem-Complications.html#Complications-ami">ami</a></td><td>Myokardieinfarkt</td><td>AMI - Myocardieinfarkt</td></tr><tr><td><a href="CodeSystem-Complications.html#Complications-pulmonaryembolism">pulmonaryembolism</a></td><td>Lungeemboli</td><td>Lungeemboli</td></tr><tr><td><a href="CodeSystem-Complications.html#Complications-pneumonia">pneumonia</a></td><td>Lungebetændelse</td><td>Pneumoni</td></tr><tr><td><a href="CodeSystem-Complications.html#Complications-vascular-unspecific">vascular-unspecific</a></td><td>Anden vaskulær årsag</td><td>Vascular, unspecific</td></tr><tr><td><a href="CodeSystem-Complications.html#Complications-other">other</a></td><td>Andet</td><td>Other</td></tr></table></li><li>Include these codes as defined in <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html"><code>http://terminology.hl7.org/CodeSystem/v2-0532</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html#v2-0532-UNK">UNK</a></td><td>Ukendt</td><td>unknown</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.rkkp.dk/fhir/ValueSet/DoedsaarsagSAH"/>
+  <version value="0.1.8"/>
+  <name value="DoedsaarsagSAH"/>
+  <title value="Dødsårsager [SAH]"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-05-16T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Dødsårsager [SAH]"/>
+  <compose>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/SKS"/>
+      <concept>
+        <code value="DI63"/>
+        <display value="Hjerneinfarkt"/>
+      </concept>
+      <concept>
+        <code value="DI61"/>
+        <display value="Hjerneblødning"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/Complications"/>
+      <concept>
+        <code value="infarction-unspecific"/>
+        <display value="Hjerneinfarkt og blødning - ingen specifikation"/>
+      </concept>
+      <concept>
+        <code value="ami"/>
+        <display value="Myokardieinfarkt"/>
+      </concept>
+      <concept>
+        <code value="pulmonaryembolism"/>
+        <display value="Lungeemboli"/>
+      </concept>
+      <concept>
+        <code value="pneumonia"/>
+        <display value="Lungebetændelse"/>
+      </concept>
+      <concept>
+        <code value="vascular-unspecific"/>
+        <display value="Anden vaskulær årsag"/>
+      </concept>
+      <concept>
+        <code value="other"/>
+        <display value="Andet"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+      <concept>
+        <code value="UNK"/>
+        <display value="Ukendt"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

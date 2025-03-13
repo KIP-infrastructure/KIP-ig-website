@@ -1,0 +1,49 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "AnurismeStoerrelseSAH",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet AnurismeStoerrelseSAH</b></p><a name=\"AnurismeStoerrelseSAH\"> </a><a name=\"hcAnurismeStoerrelseSAH\"> </a><a name=\"AnurismeStoerrelseSAH-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-AneurysmSizeScale.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/AneurysmSizeScale</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-AneurysmSizeScale.html#AneurysmSizeScale-gt25\">gt25</a></td><td>&gt;25 mm</td><td>&gt;25 mm</td></tr><tr><td><a href=\"CodeSystem-AneurysmSizeScale.html#AneurysmSizeScale-ge12le25\">ge12le25</a></td><td>12 mm - 25 mm</td><td>&gt;=12 mm, =&lt;25 mm</td></tr><tr><td><a href=\"CodeSystem-AneurysmSizeScale.html#AneurysmSizeScale-ge7lt12\">ge7lt12</a></td><td>7 mm - 12 mm</td><td>&gt;=7 mm, &lt;12 mm</td></tr><tr><td><a href=\"CodeSystem-AneurysmSizeScale.html#AneurysmSizeScale-lt7\">lt7</a></td><td>&lt;7 mm</td><td>&lt;7 mm</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/AnurismeStoerrelseSAH",
+  "version" : "0.1.8",
+  "name" : "AnurismeStoerrelseSAH",
+  "title" : "Anurisme stoerrelse [SAH]",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-06-28T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Anurisme stoerrelse [SAH]",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/AneurysmSizeScale",
+      "concept" : [{
+        "code" : "gt25",
+        "display" : ">25 mm"
+      },
+      {
+        "code" : "ge12le25",
+        "display" : "12 mm - 25 mm"
+      },
+      {
+        "code" : "ge7lt12",
+        "display" : "7 mm - 12 mm"
+      },
+      {
+        "code" : "lt7",
+        "display" : "<7 mm"
+      }]
+    }]
+  }
+}

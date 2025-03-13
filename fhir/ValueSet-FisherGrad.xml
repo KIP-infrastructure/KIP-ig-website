@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="FisherGrad"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet FisherGrad</b></p><a name="FisherGrad"> </a><a name="hcFisherGrad"> </a><a name="FisherGrad-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-FisherGradingScale.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/FisherGradingScale</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-FisherGradingScale.html#FisherGradingScale-grade1">grade1</a></td><td>Intet synligt blod</td><td>Grade 1: No SAH detected</td></tr><tr><td><a href="CodeSystem-FisherGradingScale.html#FisherGradingScale-grade2">grade2</a></td><td>SAH &lt; 1 mm</td><td>Grade 2: Diffuse or vertical layer of subarachnoid blood &lt; 1mm thick</td></tr><tr><td><a href="CodeSystem-FisherGradingScale.html#FisherGradingScale-grade3">grade3</a></td><td>SAH &gt; 1 mm</td><td>Grade 3: Localized clot and/or vertical layer within the subarachnoid space &gt; 1mm thick</td></tr><tr><td><a href="CodeSystem-FisherGradingScale.html#FisherGradingScale-grade4">grade4</a></td><td>SAH med IVH eller ICH</td><td>Grade 4: Intracerebral hemorrhage (ICH) or intraventricular hemorrhage (IVH) with diffuse or no SAH</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.rkkp.dk/fhir/ValueSet/FisherGrad"/>
+  <version value="0.1.8"/>
+  <name value="FisherGrad"/>
+  <title value="Fisher grad for SAH"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-06-28T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Fisher grad for SAH"/>
+  <compose>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/FisherGradingScale"/>
+      <concept>
+        <code value="grade1"/>
+        <display value="Intet synligt blod"/>
+      </concept>
+      <concept>
+        <code value="grade2"/>
+        <display value="SAH &lt; 1 mm"/>
+      </concept>
+      <concept>
+        <code value="grade3"/>
+        <display value="SAH &gt; 1 mm"/>
+      </concept>
+      <concept>
+        <code value="grade4"/>
+        <display value="SAH med IVH eller ICH"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

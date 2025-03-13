@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/DomOphaevelseAarsagRETSPSYK> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DomOphaevelseAarsagRETSPSYK"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet DomOphaevelseAarsagRETSPSYK</b></p><a name=\"DomOphaevelseAarsagRETSPSYK\"> </a><a name=\"hcDomOphaevelseAarsagRETSPSYK\"> </a><a name=\"DomOphaevelseAarsagRETSPSYK-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Verdict.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Verdict</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Verdict.html#Verdict-criminality\">criminality</a></td><td>Dom ophæves pga. ny kriminalitet, men ingen ny foranstaltning i psykiatrien</td><td>Dom ophæves pga. ny kriminalitet, men ingen ny foranstaltning</td></tr><tr><td><a href=\"CodeSystem-Verdict.html#Verdict-criminality_measure\">criminality_measure</a></td><td>Dom ophæves pga. ny kriminalitet og ny foranstaltning i psykiatrien</td><td>Dom ophæves pga. ny kriminalitet og ny foranstaltning</td></tr><tr><td><a href=\"CodeSystem-Verdict.html#Verdict-expire\">expire</a></td><td>Dom ophæves / udløbet (ingen ny kriminalitet)</td><td>Dom ophæves / udløbet (ingen ny kriminalitet)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/DomOphaevelseAarsagRETSPSYK"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "DomOphaevelseAarsagRETSPSYK"] ; # 
+  fhir:title [ fhir:v "Dom - Ophævelse, årsag (RETSPSYK)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-10-03T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Dom - Ophævelse, årsag (RETSPSYK)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/Verdict"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "criminality" ] ;
+         fhir:display [ fhir:v "Dom ophæves pga. ny kriminalitet, men ingen ny foranstaltning i psykiatrien" ]
+       ] [
+         fhir:code [ fhir:v "criminality_measure" ] ;
+         fhir:display [ fhir:v "Dom ophæves pga. ny kriminalitet og ny foranstaltning i psykiatrien" ]
+       ] [
+         fhir:code [ fhir:v "expire" ] ;
+         fhir:display [ fhir:v "Dom ophæves / udløbet (ingen ny kriminalitet)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

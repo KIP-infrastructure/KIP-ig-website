@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/MorsDiagnoseForskelligtDNSL> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MorsDiagnoseForskelligtDNSL"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet MorsDiagnoseForskelligtDNSL</b></p><a name=\"MorsDiagnoseForskelligtDNSL\"> </a><a name=\"hcMorsDiagnoseForskelligtDNSL\"> </a><a name=\"MorsDiagnoseForskelligtDNSL-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-MorsDiagnosekoder.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/MorsDiagnosekoder</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-MorsDiagnosekoder.html#MorsDiagnosekoder-DD489\">DD489</a></td><td>DD489: Neopl uden specifikation og lokalisation</td></tr><tr><td><a href=\"CodeSystem-MorsDiagnosekoder.html#MorsDiagnosekoder-DD729\">DD729</a></td><td>DD729: Sygdomme i hvide blodlegemer uden specifikation</td></tr><tr><td><a href=\"CodeSystem-MorsDiagnosekoder.html#MorsDiagnosekoder-DF039\">DF039</a></td><td>DF039: Demens uden specifikation</td></tr><tr><td><a href=\"CodeSystem-MorsDiagnosekoder.html#MorsDiagnosekoder-DJ449\">DJ449</a></td><td>DJ449: Kronisk obstruktiv lungesygdom uden specifikation</td></tr><tr><td><a href=\"CodeSystem-MorsDiagnosekoder.html#MorsDiagnosekoder-DK281\">DK281</a></td><td>DK281: Ulcus gastrojejunale pepticum acutum m perforation</td></tr><tr><td><a href=\"CodeSystem-MorsDiagnosekoder.html#MorsDiagnosekoder-DK631\">DK631</a></td><td>DK631: Perforatio intestini non traumatica</td></tr><tr><td><a href=\"CodeSystem-MorsDiagnosekoder.html#MorsDiagnosekoder-DK668\">DK668</a></td><td>DK668: Sygdom i bughinde, andre specificerede</td></tr><tr><td><a href=\"CodeSystem-MorsDiagnosekoder.html#MorsDiagnosekoder-DK859\">DK859</a></td><td>DK859: Pancreatitis acuta</td></tr><tr><td><a href=\"CodeSystem-MorsDiagnosekoder.html#MorsDiagnosekoder-DR649\">DR649</a></td><td>DR649: Cachexia</td></tr><tr><td><a href=\"CodeSystem-MorsDiagnosekoder.html#MorsDiagnosekoder-DR999\">DR999</a></td><td>DR999: Mors uden specifkation</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/MorsDiagnoseForskelligtDNSL"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "MorsDiagnoseForskelligtDNSL"] ; # 
+  fhir:title [ fhir:v "Mors Diagnosekode - Forskelligt (DNSL)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2024-01-10T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Mors Diagnosekode - Forskelligt (DNSL)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/MorsDiagnosekoder"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "DD489" ] ;
+         fhir:display [ fhir:v "DD489: Neopl uden specifikation og lokalisation" ]
+       ] [
+         fhir:code [ fhir:v "DD729" ] ;
+         fhir:display [ fhir:v "DD729: Sygdomme i hvide blodlegemer uden specifikation" ]
+       ] [
+         fhir:code [ fhir:v "DF039" ] ;
+         fhir:display [ fhir:v "DF039: Demens uden specifikation" ]
+       ] [
+         fhir:code [ fhir:v "DJ449" ] ;
+         fhir:display [ fhir:v "DJ449: Kronisk obstruktiv lungesygdom uden specifikation" ]
+       ] [
+         fhir:code [ fhir:v "DK281" ] ;
+         fhir:display [ fhir:v "DK281: Ulcus gastrojejunale pepticum acutum m perforation" ]
+       ] [
+         fhir:code [ fhir:v "DK631" ] ;
+         fhir:display [ fhir:v "DK631: Perforatio intestini non traumatica" ]
+       ] [
+         fhir:code [ fhir:v "DK668" ] ;
+         fhir:display [ fhir:v "DK668: Sygdom i bughinde, andre specificerede" ]
+       ] [
+         fhir:code [ fhir:v "DK859" ] ;
+         fhir:display [ fhir:v "DK859: Pancreatitis acuta" ]
+       ] [
+         fhir:code [ fhir:v "DR649" ] ;
+         fhir:display [ fhir:v "DR649: Cachexia" ]
+       ] [
+         fhir:code [ fhir:v "DR999" ] ;
+         fhir:display [ fhir:v "DR999: Mors uden specifkation" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

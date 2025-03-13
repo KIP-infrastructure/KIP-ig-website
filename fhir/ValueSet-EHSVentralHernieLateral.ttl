@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/EHSVentralHernieLateral> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EHSVentralHernieLateral"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet EHSVentralHernieLateral</b></p><a name=\"EHSVentralHernieLateral\"> </a><a name=\"hcEHSVentralHernieLateral\"> </a><a name=\"EHSVentralHernieLateral-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-EHSIncisionalHerniaClassification.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/EHSIncisionalHerniaClassification</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-EHSIncisionalHerniaClassification.html#EHSIncisionalHerniaClassification-l1\">l1</a></td><td>L1 subcostal</td><td>L1 - Subcostal</td></tr><tr><td><a href=\"CodeSystem-EHSIncisionalHerniaClassification.html#EHSIncisionalHerniaClassification-l2\">l2</a></td><td>L2 flanke</td><td>L2 - Flank</td></tr><tr><td><a href=\"CodeSystem-EHSIncisionalHerniaClassification.html#EHSIncisionalHerniaClassification-l3\">l3</a></td><td>L3 fossa iliaca</td><td>L3 - Iliac</td></tr><tr><td><a href=\"CodeSystem-EHSIncisionalHerniaClassification.html#EHSIncisionalHerniaClassification-l4\">l4</a></td><td>L4 lumbal</td><td>L4 - Lumbar</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/EHSVentralHernieLateral"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "EHSVentralHernieLateral"] ; # 
+  fhir:title [ fhir:v "EHS ventral hernie - lateral"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-07-20T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "EHS ventral hernie - lateral"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/EHSIncisionalHerniaClassification"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "l1" ] ;
+         fhir:display [ fhir:v "L1 subcostal" ]
+       ] [
+         fhir:code [ fhir:v "l2" ] ;
+         fhir:display [ fhir:v "L2 flanke" ]
+       ] [
+         fhir:code [ fhir:v "l3" ] ;
+         fhir:display [ fhir:v "L3 fossa iliaca" ]
+       ] [
+         fhir:code [ fhir:v "l4" ] ;
+         fhir:display [ fhir:v "L4 lumbal" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

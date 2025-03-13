@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/KomponentLiner> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KomponentLiner"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KomponentLiner</b></p><a name=\"KomponentLiner\"> </a><a name=\"hcKomponentLiner\"> </a><a name=\"KomponentLiner-en-US\"> </a><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/KomponentLiner</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">ps_traditional_ap<a name=\"KomponentLiner-ps_traditional_ap\"> </a></td><td>PS (traditionel PS post med AP constraint)</td></tr><tr><td style=\"white-space:nowrap\">ps_rotating<a name=\"KomponentLiner-ps_rotating\"> </a></td><td>PS med roterende platform</td></tr><tr><td style=\"white-space:nowrap\">ckk_VV<a name=\"KomponentLiner-ckk_VV\"> </a></td><td>CCK (Constrained Condylar - Post med VV og rotations constraint)</td></tr><tr><td style=\"white-space:nowrap\">ckk_rotating<a name=\"KomponentLiner-ckk_rotating\"> </a></td><td>CCK med roterende platform</td></tr><tr><td style=\"white-space:nowrap\">bi_cs<a name=\"KomponentLiner-bi_cs\"> </a></td><td>Bi-CS: bicruciate substituting (forreste og bageste korsbånd ofres og substitueres med post og 2 cams)</td></tr><tr><td style=\"white-space:nowrap\">traditional_cr<a name=\"KomponentLiner-traditional_cr\"> </a></td><td>Ingen constraint (traditionel CR)</td></tr><tr><td style=\"white-space:nowrap\">medial<a name=\"KomponentLiner-medial\"> </a></td><td>Medial stabilized (øget kongruens og konformitet kun medialt)</td></tr><tr><td style=\"white-space:nowrap\">medial_lateral<a name=\"KomponentLiner-medial_lateral\"> </a></td><td>Medial og lateral øget constraint (typisk er der øget constraint anteriort)</td></tr><tr><td style=\"white-space:nowrap\">rotating<a name=\"KomponentLiner-rotating\"> </a></td><td>Rotating platform</td></tr><tr><td style=\"white-space:nowrap\">bi_retain<a name=\"KomponentLiner-bi_retain\"> </a></td><td>Bi-cruciate retaining (begge korsbånd bevaret)</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/KomponentLiner"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "KomponentLiner"] ; # 
+  fhir:title [ fhir:v "Liner komponent"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-12-18T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Liner komponenter med/uden post"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "ps_traditional_ap" ] ;
+     fhir:display [ fhir:v "PS (traditionel PS post med AP constraint)" ]
+  ] [
+     fhir:code [ fhir:v "ps_rotating" ] ;
+     fhir:display [ fhir:v "PS med roterende platform" ]
+  ] [
+     fhir:code [ fhir:v "ckk_VV" ] ;
+     fhir:display [ fhir:v "CCK (Constrained Condylar - Post med VV og rotations constraint)" ]
+  ] [
+     fhir:code [ fhir:v "ckk_rotating" ] ;
+     fhir:display [ fhir:v "CCK med roterende platform" ]
+  ] [
+     fhir:code [ fhir:v "bi_cs" ] ;
+     fhir:display [ fhir:v "Bi-CS: bicruciate substituting (forreste og bageste korsbånd ofres og substitueres med post og 2 cams)" ]
+  ] [
+     fhir:code [ fhir:v "traditional_cr" ] ;
+     fhir:display [ fhir:v "Ingen constraint (traditionel CR)" ]
+  ] [
+     fhir:code [ fhir:v "medial" ] ;
+     fhir:display [ fhir:v "Medial stabilized (øget kongruens og konformitet kun medialt)" ]
+  ] [
+     fhir:code [ fhir:v "medial_lateral" ] ;
+     fhir:display [ fhir:v "Medial og lateral øget constraint (typisk er der øget constraint anteriort)" ]
+  ] [
+     fhir:code [ fhir:v "rotating" ] ;
+     fhir:display [ fhir:v "Rotating platform" ]
+  ] [
+     fhir:code [ fhir:v "bi_retain" ] ;
+     fhir:display [ fhir:v "Bi-cruciate retaining (begge korsbånd bevaret)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

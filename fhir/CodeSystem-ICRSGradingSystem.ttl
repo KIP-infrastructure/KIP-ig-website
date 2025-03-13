@@ -1,0 +1,86 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/ICRSGradingSystem> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ICRSGradingSystem"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ICRSGradingSystem</b></p><a name=\"ICRSGradingSystem\"> </a><a name=\"hcICRSGradingSystem\"> </a><a name=\"ICRSGradingSystem-en-US\"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/ICRSGradingSystem</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">grade_0<a name=\"ICRSGradingSystem-grade_0\"> </a></td><td>Grade 0: Normal</td><td>Grade 0: Normal</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">grade_1<a name=\"ICRSGradingSystem-grade_1\"> </a></td><td>Grade 1: Nearly normal, superficial lesions</td><td>Grade 1: Nearly normal, superficial lesions</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  grade_1a<a name=\"ICRSGradingSystem-grade_1a\"> </a></td><td>Grade 1A: Soft indentations</td><td>Grade 1A: Soft indentations</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  grade_1b<a name=\"ICRSGradingSystem-grade_1b\"> </a></td><td>Grade 1B: Superficial fissures and cracks</td><td>Grade 1B: Superficial fissures and cracks</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">grade_2<a name=\"ICRSGradingSystem-grade_2\"> </a></td><td>Grade 2: Abnormal</td><td>Grade 2: Abnormal, lesiosn extending down to &lt;50% of cartilage depth</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">grade_3<a name=\"ICRSGradingSystem-grade_3\"> </a></td><td>Grade 3: Severely abnormal</td><td>Grade 3: Severely abnormal, cartilage defects extending down &gt;50% of cartilage depth</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  grade_3a<a name=\"ICRSGradingSystem-grade_3a\"> </a></td><td>Grade 3A: Severely abnormal</td><td>Grade 3A: Cartilage defects extending down &gt;50% of cartilage depth...</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  grade_3b<a name=\"ICRSGradingSystem-grade_3b\"> </a></td><td>Grade 3B: Severely abnormal</td><td>Grade 3B: ...as well as down to calcified layer...</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  grade_3c<a name=\"ICRSGradingSystem-grade_3c\"> </a></td><td>Grade 3C: Severely abnormal</td><td>Grade 3C: ...and down to but not through the sunchondral bone.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  grade_3d<a name=\"ICRSGradingSystem-grade_3d\"> </a></td><td>Grade 3D: Severely abnormal</td><td>Grade 3D: Blisters are included in this grade.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">grade_4<a name=\"ICRSGradingSystem-grade_4\"> </a></td><td>Grade 4: Severely abnormal</td><td>Grade 4: Severely abnormal</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/ICRSGradingSystem"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "ICRSGradingSystem"] ; # 
+  fhir:title [ fhir:v "ICRS grading system"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-09-19T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "ICRS grading system; Link: https://www.researchgate.net/figure/The-International-Cartilage-Repair-Society-ICRS-Cartilage-Lesion-Classification-System_fig2_224847959"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "11"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "grade_0" ] ;
+     fhir:display [ fhir:v "Grade 0: Normal" ] ;
+     fhir:definition [ fhir:v "Grade 0: Normal" ]
+  ] [
+     fhir:code [ fhir:v "grade_1" ] ;
+     fhir:display [ fhir:v "Grade 1: Nearly normal, superficial lesions" ] ;
+     fhir:definition [ fhir:v "Grade 1: Nearly normal, superficial lesions" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "grade_1a" ] ;
+       fhir:display [ fhir:v "Grade 1A: Soft indentations" ] ;
+       fhir:definition [ fhir:v "Grade 1A: Soft indentations" ]
+     ] [
+       fhir:code [ fhir:v "grade_1b" ] ;
+       fhir:display [ fhir:v "Grade 1B: Superficial fissures and cracks" ] ;
+       fhir:definition [ fhir:v "Grade 1B: Superficial fissures and cracks" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "grade_2" ] ;
+     fhir:display [ fhir:v "Grade 2: Abnormal" ] ;
+     fhir:definition [ fhir:v "Grade 2: Abnormal, lesiosn extending down to <50% of cartilage depth" ]
+  ] [
+     fhir:code [ fhir:v "grade_3" ] ;
+     fhir:display [ fhir:v "Grade 3: Severely abnormal" ] ;
+     fhir:definition [ fhir:v "Grade 3: Severely abnormal, cartilage defects extending down >50% of cartilage depth" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "grade_3a" ] ;
+       fhir:display [ fhir:v "Grade 3A: Severely abnormal" ] ;
+       fhir:definition [ fhir:v "Grade 3A: Cartilage defects extending down >50% of cartilage depth..." ]
+     ] [
+       fhir:code [ fhir:v "grade_3b" ] ;
+       fhir:display [ fhir:v "Grade 3B: Severely abnormal" ] ;
+       fhir:definition [ fhir:v "Grade 3B: ...as well as down to calcified layer..." ]
+     ] [
+       fhir:code [ fhir:v "grade_3c" ] ;
+       fhir:display [ fhir:v "Grade 3C: Severely abnormal" ] ;
+       fhir:definition [ fhir:v "Grade 3C: ...and down to but not through the sunchondral bone." ]
+     ] [
+       fhir:code [ fhir:v "grade_3d" ] ;
+       fhir:display [ fhir:v "Grade 3D: Severely abnormal" ] ;
+       fhir:definition [ fhir:v "Grade 3D: Blisters are included in this grade." ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "grade_4" ] ;
+     fhir:display [ fhir:v "Grade 4: Severely abnormal" ] ;
+     fhir:definition [ fhir:v "Grade 4: Severely abnormal" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

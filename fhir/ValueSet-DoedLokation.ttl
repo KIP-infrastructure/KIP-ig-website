@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/DoedLokation> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DoedLokation"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet DoedLokation</b></p><a name=\"DoedLokation\"> </a><a name=\"hcDoedLokation\"> </a><a name=\"DoedLokation-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-DeathPlace.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/DeathPlace</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-DeathPlace.html#DeathPlace-home\">home</a></td><td>Hjemmet</td><td>Home / Hjemmet</td></tr><tr><td><a href=\"CodeSystem-DeathPlace.html#DeathPlace-palliative\">palliative</a></td><td>I denne palliative afdeling</td><td>This palliative department / I denne palliative afdeling</td></tr><tr><td><a href=\"CodeSystem-DeathPlace.html#DeathPlace-other_palliative\">other_palliative</a></td><td>I anden palliativ afdeling</td><td>Other palliative department / I anden palliativ afdeling</td></tr><tr><td><a href=\"CodeSystem-DeathPlace.html#DeathPlace-non_palliative\">non_palliative</a></td><td>Ikke-palliativ sygehusafdeling</td><td>Ikke-palliativ sygehusafdeling</td></tr><tr><td><a href=\"CodeSystem-DeathPlace.html#DeathPlace-relief_area\">relief_area</a></td><td>Aflastningsplads</td><td>Aflastningsplads</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet sted/ukendt</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/DoedLokation"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "DoedLokation"] ; # 
+  fhir:title [ fhir:v "Doed lokation"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-09-07T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Hvor døde patienten"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/DeathPlace"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "home" ] ;
+         fhir:display [ fhir:v "Hjemmet" ]
+       ] [
+         fhir:code [ fhir:v "palliative" ] ;
+         fhir:display [ fhir:v "I denne palliative afdeling" ]
+       ] [
+         fhir:code [ fhir:v "other_palliative" ] ;
+         fhir:display [ fhir:v "I anden palliativ afdeling" ]
+       ] [
+         fhir:code [ fhir:v "non_palliative" ] ;
+         fhir:display [ fhir:v "Ikke-palliativ sygehusafdeling" ]
+       ] [
+         fhir:code [ fhir:v "relief_area" ] ;
+         fhir:display [ fhir:v "Aflastningsplads" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "other" ] ;
+         fhir:display [ fhir:v "Andet sted/ukendt" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

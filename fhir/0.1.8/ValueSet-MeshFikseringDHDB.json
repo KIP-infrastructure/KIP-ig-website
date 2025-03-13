@@ -1,0 +1,76 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "MeshFikseringDHDB",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet MeshFikseringDHDB</b></p><a name=\"MeshFikseringDHDB\"> </a><a name=\"hcMeshFikseringDHDB\"> </a><a name=\"MeshFikseringDHDB-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-MedicalFixationClosing.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/MedicalFixationClosing</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-MedicalFixationClosing.html#MedicalFixationClosing-suture\">suture</a></td><td>Sutur</td><td>Suture / Sutur / SNODMED-CT: 408099007</td></tr><tr><td><a href=\"CodeSystem-MedicalFixationClosing.html#MedicalFixationClosing-tack\">tack</a></td><td>Tackers</td><td>Tack / SNOMED-CT: 705723004</td></tr><tr><td><a href=\"CodeSystem-MedicalFixationClosing.html#MedicalFixationClosing-tack_sutur\">tack_sutur</a></td><td>Tackers &amp; sutur</td><td>Tack + sutur</td></tr><tr><td><a href=\"CodeSystem-MedicalFixationClosing.html#MedicalFixationClosing-clip\">clip</a></td><td>Clips</td><td>Clip / Clip / SNOMED-CT: 77720000</td></tr><tr><td><a href=\"CodeSystem-MedicalFixationClosing.html#MedicalFixationClosing-surgical_glue\">surgical_glue</a></td><td>Lim</td><td>Surgical glue / Kirurgisk lim / SNOMED-CT: 303532007</td></tr><tr><td><a href=\"CodeSystem-MedicalFixationClosing.html#MedicalFixationClosing-glue_sutur\">glue_sutur</a></td><td>Lim &amp; sutur</td><td>Lim + sutur</td></tr><tr><td><a href=\"CodeSystem-MedicalFixationClosing.html#MedicalFixationClosing-glue_tack_clip\">glue_tack_clip</a></td><td>Lim &amp; tackers/clips</td><td>Lim + Tack/clips</td></tr><tr><td><a href=\"CodeSystem-MedicalFixationClosing.html#MedicalFixationClosing-self_fixative_mesh\">self_fixative_mesh</a></td><td>Selvfikserende mesh</td><td>Self-fixative mesh / Selvfikserende mesh</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Anden fiksering</td><td>Other - used to choose unspecific value not in a valueset</td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-none\">none</a></td><td>Ikke fixeret</td><td>None - used to choose none of the available values</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/MeshFikseringDHDB",
+  "version" : "0.1.8",
+  "name" : "MeshFikseringDHDB",
+  "title" : "Mesh fiksering (DHDB)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-07-20T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Mesh fiksering (DHDB)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/MedicalFixationClosing",
+      "concept" : [{
+        "code" : "suture",
+        "display" : "Sutur"
+      },
+      {
+        "code" : "tack",
+        "display" : "Tackers"
+      },
+      {
+        "code" : "tack_sutur",
+        "display" : "Tackers & sutur"
+      },
+      {
+        "code" : "clip",
+        "display" : "Clips"
+      },
+      {
+        "code" : "surgical_glue",
+        "display" : "Lim"
+      },
+      {
+        "code" : "glue_sutur",
+        "display" : "Lim & sutur"
+      },
+      {
+        "code" : "glue_tack_clip",
+        "display" : "Lim & tackers/clips"
+      },
+      {
+        "code" : "self_fixative_mesh",
+        "display" : "Selvfikserende mesh"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "other",
+        "display" : "Anden fiksering"
+      },
+      {
+        "code" : "none",
+        "display" : "Ikke fixeret"
+      }]
+    }]
+  }
+}

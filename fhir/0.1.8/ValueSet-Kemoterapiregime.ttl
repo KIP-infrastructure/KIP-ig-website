@@ -1,0 +1,337 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/Kemoterapiregime> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Kemoterapiregime"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Kemoterapiregime</b></p><a name=\"Kemoterapiregime\"> </a><a name=\"hcKemoterapiregime\"> </a><a name=\"Kemoterapiregime-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-SKS.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/SKS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-BWHA167\">BWHA167</a></td><td>ABVD</td><td>Behandling med doxyrubicin+bleomycin+vinblastin+dacarbazin (ABVD)</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-BWHA138\">BWHA138</a></td><td>BeaCOPP</td><td>Behandling med BEACOPP</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-BWHA310\">BWHA310</a></td><td>BEAM</td><td>Behandling med BEAM (konditionering)</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-BWHA165\">BWHA165</a></td><td>CHOEP</td><td>Behandling med cyclophosphamid+doxorubicin+vinkristin+etoposid+prednisolon (CHOEP)</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-BWHA119\">BWHA119</a></td><td>CHOP</td><td>Behandling med cyclophosphamid+doxorubicin+vinkristin+prednisolon (CHOP)</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-BWHA166\">BWHA166</a></td><td>CNOP</td><td>Behandling med cyclophosphamid+mitoxantron+vinkristin+prednisolon (CNOP)</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-BWHA134\">BWHA134</a></td><td>COP</td><td>Behandling med cyclophosphamid+vinkristin+prednisolon (CVP) (COP)</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-BWHA168\">BWHA168</a></td><td>LVPP</td><td>Behandling med klorambucil+vinblastin+procarbazin+prednisolon (LVPP)</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-BWHA258\">BWHA258</a></td><td>Maxi-CHOP (CTX 1200mg/m2 &amp; doxorubicin 75mg/m2)</td><td>Behandling med cylophosphamid+doxorubicin+vinkristin+prednisolon eskaleret dosis (maxiCHOP)</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-BWHA120\">BWHA120</a></td><td>MIME</td><td>Behandling med MIME</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-BWHA137\">BWHA137</a></td><td>NOP</td><td>Behandling med mitoxantron+vinkristin+prednisolon (NOP)</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-BWHA156\">BWHA156</a></td><td>COPP</td><td>Behandling med cyclophosphamid+procarbazin+vinkristin+prednisolon (COPP)</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-ChemotherapyRegimen.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ChemotherapyRegimen</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-abvd.47copp\">abvd/copp</a></td><td>ABVD/COPP</td><td>ABVD/COPP</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-acvbp\">acvbp</a></td><td>ACVBP</td><td>ACVBP</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-all_regime\">all_regime</a></td><td>ALL regime</td><td>ALL regime</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-adriamycin\">adriamycin</a></td><td>Adriamycin</td><td>Adriamycin</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-bac\">bac</a></td><td>BAC (Bendamustin Ara-c)</td><td>BAC (Bendamustin Ara-c)</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-bfm\">bfm</a></td><td>BFM</td><td>BFM</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-cap\">cap</a></td><td>CAP</td><td>CAP</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-ccvp\">ccvp</a></td><td>CCVP</td><td>CCVP</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-chic\">chic</a></td><td>CHIC</td><td>CHIC</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-chlorambucil_vinblastin_procarb\">chlorambucil_vinblastin_procarb</a></td><td>Chlorambucil og Vinblastin og procarb</td><td>Chlorambucil og Vinblastin og procarb</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-cnsbonn\">cnsbonn</a></td><td>CNSBONN</td><td>CNSBONN</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-cns_matrix\">cns_matrix</a></td><td>CNS matrix</td><td>CNS matrix</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-cns_mvbp\">cns_mvbp</a></td><td>CNS MVBP</td><td>CNS MVBP</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-cns_mvp\">cns_mvp</a></td><td>CNS MVP</td><td>CNS MVP</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-codox_m.47ivac\">codox_m/ivac</a></td><td>CODOX-M/IVAC</td><td>CODOX-M/IVAC</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-comp\">comp</a></td><td>COMP</td><td>COMP</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-cope\">cope</a></td><td>COPE</td><td>COPE</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-cvbp\">cvbp</a></td><td>CVBP</td><td>CVBP</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-cvp\">cvp</a></td><td>CVP</td><td>CVP</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-dexabeam\">dexabeam</a></td><td>DexaBEAM</td><td>DexaBEAM</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-dhap\">dhap</a></td><td>DHAP og DHAoX</td><td>DHAP</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-ecapp\">ecapp</a></td><td>ECAPP</td><td>ECAPP</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-epoch\">epoch</a></td><td>EPOCH</td><td>EPOCH</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-eshap\">eshap</a></td><td>ESHAP</td><td>ESHAP</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-fcd\">fcd</a></td><td>FC (Fludarin &amp; Cyclofosfamid +/- prednison)</td><td>FCD</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-fnd\">fnd</a></td><td>FND (Fludarabin+Novantrone)</td><td>FND</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-gdp\">gdp</a></td><td>GDP</td><td>GDP</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-gem_p_28\">gem_p_28</a></td><td>GEM-P-28</td><td>GEM-P-28</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-gemox\">gemox</a></td><td>GemOx</td><td>GemOx</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-hd_ara_c\">hd_ara_c</a></td><td>HD-Ara-C</td><td>HD-Ara-C</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-hd_ctx\">hd_ctx</a></td><td>HD-CTX</td><td>HD-CTX</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-hd_ctx_vp16\">hd_ctx_vp16</a></td><td>HD-CTX+VP16</td><td>HD-CTX+VP16</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-hd_vp16\">hd_vp16</a></td><td>HD-VP16</td><td>HD-VP16</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-hd_mtx\">hd_mtx</a></td><td>HD-MTX</td><td>HD-MTX</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-hyper_cvad\">hyper_cvad</a></td><td>Hyper-CVAD/IVAC</td><td>Hyper-CVAD/IVAC</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-ice\">ice</a></td><td>ICE</td><td>ICE</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-igev\">igev</a></td><td>IGEV</td><td>IGEV</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-ike\">ike</a></td><td>IKE</td><td>IKE</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-ive\">ive</a></td><td>IVE</td><td>IVE</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-it_behandling\">it_behandling</a></td><td>IT-behandling</td><td>IT-behandling</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-macop_b\">macop_b</a></td><td>MACOP-B</td><td>MACOP-b</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-mantle_2\">mantle_2</a></td><td>Mantle 2</td><td>Mantle 2</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-maxi_mime\">maxi_mime</a></td><td>Maxi-MIME</td><td>Maxi-MIME</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-mini_beam\">mini_beam</a></td><td>Mini-BEAM</td><td>Mini-BEAM</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-mini_chop\">mini_chop</a></td><td>Mini-CHOP</td><td>Mini-CHOP</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-nopho\">nopho</a></td><td>NOPHO - alle varianter</td><td>NOPHO</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-pix_etoposid_benda\">pix_etoposid_benda</a></td><td>Pix-etoposid-Benda</td><td>Pix-etoposid-Benda</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-peroral_cytostatika\">peroral_cytostatika</a></td><td>Peroral cytostatika</td><td>Peroral cytostatika</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-smile\">smile</a></td><td>Smile</td><td>Smile</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-triangle_mantle\">triangle_mantle</a></td><td>Triangle (Mantle)</td><td>Triangle (Mantle)</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-velbe\">velbe</a></td><td>Velbe</td><td>Velbe</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-velcade\">velcade</a></td><td>Velcade</td><td>Velcade</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-copdac\">copdac</a></td><td>COPDAC</td><td>COPDAC</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-ebvp\">ebvp</a></td><td>EBVP</td><td>EBVP</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-ipe\">ipe</a></td><td>IPE</td><td>IPE</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-oepa\">oepa</a></td><td>OEPA</td><td>OEPA</td></tr><tr><td><a href=\"CodeSystem-ChemotherapyRegimen.html#ChemotherapyRegimen-oppa\">oppa</a></td><td>OPPA</td><td>OPPA</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-ATC.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ATC</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01BC07\">L01BC07</a></td><td>Azacitidin</td><td>L01BC07 - azacitidine</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01AD01\">L01AD01</a></td><td>BCNU</td><td>L01AD01 - carmustine</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01AA09\">L01AA09</a></td><td>Bendamustin</td><td>L01AA09 - bendamustine</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01DC01\">L01DC01</a></td><td>Bleomycin</td><td>L01DC01 - bleomycin</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01AA02\">L01AA02</a></td><td>Leukeran/Chlorambucil</td><td>L01AA02 - chlorambucil</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01XA01\">L01XA01</a></td><td>Cisplatin</td><td>L01XA01 - Cisplatin</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L04AD01\">L04AD01</a></td><td>Ciclosporin og andre immunsupresiva</td><td>L04AD01 - ciclosporin</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L04AA40\">L04AA40</a></td><td>Cladribin</td><td>L04AA40 - cladribine</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01AA01\">L01AA01</a></td><td>Cyclofosfamid</td><td>L01AA01 - cyclophosphamide</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01AX04\">L01AX04</a></td><td>Darcabazin</td><td>L01AX04 - dacarbazine</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01DB01\">L01DB01</a></td><td>Doxorubicin</td><td>L01DB01 - Doxorubicin</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01CB01\">L01CB01</a></td><td>Etopsid el Etopofos</td><td>L01CB01 - etoposide</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01BB05\">L01BB05</a></td><td>Fludarabin</td><td>L01BB05 - fludarabine</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01BC05\">L01BC05</a></td><td>Gemcitabin</td><td>L01BC02 - Gemcitabine</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01EL01\">L01EL01</a></td><td>Ibrutinib (incl analoger)</td><td>L01EL01 - ibrutinib</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01EM01\">L01EM01</a></td><td>Idelalisib (PI3K)</td><td>L01EM01 - idelalisib</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L03AB\">L03AB</a></td><td>Interferon</td><td>L03AB - Interferons</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01AA06\">L01AA06</a></td><td>Ifosfamid</td><td>L01AA06 - ifosfamide</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L04AX04\">L04AX04</a></td><td>Lenalidomid og lign</td><td>L04AX04 - lenalidomide</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01AA03\">L01AA03</a></td><td>Melphalan</td><td>L01AA03 - melphalan</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01DB07\">L01DB07</a></td><td>Mitozantrone</td><td>L01DB07 - mitoxantrone</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01CA02\">L01CA02</a></td><td>Oncovin</td><td>L01CA02 - vincristine</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01DB11\">L01DB11</a></td><td>Pixantrone</td><td>L01DB11 - pixantrone</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01AX03\">L01AX03</a></td><td>Temozolomid</td><td>L01AX03 - temozolomide</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L04AX02\">L04AX02</a></td><td>Thalidomid</td><td>L04AX02 - thalidomide</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01XX52\">L01XX52</a></td><td>Venetoclax</td><td>L01XX52 - venetoclax</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01XH01\">L01XH01</a></td><td>Vorinostat</td><td>L01XH01 - vorinostat</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/Kemoterapiregime"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "Kemoterapiregime"] ; # 
+  fhir:title [ fhir:v "Kemoterapiregime"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-07-18T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Kemoterapiregime (blanding af ATC, SKS og uspecifikke koder)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/SKS"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "BWHA167" ] ;
+         fhir:display [ fhir:v "ABVD" ]
+       ] [
+         fhir:code [ fhir:v "BWHA138" ] ;
+         fhir:display [ fhir:v "BeaCOPP" ]
+       ] [
+         fhir:code [ fhir:v "BWHA310" ] ;
+         fhir:display [ fhir:v "BEAM" ]
+       ] [
+         fhir:code [ fhir:v "BWHA165" ] ;
+         fhir:display [ fhir:v "CHOEP" ]
+       ] [
+         fhir:code [ fhir:v "BWHA119" ] ;
+         fhir:display [ fhir:v "CHOP" ]
+       ] [
+         fhir:code [ fhir:v "BWHA166" ] ;
+         fhir:display [ fhir:v "CNOP" ]
+       ] [
+         fhir:code [ fhir:v "BWHA134" ] ;
+         fhir:display [ fhir:v "COP" ]
+       ] [
+         fhir:code [ fhir:v "BWHA168" ] ;
+         fhir:display [ fhir:v "LVPP" ]
+       ] [
+         fhir:code [ fhir:v "BWHA258" ] ;
+         fhir:display [ fhir:v "Maxi-CHOP (CTX 1200mg/m2 & doxorubicin 75mg/m2)" ]
+       ] [
+         fhir:code [ fhir:v "BWHA120" ] ;
+         fhir:display [ fhir:v "MIME" ]
+       ] [
+         fhir:code [ fhir:v "BWHA137" ] ;
+         fhir:display [ fhir:v "NOP" ]
+       ] [
+         fhir:code [ fhir:v "BWHA156" ] ;
+         fhir:display [ fhir:v "COPP" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/ChemotherapyRegimen"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "abvd/copp" ] ;
+         fhir:display [ fhir:v "ABVD/COPP" ]
+       ] [
+         fhir:code [ fhir:v "acvbp" ] ;
+         fhir:display [ fhir:v "ACVBP" ]
+       ] [
+         fhir:code [ fhir:v "all_regime" ] ;
+         fhir:display [ fhir:v "ALL regime" ]
+       ] [
+         fhir:code [ fhir:v "adriamycin" ] ;
+         fhir:display [ fhir:v "Adriamycin" ]
+       ] [
+         fhir:code [ fhir:v "bac" ] ;
+         fhir:display [ fhir:v "BAC (Bendamustin Ara-c)" ]
+       ] [
+         fhir:code [ fhir:v "bfm" ] ;
+         fhir:display [ fhir:v "BFM" ]
+       ] [
+         fhir:code [ fhir:v "cap" ] ;
+         fhir:display [ fhir:v "CAP" ]
+       ] [
+         fhir:code [ fhir:v "ccvp" ] ;
+         fhir:display [ fhir:v "CCVP" ]
+       ] [
+         fhir:code [ fhir:v "chic" ] ;
+         fhir:display [ fhir:v "CHIC" ]
+       ] [
+         fhir:code [ fhir:v "chlorambucil_vinblastin_procarb" ] ;
+         fhir:display [ fhir:v "Chlorambucil og Vinblastin og procarb" ]
+       ] [
+         fhir:code [ fhir:v "cnsbonn" ] ;
+         fhir:display [ fhir:v "CNSBONN" ]
+       ] [
+         fhir:code [ fhir:v "cns_matrix" ] ;
+         fhir:display [ fhir:v "CNS matrix" ]
+       ] [
+         fhir:code [ fhir:v "cns_mvbp" ] ;
+         fhir:display [ fhir:v "CNS MVBP" ]
+       ] [
+         fhir:code [ fhir:v "cns_mvp" ] ;
+         fhir:display [ fhir:v "CNS MVP" ]
+       ] [
+         fhir:code [ fhir:v "codox_m/ivac" ] ;
+         fhir:display [ fhir:v "CODOX-M/IVAC" ]
+       ] [
+         fhir:code [ fhir:v "comp" ] ;
+         fhir:display [ fhir:v "COMP" ]
+       ] [
+         fhir:code [ fhir:v "cope" ] ;
+         fhir:display [ fhir:v "COPE" ]
+       ] [
+         fhir:code [ fhir:v "cvbp" ] ;
+         fhir:display [ fhir:v "CVBP" ]
+       ] [
+         fhir:code [ fhir:v "cvp" ] ;
+         fhir:display [ fhir:v "CVP" ]
+       ] [
+         fhir:code [ fhir:v "dexabeam" ] ;
+         fhir:display [ fhir:v "DexaBEAM" ]
+       ] [
+         fhir:code [ fhir:v "dhap" ] ;
+         fhir:display [ fhir:v "DHAP og DHAoX" ]
+       ] [
+         fhir:code [ fhir:v "ecapp" ] ;
+         fhir:display [ fhir:v "ECAPP" ]
+       ] [
+         fhir:code [ fhir:v "epoch" ] ;
+         fhir:display [ fhir:v "EPOCH" ]
+       ] [
+         fhir:code [ fhir:v "eshap" ] ;
+         fhir:display [ fhir:v "ESHAP" ]
+       ] [
+         fhir:code [ fhir:v "fcd" ] ;
+         fhir:display [ fhir:v "FC (Fludarin & Cyclofosfamid +/- prednison)" ]
+       ] [
+         fhir:code [ fhir:v "fnd" ] ;
+         fhir:display [ fhir:v "FND (Fludarabin+Novantrone)" ]
+       ] [
+         fhir:code [ fhir:v "gdp" ] ;
+         fhir:display [ fhir:v "GDP" ]
+       ] [
+         fhir:code [ fhir:v "gem_p_28" ] ;
+         fhir:display [ fhir:v "GEM-P-28" ]
+       ] [
+         fhir:code [ fhir:v "gemox" ] ;
+         fhir:display [ fhir:v "GemOx" ]
+       ] [
+         fhir:code [ fhir:v "hd_ara_c" ] ;
+         fhir:display [ fhir:v "HD-Ara-C" ]
+       ] [
+         fhir:code [ fhir:v "hd_ctx" ] ;
+         fhir:display [ fhir:v "HD-CTX" ]
+       ] [
+         fhir:code [ fhir:v "hd_ctx_vp16" ] ;
+         fhir:display [ fhir:v "HD-CTX+VP16" ]
+       ] [
+         fhir:code [ fhir:v "hd_vp16" ] ;
+         fhir:display [ fhir:v "HD-VP16" ]
+       ] [
+         fhir:code [ fhir:v "hd_mtx" ] ;
+         fhir:display [ fhir:v "HD-MTX" ]
+       ] [
+         fhir:code [ fhir:v "hyper_cvad" ] ;
+         fhir:display [ fhir:v "Hyper-CVAD/IVAC" ]
+       ] [
+         fhir:code [ fhir:v "ice" ] ;
+         fhir:display [ fhir:v "ICE" ]
+       ] [
+         fhir:code [ fhir:v "igev" ] ;
+         fhir:display [ fhir:v "IGEV" ]
+       ] [
+         fhir:code [ fhir:v "ike" ] ;
+         fhir:display [ fhir:v "IKE" ]
+       ] [
+         fhir:code [ fhir:v "ive" ] ;
+         fhir:display [ fhir:v "IVE" ]
+       ] [
+         fhir:code [ fhir:v "it_behandling" ] ;
+         fhir:display [ fhir:v "IT-behandling" ]
+       ] [
+         fhir:code [ fhir:v "macop_b" ] ;
+         fhir:display [ fhir:v "MACOP-B" ]
+       ] [
+         fhir:code [ fhir:v "mantle_2" ] ;
+         fhir:display [ fhir:v "Mantle 2" ]
+       ] [
+         fhir:code [ fhir:v "maxi_mime" ] ;
+         fhir:display [ fhir:v "Maxi-MIME" ]
+       ] [
+         fhir:code [ fhir:v "mini_beam" ] ;
+         fhir:display [ fhir:v "Mini-BEAM" ]
+       ] [
+         fhir:code [ fhir:v "mini_chop" ] ;
+         fhir:display [ fhir:v "Mini-CHOP" ]
+       ] [
+         fhir:code [ fhir:v "nopho" ] ;
+         fhir:display [ fhir:v "NOPHO - alle varianter" ]
+       ] [
+         fhir:code [ fhir:v "pix_etoposid_benda" ] ;
+         fhir:display [ fhir:v "Pix-etoposid-Benda" ]
+       ] [
+         fhir:code [ fhir:v "peroral_cytostatika" ] ;
+         fhir:display [ fhir:v "Peroral cytostatika" ]
+       ] [
+         fhir:code [ fhir:v "smile" ] ;
+         fhir:display [ fhir:v "Smile" ]
+       ] [
+         fhir:code [ fhir:v "triangle_mantle" ] ;
+         fhir:display [ fhir:v "Triangle (Mantle)" ]
+       ] [
+         fhir:code [ fhir:v "velbe" ] ;
+         fhir:display [ fhir:v "Velbe" ]
+       ] [
+         fhir:code [ fhir:v "velcade" ] ;
+         fhir:display [ fhir:v "Velcade" ]
+       ] [
+         fhir:code [ fhir:v "copdac" ] ;
+         fhir:display [ fhir:v "COPDAC" ]
+       ] [
+         fhir:code [ fhir:v "ebvp" ] ;
+         fhir:display [ fhir:v "EBVP" ]
+       ] [
+         fhir:code [ fhir:v "ipe" ] ;
+         fhir:display [ fhir:v "IPE" ]
+       ] [
+         fhir:code [ fhir:v "oepa" ] ;
+         fhir:display [ fhir:v "OEPA" ]
+       ] [
+         fhir:code [ fhir:v "oppa" ] ;
+         fhir:display [ fhir:v "OPPA" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/ATC"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "L01BC07" ] ;
+         fhir:display [ fhir:v "Azacitidin" ]
+       ] [
+         fhir:code [ fhir:v "L01AD01" ] ;
+         fhir:display [ fhir:v "BCNU" ]
+       ] [
+         fhir:code [ fhir:v "L01AA09" ] ;
+         fhir:display [ fhir:v "Bendamustin" ]
+       ] [
+         fhir:code [ fhir:v "L01DC01" ] ;
+         fhir:display [ fhir:v "Bleomycin" ]
+       ] [
+         fhir:code [ fhir:v "L01AA02" ] ;
+         fhir:display [ fhir:v "Leukeran/Chlorambucil" ]
+       ] [
+         fhir:code [ fhir:v "L01XA01" ] ;
+         fhir:display [ fhir:v "Cisplatin" ]
+       ] [
+         fhir:code [ fhir:v "L04AD01" ] ;
+         fhir:display [ fhir:v "Ciclosporin og andre immunsupresiva" ]
+       ] [
+         fhir:code [ fhir:v "L04AA40" ] ;
+         fhir:display [ fhir:v "Cladribin" ]
+       ] [
+         fhir:code [ fhir:v "L01AA01" ] ;
+         fhir:display [ fhir:v "Cyclofosfamid" ]
+       ] [
+         fhir:code [ fhir:v "L01AX04" ] ;
+         fhir:display [ fhir:v "Darcabazin" ]
+       ] [
+         fhir:code [ fhir:v "L01DB01" ] ;
+         fhir:display [ fhir:v "Doxorubicin" ]
+       ] [
+         fhir:code [ fhir:v "L01CB01" ] ;
+         fhir:display [ fhir:v "Etopsid el Etopofos" ]
+       ] [
+         fhir:code [ fhir:v "L01BB05" ] ;
+         fhir:display [ fhir:v "Fludarabin" ]
+       ] [
+         fhir:code [ fhir:v "L01BC05" ] ;
+         fhir:display [ fhir:v "Gemcitabin" ]
+       ] [
+         fhir:code [ fhir:v "L01EL01" ] ;
+         fhir:display [ fhir:v "Ibrutinib (incl analoger)" ]
+       ] [
+         fhir:code [ fhir:v "L01EM01" ] ;
+         fhir:display [ fhir:v "Idelalisib (PI3K)" ]
+       ] [
+         fhir:code [ fhir:v "L03AB" ] ;
+         fhir:display [ fhir:v "Interferon" ]
+       ] [
+         fhir:code [ fhir:v "L01AA06" ] ;
+         fhir:display [ fhir:v "Ifosfamid" ]
+       ] [
+         fhir:code [ fhir:v "L04AX04" ] ;
+         fhir:display [ fhir:v "Lenalidomid og lign" ]
+       ] [
+         fhir:code [ fhir:v "L01AA03" ] ;
+         fhir:display [ fhir:v "Melphalan" ]
+       ] [
+         fhir:code [ fhir:v "L01DB07" ] ;
+         fhir:display [ fhir:v "Mitozantrone" ]
+       ] [
+         fhir:code [ fhir:v "L01CA02" ] ;
+         fhir:display [ fhir:v "Oncovin" ]
+       ] [
+         fhir:code [ fhir:v "L01DB11" ] ;
+         fhir:display [ fhir:v "Pixantrone" ]
+       ] [
+         fhir:code [ fhir:v "L01AX03" ] ;
+         fhir:display [ fhir:v "Temozolomid" ]
+       ] [
+         fhir:code [ fhir:v "L04AX02" ] ;
+         fhir:display [ fhir:v "Thalidomid" ]
+       ] [
+         fhir:code [ fhir:v "L01XX52" ] ;
+         fhir:display [ fhir:v "Venetoclax" ]
+       ] [
+         fhir:code [ fhir:v "L01XH01" ] ;
+         fhir:display [ fhir:v "Vorinostat" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

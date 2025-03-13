@@ -1,0 +1,123 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/TreatmentResponseEvaluation> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TreatmentResponseEvaluation"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem TreatmentResponseEvaluation</b></p><a name=\"TreatmentResponseEvaluation\"> </a><a name=\"hcTreatmentResponseEvaluation\"> </a><a name=\"TreatmentResponseEvaluation-en-US\"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/TreatmentResponseEvaluation</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">complete_remission<a name=\"TreatmentResponseEvaluation-complete_remission\"> </a></td><td>Complete remission (CR)</td><td>Complete remission (CR)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  complete_remission_incomplete_recovery<a name=\"TreatmentResponseEvaluation-complete_remission_incomplete_recovery\"> </a></td><td>Complete remission with incomplete recovery of bone marrow (CRi)</td><td>Complete remission with incomplete recovery of bone marrow (CRi)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  uncertain_complete_remission<a name=\"TreatmentResponseEvaluation-uncertain_complete_remission\"> </a></td><td>Uncertain complete remission (CRu)</td><td>Uncertain complete remission (CRu)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  complete_remission_metabolic_structurally<a name=\"TreatmentResponseEvaluation-complete_remission_metabolic_structurally\"> </a></td><td>Metabolic and strukturally CR</td><td>Metabolic and strukturally CR / CR (metabolisk og skrukturelt CR, bedømt med PET/CT)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  complete_remission_metabolic<a name=\"TreatmentResponseEvaluation-complete_remission_metabolic\"> </a></td><td>Metabolic CR</td><td>Metabolic CR / CR (metabolisk CR, men med strukturel restsygdom, bedømt med PET/CT)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">partial_remission<a name=\"TreatmentResponseEvaluation-partial_remission\"> </a></td><td>Partial remission (PR)</td><td>Partial remission (PR)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">complete_response<a name=\"TreatmentResponseEvaluation-complete_response\"> </a></td><td>Complete Response</td><td>Complete Response</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  stringent_complete_response<a name=\"TreatmentResponseEvaluation-stringent_complete_response\"> </a></td><td>Stringent Complete Response</td><td>Stringent Complete Response</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  presumed_complete_response<a name=\"TreatmentResponseEvaluation-presumed_complete_response\"> </a></td><td>Presumed Complete Response</td><td>Presumed Complete Response</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  complete_hematological_response<a name=\"TreatmentResponseEvaluation-complete_hematological_response\"> </a></td><td>Complete Hematological response (CHR)</td><td>Complete Hematological response (CHR)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  complete_cytogenetic_response<a name=\"TreatmentResponseEvaluation-complete_cytogenetic_response\"> </a></td><td>Complete cytogenetic response (CCyR)</td><td>Complete cytogenetic response (CCyR)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">partial_response<a name=\"TreatmentResponseEvaluation-partial_response\"> </a></td><td>Partial response (PR)</td><td>Partial response (PR)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  very_good_partial_response<a name=\"TreatmentResponseEvaluation-very_good_partial_response\"> </a></td><td>Very Good Partial Response</td><td>Very Good Partial Response</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  partial_response_lymphocytosis<a name=\"TreatmentResponseEvaluation-partial_response_lymphocytosis\"> </a></td><td>Partial response (PR) lymphocytosis</td><td>Partial response (PR) lymphocytosis</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  partial_cytogenetic_response<a name=\"TreatmentResponseEvaluation-partial_cytogenetic_response\"> </a></td><td>Partial cytogenetic response (PCyR)</td><td>Partial cytogenetic response (PCyR)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">major_molecular_response<a name=\"TreatmentResponseEvaluation-major_molecular_response\"> </a></td><td>Major molecular response (MMR)</td><td>Major molecular response (MMR)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">minimal_response<a name=\"TreatmentResponseEvaluation-minimal_response\"> </a></td><td>Minimal response</td><td>Minimal response</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">uncertain_response<a name=\"TreatmentResponseEvaluation-uncertain_response\"> </a></td><td>Uncertain response</td><td>Uncertain response</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">stable_disease<a name=\"TreatmentResponseEvaluation-stable_disease\"> </a></td><td>Stable disease (SD/NC)</td><td>Stable disease (SD/NC)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">progressive_disease<a name=\"TreatmentResponseEvaluation-progressive_disease\"> </a></td><td>Progressive disease (PD)</td><td>Progressive disease (PD)</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/TreatmentResponseEvaluation"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "TreatmentResponseEvaluation"] ; # 
+  fhir:title [ fhir:v "Treatment response evaluation"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-07-12T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Treatment response evaluation"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "20"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "complete_remission" ] ;
+     fhir:display [ fhir:v "Complete remission (CR)" ] ;
+     fhir:definition [ fhir:v "Complete remission (CR)" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "complete_remission_incomplete_recovery" ] ;
+       fhir:display [ fhir:v "Complete remission with incomplete recovery of bone marrow (CRi)" ] ;
+       fhir:definition [ fhir:v "Complete remission with incomplete recovery of bone marrow (CRi)" ]
+     ] [
+       fhir:code [ fhir:v "uncertain_complete_remission" ] ;
+       fhir:display [ fhir:v "Uncertain complete remission (CRu)" ] ;
+       fhir:definition [ fhir:v "Uncertain complete remission (CRu)" ]
+     ] [
+       fhir:code [ fhir:v "complete_remission_metabolic_structurally" ] ;
+       fhir:display [ fhir:v "Metabolic and strukturally CR" ] ;
+       fhir:definition [ fhir:v "Metabolic and strukturally CR / CR (metabolisk og skrukturelt CR, bedømt med PET/CT)" ]
+     ] [
+       fhir:code [ fhir:v "complete_remission_metabolic" ] ;
+       fhir:display [ fhir:v "Metabolic CR" ] ;
+       fhir:definition [ fhir:v "Metabolic CR / CR (metabolisk CR, men med strukturel restsygdom, bedømt med PET/CT)" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "partial_remission" ] ;
+     fhir:display [ fhir:v "Partial remission (PR)" ] ;
+     fhir:definition [ fhir:v "Partial remission (PR)" ]
+  ] [
+     fhir:code [ fhir:v "complete_response" ] ;
+     fhir:display [ fhir:v "Complete Response" ] ;
+     fhir:definition [ fhir:v "Complete Response" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "stringent_complete_response" ] ;
+       fhir:display [ fhir:v "Stringent Complete Response" ] ;
+       fhir:definition [ fhir:v "Stringent Complete Response" ]
+     ] [
+       fhir:code [ fhir:v "presumed_complete_response" ] ;
+       fhir:display [ fhir:v "Presumed Complete Response" ] ;
+       fhir:definition [ fhir:v "Presumed Complete Response" ]
+     ] [
+       fhir:code [ fhir:v "complete_hematological_response" ] ;
+       fhir:display [ fhir:v "Complete Hematological response (CHR)" ] ;
+       fhir:definition [ fhir:v "Complete Hematological response (CHR)" ]
+     ] [
+       fhir:code [ fhir:v "complete_cytogenetic_response" ] ;
+       fhir:display [ fhir:v "Complete cytogenetic response (CCyR)" ] ;
+       fhir:definition [ fhir:v "Complete cytogenetic response (CCyR)" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "partial_response" ] ;
+     fhir:display [ fhir:v "Partial response (PR)" ] ;
+     fhir:definition [ fhir:v "Partial response (PR)" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "very_good_partial_response" ] ;
+       fhir:display [ fhir:v "Very Good Partial Response" ] ;
+       fhir:definition [ fhir:v "Very Good Partial Response" ]
+     ] [
+       fhir:code [ fhir:v "partial_response_lymphocytosis" ] ;
+       fhir:display [ fhir:v "Partial response (PR) lymphocytosis" ] ;
+       fhir:definition [ fhir:v "Partial response (PR) lymphocytosis" ]
+     ] [
+       fhir:code [ fhir:v "partial_cytogenetic_response" ] ;
+       fhir:display [ fhir:v "Partial cytogenetic response (PCyR)" ] ;
+       fhir:definition [ fhir:v "Partial cytogenetic response (PCyR)" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "major_molecular_response" ] ;
+     fhir:display [ fhir:v "Major molecular response (MMR)" ] ;
+     fhir:definition [ fhir:v "Major molecular response (MMR)" ]
+  ] [
+     fhir:code [ fhir:v "minimal_response" ] ;
+     fhir:display [ fhir:v "Minimal response" ] ;
+     fhir:definition [ fhir:v "Minimal response" ]
+  ] [
+     fhir:code [ fhir:v "uncertain_response" ] ;
+     fhir:display [ fhir:v "Uncertain response" ] ;
+     fhir:definition [ fhir:v "Uncertain response" ]
+  ] [
+     fhir:code [ fhir:v "stable_disease" ] ;
+     fhir:display [ fhir:v "Stable disease (SD/NC)" ] ;
+     fhir:definition [ fhir:v "Stable disease (SD/NC)" ]
+  ] [
+     fhir:code [ fhir:v "progressive_disease" ] ;
+     fhir:display [ fhir:v "Progressive disease (PD)" ] ;
+     fhir:definition [ fhir:v "Progressive disease (PD)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

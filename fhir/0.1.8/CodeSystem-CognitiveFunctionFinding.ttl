@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/CognitiveFunctionFinding> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CognitiveFunctionFinding"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem CognitiveFunctionFinding</b></p><a name=\"CognitiveFunctionFinding\"> </a><a name=\"hcCognitiveFunctionFinding\"> </a><a name=\"CognitiveFunctionFinding-en-US\"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/CognitiveFunctionFinding</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">normal<a name=\"CognitiveFunctionFinding-normal\"> </a></td><td>Normal cognition</td><td>Normal cognition / Normal kognitiv funktion / SNOMED-CT: 449888003</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">impaired<a name=\"CognitiveFunctionFinding-impaired\"> </a></td><td>Impaired cognition</td><td>Impaired cognition / Svækket erkendelsesevne / SNOMED-CT: 386806002</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">dementia<a name=\"CognitiveFunctionFinding-dementia\"> </a></td><td>Dementia</td><td>Dementia / Demens / SNOMED-CT: 52448006</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  mild<a name=\"CognitiveFunctionFinding-mild\"> </a></td><td>Mild</td><td>Mild / Let / SNOMED-CT: 255604002</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  moderate<a name=\"CognitiveFunctionFinding-moderate\"> </a></td><td>Moderate</td><td>Moderate / Moderat / SNOMED-CT: 6736007</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  severe<a name=\"CognitiveFunctionFinding-severe\"> </a></td><td>Severe</td><td>Severe / Svær / SNOMED-CT: 24484000</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/CognitiveFunctionFinding"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "CognitiveFunctionFinding"] ; # 
+  fhir:title [ fhir:v "Cognitive function finding"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-07-19T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Cognitive function finding / SNOMED-CT: 373930000"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "normal" ] ;
+     fhir:display [ fhir:v "Normal cognition" ] ;
+     fhir:definition [ fhir:v "Normal cognition / Normal kognitiv funktion / SNOMED-CT: 449888003" ]
+  ] [
+     fhir:code [ fhir:v "impaired" ] ;
+     fhir:display [ fhir:v "Impaired cognition" ] ;
+     fhir:definition [ fhir:v "Impaired cognition / Svækket erkendelsesevne / SNOMED-CT: 386806002" ]
+  ] [
+     fhir:code [ fhir:v "dementia" ] ;
+     fhir:display [ fhir:v "Dementia" ] ;
+     fhir:definition [ fhir:v "Dementia / Demens / SNOMED-CT: 52448006" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "mild" ] ;
+       fhir:display [ fhir:v "Mild" ] ;
+       fhir:definition [ fhir:v "Mild / Let / SNOMED-CT: 255604002" ]
+     ] [
+       fhir:code [ fhir:v "moderate" ] ;
+       fhir:display [ fhir:v "Moderate" ] ;
+       fhir:definition [ fhir:v "Moderate / Moderat / SNOMED-CT: 6736007" ]
+     ] [
+       fhir:code [ fhir:v "severe" ] ;
+       fhir:display [ fhir:v "Severe" ] ;
+       fhir:definition [ fhir:v "Severe / Svær / SNOMED-CT: 24484000" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

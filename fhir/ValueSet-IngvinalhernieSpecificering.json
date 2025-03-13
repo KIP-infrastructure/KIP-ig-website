@@ -1,0 +1,52 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "IngvinalhernieSpecificering",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet IngvinalhernieSpecificering</b></p><a name=\"IngvinalhernieSpecificering\"> </a><a name=\"hcIngvinalhernieSpecificering\"> </a><a name=\"IngvinalhernieSpecificering-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-SKS.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/SKS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-TUL9B\">TUL9B</a></td><td>Medialt</td><td>TUL9B - medial</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-TUL9A\">TUL9A</a></td><td>Lateralt</td><td>TUL9A - lateral</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-TUL7\">TUL7</a></td><td>Kan ikke specificeres</td><td>TUL7 - side kan ikke angives</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-medial_lateral\">medial_lateral</a></td><td>Sadelhernie (medialt + lateralt)</td><td>Medial and lateral</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/IngvinalhernieSpecificering",
+  "version" : "0.1.8",
+  "name" : "IngvinalhernieSpecificering",
+  "title" : "Ingvinalhernie specificering",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-07-20T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Ingvinalhernie specificering",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/SKS",
+      "concept" : [{
+        "code" : "TUL9B",
+        "display" : "Medialt"
+      },
+      {
+        "code" : "TUL9A",
+        "display" : "Lateralt"
+      },
+      {
+        "code" : "TUL7",
+        "display" : "Kan ikke specificeres"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "medial_lateral",
+        "display" : "Sadelhernie (medialt + lateralt)"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ProcedureTypeDCCG3",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ProcedureTypeDCCG3</b></p><a name=\"ProcedureTypeDCCG3\"> </a><a name=\"hcProcedureTypeDCCG3\"> </a><a name=\"ProcedureTypeDCCG3-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-ProcedureType.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-tme\">tme</a></td><td>TME</td><td>TME</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-pme\">pme</a></td><td>PME</td><td>PME</td></tr></table></li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0532</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html#v2-0532-NA\">NA</a></td><td>Ikke relevant</td><td>not applicable</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/ProcedureTypeDCCG3",
+  "version" : "0.1.8",
+  "name" : "ProcedureTypeDCCG3",
+  "title" : "Proceduretyper til DCCG 3",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-10-11T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Proceduretyper til DCCG 3",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType",
+      "concept" : [{
+        "code" : "tme",
+        "display" : "TME"
+      },
+      {
+        "code" : "pme",
+        "display" : "PME"
+      }]
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0532",
+      "concept" : [{
+        "code" : "NA",
+        "display" : "Ikke relevant"
+      }]
+    }]
+  }
+}

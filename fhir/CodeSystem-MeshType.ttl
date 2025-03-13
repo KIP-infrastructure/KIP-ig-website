@@ -1,0 +1,304 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/MeshType> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MeshType"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem MeshType</b></p><a name=\"MeshType\"> </a><a name=\"hcMeshType\"> </a><a name=\"MeshType-en-US\"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/MeshType</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">adhesix<a name=\"MeshType-adhesix\"> </a></td><td>Adhesix</td><td>Adhesix</td></tr><tr><td style=\"white-space:nowrap\">adhesix_bard<a name=\"MeshType-adhesix_bard\"> </a></td><td>Adhesix, BARD</td><td>Adhesix, BARD</td></tr><tr><td style=\"white-space:nowrap\">adhesix_lap<a name=\"MeshType-adhesix_lap\"> </a></td><td>Adhesix lap.</td><td>Adhesix lap.</td></tr><tr><td style=\"white-space:nowrap\">bard_3d<a name=\"MeshType-bard_3d\"> </a></td><td>BARD 3D</td><td>BARD 3D</td></tr><tr><td style=\"white-space:nowrap\">bard_3d_light<a name=\"MeshType-bard_3d_light\"> </a></td><td>Bard 3D Light</td><td>Bard 3D Light</td></tr><tr><td style=\"white-space:nowrap\">bard_flatmesh<a name=\"MeshType-bard_flatmesh\"> </a></td><td>BARD Flatmesh</td><td>BARD Flatmesh</td></tr><tr><td style=\"white-space:nowrap\">bard_perfix_plug<a name=\"MeshType-bard_perfix_plug\"> </a></td><td>BARD PerFix Plug</td><td>BARD PerFix Plug</td></tr><tr><td style=\"white-space:nowrap\">bard_polysoft<a name=\"MeshType-bard_polysoft\"> </a></td><td>BARD PolySoft Hernia Patch</td><td>BARD PolySoft Hernia Patch</td></tr><tr><td style=\"white-space:nowrap\">bard_soft<a name=\"MeshType-bard_soft\"> </a></td><td>BARD Soft</td><td>BARD Soft</td></tr><tr><td style=\"white-space:nowrap\">bio_a<a name=\"MeshType-bio_a\"> </a></td><td>BIO-A</td><td>BIO-A</td></tr><tr><td style=\"white-space:nowrap\">cabs_air<a name=\"MeshType-cabs_air\"> </a></td><td>CABS AIR Composite, Cousin Biotech</td><td>CABS AIR Composite, Cousin Biotech</td></tr><tr><td style=\"white-space:nowrap\">cousin<a name=\"MeshType-cousin\"> </a></td><td>Cousin</td><td>Cousin</td></tr><tr><td style=\"white-space:nowrap\">dextile_medtronic<a name=\"MeshType-dextile_medtronic\"> </a></td><td>Dextile fra Medtronic</td><td>Dextile fra Medtronic</td></tr><tr><td style=\"white-space:nowrap\">dynamesh_kebomed<a name=\"MeshType-dynamesh_kebomed\"> </a></td><td>Dynamesh, Kebomed</td><td>Dynamesh, Kebomed</td></tr><tr><td style=\"white-space:nowrap\">dynamesh_ipom<a name=\"MeshType-dynamesh_ipom\"> </a></td><td>Dynamesh IPOM, Kebomed</td><td>Dynamesh IPOM, Kebomed</td></tr><tr><td style=\"white-space:nowrap\">dynamesh_pp<a name=\"MeshType-dynamesh_pp\"> </a></td><td>Dynamesh PP</td><td>Dynamesh PP</td></tr><tr><td style=\"white-space:nowrap\">dynamesh_visible<a name=\"MeshType-dynamesh_visible\"> </a></td><td>Dynamesh Visible</td><td>Dynamesh Visible</td></tr><tr><td style=\"white-space:nowrap\">galmesh<a name=\"MeshType-galmesh\"> </a></td><td>Galmesh</td><td>Galmesh</td></tr><tr><td style=\"white-space:nowrap\">galmesh_light<a name=\"MeshType-galmesh_light\"> </a></td><td>Galmesh Light</td><td>Galmesh Light</td></tr><tr><td style=\"white-space:nowrap\">galmesh_umbilical<a name=\"MeshType-galmesh_umbilical\"> </a></td><td>Galmesh Umbilical</td><td>Galmesh Umbilical</td></tr><tr><td style=\"white-space:nowrap\">gore_dualmesh<a name=\"MeshType-gore_dualmesh\"> </a></td><td>Gore Dualmesh, ViCare Medical</td><td>Gore Dualmesh, ViCare Medical</td></tr><tr><td style=\"white-space:nowrap\">intramesh<a name=\"MeshType-intramesh\"> </a></td><td>Intramesh (T1/P8/W3), Cousin Biotech</td><td>Intramesh (T1/P8/W3), Cousin Biotech</td></tr><tr><td style=\"white-space:nowrap\">klas<a name=\"MeshType-klas\"> </a></td><td>Klas</td><td>Klas</td></tr><tr><td style=\"white-space:nowrap\">medcare_prolene<a name=\"MeshType-medcare_prolene\"> </a></td><td>Medcare Prolene</td><td>Medcare Prolene</td></tr><tr><td style=\"white-space:nowrap\">optilene_mesh<a name=\"MeshType-optilene_mesh\"> </a></td><td>Optilene Mesh</td><td>Optilene Mesh</td></tr><tr><td style=\"white-space:nowrap\">optilene_mesh_elastic<a name=\"MeshType-optilene_mesh_elastic\"> </a></td><td>Optilene Mesh Elastic</td><td>Optilene Mesh Elastic</td></tr><tr><td style=\"white-space:nowrap\">optilene_mesh_lp<a name=\"MeshType-optilene_mesh_lp\"> </a></td><td>Optilene Mesh LP</td><td>Optilene Mesh LP</td></tr><tr><td style=\"white-space:nowrap\">parietene<a name=\"MeshType-parietene\"> </a></td><td>Parietene</td><td>Parietene</td></tr><tr><td style=\"white-space:nowrap\">parietene_composite<a name=\"MeshType-parietene_composite\"> </a></td><td>Parietene Composite</td><td>Parietene Composite</td></tr><tr><td style=\"white-space:nowrap\">parietene_covidien<a name=\"MeshType-parietene_covidien\"> </a></td><td>Parietene Covidien</td><td>Parietene Covidien</td></tr><tr><td style=\"white-space:nowrap\">parietex<a name=\"MeshType-parietex\"> </a></td><td>Parietex</td><td>Parietex</td></tr><tr><td style=\"white-space:nowrap\">parietex_composite<a name=\"MeshType-parietex_composite\"> </a></td><td>Parietex Composite (incl. Optimized), Covidien</td><td>Parietex Composite (incl. Optimized), Covidien</td></tr><tr><td style=\"white-space:nowrap\">parietex_covidien<a name=\"MeshType-parietex_covidien\"> </a></td><td>Parietex Covidien</td><td>Parietex Covidien</td></tr><tr><td style=\"white-space:nowrap\">parietex_ventral<a name=\"MeshType-parietex_ventral\"> </a></td><td>Parietex Ventral Patch</td><td>Parietex Ventral Patch</td></tr><tr><td style=\"white-space:nowrap\">parietex_progrip<a name=\"MeshType-parietex_progrip\"> </a></td><td>Parietex Progrip</td><td>Parietex Progrip</td></tr><tr><td style=\"white-space:nowrap\">permacol_covidien<a name=\"MeshType-permacol_covidien\"> </a></td><td>Permacol, Covidien</td><td>Permacol, Covidien</td></tr><tr><td style=\"white-space:nowrap\">phasix<a name=\"MeshType-phasix\"> </a></td><td>Phasix</td><td>Phasix</td></tr><tr><td style=\"white-space:nowrap\">phasix_st<a name=\"MeshType-phasix_st\"> </a></td><td>Phasix ST</td><td>Phasix ST</td></tr><tr><td style=\"white-space:nowrap\">physiomesh<a name=\"MeshType-physiomesh\"> </a></td><td>Physiomesh</td><td>Physiomesh</td></tr><tr><td style=\"white-space:nowrap\">physiomesh_ethicon<a name=\"MeshType-physiomesh_ethicon\"> </a></td><td>Physiomesh, Ethicon</td><td>Physiomesh, Ethicon</td></tr><tr><td style=\"white-space:nowrap\">polypropylene<a name=\"MeshType-polypropylene\"> </a></td><td>Polypropylene</td><td>Polypropylene</td></tr><tr><td style=\"white-space:nowrap\">proceed_ehticon<a name=\"MeshType-proceed_ehticon\"> </a></td><td>Proceed, Ethicon</td><td>Proceed, Ethicon</td></tr><tr><td style=\"white-space:nowrap\">proceed_ventral<a name=\"MeshType-proceed_ventral\"> </a></td><td>Proceed Ventral Patch, Ethicon</td><td>Proceed Ventral Patch, Ethicon</td></tr><tr><td style=\"white-space:nowrap\">progrip<a name=\"MeshType-progrip\"> </a></td><td>Progrip</td><td>Progrip</td></tr><tr><td style=\"white-space:nowrap\">prolene<a name=\"MeshType-prolene\"> </a></td><td>Prolene</td><td>Prolene</td></tr><tr><td style=\"white-space:nowrap\">prolite<a name=\"MeshType-prolite\"> </a></td><td>Prolite</td><td>Prolite</td></tr><tr><td style=\"white-space:nowrap\">softmesh_bard<a name=\"MeshType-softmesh_bard\"> </a></td><td>SoftMesh, BARD</td><td>SoftMesh, BARD</td></tr><tr><td style=\"white-space:nowrap\">strattice_lifecell<a name=\"MeshType-strattice_lifecell\"> </a></td><td>Strattice, Lifecell</td><td>Strattice, Lifecell</td></tr><tr><td style=\"white-space:nowrap\">supramesh<a name=\"MeshType-supramesh\"> </a></td><td>Supramesh</td><td>Supramesh</td></tr><tr><td style=\"white-space:nowrap\">supromesh<a name=\"MeshType-supromesh\"> </a></td><td>Supromesh</td><td>Supromesh</td></tr><tr><td style=\"white-space:nowrap\">surgimesh<a name=\"MeshType-surgimesh\"> </a></td><td>Surgimesh</td><td>Surgimesh</td></tr><tr><td style=\"white-space:nowrap\">surgipro<a name=\"MeshType-surgipro\"> </a></td><td>Surgipro</td><td>Surgipro</td></tr><tr><td style=\"white-space:nowrap\">symbotex_composite<a name=\"MeshType-symbotex_composite\"> </a></td><td>Symbotex Composite</td><td>Symbotex Composite</td></tr><tr><td style=\"white-space:nowrap\">tigr<a name=\"MeshType-tigr\"> </a></td><td>TIGR</td><td>TIGR</td></tr><tr><td style=\"white-space:nowrap\">timesh<a name=\"MeshType-timesh\"> </a></td><td>TiMesh</td><td>TiMesh</td></tr><tr><td style=\"white-space:nowrap\">ultrapro<a name=\"MeshType-ultrapro\"> </a></td><td>Ultrapro</td><td>Ultrapro</td></tr><tr><td style=\"white-space:nowrap\">ultrapro_advanced<a name=\"MeshType-ultrapro_advanced\"> </a></td><td>Ultrapro Advanced</td><td>Ultrapro Advanced</td></tr><tr><td style=\"white-space:nowrap\">ultrapro_ethicon<a name=\"MeshType-ultrapro_ethicon\"> </a></td><td>Ultrapro, Ethicon</td><td>Ultrapro, Ethicon</td></tr><tr><td style=\"white-space:nowrap\">ventralex_st_bard<a name=\"MeshType-ventralex_st_bard\"> </a></td><td>Ventralex ST, BARD</td><td>Ventralex ST, BARD</td></tr><tr><td style=\"white-space:nowrap\">ventralight_st_bard<a name=\"MeshType-ventralight_st_bard\"> </a></td><td>Ventralight ST, BARD</td><td>Ventralight ST, BARD</td></tr><tr><td style=\"white-space:nowrap\">ventrio_hernia_st_bard<a name=\"MeshType-ventrio_hernia_st_bard\"> </a></td><td>Ventrio Hernia ST, BARD</td><td>Ventrio Hernia ST, BARD</td></tr><tr><td style=\"white-space:nowrap\">versatex<a name=\"MeshType-versatex\"> </a></td><td>Versatex</td><td>Versatex</td></tr><tr><td style=\"white-space:nowrap\">versatex_monofilament_mesh<a name=\"MeshType-versatex_monofilament_mesh\"> </a></td><td>Versatex Monofilament Mesh</td><td>Versatex Monofilament Mesh</td></tr><tr><td style=\"white-space:nowrap\">vypro<a name=\"MeshType-vypro\"> </a></td><td>Vypro</td><td>Vypro</td></tr><tr><td style=\"white-space:nowrap\">vypro_ethicon<a name=\"MeshType-vypro_ethicon\"> </a></td><td>Vypro, Ethicon</td><td>Vypro, Ethicon</td></tr><tr><td style=\"white-space:nowrap\">xenmatrix<a name=\"MeshType-xenmatrix\"> </a></td><td>Xenmatrix</td><td>Xenmatrix</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/MeshType"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "MeshType"] ; # 
+  fhir:title [ fhir:v "Mesh type"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-07-20T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Mesh type"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "66"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "adhesix" ] ;
+     fhir:display [ fhir:v "Adhesix" ] ;
+     fhir:definition [ fhir:v "Adhesix" ]
+  ] [
+     fhir:code [ fhir:v "adhesix_bard" ] ;
+     fhir:display [ fhir:v "Adhesix, BARD" ] ;
+     fhir:definition [ fhir:v "Adhesix, BARD" ]
+  ] [
+     fhir:code [ fhir:v "adhesix_lap" ] ;
+     fhir:display [ fhir:v "Adhesix lap." ] ;
+     fhir:definition [ fhir:v "Adhesix lap." ]
+  ] [
+     fhir:code [ fhir:v "bard_3d" ] ;
+     fhir:display [ fhir:v "BARD 3D" ] ;
+     fhir:definition [ fhir:v "BARD 3D" ]
+  ] [
+     fhir:code [ fhir:v "bard_3d_light" ] ;
+     fhir:display [ fhir:v "Bard 3D Light" ] ;
+     fhir:definition [ fhir:v "Bard 3D Light" ]
+  ] [
+     fhir:code [ fhir:v "bard_flatmesh" ] ;
+     fhir:display [ fhir:v "BARD Flatmesh" ] ;
+     fhir:definition [ fhir:v "BARD Flatmesh" ]
+  ] [
+     fhir:code [ fhir:v "bard_perfix_plug" ] ;
+     fhir:display [ fhir:v "BARD PerFix Plug" ] ;
+     fhir:definition [ fhir:v "BARD PerFix Plug" ]
+  ] [
+     fhir:code [ fhir:v "bard_polysoft" ] ;
+     fhir:display [ fhir:v "BARD PolySoft Hernia Patch" ] ;
+     fhir:definition [ fhir:v "BARD PolySoft Hernia Patch" ]
+  ] [
+     fhir:code [ fhir:v "bard_soft" ] ;
+     fhir:display [ fhir:v "BARD Soft" ] ;
+     fhir:definition [ fhir:v "BARD Soft" ]
+  ] [
+     fhir:code [ fhir:v "bio_a" ] ;
+     fhir:display [ fhir:v "BIO-A" ] ;
+     fhir:definition [ fhir:v "BIO-A" ]
+  ] [
+     fhir:code [ fhir:v "cabs_air" ] ;
+     fhir:display [ fhir:v "CABS AIR Composite, Cousin Biotech" ] ;
+     fhir:definition [ fhir:v "CABS AIR Composite, Cousin Biotech" ]
+  ] [
+     fhir:code [ fhir:v "cousin" ] ;
+     fhir:display [ fhir:v "Cousin" ] ;
+     fhir:definition [ fhir:v "Cousin" ]
+  ] [
+     fhir:code [ fhir:v "dextile_medtronic" ] ;
+     fhir:display [ fhir:v "Dextile fra Medtronic" ] ;
+     fhir:definition [ fhir:v "Dextile fra Medtronic" ]
+  ] [
+     fhir:code [ fhir:v "dynamesh_kebomed" ] ;
+     fhir:display [ fhir:v "Dynamesh, Kebomed" ] ;
+     fhir:definition [ fhir:v "Dynamesh, Kebomed" ]
+  ] [
+     fhir:code [ fhir:v "dynamesh_ipom" ] ;
+     fhir:display [ fhir:v "Dynamesh IPOM, Kebomed" ] ;
+     fhir:definition [ fhir:v "Dynamesh IPOM, Kebomed" ]
+  ] [
+     fhir:code [ fhir:v "dynamesh_pp" ] ;
+     fhir:display [ fhir:v "Dynamesh PP" ] ;
+     fhir:definition [ fhir:v "Dynamesh PP" ]
+  ] [
+     fhir:code [ fhir:v "dynamesh_visible" ] ;
+     fhir:display [ fhir:v "Dynamesh Visible" ] ;
+     fhir:definition [ fhir:v "Dynamesh Visible" ]
+  ] [
+     fhir:code [ fhir:v "galmesh" ] ;
+     fhir:display [ fhir:v "Galmesh" ] ;
+     fhir:definition [ fhir:v "Galmesh" ]
+  ] [
+     fhir:code [ fhir:v "galmesh_light" ] ;
+     fhir:display [ fhir:v "Galmesh Light" ] ;
+     fhir:definition [ fhir:v "Galmesh Light" ]
+  ] [
+     fhir:code [ fhir:v "galmesh_umbilical" ] ;
+     fhir:display [ fhir:v "Galmesh Umbilical" ] ;
+     fhir:definition [ fhir:v "Galmesh Umbilical" ]
+  ] [
+     fhir:code [ fhir:v "gore_dualmesh" ] ;
+     fhir:display [ fhir:v "Gore Dualmesh, ViCare Medical" ] ;
+     fhir:definition [ fhir:v "Gore Dualmesh, ViCare Medical" ]
+  ] [
+     fhir:code [ fhir:v "intramesh" ] ;
+     fhir:display [ fhir:v "Intramesh (T1/P8/W3), Cousin Biotech" ] ;
+     fhir:definition [ fhir:v "Intramesh (T1/P8/W3), Cousin Biotech" ]
+  ] [
+     fhir:code [ fhir:v "klas" ] ;
+     fhir:display [ fhir:v "Klas" ] ;
+     fhir:definition [ fhir:v "Klas" ]
+  ] [
+     fhir:code [ fhir:v "medcare_prolene" ] ;
+     fhir:display [ fhir:v "Medcare Prolene" ] ;
+     fhir:definition [ fhir:v "Medcare Prolene" ]
+  ] [
+     fhir:code [ fhir:v "optilene_mesh" ] ;
+     fhir:display [ fhir:v "Optilene Mesh" ] ;
+     fhir:definition [ fhir:v "Optilene Mesh" ]
+  ] [
+     fhir:code [ fhir:v "optilene_mesh_elastic" ] ;
+     fhir:display [ fhir:v "Optilene Mesh Elastic" ] ;
+     fhir:definition [ fhir:v "Optilene Mesh Elastic" ]
+  ] [
+     fhir:code [ fhir:v "optilene_mesh_lp" ] ;
+     fhir:display [ fhir:v "Optilene Mesh LP" ] ;
+     fhir:definition [ fhir:v "Optilene Mesh LP" ]
+  ] [
+     fhir:code [ fhir:v "parietene" ] ;
+     fhir:display [ fhir:v "Parietene" ] ;
+     fhir:definition [ fhir:v "Parietene" ]
+  ] [
+     fhir:code [ fhir:v "parietene_composite" ] ;
+     fhir:display [ fhir:v "Parietene Composite" ] ;
+     fhir:definition [ fhir:v "Parietene Composite" ]
+  ] [
+     fhir:code [ fhir:v "parietene_covidien" ] ;
+     fhir:display [ fhir:v "Parietene Covidien" ] ;
+     fhir:definition [ fhir:v "Parietene Covidien" ]
+  ] [
+     fhir:code [ fhir:v "parietex" ] ;
+     fhir:display [ fhir:v "Parietex" ] ;
+     fhir:definition [ fhir:v "Parietex" ]
+  ] [
+     fhir:code [ fhir:v "parietex_composite" ] ;
+     fhir:display [ fhir:v "Parietex Composite (incl. Optimized), Covidien" ] ;
+     fhir:definition [ fhir:v "Parietex Composite (incl. Optimized), Covidien" ]
+  ] [
+     fhir:code [ fhir:v "parietex_covidien" ] ;
+     fhir:display [ fhir:v "Parietex Covidien" ] ;
+     fhir:definition [ fhir:v "Parietex Covidien" ]
+  ] [
+     fhir:code [ fhir:v "parietex_ventral" ] ;
+     fhir:display [ fhir:v "Parietex Ventral Patch" ] ;
+     fhir:definition [ fhir:v "Parietex Ventral Patch" ]
+  ] [
+     fhir:code [ fhir:v "parietex_progrip" ] ;
+     fhir:display [ fhir:v "Parietex Progrip" ] ;
+     fhir:definition [ fhir:v "Parietex Progrip" ]
+  ] [
+     fhir:code [ fhir:v "permacol_covidien" ] ;
+     fhir:display [ fhir:v "Permacol, Covidien" ] ;
+     fhir:definition [ fhir:v "Permacol, Covidien" ]
+  ] [
+     fhir:code [ fhir:v "phasix" ] ;
+     fhir:display [ fhir:v "Phasix" ] ;
+     fhir:definition [ fhir:v "Phasix" ]
+  ] [
+     fhir:code [ fhir:v "phasix_st" ] ;
+     fhir:display [ fhir:v "Phasix ST" ] ;
+     fhir:definition [ fhir:v "Phasix ST" ]
+  ] [
+     fhir:code [ fhir:v "physiomesh" ] ;
+     fhir:display [ fhir:v "Physiomesh" ] ;
+     fhir:definition [ fhir:v "Physiomesh" ]
+  ] [
+     fhir:code [ fhir:v "physiomesh_ethicon" ] ;
+     fhir:display [ fhir:v "Physiomesh, Ethicon" ] ;
+     fhir:definition [ fhir:v "Physiomesh, Ethicon" ]
+  ] [
+     fhir:code [ fhir:v "polypropylene" ] ;
+     fhir:display [ fhir:v "Polypropylene" ] ;
+     fhir:definition [ fhir:v "Polypropylene" ]
+  ] [
+     fhir:code [ fhir:v "proceed_ehticon" ] ;
+     fhir:display [ fhir:v "Proceed, Ethicon" ] ;
+     fhir:definition [ fhir:v "Proceed, Ethicon" ]
+  ] [
+     fhir:code [ fhir:v "proceed_ventral" ] ;
+     fhir:display [ fhir:v "Proceed Ventral Patch, Ethicon" ] ;
+     fhir:definition [ fhir:v "Proceed Ventral Patch, Ethicon" ]
+  ] [
+     fhir:code [ fhir:v "progrip" ] ;
+     fhir:display [ fhir:v "Progrip" ] ;
+     fhir:definition [ fhir:v "Progrip" ]
+  ] [
+     fhir:code [ fhir:v "prolene" ] ;
+     fhir:display [ fhir:v "Prolene" ] ;
+     fhir:definition [ fhir:v "Prolene" ]
+  ] [
+     fhir:code [ fhir:v "prolite" ] ;
+     fhir:display [ fhir:v "Prolite" ] ;
+     fhir:definition [ fhir:v "Prolite" ]
+  ] [
+     fhir:code [ fhir:v "softmesh_bard" ] ;
+     fhir:display [ fhir:v "SoftMesh, BARD" ] ;
+     fhir:definition [ fhir:v "SoftMesh, BARD" ]
+  ] [
+     fhir:code [ fhir:v "strattice_lifecell" ] ;
+     fhir:display [ fhir:v "Strattice, Lifecell" ] ;
+     fhir:definition [ fhir:v "Strattice, Lifecell" ]
+  ] [
+     fhir:code [ fhir:v "supramesh" ] ;
+     fhir:display [ fhir:v "Supramesh" ] ;
+     fhir:definition [ fhir:v "Supramesh" ]
+  ] [
+     fhir:code [ fhir:v "supromesh" ] ;
+     fhir:display [ fhir:v "Supromesh" ] ;
+     fhir:definition [ fhir:v "Supromesh" ]
+  ] [
+     fhir:code [ fhir:v "surgimesh" ] ;
+     fhir:display [ fhir:v "Surgimesh" ] ;
+     fhir:definition [ fhir:v "Surgimesh" ]
+  ] [
+     fhir:code [ fhir:v "surgipro" ] ;
+     fhir:display [ fhir:v "Surgipro" ] ;
+     fhir:definition [ fhir:v "Surgipro" ]
+  ] [
+     fhir:code [ fhir:v "symbotex_composite" ] ;
+     fhir:display [ fhir:v "Symbotex Composite" ] ;
+     fhir:definition [ fhir:v "Symbotex Composite" ]
+  ] [
+     fhir:code [ fhir:v "tigr" ] ;
+     fhir:display [ fhir:v "TIGR" ] ;
+     fhir:definition [ fhir:v "TIGR" ]
+  ] [
+     fhir:code [ fhir:v "timesh" ] ;
+     fhir:display [ fhir:v "TiMesh" ] ;
+     fhir:definition [ fhir:v "TiMesh" ]
+  ] [
+     fhir:code [ fhir:v "ultrapro" ] ;
+     fhir:display [ fhir:v "Ultrapro" ] ;
+     fhir:definition [ fhir:v "Ultrapro" ]
+  ] [
+     fhir:code [ fhir:v "ultrapro_advanced" ] ;
+     fhir:display [ fhir:v "Ultrapro Advanced" ] ;
+     fhir:definition [ fhir:v "Ultrapro Advanced" ]
+  ] [
+     fhir:code [ fhir:v "ultrapro_ethicon" ] ;
+     fhir:display [ fhir:v "Ultrapro, Ethicon" ] ;
+     fhir:definition [ fhir:v "Ultrapro, Ethicon" ]
+  ] [
+     fhir:code [ fhir:v "ventralex_st_bard" ] ;
+     fhir:display [ fhir:v "Ventralex ST, BARD" ] ;
+     fhir:definition [ fhir:v "Ventralex ST, BARD" ]
+  ] [
+     fhir:code [ fhir:v "ventralight_st_bard" ] ;
+     fhir:display [ fhir:v "Ventralight ST, BARD" ] ;
+     fhir:definition [ fhir:v "Ventralight ST, BARD" ]
+  ] [
+     fhir:code [ fhir:v "ventrio_hernia_st_bard" ] ;
+     fhir:display [ fhir:v "Ventrio Hernia ST, BARD" ] ;
+     fhir:definition [ fhir:v "Ventrio Hernia ST, BARD" ]
+  ] [
+     fhir:code [ fhir:v "versatex" ] ;
+     fhir:display [ fhir:v "Versatex" ] ;
+     fhir:definition [ fhir:v "Versatex" ]
+  ] [
+     fhir:code [ fhir:v "versatex_monofilament_mesh" ] ;
+     fhir:display [ fhir:v "Versatex Monofilament Mesh" ] ;
+     fhir:definition [ fhir:v "Versatex Monofilament Mesh" ]
+  ] [
+     fhir:code [ fhir:v "vypro" ] ;
+     fhir:display [ fhir:v "Vypro" ] ;
+     fhir:definition [ fhir:v "Vypro" ]
+  ] [
+     fhir:code [ fhir:v "vypro_ethicon" ] ;
+     fhir:display [ fhir:v "Vypro, Ethicon" ] ;
+     fhir:definition [ fhir:v "Vypro, Ethicon" ]
+  ] [
+     fhir:code [ fhir:v "xenmatrix" ] ;
+     fhir:display [ fhir:v "Xenmatrix" ] ;
+     fhir:definition [ fhir:v "Xenmatrix" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

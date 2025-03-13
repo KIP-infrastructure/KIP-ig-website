@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="BehandlinsplanAendretAarsagDCCG"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet BehandlinsplanAendretAarsagDCCG</b></p><a name="BehandlinsplanAendretAarsagDCCG"> </a><a name="hcBehandlinsplanAendretAarsagDCCG"> </a><a name="BehandlinsplanAendretAarsagDCCG-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-ProcedureNotCompleted.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/ProcedureNotCompleted</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-ProcedureNotCompleted.html#ProcedureNotCompleted-disease_progression">disease_progression</a></td><td>Sygdomsprogression</td><td>Progression of disease / Sygdomsprogression</td></tr><tr><td><a href="CodeSystem-ProcedureNotCompleted.html#ProcedureNotCompleted-disease_regression">disease_regression</a></td><td>Sygdomsregression</td><td>Regression of disease / Sygdomsregression</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-GenericValues.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-GenericValues.html#GenericValues-other">other</a></td><td>Anden årsag</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.rkkp.dk/fhir/ValueSet/BehandlinsplanAendretAarsagDCCG"/>
+  <version value="0.1.8"/>
+  <name value="BehandlinsplanAendretAarsagDCCG"/>
+  <title value="Årsag til ændret behandlingsplan DCCG"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-09-07T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Årsag til ændret behandlingsplan DCCG"/>
+  <compose>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/ProcedureNotCompleted"/>
+      <concept>
+        <code value="disease_progression"/>
+        <display value="Sygdomsprogression"/>
+      </concept>
+      <concept>
+        <code value="disease_regression"/>
+        <display value="Sygdomsregression"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"/>
+      <concept>
+        <code value="other"/>
+        <display value="Anden årsag"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

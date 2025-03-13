@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/KomplInfektionProcDUGA> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KomplInfektionProcDUGA"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KomplInfektionProcDUGA</b></p><a name=\"KomplInfektionProcDUGA\"> </a><a name=\"hcKomplInfektionProcDUGA\"> </a><a name=\"KomplInfektionProcDUGA-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-ProcedureUrogyn.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ProcedureUrogyn</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ProcedureUrogyn.html#ProcedureUrogyn-BPH\">BPH</a></td><td>BPH: Systemisk antibiotikabehandling af infektionssygdomme</td><td>Systemisk antibiotikabehandling af infektionssygdomme</td></tr><tr><td><a href=\"CodeSystem-ProcedureUrogyn.html#ProcedureUrogyn-KKBF00\">KKBF00</a></td><td>KKBF00: Fjernelse af fremmedlegeme i urinleder</td><td>Fjernelse af fremmedlegeme i urinleder</td></tr><tr><td><a href=\"CodeSystem-ProcedureUrogyn.html#ProcedureUrogyn-KKCF01\">KKCF01</a></td><td>KKCF01: Perkutan endoskopisk fjernelse af fremmedlegeme i urinblære</td><td>Perkutan endoskopisk fjernelse af fremmedlegeme i urinblære</td></tr><tr><td><a href=\"CodeSystem-ProcedureUrogyn.html#ProcedureUrogyn-KKDE20\">KKDE20</a></td><td>KKDE20: Fjernelse af fremmedlegeme fra urinrør</td><td>Fjernelse af fremmedlegeme fra urinrør</td></tr><tr><td><a href=\"CodeSystem-ProcedureUrogyn.html#ProcedureUrogyn-KLEE00\">KLEE00</a></td><td>KLEE00: Sutur af vagina</td><td>Sutur af vagina</td></tr><tr><td><a href=\"CodeSystem-ProcedureUrogyn.html#ProcedureUrogyn-KLWB00\">KLWB00</a></td><td>KLWB00: Reoperation ved overfladisk infektion efter gynækologisk operation</td><td>Reoperation ved overfladisk infektion efter gynækologisk operation</td></tr><tr><td><a href=\"CodeSystem-ProcedureUrogyn.html#ProcedureUrogyn-KLWC00\">KLWC00</a></td><td>KLWC00: Reoperation ved dyb infektion efter gynækologisk operation</td><td>Reoperation ved dyb infektion efter gynækologisk operation</td></tr><tr><td><a href=\"CodeSystem-ProcedureUrogyn.html#ProcedureUrogyn-KLWC01\">KLWC01</a></td><td>KLWC01: Laparoskopisk reoperation ved dyb infektion efter gynækologisk operation</td><td>Laparoskopisk reoperation ved dyb infektion efter gynækologisk operation</td></tr><tr><td><a href=\"CodeSystem-ProcedureUrogyn.html#ProcedureUrogyn-KLWW96\">KLWW96</a></td><td>KLWW96: Anden reoperation efter gynækologisk operation</td><td>Anden reoperation efter gynækologisk operation</td></tr><tr><td><a href=\"CodeSystem-ProcedureUrogyn.html#ProcedureUrogyn-KLWW96A\">KLWW96A</a></td><td>KLWW96A: Fjernelse af fremmedlegeme i bækkenhulen efter gynækologisk operation</td><td>Fjernelse af fremmedlegeme i bækkenhulen efter gynækologisk operation</td></tr><tr><td><a href=\"CodeSystem-ProcedureUrogyn.html#ProcedureUrogyn-KLWW97A\">KLWW97A</a></td><td>KLWW97A: Laparoskopisk fjernelse af fremmedlegeme i bækkenhulen efter gynækologisk operation</td><td>Laparoskopisk fjernelse af fremmedlegeme i bækkenhulen efter gynækologisk operation</td></tr><tr><td><a href=\"CodeSystem-ProcedureUrogyn.html#ProcedureUrogyn-KTLE10\">KTLE10</a></td><td>KTLE10: Fjernelse af fremmedlegeme fra vagina</td><td>Fjernelse af fremmedlegeme fra vagina</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/KomplInfektionProcDUGA"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "KomplInfektionProcDUGA"] ; # 
+  fhir:title [ fhir:v "Komplikationer pga. infektion eller erosion - Procedurekoder (DUGA)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2024-02-21T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Komplikationer pga. infektion eller erosion - Procedurekoder (DUGA)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/ProcedureUrogyn"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "BPH" ] ;
+         fhir:display [ fhir:v "BPH: Systemisk antibiotikabehandling af infektionssygdomme" ]
+       ] [
+         fhir:code [ fhir:v "KKBF00" ] ;
+         fhir:display [ fhir:v "KKBF00: Fjernelse af fremmedlegeme i urinleder" ]
+       ] [
+         fhir:code [ fhir:v "KKCF01" ] ;
+         fhir:display [ fhir:v "KKCF01: Perkutan endoskopisk fjernelse af fremmedlegeme i urinblære" ]
+       ] [
+         fhir:code [ fhir:v "KKDE20" ] ;
+         fhir:display [ fhir:v "KKDE20: Fjernelse af fremmedlegeme fra urinrør" ]
+       ] [
+         fhir:code [ fhir:v "KLEE00" ] ;
+         fhir:display [ fhir:v "KLEE00: Sutur af vagina" ]
+       ] [
+         fhir:code [ fhir:v "KLWB00" ] ;
+         fhir:display [ fhir:v "KLWB00: Reoperation ved overfladisk infektion efter gynækologisk operation" ]
+       ] [
+         fhir:code [ fhir:v "KLWC00" ] ;
+         fhir:display [ fhir:v "KLWC00: Reoperation ved dyb infektion efter gynækologisk operation" ]
+       ] [
+         fhir:code [ fhir:v "KLWC01" ] ;
+         fhir:display [ fhir:v "KLWC01: Laparoskopisk reoperation ved dyb infektion efter gynækologisk operation" ]
+       ] [
+         fhir:code [ fhir:v "KLWW96" ] ;
+         fhir:display [ fhir:v "KLWW96: Anden reoperation efter gynækologisk operation" ]
+       ] [
+         fhir:code [ fhir:v "KLWW96A" ] ;
+         fhir:display [ fhir:v "KLWW96A: Fjernelse af fremmedlegeme i bækkenhulen efter gynækologisk operation" ]
+       ] [
+         fhir:code [ fhir:v "KLWW97A" ] ;
+         fhir:display [ fhir:v "KLWW97A: Laparoskopisk fjernelse af fremmedlegeme i bækkenhulen efter gynækologisk operation" ]
+       ] [
+         fhir:code [ fhir:v "KTLE10" ] ;
+         fhir:display [ fhir:v "KTLE10: Fjernelse af fremmedlegeme fra vagina" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

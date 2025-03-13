@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="IndgrebPrioritetAkutElektiv"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet IndgrebPrioritetAkutElektiv</b></p><a name="IndgrebPrioritetAkutElektiv"> </a><a name="hcIndgrebPrioritetAkutElektiv"> </a><a name="IndgrebPrioritetAkutElektiv-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-Priority.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/Priority</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-Priority.html#Priority-elective">elective</a></td><td>Elektiv</td><td>Elective / Elektiv / SNOMED-CT: 103390000</td></tr><tr><td><a href="CodeSystem-Priority.html#Priority-emergency">emergency</a></td><td>Akut/Subakut</td><td>Emergency / Akut / SNOMED-CT: 25876001</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.rkkp.dk/fhir/ValueSet/IndgrebPrioritetAkutElektiv"/>
+  <version value="0.1.8"/>
+  <name value="IndgrebPrioritetAkutElektiv"/>
+  <title value="Type af indgreb (akut/elektiv)"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-07-20T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Type af indgreb (akut/elektiv)"/>
+  <compose>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/Priority"/>
+      <concept>
+        <code value="elective"/>
+        <display value="Elektiv"/>
+      </concept>
+      <concept>
+        <code value="emergency"/>
+        <display value="Akut/Subakut"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

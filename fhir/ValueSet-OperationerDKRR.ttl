@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/OperationerDKRR> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "OperationerDKRR"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet OperationerDKRR</b></p><a name=\"OperationerDKRR\"> </a><a name=\"hcOperationerDKRR\"> </a><a name=\"OperationerDKRR-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-AnatomicalLocations.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/AnatomicalLocations</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-acl\">acl</a></td><td>ACL</td><td>ACL</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-pcl\">pcl</a></td><td>PCL</td><td>PCL</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-mcl\">mcl</a></td><td>MCL</td><td>MCL</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-lcl\">lcl</a></td><td>LCL</td><td>LCL</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-plc\">plc</a></td><td>PLC</td><td>PLC</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-lateral_meniscus\">lateral_meniscus</a></td><td>Laterale menisk</td><td>Lateral meniscus / Laterale menisk</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-medial_meniscus\">medial_meniscus</a></td><td>Mediale menisk</td><td>Medial meniscus / Mediale menisk</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-cartilage\">cartilage</a></td><td>Bruskskade</td><td>Cartilage / Brusk</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-ProcedureType.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-transplant\">transplant</a></td><td>Optransplantering før ACL</td><td>Transplant / Transplantation</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/OperationerDKRR"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "OperationerDKRR"] ; # 
+  fhir:title [ fhir:v "Operationer (DKRR)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-09-19T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Operationer (DKRR)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/AnatomicalLocations"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "acl" ] ;
+         fhir:display [ fhir:v "ACL" ]
+       ] [
+         fhir:code [ fhir:v "pcl" ] ;
+         fhir:display [ fhir:v "PCL" ]
+       ] [
+         fhir:code [ fhir:v "mcl" ] ;
+         fhir:display [ fhir:v "MCL" ]
+       ] [
+         fhir:code [ fhir:v "lcl" ] ;
+         fhir:display [ fhir:v "LCL" ]
+       ] [
+         fhir:code [ fhir:v "plc" ] ;
+         fhir:display [ fhir:v "PLC" ]
+       ] [
+         fhir:code [ fhir:v "lateral_meniscus" ] ;
+         fhir:display [ fhir:v "Laterale menisk" ]
+       ] [
+         fhir:code [ fhir:v "medial_meniscus" ] ;
+         fhir:display [ fhir:v "Mediale menisk" ]
+       ] [
+         fhir:code [ fhir:v "cartilage" ] ;
+         fhir:display [ fhir:v "Bruskskade" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "transplant" ] ;
+         fhir:display [ fhir:v "Optransplantering før ACL" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "other" ] ;
+         fhir:display [ fhir:v "Andet" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

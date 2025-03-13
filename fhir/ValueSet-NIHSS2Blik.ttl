@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/NIHSS2Blik> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "NIHSS2Blik"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet NIHSS2Blik</b></p><a name=\"NIHSS2Blik\"> </a><a name=\"hcNIHSS2Blik\"> </a><a name=\"NIHSS2Blik-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-NIHSS2Gaze.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/NIHSS2Gaze</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-NIHSS2Gaze.html#NIHSS2Gaze-0\">0</a></td><td>0 = Normale øjenbevægelser</td><td>Normal.</td></tr><tr><td><a href=\"CodeSystem-NIHSS2Gaze.html#NIHSS2Gaze-1\">1</a></td><td>1 = Partiel blikparese</td><td>Partial gaze palsy; gaze is abnormal in one or both eyes, but forced deviation or total gaze paresis is not present.</td></tr><tr><td><a href=\"CodeSystem-NIHSS2Gaze.html#NIHSS2Gaze-2\">2</a></td><td>2 = Total blikparese eller blikdeviation</td><td>Forced deviation, or total gaze paresis not overcome by the oculocephalic maneuver.</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/NIHSS2Blik"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "NIHSS2Blik"] ; # 
+  fhir:title [ fhir:v "NIHSS - 2. Blik"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-06-27T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The National Institute of Health Stroke Scale (NIHSS) - 2. Blik (kun horisontale øjenbevægelser)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/NIHSS2Gaze"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "0" ] ;
+         fhir:display [ fhir:v "0 = Normale øjenbevægelser" ]
+       ] [
+         fhir:code [ fhir:v "1" ] ;
+         fhir:display [ fhir:v "1 = Partiel blikparese" ]
+       ] [
+         fhir:code [ fhir:v "2" ] ;
+         fhir:display [ fhir:v "2 = Total blikparese eller blikdeviation" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

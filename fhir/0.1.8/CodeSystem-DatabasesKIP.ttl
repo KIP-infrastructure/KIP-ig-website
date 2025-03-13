@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/DatabasesKIP> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DatabasesKIP"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DatabasesKIP</b></p><a name=\"DatabasesKIP\"> </a><a name=\"hcDatabasesKIP\"> </a><a name=\"DatabasesKIP-en-US\"> </a><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/DatabasesKIP</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">ALD<a name=\"DatabasesKIP-ALD\"> </a></td><td>HÆMA - ALD</td></tr><tr><td style=\"white-space:nowrap\">DAMYDA<a name=\"DatabasesKIP-DAMYDA\"> </a></td><td>HÆMA - DAMYDA</td></tr><tr><td style=\"white-space:nowrap\">MDS<a name=\"DatabasesKIP-MDS\"> </a></td><td>HÆMA - MDS</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/DatabasesKIP"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "DatabasesKIP"] ; # 
+  fhir:title [ fhir:v "Databaser - KIP"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-03-15T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Databaser i KIP"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "ALD" ] ;
+     fhir:display [ fhir:v "ALD" ] ;
+     fhir:definition [ fhir:v "HÆMA - ALD" ]
+  ] [
+     fhir:code [ fhir:v "DAMYDA" ] ;
+     fhir:display [ fhir:v "DAMYDA" ] ;
+     fhir:definition [ fhir:v "HÆMA - DAMYDA" ]
+  ] [
+     fhir:code [ fhir:v "MDS" ] ;
+     fhir:display [ fhir:v "MDS" ] ;
+     fhir:definition [ fhir:v "HÆMA - MDS" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

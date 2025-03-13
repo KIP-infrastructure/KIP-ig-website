@@ -1,0 +1,52 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "FISHProcedure",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet FISHProcedure</b></p><a name=\"FISHProcedure\"> </a><a name=\"hcFISHProcedure\"> </a><a name=\"FISHProcedure-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-FISHVariables.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/FISHVariables</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-cd138_sort\">cd138_sort</a></td><td>plasmacelleindentifikation (CD138 sort)</td><td>CD138 sort</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-antibodies\">antibodies</a></td><td>plasmacelleindentifikation (antistof)</td><td>Antibodies / Antistof</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-plasma_cell_identifikation_unspecific\">plasma_cell_identifikation_unspecific</a></td><td>plasmacelleindentifikation (anden)</td><td>Plasma cell identification, unspecific / Plasmacelleidentifikation, uspecifik</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>uden plasmacelleidentifikation</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/FISHProcedure",
+  "version" : "0.1.8",
+  "name" : "FISHProcedure",
+  "title" : "FISH plasma identifikation",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-07-15T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "FISH plasma identifikation",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/FISHVariables",
+      "concept" : [{
+        "code" : "cd138_sort",
+        "display" : "plasmacelleindentifikation (CD138 sort)"
+      },
+      {
+        "code" : "antibodies",
+        "display" : "plasmacelleindentifikation (antistof)"
+      },
+      {
+        "code" : "plasma_cell_identifikation_unspecific",
+        "display" : "plasmacelleindentifikation (anden)"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "other",
+        "display" : "uden plasmacelleidentifikation"
+      }]
+    }]
+  }
+}

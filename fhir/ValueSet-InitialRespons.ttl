@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/InitialRespons> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "InitialRespons"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet InitialRespons</b></p><a name=\"InitialRespons\"> </a><a name=\"hcInitialRespons\"> </a><a name=\"InitialRespons-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-Profylaksebehandling.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Profylaksebehandling</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-Profylaksebehandling.html#Profylaksebehandling-yesfreeOfTreatment\">yesfreeOfTreatment</a></td><td>Ja, og patienten genoptog ikke sin vanlige profylaksebehandling</td></tr><tr><td><a href=\"CodeSystem-Profylaksebehandling.html#Profylaksebehandling-yesagainprofylakse\">yesagainprofylakse</a></td><td>Ja, men patienten har genoptaget profylaksebehandling</td></tr></table></li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0532</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html#v2-0532-N\">N</a></td><td>Nej</td><td>No</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/InitialRespons"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "InitialRespons"] ; # 
+  fhir:title [ fhir:v "InitialRespons"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2024-06-25T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "InitialRespons"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/Profylaksebehandling"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "yesfreeOfTreatment" ] ;
+         fhir:display [ fhir:v "Ja, og patienten genoptog ikke sin vanlige profylaksebehandling" ]
+       ] [
+         fhir:code [ fhir:v "yesagainprofylakse" ] ;
+         fhir:display [ fhir:v "Ja, men patienten har genoptaget profylaksebehandling" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0532"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "N" ] ;
+         fhir:display [ fhir:v "Nej" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/CentralBlock> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CentralBlock"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem CentralBlock</b></p><a name=\"CentralBlock\"> </a><a name=\"hcCentralBlock\"> </a><a name=\"CentralBlock-en-US\"> </a><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/CentralBlock</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">block_perop<a name=\"CentralBlock-block_perop\"> </a></td><td>Block given peropratively</td><td>Blokade anlagt peroperativt</td></tr><tr><td style=\"white-space:nowrap\">block_preop_WA<a name=\"CentralBlock-block_preop_WA\"> </a></td><td>Block given preopratively, surgery planned WITH anasthesia</td><td>Blokade anlagt præoperativt, videre forløb kirurgi MED anæstesi</td></tr><tr><td style=\"white-space:nowrap\">block_preop_WOA<a name=\"CentralBlock-block_preop_WOA\"> </a></td><td>Block given preopratively, surgery planned WITHOUT anasthesia</td><td>Blokade anlagt præoperativt, videre forløb kirurgi UDEN anæstesi</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/CentralBlock"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "CentralBlock"] ; # 
+  fhir:title [ fhir:v "Central blokade"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-09T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Tidspunkt for central blokade"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "block_perop" ] ;
+     fhir:display [ fhir:v "Block given peropratively" ] ;
+     fhir:definition [ fhir:v "Blokade anlagt peroperativt" ]
+  ] [
+     fhir:code [ fhir:v "block_preop_WA" ] ;
+     fhir:display [ fhir:v "Block given preopratively, surgery planned WITH anasthesia" ] ;
+     fhir:definition [ fhir:v "Blokade anlagt præoperativt, videre forløb kirurgi MED anæstesi" ]
+  ] [
+     fhir:code [ fhir:v "block_preop_WOA" ] ;
+     fhir:display [ fhir:v "Block given preopratively, surgery planned WITHOUT anasthesia" ] ;
+     fhir:definition [ fhir:v "Blokade anlagt præoperativt, videre forløb kirurgi UDEN anæstesi" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

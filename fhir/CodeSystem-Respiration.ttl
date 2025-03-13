@@ -1,0 +1,99 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/Respiration> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Respiration"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem Respiration</b></p><a name=\"Respiration\"> </a><a name=\"hcRespiration\"> </a><a name=\"Respiration-en-US\"> </a><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/Respiration</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">spontane_resp<a name=\"Respiration-spontane_resp\"> </a></td><td>Spontane respiration</td><td>Spontan respiration</td></tr><tr><td style=\"white-space:nowrap\">spontane_resp_only<a name=\"Respiration-spontane_resp_only\"> </a></td><td>Spontane respiration ONLY</td><td>KUN spontan respiration</td></tr><tr><td style=\"white-space:nowrap\">mask_vent<a name=\"Respiration-mask_vent\"> </a></td><td>Mask ventilation</td><td>Maskeventilation</td></tr><tr><td style=\"white-space:nowrap\">larynx_all<a name=\"Respiration-larynx_all\"> </a></td><td>Larynx mask (all types)</td><td>Larynxmaske (alle typer)</td></tr><tr><td style=\"white-space:nowrap\">intubation<a name=\"Respiration-intubation\"> </a></td><td>Intubation</td><td>Intubation</td></tr><tr><td style=\"white-space:nowrap\">intub_dir_laryngo<a name=\"Respiration-intub_dir_laryngo\"> </a></td><td>Intubation by direct laryngoskopia</td><td>Intubation ved direkte laryngoskopi</td></tr><tr><td style=\"white-space:nowrap\">intub_video_laryngo<a name=\"Respiration-intub_video_laryngo\"> </a></td><td>Intubation using videolaryngoskopia</td><td>Intubation med videolaryngoskopi</td></tr><tr><td style=\"white-space:nowrap\">intub_flex_skop<a name=\"Respiration-intub_flex_skop\"> </a></td><td>Intubation using flexibal skop</td><td>Intubation med fleksibelt skopi</td></tr><tr><td style=\"white-space:nowrap\">intub_diff<a name=\"Respiration-intub_diff\"> </a></td><td>Intubation using different method</td><td>Intubation ved anden metode</td></tr><tr><td style=\"white-space:nowrap\">tracheostomi<a name=\"Respiration-tracheostomi\"> </a></td><td>Tracheostomi</td><td>Tracheostomi</td></tr><tr><td style=\"white-space:nowrap\">tracheostomi_loc<a name=\"Respiration-tracheostomi_loc\"> </a></td><td>Tracheostomi in local anesthesia</td><td>Tracheostomi i lokalanæstesi</td></tr><tr><td style=\"white-space:nowrap\">tracheostomi_emg<a name=\"Respiration-tracheostomi_emg\"> </a></td><td>Emergency tracheostomi</td><td>Nødtracheostomi</td></tr><tr><td style=\"white-space:nowrap\">is_intub_trach<a name=\"Respiration-is_intub_trach\"> </a></td><td>Allready intubated/tracheostometered</td><td>Er intuberet/tracheostomeret</td></tr><tr><td style=\"white-space:nowrap\">without_further<a name=\"Respiration-without_further\"> </a></td><td>No further action relevant</td><td>Intet yderligere</td></tr><tr><td style=\"white-space:nowrap\">na<a name=\"Respiration-na\"> </a></td><td>Not applicable</td><td>Ikke relevant</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/Respiration"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "Respiration"] ; # 
+  fhir:title [ fhir:v "Plan for eller støtte til luftvejsassistance"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-01T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Mulige indgreb vedr luftvejsstøtte"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "15"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "spontane_resp" ] ;
+     fhir:display [ fhir:v "Spontane respiration" ] ;
+     fhir:definition [ fhir:v "Spontan respiration" ]
+  ] [
+     fhir:code [ fhir:v "spontane_resp_only" ] ;
+     fhir:display [ fhir:v "Spontane respiration ONLY" ] ;
+     fhir:definition [ fhir:v "KUN spontan respiration" ]
+  ] [
+     fhir:code [ fhir:v "mask_vent" ] ;
+     fhir:display [ fhir:v "Mask ventilation" ] ;
+     fhir:definition [ fhir:v "Maskeventilation" ]
+  ] [
+     fhir:code [ fhir:v "larynx_all" ] ;
+     fhir:display [ fhir:v "Larynx mask (all types)" ] ;
+     fhir:definition [ fhir:v "Larynxmaske (alle typer)" ]
+  ] [
+     fhir:code [ fhir:v "intubation" ] ;
+     fhir:display [ fhir:v "Intubation" ] ;
+     fhir:definition [ fhir:v "Intubation" ]
+  ] [
+     fhir:code [ fhir:v "intub_dir_laryngo" ] ;
+     fhir:display [ fhir:v "Intubation by direct laryngoskopia" ] ;
+     fhir:definition [ fhir:v "Intubation ved direkte laryngoskopi" ]
+  ] [
+     fhir:code [ fhir:v "intub_video_laryngo" ] ;
+     fhir:display [ fhir:v "Intubation using videolaryngoskopia" ] ;
+     fhir:definition [ fhir:v "Intubation med videolaryngoskopi" ]
+  ] [
+     fhir:code [ fhir:v "intub_flex_skop" ] ;
+     fhir:display [ fhir:v "Intubation using flexibal skop" ] ;
+     fhir:definition [ fhir:v "Intubation med fleksibelt skopi" ]
+  ] [
+     fhir:code [ fhir:v "intub_diff" ] ;
+     fhir:display [ fhir:v "Intubation using different method" ] ;
+     fhir:definition [ fhir:v "Intubation ved anden metode" ]
+  ] [
+     fhir:code [ fhir:v "tracheostomi" ] ;
+     fhir:display [ fhir:v "Tracheostomi" ] ;
+     fhir:definition [ fhir:v "Tracheostomi" ]
+  ] [
+     fhir:code [ fhir:v "tracheostomi_loc" ] ;
+     fhir:display [ fhir:v "Tracheostomi in local anesthesia" ] ;
+     fhir:definition [ fhir:v "Tracheostomi i lokalanæstesi" ]
+  ] [
+     fhir:code [ fhir:v "tracheostomi_emg" ] ;
+     fhir:display [ fhir:v "Emergency tracheostomi" ] ;
+     fhir:definition [ fhir:v "Nødtracheostomi" ]
+  ] [
+     fhir:code [ fhir:v "is_intub_trach" ] ;
+     fhir:display [ fhir:v "Allready intubated/tracheostometered" ] ;
+     fhir:definition [ fhir:v "Er intuberet/tracheostomeret" ]
+  ] [
+     fhir:code [ fhir:v "without_further" ] ;
+     fhir:display [ fhir:v "No further action relevant" ] ;
+     fhir:definition [ fhir:v "Intet yderligere" ]
+  ] [
+     fhir:code [ fhir:v "na" ] ;
+     fhir:display [ fhir:v "Not applicable" ] ;
+     fhir:definition [ fhir:v "Ikke relevant" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

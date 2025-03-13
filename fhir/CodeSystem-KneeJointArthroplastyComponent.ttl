@@ -1,0 +1,728 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/KneeJointArthroplastyComponent> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KneeJointArthroplastyComponent"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KneeJointArthroplastyComponent</b></p><a name=\"KneeJointArthroplastyComponent\"> </a><a name=\"hcKneeJointArthroplastyComponent\"> </a><a name=\"KneeJointArthroplastyComponent-en-US\"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/KneeJointArthroplastyComponent</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">arthrosurface_hemicap<a name=\"KneeJointArthroplastyComponent-arthrosurface_hemicap\"> </a></td><td>Arthrosurface: HemiCAP</td><td>Arthrosurface: HemiCAP (Femur)</td></tr><tr><td style=\"white-space:nowrap\">arthrosurface_hemicap_pf<a name=\"KneeJointArthroplastyComponent-arthrosurface_hemicap_pf\"> </a></td><td>Arthrosurface: Hemicap PF</td><td>Arthrosurface: Hemicap PF (Femur)</td></tr><tr><td style=\"white-space:nowrap\">arthrosurface_unicap<a name=\"KneeJointArthroplastyComponent-arthrosurface_unicap\"> </a></td><td>Arthrosurface: Unicap</td><td>Arthrosurface: Unicap (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">biomet_agc_hp_posterior_stabilizer<a name=\"KneeJointArthroplastyComponent-biomet_agc_hp_posterior_stabilizer\"> </a></td><td>Biomet: AGC HP Posterior Stabilizer</td><td>Biomet: AGC HP Posterior Stabilizer (Femur)</td></tr><tr><td style=\"white-space:nowrap\">biomet_agc_v2<a name=\"KneeJointArthroplastyComponent-biomet_agc_v2\"> </a></td><td>Zimmer Biomet: AGC V2</td><td>Zimmer Biomet: AGC V2 (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">biomet_agc_v2_universal<a name=\"KneeJointArthroplastyComponent-biomet_agc_v2_universal\"> </a></td><td>Zimmer Biomet: AGC V2 Universal</td><td>Zimmer Biomet: AGC V2 Universal (Femur)</td></tr><tr><td style=\"white-space:nowrap\">biomet_maxim<a name=\"KneeJointArthroplastyComponent-biomet_maxim\"> </a></td><td>Biomet: Maxim</td><td>Biomet: Maxim (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">biomet_maxim_constrained<a name=\"KneeJointArthroplastyComponent-biomet_maxim_constrained\"> </a></td><td>Biomet: Maxim Constrained</td><td>Biomet: Maxim Constrained (Femur)</td></tr><tr><td style=\"white-space:nowrap\">biomet_maxim_posterior_stabilized<a name=\"KneeJointArthroplastyComponent-biomet_maxim_posterior_stabilized\"> </a></td><td>Biomet: Maxim Posterior Stabilized</td><td>Biomet: Maxim Posterior Stabilized (Femur)</td></tr><tr><td style=\"white-space:nowrap\">biomet_oxford_domed_lateral_pkr<a name=\"KneeJointArthroplastyComponent-biomet_oxford_domed_lateral_pkr\"> </a></td><td>Zimmer Biomet: Oxford domed lateral PKR</td><td>Zimmer Biomet: Oxford domed lateral PKR (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">biomet_oxford_phase_iii_alpha<a name=\"KneeJointArthroplastyComponent-biomet_oxford_phase_iii_alpha\"> </a></td><td>Zimmer Biomet: Oxford Phase III alpha</td><td>Zimmer Biomet: Oxford Phase III alpha (Femur)</td></tr><tr><td style=\"white-space:nowrap\">biomet_rhk_rotating_hinge_knee<a name=\"KneeJointArthroplastyComponent-biomet_rhk_rotating_hinge_knee\"> </a></td><td>Zimmer Biomet: RHK Rotating Hinge Knee</td><td>Zimmer Biomet: RHK Rotating Hinge Knee (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">biomet_tibia_offset_tray<a name=\"KneeJointArthroplastyComponent-biomet_tibia_offset_tray\"> </a></td><td>Biomet: Tibia Offset Tray</td><td>Biomet: Tibia Offset Tray (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">biomet_vanguard_cr<a name=\"KneeJointArthroplastyComponent-biomet_vanguard_cr\"> </a></td><td>Zimmer Biomet: Vanguard CR</td><td>Zimmer Biomet: Vanguard CR (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">biomet_vanguard_m_unicompartmental<a name=\"KneeJointArthroplastyComponent-biomet_vanguard_m_unicompartmental\"> </a></td><td>Biomet: Vanguard M Unicompartmental</td><td>Biomet: Vanguard M Unicompartmental (Femur)</td></tr><tr><td style=\"white-space:nowrap\">biomet_vanguard_pfr<a name=\"KneeJointArthroplastyComponent-biomet_vanguard_pfr\"> </a></td><td>Biomet: Vanguard PFR</td><td>Biomet: Vanguard PFR (Femur)</td></tr><tr><td style=\"white-space:nowrap\">biomet_vanguard_ps<a name=\"KneeJointArthroplastyComponent-biomet_vanguard_ps\"> </a></td><td>Biomet: Vanguard PS</td><td>Biomet: Vanguard PS (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">biomet_vanguard_rocc_interlok_femur<a name=\"KneeJointArthroplastyComponent-biomet_vanguard_rocc_interlok_femur\"> </a></td><td>Biomet: Vanguard ROCC - Interlok Femur</td><td>Biomet: Vanguard ROCC - Interlok Femur (Femur)</td></tr><tr><td style=\"white-space:nowrap\">biomet_vanguard_rocc_interlok_tibia<a name=\"KneeJointArthroplastyComponent-biomet_vanguard_rocc_interlok_tibia\"> </a></td><td>Zimmer Biomet: Vanguard ROCC - Interlok Tibia</td><td>Zimmer Biomet: Vanguard ROCC - Interlok Tibia (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">biomet_vanguard_rocc_interlok_tibia_pps_ha<a name=\"KneeJointArthroplastyComponent-biomet_vanguard_rocc_interlok_tibia_pps_ha\"> </a></td><td>Biomet: Vanguard ROCC - Tibia PPS + HA</td><td>Biomet: Vanguard ROCC - Tibia PPS + HA (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">biomet_vanguard_ssk<a name=\"KneeJointArthroplastyComponent-biomet_vanguard_ssk\"> </a></td><td>Biomet: Vanguard SSK</td><td>Biomet: Vanguard SSK (Femur)</td></tr><tr><td style=\"white-space:nowrap\">biomet_vanguard_unicompartmental<a name=\"KneeJointArthroplastyComponent-biomet_vanguard_unicompartmental\"> </a></td><td>Zimmer Biomet: Vanguard Unicompartmental</td><td>Zimmer Biomet: Vanguard Unicompartmental (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">corin_rotaglide<a name=\"KneeJointArthroplastyComponent-corin_rotaglide\"> </a></td><td>Corin: Rotaglide</td><td>Corin: Rotaglide (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">corin_rotaglide_pegged<a name=\"KneeJointArthroplastyComponent-corin_rotaglide_pegged\"> </a></td><td>Corin: Rotaglide Pegged</td><td>Corin: Rotaglide Pegged (Femur)</td></tr><tr><td style=\"white-space:nowrap\">corin_rotaglide_posterior_stabilizer<a name=\"KneeJointArthroplastyComponent-corin_rotaglide_posterior_stabilizer\"> </a></td><td>Corin: Rotaglide Posterior Stabilizer</td><td>Corin: Rotaglide Posterior Stabilizer (Femur)</td></tr><tr><td style=\"white-space:nowrap\">corin_rotaglide_stemless<a name=\"KneeJointArthroplastyComponent-corin_rotaglide_stemless\"> </a></td><td>Corin: Rotaglide Stemless</td><td>Corin: Rotaglide Stemless (Femur)</td></tr><tr><td style=\"white-space:nowrap\">corin_rotaglide_stemmed<a name=\"KneeJointArthroplastyComponent-corin_rotaglide_stemmed\"> </a></td><td>Corin: Rotaglide Stemmed</td><td>Corin: Rotaglide Stemmed (Femur)</td></tr><tr><td style=\"white-space:nowrap\">depuy_attune_cr<a name=\"KneeJointArthroplastyComponent-depuy_attune_cr\"> </a></td><td>Johnson &amp; Johnson: Attune CR</td><td>Johnson &amp; Johnson: Attune CR (Femur)</td></tr><tr><td style=\"white-space:nowrap\">depuy_limb_preservation_system<a name=\"KneeJointArthroplastyComponent-depuy_limb_preservation_system\"> </a></td><td>Johnson &amp; Johnson: Limb Preservation System</td><td>Johnson &amp; Johnson: Limb Preservation System (Femur)</td></tr><tr><td style=\"white-space:nowrap\">depuy_sigma_hp_partiel_knee<a name=\"KneeJointArthroplastyComponent-depuy_sigma_hp_partiel_knee\"> </a></td><td>DePuy: Sigma HP partial knee</td><td>DePuy: Sigma HP partial knee (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">episealer_condyle_solo<a name=\"KneeJointArthroplastyComponent-episealer_condyle_solo\"> </a></td><td>Episurf Medical: Episealer Condyle Solo</td><td>Episurf Medical: Episealer Condyle Solo (Femur)</td></tr><tr><td style=\"white-space:nowrap\">howmedica_duracon_all_plastic<a name=\"KneeJointArthroplastyComponent-howmedica_duracon_all_plastic\"> </a></td><td>Howmedica: Duracon All-Plastic</td><td>Howmedica: Duracon All-Plastic (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">howmedica_duracon_cruciform<a name=\"KneeJointArthroplastyComponent-howmedica_duracon_cruciform\"> </a></td><td>Howmedica: Duracon Cruciform</td><td>Howmedica: Duracon Cruciform (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">howmedica_duracon_modular<a name=\"KneeJointArthroplastyComponent-howmedica_duracon_modular\"> </a></td><td>Howmedica: Duracon Modular</td><td>Howmedica: Duracon Modular (Femur)</td></tr><tr><td style=\"white-space:nowrap\">howmedica_duracon_standard<a name=\"KneeJointArthroplastyComponent-howmedica_duracon_standard\"> </a></td><td>Howmedica: Duracon Standard</td><td>Howmedica: Duracon Standard (Femur)</td></tr><tr><td style=\"white-space:nowrap\">howmedica_duracon_stemmed_stabilizer<a name=\"KneeJointArthroplastyComponent-howmedica_duracon_stemmed_stabilizer\"> </a></td><td>Howmedica: Duracon Stemmed Stabilizer</td><td>Howmedica: Duracon Stemmed Stabilizer (Femur)</td></tr><tr><td style=\"white-space:nowrap\">howmedica_duracon_universal<a name=\"KneeJointArthroplastyComponent-howmedica_duracon_universal\"> </a></td><td>Howmedica: Duracon Universal</td><td>Howmedica: Duracon Universal (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">howmedica_interax<a name=\"KneeJointArthroplastyComponent-howmedica_interax\"> </a></td><td>Howmedica: Interax</td><td>Howmedica: Interax (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">howmedica_interax_stabilizer<a name=\"KneeJointArthroplastyComponent-howmedica_interax_stabilizer\"> </a></td><td>Howmedica: Interax Stabiliser</td><td>Howmedica: Interax Stabiliser (Femur)</td></tr><tr><td style=\"white-space:nowrap\">howmedica_interax_standard<a name=\"KneeJointArthroplastyComponent-howmedica_interax_standard\"> </a></td><td>Howmedica: Interax Standard</td><td>Howmedica: Interax Standard (Femur)</td></tr><tr><td style=\"white-space:nowrap\">howmedica_kinemax_plus_stabilizer<a name=\"KneeJointArthroplastyComponent-howmedica_kinemax_plus_stabilizer\"> </a></td><td>Howmedica: Kinemax Plus Stabilizer</td><td>Howmedica: Kinemax Plus Stabilizer (Femur)</td></tr><tr><td style=\"white-space:nowrap\">howmedica_kinemax_plus_standard<a name=\"KneeJointArthroplastyComponent-howmedica_kinemax_plus_standard\"> </a></td><td>Howmedica: Kinemax Plus Standard</td><td>Howmedica: Kinemax Plus Standard (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">howmedica_kinemax_plus_superstabilizer<a name=\"KneeJointArthroplastyComponent-howmedica_kinemax_plus_superstabilizer\"> </a></td><td>Howmedica: Kinemax Plus Superstabilizer</td><td>Howmedica: Kinemax Plus Superstabilizer (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">implex_cks_all_poly<a name=\"KneeJointArthroplastyComponent-implex_cks_all_poly\"> </a></td><td>Implex: CKS All Poly</td><td>Implex: CKS All Poly (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">implex_cks_continuum_posterior_stabilized<a name=\"KneeJointArthroplastyComponent-implex_cks_continuum_posterior_stabilized\"> </a></td><td>Implex: CKS Continuum Posterior Stabilized</td><td>Implex: CKS Continuum Posterior Stabilized (Femur)</td></tr><tr><td style=\"white-space:nowrap\">implex_cks_modular<a name=\"KneeJointArthroplastyComponent-implex_cks_modular\"> </a></td><td>Implex: CKS Modular</td><td>Implex: CKS Modular (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">implex_cks_primary<a name=\"KneeJointArthroplastyComponent-implex_cks_primary\"> </a></td><td>Implex: CKS Primary</td><td>Implex: CKS Primary (Femur)</td></tr><tr><td style=\"white-space:nowrap\">insall_burstein<a name=\"KneeJointArthroplastyComponent-insall_burstein\"> </a></td><td>Insall-Burstein</td><td>Insall-Burstein (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">johnson&amp;johnson_attune_crs<a name=\"KneeJointArthroplastyComponent-johnson.38johnson_attune_crs\"> </a></td><td>Johnson &amp; Johnson: Attune CRS (Constrained Revision System)</td><td>Johnson &amp; Johnson: Attune CRS (Constrained Revision System) (Femur)</td></tr><tr><td style=\"white-space:nowrap\">johnson&amp;johnson_attune_fb<a name=\"KneeJointArthroplastyComponent-johnson.38johnson_attune_fb\"> </a></td><td>Johnson &amp; Johnson: Attune FB</td><td>Johnson &amp; Johnson: Attune FB (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">johnson&amp;johnson_attune_fixed_crs<a name=\"KneeJointArthroplastyComponent-johnson.38johnson_attune_fixed_crs\"> </a></td><td>Johnson &amp; Johnson: Attune Fixed CRS (Constrained Revision System)</td><td>Johnson &amp; Johnson: Attune Fixed CRS (Constrained Revision System) (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">johnson&amp;johnson_attune_mbt_crs<a name=\"KneeJointArthroplastyComponent-johnson.38johnson_attune_mbt_crs\"> </a></td><td>Johnson &amp; Johnson: Attune Revision Tibial Base Rotating Platform</td><td>Johnson &amp; Johnson: Attune Revision Tibial Base Rotating Platform (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">johnson&amp;johnson_attune_rotation_platfom<a name=\"KneeJointArthroplastyComponent-johnson.38johnson_attune_rotation_platfom\"> </a></td><td>Johnson &amp; Johnson: Attune Rotation Platfom</td><td>Johnson &amp; Johnson: Attune Rotation Platfom (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">johnson&amp;johnson_pfc_cruciate_substituting<a name=\"KneeJointArthroplastyComponent-johnson.38johnson_pfc_cruciate_substituting\"> </a></td><td>Johnson &amp; Johnson: PFC Crusiate-Substituting</td><td>Johnson &amp; Johnson: PFC Crusiate-Substituting (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">johnson&amp;johnson_pfc_modular<a name=\"KneeJointArthroplastyComponent-johnson.38johnson_pfc_modular\"> </a></td><td>Johnson &amp; Johnson: PFC Modular</td><td>Johnson &amp; Johnson: PFC Modular (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">johnson&amp;johnson_pfc_sigma_all_poly<a name=\"KneeJointArthroplastyComponent-johnson.38johnson_pfc_sigma_all_poly\"> </a></td><td>Johnson &amp; Johnson: PFC Sigma All-Poly</td><td>Johnson &amp; Johnson: PFC Sigma All-Poly (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">johnson&amp;johnson_pfc_sigma_cruciate_retaining<a name=\"KneeJointArthroplastyComponent-johnson.38johnson_pfc_sigma_cruciate_retaining\"> </a></td><td>Johnson &amp; Johnson: PFC Sigma Cruciate-Retaining</td><td>Johnson &amp; Johnson: PFC Sigma Cruciate-Retaining (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">johnson&amp;johnson_pfc_sigma_cruciate_substituting<a name=\"KneeJointArthroplastyComponent-johnson.38johnson_pfc_sigma_cruciate_substituting\"> </a></td><td>Johnson &amp; Johnson: PFC Sigma Cruciate-Substituting</td><td>Johnson &amp; Johnson: PFC Sigma Cruciate-Substituting (Femur)</td></tr><tr><td style=\"white-space:nowrap\">johnson&amp;johnson_pfc_sigma_ps<a name=\"KneeJointArthroplastyComponent-johnson.38johnson_pfc_sigma_ps\"> </a></td><td>Johnson &amp; Johnson: PFC Sigma PS</td><td>Johnson &amp; Johnson: PFC Sigma PS (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">johnson&amp;johnson_pfc_sigma_revision_tc3<a name=\"KneeJointArthroplastyComponent-johnson.38johnson_pfc_sigma_revision_tc3\"> </a></td><td>Johnson &amp; Johnson: PFC Sigma Revision and TC3</td><td>Johnson &amp; Johnson: PFC Sigma Revision and TC3 (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">johnson&amp;johnson_pfc_sigma_tc3<a name=\"KneeJointArthroplastyComponent-johnson.38johnson_pfc_sigma_tc3\"> </a></td><td>Johnson &amp; Johnson: PFC Sigma TC3</td><td>Johnson &amp; Johnson: PFC Sigma TC3 (Femur)</td></tr><tr><td style=\"white-space:nowrap\">johnson&amp;johnson_pfc_sigma_rotating_platform<a name=\"KneeJointArthroplastyComponent-johnson.38johnson_pfc_sigma_rotating_platform\"> </a></td><td>Johnson &amp; Johnson: PFC Sigma Rotating Platform</td><td>Johnson &amp; Johnson: PFC Sigma Rotating Platform (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">johnson&amp;johnson_pfc_sigma_rp_stabilized<a name=\"KneeJointArthroplastyComponent-johnson.38johnson_pfc_sigma_rp_stabilized\"> </a></td><td>Johnson &amp; Johnson: PFC Sigma RP Stabilized</td><td>Johnson &amp; Johnson: PFC Sigma RP Stabilized (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">johnson&amp;johnson_pfc_standard<a name=\"KneeJointArthroplastyComponent-johnson.38johnson_pfc_standard\"> </a></td><td>Johnson &amp; Johnson: PFC Standard</td><td>Johnson &amp; Johnson: PFC Standard (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">johnson&amp;johnson_preservation_uni_all_poly<a name=\"KneeJointArthroplastyComponent-johnson.38johnson_preservation_uni_all_poly\"> </a></td><td>Johnson &amp; Johnson: Preservation uni all poly</td><td>Johnson &amp; Johnson: Preservation uni all poly (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">johnson&amp;johnson_preservation_uni_tray<a name=\"KneeJointArthroplastyComponent-johnson.38johnson_preservation_uni_tray\"> </a></td><td>Johnson &amp; Johnson: Preservation uni tray</td><td>Johnson &amp; Johnson: Preservation uni tray (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">johnson&amp;johnson_s_rom_noiles<a name=\"KneeJointArthroplastyComponent-johnson.38johnson_s_rom_noiles\"> </a></td><td>Johnson &amp; Johnson: S-ROM Noiles</td><td>Johnson &amp; Johnson: S-ROM Noiles (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">legion_oxinium_cr<a name=\"KneeJointArthroplastyComponent-legion_oxinium_cr\"> </a></td><td>Legion: Oxinium CR</td><td>Legion: Oxinium CR (Femur)</td></tr><tr><td style=\"white-space:nowrap\">limb_preservation_system_distal_femur<a name=\"KneeJointArthroplastyComponent-limb_preservation_system_distal_femur\"> </a></td><td>Limb Preservation System Distal Femur</td><td>Limb Preservation System Distal Femur (Femur)</td></tr><tr><td style=\"white-space:nowrap\">link_endo_model_rotational<a name=\"KneeJointArthroplastyComponent-link_endo_model_rotational\"> </a></td><td>LINK: Endo-Model Rotational</td><td>LINK: Endo-Model Rotational (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">link_endo_model_sled_hemi<a name=\"KneeJointArthroplastyComponent-link_endo_model_sled_hemi\"> </a></td><td>LINK: Endo-Model Sled Hemi</td><td>LINK: Endo-Model Sled Hemi (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">link_endo_model_total_hinge<a name=\"KneeJointArthroplastyComponent-link_endo_model_total_hinge\"> </a></td><td>LINK: Endo-Model Total Hinge</td><td>LINK: Endo-Model Total Hinge (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">link_lubinus_patella_femoral<a name=\"KneeJointArthroplastyComponent-link_lubinus_patella_femoral\"> </a></td><td>LINK: Lubinus Patella-Femoral</td><td>LINK: Lubinus Patella-Femoral (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">link_st_georg<a name=\"KneeJointArthroplastyComponent-link_st_georg\"> </a></td><td>LINK: St. Georg</td><td>LINK: St. Georg (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">link_tack_cementless<a name=\"KneeJointArthroplastyComponent-link_tack_cementless\"> </a></td><td>LINK: TACK Cementless</td><td>LINK: TACK Cementless (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">maxim_constrained<a name=\"KneeJointArthroplastyComponent-maxim_constrained\"> </a></td><td>Maxim Constrained</td><td>Maxim Constrained (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">maxim_ps<a name=\"KneeJointArthroplastyComponent-maxim_ps\"> </a></td><td>Maxim PS</td><td>Maxim PS (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">megasystem_c<a name=\"KneeJointArthroplastyComponent-megasystem_c\"> </a></td><td>LINK: Megasystem C</td><td>LINK: Megasystem C (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">nexgen_zuk<a name=\"KneeJointArthroplastyComponent-nexgen_zuk\"> </a></td><td>Zimmer Biomet: NexGen Zuk</td><td>Zimmer Biomet: NexGen Zuk (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">osteonics_7000_all_poly<a name=\"KneeJointArthroplastyComponent-osteonics_7000_all_poly\"> </a></td><td>Osteonics: All Poly</td><td>Osteonics: All Poly (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">osteonics_7000_modular<a name=\"KneeJointArthroplastyComponent-osteonics_7000_modular\"> </a></td><td>Osteonics: 7000 Modular</td><td>Osteonics: 7000 Modular (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">osteonics_7000_posterior_stabilized<a name=\"KneeJointArthroplastyComponent-osteonics_7000_posterior_stabilized\"> </a></td><td>Osteonics: 7000 Posterior Stabilized</td><td>Osteonics: 7000 Posterior Stabilized (Femur)</td></tr><tr><td style=\"white-space:nowrap\">osteonics_7000_standard<a name=\"KneeJointArthroplastyComponent-osteonics_7000_standard\"> </a></td><td>Osteonics: 7000 Standard</td><td>Osteonics: 7000 Standard (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">oxford_domed_lateral_pkr<a name=\"KneeJointArthroplastyComponent-oxford_domed_lateral_pkr\"> </a></td><td>Zimmer Biomet: Oxford domed lateral PKR</td><td>Zimmer Biomet: Oxford domed lateral PKR (Femur)</td></tr><tr><td style=\"white-space:nowrap\">oxford_phase_iii_alpha<a name=\"KneeJointArthroplastyComponent-oxford_phase_iii_alpha\"> </a></td><td>Zimmer Biomet: Oxford Phase III alpha</td><td>Zimmer Biomet: Oxford Phase III alpha (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">oxford_2_peg<a name=\"KneeJointArthroplastyComponent-oxford_2_peg\"> </a></td><td>Zimmer Biomet: Oxford 2-peg</td><td>Zimmer Biomet: Oxford 2-peg (Femur)</td></tr><tr><td style=\"white-space:nowrap\">persona_cr<a name=\"KneeJointArthroplastyComponent-persona_cr\"> </a></td><td>Zimmer Biomet: Persona CR</td><td>Zimmer Biomet: Persona CR (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">persona_mc<a name=\"KneeJointArthroplastyComponent-persona_mc\"> </a></td><td>Zimmer Biomet: Persona MC</td><td>Zimmer Biomet: Persona MC (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">persona_ps<a name=\"KneeJointArthroplastyComponent-persona_ps\"> </a></td><td>Zimmer Biomet: Persona PS</td><td>Zimmer Biomet: Persona PS (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">persona_uc<a name=\"KneeJointArthroplastyComponent-persona_uc\"> </a></td><td>Zimmer Biomet: Persona UC</td><td>Zimmer Biomet: Persona UC (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">pfc_sigma_offset_tibial_tray<a name=\"KneeJointArthroplastyComponent-pfc_sigma_offset_tibial_tray\"> </a></td><td>PFC Sigma Offset Tibial Tray</td><td>PFC Sigma Offset Tibial Tray (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">physica_cr<a name=\"KneeJointArthroplastyComponent-physica_cr\"> </a></td><td>Lima: Physica CR</td><td>Lima: Physica CR (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">physica_kr<a name=\"KneeJointArthroplastyComponent-physica_kr\"> </a></td><td>Lima: Physica KR</td><td>Lima: Physica KR (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">physica_ps<a name=\"KneeJointArthroplastyComponent-physica_ps\"> </a></td><td>Lima: Physica PS</td><td>Lima: Physica PS (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">preservation<a name=\"KneeJointArthroplastyComponent-preservation\"> </a></td><td>Preservation</td><td>Preservation (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">sigma_hp_partiel_knee<a name=\"KneeJointArthroplastyComponent-sigma_hp_partiel_knee\"> </a></td><td>Johnson &amp; Johnson: Sigma HP Partial Knee</td><td>Johnson &amp; Johnson: Sigma HP Partial Knee (Femur)</td></tr><tr><td style=\"white-space:nowrap\">sigma_hp_partiel_knee_all_poly<a name=\"KneeJointArthroplastyComponent-sigma_hp_partiel_knee_all_poly\"> </a></td><td>Sigma HP Partial Knee all-poly</td><td>Sigma HP Partial Knee all-poly (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">sigma_hp_partiel_knee_modular<a name=\"KneeJointArthroplastyComponent-sigma_hp_partiel_knee_modular\"> </a></td><td>Johnson &amp; Johnson: Sigma HP Partial Knee modular</td><td>Johnson &amp; Johnson: Sigma HP Partial Knee modular (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_competitor_pfj<a name=\"KneeJointArthroplastyComponent-smith.38nephew_competitor_pfj\"> </a></td><td>Smith &amp; Nephew: Competitor PFJ</td><td>Smith &amp; Nephew: Competitor PFJ (Femur)</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_genesis<a name=\"KneeJointArthroplastyComponent-smith.38nephew_genesis\"> </a></td><td>Smith &amp; Nephew: Genesis</td><td>Smith &amp; Nephew: Genesis (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_genesis_all_poly<a name=\"KneeJointArthroplastyComponent-smith.38nephew_genesis_all_poly\"> </a></td><td>Smith &amp; Nephew: Genesis All-Poly</td><td>Smith &amp; Nephew: Genesis All-Poly (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_genesis_cruciate_retaining<a name=\"KneeJointArthroplastyComponent-smith.38nephew_genesis_cruciate_retaining\"> </a></td><td>Smith &amp; Nephew: Genesis Cruciate-Retaining</td><td>Smith &amp; Nephew: Genesis Cruciate-Retaining (Femur)</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_genesis_ii<a name=\"KneeJointArthroplastyComponent-smith.38nephew_genesis_ii\"> </a></td><td>Smith &amp; Nephew: Genesis II</td><td>Smith &amp; Nephew: Genesis II (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_genesis_ii_all_poly<a name=\"KneeJointArthroplastyComponent-smith.38nephew_genesis_ii_all_poly\"> </a></td><td>Smith &amp; Nephew: Genesis II All-Poly</td><td>Smith &amp; Nephew: Genesis II All-Poly (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_genesis_ii_cruciate_retaining<a name=\"KneeJointArthroplastyComponent-smith.38nephew_genesis_ii_cruciate_retaining\"> </a></td><td>Smith &amp; Nephew: Genesis II Cruciate Retaining</td><td>Smith &amp; Nephew: Genesis II Cruciate Retaining (Femur)</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_genesis_ii_long_stem_taper<a name=\"KneeJointArthroplastyComponent-smith.38nephew_genesis_ii_long_stem_taper\"> </a></td><td>Smith &amp; Nephew: Genesis II Long Stem Taper</td><td>Smith &amp; Nephew: Genesis II Long Stem Taper (Femur)</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_genesis_ii_posterior_stabilized<a name=\"KneeJointArthroplastyComponent-smith.38nephew_genesis_ii_posterior_stabilized\"> </a></td><td>Smith &amp; Nephew: Genesis II Posterior Stabilized</td><td>Smith &amp; Nephew: Genesis II Posterior Stabilized (Femur)</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_genesis_ii_ps_taper<a name=\"KneeJointArthroplastyComponent-smith.38nephew_genesis_ii_ps_taper\"> </a></td><td>Smith &amp; Nephew: Genesis II PS Taper</td><td>Smith &amp; Nephew: Genesis II PS Taper (Femur)</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_genesis_ii_revision<a name=\"KneeJointArthroplastyComponent-smith.38nephew_genesis_ii_revision\"> </a></td><td>Smith &amp; Nephew: Genesis II Revision</td><td>Smith &amp; Nephew: Genesis II Revision (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_genesis_long_stem_taper<a name=\"KneeJointArthroplastyComponent-smith.38nephew_genesis_long_stem_taper\"> </a></td><td>Smith &amp; Nephew: Genesis Long Stem Taper</td><td>Smith &amp; Nephew: Genesis Long Stem Taper (Femur)</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_genesis_posterior_stabilized<a name=\"KneeJointArthroplastyComponent-smith.38nephew_genesis_posterior_stabilized\"> </a></td><td>Smith &amp; Nephew: Genesis Posterior Stabilized</td><td>Smith &amp; Nephew: Genesis Posterior Stabilized (Femur)</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_genesis_ps_taper<a name=\"KneeJointArthroplastyComponent-smith.38nephew_genesis_ps_taper\"> </a></td><td>Smith &amp; Nephew: Genesis PS Taper</td><td>Smith &amp; Nephew: Genesis PS Taper (Femur)</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_genesis_revision<a name=\"KneeJointArthroplastyComponent-smith.38nephew_genesis_revision\"> </a></td><td>Smith &amp; Nephew: Genesis Revision</td><td>Smith &amp; Nephew: Genesis Revision (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_genesis_genesis_uni<a name=\"KneeJointArthroplastyComponent-smith.38nephew_genesis_genesis_uni\"> </a></td><td>Smith &amp; Nephew: Genesis Uni</td><td>Smith &amp; Nephew: Genesis Uni (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_genesis_journey_pfj<a name=\"KneeJointArthroplastyComponent-smith.38nephew_genesis_journey_pfj\"> </a></td><td>Smith &amp; Nephew: Journey PFJ</td><td>Smith &amp; Nephew: Journey PFJ (Femur)</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_genesis_legion_cr_oxinium<a name=\"KneeJointArthroplastyComponent-smith.38nephew_genesis_legion_cr_oxinium\"> </a></td><td>Smith &amp; Nephew: Legion CR Oxinium</td><td>Smith &amp; Nephew: Legion CR Oxinium (Femur)</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_genesis_patella_mod_iii_cartier<a name=\"KneeJointArthroplastyComponent-smith.38nephew_genesis_patella_mod_iii_cartier\"> </a></td><td>Smith &amp; Nephew: Patella Mod III Cartier</td><td>Smith &amp; Nephew: Patella Mod III Cartier (Femur)</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_genesis_profix<a name=\"KneeJointArthroplastyComponent-smith.38nephew_genesis_profix\"> </a></td><td>Smith &amp; Nephew: Profix</td><td>Smith &amp; Nephew: Profix (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_genesis_profix_all_poly<a name=\"KneeJointArthroplastyComponent-smith.38nephew_genesis_profix_all_poly\"> </a></td><td>Smith &amp; Nephew: Profix All-Poly</td><td>Smith &amp; Nephew: Profix All-Poly (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_genesis_profix_cruciate_retaining<a name=\"KneeJointArthroplastyComponent-smith.38nephew_genesis_profix_cruciate_retaining\"> </a></td><td>Smith &amp; Nephew: Profix Cruciate Retaining</td><td>Smith &amp; Nephew: Profix Cruciate Retaining (Femur)</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_genesis_profix_long_stem_taper<a name=\"KneeJointArthroplastyComponent-smith.38nephew_genesis_profix_long_stem_taper\"> </a></td><td>Smith &amp; Nephew: Profix Long Stem Taper</td><td>Smith &amp; Nephew: Profix Long Stem Taper (Femur)</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_genesis_profix_posterior_stabilized<a name=\"KneeJointArthroplastyComponent-smith.38nephew_genesis_profix_posterior_stabilized\"> </a></td><td>Smith &amp; Nephew: Profix Posterior Stabilized</td><td>Smith &amp; Nephew: Profix Posterior Stabilized (Femur)</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_genesis_profix_ps_taper<a name=\"KneeJointArthroplastyComponent-smith.38nephew_genesis_profix_ps_taper\"> </a></td><td>Smith &amp; Nephew: Profix PS Taper</td><td>Smith &amp; Nephew: Profix PS Taper (Femur)</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_genesis_profix_revision<a name=\"KneeJointArthroplastyComponent-smith.38nephew_genesis_profix_revision\"> </a></td><td>Smith &amp; Nephew: Profix Revision</td><td>Smith &amp; Nephew: Profix Revision (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">stryker_howmetica_avon<a name=\"KneeJointArthroplastyComponent-stryker_howmetica_avon\"> </a></td><td>Stryker/Howmetica: Avon</td><td>Stryker/Howmetica: Avon (Femur)</td></tr><tr><td style=\"white-space:nowrap\">stryker_gmrs<a name=\"KneeJointArthroplastyComponent-stryker_gmrs\"> </a></td><td>Stryker: GMRS</td><td>Stryker: GMRS (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">stryker_modular_rotating_hinge<a name=\"KneeJointArthroplastyComponent-stryker_modular_rotating_hinge\"> </a></td><td>Stryker: Modular Rotating Hinge</td><td>Stryker: Modular Rotating Hinge (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">stryker_restoris_pfa<a name=\"KneeJointArthroplastyComponent-stryker_restoris_pfa\"> </a></td><td>Stryker: Restoris PFA</td><td>Stryker: Restoris PFA</td></tr><tr><td style=\"white-space:nowrap\">stryker_restoris_medial_uni<a name=\"KneeJointArthroplastyComponent-stryker_restoris_medial_uni\"> </a></td><td>Stryker: Restoris Medial Uni</td><td>Stryker: Restoris Medial Uni</td></tr><tr><td style=\"white-space:nowrap\">stryker_restoris_lateral_uni<a name=\"KneeJointArthroplastyComponent-stryker_restoris_lateral_uni\"> </a></td><td>Stryker: Restoris Lateral Uni</td><td>Stryker: Restoris Lateral Uni</td></tr><tr><td style=\"white-space:nowrap\">stryker_scorpio<a name=\"KneeJointArthroplastyComponent-stryker_scorpio\"> </a></td><td>Stryker: Scorpio</td><td>Stryker: Scorpio (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">stryker_scorpio_all_poly<a name=\"KneeJointArthroplastyComponent-stryker_scorpio_all_poly\"> </a></td><td>Stryker: Scorpio All Poly</td><td>Stryker: Scorpio All Poly (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">stryker_scorpio_cr<a name=\"KneeJointArthroplastyComponent-stryker_scorpio_cr\"> </a></td><td>Stryker: Scorpio CR</td><td>Stryker: Scorpio CR (Femur)</td></tr><tr><td style=\"white-space:nowrap\">stryker_scorpio_mobile_bearing<a name=\"KneeJointArthroplastyComponent-stryker_scorpio_mobile_bearing\"> </a></td><td>Stryker: Scorpio + Mobile bearing</td><td>Stryker: Scorpio + Mobile bearing (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">stryker_scorpio_ps<a name=\"KneeJointArthroplastyComponent-stryker_scorpio_ps\"> </a></td><td>Stryker: Scorpio PS</td><td>Stryker: Scorpio PS (Femur)</td></tr><tr><td style=\"white-space:nowrap\">stryker_scorpio_ts<a name=\"KneeJointArthroplastyComponent-stryker_scorpio_ts\"> </a></td><td>Stryker: Scorpio TS</td><td>Stryker: Scorpio TS (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">stryker_triathlon<a name=\"KneeJointArthroplastyComponent-stryker_triathlon\"> </a></td><td>Stryker: Triathlon</td><td>Stryker: Triathlon (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">stryker_triathlon_all_poly<a name=\"KneeJointArthroplastyComponent-stryker_triathlon_all_poly\"> </a></td><td>Stryker: Triathlon All Poly</td><td>Stryker: Triathlon All Poly (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">stryker_triathlon_cr<a name=\"KneeJointArthroplastyComponent-stryker_triathlon_cr\"> </a></td><td>Stryker: Triathlon CR</td><td>Stryker: Triathlon CR (Femur)</td></tr><tr><td style=\"white-space:nowrap\">stryker_thriathlon_pkr<a name=\"KneeJointArthroplastyComponent-stryker_thriathlon_pkr\"> </a></td><td>Stryker: Triathlon PKR</td><td>Stryker: Triathlon PKR (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">stryker_thriathlon_ps<a name=\"KneeJointArthroplastyComponent-stryker_thriathlon_ps\"> </a></td><td>Stryker: Triathlon PS</td><td>Stryker: Triathlon PS (Femur)</td></tr><tr><td style=\"white-space:nowrap\">stryker_thriathlon_ts<a name=\"KneeJointArthroplastyComponent-stryker_thriathlon_ts\"> </a></td><td>Stryker: Triathlon TS</td><td>Stryker: Triathlon TS (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">stryker_triathlon_universal<a name=\"KneeJointArthroplastyComponent-stryker_triathlon_universal\"> </a></td><td>Stryker: Triathlon Universal</td><td>Stryker: Triathlon Universal (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">vanguard_da_360<a name=\"KneeJointArthroplastyComponent-vanguard_da_360\"> </a></td><td>Vanguard: DA 360</td><td>Vanguard: DA 360 (Femur)</td></tr><tr><td style=\"white-space:nowrap\">vanguard_da_360_tibia_tray<a name=\"KneeJointArthroplastyComponent-vanguard_da_360_tibia_tray\"> </a></td><td>Vanguard DA 360 tibia tray</td><td>Vanguard DA 360 tibia tray (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">vanguard_rocc_femur_pps_ha_biomet<a name=\"KneeJointArthroplastyComponent-vanguard_rocc_femur_pps_ha_biomet\"> </a></td><td>Vanguard: ROCC - Femur PPS + HA Biomet</td><td>Vanguard: ROCC - Femur PPS + HA Biomet (Femur)</td></tr><tr><td style=\"white-space:nowrap\">vanguard_ssk_360<a name=\"KneeJointArthroplastyComponent-vanguard_ssk_360\"> </a></td><td>Vanguard: SSK 360</td><td>Vanguard: SSK 360 (Femur)</td></tr><tr><td style=\"white-space:nowrap\">vanguard_ssk_360_tibia_tray<a name=\"KneeJointArthroplastyComponent-vanguard_ssk_360_tibia_tray\"> </a></td><td>Vanguard: SSK 360 tibia tray</td><td>Vanguard SSK 360 tibia tray (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">vanguard_xp<a name=\"KneeJointArthroplastyComponent-vanguard_xp\"> </a></td><td>Vanguard: XP</td><td>Vanguard: XP (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">vanguard_xp_cr<a name=\"KneeJointArthroplastyComponent-vanguard_xp_cr\"> </a></td><td>Vanguard: XP CR</td><td>Vanguard XP CR (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">wright_advance_medial_pivot<a name=\"KneeJointArthroplastyComponent-wright_advance_medial_pivot\"> </a></td><td>Wright: Advance Medial Pivot</td><td>Wright: Advance Medial Pivot (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">wright_advance_revision<a name=\"KneeJointArthroplastyComponent-wright_advance_revision\"> </a></td><td>Wright: Advance Revision</td><td>Wright: Advance Revision (Femur)</td></tr><tr><td style=\"white-space:nowrap\">wright_advance_revision_constrained<a name=\"KneeJointArthroplastyComponent-wright_advance_revision_constrained\"> </a></td><td>Wright: Advance Revision, Constrained</td><td>Wright: Advance Revision, Constrained (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">wright_advance_revision_ps<a name=\"KneeJointArthroplastyComponent-wright_advance_revision_ps\"> </a></td><td>Wright: Advance Revision, PS</td><td>Wright: Advance Revision, PS (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">wright_advance_statures<a name=\"KneeJointArthroplastyComponent-wright_advance_statures\"> </a></td><td>Wright: Advance Stature</td><td>Wright: Advance Stature (Femur)</td></tr><tr><td style=\"white-space:nowrap\">wright_advance_stemmet<a name=\"KneeJointArthroplastyComponent-wright_advance_stemmet\"> </a></td><td>Wright: Advance Stemmet</td><td>Wright: Advance Stemmet (Femur)</td></tr><tr><td style=\"white-space:nowrap\">zimmer_biomet_oxford_lateral_fixed_bearing<a name=\"KneeJointArthroplastyComponent-zimmer_biomet_oxford_lateral_fixed_bearing\"> </a></td><td>Zimmer-Biomet: Oxford Lateral Fixed Bearing</td><td>Zimmer-Biomet: Oxford Lateral Fixed Bearing (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">zimmer_insall_burstein<a name=\"KneeJointArthroplastyComponent-zimmer_insall_burstein\"> </a></td><td>Zimmer: Insall-Burstein</td><td>Zimmer: Insall-Burstein (Femur)</td></tr><tr><td style=\"white-space:nowrap\">zimmer_miller_galante<a name=\"KneeJointArthroplastyComponent-zimmer_miller_galante\"> </a></td><td>Zimmer: Miller Galante</td><td>Zimmer: Miller Galante (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">zimmer_nexgen_cr<a name=\"KneeJointArthroplastyComponent-zimmer_nexgen_cr\"> </a></td><td>Zimmer Biomet: NexGen CR</td><td>Zimmer Biomet: NexGen CR (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">zimmer_nexgen_cr_flex<a name=\"KneeJointArthroplastyComponent-zimmer_nexgen_cr_flex\"> </a></td><td>Zimmer: NexGen CR Flex</td><td>Zimmer: NexGen CR Flex (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">zimmer_nexgen_cr_flex_gender<a name=\"KneeJointArthroplastyComponent-zimmer_nexgen_cr_flex_gender\"> </a></td><td>Zimmer: NexGen CR Flex Gender</td><td>Zimmer: NexGen CR Flex Gender (Femur)</td></tr><tr><td style=\"white-space:nowrap\">zimmer_nexgen_cr_modular_tmt<a name=\"KneeJointArthroplastyComponent-zimmer_nexgen_cr_modular_tmt\"> </a></td><td>Zimmer Biomet: NexGen CR modulær TMT</td><td>Zimmer Biomet: NexGen CR modulær TMT (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">zimmer_nexgen_cr_monoblock_tmt<a name=\"KneeJointArthroplastyComponent-zimmer_nexgen_cr_monoblock_tmt\"> </a></td><td>Zimmer Biomet: NexGen CR Monoblok, TMT</td><td>Zimmer Biomet: NexGen CR Monoblok, TMT (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">zimmer_nexgen_lcck<a name=\"KneeJointArthroplastyComponent-zimmer_nexgen_lcck\"> </a></td><td>Zimmer Biomet: NexGen LCCK</td><td>Zimmer Biomet: NexGen LCCK (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">zimmer_nexgen_lps<a name=\"KneeJointArthroplastyComponent-zimmer_nexgen_lps\"> </a></td><td>Zimmer Biomet: NexGen LPS</td><td>Zimmer Biomet: NexGen LPS (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">zimmer_nexgen_lps_flex<a name=\"KneeJointArthroplastyComponent-zimmer_nexgen_lps_flex\"> </a></td><td>Zimmer Biomet: NexGen LPS Flex</td><td>Zimmer Biomet: NexGen LPS Flex (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">zimmer_nexgen_lps_modular_tmt<a name=\"KneeJointArthroplastyComponent-zimmer_nexgen_lps_modular_tmt\"> </a></td><td>Zimmer Biomet: NexGen LPS Modulær TMT</td><td>Zimmer Biomet: NexGen LPS Modulær TMT (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">zimmer_nexgen_lps_monoblock_tmt<a name=\"KneeJointArthroplastyComponent-zimmer_nexgen_lps_monoblock_tmt\"> </a></td><td>Zimmer Biomet: NexGen LPS Monoblok TMT</td><td>Zimmer Biomet: NexGen LPS Monoblok TMT (Tibia)</td></tr><tr><td style=\"white-space:nowrap\">zimmer_nexgen_rhk<a name=\"KneeJointArthroplastyComponent-zimmer_nexgen_rhk\"> </a></td><td>Zimmer Biomet: NexGen RHK</td><td>Zimmer Biomet: NexGen RHK (Femur + Tibia)</td></tr><tr><td style=\"white-space:nowrap\">zimmer_nexgen_pfj<a name=\"KneeJointArthroplastyComponent-zimmer_nexgen_pfj\"> </a></td><td>Zimmer Biomet: PFJ</td><td>Zimmer Biomet: PFJ (Femur)</td></tr><tr><td style=\"white-space:nowrap\">zimmer_segmental_system<a name=\"KneeJointArthroplastyComponent-zimmer_segmental_system\"> </a></td><td>Zimmer: Segmental System</td><td>Zimmer: Segmental System (Femur)</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/KneeJointArthroplastyComponent"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "KneeJointArthroplastyComponent"] ; # 
+  fhir:title [ fhir:v "Knee joint arthroplasty - components"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-10-17T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Knee joint arthroplasty - components"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "172"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "arthrosurface_hemicap" ] ;
+     fhir:display [ fhir:v "Arthrosurface: HemiCAP" ] ;
+     fhir:definition [ fhir:v "Arthrosurface: HemiCAP (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "arthrosurface_hemicap_pf" ] ;
+     fhir:display [ fhir:v "Arthrosurface: Hemicap PF" ] ;
+     fhir:definition [ fhir:v "Arthrosurface: Hemicap PF (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "arthrosurface_unicap" ] ;
+     fhir:display [ fhir:v "Arthrosurface: Unicap" ] ;
+     fhir:definition [ fhir:v "Arthrosurface: Unicap (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "biomet_agc_hp_posterior_stabilizer" ] ;
+     fhir:display [ fhir:v "Biomet: AGC HP Posterior Stabilizer" ] ;
+     fhir:definition [ fhir:v "Biomet: AGC HP Posterior Stabilizer (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "biomet_agc_v2" ] ;
+     fhir:display [ fhir:v "Zimmer Biomet: AGC V2" ] ;
+     fhir:definition [ fhir:v "Zimmer Biomet: AGC V2 (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "biomet_agc_v2_universal" ] ;
+     fhir:display [ fhir:v "Zimmer Biomet: AGC V2 Universal" ] ;
+     fhir:definition [ fhir:v "Zimmer Biomet: AGC V2 Universal (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "biomet_maxim" ] ;
+     fhir:display [ fhir:v "Biomet: Maxim" ] ;
+     fhir:definition [ fhir:v "Biomet: Maxim (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "biomet_maxim_constrained" ] ;
+     fhir:display [ fhir:v "Biomet: Maxim Constrained" ] ;
+     fhir:definition [ fhir:v "Biomet: Maxim Constrained (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "biomet_maxim_posterior_stabilized" ] ;
+     fhir:display [ fhir:v "Biomet: Maxim Posterior Stabilized" ] ;
+     fhir:definition [ fhir:v "Biomet: Maxim Posterior Stabilized (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "biomet_oxford_domed_lateral_pkr" ] ;
+     fhir:display [ fhir:v "Zimmer Biomet: Oxford domed lateral PKR" ] ;
+     fhir:definition [ fhir:v "Zimmer Biomet: Oxford domed lateral PKR (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "biomet_oxford_phase_iii_alpha" ] ;
+     fhir:display [ fhir:v "Zimmer Biomet: Oxford Phase III alpha" ] ;
+     fhir:definition [ fhir:v "Zimmer Biomet: Oxford Phase III alpha (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "biomet_rhk_rotating_hinge_knee" ] ;
+     fhir:display [ fhir:v "Zimmer Biomet: RHK Rotating Hinge Knee" ] ;
+     fhir:definition [ fhir:v "Zimmer Biomet: RHK Rotating Hinge Knee (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "biomet_tibia_offset_tray" ] ;
+     fhir:display [ fhir:v "Biomet: Tibia Offset Tray" ] ;
+     fhir:definition [ fhir:v "Biomet: Tibia Offset Tray (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "biomet_vanguard_cr" ] ;
+     fhir:display [ fhir:v "Zimmer Biomet: Vanguard CR" ] ;
+     fhir:definition [ fhir:v "Zimmer Biomet: Vanguard CR (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "biomet_vanguard_m_unicompartmental" ] ;
+     fhir:display [ fhir:v "Biomet: Vanguard M Unicompartmental" ] ;
+     fhir:definition [ fhir:v "Biomet: Vanguard M Unicompartmental (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "biomet_vanguard_pfr" ] ;
+     fhir:display [ fhir:v "Biomet: Vanguard PFR" ] ;
+     fhir:definition [ fhir:v "Biomet: Vanguard PFR (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "biomet_vanguard_ps" ] ;
+     fhir:display [ fhir:v "Biomet: Vanguard PS" ] ;
+     fhir:definition [ fhir:v "Biomet: Vanguard PS (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "biomet_vanguard_rocc_interlok_femur" ] ;
+     fhir:display [ fhir:v "Biomet: Vanguard ROCC - Interlok Femur" ] ;
+     fhir:definition [ fhir:v "Biomet: Vanguard ROCC - Interlok Femur (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "biomet_vanguard_rocc_interlok_tibia" ] ;
+     fhir:display [ fhir:v "Zimmer Biomet: Vanguard ROCC - Interlok Tibia" ] ;
+     fhir:definition [ fhir:v "Zimmer Biomet: Vanguard ROCC - Interlok Tibia (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "biomet_vanguard_rocc_interlok_tibia_pps_ha" ] ;
+     fhir:display [ fhir:v "Biomet: Vanguard ROCC - Tibia PPS + HA" ] ;
+     fhir:definition [ fhir:v "Biomet: Vanguard ROCC - Tibia PPS + HA (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "biomet_vanguard_ssk" ] ;
+     fhir:display [ fhir:v "Biomet: Vanguard SSK" ] ;
+     fhir:definition [ fhir:v "Biomet: Vanguard SSK (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "biomet_vanguard_unicompartmental" ] ;
+     fhir:display [ fhir:v "Zimmer Biomet: Vanguard Unicompartmental" ] ;
+     fhir:definition [ fhir:v "Zimmer Biomet: Vanguard Unicompartmental (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "corin_rotaglide" ] ;
+     fhir:display [ fhir:v "Corin: Rotaglide" ] ;
+     fhir:definition [ fhir:v "Corin: Rotaglide (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "corin_rotaglide_pegged" ] ;
+     fhir:display [ fhir:v "Corin: Rotaglide Pegged" ] ;
+     fhir:definition [ fhir:v "Corin: Rotaglide Pegged (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "corin_rotaglide_posterior_stabilizer" ] ;
+     fhir:display [ fhir:v "Corin: Rotaglide Posterior Stabilizer" ] ;
+     fhir:definition [ fhir:v "Corin: Rotaglide Posterior Stabilizer (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "corin_rotaglide_stemless" ] ;
+     fhir:display [ fhir:v "Corin: Rotaglide Stemless" ] ;
+     fhir:definition [ fhir:v "Corin: Rotaglide Stemless (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "corin_rotaglide_stemmed" ] ;
+     fhir:display [ fhir:v "Corin: Rotaglide Stemmed" ] ;
+     fhir:definition [ fhir:v "Corin: Rotaglide Stemmed (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "depuy_attune_cr" ] ;
+     fhir:display [ fhir:v "Johnson & Johnson: Attune CR" ] ;
+     fhir:definition [ fhir:v "Johnson & Johnson: Attune CR (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "depuy_limb_preservation_system" ] ;
+     fhir:display [ fhir:v "Johnson & Johnson: Limb Preservation System" ] ;
+     fhir:definition [ fhir:v "Johnson & Johnson: Limb Preservation System (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "depuy_sigma_hp_partiel_knee" ] ;
+     fhir:display [ fhir:v "DePuy: Sigma HP partial knee" ] ;
+     fhir:definition [ fhir:v "DePuy: Sigma HP partial knee (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "episealer_condyle_solo" ] ;
+     fhir:display [ fhir:v "Episurf Medical: Episealer Condyle Solo" ] ;
+     fhir:definition [ fhir:v "Episurf Medical: Episealer Condyle Solo (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "howmedica_duracon_all_plastic" ] ;
+     fhir:display [ fhir:v "Howmedica: Duracon All-Plastic" ] ;
+     fhir:definition [ fhir:v "Howmedica: Duracon All-Plastic (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "howmedica_duracon_cruciform" ] ;
+     fhir:display [ fhir:v "Howmedica: Duracon Cruciform" ] ;
+     fhir:definition [ fhir:v "Howmedica: Duracon Cruciform (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "howmedica_duracon_modular" ] ;
+     fhir:display [ fhir:v "Howmedica: Duracon Modular" ] ;
+     fhir:definition [ fhir:v "Howmedica: Duracon Modular (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "howmedica_duracon_standard" ] ;
+     fhir:display [ fhir:v "Howmedica: Duracon Standard" ] ;
+     fhir:definition [ fhir:v "Howmedica: Duracon Standard (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "howmedica_duracon_stemmed_stabilizer" ] ;
+     fhir:display [ fhir:v "Howmedica: Duracon Stemmed Stabilizer" ] ;
+     fhir:definition [ fhir:v "Howmedica: Duracon Stemmed Stabilizer (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "howmedica_duracon_universal" ] ;
+     fhir:display [ fhir:v "Howmedica: Duracon Universal" ] ;
+     fhir:definition [ fhir:v "Howmedica: Duracon Universal (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "howmedica_interax" ] ;
+     fhir:display [ fhir:v "Howmedica: Interax" ] ;
+     fhir:definition [ fhir:v "Howmedica: Interax (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "howmedica_interax_stabilizer" ] ;
+     fhir:display [ fhir:v "Howmedica: Interax Stabiliser" ] ;
+     fhir:definition [ fhir:v "Howmedica: Interax Stabiliser (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "howmedica_interax_standard" ] ;
+     fhir:display [ fhir:v "Howmedica: Interax Standard" ] ;
+     fhir:definition [ fhir:v "Howmedica: Interax Standard (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "howmedica_kinemax_plus_stabilizer" ] ;
+     fhir:display [ fhir:v "Howmedica: Kinemax Plus Stabilizer" ] ;
+     fhir:definition [ fhir:v "Howmedica: Kinemax Plus Stabilizer (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "howmedica_kinemax_plus_standard" ] ;
+     fhir:display [ fhir:v "Howmedica: Kinemax Plus Standard" ] ;
+     fhir:definition [ fhir:v "Howmedica: Kinemax Plus Standard (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "howmedica_kinemax_plus_superstabilizer" ] ;
+     fhir:display [ fhir:v "Howmedica: Kinemax Plus Superstabilizer" ] ;
+     fhir:definition [ fhir:v "Howmedica: Kinemax Plus Superstabilizer (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "implex_cks_all_poly" ] ;
+     fhir:display [ fhir:v "Implex: CKS All Poly" ] ;
+     fhir:definition [ fhir:v "Implex: CKS All Poly (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "implex_cks_continuum_posterior_stabilized" ] ;
+     fhir:display [ fhir:v "Implex: CKS Continuum Posterior Stabilized" ] ;
+     fhir:definition [ fhir:v "Implex: CKS Continuum Posterior Stabilized (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "implex_cks_modular" ] ;
+     fhir:display [ fhir:v "Implex: CKS Modular" ] ;
+     fhir:definition [ fhir:v "Implex: CKS Modular (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "implex_cks_primary" ] ;
+     fhir:display [ fhir:v "Implex: CKS Primary" ] ;
+     fhir:definition [ fhir:v "Implex: CKS Primary (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "insall_burstein" ] ;
+     fhir:display [ fhir:v "Insall-Burstein" ] ;
+     fhir:definition [ fhir:v "Insall-Burstein (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "johnson&johnson_attune_crs" ] ;
+     fhir:display [ fhir:v "Johnson & Johnson: Attune CRS (Constrained Revision System)" ] ;
+     fhir:definition [ fhir:v "Johnson & Johnson: Attune CRS (Constrained Revision System) (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "johnson&johnson_attune_fb" ] ;
+     fhir:display [ fhir:v "Johnson & Johnson: Attune FB" ] ;
+     fhir:definition [ fhir:v "Johnson & Johnson: Attune FB (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "johnson&johnson_attune_fixed_crs" ] ;
+     fhir:display [ fhir:v "Johnson & Johnson: Attune Fixed CRS (Constrained Revision System)" ] ;
+     fhir:definition [ fhir:v "Johnson & Johnson: Attune Fixed CRS (Constrained Revision System) (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "johnson&johnson_attune_mbt_crs" ] ;
+     fhir:display [ fhir:v "Johnson & Johnson: Attune Revision Tibial Base Rotating Platform" ] ;
+     fhir:definition [ fhir:v "Johnson & Johnson: Attune Revision Tibial Base Rotating Platform (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "johnson&johnson_attune_rotation_platfom" ] ;
+     fhir:display [ fhir:v "Johnson & Johnson: Attune Rotation Platfom" ] ;
+     fhir:definition [ fhir:v "Johnson & Johnson: Attune Rotation Platfom (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "johnson&johnson_pfc_cruciate_substituting" ] ;
+     fhir:display [ fhir:v "Johnson & Johnson: PFC Crusiate-Substituting" ] ;
+     fhir:definition [ fhir:v "Johnson & Johnson: PFC Crusiate-Substituting (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "johnson&johnson_pfc_modular" ] ;
+     fhir:display [ fhir:v "Johnson & Johnson: PFC Modular" ] ;
+     fhir:definition [ fhir:v "Johnson & Johnson: PFC Modular (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "johnson&johnson_pfc_sigma_all_poly" ] ;
+     fhir:display [ fhir:v "Johnson & Johnson: PFC Sigma All-Poly" ] ;
+     fhir:definition [ fhir:v "Johnson & Johnson: PFC Sigma All-Poly (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "johnson&johnson_pfc_sigma_cruciate_retaining" ] ;
+     fhir:display [ fhir:v "Johnson & Johnson: PFC Sigma Cruciate-Retaining" ] ;
+     fhir:definition [ fhir:v "Johnson & Johnson: PFC Sigma Cruciate-Retaining (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "johnson&johnson_pfc_sigma_cruciate_substituting" ] ;
+     fhir:display [ fhir:v "Johnson & Johnson: PFC Sigma Cruciate-Substituting" ] ;
+     fhir:definition [ fhir:v "Johnson & Johnson: PFC Sigma Cruciate-Substituting (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "johnson&johnson_pfc_sigma_ps" ] ;
+     fhir:display [ fhir:v "Johnson & Johnson: PFC Sigma PS" ] ;
+     fhir:definition [ fhir:v "Johnson & Johnson: PFC Sigma PS (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "johnson&johnson_pfc_sigma_revision_tc3" ] ;
+     fhir:display [ fhir:v "Johnson & Johnson: PFC Sigma Revision and TC3" ] ;
+     fhir:definition [ fhir:v "Johnson & Johnson: PFC Sigma Revision and TC3 (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "johnson&johnson_pfc_sigma_tc3" ] ;
+     fhir:display [ fhir:v "Johnson & Johnson: PFC Sigma TC3" ] ;
+     fhir:definition [ fhir:v "Johnson & Johnson: PFC Sigma TC3 (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "johnson&johnson_pfc_sigma_rotating_platform" ] ;
+     fhir:display [ fhir:v "Johnson & Johnson: PFC Sigma Rotating Platform" ] ;
+     fhir:definition [ fhir:v "Johnson & Johnson: PFC Sigma Rotating Platform (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "johnson&johnson_pfc_sigma_rp_stabilized" ] ;
+     fhir:display [ fhir:v "Johnson & Johnson: PFC Sigma RP Stabilized" ] ;
+     fhir:definition [ fhir:v "Johnson & Johnson: PFC Sigma RP Stabilized (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "johnson&johnson_pfc_standard" ] ;
+     fhir:display [ fhir:v "Johnson & Johnson: PFC Standard" ] ;
+     fhir:definition [ fhir:v "Johnson & Johnson: PFC Standard (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "johnson&johnson_preservation_uni_all_poly" ] ;
+     fhir:display [ fhir:v "Johnson & Johnson: Preservation uni all poly" ] ;
+     fhir:definition [ fhir:v "Johnson & Johnson: Preservation uni all poly (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "johnson&johnson_preservation_uni_tray" ] ;
+     fhir:display [ fhir:v "Johnson & Johnson: Preservation uni tray" ] ;
+     fhir:definition [ fhir:v "Johnson & Johnson: Preservation uni tray (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "johnson&johnson_s_rom_noiles" ] ;
+     fhir:display [ fhir:v "Johnson & Johnson: S-ROM Noiles" ] ;
+     fhir:definition [ fhir:v "Johnson & Johnson: S-ROM Noiles (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "legion_oxinium_cr" ] ;
+     fhir:display [ fhir:v "Legion: Oxinium CR" ] ;
+     fhir:definition [ fhir:v "Legion: Oxinium CR (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "limb_preservation_system_distal_femur" ] ;
+     fhir:display [ fhir:v "Limb Preservation System Distal Femur" ] ;
+     fhir:definition [ fhir:v "Limb Preservation System Distal Femur (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "link_endo_model_rotational" ] ;
+     fhir:display [ fhir:v "LINK: Endo-Model Rotational" ] ;
+     fhir:definition [ fhir:v "LINK: Endo-Model Rotational (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "link_endo_model_sled_hemi" ] ;
+     fhir:display [ fhir:v "LINK: Endo-Model Sled Hemi" ] ;
+     fhir:definition [ fhir:v "LINK: Endo-Model Sled Hemi (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "link_endo_model_total_hinge" ] ;
+     fhir:display [ fhir:v "LINK: Endo-Model Total Hinge" ] ;
+     fhir:definition [ fhir:v "LINK: Endo-Model Total Hinge (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "link_lubinus_patella_femoral" ] ;
+     fhir:display [ fhir:v "LINK: Lubinus Patella-Femoral" ] ;
+     fhir:definition [ fhir:v "LINK: Lubinus Patella-Femoral (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "link_st_georg" ] ;
+     fhir:display [ fhir:v "LINK: St. Georg" ] ;
+     fhir:definition [ fhir:v "LINK: St. Georg (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "link_tack_cementless" ] ;
+     fhir:display [ fhir:v "LINK: TACK Cementless" ] ;
+     fhir:definition [ fhir:v "LINK: TACK Cementless (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "maxim_constrained" ] ;
+     fhir:display [ fhir:v "Maxim Constrained" ] ;
+     fhir:definition [ fhir:v "Maxim Constrained (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "maxim_ps" ] ;
+     fhir:display [ fhir:v "Maxim PS" ] ;
+     fhir:definition [ fhir:v "Maxim PS (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "megasystem_c" ] ;
+     fhir:display [ fhir:v "LINK: Megasystem C" ] ;
+     fhir:definition [ fhir:v "LINK: Megasystem C (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "nexgen_zuk" ] ;
+     fhir:display [ fhir:v "Zimmer Biomet: NexGen Zuk" ] ;
+     fhir:definition [ fhir:v "Zimmer Biomet: NexGen Zuk (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "osteonics_7000_all_poly" ] ;
+     fhir:display [ fhir:v "Osteonics: All Poly" ] ;
+     fhir:definition [ fhir:v "Osteonics: All Poly (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "osteonics_7000_modular" ] ;
+     fhir:display [ fhir:v "Osteonics: 7000 Modular" ] ;
+     fhir:definition [ fhir:v "Osteonics: 7000 Modular (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "osteonics_7000_posterior_stabilized" ] ;
+     fhir:display [ fhir:v "Osteonics: 7000 Posterior Stabilized" ] ;
+     fhir:definition [ fhir:v "Osteonics: 7000 Posterior Stabilized (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "osteonics_7000_standard" ] ;
+     fhir:display [ fhir:v "Osteonics: 7000 Standard" ] ;
+     fhir:definition [ fhir:v "Osteonics: 7000 Standard (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "oxford_domed_lateral_pkr" ] ;
+     fhir:display [ fhir:v "Zimmer Biomet: Oxford domed lateral PKR" ] ;
+     fhir:definition [ fhir:v "Zimmer Biomet: Oxford domed lateral PKR (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "oxford_phase_iii_alpha" ] ;
+     fhir:display [ fhir:v "Zimmer Biomet: Oxford Phase III alpha" ] ;
+     fhir:definition [ fhir:v "Zimmer Biomet: Oxford Phase III alpha (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "oxford_2_peg" ] ;
+     fhir:display [ fhir:v "Zimmer Biomet: Oxford 2-peg" ] ;
+     fhir:definition [ fhir:v "Zimmer Biomet: Oxford 2-peg (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "persona_cr" ] ;
+     fhir:display [ fhir:v "Zimmer Biomet: Persona CR" ] ;
+     fhir:definition [ fhir:v "Zimmer Biomet: Persona CR (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "persona_mc" ] ;
+     fhir:display [ fhir:v "Zimmer Biomet: Persona MC" ] ;
+     fhir:definition [ fhir:v "Zimmer Biomet: Persona MC (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "persona_ps" ] ;
+     fhir:display [ fhir:v "Zimmer Biomet: Persona PS" ] ;
+     fhir:definition [ fhir:v "Zimmer Biomet: Persona PS (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "persona_uc" ] ;
+     fhir:display [ fhir:v "Zimmer Biomet: Persona UC" ] ;
+     fhir:definition [ fhir:v "Zimmer Biomet: Persona UC (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "pfc_sigma_offset_tibial_tray" ] ;
+     fhir:display [ fhir:v "PFC Sigma Offset Tibial Tray" ] ;
+     fhir:definition [ fhir:v "PFC Sigma Offset Tibial Tray (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "physica_cr" ] ;
+     fhir:display [ fhir:v "Lima: Physica CR" ] ;
+     fhir:definition [ fhir:v "Lima: Physica CR (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "physica_kr" ] ;
+     fhir:display [ fhir:v "Lima: Physica KR" ] ;
+     fhir:definition [ fhir:v "Lima: Physica KR (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "physica_ps" ] ;
+     fhir:display [ fhir:v "Lima: Physica PS" ] ;
+     fhir:definition [ fhir:v "Lima: Physica PS (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "preservation" ] ;
+     fhir:display [ fhir:v "Preservation" ] ;
+     fhir:definition [ fhir:v "Preservation (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "sigma_hp_partiel_knee" ] ;
+     fhir:display [ fhir:v "Johnson & Johnson: Sigma HP Partial Knee" ] ;
+     fhir:definition [ fhir:v "Johnson & Johnson: Sigma HP Partial Knee (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "sigma_hp_partiel_knee_all_poly" ] ;
+     fhir:display [ fhir:v "Sigma HP Partial Knee all-poly" ] ;
+     fhir:definition [ fhir:v "Sigma HP Partial Knee all-poly (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "sigma_hp_partiel_knee_modular" ] ;
+     fhir:display [ fhir:v "Johnson & Johnson: Sigma HP Partial Knee modular" ] ;
+     fhir:definition [ fhir:v "Johnson & Johnson: Sigma HP Partial Knee modular (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_competitor_pfj" ] ;
+     fhir:display [ fhir:v "Smith & Nephew: Competitor PFJ" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew: Competitor PFJ (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_genesis" ] ;
+     fhir:display [ fhir:v "Smith & Nephew: Genesis" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew: Genesis (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_genesis_all_poly" ] ;
+     fhir:display [ fhir:v "Smith & Nephew: Genesis All-Poly" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew: Genesis All-Poly (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_genesis_cruciate_retaining" ] ;
+     fhir:display [ fhir:v "Smith & Nephew: Genesis Cruciate-Retaining" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew: Genesis Cruciate-Retaining (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_genesis_ii" ] ;
+     fhir:display [ fhir:v "Smith & Nephew: Genesis II" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew: Genesis II (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_genesis_ii_all_poly" ] ;
+     fhir:display [ fhir:v "Smith & Nephew: Genesis II All-Poly" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew: Genesis II All-Poly (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_genesis_ii_cruciate_retaining" ] ;
+     fhir:display [ fhir:v "Smith & Nephew: Genesis II Cruciate Retaining" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew: Genesis II Cruciate Retaining (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_genesis_ii_long_stem_taper" ] ;
+     fhir:display [ fhir:v "Smith & Nephew: Genesis II Long Stem Taper" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew: Genesis II Long Stem Taper (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_genesis_ii_posterior_stabilized" ] ;
+     fhir:display [ fhir:v "Smith & Nephew: Genesis II Posterior Stabilized" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew: Genesis II Posterior Stabilized (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_genesis_ii_ps_taper" ] ;
+     fhir:display [ fhir:v "Smith & Nephew: Genesis II PS Taper" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew: Genesis II PS Taper (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_genesis_ii_revision" ] ;
+     fhir:display [ fhir:v "Smith & Nephew: Genesis II Revision" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew: Genesis II Revision (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_genesis_long_stem_taper" ] ;
+     fhir:display [ fhir:v "Smith & Nephew: Genesis Long Stem Taper" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew: Genesis Long Stem Taper (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_genesis_posterior_stabilized" ] ;
+     fhir:display [ fhir:v "Smith & Nephew: Genesis Posterior Stabilized" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew: Genesis Posterior Stabilized (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_genesis_ps_taper" ] ;
+     fhir:display [ fhir:v "Smith & Nephew: Genesis PS Taper" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew: Genesis PS Taper (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_genesis_revision" ] ;
+     fhir:display [ fhir:v "Smith & Nephew: Genesis Revision" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew: Genesis Revision (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_genesis_genesis_uni" ] ;
+     fhir:display [ fhir:v "Smith & Nephew: Genesis Uni" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew: Genesis Uni (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_genesis_journey_pfj" ] ;
+     fhir:display [ fhir:v "Smith & Nephew: Journey PFJ" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew: Journey PFJ (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_genesis_legion_cr_oxinium" ] ;
+     fhir:display [ fhir:v "Smith & Nephew: Legion CR Oxinium" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew: Legion CR Oxinium (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_genesis_patella_mod_iii_cartier" ] ;
+     fhir:display [ fhir:v "Smith & Nephew: Patella Mod III Cartier" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew: Patella Mod III Cartier (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_genesis_profix" ] ;
+     fhir:display [ fhir:v "Smith & Nephew: Profix" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew: Profix (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_genesis_profix_all_poly" ] ;
+     fhir:display [ fhir:v "Smith & Nephew: Profix All-Poly" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew: Profix All-Poly (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_genesis_profix_cruciate_retaining" ] ;
+     fhir:display [ fhir:v "Smith & Nephew: Profix Cruciate Retaining" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew: Profix Cruciate Retaining (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_genesis_profix_long_stem_taper" ] ;
+     fhir:display [ fhir:v "Smith & Nephew: Profix Long Stem Taper" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew: Profix Long Stem Taper (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_genesis_profix_posterior_stabilized" ] ;
+     fhir:display [ fhir:v "Smith & Nephew: Profix Posterior Stabilized" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew: Profix Posterior Stabilized (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_genesis_profix_ps_taper" ] ;
+     fhir:display [ fhir:v "Smith & Nephew: Profix PS Taper" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew: Profix PS Taper (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_genesis_profix_revision" ] ;
+     fhir:display [ fhir:v "Smith & Nephew: Profix Revision" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew: Profix Revision (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "stryker_howmetica_avon" ] ;
+     fhir:display [ fhir:v "Stryker/Howmetica: Avon" ] ;
+     fhir:definition [ fhir:v "Stryker/Howmetica: Avon (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "stryker_gmrs" ] ;
+     fhir:display [ fhir:v "Stryker: GMRS" ] ;
+     fhir:definition [ fhir:v "Stryker: GMRS (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "stryker_modular_rotating_hinge" ] ;
+     fhir:display [ fhir:v "Stryker: Modular Rotating Hinge" ] ;
+     fhir:definition [ fhir:v "Stryker: Modular Rotating Hinge (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "stryker_restoris_pfa" ] ;
+     fhir:display [ fhir:v "Stryker: Restoris PFA" ] ;
+     fhir:definition [ fhir:v "Stryker: Restoris PFA" ]
+  ] [
+     fhir:code [ fhir:v "stryker_restoris_medial_uni" ] ;
+     fhir:display [ fhir:v "Stryker: Restoris Medial Uni" ] ;
+     fhir:definition [ fhir:v "Stryker: Restoris Medial Uni" ]
+  ] [
+     fhir:code [ fhir:v "stryker_restoris_lateral_uni" ] ;
+     fhir:display [ fhir:v "Stryker: Restoris Lateral Uni" ] ;
+     fhir:definition [ fhir:v "Stryker: Restoris Lateral Uni" ]
+  ] [
+     fhir:code [ fhir:v "stryker_scorpio" ] ;
+     fhir:display [ fhir:v "Stryker: Scorpio" ] ;
+     fhir:definition [ fhir:v "Stryker: Scorpio (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "stryker_scorpio_all_poly" ] ;
+     fhir:display [ fhir:v "Stryker: Scorpio All Poly" ] ;
+     fhir:definition [ fhir:v "Stryker: Scorpio All Poly (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "stryker_scorpio_cr" ] ;
+     fhir:display [ fhir:v "Stryker: Scorpio CR" ] ;
+     fhir:definition [ fhir:v "Stryker: Scorpio CR (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "stryker_scorpio_mobile_bearing" ] ;
+     fhir:display [ fhir:v "Stryker: Scorpio + Mobile bearing" ] ;
+     fhir:definition [ fhir:v "Stryker: Scorpio + Mobile bearing (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "stryker_scorpio_ps" ] ;
+     fhir:display [ fhir:v "Stryker: Scorpio PS" ] ;
+     fhir:definition [ fhir:v "Stryker: Scorpio PS (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "stryker_scorpio_ts" ] ;
+     fhir:display [ fhir:v "Stryker: Scorpio TS" ] ;
+     fhir:definition [ fhir:v "Stryker: Scorpio TS (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "stryker_triathlon" ] ;
+     fhir:display [ fhir:v "Stryker: Triathlon" ] ;
+     fhir:definition [ fhir:v "Stryker: Triathlon (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "stryker_triathlon_all_poly" ] ;
+     fhir:display [ fhir:v "Stryker: Triathlon All Poly" ] ;
+     fhir:definition [ fhir:v "Stryker: Triathlon All Poly (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "stryker_triathlon_cr" ] ;
+     fhir:display [ fhir:v "Stryker: Triathlon CR" ] ;
+     fhir:definition [ fhir:v "Stryker: Triathlon CR (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "stryker_thriathlon_pkr" ] ;
+     fhir:display [ fhir:v "Stryker: Triathlon PKR" ] ;
+     fhir:definition [ fhir:v "Stryker: Triathlon PKR (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "stryker_thriathlon_ps" ] ;
+     fhir:display [ fhir:v "Stryker: Triathlon PS" ] ;
+     fhir:definition [ fhir:v "Stryker: Triathlon PS (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "stryker_thriathlon_ts" ] ;
+     fhir:display [ fhir:v "Stryker: Triathlon TS" ] ;
+     fhir:definition [ fhir:v "Stryker: Triathlon TS (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "stryker_triathlon_universal" ] ;
+     fhir:display [ fhir:v "Stryker: Triathlon Universal" ] ;
+     fhir:definition [ fhir:v "Stryker: Triathlon Universal (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "vanguard_da_360" ] ;
+     fhir:display [ fhir:v "Vanguard: DA 360" ] ;
+     fhir:definition [ fhir:v "Vanguard: DA 360 (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "vanguard_da_360_tibia_tray" ] ;
+     fhir:display [ fhir:v "Vanguard DA 360 tibia tray" ] ;
+     fhir:definition [ fhir:v "Vanguard DA 360 tibia tray (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "vanguard_rocc_femur_pps_ha_biomet" ] ;
+     fhir:display [ fhir:v "Vanguard: ROCC - Femur PPS + HA Biomet" ] ;
+     fhir:definition [ fhir:v "Vanguard: ROCC - Femur PPS + HA Biomet (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "vanguard_ssk_360" ] ;
+     fhir:display [ fhir:v "Vanguard: SSK 360" ] ;
+     fhir:definition [ fhir:v "Vanguard: SSK 360 (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "vanguard_ssk_360_tibia_tray" ] ;
+     fhir:display [ fhir:v "Vanguard: SSK 360 tibia tray" ] ;
+     fhir:definition [ fhir:v "Vanguard SSK 360 tibia tray (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "vanguard_xp" ] ;
+     fhir:display [ fhir:v "Vanguard: XP" ] ;
+     fhir:definition [ fhir:v "Vanguard: XP (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "vanguard_xp_cr" ] ;
+     fhir:display [ fhir:v "Vanguard: XP CR" ] ;
+     fhir:definition [ fhir:v "Vanguard XP CR (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "wright_advance_medial_pivot" ] ;
+     fhir:display [ fhir:v "Wright: Advance Medial Pivot" ] ;
+     fhir:definition [ fhir:v "Wright: Advance Medial Pivot (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "wright_advance_revision" ] ;
+     fhir:display [ fhir:v "Wright: Advance Revision" ] ;
+     fhir:definition [ fhir:v "Wright: Advance Revision (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "wright_advance_revision_constrained" ] ;
+     fhir:display [ fhir:v "Wright: Advance Revision, Constrained" ] ;
+     fhir:definition [ fhir:v "Wright: Advance Revision, Constrained (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "wright_advance_revision_ps" ] ;
+     fhir:display [ fhir:v "Wright: Advance Revision, PS" ] ;
+     fhir:definition [ fhir:v "Wright: Advance Revision, PS (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "wright_advance_statures" ] ;
+     fhir:display [ fhir:v "Wright: Advance Stature" ] ;
+     fhir:definition [ fhir:v "Wright: Advance Stature (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "wright_advance_stemmet" ] ;
+     fhir:display [ fhir:v "Wright: Advance Stemmet" ] ;
+     fhir:definition [ fhir:v "Wright: Advance Stemmet (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "zimmer_biomet_oxford_lateral_fixed_bearing" ] ;
+     fhir:display [ fhir:v "Zimmer-Biomet: Oxford Lateral Fixed Bearing" ] ;
+     fhir:definition [ fhir:v "Zimmer-Biomet: Oxford Lateral Fixed Bearing (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "zimmer_insall_burstein" ] ;
+     fhir:display [ fhir:v "Zimmer: Insall-Burstein" ] ;
+     fhir:definition [ fhir:v "Zimmer: Insall-Burstein (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "zimmer_miller_galante" ] ;
+     fhir:display [ fhir:v "Zimmer: Miller Galante" ] ;
+     fhir:definition [ fhir:v "Zimmer: Miller Galante (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "zimmer_nexgen_cr" ] ;
+     fhir:display [ fhir:v "Zimmer Biomet: NexGen CR" ] ;
+     fhir:definition [ fhir:v "Zimmer Biomet: NexGen CR (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "zimmer_nexgen_cr_flex" ] ;
+     fhir:display [ fhir:v "Zimmer: NexGen CR Flex" ] ;
+     fhir:definition [ fhir:v "Zimmer: NexGen CR Flex (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "zimmer_nexgen_cr_flex_gender" ] ;
+     fhir:display [ fhir:v "Zimmer: NexGen CR Flex Gender" ] ;
+     fhir:definition [ fhir:v "Zimmer: NexGen CR Flex Gender (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "zimmer_nexgen_cr_modular_tmt" ] ;
+     fhir:display [ fhir:v "Zimmer Biomet: NexGen CR modulær TMT" ] ;
+     fhir:definition [ fhir:v "Zimmer Biomet: NexGen CR modulær TMT (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "zimmer_nexgen_cr_monoblock_tmt" ] ;
+     fhir:display [ fhir:v "Zimmer Biomet: NexGen CR Monoblok, TMT" ] ;
+     fhir:definition [ fhir:v "Zimmer Biomet: NexGen CR Monoblok, TMT (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "zimmer_nexgen_lcck" ] ;
+     fhir:display [ fhir:v "Zimmer Biomet: NexGen LCCK" ] ;
+     fhir:definition [ fhir:v "Zimmer Biomet: NexGen LCCK (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "zimmer_nexgen_lps" ] ;
+     fhir:display [ fhir:v "Zimmer Biomet: NexGen LPS" ] ;
+     fhir:definition [ fhir:v "Zimmer Biomet: NexGen LPS (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "zimmer_nexgen_lps_flex" ] ;
+     fhir:display [ fhir:v "Zimmer Biomet: NexGen LPS Flex" ] ;
+     fhir:definition [ fhir:v "Zimmer Biomet: NexGen LPS Flex (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "zimmer_nexgen_lps_modular_tmt" ] ;
+     fhir:display [ fhir:v "Zimmer Biomet: NexGen LPS Modulær TMT" ] ;
+     fhir:definition [ fhir:v "Zimmer Biomet: NexGen LPS Modulær TMT (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "zimmer_nexgen_lps_monoblock_tmt" ] ;
+     fhir:display [ fhir:v "Zimmer Biomet: NexGen LPS Monoblok TMT" ] ;
+     fhir:definition [ fhir:v "Zimmer Biomet: NexGen LPS Monoblok TMT (Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "zimmer_nexgen_rhk" ] ;
+     fhir:display [ fhir:v "Zimmer Biomet: NexGen RHK" ] ;
+     fhir:definition [ fhir:v "Zimmer Biomet: NexGen RHK (Femur + Tibia)" ]
+  ] [
+     fhir:code [ fhir:v "zimmer_nexgen_pfj" ] ;
+     fhir:display [ fhir:v "Zimmer Biomet: PFJ" ] ;
+     fhir:definition [ fhir:v "Zimmer Biomet: PFJ (Femur)" ]
+  ] [
+     fhir:code [ fhir:v "zimmer_segmental_system" ] ;
+     fhir:display [ fhir:v "Zimmer: Segmental System" ] ;
+     fhir:definition [ fhir:v "Zimmer: Segmental System (Femur)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/AKBehandling> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AKBehandling"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem AKBehandling</b></p><a name=\"AKBehandling\"> </a><a name=\"hcAKBehandling\"> </a><a name=\"AKBehandling-en-US\"> </a><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/AKBehandling</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">clopidogrel<a name=\"AKBehandling-clopidogrel\"> </a></td><td>Clopidogrel (fx Plavix), Ticagrelor (Brilique)</td><td>Clopidogrel (fx Plavix), Ticagrelor (Brilique)</td></tr><tr><td style=\"white-space:nowrap\">persantin<a name=\"AKBehandling-persantin\"> </a></td><td>Persantin</td><td>Persantin</td></tr><tr><td style=\"white-space:nowrap\">orisantin<a name=\"AKBehandling-orisantin\"> </a></td><td>Orisantin (Asasantin)</td><td>Orisantin (Asasantin)</td></tr><tr><td style=\"white-space:nowrap\">acetylsalicylsyre<a name=\"AKBehandling-acetylsalicylsyre\"> </a></td><td>Acetylsalicylsyre (fx Magnyl)</td><td>Acetylsalicylsyre (fx Magnyl)</td></tr><tr><td style=\"white-space:nowrap\">vitamin_k<a name=\"AKBehandling-vitamin_k\"> </a></td><td>Vitamin-K antagonist (Ma-ravan, Warfarin, Marcoumar)</td><td>Vitamin-K antagonist (Ma-ravan, Warfarin, Marcoumar)</td></tr><tr><td style=\"white-space:nowrap\">noak<a name=\"AKBehandling-noak\"> </a></td><td>NOAK (fx Xarelto, Pradaxa, Eliquis)</td><td>NOAK (fx Xarelto, Pradaxa, Eliquis)</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/AKBehandling"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "AKBehandling"] ; # 
+  fhir:title [ fhir:v "AK Behandling (DKR)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-12-18T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "AK Behandling (DKR)"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "clopidogrel" ] ;
+     fhir:display [ fhir:v "Clopidogrel (fx Plavix), Ticagrelor (Brilique)" ] ;
+     fhir:definition [ fhir:v "Clopidogrel (fx Plavix), Ticagrelor (Brilique)" ]
+  ] [
+     fhir:code [ fhir:v "persantin" ] ;
+     fhir:display [ fhir:v "Persantin" ] ;
+     fhir:definition [ fhir:v "Persantin" ]
+  ] [
+     fhir:code [ fhir:v "orisantin" ] ;
+     fhir:display [ fhir:v "Orisantin (Asasantin)" ] ;
+     fhir:definition [ fhir:v "Orisantin (Asasantin)" ]
+  ] [
+     fhir:code [ fhir:v "acetylsalicylsyre" ] ;
+     fhir:display [ fhir:v "Acetylsalicylsyre (fx Magnyl)" ] ;
+     fhir:definition [ fhir:v "Acetylsalicylsyre (fx Magnyl)" ]
+  ] [
+     fhir:code [ fhir:v "vitamin_k" ] ;
+     fhir:display [ fhir:v "Vitamin-K antagonist (Ma-ravan, Warfarin, Marcoumar)" ] ;
+     fhir:definition [ fhir:v "Vitamin-K antagonist (Ma-ravan, Warfarin, Marcoumar)" ]
+  ] [
+     fhir:code [ fhir:v "noak" ] ;
+     fhir:display [ fhir:v "NOAK (fx Xarelto, Pradaxa, Eliquis)" ] ;
+     fhir:definition [ fhir:v "NOAK (fx Xarelto, Pradaxa, Eliquis)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

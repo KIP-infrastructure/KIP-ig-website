@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/MedicalTreatmentAdministrationType> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MedicalTreatmentAdministrationType"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem MedicalTreatmentAdministrationType</b></p><a name=\"MedicalTreatmentAdministrationType\"> </a><a name=\"hcMedicalTreatmentAdministrationType\"> </a><a name=\"MedicalTreatmentAdministrationType-en-US\"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/MedicalTreatmentAdministrationType</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">oral<a name=\"MedicalTreatmentAdministrationType-oral\"> </a></td><td>Oral</td><td>Oral / SNOMED-CT: 260548002</td></tr><tr><td style=\"white-space:nowrap\">intravenous<a name=\"MedicalTreatmentAdministrationType-intravenous\"> </a></td><td>Intravenous</td><td>Intravenous / Intravenøs / SNOMED-CT: 255560000</td></tr><tr><td style=\"white-space:nowrap\">peroral<a name=\"MedicalTreatmentAdministrationType-peroral\"> </a></td><td>Peroral</td><td>Medication administration: oral / peroral medicingivning / SNOMED-CT: 386359008</td></tr><tr><td style=\"white-space:nowrap\">rectum<a name=\"MedicalTreatmentAdministrationType-rectum\"> </a></td><td>Rectum</td><td>Medication administration: rectal / Medicingivning i rectum / SNOMED-CT: 386360003</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/MedicalTreatmentAdministrationType"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:name [ fhir:v "MedicalTreatmentAdministrationType"] ; # 
+  fhir:title [ fhir:v "Medical treatment: Medication administration"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-08-17T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Medical treatment: Medication administration"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "oral" ] ;
+     fhir:display [ fhir:v "Oral" ] ;
+     fhir:definition [ fhir:v "Oral / SNOMED-CT: 260548002" ]
+  ] [
+     fhir:code [ fhir:v "intravenous" ] ;
+     fhir:display [ fhir:v "Intravenous" ] ;
+     fhir:definition [ fhir:v "Intravenous / Intravenøs / SNOMED-CT: 255560000" ]
+  ] [
+     fhir:code [ fhir:v "peroral" ] ;
+     fhir:display [ fhir:v "Peroral" ] ;
+     fhir:definition [ fhir:v "Medication administration: oral / peroral medicingivning / SNOMED-CT: 386359008" ]
+  ] [
+     fhir:code [ fhir:v "rectum" ] ;
+     fhir:display [ fhir:v "Rectum" ] ;
+     fhir:definition [ fhir:v "Medication administration: rectal / Medicingivning i rectum / SNOMED-CT: 386360003" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
