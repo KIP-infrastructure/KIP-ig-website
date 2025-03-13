@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/AKBehandlingDKR> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AKBehandlingDKR"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet AKBehandlingDKR</b></p><a name=\"AKBehandlingDKR\"> </a><a name=\"hcAKBehandlingDKR\"> </a><a name=\"AKBehandlingDKR-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-AKBehandling.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/AKBehandling</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-AKBehandling.html#AKBehandling-clopidogrel\">clopidogrel</a></td><td>Clopidogrel (fx Plavix), Ticagrelor (Brilique)</td><td>Clopidogrel (fx Plavix), Ticagrelor (Brilique)</td></tr><tr><td><a href=\"CodeSystem-AKBehandling.html#AKBehandling-persantin\">persantin</a></td><td>Persantin</td><td>Persantin</td></tr><tr><td><a href=\"CodeSystem-AKBehandling.html#AKBehandling-orisantin\">orisantin</a></td><td>Orisantin (Asasantin)</td><td>Orisantin (Asasantin)</td></tr><tr><td><a href=\"CodeSystem-AKBehandling.html#AKBehandling-acetylsalicylsyre\">acetylsalicylsyre</a></td><td>Acetylsalicylsyre (fx Magnyl)</td><td>Acetylsalicylsyre (fx Magnyl)</td></tr><tr><td><a href=\"CodeSystem-AKBehandling.html#AKBehandling-vitamin_k\">vitamin_k</a></td><td>Vitamin-K antagonist (Ma-ravan, Warfarin, Marcoumar)</td><td>Vitamin-K antagonist (Ma-ravan, Warfarin, Marcoumar)</td></tr><tr><td><a href=\"CodeSystem-AKBehandling.html#AKBehandling-noak\">noak</a></td><td>NOAK (fx Xarelto, Pradaxa, Eliquis)</td><td>NOAK (fx Xarelto, Pradaxa, Eliquis)</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/AKBehandlingDKR"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "AKBehandlingDKR"] ; # 
+  fhir:title [ fhir:v "AK Behandling (DKR)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-10-13T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "AK Behandling (DKR)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/AKBehandling"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "clopidogrel" ] ;
+         fhir:display [ fhir:v "Clopidogrel (fx Plavix), Ticagrelor (Brilique)" ]
+       ] [
+         fhir:code [ fhir:v "persantin" ] ;
+         fhir:display [ fhir:v "Persantin" ]
+       ] [
+         fhir:code [ fhir:v "orisantin" ] ;
+         fhir:display [ fhir:v "Orisantin (Asasantin)" ]
+       ] [
+         fhir:code [ fhir:v "acetylsalicylsyre" ] ;
+         fhir:display [ fhir:v "Acetylsalicylsyre (fx Magnyl)" ]
+       ] [
+         fhir:code [ fhir:v "vitamin_k" ] ;
+         fhir:display [ fhir:v "Vitamin-K antagonist (Ma-ravan, Warfarin, Marcoumar)" ]
+       ] [
+         fhir:code [ fhir:v "noak" ] ;
+         fhir:display [ fhir:v "NOAK (fx Xarelto, Pradaxa, Eliquis)" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "other" ] ;
+         fhir:display [ fhir:v "Andet" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

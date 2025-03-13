@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "HjerneoedemDAP",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet HjerneoedemDAP</b></p><a name=\"HjerneoedemDAP\"> </a><a name=\"hcHjerneoedemDAP\"> </a><a name=\"HjerneoedemDAP-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-EdemaStroke.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/EdemaStroke</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-EdemaStroke.html#EdemaStroke-coed_1\">coed_1</a></td><td>COED 1</td><td>COED 1</td></tr><tr><td><a href=\"CodeSystem-EdemaStroke.html#EdemaStroke-coed_2\">coed_2</a></td><td>COED 2</td><td>COED 2</td></tr><tr><td><a href=\"CodeSystem-EdemaStroke.html#EdemaStroke-coed_3\">coed_3</a></td><td>COED 3</td><td>COED 3</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/HjerneoedemDAP",
+  "version" : "0.1.6",
+  "name" : "HjerneoedemDAP",
+  "title" : "Hjerneødem (DAP)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-09-02T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Hjerneødem fundet i forbindelse med billeddiagnostisk undersøgelse (DAP)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/EdemaStroke",
+      "concept" : [{
+        "code" : "coed_1",
+        "display" : "COED 1"
+      },
+      {
+        "code" : "coed_2",
+        "display" : "COED 2"
+      },
+      {
+        "code" : "coed_3",
+        "display" : "COED 3"
+      }]
+    }]
+  }
+}

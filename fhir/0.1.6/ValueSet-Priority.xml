@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="Priority"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet Priority</b></p><a name="Priority"> </a><a name="hcPriority"> </a><a name="Priority-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-Priority.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/Priority</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-Priority.html#Priority-elective">elective</a></td><td>Elektiv</td><td>Elective / Elektiv / SNOMED-CT: 103390000</td></tr><tr><td><a href="CodeSystem-Priority.html#Priority-hasten">hasten</a></td><td>Fremskyndet (dage)</td><td>Fremskyndet (dage)</td></tr><tr><td><a href="CodeSystem-Priority.html#Priority-urgent">urgent</a></td><td>Hastende (timer)</td><td>Hastende (timer) / SNOMED-CT: 103391001</td></tr><tr><td><a href="CodeSystem-Priority.html#Priority-lethal">lethal</a></td><td>Umiddelbart livstruende</td><td>Umiddelbart livstruende</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.rkkp.dk/fhir/ValueSet/Priority"/>
+  <version value="0.1.6"/>
+  <name value="Priority"/>
+  <title value="Priority"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-05-31T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Vurdering af patientens behov"/>
+  <compose>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/Priority"/>
+      <concept>
+        <code value="elective"/>
+        <display value="Elektiv"/>
+      </concept>
+      <concept>
+        <code value="hasten"/>
+        <display value="Fremskyndet (dage)"/>
+      </concept>
+      <concept>
+        <code value="urgent"/>
+        <display value="Hastende (timer)"/>
+      </concept>
+      <concept>
+        <code value="lethal"/>
+        <display value="Umiddelbart livstruende"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="FISHResult"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet FISHResult</b></p><a name="FISHResult"> </a><a name="hcFISHResult"> </a><a name="FISHResult-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-FISHVariables.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/FISHVariables</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-FISHVariables.html#FISHVariables-igh_fgfr3">igh_fgfr3</a></td><td>t(4;14)/IGH-FGFR3</td><td>t(4;14)/IGH-FGFR3</td></tr><tr><td><a href="CodeSystem-FISHVariables.html#FISHVariables-igh_ccnd1">igh_ccnd1</a></td><td>t(11;14)/IGH-CCND1</td><td>t(11;14)/IGH-CCND1</td></tr><tr><td><a href="CodeSystem-FISHVariables.html#FISHVariables-igh_mbf">igh_mbf</a></td><td>t(14;16)/IGH-MBF</td><td>t(14;16)/IGH-MBF</td></tr><tr><td><a href="CodeSystem-FISHVariables.html#FISHVariables-igh_mafb">igh_mafb</a></td><td>t(14;20)/IGH-MAFB</td><td>t(14;20)/IGH-MAFB</td></tr><tr><td><a href="CodeSystem-FISHVariables.html#FISHVariables-igh_split_signal">igh_split_signal</a></td><td>IgH split signal</td><td>IgH split signal</td></tr><tr><td><a href="CodeSystem-FISHVariables.html#FISHVariables-13q_deletion">13q_deletion</a></td><td>13q deletion</td><td>13q deletion</td></tr><tr><td><a href="CodeSystem-FISHVariables.html#FISHVariables-tp53_deletion">tp53_deletion</a></td><td>TP53 deletion</td><td>TP53 deletion</td></tr><tr><td><a href="CodeSystem-FISHVariables.html#FISHVariables-1q21">1q21</a></td><td>1q21 amplifikation</td><td>1q21 amplifikation</td></tr><tr><td><a href="CodeSystem-FISHVariables.html#FISHVariables-11q22">11q22</a></td><td>11q22/ATM amplifikation</td><td>11q22/ATM amplifikation</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-GenericValues.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-GenericValues.html#GenericValues-other">other</a></td><td>Anden IGH translokation</td><td>Other - used to choose unspecific value not in a valueset</td></tr><tr><td><a href="CodeSystem-GenericValues.html#GenericValues-none">none</a></td><td>Ingen forandringer påvist</td><td>None - used to choose none of the available values</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.rkkp.dk/fhir/ValueSet/FISHResult"/>
+  <version value="0.1.6"/>
+  <name value="FISHResult"/>
+  <title value="Resultat af FISH"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-07-15T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Resultat af FISH"/>
+  <compose>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/FISHVariables"/>
+      <concept>
+        <code value="igh_fgfr3"/>
+        <display value="t(4;14)/IGH-FGFR3"/>
+      </concept>
+      <concept>
+        <code value="igh_ccnd1"/>
+        <display value="t(11;14)/IGH-CCND1"/>
+      </concept>
+      <concept>
+        <code value="igh_mbf"/>
+        <display value="t(14;16)/IGH-MBF"/>
+      </concept>
+      <concept>
+        <code value="igh_mafb"/>
+        <display value="t(14;20)/IGH-MAFB"/>
+      </concept>
+      <concept>
+        <code value="igh_split_signal"/>
+        <display value="IgH split signal"/>
+      </concept>
+      <concept>
+        <code value="13q_deletion"/>
+        <display value="13q deletion"/>
+      </concept>
+      <concept>
+        <code value="tp53_deletion"/>
+        <display value="TP53 deletion"/>
+      </concept>
+      <concept>
+        <code value="1q21"/>
+        <display value="1q21 amplifikation"/>
+      </concept>
+      <concept>
+        <code value="11q22"/>
+        <display value="11q22/ATM amplifikation"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"/>
+      <concept>
+        <code value="other"/>
+        <display value="Anden IGH translokation"/>
+      </concept>
+      <concept>
+        <code value="none"/>
+        <display value="Ingen forandringer påvist"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "FrakturFriskhedDSR",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet FrakturFriskhedDSR</b></p><a name=\"FrakturFriskhedDSR\"> </a><a name=\"hcFrakturFriskhedDSR\"> </a><a name=\"FrakturFriskhedDSR-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Intervals.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Intervals</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Intervals.html#Intervals-.61.602\">=&lt;2</a></td><td>Frisk ≤ 2 uger</td><td>=&lt;2</td></tr><tr><td><a href=\"CodeSystem-Intervals.html#Intervals-.622\">&gt;2</a></td><td>Frisk &gt; 2 uger</td><td>&gt;2</td></tr><tr><td><a href=\"CodeSystem-Intervals.html#Intervals-.626\">&gt;6</a></td><td>Pseudartrose (ældre end 6 mdr.)</td><td>&gt;6</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/FrakturFriskhedDSR",
+  "version" : "0.1.6",
+  "name" : "FrakturFriskhedDSR",
+  "title" : "Fraktur; friskhed (DSR)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-07-04T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Fraktur; friskhed (DSR)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/Intervals",
+      "concept" : [{
+        "code" : "=<2",
+        "display" : "Frisk ≤ 2 uger"
+      },
+      {
+        "code" : ">2",
+        "display" : "Frisk > 2 uger"
+      },
+      {
+        "code" : ">6",
+        "display" : "Pseudartrose (ældre end 6 mdr.)"
+      }]
+    }]
+  }
+}

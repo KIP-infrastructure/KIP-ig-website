@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "Pupilforhold",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Pupilforhold</b></p><a name=\"Pupilforhold\"> </a><a name=\"hcPupilforhold\"> </a><a name=\"Pupilforhold-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-PupilCondition.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/PupilCondition</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-PupilCondition.html#PupilCondition-normal\">normal</a></td><td>Normale</td><td>Normal</td></tr><tr><td><a href=\"CodeSystem-PupilCondition.html#PupilCondition-difference\">difference</a></td><td>Pupildifference/lysstive pupiller</td><td>Pupil difference</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/Pupilforhold",
+  "version" : "0.1.6",
+  "name" : "Pupilforhold",
+  "title" : "Pupilforhold",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-06-28T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Forholdet mellem pupillerne",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/PupilCondition",
+      "concept" : [{
+        "code" : "normal",
+        "display" : "Normale"
+      },
+      {
+        "code" : "difference",
+        "display" : "Pupildifference/lysstive pupiller"
+      }]
+    }]
+  }
+}

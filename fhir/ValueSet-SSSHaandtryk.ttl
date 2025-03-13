@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/SSSHaandtryk> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SSSHaandtryk"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SSSHaandtryk</b></p><a name=\"SSSHaandtryk\"> </a><a name=\"hcSSSHaandtryk\"> </a><a name=\"SSSHaandtryk-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-SSSHandshake.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/SSSHandshake</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-SSSHandshake.html#SSSHandshake-6\">6</a></td><td>6: normal kraft</td><td>Normal kraft for bevægelsen.</td></tr><tr><td><a href=\"CodeSystem-SSSHandshake.html#SSSHandshake-4\">4</a></td><td>4: nedsat kraft, men normal bevægelighed</td><td>Normal bevægelse, men nedsat kraft.</td></tr><tr><td><a href=\"CodeSystem-SSSHandshake.html#SSSHandshake-2\">2</a></td><td>2: nogen bevægelse, kan ikke knytte hånden</td><td>Nogen bevægelse, kan ikke knytte hånden.</td></tr><tr><td><a href=\"CodeSystem-SSSHandshake.html#SSSHandshake-0\">0</a></td><td>0: paralyse</td><td>Paralyse: Ingen bevægelse mulig.</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/SSSHaandtryk"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "SSSHaandtryk"] ; # 
+  fhir:title [ fhir:v "Scandinavian Stroke Scale - Håndtryk"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-06-23T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Scandinavian Stroke Scale - Håndtryk"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/SSSHandshake"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "6" ] ;
+         fhir:display [ fhir:v "6: normal kraft" ]
+       ] [
+         fhir:code [ fhir:v "4" ] ;
+         fhir:display [ fhir:v "4: nedsat kraft, men normal bevægelighed" ]
+       ] [
+         fhir:code [ fhir:v "2" ] ;
+         fhir:display [ fhir:v "2: nogen bevægelse, kan ikke knytte hånden" ]
+       ] [
+         fhir:code [ fhir:v "0" ] ;
+         fhir:display [ fhir:v "0: paralyse" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

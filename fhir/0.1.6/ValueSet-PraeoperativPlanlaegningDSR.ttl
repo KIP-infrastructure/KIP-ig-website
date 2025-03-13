@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/PraeoperativPlanlaegningDSR> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PraeoperativPlanlaegningDSR"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet PraeoperativPlanlaegningDSR</b></p><a name=\"PraeoperativPlanlaegningDSR\"> </a><a name=\"hcPraeoperativPlanlaegningDSR\"> </a><a name=\"PraeoperativPlanlaegningDSR-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-MedicalScanningTypes.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/MedicalScanningTypes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-MedicalScanningTypes.html#MedicalScanningTypes-x-ray\">x-ray</a></td><td>Røntgen &lt;½ år</td><td>X-ray / Røntgen</td></tr><tr><td><a href=\"CodeSystem-MedicalScanningTypes.html#MedicalScanningTypes-ct\">ct</a></td><td>CT</td><td>Computed tomography (CT)</td></tr><tr><td><a href=\"CodeSystem-MedicalScanningTypes.html#MedicalScanningTypes-mri\">mri</a></td><td>MR</td><td>Magnetic Resonance imaging (MRI)</td></tr><tr><td><a href=\"CodeSystem-MedicalScanningTypes.html#MedicalScanningTypes-ultrasound\">ultrasound</a></td><td>Ultralyd</td><td>Medical ultrasound</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-ProcedureType.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-templating\">templating</a></td><td>Templating</td><td>Templating</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-psi\">psi</a></td><td>PSI (Patient specifikke instrumenter)</td><td>PSI (Patient specific instruments) / PSI (Patientspecifikke instrumenter)</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/PraeoperativPlanlaegningDSR"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "PraeoperativPlanlaegningDSR"] ; # 
+  fhir:title [ fhir:v "Præoperativ planlægning (DSR)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-10-06T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Præoperativ planlægning (DSR)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/MedicalScanningTypes"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "x-ray" ] ;
+         fhir:display [ fhir:v "Røntgen <½ år" ]
+       ] [
+         fhir:code [ fhir:v "ct" ] ;
+         fhir:display [ fhir:v "CT" ]
+       ] [
+         fhir:code [ fhir:v "mri" ] ;
+         fhir:display [ fhir:v "MR" ]
+       ] [
+         fhir:code [ fhir:v "ultrasound" ] ;
+         fhir:display [ fhir:v "Ultralyd" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "templating" ] ;
+         fhir:display [ fhir:v "Templating" ]
+       ] [
+         fhir:code [ fhir:v "psi" ] ;
+         fhir:display [ fhir:v "PSI (Patient specifikke instrumenter)" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "other" ] ;
+         fhir:display [ fhir:v "Andet" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

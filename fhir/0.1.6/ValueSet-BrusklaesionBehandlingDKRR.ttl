@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/BrusklaesionBehandlingDKRR> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BrusklaesionBehandlingDKRR"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet BrusklaesionBehandlingDKRR</b></p><a name=\"BrusklaesionBehandlingDKRR\"> </a><a name=\"hcBrusklaesionBehandlingDKRR\"> </a><a name=\"BrusklaesionBehandlingDKRR-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-TreatmentLesion.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/TreatmentLesion</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-TreatmentLesion.html#TreatmentLesion-debridement\">debridement</a></td><td>Debridement</td><td>Debridement</td></tr><tr><td><a href=\"CodeSystem-TreatmentLesion.html#TreatmentLesion-microfracture\">microfracture</a></td><td>Mikrofraktur</td><td>Microfracture / Mikrofraktur</td></tr><tr><td><a href=\"CodeSystem-TreatmentLesion.html#TreatmentLesion-mosaic_plastic\">mosaic_plastic</a></td><td>Mosaikplastik</td><td>Mosaic plastic / Mosaikplastik</td></tr><tr><td><a href=\"CodeSystem-TreatmentLesion.html#TreatmentLesion-synthetic_scaffold\">synthetic_scaffold</a></td><td>Syntetisk scaffold</td><td>Synthetic scaffold / Syntetisk scaffold</td></tr><tr><td><a href=\"CodeSystem-TreatmentLesion.html#TreatmentLesion-cell_transplantation\">cell_transplantation</a></td><td>Celletransplantation</td><td>Cell transplantation / Celletransplantation</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/BrusklaesionBehandlingDKRR"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "BrusklaesionBehandlingDKRR"] ; # 
+  fhir:title [ fhir:v "Brusklæsion, behandling (DKRR)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-09-19T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Brusklæsion, behandling (DKRR)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/TreatmentLesion"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "debridement" ] ;
+         fhir:display [ fhir:v "Debridement" ]
+       ] [
+         fhir:code [ fhir:v "microfracture" ] ;
+         fhir:display [ fhir:v "Mikrofraktur" ]
+       ] [
+         fhir:code [ fhir:v "mosaic_plastic" ] ;
+         fhir:display [ fhir:v "Mosaikplastik" ]
+       ] [
+         fhir:code [ fhir:v "synthetic_scaffold" ] ;
+         fhir:display [ fhir:v "Syntetisk scaffold" ]
+       ] [
+         fhir:code [ fhir:v "cell_transplantation" ] ;
+         fhir:display [ fhir:v "Celletransplantation" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "other" ] ;
+         fhir:display [ fhir:v "Andet" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

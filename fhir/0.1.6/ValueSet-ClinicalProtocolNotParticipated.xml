@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ClinicalProtocolNotParticipated"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ClinicalProtocolNotParticipated</b></p><a name="ClinicalProtocolNotParticipated"> </a><a name="hcClinicalProtocolNotParticipated"> </a><a name="ClinicalProtocolNotParticipated-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-ClinicalProtocolNotParticipated.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/ClinicalProtocolNotParticipated</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-ClinicalProtocolNotParticipated.html#ClinicalProtocolNotParticipated-rejected">rejected</a></td><td>Tilbudt klinisk forsøg, men deltagelse afvist af patient</td><td>Patient rejected invitation</td></tr><tr><td><a href="CodeSystem-ClinicalProtocolNotParticipated.html#ClinicalProtocolNotParticipated-deselected">deselected</a></td><td>Patienten var kandidat til et klinisk forsøg, men deltagelse fravalgt af afdelingen</td><td>Health department deselected patient</td></tr><tr><td><a href="CodeSystem-ClinicalProtocolNotParticipated.html#ClinicalProtocolNotParticipated-no_invitation">no_invitation</a></td><td>Afdelingen har ikke et tilbud om deltagelse i klinisk forsøg</td><td>Patient was not invited</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.rkkp.dk/fhir/ValueSet/ClinicalProtocolNotParticipated"/>
+  <version value="0.1.6"/>
+  <name value="ClinicalProtocolNotParticipated"/>
+  <title value="Hvorfor er patienten ikke involveret"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-06-07T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Hvorfor er patienten ikke involveret"/>
+  <compose>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/ClinicalProtocolNotParticipated"/>
+      <concept>
+        <code value="rejected"/>
+        <display value="Tilbudt klinisk forsøg, men deltagelse afvist af patient"/>
+      </concept>
+      <concept>
+        <code value="deselected"/>
+        <display value="Patienten var kandidat til et klinisk forsøg, men deltagelse fravalgt af afdelingen"/>
+      </concept>
+      <concept>
+        <code value="no_invitation"/>
+        <display value="Afdelingen har ikke et tilbud om deltagelse i klinisk forsøg"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,216 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/MedicalFixationClosing> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MedicalFixationClosing"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem MedicalFixationClosing</b></p><a name=\"MedicalFixationClosing\"> </a><a name=\"hcMedicalFixationClosing\"> </a><a name=\"MedicalFixationClosing-en-US\"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/MedicalFixationClosing</code> provides <b>a fragment</b> that includes following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">suture<a name=\"MedicalFixationClosing-suture\"> </a></td><td>Suture</td><td>Suture / Sutur / SNODMED-CT: 408099007</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  not_self_locking<a name=\"MedicalFixationClosing-not_self_locking\"> </a></td><td>Not self-locking</td><td>Not self-locking / Ikke selvlåsende</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  self_locking<a name=\"MedicalFixationClosing-self_locking\"> </a></td><td>Self-locking</td><td>Self-locking / Selvlåsende</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    v_loc<a name=\"MedicalFixationClosing-v_loc\"> </a></td><td>Self-locking (V-LOC)</td><td>Self-locking (V-LOC) / Selflåsende (V-LOC)</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    stratafix<a name=\"MedicalFixationClosing-stratafix\"> </a></td><td>Self-locking (Stratafix)</td><td>Self-locking (Stratafix) / Selflåsende (Stratafix)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  multifilament<a name=\"MedicalFixationClosing-multifilament\"> </a></td><td>Multifilament</td><td>Multifilament</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    ethibond<a name=\"MedicalFixationClosing-ethibond\"> </a></td><td>Ethibond</td><td>Ethibond</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    mersilene<a name=\"MedicalFixationClosing-mersilene\"> </a></td><td>Mersilene</td><td>Mersilene</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    vicryl<a name=\"MedicalFixationClosing-vicryl\"> </a></td><td>Vicryl</td><td>Vicryl</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  monofilament<a name=\"MedicalFixationClosing-monofilament\"> </a></td><td>Monofilament</td><td>Monofilament</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    pds<a name=\"MedicalFixationClosing-pds\"> </a></td><td>PDS</td><td>PDS</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    dexon<a name=\"MedicalFixationClosing-dexon\"> </a></td><td>Dexon</td><td>Dexon</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    maxon<a name=\"MedicalFixationClosing-maxon\"> </a></td><td>Maxon</td><td>Maxon</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    monocryl<a name=\"MedicalFixationClosing-monocryl\"> </a></td><td>Monocryl</td><td>Monocryl</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    monoplus<a name=\"MedicalFixationClosing-monoplus\"> </a></td><td>MonoPlus</td><td>MonoPlus</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    momomax<a name=\"MedicalFixationClosing-momomax\"> </a></td><td>MonoMax</td><td>MonoMax</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    nylon<a name=\"MedicalFixationClosing-nylon\"> </a></td><td>Nylon</td><td>Nylon</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    prolene<a name=\"MedicalFixationClosing-prolene\"> </a></td><td>Prolene</td><td>Prolene</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  fast_resorbable<a name=\"MedicalFixationClosing-fast_resorbable\"> </a></td><td>Fast resorbable</td><td>Fast resorbable / Hurtig resorberbar</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  slow_resorbable<a name=\"MedicalFixationClosing-slow_resorbable\"> </a></td><td>Slow resorbable</td><td>Slow resorbable / Langsom resorberbar</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  non_resorbable<a name=\"MedicalFixationClosing-non_resorbable\"> </a></td><td>Non resorbable</td><td>Non resorbable / Non-resorberbar</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  intracutaneous<a name=\"MedicalFixationClosing-intracutaneous\"> </a></td><td>Intracutaneous</td><td>Intracutaneous / Intrakutan</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  not_intracutaneous<a name=\"MedicalFixationClosing-not_intracutaneous\"> </a></td><td>Not intracutaneous</td><td>Not intracutaneous / Ikke intrakutan</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">tack<a name=\"MedicalFixationClosing-tack\"> </a></td><td>Tack</td><td>Tack / SNOMED-CT: 705723004</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  absorbable<a name=\"MedicalFixationClosing-absorbable\"> </a></td><td>Absorbable</td><td>Absorbable / Absorberbar</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    absorbatack<a name=\"MedicalFixationClosing-absorbatack\"> </a></td><td>Absorbatack</td><td>Absorbatack</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    optifix<a name=\"MedicalFixationClosing-optifix\"> </a></td><td>Optifix</td><td>Optifix</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    reliatack<a name=\"MedicalFixationClosing-reliatack\"> </a></td><td>Reliatack</td><td>Reliatack</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    securestrap<a name=\"MedicalFixationClosing-securestrap\"> </a></td><td>Securestrap</td><td>Securestrap</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  non_absorbable<a name=\"MedicalFixationClosing-non_absorbable\"> </a></td><td>Non-absorbable</td><td>Non-absorbable / Non-absorberbar</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    capsure<a name=\"MedicalFixationClosing-capsure\"> </a></td><td>Capsure</td><td>Capsure</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    protack<a name=\"MedicalFixationClosing-protack\"> </a></td><td>Protack</td><td>Protack</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">clip<a name=\"MedicalFixationClosing-clip\"> </a></td><td>Clip</td><td>Clip / Clip / SNOMED-CT: 77720000</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">surgical_glue<a name=\"MedicalFixationClosing-surgical_glue\"> </a></td><td>Surgical glue</td><td>Surgical glue / Kirurgisk lim / SNOMED-CT: 303532007</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  histoacryl<a name=\"MedicalFixationClosing-histoacryl\"> </a></td><td>Histoacryl</td><td>Histoacryl</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  tisseel<a name=\"MedicalFixationClosing-tisseel\"> </a></td><td>Tisseel</td><td>Tisseel</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">self_fixative_mesh<a name=\"MedicalFixationClosing-self_fixative_mesh\"> </a></td><td>Self-fixative mesh</td><td>Self-fixative mesh / Selvfikserende mesh</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">surgical_staple<a name=\"MedicalFixationClosing-surgical_staple\"> </a></td><td>Surgical staple</td><td>Surgical staple / Kirurgisk hæfteklamme / SNOMED-CT: 386014009</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">combi_fixation<a name=\"MedicalFixationClosing-combi_fixation\"> </a></td><td>Combined fixation methods</td><td>Kombinerede fiksationer</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  tack_sutur<a name=\"MedicalFixationClosing-tack_sutur\"> </a></td><td>Tack + suture</td><td>Tack + sutur</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  glue_sutur<a name=\"MedicalFixationClosing-glue_sutur\"> </a></td><td>Glue + suture</td><td>Lim + sutur</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  glue_tack_clip<a name=\"MedicalFixationClosing-glue_tack_clip\"> </a></td><td>Glue + tack/clip</td><td>Lim + Tack/clips</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/MedicalFixationClosing"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "MedicalFixationClosing"] ; # 
+  fhir:title [ fhir:v "Medical fixation and closing"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-07-20T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Medical fixation and closing"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "fragment"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "suture" ] ;
+     fhir:display [ fhir:v "Suture" ] ;
+     fhir:definition [ fhir:v "Suture / Sutur / SNODMED-CT: 408099007" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "not_self_locking" ] ;
+       fhir:display [ fhir:v "Not self-locking" ] ;
+       fhir:definition [ fhir:v "Not self-locking / Ikke selvlåsende" ]
+     ] [
+       fhir:code [ fhir:v "self_locking" ] ;
+       fhir:display [ fhir:v "Self-locking" ] ;
+       fhir:definition [ fhir:v "Self-locking / Selvlåsende" ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "v_loc" ] ;
+         fhir:display [ fhir:v "Self-locking (V-LOC)" ] ;
+         fhir:definition [ fhir:v "Self-locking (V-LOC) / Selflåsende (V-LOC)" ]
+       ] [
+         fhir:code [ fhir:v "stratafix" ] ;
+         fhir:display [ fhir:v "Self-locking (Stratafix)" ] ;
+         fhir:definition [ fhir:v "Self-locking (Stratafix) / Selflåsende (Stratafix)" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "multifilament" ] ;
+       fhir:display [ fhir:v "Multifilament" ] ;
+       fhir:definition [ fhir:v "Multifilament" ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "ethibond" ] ;
+         fhir:display [ fhir:v "Ethibond" ] ;
+         fhir:definition [ fhir:v "Ethibond" ]
+       ] [
+         fhir:code [ fhir:v "mersilene" ] ;
+         fhir:display [ fhir:v "Mersilene" ] ;
+         fhir:definition [ fhir:v "Mersilene" ]
+       ] [
+         fhir:code [ fhir:v "vicryl" ] ;
+         fhir:display [ fhir:v "Vicryl" ] ;
+         fhir:definition [ fhir:v "Vicryl" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "monofilament" ] ;
+       fhir:display [ fhir:v "Monofilament" ] ;
+       fhir:definition [ fhir:v "Monofilament" ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "pds" ] ;
+         fhir:display [ fhir:v "PDS" ] ;
+         fhir:definition [ fhir:v "PDS" ]
+       ] [
+         fhir:code [ fhir:v "dexon" ] ;
+         fhir:display [ fhir:v "Dexon" ] ;
+         fhir:definition [ fhir:v "Dexon" ]
+       ] [
+         fhir:code [ fhir:v "maxon" ] ;
+         fhir:display [ fhir:v "Maxon" ] ;
+         fhir:definition [ fhir:v "Maxon" ]
+       ] [
+         fhir:code [ fhir:v "monocryl" ] ;
+         fhir:display [ fhir:v "Monocryl" ] ;
+         fhir:definition [ fhir:v "Monocryl" ]
+       ] [
+         fhir:code [ fhir:v "monoplus" ] ;
+         fhir:display [ fhir:v "MonoPlus" ] ;
+         fhir:definition [ fhir:v "MonoPlus" ]
+       ] [
+         fhir:code [ fhir:v "momomax" ] ;
+         fhir:display [ fhir:v "MonoMax" ] ;
+         fhir:definition [ fhir:v "MonoMax" ]
+       ] [
+         fhir:code [ fhir:v "nylon" ] ;
+         fhir:display [ fhir:v "Nylon" ] ;
+         fhir:definition [ fhir:v "Nylon" ]
+       ] [
+         fhir:code [ fhir:v "prolene" ] ;
+         fhir:display [ fhir:v "Prolene" ] ;
+         fhir:definition [ fhir:v "Prolene" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "fast_resorbable" ] ;
+       fhir:display [ fhir:v "Fast resorbable" ] ;
+       fhir:definition [ fhir:v "Fast resorbable / Hurtig resorberbar" ]
+     ] [
+       fhir:code [ fhir:v "slow_resorbable" ] ;
+       fhir:display [ fhir:v "Slow resorbable" ] ;
+       fhir:definition [ fhir:v "Slow resorbable / Langsom resorberbar" ]
+     ] [
+       fhir:code [ fhir:v "non_resorbable" ] ;
+       fhir:display [ fhir:v "Non resorbable" ] ;
+       fhir:definition [ fhir:v "Non resorbable / Non-resorberbar" ]
+     ] [
+       fhir:code [ fhir:v "intracutaneous" ] ;
+       fhir:display [ fhir:v "Intracutaneous" ] ;
+       fhir:definition [ fhir:v "Intracutaneous / Intrakutan" ]
+     ] [
+       fhir:code [ fhir:v "not_intracutaneous" ] ;
+       fhir:display [ fhir:v "Not intracutaneous" ] ;
+       fhir:definition [ fhir:v "Not intracutaneous / Ikke intrakutan" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "tack" ] ;
+     fhir:display [ fhir:v "Tack" ] ;
+     fhir:definition [ fhir:v "Tack / SNOMED-CT: 705723004" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "absorbable" ] ;
+       fhir:display [ fhir:v "Absorbable" ] ;
+       fhir:definition [ fhir:v "Absorbable / Absorberbar" ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "absorbatack" ] ;
+         fhir:display [ fhir:v "Absorbatack" ] ;
+         fhir:definition [ fhir:v "Absorbatack" ]
+       ] [
+         fhir:code [ fhir:v "optifix" ] ;
+         fhir:display [ fhir:v "Optifix" ] ;
+         fhir:definition [ fhir:v "Optifix" ]
+       ] [
+         fhir:code [ fhir:v "reliatack" ] ;
+         fhir:display [ fhir:v "Reliatack" ] ;
+         fhir:definition [ fhir:v "Reliatack" ]
+       ] [
+         fhir:code [ fhir:v "securestrap" ] ;
+         fhir:display [ fhir:v "Securestrap" ] ;
+         fhir:definition [ fhir:v "Securestrap" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "non_absorbable" ] ;
+       fhir:display [ fhir:v "Non-absorbable" ] ;
+       fhir:definition [ fhir:v "Non-absorbable / Non-absorberbar" ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "capsure" ] ;
+         fhir:display [ fhir:v "Capsure" ] ;
+         fhir:definition [ fhir:v "Capsure" ]
+       ] [
+         fhir:code [ fhir:v "protack" ] ;
+         fhir:display [ fhir:v "Protack" ] ;
+         fhir:definition [ fhir:v "Protack" ]
+       ] )
+     ] )
+  ] [
+     fhir:code [ fhir:v "clip" ] ;
+     fhir:display [ fhir:v "Clip" ] ;
+     fhir:definition [ fhir:v "Clip / Clip / SNOMED-CT: 77720000" ]
+  ] [
+     fhir:code [ fhir:v "surgical_glue" ] ;
+     fhir:display [ fhir:v "Surgical glue" ] ;
+     fhir:definition [ fhir:v "Surgical glue / Kirurgisk lim / SNOMED-CT: 303532007" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "histoacryl" ] ;
+       fhir:display [ fhir:v "Histoacryl" ] ;
+       fhir:definition [ fhir:v "Histoacryl" ]
+     ] [
+       fhir:code [ fhir:v "tisseel" ] ;
+       fhir:display [ fhir:v "Tisseel" ] ;
+       fhir:definition [ fhir:v "Tisseel" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "self_fixative_mesh" ] ;
+     fhir:display [ fhir:v "Self-fixative mesh" ] ;
+     fhir:definition [ fhir:v "Self-fixative mesh / Selvfikserende mesh" ]
+  ] [
+     fhir:code [ fhir:v "surgical_staple" ] ;
+     fhir:display [ fhir:v "Surgical staple" ] ;
+     fhir:definition [ fhir:v "Surgical staple / Kirurgisk hæfteklamme / SNOMED-CT: 386014009" ]
+  ] [
+     fhir:code [ fhir:v "combi_fixation" ] ;
+     fhir:display [ fhir:v "Combined fixation methods" ] ;
+     fhir:definition [ fhir:v "Kombinerede fiksationer" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "tack_sutur" ] ;
+       fhir:display [ fhir:v "Tack + suture" ] ;
+       fhir:definition [ fhir:v "Tack + sutur" ]
+     ] [
+       fhir:code [ fhir:v "glue_sutur" ] ;
+       fhir:display [ fhir:v "Glue + suture" ] ;
+       fhir:definition [ fhir:v "Lim + sutur" ]
+     ] [
+       fhir:code [ fhir:v "glue_tack_clip" ] ;
+       fhir:display [ fhir:v "Glue + tack/clip" ] ;
+       fhir:definition [ fhir:v "Lim + Tack/clips" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

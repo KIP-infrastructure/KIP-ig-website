@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/ATCAntibiotikaprofylakseDosisDKR> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ATCAntibiotikaprofylakseDosisDKR"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ATCAntibiotikaprofylakseDosisDKR</b></p><a name=\"ATCAntibiotikaprofylakseDosisDKR\"> </a><a name=\"hcATCAntibiotikaprofylakseDosisDKR\"> </a><a name=\"ATCAntibiotikaprofylakseDosisDKR-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-single_dose\">single_dose</a></td><td>Enkelt præoperativ dosis</td><td>Single dose / Engangsdosis</td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-multiple_doses\">multiple_doses</a></td><td>Flere doser i 1 døgn</td><td>Multiple doses / Flere doser</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-Intervals.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Intervals</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Intervals.html#Intervals-.621\">&gt;1</a></td><td>Mere end 1 døgn</td><td>&gt;1</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/ATCAntibiotikaprofylakseDosisDKR"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "ATCAntibiotikaprofylakseDosisDKR"] ; # 
+  fhir:title [ fhir:v "ATC - Antibiotikaprofylakse, dosis (DKR)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-10-14T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "ATC - Antibiotikaprofylakse, dosis (DKR)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "single_dose" ] ;
+         fhir:display [ fhir:v "Enkelt præoperativ dosis" ]
+       ] [
+         fhir:code [ fhir:v "multiple_doses" ] ;
+         fhir:display [ fhir:v "Flere doser i 1 døgn" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/Intervals"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v ">1" ] ;
+         fhir:display [ fhir:v "Mere end 1 døgn" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

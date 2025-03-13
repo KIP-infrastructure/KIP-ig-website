@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/SygdomsomraaderHaema> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SygdomsomraaderHaema"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SygdomsomraaderHaema</b></p><a name=\"SygdomsomraaderHaema\"> </a><a name=\"hcSygdomsomraaderHaema\"> </a><a name=\"SygdomsomraaderHaema-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Sygdomsomraader.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Sygdomsomraader</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-ald\">ald</a></td><td>ALD</td><td>Dansk Akut Leukæmi Database</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-cll\">cll</a></td><td>CLL</td><td>Dansk Kronisk Lymfatisk Leukæmi Database</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-damyda\">damyda</a></td><td>DAMYDA</td><td>Dansk Myelomatose Database</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-lyfo\">lyfo</a></td><td>LYFO</td><td>Dansk Lymfom Database</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-mds\">mds</a></td><td>MDS</td><td>Myelodysplastisk Syndrom Database</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/SygdomsomraaderHaema"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "SygdomsomraaderHaema"] ; # 
+  fhir:title [ fhir:v "Sygdomsområder - HÆMA"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2023-05-10T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Alle Sygdomsområder i KIP vedr. hæmatologi"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/Sygdomsomraader"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "ald" ] ;
+         fhir:display [ fhir:v "ALD" ]
+       ] [
+         fhir:code [ fhir:v "cll" ] ;
+         fhir:display [ fhir:v "CLL" ]
+       ] [
+         fhir:code [ fhir:v "damyda" ] ;
+         fhir:display [ fhir:v "DAMYDA" ]
+       ] [
+         fhir:code [ fhir:v "lyfo" ] ;
+         fhir:display [ fhir:v "LYFO" ]
+       ] [
+         fhir:code [ fhir:v "mds" ] ;
+         fhir:display [ fhir:v "MDS" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

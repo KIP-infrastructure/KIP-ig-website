@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/Symptoms> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Symptoms"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem Symptoms</b></p><a name=\"Symptoms\"> </a><a name=\"hcSymptoms\"> </a><a name=\"Symptoms-en-US\"> </a><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/Symptoms</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">visual_disorders<a name=\"Symptoms-visual_disorders\"> </a></td><td>Visual disorders</td><td>Visual disorders / Synsforstyrrelser</td></tr><tr><td style=\"white-space:nowrap\">dizziness<a name=\"Symptoms-dizziness\"> </a></td><td>Dizziness</td><td>Dizziness / Svimmelhed</td></tr><tr><td style=\"white-space:nowrap\">headache<a name=\"Symptoms-headache\"> </a></td><td>Headache</td><td>Headache / Hovedpine</td></tr><tr><td style=\"white-space:nowrap\">erythromelalgia<a name=\"Symptoms-erythromelalgia\"> </a></td><td>Erythromelalgia</td><td>Erythromelalgia / Erythromelagi</td></tr><tr><td style=\"white-space:nowrap\">necrosis<a name=\"Symptoms-necrosis\"> </a></td><td>Necrosis</td><td>Necrosis / Nekrose; sårdannelse</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/Symptoms"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "Symptoms"] ; # 
+  fhir:title [ fhir:v "Symptoms"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-07-11T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Symptoms"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "visual_disorders" ] ;
+     fhir:display [ fhir:v "Visual disorders" ] ;
+     fhir:definition [ fhir:v "Visual disorders / Synsforstyrrelser" ]
+  ] [
+     fhir:code [ fhir:v "dizziness" ] ;
+     fhir:display [ fhir:v "Dizziness" ] ;
+     fhir:definition [ fhir:v "Dizziness / Svimmelhed" ]
+  ] [
+     fhir:code [ fhir:v "headache" ] ;
+     fhir:display [ fhir:v "Headache" ] ;
+     fhir:definition [ fhir:v "Headache / Hovedpine" ]
+  ] [
+     fhir:code [ fhir:v "erythromelalgia" ] ;
+     fhir:display [ fhir:v "Erythromelalgia" ] ;
+     fhir:definition [ fhir:v "Erythromelalgia / Erythromelagi" ]
+  ] [
+     fhir:code [ fhir:v "necrosis" ] ;
+     fhir:display [ fhir:v "Necrosis" ] ;
+     fhir:definition [ fhir:v "Necrosis / Nekrose; sårdannelse" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

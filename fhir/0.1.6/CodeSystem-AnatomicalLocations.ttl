@@ -1,0 +1,183 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/AnatomicalLocations> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AnatomicalLocations"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem AnatomicalLocations</b></p><a name=\"AnatomicalLocations\"> </a><a name=\"hcAnatomicalLocations\"> </a><a name=\"AnatomicalLocations-en-US\"> </a><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/AnatomicalLocations</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">acarotistop<a name=\"AnatomicalLocations-acarotistop\"> </a></td><td>Top of arteria carotis</td><td>Top of arteria catoris</td></tr><tr><td style=\"white-space:nowrap\">acerebellisuperior<a name=\"AnatomicalLocations-acerebellisuperior\"> </a></td><td>Arteria cerebelli superior</td><td>Arteria cerebelli superior</td></tr><tr><td style=\"white-space:nowrap\">acerebelliantinf<a name=\"AnatomicalLocations-acerebelliantinf\"> </a></td><td>Arteria cerebelli anterior inferior</td><td>Arteria cerebelli anterior inferior</td></tr><tr><td style=\"white-space:nowrap\">acerebelliposinf<a name=\"AnatomicalLocations-acerebelliposinf\"> </a></td><td>Arteria cerebelli posterior inferior</td><td>Arteria cerebelli posterior inferior</td></tr><tr><td style=\"white-space:nowrap\">acerebrimedia-acommunicanspos<a name=\"AnatomicalLocations-acerebrimedia-acommunicanspos\"> </a></td><td>Arteria cerebri media =&lt; arteria communicans posterior</td><td>Arteria cerebri media =&lt; arteria communicans posterior</td></tr><tr><td style=\"white-space:nowrap\">ileocolica_centralt<a name=\"AnatomicalLocations-ileocolica_centralt\"> </a></td><td>Ileocolica centralt</td><td>Ileocolica centralt</td></tr><tr><td style=\"white-space:nowrap\">ileocolica_perifert<a name=\"AnatomicalLocations-ileocolica_perifert\"> </a></td><td>Ileocolica perifert</td><td>Ileocolica perifert</td></tr><tr><td style=\"white-space:nowrap\">a_colica_media_centralt<a name=\"AnatomicalLocations-a_colica_media_centralt\"> </a></td><td>A. colica media centralt</td><td>A. colica media centralt</td></tr><tr><td style=\"white-space:nowrap\">a_colica_media_hoejre<a name=\"AnatomicalLocations-a_colica_media_hoejre\"> </a></td><td>Højre gren af a. colica media</td><td>Højre gren af a. colica media</td></tr><tr><td style=\"white-space:nowrap\">a_colica_media_venstre<a name=\"AnatomicalLocations-a_colica_media_venstre\"> </a></td><td>Venstre gren af  a. colica media</td><td>Venstre gren af  a. colica media</td></tr><tr><td style=\"white-space:nowrap\">a_mesenterica_inferior<a name=\"AnatomicalLocations-a_mesenterica_inferior\"> </a></td><td>A. mesenterica inf.</td><td>A. mesenterica inf.</td></tr><tr><td style=\"white-space:nowrap\">a_colica_sinistra<a name=\"AnatomicalLocations-a_colica_sinistra\"> </a></td><td>A. colica sin.</td><td>A. colica sin.</td></tr><tr><td style=\"white-space:nowrap\">a_mesenterica_inferior_perifert<a name=\"AnatomicalLocations-a_mesenterica_inferior_perifert\"> </a></td><td>A. mesenterica inf perifert</td><td>A. mesenterica inf perifert</td></tr><tr><td style=\"white-space:nowrap\">aa_sigmoideae<a name=\"AnatomicalLocations-aa_sigmoideae\"> </a></td><td>Aa. sigmoideae</td><td>Aa. sigmoideae</td></tr><tr><td style=\"white-space:nowrap\">a_rectalis_superior<a name=\"AnatomicalLocations-a_rectalis_superior\"> </a></td><td>A. rectalis superior</td><td>A. rectalis superior</td></tr><tr><td style=\"white-space:nowrap\">vena_sacralis<a name=\"AnatomicalLocations-vena_sacralis\"> </a></td><td>Vena sacralis</td><td>Vena sacralis / Sakralvene</td></tr><tr><td style=\"white-space:nowrap\">gastrocolic_ligament<a name=\"AnatomicalLocations-gastrocolic_ligament\"> </a></td><td>Gastrokoliske ligament</td><td>Gastrokoliske ligament</td></tr><tr><td style=\"white-space:nowrap\">adneks<a name=\"AnatomicalLocations-adneks\"> </a></td><td>Adneks</td><td>Adneks</td></tr><tr><td style=\"white-space:nowrap\">lymfeknude_lateral<a name=\"AnatomicalLocations-lymfeknude_lateral\"> </a></td><td>Lateralt lymfeknudecompartment på bækken væg</td><td>Lateralt lymfeknudecompartment på bækken væg</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"AnatomicalLocations-other\"> </a></td><td>Other</td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">acl<a name=\"AnatomicalLocations-acl\"> </a></td><td>ACL</td><td>ACL</td></tr><tr><td style=\"white-space:nowrap\">pcl<a name=\"AnatomicalLocations-pcl\"> </a></td><td>PCL</td><td>PCL</td></tr><tr><td style=\"white-space:nowrap\">mcl<a name=\"AnatomicalLocations-mcl\"> </a></td><td>MCL</td><td>MCL</td></tr><tr><td style=\"white-space:nowrap\">lcl<a name=\"AnatomicalLocations-lcl\"> </a></td><td>LCL</td><td>LCL</td></tr><tr><td style=\"white-space:nowrap\">plc<a name=\"AnatomicalLocations-plc\"> </a></td><td>PLC</td><td>PLC</td></tr><tr><td style=\"white-space:nowrap\">all<a name=\"AnatomicalLocations-all\"> </a></td><td>ALL</td><td>ALL</td></tr><tr><td style=\"white-space:nowrap\">lateral_meniscus<a name=\"AnatomicalLocations-lateral_meniscus\"> </a></td><td>Lateral meniscus</td><td>Lateral meniscus / Laterale menisk</td></tr><tr><td style=\"white-space:nowrap\">medial_meniscus<a name=\"AnatomicalLocations-medial_meniscus\"> </a></td><td>Medial meniscus</td><td>Medial meniscus / Mediale menisk</td></tr><tr><td style=\"white-space:nowrap\">cartilage<a name=\"AnatomicalLocations-cartilage\"> </a></td><td>Cartilage</td><td>Cartilage / Brusk</td></tr><tr><td style=\"white-space:nowrap\">Patella_medial<a name=\"AnatomicalLocations-Patella_medial\"> </a></td><td>Patella (mediale facet)</td><td>Patella (mediale facet)</td></tr><tr><td style=\"white-space:nowrap\">Patella_lateral<a name=\"AnatomicalLocations-Patella_lateral\"> </a></td><td>Patella (laterale facet)</td><td>Patella (laterale facet)</td></tr><tr><td style=\"white-space:nowrap\">Trochlea_femoris<a name=\"AnatomicalLocations-Trochlea_femoris\"> </a></td><td>Trochlea femoris</td><td>Trochlea femoris</td></tr><tr><td style=\"white-space:nowrap\">Med_femur_kondyl<a name=\"AnatomicalLocations-Med_femur_kondyl\"> </a></td><td>Med. femur kondyl</td><td>Med. femur kondyl</td></tr><tr><td style=\"white-space:nowrap\">Med_tibia_plateau<a name=\"AnatomicalLocations-Med_tibia_plateau\"> </a></td><td>Med. tibia plateau</td><td>Med. tibia plateau</td></tr><tr><td style=\"white-space:nowrap\">Lat_femur_kondyl<a name=\"AnatomicalLocations-Lat_femur_kondyl\"> </a></td><td>Lat. femur kondyl</td><td>Lat. femur kondyl</td></tr><tr><td style=\"white-space:nowrap\">Lat_tibia_plateau<a name=\"AnatomicalLocations-Lat_tibia_plateau\"> </a></td><td>Lat. tibia plateau</td><td>Lat. tibia plateau</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/AnatomicalLocations"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "AnatomicalLocations"] ; # 
+  fhir:title [ fhir:v "Anatomy locations, not specified in classifcations (SKS, etc.)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-14T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Anatomy locations, not specified in classifcations (SKS, etc.)"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "36"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "acarotistop" ] ;
+     fhir:display [ fhir:v "Top of arteria carotis" ] ;
+     fhir:definition [ fhir:v "Top of arteria catoris" ]
+  ] [
+     fhir:code [ fhir:v "acerebellisuperior" ] ;
+     fhir:display [ fhir:v "Arteria cerebelli superior" ] ;
+     fhir:definition [ fhir:v "Arteria cerebelli superior" ]
+  ] [
+     fhir:code [ fhir:v "acerebelliantinf" ] ;
+     fhir:display [ fhir:v "Arteria cerebelli anterior inferior" ] ;
+     fhir:definition [ fhir:v "Arteria cerebelli anterior inferior" ]
+  ] [
+     fhir:code [ fhir:v "acerebelliposinf" ] ;
+     fhir:display [ fhir:v "Arteria cerebelli posterior inferior" ] ;
+     fhir:definition [ fhir:v "Arteria cerebelli posterior inferior" ]
+  ] [
+     fhir:code [ fhir:v "acerebrimedia-acommunicanspos" ] ;
+     fhir:display [ fhir:v "Arteria cerebri media =< arteria communicans posterior" ] ;
+     fhir:definition [ fhir:v "Arteria cerebri media =< arteria communicans posterior" ]
+  ] [
+     fhir:code [ fhir:v "ileocolica_centralt" ] ;
+     fhir:display [ fhir:v "Ileocolica centralt" ] ;
+     fhir:definition [ fhir:v "Ileocolica centralt" ]
+  ] [
+     fhir:code [ fhir:v "ileocolica_perifert" ] ;
+     fhir:display [ fhir:v "Ileocolica perifert" ] ;
+     fhir:definition [ fhir:v "Ileocolica perifert" ]
+  ] [
+     fhir:code [ fhir:v "a_colica_media_centralt" ] ;
+     fhir:display [ fhir:v "A. colica media centralt" ] ;
+     fhir:definition [ fhir:v "A. colica media centralt" ]
+  ] [
+     fhir:code [ fhir:v "a_colica_media_hoejre" ] ;
+     fhir:display [ fhir:v "Højre gren af a. colica media" ] ;
+     fhir:definition [ fhir:v "Højre gren af a. colica media" ]
+  ] [
+     fhir:code [ fhir:v "a_colica_media_venstre" ] ;
+     fhir:display [ fhir:v "Venstre gren af  a. colica media" ] ;
+     fhir:definition [ fhir:v "Venstre gren af  a. colica media" ]
+  ] [
+     fhir:code [ fhir:v "a_mesenterica_inferior" ] ;
+     fhir:display [ fhir:v "A. mesenterica inf." ] ;
+     fhir:definition [ fhir:v "A. mesenterica inf." ]
+  ] [
+     fhir:code [ fhir:v "a_colica_sinistra" ] ;
+     fhir:display [ fhir:v "A. colica sin." ] ;
+     fhir:definition [ fhir:v "A. colica sin." ]
+  ] [
+     fhir:code [ fhir:v "a_mesenterica_inferior_perifert" ] ;
+     fhir:display [ fhir:v "A. mesenterica inf perifert" ] ;
+     fhir:definition [ fhir:v "A. mesenterica inf perifert" ]
+  ] [
+     fhir:code [ fhir:v "aa_sigmoideae" ] ;
+     fhir:display [ fhir:v "Aa. sigmoideae" ] ;
+     fhir:definition [ fhir:v "Aa. sigmoideae" ]
+  ] [
+     fhir:code [ fhir:v "a_rectalis_superior" ] ;
+     fhir:display [ fhir:v "A. rectalis superior" ] ;
+     fhir:definition [ fhir:v "A. rectalis superior" ]
+  ] [
+     fhir:code [ fhir:v "vena_sacralis" ] ;
+     fhir:display [ fhir:v "Vena sacralis" ] ;
+     fhir:definition [ fhir:v "Vena sacralis / Sakralvene" ]
+  ] [
+     fhir:code [ fhir:v "gastrocolic_ligament" ] ;
+     fhir:display [ fhir:v "Gastrokoliske ligament" ] ;
+     fhir:definition [ fhir:v "Gastrokoliske ligament" ]
+  ] [
+     fhir:code [ fhir:v "adneks" ] ;
+     fhir:display [ fhir:v "Adneks" ] ;
+     fhir:definition [ fhir:v "Adneks" ]
+  ] [
+     fhir:code [ fhir:v "lymfeknude_lateral" ] ;
+     fhir:display [ fhir:v "Lateralt lymfeknudecompartment på bækken væg" ] ;
+     fhir:definition [ fhir:v "Lateralt lymfeknudecompartment på bækken væg" ]
+  ] [
+     fhir:code [ fhir:v "other" ] ;
+     fhir:display [ fhir:v "Other" ] ;
+     fhir:definition [ fhir:v "Other" ]
+  ] [
+     fhir:code [ fhir:v "acl" ] ;
+     fhir:display [ fhir:v "ACL" ] ;
+     fhir:definition [ fhir:v "ACL" ]
+  ] [
+     fhir:code [ fhir:v "pcl" ] ;
+     fhir:display [ fhir:v "PCL" ] ;
+     fhir:definition [ fhir:v "PCL" ]
+  ] [
+     fhir:code [ fhir:v "mcl" ] ;
+     fhir:display [ fhir:v "MCL" ] ;
+     fhir:definition [ fhir:v "MCL" ]
+  ] [
+     fhir:code [ fhir:v "lcl" ] ;
+     fhir:display [ fhir:v "LCL" ] ;
+     fhir:definition [ fhir:v "LCL" ]
+  ] [
+     fhir:code [ fhir:v "plc" ] ;
+     fhir:display [ fhir:v "PLC" ] ;
+     fhir:definition [ fhir:v "PLC" ]
+  ] [
+     fhir:code [ fhir:v "all" ] ;
+     fhir:display [ fhir:v "ALL" ] ;
+     fhir:definition [ fhir:v "ALL" ]
+  ] [
+     fhir:code [ fhir:v "lateral_meniscus" ] ;
+     fhir:display [ fhir:v "Lateral meniscus" ] ;
+     fhir:definition [ fhir:v "Lateral meniscus / Laterale menisk" ]
+  ] [
+     fhir:code [ fhir:v "medial_meniscus" ] ;
+     fhir:display [ fhir:v "Medial meniscus" ] ;
+     fhir:definition [ fhir:v "Medial meniscus / Mediale menisk" ]
+  ] [
+     fhir:code [ fhir:v "cartilage" ] ;
+     fhir:display [ fhir:v "Cartilage" ] ;
+     fhir:definition [ fhir:v "Cartilage / Brusk" ]
+  ] [
+     fhir:code [ fhir:v "Patella_medial" ] ;
+     fhir:display [ fhir:v "Patella (mediale facet)" ] ;
+     fhir:definition [ fhir:v "Patella (mediale facet)" ]
+  ] [
+     fhir:code [ fhir:v "Patella_lateral" ] ;
+     fhir:display [ fhir:v "Patella (laterale facet)" ] ;
+     fhir:definition [ fhir:v "Patella (laterale facet)" ]
+  ] [
+     fhir:code [ fhir:v "Trochlea_femoris" ] ;
+     fhir:display [ fhir:v "Trochlea femoris" ] ;
+     fhir:definition [ fhir:v "Trochlea femoris" ]
+  ] [
+     fhir:code [ fhir:v "Med_femur_kondyl" ] ;
+     fhir:display [ fhir:v "Med. femur kondyl" ] ;
+     fhir:definition [ fhir:v "Med. femur kondyl" ]
+  ] [
+     fhir:code [ fhir:v "Med_tibia_plateau" ] ;
+     fhir:display [ fhir:v "Med. tibia plateau" ] ;
+     fhir:definition [ fhir:v "Med. tibia plateau" ]
+  ] [
+     fhir:code [ fhir:v "Lat_femur_kondyl" ] ;
+     fhir:display [ fhir:v "Lat. femur kondyl" ] ;
+     fhir:definition [ fhir:v "Lat. femur kondyl" ]
+  ] [
+     fhir:code [ fhir:v "Lat_tibia_plateau" ] ;
+     fhir:display [ fhir:v "Lat. tibia plateau" ] ;
+     fhir:definition [ fhir:v "Lat. tibia plateau" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

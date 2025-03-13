@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "RKlassifikationTilDegc",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet RKlassifikationTilDegc</b></p><a name=\"RKlassifikationTilDegc\"> </a><a name=\"hcRKlassifikationTilDegc\"> </a><a name=\"RKlassifikationTilDegc-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-ResidualTumorClassification.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ResidualTumorClassification</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ResidualTumorClassification.html#ResidualTumorClassification-r01\">r01</a></td><td>R0/R1 - Ingen synlig resttumor</td><td>No visible presence of residual tumor</td></tr><tr><td><a href=\"CodeSystem-ResidualTumorClassification.html#ResidualTumorClassification-r2\">r2</a></td><td>R2 - Makroskopisk resttumor</td><td>R2 Macroscopic residual tumor.</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/RKlassifikationTilDegc",
+  "version" : "0.1.6",
+  "name" : "RKlassifikationTilDegc",
+  "title" : "R-klassifikation til DEGC",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-09-21T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "R-klassifikation (Residual tumor) til DEGC",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/ResidualTumorClassification",
+      "concept" : [{
+        "code" : "r01",
+        "display" : "R0/R1 - Ingen synlig resttumor"
+      },
+      {
+        "code" : "r2",
+        "display" : "R2 - Makroskopisk resttumor"
+      }]
+    }]
+  }
+}

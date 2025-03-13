@@ -1,0 +1,300 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/FixationCruciateLigaments> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "FixationCruciateLigaments"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem FixationCruciateLigaments</b></p><a name=\"FixationCruciateLigaments\"> </a><a name=\"hcFixationCruciateLigaments\"> </a><a name=\"FixationCruciateLigaments-en-US\"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/FixationCruciateLigaments</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">arthrek_biotenodesis_plla<a name=\"FixationCruciateLigaments-arthrek_biotenodesis_plla\"> </a></td><td>Arthrek Biotenodesis PLLA skrue</td><td>Arthrek Biotenodesis PLLA skrue [Tibia]</td></tr><tr><td style=\"white-space:nowrap\">arthrek_plla_retro<a name=\"FixationCruciateLigaments-arthrek_plla_retro\"> </a></td><td>Arthrek PLLA retro-skrue</td><td>Arthrek PLLA retro-skrue [Tibia]</td></tr><tr><td style=\"white-space:nowrap\">arthrek_plla<a name=\"FixationCruciateLigaments-arthrek_plla\"> </a></td><td>Arthrek PLLA skrue</td><td>Arthrek PLLA skrue [Tibia]</td></tr><tr><td style=\"white-space:nowrap\">arthrek_titanium<a name=\"FixationCruciateLigaments-arthrek_titanium\"> </a></td><td>Arthrek Titanium skrue</td><td>Arthrek Titanium skrue [Tibia]</td></tr><tr><td style=\"white-space:nowrap\">arthrex_biotenodesis_plla<a name=\"FixationCruciateLigaments-arthrex_biotenodesis_plla\"> </a></td><td>Arthrex Biotenodesis PLLA skrue</td><td>Arthrex Biotenodesis PLLA skrue [Femur]</td></tr><tr><td style=\"white-space:nowrap\">arthrex_delta<a name=\"FixationCruciateLigaments-arthrex_delta\"> </a></td><td>Arthrex Deltaskrue</td><td>Arthrex Deltaskrue [Tibia]</td></tr><tr><td style=\"white-space:nowrap\">arthrex_graftbolt<a name=\"FixationCruciateLigaments-arthrex_graftbolt\"> </a></td><td>Arthrex GraftBolt</td><td>Arthrex GraftBolt [Tibia]</td></tr><tr><td style=\"white-space:nowrap\">arthrex_peek<a name=\"FixationCruciateLigaments-arthrex_peek\"> </a></td><td>Arthrex PEEK Skrue</td><td>Arthrex PEEK Skrue [Femur + Tibia]</td></tr><tr><td style=\"white-space:nowrap\">arthrex_plla<a name=\"FixationCruciateLigaments-arthrex_plla\"> </a></td><td>Arthrex PLLA skrue</td><td>Arthrex PLLA skrue [Femur]</td></tr><tr><td style=\"white-space:nowrap\">arthrex_retrobutton<a name=\"FixationCruciateLigaments-arthrex_retrobutton\"> </a></td><td>Arthrex Retrobutton</td><td>Arthrex Retrobutton [Femur]</td></tr><tr><td style=\"white-space:nowrap\">arthrex_tight_rope<a name=\"FixationCruciateLigaments-arthrex_tight_rope\"> </a></td><td>Arthrex Tight Rope</td><td>Arthrex Tight Rope [Femur + Tibia]</td></tr><tr><td style=\"white-space:nowrap\">arthrex_titanium<a name=\"FixationCruciateLigaments-arthrex_titanium\"> </a></td><td>Arthrex Titanium skrue</td><td>Arthrex Titanium skrue [Femur]</td></tr><tr><td style=\"white-space:nowrap\">arthrex_transfix<a name=\"FixationCruciateLigaments-arthrex_transfix\"> </a></td><td>Arthrex Transfix</td><td>Arthrex Transfix [Femur]</td></tr><tr><td style=\"white-space:nowrap\">arthrocare_bilok_trans<a name=\"FixationCruciateLigaments-arthrocare_bilok_trans\"> </a></td><td>Arthrocare Bilok Trans-skrue</td><td>Arthrocare Bilok Trans-skrue [Femur]</td></tr><tr><td style=\"white-space:nowrap\">atlantech_bilok<a name=\"FixationCruciateLigaments-atlantech_bilok\"> </a></td><td>Atlantech Bilok Skrue</td><td>Atlantech Bilok Skrue [Femur + Tibia]</td></tr><tr><td style=\"white-space:nowrap\">atlantech_cobra<a name=\"FixationCruciateLigaments-atlantech_cobra\"> </a></td><td>Atlantech Cobra</td><td>Atlantech Cobra [Tibia]</td></tr><tr><td style=\"white-space:nowrap\">atlantech_metal<a name=\"FixationCruciateLigaments-atlantech_metal\"> </a></td><td>Atlantech metal skrue</td><td>Atlantech metal skrue [Femur + Tibia]</td></tr><tr><td style=\"white-space:nowrap\">biomet_centraloc<a name=\"FixationCruciateLigaments-biomet_centraloc\"> </a></td><td>Biomet Centraloc</td><td>Biomet Centraloc [Tibia]</td></tr><tr><td style=\"white-space:nowrap\">biomet_ez_loc<a name=\"FixationCruciateLigaments-biomet_ez_loc\"> </a></td><td>Biomet EZ Loc</td><td>Biomet EZ Loc [Femur]</td></tr><tr><td style=\"white-space:nowrap\">biomet_metal_tunneloc<a name=\"FixationCruciateLigaments-biomet_metal_tunneloc\"> </a></td><td>Biomet metal skrue (Tunneloc)</td><td>Biomet metal skrue (Tunneloc) [Femur + Tibia]</td></tr><tr><td style=\"white-space:nowrap\">biomet_peek_tibia_nail_tunneloc<a name=\"FixationCruciateLigaments-biomet_peek_tibia_nail_tunneloc\"> </a></td><td>Biomet peek tibia nail (Tunneloc)</td><td>Biomet peek tibia nail (Tunneloc) [Tibia]</td></tr><tr><td style=\"white-space:nowrap\">biomet_plla_gentlethread<a name=\"FixationCruciateLigaments-biomet_plla_gentlethread\"> </a></td><td>Biomet PLLA skrue (Gentletread)</td><td>Biomet PLLA skrue (Gentletread) [Femur + Tibia]</td></tr><tr><td style=\"white-space:nowrap\">biomet_togglelock_zipploop<a name=\"FixationCruciateLigaments-biomet_togglelock_zipploop\"> </a></td><td>Biomet Togglelock Zipploop</td><td>Biomet Togglelock Zipploop [Femur]</td></tr><tr><td style=\"white-space:nowrap\">biomet_washerloc<a name=\"FixationCruciateLigaments-biomet_washerloc\"> </a></td><td>Biomet Washerloc</td><td>Biomet Washerloc [Tibia]</td></tr><tr><td style=\"white-space:nowrap\">cayenne_aperfix<a name=\"FixationCruciateLigaments-cayenne_aperfix\"> </a></td><td>Cayenne Aperfix</td><td>Cayenne Aperfix [Femur + Tibia]</td></tr><tr><td style=\"white-space:nowrap\">conmed_guardsman<a name=\"FixationCruciateLigaments-conmed_guardsman\"> </a></td><td>Conmed Guardsman metal</td><td>Conmed Guardsman metal [Femur]</td></tr><tr><td style=\"white-space:nowrap\">conmed_martryx<a name=\"FixationCruciateLigaments-conmed_martryx\"> </a></td><td>ConMed Martryx</td><td>ConMed Martryx [Tibia]</td></tr><tr><td style=\"white-space:nowrap\">conmed_metal_propel<a name=\"FixationCruciateLigaments-conmed_metal_propel\"> </a></td><td>ConMed Metal skrue (Propel)</td><td>ConMed Metal skrue (Propel) [Femur + Tibia]</td></tr><tr><td style=\"white-space:nowrap\">conmed_plla_bioscrew<a name=\"FixationCruciateLigaments-conmed_plla_bioscrew\"> </a></td><td>ConMed PLLA skrue (Bioscrew)</td><td>ConMed PLLA skrue (Bioscrew) [Femur + Tibia]</td></tr><tr><td style=\"white-space:nowrap\">conmed_xo_button<a name=\"FixationCruciateLigaments-conmed_xo_button\"> </a></td><td>ConMed XO Button</td><td>ConMed XO Button [Femur]</td></tr><tr><td style=\"white-space:nowrap\">depuy_milagro_advance_peek<a name=\"FixationCruciateLigaments-depuy_milagro_advance_peek\"> </a></td><td>Depuy Milagro ADVANCE PEEK</td><td>Depuy Milagro ADVANCE PEEK [Tibia]</td></tr><tr><td style=\"white-space:nowrap\">depuy_mitek_femoral_intrafix<a name=\"FixationCruciateLigaments-depuy_mitek_femoral_intrafix\"> </a></td><td>Depuy Mitek Femoral Intrafix</td><td>Depuy Mitek Femoral Intrafix [Femur]</td></tr><tr><td style=\"white-space:nowrap\">depuy_mitek_intrafix<a name=\"FixationCruciateLigaments-depuy_mitek_intrafix\"> </a></td><td>Depuy Mitek Intrafix</td><td>Depuy Mitek Intrafix [Tibia]</td></tr><tr><td style=\"white-space:nowrap\">depuy_mitek_intrafix_bio<a name=\"FixationCruciateLigaments-depuy_mitek_intrafix_bio\"> </a></td><td>Depuy Mitek Intrafix Bio</td><td>Depuy Mitek Intrafix Bio [Tibia]</td></tr><tr><td style=\"white-space:nowrap\">depuy_mitek_milagro<a name=\"FixationCruciateLigaments-depuy_mitek_milagro\"> </a></td><td>Depuy Mitek Milagro skrue</td><td>Depuy Mitek Milagro skrue [Femur + Tibia]</td></tr><tr><td style=\"white-space:nowrap\">depuy_mitek_rigidfix<a name=\"FixationCruciateLigaments-depuy_mitek_rigidfix\"> </a></td><td>Depuy Mitek Rigidfix</td><td>Depuy Mitek Rigidfix [Femur]</td></tr><tr><td style=\"white-space:nowrap\">depuy_mitek_titanium<a name=\"FixationCruciateLigaments-depuy_mitek_titanium\"> </a></td><td>Depuy Mitek Titanium skrue</td><td>Depuy Mitek Titanium skrue [Femur + Tibia]</td></tr><tr><td style=\"white-space:nowrap\">depuy_rigidfix_curve<a name=\"FixationCruciateLigaments-depuy_rigidfix_curve\"> </a></td><td>Depuy Rigidfix CURVE</td><td>Depuy Rigidfix CURVE [Femur]</td></tr><tr><td style=\"white-space:nowrap\">depuy_rigidloop_adjustable<a name=\"FixationCruciateLigaments-depuy_rigidloop_adjustable\"> </a></td><td>Depuy Rigidloop Adjustable</td><td>Depuy Rigidloop Adjustable [Tibia]</td></tr><tr><td style=\"white-space:nowrap\">depuy_rigidloop_adjustable_loop<a name=\"FixationCruciateLigaments-depuy_rigidloop_adjustable_loop\"> </a></td><td>Depuy RIGIDLOOP adjustable loop</td><td>Depuy RIGIDLOOP adjustable loop [Femur]</td></tr><tr><td style=\"white-space:nowrap\">depuy_rigidloop_fixed_loop<a name=\"FixationCruciateLigaments-depuy_rigidloop_fixed_loop\"> </a></td><td>Depuy RIGIDLOOP fixed loop</td><td>Depuy RIGIDLOOP fixed loop [Femur]</td></tr><tr><td style=\"white-space:nowrap\">femoral_intrafix<a name=\"FixationCruciateLigaments-femoral_intrafix\"> </a></td><td>Femoral Intrafix</td><td>Femoral Intrafix [Femur]</td></tr><tr><td style=\"white-space:nowrap\">inion_hexalon<a name=\"FixationCruciateLigaments-inion_hexalon\"> </a></td><td>Inion Hexalon skrue</td><td>Inion Hexalon skrue [Femur + Tibia]</td></tr><tr><td style=\"white-space:nowrap\">intrafix_advance<a name=\"FixationCruciateLigaments-intrafix_advance\"> </a></td><td>Intrafix Advance</td><td>Intrafix Advance [Tibia]</td></tr><tr><td style=\"white-space:nowrap\">kramper<a name=\"FixationCruciateLigaments-kramper\"> </a></td><td>Kramper</td><td>Kramper [Tibia]</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_biosure_peek<a name=\"FixationCruciateLigaments-smith.38nephew_biosure_peek\"> </a></td><td>Smith &amp; Nephew Biosure PEEK skrue</td><td>Smith &amp; Nephew Biosure PEEK skrue [Femur + Tibia]</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_biosure_regensorb<a name=\"FixationCruciateLigaments-smith.38nephew_biosure_regensorb\"> </a></td><td>Smith &amp; Nephew Biosure Regensorb</td><td>Smith &amp; Nephew Biosure Regensorb [Tibia]</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_calaxo<a name=\"FixationCruciateLigaments-smith.38nephew_calaxo\"> </a></td><td>Smith &amp; Nephew Calaxo</td><td>Smith &amp; Nephew Calaxo [Femur]</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_endobutton_cl<a name=\"FixationCruciateLigaments-smith.38nephew_endobutton_cl\"> </a></td><td>Smith &amp; Nephew Endobutton CL</td><td>Smith &amp; Nephew Endobutton CL [Femur]</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_rci_calaxo<a name=\"FixationCruciateLigaments-smith.38nephew_rci_calaxo\"> </a></td><td>Smith &amp; Nephew RCI Calaxo</td><td>Smith &amp; Nephew RCI Calaxo [Tibia]</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_rci_metal<a name=\"FixationCruciateLigaments-smith.38nephew_rci_metal\"> </a></td><td>Smith &amp; Nephew RCI metal</td><td>Smith &amp; Nephew RCI metal [Femur + Tibia]</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_rci_plla<a name=\"FixationCruciateLigaments-smith.38nephew_rci_plla\"> </a></td><td>Smith &amp; Nephew RCI PLLA</td><td>Smith &amp; Nephew RCI PLLA [Femur + Tibia]</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_rci_plla/ha<a name=\"FixationCruciateLigaments-smith.38nephew_rci_plla.47ha\"> </a></td><td>Smith &amp; Nephew RCI PLLA/HA</td><td>Smith &amp; Nephew RCI PLLA/HA [Femur + Tibia]</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_softsilk_metal<a name=\"FixationCruciateLigaments-smith.38nephew_softsilk_metal\"> </a></td><td>Smith &amp; Nephew Softsilk metal</td><td>Smith &amp; Nephew Softsilk metal [Femur + Tibia]</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_ultrabutton<a name=\"FixationCruciateLigaments-smith.38nephew_ultrabutton\"> </a></td><td>Smith &amp; Nephew UltraButton</td><td>Smith &amp; Nephew UltraButton [Femur]</td></tr><tr><td style=\"white-space:nowrap\">storz_flip-tac<a name=\"FixationCruciateLigaments-storz_flip-tac\"> </a></td><td>Storz Flip-Tac</td><td>Storz Flip-Tac [Femur]</td></tr><tr><td style=\"white-space:nowrap\">storz_megafix<a name=\"FixationCruciateLigaments-storz_megafix\"> </a></td><td>Storz Megafix</td><td>Storz Megafix [Tibia]</td></tr><tr><td style=\"white-space:nowrap\">stryker_bioosteon<a name=\"FixationCruciateLigaments-stryker_bioosteon\"> </a></td><td>Stryker Bioosteon skrue</td><td>Stryker Bioosteon skrue [Femur + Tibia]</td></tr><tr><td style=\"white-space:nowrap\">stryker_crossscrew_ha/plla<a name=\"FixationCruciateLigaments-stryker_crossscrew_ha.47plla\"> </a></td><td>Stryker Crossscrew (HA/PLLA)</td><td>Stryker Crossscrew (HA/PLLA) [Femur + Tibia]</td></tr><tr><td style=\"white-space:nowrap\">stryker_crossscrew_titanium<a name=\"FixationCruciateLigaments-stryker_crossscrew_titanium\"> </a></td><td>Stryker Crossscrew (Titanium)</td><td>Stryker Crossscrew (Titanium) [Femur + Tibia]</td></tr><tr><td style=\"white-space:nowrap\">stryker_plla<a name=\"FixationCruciateLigaments-stryker_plla\"> </a></td><td>Stryker PLLA skrue</td><td>Stryker PLLA skrue [Femur + Tibia]</td></tr><tr><td style=\"white-space:nowrap\">stryker_titanium<a name=\"FixationCruciateLigaments-stryker_titanium\"> </a></td><td>Stryker titanium skrue</td><td>Stryker titanium skrue [Femur + Tibia]</td></tr><tr><td style=\"white-space:nowrap\">stryker_versitomic_g-lok<a name=\"FixationCruciateLigaments-stryker_versitomic_g-lok\"> </a></td><td>Stryker VersiTomic G-lok</td><td>Stryker VersiTomic G-lok [Femur]</td></tr><tr><td style=\"white-space:nowrap\">bona_canal<a name=\"FixationCruciateLigaments-bona_canal\"> </a></td><td>Knoglekanal</td><td>Knoglekanal [Tibia]</td></tr><tr><td style=\"white-space:nowrap\">screw/washer<a name=\"FixationCruciateLigaments-screw.47washer\"> </a></td><td>Skrue/washer</td><td>Skrue/washer [Femur + Tibia]</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/FixationCruciateLigaments"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "FixationCruciateLigaments"] ; # 
+  fhir:title [ fhir:v "Fixation for cruciate ligaments (femur and tibia); types of screws"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-09-19T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Fixation for cruciate ligaments (femur and tibia), types of screws"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "65"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "arthrek_biotenodesis_plla" ] ;
+     fhir:display [ fhir:v "Arthrek Biotenodesis PLLA skrue" ] ;
+     fhir:definition [ fhir:v "Arthrek Biotenodesis PLLA skrue [Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "arthrek_plla_retro" ] ;
+     fhir:display [ fhir:v "Arthrek PLLA retro-skrue" ] ;
+     fhir:definition [ fhir:v "Arthrek PLLA retro-skrue [Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "arthrek_plla" ] ;
+     fhir:display [ fhir:v "Arthrek PLLA skrue" ] ;
+     fhir:definition [ fhir:v "Arthrek PLLA skrue [Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "arthrek_titanium" ] ;
+     fhir:display [ fhir:v "Arthrek Titanium skrue" ] ;
+     fhir:definition [ fhir:v "Arthrek Titanium skrue [Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "arthrex_biotenodesis_plla" ] ;
+     fhir:display [ fhir:v "Arthrex Biotenodesis PLLA skrue" ] ;
+     fhir:definition [ fhir:v "Arthrex Biotenodesis PLLA skrue [Femur]" ]
+  ] [
+     fhir:code [ fhir:v "arthrex_delta" ] ;
+     fhir:display [ fhir:v "Arthrex Deltaskrue" ] ;
+     fhir:definition [ fhir:v "Arthrex Deltaskrue [Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "arthrex_graftbolt" ] ;
+     fhir:display [ fhir:v "Arthrex GraftBolt" ] ;
+     fhir:definition [ fhir:v "Arthrex GraftBolt [Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "arthrex_peek" ] ;
+     fhir:display [ fhir:v "Arthrex PEEK Skrue" ] ;
+     fhir:definition [ fhir:v "Arthrex PEEK Skrue [Femur + Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "arthrex_plla" ] ;
+     fhir:display [ fhir:v "Arthrex PLLA skrue" ] ;
+     fhir:definition [ fhir:v "Arthrex PLLA skrue [Femur]" ]
+  ] [
+     fhir:code [ fhir:v "arthrex_retrobutton" ] ;
+     fhir:display [ fhir:v "Arthrex Retrobutton" ] ;
+     fhir:definition [ fhir:v "Arthrex Retrobutton [Femur]" ]
+  ] [
+     fhir:code [ fhir:v "arthrex_tight_rope" ] ;
+     fhir:display [ fhir:v "Arthrex Tight Rope" ] ;
+     fhir:definition [ fhir:v "Arthrex Tight Rope [Femur + Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "arthrex_titanium" ] ;
+     fhir:display [ fhir:v "Arthrex Titanium skrue" ] ;
+     fhir:definition [ fhir:v "Arthrex Titanium skrue [Femur]" ]
+  ] [
+     fhir:code [ fhir:v "arthrex_transfix" ] ;
+     fhir:display [ fhir:v "Arthrex Transfix" ] ;
+     fhir:definition [ fhir:v "Arthrex Transfix [Femur]" ]
+  ] [
+     fhir:code [ fhir:v "arthrocare_bilok_trans" ] ;
+     fhir:display [ fhir:v "Arthrocare Bilok Trans-skrue" ] ;
+     fhir:definition [ fhir:v "Arthrocare Bilok Trans-skrue [Femur]" ]
+  ] [
+     fhir:code [ fhir:v "atlantech_bilok" ] ;
+     fhir:display [ fhir:v "Atlantech Bilok Skrue" ] ;
+     fhir:definition [ fhir:v "Atlantech Bilok Skrue [Femur + Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "atlantech_cobra" ] ;
+     fhir:display [ fhir:v "Atlantech Cobra" ] ;
+     fhir:definition [ fhir:v "Atlantech Cobra [Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "atlantech_metal" ] ;
+     fhir:display [ fhir:v "Atlantech metal skrue" ] ;
+     fhir:definition [ fhir:v "Atlantech metal skrue [Femur + Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "biomet_centraloc" ] ;
+     fhir:display [ fhir:v "Biomet Centraloc" ] ;
+     fhir:definition [ fhir:v "Biomet Centraloc [Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "biomet_ez_loc" ] ;
+     fhir:display [ fhir:v "Biomet EZ Loc" ] ;
+     fhir:definition [ fhir:v "Biomet EZ Loc [Femur]" ]
+  ] [
+     fhir:code [ fhir:v "biomet_metal_tunneloc" ] ;
+     fhir:display [ fhir:v "Biomet metal skrue (Tunneloc)" ] ;
+     fhir:definition [ fhir:v "Biomet metal skrue (Tunneloc) [Femur + Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "biomet_peek_tibia_nail_tunneloc" ] ;
+     fhir:display [ fhir:v "Biomet peek tibia nail (Tunneloc)" ] ;
+     fhir:definition [ fhir:v "Biomet peek tibia nail (Tunneloc) [Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "biomet_plla_gentlethread" ] ;
+     fhir:display [ fhir:v "Biomet PLLA skrue (Gentletread)" ] ;
+     fhir:definition [ fhir:v "Biomet PLLA skrue (Gentletread) [Femur + Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "biomet_togglelock_zipploop" ] ;
+     fhir:display [ fhir:v "Biomet Togglelock Zipploop" ] ;
+     fhir:definition [ fhir:v "Biomet Togglelock Zipploop [Femur]" ]
+  ] [
+     fhir:code [ fhir:v "biomet_washerloc" ] ;
+     fhir:display [ fhir:v "Biomet Washerloc" ] ;
+     fhir:definition [ fhir:v "Biomet Washerloc [Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "cayenne_aperfix" ] ;
+     fhir:display [ fhir:v "Cayenne Aperfix" ] ;
+     fhir:definition [ fhir:v "Cayenne Aperfix [Femur + Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "conmed_guardsman" ] ;
+     fhir:display [ fhir:v "Conmed Guardsman metal" ] ;
+     fhir:definition [ fhir:v "Conmed Guardsman metal [Femur]" ]
+  ] [
+     fhir:code [ fhir:v "conmed_martryx" ] ;
+     fhir:display [ fhir:v "ConMed Martryx" ] ;
+     fhir:definition [ fhir:v "ConMed Martryx [Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "conmed_metal_propel" ] ;
+     fhir:display [ fhir:v "ConMed Metal skrue (Propel)" ] ;
+     fhir:definition [ fhir:v "ConMed Metal skrue (Propel) [Femur + Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "conmed_plla_bioscrew" ] ;
+     fhir:display [ fhir:v "ConMed PLLA skrue (Bioscrew)" ] ;
+     fhir:definition [ fhir:v "ConMed PLLA skrue (Bioscrew) [Femur + Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "conmed_xo_button" ] ;
+     fhir:display [ fhir:v "ConMed XO Button" ] ;
+     fhir:definition [ fhir:v "ConMed XO Button [Femur]" ]
+  ] [
+     fhir:code [ fhir:v "depuy_milagro_advance_peek" ] ;
+     fhir:display [ fhir:v "Depuy Milagro ADVANCE PEEK" ] ;
+     fhir:definition [ fhir:v "Depuy Milagro ADVANCE PEEK [Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "depuy_mitek_femoral_intrafix" ] ;
+     fhir:display [ fhir:v "Depuy Mitek Femoral Intrafix" ] ;
+     fhir:definition [ fhir:v "Depuy Mitek Femoral Intrafix [Femur]" ]
+  ] [
+     fhir:code [ fhir:v "depuy_mitek_intrafix" ] ;
+     fhir:display [ fhir:v "Depuy Mitek Intrafix" ] ;
+     fhir:definition [ fhir:v "Depuy Mitek Intrafix [Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "depuy_mitek_intrafix_bio" ] ;
+     fhir:display [ fhir:v "Depuy Mitek Intrafix Bio" ] ;
+     fhir:definition [ fhir:v "Depuy Mitek Intrafix Bio [Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "depuy_mitek_milagro" ] ;
+     fhir:display [ fhir:v "Depuy Mitek Milagro skrue" ] ;
+     fhir:definition [ fhir:v "Depuy Mitek Milagro skrue [Femur + Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "depuy_mitek_rigidfix" ] ;
+     fhir:display [ fhir:v "Depuy Mitek Rigidfix" ] ;
+     fhir:definition [ fhir:v "Depuy Mitek Rigidfix [Femur]" ]
+  ] [
+     fhir:code [ fhir:v "depuy_mitek_titanium" ] ;
+     fhir:display [ fhir:v "Depuy Mitek Titanium skrue" ] ;
+     fhir:definition [ fhir:v "Depuy Mitek Titanium skrue [Femur + Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "depuy_rigidfix_curve" ] ;
+     fhir:display [ fhir:v "Depuy Rigidfix CURVE" ] ;
+     fhir:definition [ fhir:v "Depuy Rigidfix CURVE [Femur]" ]
+  ] [
+     fhir:code [ fhir:v "depuy_rigidloop_adjustable" ] ;
+     fhir:display [ fhir:v "Depuy Rigidloop Adjustable" ] ;
+     fhir:definition [ fhir:v "Depuy Rigidloop Adjustable [Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "depuy_rigidloop_adjustable_loop" ] ;
+     fhir:display [ fhir:v "Depuy RIGIDLOOP adjustable loop" ] ;
+     fhir:definition [ fhir:v "Depuy RIGIDLOOP adjustable loop [Femur]" ]
+  ] [
+     fhir:code [ fhir:v "depuy_rigidloop_fixed_loop" ] ;
+     fhir:display [ fhir:v "Depuy RIGIDLOOP fixed loop" ] ;
+     fhir:definition [ fhir:v "Depuy RIGIDLOOP fixed loop [Femur]" ]
+  ] [
+     fhir:code [ fhir:v "femoral_intrafix" ] ;
+     fhir:display [ fhir:v "Femoral Intrafix" ] ;
+     fhir:definition [ fhir:v "Femoral Intrafix [Femur]" ]
+  ] [
+     fhir:code [ fhir:v "inion_hexalon" ] ;
+     fhir:display [ fhir:v "Inion Hexalon skrue" ] ;
+     fhir:definition [ fhir:v "Inion Hexalon skrue [Femur + Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "intrafix_advance" ] ;
+     fhir:display [ fhir:v "Intrafix Advance" ] ;
+     fhir:definition [ fhir:v "Intrafix Advance [Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "kramper" ] ;
+     fhir:display [ fhir:v "Kramper" ] ;
+     fhir:definition [ fhir:v "Kramper [Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_biosure_peek" ] ;
+     fhir:display [ fhir:v "Smith & Nephew Biosure PEEK skrue" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew Biosure PEEK skrue [Femur + Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_biosure_regensorb" ] ;
+     fhir:display [ fhir:v "Smith & Nephew Biosure Regensorb" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew Biosure Regensorb [Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_calaxo" ] ;
+     fhir:display [ fhir:v "Smith & Nephew Calaxo" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew Calaxo [Femur]" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_endobutton_cl" ] ;
+     fhir:display [ fhir:v "Smith & Nephew Endobutton CL" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew Endobutton CL [Femur]" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_rci_calaxo" ] ;
+     fhir:display [ fhir:v "Smith & Nephew RCI Calaxo" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew RCI Calaxo [Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_rci_metal" ] ;
+     fhir:display [ fhir:v "Smith & Nephew RCI metal" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew RCI metal [Femur + Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_rci_plla" ] ;
+     fhir:display [ fhir:v "Smith & Nephew RCI PLLA" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew RCI PLLA [Femur + Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_rci_plla/ha" ] ;
+     fhir:display [ fhir:v "Smith & Nephew RCI PLLA/HA" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew RCI PLLA/HA [Femur + Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_softsilk_metal" ] ;
+     fhir:display [ fhir:v "Smith & Nephew Softsilk metal" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew Softsilk metal [Femur + Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "smith&nephew_ultrabutton" ] ;
+     fhir:display [ fhir:v "Smith & Nephew UltraButton" ] ;
+     fhir:definition [ fhir:v "Smith & Nephew UltraButton [Femur]" ]
+  ] [
+     fhir:code [ fhir:v "storz_flip-tac" ] ;
+     fhir:display [ fhir:v "Storz Flip-Tac" ] ;
+     fhir:definition [ fhir:v "Storz Flip-Tac [Femur]" ]
+  ] [
+     fhir:code [ fhir:v "storz_megafix" ] ;
+     fhir:display [ fhir:v "Storz Megafix" ] ;
+     fhir:definition [ fhir:v "Storz Megafix [Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "stryker_bioosteon" ] ;
+     fhir:display [ fhir:v "Stryker Bioosteon skrue" ] ;
+     fhir:definition [ fhir:v "Stryker Bioosteon skrue [Femur + Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "stryker_crossscrew_ha/plla" ] ;
+     fhir:display [ fhir:v "Stryker Crossscrew (HA/PLLA)" ] ;
+     fhir:definition [ fhir:v "Stryker Crossscrew (HA/PLLA) [Femur + Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "stryker_crossscrew_titanium" ] ;
+     fhir:display [ fhir:v "Stryker Crossscrew (Titanium)" ] ;
+     fhir:definition [ fhir:v "Stryker Crossscrew (Titanium) [Femur + Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "stryker_plla" ] ;
+     fhir:display [ fhir:v "Stryker PLLA skrue" ] ;
+     fhir:definition [ fhir:v "Stryker PLLA skrue [Femur + Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "stryker_titanium" ] ;
+     fhir:display [ fhir:v "Stryker titanium skrue" ] ;
+     fhir:definition [ fhir:v "Stryker titanium skrue [Femur + Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "stryker_versitomic_g-lok" ] ;
+     fhir:display [ fhir:v "Stryker VersiTomic G-lok" ] ;
+     fhir:definition [ fhir:v "Stryker VersiTomic G-lok [Femur]" ]
+  ] [
+     fhir:code [ fhir:v "bona_canal" ] ;
+     fhir:display [ fhir:v "Knoglekanal" ] ;
+     fhir:definition [ fhir:v "Knoglekanal [Tibia]" ]
+  ] [
+     fhir:code [ fhir:v "screw/washer" ] ;
+     fhir:display [ fhir:v "Skrue/washer" ] ;
+     fhir:definition [ fhir:v "Skrue/washer [Femur + Tibia]" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

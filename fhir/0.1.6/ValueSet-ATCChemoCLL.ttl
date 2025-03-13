@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/ATCChemoCLL> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ATCChemoCLL"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ATCChemoCLL</b></p><a name=\"ATCChemoCLL\"> </a><a name=\"hcATCChemoCLL\"> </a><a name=\"ATCChemoCLL-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-none\">none</a></td><td>Ingen kemoterapi</td><td>None - used to choose none of the available values</td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet (incl behandling for evt. anden malignitet)</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-ATC.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ATC</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01BB05\">L01BB05</a></td><td>Fludarabin</td><td>L01BB05 - fludarabine</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01AA01\">L01AA01</a></td><td>Cyklofosmamid</td><td>L01AA01 - cyclophosphamide</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01AA02\">L01AA02</a></td><td>Chlorambucil</td><td>L01AA02 - chlorambucil</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01AA09\">L01AA09</a></td><td>Bendamustin</td><td>L01AA09 - bendamustine</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/ATCChemoCLL"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "ATCChemoCLL"] ; # 
+  fhir:title [ fhir:v "ATC_CLL_kemo"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-07-13T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "ATC koder kemoterapi - [CLL]"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "none" ] ;
+         fhir:display [ fhir:v "Ingen kemoterapi" ]
+       ] [
+         fhir:code [ fhir:v "other" ] ;
+         fhir:display [ fhir:v "Andet (incl behandling for evt. anden malignitet)" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/ATC"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "L01BB05" ] ;
+         fhir:display [ fhir:v "Fludarabin" ]
+       ] [
+         fhir:code [ fhir:v "L01AA01" ] ;
+         fhir:display [ fhir:v "Cyklofosmamid" ]
+       ] [
+         fhir:code [ fhir:v "L01AA02" ] ;
+         fhir:display [ fhir:v "Chlorambucil" ]
+       ] [
+         fhir:code [ fhir:v "L01AA09" ] ;
+         fhir:display [ fhir:v "Bendamustin" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

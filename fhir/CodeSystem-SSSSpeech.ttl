@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/SSSSpeech> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SSSSpeech"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem SSSSpeech</b></p><a name=\"SSSSpeech\"> </a><a name=\"hcSSSSpeech\"> </a><a name=\"SSSSpeech-en-US\"> </a><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/SSSSpeech</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"SSSSpeech-10\"> </a></td><td>Ingen afasi.</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"SSSSpeech-6\"> </a></td><td>Begrænset ordforråd, usammenhængende tale.</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"SSSSpeech-3\"> </a></td><td>Mere end ja og nej, men højst korte sætninger.</td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"SSSSpeech-0\"> </a></td><td>Kun ja og nej eller dårligere.</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/SSSSpeech"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "SSSSpeech"] ; # 
+  fhir:title [ fhir:v "Scandinavian Stroke Scale (SSS) - Speech"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-23T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Scandinavian Stroke Scale (SSS) - Speech: Talebesvær på grund af dysartri scorer 10. Kun hvis man er sikker på, at der er sproglige forstyrrelser scores 6, 3 eller 0."] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "10" ] ;
+     fhir:display [ fhir:v "10" ] ;
+     fhir:definition [ fhir:v "Ingen afasi." ]
+  ] [
+     fhir:code [ fhir:v "6" ] ;
+     fhir:display [ fhir:v "6" ] ;
+     fhir:definition [ fhir:v "Begrænset ordforråd, usammenhængende tale." ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "3" ] ;
+     fhir:definition [ fhir:v "Mere end ja og nej, men højst korte sætninger." ]
+  ] [
+     fhir:code [ fhir:v "0" ] ;
+     fhir:display [ fhir:v "0" ] ;
+     fhir:definition [ fhir:v "Kun ja og nej eller dårligere." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

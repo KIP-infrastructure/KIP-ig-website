@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/PerforationDUGA> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PerforationDUGA"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet PerforationDUGA</b></p><a name=\"PerforationDUGA\"> </a><a name=\"hcPerforationDUGA\"> </a><a name=\"PerforationDUGA-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-ProcedureUrogyn.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ProcedureUrogyn</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ProcedureUrogyn.html#ProcedureUrogyn-DT812UC\">DT812UC</a></td><td>DT812UC: Utilsigtet peroperativ punktur eller læsion af urinleder</td><td>Utilsigtet peroperativ punktur eller læsion af urinleder</td></tr><tr><td><a href=\"CodeSystem-ProcedureUrogyn.html#ProcedureUrogyn-DT812UD\">DT812UD</a></td><td>DT812UD: Utilsigtet peroperativ punktur eller læsion af urinblære</td><td>Utilsigtet peroperativ punktur eller læsion af urinblære</td></tr><tr><td><a href=\"CodeSystem-ProcedureUrogyn.html#ProcedureUrogyn-DT812UE\">DT812UE</a></td><td>DT812UE: Utilsigtet peroperativ punktur eller læsion af urinrør</td><td>Utilsigtet peroperativ punktur eller læsion af urinrør</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/PerforationDUGA"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "PerforationDUGA"] ; # 
+  fhir:title [ fhir:v "Perforation (DUGA)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2024-02-14T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Procedurekode - Perforation (DUGA)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/ProcedureUrogyn"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "DT812UC" ] ;
+         fhir:display [ fhir:v "DT812UC: Utilsigtet peroperativ punktur eller læsion af urinleder" ]
+       ] [
+         fhir:code [ fhir:v "DT812UD" ] ;
+         fhir:display [ fhir:v "DT812UD: Utilsigtet peroperativ punktur eller læsion af urinblære" ]
+       ] [
+         fhir:code [ fhir:v "DT812UE" ] ;
+         fhir:display [ fhir:v "DT812UE: Utilsigtet peroperativ punktur eller læsion af urinrør" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

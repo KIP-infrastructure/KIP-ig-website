@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="PeritonealdefektLukningDHDB"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet PeritonealdefektLukningDHDB</b></p><a name="PeritonealdefektLukningDHDB"> </a><a name="hcPeritonealdefektLukningDHDB"> </a><a name="PeritonealdefektLukningDHDB-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-MedicalFixationClosing.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/MedicalFixationClosing</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-MedicalFixationClosing.html#MedicalFixationClosing-suture">suture</a></td><td>Sutur</td><td>Suture / Sutur / SNODMED-CT: 408099007</td></tr><tr><td><a href="CodeSystem-MedicalFixationClosing.html#MedicalFixationClosing-tack">tack</a></td><td>Tackers</td><td>Tack / SNOMED-CT: 705723004</td></tr><tr><td><a href="CodeSystem-MedicalFixationClosing.html#MedicalFixationClosing-clip">clip</a></td><td>Clips</td><td>Clip / Clip / SNOMED-CT: 77720000</td></tr><tr><td><a href="CodeSystem-MedicalFixationClosing.html#MedicalFixationClosing-surgical_glue">surgical_glue</a></td><td>Lim</td><td>Surgical glue / Kirurgisk lim / SNOMED-CT: 303532007</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-GenericValues.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-GenericValues.html#GenericValues-other">other</a></td><td>Anden</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li><li>Include these codes as defined in <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html"><code>http://terminology.hl7.org/CodeSystem/v2-0532</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html#v2-0532-NA">NA</a></td><td>Ikke relevant (TEP-indgreb)</td><td>not applicable</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.rkkp.dk/fhir/ValueSet/PeritonealdefektLukningDHDB"/>
+  <version value="0.1.6"/>
+  <name value="PeritonealdefektLukningDHDB"/>
+  <title value="Peritonealdefekt lukning (DHDB)"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-07-20T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Peritonealdefekt lukning (DHDB)"/>
+  <compose>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/MedicalFixationClosing"/>
+      <concept>
+        <code value="suture"/>
+        <display value="Sutur"/>
+      </concept>
+      <concept>
+        <code value="tack"/>
+        <display value="Tackers"/>
+      </concept>
+      <concept>
+        <code value="clip"/>
+        <display value="Clips"/>
+      </concept>
+      <concept>
+        <code value="surgical_glue"/>
+        <display value="Lim"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"/>
+      <concept>
+        <code value="other"/>
+        <display value="Anden"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+      <concept>
+        <code value="NA"/>
+        <display value="Ikke relevant (TEP-indgreb)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

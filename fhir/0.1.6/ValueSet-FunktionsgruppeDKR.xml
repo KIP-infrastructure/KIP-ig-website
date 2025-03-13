@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="FunktionsgruppeDKR"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet FunktionsgruppeDKR</b></p><a name="FunktionsgruppeDKR"> </a><a name="hcFunktionsgruppeDKR"> </a><a name="FunktionsgruppeDKR-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-FunctionGroupAlloplasty.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/FunctionGroupAlloplasty</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-FunctionGroupAlloplasty.html#FunctionGroupAlloplasty-knee_affected">knee_affected</a></td><td>Kun aktuelle knæled afficeret</td><td>Actual knee joint affected / Kun aktuelle knæled afficeret</td></tr><tr><td><a href="CodeSystem-FunctionGroupAlloplasty.html#FunctionGroupAlloplasty-opposite_knee_affected">opposite_knee_affected</a></td><td>Funktionshæmmende lidelse i modsatte knæ</td><td>Function inhibited in opposite knee / Funktionshæmmende lidelse i modsatte knæ</td></tr><tr><td><a href="CodeSystem-FunctionGroupAlloplasty.html#FunctionGroupAlloplasty-functional_knee_prosthesis">functional_knee_prosthesis</a></td><td>Velfungerende protese i modsatte knæ</td><td>Functioning prosthesis (opposite knee) / Velfungerende protese i modsatte knæ</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-GenericValues.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-GenericValues.html#GenericValues-other">other</a></td><td>Anden funktionshæmmende lidelse</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.rkkp.dk/fhir/ValueSet/FunktionsgruppeDKR"/>
+  <version value="0.1.6"/>
+  <name value="FunktionsgruppeDKR"/>
+  <title value="Funktionsgruppe (DKR)"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-10-12T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Funktionsgruppe (DHR)"/>
+  <compose>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/FunctionGroupAlloplasty"/>
+      <concept>
+        <code value="knee_affected"/>
+        <display value="Kun aktuelle knæled afficeret"/>
+      </concept>
+      <concept>
+        <code value="opposite_knee_affected"/>
+        <display value="Funktionshæmmende lidelse i modsatte knæ"/>
+      </concept>
+      <concept>
+        <code value="functional_knee_prosthesis"/>
+        <display value="Velfungerende protese i modsatte knæ"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"/>
+      <concept>
+        <code value="other"/>
+        <display value="Anden funktionshæmmende lidelse"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

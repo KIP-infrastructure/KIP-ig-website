@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/ASAClassification> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ASAClassification"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ASAClassification</b></p><a name=\"ASAClassification\"> </a><a name=\"hcASAClassification\"> </a><a name=\"ASAClassification-en-US\"> </a><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/ASAClassification</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">asai<a name=\"ASAClassification-asai\"> </a></td><td>ASA I</td><td>A normal healthy patient</td></tr><tr><td style=\"white-space:nowrap\">asaii<a name=\"ASAClassification-asaii\"> </a></td><td>ASA II</td><td>A patient with mild systemic disease</td></tr><tr><td style=\"white-space:nowrap\">asaiii<a name=\"ASAClassification-asaiii\"> </a></td><td>ASA III</td><td>A patient with severe systemic disease</td></tr><tr><td style=\"white-space:nowrap\">asaiv<a name=\"ASAClassification-asaiv\"> </a></td><td>ASA IV</td><td>A patient with severe systemic disease that is a constant threat to life</td></tr><tr><td style=\"white-space:nowrap\">asav<a name=\"ASAClassification-asav\"> </a></td><td>ASA V</td><td>A moribund patient who is not expected to survive without the operation</td></tr><tr><td style=\"white-space:nowrap\">asavi<a name=\"ASAClassification-asavi\"> </a></td><td>ASA VI</td><td>A declared brain-dead patient whose organs are being removed for donor purposes</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/ASAClassification"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "ASAClassification"] ; # 
+  fhir:title [ fhir:v "ASA Physical Status Classification System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-05-31T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Score udviklet til vurdering af det fysiske helbred. Link: https://www.asahq.org/standards-and-guidelines/asa-physical-status-classification-system"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "asai" ] ;
+     fhir:display [ fhir:v "ASA I" ] ;
+     fhir:definition [ fhir:v "A normal healthy patient" ]
+  ] [
+     fhir:code [ fhir:v "asaii" ] ;
+     fhir:display [ fhir:v "ASA II" ] ;
+     fhir:definition [ fhir:v "A patient with mild systemic disease" ]
+  ] [
+     fhir:code [ fhir:v "asaiii" ] ;
+     fhir:display [ fhir:v "ASA III" ] ;
+     fhir:definition [ fhir:v "A patient with severe systemic disease" ]
+  ] [
+     fhir:code [ fhir:v "asaiv" ] ;
+     fhir:display [ fhir:v "ASA IV" ] ;
+     fhir:definition [ fhir:v "A patient with severe systemic disease that is a constant threat to life" ]
+  ] [
+     fhir:code [ fhir:v "asav" ] ;
+     fhir:display [ fhir:v "ASA V" ] ;
+     fhir:definition [ fhir:v "A moribund patient who is not expected to survive without the operation" ]
+  ] [
+     fhir:code [ fhir:v "asavi" ] ;
+     fhir:display [ fhir:v "ASA VI" ] ;
+     fhir:definition [ fhir:v "A declared brain-dead patient whose organs are being removed for donor purposes" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

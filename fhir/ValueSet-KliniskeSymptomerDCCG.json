@@ -1,0 +1,64 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KliniskeSymptomerDCCG",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KliniskeSymptomerDCCG</b></p><a name=\"KliniskeSymptomerDCCG\"> </a><a name=\"hcKliniskeSymptomerDCCG\"> </a><a name=\"KliniskeSymptomerDCCG-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-KliniskeSymptomerDCCG.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/KliniskeSymptomerDCCG</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-KliniskeSymptomerDCCG.html#KliniskeSymptomerDCCG-ileus\">ileus</a></td><td>Ileus</td><td>Ileus</td></tr><tr><td><a href=\"CodeSystem-KliniskeSymptomerDCCG.html#KliniskeSymptomerDCCG-spontan_perf\">spontan_perf</a></td><td>Spontan perforation</td><td>Spontan perforation</td></tr><tr><td><a href=\"CodeSystem-KliniskeSymptomerDCCG.html#KliniskeSymptomerDCCG-bloedning\">bloedning</a></td><td>Blødning</td><td>Blødning</td></tr><tr><td><a href=\"CodeSystem-KliniskeSymptomerDCCG.html#KliniskeSymptomerDCCG-endoscopi_foelge\">endoscopi_foelge</a></td><td>Følge efter endoskopi</td><td>Følge efter endoskopi</td></tr><tr><td><a href=\"CodeSystem-KliniskeSymptomerDCCG.html#KliniskeSymptomerDCCG-endoscopi_lokalresek_foelge\">endoscopi_lokalresek_foelge</a></td><td>Følge efter endoskopisk lokalresektion</td><td>Følge efter endoskopisk lokalresektion</td></tr><tr><td><a href=\"CodeSystem-KliniskeSymptomerDCCG.html#KliniskeSymptomerDCCG-stent_foelge\">stent_foelge</a></td><td>Følge af stentanlæggelse</td><td>Følge af stentanlæggelse</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/KliniskeSymptomerDCCG",
+  "version" : "0.1.6",
+  "name" : "KliniskeSymptomerDCCG",
+  "title" : "Kliniske symptomer (DCCG)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-11-09T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Kliniske symptomer (DCCG)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/KliniskeSymptomerDCCG",
+      "concept" : [{
+        "code" : "ileus",
+        "display" : "Ileus"
+      },
+      {
+        "code" : "spontan_perf",
+        "display" : "Spontan perforation"
+      },
+      {
+        "code" : "bloedning",
+        "display" : "Blødning"
+      },
+      {
+        "code" : "endoscopi_foelge",
+        "display" : "Følge efter endoskopi"
+      },
+      {
+        "code" : "endoscopi_lokalresek_foelge",
+        "display" : "Følge efter endoskopisk lokalresektion"
+      },
+      {
+        "code" : "stent_foelge",
+        "display" : "Følge af stentanlæggelse"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "other",
+        "display" : "Andet"
+      }]
+    }]
+  }
+}

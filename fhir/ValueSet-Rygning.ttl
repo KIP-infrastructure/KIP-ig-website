@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/Rygning> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Rygning"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Rygning</b></p><a name=\"Rygning\"> </a><a name=\"hcRygning\"> </a><a name=\"Rygning-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Smoking.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Smoking</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Smoking.html#Smoking-smoker\">smoker</a></td><td>Ryger</td><td>Ryger</td></tr><tr><td><a href=\"CodeSystem-Smoking.html#Smoking-formersmoker\">formersmoker</a></td><td>Tidligere ryger</td><td>Tidligere ryger</td></tr><tr><td><a href=\"CodeSystem-Smoking.html#Smoking-never-smoker\">never-smoker</a></td><td>Aldrig ryger</td><td>Aldrig ryger</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/Rygning"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "Rygning"] ; # 
+  fhir:title [ fhir:v "Rygning"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-06-08T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Udfald for rygning"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/Smoking"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "smoker" ] ;
+         fhir:display [ fhir:v "Ryger" ]
+       ] [
+         fhir:code [ fhir:v "formersmoker" ] ;
+         fhir:display [ fhir:v "Tidligere ryger" ]
+       ] [
+         fhir:code [ fhir:v "never-smoker" ] ;
+         fhir:display [ fhir:v "Aldrig ryger" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

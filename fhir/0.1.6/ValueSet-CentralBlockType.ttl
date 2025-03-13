@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/CentralBlockType> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CentralBlockType"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet CentralBlockType</b></p><a name=\"CentralBlockType\"> </a><a name=\"hcCentralBlockType\"> </a><a name=\"CentralBlockType-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-BlockTypes.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/BlockTypes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-BlockTypes.html#BlockTypes-epidural_cervical\">epidural_cervical</a></td><td>Epidural Cervical</td><td>Epidural Cervical</td></tr><tr><td><a href=\"CodeSystem-BlockTypes.html#BlockTypes-epidural_thorakal\">epidural_thorakal</a></td><td>Epidural Thorakal</td><td>Epidural Thorakal</td></tr><tr><td><a href=\"CodeSystem-BlockTypes.html#BlockTypes-epidural_sakral\">epidural_sakral</a></td><td>Epidural Sakral</td><td>Epidural Sakral</td></tr><tr><td><a href=\"CodeSystem-BlockTypes.html#BlockTypes-epidural.43spinal\">epidural+spinal</a></td><td>Epidural+Spinal</td><td>Epidural+Spinal</td></tr><tr><td><a href=\"CodeSystem-BlockTypes.html#BlockTypes-epidural_lumbal\">epidural_lumbal</a></td><td>Epidural Lumbal</td><td>Epidural Lumbal</td></tr><tr><td><a href=\"CodeSystem-BlockTypes.html#BlockTypes-spinal_lumbal.34\">spinal_lumbal&quot;</a></td><td>Spinal lumbal</td><td>Spinal lumbal</td></tr><tr><td><a href=\"CodeSystem-BlockTypes.html#BlockTypes-spinal_catheter\">spinal_catheter</a></td><td>Spinal kateter</td><td>Spinal kateter</td></tr><tr><td><a href=\"CodeSystem-BlockTypes.html#BlockTypes-other\">other</a></td><td>Anden</td><td>Anden blokadetype</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/CentralBlockType"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "CentralBlockType"] ; # 
+  fhir:title [ fhir:v "Typer af central blokade"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-06-09T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Typer af central blokade"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/BlockTypes"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "epidural_cervical" ] ;
+         fhir:display [ fhir:v "Epidural Cervical" ]
+       ] [
+         fhir:code [ fhir:v "epidural_thorakal" ] ;
+         fhir:display [ fhir:v "Epidural Thorakal" ]
+       ] [
+         fhir:code [ fhir:v "epidural_sakral" ] ;
+         fhir:display [ fhir:v "Epidural Sakral" ]
+       ] [
+         fhir:code [ fhir:v "epidural+spinal" ] ;
+         fhir:display [ fhir:v "Epidural+Spinal" ]
+       ] [
+         fhir:code [ fhir:v "epidural_lumbal" ] ;
+         fhir:display [ fhir:v "Epidural Lumbal" ]
+       ] [
+         fhir:code [ fhir:v "spinal_lumbal\"" ] ;
+         fhir:display [ fhir:v "Spinal lumbal" ]
+       ] [
+         fhir:code [ fhir:v "spinal_catheter" ] ;
+         fhir:display [ fhir:v "Spinal kateter" ]
+       ] [
+         fhir:code [ fhir:v "other" ] ;
+         fhir:display [ fhir:v "Anden" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

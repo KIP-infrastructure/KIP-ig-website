@@ -1,0 +1,80 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/AnastomosisType> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AnastomosisType"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem AnastomosisType</b></p><a name=\"AnastomosisType\"> </a><a name=\"hcAnastomosisType\"> </a><a name=\"AnastomosisType-en-US\"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/AnastomosisType</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">hand_sewn<a name=\"AnastomosisType-hand_sewn\"> </a></td><td>Hand sewn</td><td>Hand sewn / Håndsyet</td></tr><tr><td style=\"white-space:nowrap\">stapled<a name=\"AnastomosisType-stapled\"> </a></td><td>Stapled</td><td>Stapled / Staplet</td></tr><tr><td style=\"white-space:nowrap\">intracorporeal<a name=\"AnastomosisType-intracorporeal\"> </a></td><td>Intracorporeal</td><td>Intracorporeal / Intrakorporalt</td></tr><tr><td style=\"white-space:nowrap\">extracorporeal<a name=\"AnastomosisType-extracorporeal\"> </a></td><td>Extracorporeal</td><td>extracorporeal / Ekstrakorporalt</td></tr><tr><td style=\"white-space:nowrap\">end_to_end<a name=\"AnastomosisType-end_to_end\"> </a></td><td>End-to-end</td><td>End-to-end</td></tr><tr><td style=\"white-space:nowrap\">side_to_end<a name=\"AnastomosisType-side_to_end\"> </a></td><td>Side-to-end</td><td>Side-to-end</td></tr><tr><td style=\"white-space:nowrap\">end_to_side<a name=\"AnastomosisType-end_to_side\"> </a></td><td>End-to-side</td><td>End-to-side</td></tr><tr><td style=\"white-space:nowrap\">side_to_side<a name=\"AnastomosisType-side_to_side\"> </a></td><td>Side-to-side</td><td>Side-to-side</td></tr><tr><td style=\"white-space:nowrap\">functional_end_to_end<a name=\"AnastomosisType-functional_end_to_end\"> </a></td><td>Functional end-to-end</td><td>Functional end-to-end / Funktionelt end-to-end</td></tr><tr><td style=\"white-space:nowrap\">pouch<a name=\"AnastomosisType-pouch\"> </a></td><td>Pouch</td><td>Pouch</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/AnastomosisType"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "AnastomosisType"] ; # 
+  fhir:title [ fhir:v "Anastomosis type"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-08-22T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Anastomosis type"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "hand_sewn" ] ;
+     fhir:display [ fhir:v "Hand sewn" ] ;
+     fhir:definition [ fhir:v "Hand sewn / Håndsyet" ]
+  ] [
+     fhir:code [ fhir:v "stapled" ] ;
+     fhir:display [ fhir:v "Stapled" ] ;
+     fhir:definition [ fhir:v "Stapled / Staplet" ]
+  ] [
+     fhir:code [ fhir:v "intracorporeal" ] ;
+     fhir:display [ fhir:v "Intracorporeal" ] ;
+     fhir:definition [ fhir:v "Intracorporeal / Intrakorporalt" ]
+  ] [
+     fhir:code [ fhir:v "extracorporeal" ] ;
+     fhir:display [ fhir:v "Extracorporeal" ] ;
+     fhir:definition [ fhir:v "extracorporeal / Ekstrakorporalt" ]
+  ] [
+     fhir:code [ fhir:v "end_to_end" ] ;
+     fhir:display [ fhir:v "End-to-end" ] ;
+     fhir:definition [ fhir:v "End-to-end" ]
+  ] [
+     fhir:code [ fhir:v "side_to_end" ] ;
+     fhir:display [ fhir:v "Side-to-end" ] ;
+     fhir:definition [ fhir:v "Side-to-end" ]
+  ] [
+     fhir:code [ fhir:v "end_to_side" ] ;
+     fhir:display [ fhir:v "End-to-side" ] ;
+     fhir:definition [ fhir:v "End-to-side" ]
+  ] [
+     fhir:code [ fhir:v "side_to_side" ] ;
+     fhir:display [ fhir:v "Side-to-side" ] ;
+     fhir:definition [ fhir:v "Side-to-side" ]
+  ] [
+     fhir:code [ fhir:v "functional_end_to_end" ] ;
+     fhir:display [ fhir:v "Functional end-to-end" ] ;
+     fhir:definition [ fhir:v "Functional end-to-end / Funktionelt end-to-end" ]
+  ] [
+     fhir:code [ fhir:v "pouch" ] ;
+     fhir:display [ fhir:v "Pouch" ] ;
+     fhir:definition [ fhir:v "Pouch" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

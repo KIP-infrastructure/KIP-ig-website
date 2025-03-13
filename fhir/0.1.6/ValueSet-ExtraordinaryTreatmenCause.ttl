@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/ExtraordinaryTreatmenCause> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExtraordinaryTreatmenCause"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ExtraordinaryTreatmenCause</b></p><a name=\"ExtraordinaryTreatmenCause\"> </a><a name=\"hcExtraordinaryTreatmenCause\"> </a><a name=\"ExtraordinaryTreatmenCause-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-TreatmentCause.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/TreatmentCause</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-TreatmentCause.html#TreatmentCause-toxicity\">toxicity</a></td><td>Toksicitet</td><td>Toxicity / Toksicitet SNOMED-CT: 75478009</td></tr><tr><td><a href=\"CodeSystem-TreatmentCause.html#TreatmentCause-insufficient_response\">insufficient_response</a></td><td>Utilstrækkeligt respons</td><td>Insufficient response / Utilstrækkelige repons</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-not_performed\">not_performed</a></td><td>Pt. har ikke fået uplanlagt behandling</td><td>Not performed - used to indicate, if a procedure or test has not been performed</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/ExtraordinaryTreatmenCause"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "ExtraordinaryTreatmenCause"] ; # 
+  fhir:title [ fhir:v "Ekstra behandling"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-07-14T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Årsag for uplanlagt ekstra behandling [DAMYDA]"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/TreatmentCause"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "toxicity" ] ;
+         fhir:display [ fhir:v "Toksicitet" ]
+       ] [
+         fhir:code [ fhir:v "insufficient_response" ] ;
+         fhir:display [ fhir:v "Utilstrækkeligt respons" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "not_performed" ] ;
+         fhir:display [ fhir:v "Pt. har ikke fået uplanlagt behandling" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

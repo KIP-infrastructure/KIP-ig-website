@@ -1,0 +1,49 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ActilyseIkkeGivet",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ActilyseIkkeGivet</b></p><a name=\"ActilyseIkkeGivet\"> </a><a name=\"hcActilyseIkkeGivet\"> </a><a name=\"ActilyseIkkeGivet-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-ActilyseNotGiven.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ActilyseNotGiven</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ActilyseNotGiven.html#ActilyseNotGiven-clinicaldeterioration\">clinicaldeterioration</a></td><td>Klinisk forringelse</td><td>Klinisk forringelse</td></tr><tr><td><a href=\"CodeSystem-ActilyseNotGiven.html#ActilyseNotGiven-allergicreaction\">allergicreaction</a></td><td>Allergisk reaktion</td><td>Allergisk reaktion</td></tr><tr><td><a href=\"CodeSystem-ActilyseNotGiven.html#ActilyseNotGiven-plannedtreatment\">plannedtreatment</a></td><td>Planlagt interventionel behandling</td><td>Planlagt interventionel behandling</td></tr><tr><td><a href=\"CodeSystem-ActilyseNotGiven.html#ActilyseNotGiven-other\">other</a></td><td>Andet</td><td>Andet</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/ActilyseIkkeGivet",
+  "version" : "0.1.6",
+  "name" : "ActilyseIkkeGivet",
+  "title" : "Totaldosis i.v. actilyse er ikke givet; årsag",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-06-28T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Årsagen til hvorfor Totaldosis i.v. actilyse ikke er givet",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/ActilyseNotGiven",
+      "concept" : [{
+        "code" : "clinicaldeterioration",
+        "display" : "Klinisk forringelse"
+      },
+      {
+        "code" : "allergicreaction",
+        "display" : "Allergisk reaktion"
+      },
+      {
+        "code" : "plannedtreatment",
+        "display" : "Planlagt interventionel behandling"
+      },
+      {
+        "code" : "other",
+        "display" : "Andet"
+      }]
+    }]
+  }
+}

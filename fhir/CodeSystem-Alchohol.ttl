@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/Alchohol> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Alchohol"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem Alchohol</b></p><a name=\"Alchohol\"> </a><a name=\"hcAlchohol\"> </a><a name=\"Alchohol-en-US\"> </a><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/Alchohol</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"Alchohol-0\"> </a></td><td>0</td><td>Ingen alkohol</td></tr><tr><td style=\"white-space:nowrap\">le7/14<a name=\"Alchohol-le7.4714\"> </a></td><td>7/14 genstande eller færre</td><td>Under eller lig 7/14 genstande per uge (kvinde/mand)</td></tr><tr><td style=\"white-space:nowrap\">gt7/14<a name=\"Alchohol-gt7.4714\"> </a></td><td>OVer 7/14 genstande</td><td>Over 7/14 genstande per uge (kvinde/mand)</td></tr><tr><td style=\"white-space:nowrap\">0-10<a name=\"Alchohol-0-10\"> </a></td><td>0-10 genstande pr. uge</td><td>0-10 genstande pr. uge</td></tr><tr><td style=\"white-space:nowrap\">gte11<a name=\"Alchohol-gte11\"> </a></td><td>Over 11 genstande pr. uge</td><td>Over 11 genstande pr. uge</td></tr><tr><td style=\"white-space:nowrap\">1-21<a name=\"Alchohol-1-21\"> </a></td><td>1-21</td><td>1-21 genstande per uge</td></tr><tr><td style=\"white-space:nowrap\">gt21<a name=\"Alchohol-gt21\"> </a></td><td>&gt;21</td><td>Mere end 21 genstande per uge</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/Alchohol"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "Alchohol"] ; # 
+  fhir:title [ fhir:v "Alchohol"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-05-31T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Healthfactor alchohol"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "0" ] ;
+     fhir:display [ fhir:v "0" ] ;
+     fhir:definition [ fhir:v "Ingen alkohol" ]
+  ] [
+     fhir:code [ fhir:v "le7/14" ] ;
+     fhir:display [ fhir:v "7/14 genstande eller færre" ] ;
+     fhir:definition [ fhir:v "Under eller lig 7/14 genstande per uge (kvinde/mand)" ]
+  ] [
+     fhir:code [ fhir:v "gt7/14" ] ;
+     fhir:display [ fhir:v "OVer 7/14 genstande" ] ;
+     fhir:definition [ fhir:v "Over 7/14 genstande per uge (kvinde/mand)" ]
+  ] [
+     fhir:code [ fhir:v "0-10" ] ;
+     fhir:display [ fhir:v "0-10 genstande pr. uge" ] ;
+     fhir:definition [ fhir:v "0-10 genstande pr. uge" ]
+  ] [
+     fhir:code [ fhir:v "gte11" ] ;
+     fhir:display [ fhir:v "Over 11 genstande pr. uge" ] ;
+     fhir:definition [ fhir:v "Over 11 genstande pr. uge" ]
+  ] [
+     fhir:code [ fhir:v "1-21" ] ;
+     fhir:display [ fhir:v "1-21" ] ;
+     fhir:definition [ fhir:v "1-21 genstande per uge" ]
+  ] [
+     fhir:code [ fhir:v "gt21" ] ;
+     fhir:display [ fhir:v ">21" ] ;
+     fhir:definition [ fhir:v "Mere end 21 genstande per uge" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

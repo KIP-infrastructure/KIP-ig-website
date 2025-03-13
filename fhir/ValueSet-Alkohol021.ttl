@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/Alkohol021> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Alkohol021"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Alkohol021</b></p><a name=\"Alkohol021\"> </a><a name=\"hcAlkohol021\"> </a><a name=\"Alkohol021-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Alchohol.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Alchohol</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Alchohol.html#Alchohol-0\">0</a></td><td>Ingen alkohol</td><td>Ingen alkohol</td></tr><tr><td><a href=\"CodeSystem-Alchohol.html#Alchohol-1-21\">1-21</a></td><td>1-21 genstande per uge</td><td>1-21 genstande per uge</td></tr><tr><td><a href=\"CodeSystem-Alchohol.html#Alchohol-gt21\">gt21</a></td><td>Mere end 21 genstande per uge</td><td>Mere end 21 genstande per uge</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/Alkohol021"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "Alkohol021"] ; # 
+  fhir:title [ fhir:v "Alkohol 0-21"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-06-15T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "0, 1-21 eller flere genstande per uge"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/Alchohol"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "0" ] ;
+         fhir:display [ fhir:v "Ingen alkohol" ]
+       ] [
+         fhir:code [ fhir:v "1-21" ] ;
+         fhir:display [ fhir:v "1-21 genstande per uge" ]
+       ] [
+         fhir:code [ fhir:v "gt21" ] ;
+         fhir:display [ fhir:v "Mere end 21 genstande per uge" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

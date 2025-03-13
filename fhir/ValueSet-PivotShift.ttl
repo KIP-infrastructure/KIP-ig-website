@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/PivotShift> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PivotShift"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet PivotShift</b></p><a name=\"PivotShift\"> </a><a name=\"hcPivotShift\"> </a><a name=\"PivotShift-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-PivotShiftGrading.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/PivotShiftGrading</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-PivotShiftGrading.html#PivotShiftGrading-grade_0\">grade_0</a></td><td>Equal</td><td>Grade 0: Equal</td></tr><tr><td><a href=\"CodeSystem-PivotShiftGrading.html#PivotShiftGrading-grade_1\">grade_1</a></td><td>+Glide</td><td>Grade 1: Glide+</td></tr><tr><td><a href=\"CodeSystem-PivotShiftGrading.html#PivotShiftGrading-grade_2\">grade_2</a></td><td>++Clunk</td><td>Grade 2: Clunk++</td></tr><tr><td><a href=\"CodeSystem-PivotShiftGrading.html#PivotShiftGrading-grade_3\">grade_3</a></td><td>+++Gross</td><td>Grade 3: Gross+++</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/PivotShift"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "PivotShift"] ; # 
+  fhir:title [ fhir:v "Pivot Shift"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-09-19T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Pivot Shift"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/PivotShiftGrading"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "grade_0" ] ;
+         fhir:display [ fhir:v "Equal" ]
+       ] [
+         fhir:code [ fhir:v "grade_1" ] ;
+         fhir:display [ fhir:v "+Glide" ]
+       ] [
+         fhir:code [ fhir:v "grade_2" ] ;
+         fhir:display [ fhir:v "++Clunk" ]
+       ] [
+         fhir:code [ fhir:v "grade_3" ] ;
+         fhir:display [ fhir:v "+++Gross" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

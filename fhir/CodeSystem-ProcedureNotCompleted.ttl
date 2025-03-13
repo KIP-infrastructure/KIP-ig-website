@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/ProcedureNotCompleted> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ProcedureNotCompleted"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ProcedureNotCompleted</b></p><a name=\"ProcedureNotCompleted\"> </a><a name=\"hcProcedureNotCompleted\"> </a><a name=\"ProcedureNotCompleted-en-US\"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/ProcedureNotCompleted</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">disease_progression<a name=\"ProcedureNotCompleted-disease_progression\"> </a></td><td>Progression of disease</td><td>Progression of disease / Sygdomsprogression</td></tr><tr><td style=\"white-space:nowrap\">disease_regression<a name=\"ProcedureNotCompleted-disease_regression\"> </a></td><td>Regression of disease</td><td>Regression of disease / Sygdomsregression</td></tr><tr><td style=\"white-space:nowrap\">disseminated_intestinal_cancer<a name=\"ProcedureNotCompleted-disseminated_intestinal_cancer\"> </a></td><td>Disseminated intestinal cancer</td><td>Disseminated intestinal cancer / Dissemineret tarmkræft</td></tr><tr><td style=\"white-space:nowrap\">other_cancer<a name=\"ProcedureNotCompleted-other_cancer\"> </a></td><td>Other cancer</td><td>Other cancer / Anden cancersygdom</td></tr><tr><td style=\"white-space:nowrap\">curative_treatment<a name=\"ProcedureNotCompleted-curative_treatment\"> </a></td><td>Other curative oncological treatment</td><td>Other curative oncological treatment / Kurativ onkologisk behandling</td></tr><tr><td style=\"white-space:nowrap\">palliative_treatment<a name=\"ProcedureNotCompleted-palliative_treatment\"> </a></td><td>Other palliative oncological treatment</td><td>Other palliative oncological treatment / Pallierende onkologisk behandling</td></tr><tr><td style=\"white-space:nowrap\">comorbidity<a name=\"ProcedureNotCompleted-comorbidity\"> </a></td><td>Comorbidity</td><td>Comorbidity / Komorbiditet</td></tr><tr><td style=\"white-space:nowrap\">patients_wish<a name=\"ProcedureNotCompleted-patients_wish\"> </a></td><td>Patient's wish</td><td>Patient's wish / Patientønske</td></tr><tr><td style=\"white-space:nowrap\">death<a name=\"ProcedureNotCompleted-death\"> </a></td><td>Death</td><td>Death / Dødsfald</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/ProcedureNotCompleted"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "ProcedureNotCompleted"] ; # 
+  fhir:title [ fhir:v "Procedure not completed; cause"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-08-22T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Procedure not completed; cause"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "9"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "disease_progression" ] ;
+     fhir:display [ fhir:v "Progression of disease" ] ;
+     fhir:definition [ fhir:v "Progression of disease / Sygdomsprogression" ]
+  ] [
+     fhir:code [ fhir:v "disease_regression" ] ;
+     fhir:display [ fhir:v "Regression of disease" ] ;
+     fhir:definition [ fhir:v "Regression of disease / Sygdomsregression" ]
+  ] [
+     fhir:code [ fhir:v "disseminated_intestinal_cancer" ] ;
+     fhir:display [ fhir:v "Disseminated intestinal cancer" ] ;
+     fhir:definition [ fhir:v "Disseminated intestinal cancer / Dissemineret tarmkræft" ]
+  ] [
+     fhir:code [ fhir:v "other_cancer" ] ;
+     fhir:display [ fhir:v "Other cancer" ] ;
+     fhir:definition [ fhir:v "Other cancer / Anden cancersygdom" ]
+  ] [
+     fhir:code [ fhir:v "curative_treatment" ] ;
+     fhir:display [ fhir:v "Other curative oncological treatment" ] ;
+     fhir:definition [ fhir:v "Other curative oncological treatment / Kurativ onkologisk behandling" ]
+  ] [
+     fhir:code [ fhir:v "palliative_treatment" ] ;
+     fhir:display [ fhir:v "Other palliative oncological treatment" ] ;
+     fhir:definition [ fhir:v "Other palliative oncological treatment / Pallierende onkologisk behandling" ]
+  ] [
+     fhir:code [ fhir:v "comorbidity" ] ;
+     fhir:display [ fhir:v "Comorbidity" ] ;
+     fhir:definition [ fhir:v "Comorbidity / Komorbiditet" ]
+  ] [
+     fhir:code [ fhir:v "patients_wish" ] ;
+     fhir:display [ fhir:v "Patient's wish" ] ;
+     fhir:definition [ fhir:v "Patient's wish / Patientønske" ]
+  ] [
+     fhir:code [ fhir:v "death" ] ;
+     fhir:display [ fhir:v "Death" ] ;
+     fhir:definition [ fhir:v "Death / Dødsfald" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

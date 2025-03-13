@@ -1,0 +1,89 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/FISHVariables> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "FISHVariables"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem FISHVariables</b></p><a name=\"FISHVariables\"> </a><a name=\"hcFISHVariables\"> </a><a name=\"FISHVariables-en-US\"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/FISHVariables</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">plasma_cell_identifikation_unspecific<a name=\"FISHVariables-plasma_cell_identifikation_unspecific\"> </a></td><td>Plasma cell identification</td><td>Plasma cell identification, unspecific / Plasmacelleidentifikation, uspecifik</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  cd138_sort<a name=\"FISHVariables-cd138_sort\"> </a></td><td>CD138 sort</td><td>CD138 sort</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  antibodies<a name=\"FISHVariables-antibodies\"> </a></td><td>Antibodies</td><td>Antibodies / Antistof</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">igh_fgfr3<a name=\"FISHVariables-igh_fgfr3\"> </a></td><td>t(4;14)/IGH-FGFR3</td><td>t(4;14)/IGH-FGFR3</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">igh_ccnd1<a name=\"FISHVariables-igh_ccnd1\"> </a></td><td>t(11;14)/IGH-CCND1</td><td>t(11;14)/IGH-CCND1</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">igh_mbf<a name=\"FISHVariables-igh_mbf\"> </a></td><td>t(14;16)/IGH-MBF</td><td>t(14;16)/IGH-MBF</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">igh_mafb<a name=\"FISHVariables-igh_mafb\"> </a></td><td>t(14;20)/IGH-MAFB</td><td>t(14;20)/IGH-MAFB</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">igh_split_signal<a name=\"FISHVariables-igh_split_signal\"> </a></td><td>IgH split signal</td><td>IgH split signal</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">13q_deletion<a name=\"FISHVariables-13q_deletion\"> </a></td><td>13q deletion</td><td>13q deletion</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">tp53_deletion<a name=\"FISHVariables-tp53_deletion\"> </a></td><td>TP53 deletion</td><td>TP53 deletion</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1q21<a name=\"FISHVariables-1q21\"> </a></td><td>1q21 amplifikation</td><td>1q21 amplifikation</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">11q22<a name=\"FISHVariables-11q22\"> </a></td><td>11q22/ATM amplifikation</td><td>11q22/ATM amplifikation</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/FISHVariables"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "FISHVariables"] ; # 
+  fhir:title [ fhir:v "FISH variables; test"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-07-13T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "FISH variables; test"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "12"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "plasma_cell_identifikation_unspecific" ] ;
+     fhir:display [ fhir:v "Plasma cell identification" ] ;
+     fhir:definition [ fhir:v "Plasma cell identification, unspecific / Plasmacelleidentifikation, uspecifik" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "cd138_sort" ] ;
+       fhir:display [ fhir:v "CD138 sort" ] ;
+       fhir:definition [ fhir:v "CD138 sort" ]
+     ] [
+       fhir:code [ fhir:v "antibodies" ] ;
+       fhir:display [ fhir:v "Antibodies" ] ;
+       fhir:definition [ fhir:v "Antibodies / Antistof" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "igh_fgfr3" ] ;
+     fhir:display [ fhir:v "t(4;14)/IGH-FGFR3" ] ;
+     fhir:definition [ fhir:v "t(4;14)/IGH-FGFR3" ]
+  ] [
+     fhir:code [ fhir:v "igh_ccnd1" ] ;
+     fhir:display [ fhir:v "t(11;14)/IGH-CCND1" ] ;
+     fhir:definition [ fhir:v "t(11;14)/IGH-CCND1" ]
+  ] [
+     fhir:code [ fhir:v "igh_mbf" ] ;
+     fhir:display [ fhir:v "t(14;16)/IGH-MBF" ] ;
+     fhir:definition [ fhir:v "t(14;16)/IGH-MBF" ]
+  ] [
+     fhir:code [ fhir:v "igh_mafb" ] ;
+     fhir:display [ fhir:v "t(14;20)/IGH-MAFB" ] ;
+     fhir:definition [ fhir:v "t(14;20)/IGH-MAFB" ]
+  ] [
+     fhir:code [ fhir:v "igh_split_signal" ] ;
+     fhir:display [ fhir:v "IgH split signal" ] ;
+     fhir:definition [ fhir:v "IgH split signal" ]
+  ] [
+     fhir:code [ fhir:v "13q_deletion" ] ;
+     fhir:display [ fhir:v "13q deletion" ] ;
+     fhir:definition [ fhir:v "13q deletion" ]
+  ] [
+     fhir:code [ fhir:v "tp53_deletion" ] ;
+     fhir:display [ fhir:v "TP53 deletion" ] ;
+     fhir:definition [ fhir:v "TP53 deletion" ]
+  ] [
+     fhir:code [ fhir:v "1q21" ] ;
+     fhir:display [ fhir:v "1q21 amplifikation" ] ;
+     fhir:definition [ fhir:v "1q21 amplifikation" ]
+  ] [
+     fhir:code [ fhir:v "11q22" ] ;
+     fhir:display [ fhir:v "11q22/ATM amplifikation" ] ;
+     fhir:definition [ fhir:v "11q22/ATM amplifikation" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,76 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "FISHSamples",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet FISHSamples</b></p><a name=\"FISHSamples\"> </a><a name=\"hcFISHSamples\"> </a><a name=\"FISHSamples-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-FISHVariables.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/FISHVariables</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-igh_fgfr3\">igh_fgfr3</a></td><td>t(4;14)/IGH-FGFR3</td><td>t(4;14)/IGH-FGFR3</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-igh_ccnd1\">igh_ccnd1</a></td><td>t(11;14)/IGH-CCND1</td><td>t(11;14)/IGH-CCND1</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-igh_mbf\">igh_mbf</a></td><td>t(14;16)/IGH-MBF</td><td>t(14;16)/IGH-MBF</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-igh_mafb\">igh_mafb</a></td><td>t(14;20)/IGH-MAFB</td><td>t(14;20)/IGH-MAFB</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-igh_split_signal\">igh_split_signal</a></td><td>IgH split signal</td><td>IgH split signal</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-13q_deletion\">13q_deletion</a></td><td>13q deletion</td><td>13q deletion</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-tp53_deletion\">tp53_deletion</a></td><td>TP53 deletion</td><td>TP53 deletion</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-1q21\">1q21</a></td><td>1q21 amplifikation</td><td>1q21 amplifikation</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-11q22\">11q22</a></td><td>11q22/ATM amplifikation</td><td>11q22/ATM amplifikation</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Anden IGH translokation</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/FISHSamples",
+  "version" : "0.1.6",
+  "name" : "FISHSamples",
+  "title" : "Anvendte FISH prober",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-07-15T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Anvendte FISH prober",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/FISHVariables",
+      "concept" : [{
+        "code" : "igh_fgfr3",
+        "display" : "t(4;14)/IGH-FGFR3"
+      },
+      {
+        "code" : "igh_ccnd1",
+        "display" : "t(11;14)/IGH-CCND1"
+      },
+      {
+        "code" : "igh_mbf",
+        "display" : "t(14;16)/IGH-MBF"
+      },
+      {
+        "code" : "igh_mafb",
+        "display" : "t(14;20)/IGH-MAFB"
+      },
+      {
+        "code" : "igh_split_signal",
+        "display" : "IgH split signal"
+      },
+      {
+        "code" : "13q_deletion",
+        "display" : "13q deletion"
+      },
+      {
+        "code" : "tp53_deletion",
+        "display" : "TP53 deletion"
+      },
+      {
+        "code" : "1q21",
+        "display" : "1q21 amplifikation"
+      },
+      {
+        "code" : "11q22",
+        "display" : "11q22/ATM amplifikation"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "other",
+        "display" : "Anden IGH translokation"
+      }]
+    }]
+  }
+}

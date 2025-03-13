@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/ArtrosePlacering> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ArtrosePlacering"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ArtrosePlacering</b></p><a name=\"ArtrosePlacering\"> </a><a name=\"hcArtrosePlacering\"> </a><a name=\"ArtrosePlacering-en-US\"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/ArtrosePlacering</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">hmedial<a name=\"ArtrosePlacering-hmedial\"> </a></td><td>Medial artrose</td><td>Medial artrose</td></tr><tr><td style=\"white-space:nowrap\">lateral<a name=\"ArtrosePlacering-lateral\"> </a></td><td>Lateral artrose</td><td>Lateral artrose</td></tr><tr><td style=\"white-space:nowrap\">patellofemoral<a name=\"ArtrosePlacering-patellofemoral\"> </a></td><td>Patellofemoral artrose</td><td>Patellofemoral artrose</td></tr><tr><td style=\"white-space:nowrap\">2kammer<a name=\"ArtrosePlacering-2kammer\"> </a></td><td>2-kammer artrose</td><td>2-kammer artrose</td></tr><tr><td style=\"white-space:nowrap\">3kammer<a name=\"ArtrosePlacering-3kammer\"> </a></td><td>3-kammer artrose</td><td>3-kammer artrose</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/ArtrosePlacering"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "ArtrosePlacering"] ; # 
+  fhir:title [ fhir:v "Placering af indikationsgivne artrose"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-12-19T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Placering af indikationsgivne artrose"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "hmedial" ] ;
+     fhir:display [ fhir:v "Medial artrose" ] ;
+     fhir:definition [ fhir:v "Medial artrose" ]
+  ] [
+     fhir:code [ fhir:v "lateral" ] ;
+     fhir:display [ fhir:v "Lateral artrose" ] ;
+     fhir:definition [ fhir:v "Lateral artrose" ]
+  ] [
+     fhir:code [ fhir:v "patellofemoral" ] ;
+     fhir:display [ fhir:v "Patellofemoral artrose" ] ;
+     fhir:definition [ fhir:v "Patellofemoral artrose" ]
+  ] [
+     fhir:code [ fhir:v "2kammer" ] ;
+     fhir:display [ fhir:v "2-kammer artrose" ] ;
+     fhir:definition [ fhir:v "2-kammer artrose" ]
+  ] [
+     fhir:code [ fhir:v "3kammer" ] ;
+     fhir:display [ fhir:v "3-kammer artrose" ] ;
+     fhir:definition [ fhir:v "3-kammer artrose" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

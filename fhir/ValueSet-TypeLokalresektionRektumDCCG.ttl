@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/TypeLokalresektionRektumDCCG> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TypeLokalresektionRektumDCCG"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet TypeLokalresektionRektumDCCG</b></p><a name=\"TypeLokalresektionRektumDCCG\"> </a><a name=\"hcTypeLokalresektionRektumDCCG\"> </a><a name=\"TypeLokalresektionRektumDCCG-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-ProcedureType.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-local_resection\">local_resection</a></td><td>Endoskopisk lokalresektion (ekskl. TES)</td><td>Local ressection / Lokalresektion</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-local_resection_tes\">local_resection_tes</a></td><td>Endoskopisk lokalresektion efterfulgt af TES</td><td>Local ressection followed by TES / Lokalresektion efterfulgt af TES</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-transanal_resection\">transanal_resection</a></td><td>Transanal endoskopisk lokalresektion (TES)</td><td>Transanal endoskopisk lokalresektion (TES)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/TypeLokalresektionRektumDCCG"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "TypeLokalresektionRektumDCCG"] ; # 
+  fhir:title [ fhir:v "Type af præoperativ endoskopisk lokalresektion (Rektum) DCCG"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2023-04-13T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Type af præoperativ endoskopisk lokalresektion (Rektum) DCCG"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "local_resection" ] ;
+         fhir:display [ fhir:v "Endoskopisk lokalresektion (ekskl. TES)" ]
+       ] [
+         fhir:code [ fhir:v "local_resection_tes" ] ;
+         fhir:display [ fhir:v "Endoskopisk lokalresektion efterfulgt af TES" ]
+       ] [
+         fhir:code [ fhir:v "transanal_resection" ] ;
+         fhir:display [ fhir:v "Transanal endoskopisk lokalresektion (TES)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

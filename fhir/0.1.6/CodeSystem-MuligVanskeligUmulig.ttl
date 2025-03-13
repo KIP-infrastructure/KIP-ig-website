@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/MuligVanskeligUmulig> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MuligVanskeligUmulig"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem MuligVanskeligUmulig</b></p><a name=\"MuligVanskeligUmulig\"> </a><a name=\"hcMuligVanskeligUmulig\"> </a><a name=\"MuligVanskeligUmulig-en-US\"> </a><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/MuligVanskeligUmulig</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">mulig<a name=\"MuligVanskeligUmulig-mulig\"> </a></td><td>Mulig</td><td>Behandlingen er mulig</td></tr><tr><td style=\"white-space:nowrap\">vanskelig<a name=\"MuligVanskeligUmulig-vanskelig\"> </a></td><td>Vanskelig</td><td>Behandlingen er vanskelig men mulig</td></tr><tr><td style=\"white-space:nowrap\">umulig<a name=\"MuligVanskeligUmulig-umulig\"> </a></td><td>Umulig</td><td>Behandlingen er ikke mulig</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/MuligVanskeligUmulig"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "MuligVanskeligUmulig"] ; # 
+  fhir:title [ fhir:v "Mulig-Vanskelig-Umulig"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-09T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Vurdering af behandling"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "mulig" ] ;
+     fhir:display [ fhir:v "Mulig" ] ;
+     fhir:definition [ fhir:v "Behandlingen er mulig" ]
+  ] [
+     fhir:code [ fhir:v "vanskelig" ] ;
+     fhir:display [ fhir:v "Vanskelig" ] ;
+     fhir:definition [ fhir:v "Behandlingen er vanskelig men mulig" ]
+  ] [
+     fhir:code [ fhir:v "umulig" ] ;
+     fhir:display [ fhir:v "Umulig" ] ;
+     fhir:definition [ fhir:v "Behandlingen er ikke mulig" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

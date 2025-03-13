@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="VarigRespons"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet VarigRespons</b></p><a name="VarigRespons"> </a><a name="hcVarigRespons"> </a><a name="VarigRespons-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-Profylaksebehandling.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/Profylaksebehandling</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-Profylaksebehandling.html#Profylaksebehandling-nofreeOfTreatment">nofreeOfTreatment</a></td><td>Nej, og patienten har været behandlingsfri indtil nu</td></tr><tr><td><a href="CodeSystem-Profylaksebehandling.html#Profylaksebehandling-noagainprofylakse">noagainprofylakse</a></td><td>Nej, men patienten er genoptaget profylakse</td></tr></table></li><li>Include these codes as defined in <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html"><code>http://terminology.hl7.org/CodeSystem/v2-0532</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html#v2-0532-Y">Y</a></td><td>Ja</td><td>Yes</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.rkkp.dk/fhir/ValueSet/VarigRespons"/>
+  <version value="0.1.6"/>
+  <name value="VarigRespons"/>
+  <title value="VarigRespons"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-06-25T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="VarigRespons"/>
+  <compose>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/Profylaksebehandling"/>
+      <concept>
+        <code value="nofreeOfTreatment"/>
+        <display value="Nej, og patienten har været behandlingsfri indtil nu"/>
+      </concept>
+      <concept>
+        <code value="noagainprofylakse"/>
+        <display value="Nej, men patienten er genoptaget profylakse"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+      <concept>
+        <code value="Y"/>
+        <display value="Ja"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

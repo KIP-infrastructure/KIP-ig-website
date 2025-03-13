@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="KontaktSted"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet KontaktSted</b></p><a name="KontaktSted"> </a><a name="hcKontaktSted"> </a><a name="KontaktSted-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-ContactPlace.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/ContactPlace</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-ContactPlace.html#ContactPlace-outpatient_clinic">outpatient_clinic</a></td><td>Fremmøde i ambulatorium</td><td>Outpatient clinic / Ambulatorium</td></tr><tr><td><a href="CodeSystem-ContactPlace.html#ContactPlace-home_visit">home_visit</a></td><td>Hjemmebesøg</td><td>Home visit / Hjemmebesøg / SNOMED-CT: 439708006</td></tr><tr><td><a href="CodeSystem-ContactPlace.html#ContactPlace-oversight">oversight</a></td><td>Tilsyn anden afdeling uden samtidig tilknytning af patienten til det palliative team</td><td>Oversight on another department / Tilsyn anden afdeling uden samtidig tilknytning af patienten til det palliative team</td></tr><tr><td><a href="CodeSystem-ContactPlace.html#ContactPlace-oversight_palliative">oversight_palliative</a></td><td>Tilsyn anden afdeling med samtidig tilknytning af patienten til det palliative team</td><td>Oversight on another department (Palliative) / Tilsyn anden afdeling med samtidig tilknytning af patienten til det palliative team</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.rkkp.dk/fhir/ValueSet/KontaktSted"/>
+  <version value="0.1.6"/>
+  <name value="KontaktSted"/>
+  <title value="Foerste kontakt sted"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-09-06T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Sted for første kontakt"/>
+  <compose>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/ContactPlace"/>
+      <concept>
+        <code value="outpatient_clinic"/>
+        <display value="Fremmøde i ambulatorium"/>
+      </concept>
+      <concept>
+        <code value="home_visit"/>
+        <display value="Hjemmebesøg"/>
+      </concept>
+      <concept>
+        <code value="oversight"/>
+        <display value="Tilsyn anden afdeling uden samtidig tilknytning af patienten til det palliative team"/>
+      </concept>
+      <concept>
+        <code value="oversight_palliative"/>
+        <display value="Tilsyn anden afdeling med samtidig tilknytning af patienten til det palliative team"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

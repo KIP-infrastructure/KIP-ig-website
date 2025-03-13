@@ -1,0 +1,68 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KomponentSupplementDKR",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KomponentSupplementDKR</b></p><a name=\"KomponentSupplementDKR\"> </a><a name=\"hcKomponentSupplementDKR\"> </a><a name=\"KomponentSupplementDKR-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-ImplantComponents.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ImplantComponents</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ImplantComponents.html#ImplantComponents-stem_femur\">stem_femur</a></td><td>Femur stem</td><td>Stem (femur)</td></tr><tr><td><a href=\"CodeSystem-ImplantComponents.html#ImplantComponents-augment_femur\">augment_femur</a></td><td>Femuraugment</td><td>Augment (femur)</td></tr><tr><td><a href=\"CodeSystem-ImplantComponents.html#ImplantComponents-cone_sleeve_femur\">cone_sleeve_femur</a></td><td>Femurcone/-sleve</td><td>Cone/sleeve (femur)</td></tr><tr><td><a href=\"CodeSystem-ImplantComponents.html#ImplantComponents-stem_tibia\">stem_tibia</a></td><td>Tibiastem</td><td>Stem (tibia)</td></tr><tr><td><a href=\"CodeSystem-ImplantComponents.html#ImplantComponents-augment_tibia\">augment_tibia</a></td><td>Tibiaaugment</td><td>Augment (tibia)</td></tr><tr><td><a href=\"CodeSystem-ImplantComponents.html#ImplantComponents-cone_sleeve_tibia\">cone_sleeve_tibia</a></td><td>Tibiacone/-sleve</td><td>Cone/sleeve (tibia)</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-none\">none</a></td><td>Ingen</td><td>None - used to choose none of the available values</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/KomponentSupplementDKR",
+  "version" : "0.1.6",
+  "name" : "KomponentSupplementDKR",
+  "title" : "Komponent - supplement (DKR)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-10-13T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Komponent - supplement (DKR)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/ImplantComponents",
+      "concept" : [{
+        "code" : "stem_femur",
+        "display" : "Femur stem"
+      },
+      {
+        "code" : "augment_femur",
+        "display" : "Femuraugment"
+      },
+      {
+        "code" : "cone_sleeve_femur",
+        "display" : "Femurcone/-sleve"
+      },
+      {
+        "code" : "stem_tibia",
+        "display" : "Tibiastem"
+      },
+      {
+        "code" : "augment_tibia",
+        "display" : "Tibiaaugment"
+      },
+      {
+        "code" : "cone_sleeve_tibia",
+        "display" : "Tibiacone/-sleve"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "other",
+        "display" : "Andet"
+      },
+      {
+        "code" : "none",
+        "display" : "Ingen"
+      }]
+    }]
+  }
+}

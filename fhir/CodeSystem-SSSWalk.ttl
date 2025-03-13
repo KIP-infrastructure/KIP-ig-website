@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/SSSWalk> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SSSWalk"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem SSSWalk</b></p><a name=\"SSSWalk\"> </a><a name=\"hcSSSWalk\"> </a><a name=\"SSSWalk-en-US\"> </a><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/SSSWalk</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"SSSWalk-12\"> </a></td><td>Pt. kan gå mindst 5 m uden hjælpemidler.</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"SSSWalk-9\"> </a></td><td>Pt. kan gå mindst 5 m med hjælpemidler.</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"SSSWalk-6\"> </a></td><td>Pt. kan gå mindst 5 m med personstøtte.</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"SSSWalk-3\"> </a></td><td>Pt. kan sidde uden støtte.</td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"SSSWalk-0\"> </a></td><td>Sengebunden eller i kørestol med støtte.</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/SSSWalk"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "SSSWalk"] ; # 
+  fhir:title [ fhir:v "Scandinavian Stroke Scale (SSS) - Walk"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-23T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Scandinavian Stroke Scale (SSS) - Walk: Hvis patienten ikke kan gå, bedømmes om patienten kan sidde oprejst på sengekanten uden at støtte hænderne (3) eller ikke (0)."] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "12" ] ;
+     fhir:display [ fhir:v "12" ] ;
+     fhir:definition [ fhir:v "Pt. kan gå mindst 5 m uden hjælpemidler." ]
+  ] [
+     fhir:code [ fhir:v "9" ] ;
+     fhir:display [ fhir:v "9" ] ;
+     fhir:definition [ fhir:v "Pt. kan gå mindst 5 m med hjælpemidler." ]
+  ] [
+     fhir:code [ fhir:v "6" ] ;
+     fhir:display [ fhir:v "6" ] ;
+     fhir:definition [ fhir:v "Pt. kan gå mindst 5 m med personstøtte." ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "3" ] ;
+     fhir:definition [ fhir:v "Pt. kan sidde uden støtte." ]
+  ] [
+     fhir:code [ fhir:v "0" ] ;
+     fhir:display [ fhir:v "0" ] ;
+     fhir:definition [ fhir:v "Sengebunden eller i kørestol med støtte." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

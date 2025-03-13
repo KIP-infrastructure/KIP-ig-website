@@ -1,0 +1,60 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "PostoperativeKomplikationerDCCG",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet PostoperativeKomplikationerDCCG</b></p><a name=\"PostoperativeKomplikationerDCCG\"> </a><a name=\"hcPostoperativeKomplikationerDCCG\"> </a><a name=\"PostoperativeKomplikationerDCCG-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-Complications.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Complications</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-perforation\">perforation</a></td><td>Peroperativ perforation af tarm</td><td>Perforation</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-bleeding\">bleeding</a></td><td>Blødning som følge af endoskopi</td><td>Bleeding / Blødning</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-post_polypectomy_syndrome\">post_polypectomy_syndrome</a></td><td>Postpolypektomisyndrom</td><td>Post polypectomy syndrome / Postpolypektomisyndrom</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-urinary_retention\">urinary_retention</a></td><td>Urinretention</td><td>Urinary retention / Urinretention</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-medical\">medical</a></td><td>Medicinsk komplikation</td><td>Medical complication / Medicinsk komplikation</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Anden kirurgisk komplikation</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/PostoperativeKomplikationerDCCG",
+  "version" : "0.1.6",
+  "name" : "PostoperativeKomplikationerDCCG",
+  "title" : "Postoperative komplikationer (DCCG)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-11-10T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Postoperative komplikationer (DCCG)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/Complications",
+      "concept" : [{
+        "code" : "perforation",
+        "display" : "Peroperativ perforation af tarm"
+      },
+      {
+        "code" : "bleeding",
+        "display" : "Blødning som følge af endoskopi"
+      },
+      {
+        "code" : "post_polypectomy_syndrome",
+        "display" : "Postpolypektomisyndrom"
+      },
+      {
+        "code" : "urinary_retention",
+        "display" : "Urinretention"
+      },
+      {
+        "code" : "medical",
+        "display" : "Medicinsk komplikation"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "other",
+        "display" : "Anden kirurgisk komplikation"
+      }]
+    }]
+  }
+}

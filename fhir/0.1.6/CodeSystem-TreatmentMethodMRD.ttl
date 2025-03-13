@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/TreatmentMethodMRD> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TreatmentMethodMRD"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem TreatmentMethodMRD</b></p><a name=\"TreatmentMethodMRD\"> </a><a name=\"hcTreatmentMethodMRD\"> </a><a name=\"TreatmentMethodMRD-en-US\"> </a><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/TreatmentMethodMRD</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">flow<a name=\"TreatmentMethodMRD-flow\"> </a></td><td>Flow</td><td>Flow</td></tr><tr><td style=\"white-space:nowrap\">ngs<a name=\"TreatmentMethodMRD-ngs\"> </a></td><td>NGS</td><td>NGS</td></tr><tr><td style=\"white-space:nowrap\">pct<a name=\"TreatmentMethodMRD-pct\"> </a></td><td>PCT</td><td>PCT</td></tr><tr><td style=\"white-space:nowrap\">pet<a name=\"TreatmentMethodMRD-pet\"> </a></td><td>PET</td><td>PET</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/TreatmentMethodMRD"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "TreatmentMethodMRD"] ; # 
+  fhir:title [ fhir:v "Treatment method - Minimal Residual Disease (MRD)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-07-13T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Treatment method - Minimal Residual Disease (MRD)"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "flow" ] ;
+     fhir:display [ fhir:v "Flow" ] ;
+     fhir:definition [ fhir:v "Flow" ]
+  ] [
+     fhir:code [ fhir:v "ngs" ] ;
+     fhir:display [ fhir:v "NGS" ] ;
+     fhir:definition [ fhir:v "NGS" ]
+  ] [
+     fhir:code [ fhir:v "pct" ] ;
+     fhir:display [ fhir:v "PCT" ] ;
+     fhir:definition [ fhir:v "PCT" ]
+  ] [
+     fhir:code [ fhir:v "pet" ] ;
+     fhir:display [ fhir:v "PET" ] ;
+     fhir:definition [ fhir:v "PET" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

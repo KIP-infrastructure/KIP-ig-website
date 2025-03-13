@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/HarrisHipScoreSmerter> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HarrisHipScoreSmerter"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet HarrisHipScoreSmerter</b></p><a name=\"HarrisHipScoreSmerter\"> </a><a name=\"hcHarrisHipScoreSmerter\"> </a><a name=\"HarrisHipScoreSmerter-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-HarrisHipScorePain.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/HarrisHipScorePain</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-HarrisHipScorePain.html#HarrisHipScorePain-44\">44</a></td><td>Ingen</td><td>None, or ignores it (44)</td></tr><tr><td><a href=\"CodeSystem-HarrisHipScorePain.html#HarrisHipScorePain-40\">40</a></td><td>Lette, ingen aktivitetsbegrænsning</td><td>Slight, occasional, no compromise in activity (40)</td></tr><tr><td><a href=\"CodeSystem-HarrisHipScorePain.html#HarrisHipScorePain-30\">30</a></td><td>Milde, ej ved aktivitet men ved sværere anstrengelse</td><td>Mild pain, no effect on average activities, rarely moderate pain with unusual activity, may take aspirin (30)</td></tr><tr><td><a href=\"CodeSystem-HarrisHipScorePain.html#HarrisHipScorePain-20\">20</a></td><td>Moderate, kun ved dagl. aktivitet + arbejde, dagl. analgetika</td><td>Moderate pain, tolerable but makes concessions to pain. Some limitations of ordinary activity or work. May require occasional pain medication stronger than aspirin (20)</td></tr><tr><td><a href=\"CodeSystem-HarrisHipScorePain.html#HarrisHipScorePain-10\">10</a></td><td>Sværere, stærk begrænsning i de daglige aktiviteter</td><td>Marked pain, serious limitation of activities (10)</td></tr><tr><td><a href=\"CodeSystem-HarrisHipScorePain.html#HarrisHipScorePain-0\">0</a></td><td>Invaliderende hvilesmerter</td><td>Totally disabled, crippled, pain in bed, bedridden (0)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/HarrisHipScoreSmerter"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "HarrisHipScoreSmerter"] ; # 
+  fhir:title [ fhir:v "Harris Hip Score - Smerter"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-11-15T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Harris Hip Score - Smerter"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/HarrisHipScorePain"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "44" ] ;
+         fhir:display [ fhir:v "Ingen" ]
+       ] [
+         fhir:code [ fhir:v "40" ] ;
+         fhir:display [ fhir:v "Lette, ingen aktivitetsbegrænsning" ]
+       ] [
+         fhir:code [ fhir:v "30" ] ;
+         fhir:display [ fhir:v "Milde, ej ved aktivitet men ved sværere anstrengelse" ]
+       ] [
+         fhir:code [ fhir:v "20" ] ;
+         fhir:display [ fhir:v "Moderate, kun ved dagl. aktivitet + arbejde, dagl. analgetika" ]
+       ] [
+         fhir:code [ fhir:v "10" ] ;
+         fhir:display [ fhir:v "Sværere, stærk begrænsning i de daglige aktiviteter" ]
+       ] [
+         fhir:code [ fhir:v "0" ] ;
+         fhir:display [ fhir:v "Invaliderende hvilesmerter" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

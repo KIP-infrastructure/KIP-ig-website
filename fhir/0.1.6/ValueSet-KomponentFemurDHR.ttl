@@ -1,0 +1,166 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/KomponentFemurDHR> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KomponentFemurDHR"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KomponentFemurDHR</b></p><a name=\"KomponentFemurDHR\"> </a><a name=\"hcKomponentFemurDHR\"> </a><a name=\"KomponentFemurDHR-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-HipJointArthroplastyComponent.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/HipJointArthroplastyComponent</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-depuy_corail_collar\">depuy_corail_collar</a></td><td>DePuy: Corail m/krave</td><td>DePuy: Corail m/krave</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-depuy_corail_without_collar\">depuy_corail_without_collar</a></td><td>DePuy: Corail u/krave</td><td>DePuy: Corail u/krave</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-depuy_corail_revision_stem\">depuy_corail_revision_stem</a></td><td>DePuy: Corail Revision Stem - KAR</td><td>DePuy: Corail Revision Stem - KAR</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-depuy_c_stem_amt\">depuy_c_stem_amt</a></td><td>DePuy: C-stem AMT</td><td>DePuy: C-stem AMT</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-depuy_summit\">depuy_summit</a></td><td>DePuy: Summit</td><td>DePuy: Summit</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-implantcast_mutars_proximal_femoral_replacement\">implantcast_mutars_proximal_femoral_replacement</a></td><td>Implantcast: Mutars proksimal femoral replacement</td><td>Implantcast: Mutars proksimal femoral replacement</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-lima_h_max_lateralized\">lima_h_max_lateralized</a></td><td>Lima: H-MAX: Lateralized</td><td>Lima: H-MAX: Lateralized</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-lima_h_max_standard\">lima_h_max_standard</a></td><td>Lima: H-MAX: Standard</td><td>Lima: H-MAX: Standard</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-link_link_mp\">link_link_mp</a></td><td>Link: Link MP</td><td>Link: Link MP</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-link_lubinus_sp_ii\">link_lubinus_sp_ii</a></td><td>Link: Lubinus SP II</td><td>Link: Lubinus SP II</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-peter_brehm_gmbh_mrp_titan\">peter_brehm_gmbh_mrp_titan</a></td><td>Peter Brehm GmbH: MRP-Titan</td><td>Peter Brehm GmbH: MRP-Titan </td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-smith.38nephew_bhr\">smith&amp;nephew_bhr</a></td><td>Smith &amp; Nephew: BHR</td><td>Smith &amp; Nephew: BHR (Acetabulum + Femur)</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-smith.38nephew_polarstem\">smith&amp;nephew_polarstem</a></td><td>Smith &amp; Nephew: Polarstem</td><td>Smith &amp; Nephew: Polarstem</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-stryker_acolade_ii\">stryker_acolade_ii</a></td><td>Stryker: Accolade II </td><td>Stryker: Accolade II </td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-stryker_exeter_primary_v40\">stryker_exeter_primary_v40</a></td><td>Stryker: Exeter Primary V40</td><td>Stryker: Exeter Primary V40</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-stryker_gmrs_proximal_femoral_component\">stryker_gmrs_proximal_femoral_component</a></td><td>Stryker: GMRS Proximal Femoral Component</td><td>Stryker: GMRS Proximal Femoral Component</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-stryker_restoration_modular\">stryker_restoration_modular</a></td><td>Stryker: Restoration modular</td><td>Stryker: Restoration modular</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-viking_medical_cfp\">viking_medical_cfp</a></td><td>Viking Medical: C.F.P.</td><td>Viking Medical: C.F.P.</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_arcos_revision\">zimmer_biomet_arcos_revision</a></td><td>Zimmer Biomet: Arcos revision</td><td>Zimmer Biomet: Arcos revision</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_avenir_cemented_stem\">zimmer_biomet_avenir_cemented_stem</a></td><td>Zimmer Biomet: Avenir cemented stem</td><td>Zimmer Biomet: Avenir cemented stem</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_avenir_cementless_stem\">zimmer_biomet_avenir_cementless_stem</a></td><td>Zimmer Biomet: Avenir cementless stem </td><td>Zimmer Biomet: Avenir cementless stem</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_avenir_complete\">zimmer_biomet_avenir_complete</a></td><td>Zimmer Biomet: Avenir complete</td><td>Zimmer Biomet: Avenir complete</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_bimetrix_without_collar_chrome_cobalt\">zimmer_biomet_bimetrix_without_collar_chrome_cobalt</a></td><td>Zimmer Biomet: Bimetric u/krave chrom/cobolt</td><td>Zimmer Biomet: Bimetric u/krave chrom/cobolt</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_bimetric_without_collar_titaneum\">zimmer_biomet_bimetric_without_collar_titaneum</a></td><td>Zimmer Biomet: Bimetric u/krave titaneum</td><td>Zimmer Biomet: Bimetric u/krave titaneum</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_cls_spotorno\">zimmer_biomet_cls_spotorno</a></td><td>Zimmer Biomet: CLS Spotorno</td><td>Zimmer Biomet: CLS Spotorno</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_cpt\">zimmer_biomet_cpt</a></td><td>Zimmer Biomet: CPT</td><td>Zimmer Biomet: CPT</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_echo_bi_metric_hip_stem_full_proximal_profile\">zimmer_biomet_echo_bi_metric_hip_stem_full_proximal_profile</a></td><td>Zimmer Biomet: Echo Bi-metric Hip Stem Full Proximal Profile</td><td>Zimmer Biomet: Echo Bi-metric Hip Stem Full Proximal Profile</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_echo_bi_metric_reduced_proximal_profile\">zimmer_biomet_echo_bi_metric_reduced_proximal_profile</a></td><td>Zimmer Biomet: Echo Bi-Metric Reduceret Proximal Profil</td><td>Zimmer Biomet: Echo Bi-Metric Reduceret Proximal Profil</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_fitmore\">zimmer_biomet_fitmore</a></td><td>Zimmer Biomet: Fitmore</td><td>Zimmer Biomet: Fitmore</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_ms_30\">zimmer_biomet_ms_30</a></td><td>Zimmer Biomet: MS-30</td><td>Zimmer Biomet: MS-30</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_revitan_revision_hip_system\">zimmer_biomet_revitan_revision_hip_system</a></td><td>Zimmer Biomet: Revitan Revision Hip System</td><td>Zimmer Biomet: Revitan Revision Hip System</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_taperloc\">zimmer_biomet_taperloc</a></td><td>Zimmer Biomet: Taperloc</td><td>Zimmer Biomet: Taperloc</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_wagner_cone\">zimmer_biomet_wagner_cone</a></td><td>Zimmer Biomet: Wagner Cone</td><td>Zimmer Biomet: Wagner Cone</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_wagner_sl\">zimmer_biomet_wagner_sl</a></td><td>Zimmer Biomet: Wagner SL</td><td>Zimmer Biomet: Wagner SL</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_zmr_porous_coated\">zimmer_biomet_zmr_porous_coated</a></td><td>Zimmer Biomet: ZMR porous-coated</td><td>Zimmer Biomet: ZMR porous-coated</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_zmr_splined\">zimmer_biomet_zmr_splined</a></td><td>Zimmer Biomet: ZMR splined</td><td>Zimmer Biomet: ZMR splined</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_zmr_taper\">zimmer_biomet_zmr_taper</a></td><td>Zimmer Biomet: ZMR Taper</td><td>Zimmer Biomet: ZMR Taper</td></tr><tr><td><a href=\"CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_zmr_taper_xl\">zimmer_biomet_zmr_taper_xl</a></td><td>Zimmer Biomet: ZMR Taper XL</td><td>Zimmer Biomet: ZMR Taper XL</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-custom\">custom</a></td><td>Custom made</td><td>Custom made</td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Anden komponent</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/KomponentFemurDHR"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "KomponentFemurDHR"] ; # 
+  fhir:title [ fhir:v "Komponent - femur (DHR)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-11-16T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Komponent - femur (DHR)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/HipJointArthroplastyComponent"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "depuy_corail_collar" ] ;
+         fhir:display [ fhir:v "DePuy: Corail m/krave" ]
+       ] [
+         fhir:code [ fhir:v "depuy_corail_without_collar" ] ;
+         fhir:display [ fhir:v "DePuy: Corail u/krave" ]
+       ] [
+         fhir:code [ fhir:v "depuy_corail_revision_stem" ] ;
+         fhir:display [ fhir:v "DePuy: Corail Revision Stem - KAR" ]
+       ] [
+         fhir:code [ fhir:v "depuy_c_stem_amt" ] ;
+         fhir:display [ fhir:v "DePuy: C-stem AMT" ]
+       ] [
+         fhir:code [ fhir:v "depuy_summit" ] ;
+         fhir:display [ fhir:v "DePuy: Summit" ]
+       ] [
+         fhir:code [ fhir:v "implantcast_mutars_proximal_femoral_replacement" ] ;
+         fhir:display [ fhir:v "Implantcast: Mutars proksimal femoral replacement" ]
+       ] [
+         fhir:code [ fhir:v "lima_h_max_lateralized" ] ;
+         fhir:display [ fhir:v "Lima: H-MAX: Lateralized" ]
+       ] [
+         fhir:code [ fhir:v "lima_h_max_standard" ] ;
+         fhir:display [ fhir:v "Lima: H-MAX: Standard" ]
+       ] [
+         fhir:code [ fhir:v "link_link_mp" ] ;
+         fhir:display [ fhir:v "Link: Link MP" ]
+       ] [
+         fhir:code [ fhir:v "link_lubinus_sp_ii" ] ;
+         fhir:display [ fhir:v "Link: Lubinus SP II" ]
+       ] [
+         fhir:code [ fhir:v "peter_brehm_gmbh_mrp_titan" ] ;
+         fhir:display [ fhir:v "Peter Brehm GmbH: MRP-Titan" ]
+       ] [
+         fhir:code [ fhir:v "smith&nephew_bhr" ] ;
+         fhir:display [ fhir:v "Smith & Nephew: BHR" ]
+       ] [
+         fhir:code [ fhir:v "smith&nephew_polarstem" ] ;
+         fhir:display [ fhir:v "Smith & Nephew: Polarstem" ]
+       ] [
+         fhir:code [ fhir:v "stryker_acolade_ii" ] ;
+         fhir:display [ fhir:v "Stryker: Accolade II " ]
+       ] [
+         fhir:code [ fhir:v "stryker_exeter_primary_v40" ] ;
+         fhir:display [ fhir:v "Stryker: Exeter Primary V40" ]
+       ] [
+         fhir:code [ fhir:v "stryker_gmrs_proximal_femoral_component" ] ;
+         fhir:display [ fhir:v "Stryker: GMRS Proximal Femoral Component" ]
+       ] [
+         fhir:code [ fhir:v "stryker_restoration_modular" ] ;
+         fhir:display [ fhir:v "Stryker: Restoration modular" ]
+       ] [
+         fhir:code [ fhir:v "viking_medical_cfp" ] ;
+         fhir:display [ fhir:v "Viking Medical: C.F.P." ]
+       ] [
+         fhir:code [ fhir:v "zimmer_biomet_arcos_revision" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: Arcos revision" ]
+       ] [
+         fhir:code [ fhir:v "zimmer_biomet_avenir_cemented_stem" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: Avenir cemented stem" ]
+       ] [
+         fhir:code [ fhir:v "zimmer_biomet_avenir_cementless_stem" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: Avenir cementless stem " ]
+       ] [
+         fhir:code [ fhir:v "zimmer_biomet_avenir_complete" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: Avenir complete" ]
+       ] [
+         fhir:code [ fhir:v "zimmer_biomet_bimetrix_without_collar_chrome_cobalt" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: Bimetric u/krave chrom/cobolt" ]
+       ] [
+         fhir:code [ fhir:v "zimmer_biomet_bimetric_without_collar_titaneum" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: Bimetric u/krave titaneum" ]
+       ] [
+         fhir:code [ fhir:v "zimmer_biomet_cls_spotorno" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: CLS Spotorno" ]
+       ] [
+         fhir:code [ fhir:v "zimmer_biomet_cpt" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: CPT" ]
+       ] [
+         fhir:code [ fhir:v "zimmer_biomet_echo_bi_metric_hip_stem_full_proximal_profile" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: Echo Bi-metric Hip Stem Full Proximal Profile" ]
+       ] [
+         fhir:code [ fhir:v "zimmer_biomet_echo_bi_metric_reduced_proximal_profile" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: Echo Bi-Metric Reduceret Proximal Profil" ]
+       ] [
+         fhir:code [ fhir:v "zimmer_biomet_fitmore" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: Fitmore" ]
+       ] [
+         fhir:code [ fhir:v "zimmer_biomet_ms_30" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: MS-30" ]
+       ] [
+         fhir:code [ fhir:v "zimmer_biomet_revitan_revision_hip_system" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: Revitan Revision Hip System" ]
+       ] [
+         fhir:code [ fhir:v "zimmer_biomet_taperloc" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: Taperloc" ]
+       ] [
+         fhir:code [ fhir:v "zimmer_biomet_wagner_cone" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: Wagner Cone" ]
+       ] [
+         fhir:code [ fhir:v "zimmer_biomet_wagner_sl" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: Wagner SL" ]
+       ] [
+         fhir:code [ fhir:v "zimmer_biomet_zmr_porous_coated" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: ZMR porous-coated" ]
+       ] [
+         fhir:code [ fhir:v "zimmer_biomet_zmr_splined" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: ZMR splined" ]
+       ] [
+         fhir:code [ fhir:v "zimmer_biomet_zmr_taper" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: ZMR Taper" ]
+       ] [
+         fhir:code [ fhir:v "zimmer_biomet_zmr_taper_xl" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: ZMR Taper XL" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "custom" ] ;
+         fhir:display [ fhir:v "Custom made" ]
+       ] [
+         fhir:code [ fhir:v "other" ] ;
+         fhir:display [ fhir:v "Anden komponent" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

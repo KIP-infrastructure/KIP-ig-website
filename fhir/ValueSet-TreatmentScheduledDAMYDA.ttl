@@ -1,0 +1,115 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/TreatmentScheduledDAMYDA> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TreatmentScheduledDAMYDA"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet TreatmentScheduledDAMYDA</b></p><a name=\"TreatmentScheduledDAMYDA\"> </a><a name=\"hcTreatmentScheduledDAMYDA\"> </a><a name=\"TreatmentScheduledDAMYDA-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-ATC.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ATC</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01AA01\">L01AA01</a></td><td>Cyklophosphamid</td><td>L01AA01 - cyclophosphamide</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01AA03\">L01AA03</a></td><td>Melfalan</td><td>L01AA03 - melphalan</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01AA09\">L01AA09</a></td><td>Bendamustin</td><td>L01AA09 - bendamustine</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01DB01\">L01DB01</a></td><td>Adriamycin (Doxorubicin)</td><td>L01DB01 - Doxorubicin</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-M05BA08\">M05BA08</a></td><td>Zolendronat (Zoledronsyre)</td><td>M05BA08 - zoledronic acid</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-M05BA03\">M05BA03</a></td><td>Pamidronat (Pamidronsyre)</td><td>M05BA03 - pamidronic acid</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-M05BX04\">M05BX04</a></td><td>Denosumab</td><td>M05BX04 - denosumab</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01FX08\">L01FX08</a></td><td>Elotuzumab</td><td>L01FX08 - elotuzumab</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01FC01\">L01FC01</a></td><td>Daratumumab</td><td>L01FC01 - daratumumab</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01FC02\">L01FC02</a></td><td>Isatuximab</td><td>L01FC02 - isatuximab</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01XH03\">L01XH03</a></td><td>Panobinostat</td><td>L01XH03 - panobinostat</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L04AX02\">L04AX02</a></td><td>Thalidomid</td><td>L04AX02 - thalidomide</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L04AX04\">L04AX04</a></td><td>Lenalidomid</td><td>L04AX04 - lenalidomide</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L04AX06\">L04AX06</a></td><td>Pomalidomid</td><td>L04AX06 - pomalidomide</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01XG01\">L01XG01</a></td><td>Bortezomib</td><td>L01XG01 - bortezomib</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01XG02\">L01XG02</a></td><td>Carfilzomib</td><td>L01XG02 - carfilzomib</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-L01XG03\">L01XG03</a></td><td>Ixazomib</td><td>L01XG03 - ixazomib</td></tr><tr><td><a href=\"CodeSystem-ATC.html#ATC-H02\">H02</a></td><td>Steroid (kun steroid, givet som palliation)</td><td>H02 - CORTICOSTEROIDS FOR SYSTEMIC USE</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-SKS.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/SKS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-BWG\">BWG</a></td><td>Strålebehandling</td><td>BWG - Strålebehandling</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-BWHA309\">BWHA309</a></td><td>Højdosis melfalan med stamcellestøtte</td><td>BWHA309 - Behandling med højdosis melfalan (konditionering)</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-BOQF1\">BOQF1</a></td><td>Allogen KMT</td><td>BOQF1 - Allogen knoglemarvstransplantation</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Øvrig</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/TreatmentScheduledDAMYDA"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "TreatmentScheduledDAMYDA"] ; # 
+  fhir:title [ fhir:v "Planlagt behandling (DAMYDA)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-07-08T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Planlagt behandling (DAMYDA)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/ATC"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "L01AA01" ] ;
+         fhir:display [ fhir:v "Cyklophosphamid" ]
+       ] [
+         fhir:code [ fhir:v "L01AA03" ] ;
+         fhir:display [ fhir:v "Melfalan" ]
+       ] [
+         fhir:code [ fhir:v "L01AA09" ] ;
+         fhir:display [ fhir:v "Bendamustin" ]
+       ] [
+         fhir:code [ fhir:v "L01DB01" ] ;
+         fhir:display [ fhir:v "Adriamycin (Doxorubicin)" ]
+       ] [
+         fhir:code [ fhir:v "M05BA08" ] ;
+         fhir:display [ fhir:v "Zolendronat (Zoledronsyre)" ]
+       ] [
+         fhir:code [ fhir:v "M05BA03" ] ;
+         fhir:display [ fhir:v "Pamidronat (Pamidronsyre)" ]
+       ] [
+         fhir:code [ fhir:v "M05BX04" ] ;
+         fhir:display [ fhir:v "Denosumab" ]
+       ] [
+         fhir:code [ fhir:v "L01FX08" ] ;
+         fhir:display [ fhir:v "Elotuzumab" ]
+       ] [
+         fhir:code [ fhir:v "L01FC01" ] ;
+         fhir:display [ fhir:v "Daratumumab" ]
+       ] [
+         fhir:code [ fhir:v "L01FC02" ] ;
+         fhir:display [ fhir:v "Isatuximab" ]
+       ] [
+         fhir:code [ fhir:v "L01XH03" ] ;
+         fhir:display [ fhir:v "Panobinostat" ]
+       ] [
+         fhir:code [ fhir:v "L04AX02" ] ;
+         fhir:display [ fhir:v "Thalidomid" ]
+       ] [
+         fhir:code [ fhir:v "L04AX04" ] ;
+         fhir:display [ fhir:v "Lenalidomid" ]
+       ] [
+         fhir:code [ fhir:v "L04AX06" ] ;
+         fhir:display [ fhir:v "Pomalidomid" ]
+       ] [
+         fhir:code [ fhir:v "L01XG01" ] ;
+         fhir:display [ fhir:v "Bortezomib" ]
+       ] [
+         fhir:code [ fhir:v "L01XG02" ] ;
+         fhir:display [ fhir:v "Carfilzomib" ]
+       ] [
+         fhir:code [ fhir:v "L01XG03" ] ;
+         fhir:display [ fhir:v "Ixazomib" ]
+       ] [
+         fhir:code [ fhir:v "H02" ] ;
+         fhir:display [ fhir:v "Steroid (kun steroid, givet som palliation)" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/SKS"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "BWG" ] ;
+         fhir:display [ fhir:v "Strålebehandling" ]
+       ] [
+         fhir:code [ fhir:v "BWHA309" ] ;
+         fhir:display [ fhir:v "Højdosis melfalan med stamcellestøtte" ]
+       ] [
+         fhir:code [ fhir:v "BOQF1" ] ;
+         fhir:display [ fhir:v "Allogen KMT" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "other" ] ;
+         fhir:display [ fhir:v "Øvrig" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

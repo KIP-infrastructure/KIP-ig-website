@@ -1,0 +1,56 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "AktivitetDKRR",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet AktivitetDKRR</b></p><a name=\"AktivitetDKRR\"> </a><a name=\"hcAktivitetDKRR\"> </a><a name=\"AktivitetDKRR-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-ActivityType.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ActivityType</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ActivityType.html#ActivityType-adl\">adl</a></td><td>ADL</td><td>ADL</td></tr><tr><td><a href=\"CodeSystem-ActivityType.html#ActivityType-sports\">sports</a></td><td>Sport</td><td>Sports / Sport</td></tr><tr><td><a href=\"CodeSystem-ActivityType.html#ActivityType-trafic\">trafic</a></td><td>Trafik</td><td>Trafic / Trafik</td></tr><tr><td><a href=\"CodeSystem-ActivityType.html#ActivityType-work\">work</a></td><td>Arbejde</td><td>Work / Arbejde</td></tr></table></li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0532</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html#v2-0532-UNK\">UNK</a></td><td>Ikke kendt</td><td>unknown</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/AktivitetDKRR",
+  "version" : "0.1.6",
+  "name" : "AktivitetDKRR",
+  "title" : "Aktivitet (DKRR)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-09-19T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Aktivitet (DKRR)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/ActivityType",
+      "concept" : [{
+        "code" : "adl",
+        "display" : "ADL"
+      },
+      {
+        "code" : "sports",
+        "display" : "Sport"
+      },
+      {
+        "code" : "trafic",
+        "display" : "Trafik"
+      },
+      {
+        "code" : "work",
+        "display" : "Arbejde"
+      }]
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0532",
+      "concept" : [{
+        "code" : "UNK",
+        "display" : "Ikke kendt"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/NerveBlockTypeOther> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "NerveBlockTypeOther"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet NerveBlockTypeOther</b></p><a name=\"NerveBlockTypeOther\"> </a><a name=\"hcNerveBlockTypeOther\"> </a><a name=\"NerveBlockTypeOther-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-BlockTypes.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/BlockTypes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-BlockTypes.html#BlockTypes-thorakal_Paravertebral\">thorakal_Paravertebral</a></td><td>Thorakal Paravertebral blokade</td><td>Thorakal Paravertebral blokade</td></tr><tr><td><a href=\"CodeSystem-BlockTypes.html#BlockTypes-intercostal\">intercostal</a></td><td>Intercostal blokade</td><td>Intercostal blokade</td></tr><tr><td><a href=\"CodeSystem-BlockTypes.html#BlockTypes-quadratus_lumborum\">quadratus_lumborum</a></td><td>Quadratus lumborum blokade</td><td>Quadratus lumborum blokade</td></tr><tr><td><a href=\"CodeSystem-BlockTypes.html#BlockTypes-transversus_abdominis\">transversus_abdominis</a></td><td>Transversus abdominis plane (TAP) blokade</td><td>Transversus abdominis plane (TAP) blokade</td></tr><tr><td><a href=\"CodeSystem-BlockTypes.html#BlockTypes-ilioinguinalis_iliohypogastricus\">ilioinguinalis_iliohypogastricus</a></td><td>Ilioinguinalis/iliohypogastricus</td><td>Ilioinguinalis/iliohypogastricus</td></tr><tr><td><a href=\"CodeSystem-BlockTypes.html#BlockTypes-pectoralis\">pectoralis</a></td><td>N. Pectoralis</td><td>N. Pectoralis</td></tr><tr><td><a href=\"CodeSystem-BlockTypes.html#BlockTypes-other\">other</a></td><td>Anden</td><td>Anden blokadetype</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/NerveBlockTypeOther"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "NerveBlockTypeOther"] ; # 
+  fhir:title [ fhir:v "Typer af blokade øvrige"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-06-09T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Type Perifer nerveblokade Trunkal/Abdominal/Øvrige"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/BlockTypes"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "thorakal_Paravertebral" ] ;
+         fhir:display [ fhir:v "Thorakal Paravertebral blokade" ]
+       ] [
+         fhir:code [ fhir:v "intercostal" ] ;
+         fhir:display [ fhir:v "Intercostal blokade" ]
+       ] [
+         fhir:code [ fhir:v "quadratus_lumborum" ] ;
+         fhir:display [ fhir:v "Quadratus lumborum blokade" ]
+       ] [
+         fhir:code [ fhir:v "transversus_abdominis" ] ;
+         fhir:display [ fhir:v "Transversus abdominis plane (TAP) blokade" ]
+       ] [
+         fhir:code [ fhir:v "ilioinguinalis_iliohypogastricus" ] ;
+         fhir:display [ fhir:v "Ilioinguinalis/iliohypogastricus" ]
+       ] [
+         fhir:code [ fhir:v "pectoralis" ] ;
+         fhir:display [ fhir:v "N. Pectoralis" ]
+       ] [
+         fhir:code [ fhir:v "other" ] ;
+         fhir:display [ fhir:v "Anden" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

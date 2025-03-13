@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/NIHSS10Dysarthria> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "NIHSS10Dysarthria"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem NIHSS10Dysarthria</b></p><a name=\"NIHSS10Dysarthria\"> </a><a name=\"hcNIHSS10Dysarthria\"> </a><a name=\"NIHSS10Dysarthria-en-US\"> </a><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/NIHSS10Dysarthria</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"NIHSS10Dysarthria-0\"> </a></td><td>Normal.</td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"NIHSS10Dysarthria-1\"> </a></td><td>Mild-to-moderate dysarthria; patient slurs at least some words and, at worst, can be understood with some difficulty.</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"NIHSS10Dysarthria-2\"> </a></td><td>Severe dysarthria; patient's speech is so slurred as to be unintelligible in the absence of or out of proportion to any dysphasia, or is mute/anarthric.</td></tr><tr><td style=\"white-space:nowrap\">UN<a name=\"NIHSS10Dysarthria-UN\"> </a></td><td>Intubated or other physical barrier, explain:</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/NIHSS10Dysarthria"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "NIHSS10Dysarthria"] ; # 
+  fhir:title [ fhir:v "The National Institute of Health Stroke Scale (NIHSS) - 10. Dysarthria"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-23T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The National Institute of Health Stroke Scale (NIHSS) - 10. Dysarthria; Link: https://www.ninds.nih.gov/stroke-scales-and-related-information"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "0" ] ;
+     fhir:display [ fhir:v "0" ] ;
+     fhir:definition [ fhir:v "Normal." ]
+  ] [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "1" ] ;
+     fhir:definition [ fhir:v "Mild-to-moderate dysarthria; patient slurs at least some words and, at worst, can be understood with some difficulty." ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "2" ] ;
+     fhir:definition [ fhir:v "Severe dysarthria; patient's speech is so slurred as to be unintelligible in the absence of or out of proportion to any dysphasia, or is mute/anarthric." ]
+  ] [
+     fhir:code [ fhir:v "UN" ] ;
+     fhir:display [ fhir:v "UN" ] ;
+     fhir:definition [ fhir:v "Intubated or other physical barrier, explain:" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

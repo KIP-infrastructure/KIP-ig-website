@@ -1,0 +1,120 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/IncisionChoice> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "IncisionChoice"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IncisionChoice</b></p><a name=\"IncisionChoice\"> </a><a name=\"hcIncisionChoice\"> </a><a name=\"IncisionChoice-en-US\"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/IncisionChoice</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">abdomnial<a name=\"IncisionChoice-abdomnial\"> </a></td><td>Abdominal adgang</td><td>Abdominal adgang</td></tr><tr><td style=\"white-space:nowrap\">abdominal_thoracic<a name=\"IncisionChoice-abdominal_thoracic\"> </a></td><td>Separat abdominal og torakal adgang</td><td>Separat abdominal og torakal adgang</td></tr><tr><td style=\"white-space:nowrap\">toracoabdominal<a name=\"IncisionChoice-toracoabdominal\"> </a></td><td>Torakabdominal adgang</td><td>Torakabdominal adgang med deling af diafragma</td></tr><tr><td style=\"white-space:nowrap\">transhiatal_siewert<a name=\"IncisionChoice-transhiatal_siewert\"> </a></td><td>Transhiatal adgang (a.m. Siewert)</td><td>Transhiatal adgang (a.m. Siewert)</td></tr><tr><td style=\"white-space:nowrap\">transhiatal_neck<a name=\"IncisionChoice-transhiatal_neck\"> </a></td><td>Transhiatal adgang og anastomose på hals</td><td>Transhiatal adgang og anastomose på hals</td></tr><tr><td style=\"white-space:nowrap\">abdominal_thoracoskopic<a name=\"IncisionChoice-abdominal_thoracoskopic\"> </a></td><td>Separat abdominal &amp; torakoskopisk</td><td>Separat abdominal &amp; torakoskopisk</td></tr><tr><td style=\"white-space:nowrap\">laparoscopic_thoracoskopic<a name=\"IncisionChoice-laparoscopic_thoracoskopic\"> </a></td><td>Laparoskopisk &amp; torakoskopisk</td><td>Laparoskopisk &amp; torakoskopisk</td></tr><tr><td style=\"white-space:nowrap\">laparoscopic_thoracotomy<a name=\"IncisionChoice-laparoscopic_thoracotomy\"> </a></td><td>Laparoskopisk &amp; separat torakotomi</td><td>Laparoskopisk &amp; separat torakotomi</td></tr><tr><td style=\"white-space:nowrap\">laparoscopic<a name=\"IncisionChoice-laparoscopic\"> </a></td><td>Laparoskopisk</td><td>Laparoskopisk</td></tr><tr><td style=\"white-space:nowrap\">endoscopic<a name=\"IncisionChoice-endoscopic\"> </a></td><td>Endoskopisk</td><td>Endoskopisk</td></tr><tr><td style=\"white-space:nowrap\">cervical<a name=\"IncisionChoice-cervical\"> </a></td><td>Cervikal adgang</td><td>Cervikal adgang (frit tyndtarmstransplantat)</td></tr><tr><td style=\"white-space:nowrap\">delto_pectoral<a name=\"IncisionChoice-delto_pectoral\"> </a></td><td>Delto-pectoral</td><td>Delto-pectoral</td></tr><tr><td style=\"white-space:nowrap\">mackenzie<a name=\"IncisionChoice-mackenzie\"> </a></td><td>Antero-superior (MacKenzie)</td><td>Antero-superior (MacKenzie)</td></tr><tr><td style=\"white-space:nowrap\">lateral_for_patella<a name=\"IncisionChoice-lateral_for_patella\"> </a></td><td>Lateral for patella</td><td>Lateral for patella</td></tr><tr><td style=\"white-space:nowrap\">medial_for_patella<a name=\"IncisionChoice-medial_for_patella\"> </a></td><td>Medial for patella</td><td>Medial for patella</td></tr><tr><td style=\"white-space:nowrap\">medial_parapatellar_quadriceps<a name=\"IncisionChoice-medial_parapatellar_quadriceps\"> </a></td><td>Medial parapatellar, gennem quadricepssenen</td><td>Medial parapatellar, gennem quadricepssenen</td></tr><tr><td style=\"white-space:nowrap\">medial_parapatellar_vastus_medialis<a name=\"IncisionChoice-medial_parapatellar_vastus_medialis\"> </a></td><td>Medial parapatellar, vastus medialis split</td><td>Medial parapatellar, vastus medialis split</td></tr><tr><td style=\"white-space:nowrap\">center_quadriceps<a name=\"IncisionChoice-center_quadriceps\"> </a></td><td>Midtlinie, gennem quadricepssenen</td><td>Midtlinie, gennem quadricepssenen</td></tr><tr><td style=\"white-space:nowrap\">center_vastus_medialis<a name=\"IncisionChoice-center_vastus_medialis\"> </a></td><td>Midtlinie, vastus medialis split</td><td>Midtlinie, vastus medialis split</td></tr><tr><td style=\"white-space:nowrap\">minimal_invasive<a name=\"IncisionChoice-minimal_invasive\"> </a></td><td>Minimal invasiv kirurgi</td><td>Minimal invasiv kirurgi</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/IncisionChoice"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "IncisionChoice"] ; # 
+  fhir:title [ fhir:v "Incision choice"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-03T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Incisionsvalg eller operativ adgang"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "20"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "abdomnial" ] ;
+     fhir:display [ fhir:v "Abdominal adgang" ] ;
+     fhir:definition [ fhir:v "Abdominal adgang" ]
+  ] [
+     fhir:code [ fhir:v "abdominal_thoracic" ] ;
+     fhir:display [ fhir:v "Separat abdominal og torakal adgang" ] ;
+     fhir:definition [ fhir:v "Separat abdominal og torakal adgang" ]
+  ] [
+     fhir:code [ fhir:v "toracoabdominal" ] ;
+     fhir:display [ fhir:v "Torakabdominal adgang" ] ;
+     fhir:definition [ fhir:v "Torakabdominal adgang med deling af diafragma" ]
+  ] [
+     fhir:code [ fhir:v "transhiatal_siewert" ] ;
+     fhir:display [ fhir:v "Transhiatal adgang (a.m. Siewert)" ] ;
+     fhir:definition [ fhir:v "Transhiatal adgang (a.m. Siewert)" ]
+  ] [
+     fhir:code [ fhir:v "transhiatal_neck" ] ;
+     fhir:display [ fhir:v "Transhiatal adgang og anastomose på hals" ] ;
+     fhir:definition [ fhir:v "Transhiatal adgang og anastomose på hals" ]
+  ] [
+     fhir:code [ fhir:v "abdominal_thoracoskopic" ] ;
+     fhir:display [ fhir:v "Separat abdominal & torakoskopisk" ] ;
+     fhir:definition [ fhir:v "Separat abdominal & torakoskopisk" ]
+  ] [
+     fhir:code [ fhir:v "laparoscopic_thoracoskopic" ] ;
+     fhir:display [ fhir:v "Laparoskopisk & torakoskopisk" ] ;
+     fhir:definition [ fhir:v "Laparoskopisk & torakoskopisk" ]
+  ] [
+     fhir:code [ fhir:v "laparoscopic_thoracotomy" ] ;
+     fhir:display [ fhir:v "Laparoskopisk & separat torakotomi" ] ;
+     fhir:definition [ fhir:v "Laparoskopisk & separat torakotomi" ]
+  ] [
+     fhir:code [ fhir:v "laparoscopic" ] ;
+     fhir:display [ fhir:v "Laparoskopisk" ] ;
+     fhir:definition [ fhir:v "Laparoskopisk" ]
+  ] [
+     fhir:code [ fhir:v "endoscopic" ] ;
+     fhir:display [ fhir:v "Endoskopisk" ] ;
+     fhir:definition [ fhir:v "Endoskopisk" ]
+  ] [
+     fhir:code [ fhir:v "cervical" ] ;
+     fhir:display [ fhir:v "Cervikal adgang" ] ;
+     fhir:definition [ fhir:v "Cervikal adgang (frit tyndtarmstransplantat)" ]
+  ] [
+     fhir:code [ fhir:v "delto_pectoral" ] ;
+     fhir:display [ fhir:v "Delto-pectoral" ] ;
+     fhir:definition [ fhir:v "Delto-pectoral" ]
+  ] [
+     fhir:code [ fhir:v "mackenzie" ] ;
+     fhir:display [ fhir:v "Antero-superior (MacKenzie)" ] ;
+     fhir:definition [ fhir:v "Antero-superior (MacKenzie)" ]
+  ] [
+     fhir:code [ fhir:v "lateral_for_patella" ] ;
+     fhir:display [ fhir:v "Lateral for patella" ] ;
+     fhir:definition [ fhir:v "Lateral for patella" ]
+  ] [
+     fhir:code [ fhir:v "medial_for_patella" ] ;
+     fhir:display [ fhir:v "Medial for patella" ] ;
+     fhir:definition [ fhir:v "Medial for patella" ]
+  ] [
+     fhir:code [ fhir:v "medial_parapatellar_quadriceps" ] ;
+     fhir:display [ fhir:v "Medial parapatellar, gennem quadricepssenen" ] ;
+     fhir:definition [ fhir:v "Medial parapatellar, gennem quadricepssenen" ]
+  ] [
+     fhir:code [ fhir:v "medial_parapatellar_vastus_medialis" ] ;
+     fhir:display [ fhir:v "Medial parapatellar, vastus medialis split" ] ;
+     fhir:definition [ fhir:v "Medial parapatellar, vastus medialis split" ]
+  ] [
+     fhir:code [ fhir:v "center_quadriceps" ] ;
+     fhir:display [ fhir:v "Midtlinie, gennem quadricepssenen" ] ;
+     fhir:definition [ fhir:v "Midtlinie, gennem quadricepssenen" ]
+  ] [
+     fhir:code [ fhir:v "center_vastus_medialis" ] ;
+     fhir:display [ fhir:v "Midtlinie, vastus medialis split" ] ;
+     fhir:definition [ fhir:v "Midtlinie, vastus medialis split" ]
+  ] [
+     fhir:code [ fhir:v "minimal_invasive" ] ;
+     fhir:display [ fhir:v "Minimal invasiv kirurgi" ] ;
+     fhir:definition [ fhir:v "Minimal invasiv kirurgi" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

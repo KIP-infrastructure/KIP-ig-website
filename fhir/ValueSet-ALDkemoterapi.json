@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ALDkemoterapi",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ALDkemoterapi</b></p><a name=\"ALDkemoterapi\"> </a><a name=\"hcALDkemoterapi\"> </a><a name=\"ALDkemoterapi-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-TreatmentIntention.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/TreatmentIntention</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-TreatmentIntention.html#TreatmentIntention-intensive\">intensive</a></td><td>Intensiv</td><td>Intensiv</td></tr><tr><td><a href=\"CodeSystem-TreatmentIntention.html#TreatmentIntention-palliative\">palliative</a></td><td>Pallitativ</td><td>Palliativt intenderet</td></tr><tr><td><a href=\"CodeSystem-TreatmentIntention.html#TreatmentIntention-semiintensiv\">semiintensiv</a></td><td>Semiintensiv</td><td>Semiintensiv</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/ALDkemoterapi",
+  "version" : "0.1.6",
+  "name" : "ALDkemoterapi",
+  "title" : " ALD_Kemoterapi",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-07-25T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "ALD kemoterapi",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/TreatmentIntention",
+      "concept" : [{
+        "code" : "intensive",
+        "display" : "Intensiv"
+      },
+      {
+        "code" : "palliative",
+        "display" : "Pallitativ"
+      },
+      {
+        "code" : "semiintensiv",
+        "display" : "Semiintensiv"
+      }]
+    }]
+  }
+}

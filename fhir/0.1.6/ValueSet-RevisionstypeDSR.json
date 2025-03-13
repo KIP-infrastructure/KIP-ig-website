@@ -1,0 +1,52 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "RevisionstypeDSR",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet RevisionstypeDSR</b></p><a name=\"RevisionstypeDSR\"> </a><a name=\"hcRevisionstypeDSR\"> </a><a name=\"RevisionstypeDSR-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-RevisionType.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/RevisionType</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-RevisionType.html#RevisionType-one-stage\">one-stage</a></td><td>One-stage</td><td>One-stage</td></tr><tr><td><a href=\"CodeSystem-RevisionType.html#RevisionType-two-stage_step_1\">two-stage_step_1</a></td><td>Two-stage - trin 1</td><td>Two-stage - Step 1</td></tr><tr><td><a href=\"CodeSystem-RevisionType.html#RevisionType-two-stage_step_2\">two-stage_step_2</a></td><td>Two-stage - trin 2</td><td>Two-stage - Step 2</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Anden</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/RevisionstypeDSR",
+  "version" : "0.1.6",
+  "name" : "RevisionstypeDSR",
+  "title" : "Revisionstype (DSR)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-10-07T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Revisionstype (DSR)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/RevisionType",
+      "concept" : [{
+        "code" : "one-stage",
+        "display" : "One-stage"
+      },
+      {
+        "code" : "two-stage_step_1",
+        "display" : "Two-stage - trin 1"
+      },
+      {
+        "code" : "two-stage_step_2",
+        "display" : "Two-stage - trin 2"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "other",
+        "display" : "Anden"
+      }]
+    }]
+  }
+}

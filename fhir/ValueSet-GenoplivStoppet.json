@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "GenoplivStoppet",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet GenoplivStoppet</b></p><a name=\"GenoplivStoppet\"> </a><a name=\"hcGenoplivStoppet\"> </a><a name=\"GenoplivStoppet-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-GenoplivStoppet.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenoplivStoppet</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenoplivStoppet.html#GenoplivStoppet-spontan_kreds\">spontan_kreds</a></td><td>Spontant kredsløb</td><td>Spontant kredsløb</td></tr><tr><td><a href=\"CodeSystem-GenoplivStoppet.html#GenoplivStoppet-doed\">doed</a></td><td>Død</td><td>Død</td></tr><tr><td><a href=\"CodeSystem-GenoplivStoppet.html#GenoplivStoppet-kunstig_kreds\">kunstig_kreds</a></td><td>Kunstig kredsløb (f.eks. ECMO, CPS, m.fl.)</td><td>Kunstig kredsløb (f.eks. ECMO, CPS, m.fl.)</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/GenoplivStoppet",
+  "version" : "0.1.6",
+  "name" : "GenoplivStoppet",
+  "title" : "Genoplivning indstillet - årsag",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-06-29T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Årsager til indstilling af genoplivningsforsøg",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenoplivStoppet",
+      "concept" : [{
+        "code" : "spontan_kreds",
+        "display" : "Spontant kredsløb"
+      },
+      {
+        "code" : "doed",
+        "display" : "Død"
+      },
+      {
+        "code" : "kunstig_kreds",
+        "display" : "Kunstig kredsløb (f.eks. ECMO, CPS, m.fl.)"
+      }]
+    }]
+  }
+}

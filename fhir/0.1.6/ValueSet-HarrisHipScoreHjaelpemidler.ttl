@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/HarrisHipScoreHjaelpemidler> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HarrisHipScoreHjaelpemidler"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet HarrisHipScoreHjaelpemidler</b></p><a name=\"HarrisHipScoreHjaelpemidler\"> </a><a name=\"hcHarrisHipScoreHjaelpemidler\"> </a><a name=\"HarrisHipScoreHjaelpemidler-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-HarrisHipScoreSupport.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/HarrisHipScoreSupport</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-HarrisHipScoreSupport.html#HarrisHipScoreSupport-11\">11</a></td><td>Ingen</td><td>None (11)</td></tr><tr><td><a href=\"CodeSystem-HarrisHipScoreSupport.html#HarrisHipScoreSupport-7\">7</a></td><td>Én stok ved lange ture</td><td>Cane/Walking stick for long walks (7)</td></tr><tr><td><a href=\"CodeSystem-HarrisHipScoreSupport.html#HarrisHipScoreSupport-5\">5</a></td><td>Næsten altid én stok</td><td>Cane/Walking stick most of the time (5)</td></tr><tr><td><a href=\"CodeSystem-HarrisHipScoreSupport.html#HarrisHipScoreSupport-3\">3</a></td><td>Én albue-/aksilkrykke</td><td>One crutch (3)</td></tr><tr><td><a href=\"CodeSystem-HarrisHipScoreSupport.html#HarrisHipScoreSupport-2\">2</a></td><td>To stokke</td><td>Two Canes/Walking sticks (2)</td></tr><tr><td><a href=\"CodeSystem-HarrisHipScoreSupport.html#HarrisHipScoreSupport-0\">0</a></td><td>To albue-/aksilkrykker eller rollator</td><td>Two crutches, walker or not able to walk (0)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/HarrisHipScoreHjaelpemidler"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "HarrisHipScoreHjaelpemidler"] ; # 
+  fhir:title [ fhir:v "Harris Hip Score - Hjælpemidler"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-11-15T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Harris Hip Score - Hjælpemidler"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/HarrisHipScoreSupport"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "11" ] ;
+         fhir:display [ fhir:v "Ingen" ]
+       ] [
+         fhir:code [ fhir:v "7" ] ;
+         fhir:display [ fhir:v "Én stok ved lange ture" ]
+       ] [
+         fhir:code [ fhir:v "5" ] ;
+         fhir:display [ fhir:v "Næsten altid én stok" ]
+       ] [
+         fhir:code [ fhir:v "3" ] ;
+         fhir:display [ fhir:v "Én albue-/aksilkrykke" ]
+       ] [
+         fhir:code [ fhir:v "2" ] ;
+         fhir:display [ fhir:v "To stokke" ]
+       ] [
+         fhir:code [ fhir:v "0" ] ;
+         fhir:display [ fhir:v "To albue-/aksilkrykker eller rollator" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

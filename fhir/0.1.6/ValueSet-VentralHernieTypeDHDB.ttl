@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/VentralHernieTypeDHDB> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "VentralHernieTypeDHDB"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VentralHernieTypeDHDB</b></p><a name=\"VentralHernieTypeDHDB\"> </a><a name=\"hcVentralHernieTypeDHDB\"> </a><a name=\"VentralHernieTypeDHDB-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-DiseasesUnspecified.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/DiseasesUnspecified</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-umbilical\">umbilical</a></td><td>Umbilicalt</td><td>Umbilical / Umbilicalt</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-incisional\">incisional</a></td><td>Incisionelt</td><td>Incisional / Incisionelt</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-linea_alba\">linea_alba</a></td><td>Linea alba</td><td>Linea alba</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-stomi\">stomi</a></td><td>Stomi-hernie</td><td>Stomi</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-stomi_herniotomi\">stomi_herniotomi</a></td><td>Tilbagelægning eller flytning af stomi + herniotomi</td><td>Stomi and herniotomi / Stomi og herniotomi</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-port\">port</a></td><td>Port-hernie</td><td>Port</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-spiegel\">spiegel</a></td><td>Spiegel-hernie</td><td>Spiegel</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Anden hernietype</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/VentralHernieTypeDHDB"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "VentralHernieTypeDHDB"] ; # 
+  fhir:title [ fhir:v "Ventral hernie type (DHDB)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-07-20T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Ventral hernie type (DHDB)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/DiseasesUnspecified"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "umbilical" ] ;
+         fhir:display [ fhir:v "Umbilicalt" ]
+       ] [
+         fhir:code [ fhir:v "incisional" ] ;
+         fhir:display [ fhir:v "Incisionelt" ]
+       ] [
+         fhir:code [ fhir:v "linea_alba" ] ;
+         fhir:display [ fhir:v "Linea alba" ]
+       ] [
+         fhir:code [ fhir:v "stomi" ] ;
+         fhir:display [ fhir:v "Stomi-hernie" ]
+       ] [
+         fhir:code [ fhir:v "stomi_herniotomi" ] ;
+         fhir:display [ fhir:v "Tilbagelægning eller flytning af stomi + herniotomi" ]
+       ] [
+         fhir:code [ fhir:v "port" ] ;
+         fhir:display [ fhir:v "Port-hernie" ]
+       ] [
+         fhir:code [ fhir:v "spiegel" ] ;
+         fhir:display [ fhir:v "Spiegel-hernie" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "other" ] ;
+         fhir:display [ fhir:v "Anden hernietype" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

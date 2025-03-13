@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/HjertestopAarsag> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HjertestopAarsag"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem HjertestopAarsag</b></p><a name=\"HjertestopAarsag\"> </a><a name=\"hcHjertestopAarsag\"> </a><a name=\"HjertestopAarsag-en-US\"> </a><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/HjertestopAarsag</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">non_kardial<a name=\"HjertestopAarsag-non_kardial\"> </a></td><td>Non-kardial</td><td>Non-kardial</td></tr><tr><td style=\"white-space:nowrap\">formodet_kardial<a name=\"HjertestopAarsag-formodet_kardial\"> </a></td><td>Formodet kardial</td><td>Formodet kardial</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/HjertestopAarsag"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "HjertestopAarsag"] ; # 
+  fhir:title [ fhir:v "Hjertestop Årsag"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-29T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Årsag til hjertestop"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "non_kardial" ] ;
+     fhir:display [ fhir:v "Non-kardial" ] ;
+     fhir:definition [ fhir:v "Non-kardial" ]
+  ] [
+     fhir:code [ fhir:v "formodet_kardial" ] ;
+     fhir:display [ fhir:v "Formodet kardial" ] ;
+     fhir:definition [ fhir:v "Formodet kardial" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

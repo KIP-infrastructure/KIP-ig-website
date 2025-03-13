@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "DialyseOpstartDNSL",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet DialyseOpstartDNSL</b></p><a name=\"DialyseOpstartDNSL\"> </a><a name=\"hcDialyseOpstartDNSL\"> </a><a name=\"DialyseOpstartDNSL-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Cyclus.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Cyclus</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Cyclus.html#Cyclus-ge7-dage\">ge7-dage</a></td><td>PD opstart &gt;6 dage efter kateteranlæggelse</td><td>&gt;=7 dage</td></tr><tr><td><a href=\"CodeSystem-Cyclus.html#Cyclus-0-6-dage\">0-6-dage</a></td><td>PD opstart 0-6 dage efter kateteranlæggelse</td><td>0-6 dage</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/DialyseOpstartDNSL",
+  "version" : "0.1.6",
+  "name" : "DialyseOpstartDNSL",
+  "title" : "Dialyseopstart (DNSL)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-01-10T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Dialyseopstart ved første dialyse (DNSL)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/Cyclus",
+      "concept" : [{
+        "code" : "ge7-dage",
+        "display" : "PD opstart >6 dage efter kateteranlæggelse"
+      },
+      {
+        "code" : "0-6-dage",
+        "display" : "PD opstart 0-6 dage efter kateteranlæggelse"
+      }]
+    }]
+  }
+}

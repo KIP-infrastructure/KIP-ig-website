@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/HerniaSize> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HerniaSize"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem HerniaSize</b></p><a name=\"HerniaSize\"> </a><a name=\"hcHerniaSize\"> </a><a name=\"HerniaSize-en-US\"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/HerniaSize</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">&lt;1<a name=\"HerniaSize-.601\"> </a></td><td>&lt;1 finger</td><td>&lt;1 finger / &lt;1 finger</td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"HerniaSize-1\"> </a></td><td>1 finger</td><td>1 finger</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"HerniaSize-2\"> </a></td><td>2 fingers</td><td>2 fingers / 2 fingre</td></tr><tr><td style=\"white-space:nowrap\">&gt;=3<a name=\"HerniaSize-.62.613\"> </a></td><td>&gt;=3 fingers</td><td>&gt;=3 fingers / &gt;=3 fingre</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/HerniaSize"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "HerniaSize"] ; # 
+  fhir:title [ fhir:v "Hernia size"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-14T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Hernia size"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "<1" ] ;
+     fhir:display [ fhir:v "<1 finger" ] ;
+     fhir:definition [ fhir:v "<1 finger / <1 finger" ]
+  ] [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "1 finger" ] ;
+     fhir:definition [ fhir:v "1 finger" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "2 fingers" ] ;
+     fhir:definition [ fhir:v "2 fingers / 2 fingre" ]
+  ] [
+     fhir:code [ fhir:v ">=3" ] ;
+     fhir:display [ fhir:v ">=3 fingers" ] ;
+     fhir:definition [ fhir:v ">=3 fingers / >=3 fingre" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

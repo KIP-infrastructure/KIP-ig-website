@@ -1,0 +1,80 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "DSAFundLokation",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet DSAFundLokation</b></p><a name=\"DSAFundLokation\"> </a><a name=\"hcDSAFundLokation\"> </a><a name=\"DSAFundLokation-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-DSAFindingsLocation.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/DSAFindingsLocation</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-DSAFindingsLocation.html#DSAFindingsLocation-cca\">cca</a></td><td>CCA</td><td>CCA</td></tr><tr><td><a href=\"CodeSystem-DSAFindingsLocation.html#DSAFindingsLocation-ica\">ica</a></td><td>ICA</td><td>ICA</td></tr><tr><td><a href=\"CodeSystem-DSAFindingsLocation.html#DSAFindingsLocation-ica-t\">ica-t</a></td><td>ICA-T</td><td>ICA-T</td></tr><tr><td><a href=\"CodeSystem-DSAFindingsLocation.html#DSAFindingsLocation-mca1\">mca1</a></td><td>MCA 1</td><td>MCA 1</td></tr><tr><td><a href=\"CodeSystem-DSAFindingsLocation.html#DSAFindingsLocation-mca2\">mca2</a></td><td>MCA 2</td><td>MCA 2</td></tr><tr><td><a href=\"CodeSystem-DSAFindingsLocation.html#DSAFindingsLocation-aca\">aca</a></td><td>ACA</td><td>ACA</td></tr><tr><td><a href=\"CodeSystem-DSAFindingsLocation.html#DSAFindingsLocation-va\">va</a></td><td>VA</td><td>VA</td></tr><tr><td><a href=\"CodeSystem-DSAFindingsLocation.html#DSAFindingsLocation-ba\">ba</a></td><td>BA</td><td>BA</td></tr><tr><td><a href=\"CodeSystem-DSAFindingsLocation.html#DSAFindingsLocation-pca.47other\">pca/other</a></td><td>PCA/Andet</td><td>PCA/Other</td></tr><tr><td><a href=\"CodeSystem-DSAFindingsLocation.html#DSAFindingsLocation-cervical_dissection\">cervical_dissection</a></td><td>Cervical dissektion</td><td>Cervical dissection</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-none\">none</a></td><td>Ingen</td><td>None - used to choose none of the available values</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/DSAFundLokation",
+  "version" : "0.1.6",
+  "name" : "DSAFundLokation",
+  "title" : "Lokation for tromber, fundet vha. DSA",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-06-28T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Lokation for tromber, fundet vha. digital subtraktionsangiografi (DSA).",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/DSAFindingsLocation",
+      "concept" : [{
+        "code" : "cca",
+        "display" : "CCA"
+      },
+      {
+        "code" : "ica",
+        "display" : "ICA"
+      },
+      {
+        "code" : "ica-t",
+        "display" : "ICA-T"
+      },
+      {
+        "code" : "mca1",
+        "display" : "MCA 1"
+      },
+      {
+        "code" : "mca2",
+        "display" : "MCA 2"
+      },
+      {
+        "code" : "aca",
+        "display" : "ACA"
+      },
+      {
+        "code" : "va",
+        "display" : "VA"
+      },
+      {
+        "code" : "ba",
+        "display" : "BA"
+      },
+      {
+        "code" : "pca/other",
+        "display" : "PCA/Andet"
+      },
+      {
+        "code" : "cervical_dissection",
+        "display" : "Cervical dissektion"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "none",
+        "display" : "Ingen"
+      }]
+    }]
+  }
+}

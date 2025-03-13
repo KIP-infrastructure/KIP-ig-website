@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "TreatmentScheduledALD",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet TreatmentScheduledALD</b></p><a name=\"TreatmentScheduledALD\"> </a><a name=\"hcTreatmentScheduledALD\"> </a><a name=\"TreatmentScheduledALD-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-TreatmentSchedule.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/TreatmentSchedule</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-TreatmentSchedule.html#TreatmentSchedule-implemented\">implemented</a></td><td>Ja</td><td>Implemented or planned implementation of treatment / Iværksat eller planlagt iværksættelse af behandling</td></tr><tr><td><a href=\"CodeSystem-TreatmentSchedule.html#TreatmentSchedule-wait_and_watch\">wait_and_watch</a></td><td>Wait-and-watch strategi.</td><td>Wait and watch (WAW) strategy / Wait and watch strategi</td></tr><tr><td><a href=\"CodeSystem-TreatmentSchedule.html#TreatmentSchedule-no_planned_treatment\">no_planned_treatment</a></td><td>Nej</td><td>No planned treatment / Ingen planlagt behandling er iværksat</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/TreatmentScheduledALD",
+  "version" : "0.1.6",
+  "name" : "TreatmentScheduledALD",
+  "title" : "Planlagt eller iværksat behandling",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-12-07T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Planlagt eller iværksat behandling",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/TreatmentSchedule",
+      "concept" : [{
+        "code" : "implemented",
+        "display" : "Ja"
+      },
+      {
+        "code" : "wait_and_watch",
+        "display" : "Wait-and-watch strategi."
+      },
+      {
+        "code" : "no_planned_treatment",
+        "display" : "Nej"
+      }]
+    }]
+  }
+}

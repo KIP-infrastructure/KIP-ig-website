@@ -1,0 +1,44 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "CaputnekroseDSR",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet CaputnekroseDSR</b></p><a name=\"CaputnekroseDSR\"> </a><a name=\"hcCaputnekroseDSR\"> </a><a name=\"CaputnekroseDSR-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-BasicDisorder.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/BasicDisorder</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-BasicDisorder.html#BasicDisorder-fracture\">fracture</a></td><td>Frakturfølge</td><td>Fraktur</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Anden / ukendt årsag</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/CaputnekroseDSR",
+  "version" : "0.1.6",
+  "name" : "CaputnekroseDSR",
+  "title" : "Caputnekrose (DSR)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-10-05T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Caputnekrose (DSR)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/BasicDisorder",
+      "concept" : [{
+        "code" : "fracture",
+        "display" : "Frakturfølge"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "other",
+        "display" : "Anden / ukendt årsag"
+      }]
+    }]
+  }
+}

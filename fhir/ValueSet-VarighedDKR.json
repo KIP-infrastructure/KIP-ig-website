@@ -1,0 +1,56 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "VarighedDKR",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VarighedDKR</b></p><a name=\"VarighedDKR\"> </a><a name=\"hcVarighedDKR\"> </a><a name=\"VarighedDKR-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-none\">none</a></td><td>Ingen pause</td><td>None - used to choose none of the available values</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-Cyclus.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Cyclus</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Cyclus.html#Cyclus-1-2-dage\">1-2-dage</a></td><td>1-2 dage</td><td>1-2 dage</td></tr><tr><td><a href=\"CodeSystem-Cyclus.html#Cyclus-3-4-dage\">3-4-dage</a></td><td>3-4 dage</td><td>3-4 dage</td></tr><tr><td><a href=\"CodeSystem-Cyclus.html#Cyclus-5-6-dage\">5-6-dage</a></td><td>5-6 dage</td><td>5-6 dage</td></tr><tr><td><a href=\"CodeSystem-Cyclus.html#Cyclus-ge7-dage\">ge7-dage</a></td><td>&gt;= 7 dage</td><td>&gt;=7 dage</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/VarighedDKR",
+  "version" : "0.1.6",
+  "name" : "VarighedDKR",
+  "title" : "Varighed (DKR)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2023-05-17T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Varighed (DKR)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "none",
+        "display" : "Ingen pause"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/Cyclus",
+      "concept" : [{
+        "code" : "1-2-dage",
+        "display" : "1-2 dage"
+      },
+      {
+        "code" : "3-4-dage",
+        "display" : "3-4 dage"
+      },
+      {
+        "code" : "5-6-dage",
+        "display" : "5-6 dage"
+      },
+      {
+        "code" : "ge7-dage",
+        "display" : ">= 7 dage"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,88 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/RevisionIndikationDHR> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RevisionIndikationDHR"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet RevisionIndikationDHR</b></p><a name=\"RevisionIndikationDHR\"> </a><a name=\"hcRevisionIndikationDHR\"> </a><a name=\"RevisionIndikationDHR-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-RevisionIndication.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/RevisionIndication</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-RevisionIndication.html#RevisionIndication-femur_acetabulum_osteolysis\">femur_acetabulum_osteolysis</a></td><td>Aseptisk løsning af femur- og acetabulumkomp. med osteolyse</td><td>Femur og acetabulum med osteolyse</td></tr><tr><td><a href=\"CodeSystem-RevisionIndication.html#RevisionIndication-femur_acetabulum\">femur_acetabulum</a></td><td>Aseptisk løsning af femur- og acetabulumkomp. uden osteolyse</td><td>Femur og acetabulum</td></tr><tr><td><a href=\"CodeSystem-RevisionIndication.html#RevisionIndication-femur_osteolysis\">femur_osteolysis</a></td><td>Aseptisk løsning alene af femurkomp. med osteolyse</td><td>Femur med osteolyse</td></tr><tr><td><a href=\"CodeSystem-RevisionIndication.html#RevisionIndication-femur\">femur</a></td><td>Aseptisk løsning alene af femurkomp. uden osteolyse</td><td>Femur</td></tr><tr><td><a href=\"CodeSystem-RevisionIndication.html#RevisionIndication-acetabulum_osteolysis\">acetabulum_osteolysis</a></td><td>Aseptisk løsning alene af acetabulumkomp. med osteolyse</td><td>Acetabulum med osteolyse</td></tr><tr><td><a href=\"CodeSystem-RevisionIndication.html#RevisionIndication-acetabulum\">acetabulum</a></td><td>Aseptisk løsning alene af acetabulumkomp. uden osteolyse</td><td>Acetabulum</td></tr><tr><td><a href=\"CodeSystem-RevisionIndication.html#RevisionIndication-polyethylene_wear\">polyethylene_wear</a></td><td>Polyethylenslitage uden aseptisk løsning</td><td>Polyethylenslitage</td></tr><tr><td><a href=\"CodeSystem-RevisionIndication.html#RevisionIndication-infection\">infection</a></td><td>Dyb infektion</td><td>Infection / Infektion</td></tr><tr><td><a href=\"CodeSystem-RevisionIndication.html#RevisionIndication-femur_fracture\">femur_fracture</a></td><td>Femurfraktur (Vancouver klassifikation for fraktur)</td><td>Femurfraktur</td></tr><tr><td><a href=\"CodeSystem-RevisionIndication.html#RevisionIndication-dislocation\">dislocation</a></td><td>Luksation</td><td>Luksation</td></tr><tr><td><a href=\"CodeSystem-RevisionIndication.html#RevisionIndication-component_failure\">component_failure</a></td><td>Komponentsvigt</td><td>Komponentsvigt</td></tr><tr><td><a href=\"CodeSystem-RevisionIndication.html#RevisionIndication-pain\">pain</a></td><td>Smerter</td><td>Pain / Smerter</td></tr><tr><td><a href=\"CodeSystem-RevisionIndication.html#RevisionIndication-osteolysis\">osteolysis</a></td><td>Osteolyse/granulom uden løsning</td><td>Osteolyse</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/RevisionIndikationDHR"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "RevisionIndikationDHR"] ; # 
+  fhir:title [ fhir:v "Revision, indikation (DHR)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-11-15T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Revision, indikation (DHR)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/RevisionIndication"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "femur_acetabulum_osteolysis" ] ;
+         fhir:display [ fhir:v "Aseptisk løsning af femur- og acetabulumkomp. med osteolyse" ]
+       ] [
+         fhir:code [ fhir:v "femur_acetabulum" ] ;
+         fhir:display [ fhir:v "Aseptisk løsning af femur- og acetabulumkomp. uden osteolyse" ]
+       ] [
+         fhir:code [ fhir:v "femur_osteolysis" ] ;
+         fhir:display [ fhir:v "Aseptisk løsning alene af femurkomp. med osteolyse" ]
+       ] [
+         fhir:code [ fhir:v "femur" ] ;
+         fhir:display [ fhir:v "Aseptisk løsning alene af femurkomp. uden osteolyse" ]
+       ] [
+         fhir:code [ fhir:v "acetabulum_osteolysis" ] ;
+         fhir:display [ fhir:v "Aseptisk løsning alene af acetabulumkomp. med osteolyse" ]
+       ] [
+         fhir:code [ fhir:v "acetabulum" ] ;
+         fhir:display [ fhir:v "Aseptisk løsning alene af acetabulumkomp. uden osteolyse" ]
+       ] [
+         fhir:code [ fhir:v "polyethylene_wear" ] ;
+         fhir:display [ fhir:v "Polyethylenslitage uden aseptisk løsning" ]
+       ] [
+         fhir:code [ fhir:v "infection" ] ;
+         fhir:display [ fhir:v "Dyb infektion" ]
+       ] [
+         fhir:code [ fhir:v "femur_fracture" ] ;
+         fhir:display [ fhir:v "Femurfraktur (Vancouver klassifikation for fraktur)" ]
+       ] [
+         fhir:code [ fhir:v "dislocation" ] ;
+         fhir:display [ fhir:v "Luksation" ]
+       ] [
+         fhir:code [ fhir:v "component_failure" ] ;
+         fhir:display [ fhir:v "Komponentsvigt" ]
+       ] [
+         fhir:code [ fhir:v "pain" ] ;
+         fhir:display [ fhir:v "Smerter" ]
+       ] [
+         fhir:code [ fhir:v "osteolysis" ] ;
+         fhir:display [ fhir:v "Osteolyse/granulom uden løsning" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "other" ] ;
+         fhir:display [ fhir:v "Andet" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

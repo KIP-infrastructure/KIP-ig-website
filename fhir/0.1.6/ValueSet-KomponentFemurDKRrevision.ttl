@@ -1,0 +1,229 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/KomponentFemurDKRrevision> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KomponentFemurDKRrevision"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KomponentFemurDKRrevision</b></p><a name=\"KomponentFemurDKRrevision\"> </a><a name=\"hcKomponentFemurDKRrevision\"> </a><a name=\"KomponentFemurDKRrevision-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-KneeJointArthroplastyComponent.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/KneeJointArthroplastyComponent</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-arthrosurface_hemicap\">arthrosurface_hemicap</a></td><td>Arthrosurface: HemiCAP</td><td>Arthrosurface: HemiCAP (Femur)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-arthrosurface_hemicap_pf\">arthrosurface_hemicap_pf</a></td><td>Arthrosurface: Hemicap PF</td><td>Arthrosurface: Hemicap PF (Femur)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-arthrosurface_unicap\">arthrosurface_unicap</a></td><td>Arthrosurface: Unicap</td><td>Arthrosurface: Unicap (Femur + Tibia)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-episealer_condyle_solo\">episealer_condyle_solo</a></td><td>Episurf Medical: Episealer Condyle Solo</td><td>Episurf Medical: Episealer Condyle Solo (Femur)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-depuy_attune_cr\">depuy_attune_cr</a></td><td>Johnson &amp; Johnson: Attune CR</td><td>Johnson &amp; Johnson: Attune CR (Femur)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-johnson.38johnson_attune_crs\">johnson&amp;johnson_attune_crs</a></td><td>Johnson &amp; Johnson: Attune CRS (Constrained Revision System)</td><td>Johnson &amp; Johnson: Attune CRS (Constrained Revision System) (Femur)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-depuy_limb_preservation_system\">depuy_limb_preservation_system</a></td><td>Johnson &amp; Johnson: Limb Preservation System</td><td>Johnson &amp; Johnson: Limb Preservation System (Femur)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-limb_preservation_system_distal_femur\">limb_preservation_system_distal_femur</a></td><td>Johnson &amp; Johnson: Limb Preservation System Distal Femur</td><td>Limb Preservation System Distal Femur (Femur)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-johnson.38johnson_pfc_sigma_cruciate_retaining\">johnson&amp;johnson_pfc_sigma_cruciate_retaining</a></td><td>Johnson &amp; Johnson: PFC Sigma Cruciate-Retaining</td><td>Johnson &amp; Johnson: PFC Sigma Cruciate-Retaining (Femur + Tibia)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-johnson.38johnson_pfc_sigma_cruciate_substituting\">johnson&amp;johnson_pfc_sigma_cruciate_substituting</a></td><td>Johnson &amp; Johnson: PFC Sigma Cruciate-Substituting</td><td>Johnson &amp; Johnson: PFC Sigma Cruciate-Substituting (Femur)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-johnson.38johnson_pfc_sigma_tc3\">johnson&amp;johnson_pfc_sigma_tc3</a></td><td>Johnson &amp; Johnson: PFC Sigma TC3 </td><td>Johnson &amp; Johnson: PFC Sigma TC3 (Femur)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-depuy_sigma_hp_partiel_knee\">depuy_sigma_hp_partiel_knee</a></td><td>Johnson &amp; Johnson: Sigma HP Partial Knee</td><td>DePuy: Sigma HP partial knee (Femur + Tibia)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-johnson.38johnson_s_rom_noiles\">johnson&amp;johnson_s_rom_noiles</a></td><td>Johnson &amp; Johnson: S-ROM Noiles</td><td>Johnson &amp; Johnson: S-ROM Noiles (Femur + Tibia)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-physica_cr\">physica_cr</a></td><td>Lima: Physica CR</td><td>Lima: Physica CR (Femur + Tibia)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-physica_kr\">physica_kr</a></td><td>Lima: Physica KR</td><td>Lima: Physica KR (Femur + Tibia)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-physica_ps\">physica_ps</a></td><td>Lima: Physica PS</td><td>Lima: Physica PS (Femur + Tibia)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-link_endo_model_rotational\">link_endo_model_rotational</a></td><td>Link: Endo-Model Rotational</td><td>LINK: Endo-Model Rotational (Femur + Tibia)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-link_endo_model_total_hinge\">link_endo_model_total_hinge</a></td><td>Link: Endo-Model Total Hinge</td><td>LINK: Endo-Model Total Hinge (Femur + Tibia)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-megasystem_c\">megasystem_c</a></td><td>Link: Megasystem C</td><td>LINK: Megasystem C (Femur + Tibia)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-link_st_georg\">link_st_georg</a></td><td>Link: St. Georg </td><td>LINK: St. Georg (Femur + Tibia)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-smith.38nephew_competitor_pfj\">smith&amp;nephew_competitor_pfj</a></td><td>Smith &amp; Nephew: Competitor PFJ</td><td>Smith &amp; Nephew: Competitor PFJ (Femur)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-smith.38nephew_genesis_cruciate_retaining\">smith&amp;nephew_genesis_cruciate_retaining</a></td><td>Smith &amp; Nephew: Genesis Cruciate-Retaining</td><td>Smith &amp; Nephew: Genesis Cruciate-Retaining (Femur)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-smith.38nephew_genesis_legion_cr_oxinium\">smith&amp;nephew_genesis_legion_cr_oxinium</a></td><td>Smith &amp; Nephew: Legion CR Oxinium </td><td>Smith &amp; Nephew: Legion CR Oxinium (Femur)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-smith.38nephew_genesis_profix_posterior_stabilized\">smith&amp;nephew_genesis_profix_posterior_stabilized</a></td><td>Smith &amp; Nephew: Profix Posterior Stabilized</td><td>Smith &amp; Nephew: Profix Posterior Stabilized (Femur)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-smith.38nephew_genesis_profix_revision\">smith&amp;nephew_genesis_profix_revision</a></td><td>Smith &amp; Nephew: Profix Revision</td><td>Smith &amp; Nephew: Profix Revision (Femur + Tibia)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-stryker_howmetica_avon\">stryker_howmetica_avon</a></td><td>Stryker/Howmetica: Avon</td><td>Stryker/Howmetica: Avon (Femur)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-stryker_gmrs\">stryker_gmrs</a></td><td>Stryker: GMRS</td><td>Stryker: GMRS (Femur + Tibia)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-stryker_modular_rotating_hinge\">stryker_modular_rotating_hinge</a></td><td>Stryker: Modular Rotating Hinge </td><td>Stryker: Modular Rotating Hinge (Femur + Tibia)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-stryker_restoris_pfa\">stryker_restoris_pfa</a></td><td>Stryker: Restoris PFA</td><td>Stryker: Restoris PFA</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-stryker_restoris_medial_uni\">stryker_restoris_medial_uni</a></td><td>Stryker: Restoris Medial Uni</td><td>Stryker: Restoris Medial Uni</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-stryker_restoris_lateral_uni\">stryker_restoris_lateral_uni</a></td><td>Stryker: Restoris Lateral Uni</td><td>Stryker: Restoris Lateral Uni</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-stryker_scorpio_cr\">stryker_scorpio_cr</a></td><td>Stryker: Scorpio CR</td><td>Stryker: Scorpio CR (Femur)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-stryker_scorpio_ps\">stryker_scorpio_ps</a></td><td>Stryker: Scorpio PS</td><td>Stryker: Scorpio PS (Femur)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-stryker_scorpio_ts\">stryker_scorpio_ts</a></td><td>Stryker: Scorpio TS</td><td>Stryker: Scorpio TS (Femur + Tibia)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-stryker_triathlon_cr\">stryker_triathlon_cr</a></td><td>Stryker: Triathlon CR</td><td>Stryker: Triathlon CR (Femur)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-stryker_thriathlon_pkr\">stryker_thriathlon_pkr</a></td><td>Stryker: Triathlon PKR</td><td>Stryker: Triathlon PKR (Femur + Tibia)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-stryker_thriathlon_ps\">stryker_thriathlon_ps</a></td><td>Stryker: Triathlon PS </td><td>Stryker: Triathlon PS (Femur)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-stryker_thriathlon_ts\">stryker_thriathlon_ts</a></td><td>Stryker: Triathlon TS</td><td>Stryker: Triathlon TS (Femur + Tibia)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-vanguard_da_360\">vanguard_da_360</a></td><td>Vanguard: DA 360</td><td>Vanguard: DA 360 (Femur)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-biomet_agc_v2_universal\">biomet_agc_v2_universal</a></td><td>Zimmer Biomet: AGC V2 Universal</td><td>Zimmer Biomet: AGC V2 Universal (Femur)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-zimmer_nexgen_cr\">zimmer_nexgen_cr</a></td><td>Zimmer Biomet: NexGen CR</td><td>Zimmer Biomet: NexGen CR (Femur + Tibia)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-zimmer_nexgen_cr_flex\">zimmer_nexgen_cr_flex</a></td><td>Zimmer Biomet: NexGen CR Flex</td><td>Zimmer: NexGen CR Flex (Femur + Tibia)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-zimmer_nexgen_cr_flex_gender\">zimmer_nexgen_cr_flex_gender</a></td><td>Zimmer Biomet: NexGen CR Flex Gender</td><td>Zimmer: NexGen CR Flex Gender (Femur)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-zimmer_nexgen_lcck\">zimmer_nexgen_lcck</a></td><td>Zimmer Biomet: NexGen LCCK</td><td>Zimmer Biomet: NexGen LCCK (Femur + Tibia)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-zimmer_nexgen_lps\">zimmer_nexgen_lps</a></td><td>Zimmer Biomet: NexGen LPS </td><td>Zimmer Biomet: NexGen LPS (Femur + Tibia)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-zimmer_nexgen_lps_flex\">zimmer_nexgen_lps_flex</a></td><td>Zimmer Biomet: NexGen LPS-Flex</td><td>Zimmer Biomet: NexGen LPS Flex (Femur + Tibia)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-zimmer_nexgen_rhk\">zimmer_nexgen_rhk</a></td><td>Zimmer Biomet: NexGen RHK </td><td>Zimmer Biomet: NexGen RHK (Femur + Tibia)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-nexgen_zuk\">nexgen_zuk</a></td><td>Zimmer Biomet: NexGen Zuk</td><td>Zimmer Biomet: NexGen Zuk (Femur + Tibia)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-oxford_2_peg\">oxford_2_peg</a></td><td>Zimmer Biomet: Oxford 2-peg</td><td>Zimmer Biomet: Oxford 2-peg (Femur)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-oxford_domed_lateral_pkr\">oxford_domed_lateral_pkr</a></td><td>Zimmer Biomet: Oxford domed lateral PKR</td><td>Zimmer Biomet: Oxford domed lateral PKR (Femur)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-biomet_oxford_phase_iii_alpha\">biomet_oxford_phase_iii_alpha</a></td><td>Zimmer Biomet: Oxford Phase III alpha</td><td>Zimmer Biomet: Oxford Phase III alpha (Femur)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-persona_cr\">persona_cr</a></td><td>Zimmer Biomet: Persona CR</td><td>Zimmer Biomet: Persona CR (Femur + Tibia)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-persona_ps\">persona_ps</a></td><td>Zimmer Biomet: Persona PS</td><td>Zimmer Biomet: Persona PS (Femur + Tibia)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-zimmer_nexgen_pfj\">zimmer_nexgen_pfj</a></td><td>Zimmer Biomet: PFJ</td><td>Zimmer Biomet: PFJ (Femur)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-biomet_rhk_rotating_hinge_knee\">biomet_rhk_rotating_hinge_knee</a></td><td>Zimmer Biomet: RHK Rotating Hinge Knee</td><td>Zimmer Biomet: RHK Rotating Hinge Knee (Femur + Tibia)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-biomet_vanguard_cr\">biomet_vanguard_cr</a></td><td>Zimmer Biomet: Vanguard CR</td><td>Zimmer Biomet: Vanguard CR (Femur + Tibia)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-biomet_vanguard_rocc_interlok_femur\">biomet_vanguard_rocc_interlok_femur</a></td><td>Zimmer Biomet: Vanguard ROCC - Interlok Femur</td><td>Biomet: Vanguard ROCC - Interlok Femur (Femur)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-biomet_vanguard_ssk\">biomet_vanguard_ssk</a></td><td>Zimmer Biomet: Vanguard SSK 360</td><td>Biomet: Vanguard SSK (Femur)</td></tr><tr><td><a href=\"CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-zimmer_segmental_system\">zimmer_segmental_system</a></td><td>Zimmer Biomet: Zimmer Segmental System</td><td>Zimmer: Segmental System (Femur)</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-not_replaced\">not_replaced</a></td><td>Ikke udskiftet (ved revision)</td><td>Not replaced / Ikke udskiftet</td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/KomponentFemurDKRrevision"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "KomponentFemurDKRrevision"] ; # 
+  fhir:title [ fhir:v "Komponent - femur (DKR) revision"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2023-01-13T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Komponent - femur (DKR) revision"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/KneeJointArthroplastyComponent"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "arthrosurface_hemicap" ] ;
+         fhir:display [ fhir:v "Arthrosurface: HemiCAP" ]
+       ] [
+         fhir:code [ fhir:v "arthrosurface_hemicap_pf" ] ;
+         fhir:display [ fhir:v "Arthrosurface: Hemicap PF" ]
+       ] [
+         fhir:code [ fhir:v "arthrosurface_unicap" ] ;
+         fhir:display [ fhir:v "Arthrosurface: Unicap" ]
+       ] [
+         fhir:code [ fhir:v "episealer_condyle_solo" ] ;
+         fhir:display [ fhir:v "Episurf Medical: Episealer Condyle Solo" ]
+       ] [
+         fhir:code [ fhir:v "depuy_attune_cr" ] ;
+         fhir:display [ fhir:v "Johnson & Johnson: Attune CR" ]
+       ] [
+         fhir:code [ fhir:v "johnson&johnson_attune_crs" ] ;
+         fhir:display [ fhir:v "Johnson & Johnson: Attune CRS (Constrained Revision System)" ]
+       ] [
+         fhir:code [ fhir:v "depuy_limb_preservation_system" ] ;
+         fhir:display [ fhir:v "Johnson & Johnson: Limb Preservation System" ]
+       ] [
+         fhir:code [ fhir:v "limb_preservation_system_distal_femur" ] ;
+         fhir:display [ fhir:v "Johnson & Johnson: Limb Preservation System Distal Femur" ]
+       ] [
+         fhir:code [ fhir:v "johnson&johnson_pfc_sigma_cruciate_retaining" ] ;
+         fhir:display [ fhir:v "Johnson & Johnson: PFC Sigma Cruciate-Retaining" ]
+       ] [
+         fhir:code [ fhir:v "johnson&johnson_pfc_sigma_cruciate_substituting" ] ;
+         fhir:display [ fhir:v "Johnson & Johnson: PFC Sigma Cruciate-Substituting" ]
+       ] [
+         fhir:code [ fhir:v "johnson&johnson_pfc_sigma_tc3" ] ;
+         fhir:display [ fhir:v "Johnson & Johnson: PFC Sigma TC3 " ]
+       ] [
+         fhir:code [ fhir:v "depuy_sigma_hp_partiel_knee" ] ;
+         fhir:display [ fhir:v "Johnson & Johnson: Sigma HP Partial Knee" ]
+       ] [
+         fhir:code [ fhir:v "johnson&johnson_s_rom_noiles" ] ;
+         fhir:display [ fhir:v "Johnson & Johnson: S-ROM Noiles" ]
+       ] [
+         fhir:code [ fhir:v "physica_cr" ] ;
+         fhir:display [ fhir:v "Lima: Physica CR" ]
+       ] [
+         fhir:code [ fhir:v "physica_kr" ] ;
+         fhir:display [ fhir:v "Lima: Physica KR" ]
+       ] [
+         fhir:code [ fhir:v "physica_ps" ] ;
+         fhir:display [ fhir:v "Lima: Physica PS" ]
+       ] [
+         fhir:code [ fhir:v "link_endo_model_rotational" ] ;
+         fhir:display [ fhir:v "Link: Endo-Model Rotational" ]
+       ] [
+         fhir:code [ fhir:v "link_endo_model_total_hinge" ] ;
+         fhir:display [ fhir:v "Link: Endo-Model Total Hinge" ]
+       ] [
+         fhir:code [ fhir:v "megasystem_c" ] ;
+         fhir:display [ fhir:v "Link: Megasystem C" ]
+       ] [
+         fhir:code [ fhir:v "link_st_georg" ] ;
+         fhir:display [ fhir:v "Link: St. Georg " ]
+       ] [
+         fhir:code [ fhir:v "smith&nephew_competitor_pfj" ] ;
+         fhir:display [ fhir:v "Smith & Nephew: Competitor PFJ" ]
+       ] [
+         fhir:code [ fhir:v "smith&nephew_genesis_cruciate_retaining" ] ;
+         fhir:display [ fhir:v "Smith & Nephew: Genesis Cruciate-Retaining" ]
+       ] [
+         fhir:code [ fhir:v "smith&nephew_genesis_legion_cr_oxinium" ] ;
+         fhir:display [ fhir:v "Smith & Nephew: Legion CR Oxinium " ]
+       ] [
+         fhir:code [ fhir:v "smith&nephew_genesis_profix_posterior_stabilized" ] ;
+         fhir:display [ fhir:v "Smith & Nephew: Profix Posterior Stabilized" ]
+       ] [
+         fhir:code [ fhir:v "smith&nephew_genesis_profix_revision" ] ;
+         fhir:display [ fhir:v "Smith & Nephew: Profix Revision" ]
+       ] [
+         fhir:code [ fhir:v "stryker_howmetica_avon" ] ;
+         fhir:display [ fhir:v "Stryker/Howmetica: Avon" ]
+       ] [
+         fhir:code [ fhir:v "stryker_gmrs" ] ;
+         fhir:display [ fhir:v "Stryker: GMRS" ]
+       ] [
+         fhir:code [ fhir:v "stryker_modular_rotating_hinge" ] ;
+         fhir:display [ fhir:v "Stryker: Modular Rotating Hinge " ]
+       ] [
+         fhir:code [ fhir:v "stryker_restoris_pfa" ] ;
+         fhir:display [ fhir:v "Stryker: Restoris PFA" ]
+       ] [
+         fhir:code [ fhir:v "stryker_restoris_medial_uni" ] ;
+         fhir:display [ fhir:v "Stryker: Restoris Medial Uni" ]
+       ] [
+         fhir:code [ fhir:v "stryker_restoris_lateral_uni" ] ;
+         fhir:display [ fhir:v "Stryker: Restoris Lateral Uni" ]
+       ] [
+         fhir:code [ fhir:v "stryker_scorpio_cr" ] ;
+         fhir:display [ fhir:v "Stryker: Scorpio CR" ]
+       ] [
+         fhir:code [ fhir:v "stryker_scorpio_ps" ] ;
+         fhir:display [ fhir:v "Stryker: Scorpio PS" ]
+       ] [
+         fhir:code [ fhir:v "stryker_scorpio_ts" ] ;
+         fhir:display [ fhir:v "Stryker: Scorpio TS" ]
+       ] [
+         fhir:code [ fhir:v "stryker_triathlon_cr" ] ;
+         fhir:display [ fhir:v "Stryker: Triathlon CR" ]
+       ] [
+         fhir:code [ fhir:v "stryker_thriathlon_pkr" ] ;
+         fhir:display [ fhir:v "Stryker: Triathlon PKR" ]
+       ] [
+         fhir:code [ fhir:v "stryker_thriathlon_ps" ] ;
+         fhir:display [ fhir:v "Stryker: Triathlon PS " ]
+       ] [
+         fhir:code [ fhir:v "stryker_thriathlon_ts" ] ;
+         fhir:display [ fhir:v "Stryker: Triathlon TS" ]
+       ] [
+         fhir:code [ fhir:v "vanguard_da_360" ] ;
+         fhir:display [ fhir:v "Vanguard: DA 360" ]
+       ] [
+         fhir:code [ fhir:v "biomet_agc_v2_universal" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: AGC V2 Universal" ]
+       ] [
+         fhir:code [ fhir:v "zimmer_nexgen_cr" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: NexGen CR" ]
+       ] [
+         fhir:code [ fhir:v "zimmer_nexgen_cr_flex" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: NexGen CR Flex" ]
+       ] [
+         fhir:code [ fhir:v "zimmer_nexgen_cr_flex_gender" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: NexGen CR Flex Gender" ]
+       ] [
+         fhir:code [ fhir:v "zimmer_nexgen_lcck" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: NexGen LCCK" ]
+       ] [
+         fhir:code [ fhir:v "zimmer_nexgen_lps" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: NexGen LPS " ]
+       ] [
+         fhir:code [ fhir:v "zimmer_nexgen_lps_flex" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: NexGen LPS-Flex" ]
+       ] [
+         fhir:code [ fhir:v "zimmer_nexgen_rhk" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: NexGen RHK " ]
+       ] [
+         fhir:code [ fhir:v "nexgen_zuk" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: NexGen Zuk" ]
+       ] [
+         fhir:code [ fhir:v "oxford_2_peg" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: Oxford 2-peg" ]
+       ] [
+         fhir:code [ fhir:v "oxford_domed_lateral_pkr" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: Oxford domed lateral PKR" ]
+       ] [
+         fhir:code [ fhir:v "biomet_oxford_phase_iii_alpha" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: Oxford Phase III alpha" ]
+       ] [
+         fhir:code [ fhir:v "persona_cr" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: Persona CR" ]
+       ] [
+         fhir:code [ fhir:v "persona_ps" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: Persona PS" ]
+       ] [
+         fhir:code [ fhir:v "zimmer_nexgen_pfj" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: PFJ" ]
+       ] [
+         fhir:code [ fhir:v "biomet_rhk_rotating_hinge_knee" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: RHK Rotating Hinge Knee" ]
+       ] [
+         fhir:code [ fhir:v "biomet_vanguard_cr" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: Vanguard CR" ]
+       ] [
+         fhir:code [ fhir:v "biomet_vanguard_rocc_interlok_femur" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: Vanguard ROCC - Interlok Femur" ]
+       ] [
+         fhir:code [ fhir:v "biomet_vanguard_ssk" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: Vanguard SSK 360" ]
+       ] [
+         fhir:code [ fhir:v "zimmer_segmental_system" ] ;
+         fhir:display [ fhir:v "Zimmer Biomet: Zimmer Segmental System" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "not_replaced" ] ;
+         fhir:display [ fhir:v "Ikke udskiftet (ved revision)" ]
+       ] [
+         fhir:code [ fhir:v "other" ] ;
+         fhir:display [ fhir:v "Andet" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

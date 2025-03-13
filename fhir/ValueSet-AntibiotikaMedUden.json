@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "AntibiotikaMedUden",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet AntibiotikaMedUden</b></p><a name=\"AntibiotikaMedUden\"> </a><a name=\"hcAntibiotikaMedUden\"> </a><a name=\"AntibiotikaMedUden-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-with\">with</a></td><td>Med antibiotika</td><td>Without / Med / SNOMED-CT: 20401003</td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-without\">without</a></td><td>Uden antibiotika</td><td>Without / Uden / SNOMED-CT: 45169001</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/AntibiotikaMedUden",
+  "version" : "0.1.6",
+  "name" : "AntibiotikaMedUden",
+  "title" : "Antibiotika (med/uden)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-12-21T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Antibiotika (med/uden)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "with",
+        "display" : "Med antibiotika"
+      },
+      {
+        "code" : "without",
+        "display" : "Uden antibiotika"
+      }]
+    }]
+  }
+}

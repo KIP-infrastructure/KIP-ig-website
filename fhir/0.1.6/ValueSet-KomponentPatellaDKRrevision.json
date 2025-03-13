@@ -1,0 +1,60 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KomponentPatellaDKRrevision",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KomponentPatellaDKRrevision</b></p><a name=\"KomponentPatellaDKRrevision\"> </a><a name=\"hcKomponentPatellaDKRrevision\"> </a><a name=\"KomponentPatellaDKRrevision-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-none\">none</a></td><td>Ingen</td><td>None - used to choose none of the available values</td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-not_replaced\">not_replaced</a></td><td>Ikke udskiftet (ved revision)</td><td>Not replaced / Ikke udskiftet</td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-removed\">removed</a></td><td>Fjernelse af patellakomponent</td><td>Removed / Fjernet</td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Anden komponent</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-ImplantComponents.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ImplantComponents</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ImplantComponents.html#ImplantComponents-metal_backing\">metal_backing</a></td><td>Metal-backing</td><td>Metal-backing</td></tr><tr><td><a href=\"CodeSystem-ImplantComponents.html#ImplantComponents-polyethylene\">polyethylene</a></td><td>Polyethylen</td><td>Polyethylene / Polyethylen / SNOMED-CT: 71463006</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/KomponentPatellaDKRrevision",
+  "version" : "0.1.6",
+  "name" : "KomponentPatellaDKRrevision",
+  "title" : "Komponent - patella (DKR) revision",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2023-01-16T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Komponent - patella (DKR) revision",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "none",
+        "display" : "Ingen"
+      },
+      {
+        "code" : "not_replaced",
+        "display" : "Ikke udskiftet (ved revision)"
+      },
+      {
+        "code" : "removed",
+        "display" : "Fjernelse af patellakomponent"
+      },
+      {
+        "code" : "other",
+        "display" : "Anden komponent"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/ImplantComponents",
+      "concept" : [{
+        "code" : "metal_backing",
+        "display" : "Metal-backing"
+      },
+      {
+        "code" : "polyethylene",
+        "display" : "Polyethylen"
+      }]
+    }]
+  }
+}

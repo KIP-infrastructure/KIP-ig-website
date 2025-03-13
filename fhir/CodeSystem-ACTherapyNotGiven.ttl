@@ -1,0 +1,75 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/ACTherapyNotGiven> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ACTherapyNotGiven"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ACTherapyNotGiven</b></p><a name=\"ACTherapyNotGiven\"> </a><a name=\"hcACTherapyNotGiven\"> </a><a name=\"ACTherapyNotGiven-en-US\"> </a><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/ACTherapyNotGiven</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">activebleeding<a name=\"ACTherapyNotGiven-activebleeding\"> </a></td><td>Aktiv blødning</td><td>Aktiv blødning</td></tr><tr><td style=\"white-space:nowrap\">intracerebralhaemorrhage<a name=\"ACTherapyNotGiven-intracerebralhaemorrhage\"> </a></td><td>Nylig intracerebral blødning</td><td>Nylig intracerebral blødning</td></tr><tr><td style=\"white-space:nowrap\">hypertension<a name=\"ACTherapyNotGiven-hypertension\"> </a></td><td>Ukontrolleret hypertension</td><td>Ukontrolleret hypertension (≥160 mmHg)</td></tr><tr><td style=\"white-space:nowrap\">diathesis<a name=\"ACTherapyNotGiven-diathesis\"> </a></td><td>Hæmoragisk diatese</td><td>Hæmoragisk diatese</td></tr><tr><td style=\"white-space:nowrap\">othertreatment<a name=\"ACTherapyNotGiven-othertreatment\"> </a></td><td>Anden behandling</td><td>Anden behandling (aurikellukning, LMWH i terapeutiske doser)</td></tr><tr><td style=\"white-space:nowrap\">dementia<a name=\"ACTherapyNotGiven-dementia\"> </a></td><td>Svær demens</td><td>Svær demens</td></tr><tr><td style=\"white-space:nowrap\">reducedfunctionlevel<a name=\"ACTherapyNotGiven-reducedfunctionlevel\"> </a></td><td>Betydelig reduceret funktionsniveau</td><td>Betydelig reduceret funktionsniveau (mRS ≥4)</td></tr><tr><td style=\"white-space:nowrap\">lifespanbelow3months<a name=\"ACTherapyNotGiven-lifespanbelow3months\"> </a></td><td>Forventet livslængde under 3 måneder</td><td>Forventet livslængde under 3 måneder</td></tr><tr><td style=\"white-space:nowrap\">nopatientconsent<a name=\"ACTherapyNotGiven-nopatientconsent\"> </a></td><td>Manglende patientsamtykke</td><td>Manglende patientsamtykke</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/ACTherapyNotGiven"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "ACTherapyNotGiven"] ; # 
+  fhir:title [ fhir:v "Reasons for not giving anticoagulation therapy"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-03T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Årsagen til hvorfor man har fravalgt antikoagulationsbehandling."] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "9"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "activebleeding" ] ;
+     fhir:display [ fhir:v "Aktiv blødning" ] ;
+     fhir:definition [ fhir:v "Aktiv blødning" ]
+  ] [
+     fhir:code [ fhir:v "intracerebralhaemorrhage" ] ;
+     fhir:display [ fhir:v "Nylig intracerebral blødning" ] ;
+     fhir:definition [ fhir:v "Nylig intracerebral blødning" ]
+  ] [
+     fhir:code [ fhir:v "hypertension" ] ;
+     fhir:display [ fhir:v "Ukontrolleret hypertension" ] ;
+     fhir:definition [ fhir:v "Ukontrolleret hypertension (≥160 mmHg)" ]
+  ] [
+     fhir:code [ fhir:v "diathesis" ] ;
+     fhir:display [ fhir:v "Hæmoragisk diatese" ] ;
+     fhir:definition [ fhir:v "Hæmoragisk diatese" ]
+  ] [
+     fhir:code [ fhir:v "othertreatment" ] ;
+     fhir:display [ fhir:v "Anden behandling" ] ;
+     fhir:definition [ fhir:v "Anden behandling (aurikellukning, LMWH i terapeutiske doser)" ]
+  ] [
+     fhir:code [ fhir:v "dementia" ] ;
+     fhir:display [ fhir:v "Svær demens" ] ;
+     fhir:definition [ fhir:v "Svær demens" ]
+  ] [
+     fhir:code [ fhir:v "reducedfunctionlevel" ] ;
+     fhir:display [ fhir:v "Betydelig reduceret funktionsniveau" ] ;
+     fhir:definition [ fhir:v "Betydelig reduceret funktionsniveau (mRS ≥4)" ]
+  ] [
+     fhir:code [ fhir:v "lifespanbelow3months" ] ;
+     fhir:display [ fhir:v "Forventet livslængde under 3 måneder" ] ;
+     fhir:definition [ fhir:v "Forventet livslængde under 3 måneder" ]
+  ] [
+     fhir:code [ fhir:v "nopatientconsent" ] ;
+     fhir:display [ fhir:v "Manglende patientsamtykke" ] ;
+     fhir:definition [ fhir:v "Manglende patientsamtykke" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

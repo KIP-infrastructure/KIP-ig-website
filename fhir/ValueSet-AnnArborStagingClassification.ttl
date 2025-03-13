@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/AnnArborStagingClassification> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AnnArborStagingClassification"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet AnnArborStagingClassification</b></p><a name=\"AnnArborStagingClassification\"> </a><a name=\"hcAnnArborStagingClassification\"> </a><a name=\"AnnArborStagingClassification-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-AnnArborStagingClassification.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/AnnArborStagingClassification</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-AnnArborStagingClassification.html#AnnArborStagingClassification-stage_1\">stage_1</a></td><td>1 (A, B el. E)</td><td>Stage 1: Involvement of a single lymph node region or of a single extralymphatic organ or site</td></tr><tr><td><a href=\"CodeSystem-AnnArborStagingClassification.html#AnnArborStagingClassification-stage_2\">stage_2</a></td><td>2 (A, B el. E)</td><td>Stage 2: Involvement of two or more lymph node regions on the same side of the diaphragm or localized involvement of an extralymphatic organ or site</td></tr><tr><td><a href=\"CodeSystem-AnnArborStagingClassification.html#AnnArborStagingClassification-stage_3\">stage_3</a></td><td>3 (A, B el. E)</td><td>Stage 3: Involvement of lymph node regions or structures on both sides of the diaphragm</td></tr><tr><td><a href=\"CodeSystem-AnnArborStagingClassification.html#AnnArborStagingClassification-stage_4\">stage_4</a></td><td>4 (A, B el. E)</td><td>Stage 4: diffuse or disseminated involvement of one or more extralymphatic organs, or either:\n- isolated extralymphatic organ involvement without adjacent regional lymph node involvement, but with disease in distant sites\n- involvement of the liver, bone marrow, pleura or cerebrospinal fluid</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/AnnArborStagingClassification"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "AnnArborStagingClassification"] ; # 
+  fhir:title [ fhir:v "Ann Arbor gradering klassifikation"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-07-12T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Ann Arbor er en gradering klassifikation til Hodgkins desease"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/AnnArborStagingClassification"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "stage_1" ] ;
+         fhir:display [ fhir:v "1 (A, B el. E)" ]
+       ] [
+         fhir:code [ fhir:v "stage_2" ] ;
+         fhir:display [ fhir:v "2 (A, B el. E)" ]
+       ] [
+         fhir:code [ fhir:v "stage_3" ] ;
+         fhir:display [ fhir:v "3 (A, B el. E)" ]
+       ] [
+         fhir:code [ fhir:v "stage_4" ] ;
+         fhir:display [ fhir:v "4 (A, B el. E)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

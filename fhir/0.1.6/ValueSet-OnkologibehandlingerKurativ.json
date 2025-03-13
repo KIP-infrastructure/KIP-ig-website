@@ -1,0 +1,49 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "OnkologibehandlingerKurativ",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet OnkologibehandlingerKurativ</b></p><a name=\"OnkologibehandlingerKurativ\"> </a><a name=\"hcOnkologibehandlingerKurativ\"> </a><a name=\"OnkologibehandlingerKurativ-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-OncologyTreatmentCurative.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/OncologyTreatmentCurative</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-OncologyTreatmentCurative.html#OncologyTreatmentCurative-adjuvant\">adjuvant</a></td><td>Adjuverende</td><td>Hvis Adjuverende behandling</td></tr><tr><td><a href=\"CodeSystem-OncologyTreatmentCurative.html#OncologyTreatmentCurative-neoadjuvant\">neoadjuvant</a></td><td>Neo-adjuverende</td><td>Hvis Neo-adjuverende behandling</td></tr><tr><td><a href=\"CodeSystem-OncologyTreatmentCurative.html#OncologyTreatmentCurative-perioperative\">perioperative</a></td><td>Perioperativ</td><td>Hvis Perioperativ behandling</td></tr><tr><td><a href=\"CodeSystem-OncologyTreatmentCurative.html#OncologyTreatmentCurative-radio.47chemo\">radio/chemo</a></td><td>Definitiv kemo/radioterapi</td><td>Hvis Definitiv kemo/radioterapi behandling</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/OnkologibehandlingerKurativ",
+  "version" : "0.1.6",
+  "name" : "OnkologibehandlingerKurativ",
+  "title" : "Onkologibehandlinger (kurativ)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-04-28T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Dette er alle typer af onkologibehandlinger for kurativ behandlingsintention",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/OncologyTreatmentCurative",
+      "concept" : [{
+        "code" : "adjuvant",
+        "display" : "Adjuverende"
+      },
+      {
+        "code" : "neoadjuvant",
+        "display" : "Neo-adjuverende"
+      },
+      {
+        "code" : "perioperative",
+        "display" : "Perioperativ"
+      },
+      {
+        "code" : "radio/chemo",
+        "display" : "Definitiv kemo/radioterapi"
+      }]
+    }]
+  }
+}

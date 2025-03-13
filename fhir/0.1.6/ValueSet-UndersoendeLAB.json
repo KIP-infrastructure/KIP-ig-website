@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "UndersoendeLAB",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet UndersoendeLAB</b></p><a name=\"UndersoendeLAB\"> </a><a name=\"hcUndersoendeLAB\"> </a><a name=\"UndersoendeLAB-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-SOR.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/SOR</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-682641000016004\">682641000016004</a></td><td>Afdeling for blodprøver og biokemi, Aarhus Universitetshospital</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-256631000016003\">256631000016003</a></td><td>Afdeling for Klinisk Biokemi – Blegdamsvej</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Anden afdeling</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/UndersoendeLAB",
+  "version" : "0.1.6",
+  "name" : "UndersoendeLAB",
+  "title" : "UndersøgendeLAB",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-05-27T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "UndersøgendeLAB",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/SOR",
+      "concept" : [{
+        "code" : "682641000016004",
+        "display" : "Afdeling for blodprøver og biokemi, Aarhus Universitetshospital"
+      },
+      {
+        "code" : "256631000016003",
+        "display" : "Afdeling for Klinisk Biokemi – Blegdamsvej"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "other",
+        "display" : "Anden afdeling"
+      }]
+    }]
+  }
+}

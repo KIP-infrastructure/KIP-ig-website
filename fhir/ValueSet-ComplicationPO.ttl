@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/ComplicationPO> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ComplicationPO"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ComplicationPO</b></p><a name=\"ComplicationPO\"> </a><a name=\"hcComplicationPO\"> </a><a name=\"ComplicationPO-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Complications.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Complications</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-anafylSchock\">anafylSchock</a></td><td>Anafylaktisk reaktion/shock</td><td>Anafylaktisk reaktion/shock</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-appFailure\">appFailure</a></td><td>Apparaturfejl</td><td>Apparaturfejl</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-aspiration\">aspiration</a></td><td>Aspiration</td><td>Aspiration</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-duraptAcc\">duraptAcc</a></td><td>Durapunktur accidentel</td><td>Durapunktur accidentel</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-heartFail\">heartFail</a></td><td>Hjertestop</td><td>Hjertestop</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-huskeAN\">huskeAN</a></td><td>Huskeanæstesi</td><td>Huskeanæstesi</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-medFail\">medFail</a></td><td>Medicineringsfejl</td><td>Medicineringsfejl</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-neuMuscBlock\">neuMuscBlock</a></td><td>Neuromuskulær blokade, forlænget virkning</td><td>Neuromuskulær blokade, forlænget virkning</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-dentInj\">dentInj</a></td><td>Tandskade</td><td>Tandskade</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-mors\">mors</a></td><td>Mors, uventet</td><td>Mors, uventet</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/ComplicationPO"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "ComplicationPO"] ; # 
+  fhir:title [ fhir:v "Postoperativ komplikatione"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-06-01T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Postoperative komplikationer"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/Complications"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "anafylSchock" ] ;
+         fhir:display [ fhir:v "Anafylaktisk reaktion/shock" ]
+       ] [
+         fhir:code [ fhir:v "appFailure" ] ;
+         fhir:display [ fhir:v "Apparaturfejl" ]
+       ] [
+         fhir:code [ fhir:v "aspiration" ] ;
+         fhir:display [ fhir:v "Aspiration" ]
+       ] [
+         fhir:code [ fhir:v "duraptAcc" ] ;
+         fhir:display [ fhir:v "Durapunktur accidentel" ]
+       ] [
+         fhir:code [ fhir:v "heartFail" ] ;
+         fhir:display [ fhir:v "Hjertestop" ]
+       ] [
+         fhir:code [ fhir:v "huskeAN" ] ;
+         fhir:display [ fhir:v "Huskeanæstesi" ]
+       ] [
+         fhir:code [ fhir:v "medFail" ] ;
+         fhir:display [ fhir:v "Medicineringsfejl" ]
+       ] [
+         fhir:code [ fhir:v "neuMuscBlock" ] ;
+         fhir:display [ fhir:v "Neuromuskulær blokade, forlænget virkning" ]
+       ] [
+         fhir:code [ fhir:v "dentInj" ] ;
+         fhir:display [ fhir:v "Tandskade" ]
+       ] [
+         fhir:code [ fhir:v "mors" ] ;
+         fhir:display [ fhir:v "Mors, uventet" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

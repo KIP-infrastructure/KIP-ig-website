@@ -1,0 +1,88 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/GrundlidelseDKR> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "GrundlidelseDKR"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet GrundlidelseDKR</b></p><a name=\"GrundlidelseDKR\"> </a><a name=\"hcGrundlidelseDKR\"> </a><a name=\"GrundlidelseDKR-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-BasicDisorder.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/BasicDisorder</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-BasicDisorder.html#BasicDisorder-arthrosis\">arthrosis</a></td><td>Primær (idiopatisk) artrose</td><td>Artrose</td></tr><tr><td><a href=\"CodeSystem-BasicDisorder.html#BasicDisorder-secondary_arthrosis\">secondary_arthrosis</a></td><td>Sek. artrose (f.eks. menisktomi)</td><td>Sekundær artrose</td></tr><tr><td><a href=\"CodeSystem-BasicDisorder.html#BasicDisorder-fracture_tibia_condyle\">fracture_tibia_condyle</a></td><td>Følger efter tibiakondylfraktur</td><td>Følger efter tibiakondylfraktur</td></tr><tr><td><a href=\"CodeSystem-BasicDisorder.html#BasicDisorder-fresh_fracture_tibia_condyle\">fresh_fracture_tibia_condyle</a></td><td>Frisk tibiakondylfraktur (inden for 14 dage)</td><td>Frisk tibiakondylfraktur</td></tr><tr><td><a href=\"CodeSystem-BasicDisorder.html#BasicDisorder-fracture_femoral_condyle\">fracture_femoral_condyle</a></td><td>Følger efter femurkondylfraktur</td><td>Følger efter tibiakondylfraktur</td></tr><tr><td><a href=\"CodeSystem-BasicDisorder.html#BasicDisorder-fresh_fracture_femoral_condyle\">fresh_fracture_femoral_condyle</a></td><td>Frisk femurkondylfraktur (inden for 14 dage)</td><td>Frisk femurkondylfraktur</td></tr><tr><td><a href=\"CodeSystem-BasicDisorder.html#BasicDisorder-fracture_patella\">fracture_patella</a></td><td>Følger efter patellafraktur</td><td>Følger efter patellafraktur</td></tr><tr><td><a href=\"CodeSystem-BasicDisorder.html#BasicDisorder-rheumatoid\">rheumatoid</a></td><td>Reumatoid artrit</td><td>Reumatoid artrit</td></tr><tr><td><a href=\"CodeSystem-BasicDisorder.html#BasicDisorder-other_arthritis\">other_arthritis</a></td><td>Følger efter anden artrit</td><td>Anden artrit</td></tr><tr><td><a href=\"CodeSystem-BasicDisorder.html#BasicDisorder-hemophilia\">hemophilia</a></td><td>Hæmofili</td><td>Hæmofili</td></tr><tr><td><a href=\"CodeSystem-BasicDisorder.html#BasicDisorder-primary_tumor\">primary_tumor</a></td><td>Tumor - primær</td><td>Primær tumor</td></tr><tr><td><a href=\"CodeSystem-BasicDisorder.html#BasicDisorder-metastases\">metastases</a></td><td>Tumor - metastase</td><td>Metastaser</td></tr><tr><td><a href=\"CodeSystem-BasicDisorder.html#BasicDisorder-osteonecrosis\">osteonecrosis</a></td><td>Osteonekrose</td><td>Osteonekrose</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/GrundlidelseDKR"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "GrundlidelseDKR"] ; # 
+  fhir:title [ fhir:v "Grundlidelse (DKR)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-10-12T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Grundlidelse (DKR)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/BasicDisorder"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "arthrosis" ] ;
+         fhir:display [ fhir:v "Primær (idiopatisk) artrose" ]
+       ] [
+         fhir:code [ fhir:v "secondary_arthrosis" ] ;
+         fhir:display [ fhir:v "Sek. artrose (f.eks. menisktomi)" ]
+       ] [
+         fhir:code [ fhir:v "fracture_tibia_condyle" ] ;
+         fhir:display [ fhir:v "Følger efter tibiakondylfraktur" ]
+       ] [
+         fhir:code [ fhir:v "fresh_fracture_tibia_condyle" ] ;
+         fhir:display [ fhir:v "Frisk tibiakondylfraktur (inden for 14 dage)" ]
+       ] [
+         fhir:code [ fhir:v "fracture_femoral_condyle" ] ;
+         fhir:display [ fhir:v "Følger efter femurkondylfraktur" ]
+       ] [
+         fhir:code [ fhir:v "fresh_fracture_femoral_condyle" ] ;
+         fhir:display [ fhir:v "Frisk femurkondylfraktur (inden for 14 dage)" ]
+       ] [
+         fhir:code [ fhir:v "fracture_patella" ] ;
+         fhir:display [ fhir:v "Følger efter patellafraktur" ]
+       ] [
+         fhir:code [ fhir:v "rheumatoid" ] ;
+         fhir:display [ fhir:v "Reumatoid artrit" ]
+       ] [
+         fhir:code [ fhir:v "other_arthritis" ] ;
+         fhir:display [ fhir:v "Følger efter anden artrit" ]
+       ] [
+         fhir:code [ fhir:v "hemophilia" ] ;
+         fhir:display [ fhir:v "Hæmofili" ]
+       ] [
+         fhir:code [ fhir:v "primary_tumor" ] ;
+         fhir:display [ fhir:v "Tumor - primær" ]
+       ] [
+         fhir:code [ fhir:v "metastases" ] ;
+         fhir:display [ fhir:v "Tumor - metastase" ]
+       ] [
+         fhir:code [ fhir:v "osteonecrosis" ] ;
+         fhir:display [ fhir:v "Osteonekrose" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "other" ] ;
+         fhir:display [ fhir:v "Andet" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

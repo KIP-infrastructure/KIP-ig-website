@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/ChromosomPair> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ChromosomPair"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ChromosomPair</b></p><a name=\"ChromosomPair\"> </a><a name=\"hcChromosomPair\"> </a><a name=\"ChromosomPair-en-US\"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/ChromosomPair</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">pair_13<a name=\"ChromosomPair-pair_13\"> </a></td><td>Chromosom pair 13</td><td>Chromosom pair 13 / Kromosompar 13 / SNOMED-CT: 55401003</td></tr><tr><td style=\"white-space:nowrap\">pair_17<a name=\"ChromosomPair-pair_17\"> </a></td><td>Chromosom pair 17</td><td>Chromosom pair 17 / Kromosompar 17 / SNOMED-CT: 45201007</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/ChromosomPair"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "ChromosomPair"] ; # 
+  fhir:title [ fhir:v "Chromosom pair"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-07-13T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Chromosom pair"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "pair_13" ] ;
+     fhir:display [ fhir:v "Chromosom pair 13" ] ;
+     fhir:definition [ fhir:v "Chromosom pair 13 / Kromosompar 13 / SNOMED-CT: 55401003" ]
+  ] [
+     fhir:code [ fhir:v "pair_17" ] ;
+     fhir:display [ fhir:v "Chromosom pair 17" ] ;
+     fhir:definition [ fhir:v "Chromosom pair 17 / Kromosompar 17 / SNOMED-CT: 45201007" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

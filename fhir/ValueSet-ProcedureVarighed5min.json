@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ProcedureVarighed5min",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ProcedureVarighed5min</b></p><a name=\"ProcedureVarighed5min\"> </a><a name=\"hcProcedureVarighed5min\"> </a><a name=\"ProcedureVarighed5min-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-ProcedureDuration.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ProcedureDuration</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ProcedureDuration.html#ProcedureDuration-.625\">&gt;5</a></td><td>Over 5 min.</td><td>&gt;5</td></tr><tr><td><a href=\"CodeSystem-ProcedureDuration.html#ProcedureDuration-.61.605\">=&lt;5</a></td><td>Under eller lig 5 min.</td><td>=&lt;5</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/ProcedureVarighed5min",
+  "version" : "0.1.6",
+  "name" : "ProcedureVarighed5min",
+  "title" : "Procedure varighed; over/under 5 min.",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-06-29T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Procedure varighed; over/under 5 min.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/ProcedureDuration",
+      "concept" : [{
+        "code" : ">5",
+        "display" : "Over 5 min."
+      },
+      {
+        "code" : "=<5",
+        "display" : "Under eller lig 5 min."
+      }]
+    }]
+  }
+}

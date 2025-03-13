@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "Ryger8uger",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Ryger8uger</b></p><a name=\"Ryger8uger\"> </a><a name=\"hcRyger8uger\"> </a><a name=\"Ryger8uger-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-Smoking.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Smoking</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Smoking.html#Smoking-non-smoker\">non-smoker</a></td><td>Ikke ryger</td><td>Ikkeryger</td></tr><tr><td><a href=\"CodeSystem-Smoking.html#Smoking-smoker\">smoker</a></td><td>Ryger eller ophørt indenfor 8 uger</td><td>Ryger</td></tr></table></li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0532</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html#v2-0532-UNK\">UNK</a></td><td>Uoplyst</td><td>unknown</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/Ryger8uger",
+  "version" : "0.1.6",
+  "name" : "Ryger8uger",
+  "title" : "Ryger op til 8 uger",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-06-15T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Ryger eller ophørt indenfor 8 uger",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/Smoking",
+      "concept" : [{
+        "code" : "non-smoker",
+        "display" : "Ikke ryger"
+      },
+      {
+        "code" : "smoker",
+        "display" : "Ryger eller ophørt indenfor 8 uger"
+      }]
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0532",
+      "concept" : [{
+        "code" : "UNK",
+        "display" : "Uoplyst"
+      }]
+    }]
+  }
+}

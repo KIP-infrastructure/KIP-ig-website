@@ -1,0 +1,82 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/IntraoperativeLaesionerMDCCG> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "IntraoperativeLaesionerMDCCG"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet IntraoperativeLaesionerMDCCG</b></p><a name=\"IntraoperativeLaesionerMDCCG\"> </a><a name=\"hcIntraoperativeLaesionerMDCCG\"> </a><a name=\"IntraoperativeLaesionerMDCCG-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-SKS.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/SKS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-T000703\">T000703</a></td><td>Duodenum T000703</td><td>T000703 - duodenum</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-T000627\">T000627</a></td><td>Galdeblære T000627</td><td>T000627 - galdeblære</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-T000725\">T000725</a></td><td>Kolon T000725</td><td>T000725 - colon</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-T000607\">T000607</a></td><td>Lever T000607</td><td>T000607 - lever</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-T000132\">T000132</a></td><td>Milt T000132</td><td>T000132 - milt</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-T000638\">T000638</a></td><td>Pancreas T000638</td><td>T000638 - pancreas</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-T000695\">T000695</a></td><td>Tyndtarm eksklusive duodenum T000695</td><td>T000695 - tyndtarm</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-T000803\">T000803</a></td><td>Ureter T000803</td><td>T000803 - ureter</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-T000824\">T000824</a></td><td>Urethra T000824</td><td>T000824 - urethra</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-T000812\">T000812</a></td><td>Urinblære T000812</td><td>T000812 - vesica urinaria</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-T000670\">T000670</a></td><td>Ventrikel T000670</td><td>T000670 - ventrikel</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/IntraoperativeLaesionerMDCCG"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "IntraoperativeLaesionerMDCCG"] ; # 
+  fhir:title [ fhir:v "Intraoperative læsioner - Mænd (DCCG)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-11-10T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Intraoperative læsioner - Mænd (DCCG)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/SKS"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "T000703" ] ;
+         fhir:display [ fhir:v "Duodenum T000703" ]
+       ] [
+         fhir:code [ fhir:v "T000627" ] ;
+         fhir:display [ fhir:v "Galdeblære T000627" ]
+       ] [
+         fhir:code [ fhir:v "T000725" ] ;
+         fhir:display [ fhir:v "Kolon T000725" ]
+       ] [
+         fhir:code [ fhir:v "T000607" ] ;
+         fhir:display [ fhir:v "Lever T000607" ]
+       ] [
+         fhir:code [ fhir:v "T000132" ] ;
+         fhir:display [ fhir:v "Milt T000132" ]
+       ] [
+         fhir:code [ fhir:v "T000638" ] ;
+         fhir:display [ fhir:v "Pancreas T000638" ]
+       ] [
+         fhir:code [ fhir:v "T000695" ] ;
+         fhir:display [ fhir:v "Tyndtarm eksklusive duodenum T000695" ]
+       ] [
+         fhir:code [ fhir:v "T000803" ] ;
+         fhir:display [ fhir:v "Ureter T000803" ]
+       ] [
+         fhir:code [ fhir:v "T000824" ] ;
+         fhir:display [ fhir:v "Urethra T000824" ]
+       ] [
+         fhir:code [ fhir:v "T000812" ] ;
+         fhir:display [ fhir:v "Urinblære T000812" ]
+       ] [
+         fhir:code [ fhir:v "T000670" ] ;
+         fhir:display [ fhir:v "Ventrikel T000670" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "other" ] ;
+         fhir:display [ fhir:v "Andet" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

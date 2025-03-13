@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/DefibrilleringAnalyse> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DefibrilleringAnalyse"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DefibrilleringAnalyse</b></p><a name=\"DefibrilleringAnalyse\"> </a><a name=\"hcDefibrilleringAnalyse\"> </a><a name=\"DefibrilleringAnalyse-en-US\"> </a><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/DefibrilleringAnalyse</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">aed<a name=\"DefibrilleringAnalyse-aed\"> </a></td><td>AED</td><td>AED</td></tr><tr><td style=\"white-space:nowrap\">ekg<a name=\"DefibrilleringAnalyse-ekg\"> </a></td><td>Anden EKG-monitorering</td><td>Anden EKG-monitorering</td></tr><tr><td style=\"white-space:nowrap\">ingen_defibr<a name=\"DefibrilleringAnalyse-ingen_defibr\"> </a></td><td>Ingen defibrillering</td><td>Ingen defibrillering</td></tr><tr><td style=\"white-space:nowrap\">man_defibr<a name=\"DefibrilleringAnalyse-man_defibr\"> </a></td><td>Manuel defibrillering</td><td>Manuel defibrillering</td></tr><tr><td style=\"white-space:nowrap\">andet<a name=\"DefibrilleringAnalyse-andet\"> </a></td><td>Andet</td><td>Andet</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/DefibrilleringAnalyse"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "DefibrilleringAnalyse"] ; # 
+  fhir:title [ fhir:v "Defibrillering_Analyse"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-29T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Metode til analyse/defibrillering af hjerterytme"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "aed" ] ;
+     fhir:display [ fhir:v "AED" ] ;
+     fhir:definition [ fhir:v "AED" ]
+  ] [
+     fhir:code [ fhir:v "ekg" ] ;
+     fhir:display [ fhir:v "Anden EKG-monitorering" ] ;
+     fhir:definition [ fhir:v "Anden EKG-monitorering" ]
+  ] [
+     fhir:code [ fhir:v "ingen_defibr" ] ;
+     fhir:display [ fhir:v "Ingen defibrillering" ] ;
+     fhir:definition [ fhir:v "Ingen defibrillering" ]
+  ] [
+     fhir:code [ fhir:v "man_defibr" ] ;
+     fhir:display [ fhir:v "Manuel defibrillering" ] ;
+     fhir:definition [ fhir:v "Manuel defibrillering" ]
+  ] [
+     fhir:code [ fhir:v "andet" ] ;
+     fhir:display [ fhir:v "Andet" ] ;
+     fhir:definition [ fhir:v "Andet" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

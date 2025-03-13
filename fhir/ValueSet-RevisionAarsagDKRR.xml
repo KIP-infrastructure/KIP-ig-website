@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="RevisionAarsagDKRR"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet RevisionAarsagDKRR</b></p><a name="RevisionAarsagDKRR"> </a><a name="hcRevisionAarsagDKRR"> </a><a name="RevisionAarsagDKRR-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-RevisionCause.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/RevisionCause</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-RevisionCause.html#RevisionCause-trauma">trauma</a></td><td>Nyt traume</td><td>Trauma / traume</td></tr><tr><td><a href="CodeSystem-RevisionCause.html#RevisionCause-tunnelwidening">tunnelwidening</a></td><td>Tunnelwidening</td><td>Tunnelwidening</td></tr><tr><td><a href="CodeSystem-RevisionCause.html#RevisionCause-suboptimal_graft_tibia">suboptimal_graft_tibia</a></td><td>Suboptimal graft placering i tibia</td><td>Suboptimal graft; placement in tibia / Suboptimal graft placering i tibia</td></tr><tr><td><a href="CodeSystem-RevisionCause.html#RevisionCause-suboptimal_graft_femur">suboptimal_graft_femur</a></td><td>Suboptimal graft placering i femur</td><td>Suboptimal graft; placement in femur / Suboptimal graft placering i femur</td></tr><tr><td><a href="CodeSystem-RevisionCause.html#RevisionCause-infection">infection</a></td><td>Infektion</td><td>Infection / Infektion</td></tr><tr><td><a href="CodeSystem-RevisionCause.html#RevisionCause-ligamental_instability">ligamental_instability</a></td><td>Anden ligamentær løshed som årsag til ny instabilitet</td><td>Other ligamental looseness causing instability / Anden ligamentær løshed som årsag til ny instabilitet</td></tr></table></li><li>Include these codes as defined in <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html"><code>http://terminology.hl7.org/CodeSystem/v2-0532</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://terminology.hl7.org/3.1.0/CodeSystem-v2-0532.html#v2-0532-UNK">UNK</a></td><td>Ukendt årsag til ny instabilitet</td><td>unknown</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-GenericValues.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-GenericValues.html#GenericValues-other">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.rkkp.dk/fhir/ValueSet/RevisionAarsagDKRR"/>
+  <version value="0.1.6"/>
+  <name value="RevisionAarsagDKRR"/>
+  <title value="Revision, årsag (DKRR)"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-09-21T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Revision, årsag (DKRR)"/>
+  <compose>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/RevisionCause"/>
+      <concept>
+        <code value="trauma"/>
+        <display value="Nyt traume"/>
+      </concept>
+      <concept>
+        <code value="tunnelwidening"/>
+        <display value="Tunnelwidening"/>
+      </concept>
+      <concept>
+        <code value="suboptimal_graft_tibia"/>
+        <display value="Suboptimal graft placering i tibia"/>
+      </concept>
+      <concept>
+        <code value="suboptimal_graft_femur"/>
+        <display value="Suboptimal graft placering i femur"/>
+      </concept>
+      <concept>
+        <code value="infection"/>
+        <display value="Infektion"/>
+      </concept>
+      <concept>
+        <code value="ligamental_instability"/>
+        <display value="Anden ligamentær løshed som årsag til ny instabilitet"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+      <concept>
+        <code value="UNK"/>
+        <display value="Ukendt årsag til ny instabilitet"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"/>
+      <concept>
+        <code value="other"/>
+        <display value="Andet"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/PersonFamilyRelation> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PersonFamilyRelation"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PersonFamilyRelation</b></p><a name=\"PersonFamilyRelation\"> </a><a name=\"hcPersonFamilyRelation\"> </a><a name=\"PersonFamilyRelation-en-US\"> </a><p>This case-sensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/PersonFamilyRelation</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">person_family<a name=\"PersonFamilyRelation-person_family\"> </a></td><td>Person in the family</td><td>Person in the family / SNOMED-CT: 303071001</td></tr><tr><td style=\"white-space:nowrap\">non_family_member<a name=\"PersonFamilyRelation-non_family_member\"> </a></td><td>Non-family member</td><td>Non-family member / SNOMED-CT: 394863008</td></tr><tr><td style=\"white-space:nowrap\">twin_sibling<a name=\"PersonFamilyRelation-twin_sibling\"> </a></td><td>Twin sibling</td><td>Twin sibling / SNODMED-CT: 11286003</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/PersonFamilyRelation"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.6"] ; # 
+  fhir:name [ fhir:v "PersonFamilyRelation"] ; # 
+  fhir:title [ fhir:v "Person relation; relation to another person"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-06-07T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Person relation; relation to another person"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "person_family" ] ;
+     fhir:display [ fhir:v "Person in the family" ] ;
+     fhir:definition [ fhir:v "Person in the family / SNOMED-CT: 303071001" ]
+  ] [
+     fhir:code [ fhir:v "non_family_member" ] ;
+     fhir:display [ fhir:v "Non-family member" ] ;
+     fhir:definition [ fhir:v "Non-family member / SNOMED-CT: 394863008" ]
+  ] [
+     fhir:code [ fhir:v "twin_sibling" ] ;
+     fhir:display [ fhir:v "Twin sibling" ] ;
+     fhir:definition [ fhir:v "Twin sibling / SNODMED-CT: 11286003" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

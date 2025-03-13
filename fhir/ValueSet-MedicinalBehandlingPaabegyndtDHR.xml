@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="MedicinalBehandlingPaabegyndtDHR"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet MedicinalBehandlingPaabegyndtDHR</b></p><a name="MedicinalBehandlingPaabegyndtDHR"> </a><a name="hcMedicinalBehandlingPaabegyndtDHR"> </a><a name="MedicinalBehandlingPaabegyndtDHR-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-MedicalTreatmentStartOf.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/MedicalTreatmentStartOf</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-MedicalTreatmentStartOf.html#MedicalTreatmentStartOf-before_operation">before_operation</a></td><td>Påbegyndt før operation</td><td>Before operation</td></tr><tr><td><a href="CodeSystem-MedicalTreatmentStartOf.html#MedicalTreatmentStartOf-after_operation">after_operation</a></td><td>Påbegyndt efter operation på OP-dag</td><td>After operation</td></tr><tr><td><a href="CodeSystem-MedicalTreatmentStartOf.html#MedicalTreatmentStartOf-day_after_operation">day_after_operation</a></td><td>Påbegyndt første postoperative dag</td><td>The day after the operation</td></tr><tr><td><a href="CodeSystem-MedicalTreatmentStartOf.html#MedicalTreatmentStartOf-during_admission">during_admission</a></td><td>Kun under indlæggelse</td><td>During admission</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.rkkp.dk/fhir/ValueSet/MedicinalBehandlingPaabegyndtDHR"/>
+  <version value="0.1.6"/>
+  <name value="MedicinalBehandlingPaabegyndtDHR"/>
+  <title value="Medicinal behandling - Hvornår bliver dette giver i forhold til proceduren/operatioen? [DHR]"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-07-07T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+  <contact>
+    <name value="Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Medicinal behandling - Hvornår bliver dette giver i forhold til proceduren/operatioen? [DHR]"/>
+  <compose>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/MedicalTreatmentStartOf"/>
+      <concept>
+        <code value="before_operation"/>
+        <display value="Påbegyndt før operation"/>
+      </concept>
+      <concept>
+        <code value="after_operation"/>
+        <display value="Påbegyndt efter operation på OP-dag"/>
+      </concept>
+      <concept>
+        <code value="day_after_operation"/>
+        <display value="Påbegyndt første postoperative dag"/>
+      </concept>
+      <concept>
+        <code value="during_admission"/>
+        <display value="Kun under indlæggelse"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
