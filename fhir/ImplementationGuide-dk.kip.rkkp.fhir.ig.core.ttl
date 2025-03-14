@@ -14,11 +14,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide dk.kip.rkkp.fhir.ig.core</b></p><a name=\"dk.kip.rkkp.fhir.ig.core\"> </a><a name=\"hcdk.kip.rkkp.fhir.ig.core\"> </a><a name=\"dk.kip.rkkp.fhir.ig.core-en-US\"> </a><h2>KIPInfracstructure</h2><p>The official URL for this implementation guide is: </p><pre>https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core</pre><div><p>The Danish Sundhedsvæsnets Kvalistetsinstitut defines a set of FHIR CodeSystems and ValueSets used for data collection.</p>\n</div></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.8"] ; # 
+  fhir:version [ fhir:v "0.2.1"] ; # 
   fhir:name [ fhir:v "KIPInfracstructure"] ; # 
   fhir:title [ fhir:v "KIP Infracstructure"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-03-13T13:48:37+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-03-14T09:57:04+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
@@ -1751,6 +1751,24 @@
        ] ;
        fhir:name [ fhir:v "Anvendte FISH prober" ] ;
        fhir:description [ fhir:v "Anvendte FISH prober" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://kip.rkkp.dk/fhir/ValueSet/FISHSamples202502> ;
+         fhir:reference [ fhir:v "ValueSet/FISHSamples202502" ]
+       ] ;
+       fhir:name [ fhir:v "Anvendte FISH prober 202502" ] ;
+       fhir:description [ fhir:v "Anvendte FISH prober 202502 - Fjernet udgået udfald og tilføjet nye" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -13937,6 +13955,24 @@
        ] ;
        fhir:name [ fhir:v "Resultat af FISH" ] ;
        fhir:description [ fhir:v "Resultat af FISH" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://kip.rkkp.dk/fhir/ValueSet/FISHResult202502> ;
+         fhir:reference [ fhir:v "ValueSet/FISHResult202502" ]
+       ] ;
+       fhir:name [ fhir:v "Resultat af FISH 202502" ] ;
+       fhir:description [ fhir:v "Resultat af FISH 202502 - Fjernet udgået udfald og tilføjet nye" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false

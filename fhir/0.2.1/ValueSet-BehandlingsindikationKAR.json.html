@@ -1,0 +1,487 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Behandlingsindikation (KAR) - JSON Representation - KIP Infracstructure v0.2.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3.92"}
+    h3,h4,h5,h6{--heading-prefix:"3.92"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">KIP Infracstructure</span>
+            <br/>
+            <span style="display:inline-block;">0.2.1 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Search Parameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Extension Definitions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Code Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Behandlingsindikation (KAR)</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">This page is part of the KIP Infrastructure (v0.2.1: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ValueSet-BehandlingsindikationKAR.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-BehandlingsindikationKAR.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-BehandlingsindikationKAR.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Behandlingsindikation (KAR) - JSON Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2022-09-27
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ValueSet-BehandlingsindikationKAR.json" no-download="true">Raw json</a> | <a href="ValueSet-BehandlingsindikationKAR.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "BehandlingsindikationKAR",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet BehandlingsindikationKAR&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;BehandlingsindikationKAR\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcBehandlingsindikationKAR\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;BehandlingsindikationKAR-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html\&quot;&gt;&lt;code&gt;https://kip.rkkp.dk/fhir/CodeSystem/DiseasesUnspecified&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-acute_extremity_ischaemia\&quot;&gt;acute_extremity_ischaemia&lt;/a&gt;&lt;/td&gt;&lt;td&gt;akut ekstremitetsiskæmi&lt;/td&gt;&lt;td&gt;akut ekstremitetsiskæmi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-amurosis_fugax\&quot;&gt;amurosis_fugax&lt;/a&gt;&lt;/td&gt;&lt;td&gt;amaurosis fugax&lt;/td&gt;&lt;td&gt;amaurosis fugax&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-aneurysm_asymptomatic\&quot;&gt;aneurysm_asymptomatic&lt;/a&gt;&lt;/td&gt;&lt;td&gt;aneurisme - asymptomatisk&lt;/td&gt;&lt;td&gt;aneurisme - asymptomatisk&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-aneurysm_symptomatic\&quot;&gt;aneurysm_symptomatic&lt;/a&gt;&lt;/td&gt;&lt;td&gt;aneurisme - symptomatisk&lt;/td&gt;&lt;td&gt;aneurisme - symptomatisk&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-aneurysm_ruptured\&quot;&gt;aneurysm_ruptured&lt;/a&gt;&lt;/td&gt;&lt;td&gt;aneurisme - rumperet&lt;/td&gt;&lt;td&gt;aneurisme - rumperet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-aneurysm_clotted\&quot;&gt;aneurysm_clotted&lt;/a&gt;&lt;/td&gt;&lt;td&gt;aneurisme - tromboseret&lt;/td&gt;&lt;td&gt;aneurisme - tromboseret&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-aneurysm_pseudo\&quot;&gt;aneurysm_pseudo&lt;/a&gt;&lt;/td&gt;&lt;td&gt;aneurisme - pseudo&lt;/td&gt;&lt;td&gt;aneurisme - pseudo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-aneurysm_mycotic\&quot;&gt;aneurysm_mycotic&lt;/a&gt;&lt;/td&gt;&lt;td&gt;aneurisme - mykotisk&lt;/td&gt;&lt;td&gt;aneurisme - mykotisk&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-bleeding\&quot;&gt;bleeding&lt;/a&gt;&lt;/td&gt;&lt;td&gt;blødning / hæmatom&lt;/td&gt;&lt;td&gt;blødning / hæmatom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-infection\&quot;&gt;infection&lt;/a&gt;&lt;/td&gt;&lt;td&gt;infektion (ikke proteseinfektion = 55)&lt;/td&gt;&lt;td&gt;infektion (ikke proteseinfektion = 55)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-intestinal_ischaemia\&quot;&gt;intestinal_ischaemia&lt;/a&gt;&lt;/td&gt;&lt;td&gt;intestinal iskæmi, angina abdominalis&lt;/td&gt;&lt;td&gt;intestinal iskæmi, angina abdominalis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-function_dependent_ischaemia\&quot;&gt;function_dependent_ischaemia&lt;/a&gt;&lt;/td&gt;&lt;td&gt;funktionsbetinget iskæmi, claudicatio intermittens&lt;/td&gt;&lt;td&gt;funktionsbetinget iskæmi, claudicatio intermittens&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-chronic_ischaemia_rest_pain\&quot;&gt;chronic_ischaemia_rest_pain&lt;/a&gt;&lt;/td&gt;&lt;td&gt;kronisk iskæmi - hvilesmerter&lt;/td&gt;&lt;td&gt;kronisk iskæmi - hvilesmerter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-chronic_ischaemia_wound\&quot;&gt;chronic_ischaemia_wound&lt;/a&gt;&lt;/td&gt;&lt;td&gt;kronisk iskæmi - sår&lt;/td&gt;&lt;td&gt;kronisk iskæmi - sår&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-chronic_ischaemia_gangrene\&quot;&gt;chronic_ischaemia_gangrene&lt;/a&gt;&lt;/td&gt;&lt;td&gt;kronisk iskæmi - gangræn&lt;/td&gt;&lt;td&gt;kronisk iskæmi - gangræn&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-hypertension_renovascular\&quot;&gt;hypertension_renovascular&lt;/a&gt;&lt;/td&gt;&lt;td&gt;renovaskulær hypertension&lt;/td&gt;&lt;td&gt;renovaskulær hypertension&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-stroke\&quot;&gt;stroke&lt;/a&gt;&lt;/td&gt;&lt;td&gt;stroke&lt;/td&gt;&lt;td&gt;stroke&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-tos\&quot;&gt;tos&lt;/a&gt;&lt;/td&gt;&lt;td&gt;thoracic outlet syndrom (TOS)&lt;/td&gt;&lt;td&gt;thoracic outlet syndrom (TOS)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-tia\&quot;&gt;tia&lt;/a&gt;&lt;/td&gt;&lt;td&gt;transitorisk iskæmisk attack (TIA)&lt;/td&gt;&lt;td&gt;transitorisk iskæmisk attack (TIA)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-trauma\&quot;&gt;trauma&lt;/a&gt;&lt;/td&gt;&lt;td&gt;traume&lt;/td&gt;&lt;td&gt;traume&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-thrombosis_vascular_reconstruction\&quot;&gt;thrombosis_vascular_reconstruction&lt;/a&gt;&lt;/td&gt;&lt;td&gt;trombose af karrekonstruktion&lt;/td&gt;&lt;td&gt;trombose af karrekonstruktion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-uremia\&quot;&gt;uremia&lt;/a&gt;&lt;/td&gt;&lt;td&gt;uræmi&lt;/td&gt;&lt;td&gt;uræmi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-varices\&quot;&gt;varices&lt;/a&gt;&lt;/td&gt;&lt;td&gt;varicer&lt;/td&gt;&lt;td&gt;varicer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-vasospasms\&quot;&gt;vasospasms&lt;/a&gt;&lt;/td&gt;&lt;td&gt;vasospasme/ Raynaud&lt;/td&gt;&lt;td&gt;vasospasme/ Raynaud&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-venus_thrombosis\&quot;&gt;venus_thrombosis&lt;/a&gt;&lt;/td&gt;&lt;td&gt;venetrombose&lt;/td&gt;&lt;td&gt;venetrombose&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-reconstruction_failure\&quot;&gt;reconstruction_failure&lt;/a&gt;&lt;/td&gt;&lt;td&gt;truende rekonstruktionssvigt&lt;/td&gt;&lt;td&gt;truende rekonstruktionssvigt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-permanent_central_venous_access\&quot;&gt;permanent_central_venous_access&lt;/a&gt;&lt;/td&gt;&lt;td&gt;permanent central venøs adgang&lt;/td&gt;&lt;td&gt;permanent central venøs adgang&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-wound_complication\&quot;&gt;wound_complication&lt;/a&gt;&lt;/td&gt;&lt;td&gt;sårkomplikation&lt;/td&gt;&lt;td&gt;sårkomplikation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-fascial_rupture\&quot;&gt;fascial_rupture&lt;/a&gt;&lt;/td&gt;&lt;td&gt;fascieruptur&lt;/td&gt;&lt;td&gt;fascieruptur&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-ileus\&quot;&gt;ileus&lt;/a&gt;&lt;/td&gt;&lt;td&gt;ileus&lt;/td&gt;&lt;td&gt;ileus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-intestine_ischaemia\&quot;&gt;intestine_ischaemia&lt;/a&gt;&lt;/td&gt;&lt;td&gt;tarmiskæmi&lt;/td&gt;&lt;td&gt;tarmiskæmi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-aorto.47prosthesis_intestinal_fistula\&quot;&gt;aorto/prosthesis_intestinal_fistula&lt;/a&gt;&lt;/td&gt;&lt;td&gt;aorto/protese-instestinal fistel&lt;/td&gt;&lt;td&gt;aorto/protese-instestinal fistel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-prosthetic_infection\&quot;&gt;prosthetic_infection&lt;/a&gt;&lt;/td&gt;&lt;td&gt;proteseinfektion&lt;/td&gt;&lt;td&gt;proteseinfektion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-extremity_compartment\&quot;&gt;extremity_compartment&lt;/a&gt;&lt;/td&gt;&lt;td&gt;ekstremittets kompartment&lt;/td&gt;&lt;td&gt;ekstremittets kompartment&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-prolonged_intubation\&quot;&gt;prolonged_intubation&lt;/a&gt;&lt;/td&gt;&lt;td&gt;langvarig intubation&lt;/td&gt;&lt;td&gt;langvarig intubation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-retroperitoneal_fibrosis\&quot;&gt;retroperitoneal_fibrosis&lt;/a&gt;&lt;/td&gt;&lt;td&gt;retroperitoneal fibrose&lt;/td&gt;&lt;td&gt;retroperitoneal fibrose&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-abdominal_compartment\&quot;&gt;abdominal_compartment&lt;/a&gt;&lt;/td&gt;&lt;td&gt;abdominal kompartment&lt;/td&gt;&lt;td&gt;abdominal kompartment&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-entrapment\&quot;&gt;entrapment&lt;/a&gt;&lt;/td&gt;&lt;td&gt;entrapment&lt;/td&gt;&lt;td&gt;entrapment&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-emergency_aortic_dissection\&quot;&gt;emergency_aortic_dissection&lt;/a&gt;&lt;/td&gt;&lt;td&gt;akut aortadissektion&lt;/td&gt;&lt;td&gt;akut aortadissektion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-chronic_aortic_dissection\&quot;&gt;chronic_aortic_dissection&lt;/a&gt;&lt;/td&gt;&lt;td&gt;kronisk aortadissektion&lt;/td&gt;&lt;td&gt;kronisk aortadissektion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-dissection_unspecified\&quot;&gt;dissection_unspecified&lt;/a&gt;&lt;/td&gt;&lt;td&gt;dissektion uden nærmere specifikation&lt;/td&gt;&lt;td&gt;dissektion uden nærmere specifikation&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;CodeSystem-GenericValues.html\&quot;&gt;&lt;code&gt;https://kip.rkkp.dk/fhir/CodeSystem/GenericValues&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-GenericValues.html#GenericValues-other\&quot;&gt;other&lt;/a&gt;&lt;/td&gt;&lt;td&gt;anden indikation&lt;/td&gt;&lt;td&gt;Other - used to choose unspecific value not in a valueset&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "https://kip.rkkp.dk/fhir/ValueSet/BehandlingsindikationKAR",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.2.1",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "BehandlingsindikationKAR",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "Behandlingsindikation (KAR)",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a>" : true,
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2022-09-27T00:00:00+02:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://trifork.com"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "rbk@trifork.com"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>" : "Behandlingsindikation (KAR)",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
+    "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "https://kip.rkkp.dk/fhir/CodeSystem/DiseasesUnspecified",
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "acute_extremity_ischaemia",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "akut ekstremitetsiskæmi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "amurosis_fugax",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "amaurosis fugax"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "aneurysm_asymptomatic",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "aneurisme - asymptomatisk"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "aneurysm_symptomatic",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "aneurisme - symptomatisk"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "aneurysm_ruptured",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "aneurisme - rumperet"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "aneurysm_clotted",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "aneurisme - tromboseret"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "aneurysm_pseudo",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "aneurisme - pseudo"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "aneurysm_mycotic",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "aneurisme - mykotisk"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "bleeding",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "blødning / hæmatom"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "infection",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "infektion (ikke proteseinfektion = 55)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "intestinal_ischaemia",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "intestinal iskæmi, angina abdominalis"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "function_dependent_ischaemia",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "funktionsbetinget iskæmi, claudicatio intermittens"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "chronic_ischaemia_rest_pain",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "kronisk iskæmi - hvilesmerter"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "chronic_ischaemia_wound",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "kronisk iskæmi - sår"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "chronic_ischaemia_gangrene",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "kronisk iskæmi - gangræn"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "hypertension_renovascular",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "renovaskulær hypertension"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "stroke",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "stroke"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "tos",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "thoracic outlet syndrom (TOS)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "tia",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "transitorisk iskæmisk attack (TIA)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "trauma",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "traume"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "thrombosis_vascular_reconstruction",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "trombose af karrekonstruktion"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "uremia",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "uræmi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "varices",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "varicer"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "vasospasms",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "vasospasme/ Raynaud"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "venus_thrombosis",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "venetrombose"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "reconstruction_failure",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "truende rekonstruktionssvigt"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "permanent_central_venous_access",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "permanent central venøs adgang"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "wound_complication",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "sårkomplikation"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "fascial_rupture",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "fascieruptur"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "ileus",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "ileus"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "intestine_ischaemia",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "tarmiskæmi"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "aorto/prosthesis_intestinal_fistula",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "aorto/protese-instestinal fistel"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "prosthetic_infection",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "proteseinfektion"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "extremity_compartment",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "ekstremittets kompartment"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "prolonged_intubation",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "langvarig intubation"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "retroperitoneal_fibrosis",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "retroperitoneal fibrose"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "abdominal_compartment",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "abdominal kompartment"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "entrapment",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "entrapment"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "emergency_aortic_dissection",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "akut aortadissektion"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "chronic_aortic_dissection",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "kronisk aortadissektion"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "dissection_unspecified",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "dissektion uden nærmere specifikation"
+          }
+        ]
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "other",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "anden indikation"
+          }
+        ]
+      }
+    ]
+  }
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://trifork.com">Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S</a>.  Package dk.kip.rkkp.fhir.ig.core#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 14, 2025 09:54+0000">2025-03-14</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

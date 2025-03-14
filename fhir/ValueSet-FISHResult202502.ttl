@@ -1,0 +1,82 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/FISHResult202502> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "FISHResult202502"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet FISHResult202502</b></p><a name=\"FISHResult202502\"> </a><a name=\"hcFISHResult202502\"> </a><a name=\"FISHResult202502-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-FISHVariables.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/FISHVariables</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-igh_fgfr3\">igh_fgfr3</a></td><td>t(4;14)/IGH-FGFR3</td><td>t(4;14)/IGH-FGFR3</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-igh_ccnd1\">igh_ccnd1</a></td><td>t(11;14)/IGH-CCND1</td><td>t(11;14)/IGH-CCND1</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-igh_mbf\">igh_mbf</a></td><td>t(14;16)/IGH-MBF</td><td>t(14;16)/IGH-MBF</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-igh_mafb\">igh_mafb</a></td><td>t(14;20)/IGH-MAFB</td><td>t(14;20)/IGH-MAFB</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-tp53_deletion\">tp53_deletion</a></td><td>TP53 deletion</td><td>TP53 deletion</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-1q21gain\">1q21gain</a></td><td>1q21 gain (3 spot)</td><td>1q21 gain (3 spot)</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-1q21\">1q21</a></td><td>1q21 amplifikation (≥ 4 spot)</td><td>1q21 amplifikation</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-1qdeletion\">1qdeletion</a></td><td>1p deletion</td><td>1p deletion</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-ResultTest.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ResultTest</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ResultTest.html#ResultTest-changes\">changes</a></td><td>Andre forandringer påvist</td><td>Changes / Forandringer [FISH]</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Anden IGH translokation</td><td>Other - used to choose unspecific value not in a valueset</td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-none\">none</a></td><td>Ingen forandringer påvist</td><td>None - used to choose none of the available values</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/FISHResult202502"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.1"] ; # 
+  fhir:name [ fhir:v "FISHResult202502"] ; # 
+  fhir:title [ fhir:v "Resultat af FISH 202502"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-02-21T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsnets Kvalistetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Resultat af FISH 202502 - Fjernet udgået udfald og tilføjet nye"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/FISHVariables"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "igh_fgfr3" ] ;
+         fhir:display [ fhir:v "t(4;14)/IGH-FGFR3" ]
+       ] [
+         fhir:code [ fhir:v "igh_ccnd1" ] ;
+         fhir:display [ fhir:v "t(11;14)/IGH-CCND1" ]
+       ] [
+         fhir:code [ fhir:v "igh_mbf" ] ;
+         fhir:display [ fhir:v "t(14;16)/IGH-MBF" ]
+       ] [
+         fhir:code [ fhir:v "igh_mafb" ] ;
+         fhir:display [ fhir:v "t(14;20)/IGH-MAFB" ]
+       ] [
+         fhir:code [ fhir:v "tp53_deletion" ] ;
+         fhir:display [ fhir:v "TP53 deletion" ]
+       ] [
+         fhir:code [ fhir:v "1q21gain" ] ;
+         fhir:display [ fhir:v "1q21 gain (3 spot)" ]
+       ] [
+         fhir:code [ fhir:v "1q21" ] ;
+         fhir:display [ fhir:v "1q21 amplifikation (≥ 4 spot)" ]
+       ] [
+         fhir:code [ fhir:v "1qdeletion" ] ;
+         fhir:display [ fhir:v "1p deletion" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/ResultTest"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "changes" ] ;
+         fhir:display [ fhir:v "Andre forandringer påvist" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "other" ] ;
+         fhir:display [ fhir:v "Anden IGH translokation" ]
+       ] [
+         fhir:code [ fhir:v "none" ] ;
+         fhir:display [ fhir:v "Ingen forandringer påvist" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
