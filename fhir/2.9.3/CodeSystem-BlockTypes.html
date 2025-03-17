@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Typer af blokader - KIP Infrastructure v2.9.3</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3.974"}
+    h3,h4,h5,h6{--heading-prefix:"3.974"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">KIP Infrastructure</span>
+            <br/>
+            <span style="display:inline-block;">2.9.3 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Search Parameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Extension Definitions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Code Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Typer af blokader</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KIP Infrastructure (v2.9.3: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-BlockTypes.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-BlockTypes.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-BlockTypes.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: Typer af blokader
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://kip.rkkp.dk/fhir/CodeSystem/BlockTypes<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/BlockTypes"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">2.9.3<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/BlockTypes|2.9.3"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2022-06-09
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">BlockTypes</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Blokader - Central, Underekstremitet, Overekstremitet</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-CentralBlockType.html">CentralBlockType</a></li>
+ <li><a href="ValueSet-NerveBlockTypeLower.html">NerveBlockTypeLower</a></li>
+ <li><a href="ValueSet-NerveBlockTypeOther.html">NerveBlockTypeOther</a></li>
+ <li><a href="ValueSet-NerveBlockTypeUpper.html">NerveBlockTypeUpper</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem BlockTypes</b></p><a name="BlockTypes"> </a><a name="hcBlockTypes"> </a><a name="BlockTypes-en-US"> </a><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/BlockTypes</code> defines the following codes in an undefined hierarchy:</p>
+<table class="codes"><tr><td><b>Lvl</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">central_block_types<a name="BlockTypes-central_block_types"> </a></td>
+<td>Block given peropratively</td>
+<td>Blokade anlagt peroperativt</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;epidural_cervical<a name="BlockTypes-epidural_cervical"> </a></td>
+<td>Epidural Cervical</td>
+<td>Epidural Cervical</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;epidural_thorakal<a name="BlockTypes-epidural_thorakal"> </a></td>
+<td>Epidural Thorakal</td>
+<td>Epidural Thorakal</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;epidural_lumbal<a name="BlockTypes-epidural_lumbal"> </a></td>
+<td>Epidural Lumbal</td>
+<td>Epidural Lumbal</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;epidural_sakral<a name="BlockTypes-epidural_sakral"> </a></td>
+<td>Epidural Sakral</td>
+<td>Epidural Sakral</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;epidural+spinal<a name="BlockTypes-epidural.43spinal"> </a></td>
+<td>Epidural+Spinal</td>
+<td>Epidural+Spinal</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;spinal_lumbal"<a name="BlockTypes-spinal_lumbal.34"> </a></td>
+<td>Spinal lumbal</td>
+<td>Spinal lumbal</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;spinal_catheter<a name="BlockTypes-spinal_catheter"> </a></td>
+<td>Spinal catheter</td>
+<td>Spinal kateter</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">nerve-block_upper_extr<a name="BlockTypes-nerve-block_upper_extr"> </a></td>
+<td>Block types upper extremities</td>
+<td>Type Perifer nerveblokade Overekstremitet</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;plexus_cervicalis"<a name="BlockTypes-plexus_cervicalis.34"> </a></td>
+<td>Plexus cervicalis</td>
+<td></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;interscalener"<a name="BlockTypes-interscalener.34"> </a></td>
+<td>Interscalener (Skalener)</td>
+<td></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;supraclavicular"<a name="BlockTypes-supraclavicular.34"> </a></td>
+<td>Supraklavikulær</td>
+<td></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;infraclavicular"<a name="BlockTypes-infraclavicular.34"> </a></td>
+<td>Infraklavikulær</td>
+<td></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;aksil"<a name="BlockTypes-aksil.34"> </a></td>
+<td>Aksil</td>
+<td></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;suprascapularis"<a name="BlockTypes-suprascapularis.34"> </a></td>
+<td>N. Suprascapularis</td>
+<td></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;axillaris"<a name="BlockTypes-axillaris.34"> </a></td>
+<td>N. Axillaris</td>
+<td></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;musculocutaneus"<a name="BlockTypes-musculocutaneus.34"> </a></td>
+<td>N. Musculocutaneus</td>
+<td></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;medianus"<a name="BlockTypes-medianus.34"> </a></td>
+<td>N. Medianus</td>
+<td></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;radialis"<a name="BlockTypes-radialis.34"> </a></td>
+<td>N. Radialis</td>
+<td></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;ulnaris"<a name="BlockTypes-ulnaris.34"> </a></td>
+<td>N. Ulnaris</td>
+<td></td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">nerve-block_lower_extr<a name="BlockTypes-nerve-block_lower_extr"> </a></td>
+<td>Block types lower extremities</td>
+<td>Type Perifer nerveblokade Underekstremitet</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;plexus_lumbalis<a name="BlockTypes-plexus_lumbalis"> </a></td>
+<td>Plexus lumbalis</td>
+<td>Plexus lumbalis</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;plexus_lumbosacralis<a name="BlockTypes-plexus_lumbosacralis"> </a></td>
+<td>Plexus lumbosacralis</td>
+<td>Plexus lumbosacralis</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;plexus_sacralis<a name="BlockTypes-plexus_sacralis"> </a></td>
+<td>Plexus sacralis</td>
+<td>Plexus sacralis</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;femoralis<a name="BlockTypes-femoralis"> </a></td>
+<td>N. Femoralis</td>
+<td>N. Femoralis</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;cutaneus_femoris_lateralis<a name="BlockTypes-cutaneus_femoris_lateralis"> </a></td>
+<td>N. Cutaneus femoris lateralis</td>
+<td>N. Cutaneus femoris lateralis</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;saphenus<a name="BlockTypes-saphenus"> </a></td>
+<td>N. Saphenus</td>
+<td>N. Saphenus</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;obturatorius<a name="BlockTypes-obturatorius"> </a></td>
+<td>N. Obturatoriusblock</td>
+<td>N. Obturatoriusblokade</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;ischiadicus_poplitea<a name="BlockTypes-ischiadicus_poplitea"> </a></td>
+<td>N. Ischiadicus/poplitea block</td>
+<td>N. Ischiadicus/poplitea blokade</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;tibialis<a name="BlockTypes-tibialis"> </a></td>
+<td>N. Tibialis</td>
+<td>N. Tibialis</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;peroneus<a name="BlockTypes-peroneus"> </a></td>
+<td>Peroneus (communis) block</td>
+<td>Peroneus (communis) blokade</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">nerve-block_other<a name="BlockTypes-nerve-block_other"> </a></td>
+<td>Block types other</td>
+<td>Type Perifer nerveblokade Trunkal/Abdominal/Øvrige</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;thorakal_Paravertebral<a name="BlockTypes-thorakal_Paravertebral"> </a></td>
+<td>Thorakal Paravertebral block</td>
+<td>Thorakal Paravertebral blokade</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;intercostal<a name="BlockTypes-intercostal"> </a></td>
+<td>Intercostal block</td>
+<td>Intercostal blokade</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;quadratus_lumborum<a name="BlockTypes-quadratus_lumborum"> </a></td>
+<td>Quadratus lumborum block</td>
+<td>Quadratus lumborum blokade</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;transversus_abdominis<a name="BlockTypes-transversus_abdominis"> </a></td>
+<td>Transversus abdominis plane (TAP) block</td>
+<td>Transversus abdominis plane (TAP) blokade</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;ilioinguinalis_iliohypogastricus<a name="BlockTypes-ilioinguinalis_iliohypogastricus"> </a></td>
+<td>Ilioinguinalis/iliohypogastricus</td>
+<td>Ilioinguinalis/iliohypogastricus</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;pectoralis<a name="BlockTypes-pectoralis"> </a></td>
+<td>N. Pectoralis</td>
+<td>N. Pectoralis</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">other<a name="BlockTypes-other"> </a></td>
+<td>Other block type</td>
+<td>Anden blokadetype</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://trifork.com">Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S</a>.  Package dk.kip.rkkp.fhir.ig.core#2.9.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 17, 2025 14:36+0000">2025-03-17</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
