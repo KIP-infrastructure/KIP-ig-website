@@ -17,5 +17,5 @@ runs:
       env:
         OLD_TAG: ${{ inputs.old_tag }}
         NEW_TAG: ${{ inputs.new_tag }}
-      run: echo bash > ${{ github.action_path }}/replace-url.sh
+      run: ./.github/actions/replace-url/replace-url.sh
       
