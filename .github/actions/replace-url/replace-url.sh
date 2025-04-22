@@ -14,12 +14,10 @@ cd "$(git rev-parse --show-toplevel)"
 echo "Finding files matching glob: $FILE_GLOB"
 FILES=$(find . -type f -wholename "$FILE_GLOB")
 
-# Count how many files were found
 FILE_COUNT=$(echo "$FILES" | wc -l)
-
 echo "Found $FILE_COUNT HTML files matching pattern."
-echo -e "Replacing tag $OLD_TAG \n with \n $NEW_TAG"
+echo -e "\nReplacing tag \n$OLD_TAG \nwith \n$NEW_TAG"
 
-echo "$FILES" | xargs -n 100 sed -i.bak "s|$OLD_TAG|$NEW_TAG|g"
+echo "$MATCHED_FILES" | xargs -n 100 sed -i "s|$OLD_TAG|$NEW_TAG|g"
 
-echo "Tag replacement complete."
+echo -e "\nTag replacement complete."
