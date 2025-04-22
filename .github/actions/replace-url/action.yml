@@ -1,0 +1,21 @@
+name: Replace <a> Tag
+description: Replaces a specific <a> tag in all HTML files
+
+inputs:
+  old_tag:
+    description: 'The tag to be replaced'
+    required: true
+  new_tag:
+    description: 'The new tag to insert'
+    required: true
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Replace Tag in Files
+      shell: bash
+      env:
+        OLD_TAG: ${{ inputs.old_tag }}
+        NEW_TAG: ${{ inputs.new_tag }}
+      run: echo bash > ${{ github.action_path }}/replace-url.sh
+      
