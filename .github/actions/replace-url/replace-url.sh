@@ -7,7 +7,7 @@ NEW_TAG=${NEW_TAG}
 FILE_GLOB='**/*.html'
 
 echo "Finding files matching glob: $FILE_GLOB"
-FILES=$(find . -type f -name $FILE_GLOB)
+FILES=$(find . -type f -name "$FILE_GLOB")
 
 # Count how many files were found
 FILE_COUNT=$(echo "$FILES" | wc -l)
