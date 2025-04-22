@@ -1,11 +1,11 @@
-#!/bin/bash
-
 set -e
 
 find_and_replace() {
     OLD_TAG=$1
     NEW_TAG=$2
     FILE_GLOB='**/*.html'
+
+    cd "$(git rev-parse --show-toplevel)"
 
     echo "Finding files matching glob: $FILE_GLOB and tag: $OLD_TAG"
     FILES=$(rg --files-with-matches --glob "$FILE_GLOB" "$OLD_TAG")
@@ -19,9 +19,7 @@ find_and_replace() {
     echo -e "done\n"
 }
 
-cd "$(git rev-parse --show-toplevel)"
-
 find_and_replace '<a href="https://kip.rkkp.dk/fhir">' '<a href="https://kip-infrastructure.github.io/KIP-ig-website/fhir">' 
 find_and_replace '<a no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a>' '<a no-external="true" href="https://kip-infrastructure.github.io/KIP-ig-website/fhir/history.html">Directory of published versions</a>'
 
-echo "Tag replacement complete."
+echo -e "\nTag replacement complete."
