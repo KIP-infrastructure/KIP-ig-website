@@ -32,11 +32,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Install ripgrep
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ripgrep
+
       - name: Replace invalid urls
         uses: ./.github/actions/replace-url
-        with:
-          old_tag: '<a no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a>'
-          new_tag: '<a no-external="true" href="https://kip-infrastructure.github.io/KIP-ig-website/fhir/history.html">Directory of published versions</a>'
           
       - name: Setup Pages
         uses: actions/configure-pages@v5
