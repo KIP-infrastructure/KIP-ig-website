@@ -32,8 +32,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Replace invalid urls
-        uses: ./.github/actions/replace-url
+#      - name: Replace invalid urls
+#        uses: ./.github/actions/replace-url
+
+      - name: Replace multiple files
+        uses: richardrigutins/replace-in-files@80f28b2314cc4900984548a9f4ddf3c67a2dd900 # v2.1.10
+        with:
+          files: '**/*.html'
+          search-text: '<a href="https://kip.rkkp.dk/fhir">'
+          replacement-text: '<a href="https://kip-infrastructure.github.io/KIP-ig-website/fhir">'
+          encoding: 'utf8'
+          max-parallelism: 10
           
       - name: Setup Pages
         uses: actions/configure-pages@v5
