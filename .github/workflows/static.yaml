@@ -43,6 +43,15 @@ jobs:
           replacement-text: '<a href="https://kip-infrastructure.github.io/KIP-ig-website/fhir">'
           encoding: 'utf8'
           max-parallelism: 10
+      
+      - name: Replace multiple files
+        uses: richardrigutins/replace-in-files@80f28b2314cc4900984548a9f4ddf3c67a2dd900 # v2.1.10
+        with:
+          files: '**/*.html'
+          search-text: '<a no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a>' 
+          replacement-text: '<a no-external="true" href="https://kip-infrastructure.github.io/KIP-ig-website/fhir/history.html">Directory of published versions</a>'
+          encoding: 'utf8'
+          max-parallelism: 10
           
       - name: Setup Pages
         uses: actions/configure-pages@v5
