@@ -11,14 +11,13 @@ find_and_replace() {
 
     echo "Finding files matching glob: $FILE_GLOB and tag: $OLD_TAG"
     FILES=$(find . -type f -wholename "$FILE_GLOB")
-    echo "hello";
     
     FILE_COUNT=$(echo "$FILES" | wc -l)
     echo "Found $FILE_COUNT HTML files matching pattern."
     echo ""
     echo "Replacing tag '$OLD_TAG' with '$NEW_TAG'"
     
-    #echo "$FILES" | xargs -n 100 sed -i "s|$OLD_TAG|$NEW_TAG|g"
+    echo "$FILES" | xargs -n 100 sed -i "s|$OLD_TAG|$NEW_TAG|g"
     
     echo "done"
     echo ""
