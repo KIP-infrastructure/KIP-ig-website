@@ -1,0 +1,798 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Den Danske SNOMED for Patologi - JSON Representation - KIP Infrastructure v2.9.4</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3.773"}
+    h3,h4,h5,h6{--heading-prefix:"3.773"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">KIP Infrastructure</span>
+            <br/>
+            <span style="display:inline-block;">2.9.4 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Search Parameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Extension Definitions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Code Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Den Danske SNOMED for Patologi</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">This page is part of the KIP Infrastructure (v2.9.4: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-PatobankSNOMED.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-PatobankSNOMED.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-PatobankSNOMED.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Den Danske SNOMED for Patologi - JSON Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2022-06-07
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-PatobankSNOMED.json" no-download="true">Raw json</a> | <a href="CodeSystem-PatobankSNOMED.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a>" : "PatobankSNOMED",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem PatobankSNOMED&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;PatobankSNOMED\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcPatobankSNOMED\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;PatobankSNOMED-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;https://kip.rkkp.dk/fhir/CodeSystem/PatobankSNOMED&lt;/code&gt; provides &lt;b&gt;a fragment&lt;/b&gt; that includes following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M96103&lt;a name=\&quot;PatobankSNOMED-M96103\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;B-cellelymfom&lt;/td&gt;&lt;td&gt;B-cellelymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M96503&lt;a name=\&quot;PatobankSNOMED-M96503\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hodgkin lymfom, klassisk type&lt;/td&gt;&lt;td&gt;Hodgkin lymfom, klassisk type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M96513&lt;a name=\&quot;PatobankSNOMED-M96513\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hodgkin lymfom, klassisk type, lymfocytrig&lt;/td&gt;&lt;td&gt;Hodgkin lymfom, klassisk type, lymfocytrig&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M96523&lt;a name=\&quot;PatobankSNOMED-M96523\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hodgkin lymfom, klassisk type, mixed cellularitet&lt;/td&gt;&lt;td&gt;Hodgkin lymfom, klassisk type, mixed cellularitet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M96533&lt;a name=\&quot;PatobankSNOMED-M96533\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hodgkin lymfom, klassisk type, lymfocytdepleteret&lt;/td&gt;&lt;td&gt;Hodgkin lymfom, klassisk type, lymfocytdepleteret&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M96593&lt;a name=\&quot;PatobankSNOMED-M96593\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hodgkin lymfom, nodulær, lymfocyt dominans&lt;/td&gt;&lt;td&gt;Hodgkin lymfom, nodulær, lymfocyt dominans&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M96633&lt;a name=\&quot;PatobankSNOMED-M96633\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hodgkin lymfom, klassisk type, nodulær sklerose&lt;/td&gt;&lt;td&gt;Hodgkin lymfom, klassisk type, nodulær sklerose&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M96703&lt;a name=\&quot;PatobankSNOMED-M96703\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Småcellet lymfocytært lymfom&lt;/td&gt;&lt;td&gt;Småcellet lymfocytært lymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M96783&lt;a name=\&quot;PatobankSNOMED-M96783\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;primært effusionslymfom&lt;/td&gt;&lt;td&gt;primært effusionslymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M96793&lt;a name=\&quot;PatobankSNOMED-M96793\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;mediastinalt storcellet B-cellelymfom&lt;/td&gt;&lt;td&gt;mediastinalt storcellet B-cellelymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M96873&lt;a name=\&quot;PatobankSNOMED-M96873\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Burkitt lymfom&lt;/td&gt;&lt;td&gt;Burkitt lymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M968H3&lt;a name=\&quot;PatobankSNOMED-M968H3\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;high-grade B-lymfom&lt;/td&gt;&lt;td&gt;high-grade B-lymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M968I3&lt;a name=\&quot;PatobankSNOMED-M968I3\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;high-grade B-lymfom med MYC og BCL2 og/eller BCL6 rearr.&lt;/td&gt;&lt;td&gt;high-grade B-lymfom med MYC og BCL2 og/eller BCL6 rearr.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M96903&lt;a name=\&quot;PatobankSNOMED-M96903\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;follikulært lymfom&lt;/td&gt;&lt;td&gt;follikulært lymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M96993&lt;a name=\&quot;PatobankSNOMED-M96993\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;marginalzone B-cellelymfom&lt;/td&gt;&lt;td&gt;marginalzone B-cellelymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M97003&lt;a name=\&quot;PatobankSNOMED-M97003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;mycosis fungoides&lt;/td&gt;&lt;td&gt;mycosis fungoides&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M97013&lt;a name=\&quot;PatobankSNOMED-M97013\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sezarys syndrom&lt;/td&gt;&lt;td&gt;Sezarys syndrom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M97023&lt;a name=\&quot;PatobankSNOMED-M97023\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;perifert T-cellelymfom&lt;/td&gt;&lt;td&gt;perifert T-cellelymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M97053&lt;a name=\&quot;PatobankSNOMED-M97053\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;angioimmunoblastisk T-cellelymfom&lt;/td&gt;&lt;td&gt;angioimmunoblastisk T-cellelymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M97083&lt;a name=\&quot;PatobankSNOMED-M97083\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;subkutant panniculit-lignende T-cellelymfom&lt;/td&gt;&lt;td&gt;subkutant panniculit-lignende T-cellelymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M97143&lt;a name=\&quot;PatobankSNOMED-M97143\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;anaplastisk storcellet lymfom&lt;/td&gt;&lt;td&gt;anaplastisk storcellet lymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M97163&lt;a name=\&quot;PatobankSNOMED-M97163\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;hepatosplenisk T-cellelymfom&lt;/td&gt;&lt;td&gt;hepatosplenisk T-cellelymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M97173&lt;a name=\&quot;PatobankSNOMED-M97173\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;enteropati-associeret T-cellelymfom&lt;/td&gt;&lt;td&gt;enteropati-associeret T-cellelymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M97183&lt;a name=\&quot;PatobankSNOMED-M97183\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;primært kutant anaplastisk storcellet lymfom&lt;/td&gt;&lt;td&gt;primært kutant anaplastisk storcellet lymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M97193&lt;a name=\&quot;PatobankSNOMED-M97193\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ekstranodalt NK/T-cellelymfom, nasal type&lt;/td&gt;&lt;td&gt;ekstranodalt NK/T-cellelymfom, nasal type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M97263&lt;a name=\&quot;PatobankSNOMED-M97263\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;primært kutant gamma-delta T-cellelymfom&lt;/td&gt;&lt;td&gt;primært kutant gamma-delta T-cellelymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M97293&lt;a name=\&quot;PatobankSNOMED-M97293\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;precursor T-lymfoblastisk lymfom&lt;/td&gt;&lt;td&gt;precursor T-lymfoblastisk lymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M97353&lt;a name=\&quot;PatobankSNOMED-M97353\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;plasmablastisk lymfom&lt;/td&gt;&lt;td&gt;plasmablastisk lymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M97373&lt;a name=\&quot;PatobankSNOMED-M97373\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;storcellet B-cellelymfom, ALK-positivt&lt;/td&gt;&lt;td&gt;storcellet B-cellelymfom, ALK-positivt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M96713&lt;a name=\&quot;PatobankSNOMED-M96713\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lymfoplasmacytært lymfom&lt;/td&gt;&lt;td&gt;Lymfoplasmacytært lymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M96733&lt;a name=\&quot;PatobankSNOMED-M96733\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mantlecellelymfom&lt;/td&gt;&lt;td&gt;Mantlecellelymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M96803&lt;a name=\&quot;PatobankSNOMED-M96803\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diffust storcellet B-cellelymfom&lt;/td&gt;&lt;td&gt;Diffust storcellet B-cellelymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M96893&lt;a name=\&quot;PatobankSNOMED-M96893\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Splenisk marginalzone B-cellelymfom&lt;/td&gt;&lt;td&gt;Splenisk marginalzone B-cellelymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M97283&lt;a name=\&quot;PatobankSNOMED-M97283\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Precursor B-lymfoblastisk lymfom&lt;/td&gt;&lt;td&gt;Precursor B-lymfoblastisk lymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M98013&lt;a name=\&quot;PatobankSNOMED-M98013\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;akut udifferentieret leukæmi&lt;/td&gt;&lt;td&gt;akut udifferentieret leukæmi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M98053&lt;a name=\&quot;PatobankSNOMED-M98053\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;akut leukæmi af ubestemmelig celletype&lt;/td&gt;&lt;td&gt;akut leukæmi af ubestemmelig celletype&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M98063&lt;a name=\&quot;PatobankSNOMED-M98063\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;bl. fænotype akut leukæmi m. t(9;22); BCR-ABL1&lt;/td&gt;&lt;td&gt;bl. fænotype akut leukæmi m. t(9;22); BCR-ABL1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M98073&lt;a name=\&quot;PatobankSNOMED-M98073\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;bl. fænotype akut leukæmi m. t(v;11q); KMT2A rearr.&lt;/td&gt;&lt;td&gt;bl. fænotype akut leukæmi m. t(v;11q); KMT2A rearr.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M98143&lt;a name=\&quot;PatobankSNOMED-M98143\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;B-lymfobl. leukæmi/lymfom m. t(12;21); ETV6-RUNX1&lt;/td&gt;&lt;td&gt;B-lymfobl. leukæmi/lymfom m. t(12;21); ETV6-RUNX1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M98153&lt;a name=\&quot;PatobankSNOMED-M98153\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;B-lymfobl. leukæmi/lymfom med hyperdiploidi&lt;/td&gt;&lt;td&gt;B-lymfobl. leukæmi/lymfom med hyperdiploidi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M98173&lt;a name=\&quot;PatobankSNOMED-M98173\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;B-lymfobl. leukæmi/lymfom m. t(5;14); IgH/IL3&lt;/td&gt;&lt;td&gt;B-lymfobl. leukæmi/lymfom m. t(5;14); IgH/IL3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M98183&lt;a name=\&quot;PatobankSNOMED-M98183\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;B-lymfobl. leukæmi/lymfom m. t(1;19); TCF3-PBX1&lt;/td&gt;&lt;td&gt;B-lymfobl. leukæmi/lymfom m. t(1;19); TCF3-PBX1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M98273&lt;a name=\&quot;PatobankSNOMED-M98273\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;adult T-cellelymfom/leukæmi&lt;/td&gt;&lt;td&gt;adult T-cellelymfom/leukæmi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M98353&lt;a name=\&quot;PatobankSNOMED-M98353\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;precursor B-lymfoblastisk leukæmi&lt;/td&gt;&lt;td&gt;precursor B-lymfoblastisk leukæmi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M98373&lt;a name=\&quot;PatobankSNOMED-M98373\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;precursor T-lymfoblastisk leukæmi&lt;/td&gt;&lt;td&gt;precursor T-lymfoblastisk leukæmi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M98403&lt;a name=\&quot;PatobankSNOMED-M98403\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;erytroleukæmi (FAB-type M6)&lt;/td&gt;&lt;td&gt;erytroleukæmi (FAB-type M6)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M98613&lt;a name=\&quot;PatobankSNOMED-M98613\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;akut myeloid leukæmi&lt;/td&gt;&lt;td&gt;akut myeloid leukæmi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M98653&lt;a name=\&quot;PatobankSNOMED-M98653\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AML m. t(6;9); DEK-NUP214&lt;/td&gt;&lt;td&gt;AML m. t(6;9); DEK-NUP214&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M98663&lt;a name=\&quot;PatobankSNOMED-M98663\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;akut promyelocyt leukæmi m. t(15;17); PML-RARa&lt;/td&gt;&lt;td&gt;akut promyelocyt leukæmi m. t(15;17); PML-RARa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M98673&lt;a name=\&quot;PatobankSNOMED-M98673\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;akut myelomonocytær leukæmi&lt;/td&gt;&lt;td&gt;akut myelomonocytær leukæmi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M98693&lt;a name=\&quot;PatobankSNOMED-M98693\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AML m inv(3)(q21q26.2)el t(3;3)(q21;q26.2);RPN1-EVI1&lt;/td&gt;&lt;td&gt;AML m inv(3)(q21q26.2)el t(3;3)(q21;q26.2);RPN1-EVI1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M98703&lt;a name=\&quot;PatobankSNOMED-M98703\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;akut basofil leukæmi&lt;/td&gt;&lt;td&gt;akut basofil leukæmi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M98713&lt;a name=\&quot;PatobankSNOMED-M98713\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AML m. inv(16) el. t(16;16); CBFß-MYH11&lt;/td&gt;&lt;td&gt;AML m. inv(16) el. t(16;16); CBFß-MYH11&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M98723&lt;a name=\&quot;PatobankSNOMED-M98723\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Akut myeloid leukæmi, minimalt differentieret&lt;/td&gt;&lt;td&gt;Akut myeloid leukæmi, minimalt differentieret&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M98733&lt;a name=\&quot;PatobankSNOMED-M98733\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Akut myeloid leukæmi, uden modning&lt;/td&gt;&lt;td&gt;Akut myeloid leukæmi, uden modning&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M98743&lt;a name=\&quot;PatobankSNOMED-M98743\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Akut myeloid leukæmi, med modning&lt;/td&gt;&lt;td&gt;Akut myeloid leukæmi, med modning&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M98753&lt;a name=\&quot;PatobankSNOMED-M98753\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kronisk myeloid leukæmi, BCR-ABL1 positiv&lt;/td&gt;&lt;td&gt;Kronisk myeloid leukæmi, BCR-ABL1 positiv&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M98913&lt;a name=\&quot;PatobankSNOMED-M98913\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Akut monoblastisk/monocytær leukæmi&lt;/td&gt;&lt;td&gt;Akut monoblastisk/monocytær leukæmi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M98953&lt;a name=\&quot;PatobankSNOMED-M98953\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AML m. myelodysplasi-relaterede forandringer&lt;/td&gt;&lt;td&gt;AML m. myelodysplasi-relaterede forandringer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M98963&lt;a name=\&quot;PatobankSNOMED-M98963\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AML m. t(8;21); RUNX1-RUNX1T1&lt;/td&gt;&lt;td&gt;AML m. t(8;21); RUNX1-RUNX1T1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M98973&lt;a name=\&quot;PatobankSNOMED-M98973\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AML m. t(9;11); KMT2A-MLLT3&lt;/td&gt;&lt;td&gt;AML m. t(9;11); KMT2A-MLLT3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M99103&lt;a name=\&quot;PatobankSNOMED-M99103\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;akut megakaryoblastleukæmi&lt;/td&gt;&lt;td&gt;akut megakaryoblastleukæmi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M99113&lt;a name=\&quot;PatobankSNOMED-M99113\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AML(megakaryoblastisk)m t(1;22)(p13;q13);RBM15-MLK1&lt;/td&gt;&lt;td&gt;AML(megakaryoblastisk)m t(1;22)(p13;q13);RBM15-MLK1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M99203&lt;a name=\&quot;PatobankSNOMED-M99203\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;terapirelateret myeloid neoplasi&lt;/td&gt;&lt;td&gt;terapirelateret myeloid neoplasi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M99303&lt;a name=\&quot;PatobankSNOMED-M99303\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;myeloidt sarkom&lt;/td&gt;&lt;td&gt;myeloidt sarkom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M99313&lt;a name=\&quot;PatobankSNOMED-M99313\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;panmyeloid proliferation med myelofibrose&lt;/td&gt;&lt;td&gt;panmyeloid proliferation med myelofibrose&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M99453&lt;a name=\&quot;PatobankSNOMED-M99453\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;kronisk myelomonocytær leukæmi&lt;/td&gt;&lt;td&gt;kronisk myelomonocytær leukæmi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M99503&lt;a name=\&quot;PatobankSNOMED-M99503\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;polycytæmia vera&lt;/td&gt;&lt;td&gt;polycytæmia vera&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M99613&lt;a name=\&quot;PatobankSNOMED-M99613\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;myelofibrose&lt;/td&gt;&lt;td&gt;myelofibrose&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M99623&lt;a name=\&quot;PatobankSNOMED-M99623\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;essentiel trombocytæmi&lt;/td&gt;&lt;td&gt;essentiel trombocytæmi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M99711&lt;a name=\&quot;PatobankSNOMED-M99711\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;post-transplantation lymfoproliferativ sygdom&lt;/td&gt;&lt;td&gt;post-transplantation lymfoproliferativ sygdom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M99753&lt;a name=\&quot;PatobankSNOMED-M99753\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;uklassificerbar myelodysplastisk/myeloproliferativ sygdom&lt;/td&gt;&lt;td&gt;uklassificerbar myelodysplastisk/myeloproliferativ sygdom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M99803&lt;a name=\&quot;PatobankSNOMED-M99803\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MDS med unilinie dysplasi&lt;/td&gt;&lt;td&gt;MDS med unilinie dysplasi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M99823&lt;a name=\&quot;PatobankSNOMED-M99823\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MDS med ringsideroblaster og unilinie dysplasi&lt;/td&gt;&lt;td&gt;MDS med ringsideroblaster og unilinie dysplasi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M99833&lt;a name=\&quot;PatobankSNOMED-M99833\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MDS med overskud af blaster&lt;/td&gt;&lt;td&gt;MDS med overskud af blaster&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M99853&lt;a name=\&quot;PatobankSNOMED-M99853\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MDS med multilineær dysplasi&lt;/td&gt;&lt;td&gt;MDS med multilineær dysplasi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M99863&lt;a name=\&quot;PatobankSNOMED-M99863\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MDS med isoleret del(5q) kromosomafvigelse&lt;/td&gt;&lt;td&gt;MDS med isoleret del(5q) kromosomafvigelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M99893&lt;a name=\&quot;PatobankSNOMED-M99893\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;myelodysplastisk syndrom&lt;/td&gt;&lt;td&gt;myelodysplastisk syndrom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AEF1810&lt;a name=\&quot;PatobankSNOMED-AEF1810\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;pTis&lt;/td&gt;&lt;td&gt;ÆF1810 - pTis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AEF1820&lt;a name=\&quot;PatobankSNOMED-AEF1820\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;pT0&lt;/td&gt;&lt;td&gt;ÆF1820 - pT0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AEF1830&lt;a name=\&quot;PatobankSNOMED-AEF1830\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;pT1&lt;/td&gt;&lt;td&gt;ÆF1830 - pT1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AEF1831&lt;a name=\&quot;PatobankSNOMED-AEF1831\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;pT1a&lt;/td&gt;&lt;td&gt;ÆF1831 - pT1a&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AEF1832&lt;a name=\&quot;PatobankSNOMED-AEF1832\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;pT1b&lt;/td&gt;&lt;td&gt;ÆF1832 - pT1b&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AEF1840&lt;a name=\&quot;PatobankSNOMED-AEF1840\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;pT2&lt;/td&gt;&lt;td&gt;ÆF1840 - pT2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AEF1850&lt;a name=\&quot;PatobankSNOMED-AEF1850\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;pT3&lt;/td&gt;&lt;td&gt;ÆF1850 - pT3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AEF1860&lt;a name=\&quot;PatobankSNOMED-AEF1860\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;pT4&lt;/td&gt;&lt;td&gt;ÆF1860 - pT4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AEF1861&lt;a name=\&quot;PatobankSNOMED-AEF1861\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;pT4a&lt;/td&gt;&lt;td&gt;ÆF1861 - pT4a&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AEF1862&lt;a name=\&quot;PatobankSNOMED-AEF1862\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;pT4b&lt;/td&gt;&lt;td&gt;ÆF1862 - pT4b&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AEF1870&lt;a name=\&quot;PatobankSNOMED-AEF1870\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;pTx&lt;/td&gt;&lt;td&gt;ÆF1870 - pTx&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AEF1900&lt;a name=\&quot;PatobankSNOMED-AEF1900\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;pN0&lt;/td&gt;&lt;td&gt;ÆF1900 - pN0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AEF1910&lt;a name=\&quot;PatobankSNOMED-AEF1910\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;pN1&lt;/td&gt;&lt;td&gt;ÆF1910 - pN1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AEF1920&lt;a name=\&quot;PatobankSNOMED-AEF1920\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;pN2&lt;/td&gt;&lt;td&gt;ÆF1920 - pN2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AEF1930&lt;a name=\&quot;PatobankSNOMED-AEF1930\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;pN3&lt;/td&gt;&lt;td&gt;ÆF1930 - pN3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AEF1931&lt;a name=\&quot;PatobankSNOMED-AEF1931\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;pN3a&lt;/td&gt;&lt;td&gt;ÆF1931 - pN3a&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AEF1932&lt;a name=\&quot;PatobankSNOMED-AEF1932\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;pN3b&lt;/td&gt;&lt;td&gt;ÆF1932 - pN3b&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AEF1950&lt;a name=\&quot;PatobankSNOMED-AEF1950\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;pNx&lt;/td&gt;&lt;td&gt;ÆF1950 - pNx&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AEF2000&lt;a name=\&quot;PatobankSNOMED-AEF2000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;pM0&lt;/td&gt;&lt;td&gt;ÆF2000 - pM0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AEF2010&lt;a name=\&quot;PatobankSNOMED-AEF2010\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;pM1&lt;/td&gt;&lt;td&gt;ÆF2010 - pM1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "https://kip.rkkp.dk/fhir/CodeSystem/PatobankSNOMED",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "2.9.4",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "PatobankSNOMED",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "Den Danske SNOMED for Patologi",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2022-06-07T00:00:00+02:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://trifork.com"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "rbk@trifork.com"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "Den Danske SNOMED for Patologi - Udvalgte koder i RKKP. Link: https://www.patobank.dk/snomed/",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a>" : true,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "fragment",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M96103",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "B-cellelymfom",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "B-cellelymfom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M96503",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hodgkin lymfom, klassisk type",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Hodgkin lymfom, klassisk type"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M96513",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hodgkin lymfom, klassisk type, lymfocytrig",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Hodgkin lymfom, klassisk type, lymfocytrig"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M96523",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hodgkin lymfom, klassisk type, mixed cellularitet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Hodgkin lymfom, klassisk type, mixed cellularitet"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M96533",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hodgkin lymfom, klassisk type, lymfocytdepleteret",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Hodgkin lymfom, klassisk type, lymfocytdepleteret"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M96593",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hodgkin lymfom, nodulær, lymfocyt dominans",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Hodgkin lymfom, nodulær, lymfocyt dominans"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M96633",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hodgkin lymfom, klassisk type, nodulær sklerose",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Hodgkin lymfom, klassisk type, nodulær sklerose"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M96703",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Småcellet lymfocytært lymfom",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Småcellet lymfocytært lymfom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M96783",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "primært effusionslymfom",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "primært effusionslymfom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M96793",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "mediastinalt storcellet B-cellelymfom",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "mediastinalt storcellet B-cellelymfom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M96873",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Burkitt lymfom",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Burkitt lymfom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M968H3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "high-grade B-lymfom",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "high-grade B-lymfom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M968I3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "high-grade B-lymfom med MYC og BCL2 og/eller BCL6 rearr.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "high-grade B-lymfom med MYC og BCL2 og/eller BCL6 rearr."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M96903",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "follikulært lymfom",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "follikulært lymfom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M96993",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "marginalzone B-cellelymfom",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "marginalzone B-cellelymfom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M97003",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "mycosis fungoides",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "mycosis fungoides"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M97013",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sezarys syndrom",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Sezarys syndrom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M97023",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "perifert T-cellelymfom",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "perifert T-cellelymfom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M97053",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "angioimmunoblastisk T-cellelymfom",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "angioimmunoblastisk T-cellelymfom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M97083",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "subkutant panniculit-lignende T-cellelymfom",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "subkutant panniculit-lignende T-cellelymfom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M97143",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "anaplastisk storcellet lymfom",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "anaplastisk storcellet lymfom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M97163",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "hepatosplenisk T-cellelymfom",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "hepatosplenisk T-cellelymfom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M97173",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "enteropati-associeret T-cellelymfom",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "enteropati-associeret T-cellelymfom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M97183",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "primært kutant anaplastisk storcellet lymfom",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "primært kutant anaplastisk storcellet lymfom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M97193",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ekstranodalt NK/T-cellelymfom, nasal type",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "ekstranodalt NK/T-cellelymfom, nasal type"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M97263",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "primært kutant gamma-delta T-cellelymfom",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "primært kutant gamma-delta T-cellelymfom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M97293",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "precursor T-lymfoblastisk lymfom",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "precursor T-lymfoblastisk lymfom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M97353",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "plasmablastisk lymfom",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "plasmablastisk lymfom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M97373",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "storcellet B-cellelymfom, ALK-positivt",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "storcellet B-cellelymfom, ALK-positivt"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M96713",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Lymfoplasmacytært lymfom",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Lymfoplasmacytært lymfom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M96733",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Mantlecellelymfom",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Mantlecellelymfom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M96803",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Diffust storcellet B-cellelymfom",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Diffust storcellet B-cellelymfom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M96893",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Splenisk marginalzone B-cellelymfom",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Splenisk marginalzone B-cellelymfom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M97283",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Precursor B-lymfoblastisk lymfom",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Precursor B-lymfoblastisk lymfom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M98013",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "akut udifferentieret leukæmi",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "akut udifferentieret leukæmi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M98053",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "akut leukæmi af ubestemmelig celletype",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "akut leukæmi af ubestemmelig celletype"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M98063",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "bl. fænotype akut leukæmi m. t(9;22); BCR-ABL1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "bl. fænotype akut leukæmi m. t(9;22); BCR-ABL1"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M98073",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "bl. fænotype akut leukæmi m. t(v;11q); KMT2A rearr.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "bl. fænotype akut leukæmi m. t(v;11q); KMT2A rearr."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M98143",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "B-lymfobl. leukæmi/lymfom m. t(12;21); ETV6-RUNX1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "B-lymfobl. leukæmi/lymfom m. t(12;21); ETV6-RUNX1"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M98153",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "B-lymfobl. leukæmi/lymfom med hyperdiploidi",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "B-lymfobl. leukæmi/lymfom med hyperdiploidi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M98173",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "B-lymfobl. leukæmi/lymfom m. t(5;14); IgH/IL3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "B-lymfobl. leukæmi/lymfom m. t(5;14); IgH/IL3"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M98183",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "B-lymfobl. leukæmi/lymfom m. t(1;19); TCF3-PBX1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "B-lymfobl. leukæmi/lymfom m. t(1;19); TCF3-PBX1"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M98273",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "adult T-cellelymfom/leukæmi",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "adult T-cellelymfom/leukæmi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M98353",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "precursor B-lymfoblastisk leukæmi",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "precursor B-lymfoblastisk leukæmi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M98373",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "precursor T-lymfoblastisk leukæmi",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "precursor T-lymfoblastisk leukæmi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M98403",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "erytroleukæmi (FAB-type M6)",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "erytroleukæmi (FAB-type M6)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M98613",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "akut myeloid leukæmi",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "akut myeloid leukæmi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M98653",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "AML m. t(6;9); DEK-NUP214",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "AML m. t(6;9); DEK-NUP214"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M98663",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "akut promyelocyt leukæmi m. t(15;17); PML-RARa",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "akut promyelocyt leukæmi m. t(15;17); PML-RARa"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M98673",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "akut myelomonocytær leukæmi",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "akut myelomonocytær leukæmi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M98693",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "AML m inv(3)(q21q26.2)el t(3;3)(q21;q26.2);RPN1-EVI1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "AML m inv(3)(q21q26.2)el t(3;3)(q21;q26.2);RPN1-EVI1"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M98703",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "akut basofil leukæmi",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "akut basofil leukæmi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M98713",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "AML m. inv(16) el. t(16;16); CBFß-MYH11",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "AML m. inv(16) el. t(16;16); CBFß-MYH11"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M98723",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Akut myeloid leukæmi, minimalt differentieret",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Akut myeloid leukæmi, minimalt differentieret"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M98733",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Akut myeloid leukæmi, uden modning",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Akut myeloid leukæmi, uden modning"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M98743",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Akut myeloid leukæmi, med modning",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Akut myeloid leukæmi, med modning"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M98753",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Kronisk myeloid leukæmi, BCR-ABL1 positiv",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Kronisk myeloid leukæmi, BCR-ABL1 positiv"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M98913",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Akut monoblastisk/monocytær leukæmi",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Akut monoblastisk/monocytær leukæmi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M98953",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "AML m. myelodysplasi-relaterede forandringer",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "AML m. myelodysplasi-relaterede forandringer"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M98963",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "AML m. t(8;21); RUNX1-RUNX1T1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "AML m. t(8;21); RUNX1-RUNX1T1"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M98973",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "AML m. t(9;11); KMT2A-MLLT3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "AML m. t(9;11); KMT2A-MLLT3"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M99103",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "akut megakaryoblastleukæmi",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "akut megakaryoblastleukæmi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M99113",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "AML(megakaryoblastisk)m t(1;22)(p13;q13);RBM15-MLK1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "AML(megakaryoblastisk)m t(1;22)(p13;q13);RBM15-MLK1"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M99203",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "terapirelateret myeloid neoplasi",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "terapirelateret myeloid neoplasi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M99303",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "myeloidt sarkom",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "myeloidt sarkom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M99313",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "panmyeloid proliferation med myelofibrose",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "panmyeloid proliferation med myelofibrose"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M99453",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "kronisk myelomonocytær leukæmi",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "kronisk myelomonocytær leukæmi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M99503",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "polycytæmia vera",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "polycytæmia vera"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M99613",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "myelofibrose",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "myelofibrose"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M99623",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "essentiel trombocytæmi",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "essentiel trombocytæmi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M99711",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "post-transplantation lymfoproliferativ sygdom",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "post-transplantation lymfoproliferativ sygdom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M99753",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "uklassificerbar myelodysplastisk/myeloproliferativ sygdom",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "uklassificerbar myelodysplastisk/myeloproliferativ sygdom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M99803",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "MDS med unilinie dysplasi",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "MDS med unilinie dysplasi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M99823",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "MDS med ringsideroblaster og unilinie dysplasi",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "MDS med ringsideroblaster og unilinie dysplasi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M99833",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "MDS med overskud af blaster",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "MDS med overskud af blaster"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M99853",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "MDS med multilineær dysplasi",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "MDS med multilineær dysplasi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M99863",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "MDS med isoleret del(5q) kromosomafvigelse",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "MDS med isoleret del(5q) kromosomafvigelse"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M99893",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "myelodysplastisk syndrom",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "myelodysplastisk syndrom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AEF1810",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "pTis",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "ÆF1810 - pTis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AEF1820",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "pT0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "ÆF1820 - pT0"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AEF1830",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "pT1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "ÆF1830 - pT1"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AEF1831",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "pT1a",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "ÆF1831 - pT1a"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AEF1832",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "pT1b",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "ÆF1832 - pT1b"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AEF1840",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "pT2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "ÆF1840 - pT2"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AEF1850",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "pT3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "ÆF1850 - pT3"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AEF1860",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "pT4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "ÆF1860 - pT4"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AEF1861",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "pT4a",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "ÆF1861 - pT4a"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AEF1862",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "pT4b",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "ÆF1862 - pT4b"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AEF1870",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "pTx",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "ÆF1870 - pTx"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AEF1900",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "pN0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "ÆF1900 - pN0"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AEF1910",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "pN1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "ÆF1910 - pN1"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AEF1920",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "pN2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "ÆF1920 - pN2"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AEF1930",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "pN3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "ÆF1930 - pN3"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AEF1931",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "pN3a",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "ÆF1931 - pN3a"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AEF1932",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "pN3b",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "ÆF1932 - pN3b"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AEF1950",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "pNx",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "ÆF1950 - pNx"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AEF2000",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "pM0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "ÆF2000 - pM0"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AEF2010",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "pM1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "ÆF2010 - pM1"
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://trifork.com">Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S</a>.  Package dk.kip.rkkp.fhir.ig.core#2.9.4 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Apr 23, 2025 12:21+0000">2025-04-23</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
