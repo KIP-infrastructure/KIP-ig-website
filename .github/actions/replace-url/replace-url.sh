@@ -10,7 +10,7 @@ find_and_replace() {
     cd "$(git rev-parse --show-toplevel)"
 
     echo "Finding files matching glob: $FILE_GLOB and tag: $OLD_TAG"
-    FILES=$(rg --files-with-matches --glob "$FILE_GLOB" "$OLD_TAG")
+    FILES=$(find . -type f -wholename "$FILE_GLOB")
     echo "hello";
     
     FILE_COUNT=$(echo "$FILES" | wc -l)
