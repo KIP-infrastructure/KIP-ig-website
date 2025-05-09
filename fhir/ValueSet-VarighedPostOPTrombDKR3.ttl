@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/VarighedPostOPTrombDKR3> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "VarighedPostOPTrombDKR3"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VarighedPostOPTrombDKR3</b></p><a name=\"VarighedPostOPTrombDKR3\"> </a><a name=\"hcVarighedPostOPTrombDKR3\"> </a><a name=\"VarighedPostOPTrombDKR3-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-Cyclus.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Cyclus</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Cyclus.html#Cyclus-le5-dage\">le5-dage</a></td><td>1: &lt;= 5 dage (kun under indlæggelse)</td><td>&lt;=5 dage</td></tr><tr><td><a href=\"CodeSystem-Cyclus.html#Cyclus-6-10-dage\">6-10-dage</a></td><td>2: 6-10 dage (forlænget profylakse)</td><td>6-10 dage</td></tr><tr><td><a href=\"CodeSystem-Cyclus.html#Cyclus-gt10-dage\">gt10-dage</a></td><td>3: &gt;10 dage (ekstra forlænget profylakse)</td><td>&gt;10 dage</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-Medicine.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Medicine</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Medicine.html#Medicine-noak_a\">noak_a</a></td><td>5: Patienten er i varig NOAK-behandling og fortsætter med vanligt præparat i halv dosering de første 1-2 postoperative døgn</td><td>NOAK halv dosis</td></tr><tr><td><a href=\"CodeSystem-Medicine.html#Medicine-noak_b\">noak_b</a></td><td>6: Patienten er i varig NOAK-behandling og fortsætter med vanligt præparat i fuld dosering umiddelbart postoperativt</td><td>NOAK fuld dosis</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>7: Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/VarighedPostOPTrombDKR3"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.9.8"] ; # 
+  fhir:name [ fhir:v "VarighedPostOPTrombDKR3"] ; # 
+  fhir:title [ fhir:v "Varighed PostOP trombolyseprofylakse (DKR)3"] ; # 
+  fhir:status [ fhir:v "retired"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2024-05-13T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Planlagt varighed Postoperativ trombolyseprofylakse (DKR)3"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/Cyclus"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "le5-dage" ] ;
+         fhir:display [ fhir:v "1: <= 5 dage (kun under indlæggelse)" ]
+       ] [
+         fhir:code [ fhir:v "6-10-dage" ] ;
+         fhir:display [ fhir:v "2: 6-10 dage (forlænget profylakse)" ]
+       ] [
+         fhir:code [ fhir:v "gt10-dage" ] ;
+         fhir:display [ fhir:v "3: >10 dage (ekstra forlænget profylakse)" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/Medicine"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "noak_a" ] ;
+         fhir:display [ fhir:v "5: Patienten er i varig NOAK-behandling og fortsætter med vanligt præparat i halv dosering de første 1-2 postoperative døgn" ]
+       ] [
+         fhir:code [ fhir:v "noak_b" ] ;
+         fhir:display [ fhir:v "6: Patienten er i varig NOAK-behandling og fortsætter med vanligt præparat i fuld dosering umiddelbart postoperativt" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "other" ] ;
+         fhir:display [ fhir:v "7: Andet" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
