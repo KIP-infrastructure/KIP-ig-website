@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="UdredningDANDEM2025"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet UdredningDANDEM2025</b></p><a name="UdredningDANDEM2025"> </a><a name="hcUdredningDANDEM2025"> </a><a name="UdredningDANDEM2025-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-AssessmentType.html"><code>https://kip.rkkp.dk/fhir/CodeSystem/AssessmentType</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-AssessmentType.html#AssessmentType-primary_dementia_assessment">primary_dementia_assessment</a></td><td>Primær demensudredning, henvist direkte</td><td>Primary dementia assessment / Primær demensudredning</td></tr><tr><td><a href="CodeSystem-AssessmentType.html#AssessmentType-second_opinion">second_opinion</a></td><td>Second opinion</td><td>Second opinion</td></tr><tr><td><a href="CodeSystem-AssessmentType.html#AssessmentType-revisited_primary_assessment">revisited_primary_assessment</a></td><td>Omvisiteret fritvalgspatient til primær udredning</td><td>Revisited for primary assessment / Omvisiteret til primær udredning</td></tr><tr><td><a href="CodeSystem-AssessmentType.html#AssessmentType-no_wish_for_assessment">no_wish_for_assessment</a></td><td>Patient afbryder udredning før diagnosesamtale</td><td>Patient interrupts investigation before diagnostic interview / Patient afbryder udredning før diagnosesamtale</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://kip.rkkp.dk/fhir/ValueSet/UdredningDANDEM2025"/>
+  <version value="2.11.0"/>
+  <name value="UdredningDANDEM2025"/>
+  <title value="Udredning (DANDEM) 2025"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2025-05-09T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"/>
+  <contact>
+    <name value="Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Udredning (DANDEM) - Fjernet to udfald og omformuleret no_wish_for_assessment. Erstatter et tidligere VS."/>
+  <compose>
+    <include>
+      <system value="https://kip.rkkp.dk/fhir/CodeSystem/AssessmentType"/>
+      <concept>
+        <code value="primary_dementia_assessment"/>
+        <display value="Primær demensudredning, henvist direkte"/>
+      </concept>
+      <concept>
+        <code value="second_opinion"/>
+        <display value="Second opinion"/>
+      </concept>
+      <concept>
+        <code value="revisited_primary_assessment"/>
+        <display value="Omvisiteret fritvalgspatient til primær udredning"/>
+      </concept>
+      <concept>
+        <code value="no_wish_for_assessment"/>
+        <display value="Patient afbryder udredning før diagnosesamtale"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

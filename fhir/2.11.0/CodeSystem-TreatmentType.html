@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Treatment type - KIP Infrastructure v2.11.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3.973"}
+    h3,h4,h5,h6{--heading-prefix:"3.973"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">KIP Infrastructure</span>
+            <br/>
+            <span style="display:inline-block;">2.11.0 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Search Parameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Extension Definitions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Code Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Treatment type</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KIP Infrastructure (v2.11.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-TreatmentType.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-TreatmentType.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-TreatmentType.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: Treatment type
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://kip.rkkp.dk/fhir/CodeSystem/TreatmentType<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/TreatmentType"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">2.11.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/TreatmentType|2.11.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2022-06-03
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">TreatmentType</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Treatment type</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-BehandlingDHR.html">BehandlingDHR</a></li>
+ <li><a href="ValueSet-BehandlingEndovaskulaerType.html">BehandlingEndovaskulaerType</a></li>
+ <li><a href="ValueSet-BehandlingKirurgiskEndovaskulaer.html">BehandlingKirurgiskEndovaskulaer</a></li>
+ <li><a href="ValueSet-LipomHandlingDHDB.html">LipomHandlingDHDB</a></li>
+ <li><a href="ValueSet-LokalStraaleterapi.html">LokalStraaleterapi</a></li>
+ <li><a href="ValueSet-NeoadjuverendeBehandling.html">NeoadjuverendeBehandling</a></li>
+ <li><a href="ValueSet-TreatmentCrossSection.html">TreatmentCrossSection</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem TreatmentType</b></p><a name="TreatmentType"> </a><a name="hcTreatmentType"> </a><a name="TreatmentType-en-US"> </a><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/TreatmentType</code> defines the following codes in an undefined hierarchy:</p>
+<table class="codes"><tr><td><b>Lvl</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">endovascular<a name="TreatmentType-endovascular"> </a></td>
+<td>Endovascular</td>
+<td>Endovascular treatment</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;coil<a name="TreatmentType-coil"> </a></td>
+<td>Coil</td>
+<td>Coil</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;intrasakkulat<a name="TreatmentType-intrasakkulat"> </a></td>
+<td>Intrasakkulat flowdiversion</td>
+<td>Intrasakkulat flowdiversion</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;ekstrasakkulat<a name="TreatmentType-ekstrasakkulat"> </a></td>
+<td>Ekstrasakkulat flowdiversion</td>
+<td>Ekstrasakkulat flowdiversion</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">surgical<a name="TreatmentType-surgical"> </a></td>
+<td>Surgical</td>
+<td>Surgical treatment</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">operation<a name="TreatmentType-operation"> </a></td>
+<td>Operation</td>
+<td>Operation</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">radiotherapy<a name="TreatmentType-radiotherapy"> </a></td>
+<td>radiotherapy</td>
+<td>Radiation / Strålebehandling</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">chemotherapy<a name="TreatmentType-chemotherapy"> </a></td>
+<td>Chemoterapy</td>
+<td>Chemotherapy / Kemoterapi</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">chemoradiationtherapy<a name="TreatmentType-chemoradiationtherapy"> </a></td>
+<td>Chemoradiationtherapy</td>
+<td>Chemoradiationtherapy / Kemostråleterapi</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">immunotherapy<a name="TreatmentType-immunotherapy"> </a></td>
+<td>Immunotherapy</td>
+<td>Immunotherapy / Immunterapi</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">neoadjuvant<a name="TreatmentType-neoadjuvant"> </a></td>
+<td>Neoadjuvant</td>
+<td>Neoadjuvant / Neoadjuverende</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">watchfull_waiting<a name="TreatmentType-watchfull_waiting"> </a></td>
+<td>Watchfull waiting</td>
+<td>Watchfull waiting</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">cerclage<a name="TreatmentType-cerclage"> </a></td>
+<td>Cerclage</td>
+<td>Cerclage / SNOMED-CT: 1455007</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">trochantergrip<a name="TreatmentType-trochantergrip"> </a></td>
+<td>Trochantergrip</td>
+<td>Trochantergrip</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">splint<a name="TreatmentType-splint"> </a></td>
+<td>Splint</td>
+<td>Splint / SNOMED-CT: 16650009</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">skinne<a name="TreatmentType-skinne"> </a></td>
+<td>Skinne</td>
+<td>Skinne</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">stem<a name="TreatmentType-stem"> </a></td>
+<td>Stem</td>
+<td>Stem</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">uns<a name="TreatmentType-uns"> </a></td>
+<td>UNS</td>
+<td>UNS</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">retrahere<a name="TreatmentType-retrahere"> </a></td>
+<td>Retrahere</td>
+<td>Retraheret - Tilbagetrækning, skrumpning</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">exidere<a name="TreatmentType-exidere"> </a></td>
+<td>Exidere</td>
+<td>Exideret - Fjerne</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">in_situ<a name="TreatmentType-in_situ"> </a></td>
+<td>Left in situ</td>
+<td>Efterladt in situ</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://trifork.com">Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S</a>.  Package dk.kip.rkkp.fhir.ig.core#2.11.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 15, 2025 08:19+0000">2025-05-15</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

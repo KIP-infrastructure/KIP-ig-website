@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Sundhedsvæsenets Organisationsregister (SOR) - KIP Infrastructure v2.11.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3.942"}
+    h3,h4,h5,h6{--heading-prefix:"3.942"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">KIP Infrastructure</span>
+            <br/>
+            <span style="display:inline-block;">2.11.0 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Search Parameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Extension Definitions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Code Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Sundhedsvæsenets Organisationsregister (SOR)</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KIP Infrastructure (v2.11.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-SOR.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-SOR.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-SOR.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: Sundhedsvæsenets Organisationsregister (SOR)
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://kip.rkkp.dk/fhir/CodeSystem/SOR<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/SOR"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">2.11.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/SOR|2.11.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2022-09-06
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">SOR</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Sundhedsvæsenets OrganisationsregisterR (SOR) - Udvalgte koder i RKKP.</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-AfdelingDandem.html">AfdelingDandem</a></li>
+ <li><a href="ValueSet-SORAfdelingerDNSL.html">SORAfdelingerDNSL</a></li>
+ <li><a href="ValueSet-SORAfdelingerHaema.html">SORAfdelingerHaema</a></li>
+ <li><a href="ValueSet-SORAfdelingerUHDNSL.html">SORAfdelingerUHDNSL</a></li>
+ <li><a href="ValueSet-SORNeurokirurgiskeAfdelingerDAP.html">SORNeurokirurgiskeAfdelingerDAP</a></li>
+ <li><a href="ValueSet-SORNeurologiskeAfdelingerDAP.html">SORNeurologiskeAfdelingerDAP</a></li>
+ <li><a href="ValueSet-SOROverflytningRETSPSYK.html">SOROverflytningRETSPSYK</a></li>
+ <li><a href="ValueSet-SOROverflytningRETSPSYKHS.html">SOROverflytningRETSPSYKHS</a></li>
+ <li><a href="ValueSet-SOROverflytningRETSPSYKMJ.html">SOROverflytningRETSPSYKMJ</a></li>
+ <li><a href="ValueSet-SOROverflytningRETSPSYKNJ.html">SOROverflytningRETSPSYKNJ</a></li>
+ <li><a href="ValueSet-SOROverflytningRETSPSYKSD.html">SOROverflytningRETSPSYKSD</a></li>
+ <li><a href="ValueSet-SOROverflytningRETSPSYKSJ.html">SOROverflytningRETSPSYKSJ</a></li>
+ <li><a href="ValueSet-SORTrombolyseenhedDAP.html">SORTrombolyseenhedDAP</a></li>
+ <li><a href="ValueSet-SORafdSkema3Duga.html">SORafdSkema3Duga</a></li>
+ <li><a href="ValueSet-TransplantationcenterALG.html">TransplantationcenterALG</a></li>
+ <li><a href="ValueSet-UdfoerendeLAB.html">UdfoerendeLAB</a></li>
+ <li><a href="ValueSet-UndersoendeLAB.html">UndersoendeLAB</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem SOR</b></p><a name="SOR"> </a><a name="hcSOR"> </a><a name="SOR-en-US"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/SOR</code> provides <b>a fragment</b> that includes following codes:</p>
+<table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>
+<tr><td style="white-space:nowrap">223601000016004<a name="SOR-223601000016004"> </a></td>
+<td>ROS Neurologisk Afd.</td>
+<td>Region Sjællands Sygehusvæsen - ROS Neurologisk Afd. (Shak: 3800A80)</td></tr>
+<tr><td style="white-space:nowrap">239081000016004<a name="SOR-239081000016004"> </a></td>
+<td>OUH Hæmatologisk Afsnit X (Odense)</td>
+<td>Odense Universitetshospital - Svendborg - OUH Hæmatologisk Afsnit X (Odense) (Shak: 4202560)</td></tr>
+<tr><td style="white-space:nowrap">239981000016003<a name="SOR-239981000016003"> </a></td>
+<td>OUH Neurokirurgisk Afsnit U (Odense)</td>
+<td>Odense Universitetshospital - Svendborg - OUH Neurokirurgisk Afsnit U (Odense) (Shak: 4202150)</td></tr>
+<tr><td style="white-space:nowrap">240121000016005<a name="SOR-240121000016005"> </a></td>
+<td>OUH Neurologisk Afsnit N</td>
+<td>Odense Universitetshospital - Svendborg - OUH Neurologisk Afsnit N (Shak: 4202160)</td></tr>
+<tr><td style="white-space:nowrap">244701000016009<a name="SOR-244701000016009"> </a></td>
+<td>SVS Blodsygdomme Afsnit (Esbjerg)</td>
+<td>Sydvestjysk Sygehus - SVS Blodsygdomme Afsnit (Esbjerg) (Shak: 5501053)</td></tr>
+<tr><td style="white-space:nowrap">245291000016005<a name="SOR-245291000016005"> </a></td>
+<td>SVS Stroke Afsnit (Esbjerg)</td>
+<td>Sydvestjysk Sygehus - SVS Stroke Afsnit (Esbjerg) (Shak: 550105B)</td></tr>
+<tr><td style="white-space:nowrap">252961000016000<a name="SOR-252961000016000"> </a></td>
+<td>Operation</td>
+<td>Rigshospitalet - Operation (Shak: 1301211)</td></tr>
+<tr><td style="white-space:nowrap">253081000016000<a name="SOR-253081000016000"> </a></td>
+<td>Sengeafsnit 2094</td>
+<td>Rigshospitalet - Sengeafsnit 2094 (Shak: 1301221)</td></tr>
+<tr><td style="white-space:nowrap">253121000016002<a name="SOR-253121000016002"> </a></td>
+<td>Hukommelsesklinikken, N7</td>
+<td>Rigshospitalet - Hukommelsesklinikken, N7 (Shak: 1301227)</td></tr>
+<tr><td style="white-space:nowrap">257721000016006<a name="SOR-257721000016006"> </a></td>
+<td>Neurologisk afd. akut apopleksi</td>
+<td>Bispebjerg og Frederiksberg Hospitaler - Neurologisk afd. akut apopleksi (Shak: 1309170)</td></tr>
+<tr><td style="white-space:nowrap">265621000016001<a name="SOR-265621000016001"> </a></td>
+<td>Medicinsk sengeafd.</td>
+<td>Bornholms Hospital - Medicinsk sengeafd. (Shak: 4001030)</td></tr>
+<tr><td style="white-space:nowrap">275981000016003<a name="SOR-275981000016003"> </a></td>
+<td>Alb Neurologisk afd.</td>
+<td>Aalborg Universitetshospital - Alb Neurologisk afd. (Shak: 8001191)</td></tr>
+<tr><td style="white-space:nowrap">275721000016002<a name="SOR-275721000016002"> </a></td>
+<td>Alb Hæmatologisk afd.</td>
+<td>Aalborg Universitetshospital - Alb Hæmatologisk afd. (Shak: 8001101)</td></tr>
+<tr><td style="white-space:nowrap">275991000016001<a name="SOR-275991000016001"> </a></td>
+<td>Alb Neurologisk amb.</td>
+<td>Aalborg Universitetshospital - Alb Neurologisk amb. (Shak: 8001199)</td></tr>
+<tr><td style="white-space:nowrap">276361000016000<a name="SOR-276361000016000"> </a></td>
+<td>Alb Neurokir. Afd.</td>
+<td>Aalborg Universitetshospital - Alb Neurokir. Afd. (Shak: 8001311)</td></tr>
+<tr><td style="white-space:nowrap">380011000016000<a name="SOR-380011000016000"> </a></td>
+<td>ROS Hæmatologisk Afd.</td>
+<td>Region Sjællands Sygehusvæsen - ROS Hæmatologisk Afd.(Shak: 3800A20)</td></tr>
+<tr><td style="white-space:nowrap">384851000016002<a name="SOR-384851000016002"> </a></td>
+<td>SLB Hæmatologisk Afsnit (Vejle)</td>
+<td>Sygehus Lillebælt - SLB Hæmatologisk Afsnit (Vejle) (Shak: 6008260)</td></tr>
+<tr><td style="white-space:nowrap">440051000016002<a name="SOR-440051000016002"> </a></td>
+<td>Hjerne- og Rygkirurgi</td>
+<td>Aarhus Universitetshospital - Hjerne- og Rygkirurgi (Shak: 6620131)</td></tr>
+<tr><td style="white-space:nowrap">440081000016006<a name="SOR-440081000016006"> </a></td>
+<td>Neurologisk Sengeafdeling</td>
+<td>Aarhus Universitetshospital - Neurologisk Sengeafdeling (Shak: 6620151)</td></tr>
+<tr><td style="white-space:nowrap">440781000016009<a name="SOR-440781000016009"> </a></td>
+<td>Blodsygdomme Sengeafsnit</td>
+<td>Aarhus Universitetshospital - Blodsygdomme Sengeafsnit (Shak: 6620141)</td></tr>
+<tr><td style="white-space:nowrap">503321000016003<a name="SOR-503321000016003"> </a></td>
+<td>SHS Hjerne- og Nervesygdomme Sengeafsnit (Aabenraa)</td>
+<td>Sygehus Sønderjylland - SHS Hjerne- og Nervesygdomme Sengeafsnit (Aabenraa) (Shak: 5000520)</td></tr>
+<tr><td style="white-space:nowrap">588351000016004<a name="SOR-588351000016004"> </a></td>
+<td>Neurologisk Kl. senge GLO</td>
+<td>Rigshospitalet - Neurologisk Kl. senge GLO (Shak: 130122B)</td></tr>
+<tr><td style="white-space:nowrap">637201000016005<a name="SOR-637201000016005"> </a></td>
+<td>SLB Hjerne- og Nervesygdomme Senge (Kolding)</td>
+<td>Sygehus Lillebælt - SLB Hjerne- og Nervesygdomme Senge (Kolding) (Shak: 6007320)</td></tr>
+<tr><td style="white-space:nowrap">900651000016000<a name="SOR-900651000016000"> </a></td>
+<td>Klinik for Blodsygdomme Gødstrup - RHG</td>
+<td>Regionshospitalet Gødstrup - Klinik for Blodsygdomme Gødstrup - RHG (Shak: 664038K)</td></tr>
+<tr><td style="white-space:nowrap">900791000016001<a name="SOR-900791000016001"> </a></td>
+<td>Neurologisk Afsnit Gødstrup - RHG</td>
+<td>Regionshospitalet Gødstrup - Neurologisk Afsnit Gødstrup - RHG (Shak: 6640401)</td></tr>
+<tr><td style="white-space:nowrap">911061000016003<a name="SOR-911061000016003"> </a></td>
+<td>Alb Demensenheden, RN</td>
+<td>Aalborg Universitetshospital - Alb Demensenheden, RN (Shak: 800119D)</td></tr>
+<tr><td style="white-space:nowrap">926731000016006<a name="SOR-926731000016006"> </a></td>
+<td>Blodsygdomme L, Senge</td>
+<td>Rigshospitalet - Blodsygdomme L, Senge (Shak: 1301101)</td></tr>
+<tr><td style="white-space:nowrap">1095041000016007<a name="SOR-1095041000016007"> </a></td>
+<td>SHS Blodsygdomme Ambulatorium (Sønderborg)</td>
+<td>Sygehus Sønderjylland - SHS Blodsygdomme Ambulatorium (Sønderborg) (Shak: 500061A)</td></tr>
+<tr><td style="white-space:nowrap">1125141000016005<a name="SOR-1125141000016005"> </a></td>
+<td>Neurologisk Stroke Klinik Gødstrup - RHG</td>
+<td>Regionshospitalet Gødstrup - Neurologisk Stroke Klinik Gødstrup - RHG (Shak: 664040I)</td></tr>
+<tr><td style="white-space:nowrap">1060711000016001<a name="SOR-1060711000016001"> </a></td>
+<td>TM Psyk Amb Thy-Mors Psykose</td>
+<td>TM Psyk Amb Thy-Mors Psykose</td></tr>
+<tr><td style="white-space:nowrap">1060741000016000<a name="SOR-1060741000016000"> </a></td>
+<td>TM Psyk Amb Thy-Mors Bosted</td>
+<td>TM Psyk Amb Thy-Mors Bosted</td></tr>
+<tr><td style="white-space:nowrap">1066921000016005<a name="SOR-1066921000016005"> </a></td>
+<td>Frh Psyk Amb Frederikshavn Psykose</td>
+<td>Frh Psyk Amb Frederikshavn Psykose</td></tr>
+<tr><td style="white-space:nowrap">1199951000016004<a name="SOR-1199951000016004"> </a></td>
+<td>ADA Klinik for Depression - AUH</td>
+<td>ADA Klinik for Depression - AUH</td></tr>
+<tr><td style="white-space:nowrap">1200011000016005<a name="SOR-1200011000016005"> </a></td>
+<td>ADA Klinik for Bipolar Sygdom - AUH</td>
+<td>Psykiatrien Region Midtjylland - ADA Klinik for Bipolar Sygdom - AUH</td></tr>
+<tr><td style="white-space:nowrap">1223721000016002<a name="SOR-1223721000016002"> </a></td>
+<td>RPG Enhed for Retspsykiatri – Gødstrup</td>
+<td>RPG Enhed for Retspsykiatri – Gødstrup</td></tr>
+<tr><td style="white-space:nowrap">1223761000016008<a name="SOR-1223761000016008"> </a></td>
+<td>RPG Team for Retspsykiatri - Gødstrup</td>
+<td>RPG Team for Retspsykiatri - Gødstrup</td></tr>
+<tr><td style="white-space:nowrap">235611000016000<a name="SOR-235611000016000"> </a></td>
+<td>Sjælland</td>
+<td>Sjælland</td></tr>
+<tr><td style="white-space:nowrap">235631000016006<a name="SOR-235631000016006"> </a></td>
+<td>Psykiatri ØST Overafd. 01</td>
+<td>Psykiatri ØST Overafd. 01</td></tr>
+<tr><td style="white-space:nowrap">235901000016009<a name="SOR-235901000016009"> </a></td>
+<td>Psykiatri ØST Overafd. 05</td>
+<td>Psykiatri ØST Overafd. 05</td></tr>
+<tr><td style="white-space:nowrap">236121000016006<a name="SOR-236121000016006"> </a></td>
+<td>Psykiatri VEST Overafd. 10</td>
+<td>Psykiatri VEST Overafd. 10</td></tr>
+<tr><td style="white-space:nowrap">236351000016001<a name="SOR-236351000016001"> </a></td>
+<td>Psykiatri VEST Overafd. 15 </td>
+<td>Psykiatri VEST Overafd. 15</td></tr>
+<tr><td style="white-space:nowrap">236831000016003<a name="SOR-236831000016003"> </a></td>
+<td>Psykiatri SYD Overafd. 25</td>
+<td>Psykiatri SYD Overafd. 25</td></tr>
+<tr><td style="white-space:nowrap">237021000016009<a name="SOR-237021000016009"> </a></td>
+<td>Afdeling For Retspsykiatri - Ledelse</td>
+<td>Region Sjællands Sygehusvæsen - Afdeling For Retspsykiatri - Ledelse</td></tr>
+<tr><td style="white-space:nowrap">237031000016006<a name="SOR-237031000016006"> </a></td>
+<td>PSL Retspsykiatri</td>
+<td>PSL Retspsykiatri</td></tr>
+<tr><td style="white-space:nowrap">237041000016004<a name="SOR-237041000016004"> </a></td>
+<td>PSL Retspsykiatrisk Afd.</td>
+<td>Region Sjællands Sygehusvæsen - PSL Retspsykiatrisk Afd.</td></tr>
+<tr><td style="white-space:nowrap">237131000016005<a name="SOR-237131000016005"> </a></td>
+<td>PSL Sikringsafd. </td>
+<td>PSL Sikringsafd. </td></tr>
+<tr><td style="white-space:nowrap">243921000016002<a name="SOR-243921000016002"> </a></td>
+<td>PSY Retspsykiatrisk afdeling (Middelfart)</td>
+<td>Psykiatrien Region Syddanmark - PSY Retspsykiatrisk afdeling (Middelfart)</td></tr>
+<tr><td style="white-space:nowrap">243951000016005<a name="SOR-243951000016005"> </a></td>
+<td>PSY Retspsykiatrisk Ambulatorium (Middelfart)</td>
+<td>Psykiatrien Region Syddanmark - PSY Retspsykiatrisk Ambulatorium (Middelfart)</td></tr>
+<tr><td style="white-space:nowrap">261341000016001<a name="SOR-261341000016001"> </a></td>
+<td>Psyk. Center Amager, overafd.</td>
+<td>Region Hovedstadens Psykiatri - Psyk. Center Amager, overafd.</td></tr>
+<tr><td style="white-space:nowrap">261431000016003<a name="SOR-261431000016003"> </a></td>
+<td>Børne- og Ungdomspsykiatrisk overafdeling, Bispebjerg, B1</td>
+<td>Region Hovedstadens Psykiatri - Børne- og Ungdomspsykiatrisk overafdeling, Bispebjerg, B1</td></tr>
+<tr><td style="white-space:nowrap">261501000016006<a name="SOR-261501000016006"> </a></td>
+<td>Psyk. Center København, overafd. N, Nørrebro-afdelingen</td>
+<td>Region Hovedstadens Psykiatri - Psyk. Center København, overafd. N,  Nørrebro-afdelingen</td></tr>
+<tr><td style="white-space:nowrap">262181000016004<a name="SOR-262181000016004"> </a></td>
+<td>Psyk. Center Sct. Hans, Retspsyk. overafd. R</td>
+<td>Region Hovedstadens Psykiatri - Psyk. Center Sct. Hans, Retspsyk. overafd. R</td></tr>
+<tr><td style="white-space:nowrap">262191000016002<a name="SOR-262191000016002"> </a></td>
+<td>Sct. Hans, Retspsykiatrisk sengeafd. R</td>
+<td>Sct. Hans, Retspsykiatrisk sengeafd. R</td></tr>
+<tr><td style="white-space:nowrap">262221000016007<a name="SOR-262221000016007"> </a></td>
+<td>Psyk. Center Sct. Hans, overafd. M</td>
+<td>Region Hovedstadens Psykiatri - Psyk. Center Sct. Hans, overafd. M</td></tr>
+<tr><td style="white-space:nowrap">262391000016004<a name="SOR-262391000016004"> </a></td>
+<td>Psyk. Center Ballerup, overafd. Ballerup</td>
+<td>Region Hovedstadens Psykiatri - Psyk. Center Ballerup, overafd. Ballerup</td></tr>
+<tr><td style="white-space:nowrap">262511000016000<a name="SOR-262511000016000"> </a></td>
+<td>Psyk. Center Nordsjælland, overafd.</td>
+<td>Region Hovedstadens Psykiatri - Psyk. Center Nordsjælland, overafd.</td></tr>
+<tr><td style="white-space:nowrap">262671000016009<a name="SOR-262671000016009"> </a></td>
+<td>Psyk. Center Glostrup, overafd.</td>
+<td>Region Hovedstadens Psykiatri - Psyk. Center Glostrup, overafd.</td></tr>
+<tr><td style="white-space:nowrap">262681000016006<a name="SOR-262681000016006"> </a></td>
+<td>PCGL, Psyk. sengeafd.</td>
+<td>Region Hovedstadens Psykiatri - PCGL, Psyk. sengeafd.</td></tr>
+<tr><td style="white-space:nowrap">278121000016009<a name="SOR-278121000016009"> </a></td>
+<td>PS Almenpsykiatrisk Afdeling, Nord</td>
+<td>Psykiatrien Nordjylland - PS Klinik Nord</td></tr>
+<tr><td style="white-space:nowrap">278131000016006<a name="SOR-278131000016006"> </a></td>
+<td>PS Almenpsykiatrisk, Nord Sengeafsnit</td>
+<td>PS Almenpsykiatrisk, Nord Sengeafsnit</td></tr>
+<tr><td style="white-space:nowrap">278191000016007<a name="SOR-278191000016007"> </a></td>
+<td>PS Ældrepsykiatrisk Afdeling</td>
+<td>PS Ældrepsykiatrisk Afdeling</td></tr>
+<tr><td style="white-space:nowrap">278201000016009<a name="SOR-278201000016009"> </a></td>
+<td>PS Ældrepsykiatrisk Sengeafsnit</td>
+<td>PS Ældrepsykiatrisk Sengeafsnit</td></tr>
+<tr><td style="white-space:nowrap">278211000016006<a name="SOR-278211000016006"> </a></td>
+<td>PS Ældrepsykiatrisk Ambulatorier</td>
+<td>PS Ældrepsykiatrisk Ambulatorier</td></tr>
+<tr><td style="white-space:nowrap">278221000016002<a name="SOR-278221000016002"> </a></td>
+<td>PS Retspsykiatrisk Afdeling</td>
+<td>Psykiatrien Nordjylland - PS Retspsykiatri</td></tr>
+<tr><td style="white-space:nowrap">278231000016000<a name="SOR-278231000016000"> </a></td>
+<td>PS Retspsykiatrisk Sengeafsnit</td>
+<td>Psykiatrien Nordjylland - PS Klinik Syd Retspsykiatri</td></tr>
+<tr><td style="white-space:nowrap">278291000016004<a name="SOR-278291000016004"> </a></td>
+<td>PS Almenpsykiatrisk Afdeling, Syd</td>
+<td>Psykiatrien Nordjylland  - PS Klinik Syd</td></tr>
+<tr><td style="white-space:nowrap">278301000016000<a name="SOR-278301000016000"> </a></td>
+<td>PS Almenpsykiatrisk, Syd Sengeafsnit</td>
+<td>PS Almenpsykiatrisk, Syd Sengeafsnit</td></tr>
+<tr><td style="white-space:nowrap">278321000016007<a name="SOR-278321000016007"> </a></td>
+<td>PS Almenpsykiatrisk, Syd Ambulatorier</td>
+<td>Psykiatrien Nordjylland - PS Klinik Syd Ambulatorier</td></tr>
+<tr><td style="white-space:nowrap">282651000016004<a name="SOR-282651000016004"> </a></td>
+<td>Psyk. Center Bornholm</td>
+<td>Region Hovedstadens Psykiatri - Psyk. Center Bornholm</td></tr>
+<tr><td style="white-space:nowrap">339031000016008<a name="SOR-339031000016008"> </a></td>
+<td>Børne- og Ungdomspsyk. Center Bispebjerg, B</td>
+<td>Region Hovedstadens Psykiatri - Børne- og Ungdomspsyk. Center Bispebjerg, B</td></tr>
+<tr><td style="white-space:nowrap">366121000016007<a name="SOR-366121000016007"> </a></td>
+<td>Frh Psyk Amb Frederikshavn</td>
+<td>Frh Psyk Amb Frederikshavn</td></tr>
+<tr><td style="white-space:nowrap">366381000016006<a name="SOR-366381000016006"> </a></td>
+<td>Alb Amb Personlighedsforstyrrelser</td>
+<td>Alb Amb Personlighedsforstyrrelser</td></tr>
+<tr><td style="white-space:nowrap">366391000016008<a name="SOR-366391000016008"> </a></td>
+<td>Alb Amb Angst og Tvangssygdom</td>
+<td>Alb Amb Angst og Tvangssygdom</td></tr>
+<tr><td style="white-space:nowrap">366411000016008<a name="SOR-366411000016008"> </a></td>
+<td>Alb Amb Psykose specialafsnit</td>
+<td>Alb Amb Psykose specialafsnit</td></tr>
+<tr><td style="white-space:nowrap">366431000016002<a name="SOR-366431000016002"> </a></td>
+<td>Alb Amb for Depression</td>
+<td>Alb Amb for Depression</td></tr>
+<tr><td style="white-space:nowrap">387101000016000<a name="SOR-387101000016000"> </a></td>
+<td>PVE Ambulant psykose enhed - vest</td>
+<td>Psykiatrien Region Midtjylland - PVE Ambulant psykose enhed - vest</td></tr>
+<tr><td style="white-space:nowrap">391151000016008<a name="SOR-391151000016008"> </a></td>
+<td>PMI Regionspsykiatrien Midt</td>
+<td>Psykiatrien Region Midtjylland - PMI Regionspsykiatrien Midt</td></tr>
+<tr><td style="white-space:nowrap">391171000016001<a name="SOR-391171000016001"> </a></td>
+<td>Regionspsykiatrien Randers</td>
+<td>Regionspsykiatrien Randers</td></tr>
+<tr><td style="white-space:nowrap">438091000016005<a name="SOR-438091000016005"> </a></td>
+<td>Alb Amb Unge med Skizofreni</td>
+<td>Alb Amb Unge med Skizofreni</td></tr>
+<tr><td style="white-space:nowrap">454401000016004<a name="SOR-454401000016004"> </a></td>
+<td>PMI Sengeafsnit - Regionspsykiatri Midt</td>
+<td>Psykiatrien Region Midtjylland - PMI Sengeafsnit - Regionspsykiatri Midt</td></tr>
+<tr><td style="white-space:nowrap">454411000016002<a name="SOR-454411000016002"> </a></td>
+<td>PMI Klinik for depression og mani - Midt</td>
+<td>PMI Klinik for depression og mani - Midt</td></tr>
+<tr><td style="white-space:nowrap">454451000016003<a name="SOR-454451000016003"> </a></td>
+<td>PMI Klinik for psykoser - Midt</td>
+<td>Psykiatrien Region Midtjylland - PMI Klinik for psykoser - Midt</td></tr>
+<tr><td style="white-space:nowrap">454461000016000<a name="SOR-454461000016000"> </a></td>
+<td>PMI Klinik for retspsykiatri - Midt</td>
+<td>Psykiatrien Region Midtjylland - PMI Klinik for retspsykiatri - Midt</td></tr>
+<tr><td style="white-space:nowrap">456481000016000<a name="SOR-456481000016000"> </a></td>
+<td>Brø Amb Personlighedspsykiatri</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">463791000016008<a name="SOR-463791000016008"> </a></td>
+<td>PMI Sengeafsnit retspsykiatri - Viborg</td>
+<td>Psykiatrien Region Midtjylland - PMI Sengeafsnit retspsykiatri - Viborg</td></tr>
+<tr><td style="white-space:nowrap">479221000016009<a name="SOR-479221000016009"> </a></td>
+<td>PHO O1 Sengeafsnit Regionspsykiatri - Horsens</td>
+<td>Psykiatrien Region Midtjylland - PHO O1 Sengeafsnit Regionspsykiatri - Horsens</td></tr>
+<tr><td style="white-space:nowrap">486741000016006<a name="SOR-486741000016006"> </a></td>
+<td>PRA Psykiatrisk Klinik 2 - Randers</td>
+<td>Psykiatrien Region Midtjylland - PRA Psykiatrisk Klinik 2 - Randers</td></tr>
+<tr><td style="white-space:nowrap">495051000016001<a name="SOR-495051000016001"> </a></td>
+<td>Thy Psyk Amb Thy-Mors</td>
+<td>Thy Psyk Amb Thy-Mors</td></tr>
+<tr><td style="white-space:nowrap">508591000016003<a name="SOR-508591000016003"> </a></td>
+<td>Alb Amb for ADHD Voksne</td>
+<td>Alb Amb for ADHD Voksne</td></tr>
+<tr><td style="white-space:nowrap">576481000016005<a name="SOR-576481000016005"> </a></td>
+<td>Brø Amb Psyk Udviklingshæmmede</td>
+<td>Brø Amb Psyk Udviklingshæmmede</td></tr>
+<tr><td style="white-space:nowrap">603271000016004<a name="SOR-603271000016004"> </a></td>
+<td>PMI R1 Sengeafsnit retspsykiatri - Viborg</td>
+<td>PMI R1 Sengeafsnit retspsykiatri - Viborg</td></tr>
+<tr><td style="white-space:nowrap">603281000016002<a name="SOR-603281000016002"> </a></td>
+<td>PMI R2 Sengeafsnit retspsykiatri - Viborg</td>
+<td>PMI R2 Sengeafsnit retspsykiatri - Viborg</td></tr>
+<tr><td style="white-space:nowrap">603291000016000<a name="SOR-603291000016000"> </a></td>
+<td>PHO O1 Akutsengeafsnit - Horsens</td>
+<td>Psykiatrien Region Midtjylland - PHO O1 Akutsengeafsnit - Horsens</td></tr>
+<tr><td style="white-space:nowrap">625211000016002<a name="SOR-625211000016002"> </a></td>
+<td>Brø Amb Angst og Tvangssygdom</td>
+<td>Brø Amb Angst og Tvangssygdom</td></tr>
+<tr><td style="white-space:nowrap">685871000016000<a name="SOR-685871000016000"> </a></td>
+<td>Alb Amb for Bipolar Lidelse</td>
+<td>Alb Amb for Bipolar Lidelse</td></tr>
+<tr><td style="white-space:nowrap">687931000016002<a name="SOR-687931000016002"> </a></td>
+<td>PMI Særlige Pladser - Viborg</td>
+<td>PMI Særlige Pladser - Viborg</td></tr>
+<tr><td style="white-space:nowrap">694221000016003<a name="SOR-694221000016003"> </a></td>
+<td>Retspsykiatrisk Afdeling - AUH</td>
+<td>Psykiatrien Region Midtjylland - Retspsykiatrisk Afdeling - AUH</td></tr>
+<tr><td style="white-space:nowrap">694231000016001<a name="SOR-694231000016001"> </a></td>
+<td>RET Psykiatri Sengeafsnit for Retspsykiatri - AUH</td>
+<td>Psykiatrien Region Midtjylland - RET Psykiatri Sengeafsnit for Retspsykiatri  - AUH</td></tr>
+<tr><td style="white-space:nowrap">694251000016006<a name="SOR-694251000016006"> </a></td>
+<td>RET Retspsykiatrisk Klinik - AUH</td>
+<td>Psykiatrien Region Midtjylland - RET Retspsykiatrisk Klinik - AUH</td></tr>
+<tr><td style="white-space:nowrap">694271000016004<a name="SOR-694271000016004"> </a></td>
+<td>RET Retspsykiatri - Sengeafsnit 1 - AUH</td>
+<td>RET Retspsykiatri - Sengeafsnit 1 - AUH</td></tr>
+<tr><td style="white-space:nowrap">694281000016002<a name="SOR-694281000016002"> </a></td>
+<td>RET Retspsykiatri - Sengeafsnit 2 - AUH</td>
+<td>RET Retspsykiatri - Sengeafsnit 2 - AUH</td></tr>
+<tr><td style="white-space:nowrap">694291000016000<a name="SOR-694291000016000"> </a></td>
+<td>RET Retspsykiatri - Sengeafsnit 3 - AUH</td>
+<td>RET Retspsykiatri - Sengeafsnit 3 - AUH</td></tr>
+<tr><td style="white-space:nowrap">694301000016001<a name="SOR-694301000016001"> </a></td>
+<td>RET Retspsykiatri - Sengeafsnit 4 - AUH</td>
+<td>RET Retspsykiatri - Sengeafsnit 4 - AUH</td></tr>
+<tr><td style="white-space:nowrap">694331000016005<a name="SOR-694331000016005"> </a></td>
+<td>RET Retspsykiatrisk Opsøgende Team - AUH</td>
+<td>RET Retspsykiatrisk Opsøgende Team - AUH</td></tr>
+<tr><td style="white-space:nowrap">694351000016000<a name="SOR-694351000016000"> </a></td>
+<td>Afdeling for Depression og Angst - AUH</td>
+<td>Afdeling for Depression og Angst - AUH</td></tr>
+<tr><td style="white-space:nowrap">694441000016007<a name="SOR-694441000016007"> </a></td>
+<td>BUA Psykiatrisk Klinik for Unge</td>
+<td>BUA Psykiatrisk Klinik for Unge</td></tr>
+<tr><td style="white-space:nowrap">694461000016008<a name="SOR-694461000016008"> </a></td>
+<td>BUA Børne- og Ungdomspsykiatri - Sengeafsnit</td>
+<td>BUA Børne- og Ungdomspsykiatri - Sengeafsnit</td></tr>
+<tr><td style="white-space:nowrap">694681000016004<a name="SOR-694681000016004"> </a></td>
+<td>BUA Klinik for Mentalobservation - AUH</td>
+<td>Psykiatrien Region Midtjylland - BUA Klinik for Mentalobservation - AUH</td></tr>
+<tr><td style="white-space:nowrap">694841000016009<a name="SOR-694841000016009"> </a></td>
+<td>ADA Klinik for Personlighedsforstyrrelser - AUH</td>
+<td>Psykiatrien Region Midtjylland - ADA Klinik for Personlighedsforstyrrelser - AUH</td></tr>
+<tr><td style="white-space:nowrap">694891000016001<a name="SOR-694891000016001"> </a></td>
+<td>ADA Klinik for Angst og OCD - AUH</td>
+<td>Psykiatrien Region Midtjylland - ADA Klinik for Angst og OCD - AUH</td></tr>
+<tr><td style="white-space:nowrap">694901000016000<a name="SOR-694901000016000"> </a></td>
+<td>ADA Klinik for PTSD og Transkulturel Psykiatri - AUH</td>
+<td>Psykiatrien Region Midtjylland - ADA Klinik for PTSD og Transkulturel Psykiatri - AUH</td></tr>
+<tr><td style="white-space:nowrap">695161000016000<a name="SOR-695161000016000"> </a></td>
+<td>AFP Psykiatri Sengeafsnit for Psykoser - AUH</td>
+<td>Psykiatrien Region Midtjylland - AFP Psykiatri Sengeafsnit for Psykoser - AUH</td></tr>
+<tr><td style="white-space:nowrap">695251000016007<a name="SOR-695251000016007"> </a></td>
+<td>AFP Psykiatrisk Klinik 1 - AUH</td>
+<td>Psykiatrien Region Midtjylland - AFP Psykiatrisk Klinik 1 - AUH</td></tr>
+<tr><td style="white-space:nowrap">695281000016003<a name="SOR-695281000016003"> </a></td>
+<td>AFP Psykiatrisk Klinik 2 - AUH</td>
+<td>Psykiatrien Region Midtjylland - AFP Psykiatrisk Klinik 2 - AUH</td></tr>
+<tr><td style="white-space:nowrap">697531000016008<a name="SOR-697531000016008"> </a></td>
+<td>Psykiatri SYD Overafd. 27</td>
+<td>Psykiatri SYD Overafd. 27</td></tr>
+<tr><td style="white-space:nowrap">698861000016003<a name="SOR-698861000016003"> </a></td>
+<td>Brø Amb Midtv. Affektiv</td>
+<td>Psykiatrien Nordjylland - Brø Amb Midtv. Affektiv</td></tr>
+<tr><td style="white-space:nowrap">884321000016003<a name="SOR-884321000016003"> </a></td>
+<td>PMI Team for psykoser - Silkeborg</td>
+<td>PMI Team for psykoser - Silkeborg</td></tr>
+<tr><td style="white-space:nowrap">884331000016001<a name="SOR-884331000016001"> </a></td>
+<td>PMI Klinik for retspsykiatri - Viborg-Skive</td>
+<td>PMI Klinik for retspsykiatri - Viborg-Skive</td></tr>
+<tr><td style="white-space:nowrap">886951000016001<a name="SOR-886951000016001"> </a></td>
+<td>Psyk. Center Nordsjælland, overafd. - N4</td>
+<td>Region Hovedstadens Psykiatri - Psyk. Center Nordsjælland, overafd. - N4</td></tr>
+<tr><td style="white-space:nowrap">983001000016004<a name="SOR-983001000016004"> </a></td>
+<td>Alm Amb Psykose Aalborg Nord</td>
+<td>Alm Amb Psykose Aalborg Nord</td></tr>
+<tr><td style="white-space:nowrap">983011000016002<a name="SOR-983011000016002"> </a></td>
+<td>Alb Amb Psykose Aalborg Centrum</td>
+<td>Alb Amb Psykose Aalborg Centrum</td></tr>
+<tr><td style="white-space:nowrap">983021000016006<a name="SOR-983021000016006"> </a></td>
+<td>Alb Amb Psykose Aalborg SydØst</td>
+<td>Alb Amb Psykose Aalborg SydØst</td></tr>
+<tr><td style="white-space:nowrap">983031000016008<a name="SOR-983031000016008"> </a></td>
+<td>Alb Amb Psykose Himmerland</td>
+<td>Alb Amb Psykose Himmerland</td></tr>
+<tr><td style="white-space:nowrap">983041000016001<a name="SOR-983041000016001"> </a></td>
+<td>Brø Amb Midtv. Hjør. Psykose</td>
+<td>Psykiatrien Nordjylland - Brø Amb Midtv. Hjør. Psykose</td></tr>
+<tr><td style="white-space:nowrap">983051000016003<a name="SOR-983051000016003"> </a></td>
+<td>Brø Amb Midtv. Brøn. Psykose</td>
+<td>Psykiatrien Nordjylland - Brø Amb Midtv. Brøn. Psykose</td></tr>
+<tr><td style="white-space:nowrap">986621000016007<a name="SOR-986621000016007"> </a></td>
+<td>Regionspsykiatrien Gødstrup</td>
+<td>Regionspsykiatrien Gødstrup</td></tr>
+<tr><td style="white-space:nowrap">986631000016009<a name="SOR-986631000016009"> </a></td>
+<td>RPG Sengeafdeling Regionpsykiatrien - Gødstrup</td>
+<td>RPG Sengeafdeling Regionpsykiatrien - Gødstrup</td></tr>
+<tr><td style="white-space:nowrap">479201000016002<a name="SOR-479201000016002"> </a></td>
+<td>PHO Klinik 1 for Psykiatriske Lidelser - Horsens</td>
+<td>PHO Klinik 1 for Psykiatriske Lidelser - Horsens</td></tr>
+<tr><td style="white-space:nowrap">934471000016008<a name="SOR-934471000016008"> </a></td>
+<td>PHO Team for Retspsykiatri - Horsens</td>
+<td>PHO Team for Retspsykiatri - Horsens</td></tr>
+<tr><td style="white-space:nowrap">391161000016006<a name="SOR-391161000016006"> </a></td>
+<td>PHO Regionspsykiatrien Horsens</td>
+<td>PHO Regionspsykiatrien Horsens</td></tr>
+<tr><td style="white-space:nowrap">884181000016000<a name="SOR-884181000016000"> </a></td>
+<td>PMI Team for OCD og Angstlidelser - Silkeborg</td>
+<td>PMI Team for OCD og Angstlidelser - Silkeborg</td></tr>
+<tr><td style="white-space:nowrap">884201000016001<a name="SOR-884201000016001"> </a></td>
+<td>PMI Team for depression og mani - Silkeborg</td>
+<td>PMI Team for depression og mani - Silkeborg</td></tr>
+<tr><td style="white-space:nowrap">884301000016005<a name="SOR-884301000016005"> </a></td>
+<td>PMI ADHD og Rusmiddelteam - Silkeborg</td>
+<td>PMI ADHD og Rusmiddelteam - Silkeborg</td></tr>
+<tr><td style="white-space:nowrap">695151000016003<a name="SOR-695151000016003"> </a></td>
+<td>Afdeling for Psykoser - AUH</td>
+<td>Afdeling for Psykoser - AUH</td></tr>
+<tr><td style="white-space:nowrap">989231000016003<a name="SOR-989231000016003"> </a></td>
+<td>Hillerød, HI Endokrinologisk og Nefrologisk Overafd. (989231000016003)</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">264781000016005<a name="SOR-264781000016005"> </a></td>
+<td>Herlev, Nefrologisk overafd. B (264781000016005)</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">252441000016006<a name="SOR-252441000016006"> </a></td>
+<td>Rigshospitalet, Nefrologisk Klinik, P (252441000016006)</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">265611000016005<a name="SOR-265611000016005"> </a></td>
+<td>Rønne, Medicinsk overafd. (265611000016005)</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">227011000016003<a name="SOR-227011000016003"> </a></td>
+<td>Holbæk, HOL Medicin – Overafdeling (227011000016003)</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">223181000016000<a name="SOR-223181000016000"> </a></td>
+<td>Roskilde og Nykøbing Falster Sygehus, ROS Medicin – Overafdeling (223181000016000)</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">239831000016009<a name="SOR-239831000016009"> </a></td>
+<td>OUH Nyremedicinsk Afdeling Y (239831000016009)</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">246501000016005<a name="SOR-246501000016005"> </a></td>
+<td>Esbjerg, SVS Medicinsk Område (246501000016005)</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">247441000016006<a name="SOR-247441000016006"> </a></td>
+<td>Fredericia, SLB Medicinske Sygdomme (Kolding) (247441000016006)</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">504361000016006<a name="SOR-504361000016006"> </a></td>
+<td>Sønderborg, SHS Diabetes, Hormon- og Nyresygdomme (504361000016006)</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">453111000016005<a name="SOR-453111000016005"> </a></td>
+<td>Aarhus/Skejby, Nyresygdomme Overafdeling (453111000016005)</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">900231000016007<a name="SOR-900231000016007"> </a></td>
+<td>Holstebro, Gødstrup, Medicinsk Afdeling – RHG (900231000016007)</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">507561000016008<a name="SOR-507561000016008"> </a></td>
+<td>Viborg, Klinik for Nyresygdomme Viborg (507561000016008)</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">275931000016002<a name="SOR-275931000016002"> </a></td>
+<td>Aalborg, Nyremedicinsk område (275931000016002)</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">590021000016006<a name="SOR-590021000016006"> </a></td>
+<td>Amager og Hvidovre Hospital, Gynækologisk sengeafdeling</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">590371000016007<a name="SOR-590371000016007"> </a></td>
+<td>Amager og Hvidovre Hospital, Gynækologisk dagkirurgisk afsnit</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">265661000016007<a name="SOR-265661000016007"> </a></td>
+<td>Bornholms Hospital, Kirurgisk sengeafd.</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">264671000016001<a name="SOR-264671000016001"> </a></td>
+<td>Herlev og gentofte Hospital, Gynækologisk afdeling G-1</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">264711000016000<a name="SOR-264711000016000"> </a></td>
+<td>Herlev og gentofte Hospital, Gynækologisk ambulatorium G-1a</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">219021000016009<a name="SOR-219021000016009"> </a></td>
+<td>Nordsjællands Hospital, HI Gynækologisk Afd., senge</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">218901000016007<a name="SOR-218901000016007"> </a></td>
+<td>Nordsjællands Hospital, HI Gynækologisk Afd., amb.</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">976201000016009<a name="SOR-976201000016009"> </a></td>
+<td>Rigshospitalet, Gynækologisk Klinik GYN, heldøgn</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">226461000016007<a name="SOR-226461000016007"> </a></td>
+<td>Holbæk Gyn afd., HOL Gynækologisk Afd.</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">226531000016003<a name="SOR-226531000016003"> </a></td>
+<td>Holbæk Gyn afd., HOL Gynækologisk Amb.</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">229981000016001<a name="SOR-229981000016001"> </a></td>
+<td>Nykøbing F, NFS Gynækologisk Afd.</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">230071000016009<a name="SOR-230071000016009"> </a></td>
+<td>Nykøbing F, NFS Gynækologisk Amb.</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">222641000016008<a name="SOR-222641000016008"> </a></td>
+<td>Roskilde, ROS Gynækologisk Afd.</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">222751000016004<a name="SOR-222751000016004"> </a></td>
+<td>Roskilde Gyn afd.</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">229441000016002<a name="SOR-229441000016002"> </a></td>
+<td>Slagelse, SLA Gynækologisk Afd.</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">229591000016006<a name="SOR-229591000016006"> </a></td>
+<td>Slagelse, SLA Gynækologisk Amb.</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">246971000016008<a name="SOR-246971000016008"> </a></td>
+<td>Kolding Sygehus, SLB Kvindesygdomme og Fødsler (Kolding)</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">246931000016006<a name="SOR-246931000016006"> </a></td>
+<td>Kolding Sygehus, SLB Kvindesygdomme Ambulatorium (Kolding)</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">238721000016006<a name="SOR-238721000016006"> </a></td>
+<td>OUH Gynækologisk Afsnit (Odense)</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">238741000016001<a name="SOR-238741000016001"> </a></td>
+<td>OUH Gynækologisk Ambulatorium</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">239391000016000<a name="SOR-239391000016000"> </a></td>
+<td>OUH Kirurgisk Afsnit A</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">241141000016008<a name="SOR-241141000016008"> </a></td>
+<td>OUH Urinvejskirurgisk Ambulatorium L</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">501671000016009<a name="SOR-501671000016009"> </a></td>
+<td>SHS Kvindesygdomme Sengeafsnit (Aabenraa)</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">501711000016005<a name="SOR-501711000016005"> </a></td>
+<td>SHS Kvindesygdomme Dagkirurgi (Sønderborg)</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">245971000016004<a name="SOR-245971000016004"> </a></td>
+<td>SVS Kvindesygdomme Afsnit (Esbjerg)</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">245951000016006<a name="SOR-245951000016006"> </a></td>
+<td>SVS Kvindesygdomme Ambulatorium (Esbjerg)</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">453211000016004<a name="SOR-453211000016004"> </a></td>
+<td>AUH Kvindesygdomme</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">453221000016008<a name="SOR-453221000016008"> </a></td>
+<td>AUH, Dagkirurgi - Kvindesygdomme og Fødsler</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">455661000016001<a name="SOR-455661000016001"> </a></td>
+<td>AUH Urinvejskirurgi</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">507481000016002<a name="SOR-507481000016002"> </a></td>
+<td>Hospitalsenhed Midt, Kvindesygdomme og Fødsler Viborg</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">485441000016009<a name="SOR-485441000016009"> </a></td>
+<td>Hospitalsenhed Midt, Kvindeklinikken Viborg</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">899591000016008<a name="SOR-899591000016008"> </a></td>
+<td>Regionshospitalet Gødstrup, Afsnit for Kvindesygdomme Gødstrup - RHG</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">899651000016003<a name="SOR-899651000016003"> </a></td>
+<td>Regionshospitalet Gødstrup, Klinik for Kvindesygdomme Gødstrup - RHG</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">899781000016001<a name="SOR-899781000016001"> </a></td>
+<td>Regionshospitalet Gødstrup, Kvindesygdomme Ambulant Kirurgi Gødstrup - RHG</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">265971000016007<a name="SOR-265971000016007"> </a></td>
+<td>Regionshospitalet Horsens, Sengeafdeling for Kvindesygdomme og Fødsler</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">266001000016005<a name="SOR-266001000016005"> </a></td>
+<td>Regionshospitalet Horsens, Dagkirurgi, Kvindesygdomme</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">271211000016002<a name="SOR-271211000016002"> </a></td>
+<td>Regionshospitalet Randers, Kvindesygdomme og Fødsler - Randers</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">271221000016006<a name="SOR-271221000016006"> </a></td>
+<td>Regionshospitalet Randers, Kvindesygdomsklinikken - Randers</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">275611000016002<a name="SOR-275611000016002"> </a></td>
+<td>Aalborg Universitetshospital, Alb Gyn.-Obst. Afdeling</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">275641000016001<a name="SOR-275641000016001"> </a></td>
+<td>Aalborg Universitetshospital, Alb Gyn. Ambulatorium</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">276431000016003<a name="SOR-276431000016003"> </a></td>
+<td>Aalborg Universitetshospital, Alb Urologisk afd.</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">275661000016000<a name="SOR-275661000016000"> </a></td>
+<td>Aalborg Universitetshospital, Hob Gyn. Ambulatorium Hobro</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">274781000016002<a name="SOR-274781000016002"> </a></td>
+<td>Aalborg Universitetshospital, Thisted, Thy Gyn.-Obst. sengeafd.</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">277201000016005<a name="SOR-277201000016005"> </a></td>
+<td>Regionshospital Nordjylland, Hjr Gyn.Obst. Amb.</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">277161000016004<a name="SOR-277161000016004"> </a></td>
+<td>Regionshospital Nordjylland, Hjr Gyn.-Obst. Sengeafd.</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">464271000016003<a name="SOR-464271000016003"> </a></td>
+<td>Regionshospital Nordjylland, Hjr Dagafsnit for Kvindesygdomme</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">606291000016007<a name="SOR-606291000016007"> </a></td>
+<td>Regionshospital Nordjylland, Hjr Uro-gyn Amb</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">1041431000016004<a name="SOR-1041431000016004"> </a></td>
+<td>Adeas Parken</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">492011000016005<a name="SOR-492011000016005"> </a></td>
+<td>Aleris Privathospitaler, Esbjerg</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">652991000016006<a name="SOR-652991000016006"> </a></td>
+<td>Aleris Privathospitaler, Ringsted</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">491731000016006<a name="SOR-491731000016006"> </a></td>
+<td>Aleris Privathospitaler, København</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">491911000016003<a name="SOR-491911000016003"> </a></td>
+<td>Aleris Privathospitaler, Aalborg</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">491831000016002<a name="SOR-491831000016002"> </a></td>
+<td>Aleris Hospitaler, Aarhus, urologi og gynækologi</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">302311000016004<a name="SOR-302311000016004"> </a></td>
+<td>AROS privathospital, beh. Afsnit</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">293191000016008<a name="SOR-293191000016008"> </a></td>
+<td>Capio A/S - Hellerup sengeafsnit</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">293271000016004<a name="SOR-293271000016004"> </a></td>
+<td>Capio A/S - Odense sengeafsnit</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">596991000016007<a name="SOR-596991000016007"> </a></td>
+<td>Capio A/S - Odense ambulatorium</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">688881000016009<a name="SOR-688881000016009"> </a></td>
+<td>CPH Privathospital A/S, kirurgisk afsnit</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">299421000016004<a name="SOR-299421000016004"> </a></td>
+<td>Gråbrødreklinikken, beh. afsnit</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">293511000016005<a name="SOR-293511000016005"> </a></td>
+<td>Privathospitalet Danmark, Charlottenlund</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">574681000016001<a name="SOR-574681000016001"> </a></td>
+<td>Privathospitalet Mølholm Aarhus, Højbjerg beh.afsnit</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">300771000016007<a name="SOR-300771000016007"> </a></td>
+<td>Privathospitalet Mølholm Vejle, beh. afsnit</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">298241000016003<a name="SOR-298241000016003"> </a></td>
+<td>Privathospitalet Møn, Gynækologisk sengeafsnit</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">1048581000016009<a name="SOR-1048581000016009"> </a></td>
+<td>Søernes Privathospital, beh.afsnit</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">106021000016002<a name="SOR-106021000016002"> </a></td>
+<td>Aagaard Gynækologiske Klinik</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">404261000016009<a name="SOR-404261000016009"> </a></td>
+<td>Aarhus universitetshospital</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">8031000016007<a name="SOR-8031000016007"> </a></td>
+<td>Rigshospitalet</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">682641000016004<a name="SOR-682641000016004"> </a></td>
+<td>Afdeling for blodprøver og biokemi, Aarhus Universitetshospital</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">256631000016003<a name="SOR-256631000016003"> </a></td>
+<td>Afdeling for Klinisk Biokemi – Blegdamsvej</td>
+<td></td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://trifork.com">Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S</a>.  Package dk.kip.rkkp.fhir.ig.core#2.11.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 15, 2025 08:19+0000">2025-05-15</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
