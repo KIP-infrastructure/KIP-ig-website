@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Hip joint arthroplasty - components - KIP Infrastructure v2.11.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3.821"}
+    h3,h4,h5,h6{--heading-prefix:"3.821"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">KIP Infrastructure</span>
+            <br/>
+            <span style="display:inline-block;">2.11.1 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Search Parameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Extension Definitions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Code Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Hip joint arthroplasty - components</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KIP Infrastructure (v2.11.1: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-HipJointArthroplastyComponent.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-HipJointArthroplastyComponent.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-HipJointArthroplastyComponent.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: Hip joint arthroplasty - components
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://kip.rkkp.dk/fhir/CodeSystem/HipJointArthroplastyComponent<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/HipJointArthroplastyComponent"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">2.11.1<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/HipJointArthroplastyComponent|2.11.1"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2022-11-16
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">HipJointArthroplastyComponent</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Hip joint arthroplasty - components</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-KomponentAcetabulumDHR.html">KomponentAcetabulumDHR</a></li>
+ <li><a href="ValueSet-KomponentFemurDHR.html">KomponentFemurDHR</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem HipJointArthroplastyComponent</b></p><a name="HipJointArthroplastyComponent"> </a><a name="hcHipJointArthroplastyComponent"> </a><a name="HipJointArthroplastyComponent-en-US"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/HipJointArthroplastyComponent</code> defines the following codes:</p>
+<table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>
+<tr><td style="white-space:nowrap">depuy_bi_mentum_cemented_cup<a name="HipJointArthroplastyComponent-depuy_bi_mentum_cemented_cup"> </a></td>
+<td>DePuy: BI MENTUM CEMENTED CUP</td>
+<td>DePuy: BI MENTUM CEMENTED CUP</td></tr>
+<tr><td style="white-space:nowrap">depuy_bi_mentum_plus_cup<a name="HipJointArthroplastyComponent-depuy_bi_mentum_plus_cup"> </a></td>
+<td>DePuy: BI MENTUM PLUS CUP</td>
+<td>DePuy: BI MENTUM PLUS CUP</td></tr>
+<tr><td style="white-space:nowrap">depuy_bi_mentum_pressfit_cup<a name="HipJointArthroplastyComponent-depuy_bi_mentum_pressfit_cup"> </a></td>
+<td>DePuy: BI MENTUM PRESSFIT CUP</td>
+<td>DePuy: BI MENTUM PRESSFIT CUP</td></tr>
+<tr><td style="white-space:nowrap">depuy_bi_mentum_revision_cup<a name="HipJointArthroplastyComponent-depuy_bi_mentum_revision_cup"> </a></td>
+<td>DePuy: BI MENTUM REVISION CUP</td>
+<td>DePuy: BI MENTUM REVISION CUP</td></tr>
+<tr><td style="white-space:nowrap">depuy_pinnacle_gripton<a name="HipJointArthroplastyComponent-depuy_pinnacle_gripton"> </a></td>
+<td>DePuy: Pinnacle Gription</td>
+<td>DePuy: Pinnacle Gription</td></tr>
+<tr><td style="white-space:nowrap">depuy_pinnacle_porocoat<a name="HipJointArthroplastyComponent-depuy_pinnacle_porocoat"> </a></td>
+<td>DePuy: Pinnacle Porocoat</td>
+<td>DePuy: Pinnacle Porocoat</td></tr>
+<tr><td style="white-space:nowrap">implant_cast_mutars_lumic<a name="HipJointArthroplastyComponent-implant_cast_mutars_lumic"> </a></td>
+<td>Implantcast: Mutars Lumic</td>
+<td>Implantcast: Mutars Lumic</td></tr>
+<tr><td style="white-space:nowrap">link_lubinus<a name="HipJointArthroplastyComponent-link_lubinus"> </a></td>
+<td>Link: Lubinus</td>
+<td>Link: Lubinus</td></tr>
+<tr><td style="white-space:nowrap">ortotech_saturne<a name="HipJointArthroplastyComponent-ortotech_saturne"> </a></td>
+<td>Ortotech: Saturne</td>
+<td>Ortotech: Saturne</td></tr>
+<tr><td style="white-space:nowrap">ortotech_saturne_reconstruction<a name="HipJointArthroplastyComponent-ortotech_saturne_reconstruction"> </a></td>
+<td>Ortotech: Saturne rekonstruktion</td>
+<td>Ortotech: Saturne rekonstruktion</td></tr>
+<tr><td style="white-space:nowrap">serf_fischer_medical_novae_coptos_th<a name="HipJointArthroplastyComponent-serf_fischer_medical_novae_coptos_th"> </a></td>
+<td>Serf/Fischer Medical: Novae Coptos TH (Serf)</td>
+<td>Serf: Novae Coptos TH</td></tr>
+<tr><td style="white-space:nowrap">serf_fischer_medical_novae_e_th<a name="HipJointArthroplastyComponent-serf_fischer_medical_novae_e_th"> </a></td>
+<td>Serf/Fischer Medical: Novae E TH (Serf) </td>
+<td>Serf: Novae E TH</td></tr>
+<tr><td style="white-space:nowrap">serf_fischer_medical_novae_stick<a name="HipJointArthroplastyComponent-serf_fischer_medical_novae_stick"> </a></td>
+<td>Serf/Fischer Medical: Novae Stick (Serf)</td>
+<td>Serf: Novae Stick</td></tr>
+<tr><td style="white-space:nowrap">serf_fischer_medical_novae_sunfit<a name="HipJointArthroplastyComponent-serf_fischer_medical_novae_sunfit"> </a></td>
+<td>Serf/Fischer Medical: Novae Sunfit (Serf)</td>
+<td>Serf: Novae Sunfit</td></tr>
+<tr><td style="white-space:nowrap">smith&amp;nephew_bhr<a name="HipJointArthroplastyComponent-smith.38nephew_bhr"> </a></td>
+<td>Smith &amp; Nephew: BHR</td>
+<td>Smith &amp; Nephew: BHR (Acetabulum + Femur)</td></tr>
+<tr><td style="white-space:nowrap">smith&amp;nephew_polarcup<a name="HipJointArthroplastyComponent-smith.38nephew_polarcup"> </a></td>
+<td>Smith &amp; Nephew: Polarcup</td>
+<td>Smith &amp; Nephew: Polarcup</td></tr>
+<tr><td style="white-space:nowrap">smith&amp;nephew_r3<a name="HipJointArthroplastyComponent-smith.38nephew_r3"> </a></td>
+<td>Smith &amp; Nephew: R3</td>
+<td>Smith &amp; Nephew: R3</td></tr>
+<tr><td style="white-space:nowrap">stryker_contemporary<a name="HipJointArthroplastyComponent-stryker_contemporary"> </a></td>
+<td>Stryker: Contemporary</td>
+<td>Stryker: Contemporary</td></tr>
+<tr><td style="white-space:nowrap">stryker_exeter_rimfit_x3<a name="HipJointArthroplastyComponent-stryker_exeter_rimfit_x3"> </a></td>
+<td>Stryker: Exeter Rimfit X3</td>
+<td>Stryker: Exeter Rimfit X3</td></tr>
+<tr><td style="white-space:nowrap">stryker_restoration_anatomical<a name="HipJointArthroplastyComponent-stryker_restoration_anatomical"> </a></td>
+<td>Stryker: Restoration Anatomical (Stryker)</td>
+<td>Stryker: Restoration Anatomical</td></tr>
+<tr><td style="white-space:nowrap">stryker_trident_ad_hemispheric<a name="HipJointArthroplastyComponent-stryker_trident_ad_hemispheric"> </a></td>
+<td>Stryker: Trident AD hemisfærisk</td>
+<td>Stryker: Trident AD hemisfærisk</td></tr>
+<tr><td style="white-space:nowrap">stryker_trident_ad_psl<a name="HipJointArthroplastyComponent-stryker_trident_ad_psl"> </a></td>
+<td>Stryker: Trident AD PSL</td>
+<td>Stryker: Trident AD PSL</td></tr>
+<tr><td style="white-space:nowrap">stryker_trident_all_poly<a name="HipJointArthroplastyComponent-stryker_trident_all_poly"> </a></td>
+<td>Stryker: Trident All Poly</td>
+<td>Stryker: Trident All Poly</td></tr>
+<tr><td style="white-space:nowrap">stryker_trident_ii<a name="HipJointArthroplastyComponent-stryker_trident_ii"> </a></td>
+<td>Stryker: Trident II</td>
+<td>Stryker: Trident II</td></tr>
+<tr><td style="white-space:nowrap">stryker_trident_ii_psl<a name="HipJointArthroplastyComponent-stryker_trident_ii_psl"> </a></td>
+<td>Stryker: Trident II PSL</td>
+<td>Stryker: Trident II PSL</td></tr>
+<tr><td style="white-space:nowrap">stryker_trident_ii_tritanium<a name="HipJointArthroplastyComponent-stryker_trident_ii_tritanium"> </a></td>
+<td>Stryker: Trident II Tritanium</td>
+<td>Stryker: Trident II Tritanium</td></tr>
+<tr><td style="white-space:nowrap">stryker_trident_tritanium_primary<a name="HipJointArthroplastyComponent-stryker_trident_tritanium_primary"> </a></td>
+<td>Stryker: Trident Tritanium primary</td>
+<td>Stryker: Trident Tritanium primary</td></tr>
+<tr><td style="white-space:nowrap">stryker_trident_tritanium_revision<a name="HipJointArthroplastyComponent-stryker_trident_tritanium_revision"> </a></td>
+<td>Stryker: Trident Tritanium Revision</td>
+<td>Stryker: Trident Tritanium Revision</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_advantage<a name="HipJointArthroplastyComponent-zimmer_biomet_advantage"> </a></td>
+<td>Zimmer Biomet: Avantage</td>
+<td>Zimmer Biomet: Avantage</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_exceed_abt<a name="HipJointArthroplastyComponent-zimmer_biomet_exceed_abt"> </a></td>
+<td>Zimmer Biomet: Exceed ABT</td>
+<td>Zimmer Biomet: Exceed ABT</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_exceed_cemented_flanged_e1<a name="HipJointArthroplastyComponent-zimmer_biomet_exceed_cemented_flanged_e1"> </a></td>
+<td>Zimmer Biomet: Exceed Cemented Flanged E1</td>
+<td>Zimmer Biomet: Exceed Cemented Flanged E1</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_exceed_cemented_muller_e1<a name="HipJointArthroplastyComponent-zimmer_biomet_exceed_cemented_muller_e1"> </a></td>
+<td>Zimmer Biomet: Exceed Cemented Muller E1</td>
+<td>Zimmer Biomet: Exceed Cemented Muller E1</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_exceed_cemented_non_flanged_e1<a name="HipJointArthroplastyComponent-zimmer_biomet_exceed_cemented_non_flanged_e1"> </a></td>
+<td>Zimmer Biomet: Exceed Cemented Non Flanged E1</td>
+<td>Zimmer Biomet: Exceed Cemented Non Flanged E1</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_g7_osseoti_coating<a name="HipJointArthroplastyComponent-zimmer_biomet_g7_osseoti_coating"> </a></td>
+<td>Zimmer Biomet: G7 OsseoTi coating </td>
+<td>Zimmer Biomet: G7 OsseoTi coating </td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_g7_pps<a name="HipJointArthroplastyComponent-zimmer_biomet_g7_pps"> </a></td>
+<td>Zimmer: G7 PPS</td>
+<td>Zimmer: G7 PPS</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_mallory_head<a name="HipJointArthroplastyComponent-zimmer_biomet_mallory_head"> </a></td>
+<td>Zimmer Biomet: Mallory-Head</td>
+<td>Zimmer Biomet: Mallory-Head</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_mueller<a name="HipJointArthroplastyComponent-zimmer_biomet_mueller"> </a></td>
+<td>Zimmer Biomet: Müller</td>
+<td>Zimmer Biomet: Müller</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_regenerex_revision_acetabular<a name="HipJointArthroplastyComponent-zimmer_biomet_regenerex_revision_acetabular"> </a></td>
+<td>Zimmer Biomet: Regenerex &trade; Revision Acetabular</td>
+<td>Zimmer Biomet: Regenerex &trade; Revision Acetabular</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_tmt_continuum<a name="HipJointArthroplastyComponent-zimmer_biomet_tmt_continuum"> </a></td>
+<td>Zimmer Biomet: TMT Continuum (Zimmer-Biomet)</td>
+<td>Zimmer Biomet: TMT Continuum</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_tmt_modular_cup<a name="HipJointArthroplastyComponent-zimmer_biomet_tmt_modular_cup"> </a></td>
+<td>Zimmer Biomet: TMT Modular Cup</td>
+<td>Zimmer Biomet: TMT Modular Cup</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_tmt_revision<a name="HipJointArthroplastyComponent-zimmer_biomet_tmt_revision"> </a></td>
+<td>Zimmer Biomet: TMT Revision</td>
+<td>Zimmer Biomet: TMARS</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_trilogy<a name="HipJointArthroplastyComponent-zimmer_biomet_trilogy"> </a></td>
+<td>Zimmer Biomet: Trilogy</td>
+<td>Zimmer Biomet: Trilogy</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_trilogy_it<a name="HipJointArthroplastyComponent-zimmer_biomet_trilogy_it"> </a></td>
+<td>Zimmer: Trilogy IT</td>
+<td>Zimmer: Trilogy IT</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_zca<a name="HipJointArthroplastyComponent-zimmer_biomet_zca"> </a></td>
+<td>Zimmer Biomet: ZCA</td>
+<td>Zimmer Biomet: ZCA</td></tr>
+<tr><td style="white-space:nowrap">depuy_corail_collar<a name="HipJointArthroplastyComponent-depuy_corail_collar"> </a></td>
+<td>DePuy: Corail m/krave</td>
+<td>DePuy: Corail m/krave</td></tr>
+<tr><td style="white-space:nowrap">depuy_corail_without_collar<a name="HipJointArthroplastyComponent-depuy_corail_without_collar"> </a></td>
+<td>DePuy: Corail u/krave</td>
+<td>DePuy: Corail u/krave</td></tr>
+<tr><td style="white-space:nowrap">depuy_corail_revision_stem<a name="HipJointArthroplastyComponent-depuy_corail_revision_stem"> </a></td>
+<td>DePuy: Corail Revision Stem - KAR</td>
+<td>DePuy: Corail Revision Stem - KAR</td></tr>
+<tr><td style="white-space:nowrap">depuy_c_stem_amt<a name="HipJointArthroplastyComponent-depuy_c_stem_amt"> </a></td>
+<td>DePuy: C-stem AMT</td>
+<td>DePuy: C-stem AMT</td></tr>
+<tr><td style="white-space:nowrap">depuy_summit<a name="HipJointArthroplastyComponent-depuy_summit"> </a></td>
+<td>DePuy: Summit</td>
+<td>DePuy: Summit</td></tr>
+<tr><td style="white-space:nowrap">implantcast_mutars_proximal_femoral_replacement<a name="HipJointArthroplastyComponent-implantcast_mutars_proximal_femoral_replacement"> </a></td>
+<td>Implantcast: Mutars proksimal femoral replacement</td>
+<td>Implantcast: Mutars proksimal femoral replacement</td></tr>
+<tr><td style="white-space:nowrap">lima_h_max_lateralized<a name="HipJointArthroplastyComponent-lima_h_max_lateralized"> </a></td>
+<td>Lima: H-MAX: Lateralized</td>
+<td>Lima: H-MAX: Lateralized</td></tr>
+<tr><td style="white-space:nowrap">lima_h_max_standard<a name="HipJointArthroplastyComponent-lima_h_max_standard"> </a></td>
+<td>Lima: H-MAX: Standard</td>
+<td>Lima: H-MAX: Standard</td></tr>
+<tr><td style="white-space:nowrap">link_link_mp<a name="HipJointArthroplastyComponent-link_link_mp"> </a></td>
+<td>Link: Link MP</td>
+<td>Link: Link MP</td></tr>
+<tr><td style="white-space:nowrap">link_lubinus_sp_ii<a name="HipJointArthroplastyComponent-link_lubinus_sp_ii"> </a></td>
+<td>Link: Lubinus SP II</td>
+<td>Link: Lubinus SP II</td></tr>
+<tr><td style="white-space:nowrap">peter_brehm_gmbh_mrp_titan<a name="HipJointArthroplastyComponent-peter_brehm_gmbh_mrp_titan"> </a></td>
+<td>Peter Brehm GmbH: MRP-Titan </td>
+<td>Peter Brehm GmbH: MRP-Titan </td></tr>
+<tr><td style="white-space:nowrap">smith&amp;nephew_polarstem<a name="HipJointArthroplastyComponent-smith.38nephew_polarstem"> </a></td>
+<td>Smith &amp; Nephew: Polarstem</td>
+<td>Smith &amp; Nephew: Polarstem</td></tr>
+<tr><td style="white-space:nowrap">stryker_acolade_ii<a name="HipJointArthroplastyComponent-stryker_acolade_ii"> </a></td>
+<td>Stryker: Accolade II </td>
+<td>Stryker: Accolade II </td></tr>
+<tr><td style="white-space:nowrap">stryker_exeter_primary_v40<a name="HipJointArthroplastyComponent-stryker_exeter_primary_v40"> </a></td>
+<td>Stryker: Exeter Primary V40</td>
+<td>Stryker: Exeter Primary V40</td></tr>
+<tr><td style="white-space:nowrap">stryker_gmrs_proximal_femoral_component<a name="HipJointArthroplastyComponent-stryker_gmrs_proximal_femoral_component"> </a></td>
+<td>Stryker: GMRS Proximal Femoral Component (Stryker)</td>
+<td>Stryker: GMRS Proximal Femoral Component</td></tr>
+<tr><td style="white-space:nowrap">stryker_restoration_modular<a name="HipJointArthroplastyComponent-stryker_restoration_modular"> </a></td>
+<td>Stryker: Restoration modular</td>
+<td>Stryker: Restoration modular</td></tr>
+<tr><td style="white-space:nowrap">viking_medical_cfp<a name="HipJointArthroplastyComponent-viking_medical_cfp"> </a></td>
+<td>Viking Medical: C.F.P.</td>
+<td>Viking Medical: C.F.P.</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_arcos_revision<a name="HipJointArthroplastyComponent-zimmer_biomet_arcos_revision"> </a></td>
+<td>Zimmer Biomet: Arcos revision</td>
+<td>Zimmer Biomet: Arcos revision</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_avenir_cemented_stem<a name="HipJointArthroplastyComponent-zimmer_biomet_avenir_cemented_stem"> </a></td>
+<td>Zimmer Biomet: Avenir cemented stem</td>
+<td>Zimmer Biomet: Avenir cemented stem</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_avenir_cementless_stem<a name="HipJointArthroplastyComponent-zimmer_biomet_avenir_cementless_stem"> </a></td>
+<td>Zimmer Biomet: Avenir cementless stem </td>
+<td>Zimmer Biomet: Avenir cementless stem</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_avenir_complete<a name="HipJointArthroplastyComponent-zimmer_biomet_avenir_complete"> </a></td>
+<td>Zimmer Biomet: Avenir complete</td>
+<td>Zimmer Biomet: Avenir complete</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_bimetrix_without_collar_chrome_cobalt<a name="HipJointArthroplastyComponent-zimmer_biomet_bimetrix_without_collar_chrome_cobalt"> </a></td>
+<td>Zimmer Biomet: Bimetric u/krave chrom/cobolt</td>
+<td>Zimmer Biomet: Bimetric u/krave chrom/cobolt</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_bimetric_without_collar_titaneum<a name="HipJointArthroplastyComponent-zimmer_biomet_bimetric_without_collar_titaneum"> </a></td>
+<td>Zimmer Biomet: Bimetric u/krave titaneum</td>
+<td>Zimmer Biomet: Bimetric u/krave titaneum</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_cls_spotorno<a name="HipJointArthroplastyComponent-zimmer_biomet_cls_spotorno"> </a></td>
+<td>Zimmer Biomet: CLS Spotorno</td>
+<td>Zimmer Biomet: CLS Spotorno</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_cpt<a name="HipJointArthroplastyComponent-zimmer_biomet_cpt"> </a></td>
+<td>Zimmer Biomet: CPT</td>
+<td>Zimmer Biomet: CPT</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_echo_bi_metric_hip_stem_full_proximal_profile<a name="HipJointArthroplastyComponent-zimmer_biomet_echo_bi_metric_hip_stem_full_proximal_profile"> </a></td>
+<td>Zimmer Biomet: Echo Bi-metric Hip Stem Full Proximal Profile</td>
+<td>Zimmer Biomet: Echo Bi-metric Hip Stem Full Proximal Profile</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_echo_bi_metric_reduced_proximal_profile<a name="HipJointArthroplastyComponent-zimmer_biomet_echo_bi_metric_reduced_proximal_profile"> </a></td>
+<td>Zimmer Biomet: Echo Bi-Metric Reduceret Proximal Profil</td>
+<td>Zimmer Biomet: Echo Bi-Metric Reduceret Proximal Profil</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_fitmore<a name="HipJointArthroplastyComponent-zimmer_biomet_fitmore"> </a></td>
+<td>Zimmer Biomet: Fitmore (Zimmer-Biomet) </td>
+<td>Zimmer Biomet: Fitmore</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_ms_30<a name="HipJointArthroplastyComponent-zimmer_biomet_ms_30"> </a></td>
+<td>Zimmer Biomet: MS-30 (Zimmer-Biomet)</td>
+<td>Zimmer Biomet: MS-30</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_primoris<a name="HipJointArthroplastyComponent-zimmer_biomet_primoris"> </a></td>
+<td>Zimmer Biomet: Primoris</td>
+<td>Zimmer Biomet: Primoris</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_revitan_revision_hip_system<a name="HipJointArthroplastyComponent-zimmer_biomet_revitan_revision_hip_system"> </a></td>
+<td>Zimmer Biomet: Revitan Revision Hip System</td>
+<td>Zimmer Biomet: Revitan Revision Hip System</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_stanmore<a name="HipJointArthroplastyComponent-zimmer_biomet_stanmore"> </a></td>
+<td>Zimmer Biomet: Stanmore</td>
+<td>Zimmer Biomet: Stanmore</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_taperloc<a name="HipJointArthroplastyComponent-zimmer_biomet_taperloc"> </a></td>
+<td>Zimmer Biomet: Taperloc</td>
+<td>Zimmer Biomet: Taperloc</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_wagner_cone<a name="HipJointArthroplastyComponent-zimmer_biomet_wagner_cone"> </a></td>
+<td>Zimmer Biomet: Wagner Cone</td>
+<td>Zimmer Biomet: Wagner Cone</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_wagner_sl<a name="HipJointArthroplastyComponent-zimmer_biomet_wagner_sl"> </a></td>
+<td>Zimmer Biomet: Wagner SL</td>
+<td>Zimmer Biomet: Wagner SL</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_zmr_porous_coated<a name="HipJointArthroplastyComponent-zimmer_biomet_zmr_porous_coated"> </a></td>
+<td>Zimmer Biomet: ZMR porous-coated</td>
+<td>Zimmer Biomet: ZMR porous-coated</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_zmr_splined<a name="HipJointArthroplastyComponent-zimmer_biomet_zmr_splined"> </a></td>
+<td>Zimmer Biomet: ZMR splined</td>
+<td>Zimmer Biomet: ZMR splined</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_zmr_taper<a name="HipJointArthroplastyComponent-zimmer_biomet_zmr_taper"> </a></td>
+<td>Zimmer Biomet: ZMR Taper</td>
+<td>Zimmer Biomet: ZMR Taper</td></tr>
+<tr><td style="white-space:nowrap">zimmer_biomet_zmr_taper_xl<a name="HipJointArthroplastyComponent-zimmer_biomet_zmr_taper_xl"> </a></td>
+<td>Zimmer Biomet: ZMR Taper XL</td>
+<td>Zimmer Biomet: ZMR Taper XL</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://trifork.com">Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S</a>.  Package dk.kip.rkkp.fhir.ig.core#2.11.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 23, 2025 11:25+0000">2025-05-23</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

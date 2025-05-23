@@ -1,0 +1,563 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Komponent - femur (DKR) - JSON Representation - KIP Infrastructure v2.11.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3.348"}
+    h3,h4,h5,h6{--heading-prefix:"3.348"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">KIP Infrastructure</span>
+            <br/>
+            <span style="display:inline-block;">2.11.1 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Search Parameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Extension Definitions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Code Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Komponent - femur (DKR)</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">This page is part of the KIP Infrastructure (v2.11.1: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ValueSet-KomponentFemurDKR.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-KomponentFemurDKR.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-KomponentFemurDKR.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Komponent - femur (DKR) - JSON Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2025-03-04
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ValueSet-KomponentFemurDKR.json" no-download="true">Raw json</a> | <a href="ValueSet-KomponentFemurDKR.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "KomponentFemurDKR",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet KomponentFemurDKR&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;KomponentFemurDKR\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcKomponentFemurDKR\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;KomponentFemurDKR-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html\&quot;&gt;&lt;code&gt;https://kip.rkkp.dk/fhir/CodeSystem/KneeJointArthroplastyComponent&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-arthrosurface_hemicap\&quot;&gt;arthrosurface_hemicap&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arthrosurface: HemiCAP&lt;/td&gt;&lt;td&gt;Arthrosurface: HemiCAP (Femur)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-arthrosurface_hemicap_pf\&quot;&gt;arthrosurface_hemicap_pf&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arthrosurface: Hemicap PF&lt;/td&gt;&lt;td&gt;Arthrosurface: Hemicap PF (Femur)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-arthrosurface_unicap\&quot;&gt;arthrosurface_unicap&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arthrosurface: Unicap&lt;/td&gt;&lt;td&gt;Arthrosurface: Unicap (Femur + Tibia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-episealer_condyle_solo\&quot;&gt;episealer_condyle_solo&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Episurf Medical: Episealer Condyle Solo&lt;/td&gt;&lt;td&gt;Episurf Medical: Episealer Condyle Solo (Femur)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-depuy_attune_cr\&quot;&gt;depuy_attune_cr&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Johnson &amp;amp; Johnson: Attune CR&lt;/td&gt;&lt;td&gt;Johnson &amp;amp; Johnson: Attune CR (Femur)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-johnson.38johnson_attune_crs\&quot;&gt;johnson&amp;amp;johnson_attune_crs&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Johnson &amp;amp; Johnson: Attune CRS (Constrained Revision System)&lt;/td&gt;&lt;td&gt;Johnson &amp;amp; Johnson: Attune CRS (Constrained Revision System) (Femur)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-depuy_limb_preservation_system\&quot;&gt;depuy_limb_preservation_system&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Johnson &amp;amp; Johnson: Limb Preservation System&lt;/td&gt;&lt;td&gt;Johnson &amp;amp; Johnson: Limb Preservation System (Femur)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-limb_preservation_system_distal_femur\&quot;&gt;limb_preservation_system_distal_femur&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Johnson &amp;amp; Johnson: Limb Preservation System Distal Femur&lt;/td&gt;&lt;td&gt;Limb Preservation System Distal Femur (Femur)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-johnson.38johnson_pfc_sigma_cruciate_retaining\&quot;&gt;johnson&amp;amp;johnson_pfc_sigma_cruciate_retaining&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Johnson &amp;amp; Johnson: PFC Sigma Cruciate-Retaining&lt;/td&gt;&lt;td&gt;Johnson &amp;amp; Johnson: PFC Sigma Cruciate-Retaining (Femur + Tibia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-johnson.38johnson_pfc_sigma_cruciate_substituting\&quot;&gt;johnson&amp;amp;johnson_pfc_sigma_cruciate_substituting&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Johnson &amp;amp; Johnson: PFC Sigma Cruciate-Substituting&lt;/td&gt;&lt;td&gt;Johnson &amp;amp; Johnson: PFC Sigma Cruciate-Substituting (Femur)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-johnson.38johnson_pfc_sigma_tc3\&quot;&gt;johnson&amp;amp;johnson_pfc_sigma_tc3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Johnson &amp;amp; Johnson: PFC Sigma TC3 &lt;/td&gt;&lt;td&gt;Johnson &amp;amp; Johnson: PFC Sigma TC3 (Femur)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-depuy_sigma_hp_partiel_knee\&quot;&gt;depuy_sigma_hp_partiel_knee&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Johnson &amp;amp; Johnson: Sigma HP Partial Knee&lt;/td&gt;&lt;td&gt;DePuy: Sigma HP partial knee (Femur + Tibia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-johnson.38johnson_s_rom_noiles\&quot;&gt;johnson&amp;amp;johnson_s_rom_noiles&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Johnson &amp;amp; Johnson: S-ROM Noiles&lt;/td&gt;&lt;td&gt;Johnson &amp;amp; Johnson: S-ROM Noiles (Femur + Tibia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-physica_cr\&quot;&gt;physica_cr&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lima: Physica CR&lt;/td&gt;&lt;td&gt;Lima: Physica CR (Femur + Tibia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-physica_kr\&quot;&gt;physica_kr&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lima: Physica KR&lt;/td&gt;&lt;td&gt;Lima: Physica KR (Femur + Tibia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-physica_ps\&quot;&gt;physica_ps&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lima: Physica PS&lt;/td&gt;&lt;td&gt;Lima: Physica PS (Femur + Tibia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-link_endo_model_rotational\&quot;&gt;link_endo_model_rotational&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Link: Endo-Model Rotational&lt;/td&gt;&lt;td&gt;LINK: Endo-Model Rotational (Femur + Tibia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-link_endo_model_total_hinge\&quot;&gt;link_endo_model_total_hinge&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Link: Endo-Model Total Hinge&lt;/td&gt;&lt;td&gt;LINK: Endo-Model Total Hinge (Femur + Tibia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-megasystem_c\&quot;&gt;megasystem_c&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Link: Megasystem C&lt;/td&gt;&lt;td&gt;LINK: Megasystem C (Femur + Tibia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-link_st_georg\&quot;&gt;link_st_georg&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Link: St. Georg &lt;/td&gt;&lt;td&gt;LINK: St. Georg (Femur + Tibia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-smith.38nephew_competitor_pfj\&quot;&gt;smith&amp;amp;nephew_competitor_pfj&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Smith &amp;amp; Nephew: Competitor PFJ&lt;/td&gt;&lt;td&gt;Smith &amp;amp; Nephew: Competitor PFJ (Femur)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-smith.38nephew_genesis_cruciate_retaining\&quot;&gt;smith&amp;amp;nephew_genesis_cruciate_retaining&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Smith &amp;amp; Nephew: Genesis Cruciate-Retaining&lt;/td&gt;&lt;td&gt;Smith &amp;amp; Nephew: Genesis Cruciate-Retaining (Femur)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-smith.38nephew_genesis_legion_cr_oxinium\&quot;&gt;smith&amp;amp;nephew_genesis_legion_cr_oxinium&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Smith &amp;amp; Nephew: Legion CR Oxinium &lt;/td&gt;&lt;td&gt;Smith &amp;amp; Nephew: Legion CR Oxinium (Femur)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-smith.38nephew_genesis_profix_posterior_stabilized\&quot;&gt;smith&amp;amp;nephew_genesis_profix_posterior_stabilized&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Smith &amp;amp; Nephew: Profix Posterior Stabilized&lt;/td&gt;&lt;td&gt;Smith &amp;amp; Nephew: Profix Posterior Stabilized (Femur)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-smith.38nephew_genesis_profix_revision\&quot;&gt;smith&amp;amp;nephew_genesis_profix_revision&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Smith &amp;amp; Nephew: Profix Revision&lt;/td&gt;&lt;td&gt;Smith &amp;amp; Nephew: Profix Revision (Femur + Tibia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-stryker_howmetica_avon\&quot;&gt;stryker_howmetica_avon&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stryker/Howmetica: Avon&lt;/td&gt;&lt;td&gt;Stryker/Howmetica: Avon (Femur)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-stryker_gmrs\&quot;&gt;stryker_gmrs&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stryker: GMRS&lt;/td&gt;&lt;td&gt;Stryker: GMRS (Femur + Tibia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-stryker_modular_rotating_hinge\&quot;&gt;stryker_modular_rotating_hinge&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stryker: Modular Rotating Hinge &lt;/td&gt;&lt;td&gt;Stryker: Modular Rotating Hinge (Femur + Tibia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-stryker_restoris_pfa\&quot;&gt;stryker_restoris_pfa&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stryker: Restoris PFA&lt;/td&gt;&lt;td&gt;Stryker: Restoris PFA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-stryker_restoris_medial_uni\&quot;&gt;stryker_restoris_medial_uni&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stryker: Restoris Medial Uni&lt;/td&gt;&lt;td&gt;Stryker: Restoris Medial Uni&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-stryker_restoris_lateral_uni\&quot;&gt;stryker_restoris_lateral_uni&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stryker: Restoris Lateral Uni&lt;/td&gt;&lt;td&gt;Stryker: Restoris Lateral Uni&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-stryker_scorpio_cr\&quot;&gt;stryker_scorpio_cr&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stryker: Scorpio CR&lt;/td&gt;&lt;td&gt;Stryker: Scorpio CR (Femur)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-stryker_scorpio_ps\&quot;&gt;stryker_scorpio_ps&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stryker: Scorpio PS&lt;/td&gt;&lt;td&gt;Stryker: Scorpio PS (Femur)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-stryker_scorpio_ts\&quot;&gt;stryker_scorpio_ts&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stryker: Scorpio TS&lt;/td&gt;&lt;td&gt;Stryker: Scorpio TS (Femur + Tibia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-stryker_triathlon_cr\&quot;&gt;stryker_triathlon_cr&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stryker: Triathlon CR&lt;/td&gt;&lt;td&gt;Stryker: Triathlon CR (Femur)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-stryker_thriathlon_pkr\&quot;&gt;stryker_thriathlon_pkr&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stryker: Triathlon PKR&lt;/td&gt;&lt;td&gt;Stryker: Triathlon PKR (Femur + Tibia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-stryker_thriathlon_ps\&quot;&gt;stryker_thriathlon_ps&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stryker: Triathlon PS &lt;/td&gt;&lt;td&gt;Stryker: Triathlon PS (Femur)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-stryker_thriathlon_ts\&quot;&gt;stryker_thriathlon_ts&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stryker: Triathlon TS&lt;/td&gt;&lt;td&gt;Stryker: Triathlon TS (Femur + Tibia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-vanguard_da_360\&quot;&gt;vanguard_da_360&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vanguard: DA 360&lt;/td&gt;&lt;td&gt;Vanguard: DA 360 (Femur)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-biomet_agc_v2_universal\&quot;&gt;biomet_agc_v2_universal&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: AGC V2 Universal&lt;/td&gt;&lt;td&gt;Zimmer Biomet: AGC V2 Universal (Femur)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-zimmer_nexgen_cr\&quot;&gt;zimmer_nexgen_cr&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: NexGen CR&lt;/td&gt;&lt;td&gt;Zimmer Biomet: NexGen CR (Femur + Tibia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-zimmer_nexgen_cr_flex\&quot;&gt;zimmer_nexgen_cr_flex&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: NexGen CR Flex&lt;/td&gt;&lt;td&gt;Zimmer: NexGen CR Flex (Femur + Tibia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-zimmer_nexgen_cr_flex_gender\&quot;&gt;zimmer_nexgen_cr_flex_gender&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: NexGen CR Flex Gender&lt;/td&gt;&lt;td&gt;Zimmer: NexGen CR Flex Gender (Femur)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-zimmer_nexgen_lcck\&quot;&gt;zimmer_nexgen_lcck&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: NexGen LCCK&lt;/td&gt;&lt;td&gt;Zimmer Biomet: NexGen LCCK (Femur + Tibia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-zimmer_nexgen_lps\&quot;&gt;zimmer_nexgen_lps&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: NexGen LPS &lt;/td&gt;&lt;td&gt;Zimmer Biomet: NexGen LPS (Femur + Tibia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-zimmer_nexgen_lps_flex\&quot;&gt;zimmer_nexgen_lps_flex&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: NexGen LPS-Flex&lt;/td&gt;&lt;td&gt;Zimmer Biomet: NexGen LPS Flex (Femur + Tibia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-zimmer_nexgen_rhk\&quot;&gt;zimmer_nexgen_rhk&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: NexGen RHK &lt;/td&gt;&lt;td&gt;Zimmer Biomet: NexGen RHK (Femur + Tibia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-nexgen_zuk\&quot;&gt;nexgen_zuk&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: NexGen Zuk&lt;/td&gt;&lt;td&gt;Zimmer Biomet: NexGen Zuk (Femur + Tibia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-oxford_2_peg\&quot;&gt;oxford_2_peg&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Oxford 2-peg&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Oxford 2-peg (Femur)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-oxford_domed_lateral_pkr\&quot;&gt;oxford_domed_lateral_pkr&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Oxford domed lateral PKR&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Oxford domed lateral PKR (Femur)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-biomet_oxford_phase_iii_alpha\&quot;&gt;biomet_oxford_phase_iii_alpha&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Oxford Phase III alpha&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Oxford Phase III alpha (Femur)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-persona_cr\&quot;&gt;persona_cr&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Persona CR&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Persona CR (Femur + Tibia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-persona_ps\&quot;&gt;persona_ps&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Persona PS&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Persona PS (Femur + Tibia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-persona_ppk\&quot;&gt;persona_ppk&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Persona Partial Knee&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Persona Partial Knee&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-zimmer_nexgen_pfj\&quot;&gt;zimmer_nexgen_pfj&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: PFJ&lt;/td&gt;&lt;td&gt;Zimmer Biomet: PFJ (Femur)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-biomet_rhk_rotating_hinge_knee\&quot;&gt;biomet_rhk_rotating_hinge_knee&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: RHK Rotating Hinge Knee&lt;/td&gt;&lt;td&gt;Zimmer Biomet: RHK Rotating Hinge Knee (Femur + Tibia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-biomet_vanguard_cr\&quot;&gt;biomet_vanguard_cr&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Vanguard CR&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Vanguard CR (Femur + Tibia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-biomet_vanguard_rocc_interlok_femur\&quot;&gt;biomet_vanguard_rocc_interlok_femur&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Vanguard ROCC - Interlok Femur&lt;/td&gt;&lt;td&gt;Biomet: Vanguard ROCC - Interlok Femur (Femur)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-biomet_vanguard_ssk\&quot;&gt;biomet_vanguard_ssk&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Vanguard SSK 360&lt;/td&gt;&lt;td&gt;Biomet: Vanguard SSK (Femur)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-KneeJointArthroplastyComponent.html#KneeJointArthroplastyComponent-zimmer_segmental_system\&quot;&gt;zimmer_segmental_system&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Zimmer Segmental System&lt;/td&gt;&lt;td&gt;Zimmer: Segmental System (Femur)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;CodeSystem-GenericValues.html\&quot;&gt;&lt;code&gt;https://kip.rkkp.dk/fhir/CodeSystem/GenericValues&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-GenericValues.html#GenericValues-other\&quot;&gt;other&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Andet&lt;/td&gt;&lt;td&gt;Other - used to choose unspecific value not in a valueset&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "https://kip.rkkp.dk/fhir/ValueSet/KomponentFemurDKR",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "2.11.1",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "KomponentFemurDKR",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "Komponent - femur (DKR)",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a>" : true,
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2025-03-04T00:00:00+02:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://trifork.com"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "rbk@trifork.com"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>" : "Komponent - femur (DKR)",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
+    "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "https://kip.rkkp.dk/fhir/CodeSystem/KneeJointArthroplastyComponent",
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "arthrosurface_hemicap",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Arthrosurface: HemiCAP"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "arthrosurface_hemicap_pf",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Arthrosurface: Hemicap PF"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "arthrosurface_unicap",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Arthrosurface: Unicap"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "episealer_condyle_solo",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Episurf Medical: Episealer Condyle Solo"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "depuy_attune_cr",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Johnson &amp; Johnson: Attune CR"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "johnson&amp;johnson_attune_crs",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Johnson &amp; Johnson: Attune CRS (Constrained Revision System)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "depuy_limb_preservation_system",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Johnson &amp; Johnson: Limb Preservation System"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "limb_preservation_system_distal_femur",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Johnson &amp; Johnson: Limb Preservation System Distal Femur"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "johnson&amp;johnson_pfc_sigma_cruciate_retaining",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Johnson &amp; Johnson: PFC Sigma Cruciate-Retaining"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "johnson&amp;johnson_pfc_sigma_cruciate_substituting",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Johnson &amp; Johnson: PFC Sigma Cruciate-Substituting"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "johnson&amp;johnson_pfc_sigma_tc3",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Johnson &amp; Johnson: PFC Sigma TC3 "
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "depuy_sigma_hp_partiel_knee",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Johnson &amp; Johnson: Sigma HP Partial Knee"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "johnson&amp;johnson_s_rom_noiles",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Johnson &amp; Johnson: S-ROM Noiles"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "physica_cr",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Lima: Physica CR"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "physica_kr",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Lima: Physica KR"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "physica_ps",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Lima: Physica PS"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "link_endo_model_rotational",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Link: Endo-Model Rotational"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "link_endo_model_total_hinge",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Link: Endo-Model Total Hinge"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "megasystem_c",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Link: Megasystem C"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "link_st_georg",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Link: St. Georg "
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "smith&amp;nephew_competitor_pfj",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Smith &amp; Nephew: Competitor PFJ"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "smith&amp;nephew_genesis_cruciate_retaining",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Smith &amp; Nephew: Genesis Cruciate-Retaining"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "smith&amp;nephew_genesis_legion_cr_oxinium",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Smith &amp; Nephew: Legion CR Oxinium "
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "smith&amp;nephew_genesis_profix_posterior_stabilized",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Smith &amp; Nephew: Profix Posterior Stabilized"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "smith&amp;nephew_genesis_profix_revision",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Smith &amp; Nephew: Profix Revision"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "stryker_howmetica_avon",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Stryker/Howmetica: Avon"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "stryker_gmrs",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Stryker: GMRS"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "stryker_modular_rotating_hinge",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Stryker: Modular Rotating Hinge "
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "stryker_restoris_pfa",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Stryker: Restoris PFA"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "stryker_restoris_medial_uni",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Stryker: Restoris Medial Uni"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "stryker_restoris_lateral_uni",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Stryker: Restoris Lateral Uni"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "stryker_scorpio_cr",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Stryker: Scorpio CR"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "stryker_scorpio_ps",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Stryker: Scorpio PS"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "stryker_scorpio_ts",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Stryker: Scorpio TS"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "stryker_triathlon_cr",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Stryker: Triathlon CR"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "stryker_thriathlon_pkr",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Stryker: Triathlon PKR"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "stryker_thriathlon_ps",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Stryker: Triathlon PS "
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "stryker_thriathlon_ts",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Stryker: Triathlon TS"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "vanguard_da_360",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Vanguard: DA 360"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "biomet_agc_v2_universal",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: AGC V2 Universal"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "zimmer_nexgen_cr",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: NexGen CR"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "zimmer_nexgen_cr_flex",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: NexGen CR Flex"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "zimmer_nexgen_cr_flex_gender",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: NexGen CR Flex Gender"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "zimmer_nexgen_lcck",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: NexGen LCCK"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "zimmer_nexgen_lps",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: NexGen LPS "
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "zimmer_nexgen_lps_flex",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: NexGen LPS-Flex"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "zimmer_nexgen_rhk",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: NexGen RHK "
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "nexgen_zuk",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: NexGen Zuk"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "oxford_2_peg",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: Oxford 2-peg"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "oxford_domed_lateral_pkr",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: Oxford domed lateral PKR"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "biomet_oxford_phase_iii_alpha",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: Oxford Phase III alpha"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "persona_cr",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: Persona CR"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "persona_ps",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: Persona PS"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "persona_ppk",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: Persona Partial Knee"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "zimmer_nexgen_pfj",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: PFJ"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "biomet_rhk_rotating_hinge_knee",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: RHK Rotating Hinge Knee"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "biomet_vanguard_cr",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: Vanguard CR"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "biomet_vanguard_rocc_interlok_femur",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: Vanguard ROCC - Interlok Femur"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "biomet_vanguard_ssk",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: Vanguard SSK 360"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "zimmer_segmental_system",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: Zimmer Segmental System"
+          }
+        ]
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "other",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Andet"
+          }
+        ]
+      }
+    ]
+  }
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://trifork.com">Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S</a>.  Package dk.kip.rkkp.fhir.ig.core#2.11.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 23, 2025 11:25+0000">2025-05-23</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

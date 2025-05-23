@@ -1,0 +1,115 @@
+FHIR IG Publisher Version 1.8.26 (Git# d479a7160a38). Built 2025-05-08T09:23:30.587Z (15 days old)
+Detected Java version: 23 from /usr/local/openjdk-23 on amd64 (64bit). 4000MB available
+dir = /__w/implementation-guide/implementation-guide, path = /usr/local/openjdk-23/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+Parameters: -go-publish -source ig/ -web web/ -registry registry/fhir-ig-list.json -history history/ -templates web/templates
+---------------
+Publication Run: publish ig/ to web/
+Publication URL of 'https://kip.rkkp.dk/fhir' is not consistent with the required base URL of 'https://kip.sundk.dk'
+Relative directory for IG is '/fhir'
+===== Web Publication Run Details ===============================
+ Source IG: dk.kip.rkkp.fhir.ig.core#2.11.1 : https://kip.rkkp.dk/fhir (R4) from ig/
+All checks passed. Do the publication build from /__w/implementation-guide/implementation-guide/ig and publish to /tmp/web-root/run-20250523/fhir
+Prepare Build space in /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#2.11.1
+Build IG at /__w/implementation-guide/implementation-guide/ig: final copy suitable for publication (in /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#2.11.1)
+FHIR IG Publisher Version 1.8.26 (Git# d479a7160a38). Built 2025-05-08T09:23:30.587Z (15 days old)  
+Detected Java version: 23 from /usr/local/openjdk-23 on Linux/amd64 (64bit). 4000MB available       
+dir = /__w/implementation-guide/implementation-guide, path = /usr/local/openjdk-23/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+Parameters: -ig /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#2.11.1 -resetTx -publish https://kip.rkkp.dk/fhir/2.11.1 -no-exit
+Character encoding = UTF-8 / UTF-8                                                                  
+Start Clock @ Friday, May 23, 2025, 11:28:14 AM Coordinated Universal Time (2025-05-23T11:28:14Z)   
+                                                                                                    
+Build FHIR IG from /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#2.11.1                                    (00:00.021 / 00:00.022, 93Mb)
+Build Formal Publication package, intended for https://kip.rkkp.dk/fhir/2.11.1                       (00:00.004 / 00:00.025, 93Mb)
+API keys loaded from /root/.fhir/fhir-settings.json                                                  (00:00.001 / 00:00.027, 93Mb)
+Package Cache: /root/.fhir/packages                                                                  (00:00.003 / 00:00.030, 93Mb)
+Run Sushi on /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#2.11.1                                          (00:00.003 / 00:00.034, 93Mb)
+Sushi: info  Running SUSHI v3.15.1 (implements FHIR Shorthand specification v3.0.0)                  (00:00.480 / 00:00.514, 94Mb)
+Sushi: info  Arguments:                                                                              (00:00.000 / 00:00.515, 94Mb)
+Sushi: info    --require-latest                                                                      (00:00.000 / 00:00.516, 94Mb)
+Sushi: info    --out /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#2.11.1                                  (00:00.000 / 00:00.517, 94Mb)
+Sushi: info    /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#2.11.1                                        (00:00.000 / 00:00.517, 94Mb)
+Sushi: error Current SUSHI version (3.15.1) is not the latest version. Upgrade to the latest version (3.16.0) or run SUSHI again without the --require-latest flag. (00:00.337 / 00:00.855, 94Mb)
+Sushi couldn't be run. Complete output from running Sushi :                                          (00:00.008 / 00:00.863, 94Mb)
+Note: Check that Sushi is installed correctly ("npm install -g fsh-sushi". On windows, get npm from https://www.npmjs.com/get-npm) (00:00.001 / 00:00.864, 94Mb)
+Exception: Process exited with an error: 1 (Exit value: 1)                                           (00:00.001 / 00:00.865, 95Mb)
+Publishing Content Failed: Process exited with an error: 1 (Exit value: 1)                           (00:00.000 / 00:00.866, 95Mb)
+                                                                                                     (00:00.000 / 00:00.867, 95Mb)
+Use -? to get command line help                                                                      (00:00.000 / 00:00.868, 95Mb)
+                                                                                                     (00:00.000 / 00:00.869, 95Mb)
+Stack Dump (for debugging):                                                                          (00:00.000 / 00:00.870, 95Mb)
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
+	at org.hl7.fhir.igtools.publisher.FSHRunner.runFsh(FSHRunner.java:89)
+	at org.hl7.fhir.igtools.publisher.Publisher.initialize(Publisher.java:2751)
+	at org.hl7.fhir.igtools.publisher.Publisher.execute(Publisher.java:1077)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:15393)
+	at org.hl7.fhir.igtools.web.PublicationProcess.runBuild(PublicationProcess.java:1080)
+	at org.hl7.fhir.igtools.web.PublicationProcess.doPublish(PublicationProcess.java:556)
+	at org.hl7.fhir.igtools.web.PublicationProcess.publishInner2(PublicationProcess.java:469)
+	at org.hl7.fhir.igtools.web.PublicationProcess.publishInner(PublicationProcess.java:286)
+	at org.hl7.fhir.igtools.web.PublicationProcess.publish(PublicationProcess.java:146)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:15142)
+Prepare Build space in /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#2.11.1-milestone
+Build IG at /__w/implementation-guide/implementation-guide/ig: final copy suitable for publication (in /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#2.11.1-milestone) (milestone build)
+FHIR IG Publisher Version 1.8.26 (Git# d479a7160a38). Built 2025-05-08T09:23:30.587Z (15 days old)  
+Detected Java version: 23 from /usr/local/openjdk-23 on Linux/amd64 (64bit). 4000MB available       
+dir = /__w/implementation-guide/implementation-guide, path = /usr/local/openjdk-23/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+Parameters: -ig /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#2.11.1-milestone -publish https://kip.rkkp.dk/fhir/2.11.1 -milestone -no-exit
+Character encoding = UTF-8 / UTF-8                                                                  
+Start Clock @ Friday, May 23, 2025, 11:28:26 AM Coordinated Universal Time (2025-05-23T11:28:26Z)   
+                                                                                                    
+Build FHIR IG from /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#2.11.1-milestone                          (00:00.003 / 00:00.003, 55Mb)
+Build Formal Publication package, intended for https://kip.rkkp.dk/fhir/2.11.1                       (00:00.000 / 00:00.003, 55Mb)
+API keys loaded from /root/.fhir/fhir-settings.json                                                  (00:00.000 / 00:00.004, 55Mb)
+Package Cache: /root/.fhir/packages                                                                  (00:00.000 / 00:00.005, 55Mb)
+Run Sushi on /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#2.11.1-milestone                                (00:00.001 / 00:00.006, 55Mb)
+Sushi: info  Running SUSHI v3.15.1 (implements FHIR Shorthand specification v3.0.0)                  (00:00.459 / 00:00.465, 56Mb)
+Sushi: info  Arguments:                                                                              (00:00.000 / 00:00.466, 56Mb)
+Sushi: info    --require-latest                                                                      (00:00.000 / 00:00.467, 56Mb)
+Sushi: info    --out /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#2.11.1-milestone                        (00:00.000 / 00:00.468, 56Mb)
+Sushi: info    /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#2.11.1-milestone                              (00:00.000 / 00:00.468, 56Mb)
+Sushi: error Current SUSHI version (3.15.1) is not the latest version. Upgrade to the latest version (3.16.0) or run SUSHI again without the --require-latest flag. (00:00.337 / 00:00.806, 56Mb)
+Sushi couldn't be run. Complete output from running Sushi :                                          (00:00.006 / 00:00.812, 56Mb)
+Note: Check that Sushi is installed correctly ("npm install -g fsh-sushi". On windows, get npm from https://www.npmjs.com/get-npm) (00:00.000 / 00:00.813, 56Mb)
+Exception: Process exited with an error: 1 (Exit value: 1)                                           (00:00.000 / 00:00.814, 56Mb)
+Publishing Content Failed: Process exited with an error: 1 (Exit value: 1)                           (00:00.000 / 00:00.815, 56Mb)
+                                                                                                     (00:00.000 / 00:00.815, 56Mb)
+Use -? to get command line help                                                                      (00:00.000 / 00:00.816, 56Mb)
+                                                                                                     (00:00.000 / 00:00.817, 56Mb)
+Stack Dump (for debugging):                                                                          (00:00.000 / 00:00.818, 56Mb)
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
+	at org.hl7.fhir.igtools.publisher.FSHRunner.runFsh(FSHRunner.java:89)
+	at org.hl7.fhir.igtools.publisher.Publisher.initialize(Publisher.java:2751)
+	at org.hl7.fhir.igtools.publisher.Publisher.execute(Publisher.java:1077)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:15393)
+	at org.hl7.fhir.igtools.web.PublicationProcess.runBuild(PublicationProcess.java:1080)
+	at org.hl7.fhir.igtools.web.PublicationProcess.doPublish(PublicationProcess.java:561)
+	at org.hl7.fhir.igtools.web.PublicationProcess.publishInner2(PublicationProcess.java:469)
+	at org.hl7.fhir.igtools.web.PublicationProcess.publishInner(PublicationProcess.java:286)
+	at org.hl7.fhir.igtools.web.PublicationProcess.publish(PublicationProcess.java:146)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:15142)
+Keep a copy of the build directory at /tmp/web-root/run-20250523/ig-build-zips/dk.kip.rkkp.fhir.ig.core#2.11.1.zip
+
+ok. All checks passed. Publish v2.11.1 to /tmp/web-root/run-20250523/fhir/2.11.1
+Copy the IG to /tmp/web-root/run-20250523/fhir/2.11.1
+Update /tmp/web-root/run-20250523/fhir/package-list.json
+Publish Box Statement: This page is part of the KIP Infrastructure (v2.11.1: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a>
+  .. 5950 files checked, 5950 updated
+  .. 989 redirections (989 created/updated)
+This is a milestone release - publish v2.11.1 to /tmp/web-root/run-20250523/fhir
+Publish Box Statement: This page is part of the KIP Infrastructure (v2.11.1: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a>
+  .. 5950 files checked, 5950 updated
+  .. 989 redirections (989 created/updated)
+Check for Files to delete
+  ... 0 files
+Copy to new IG /tmp/web-root/run-20250523/fhir
+Error in package-list.json:path to build.fhir.org should not use https://
+dk.kip.rkkp.fhir.ig.core (https://kip.rkkp.dk/fhir): KIP Infrastructure @ http://build.fhir.org/ig/kip-infrastructure/implementation-guide
+  release: Releases 2.11.1/4.0.1 @ https://kip.rkkp.dk/fhir/2.11.1
+Build is complete. Copy from /tmp/web-root/run-20250523
+Update history page at /tmp/web-root/run-20250523/fhir from /__w/implementation-guide/implementation-guide/history and web/templates

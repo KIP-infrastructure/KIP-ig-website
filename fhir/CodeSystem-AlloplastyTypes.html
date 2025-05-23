@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Alloplasty operation types - KIP Infrastructure v2.11.0</title>
+    <title>Alloplasty operation types - KIP Infrastructure v2.11.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">KIP Infrastructure</span>
             <br/>
-            <span style="display:inline-block;">2.11.0 - release
+            <span style="display:inline-block;">2.11.1 - release
 
 
             </span>
@@ -142,7 +142,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the KIP Infrastructure (v2.11.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KIP Infrastructure (v2.11.1: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -195,7 +195,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://kip.rkkp.dk/fhir/CodeSystem/AlloplastyTypes<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/AlloplastyTypes"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">2.11.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/AlloplastyTypes|2.11.0"/></span>
+      <span class="copy-text">2.11.1<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/AlloplastyTypes|2.11.1"/></span>
       </td>
     </tr>
 
@@ -244,91 +244,190 @@
 <ul>
  <li><a href="ValueSet-AlloplastiktypeDKR.html">AlloplastiktypeDKR</a></li>
  <li><a href="ValueSet-HemialloplastikFemur.html">HemialloplastikFemur</a></li>
+ <li><a href="ValueSet-KomponentFemurDKRrevision.html">KomponentFemurDKRrevision</a></li>
  <li><a href="ValueSet-KomponentFemurDKRrevision202503.html">KomponentFemurDKRrevision202503</a></li>
+ <li><a href="ValueSet-KomponentTibiaDKRrevision.html">KomponentTibiaDKRrevision</a></li>
  <li><a href="ValueSet-KomponentTibiaDKRrevision202503.html">KomponentTibiaDKRrevision202503</a></li>
  <li><a href="ValueSet-RevisionStatusDKR.html">RevisionStatusDKR</a></li>
  <li><a href="ValueSet-TidligereOperationHofte.html">TidligereOperationHofte</a></li>
 </ul>
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem AlloplastyTypes</b></p><a name="AlloplastyTypes"> </a><a name="hcAlloplastyTypes"> </a><a name="AlloplastyTypes-en-US"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/AlloplastyTypes</code> defines the following codes in an undefined hierarchy:</p>
-<table class="codes"><tr><td><b>Lvl</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem AlloplastyTypes</b></p><a name="AlloplastyTypes"> </a><a name="hcAlloplastyTypes"> </a><a name="AlloplastyTypes-en-US"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p>
+<table class="grid"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr>
+<tr><td>comment</td>
+<td>comment</td>
+<td>http://hl7.org/fhir/concept-properties#comment</td>
+<td>string</td>
+<td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr>
+<tr><td>effectiveDate</td>
+<td>effectiveDate</td>
+<td>http://hl7.org/fhir/concept-properties#effectiveDate</td>
+<td>dateTime</td>
+<td>The date at which the concept status was last changed</td></tr>
+<tr><td>status</td>
+<td>status</td>
+<td>http://hl7.org/fhir/concept-properties#status</td>
+<td>code</td>
+<td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr>
+<tr><td>Inactive</td>
+<td>inactive</td>
+<td>http://hl7.org/fhir/concept-properties#inactive</td>
+<td>boolean</td>
+<td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/AlloplastyTypes</code> defines the following codes in an undefined hierarchy:</p>
+<table class="codes"><tr><td><b>Lvl</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>comment</b></td><td><b>effectiveDate</b></td><td><b>status</b></td><td><b>Inactive</b></td></tr>
 <tr><td>1</td>
 <td style="white-space:nowrap">hemialloplasty<a name="AlloplastyTypes-hemialloplasty"> </a></td>
 <td>Hemialloplasty</td>
-<td>Hemialloplasty</td></tr>
+<td>Hemialloplasty</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr>
 <tr><td>2</td>
 <td style="white-space:nowrap">&nbsp;&nbsp;cemented<a name="AlloplastyTypes-cemented"> </a></td>
 <td>Cemented component</td>
-<td>Cementet component</td></tr>
+<td>Cementet component</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr>
 <tr><td>2</td>
 <td style="white-space:nowrap">&nbsp;&nbsp;uncemented<a name="AlloplastyTypes-uncemented"> </a></td>
 <td>Uncemented component</td>
-<td>Uncemented component</td></tr>
+<td>Uncemented component</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr>
 <tr><td>1</td>
 <td style="white-space:nowrap">acetabulum_fracture<a name="AlloplastyTypes-acetabulum_fracture"> </a></td>
 <td>Acetabulum fracture</td>
-<td>Acetabulum fracture</td></tr>
+<td>Acetabulum fracture</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr>
 <tr><td>1</td>
 <td style="white-space:nowrap">osteosynthesis<a name="AlloplastyTypes-osteosynthesis"> </a></td>
 <td>Osteosynthesis</td>
-<td>Osteosynthesis</td></tr>
+<td>Osteosynthesis</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr>
 <tr><td>1</td>
 <td style="white-space:nowrap">periacetabular_osteotomy<a name="AlloplastyTypes-periacetabular_osteotomy"> </a></td>
 <td>Periacetabulær osteotomi</td>
-<td>Periacetabulær osteotomi</td></tr>
+<td>Periacetabulær osteotomi</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr>
 <tr><td>1</td>
 <td style="white-space:nowrap">proximal_femur_osteotomy<a name="AlloplastyTypes-proximal_femur_osteotomy"> </a></td>
 <td>Proximal femur osteotomy</td>
-<td>Proximal femur osteotomy</td></tr>
+<td>Proximal femur osteotomy</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr>
 <tr><td>1</td>
 <td style="white-space:nowrap">total_alloplasty<a name="AlloplastyTypes-total_alloplasty"> </a></td>
 <td>Total alloplasty</td>
-<td>Total alloplasty</td></tr>
+<td>Total alloplasty</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr>
 <tr><td>1</td>
 <td style="white-space:nowrap">medial_unilateral_knee<a name="AlloplastyTypes-medial_unilateral_knee"> </a></td>
 <td>Medial UKA</td>
-<td>Medial UKA</td></tr>
+<td>Medial UKA</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr>
 <tr><td>1</td>
 <td style="white-space:nowrap">lateral_unitaleral_knee<a name="AlloplastyTypes-lateral_unitaleral_knee"> </a></td>
 <td>Lateral UKA</td>
-<td>Lateral UKA</td></tr>
+<td>Lateral UKA</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr>
 <tr><td>1</td>
 <td style="white-space:nowrap">patellofemoral_unitaleral_knee<a name="AlloplastyTypes-patellofemoral_unitaleral_knee"> </a></td>
 <td>Patellofemoral UKA</td>
-<td>Patellofemoral UKA</td></tr>
+<td>Patellofemoral UKA</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr>
 <tr><td>1</td>
 <td style="white-space:nowrap">hinge_knee<a name="AlloplastyTypes-hinge_knee"> </a></td>
 <td>Roterende hængselalloplastik</td>
-<td>Roterende hængselalloplastik</td></tr>
+<td>Roterende hængselalloplastik</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr>
 <tr><td>1</td>
 <td style="white-space:nowrap">hinge_knee_resection<a name="AlloplastyTypes-hinge_knee_resection"> </a></td>
 <td>Roterende hængselsalloplastik m. kondylresektion</td>
-<td>Roterende hængselsalloplastik m. kondylresektion</td></tr>
+<td>Roterende hængselsalloplastik m. kondylresektion</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr>
 <tr><td>1</td>
 <td style="white-space:nowrap">partial_resurfacing<a name="AlloplastyTypes-partial_resurfacing"> </a></td>
 <td>Partiel resurfacing</td>
-<td>Partiel resurfacing</td></tr>
+<td>Partiel resurfacing</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr>
 <tr><td>1</td>
 <td style="white-space:nowrap">cement_spacer_articulated<a name="AlloplastyTypes-cement_spacer_articulated"> </a></td>
 <td>Cementspacer, artikuleret</td>
-<td>Cementspacer, artikuleret</td></tr>
+<td>Cementspacer, artikuleret</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr>
 <tr><td>1</td>
 <td style="white-space:nowrap">cement_spacer_fixated<a name="AlloplastyTypes-cement_spacer_fixated"> </a></td>
 <td>Cementspacer, fikseret</td>
-<td>Cementspacer, fikseret</td></tr>
+<td>Cementspacer, fikseret</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr>
 <tr><td>1</td>
 <td style="white-space:nowrap">spacer_insertion<a name="AlloplastyTypes-spacer_insertion"> </a></td>
 <td>Fjernelse af komponent og isættelse af spacer</td>
-<td>Fjernelse af komponent og isættelse af spacer</td></tr>
+<td>Fjernelse af komponent og isættelse af spacer</td>
+<td>Added</td>
+<td>2025-04-03T00:00:00+01:00</td>
+<td>active</td>
+<td>false</td></tr>
 <tr><td>1</td>
 <td style="white-space:nowrap">artrodesis<a name="AlloplastyTypes-artrodesis"> </a></td>
 <td>Artrodese</td>
-<td>Artrodese</td></tr>
+<td>Artrodese</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr>
 <tr><td>1</td>
 <td style="white-space:nowrap">femoral_amputation<a name="AlloplastyTypes-femoral_amputation"> </a></td>
 <td>Femuramputation</td>
-<td>Femuramputation</td></tr></table></div>
+<td>Femuramputation</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr></table></div>
 
   
 
@@ -355,7 +454,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://trifork.com">Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S</a>.  Package dk.kip.rkkp.fhir.ig.core#2.11.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 15, 2025 08:23+0000">2025-05-15</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://trifork.com">Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S</a>.  Package dk.kip.rkkp.fhir.ig.core#2.11.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 23, 2025 11:25+0000">2025-05-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
