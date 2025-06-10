@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Generic values - KIP Infrastructure v2.11.3</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3.807"}
+    h3,h4,h5,h6{--heading-prefix:"3.807"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">KIP Infrastructure</span>
+            <br/>
+            <span style="display:inline-block;">2.11.3 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Search Parameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Extension Definitions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Code Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Generic values</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KIP Infrastructure (v2.11.3: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-GenericValues.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-GenericValues.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-GenericValues.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: Generic values
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://kip.rkkp.dk/fhir/CodeSystem/GenericValues<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">2.11.3<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/GenericValues|2.11.3"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2022-07-06
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">GenericValues</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Generic values for a multitude of questions. This is meant as an extension to several codesystems, where codes from below might appear.</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-AKBehandlingDKR.html">AKBehandlingDKR</a></li>
+ <li><a href="ValueSet-AKFravalgt.html">AKFravalgt</a></li>
+ <li><a href="ValueSet-ATCAntibiotikaprofylakseDKR.html">ATCAntibiotikaprofylakseDKR</a></li>
+ <li><a href="ValueSet-ATCAntibiotikaprofylakseDosisDKR.html">ATCAntibiotikaprofylakseDosisDKR</a></li>
+ <li><a href="ValueSet-ATCChemoCLL.html">ATCChemoCLL</a></li>
+ <li><a href="ValueSet-ATCChemoPreparation.html">ATCChemoPreparation</a></li>
+ <li><a href="ValueSet-ATCDMPN.html">ATCDMPN</a></li>
+ <li><a href="ValueSet-ATCDMPN202410.html">ATCDMPN202410</a></li>
+ <li><a href="ValueSet-ATCImmunotherapyCLL.html">ATCImmunotherapyCLL</a></li>
+ <li><a href="ValueSet-ATCTargetCLL.html">ATCTargetCLL</a></li>
+ <li><a href="ValueSet-ATCTromboseprofylakseDKR.html">ATCTromboseprofylakseDKR</a></li>
+ <li><a href="ValueSet-AarsagTilProcedureDCCG.html">AarsagTilProcedureDCCG</a></li>
+ <li><a href="ValueSet-AdministrationType.html">AdministrationType</a></li>
+ <li><a href="ValueSet-AfdelingDandem.html">AfdelingDandem</a></li>
+ <li><a href="ValueSet-AflastendeProcedure.html">AflastendeProcedure</a></li>
+ <li><a href="ValueSet-AktivitetSportDKRR.html">AktivitetSportDKRR</a></li>
+ <li><a href="ValueSet-AlloplastiktypeDKR.html">AlloplastiktypeDKR</a></li>
+ <li><a href="ValueSet-AnaestesiRegionalUniverselKombineret.html">AnaestesiRegionalUniverselKombineret</a></li>
+ <li><a href="ValueSet-AnastomoseType1.html">AnastomoseType1</a></li>
+ <li><a href="ValueSet-AnastomoseType3.html">AnastomoseType3</a></li>
+ <li><a href="ValueSet-AnatomiskLokation1.html">AnatomiskLokation1</a></li>
+ <li><a href="ValueSet-AnatomiskLokation2.html">AnatomiskLokation2</a></li>
+ <li><a href="ValueSet-AnatomiskLokation3.html">AnatomiskLokation3</a></li>
+ <li><a href="ValueSet-AntibiotikaMedUden.html">AntibiotikaMedUden</a></li>
+ <li><a href="ValueSet-AntibiotikaprofylakseDHR.html">AntibiotikaprofylakseDHR</a></li>
+ <li><a href="ValueSet-AntibiotikaprofylakseDKRR.html">AntibiotikaprofylakseDKRR</a></li>
+ <li><a href="ValueSet-ArtritisDSR.html">ArtritisDSR</a></li>
+ <li><a href="ValueSet-ArtrosefoelgeDSR.html">ArtrosefoelgeDSR</a></li>
+ <li><a href="ValueSet-BegrundelseEndoskopiskLokalresektioen.html">BegrundelseEndoskopiskLokalresektioen</a></li>
+ <li><a href="ValueSet-BehandlingCML.html">BehandlingCML</a></li>
+ <li><a href="ValueSet-BehandlingCMMLMDS.html">BehandlingCMMLMDS</a></li>
+ <li><a href="ValueSet-BehandlingDHR.html">BehandlingDHR</a></li>
+ <li><a href="ValueSet-BehandlingMDS.html">BehandlingMDS</a></li>
+ <li><a href="ValueSet-BehandlingPsykofarmakologiskRETSPSYK.html">BehandlingPsykofarmakologiskRETSPSYK</a></li>
+ <li><a href="ValueSet-BehandlingsResponsEvalueringLYFO.html">BehandlingsResponsEvalueringLYFO</a></li>
+ <li><a href="ValueSet-BehandlingsTypeStamcellestoetteLYFO.html">BehandlingsTypeStamcellestoetteLYFO</a></li>
+ <li><a href="ValueSet-BehandlingsindikationKAR.html">BehandlingsindikationKAR</a></li>
+ <li><a href="ValueSet-BehandlingsresponsCML.html">BehandlingsresponsCML</a></li>
+ <li><a href="ValueSet-BehandlinsplanAendretAarsagDCCG.html">BehandlinsplanAendretAarsagDCCG</a></li>
+ <li><a href="ValueSet-BilateralUnilateral.html">BilateralUnilateral</a></li>
+ <li><a href="ValueSet-BiobankSamples.html">BiobankSamples</a></li>
+ <li><a href="ValueSet-BloedningsprofylakseDHR.html">BloedningsprofylakseDHR</a></li>
+ <li><a href="ValueSet-BrusklaesionBehandlingDKRR.html">BrusklaesionBehandlingDKRR</a></li>
+ <li><a href="ValueSet-BulkingMaterialeDUGA.html">BulkingMaterialeDUGA</a></li>
+ <li><a href="ValueSet-CALRvariant.html">CALRvariant</a></li>
+ <li><a href="ValueSet-CaputDiameterDHR.html">CaputDiameterDHR</a></li>
+ <li><a href="ValueSet-CaputnekroseDSR.html">CaputnekroseDSR</a></li>
+ <li><a href="ValueSet-CementDKR.html">CementDKR</a></li>
+ <li><a href="ValueSet-CementFemurTibiaPatellaDKR.html">CementFemurTibiaPatellaDKR</a></li>
+ <li><a href="ValueSet-CementHofteDHR.html">CementHofteDHR</a></li>
+ <li><a href="ValueSet-ChromosomPairs.html">ChromosomPairs</a></li>
+ <li><a href="ValueSet-ClavienKomplikationsgrad.html">ClavienKomplikationsgrad</a></li>
+ <li><a href="ValueSet-ClavienKomplikationsgradDCCG.html">ClavienKomplikationsgradDCCG</a></li>
+ <li><a href="ValueSet-ClavienKomplikationsgradLangDCCG.html">ClavienKomplikationsgradLangDCCG</a></li>
+ <li><a href="ValueSet-ClinicalProtocolCodes.html">ClinicalProtocolCodes</a></li>
+ <li><a href="ValueSet-ClinicalProtocolCodes1.html">ClinicalProtocolCodes1</a></li>
+ <li><a href="ValueSet-Cyclus.html">Cyclus</a></li>
+ <li><a href="ValueSet-CytogeneticCancerChangesALD.html">CytogeneticCancerChangesALD</a></li>
+ <li><a href="ValueSet-CytogeneticExamination.html">CytogeneticExamination</a></li>
+ <li><a href="ValueSet-CytogeneticResult.html">CytogeneticResult</a></li>
+ <li><a href="ValueSet-CytogeneticResult202410.html">CytogeneticResult202410</a></li>
+ <li><a href="ValueSet-CytogeneticRisk.html">CytogeneticRisk</a></li>
+ <li><a href="ValueSet-CytogeneticRiskGrimwade2010.html">CytogeneticRiskGrimwade2010</a></li>
+ <li><a href="ValueSet-CytogeneticRiskGrimwade2010DAMYDA.html">CytogeneticRiskGrimwade2010DAMYDA</a></li>
+ <li><a href="ValueSet-CytogeneticSpecificerFund.html">CytogeneticSpecificerFund</a></li>
+ <li><a href="ValueSet-CytogeneticStemCellType.html">CytogeneticStemCellType</a></li>
+ <li><a href="ValueSet-DSAFundLokation.html">DSAFundLokation</a></li>
+ <li><a href="ValueSet-DVTProfylakseDosisDKRR.html">DVTProfylakseDosisDKRR</a></li>
+ <li><a href="ValueSet-DegcMDTBeslutning.html">DegcMDTBeslutning</a></li>
+ <li><a href="ValueSet-DiagnoseDANDEM.html">DiagnoseDANDEM</a></li>
+ <li><a href="ValueSet-DoedLokation.html">DoedLokation</a></li>
+ <li><a href="ValueSet-DoedsaarsagCLL.html">DoedsaarsagCLL</a></li>
+ <li><a href="ValueSet-DomAfslutningRETSPSYK.html">DomAfslutningRETSPSYK</a></li>
+ <li><a href="ValueSet-DomAnbefalingRETSPSYK.html">DomAnbefalingRETSPSYK</a></li>
+ <li><a href="ValueSet-EndoskopiskUdseende.html">EndoskopiskUdseende</a></li>
+ <li><a href="ValueSet-ErklaeringRETSPSYK.html">ErklaeringRETSPSYK</a></li>
+ <li><a href="ValueSet-ExtraordinaryTreatmenCause.html">ExtraordinaryTreatmenCause</a></li>
+ <li><a href="ValueSet-FISHProcedure.html">FISHProcedure</a></li>
+ <li><a href="ValueSet-FISHResult.html">FISHResult</a></li>
+ <li><a href="ValueSet-FISHResult202502.html">FISHResult202502</a></li>
+ <li><a href="ValueSet-FISHSamples.html">FISHSamples</a></li>
+ <li><a href="ValueSet-FISHSamples202502.html">FISHSamples202502</a></li>
+ <li><a href="ValueSet-FiksationCementeretUcementeretAndet.html">FiksationCementeretUcementeretAndet</a></li>
+ <li><a href="ValueSet-FiksationFemurDKRR.html">FiksationFemurDKRR</a></li>
+ <li><a href="ValueSet-FiksationFemurDKRR202503.html">FiksationFemurDKRR202503</a></li>
+ <li><a href="ValueSet-FiksationTibiaDKRR.html">FiksationTibiaDKRR</a></li>
+ <li><a href="ValueSet-ForsoergelsesgrundlagRETSPSYK.html">ForsoergelsesgrundlagRETSPSYK</a></li>
+ <li><a href="ValueSet-FunktionsgruppeDHR.html">FunktionsgruppeDHR</a></li>
+ <li><a href="ValueSet-FunktionsgruppeDKR.html">FunktionsgruppeDKR</a></li>
+ <li><a href="ValueSet-GlenoidalkomponentIkkeIndsatDSR.html">GlenoidalkomponentIkkeIndsatDSR</a></li>
+ <li><a href="ValueSet-GlenoidalkomponentSupplerendeDSR.html">GlenoidalkomponentSupplerendeDSR</a></li>
+ <li><a href="ValueSet-GraftACLDKRR.html">GraftACLDKRR</a></li>
+ <li><a href="ValueSet-GraftDKRR.html">GraftDKRR</a></li>
+ <li><a href="ValueSet-GrundlidelseDHR.html">GrundlidelseDHR</a></li>
+ <li><a href="ValueSet-GrundlidelseDKR.html">GrundlidelseDKR</a></li>
+ <li><a href="ValueSet-GrundlidelseDSR.html">GrundlidelseDSR</a></li>
+ <li><a href="ValueSet-HeartRhythm.html">HeartRhythm</a></li>
+ <li><a href="ValueSet-HematologicalDiseases.html">HematologicalDiseases</a></li>
+ <li><a href="ValueSet-HenvistFra.html">HenvistFra</a></li>
+ <li><a href="ValueSet-HumeruskomponentDSR.html">HumeruskomponentDSR</a></li>
+ <li><a href="ValueSet-Hyppighed.html">Hyppighed</a></li>
+ <li><a href="ValueSet-IDC10DPD.html">IDC10DPD</a></li>
+ <li><a href="ValueSet-IDC10DPDNonCancer.html">IDC10DPDNonCancer</a></li>
+ <li><a href="ValueSet-IkkeUdfoert.html">IkkeUdfoert</a></li>
+ <li><a href="ValueSet-Immunoterapi.html">Immunoterapi</a></li>
+ <li><a href="ValueSet-ImplantatMaterialeDSR.html">ImplantatMaterialeDSR</a></li>
+ <li><a href="ValueSet-ImplantatMaterialeKeramikMetalAndet.html">ImplantatMaterialeKeramikMetalAndet</a></li>
+ <li><a href="ValueSet-IndgrebAabenIngvinalhernieDHDB.html">IndgrebAabenIngvinalhernieDHDB</a></li>
+ <li><a href="ValueSet-IndgrebAabenMeshIngvinalhernieDHDB.html">IndgrebAabenMeshIngvinalhernieDHDB</a></li>
+ <li><a href="ValueSet-IndgrebFemoralhernieDHDB.html">IndgrebFemoralhernieDHDB</a></li>
+ <li><a href="ValueSet-IndgrebIngvinalhernieDHDB.html">IndgrebIngvinalhernieDHDB</a></li>
+ <li><a href="ValueSet-IndgrebNerveSet.html">IndgrebNerveSet</a></li>
+ <li><a href="ValueSet-IndgrebVentralhernieAndenDHDB.html">IndgrebVentralhernieAndenDHDB</a></li>
+ <li><a href="ValueSet-IndgrebVentralhernieDHDB.html">IndgrebVentralhernieDHDB</a></li>
+ <li><a href="ValueSet-IndsatFjernet.html">IndsatFjernet</a></li>
+ <li><a href="ValueSet-IndsatIkkeIndsat.html">IndsatIkkeIndsat</a></li>
+ <li><a href="ValueSet-Ingen.html">Ingen</a></li>
+ <li><a href="ValueSet-IngenBehandling.html">IngenBehandling</a></li>
+ <li><a href="ValueSet-IngvinalhernieSpecificering.html">IngvinalhernieSpecificering</a></li>
+ <li><a href="ValueSet-IntraoperativeLaesionerKDCCG.html">IntraoperativeLaesionerKDCCG</a></li>
+ <li><a href="ValueSet-IntraoperativeLaesionerMDCCG.html">IntraoperativeLaesionerMDCCG</a></li>
+ <li><a href="ValueSet-JaNejBetinget.html">JaNejBetinget</a></li>
+ <li><a href="ValueSet-JaNejIkkeUdfoert.html">JaNejIkkeUdfoert</a></li>
+ <li><a href="ValueSet-JaNejIkkeindiceret.html">JaNejIkkeindiceret</a></li>
+ <li><a href="ValueSet-JaNejUvistIkkeudfoert.html">JaNejUvistIkkeudfoert</a></li>
+ <li><a href="ValueSet-KirurgiskAdgangDSR.html">KirurgiskAdgangDSR</a></li>
+ <li><a href="ValueSet-KliniskeSymptomerDCCG.html">KliniskeSymptomerDCCG</a></li>
+ <li><a href="ValueSet-KnoglegraftDSR.html">KnoglegraftDSR</a></li>
+ <li><a href="ValueSet-KomplikationerBehandlingDEGC.html">KomplikationerBehandlingDEGC</a></li>
+ <li><a href="ValueSet-KomplikationerDKRR.html">KomplikationerDKRR</a></li>
+ <li><a href="ValueSet-KomplikationerPeroperativeDHR.html">KomplikationerPeroperativeDHR</a></li>
+ <li><a href="ValueSet-KomplikationerPeroperativeDKR.html">KomplikationerPeroperativeDKR</a></li>
+ <li><a href="ValueSet-KomponentAcetabulumDHR.html">KomponentAcetabulumDHR</a></li>
+ <li><a href="ValueSet-KomponentAcetabulumStatusDHR.html">KomponentAcetabulumStatusDHR</a></li>
+ <li><a href="ValueSet-KomponentFemurDHR.html">KomponentFemurDHR</a></li>
+ <li><a href="ValueSet-KomponentFemurDKR.html">KomponentFemurDKR</a></li>
+ <li><a href="ValueSet-KomponentFemurDKR202503.html">KomponentFemurDKR202503</a></li>
+ <li><a href="ValueSet-KomponentFemurDKRrevision.html">KomponentFemurDKRrevision</a></li>
+ <li><a href="ValueSet-KomponentFemurDKRrevision202503.html">KomponentFemurDKRrevision202503</a></li>
+ <li><a href="ValueSet-KomponentFemurStatusDHR.html">KomponentFemurStatusDHR</a></li>
+ <li><a href="ValueSet-KomponentFemurStatusDKR.html">KomponentFemurStatusDKR</a></li>
+ <li><a href="ValueSet-KomponentPatellaDKR.html">KomponentPatellaDKR</a></li>
+ <li><a href="ValueSet-KomponentPatellaDKRrevision.html">KomponentPatellaDKRrevision</a></li>
+ <li><a href="ValueSet-KomponentSupplementDKR.html">KomponentSupplementDKR</a></li>
+ <li><a href="ValueSet-KomponentTibiaDKR.html">KomponentTibiaDKR</a></li>
+ <li><a href="ValueSet-KomponentTibiaDKR202503.html">KomponentTibiaDKR202503</a></li>
+ <li><a href="ValueSet-KomponentTibiaDKRrevision.html">KomponentTibiaDKRrevision</a></li>
+ <li><a href="ValueSet-KomponentTibiaDKRrevision202503.html">KomponentTibiaDKRrevision202503</a></li>
+ <li><a href="ValueSet-KomponentTibiaStatusDKR.html">KomponentTibiaStatusDKR</a></li>
+ <li><a href="ValueSet-KomponentTypeFemurDHR.html">KomponentTypeFemurDHR</a></li>
+ <li><a href="ValueSet-KonferenceDPD.html">KonferenceDPD</a></li>
+ <li><a href="ValueSet-KursusregAarsag.html">KursusregAarsag</a></li>
+ <li><a href="ValueSet-LimnavnDHDB.html">LimnavnDHDB</a></li>
+ <li><a href="ValueSet-LokalStraaleterapi.html">LokalStraaleterapi</a></li>
+ <li><a href="ValueSet-LokationAneurismeSAH.html">LokationAneurismeSAH</a></li>
+ <li><a href="ValueSet-LukningHudDHDB.html">LukningHudDHDB</a></li>
+ <li><a href="ValueSet-MComponentTypeLyfo.html">MComponentTypeLyfo</a></li>
+ <li><a href="ValueSet-MKomponentLaboratoriesvar.html">MKomponentLaboratoriesvar</a></li>
+ <li><a href="ValueSet-MaaleudstyrDKRR.html">MaaleudstyrDKRR</a></li>
+ <li><a href="ValueSet-ManglendeBehandling.html">ManglendeBehandling</a></li>
+ <li><a href="ValueSet-ManglendeEORTC.html">ManglendeEORTC</a></li>
+ <li><a href="ValueSet-ManglendeVisitation.html">ManglendeVisitation</a></li>
+ <li><a href="ValueSet-MedicalScanningTypes.html">MedicalScanningTypes</a></li>
+ <li><a href="ValueSet-MedicalScanningTypes202412.html">MedicalScanningTypes202412</a></li>
+ <li><a href="ValueSet-MedicinPraeparatDSR.html">MedicinPraeparatDSR</a></li>
+ <li><a href="ValueSet-MenisklaesionBehandlingDKRR.html">MenisklaesionBehandlingDKRR</a></li>
+ <li><a href="ValueSet-MeshFikseringDHDB.html">MeshFikseringDHDB</a></li>
+ <li><a href="ValueSet-MeshPlaceringDHDB.html">MeshPlaceringDHDB</a></li>
+ <li><a href="ValueSet-MeshTypeIngvinalhernieDHDB.html">MeshTypeIngvinalhernieDHDB</a></li>
+ <li><a href="ValueSet-MeshTypeVentralhernieDHDB.html">MeshTypeVentralhernieDHDB</a></li>
+ <li><a href="ValueSet-MolecurlarBiologyExamination.html">MolecurlarBiologyExamination</a></li>
+ <li><a href="ValueSet-MorsDiagnosegrupper.html">MorsDiagnosegrupper</a></li>
+ <li><a href="ValueSet-OperationIkkeGennemfortDCCG.html">OperationIkkeGennemfortDCCG</a></li>
+ <li><a href="ValueSet-OperationerDKRR.html">OperationerDKRR</a></li>
+ <li><a href="ValueSet-OperationspaaklaedningDHR.html">OperationspaaklaedningDHR</a></li>
+ <li><a href="ValueSet-OperationssaarKomplikationerKAR.html">OperationssaarKomplikationerKAR</a></li>
+ <li><a href="ValueSet-OperationssideKAR.html">OperationssideKAR</a></li>
+ <li><a href="ValueSet-OperationstypeLYFO.html">OperationstypeLYFO</a></li>
+ <li><a href="ValueSet-OperativProcedureKategoriDCCG.html">OperativProcedureKategoriDCCG</a></li>
+ <li><a href="ValueSet-OperativProcedureKategoriKolonDCCG.html">OperativProcedureKategoriKolonDCCG</a></li>
+ <li><a href="ValueSet-OperativProcedureKategoriRektumDCCG.html">OperativProcedureKategoriRektumDCCG</a></li>
+ <li><a href="ValueSet-OperativeAdgangDHR.html">OperativeAdgangDHR</a></li>
+ <li><a href="ValueSet-OperativtFundIngvinalhernieDHDB.html">OperativtFundIngvinalhernieDHDB</a></li>
+ <li><a href="ValueSet-PaavirkningPaagaaendeRETSPSYK.html">PaavirkningPaagaaendeRETSPSYK</a></li>
+ <li><a href="ValueSet-PaavirkningRETSPSYK.html">PaavirkningRETSPSYK</a></li>
+ <li><a href="ValueSet-ParagrafferRETSPSYK.html">ParagrafferRETSPSYK</a></li>
+ <li><a href="ValueSet-PeritonealdefektLukningDHDB.html">PeritonealdefektLukningDHDB</a></li>
+ <li><a href="ValueSet-PeroperativMetastasebehandling.html">PeroperativMetastasebehandling</a></li>
+ <li><a href="ValueSet-PostoperativeKomplikationerDCCG.html">PostoperativeKomplikationerDCCG</a></li>
+ <li><a href="ValueSet-PraeoperativMetastaseBehandlingDCCG.html">PraeoperativMetastaseBehandlingDCCG</a></li>
+ <li><a href="ValueSet-PraeoperativPlanlaegningDSR.html">PraeoperativPlanlaegningDSR</a></li>
+ <li><a href="ValueSet-PraeoperativUdrensningDCCG.html">PraeoperativUdrensningDCCG</a></li>
+ <li><a href="ValueSet-ProcedureIkkeGennemfortDCCG.html">ProcedureIkkeGennemfortDCCG</a></li>
+ <li><a href="ValueSet-ProcedureTypeDCCG2.html">ProcedureTypeDCCG2</a></li>
+ <li><a href="ValueSet-ProcedureUdfoertDCCG.html">ProcedureUdfoertDCCG</a></li>
+ <li><a href="ValueSet-ProcedureUdfoertK2DCCG.html">ProcedureUdfoertK2DCCG</a></li>
+ <li><a href="ValueSet-ProcedureUdfoertR2DCCG.html">ProcedureUdfoertR2DCCG</a></li>
+ <li><a href="ValueSet-ProcedurerAndreDKRR.html">ProcedurerAndreDKRR</a></li>
+ <li><a href="ValueSet-ProteseDSR.html">ProteseDSR</a></li>
+ <li><a href="ValueSet-ProtesestatusDHR.html">ProtesestatusDHR</a></li>
+ <li><a href="ValueSet-Radioimmunoterapi.html">Radioimmunoterapi</a></li>
+ <li><a href="ValueSet-RadiologicalBoneChanges.html">RadiologicalBoneChanges</a></li>
+ <li><a href="ValueSet-RadiologicalBoneChanges202412.html">RadiologicalBoneChanges202412</a></li>
+ <li><a href="ValueSet-ReoperationAarsagDKRR.html">ReoperationAarsagDKRR</a></li>
+ <li><a href="ValueSet-ResektionUdfoerelseDCCG.html">ResektionUdfoerelseDCCG</a></li>
+ <li><a href="ValueSet-Result.html">Result</a></li>
+ <li><a href="ValueSet-ResultTestFISH.html">ResultTestFISH</a></li>
+ <li><a href="ValueSet-RevisionAarsagDKRR.html">RevisionAarsagDKRR</a></li>
+ <li><a href="ValueSet-RevisionDHR.html">RevisionDHR</a></li>
+ <li><a href="ValueSet-RevisionIndikationDHR.html">RevisionIndikationDHR</a></li>
+ <li><a href="ValueSet-RevisionIndikationDKR.html">RevisionIndikationDKR</a></li>
+ <li><a href="ValueSet-RevisionIndikationDSR.html">RevisionIndikationDSR</a></li>
+ <li><a href="ValueSet-RevisionStatusDKR.html">RevisionStatusDKR</a></li>
+ <li><a href="ValueSet-RevisionUdskiftningDHR.html">RevisionUdskiftningDHR</a></li>
+ <li><a href="ValueSet-RevisionstypeDSR.html">RevisionstypeDSR</a></li>
+ <li><a href="ValueSet-RisikovurderingRETSPSYK.html">RisikovurderingRETSPSYK</a></li>
+ <li><a href="ValueSet-RobotDHDB.html">RobotDHDB</a></li>
+ <li><a href="ValueSet-SKSExtraModularDisease.html">SKSExtraModularDisease</a></li>
+ <li><a href="ValueSet-Skematype.html">Skematype</a></li>
+ <li><a href="ValueSet-SlyngeDUGA.html">SlyngeDUGA</a></li>
+ <li><a href="ValueSet-Status.html">Status</a></li>
+ <li><a href="ValueSet-StraaleterapiLYFO.html">StraaleterapiLYFO</a></li>
+ <li><a href="ValueSet-SubscapularisDSR.html">SubscapularisDSR</a></li>
+ <li><a href="ValueSet-SupplerendeIndgrebDSR.html">SupplerendeIndgrebDSR</a></li>
+ <li><a href="ValueSet-SuturHurtigResorberbarMonoDHDB.html">SuturHurtigResorberbarMonoDHDB</a></li>
+ <li><a href="ValueSet-SuturHurtigResorberbarMultiDHDB.html">SuturHurtigResorberbarMultiDHDB</a></li>
+ <li><a href="ValueSet-SuturLangsomResorberbarMonoDHDB.html">SuturLangsomResorberbarMonoDHDB</a></li>
+ <li><a href="ValueSet-SuturMonofilamentTypeVentralhernieDHDB.html">SuturMonofilamentTypeVentralhernieDHDB</a></li>
+ <li><a href="ValueSet-SuturNonResorberbarMonoDHDB.html">SuturNonResorberbarMonoDHDB</a></li>
+ <li><a href="ValueSet-SuturNonResorberbarMultiDHDB.html">SuturNonResorberbarMultiDHDB</a></li>
+ <li><a href="ValueSet-SygdomMedicinskBehandletDHDB.html">SygdomMedicinskBehandletDHDB</a></li>
+ <li><a href="ValueSet-TackernavnAbsorberbarDHDB.html">TackernavnAbsorberbarDHDB</a></li>
+ <li><a href="ValueSet-TackernavnNonAbsorberbarDHDB.html">TackernavnNonAbsorberbarDHDB</a></li>
+ <li><a href="ValueSet-TidligereIndgrebDSR.html">TidligereIndgrebDSR</a></li>
+ <li><a href="ValueSet-TidligereOperationDKR.html">TidligereOperationDKR</a></li>
+ <li><a href="ValueSet-TidligereOperationHofte.html">TidligereOperationHofte</a></li>
+ <li><a href="ValueSet-Transplantation.html">Transplantation</a></li>
+ <li><a href="ValueSet-TransplantationTypeDHR.html">TransplantationTypeDHR</a></li>
+ <li><a href="ValueSet-TransplantationcenterALG.html">TransplantationcenterALG</a></li>
+ <li><a href="ValueSet-TreatmentCrossSection.html">TreatmentCrossSection</a></li>
+ <li><a href="ValueSet-TreatmentIndicationCLL.html">TreatmentIndicationCLL</a></li>
+ <li><a href="ValueSet-TreatmentPreservation.html">TreatmentPreservation</a></li>
+ <li><a href="ValueSet-TreatmentResponseALD.html">TreatmentResponseALD</a></li>
+ <li><a href="ValueSet-TreatmentResponseEvaluationCLL.html">TreatmentResponseEvaluationCLL</a></li>
+ <li><a href="ValueSet-TreatmentScheduledDAMYDA.html">TreatmentScheduledDAMYDA</a></li>
+ <li><a href="ValueSet-TrombolyseprofylakseDHR.html">TrombolyseprofylakseDHR</a></li>
+ <li><a href="ValueSet-TypeLokalresektionDCCG.html">TypeLokalresektionDCCG</a></li>
+ <li><a href="ValueSet-TypeLokalresektionKolonDCCG.html">TypeLokalresektionKolonDCCG</a></li>
+ <li><a href="ValueSet-UndersoendeLAB.html">UndersoendeLAB</a></li>
+ <li><a href="ValueSet-Undervisning.html">Undervisning</a></li>
+ <li><a href="ValueSet-Uspecificeret.html">Uspecificeret</a></li>
+ <li><a href="ValueSet-VarighedDKR.html">VarighedDKR</a></li>
+ <li><a href="ValueSet-VarighedPostOPTrombDKR.html">VarighedPostOPTrombDKR</a></li>
+ <li><a href="ValueSet-VarighedPostOPTrombDKR1.html">VarighedPostOPTrombDKR1</a></li>
+ <li><a href="ValueSet-VarighedPostOPTrombDKR2.html">VarighedPostOPTrombDKR2</a></li>
+ <li><a href="ValueSet-VarighedPostOPTrombDKR3.html">VarighedPostOPTrombDKR3</a></li>
+ <li><a href="ValueSet-VarighedPostOPTrombDKRNOAK.html">VarighedPostOPTrombDKRNOAK</a></li>
+ <li><a href="ValueSet-VarighedPostOPTrombDKRVitKanta.html">VarighedPostOPTrombDKRVitKanta</a></li>
+ <li><a href="ValueSet-VasospasmerTiltag.html">VasospasmerTiltag</a></li>
+ <li><a href="ValueSet-VentralHernieCicatriceTypeDHDB.html">VentralHernieCicatriceTypeDHDB</a></li>
+ <li><a href="ValueSet-VentralHernieTypeDHDB.html">VentralHernieTypeDHDB</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"></p><a name="GenericValues"> </a><a name="hcGenericValues"> </a><a name="GenericValues-en-US"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code> defines the following codes in an undefined hierarchy:</p>
+<table class="codes"><tr><td><b>Lvl</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">other<a name="GenericValues-other"> </a></td>
+<td>Other</td>
+<td>Other - used to choose unspecific value not in a valueset</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">none<a name="GenericValues-none"> </a></td>
+<td>None</td>
+<td>None - used to choose none of the available values</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">all<a name="GenericValues-all"> </a></td>
+<td>All</td>
+<td>All - used to indicate all values of a question</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">various<a name="GenericValues-various"> </a></td>
+<td>Various</td>
+<td>Forskelligt</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">na<a name="GenericValues-na"> </a></td>
+<td>N/A</td>
+<td>Not available</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">not_performed<a name="GenericValues-not_performed"> </a></td>
+<td>Not performed</td>
+<td>Not performed - used to indicate, if a procedure or test has not been performed</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">normal<a name="GenericValues-normal"> </a></td>
+<td>Normal</td>
+<td>Normal</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">abnormal<a name="GenericValues-abnormal"> </a></td>
+<td>Abnormal</td>
+<td>Abnormal / Unormal</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">ukn<a name="GenericValues-ukn"> </a></td>
+<td>Unknown</td>
+<td>Ukendt</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">changes<a name="GenericValues-changes"> </a></td>
+<td>Changes</td>
+<td>Changes</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">very_good<a name="GenericValues-very_good"> </a></td>
+<td>Very good</td>
+<td>Very good</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">good<a name="GenericValues-good"> </a></td>
+<td>Good</td>
+<td>Good / SNOMED-CT: 20572008</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">postive<a name="GenericValues-postive"> </a></td>
+<td>Positive</td>
+<td>Positiv</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">negative<a name="GenericValues-negative"> </a></td>
+<td>Negative</td>
+<td>Negativ</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">intermediate<a name="GenericValues-intermediate"> </a></td>
+<td>Intermediate</td>
+<td>Intermediate / SNOMED-CT: 11896004 </td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">poorly<a name="GenericValues-poorly"> </a></td>
+<td>Poorly</td>
+<td>Poorly / SNOMED-CT: 556001</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">fracture<a name="GenericValues-fracture"> </a></td>
+<td>Fracture</td>
+<td>Fracture</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">full_remission<a name="GenericValues-full_remission"> </a></td>
+<td>In full remission</td>
+<td>In full remission / SNOMED-CT: 103338009</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">partial_remission<a name="GenericValues-partial_remission"> </a></td>
+<td>In partial remission</td>
+<td>In partial remission / SNOMED-CT: 103337004</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">stable<a name="GenericValues-stable"> </a></td>
+<td>Stable</td>
+<td>Stable / SNOMED-CT: 58158008</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">uncercertain<a name="GenericValues-uncercertain"> </a></td>
+<td>Uncertain</td>
+<td>Uncertain / SNOMED-CT: 64957009</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">not_examined_for<a name="GenericValues-not_examined_for"> </a></td>
+<td>Not examined for</td>
+<td>Not examined for / SNOMED-CT: 75134009</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">progressive<a name="GenericValues-progressive"> </a></td>
+<td>Progressive</td>
+<td>Progressive / SNOMED-CT: 255314001</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">regressive<a name="GenericValues-regressive"> </a></td>
+<td>Regressive</td>
+<td>Regressive / SNOMED-CT: 37865006</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">high<a name="GenericValues-high"> </a></td>
+<td>High</td>
+<td>High (risk, etc.)</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">moderate<a name="GenericValues-moderate"> </a></td>
+<td>Moderate</td>
+<td>Moderate (risk, etc.)</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">low<a name="GenericValues-low"> </a></td>
+<td>Low</td>
+<td>Low (risk, etc.)</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">combined<a name="GenericValues-combined"> </a></td>
+<td>Combined</td>
+<td>Combined / Kombineret / SNOMED-CT: 89780004</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">medial_lateral<a name="GenericValues-medial_lateral"> </a></td>
+<td>Medial and lateral</td>
+<td>Medial and lateral</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">spared<a name="GenericValues-spared"> </a></td>
+<td>Spared</td>
+<td>Spared / Skånet</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">parted<a name="GenericValues-parted"> </a></td>
+<td>Parted</td>
+<td>Parted / Delt</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">bilateral<a name="GenericValues-bilateral"> </a></td>
+<td>Bilateral</td>
+<td>Bilateral</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">unilateral<a name="GenericValues-unilateral"> </a></td>
+<td>Unilateral</td>
+<td>Unilateral</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">central<a name="GenericValues-central"> </a></td>
+<td>Central</td>
+<td>Central / Centralt / SNOMED-CT: 26216008</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">paper_report<a name="GenericValues-paper_report"> </a></td>
+<td>Paper report</td>
+<td>Paper report / Papir indberetning</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">electronic_report<a name="GenericValues-electronic_report"> </a></td>
+<td>Electronic report</td>
+<td>Electronic report / Elektronisk indberetning</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">not_indicated<a name="GenericValues-not_indicated"> </a></td>
+<td>Not indicated</td>
+<td>Not indicated / Ikke indiceret</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">permanent<a name="GenericValues-permanent"> </a></td>
+<td>Permanent</td>
+<td>Permanent / SNOMED-CT: 6934004</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">temporary<a name="GenericValues-temporary"> </a></td>
+<td>Temporary</td>
+<td>Temporary / Midlertidig</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">single_dose<a name="GenericValues-single_dose"> </a></td>
+<td>Single dose</td>
+<td>Single dose / Engangsdosis</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">multiple_doses<a name="GenericValues-multiple_doses"> </a></td>
+<td>Multiple doses</td>
+<td>Multiple doses / Flere doser</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">conditional<a name="GenericValues-conditional"> </a></td>
+<td>Conditional</td>
+<td>Conditional / Betinget</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">death<a name="GenericValues-death"> </a></td>
+<td>Death</td>
+<td>Death / Død</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">specified<a name="GenericValues-specified"> </a></td>
+<td>Specificeret</td>
+<td>Specificeret</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">unspecified<a name="GenericValues-unspecified"> </a></td>
+<td>Uspecificeret</td>
+<td>Uspecificeret</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">intact<a name="GenericValues-intact"> </a></td>
+<td>Intact</td>
+<td>Intact / Intakt / SNOMED-CT: 11163003</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">not_reconstructable<a name="GenericValues-not_reconstructable"> </a></td>
+<td>Not reconstructable</td>
+<td>Not reconstructable / Ikke rekonstruerbar</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">not_inserted<a name="GenericValues-not_inserted"> </a></td>
+<td>Not inserted</td>
+<td>Not inserted / Ikke indsat</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">inserted<a name="GenericValues-inserted"> </a></td>
+<td>Inserted</td>
+<td>Inserted / Indsat</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">removed<a name="GenericValues-removed"> </a></td>
+<td>Removed</td>
+<td>Removed / Fjernet</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">replaced<a name="GenericValues-replaced"> </a></td>
+<td>Replaced</td>
+<td>Replaced / Udskiftet</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;total_replacement<a name="GenericValues-total_replacement"> </a></td>
+<td>Total replacement</td>
+<td>Total replacement / Total udskiftning</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;partial_replacement<a name="GenericValues-partial_replacement"> </a></td>
+<td>Partial replacement</td>
+<td>Partial replacement / Delvis udskiftning</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">not_replaced<a name="GenericValues-not_replaced"> </a></td>
+<td>Not replaced</td>
+<td>Not replaced / Ikke udskiftet</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">not_replaced_hemi<a name="GenericValues-not_replaced_hemi"> </a></td>
+<td>Ikke udskiftet, tidligere hemialloplastik</td>
+<td>Ikke udskiftet, tidligere hemialloplastik</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">heterologous<a name="GenericValues-heterologous"> </a></td>
+<td>Heterologous</td>
+<td>Heterologous / Heterolog / SNOMED-CT: 255346001</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">vancouver<a name="GenericValues-vancouver"> </a></td>
+<td>Vancouver</td>
+<td>Vancouver</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">anterior_approach<a name="GenericValues-anterior_approach"> </a></td>
+<td>Anterior approach</td>
+<td>Anterior approach / Anterior adgang / SNOMED-CT: 83037006</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">posterior_approach<a name="GenericValues-posterior_approach"> </a></td>
+<td>Posterior approach</td>
+<td>Posterior approach / Posterior adgang / SNOMED-CT: 112238006</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">lateral_approach<a name="GenericValues-lateral_approach"> </a></td>
+<td>Lateral approach</td>
+<td>Lateral approach / Lateral adgang / SNOMED-CT: 34459009</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">without<a name="GenericValues-without"> </a></td>
+<td>Without</td>
+<td>Without / Uden / SNOMED-CT: 45169001</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">with<a name="GenericValues-with"> </a></td>
+<td>With</td>
+<td>Without / Med / SNOMED-CT: 20401003</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">continuous<a name="GenericValues-continuous"> </a></td>
+<td>Continuous</td>
+<td>Continuous / Kontinuerlig</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">custom<a name="GenericValues-custom"> </a></td>
+<td>Custom</td>
+<td>Custom made</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://trifork.com">Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S</a>.  Package dk.kip.rkkp.fhir.ig.core#2.11.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 10, 2025 10:45+0000">2025-06-10</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

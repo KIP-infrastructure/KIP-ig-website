@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core"/>
-  <version value="2.11.2"/>
+  <version value="2.11.3"/>
   <name value="KIPInfrastructure"/>
   <title value="KIP Infrastructure"/>
   <status value="active"/>
-  <date value="2025-06-10T09:06:36+00:00"/>
+  <date value="2025-06-10T10:52:20+00:00"/>
   <publisher value="Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"/>
   <contact>
     <name value="Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"/>
@@ -2496,6 +2496,17 @@
       </reference>
       <name value="DHD eksklusionskriterier"/>
       <description value="Patienten skal ikke indberettes til DHD, fordi patienten opfylder et af følgende eksklusionskriterier."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/DiagnoseCLL"/>
+      </reference>
+      <name value="Diagnose (CLL)"/>
+      <description value="Diagnose (CLL)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
