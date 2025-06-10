@@ -1,0 +1,479 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Komponent - femur (DHR) - JSON Representation - KIP Infrastructure v2.11.4</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3.348"}
+    h3,h4,h5,h6{--heading-prefix:"3.348"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">KIP Infrastructure</span>
+            <br/>
+            <span style="display:inline-block;">2.11.4 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Search Parameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Extension Definitions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Code Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Komponent - femur (DHR)</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">This page is part of the KIP Infrastructure (v2.11.4: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ValueSet-KomponentFemurDHR.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-KomponentFemurDHR.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-KomponentFemurDHR.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Komponent - femur (DHR) - JSON Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2022-11-16
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ValueSet-KomponentFemurDHR.json" no-download="true">Raw json</a> | <a href="ValueSet-KomponentFemurDHR.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "KomponentFemurDHR",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet KomponentFemurDHR&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;KomponentFemurDHR\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcKomponentFemurDHR\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;KomponentFemurDHR-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html\&quot;&gt;&lt;code&gt;https://kip.rkkp.dk/fhir/CodeSystem/HipJointArthroplastyComponent&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-depuy_corail_collar\&quot;&gt;depuy_corail_collar&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DePuy: Corail m/krave&lt;/td&gt;&lt;td&gt;DePuy: Corail m/krave&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-depuy_corail_without_collar\&quot;&gt;depuy_corail_without_collar&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DePuy: Corail u/krave&lt;/td&gt;&lt;td&gt;DePuy: Corail u/krave&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-depuy_corail_revision_stem\&quot;&gt;depuy_corail_revision_stem&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DePuy: Corail Revision Stem - KAR&lt;/td&gt;&lt;td&gt;DePuy: Corail Revision Stem - KAR&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-depuy_c_stem_amt\&quot;&gt;depuy_c_stem_amt&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DePuy: C-stem AMT&lt;/td&gt;&lt;td&gt;DePuy: C-stem AMT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-depuy_summit\&quot;&gt;depuy_summit&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DePuy: Summit&lt;/td&gt;&lt;td&gt;DePuy: Summit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-implantcast_mutars_proximal_femoral_replacement\&quot;&gt;implantcast_mutars_proximal_femoral_replacement&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Implantcast: Mutars proksimal femoral replacement&lt;/td&gt;&lt;td&gt;Implantcast: Mutars proksimal femoral replacement&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-lima_h_max_lateralized\&quot;&gt;lima_h_max_lateralized&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lima: H-MAX: Lateralized&lt;/td&gt;&lt;td&gt;Lima: H-MAX: Lateralized&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-lima_h_max_standard\&quot;&gt;lima_h_max_standard&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lima: H-MAX: Standard&lt;/td&gt;&lt;td&gt;Lima: H-MAX: Standard&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-link_link_mp\&quot;&gt;link_link_mp&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Link: Link MP&lt;/td&gt;&lt;td&gt;Link: Link MP&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-link_lubinus_sp_ii\&quot;&gt;link_lubinus_sp_ii&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Link: Lubinus SP II&lt;/td&gt;&lt;td&gt;Link: Lubinus SP II&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-peter_brehm_gmbh_mrp_titan\&quot;&gt;peter_brehm_gmbh_mrp_titan&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Peter Brehm GmbH: MRP-Titan&lt;/td&gt;&lt;td&gt;Peter Brehm GmbH: MRP-Titan &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-smith.38nephew_bhr\&quot;&gt;smith&amp;amp;nephew_bhr&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Smith &amp;amp; Nephew: BHR&lt;/td&gt;&lt;td&gt;Smith &amp;amp; Nephew: BHR (Acetabulum + Femur)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-smith.38nephew_polarstem\&quot;&gt;smith&amp;amp;nephew_polarstem&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Smith &amp;amp; Nephew: Polarstem&lt;/td&gt;&lt;td&gt;Smith &amp;amp; Nephew: Polarstem&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-stryker_acolade_ii\&quot;&gt;stryker_acolade_ii&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stryker: Accolade II &lt;/td&gt;&lt;td&gt;Stryker: Accolade II &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-stryker_exeter_primary_v40\&quot;&gt;stryker_exeter_primary_v40&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stryker: Exeter Primary V40&lt;/td&gt;&lt;td&gt;Stryker: Exeter Primary V40&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-stryker_gmrs_proximal_femoral_component\&quot;&gt;stryker_gmrs_proximal_femoral_component&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stryker: GMRS Proximal Femoral Component&lt;/td&gt;&lt;td&gt;Stryker: GMRS Proximal Femoral Component&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-stryker_restoration_modular\&quot;&gt;stryker_restoration_modular&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stryker: Restoration modular&lt;/td&gt;&lt;td&gt;Stryker: Restoration modular&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-viking_medical_cfp\&quot;&gt;viking_medical_cfp&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Viking Medical: C.F.P.&lt;/td&gt;&lt;td&gt;Viking Medical: C.F.P.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_arcos_revision\&quot;&gt;zimmer_biomet_arcos_revision&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Arcos revision&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Arcos revision&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_avenir_cemented_stem\&quot;&gt;zimmer_biomet_avenir_cemented_stem&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Avenir cemented stem&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Avenir cemented stem&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_avenir_cementless_stem\&quot;&gt;zimmer_biomet_avenir_cementless_stem&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Avenir cementless stem &lt;/td&gt;&lt;td&gt;Zimmer Biomet: Avenir cementless stem&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_avenir_complete\&quot;&gt;zimmer_biomet_avenir_complete&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Avenir complete&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Avenir complete&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_bimetrix_without_collar_chrome_cobalt\&quot;&gt;zimmer_biomet_bimetrix_without_collar_chrome_cobalt&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Bimetric u/krave chrom/cobolt&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Bimetric u/krave chrom/cobolt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_bimetric_without_collar_titaneum\&quot;&gt;zimmer_biomet_bimetric_without_collar_titaneum&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Bimetric u/krave titaneum&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Bimetric u/krave titaneum&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_cls_spotorno\&quot;&gt;zimmer_biomet_cls_spotorno&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: CLS Spotorno&lt;/td&gt;&lt;td&gt;Zimmer Biomet: CLS Spotorno&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_cpt\&quot;&gt;zimmer_biomet_cpt&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: CPT&lt;/td&gt;&lt;td&gt;Zimmer Biomet: CPT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_echo_bi_metric_hip_stem_full_proximal_profile\&quot;&gt;zimmer_biomet_echo_bi_metric_hip_stem_full_proximal_profile&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Echo Bi-metric Hip Stem Full Proximal Profile&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Echo Bi-metric Hip Stem Full Proximal Profile&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_echo_bi_metric_reduced_proximal_profile\&quot;&gt;zimmer_biomet_echo_bi_metric_reduced_proximal_profile&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Echo Bi-Metric Reduceret Proximal Profil&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Echo Bi-Metric Reduceret Proximal Profil&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_fitmore\&quot;&gt;zimmer_biomet_fitmore&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Fitmore&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Fitmore&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_ms_30\&quot;&gt;zimmer_biomet_ms_30&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: MS-30&lt;/td&gt;&lt;td&gt;Zimmer Biomet: MS-30&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_revitan_revision_hip_system\&quot;&gt;zimmer_biomet_revitan_revision_hip_system&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Revitan Revision Hip System&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Revitan Revision Hip System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_taperloc\&quot;&gt;zimmer_biomet_taperloc&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Taperloc&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Taperloc&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_wagner_cone\&quot;&gt;zimmer_biomet_wagner_cone&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Wagner Cone&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Wagner Cone&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_wagner_sl\&quot;&gt;zimmer_biomet_wagner_sl&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Wagner SL&lt;/td&gt;&lt;td&gt;Zimmer Biomet: Wagner SL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_zmr_porous_coated\&quot;&gt;zimmer_biomet_zmr_porous_coated&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: ZMR porous-coated&lt;/td&gt;&lt;td&gt;Zimmer Biomet: ZMR porous-coated&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_zmr_splined\&quot;&gt;zimmer_biomet_zmr_splined&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: ZMR splined&lt;/td&gt;&lt;td&gt;Zimmer Biomet: ZMR splined&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_zmr_taper\&quot;&gt;zimmer_biomet_zmr_taper&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: ZMR Taper&lt;/td&gt;&lt;td&gt;Zimmer Biomet: ZMR Taper&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HipJointArthroplastyComponent.html#HipJointArthroplastyComponent-zimmer_biomet_zmr_taper_xl\&quot;&gt;zimmer_biomet_zmr_taper_xl&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zimmer Biomet: ZMR Taper XL&lt;/td&gt;&lt;td&gt;Zimmer Biomet: ZMR Taper XL&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;CodeSystem-GenericValues.html\&quot;&gt;&lt;code&gt;https://kip.rkkp.dk/fhir/CodeSystem/GenericValues&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-GenericValues.html#GenericValues-custom\&quot;&gt;custom&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Custom made&lt;/td&gt;&lt;td&gt;Custom made&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-GenericValues.html#GenericValues-other\&quot;&gt;other&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anden komponent&lt;/td&gt;&lt;td&gt;Other - used to choose unspecific value not in a valueset&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "https://kip.rkkp.dk/fhir/ValueSet/KomponentFemurDHR",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "2.11.4",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "KomponentFemurDHR",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "Komponent - femur (DHR)",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a>" : true,
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2022-11-16T00:00:00+02:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://trifork.com"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "rbk@trifork.com"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>" : "Komponent - femur (DHR)",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
+    "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "https://kip.rkkp.dk/fhir/CodeSystem/HipJointArthroplastyComponent",
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "depuy_corail_collar",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "DePuy: Corail m/krave"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "depuy_corail_without_collar",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "DePuy: Corail u/krave"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "depuy_corail_revision_stem",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "DePuy: Corail Revision Stem - KAR"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "depuy_c_stem_amt",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "DePuy: C-stem AMT"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "depuy_summit",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "DePuy: Summit"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "implantcast_mutars_proximal_femoral_replacement",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Implantcast: Mutars proksimal femoral replacement"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "lima_h_max_lateralized",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Lima: H-MAX: Lateralized"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "lima_h_max_standard",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Lima: H-MAX: Standard"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "link_link_mp",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Link: Link MP"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "link_lubinus_sp_ii",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Link: Lubinus SP II"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "peter_brehm_gmbh_mrp_titan",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Peter Brehm GmbH: MRP-Titan"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "smith&amp;nephew_bhr",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Smith &amp; Nephew: BHR"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "smith&amp;nephew_polarstem",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Smith &amp; Nephew: Polarstem"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "stryker_acolade_ii",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Stryker: Accolade II "
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "stryker_exeter_primary_v40",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Stryker: Exeter Primary V40"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "stryker_gmrs_proximal_femoral_component",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Stryker: GMRS Proximal Femoral Component"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "stryker_restoration_modular",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Stryker: Restoration modular"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "viking_medical_cfp",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Viking Medical: C.F.P."
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "zimmer_biomet_arcos_revision",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: Arcos revision"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "zimmer_biomet_avenir_cemented_stem",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: Avenir cemented stem"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "zimmer_biomet_avenir_cementless_stem",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: Avenir cementless stem "
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "zimmer_biomet_avenir_complete",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: Avenir complete"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "zimmer_biomet_bimetrix_without_collar_chrome_cobalt",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: Bimetric u/krave chrom/cobolt"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "zimmer_biomet_bimetric_without_collar_titaneum",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: Bimetric u/krave titaneum"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "zimmer_biomet_cls_spotorno",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: CLS Spotorno"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "zimmer_biomet_cpt",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: CPT"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "zimmer_biomet_echo_bi_metric_hip_stem_full_proximal_profile",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: Echo Bi-metric Hip Stem Full Proximal Profile"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "zimmer_biomet_echo_bi_metric_reduced_proximal_profile",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: Echo Bi-Metric Reduceret Proximal Profil"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "zimmer_biomet_fitmore",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: Fitmore"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "zimmer_biomet_ms_30",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: MS-30"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "zimmer_biomet_revitan_revision_hip_system",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: Revitan Revision Hip System"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "zimmer_biomet_taperloc",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: Taperloc"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "zimmer_biomet_wagner_cone",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: Wagner Cone"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "zimmer_biomet_wagner_sl",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: Wagner SL"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "zimmer_biomet_zmr_porous_coated",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: ZMR porous-coated"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "zimmer_biomet_zmr_splined",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: ZMR splined"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "zimmer_biomet_zmr_taper",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: ZMR Taper"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "zimmer_biomet_zmr_taper_xl",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Zimmer Biomet: ZMR Taper XL"
+          }
+        ]
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "custom",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Custom made"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "other",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Anden komponent"
+          }
+        ]
+      }
+    ]
+  }
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://trifork.com">Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S</a>.  Package dk.kip.rkkp.fhir.ig.core#2.11.4 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 10, 2025 11:11+0000">2025-06-10</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
