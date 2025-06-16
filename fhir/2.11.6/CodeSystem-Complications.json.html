@@ -1,0 +1,702 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Complications - JSON Representation - KIP Infrastructure v2.11.6</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3.767"}
+    h3,h4,h5,h6{--heading-prefix:"3.767"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">KIP Infrastructure</span>
+            <br/>
+            <span style="display:inline-block;">2.11.6 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Search Parameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Extension Definitions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Code Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Complications</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">This page is part of the KIP Infrastructure (v2.11.6: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-Complications.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-Complications.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-Complications.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Complications - JSON Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2022-06-07
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-Complications.json" no-download="true">Raw json</a> | <a href="CodeSystem-Complications.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a>" : "Complications",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem Complications&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;Complications\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcComplications\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-insensitive code system &lt;code&gt;https://kip.rkkp.dk/fhir/CodeSystem/Complications&lt;/code&gt; defines the following codes in an undefined hierarchy:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Lvl&lt;/b&gt;&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ami&lt;a name=\&quot;Complications-ami\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AMI&lt;/td&gt;&lt;td&gt;AMI - Myocardieinfarkt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;chylothorax&lt;a name=\&quot;Complications-chylothorax\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chylothorax&lt;/td&gt;&lt;td&gt;Chylothorax&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;fascierupture&lt;a name=\&quot;Complications-fascierupture\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fascieruptur&lt;/td&gt;&lt;td&gt;Fascieruptur&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ileus&lt;a name=\&quot;Complications-ileus\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ileus&lt;/td&gt;&lt;td&gt;Ileus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;intrathoracicbleeding&lt;a name=\&quot;Complications-intrathoracicbleeding\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intrathorakal blødning&lt;/td&gt;&lt;td&gt;Intrathorakal blødning&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;intraabdominalabscess&lt;a name=\&quot;Complications-intraabdominalabscess\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intraabdominal absces&lt;/td&gt;&lt;td&gt;Intraabdominal absces&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;intraabdominalbleeding&lt;a name=\&quot;Complications-intraabdominalbleeding\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intraabdominal blødning&lt;/td&gt;&lt;td&gt;Intraabdominal blødning&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;pulmonaryembolism&lt;a name=\&quot;Complications-pulmonaryembolism\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lungeemboli&lt;/td&gt;&lt;td&gt;Lungeemboli&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;perforation&lt;a name=\&quot;Complications-perforation\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Perforation&lt;/td&gt;&lt;td&gt;Perforation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0bloodvessel/aneurysm&lt;a name=\&quot;Complications-bloodvessel.47aneurysm\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kar/anurisme&lt;/td&gt;&lt;td&gt;Perforation af kar eller aneurisme&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;pleuraexudate&lt;a name=\&quot;Complications-pleuraexudate\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pleuraeksudat&lt;/td&gt;&lt;td&gt;Pleuraeksudat&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;pneumonia&lt;a name=\&quot;Complications-pneumonia\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pneumoni&lt;/td&gt;&lt;td&gt;Pneumoni&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;infection&lt;a name=\&quot;Complications-infection\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sårinfektion&lt;/td&gt;&lt;td&gt;Sårinfektion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;anafylSchock&lt;a name=\&quot;Complications-anafylSchock\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anafylaktisk reaktion/shock&lt;/td&gt;&lt;td&gt;Anafylaktisk reaktion/shock&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;anInterrupt&lt;a name=\&quot;Complications-anInterrupt\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anæstesi afbrudt&lt;/td&gt;&lt;td&gt;Anæstesi afbrudt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;appFailure&lt;a name=\&quot;Complications-appFailure\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Apparaturfejl&lt;/td&gt;&lt;td&gt;Apparaturfejl&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;aspiration&lt;a name=\&quot;Complications-aspiration\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aspiration&lt;/td&gt;&lt;td&gt;Aspiration&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;duraptAcc&lt;a name=\&quot;Complications-duraptAcc\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Durapunktur accidentel&lt;/td&gt;&lt;td&gt;Durapunktur accidentel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;heartFail&lt;a name=\&quot;Complications-heartFail\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hjertestop&lt;/td&gt;&lt;td&gt;Hjertestop&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;huskeAN&lt;a name=\&quot;Complications-huskeAN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Huskeanæstesi&lt;/td&gt;&lt;td&gt;Huskeanæstesi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;malignHyp&lt;a name=\&quot;Complications-malignHyp\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Malign Hypertermi mistanke&lt;/td&gt;&lt;td&gt;Malign Hypertermi mistanke&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;medFail&lt;a name=\&quot;Complications-medFail\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Medicineringsfejl&lt;/td&gt;&lt;td&gt;Medicineringsfejl&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;neuMuscBlock&lt;a name=\&quot;Complications-neuMuscBlock\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Neuromuskulær blokade, forlænget virkning&lt;/td&gt;&lt;td&gt;Neuromuskulær blokade, forlænget virkning&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;dentInj&lt;a name=\&quot;Complications-dentInj\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tandskade&lt;/td&gt;&lt;td&gt;Tandskade&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;mors&lt;a name=\&quot;Complications-mors\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mors, uventet&lt;/td&gt;&lt;td&gt;Mors, uventet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;dissection&lt;a name=\&quot;Complications-dissection\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dissektion&lt;/td&gt;&lt;td&gt;Dissektion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;thromboembolic&lt;a name=\&quot;Complications-thromboembolic\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tromboemboliske komplikationer&lt;/td&gt;&lt;td&gt;Tromboemboliske komplikationer som medfører infarkt inden for 24 timer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;groinbleeding&lt;a name=\&quot;Complications-groinbleeding\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Blødning fra lysken&lt;/td&gt;&lt;td&gt;Alvorlig blødning fra lysken&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;mechanical&lt;a name=\&quot;Complications-mechanical\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mekaniske&lt;/td&gt;&lt;td&gt;Mekaniske komplikationer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;bloodvesselocclusion&lt;a name=\&quot;Complications-bloodvesselocclusion\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aflukning af kar&lt;/td&gt;&lt;td&gt;Aflukning af kar medførende infarkt indenfor 24 timer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;peroperativebleeding&lt;a name=\&quot;Complications-peroperativebleeding\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Peroperativ blødning&lt;/td&gt;&lt;td&gt;Livstruende peroperativ blødning, der ikke kan kontrolleres inden for få sekunder&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;other&lt;a name=\&quot;Complications-other\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Other&lt;/td&gt;&lt;td&gt;Other&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;vascular-unspecific&lt;a name=\&quot;Complications-vascular-unspecific\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vascular, unspecific&lt;/td&gt;&lt;td&gt;Vascular, unspecific&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;infarction-unspecific&lt;a name=\&quot;Complications-infarction-unspecific\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cerebral infarction and bleeding, unspecific&lt;/td&gt;&lt;td&gt;Cerebral infarction and bleeding, unspecific&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;post_polypectomy_syndrome&lt;a name=\&quot;Complications-post_polypectomy_syndrome\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Post polypectomy syndrome&lt;/td&gt;&lt;td&gt;Post polypectomy syndrome / Postpolypektomisyndrom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;urinary_retention&lt;a name=\&quot;Complications-urinary_retention\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Urinary retention&lt;/td&gt;&lt;td&gt;Urinary retention / Urinretention&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;medical&lt;a name=\&quot;Complications-medical\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Medical complication&lt;/td&gt;&lt;td&gt;Medical complication / Medicinsk komplikation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;movement_restriction&lt;a name=\&quot;Complications-movement_restriction\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Movement restriction&lt;/td&gt;&lt;td&gt;Movement restriction / Bevægelsesindskrænkning&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;chronic_pain&lt;a name=\&quot;Complications-chronic_pain\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chronic pain&lt;/td&gt;&lt;td&gt;Chronic pain / Kronisk smerte&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;reoperation&lt;a name=\&quot;Complications-reoperation\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Reoperation&lt;/td&gt;&lt;td&gt;Reoperation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rupture&lt;a name=\&quot;Complications-rupture\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rupture&lt;/td&gt;&lt;td&gt;Rupture / Ruptur&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0rupture_patella_ligament&lt;a name=\&quot;Complications-rupture_patella_ligament\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rupture of patella ligament&lt;/td&gt;&lt;td&gt;Rupture of patella ligament / Ruptur af patellasene&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;thrombosis&lt;a name=\&quot;Complications-thrombosis\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Thrombosis&lt;/td&gt;&lt;td&gt;Thrombosis / Trombose&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0dvt&lt;a name=\&quot;Complications-dvt\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dyb vene trombose&lt;/td&gt;&lt;td&gt;Dyb vene trombose&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0abdominal&lt;a name=\&quot;Complications-abdominal\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Abdominal /hepatisk/milt trombose&lt;/td&gt;&lt;td&gt;Abdominal /hepatisk/milt trombose&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;marrow_relapse&lt;a name=\&quot;Complications-marrow_relapse\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Marrow relapse&lt;/td&gt;&lt;td&gt;Marrow relapse / Marv relaps&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rising_m_component&lt;a name=\&quot;Complications-rising_m_component\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rising M-component&lt;/td&gt;&lt;td&gt;Rising M-component / Stigende M-komponent&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;hypercalcemia&lt;a name=\&quot;Complications-hypercalcemia\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hypercalcemia&lt;/td&gt;&lt;td&gt;Hypercalcemia / Hypercalcæmi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;osteolytic_foci&lt;a name=\&quot;Complications-osteolytic_foci\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Progressive osteolytic foci&lt;/td&gt;&lt;td&gt;Progressive osteolytic foci / Progression af osteolytiske foci&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;medullary_cross_sectional_syndrome&lt;a name=\&quot;Complications-medullary_cross_sectional_syndrome\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Medullary cross-sectional syndrome&lt;/td&gt;&lt;td&gt;Medullary cross-sectional syndrome / Medullært tværsnitssyndrom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;extremedullery_myeloma&lt;a name=\&quot;Complications-extremedullery_myeloma\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Extremedullary Myeloma&lt;/td&gt;&lt;td&gt;Extremedullary Myeloma / Ekstramedullære Myelomer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;plasma_cell_leukemia&lt;a name=\&quot;Complications-plasma_cell_leukemia\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Plasma cell leukemia&lt;/td&gt;&lt;td&gt;Plasma cell leukemia / Plasmacelle leukæmi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;uremia&lt;a name=\&quot;Complications-uremia\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uremia&lt;/td&gt;&lt;td&gt;Uremia / Uræmi / SNOMED-CT: 44730006&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0uremia_clinically&lt;a name=\&quot;Complications-uremia_clinically\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uremia (clinically significant)&lt;/td&gt;&lt;td&gt;Uremia (clinically significant) / Uræmi (klinisk betydende)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0uremia_dialysis&lt;a name=\&quot;Complications-uremia_dialysis\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uremia (chronic dialysis requiring)&lt;/td&gt;&lt;td&gt;Uremia (chronic dialysis requiring) / Uræmi (kronisk dialysekrævende)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;amyloidosis&lt;a name=\&quot;Complications-amyloidosis\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Amyloidosis&lt;/td&gt;&lt;td&gt;Amyloidosis / Amyloidose / SNOMED-CT: 17602002&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;neuropathy&lt;a name=\&quot;Complications-neuropathy\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Neuropathy&lt;/td&gt;&lt;td&gt;Neuropathy / Neuropati / SNOMED-CT: 386033004&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;hyperviscosity&lt;a name=\&quot;Complications-hyperviscosity\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hyperviscosity&lt;/td&gt;&lt;td&gt;Hyperviscosity / Hyperviskositet / SNOMED-CT: 64088006&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;tci&lt;a name=\&quot;Complications-tci\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;TCI&lt;/td&gt;&lt;td&gt;TCI&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;bleeding&lt;a name=\&quot;Complications-bleeding\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bleeding&lt;/td&gt;&lt;td&gt;Bleeding / Blødning&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;apoplexia_cerebri&lt;a name=\&quot;Complications-apoplexia_cerebri\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Apopleksi cerebri&lt;/td&gt;&lt;td&gt;Apopleksi cerebri&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;hematoma&lt;a name=\&quot;Complications-hematoma\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Surgery required hematoma&lt;/td&gt;&lt;td&gt;Surgery required hematoma / operationskrævende hæmatom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;lymph_leakage&lt;a name=\&quot;Complications-lymph_leakage\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lymph leakage over 2 days&lt;/td&gt;&lt;td&gt;Lymph leakage over 2 days / lymfesiven over 2 døgn (forlænger indlæggelsen)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;necrosis&lt;a name=\&quot;Complications-necrosis\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Surgery required necrosis&lt;/td&gt;&lt;td&gt;Surgery required necrosis / operationskrævende randnekrose&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;lymphocele&lt;a name=\&quot;Complications-lymphocele\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Surgery required lymphocele&lt;/td&gt;&lt;td&gt;Surgery required lymphocele / operationskrævende lymfocele&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;superficial_subcutaneous_infection&lt;a name=\&quot;Complications-superficial_subcutaneous_infection\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Superficial/subcutaneous infection&lt;/td&gt;&lt;td&gt;overfladisk / subcutan infektion (ved antibiotika eller operation)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;deep_prosthesis_infection&lt;a name=\&quot;Complications-deep_prosthesis_infection\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Deep/prosthesis infection&lt;/td&gt;&lt;td&gt;Deep/prosthesis infection / dyb / protese infektion (ved antibiotika eller operation)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;segment_elevation_myocardial_infarction&lt;a name=\&quot;Complications-segment_elevation_myocardial_infarction\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Type of heart attack&lt;/td&gt;&lt;td&gt;Type of heart attack that mainly affects your hearts lower chambers&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;bundle_branch_block_myocardial_infarction&lt;a name=\&quot;Complications-bundle_branch_block_myocardial_infarction\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Type of heart attack&lt;/td&gt;&lt;td&gt;--&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;non_segment_elevation_myocardial_infarction&lt;a name=\&quot;Complications-non_segment_elevation_myocardial_infarction\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Type of heart attack&lt;/td&gt;&lt;td&gt;--&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;unstable_agina&lt;a name=\&quot;Complications-unstable_agina\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Heart failure?&lt;/td&gt;&lt;td&gt;--&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rulled_out_heart_attack&lt;a name=\&quot;Complications-rulled_out_heart_attack\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;No heart attack/failur&lt;/td&gt;&lt;td&gt;--&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;anterior_segment_elevation_myocardial_infarction&lt;a name=\&quot;Complications-anterior_segment_elevation_myocardial_infarction\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Postion&lt;/td&gt;&lt;td&gt;--&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;non_anterior_segment_elevation_myocardial_infarction&lt;a name=\&quot;Complications-non_anterior_segment_elevation_myocardial_infarction\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Position&lt;/td&gt;&lt;td&gt;--&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;heart_failur_class_2&lt;a name=\&quot;Complications-heart_failur_class_2\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Class 2 heartfailure&lt;/td&gt;&lt;td&gt;--&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;heart_failur_class_3&lt;a name=\&quot;Complications-heart_failur_class_3\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Class 3 heartfailure&lt;/td&gt;&lt;td&gt;--&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;heart_failur_class_4&lt;a name=\&quot;Complications-heart_failur_class_4\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Class 4 heartfailure&lt;/td&gt;&lt;td&gt;--&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "https://kip.rkkp.dk/fhir/CodeSystem/Complications",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "2.11.6",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "Complications",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "Complications",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2022-06-07T00:00:00+02:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://trifork.com"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "rbk@trifork.com"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "Complications - several procedures",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a>" : false,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a>" : 77,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ami",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "AMI",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "AMI - Myocardieinfarkt"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "chylothorax",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Chylothorax",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Chylothorax"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "fascierupture",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Fascieruptur",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Fascieruptur"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ileus",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ileus",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Ileus"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "intrathoracicbleeding",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intrathorakal blødning",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Intrathorakal blødning"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "intraabdominalabscess",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intraabdominal absces",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Intraabdominal absces"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "intraabdominalbleeding",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intraabdominal blødning",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Intraabdominal blødning"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "pulmonaryembolism",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Lungeemboli",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Lungeemboli"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "perforation",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Perforation",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Perforation",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "bloodvessel/aneurysm",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Kar/anurisme",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Perforation af kar eller aneurisme"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "pleuraexudate",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pleuraeksudat",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Pleuraeksudat"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "pneumonia",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pneumoni",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Pneumoni"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "infection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sårinfektion",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Sårinfektion"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "anafylSchock",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anafylaktisk reaktion/shock",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Anafylaktisk reaktion/shock"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "anInterrupt",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anæstesi afbrudt",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Anæstesi afbrudt"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "appFailure",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Apparaturfejl",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Apparaturfejl"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "aspiration",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Aspiration",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Aspiration"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "duraptAcc",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Durapunktur accidentel",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Durapunktur accidentel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "heartFail",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hjertestop",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Hjertestop"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "huskeAN",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Huskeanæstesi",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Huskeanæstesi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "malignHyp",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Malign Hypertermi mistanke",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Malign Hypertermi mistanke"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "medFail",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Medicineringsfejl",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Medicineringsfejl"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "neuMuscBlock",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Neuromuskulær blokade, forlænget virkning",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Neuromuskulær blokade, forlænget virkning"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "dentInj",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tandskade",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Tandskade"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "mors",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Mors, uventet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Mors, uventet"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "dissection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dissektion",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Dissektion"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "thromboembolic",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tromboemboliske komplikationer",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Tromboemboliske komplikationer som medfører infarkt inden for 24 timer"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "groinbleeding",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Blødning fra lysken",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Alvorlig blødning fra lysken"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "mechanical",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Mekaniske",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Mekaniske komplikationer"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "bloodvesselocclusion",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Aflukning af kar",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Aflukning af kar medførende infarkt indenfor 24 timer"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "peroperativebleeding",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Peroperativ blødning",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Livstruende peroperativ blødning, der ikke kan kontrolleres inden for få sekunder"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "other",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Other",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Other"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "vascular-unspecific",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Vascular, unspecific",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Vascular, unspecific"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "infarction-unspecific",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cerebral infarction and bleeding, unspecific",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Cerebral infarction and bleeding, unspecific"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "post_polypectomy_syndrome",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Post polypectomy syndrome",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Post polypectomy syndrome / Postpolypektomisyndrom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "urinary_retention",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Urinary retention",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Urinary retention / Urinretention"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "medical",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Medical complication",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Medical complication / Medicinsk komplikation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "movement_restriction",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Movement restriction",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Movement restriction / Bevægelsesindskrænkning"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "chronic_pain",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Chronic pain",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Chronic pain / Kronisk smerte"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "reoperation",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Reoperation",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Reoperation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rupture",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Rupture",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Rupture / Ruptur",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rupture_patella_ligament",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Rupture of patella ligament",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Rupture of patella ligament / Ruptur af patellasene"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "thrombosis",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Thrombosis",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Thrombosis / Trombose",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "dvt",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dyb vene trombose",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Dyb vene trombose"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "abdominal",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Abdominal /hepatisk/milt trombose",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Abdominal /hepatisk/milt trombose"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "marrow_relapse",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Marrow relapse",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Marrow relapse / Marv relaps"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rising_m_component",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Rising M-component",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Rising M-component / Stigende M-komponent"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "hypercalcemia",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hypercalcemia",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Hypercalcemia / Hypercalcæmi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "osteolytic_foci",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Progressive osteolytic foci",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Progressive osteolytic foci / Progression af osteolytiske foci"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "medullary_cross_sectional_syndrome",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Medullary cross-sectional syndrome",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Medullary cross-sectional syndrome / Medullært tværsnitssyndrom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "extremedullery_myeloma",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Extremedullary Myeloma",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Extremedullary Myeloma / Ekstramedullære Myelomer"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "plasma_cell_leukemia",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Plasma cell leukemia",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Plasma cell leukemia / Plasmacelle leukæmi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "uremia",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Uremia",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Uremia / Uræmi / SNOMED-CT: 44730006",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "uremia_clinically",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Uremia (clinically significant)",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Uremia (clinically significant) / Uræmi (klinisk betydende)"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "uremia_dialysis",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Uremia (chronic dialysis requiring)",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Uremia (chronic dialysis requiring) / Uræmi (kronisk dialysekrævende)"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "amyloidosis",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Amyloidosis",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Amyloidosis / Amyloidose / SNOMED-CT: 17602002"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "neuropathy",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Neuropathy",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Neuropathy / Neuropati / SNOMED-CT: 386033004"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "hyperviscosity",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hyperviscosity",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Hyperviscosity / Hyperviskositet / SNOMED-CT: 64088006"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "tci",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "TCI",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "TCI"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "bleeding",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Bleeding",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Bleeding / Blødning"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "apoplexia_cerebri",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Apopleksi cerebri",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Apopleksi cerebri"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "hematoma",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Surgery required hematoma",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Surgery required hematoma / operationskrævende hæmatom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "lymph_leakage",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Lymph leakage over 2 days",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Lymph leakage over 2 days / lymfesiven over 2 døgn (forlænger indlæggelsen)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "necrosis",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Surgery required necrosis",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Surgery required necrosis / operationskrævende randnekrose"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "lymphocele",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Surgery required lymphocele",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Surgery required lymphocele / operationskrævende lymfocele"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "superficial_subcutaneous_infection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Superficial/subcutaneous infection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "overfladisk / subcutan infektion (ved antibiotika eller operation)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "deep_prosthesis_infection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Deep/prosthesis infection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Deep/prosthesis infection / dyb / protese infektion (ved antibiotika eller operation)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "segment_elevation_myocardial_infarction",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Type of heart attack",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Type of heart attack that mainly affects your hearts lower chambers"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "bundle_branch_block_myocardial_infarction",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Type of heart attack",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "--"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "non_segment_elevation_myocardial_infarction",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Type of heart attack",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "--"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "unstable_agina",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Heart failure?",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "--"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rulled_out_heart_attack",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "No heart attack/failur",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "--"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "anterior_segment_elevation_myocardial_infarction",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Postion",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "--"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "non_anterior_segment_elevation_myocardial_infarction",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Position",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "--"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "heart_failur_class_2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Class 2 heartfailure",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "--"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "heart_failur_class_3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Class 3 heartfailure",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "--"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "heart_failur_class_4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Class 4 heartfailure",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "--"
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://trifork.com">Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S</a>.  Package dk.kip.rkkp.fhir.ig.core#2.11.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 16, 2025 07:48+0000">2025-06-16</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

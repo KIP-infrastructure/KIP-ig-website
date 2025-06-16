@@ -1,0 +1,779 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Procedure type: Codes for different durations - JSON Representation - KIP Infrastructure v2.11.6</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3.897"}
+    h3,h4,h5,h6{--heading-prefix:"3.897"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">KIP Infrastructure</span>
+            <br/>
+            <span style="display:inline-block;">2.11.6 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Search Parameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Extension Definitions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Code Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Procedure type: Codes for different durations</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">This page is part of the KIP Infrastructure (v2.11.6: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-ProcedureType.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-ProcedureType.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-ProcedureType.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Procedure type: Codes for different durations - JSON Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2022-07-20
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-ProcedureType.json" no-download="true">Raw json</a> | <a href="CodeSystem-ProcedureType.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a>" : "ProcedureType",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem ProcedureType&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ProcedureType\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcProcedureType\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-insensitive code system &lt;code&gt;https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType&lt;/code&gt; defines the following codes in an undefined hierarchy:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Lvl&lt;/b&gt;&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;lichtenstein&lt;a name=\&quot;ProcedureType-lichtenstein\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lichtenstein&lt;/td&gt;&lt;td&gt;Lichtenstein&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;maclichtenstein&lt;a name=\&quot;ProcedureType-maclichtenstein\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Modified Lichtenstein/MacLichtenstein&lt;/td&gt;&lt;td&gt;Modificeret Lichtenstein/MacLichtenstein&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;onstep&lt;a name=\&quot;ProcedureType-onstep\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Onstep&lt;/td&gt;&lt;td&gt;Onstep&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;open_mesh&lt;a name=\&quot;ProcedureType-open_mesh\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Open mesh&lt;/td&gt;&lt;td&gt;Open mesh / Åbent mesh&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0plug&lt;a name=\&quot;ProcedureType-plug\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Plug&lt;/td&gt;&lt;td&gt;Plug&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0plug_plate&lt;a name=\&quot;ProcedureType-plug_plate\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Plug and plate&lt;/td&gt;&lt;td&gt;Plug and plate / Plug og plade&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;open&lt;a name=\&quot;ProcedureType-open\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Open&lt;/td&gt;&lt;td&gt;Open / Åbent&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0anuloraphi&lt;a name=\&quot;ProcedureType-anuloraphi\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anuloraphi&lt;/td&gt;&lt;td&gt;Anuloraphi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0mcvay&lt;a name=\&quot;ProcedureType-mcvay\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;McVay&lt;/td&gt;&lt;td&gt;McVay&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0bassini&lt;a name=\&quot;ProcedureType-bassini\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bassini&lt;/td&gt;&lt;td&gt;Bassini&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0shouldice&lt;a name=\&quot;ProcedureType-shouldice\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Shouldice&lt;/td&gt;&lt;td&gt;Shouldice&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;laparoscopic&lt;a name=\&quot;ProcedureType-laparoscopic\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Laparoscopic&lt;/td&gt;&lt;td&gt;Laparoscopic / Laparoskopisk&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0transperitoneal&lt;a name=\&quot;ProcedureType-transperitoneal\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Transperitoneal&lt;/td&gt;&lt;td&gt;Transperitoneal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0extraperitoneal&lt;a name=\&quot;ProcedureType-extraperitoneal\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Extraperitoneal&lt;/td&gt;&lt;td&gt;Extraperitoneal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0multiple_ports&lt;a name=\&quot;ProcedureType-multiple_ports\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Multiple ports&lt;/td&gt;&lt;td&gt;Multiple ports / Flerport&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;laparotomy&lt;a name=\&quot;ProcedureType-laparotomy\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Laparotomy&lt;/td&gt;&lt;td&gt;Laparotomy / Laparotomi / SNOMED-CT: 86481000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;converted_open&lt;a name=\&quot;ProcedureType-converted_open\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Converted to open from laparoscopic&lt;/td&gt;&lt;td&gt;Converted to open from laparoscopic / Konverteret til åben fra laparoskopisk&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;converted_open_to_lap&lt;a name=\&quot;ProcedureType-converted_open_to_lap\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Converted from open to laparoscopic&lt;/td&gt;&lt;td&gt;Open converted to laparoscopic / Åben konverteret til laparoskopisk&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;combined_open&lt;a name=\&quot;ProcedureType-combined_open\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Combined open&lt;/td&gt;&lt;td&gt;Combined open / Kombineret åben&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;robot_assisted&lt;a name=\&quot;ProcedureType-robot_assisted\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Robot assisted&lt;/td&gt;&lt;td&gt;Robot assisted / Robotassisteret&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0robot_laparoscopic&lt;a name=\&quot;ProcedureType-robot_laparoscopic\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Robot assisted laparoscopic&lt;/td&gt;&lt;td&gt;Robot assisted laparoscopic / Robot-assisteret laparoskopisk&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0robot_converted_laparoscopic&lt;a name=\&quot;ProcedureType-robot_converted_laparoscopic\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Robot assisted laparoscopic converted to laparoscopic&lt;/td&gt;&lt;td&gt;Robot assisted laparoscopic converted to laparoscopic / Robot-assisteret laparoskopisk konverteret til laparoskopisk&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0robot_converted_open&lt;a name=\&quot;ProcedureType-robot_converted_open\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Robot assisted laparoscopic converted to open&lt;/td&gt;&lt;td&gt;Robot assisted laparoscopic converted to open / Robot-assisteret laparoskopisk konverteret til åben&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;milos&lt;a name=\&quot;ProcedureType-milos\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MILOS&lt;/td&gt;&lt;td&gt;MILOS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;emilos&lt;a name=\&quot;ProcedureType-emilos\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;eMILOS&lt;/td&gt;&lt;td&gt;eMILOS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;etep&lt;a name=\&quot;ProcedureType-etep\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;eTEP&lt;/td&gt;&lt;td&gt;eTEP - Robot-assisteret metode&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;tarup&lt;a name=\&quot;ProcedureType-tarup\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;TARUP&lt;/td&gt;&lt;td&gt;TARUP - Robot-assisteret metode&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;tapp&lt;a name=\&quot;ProcedureType-tapp\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;TAPP&lt;/td&gt;&lt;td&gt;TAPP - Robot-assisteret metode&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;endoscopic&lt;a name=\&quot;ProcedureType-endoscopic\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Endoscopic&lt;/td&gt;&lt;td&gt;Endoscopic / Endoskopisk&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0local_resection&lt;a name=\&quot;ProcedureType-local_resection\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Local ressection&lt;/td&gt;&lt;td&gt;Local ressection / Lokalresektion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0local_resection_tes&lt;a name=\&quot;ProcedureType-local_resection_tes\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Local ressection (incl. TES)&lt;/td&gt;&lt;td&gt;Local ressection followed by TES / Lokalresektion efterfulgt af TES&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0local_resection_ex_tes&lt;a name=\&quot;ProcedureType-local_resection_ex_tes\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Local ressection (excl. TES)&lt;/td&gt;&lt;td&gt;Local ressection (excl. TES) / Endoskopisk lokalresektion (ekskl. TES)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0transanal_resection&lt;a name=\&quot;ProcedureType-transanal_resection\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Transanal endoskopisk lokalresektion (TES)&lt;/td&gt;&lt;td&gt;Transanal endoskopisk lokalresektion (TES)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0full_wall_resection&lt;a name=\&quot;ProcedureType-full_wall_resection\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Endoskopisk fuldvægsresektion&lt;/td&gt;&lt;td&gt;Endoskopisk fuldvægsresektion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0other_endoscopic&lt;a name=\&quot;ProcedureType-other_endoscopic\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anden endoskopisk procedure&lt;/td&gt;&lt;td&gt;Anden endoskopisk procedure&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;cels&lt;a name=\&quot;ProcedureType-cels\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kombineret endoskopisk og laparoskopisk procedure (CELS)&lt;/td&gt;&lt;td&gt;Kombineret endoskopisk og laparoskopisk procedure (CELS)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;externus_obliquus&lt;a name=\&quot;ProcedureType-externus_obliquus\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Externus Obliquus&lt;/td&gt;&lt;td&gt;Externus Obliquus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;transversus_abdominis&lt;a name=\&quot;ProcedureType-transversus_abdominis\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Transversus Abdominis&lt;/td&gt;&lt;td&gt;Transversus Abdominis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;dissection&lt;a name=\&quot;ProcedureType-dissection\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dissection&lt;/td&gt;&lt;td&gt;Dissection / Dissektion / SNOMED-CT: 122459003&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0transanal_dissection&lt;a name=\&quot;ProcedureType-transanal_dissection\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Transanal dissection&lt;/td&gt;&lt;td&gt;Transanal dissektion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;polypectomy&lt;a name=\&quot;ProcedureType-polypectomy\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Polypektomi&lt;/td&gt;&lt;td&gt;Polypektomi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;emr&lt;a name=\&quot;ProcedureType-emr\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EMR inkl. piecemeal EMR&lt;/td&gt;&lt;td&gt;EMR inkl. piecemeal EMR&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;piecemeal_resection&lt;a name=\&quot;ProcedureType-piecemeal_resection\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Piecemeal resektion&lt;/td&gt;&lt;td&gt;Piecemeal resektion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;stent&lt;a name=\&quot;ProcedureType-stent\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stent&lt;/td&gt;&lt;td&gt;Stent / SNOMED-CT: 65818007&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0stent_rectum&lt;a name=\&quot;ProcedureType-stent_rectum\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stentanlæggelse i rektum&lt;/td&gt;&lt;td&gt;Stentanlæggelse i rektum&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0stent_colon&lt;a name=\&quot;ProcedureType-stent_colon\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stentanlæggelse i colon&lt;/td&gt;&lt;td&gt;Stentanlæggelse i colon&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;stoma&lt;a name=\&quot;ProcedureType-stoma\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stoma&lt;/td&gt;&lt;td&gt;Stoma / Stomi / SNOMED-CT: 245857005&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;damage_control&lt;a name=\&quot;ProcedureType-damage_control\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Damage control&lt;/td&gt;&lt;td&gt;Damage control&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;tme&lt;a name=\&quot;ProcedureType-tme\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;TME&lt;/td&gt;&lt;td&gt;TME&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;tem&lt;a name=\&quot;ProcedureType-tem\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;TEM&lt;/td&gt;&lt;td&gt;TEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;pme&lt;a name=\&quot;ProcedureType-pme\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PME&lt;/td&gt;&lt;td&gt;PME&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;extensive_excision&lt;a name=\&quot;ProcedureType-extensive_excision\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Extensive excision&lt;/td&gt;&lt;td&gt;Extensive excision / Ekstensiv excision af peritoneum og  HIPEC&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rfa&lt;a name=\&quot;ProcedureType-rfa\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;RFA&lt;/td&gt;&lt;td&gt;RFA / RFA af hepar&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;metasis_resection&lt;a name=\&quot;ProcedureType-metasis_resection\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Metastasis resection&lt;/td&gt;&lt;td&gt;Metastasis resection / Metastaseresektion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ape_conventional&lt;a name=\&quot;ProcedureType-ape_conventional\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;APE, konventionel&lt;/td&gt;&lt;td&gt;APE, konventionel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;proctocolectomy_pouch&lt;a name=\&quot;ProcedureType-proctocolectomy_pouch\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Proktokolektomi med ileoanal pouch&lt;/td&gt;&lt;td&gt;Proktokolektomi med ileoanal pouch&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;stoma_shunt&lt;a name=\&quot;ProcedureType-stoma_shunt\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kun aflastende stomi eller intern shunt&lt;/td&gt;&lt;td&gt;Kun aflastende stomi eller intern shunt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;exploratory_intervention&lt;a name=\&quot;ProcedureType-exploratory_intervention\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kun eksplorativt indgreb&lt;/td&gt;&lt;td&gt;Kun eksplorativt indgreb&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;esd&lt;a name=\&quot;ProcedureType-esd\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ESD inkl. piecemeal ESD&lt;/td&gt;&lt;td&gt;ESD inkl. piecemeal ESD&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;tamis&lt;a name=\&quot;ProcedureType-tamis\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;TAMIS&lt;/td&gt;&lt;td&gt;TAMIS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;teo&lt;a name=\&quot;ProcedureType-teo\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;TEO&lt;/td&gt;&lt;td&gt;TEO&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;other_transanal&lt;a name=\&quot;ProcedureType-other_transanal\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anden transanal adgang/teknik&lt;/td&gt;&lt;td&gt;Anden transanal adgang/teknik&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;transplant&lt;a name=\&quot;ProcedureType-transplant\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Transplant&lt;/td&gt;&lt;td&gt;Transplant / Transplantation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0cage&lt;a name=\&quot;ProcedureType-cage\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cage&lt;/td&gt;&lt;td&gt;Cage&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0augments&lt;a name=\&quot;ProcedureType-augments\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Augments&lt;/td&gt;&lt;td&gt;Augments&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;luxation&lt;a name=\&quot;ProcedureType-luxation\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Luxation&lt;/td&gt;&lt;td&gt;Luxation / Luksation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;tractus_tendonesis&lt;a name=\&quot;ProcedureType-tractus_tendonesis\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tractus tendonesis&lt;/td&gt;&lt;td&gt;Tractus tendonesis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;internal_brace&lt;a name=\&quot;ProcedureType-internal_brace\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Internal brace&lt;/td&gt;&lt;td&gt;Internal brace / Syntetisk forstærkning&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;multiple_ligaments_reconstruction&lt;a name=\&quot;ProcedureType-multiple_ligaments_reconstruction\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Multiple ligaments reconstruction&lt;/td&gt;&lt;td&gt;Multiple ligaments reconstruction / Flerligament-rekonstruktion (inkl. isoleret PCL, LCL, MCL)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;synovectomy&lt;a name=\&quot;ProcedureType-synovectomy\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Synovectomy&lt;/td&gt;&lt;td&gt;Synovectomy / Synovektomi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;implant_removal&lt;a name=\&quot;ProcedureType-implant_removal\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Implant removal&lt;/td&gt;&lt;td&gt;Implant removal / Implantatfjernelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;osteotomy&lt;a name=\&quot;ProcedureType-osteotomy\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Osteotomy&lt;/td&gt;&lt;td&gt;Osteotomy / Osteotomi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;osteosynthesis&lt;a name=\&quot;ProcedureType-osteosynthesis\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Osteosynthesis&lt;/td&gt;&lt;td&gt;Osteosynthesis / Osteosyntese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;operation_infection&lt;a name=\&quot;ProcedureType-operation_infection\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Operation because of an infection&lt;/td&gt;&lt;td&gt;Operation because of an infection / Operation pga. infektion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;bone_transplantation&lt;a name=\&quot;ProcedureType-bone_transplantation\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bone transplantation&lt;/td&gt;&lt;td&gt;Bone transplantation / Knogletransplantation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;operational_mobilization&lt;a name=\&quot;ProcedureType-operational_mobilization\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Operational mobilization&lt;/td&gt;&lt;td&gt;Operational mobilization / Operativ mobilisering&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;tenodesis&lt;a name=\&quot;ProcedureType-tenodesis\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tenodesis&lt;/td&gt;&lt;td&gt;Tenodesis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;stabilizing&lt;a name=\&quot;ProcedureType-stabilizing\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stabilizing&lt;/td&gt;&lt;td&gt;Stabilizing / Stabiliserende indgreb&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;cuff_reconstruction&lt;a name=\&quot;ProcedureType-cuff_reconstruction\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cuff reconstruction&lt;/td&gt;&lt;td&gt;Cuff reconstruction / Cuff rekonstruktion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;arthroscopic&lt;a name=\&quot;ProcedureType-arthroscopic\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arthroscopic operation&lt;/td&gt;&lt;td&gt;Arthroscopic operation / Artroskopisk operation uden indsættelse af fremmedlegeme&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;templating&lt;a name=\&quot;ProcedureType-templating\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Templating&lt;/td&gt;&lt;td&gt;Templating&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;psi&lt;a name=\&quot;ProcedureType-psi\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PSI (Patient specific instruments)&lt;/td&gt;&lt;td&gt;PSI (Patient specific instruments) / PSI (Patientspecifikke instrumenter)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;tenotomy&lt;a name=\&quot;ProcedureType-tenotomy\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tenotomy&lt;/td&gt;&lt;td&gt;Tenotomy / Tenotomi / SNOMED-CT: 78545003&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;meniscetomy&lt;a name=\&quot;ProcedureType-meniscetomy\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Meniscectomy&lt;/td&gt;&lt;td&gt;Meniscectomy / Meniskektomi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;arthroscopy&lt;a name=\&quot;ProcedureType-arthroscopy\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Artroskopi&lt;/td&gt;&lt;td&gt;Artroskopi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;reconstruction_cruciate_ligaments&lt;a name=\&quot;ProcedureType-reconstruction_cruciate_ligaments\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Reconstruction of cruciate ligaments&lt;/td&gt;&lt;td&gt;Reconstruction of cruciate ligaments / Korsbåndsrekonstruktion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;proximal_tibial_osteotomy&lt;a name=\&quot;ProcedureType-proximal_tibial_osteotomy\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Proksimal tibiaosteotomi&lt;/td&gt;&lt;td&gt;Proksimal tibiaosteotomi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;osteosynthesis_condyle_fracture&lt;a name=\&quot;ProcedureType-osteosynthesis_condyle_fracture\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Osteosyntese af kondylfraktur&lt;/td&gt;&lt;td&gt;Osteosyntese af kondylfraktur&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;patellectomy&lt;a name=\&quot;ProcedureType-patellectomy\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patellektomi&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;arthrodesis&lt;a name=\&quot;ProcedureType-arthrodesis\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Artrodese&lt;/td&gt;&lt;td&gt;Artrodese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;tumor_resection&lt;a name=\&quot;ProcedureType-tumor_resection\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tumor resection&lt;/td&gt;&lt;td&gt;Resektion af tumorbærende tarmsegment&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "2.11.6",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "ProcedureType",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "Procedure type: Codes for different durations",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2022-07-20T00:00:00+02:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://trifork.com"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "rbk@trifork.com"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "Procedure type: Codes for different durations",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a>" : false,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a>" : 91,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "lichtenstein",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Lichtenstein",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Lichtenstein"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "maclichtenstein",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Modified Lichtenstein/MacLichtenstein",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Modificeret Lichtenstein/MacLichtenstein"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "onstep",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Onstep",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Onstep"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "open_mesh",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Open mesh",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Open mesh / Åbent mesh",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "plug",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Plug",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Plug"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "plug_plate",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Plug and plate",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Plug and plate / Plug og plade"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "open",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Open",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Open / Åbent",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "anuloraphi",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anuloraphi",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Anuloraphi"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "mcvay",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "McVay",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "McVay"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "bassini",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Bassini",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Bassini"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "shouldice",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Shouldice",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Shouldice"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "laparoscopic",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Laparoscopic",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Laparoscopic / Laparoskopisk",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "transperitoneal",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Transperitoneal",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Transperitoneal"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "extraperitoneal",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Extraperitoneal",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Extraperitoneal"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "multiple_ports",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Multiple ports",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Multiple ports / Flerport"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "laparotomy",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Laparotomy",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Laparotomy / Laparotomi / SNOMED-CT: 86481000"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "converted_open",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Converted to open from laparoscopic",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Converted to open from laparoscopic / Konverteret til åben fra laparoskopisk"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "converted_open_to_lap",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Converted from open to laparoscopic",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Open converted to laparoscopic / Åben konverteret til laparoskopisk"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "combined_open",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Combined open",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Combined open / Kombineret åben"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "robot_assisted",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Robot assisted",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Robot assisted / Robotassisteret",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "robot_laparoscopic",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Robot assisted laparoscopic",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Robot assisted laparoscopic / Robot-assisteret laparoskopisk"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "robot_converted_laparoscopic",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Robot assisted laparoscopic converted to laparoscopic",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Robot assisted laparoscopic converted to laparoscopic / Robot-assisteret laparoskopisk konverteret til laparoskopisk"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "robot_converted_open",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Robot assisted laparoscopic converted to open",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Robot assisted laparoscopic converted to open / Robot-assisteret laparoskopisk konverteret til åben"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "milos",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "MILOS",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "MILOS"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "emilos",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "eMILOS",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "eMILOS"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "etep",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "eTEP",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "eTEP - Robot-assisteret metode"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "tarup",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "TARUP",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "TARUP - Robot-assisteret metode"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "tapp",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "TAPP",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "TAPP - Robot-assisteret metode"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "endoscopic",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Endoscopic",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Endoscopic / Endoskopisk",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "local_resection",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Local ressection",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Local ressection / Lokalresektion"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "local_resection_tes",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Local ressection (incl. TES)",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Local ressection followed by TES / Lokalresektion efterfulgt af TES"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "local_resection_ex_tes",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Local ressection (excl. TES)",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Local ressection (excl. TES) / Endoskopisk lokalresektion (ekskl. TES)"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "transanal_resection",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Transanal endoskopisk lokalresektion (TES)",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Transanal endoskopisk lokalresektion (TES)"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "full_wall_resection",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Endoskopisk fuldvægsresektion",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Endoskopisk fuldvægsresektion"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "other_endoscopic",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anden endoskopisk procedure",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Anden endoskopisk procedure"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "cels",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Kombineret endoskopisk og laparoskopisk procedure (CELS)",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Kombineret endoskopisk og laparoskopisk procedure (CELS)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "externus_obliquus",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Externus Obliquus",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Externus Obliquus"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "transversus_abdominis",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Transversus Abdominis",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Transversus Abdominis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "dissection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dissection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Dissection / Dissektion / SNOMED-CT: 122459003",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "transanal_dissection",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Transanal dissection",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Transanal dissektion"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "polypectomy",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Polypektomi",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Polypektomi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "emr",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "EMR inkl. piecemeal EMR",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "EMR inkl. piecemeal EMR"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "piecemeal_resection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Piecemeal resektion",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Piecemeal resektion"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "stent",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Stent",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Stent / SNOMED-CT: 65818007",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "stent_rectum",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Stentanlæggelse i rektum",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Stentanlæggelse i rektum"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "stent_colon",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Stentanlæggelse i colon",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Stentanlæggelse i colon"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "stoma",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Stoma",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Stoma / Stomi / SNOMED-CT: 245857005"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "damage_control",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Damage control",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Damage control"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "tme",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "TME",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "TME"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "tem",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "TEM",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "TEM"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "pme",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "PME",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "PME"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "extensive_excision",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Extensive excision",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Extensive excision / Ekstensiv excision af peritoneum og  HIPEC"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rfa",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RFA",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "RFA / RFA af hepar"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "metasis_resection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Metastasis resection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Metastasis resection / Metastaseresektion"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ape_conventional",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "APE, konventionel",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "APE, konventionel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "proctocolectomy_pouch",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Proktokolektomi med ileoanal pouch",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Proktokolektomi med ileoanal pouch"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "stoma_shunt",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Kun aflastende stomi eller intern shunt",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Kun aflastende stomi eller intern shunt"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "exploratory_intervention",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Kun eksplorativt indgreb",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Kun eksplorativt indgreb"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "esd",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ESD inkl. piecemeal ESD",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "ESD inkl. piecemeal ESD"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "tamis",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "TAMIS",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "TAMIS"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "teo",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "TEO",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "TEO"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "other_transanal",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anden transanal adgang/teknik",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Anden transanal adgang/teknik"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "transplant",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Transplant",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Transplant / Transplantation",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "cage",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cage",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Cage"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "augments",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Augments",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Augments"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "luxation",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Luxation",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Luxation / Luksation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "tractus_tendonesis",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tractus tendonesis",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Tractus tendonesis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "internal_brace",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Internal brace",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Internal brace / Syntetisk forstærkning"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "multiple_ligaments_reconstruction",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Multiple ligaments reconstruction",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Multiple ligaments reconstruction / Flerligament-rekonstruktion (inkl. isoleret PCL, LCL, MCL)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "synovectomy",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Synovectomy",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Synovectomy / Synovektomi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "implant_removal",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Implant removal",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Implant removal / Implantatfjernelse"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "osteotomy",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Osteotomy",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Osteotomy / Osteotomi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "osteosynthesis",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Osteosynthesis",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Osteosynthesis / Osteosyntese"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "operation_infection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Operation because of an infection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Operation because of an infection / Operation pga. infektion"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "bone_transplantation",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Bone transplantation",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Bone transplantation / Knogletransplantation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "operational_mobilization",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Operational mobilization",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Operational mobilization / Operativ mobilisering"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "tenodesis",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tenodesis",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Tenodesis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "stabilizing",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Stabilizing",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Stabilizing / Stabiliserende indgreb"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "cuff_reconstruction",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cuff reconstruction",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Cuff reconstruction / Cuff rekonstruktion"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "arthroscopic",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Arthroscopic operation",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Arthroscopic operation / Artroskopisk operation uden indsættelse af fremmedlegeme"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "templating",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Templating",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Templating"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "psi",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "PSI (Patient specific instruments)",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "PSI (Patient specific instruments) / PSI (Patientspecifikke instrumenter)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "tenotomy",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tenotomy",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Tenotomy / Tenotomi / SNOMED-CT: 78545003"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "meniscetomy",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Meniscectomy",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Meniscectomy / Meniskektomi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "arthroscopy",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Artroskopi",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Artroskopi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "reconstruction_cruciate_ligaments",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Reconstruction of cruciate ligaments",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Reconstruction of cruciate ligaments / Korsbåndsrekonstruktion"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "proximal_tibial_osteotomy",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Proksimal tibiaosteotomi",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Proksimal tibiaosteotomi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "osteosynthesis_condyle_fracture",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Osteosyntese af kondylfraktur",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Osteosyntese af kondylfraktur"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "patellectomy",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Patellektomi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "arthrodesis",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Artrodese",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Artrodese"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "tumor_resection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tumor resection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Resektion af tumorbærende tarmsegment"
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://trifork.com">Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S</a>.  Package dk.kip.rkkp.fhir.ig.core#2.11.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 16, 2025 07:48+0000">2025-06-16</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
