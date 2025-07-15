@@ -14,11 +14,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide dk.kip.rkkp.fhir.ig.core</b></p><a name=\"dk.kip.rkkp.fhir.ig.core\"> </a><a name=\"hcdk.kip.rkkp.fhir.ig.core\"> </a><h2>KIPInfrastructure</h2><p>The official URL for this implementation guide is: </p><pre>https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core</pre><div><p>The Danish Sundhedsvæsenets Kvalitetsinstitut defines a set of FHIR CodeSystems and ValueSets used for data collection.</p>\n</div></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "2.11.6"] ; # 
+  fhir:version [ fhir:v "2.12.0"] ; # 
   fhir:name [ fhir:v "KIPInfrastructure"] ; # 
   fhir:title [ fhir:v "KIP Infrastructure"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-06-16T07:51:25+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-15T12:40:46+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
@@ -48,7 +48,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.4.0" ]
+     fhir:version [ fhir:v "6.5.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -12600,6 +12600,24 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://kip.rkkp.dk/fhir/SearchParameter/PlanDefinitionLatest> ;
+         fhir:reference [ fhir:v "SearchParameter/PlanDefinitionLatest" ]
+       ] ;
+       fhir:name [ fhir:v "PlanDefinitionLatest" ] ;
+       fhir:description [ fhir:v "Search PlanDefinition for 'latest' extension" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://kip.rkkp.dk/fhir/SearchParameter/PlanDefinitionUuid> ;
          fhir:reference [ fhir:v "SearchParameter/PlanDefinitionUuid" ]
        ] ;
@@ -13487,6 +13505,24 @@
        ] ;
        fhir:name [ fhir:v "Påvisning af vasospasme; metode" ] ;
        fhir:description [ fhir:v "Påvisning af vasospasme; metode" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://kip.rkkp.dk/fhir/SearchParameter/QuestionnaireLatest> ;
+         fhir:reference [ fhir:v "SearchParameter/QuestionnaireLatest" ]
+       ] ;
+       fhir:name [ fhir:v "QuestionnaireLatest" ] ;
+       fhir:description [ fhir:v "Search Questionnaire for 'latest' extension" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -14963,6 +14999,42 @@
        ] ;
        fhir:name [ fhir:v "Search Parameter - CPR for Patient" ] ;
        fhir:description [ fhir:v "Limit response of Patient to match given CPR." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://kip.rkkp.dk/fhir/StructureDefinition/PDLatest> ;
+         fhir:reference [ fhir:v "StructureDefinition/PDLatest" ]
+       ] ;
+       fhir:name [ fhir:v "Search Parameter - Latest for PlanDefinitions" ] ;
+       fhir:description [ fhir:v "Limit response of PlanDefinitions to match given Latest." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://kip.rkkp.dk/fhir/StructureDefinition/QLatest> ;
+         fhir:reference [ fhir:v "StructureDefinition/QLatest" ]
+       ] ;
+       fhir:name [ fhir:v "Search Parameter - Latest for Questionnaires" ] ;
+       fhir:description [ fhir:v "Limit response of Questionnaires to match given Latest." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false

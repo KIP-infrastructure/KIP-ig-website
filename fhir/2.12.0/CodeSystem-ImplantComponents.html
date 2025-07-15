@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Implant components - KIP Infrastructure v2.12.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3.837"}
+    h3,h4,h5,h6{--heading-prefix:"3.837"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">KIP Infrastructure</span>
+            <br/>
+            <span style="display:inline-block;">2.12.0 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Search Parameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Extension Definitions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Code Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Implant components</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KIP Infrastructure (v2.12.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-ImplantComponents.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-ImplantComponents.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-ImplantComponents.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: Implant components
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://kip.rkkp.dk/fhir/CodeSystem/ImplantComponents<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/ImplantComponents"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">2.12.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/ImplantComponents|2.12.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2022-07-04
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">ImplantComponents</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Implant components</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-CaputModulaerTypeDHR.html">CaputModulaerTypeDHR</a></li>
+ <li><a href="ValueSet-CaputTypeDHR.html">CaputTypeDHR</a></li>
+ <li><a href="ValueSet-CementBlandesystemDHR.html">CementBlandesystemDHR</a></li>
+ <li><a href="ValueSet-FiksationCementeretUcementeret.html">FiksationCementeretUcementeret</a></li>
+ <li><a href="ValueSet-FiksationCementeretUcementeretAndet.html">FiksationCementeretUcementeretAndet</a></li>
+ <li><a href="ValueSet-FiksationCementeretUcementeretHybrid.html">FiksationCementeretUcementeretHybrid</a></li>
+ <li><a href="ValueSet-GlenoidalkomponentIkkeIndsatDSR.html">GlenoidalkomponentIkkeIndsatDSR</a></li>
+ <li><a href="ValueSet-GlenoidalkomponentSupplerendeDSR.html">GlenoidalkomponentSupplerendeDSR</a></li>
+ <li><a href="ValueSet-HumeruskomponentDSR.html">HumeruskomponentDSR</a></li>
+ <li><a href="ValueSet-ImplantatAnatomiskDesign.html">ImplantatAnatomiskDesign</a></li>
+ <li><a href="ValueSet-ImplantatAnatomiskOffset.html">ImplantatAnatomiskOffset</a></li>
+ <li><a href="ValueSet-ImplantatAnatomiskReverse.html">ImplantatAnatomiskReverse</a></li>
+ <li><a href="ValueSet-ImplantatMaterialeDSR.html">ImplantatMaterialeDSR</a></li>
+ <li><a href="ValueSet-ImplantatMaterialeKeramikMetalAndet.html">ImplantatMaterialeKeramikMetalAndet</a></li>
+ <li><a href="ValueSet-ImplantatMaterialePolyethylenKeramikMetal.html">ImplantatMaterialePolyethylenKeramikMetal</a></li>
+ <li><a href="ValueSet-ImplantatReverseDesign.html">ImplantatReverseDesign</a></li>
+ <li><a href="ValueSet-KnoglegraftDSR.html">KnoglegraftDSR</a></li>
+ <li><a href="ValueSet-KnogletransplantationDHR.html">KnogletransplantationDHR</a></li>
+ <li><a href="ValueSet-KomponentPatellaDKR.html">KomponentPatellaDKR</a></li>
+ <li><a href="ValueSet-KomponentPatellaDKRrevision.html">KomponentPatellaDKRrevision</a></li>
+ <li><a href="ValueSet-KomponentPatellaMaterialeDKR.html">KomponentPatellaMaterialeDKR</a></li>
+ <li><a href="ValueSet-KomponentSupplementDKR.html">KomponentSupplementDKR</a></li>
+ <li><a href="ValueSet-KomponentTibiaStatusDKR.html">KomponentTibiaStatusDKR</a></li>
+ <li><a href="ValueSet-KomponentTypeDKR.html">KomponentTypeDKR</a></li>
+ <li><a href="ValueSet-KomponentTypeFemurDHR.html">KomponentTypeFemurDHR</a></li>
+ <li><a href="ValueSet-KomponentTypeHullerUdenhullerDHR.html">KomponentTypeHullerUdenhullerDHR</a></li>
+ <li><a href="ValueSet-LinerCrosslinkedDHR.html">LinerCrosslinkedDHR</a></li>
+ <li><a href="ValueSet-LinertypeDHR.html">LinertypeDHR</a></li>
+ <li><a href="ValueSet-OsteotomiTypeAlmindeligExtendedDHR.html">OsteotomiTypeAlmindeligExtendedDHR</a></li>
+ <li><a href="ValueSet-ProteseFjernelseDHR.html">ProteseFjernelseDHR</a></li>
+ <li><a href="ValueSet-ProtesestatusDHR.html">ProtesestatusDHR</a></li>
+ <li><a href="ValueSet-RevisionHumerusCavitasDSR.html">RevisionHumerusCavitasDSR</a></li>
+ <li><a href="ValueSet-RevisionHumerusKomponentDSR.html">RevisionHumerusKomponentDSR</a></li>
+ <li><a href="ValueSet-RevisionUdskiftningDHR.html">RevisionUdskiftningDHR</a></li>
+ <li><a href="ValueSet-StemkarakteristikDSR.html">StemkarakteristikDSR</a></li>
+ <li><a href="ValueSet-StemlaengdeDSR.html">StemlaengdeDSR</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"></p><a name="ImplantComponents"> </a><a name="hcImplantComponents"> </a><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/ImplantComponents</code> defines the following codes in an undefined hierarchy:</p>
+<table class="codes"><tr><td><b>Lvl</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">cement_spacer<a name="ImplantComponents-cement_spacer"> </a></td>
+<td>Cement spacer</td>
+<td>Cement spacer</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">implant<a name="ImplantComponents-implant"> </a></td>
+<td>Implant</td>
+<td>Implant / Implantat</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">cavitas_untouched<a name="ImplantComponents-cavitas_untouched"> </a></td>
+<td>Cavitas urørt</td>
+<td>Cavitas urørt</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">cavitas_inforeret<a name="ImplantComponents-cavitas_inforeret"> </a></td>
+<td>Cavitas inforeret</td>
+<td>Cavitas inforeret</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">cavitas_reamet<a name="ImplantComponents-cavitas_reamet"> </a></td>
+<td>Cavitas reamet</td>
+<td>Cavitas reamet</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">cavitas_removed<a name="ImplantComponents-cavitas_removed"> </a></td>
+<td>Cavitas fjernet</td>
+<td>Cavitas fjernet</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">resurfacing<a name="ImplantComponents-resurfacing"> </a></td>
+<td>Resurfacing</td>
+<td>Resurfacing</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">stemless<a name="ImplantComponents-stemless"> </a></td>
+<td>Stemless</td>
+<td>Stemless</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">stem<a name="ImplantComponents-stem"> </a></td>
+<td>Stem</td>
+<td>Stem</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;standard_length<a name="ImplantComponents-standard_length"> </a></td>
+<td>Standard length</td>
+<td>Standard length / Standard længde</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;extra_length<a name="ImplantComponents-extra_length"> </a></td>
+<td>Extra length</td>
+<td>Extra length / Extra længde</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;short_mini_length<a name="ImplantComponents-short_mini_length"> </a></td>
+<td>Short/mini</td>
+<td>Short/mini / Short/mini</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;stem_femur<a name="ImplantComponents-stem_femur"> </a></td>
+<td>Stem (femur)</td>
+<td>Stem (femur)</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;stem_tibia<a name="ImplantComponents-stem_tibia"> </a></td>
+<td>Stem (tibia)</td>
+<td>Stem (tibia)</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">augment<a name="ImplantComponents-augment"> </a></td>
+<td>Augment</td>
+<td>Augment</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;augment_femur<a name="ImplantComponents-augment_femur"> </a></td>
+<td>Augment (femur)</td>
+<td>Augment (femur)</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;augment_tibia<a name="ImplantComponents-augment_tibia"> </a></td>
+<td>Augment (tibia)</td>
+<td>Augment (tibia)</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">cone_sleeve<a name="ImplantComponents-cone_sleeve"> </a></td>
+<td>Cone/sleeve</td>
+<td>Cone/sleeve</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;cone_sleeve_femur<a name="ImplantComponents-cone_sleeve_femur"> </a></td>
+<td>Cone/sleeve (femur)</td>
+<td>Cone/sleeve (femur)</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;cone_sleeve_tibia<a name="ImplantComponents-cone_sleeve_tibia"> </a></td>
+<td>Cone/sleeve (tibia)</td>
+<td>Cone/sleeve (tibia)</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">cemented<a name="ImplantComponents-cemented"> </a></td>
+<td>Cemented</td>
+<td>Cemented / Cementeret</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">uncemented<a name="ImplantComponents-uncemented"> </a></td>
+<td>Uncemented</td>
+<td>Uncemented / Ucementeret</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">hybrid<a name="ImplantComponents-hybrid"> </a></td>
+<td>Hybrid</td>
+<td>Hybrid</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;hybrid_a<a name="ImplantComponents-hybrid_a"> </a></td>
+<td>Hybrid A</td>
+<td>Hybrid A</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;hybrid_b<a name="ImplantComponents-hybrid_b"> </a></td>
+<td>Hybrid B</td>
+<td>Hybrid B</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">girdlestone<a name="ImplantComponents-girdlestone"> </a></td>
+<td>Girdlestone</td>
+<td>Girdlestone</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">anatomic<a name="ImplantComponents-anatomic"> </a></td>
+<td>Anatomic</td>
+<td>Anatomic / Anatomisk / SNOMED-CT: 36298004</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;symmetrical<a name="ImplantComponents-symmetrical"> </a></td>
+<td>Symmetrical</td>
+<td>Symmetrical / Symmetrisk / SNOMED-CT: 255473004</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;offset<a name="ImplantComponents-offset"> </a></td>
+<td>Offset</td>
+<td>Offset</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;helplast<a name="ImplantComponents-helplast"> </a></td>
+<td>Helplast</td>
+<td>Helplast</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;metalbacked<a name="ImplantComponents-metalbacked"> </a></td>
+<td>Metalbacked</td>
+<td></td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">reverse<a name="ImplantComponents-reverse"> </a></td>
+<td>Reverse</td>
+<td>Reverse</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;standard<a name="ImplantComponents-standard"> </a></td>
+<td>Standard</td>
+<td>Standard</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;eccentric<a name="ImplantComponents-eccentric"> </a></td>
+<td>Excentrisk</td>
+<td>Excentrisk</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">modular<a name="ImplantComponents-modular"> </a></td>
+<td>Modular</td>
+<td>Modular / Modulært</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;firm_neck<a name="ImplantComponents-firm_neck"> </a></td>
+<td>Firm neck</td>
+<td>Firm neck / Fast hals</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;detachable_neck<a name="ImplantComponents-detachable_neck"> </a></td>
+<td>Detachable neck</td>
+<td>Detachable neck / Aftagelig hals</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">adherent<a name="ImplantComponents-adherent"> </a></td>
+<td>Adherent</td>
+<td>Adherent / Fastsiddende</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">ordninary<a name="ImplantComponents-ordninary"> </a></td>
+<td>Ordinary</td>
+<td>Ordinary / Almindelig</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">extended<a name="ImplantComponents-extended"> </a></td>
+<td>Extended</td>
+<td>Extended</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">with_holes<a name="ImplantComponents-with_holes"> </a></td>
+<td>With holes</td>
+<td>With holes / Med huller</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">without_holes<a name="ImplantComponents-without_holes"> </a></td>
+<td>Without holes</td>
+<td>Without holes / Uden huller</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">metal<a name="ImplantComponents-metal"> </a></td>
+<td>Metal</td>
+<td>Metal / SNOMED-CT: 425620007</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">metal_pegs<a name="ImplantComponents-metal_pegs"> </a></td>
+<td>Metal pegs</td>
+<td>Metal pegs</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">metal_backing<a name="ImplantComponents-metal_backing"> </a></td>
+<td>Metal-backing</td>
+<td>Metal-backing</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">screws<a name="ImplantComponents-screws"> </a></td>
+<td>Skruer</td>
+<td>Skruer</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">augmented<a name="ImplantComponents-augmented"> </a></td>
+<td>Augmented</td>
+<td>Augmented</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">polyethylene<a name="ImplantComponents-polyethylene"> </a></td>
+<td>Polyethylene</td>
+<td>Polyethylene / Polyethylen / SNOMED-CT: 71463006</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;polyethylene_cool<a name="ImplantComponents-polyethylene_cool"> </a></td>
+<td>Polyethylen køl</td>
+<td>Polyethylen køl</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;polyethylene_pegs<a name="ImplantComponents-polyethylene_pegs"> </a></td>
+<td>Polyethylen pegs</td>
+<td>Polyethylen pegs</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">pyrocarbon<a name="ImplantComponents-pyrocarbon"> </a></td>
+<td>Pyrocarbon</td>
+<td>Pyrocarbon</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">ceramics<a name="ImplantComponents-ceramics"> </a></td>
+<td>Ceramics</td>
+<td>Ceramics / Keramik</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">spongiotic<a name="ImplantComponents-spongiotic"> </a></td>
+<td>Spongiotic</td>
+<td>Spongiotic / Spongiøs</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">structural<a name="ImplantComponents-structural"> </a></td>
+<td>Structural</td>
+<td>Structural / Strukturel</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">constrained<a name="ImplantComponents-constrained"> </a></td>
+<td>Constrained</td>
+<td>Constrained</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">non_constrained<a name="ImplantComponents-non_constrained"> </a></td>
+<td>Non-constrained</td>
+<td>Non-constrained / Ikke-constrained</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">double_mobility<a name="ImplantComponents-double_mobility"> </a></td>
+<td>Double mobility</td>
+<td>Double mobility</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">non_highy_crosslinked<a name="ImplantComponents-non_highy_crosslinked"> </a></td>
+<td>Ikke highly-crosslinked</td>
+<td>Ikke highly-crosslinked</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">highly_crosslinked<a name="ImplantComponents-highly_crosslinked"> </a></td>
+<td>Highly crosslinked</td>
+<td>Highly crosslinked</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">highly_crosslinked_antioxidant<a name="ImplantComponents-highly_crosslinked_antioxidant"> </a></td>
+<td>Highly crosslinked med antioxidant (Vitamin E og AOX)</td>
+<td>Highly crosslinked med antioxidant (Vitamin E og AOX)</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">humerus<a name="ImplantComponents-humerus"> </a></td>
+<td>Humerus</td>
+<td>Humerus</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;liner<a name="ImplantComponents-liner"> </a></td>
+<td>Liner</td>
+<td>Liner</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;caput<a name="ImplantComponents-caput"> </a></td>
+<td>Caput</td>
+<td>Caput</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;component<a name="ImplantComponents-component"> </a></td>
+<td>Komponent</td>
+<td>Komponent</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">cavitas<a name="ImplantComponents-cavitas"> </a></td>
+<td>Cavitas</td>
+<td>Cavitas</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">acetabulum_component<a name="ImplantComponents-acetabulum_component"> </a></td>
+<td>Acetabulumkomponent</td>
+<td>Acetabulumkomponent</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">acetabulum_liner<a name="ImplantComponents-acetabulum_liner"> </a></td>
+<td>Acetabulumliner</td>
+<td>Acetabulumliner</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">femur_component<a name="ImplantComponents-femur_component"> </a></td>
+<td>Femurkomponent</td>
+<td>Femurkomponent</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">tibia_component<a name="ImplantComponents-tibia_component"> </a></td>
+<td>Tibiakomponent</td>
+<td>Tibiakomponent</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">patella_component<a name="ImplantComponents-patella_component"> </a></td>
+<td>Patellakomponent</td>
+<td>Patellakomponent</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">soft_tissue<a name="ImplantComponents-soft_tissue"> </a></td>
+<td>Bløddelsrevisioner uden udskiftning af protesekomponenter</td>
+<td>Bløddelsrevisioner uden udskiftning af protesekomponenter</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">polyethylene_change<a name="ImplantComponents-polyethylene_change"> </a></td>
+<td>Polyethylen-skift (ved revision)</td>
+<td>Polyethylen-skift (ved revision) (Tibia)</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">long<a name="ImplantComponents-long"> </a></td>
+<td>Long</td>
+<td>Long / Lang</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">dysplasia_prosthesis<a name="ImplantComponents-dysplasia_prosthesis"> </a></td>
+<td>Dysplasia prosthesis</td>
+<td>Dysplasia prosthesis / Dysplasiprotese</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">resection_prosthesis<a name="ImplantComponents-resection_prosthesis"> </a></td>
+<td>Resection prosthesis</td>
+<td>Resection prosthesis / Resektionsprotese</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">open_mixture<a name="ImplantComponents-open_mixture"> </a></td>
+<td>Open mixture</td>
+<td>Open mixture / Åben blanding af væske og pulver</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">closed_mixture<a name="ImplantComponents-closed_mixture"> </a></td>
+<td>Closed mixture</td>
+<td>Closed mixture / Fuldstændig lukket blanding af væske og pulver</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">massive_transplant<a name="ImplantComponents-massive_transplant"> </a></td>
+<td>Massive transplant</td>
+<td>Massiv transplantering</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">crumble<a name="ImplantComponents-crumble"> </a></td>
+<td>Minor crumble</td>
+<td>Lidt smuld</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://trifork.com">Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S</a>.  Package dk.kip.rkkp.fhir.ig.core#2.12.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 15, 2025 12:37+0000">2025-07-15</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core"/>
-  <version value="2.11.6"/>
+  <version value="2.12.0"/>
   <name value="KIPInfrastructure"/>
   <title value="KIP Infrastructure"/>
   <status value="active"/>
-  <date value="2025-06-16T07:51:25+00:00"/>
+  <date value="2025-07-15T12:40:46+00:00"/>
   <publisher value="Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"/>
   <contact>
     <name value="Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"/>
@@ -34,7 +34,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.4.0"/>
+    <version value="6.5.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -7640,6 +7640,17 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
+        <reference value="SearchParameter/PlanDefinitionLatest"/>
+      </reference>
+      <name value="PlanDefinitionLatest"/>
+      <description value="Search PlanDefinition for 'latest' extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
         <reference value="SearchParameter/PlanDefinitionUuid"/>
       </reference>
       <name value="PlanDefinitionUuid"/>
@@ -8183,6 +8194,17 @@
       </reference>
       <name value="Påvisning af vasospasme; metode"/>
       <description value="Påvisning af vasospasme; metode"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/QuestionnaireLatest"/>
+      </reference>
+      <name value="QuestionnaireLatest"/>
+      <description value="Search Questionnaire for 'latest' extension"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -9085,6 +9107,28 @@
       </reference>
       <name value="Search Parameter - CPR for Patient"/>
       <description value="Limit response of Patient to match given CPR."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PDLatest"/>
+      </reference>
+      <name value="Search Parameter - Latest for PlanDefinitions"/>
+      <description value="Limit response of PlanDefinitions to match given Latest."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/QLatest"/>
+      </reference>
+      <name value="Search Parameter - Latest for Questionnaires"/>
+      <description value="Limit response of Questionnaires to match given Latest."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
