@@ -1,0 +1,30 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "SP-Questionnaire-urlversion",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter SP-Questionnaire-urlversion</b></p><a name=\"SP-Questionnaire-urlversion\"> </a><a name=\"hcSP-Questionnaire-urlversion\"> </a><h2>urlversion</h2><p>Parameter <code>urlversion</code>:<code>token</code></p><div><p>SearchParameter to match Questionnaire by both url and version</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/questionnaire.html\">Questionnaire</a></td></tr><tr><td>Expression</td><td><code>Questionnaire.url &amp; '_' &amp; Questionnaire.version</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true</li></ul></td></tr></table></div>"
+  },
+  "url" : "http://kip.sundk.dk/fhir/SearchParameter/SP-Questionnaire-urlversion",
+  "version" : "2.12.1",
+  "name" : "urlversion",
+  "status" : "active",
+  "date" : "2025-09-05T09:37:22+00:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "SearchParameter to match Questionnaire by both url and version",
+  "code" : "urlversion",
+  "base" : ["Questionnaire"],
+  "type" : "token",
+  "expression" : "Questionnaire.url & '_' & Questionnaire.version"
+}

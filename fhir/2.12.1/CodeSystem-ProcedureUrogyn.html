@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Procedurekoder - Urogynækologi (DUGA) - KIP Infrastructure v2.12.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3.903"}
+    h3,h4,h5,h6{--heading-prefix:"3.903"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">KIP Infrastructure</span>
+            <br/>
+            <span style="display:inline-block;">2.12.1 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Search Parameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Extension Definitions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Code Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Procedurekoder - Urogynækologi (DUGA)</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KIP Infrastructure (v2.12.1: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-ProcedureUrogyn.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-ProcedureUrogyn.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-ProcedureUrogyn.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: Procedurekoder - Urogynækologi (DUGA)
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://kip.rkkp.dk/fhir/CodeSystem/ProcedureUrogyn<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/ProcedureUrogyn"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">2.12.1<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/ProcedureUrogyn|2.12.1"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2024-02-14
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">ProcedureUrogyn</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Procedurekoder - Urogynækolog (DUGA)</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-KomplAndreDiagDUGA.html">KomplAndreDiagDUGA</a></li>
+ <li><a href="ValueSet-KomplAndreProcDUGA.html">KomplAndreProcDUGA</a></li>
+ <li><a href="ValueSet-KomplBlaereDiagDUGA.html">KomplBlaereDiagDUGA</a></li>
+ <li><a href="ValueSet-KomplBlaereProcDUGA.html">KomplBlaereProcDUGA</a></li>
+ <li><a href="ValueSet-KomplBloedDiagDUGA.html">KomplBloedDiagDUGA</a></li>
+ <li><a href="ValueSet-KomplBloedProcDUGA.html">KomplBloedProcDUGA</a></li>
+ <li><a href="ValueSet-KomplInfektionDiagDUGA.html">KomplInfektionDiagDUGA</a></li>
+ <li><a href="ValueSet-KomplInfektionProcDUGA.html">KomplInfektionProcDUGA</a></li>
+ <li><a href="ValueSet-KomplOrganperfDiagDUGA.html">KomplOrganperfDiagDUGA</a></li>
+ <li><a href="ValueSet-KomplOrganperfProcDUGA.html">KomplOrganperfProcDUGA</a></li>
+ <li><a href="ValueSet-OpkodeGenitalProlapsDUGA.html">OpkodeGenitalProlapsDUGA</a></li>
+ <li><a href="ValueSet-OpkodeUrinGenitalDUGA.html">OpkodeUrinGenitalDUGA</a></li>
+ <li><a href="ValueSet-OpkodeUrinInkontinensDUGA.html">OpkodeUrinInkontinensDUGA</a></li>
+ <li><a href="ValueSet-PerforationDUGA.html">PerforationDUGA</a></li>
+ <li><a href="ValueSet-SuspensionDUGA.html">SuspensionDUGA</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"></p><a name="ProcedureUrogyn"> </a><a name="hcProcedureUrogyn"> </a><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/ProcedureUrogyn</code> defines the following codes:</p>
+<table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>
+<tr><td style="white-space:nowrap">KKDG00<a name="ProcedureUrogyn-KKDG00"> </a></td>
+<td>Retropubisk supension af urinrør</td>
+<td>Retropubisk supension af urinrør</td></tr>
+<tr><td style="white-space:nowrap">KKDG30<a name="ProcedureUrogyn-KKDG30"> </a></td>
+<td>Abdominal uretrocystopeksi med slynge</td>
+<td>Abdominal uretrocystopeksi med slynge</td></tr>
+<tr><td style="white-space:nowrap">KKDV22<a name="ProcedureUrogyn-KKDV22"> </a></td>
+<td>Uretroskopisk submukøs injektionsbehandling i urinrør</td>
+<td>Uretroskopisk submukøs injektionsbehandling i urinrør</td></tr>
+<tr><td style="white-space:nowrap">KLEG10<a name="ProcedureUrogyn-KLEG10"> </a></td>
+<td>Vaginal uretrocystopeksi med slynge</td>
+<td>Vaginal uretrocystopeksi med slynge</td></tr>
+<tr><td style="white-space:nowrap">KLEG10A<a name="ProcedureUrogyn-KLEG10A"> </a></td>
+<td>Vaginal uretrocystopeksi med slynge gennem foramen obturatum</td>
+<td>Vaginal uretrocystopeksi med slynge gennem foramen obturatum</td></tr>
+<tr><td style="white-space:nowrap">KLEF00<a name="ProcedureUrogyn-KLEF00"> </a></td>
+<td>Forreste kolporafi</td>
+<td>Forreste kolporafi</td></tr>
+<tr><td style="white-space:nowrap">KLEF00A<a name="ProcedureUrogyn-KLEF00A"> </a></td>
+<td>Forreste kolporafi med meche</td>
+<td>Forreste kolporafi med meche</td></tr>
+<tr><td style="white-space:nowrap">KLEF03<a name="ProcedureUrogyn-KLEF03"> </a></td>
+<td>Bageste kolporafi</td>
+<td>Bageste kolporafi</td></tr>
+<tr><td style="white-space:nowrap">KLEF03A<a name="ProcedureUrogyn-KLEF03A"> </a></td>
+<td>Bageste kolporafi med meche</td>
+<td>Bageste kolporafi med meche</td></tr>
+<tr><td style="white-space:nowrap">KLEF20<a name="ProcedureUrogyn-KLEF20"> </a></td>
+<td>Partiel kolpokleise</td>
+<td>Partiel kolpokleise</td></tr>
+<tr><td style="white-space:nowrap">KLEF40<a name="ProcedureUrogyn-KLEF40"> </a></td>
+<td>Vaginal operation for enterocele</td>
+<td>Vaginal operation for enterocele</td></tr>
+<tr><td style="white-space:nowrap">KLEF40A<a name="ProcedureUrogyn-KLEF40A"> </a></td>
+<td>Vaginal operation for enterocele med meche</td>
+<td>Vaginal operation for enterocele med meche</td></tr>
+<tr><td style="white-space:nowrap">KLEF43<a name="ProcedureUrogyn-KLEF43"> </a></td>
+<td>Abdominal operation for enterocele</td>
+<td>Abdominal operation for enterocele</td></tr>
+<tr><td style="white-space:nowrap">KLEF43A<a name="ProcedureUrogyn-KLEF43A"> </a></td>
+<td>Abdominal operation for enterocele med meche</td>
+<td>Abdominal operation for enterocele med meche</td></tr>
+<tr><td style="white-space:nowrap">KLEF50<a name="ProcedureUrogyn-KLEF50"> </a></td>
+<td>Abdominal apikal kolpopeksi efter tidligere hysterektomi</td>
+<td>Abdominal apikal kolpopeksi efter tidligere hysterektomi</td></tr>
+<tr><td style="white-space:nowrap">KLEF50A<a name="ProcedureUrogyn-KLEF50A"> </a></td>
+<td>Abdominal apikal kolpopeksi eft. tidl. hysterektomi m. meche</td>
+<td>Abdominal apikal kolpopeksi eft. tidl. hysterektomi m. meche</td></tr>
+<tr><td style="white-space:nowrap">KLEF51<a name="ProcedureUrogyn-KLEF51"> </a></td>
+<td>Laparoskopisk apikal kolpopeksi efter tidligere hysterektomi</td>
+<td>Laparoskopisk apikal kolpopeksi efter tidligere hysterektomi</td></tr>
+<tr><td style="white-space:nowrap">KLEF51A<a name="ProcedureUrogyn-KLEF51A"> </a></td>
+<td>Laparoskop. apikal kolpopeksi eft.tidl. hysterektomi m. meche</td>
+<td>Laparoskop. apikal kolpopeksi eft.tidl. hysterektomi m. meche</td></tr>
+<tr><td style="white-space:nowrap">KLEF53<a name="ProcedureUrogyn-KLEF53"> </a></td>
+<td>Vaginal apikal kolpopeksi efter tidligere hysterektomi</td>
+<td>Vaginal apikal kolpopeksi efter tidligere hysterektomi</td></tr>
+<tr><td style="white-space:nowrap">KLEF53A<a name="ProcedureUrogyn-KLEF53A"> </a></td>
+<td>Vaginal apikal kolpopeksi efter tidl. hysterektomi med meche</td>
+<td>Vaginal apikal kolpopeksi efter tidl. hysterektomi med meche</td></tr>
+<tr><td style="white-space:nowrap">KLEF53B<a name="ProcedureUrogyn-KLEF53B"> </a></td>
+<td>Vaginal apikal kolpopeksi til det sakrospinøse ligament</td>
+<td>Vaginal apikal kolpopeksi til det sakrospinøse ligament</td></tr>
+<tr><td style="white-space:nowrap">KLEF60<a name="ProcedureUrogyn-KLEF60"> </a></td>
+<td>Vaginal lateral kolpopeksi</td>
+<td>Vaginal lateral kolpopeksi</td></tr>
+<tr><td style="white-space:nowrap">KLEF63<a name="ProcedureUrogyn-KLEF63"> </a></td>
+<td>Abdominal lateral kolpopeksi</td>
+<td>Abdominal lateral kolpopeksi</td></tr>
+<tr><td style="white-space:nowrap">KLCG20<a name="ProcedureUrogyn-KLCG20"> </a></td>
+<td>Hysteropeksi</td>
+<td>Hysteropeksi</td></tr>
+<tr><td style="white-space:nowrap">KLCG21<a name="ProcedureUrogyn-KLCG21"> </a></td>
+<td>Laparoskopisk hysteropeksi</td>
+<td>Laparoskopisk hysteropeksi</td></tr>
+<tr><td style="white-space:nowrap">KLCG21A<a name="ProcedureUrogyn-KLCG21A"> </a></td>
+<td>Laparoskopisk hysteropeksi med mesh</td>
+<td>Laparoskopisk hysteropeksi med mesh</td></tr>
+<tr><td style="white-space:nowrap">KLCD10<a name="ProcedureUrogyn-KLCD10"> </a></td>
+<td>Vaginal hysterektomi</td>
+<td>Vaginal hysterektomi</td></tr>
+<tr><td style="white-space:nowrap">KLDC10<a name="ProcedureUrogyn-KLDC10"> </a></td>
+<td>Resektion af livmoderhals</td>
+<td>Resektion af livmoderhals</td></tr>
+<tr><td style="white-space:nowrap">KLED00<a name="ProcedureUrogyn-KLED00"> </a></td>
+<td>Kolpektomi</td>
+<td>Kolpektomi</td></tr>
+<tr><td style="white-space:nowrap">KZLA01<a name="ProcedureUrogyn-KZLA01"> </a></td>
+<td>Suspension af vaginaltop a.m. McCall</td>
+<td>Suspension af vaginaltop a.m. McCall</td></tr>
+<tr><td style="white-space:nowrap">KZLA02<a name="ProcedureUrogyn-KZLA02"> </a></td>
+<td>Suspension af vaginaltop a.m. Bob Shull</td>
+<td>Suspension af vaginaltop a.m. Bob Shull</td></tr>
+<tr><td style="white-space:nowrap">KLEE00<a name="ProcedureUrogyn-KLEE00"> </a></td>
+<td>Sutur af vagina</td>
+<td>Sutur af vagina</td></tr>
+<tr><td style="white-space:nowrap">KLFE00<a name="ProcedureUrogyn-KLFE00"> </a></td>
+<td>Sutur af vulva</td>
+<td>Sutur af vulva</td></tr>
+<tr><td style="white-space:nowrap">KLFE96<a name="ProcedureUrogyn-KLFE96"> </a></td>
+<td>Anden rekonstruktion på vulva eller perineum</td>
+<td>Anden rekonstruktion på vulva eller perineum</td></tr>
+<tr><td style="white-space:nowrap">KJHC10<a name="ProcedureUrogyn-KJHC10"> </a></td>
+<td>Rekonstruktion af sphincter ani</td>
+<td>Rekonstruktion af sphincter ani</td></tr>
+<tr><td style="white-space:nowrap">KUKC02<a name="ProcedureUrogyn-KUKC02"> </a></td>
+<td>Cystoskopi</td>
+<td>Cystoskopi</td></tr>
+<tr><td style="white-space:nowrap">KZXF84A<a name="ProcedureUrogyn-KZXF84A"> </a></td>
+<td>Ikke resorberbar sutur</td>
+<td>Ikke resorberbar sutur</td></tr>
+<tr><td style="white-space:nowrap">KZXF84B<a name="ProcedureUrogyn-KZXF84B"> </a></td>
+<td>Korttidsresorberbar sutur (&lt; 3 uger)</td>
+<td>Korttidsresorberbar sutur (&lt; 3 uger)</td></tr>
+<tr><td style="white-space:nowrap">KZXF84C<a name="ProcedureUrogyn-KZXF84C"> </a></td>
+<td>Forsinket resorberbar sutur</td>
+<td>Forsinket resorberbar sutur</td></tr>
+<tr><td style="white-space:nowrap">KZXX00<a name="ProcedureUrogyn-KZXX00"> </a></td>
+<td>Anvendelse af robot</td>
+<td>Anvendelse af robot</td></tr>
+<tr><td style="white-space:nowrap">DN393<a name="ProcedureUrogyn-DN393"> </a></td>
+<td>Stress-inkontinens</td>
+<td>Stress-inkontinens</td></tr>
+<tr><td style="white-space:nowrap">DN895D<a name="ProcedureUrogyn-DN895D"> </a></td>
+<td>Vaginal striktur</td>
+<td>Vaginal striktur</td></tr>
+<tr><td style="white-space:nowrap">DR102B<a name="ProcedureUrogyn-DR102B"> </a></td>
+<td>Mavesmerter lokaliseret til bækken</td>
+<td>Mavesmerter lokaliseret til bækken</td></tr>
+<tr><td style="white-space:nowrap">DR339D<a name="ProcedureUrogyn-DR339D"> </a></td>
+<td>Residualurin</td>
+<td>Residualurin</td></tr>
+<tr><td style="white-space:nowrap">DR391<a name="ProcedureUrogyn-DR391"> </a></td>
+<td>Vandladningsbesvær UNS</td>
+<td>Vandladningsbesvær UNS</td></tr>
+<tr><td style="white-space:nowrap">DR522B<a name="ProcedureUrogyn-DR522B"> </a></td>
+<td>Smerter i kønsorganer</td>
+<td>Smerter i kønsorganer</td></tr>
+<tr><td style="white-space:nowrap">DT810G<a name="ProcedureUrogyn-DT810G"> </a></td>
+<td>Postoperativ blødning UNS</td>
+<td>Postoperativ blødning UNS</td></tr>
+<tr><td style="white-space:nowrap">DT810H<a name="ProcedureUrogyn-DT810H"> </a></td>
+<td>Postoperativt hæmatom UNS</td>
+<td>Postoperativt hæmatom UNS</td></tr>
+<tr><td style="white-space:nowrap">DT812G<a name="ProcedureUrogyn-DT812G"> </a></td>
+<td>Utilsigtet peroperativ punktur eller læsion af gastrointestinalkanalen</td>
+<td>Utilsigtet peroperativ punktur eller læsion af gastrointestinalkanalen</td></tr>
+<tr><td style="white-space:nowrap">DT812H<a name="ProcedureUrogyn-DT812H"> </a></td>
+<td>Utilsigtet peroperativ punktur eller læsion af kvindeligt kønsorgan</td>
+<td>Utilsigtet peroperativ punktur eller læsion af kvindeligt kønsorgan</td></tr>
+<tr><td style="white-space:nowrap">DT812UC<a name="ProcedureUrogyn-DT812UC"> </a></td>
+<td>Utilsigtet peroperativ punktur eller læsion af urinleder</td>
+<td>Utilsigtet peroperativ punktur eller læsion af urinleder</td></tr>
+<tr><td style="white-space:nowrap">DT812UD<a name="ProcedureUrogyn-DT812UD"> </a></td>
+<td>Utilsigtet peroperativ punktur eller læsion af urinblære</td>
+<td>Utilsigtet peroperativ punktur eller læsion af urinblære</td></tr>
+<tr><td style="white-space:nowrap">DT812UE<a name="ProcedureUrogyn-DT812UE"> </a></td>
+<td>Utilsigtet peroperativ punktur eller læsion af urinrør</td>
+<td>Utilsigtet peroperativ punktur eller læsion af urinrør</td></tr>
+<tr><td style="white-space:nowrap">DT814F<a name="ProcedureUrogyn-DT814F"> </a></td>
+<td>Postoperativ sårinfektion</td>
+<td>Postoperativ sårinfektion</td></tr>
+<tr><td style="white-space:nowrap">DT814U<a name="ProcedureUrogyn-DT814U"> </a></td>
+<td>Postoperativ urinvejsinfektion</td>
+<td>Postoperativ urinvejsinfektion</td></tr>
+<tr><td style="white-space:nowrap">DT818F<a name="ProcedureUrogyn-DT818F"> </a></td>
+<td>Peroperativ blødning UNS</td>
+<td>Peroperativ blødning UNS</td></tr>
+<tr><td style="white-space:nowrap">DT835<a name="ProcedureUrogyn-DT835"> </a></td>
+<td>Infektion eller inflammation omkring protese, implantat eller transplantat i urinvejene</td>
+<td>Infektion eller inflammation omkring protese, implantat eller transplantat i urinvejene</td></tr>
+<tr><td style="white-space:nowrap">DT836<a name="ProcedureUrogyn-DT836"> </a></td>
+<td>Infektion eller inflammation omkring protese, implantat eller transplantat i kønsorganerne</td>
+<td>Infektion eller inflammation omkring protese, implantat eller transplantat i kønsorganerne</td></tr>
+<tr><td style="white-space:nowrap">DT983C<a name="ProcedureUrogyn-DT983C"> </a></td>
+<td>Postoperativ seksuel dysfunktion</td>
+<td>Postoperativ seksuel dysfunktion</td></tr>
+<tr><td style="white-space:nowrap">KKBF00<a name="ProcedureUrogyn-KKBF00"> </a></td>
+<td>Fjernelse af fremmedlegeme i urinleder</td>
+<td>Fjernelse af fremmedlegeme i urinleder</td></tr>
+<tr><td style="white-space:nowrap">KKCF01<a name="ProcedureUrogyn-KKCF01"> </a></td>
+<td>Perkutan endoskopisk fjernelse af fremmedlegeme i urinblære</td>
+<td>Perkutan endoskopisk fjernelse af fremmedlegeme i urinblære</td></tr>
+<tr><td style="white-space:nowrap">KKDE20<a name="ProcedureUrogyn-KKDE20"> </a></td>
+<td>Fjernelse af fremmedlegeme fra urinrør</td>
+<td>Fjernelse af fremmedlegeme fra urinrør</td></tr>
+<tr><td style="white-space:nowrap">KLWB00<a name="ProcedureUrogyn-KLWB00"> </a></td>
+<td>Reoperation ved overfladisk infektion efter gynækologisk operation</td>
+<td>Reoperation ved overfladisk infektion efter gynækologisk operation</td></tr>
+<tr><td style="white-space:nowrap">KLWC00<a name="ProcedureUrogyn-KLWC00"> </a></td>
+<td>Reoperation ved dyb infektion efter gynækologisk operation</td>
+<td>Reoperation ved dyb infektion efter gynækologisk operation</td></tr>
+<tr><td style="white-space:nowrap">KLWC01<a name="ProcedureUrogyn-KLWC01"> </a></td>
+<td>Laparoskopisk reoperation ved dyb infektion efter gynækologisk operation</td>
+<td>Laparoskopisk reoperation ved dyb infektion efter gynækologisk operation</td></tr>
+<tr><td style="white-space:nowrap">KLWD00<a name="ProcedureUrogyn-KLWD00"> </a></td>
+<td>Reoperation for overfladisk blødning efter gynækologisk operation</td>
+<td>Reoperation for overfladisk blødning efter gynækologisk operation</td></tr>
+<tr><td style="white-space:nowrap">KLWE00<a name="ProcedureUrogyn-KLWE00"> </a></td>
+<td>Reoperation for dyb blødning efter gynækologisk operation</td>
+<td>Reoperation for dyb blødning efter gynækologisk operation</td></tr>
+<tr><td style="white-space:nowrap">KLWE01<a name="ProcedureUrogyn-KLWE01"> </a></td>
+<td>Laparoskopisk reoperation for dyb blødning efter gynækologisk operation</td>
+<td>Laparoskopisk reoperation for dyb blødning efter gynækologisk operation</td></tr>
+<tr><td style="white-space:nowrap">KLWW96<a name="ProcedureUrogyn-KLWW96"> </a></td>
+<td>Anden reoperation efter gynækologisk operation</td>
+<td>Anden reoperation efter gynækologisk operation</td></tr>
+<tr><td style="white-space:nowrap">KLWW96A<a name="ProcedureUrogyn-KLWW96A"> </a></td>
+<td>Fjernelse af fremmedlegeme i bækkenhulen efter gynækologisk operation</td>
+<td>Fjernelse af fremmedlegeme i bækkenhulen efter gynækologisk operation</td></tr>
+<tr><td style="white-space:nowrap">KLWW97A<a name="ProcedureUrogyn-KLWW97A"> </a></td>
+<td>Laparoskopisk fjernelse af fremmedlegeme i bækkenhulen efter gynækologisk operation</td>
+<td>Laparoskopisk fjernelse af fremmedlegeme i bækkenhulen efter gynækologisk operation</td></tr>
+<tr><td style="white-space:nowrap">KTLE10<a name="ProcedureUrogyn-KTLE10"> </a></td>
+<td>Fjernelse af fremmedlegeme fra vagina</td>
+<td>Fjernelse af fremmedlegeme fra vagina</td></tr>
+<tr><td style="white-space:nowrap">KTLW99A<a name="ProcedureUrogyn-KTLW99A"> </a></td>
+<td>Løsning eller overskæring af vaginal slynge</td>
+<td>Løsning eller overskæring af vaginal slynge</td></tr>
+<tr><td style="white-space:nowrap">KTLW99B<a name="ProcedureUrogyn-KTLW99B"> </a></td>
+<td>Stramning af vaginal slynge</td>
+<td>Stramning af vaginal slynge</td></tr>
+<tr><td style="white-space:nowrap">BJAA0<a name="ProcedureUrogyn-BJAA0"> </a></td>
+<td>Engangskateterisation af blæren</td>
+<td>Engangskateterisation af blæren</td></tr>
+<tr><td style="white-space:nowrap">BJAZ0<a name="ProcedureUrogyn-BJAZ0"> </a></td>
+<td>Anlæggelse af blærekateter</td>
+<td>Anlæggelse af blærekateter</td></tr>
+<tr><td style="white-space:nowrap">BJKA02<a name="ProcedureUrogyn-BJKA02"> </a></td>
+<td>Vejledning og undervisning i selvkateterisation</td>
+<td>Vejledning og undervisning i selvkateterisation</td></tr>
+<tr><td style="white-space:nowrap">BOQA0<a name="ProcedureUrogyn-BOQA0"> </a></td>
+<td>Blodtransfusion</td>
+<td>Blodtransfusion</td></tr>
+<tr><td style="white-space:nowrap">BPH<a name="ProcedureUrogyn-BPH"> </a></td>
+<td>Systemisk antibiotikabehandling af infektionssygdomme</td>
+<td>Systemisk antibiotikabehandling af infektionssygdomme</td></tr>
+<tr><td style="white-space:nowrap">ZZ1295<a name="ProcedureUrogyn-ZZ1295"> </a></td>
+<td>Væske og vandladningsskema</td>
+<td>Væske og vandladningsskema</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://trifork.com">Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S</a>.  Package dk.kip.rkkp.fhir.ig.core#2.12.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 5, 2025 09:38+0000">2025-09-05</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

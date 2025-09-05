@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Den Danske SNOMED for Patologi - KIP Infrastructure v2.12.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3.783"}
+    h3,h4,h5,h6{--heading-prefix:"3.783"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">KIP Infrastructure</span>
+            <br/>
+            <span style="display:inline-block;">2.12.1 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Search Parameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Extension Definitions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Code Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Den Danske SNOMED for Patologi</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KIP Infrastructure (v2.12.1: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-PatobankSNOMED.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-PatobankSNOMED.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-PatobankSNOMED.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: Den Danske SNOMED for Patologi
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://kip.rkkp.dk/fhir/CodeSystem/PatobankSNOMED<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/PatobankSNOMED"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">2.12.1<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/PatobankSNOMED|2.12.1"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2022-06-07
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">PatobankSNOMED</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Den Danske SNOMED for Patologi - Udvalgte koder i RKKP. Link: https://www.patobank.dk/snomed/</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-CytogeneticCancerChangesALD.html">CytogeneticCancerChangesALD</a></li>
+ <li><a href="ValueSet-DiagnoseCLL.html">DiagnoseCLL</a></li>
+ <li><a href="ValueSet-PatobankSNOMEDCytogenetikMDS.html">PatobankSNOMEDCytogenetikMDS</a></li>
+ <li><a href="ValueSet-PatobankSNOMEDDMPNDiagnose.html">PatobankSNOMEDDMPNDiagnose</a></li>
+ <li><a href="ValueSet-PatobankSNOMEDDiagnoserLYFO.html">PatobankSNOMEDDiagnoserLYFO</a></li>
+ <li><a href="ValueSet-PatobankSNOMEDLeukemiaDiagnose.html">PatobankSNOMEDLeukemiaDiagnose</a></li>
+ <li><a href="ValueSet-PatobankSNOMEDMDSDiagnose.html">PatobankSNOMEDMDSDiagnose</a></li>
+ <li><a href="ValueSet-PatobankSNOMEDpTNMpM.html">PatobankSNOMEDpTNMpM</a></li>
+ <li><a href="ValueSet-PatobankSNOMEDpTNMpN.html">PatobankSNOMEDpTNMpN</a></li>
+ <li><a href="ValueSet-PatobankSNOMEDpTNMpT.html">PatobankSNOMEDpTNMpT</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"></p><a name="PatobankSNOMED"> </a><a name="hcPatobankSNOMED"> </a><p>This case-sensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/PatobankSNOMED</code> provides <b>a fragment</b> that includes following codes:</p>
+<table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>
+<tr><td style="white-space:nowrap">M96103<a name="PatobankSNOMED-M96103"> </a></td>
+<td>B-cellelymfom</td>
+<td>B-cellelymfom</td></tr>
+<tr><td style="white-space:nowrap">M96503<a name="PatobankSNOMED-M96503"> </a></td>
+<td>Hodgkin lymfom, klassisk type</td>
+<td>Hodgkin lymfom, klassisk type</td></tr>
+<tr><td style="white-space:nowrap">M96513<a name="PatobankSNOMED-M96513"> </a></td>
+<td>Hodgkin lymfom, klassisk type, lymfocytrig</td>
+<td>Hodgkin lymfom, klassisk type, lymfocytrig</td></tr>
+<tr><td style="white-space:nowrap">M96523<a name="PatobankSNOMED-M96523"> </a></td>
+<td>Hodgkin lymfom, klassisk type, mixed cellularitet</td>
+<td>Hodgkin lymfom, klassisk type, mixed cellularitet</td></tr>
+<tr><td style="white-space:nowrap">M96533<a name="PatobankSNOMED-M96533"> </a></td>
+<td>Hodgkin lymfom, klassisk type, lymfocytdepleteret</td>
+<td>Hodgkin lymfom, klassisk type, lymfocytdepleteret</td></tr>
+<tr><td style="white-space:nowrap">M96593<a name="PatobankSNOMED-M96593"> </a></td>
+<td>Hodgkin lymfom, nodulær, lymfocyt dominans</td>
+<td>Hodgkin lymfom, nodulær, lymfocyt dominans</td></tr>
+<tr><td style="white-space:nowrap">M96633<a name="PatobankSNOMED-M96633"> </a></td>
+<td>Hodgkin lymfom, klassisk type, nodulær sklerose</td>
+<td>Hodgkin lymfom, klassisk type, nodulær sklerose</td></tr>
+<tr><td style="white-space:nowrap">M96703<a name="PatobankSNOMED-M96703"> </a></td>
+<td>Småcellet lymfocytært lymfom</td>
+<td>Småcellet lymfocytært lymfom</td></tr>
+<tr><td style="white-space:nowrap">M96783<a name="PatobankSNOMED-M96783"> </a></td>
+<td>primært effusionslymfom</td>
+<td>primært effusionslymfom</td></tr>
+<tr><td style="white-space:nowrap">M96793<a name="PatobankSNOMED-M96793"> </a></td>
+<td>mediastinalt storcellet B-cellelymfom</td>
+<td>mediastinalt storcellet B-cellelymfom</td></tr>
+<tr><td style="white-space:nowrap">M96873<a name="PatobankSNOMED-M96873"> </a></td>
+<td>Burkitt lymfom</td>
+<td>Burkitt lymfom</td></tr>
+<tr><td style="white-space:nowrap">M968H3<a name="PatobankSNOMED-M968H3"> </a></td>
+<td>high-grade B-lymfom</td>
+<td>high-grade B-lymfom</td></tr>
+<tr><td style="white-space:nowrap">M968I3<a name="PatobankSNOMED-M968I3"> </a></td>
+<td>high-grade B-lymfom med MYC og BCL2 og/eller BCL6 rearr.</td>
+<td>high-grade B-lymfom med MYC og BCL2 og/eller BCL6 rearr.</td></tr>
+<tr><td style="white-space:nowrap">M96903<a name="PatobankSNOMED-M96903"> </a></td>
+<td>follikulært lymfom</td>
+<td>follikulært lymfom</td></tr>
+<tr><td style="white-space:nowrap">M96993<a name="PatobankSNOMED-M96993"> </a></td>
+<td>marginalzone B-cellelymfom</td>
+<td>marginalzone B-cellelymfom</td></tr>
+<tr><td style="white-space:nowrap">M97003<a name="PatobankSNOMED-M97003"> </a></td>
+<td>mycosis fungoides</td>
+<td>mycosis fungoides</td></tr>
+<tr><td style="white-space:nowrap">M97013<a name="PatobankSNOMED-M97013"> </a></td>
+<td>Sezarys syndrom</td>
+<td>Sezarys syndrom</td></tr>
+<tr><td style="white-space:nowrap">M97023<a name="PatobankSNOMED-M97023"> </a></td>
+<td>perifert T-cellelymfom</td>
+<td>perifert T-cellelymfom</td></tr>
+<tr><td style="white-space:nowrap">M97053<a name="PatobankSNOMED-M97053"> </a></td>
+<td>angioimmunoblastisk T-cellelymfom</td>
+<td>angioimmunoblastisk T-cellelymfom</td></tr>
+<tr><td style="white-space:nowrap">M97083<a name="PatobankSNOMED-M97083"> </a></td>
+<td>subkutant panniculit-lignende T-cellelymfom</td>
+<td>subkutant panniculit-lignende T-cellelymfom</td></tr>
+<tr><td style="white-space:nowrap">M97143<a name="PatobankSNOMED-M97143"> </a></td>
+<td>anaplastisk storcellet lymfom</td>
+<td>anaplastisk storcellet lymfom</td></tr>
+<tr><td style="white-space:nowrap">M97163<a name="PatobankSNOMED-M97163"> </a></td>
+<td>hepatosplenisk T-cellelymfom</td>
+<td>hepatosplenisk T-cellelymfom</td></tr>
+<tr><td style="white-space:nowrap">M97173<a name="PatobankSNOMED-M97173"> </a></td>
+<td>enteropati-associeret T-cellelymfom</td>
+<td>enteropati-associeret T-cellelymfom</td></tr>
+<tr><td style="white-space:nowrap">M97183<a name="PatobankSNOMED-M97183"> </a></td>
+<td>primært kutant anaplastisk storcellet lymfom</td>
+<td>primært kutant anaplastisk storcellet lymfom</td></tr>
+<tr><td style="white-space:nowrap">M97193<a name="PatobankSNOMED-M97193"> </a></td>
+<td>ekstranodalt NK/T-cellelymfom, nasal type</td>
+<td>ekstranodalt NK/T-cellelymfom, nasal type</td></tr>
+<tr><td style="white-space:nowrap">M97263<a name="PatobankSNOMED-M97263"> </a></td>
+<td>primært kutant gamma-delta T-cellelymfom</td>
+<td>primært kutant gamma-delta T-cellelymfom</td></tr>
+<tr><td style="white-space:nowrap">M97293<a name="PatobankSNOMED-M97293"> </a></td>
+<td>precursor T-lymfoblastisk lymfom</td>
+<td>precursor T-lymfoblastisk lymfom</td></tr>
+<tr><td style="white-space:nowrap">M97353<a name="PatobankSNOMED-M97353"> </a></td>
+<td>plasmablastisk lymfom</td>
+<td>plasmablastisk lymfom</td></tr>
+<tr><td style="white-space:nowrap">M97373<a name="PatobankSNOMED-M97373"> </a></td>
+<td>storcellet B-cellelymfom, ALK-positivt</td>
+<td>storcellet B-cellelymfom, ALK-positivt</td></tr>
+<tr><td style="white-space:nowrap">M96713<a name="PatobankSNOMED-M96713"> </a></td>
+<td>Lymfoplasmacytært lymfom</td>
+<td>Lymfoplasmacytært lymfom</td></tr>
+<tr><td style="white-space:nowrap">M96733<a name="PatobankSNOMED-M96733"> </a></td>
+<td>Mantlecellelymfom</td>
+<td>Mantlecellelymfom</td></tr>
+<tr><td style="white-space:nowrap">M96803<a name="PatobankSNOMED-M96803"> </a></td>
+<td>Diffust storcellet B-cellelymfom</td>
+<td>Diffust storcellet B-cellelymfom</td></tr>
+<tr><td style="white-space:nowrap">M96893<a name="PatobankSNOMED-M96893"> </a></td>
+<td>Splenisk marginalzone B-cellelymfom</td>
+<td>Splenisk marginalzone B-cellelymfom</td></tr>
+<tr><td style="white-space:nowrap">M97283<a name="PatobankSNOMED-M97283"> </a></td>
+<td>Precursor B-lymfoblastisk lymfom</td>
+<td>Precursor B-lymfoblastisk lymfom</td></tr>
+<tr><td style="white-space:nowrap">M98013<a name="PatobankSNOMED-M98013"> </a></td>
+<td>akut udifferentieret leukæmi</td>
+<td>akut udifferentieret leukæmi</td></tr>
+<tr><td style="white-space:nowrap">M98053<a name="PatobankSNOMED-M98053"> </a></td>
+<td>akut leukæmi af ubestemmelig celletype</td>
+<td>akut leukæmi af ubestemmelig celletype</td></tr>
+<tr><td style="white-space:nowrap">M98063<a name="PatobankSNOMED-M98063"> </a></td>
+<td>bl. fænotype akut leukæmi m. t(9;22); BCR-ABL1</td>
+<td>bl. fænotype akut leukæmi m. t(9;22); BCR-ABL1</td></tr>
+<tr><td style="white-space:nowrap">M98073<a name="PatobankSNOMED-M98073"> </a></td>
+<td>bl. fænotype akut leukæmi m. t(v;11q); KMT2A rearr.</td>
+<td>bl. fænotype akut leukæmi m. t(v;11q); KMT2A rearr.</td></tr>
+<tr><td style="white-space:nowrap">M98143<a name="PatobankSNOMED-M98143"> </a></td>
+<td>B-lymfobl. leukæmi/lymfom m. t(12;21); ETV6-RUNX1</td>
+<td>B-lymfobl. leukæmi/lymfom m. t(12;21); ETV6-RUNX1</td></tr>
+<tr><td style="white-space:nowrap">M98153<a name="PatobankSNOMED-M98153"> </a></td>
+<td>B-lymfobl. leukæmi/lymfom med hyperdiploidi</td>
+<td>B-lymfobl. leukæmi/lymfom med hyperdiploidi</td></tr>
+<tr><td style="white-space:nowrap">M98173<a name="PatobankSNOMED-M98173"> </a></td>
+<td>B-lymfobl. leukæmi/lymfom m. t(5;14); IgH/IL3</td>
+<td>B-lymfobl. leukæmi/lymfom m. t(5;14); IgH/IL3</td></tr>
+<tr><td style="white-space:nowrap">M98183<a name="PatobankSNOMED-M98183"> </a></td>
+<td>B-lymfobl. leukæmi/lymfom m. t(1;19); TCF3-PBX1</td>
+<td>B-lymfobl. leukæmi/lymfom m. t(1;19); TCF3-PBX1</td></tr>
+<tr><td style="white-space:nowrap">M98233<a name="PatobankSNOMED-M98233"> </a></td>
+<td>kronisk lymfocytær leukæmi</td>
+<td>kronisk lymfocytær leukæmi</td></tr>
+<tr><td style="white-space:nowrap">M98273<a name="PatobankSNOMED-M98273"> </a></td>
+<td>adult T-cellelymfom/leukæmi</td>
+<td>adult T-cellelymfom/leukæmi</td></tr>
+<tr><td style="white-space:nowrap">M98353<a name="PatobankSNOMED-M98353"> </a></td>
+<td>precursor B-lymfoblastisk leukæmi</td>
+<td>precursor B-lymfoblastisk leukæmi</td></tr>
+<tr><td style="white-space:nowrap">M98373<a name="PatobankSNOMED-M98373"> </a></td>
+<td>precursor T-lymfoblastisk leukæmi</td>
+<td>precursor T-lymfoblastisk leukæmi</td></tr>
+<tr><td style="white-space:nowrap">M98403<a name="PatobankSNOMED-M98403"> </a></td>
+<td>erytroleukæmi (FAB-type M6)</td>
+<td>erytroleukæmi (FAB-type M6)</td></tr>
+<tr><td style="white-space:nowrap">M98613<a name="PatobankSNOMED-M98613"> </a></td>
+<td>akut myeloid leukæmi</td>
+<td>akut myeloid leukæmi</td></tr>
+<tr><td style="white-space:nowrap">M98653<a name="PatobankSNOMED-M98653"> </a></td>
+<td>AML m. t(6;9); DEK-NUP214</td>
+<td>AML m. t(6;9); DEK-NUP214</td></tr>
+<tr><td style="white-space:nowrap">M98663<a name="PatobankSNOMED-M98663"> </a></td>
+<td>akut promyelocyt leukæmi m. t(15;17); PML-RARa</td>
+<td>akut promyelocyt leukæmi m. t(15;17); PML-RARa</td></tr>
+<tr><td style="white-space:nowrap">M98673<a name="PatobankSNOMED-M98673"> </a></td>
+<td>akut myelomonocytær leukæmi</td>
+<td>akut myelomonocytær leukæmi</td></tr>
+<tr><td style="white-space:nowrap">M98693<a name="PatobankSNOMED-M98693"> </a></td>
+<td>AML m inv(3)(q21q26.2)el t(3;3)(q21;q26.2);RPN1-EVI1</td>
+<td>AML m inv(3)(q21q26.2)el t(3;3)(q21;q26.2);RPN1-EVI1</td></tr>
+<tr><td style="white-space:nowrap">M98703<a name="PatobankSNOMED-M98703"> </a></td>
+<td>akut basofil leukæmi</td>
+<td>akut basofil leukæmi</td></tr>
+<tr><td style="white-space:nowrap">M98713<a name="PatobankSNOMED-M98713"> </a></td>
+<td>AML m. inv(16) el. t(16;16); CBFß-MYH11</td>
+<td>AML m. inv(16) el. t(16;16); CBFß-MYH11</td></tr>
+<tr><td style="white-space:nowrap">M98723<a name="PatobankSNOMED-M98723"> </a></td>
+<td>Akut myeloid leukæmi, minimalt differentieret</td>
+<td>Akut myeloid leukæmi, minimalt differentieret</td></tr>
+<tr><td style="white-space:nowrap">M98733<a name="PatobankSNOMED-M98733"> </a></td>
+<td>Akut myeloid leukæmi, uden modning</td>
+<td>Akut myeloid leukæmi, uden modning</td></tr>
+<tr><td style="white-space:nowrap">M98743<a name="PatobankSNOMED-M98743"> </a></td>
+<td>Akut myeloid leukæmi, med modning</td>
+<td>Akut myeloid leukæmi, med modning</td></tr>
+<tr><td style="white-space:nowrap">M98753<a name="PatobankSNOMED-M98753"> </a></td>
+<td>Kronisk myeloid leukæmi, BCR-ABL1 positiv</td>
+<td>Kronisk myeloid leukæmi, BCR-ABL1 positiv</td></tr>
+<tr><td style="white-space:nowrap">M98913<a name="PatobankSNOMED-M98913"> </a></td>
+<td>Akut monoblastisk/monocytær leukæmi</td>
+<td>Akut monoblastisk/monocytær leukæmi</td></tr>
+<tr><td style="white-space:nowrap">M98953<a name="PatobankSNOMED-M98953"> </a></td>
+<td>AML m. myelodysplasi-relaterede forandringer</td>
+<td>AML m. myelodysplasi-relaterede forandringer</td></tr>
+<tr><td style="white-space:nowrap">M98963<a name="PatobankSNOMED-M98963"> </a></td>
+<td>AML m. t(8;21); RUNX1-RUNX1T1</td>
+<td>AML m. t(8;21); RUNX1-RUNX1T1</td></tr>
+<tr><td style="white-space:nowrap">M98973<a name="PatobankSNOMED-M98973"> </a></td>
+<td>AML m. t(9;11); KMT2A-MLLT3</td>
+<td>AML m. t(9;11); KMT2A-MLLT3</td></tr>
+<tr><td style="white-space:nowrap">M99103<a name="PatobankSNOMED-M99103"> </a></td>
+<td>akut megakaryoblastleukæmi</td>
+<td>akut megakaryoblastleukæmi</td></tr>
+<tr><td style="white-space:nowrap">M99113<a name="PatobankSNOMED-M99113"> </a></td>
+<td>AML(megakaryoblastisk)m t(1;22)(p13;q13);RBM15-MLK1</td>
+<td>AML(megakaryoblastisk)m t(1;22)(p13;q13);RBM15-MLK1</td></tr>
+<tr><td style="white-space:nowrap">M99203<a name="PatobankSNOMED-M99203"> </a></td>
+<td>terapirelateret myeloid neoplasi</td>
+<td>terapirelateret myeloid neoplasi</td></tr>
+<tr><td style="white-space:nowrap">M99303<a name="PatobankSNOMED-M99303"> </a></td>
+<td>myeloidt sarkom</td>
+<td>myeloidt sarkom</td></tr>
+<tr><td style="white-space:nowrap">M99313<a name="PatobankSNOMED-M99313"> </a></td>
+<td>panmyeloid proliferation med myelofibrose</td>
+<td>panmyeloid proliferation med myelofibrose</td></tr>
+<tr><td style="white-space:nowrap">M99453<a name="PatobankSNOMED-M99453"> </a></td>
+<td>kronisk myelomonocytær leukæmi</td>
+<td>kronisk myelomonocytær leukæmi</td></tr>
+<tr><td style="white-space:nowrap">M99503<a name="PatobankSNOMED-M99503"> </a></td>
+<td>polycytæmia vera</td>
+<td>polycytæmia vera</td></tr>
+<tr><td style="white-space:nowrap">M99613<a name="PatobankSNOMED-M99613"> </a></td>
+<td>myelofibrose</td>
+<td>myelofibrose</td></tr>
+<tr><td style="white-space:nowrap">M99623<a name="PatobankSNOMED-M99623"> </a></td>
+<td>essentiel trombocytæmi</td>
+<td>essentiel trombocytæmi</td></tr>
+<tr><td style="white-space:nowrap">M99711<a name="PatobankSNOMED-M99711"> </a></td>
+<td>post-transplantation lymfoproliferativ sygdom</td>
+<td>post-transplantation lymfoproliferativ sygdom</td></tr>
+<tr><td style="white-space:nowrap">M99753<a name="PatobankSNOMED-M99753"> </a></td>
+<td>uklassificerbar myelodysplastisk/myeloproliferativ sygdom</td>
+<td>uklassificerbar myelodysplastisk/myeloproliferativ sygdom</td></tr>
+<tr><td style="white-space:nowrap">M99803<a name="PatobankSNOMED-M99803"> </a></td>
+<td>MDS med unilinie dysplasi</td>
+<td>MDS med unilinie dysplasi</td></tr>
+<tr><td style="white-space:nowrap">M99823<a name="PatobankSNOMED-M99823"> </a></td>
+<td>MDS med ringsideroblaster og unilinie dysplasi</td>
+<td>MDS med ringsideroblaster og unilinie dysplasi</td></tr>
+<tr><td style="white-space:nowrap">M99833<a name="PatobankSNOMED-M99833"> </a></td>
+<td>MDS med overskud af blaster</td>
+<td>MDS med overskud af blaster</td></tr>
+<tr><td style="white-space:nowrap">M99853<a name="PatobankSNOMED-M99853"> </a></td>
+<td>MDS med multilineær dysplasi</td>
+<td>MDS med multilineær dysplasi</td></tr>
+<tr><td style="white-space:nowrap">M99863<a name="PatobankSNOMED-M99863"> </a></td>
+<td>MDS med isoleret del(5q) kromosomafvigelse</td>
+<td>MDS med isoleret del(5q) kromosomafvigelse</td></tr>
+<tr><td style="white-space:nowrap">M99893<a name="PatobankSNOMED-M99893"> </a></td>
+<td>myelodysplastisk syndrom</td>
+<td>myelodysplastisk syndrom</td></tr>
+<tr><td style="white-space:nowrap">AEF1810<a name="PatobankSNOMED-AEF1810"> </a></td>
+<td>pTis</td>
+<td>ÆF1810 - pTis</td></tr>
+<tr><td style="white-space:nowrap">AEF1820<a name="PatobankSNOMED-AEF1820"> </a></td>
+<td>pT0</td>
+<td>ÆF1820 - pT0</td></tr>
+<tr><td style="white-space:nowrap">AEF1830<a name="PatobankSNOMED-AEF1830"> </a></td>
+<td>pT1</td>
+<td>ÆF1830 - pT1</td></tr>
+<tr><td style="white-space:nowrap">AEF1831<a name="PatobankSNOMED-AEF1831"> </a></td>
+<td>pT1a</td>
+<td>ÆF1831 - pT1a</td></tr>
+<tr><td style="white-space:nowrap">AEF1832<a name="PatobankSNOMED-AEF1832"> </a></td>
+<td>pT1b</td>
+<td>ÆF1832 - pT1b</td></tr>
+<tr><td style="white-space:nowrap">AEF1840<a name="PatobankSNOMED-AEF1840"> </a></td>
+<td>pT2</td>
+<td>ÆF1840 - pT2</td></tr>
+<tr><td style="white-space:nowrap">AEF1850<a name="PatobankSNOMED-AEF1850"> </a></td>
+<td>pT3</td>
+<td>ÆF1850 - pT3</td></tr>
+<tr><td style="white-space:nowrap">AEF1860<a name="PatobankSNOMED-AEF1860"> </a></td>
+<td>pT4</td>
+<td>ÆF1860 - pT4</td></tr>
+<tr><td style="white-space:nowrap">AEF1861<a name="PatobankSNOMED-AEF1861"> </a></td>
+<td>pT4a</td>
+<td>ÆF1861 - pT4a</td></tr>
+<tr><td style="white-space:nowrap">AEF1862<a name="PatobankSNOMED-AEF1862"> </a></td>
+<td>pT4b</td>
+<td>ÆF1862 - pT4b</td></tr>
+<tr><td style="white-space:nowrap">AEF1870<a name="PatobankSNOMED-AEF1870"> </a></td>
+<td>pTx</td>
+<td>ÆF1870 - pTx</td></tr>
+<tr><td style="white-space:nowrap">AEF1900<a name="PatobankSNOMED-AEF1900"> </a></td>
+<td>pN0</td>
+<td>ÆF1900 - pN0</td></tr>
+<tr><td style="white-space:nowrap">AEF1910<a name="PatobankSNOMED-AEF1910"> </a></td>
+<td>pN1</td>
+<td>ÆF1910 - pN1</td></tr>
+<tr><td style="white-space:nowrap">AEF1920<a name="PatobankSNOMED-AEF1920"> </a></td>
+<td>pN2</td>
+<td>ÆF1920 - pN2</td></tr>
+<tr><td style="white-space:nowrap">AEF1930<a name="PatobankSNOMED-AEF1930"> </a></td>
+<td>pN3</td>
+<td>ÆF1930 - pN3</td></tr>
+<tr><td style="white-space:nowrap">AEF1931<a name="PatobankSNOMED-AEF1931"> </a></td>
+<td>pN3a</td>
+<td>ÆF1931 - pN3a</td></tr>
+<tr><td style="white-space:nowrap">AEF1932<a name="PatobankSNOMED-AEF1932"> </a></td>
+<td>pN3b</td>
+<td>ÆF1932 - pN3b</td></tr>
+<tr><td style="white-space:nowrap">AEF1950<a name="PatobankSNOMED-AEF1950"> </a></td>
+<td>pNx</td>
+<td>ÆF1950 - pNx</td></tr>
+<tr><td style="white-space:nowrap">AEF2000<a name="PatobankSNOMED-AEF2000"> </a></td>
+<td>pM0</td>
+<td>ÆF2000 - pM0</td></tr>
+<tr><td style="white-space:nowrap">AEF2010<a name="PatobankSNOMED-AEF2010"> </a></td>
+<td>pM1</td>
+<td>ÆF2010 - pM1</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://trifork.com">Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S</a>.  Package dk.kip.rkkp.fhir.ig.core#2.12.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 5, 2025 09:38+0000">2025-09-05</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
