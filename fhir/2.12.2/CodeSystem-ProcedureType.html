@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Procedure type: Codes for different durations - KIP Infrastructure v2.12.2</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3.903"}
+    h3,h4,h5,h6{--heading-prefix:"3.903"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">KIP Infrastructure</span>
+            <br/>
+            <span style="display:inline-block;">2.12.2 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Search Parameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Extension Definitions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Code Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Procedure type: Codes for different durations</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KIP Infrastructure (v2.12.2: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-ProcedureType.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-ProcedureType.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-ProcedureType.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: Procedure type: Codes for different durations
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">2.12.2<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType|2.12.2"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2022-07-20
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">ProcedureType</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Procedure type: Codes for different durations</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-AflastendeProcedure.html">AflastendeProcedure</a></li>
+ <li><a href="ValueSet-IndgrebAabenIngvinalhernieDHDB.html">IndgrebAabenIngvinalhernieDHDB</a></li>
+ <li><a href="ValueSet-IndgrebAabenMeshIngvinalhernieDHDB.html">IndgrebAabenMeshIngvinalhernieDHDB</a></li>
+ <li><a href="ValueSet-IndgrebComponentsSeparationDHDB.html">IndgrebComponentsSeparationDHDB</a></li>
+ <li><a href="ValueSet-IndgrebComponentsSeparationTypeDHDB.html">IndgrebComponentsSeparationTypeDHDB</a></li>
+ <li><a href="ValueSet-IndgrebFemoralhernieDHDB.html">IndgrebFemoralhernieDHDB</a></li>
+ <li><a href="ValueSet-IndgrebIngvinalhernieDHDB.html">IndgrebIngvinalhernieDHDB</a></li>
+ <li><a href="ValueSet-IndgrebLaparoskopiskDHDB.html">IndgrebLaparoskopiskDHDB</a></li>
+ <li><a href="ValueSet-IndgrebVentralhernieAndenDHDB.html">IndgrebVentralhernieAndenDHDB</a></li>
+ <li><a href="ValueSet-IndgrebVentralhernieDHDB.html">IndgrebVentralhernieDHDB</a></li>
+ <li><a href="ValueSet-LedbaandsrekonstruktionDKRR.html">LedbaandsrekonstruktionDKRR</a></li>
+ <li><a href="ValueSet-OperationerAktuelDKRR.html">OperationerAktuelDKRR</a></li>
+ <li><a href="ValueSet-OperationerDKRR.html">OperationerDKRR</a></li>
+ <li><a href="ValueSet-OperativProcedureKategoriDCCG.html">OperativProcedureKategoriDCCG</a></li>
+ <li><a href="ValueSet-OperativProcedureKategoriKolonDCCG.html">OperativProcedureKategoriKolonDCCG</a></li>
+ <li><a href="ValueSet-OperativProcedureKategoriRektumDCCG.html">OperativProcedureKategoriRektumDCCG</a></li>
+ <li><a href="ValueSet-PeroperativMetastasebehandling.html">PeroperativMetastasebehandling</a></li>
+ <li><a href="ValueSet-PraeoperativPlanlaegningDSR.html">PraeoperativPlanlaegningDSR</a></li>
+ <li><a href="ValueSet-ProcedureTypeDCCG1.html">ProcedureTypeDCCG1</a></li>
+ <li><a href="ValueSet-ProcedureTypeDCCG2.html">ProcedureTypeDCCG2</a></li>
+ <li><a href="ValueSet-ProcedureTypeDCCG3.html">ProcedureTypeDCCG3</a></li>
+ <li><a href="ValueSet-ProcedureUdfoertDCCG.html">ProcedureUdfoertDCCG</a></li>
+ <li><a href="ValueSet-ProcedureUdfoertK1DCCG.html">ProcedureUdfoertK1DCCG</a></li>
+ <li><a href="ValueSet-ProcedureUdfoertK2DCCG.html">ProcedureUdfoertK2DCCG</a></li>
+ <li><a href="ValueSet-ProcedureUdfoertK3DCCG.html">ProcedureUdfoertK3DCCG</a></li>
+ <li><a href="ValueSet-ProcedureUdfoertR1DCCG.html">ProcedureUdfoertR1DCCG</a></li>
+ <li><a href="ValueSet-ProcedureUdfoertR2DCCG.html">ProcedureUdfoertR2DCCG</a></li>
+ <li><a href="ValueSet-ProcedureUdfoertR3DCCG.html">ProcedureUdfoertR3DCCG</a></li>
+ <li><a href="ValueSet-ProcedureUdfoertR4DCCG.html">ProcedureUdfoertR4DCCG</a></li>
+ <li><a href="ValueSet-ProcedurerAndreDKRR.html">ProcedurerAndreDKRR</a></li>
+ <li><a href="ValueSet-RobotDHDB.html">RobotDHDB</a></li>
+ <li><a href="ValueSet-SubscapularisDSR.html">SubscapularisDSR</a></li>
+ <li><a href="ValueSet-SupplerendeIndgrebDSR.html">SupplerendeIndgrebDSR</a></li>
+ <li><a href="ValueSet-TidligereIndgrebDSR.html">TidligereIndgrebDSR</a></li>
+ <li><a href="ValueSet-TidligereOperationDKR.html">TidligereOperationDKR</a></li>
+ <li><a href="ValueSet-TransplantationCageAugmentDHR.html">TransplantationCageAugmentDHR</a></li>
+ <li><a href="ValueSet-TypeLokalresektionDCCG.html">TypeLokalresektionDCCG</a></li>
+ <li><a href="ValueSet-TypeLokalresektionKolonDCCG.html">TypeLokalresektionKolonDCCG</a></li>
+ <li><a href="ValueSet-TypeLokalresektionRektumDCCG.html">TypeLokalresektionRektumDCCG</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"></p><a name="ProcedureType"> </a><a name="hcProcedureType"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType</code> defines the following codes in an undefined hierarchy:</p>
+<table class="codes"><tr><td><b>Lvl</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">lichtenstein<a name="ProcedureType-lichtenstein"> </a></td>
+<td>Lichtenstein</td>
+<td>Lichtenstein</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">maclichtenstein<a name="ProcedureType-maclichtenstein"> </a></td>
+<td>Modified Lichtenstein/MacLichtenstein</td>
+<td>Modificeret Lichtenstein/MacLichtenstein</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">onstep<a name="ProcedureType-onstep"> </a></td>
+<td>Onstep</td>
+<td>Onstep</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">open_mesh<a name="ProcedureType-open_mesh"> </a></td>
+<td>Open mesh</td>
+<td>Open mesh / Åbent mesh</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;plug<a name="ProcedureType-plug"> </a></td>
+<td>Plug</td>
+<td>Plug</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;plug_plate<a name="ProcedureType-plug_plate"> </a></td>
+<td>Plug and plate</td>
+<td>Plug and plate / Plug og plade</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">open<a name="ProcedureType-open"> </a></td>
+<td>Open</td>
+<td>Open / Åbent</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;anuloraphi<a name="ProcedureType-anuloraphi"> </a></td>
+<td>Anuloraphi</td>
+<td>Anuloraphi</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;mcvay<a name="ProcedureType-mcvay"> </a></td>
+<td>McVay</td>
+<td>McVay</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;bassini<a name="ProcedureType-bassini"> </a></td>
+<td>Bassini</td>
+<td>Bassini</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;shouldice<a name="ProcedureType-shouldice"> </a></td>
+<td>Shouldice</td>
+<td>Shouldice</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">laparoscopic<a name="ProcedureType-laparoscopic"> </a></td>
+<td>Laparoscopic</td>
+<td>Laparoscopic / Laparoskopisk</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;transperitoneal<a name="ProcedureType-transperitoneal"> </a></td>
+<td>Transperitoneal</td>
+<td>Transperitoneal</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;extraperitoneal<a name="ProcedureType-extraperitoneal"> </a></td>
+<td>Extraperitoneal</td>
+<td>Extraperitoneal</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;multiple_ports<a name="ProcedureType-multiple_ports"> </a></td>
+<td>Multiple ports</td>
+<td>Multiple ports / Flerport</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">laparotomy<a name="ProcedureType-laparotomy"> </a></td>
+<td>Laparotomy</td>
+<td>Laparotomy / Laparotomi / SNOMED-CT: 86481000</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">converted_open<a name="ProcedureType-converted_open"> </a></td>
+<td>Converted to open from laparoscopic</td>
+<td>Converted to open from laparoscopic / Konverteret til åben fra laparoskopisk</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">converted_open_to_lap<a name="ProcedureType-converted_open_to_lap"> </a></td>
+<td>Converted from open to laparoscopic</td>
+<td>Open converted to laparoscopic / Åben konverteret til laparoskopisk</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">combined_open<a name="ProcedureType-combined_open"> </a></td>
+<td>Combined open</td>
+<td>Combined open / Kombineret åben</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">robot_assisted<a name="ProcedureType-robot_assisted"> </a></td>
+<td>Robot assisted</td>
+<td>Robot assisted / Robotassisteret</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;robot_laparoscopic<a name="ProcedureType-robot_laparoscopic"> </a></td>
+<td>Robot assisted laparoscopic</td>
+<td>Robot assisted laparoscopic / Robot-assisteret laparoskopisk</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;robot_converted_laparoscopic<a name="ProcedureType-robot_converted_laparoscopic"> </a></td>
+<td>Robot assisted laparoscopic converted to laparoscopic</td>
+<td>Robot assisted laparoscopic converted to laparoscopic / Robot-assisteret laparoskopisk konverteret til laparoskopisk</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;robot_converted_open<a name="ProcedureType-robot_converted_open"> </a></td>
+<td>Robot assisted laparoscopic converted to open</td>
+<td>Robot assisted laparoscopic converted to open / Robot-assisteret laparoskopisk konverteret til åben</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">milos<a name="ProcedureType-milos"> </a></td>
+<td>MILOS</td>
+<td>MILOS</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">emilos<a name="ProcedureType-emilos"> </a></td>
+<td>eMILOS</td>
+<td>eMILOS</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">etep<a name="ProcedureType-etep"> </a></td>
+<td>eTEP</td>
+<td>eTEP - Robot-assisteret metode</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">tarup<a name="ProcedureType-tarup"> </a></td>
+<td>TARUP</td>
+<td>TARUP - Robot-assisteret metode</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">tapp<a name="ProcedureType-tapp"> </a></td>
+<td>TAPP</td>
+<td>TAPP - Robot-assisteret metode</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">endoscopic<a name="ProcedureType-endoscopic"> </a></td>
+<td>Endoscopic</td>
+<td>Endoscopic / Endoskopisk</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;local_resection<a name="ProcedureType-local_resection"> </a></td>
+<td>Local ressection</td>
+<td>Local ressection / Lokalresektion</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;local_resection_tes<a name="ProcedureType-local_resection_tes"> </a></td>
+<td>Local ressection (incl. TES)</td>
+<td>Local ressection followed by TES / Lokalresektion efterfulgt af TES</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;local_resection_ex_tes<a name="ProcedureType-local_resection_ex_tes"> </a></td>
+<td>Local ressection (excl. TES)</td>
+<td>Local ressection (excl. TES) / Endoskopisk lokalresektion (ekskl. TES)</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;transanal_resection<a name="ProcedureType-transanal_resection"> </a></td>
+<td>Transanal endoskopisk lokalresektion (TES)</td>
+<td>Transanal endoskopisk lokalresektion (TES)</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;full_wall_resection<a name="ProcedureType-full_wall_resection"> </a></td>
+<td>Endoskopisk fuldvægsresektion</td>
+<td>Endoskopisk fuldvægsresektion</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;other_endoscopic<a name="ProcedureType-other_endoscopic"> </a></td>
+<td>Anden endoskopisk procedure</td>
+<td>Anden endoskopisk procedure</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">cels<a name="ProcedureType-cels"> </a></td>
+<td>Kombineret endoskopisk og laparoskopisk procedure (CELS)</td>
+<td>Kombineret endoskopisk og laparoskopisk procedure (CELS)</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">externus_obliquus<a name="ProcedureType-externus_obliquus"> </a></td>
+<td>Externus Obliquus</td>
+<td>Externus Obliquus</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">transversus_abdominis<a name="ProcedureType-transversus_abdominis"> </a></td>
+<td>Transversus Abdominis</td>
+<td>Transversus Abdominis</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">dissection<a name="ProcedureType-dissection"> </a></td>
+<td>Dissection</td>
+<td>Dissection / Dissektion / SNOMED-CT: 122459003</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;transanal_dissection<a name="ProcedureType-transanal_dissection"> </a></td>
+<td>Transanal dissection</td>
+<td>Transanal dissektion</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">polypectomy<a name="ProcedureType-polypectomy"> </a></td>
+<td>Polypektomi</td>
+<td>Polypektomi</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">emr<a name="ProcedureType-emr"> </a></td>
+<td>EMR inkl. piecemeal EMR</td>
+<td>EMR inkl. piecemeal EMR</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">piecemeal_resection<a name="ProcedureType-piecemeal_resection"> </a></td>
+<td>Piecemeal resektion</td>
+<td>Piecemeal resektion</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">stent<a name="ProcedureType-stent"> </a></td>
+<td>Stent</td>
+<td>Stent / SNOMED-CT: 65818007</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;stent_rectum<a name="ProcedureType-stent_rectum"> </a></td>
+<td>Stentanlæggelse i rektum</td>
+<td>Stentanlæggelse i rektum</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;stent_colon<a name="ProcedureType-stent_colon"> </a></td>
+<td>Stentanlæggelse i colon</td>
+<td>Stentanlæggelse i colon</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">stoma<a name="ProcedureType-stoma"> </a></td>
+<td>Stoma</td>
+<td>Stoma / Stomi / SNOMED-CT: 245857005</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">damage_control<a name="ProcedureType-damage_control"> </a></td>
+<td>Damage control</td>
+<td>Damage control</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">tme<a name="ProcedureType-tme"> </a></td>
+<td>TME</td>
+<td>TME</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">tem<a name="ProcedureType-tem"> </a></td>
+<td>TEM</td>
+<td>TEM</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">pme<a name="ProcedureType-pme"> </a></td>
+<td>PME</td>
+<td>PME</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">extensive_excision<a name="ProcedureType-extensive_excision"> </a></td>
+<td>Extensive excision</td>
+<td>Extensive excision / Ekstensiv excision af peritoneum og  HIPEC</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">rfa<a name="ProcedureType-rfa"> </a></td>
+<td>RFA</td>
+<td>RFA / RFA af hepar</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">metasis_resection<a name="ProcedureType-metasis_resection"> </a></td>
+<td>Metastasis resection</td>
+<td>Metastasis resection / Metastaseresektion</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">ape_conventional<a name="ProcedureType-ape_conventional"> </a></td>
+<td>APE, konventionel</td>
+<td>APE, konventionel</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">proctocolectomy_pouch<a name="ProcedureType-proctocolectomy_pouch"> </a></td>
+<td>Proktokolektomi med ileoanal pouch</td>
+<td>Proktokolektomi med ileoanal pouch</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">stoma_shunt<a name="ProcedureType-stoma_shunt"> </a></td>
+<td>Kun aflastende stomi eller intern shunt</td>
+<td>Kun aflastende stomi eller intern shunt</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">exploratory_intervention<a name="ProcedureType-exploratory_intervention"> </a></td>
+<td>Kun eksplorativt indgreb</td>
+<td>Kun eksplorativt indgreb</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">esd<a name="ProcedureType-esd"> </a></td>
+<td>ESD inkl. piecemeal ESD</td>
+<td>ESD inkl. piecemeal ESD</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">tamis<a name="ProcedureType-tamis"> </a></td>
+<td>TAMIS</td>
+<td>TAMIS</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">teo<a name="ProcedureType-teo"> </a></td>
+<td>TEO</td>
+<td>TEO</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">other_transanal<a name="ProcedureType-other_transanal"> </a></td>
+<td>Anden transanal adgang/teknik</td>
+<td>Anden transanal adgang/teknik</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">transplant<a name="ProcedureType-transplant"> </a></td>
+<td>Transplant</td>
+<td>Transplant / Transplantation</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;cage<a name="ProcedureType-cage"> </a></td>
+<td>Cage</td>
+<td>Cage</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;augments<a name="ProcedureType-augments"> </a></td>
+<td>Augments</td>
+<td>Augments</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">luxation<a name="ProcedureType-luxation"> </a></td>
+<td>Luxation</td>
+<td>Luxation / Luksation</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">tractus_tendonesis<a name="ProcedureType-tractus_tendonesis"> </a></td>
+<td>Tractus tendonesis</td>
+<td>Tractus tendonesis</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">internal_brace<a name="ProcedureType-internal_brace"> </a></td>
+<td>Internal brace</td>
+<td>Internal brace / Syntetisk forstærkning</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">multiple_ligaments_reconstruction<a name="ProcedureType-multiple_ligaments_reconstruction"> </a></td>
+<td>Multiple ligaments reconstruction</td>
+<td>Multiple ligaments reconstruction / Flerligament-rekonstruktion (inkl. isoleret PCL, LCL, MCL)</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">synovectomy<a name="ProcedureType-synovectomy"> </a></td>
+<td>Synovectomy</td>
+<td>Synovectomy / Synovektomi</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">implant_removal<a name="ProcedureType-implant_removal"> </a></td>
+<td>Implant removal</td>
+<td>Implant removal / Implantatfjernelse</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">osteotomy<a name="ProcedureType-osteotomy"> </a></td>
+<td>Osteotomy</td>
+<td>Osteotomy / Osteotomi</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">osteosynthesis<a name="ProcedureType-osteosynthesis"> </a></td>
+<td>Osteosynthesis</td>
+<td>Osteosynthesis / Osteosyntese</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">operation_infection<a name="ProcedureType-operation_infection"> </a></td>
+<td>Operation because of an infection</td>
+<td>Operation because of an infection / Operation pga. infektion</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">bone_transplantation<a name="ProcedureType-bone_transplantation"> </a></td>
+<td>Bone transplantation</td>
+<td>Bone transplantation / Knogletransplantation</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">operational_mobilization<a name="ProcedureType-operational_mobilization"> </a></td>
+<td>Operational mobilization</td>
+<td>Operational mobilization / Operativ mobilisering</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">tenodesis<a name="ProcedureType-tenodesis"> </a></td>
+<td>Tenodesis</td>
+<td>Tenodesis</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">stabilizing<a name="ProcedureType-stabilizing"> </a></td>
+<td>Stabilizing</td>
+<td>Stabilizing / Stabiliserende indgreb</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">cuff_reconstruction<a name="ProcedureType-cuff_reconstruction"> </a></td>
+<td>Cuff reconstruction</td>
+<td>Cuff reconstruction / Cuff rekonstruktion</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">arthroscopic<a name="ProcedureType-arthroscopic"> </a></td>
+<td>Arthroscopic operation</td>
+<td>Arthroscopic operation / Artroskopisk operation uden indsættelse af fremmedlegeme</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">templating<a name="ProcedureType-templating"> </a></td>
+<td>Templating</td>
+<td>Templating</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">psi<a name="ProcedureType-psi"> </a></td>
+<td>PSI (Patient specific instruments)</td>
+<td>PSI (Patient specific instruments) / PSI (Patientspecifikke instrumenter)</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">tenotomy<a name="ProcedureType-tenotomy"> </a></td>
+<td>Tenotomy</td>
+<td>Tenotomy / Tenotomi / SNOMED-CT: 78545003</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">meniscetomy<a name="ProcedureType-meniscetomy"> </a></td>
+<td>Meniscectomy</td>
+<td>Meniscectomy / Meniskektomi</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">arthroscopy<a name="ProcedureType-arthroscopy"> </a></td>
+<td>Artroskopi</td>
+<td>Artroskopi</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">reconstruction_cruciate_ligaments<a name="ProcedureType-reconstruction_cruciate_ligaments"> </a></td>
+<td>Reconstruction of cruciate ligaments</td>
+<td>Reconstruction of cruciate ligaments / Korsbåndsrekonstruktion</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">proximal_tibial_osteotomy<a name="ProcedureType-proximal_tibial_osteotomy"> </a></td>
+<td>Proksimal tibiaosteotomi</td>
+<td>Proksimal tibiaosteotomi</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">osteosynthesis_condyle_fracture<a name="ProcedureType-osteosynthesis_condyle_fracture"> </a></td>
+<td>Osteosyntese af kondylfraktur</td>
+<td>Osteosyntese af kondylfraktur</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">patellectomy<a name="ProcedureType-patellectomy"> </a></td>
+<td>Patellektomi</td>
+<td></td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">arthrodesis<a name="ProcedureType-arthrodesis"> </a></td>
+<td>Artrodese</td>
+<td>Artrodese</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">tumor_resection<a name="ProcedureType-tumor_resection"> </a></td>
+<td>Tumor resection</td>
+<td>Resektion af tumorbærende tarmsegment</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://trifork.com">Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S</a>.  Package dk.kip.rkkp.fhir.ig.core#2.12.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Sep 8, 2025 11:57+0000">2025-09-08</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

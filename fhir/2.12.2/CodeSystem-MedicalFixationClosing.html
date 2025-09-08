@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Medical fixation and closing - KIP Infrastructure v2.12.2</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3.863"}
+    h3,h4,h5,h6{--heading-prefix:"3.863"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">KIP Infrastructure</span>
+            <br/>
+            <span style="display:inline-block;">2.12.2 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Search Parameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Extension Definitions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Code Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Medical fixation and closing</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KIP Infrastructure (v2.12.2: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-MedicalFixationClosing.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-MedicalFixationClosing.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-MedicalFixationClosing.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: Medical fixation and closing
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://kip.rkkp.dk/fhir/CodeSystem/MedicalFixationClosing<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/MedicalFixationClosing"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">2.12.2<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/MedicalFixationClosing|2.12.2"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2022-07-20
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">MedicalFixationClosing</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Medical fixation and closing</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-LimnavnDHDB.html">LimnavnDHDB</a></li>
+ <li><a href="ValueSet-LukningHudDHDB.html">LukningHudDHDB</a></li>
+ <li><a href="ValueSet-MeshFikseringDHDB.html">MeshFikseringDHDB</a></li>
+ <li><a href="ValueSet-PeritonealdefektLukningDHDB.html">PeritonealdefektLukningDHDB</a></li>
+ <li><a href="ValueSet-SuturHurtigResorberbarMonoDHDB.html">SuturHurtigResorberbarMonoDHDB</a></li>
+ <li><a href="ValueSet-SuturHurtigResorberbarMultiDHDB.html">SuturHurtigResorberbarMultiDHDB</a></li>
+ <li><a href="ValueSet-SuturLangsomResorberbarMonoDHDB.html">SuturLangsomResorberbarMonoDHDB</a></li>
+ <li><a href="ValueSet-SuturMaterialeVentralhernieDHDB.html">SuturMaterialeVentralhernieDHDB</a></li>
+ <li><a href="ValueSet-SuturMonofilamentTypeVentralhernieDHDB.html">SuturMonofilamentTypeVentralhernieDHDB</a></li>
+ <li><a href="ValueSet-SuturNonResorberbarMonoDHDB.html">SuturNonResorberbarMonoDHDB</a></li>
+ <li><a href="ValueSet-SuturNonResorberbarMultiDHDB.html">SuturNonResorberbarMultiDHDB</a></li>
+ <li><a href="ValueSet-SuturTypeDHDB.html">SuturTypeDHDB</a></li>
+ <li><a href="ValueSet-SuturTypeVentralhernieDHDB.html">SuturTypeVentralhernieDHDB</a></li>
+ <li><a href="ValueSet-TackernavnAbsorberbarDHDB.html">TackernavnAbsorberbarDHDB</a></li>
+ <li><a href="ValueSet-TackernavnNonAbsorberbarDHDB.html">TackernavnNonAbsorberbarDHDB</a></li>
+ <li><a href="ValueSet-TackertypeDHDB.html">TackertypeDHDB</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"></p><a name="MedicalFixationClosing"> </a><a name="hcMedicalFixationClosing"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/MedicalFixationClosing</code> provides <b>a fragment</b> that includes following codes in an undefined hierarchy:</p>
+<table class="codes"><tr><td><b>Lvl</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">suture<a name="MedicalFixationClosing-suture"> </a></td>
+<td>Suture</td>
+<td>Suture / Sutur / SNODMED-CT: 408099007</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;not_self_locking<a name="MedicalFixationClosing-not_self_locking"> </a></td>
+<td>Not self-locking</td>
+<td>Not self-locking / Ikke selvlåsende</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;self_locking<a name="MedicalFixationClosing-self_locking"> </a></td>
+<td>Self-locking</td>
+<td>Self-locking / Selvlåsende</td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;v_loc<a name="MedicalFixationClosing-v_loc"> </a></td>
+<td>Self-locking (V-LOC)</td>
+<td>Self-locking (V-LOC) / Selflåsende (V-LOC)</td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;stratafix<a name="MedicalFixationClosing-stratafix"> </a></td>
+<td>Self-locking (Stratafix)</td>
+<td>Self-locking (Stratafix) / Selflåsende (Stratafix)</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;multifilament<a name="MedicalFixationClosing-multifilament"> </a></td>
+<td>Multifilament</td>
+<td>Multifilament</td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;ethibond<a name="MedicalFixationClosing-ethibond"> </a></td>
+<td>Ethibond</td>
+<td>Ethibond</td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;mersilene<a name="MedicalFixationClosing-mersilene"> </a></td>
+<td>Mersilene</td>
+<td>Mersilene</td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;vicryl<a name="MedicalFixationClosing-vicryl"> </a></td>
+<td>Vicryl</td>
+<td>Vicryl</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;monofilament<a name="MedicalFixationClosing-monofilament"> </a></td>
+<td>Monofilament</td>
+<td>Monofilament</td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;pds<a name="MedicalFixationClosing-pds"> </a></td>
+<td>PDS</td>
+<td>PDS</td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;dexon<a name="MedicalFixationClosing-dexon"> </a></td>
+<td>Dexon</td>
+<td>Dexon</td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;maxon<a name="MedicalFixationClosing-maxon"> </a></td>
+<td>Maxon</td>
+<td>Maxon</td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;monocryl<a name="MedicalFixationClosing-monocryl"> </a></td>
+<td>Monocryl</td>
+<td>Monocryl</td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;monoplus<a name="MedicalFixationClosing-monoplus"> </a></td>
+<td>MonoPlus</td>
+<td>MonoPlus</td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;momomax<a name="MedicalFixationClosing-momomax"> </a></td>
+<td>MonoMax</td>
+<td>MonoMax</td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;nylon<a name="MedicalFixationClosing-nylon"> </a></td>
+<td>Nylon</td>
+<td>Nylon</td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;prolene<a name="MedicalFixationClosing-prolene"> </a></td>
+<td>Prolene</td>
+<td>Prolene</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;fast_resorbable<a name="MedicalFixationClosing-fast_resorbable"> </a></td>
+<td>Fast resorbable</td>
+<td>Fast resorbable / Hurtig resorberbar</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;slow_resorbable<a name="MedicalFixationClosing-slow_resorbable"> </a></td>
+<td>Slow resorbable</td>
+<td>Slow resorbable / Langsom resorberbar</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;non_resorbable<a name="MedicalFixationClosing-non_resorbable"> </a></td>
+<td>Non resorbable</td>
+<td>Non resorbable / Non-resorberbar</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;intracutaneous<a name="MedicalFixationClosing-intracutaneous"> </a></td>
+<td>Intracutaneous</td>
+<td>Intracutaneous / Intrakutan</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;not_intracutaneous<a name="MedicalFixationClosing-not_intracutaneous"> </a></td>
+<td>Not intracutaneous</td>
+<td>Not intracutaneous / Ikke intrakutan</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">tack<a name="MedicalFixationClosing-tack"> </a></td>
+<td>Tack</td>
+<td>Tack / SNOMED-CT: 705723004</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;absorbable<a name="MedicalFixationClosing-absorbable"> </a></td>
+<td>Absorbable</td>
+<td>Absorbable / Absorberbar</td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;absorbatack<a name="MedicalFixationClosing-absorbatack"> </a></td>
+<td>Absorbatack</td>
+<td>Absorbatack</td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;optifix<a name="MedicalFixationClosing-optifix"> </a></td>
+<td>Optifix</td>
+<td>Optifix</td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;reliatack<a name="MedicalFixationClosing-reliatack"> </a></td>
+<td>Reliatack</td>
+<td>Reliatack</td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;securestrap<a name="MedicalFixationClosing-securestrap"> </a></td>
+<td>Securestrap</td>
+<td>Securestrap</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;non_absorbable<a name="MedicalFixationClosing-non_absorbable"> </a></td>
+<td>Non-absorbable</td>
+<td>Non-absorbable / Non-absorberbar</td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;capsure<a name="MedicalFixationClosing-capsure"> </a></td>
+<td>Capsure</td>
+<td>Capsure</td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;protack<a name="MedicalFixationClosing-protack"> </a></td>
+<td>Protack</td>
+<td>Protack</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">clip<a name="MedicalFixationClosing-clip"> </a></td>
+<td>Clip</td>
+<td>Clip / Clip / SNOMED-CT: 77720000</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">surgical_glue<a name="MedicalFixationClosing-surgical_glue"> </a></td>
+<td>Surgical glue</td>
+<td>Surgical glue / Kirurgisk lim / SNOMED-CT: 303532007</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;histoacryl<a name="MedicalFixationClosing-histoacryl"> </a></td>
+<td>Histoacryl</td>
+<td>Histoacryl</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;tisseel<a name="MedicalFixationClosing-tisseel"> </a></td>
+<td>Tisseel</td>
+<td>Tisseel</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">self_fixative_mesh<a name="MedicalFixationClosing-self_fixative_mesh"> </a></td>
+<td>Self-fixative mesh</td>
+<td>Self-fixative mesh / Selvfikserende mesh</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">surgical_staple<a name="MedicalFixationClosing-surgical_staple"> </a></td>
+<td>Surgical staple</td>
+<td>Surgical staple / Kirurgisk hæfteklamme / SNOMED-CT: 386014009</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">combi_fixation<a name="MedicalFixationClosing-combi_fixation"> </a></td>
+<td>Combined fixation methods</td>
+<td>Kombinerede fiksationer</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;tack_sutur<a name="MedicalFixationClosing-tack_sutur"> </a></td>
+<td>Tack + suture</td>
+<td>Tack + sutur</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;glue_sutur<a name="MedicalFixationClosing-glue_sutur"> </a></td>
+<td>Glue + suture</td>
+<td>Lim + sutur</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;glue_tack_clip<a name="MedicalFixationClosing-glue_tack_clip"> </a></td>
+<td>Glue + tack/clip</td>
+<td>Lim + Tack/clips</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://trifork.com">Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S</a>.  Package dk.kip.rkkp.fhir.ig.core#2.12.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Sep 8, 2025 11:57+0000">2025-09-08</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
