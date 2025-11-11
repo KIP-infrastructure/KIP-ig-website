@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core"/>
-  <version value="2.12.2"/>
+  <version value="2.13.0"/>
   <name value="KIPInfrastructure"/>
   <title value="KIP Infrastructure"/>
   <status value="active"/>
-  <date value="2025-09-08T12:00:02+00:00"/>
+  <date value="2025-11-11T11:32:01+00:00"/>
   <publisher value="Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"/>
   <contact>
     <name value="Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"/>
@@ -267,7 +267,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r4#0.7.1"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.8.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -9950,6 +9950,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/LocationExtranodalFemale-V2"/>
+      </reference>
+      <name value="Sygdomslokalisation er kun ekstranodalt, kvinder (LYFO) version 2"/>
+      <description value="Sygdomslokalisation i lymfe områder er kun ekstranodalt, og patienten er en kvinde (LYFO)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/LocationExtranodalMale"/>
       </reference>
       <name value="Sygdomslokalisation er kun ekstranodalt, mænd (LYFO)"/>
@@ -9961,9 +9972,31 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/LocationExtranodalMale-V2"/>
+      </reference>
+      <name value="Sygdomslokalisation er kun ekstranodalt, mænd (LYFO) version 2"/>
+      <description value="Sygdomslokalisation i lymfe områder er kun ekstranodalt, og patienten er en mand (LYFO)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/LocationNodal"/>
       </reference>
       <name value="Sygdomslokalisation er kun nodalt (LYFO)"/>
+      <description value="Sygdomslokalisation i lymfe områder er kun nodalt (LYFO)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/LocationNodal-V2"/>
+      </reference>
+      <name value="Sygdomslokalisation er kun nodalt (LYFO) version 2"/>
       <description value="Sygdomslokalisation i lymfe områder er kun nodalt (LYFO)"/>
       <exampleBoolean value="false"/>
     </resource>

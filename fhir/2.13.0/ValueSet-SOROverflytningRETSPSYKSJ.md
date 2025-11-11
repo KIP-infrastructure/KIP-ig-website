@@ -1,0 +1,127 @@
+# SOR: Overflytning Sjælland (RETSPSYK) - KIP Infrastructure v2.13.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **SOR: Overflytning Sjælland (RETSPSYK)**
+
+## ValueSet: SOR: Overflytning Sjælland (RETSPSYK) (Experimental) 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SOROverflytningRETSPSYKSJ | *Version*:2.13.0 |
+| Active as of 2024-03-13 | *Computable Name*:SOROverflytningRETSPSYKSJ |
+
+ 
+SOR: Overflytning Sjælland (RETSPSYK) 
+
+ **References** 
+
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+
+### Logical Definition (CLD)
+
+ 
+
+### Expansion
+
+-------
+
+ Explanation of the columns that may appear on this page: 
+
+| | |
+| :--- | :--- |
+| Level | A few code lists that FHIR defines are hierarchical - each code is assigned a level. In this scheme, some codes are under other codes, and imply that the code they are under also applies |
+| System | The source of the definition of the code (when the value set draws in codes defined elsewhere) |
+| Code | The code (used as the code in the resource instance) |
+| Display | The display (used in the*display*element of a[Coding](http://hl7.org/fhir/R4/datatypes.html#Coding)). If there is no display, implementers should not simply display the code, but map the concept into their application |
+| Definition | An explanation of the meaning of the concept |
+| Comments | Additional notes about how to use the code |
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "SOROverflytningRETSPSYKSJ",
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/SOROverflytningRETSPSYKSJ",
+  "version" : "2.13.0",
+  "name" : "SOROverflytningRETSPSYKSJ",
+  "title" : "SOR: Overflytning Sjælland (RETSPSYK)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-03-13T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [
+    {
+      "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "https://trifork.com"
+        },
+        {
+          "system" : "email",
+          "value" : "rbk@trifork.com"
+        }
+      ]
+    }
+  ],
+  "description" : "SOR: Overflytning Sjælland (RETSPSYK)",
+  "compose" : {
+    "include" : [
+      {
+        "system" : "https://kip.rkkp.dk/fhir/CodeSystem/SOR",
+        "concept" : [
+          {
+            "code" : "237021000016009",
+            "display" : "Afdeling For Retspsykiatri - Ledelse"
+          },
+          {
+            "code" : "237041000016004",
+            "display" : "PSL Retspsykiatrisk Afd."
+          },
+          {
+            "code" : "235611000016000",
+            "display" : "Sjælland"
+          },
+          {
+            "code" : "235631000016006",
+            "display" : "Psykiatri ØST Overafd. 01"
+          },
+          {
+            "code" : "235901000016009",
+            "display" : "Psykiatri ØST Overafd. 05"
+          },
+          {
+            "code" : "236121000016006",
+            "display" : "Psykiatri VEST Overafd. 10"
+          },
+          {
+            "code" : "236351000016001",
+            "display" : "Psykiatri VEST Overafd. 15"
+          },
+          {
+            "code" : "236831000016003",
+            "display" : "Psykiatri SYD Overafd. 25"
+          },
+          {
+            "code" : "697531000016008",
+            "display" : "Psykiatri SYD Overafd. 27"
+          },
+          {
+            "code" : "237031000016006",
+            "display" : "PSL Retspsykiatri"
+          },
+          {
+            "code" : "237131000016005",
+            "display" : "PSL Sikringsafd."
+          }
+        ]
+      }
+    ]
+  }
+}
+
+```

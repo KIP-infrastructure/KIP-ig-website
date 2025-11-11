@@ -1,0 +1,98 @@
+# The National Institute of Health Stroke Scale (NIHSS) - 6. Motor Leg - KIP Infrastructure v2.13.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **The National Institute of Health Stroke Scale (NIHSS) - 6. Motor Leg**
+
+## CodeSystem: The National Institute of Health Stroke Scale (NIHSS) - 6. Motor Leg 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/NIHSS6MotorLeg | *Version*:2.13.0 |
+| Active as of 2022-06-23 | *Computable Name*:NIHSS6MotorLeg |
+
+ 
+The National Institute of Health Stroke Scale (NIHSS) - 6. Motor Leg; Link: https://www.ninds.nih.gov/stroke-scales-and-related-information 
+
+ This Code system is referenced in the content logical definition of the following value sets: 
+
+* [NIHSS6FunktionBen](ValueSet-NIHSS6FunktionBen.md)
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "CodeSystem",
+  "id" : "NIHSS6MotorLeg",
+  "url" : "https://kip.rkkp.dk/fhir/CodeSystem/NIHSS6MotorLeg",
+  "version" : "2.13.0",
+  "name" : "NIHSS6MotorLeg",
+  "title" : "The National Institute of Health Stroke Scale (NIHSS) - 6. Motor Leg",
+  "status" : "active",
+  "date" : "2022-06-23T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [
+    {
+      "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "https://trifork.com"
+        },
+        {
+          "system" : "email",
+          "value" : "rbk@trifork.com"
+        }
+      ]
+    }
+  ],
+  "description" : "The National Institute of Health Stroke Scale (NIHSS) - 6. Motor Leg; Link: https://www.ninds.nih.gov/stroke-scales-and-related-information",
+  "content" : "complete",
+  "count" : 8,
+  "concept" : [
+    {
+      "code" : "0",
+      "display" : "0",
+      "definition" : "No drift; leg holds 30-degree position for full 5 seconds."
+    },
+    {
+      "code" : "1",
+      "display" : "1",
+      "definition" : "Drift; leg falls by the end of the 5-second period but does not hit bed."
+    },
+    {
+      "code" : "2",
+      "display" : "2",
+      "definition" : "Some effort against gravity; leg falls to bed by 5 seconds, but has some effort against gravity."
+    },
+    {
+      "code" : "3",
+      "display" : "3",
+      "definition" : "No effort against gravity; leg falls to bed immediately."
+    },
+    {
+      "code" : "4",
+      "display" : "4",
+      "definition" : "No movement."
+    },
+    {
+      "code" : "5a",
+      "display" : "5a",
+      "definition" : "Left Leg"
+    },
+    {
+      "code" : "5b",
+      "display" : "5b",
+      "definition" : "Right Leg"
+    },
+    {
+      "code" : "UN",
+      "display" : "UN",
+      "definition" : "Amputation or joint fusion, explain:"
+    }
+  ]
+}
+
+```

@@ -1,0 +1,1098 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Sundhedsvæsenets Organisationsregister (SOR) - TTL Representation - KIP Infrastructure v2.13.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3.952"}
+    h3,h4,h5,h6{--heading-prefix:"3.952"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">KIP Infrastructure</span>
+            <br/>
+            <span style="display:inline-block;">2.13.0 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Search Parameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Extension Definitions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Code Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Sundhedsvæsenets Organisationsregister (SOR)</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 9" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">This page is part of the KIP Infrastructure (v2.13.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-SOR.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-SOR.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-SOR.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Sundhedsvæsenets Organisationsregister (SOR) - TTL Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2022-09-06
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-SOR.ttl" no-download="true">Raw ttl</a> | <a href="CodeSystem-SOR.ttl" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:CodeSystem ;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;SOR&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem SOR&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;SOR\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcSOR\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-insensitive code system &lt;code&gt;https://kip.rkkp.dk/fhir/CodeSystem/SOR&lt;/code&gt; provides &lt;b&gt;a fragment&lt;/b&gt; that includes following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;223601000016004&lt;a name=\&quot;SOR-223601000016004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ROS Neurologisk Afd.&lt;/td&gt;&lt;td&gt;Region Sjællands Sygehusvæsen - ROS Neurologisk Afd. (Shak: 3800A80)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;239081000016004&lt;a name=\&quot;SOR-239081000016004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OUH Hæmatologisk Afsnit X (Odense)&lt;/td&gt;&lt;td&gt;Odense Universitetshospital - Svendborg - OUH Hæmatologisk Afsnit X (Odense) (Shak: 4202560)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;239981000016003&lt;a name=\&quot;SOR-239981000016003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OUH Neurokirurgisk Afsnit U (Odense)&lt;/td&gt;&lt;td&gt;Odense Universitetshospital - Svendborg - OUH Neurokirurgisk Afsnit U (Odense) (Shak: 4202150)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;240121000016005&lt;a name=\&quot;SOR-240121000016005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OUH Neurologisk Afsnit N&lt;/td&gt;&lt;td&gt;Odense Universitetshospital - Svendborg - OUH Neurologisk Afsnit N (Shak: 4202160)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;244701000016009&lt;a name=\&quot;SOR-244701000016009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SVS Blodsygdomme Afsnit (Esbjerg)&lt;/td&gt;&lt;td&gt;Sydvestjysk Sygehus - SVS Blodsygdomme Afsnit (Esbjerg) (Shak: 5501053)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;245291000016005&lt;a name=\&quot;SOR-245291000016005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SVS Stroke Afsnit (Esbjerg)&lt;/td&gt;&lt;td&gt;Sydvestjysk Sygehus - SVS Stroke Afsnit (Esbjerg) (Shak: 550105B)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;252961000016000&lt;a name=\&quot;SOR-252961000016000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Operation&lt;/td&gt;&lt;td&gt;Rigshospitalet - Operation (Shak: 1301211)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;253081000016000&lt;a name=\&quot;SOR-253081000016000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sengeafsnit 2094&lt;/td&gt;&lt;td&gt;Rigshospitalet - Sengeafsnit 2094 (Shak: 1301221)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;253121000016002&lt;a name=\&quot;SOR-253121000016002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hukommelsesklinikken, N7&lt;/td&gt;&lt;td&gt;Rigshospitalet - Hukommelsesklinikken, N7 (Shak: 1301227)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;257721000016006&lt;a name=\&quot;SOR-257721000016006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Neurologisk afd. akut apopleksi&lt;/td&gt;&lt;td&gt;Bispebjerg og Frederiksberg Hospitaler - Neurologisk afd. akut apopleksi (Shak: 1309170)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;265621000016001&lt;a name=\&quot;SOR-265621000016001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Medicinsk sengeafd.&lt;/td&gt;&lt;td&gt;Bornholms Hospital - Medicinsk sengeafd. (Shak: 4001030)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;275981000016003&lt;a name=\&quot;SOR-275981000016003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Alb Neurologisk afd.&lt;/td&gt;&lt;td&gt;Aalborg Universitetshospital - Alb Neurologisk afd. (Shak: 8001191)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;275721000016002&lt;a name=\&quot;SOR-275721000016002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Alb Hæmatologisk afd.&lt;/td&gt;&lt;td&gt;Aalborg Universitetshospital - Alb Hæmatologisk afd. (Shak: 8001101)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;275991000016001&lt;a name=\&quot;SOR-275991000016001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Alb Neurologisk amb.&lt;/td&gt;&lt;td&gt;Aalborg Universitetshospital - Alb Neurologisk amb. (Shak: 8001199)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;276361000016000&lt;a name=\&quot;SOR-276361000016000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Alb Neurokir. Afd.&lt;/td&gt;&lt;td&gt;Aalborg Universitetshospital - Alb Neurokir. Afd. (Shak: 8001311)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;380011000016000&lt;a name=\&quot;SOR-380011000016000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ROS Hæmatologisk Afd.&lt;/td&gt;&lt;td&gt;Region Sjællands Sygehusvæsen - ROS Hæmatologisk Afd.(Shak: 3800A20)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;384851000016002&lt;a name=\&quot;SOR-384851000016002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SLB Hæmatologisk Afsnit (Vejle)&lt;/td&gt;&lt;td&gt;Sygehus Lillebælt - SLB Hæmatologisk Afsnit (Vejle) (Shak: 6008260)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;440051000016002&lt;a name=\&quot;SOR-440051000016002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hjerne- og Rygkirurgi&lt;/td&gt;&lt;td&gt;Aarhus Universitetshospital - Hjerne- og Rygkirurgi (Shak: 6620131)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;440081000016006&lt;a name=\&quot;SOR-440081000016006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Neurologisk Sengeafdeling&lt;/td&gt;&lt;td&gt;Aarhus Universitetshospital - Neurologisk Sengeafdeling (Shak: 6620151)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;440781000016009&lt;a name=\&quot;SOR-440781000016009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Blodsygdomme Sengeafsnit&lt;/td&gt;&lt;td&gt;Aarhus Universitetshospital - Blodsygdomme Sengeafsnit (Shak: 6620141)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;503321000016003&lt;a name=\&quot;SOR-503321000016003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SHS Hjerne- og Nervesygdomme Sengeafsnit (Aabenraa)&lt;/td&gt;&lt;td&gt;Sygehus Sønderjylland - SHS Hjerne- og Nervesygdomme Sengeafsnit (Aabenraa) (Shak: 5000520)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;588351000016004&lt;a name=\&quot;SOR-588351000016004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Neurologisk Kl. senge GLO&lt;/td&gt;&lt;td&gt;Rigshospitalet - Neurologisk Kl. senge GLO (Shak: 130122B)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;637201000016005&lt;a name=\&quot;SOR-637201000016005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SLB Hjerne- og Nervesygdomme Senge (Kolding)&lt;/td&gt;&lt;td&gt;Sygehus Lillebælt - SLB Hjerne- og Nervesygdomme Senge (Kolding) (Shak: 6007320)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;900651000016000&lt;a name=\&quot;SOR-900651000016000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Klinik for Blodsygdomme Gødstrup - RHG&lt;/td&gt;&lt;td&gt;Regionshospitalet Gødstrup - Klinik for Blodsygdomme Gødstrup - RHG (Shak: 664038K)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;900791000016001&lt;a name=\&quot;SOR-900791000016001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Neurologisk Afsnit Gødstrup - RHG&lt;/td&gt;&lt;td&gt;Regionshospitalet Gødstrup - Neurologisk Afsnit Gødstrup - RHG (Shak: 6640401)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;911061000016003&lt;a name=\&quot;SOR-911061000016003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Alb Demensenheden, RN&lt;/td&gt;&lt;td&gt;Aalborg Universitetshospital - Alb Demensenheden, RN (Shak: 800119D)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;926731000016006&lt;a name=\&quot;SOR-926731000016006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Blodsygdomme L, Senge&lt;/td&gt;&lt;td&gt;Rigshospitalet - Blodsygdomme L, Senge (Shak: 1301101)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1095041000016007&lt;a name=\&quot;SOR-1095041000016007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SHS Blodsygdomme Ambulatorium (Sønderborg)&lt;/td&gt;&lt;td&gt;Sygehus Sønderjylland - SHS Blodsygdomme Ambulatorium (Sønderborg) (Shak: 500061A)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1125141000016005&lt;a name=\&quot;SOR-1125141000016005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Neurologisk Stroke Klinik Gødstrup - RHG&lt;/td&gt;&lt;td&gt;Regionshospitalet Gødstrup - Neurologisk Stroke Klinik Gødstrup - RHG (Shak: 664040I)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1060711000016001&lt;a name=\&quot;SOR-1060711000016001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;TM Psyk Amb Thy-Mors Psykose&lt;/td&gt;&lt;td&gt;TM Psyk Amb Thy-Mors Psykose&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1060741000016000&lt;a name=\&quot;SOR-1060741000016000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;TM Psyk Amb Thy-Mors Bosted&lt;/td&gt;&lt;td&gt;TM Psyk Amb Thy-Mors Bosted&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1066921000016005&lt;a name=\&quot;SOR-1066921000016005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Frh Psyk Amb Frederikshavn Psykose&lt;/td&gt;&lt;td&gt;Frh Psyk Amb Frederikshavn Psykose&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1199951000016004&lt;a name=\&quot;SOR-1199951000016004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ADA Klinik for Depression - AUH&lt;/td&gt;&lt;td&gt;ADA Klinik for Depression - AUH&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1200011000016005&lt;a name=\&quot;SOR-1200011000016005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ADA Klinik for Bipolar Sygdom - AUH&lt;/td&gt;&lt;td&gt;Psykiatrien Region Midtjylland - ADA Klinik for Bipolar Sygdom - AUH&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1223721000016002&lt;a name=\&quot;SOR-1223721000016002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;RPG Enhed for Retspsykiatri – Gødstrup&lt;/td&gt;&lt;td&gt;RPG Enhed for Retspsykiatri – Gødstrup&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1223761000016008&lt;a name=\&quot;SOR-1223761000016008\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;RPG Team for Retspsykiatri - Gødstrup&lt;/td&gt;&lt;td&gt;RPG Team for Retspsykiatri - Gødstrup&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;235611000016000&lt;a name=\&quot;SOR-235611000016000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sjælland&lt;/td&gt;&lt;td&gt;Sjælland&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;235631000016006&lt;a name=\&quot;SOR-235631000016006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Psykiatri ØST Overafd. 01&lt;/td&gt;&lt;td&gt;Psykiatri ØST Overafd. 01&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;235901000016009&lt;a name=\&quot;SOR-235901000016009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Psykiatri ØST Overafd. 05&lt;/td&gt;&lt;td&gt;Psykiatri ØST Overafd. 05&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;236121000016006&lt;a name=\&quot;SOR-236121000016006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Psykiatri VEST Overafd. 10&lt;/td&gt;&lt;td&gt;Psykiatri VEST Overafd. 10&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;236351000016001&lt;a name=\&quot;SOR-236351000016001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Psykiatri VEST Overafd. 15 &lt;/td&gt;&lt;td&gt;Psykiatri VEST Overafd. 15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;236831000016003&lt;a name=\&quot;SOR-236831000016003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Psykiatri SYD Overafd. 25&lt;/td&gt;&lt;td&gt;Psykiatri SYD Overafd. 25&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;237021000016009&lt;a name=\&quot;SOR-237021000016009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Afdeling For Retspsykiatri - Ledelse&lt;/td&gt;&lt;td&gt;Region Sjællands Sygehusvæsen - Afdeling For Retspsykiatri - Ledelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;237031000016006&lt;a name=\&quot;SOR-237031000016006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PSL Retspsykiatri&lt;/td&gt;&lt;td&gt;PSL Retspsykiatri&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;237041000016004&lt;a name=\&quot;SOR-237041000016004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PSL Retspsykiatrisk Afd.&lt;/td&gt;&lt;td&gt;Region Sjællands Sygehusvæsen - PSL Retspsykiatrisk Afd.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;237131000016005&lt;a name=\&quot;SOR-237131000016005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PSL Sikringsafd. &lt;/td&gt;&lt;td&gt;PSL Sikringsafd. &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;243921000016002&lt;a name=\&quot;SOR-243921000016002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PSY Retspsykiatrisk afdeling (Middelfart)&lt;/td&gt;&lt;td&gt;Psykiatrien Region Syddanmark - PSY Retspsykiatrisk afdeling (Middelfart)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;243951000016005&lt;a name=\&quot;SOR-243951000016005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PSY Retspsykiatrisk Ambulatorium (Middelfart)&lt;/td&gt;&lt;td&gt;Psykiatrien Region Syddanmark - PSY Retspsykiatrisk Ambulatorium (Middelfart)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;261341000016001&lt;a name=\&quot;SOR-261341000016001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Psyk. Center Amager, overafd.&lt;/td&gt;&lt;td&gt;Region Hovedstadens Psykiatri - Psyk. Center Amager, overafd.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;261431000016003&lt;a name=\&quot;SOR-261431000016003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Børne- og Ungdomspsykiatrisk overafdeling, Bispebjerg, B1&lt;/td&gt;&lt;td&gt;Region Hovedstadens Psykiatri - Børne- og Ungdomspsykiatrisk overafdeling, Bispebjerg, B1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;261501000016006&lt;a name=\&quot;SOR-261501000016006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Psyk. Center København, overafd. N, Nørrebro-afdelingen&lt;/td&gt;&lt;td&gt;Region Hovedstadens Psykiatri - Psyk. Center København, overafd. N,  Nørrebro-afdelingen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;262181000016004&lt;a name=\&quot;SOR-262181000016004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Psyk. Center Sct. Hans, Retspsyk. overafd. R&lt;/td&gt;&lt;td&gt;Region Hovedstadens Psykiatri - Psyk. Center Sct. Hans, Retspsyk. overafd. R&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;262191000016002&lt;a name=\&quot;SOR-262191000016002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sct. Hans, Retspsykiatrisk sengeafd. R&lt;/td&gt;&lt;td&gt;Sct. Hans, Retspsykiatrisk sengeafd. R&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;262221000016007&lt;a name=\&quot;SOR-262221000016007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Psyk. Center Sct. Hans, overafd. M&lt;/td&gt;&lt;td&gt;Region Hovedstadens Psykiatri - Psyk. Center Sct. Hans, overafd. M&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;262391000016004&lt;a name=\&quot;SOR-262391000016004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Psyk. Center Ballerup, overafd. Ballerup&lt;/td&gt;&lt;td&gt;Region Hovedstadens Psykiatri - Psyk. Center Ballerup, overafd. Ballerup&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;262511000016000&lt;a name=\&quot;SOR-262511000016000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Psyk. Center Nordsjælland, overafd.&lt;/td&gt;&lt;td&gt;Region Hovedstadens Psykiatri - Psyk. Center Nordsjælland, overafd.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;262671000016009&lt;a name=\&quot;SOR-262671000016009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Psyk. Center Glostrup, overafd.&lt;/td&gt;&lt;td&gt;Region Hovedstadens Psykiatri - Psyk. Center Glostrup, overafd.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;262681000016006&lt;a name=\&quot;SOR-262681000016006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PCGL, Psyk. sengeafd.&lt;/td&gt;&lt;td&gt;Region Hovedstadens Psykiatri - PCGL, Psyk. sengeafd.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;278121000016009&lt;a name=\&quot;SOR-278121000016009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PS Almenpsykiatrisk Afdeling, Nord&lt;/td&gt;&lt;td&gt;Psykiatrien Nordjylland - PS Klinik Nord&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;278131000016006&lt;a name=\&quot;SOR-278131000016006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PS Almenpsykiatrisk, Nord Sengeafsnit&lt;/td&gt;&lt;td&gt;PS Almenpsykiatrisk, Nord Sengeafsnit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;278191000016007&lt;a name=\&quot;SOR-278191000016007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PS Ældrepsykiatrisk Afdeling&lt;/td&gt;&lt;td&gt;PS Ældrepsykiatrisk Afdeling&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;278201000016009&lt;a name=\&quot;SOR-278201000016009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PS Ældrepsykiatrisk Sengeafsnit&lt;/td&gt;&lt;td&gt;PS Ældrepsykiatrisk Sengeafsnit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;278211000016006&lt;a name=\&quot;SOR-278211000016006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PS Ældrepsykiatrisk Ambulatorier&lt;/td&gt;&lt;td&gt;PS Ældrepsykiatrisk Ambulatorier&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;278221000016002&lt;a name=\&quot;SOR-278221000016002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PS Retspsykiatrisk Afdeling&lt;/td&gt;&lt;td&gt;Psykiatrien Nordjylland - PS Retspsykiatri&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;278231000016000&lt;a name=\&quot;SOR-278231000016000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PS Retspsykiatrisk Sengeafsnit&lt;/td&gt;&lt;td&gt;Psykiatrien Nordjylland - PS Klinik Syd Retspsykiatri&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;278291000016004&lt;a name=\&quot;SOR-278291000016004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PS Almenpsykiatrisk Afdeling, Syd&lt;/td&gt;&lt;td&gt;Psykiatrien Nordjylland  - PS Klinik Syd&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;278301000016000&lt;a name=\&quot;SOR-278301000016000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PS Almenpsykiatrisk, Syd Sengeafsnit&lt;/td&gt;&lt;td&gt;PS Almenpsykiatrisk, Syd Sengeafsnit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;278321000016007&lt;a name=\&quot;SOR-278321000016007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PS Almenpsykiatrisk, Syd Ambulatorier&lt;/td&gt;&lt;td&gt;Psykiatrien Nordjylland - PS Klinik Syd Ambulatorier&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;282651000016004&lt;a name=\&quot;SOR-282651000016004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Psyk. Center Bornholm&lt;/td&gt;&lt;td&gt;Region Hovedstadens Psykiatri - Psyk. Center Bornholm&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;339031000016008&lt;a name=\&quot;SOR-339031000016008\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Børne- og Ungdomspsyk. Center Bispebjerg, B&lt;/td&gt;&lt;td&gt;Region Hovedstadens Psykiatri - Børne- og Ungdomspsyk. Center Bispebjerg, B&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;366121000016007&lt;a name=\&quot;SOR-366121000016007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Frh Psyk Amb Frederikshavn&lt;/td&gt;&lt;td&gt;Frh Psyk Amb Frederikshavn&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;366381000016006&lt;a name=\&quot;SOR-366381000016006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Alb Amb Personlighedsforstyrrelser&lt;/td&gt;&lt;td&gt;Alb Amb Personlighedsforstyrrelser&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;366391000016008&lt;a name=\&quot;SOR-366391000016008\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Alb Amb Angst og Tvangssygdom&lt;/td&gt;&lt;td&gt;Alb Amb Angst og Tvangssygdom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;366411000016008&lt;a name=\&quot;SOR-366411000016008\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Alb Amb Psykose specialafsnit&lt;/td&gt;&lt;td&gt;Alb Amb Psykose specialafsnit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;366431000016002&lt;a name=\&quot;SOR-366431000016002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Alb Amb for Depression&lt;/td&gt;&lt;td&gt;Alb Amb for Depression&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;387101000016000&lt;a name=\&quot;SOR-387101000016000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PVE Ambulant psykose enhed - vest&lt;/td&gt;&lt;td&gt;Psykiatrien Region Midtjylland - PVE Ambulant psykose enhed - vest&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;391151000016008&lt;a name=\&quot;SOR-391151000016008\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PMI Regionspsykiatrien Midt&lt;/td&gt;&lt;td&gt;Psykiatrien Region Midtjylland - PMI Regionspsykiatrien Midt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;391171000016001&lt;a name=\&quot;SOR-391171000016001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Regionspsykiatrien Randers&lt;/td&gt;&lt;td&gt;Regionspsykiatrien Randers&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;438091000016005&lt;a name=\&quot;SOR-438091000016005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Alb Amb Unge med Skizofreni&lt;/td&gt;&lt;td&gt;Alb Amb Unge med Skizofreni&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;454401000016004&lt;a name=\&quot;SOR-454401000016004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PMI Sengeafsnit - Regionspsykiatri Midt&lt;/td&gt;&lt;td&gt;Psykiatrien Region Midtjylland - PMI Sengeafsnit - Regionspsykiatri Midt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;454411000016002&lt;a name=\&quot;SOR-454411000016002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PMI Klinik for depression og mani - Midt&lt;/td&gt;&lt;td&gt;PMI Klinik for depression og mani - Midt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;454451000016003&lt;a name=\&quot;SOR-454451000016003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PMI Klinik for psykoser - Midt&lt;/td&gt;&lt;td&gt;Psykiatrien Region Midtjylland - PMI Klinik for psykoser - Midt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;454461000016000&lt;a name=\&quot;SOR-454461000016000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PMI Klinik for retspsykiatri - Midt&lt;/td&gt;&lt;td&gt;Psykiatrien Region Midtjylland - PMI Klinik for retspsykiatri - Midt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;456481000016000&lt;a name=\&quot;SOR-456481000016000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Brø Amb Personlighedspsykiatri&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;463791000016008&lt;a name=\&quot;SOR-463791000016008\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PMI Sengeafsnit retspsykiatri - Viborg&lt;/td&gt;&lt;td&gt;Psykiatrien Region Midtjylland - PMI Sengeafsnit retspsykiatri - Viborg&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;479221000016009&lt;a name=\&quot;SOR-479221000016009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PHO O1 Sengeafsnit Regionspsykiatri - Horsens&lt;/td&gt;&lt;td&gt;Psykiatrien Region Midtjylland - PHO O1 Sengeafsnit Regionspsykiatri - Horsens&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;486741000016006&lt;a name=\&quot;SOR-486741000016006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PRA Psykiatrisk Klinik 2 - Randers&lt;/td&gt;&lt;td&gt;Psykiatrien Region Midtjylland - PRA Psykiatrisk Klinik 2 - Randers&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;495051000016001&lt;a name=\&quot;SOR-495051000016001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Thy Psyk Amb Thy-Mors&lt;/td&gt;&lt;td&gt;Thy Psyk Amb Thy-Mors&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;508591000016003&lt;a name=\&quot;SOR-508591000016003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Alb Amb for ADHD Voksne&lt;/td&gt;&lt;td&gt;Alb Amb for ADHD Voksne&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;576481000016005&lt;a name=\&quot;SOR-576481000016005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Brø Amb Psyk Udviklingshæmmede&lt;/td&gt;&lt;td&gt;Brø Amb Psyk Udviklingshæmmede&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;603271000016004&lt;a name=\&quot;SOR-603271000016004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PMI R1 Sengeafsnit retspsykiatri - Viborg&lt;/td&gt;&lt;td&gt;PMI R1 Sengeafsnit retspsykiatri - Viborg&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;603281000016002&lt;a name=\&quot;SOR-603281000016002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PMI R2 Sengeafsnit retspsykiatri - Viborg&lt;/td&gt;&lt;td&gt;PMI R2 Sengeafsnit retspsykiatri - Viborg&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;603291000016000&lt;a name=\&quot;SOR-603291000016000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PHO O1 Akutsengeafsnit - Horsens&lt;/td&gt;&lt;td&gt;Psykiatrien Region Midtjylland - PHO O1 Akutsengeafsnit - Horsens&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;625211000016002&lt;a name=\&quot;SOR-625211000016002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Brø Amb Angst og Tvangssygdom&lt;/td&gt;&lt;td&gt;Brø Amb Angst og Tvangssygdom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;685871000016000&lt;a name=\&quot;SOR-685871000016000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Alb Amb for Bipolar Lidelse&lt;/td&gt;&lt;td&gt;Alb Amb for Bipolar Lidelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;687931000016002&lt;a name=\&quot;SOR-687931000016002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PMI Særlige Pladser - Viborg&lt;/td&gt;&lt;td&gt;PMI Særlige Pladser - Viborg&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;694221000016003&lt;a name=\&quot;SOR-694221000016003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Retspsykiatrisk Afdeling - AUH&lt;/td&gt;&lt;td&gt;Psykiatrien Region Midtjylland - Retspsykiatrisk Afdeling - AUH&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;694231000016001&lt;a name=\&quot;SOR-694231000016001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;RET Psykiatri Sengeafsnit for Retspsykiatri - AUH&lt;/td&gt;&lt;td&gt;Psykiatrien Region Midtjylland - RET Psykiatri Sengeafsnit for Retspsykiatri  - AUH&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;694251000016006&lt;a name=\&quot;SOR-694251000016006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;RET Retspsykiatrisk Klinik - AUH&lt;/td&gt;&lt;td&gt;Psykiatrien Region Midtjylland - RET Retspsykiatrisk Klinik - AUH&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;694271000016004&lt;a name=\&quot;SOR-694271000016004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;RET Retspsykiatri - Sengeafsnit 1 - AUH&lt;/td&gt;&lt;td&gt;RET Retspsykiatri - Sengeafsnit 1 - AUH&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;694281000016002&lt;a name=\&quot;SOR-694281000016002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;RET Retspsykiatri - Sengeafsnit 2 - AUH&lt;/td&gt;&lt;td&gt;RET Retspsykiatri - Sengeafsnit 2 - AUH&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;694291000016000&lt;a name=\&quot;SOR-694291000016000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;RET Retspsykiatri - Sengeafsnit 3 - AUH&lt;/td&gt;&lt;td&gt;RET Retspsykiatri - Sengeafsnit 3 - AUH&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;694301000016001&lt;a name=\&quot;SOR-694301000016001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;RET Retspsykiatri - Sengeafsnit 4 - AUH&lt;/td&gt;&lt;td&gt;RET Retspsykiatri - Sengeafsnit 4 - AUH&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;694331000016005&lt;a name=\&quot;SOR-694331000016005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;RET Retspsykiatrisk Opsøgende Team - AUH&lt;/td&gt;&lt;td&gt;RET Retspsykiatrisk Opsøgende Team - AUH&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;694351000016000&lt;a name=\&quot;SOR-694351000016000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Afdeling for Depression og Angst - AUH&lt;/td&gt;&lt;td&gt;Afdeling for Depression og Angst - AUH&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;694441000016007&lt;a name=\&quot;SOR-694441000016007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;BUA Psykiatrisk Klinik for Unge&lt;/td&gt;&lt;td&gt;BUA Psykiatrisk Klinik for Unge&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;694461000016008&lt;a name=\&quot;SOR-694461000016008\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;BUA Børne- og Ungdomspsykiatri - Sengeafsnit&lt;/td&gt;&lt;td&gt;BUA Børne- og Ungdomspsykiatri - Sengeafsnit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;694681000016004&lt;a name=\&quot;SOR-694681000016004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;BUA Klinik for Mentalobservation - AUH&lt;/td&gt;&lt;td&gt;Psykiatrien Region Midtjylland - BUA Klinik for Mentalobservation - AUH&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;694841000016009&lt;a name=\&quot;SOR-694841000016009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ADA Klinik for Personlighedsforstyrrelser - AUH&lt;/td&gt;&lt;td&gt;Psykiatrien Region Midtjylland - ADA Klinik for Personlighedsforstyrrelser - AUH&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;694891000016001&lt;a name=\&quot;SOR-694891000016001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ADA Klinik for Angst og OCD - AUH&lt;/td&gt;&lt;td&gt;Psykiatrien Region Midtjylland - ADA Klinik for Angst og OCD - AUH&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;694901000016000&lt;a name=\&quot;SOR-694901000016000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ADA Klinik for PTSD og Transkulturel Psykiatri - AUH&lt;/td&gt;&lt;td&gt;Psykiatrien Region Midtjylland - ADA Klinik for PTSD og Transkulturel Psykiatri - AUH&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;695161000016000&lt;a name=\&quot;SOR-695161000016000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AFP Psykiatri Sengeafsnit for Psykoser - AUH&lt;/td&gt;&lt;td&gt;Psykiatrien Region Midtjylland - AFP Psykiatri Sengeafsnit for Psykoser - AUH&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;695251000016007&lt;a name=\&quot;SOR-695251000016007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AFP Psykiatrisk Klinik 1 - AUH&lt;/td&gt;&lt;td&gt;Psykiatrien Region Midtjylland - AFP Psykiatrisk Klinik 1 - AUH&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;695281000016003&lt;a name=\&quot;SOR-695281000016003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AFP Psykiatrisk Klinik 2 - AUH&lt;/td&gt;&lt;td&gt;Psykiatrien Region Midtjylland - AFP Psykiatrisk Klinik 2 - AUH&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;697531000016008&lt;a name=\&quot;SOR-697531000016008\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Psykiatri SYD Overafd. 27&lt;/td&gt;&lt;td&gt;Psykiatri SYD Overafd. 27&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;698861000016003&lt;a name=\&quot;SOR-698861000016003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Brø Amb Midtv. Affektiv&lt;/td&gt;&lt;td&gt;Psykiatrien Nordjylland - Brø Amb Midtv. Affektiv&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;884321000016003&lt;a name=\&quot;SOR-884321000016003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PMI Team for psykoser - Silkeborg&lt;/td&gt;&lt;td&gt;PMI Team for psykoser - Silkeborg&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;884331000016001&lt;a name=\&quot;SOR-884331000016001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PMI Klinik for retspsykiatri - Viborg-Skive&lt;/td&gt;&lt;td&gt;PMI Klinik for retspsykiatri - Viborg-Skive&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;886951000016001&lt;a name=\&quot;SOR-886951000016001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Psyk. Center Nordsjælland, overafd. - N4&lt;/td&gt;&lt;td&gt;Region Hovedstadens Psykiatri - Psyk. Center Nordsjælland, overafd. - N4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;983001000016004&lt;a name=\&quot;SOR-983001000016004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Alm Amb Psykose Aalborg Nord&lt;/td&gt;&lt;td&gt;Alm Amb Psykose Aalborg Nord&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;983011000016002&lt;a name=\&quot;SOR-983011000016002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Alb Amb Psykose Aalborg Centrum&lt;/td&gt;&lt;td&gt;Alb Amb Psykose Aalborg Centrum&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;983021000016006&lt;a name=\&quot;SOR-983021000016006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Alb Amb Psykose Aalborg SydØst&lt;/td&gt;&lt;td&gt;Alb Amb Psykose Aalborg SydØst&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;983031000016008&lt;a name=\&quot;SOR-983031000016008\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Alb Amb Psykose Himmerland&lt;/td&gt;&lt;td&gt;Alb Amb Psykose Himmerland&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;983041000016001&lt;a name=\&quot;SOR-983041000016001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Brø Amb Midtv. Hjør. Psykose&lt;/td&gt;&lt;td&gt;Psykiatrien Nordjylland - Brø Amb Midtv. Hjør. Psykose&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;983051000016003&lt;a name=\&quot;SOR-983051000016003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Brø Amb Midtv. Brøn. Psykose&lt;/td&gt;&lt;td&gt;Psykiatrien Nordjylland - Brø Amb Midtv. Brøn. Psykose&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;986621000016007&lt;a name=\&quot;SOR-986621000016007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Regionspsykiatrien Gødstrup&lt;/td&gt;&lt;td&gt;Regionspsykiatrien Gødstrup&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;986631000016009&lt;a name=\&quot;SOR-986631000016009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;RPG Sengeafdeling Regionpsykiatrien - Gødstrup&lt;/td&gt;&lt;td&gt;RPG Sengeafdeling Regionpsykiatrien - Gødstrup&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;479201000016002&lt;a name=\&quot;SOR-479201000016002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PHO Klinik 1 for Psykiatriske Lidelser - Horsens&lt;/td&gt;&lt;td&gt;PHO Klinik 1 for Psykiatriske Lidelser - Horsens&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;934471000016008&lt;a name=\&quot;SOR-934471000016008\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PHO Team for Retspsykiatri - Horsens&lt;/td&gt;&lt;td&gt;PHO Team for Retspsykiatri - Horsens&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;391161000016006&lt;a name=\&quot;SOR-391161000016006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PHO Regionspsykiatrien Horsens&lt;/td&gt;&lt;td&gt;PHO Regionspsykiatrien Horsens&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;884181000016000&lt;a name=\&quot;SOR-884181000016000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PMI Team for OCD og Angstlidelser - Silkeborg&lt;/td&gt;&lt;td&gt;PMI Team for OCD og Angstlidelser - Silkeborg&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;884201000016001&lt;a name=\&quot;SOR-884201000016001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PMI Team for depression og mani - Silkeborg&lt;/td&gt;&lt;td&gt;PMI Team for depression og mani - Silkeborg&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;884301000016005&lt;a name=\&quot;SOR-884301000016005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PMI ADHD og Rusmiddelteam - Silkeborg&lt;/td&gt;&lt;td&gt;PMI ADHD og Rusmiddelteam - Silkeborg&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;695151000016003&lt;a name=\&quot;SOR-695151000016003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Afdeling for Psykoser - AUH&lt;/td&gt;&lt;td&gt;Afdeling for Psykoser - AUH&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;989231000016003&lt;a name=\&quot;SOR-989231000016003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hillerød, HI Endokrinologisk og Nefrologisk Overafd. (989231000016003)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;264781000016005&lt;a name=\&quot;SOR-264781000016005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Herlev, Nefrologisk overafd. B (264781000016005)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;252441000016006&lt;a name=\&quot;SOR-252441000016006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rigshospitalet, Nefrologisk Klinik, P (252441000016006)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;265611000016005&lt;a name=\&quot;SOR-265611000016005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rønne, Medicinsk overafd. (265611000016005)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;227011000016003&lt;a name=\&quot;SOR-227011000016003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Holbæk, HOL Medicin – Overafdeling (227011000016003)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;223181000016000&lt;a name=\&quot;SOR-223181000016000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Roskilde og Nykøbing Falster Sygehus, ROS Medicin – Overafdeling (223181000016000)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;239831000016009&lt;a name=\&quot;SOR-239831000016009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OUH Nyremedicinsk Afdeling Y (239831000016009)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;246501000016005&lt;a name=\&quot;SOR-246501000016005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Esbjerg, SVS Medicinsk Område (246501000016005)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;247441000016006&lt;a name=\&quot;SOR-247441000016006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fredericia, SLB Medicinske Sygdomme (Kolding) (247441000016006)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;504361000016006&lt;a name=\&quot;SOR-504361000016006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sønderborg, SHS Diabetes, Hormon- og Nyresygdomme (504361000016006)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;453111000016005&lt;a name=\&quot;SOR-453111000016005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aarhus/Skejby, Nyresygdomme Overafdeling (453111000016005)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;900231000016007&lt;a name=\&quot;SOR-900231000016007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Holstebro, Gødstrup, Medicinsk Afdeling – RHG (900231000016007)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;507561000016008&lt;a name=\&quot;SOR-507561000016008\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Viborg, Klinik for Nyresygdomme Viborg (507561000016008)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;275931000016002&lt;a name=\&quot;SOR-275931000016002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aalborg, Nyremedicinsk område (275931000016002)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;590021000016006&lt;a name=\&quot;SOR-590021000016006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Amager og Hvidovre Hospital, Gynækologisk sengeafdeling&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;590371000016007&lt;a name=\&quot;SOR-590371000016007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Amager og Hvidovre Hospital, Gynækologisk dagkirurgisk afsnit&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;265661000016007&lt;a name=\&quot;SOR-265661000016007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bornholms Hospital, Kirurgisk sengeafd.&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;264671000016001&lt;a name=\&quot;SOR-264671000016001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Herlev og gentofte Hospital, Gynækologisk afdeling G-1&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;264711000016000&lt;a name=\&quot;SOR-264711000016000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Herlev og gentofte Hospital, Gynækologisk ambulatorium G-1a&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;219021000016009&lt;a name=\&quot;SOR-219021000016009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nordsjællands Hospital, HI Gynækologisk Afd., senge&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;218901000016007&lt;a name=\&quot;SOR-218901000016007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nordsjællands Hospital, HI Gynækologisk Afd., amb.&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;976201000016009&lt;a name=\&quot;SOR-976201000016009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rigshospitalet, Gynækologisk Klinik GYN, heldøgn&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226461000016007&lt;a name=\&quot;SOR-226461000016007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Holbæk Gyn afd., HOL Gynækologisk Afd.&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;226531000016003&lt;a name=\&quot;SOR-226531000016003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Holbæk Gyn afd., HOL Gynækologisk Amb.&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229981000016001&lt;a name=\&quot;SOR-229981000016001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nykøbing F, NFS Gynækologisk Afd.&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;230071000016009&lt;a name=\&quot;SOR-230071000016009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nykøbing F, NFS Gynækologisk Amb.&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;222641000016008&lt;a name=\&quot;SOR-222641000016008\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Roskilde, ROS Gynækologisk Afd.&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;222751000016004&lt;a name=\&quot;SOR-222751000016004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Roskilde Gyn afd.&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229441000016002&lt;a name=\&quot;SOR-229441000016002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Slagelse, SLA Gynækologisk Afd.&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;229591000016006&lt;a name=\&quot;SOR-229591000016006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Slagelse, SLA Gynækologisk Amb.&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;246971000016008&lt;a name=\&quot;SOR-246971000016008\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kolding Sygehus, SLB Kvindesygdomme og Fødsler (Kolding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;246931000016006&lt;a name=\&quot;SOR-246931000016006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kolding Sygehus, SLB Kvindesygdomme Ambulatorium (Kolding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;238721000016006&lt;a name=\&quot;SOR-238721000016006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OUH Gynækologisk Afsnit (Odense)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;238741000016001&lt;a name=\&quot;SOR-238741000016001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OUH Gynækologisk Ambulatorium&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;239391000016000&lt;a name=\&quot;SOR-239391000016000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OUH Kirurgisk Afsnit A&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;241141000016008&lt;a name=\&quot;SOR-241141000016008\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OUH Urinvejskirurgisk Ambulatorium L&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;501671000016009&lt;a name=\&quot;SOR-501671000016009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SHS Kvindesygdomme Sengeafsnit (Aabenraa)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;501711000016005&lt;a name=\&quot;SOR-501711000016005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SHS Kvindesygdomme Dagkirurgi (Sønderborg)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;245971000016004&lt;a name=\&quot;SOR-245971000016004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SVS Kvindesygdomme Afsnit (Esbjerg)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;245951000016006&lt;a name=\&quot;SOR-245951000016006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SVS Kvindesygdomme Ambulatorium (Esbjerg)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;453211000016004&lt;a name=\&quot;SOR-453211000016004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AUH Kvindesygdomme&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;453221000016008&lt;a name=\&quot;SOR-453221000016008\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AUH, Dagkirurgi - Kvindesygdomme og Fødsler&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;455661000016001&lt;a name=\&quot;SOR-455661000016001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AUH Urinvejskirurgi&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;507481000016002&lt;a name=\&quot;SOR-507481000016002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hospitalsenhed Midt, Kvindesygdomme og Fødsler Viborg&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;485441000016009&lt;a name=\&quot;SOR-485441000016009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hospitalsenhed Midt, Kvindeklinikken Viborg&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;899591000016008&lt;a name=\&quot;SOR-899591000016008\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Regionshospitalet Gødstrup, Afsnit for Kvindesygdomme Gødstrup - RHG&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;899651000016003&lt;a name=\&quot;SOR-899651000016003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Regionshospitalet Gødstrup, Klinik for Kvindesygdomme Gødstrup - RHG&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;899781000016001&lt;a name=\&quot;SOR-899781000016001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Regionshospitalet Gødstrup, Kvindesygdomme Ambulant Kirurgi Gødstrup - RHG&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;265971000016007&lt;a name=\&quot;SOR-265971000016007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Regionshospitalet Horsens, Sengeafdeling for Kvindesygdomme og Fødsler&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;266001000016005&lt;a name=\&quot;SOR-266001000016005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Regionshospitalet Horsens, Dagkirurgi, Kvindesygdomme&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;271211000016002&lt;a name=\&quot;SOR-271211000016002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Regionshospitalet Randers, Kvindesygdomme og Fødsler - Randers&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;271221000016006&lt;a name=\&quot;SOR-271221000016006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Regionshospitalet Randers, Kvindesygdomsklinikken - Randers&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;275611000016002&lt;a name=\&quot;SOR-275611000016002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aalborg Universitetshospital, Alb Gyn.-Obst. Afdeling&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;275641000016001&lt;a name=\&quot;SOR-275641000016001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aalborg Universitetshospital, Alb Gyn. Ambulatorium&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;276431000016003&lt;a name=\&quot;SOR-276431000016003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aalborg Universitetshospital, Alb Urologisk afd.&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;275661000016000&lt;a name=\&quot;SOR-275661000016000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aalborg Universitetshospital, Hob Gyn. Ambulatorium Hobro&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;274781000016002&lt;a name=\&quot;SOR-274781000016002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aalborg Universitetshospital, Thisted, Thy Gyn.-Obst. sengeafd.&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;277201000016005&lt;a name=\&quot;SOR-277201000016005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Regionshospital Nordjylland, Hjr Gyn.Obst. Amb.&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;277161000016004&lt;a name=\&quot;SOR-277161000016004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Regionshospital Nordjylland, Hjr Gyn.-Obst. Sengeafd.&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;464271000016003&lt;a name=\&quot;SOR-464271000016003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Regionshospital Nordjylland, Hjr Dagafsnit for Kvindesygdomme&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;606291000016007&lt;a name=\&quot;SOR-606291000016007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Regionshospital Nordjylland, Hjr Uro-gyn Amb&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1041431000016004&lt;a name=\&quot;SOR-1041431000016004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adeas Parken&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;492011000016005&lt;a name=\&quot;SOR-492011000016005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aleris Privathospitaler, Esbjerg&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;652991000016006&lt;a name=\&quot;SOR-652991000016006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aleris Privathospitaler, Ringsted&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;491731000016006&lt;a name=\&quot;SOR-491731000016006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aleris Privathospitaler, København&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;491911000016003&lt;a name=\&quot;SOR-491911000016003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aleris Privathospitaler, Aalborg&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;491831000016002&lt;a name=\&quot;SOR-491831000016002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aleris Hospitaler, Aarhus, urologi og gynækologi&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;302311000016004&lt;a name=\&quot;SOR-302311000016004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AROS privathospital, beh. Afsnit&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;293191000016008&lt;a name=\&quot;SOR-293191000016008\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Capio A/S - Hellerup sengeafsnit&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;293271000016004&lt;a name=\&quot;SOR-293271000016004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Capio A/S - Odense sengeafsnit&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;596991000016007&lt;a name=\&quot;SOR-596991000016007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Capio A/S - Odense ambulatorium&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;688881000016009&lt;a name=\&quot;SOR-688881000016009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CPH Privathospital A/S, kirurgisk afsnit&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;299421000016004&lt;a name=\&quot;SOR-299421000016004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Gråbrødreklinikken, beh. afsnit&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;293511000016005&lt;a name=\&quot;SOR-293511000016005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Privathospitalet Danmark, Charlottenlund&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;574681000016001&lt;a name=\&quot;SOR-574681000016001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Privathospitalet Mølholm Aarhus, Højbjerg beh.afsnit&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;300771000016007&lt;a name=\&quot;SOR-300771000016007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Privathospitalet Mølholm Vejle, beh. afsnit&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;298241000016003&lt;a name=\&quot;SOR-298241000016003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Privathospitalet Møn, Gynækologisk sengeafsnit&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1048581000016009&lt;a name=\&quot;SOR-1048581000016009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Søernes Privathospital, beh.afsnit&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;106021000016002&lt;a name=\&quot;SOR-106021000016002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aagaard Gynækologiske Klinik&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;404261000016009&lt;a name=\&quot;SOR-404261000016009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aarhus universitetshospital&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;8031000016007&lt;a name=\&quot;SOR-8031000016007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rigshospitalet&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;682641000016004&lt;a name=\&quot;SOR-682641000016004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Afdeling for blodprøver og biokemi, Aarhus Universitetshospital&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;256631000016003&lt;a name=\&quot;SOR-256631000016003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Afdeling for Klinisk Biokemi – Blegdamsvej&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">fhir:url</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://kip.rkkp.dk/fhir/CodeSystem/SOR&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://kip.rkkp.dk/fhir/CodeSystem/SOR&gt;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;2.13.0&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;SOR&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Sundhedsvæsenets Organisationsregister (SOR)&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2022-09-06T00:00:00+02:00&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">fhir:contact</a> ( [
+<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;https://trifork.com&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;email&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;rbk@trifork.com&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Sundhedsvæsenets OrganisationsregisterR (SOR) - Udvalgte koder i RKKP.&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">fhir:caseSensitive</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">fhir:content</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;fragment&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">fhir:concept</a> ( [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;223601000016004&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ROS Neurologisk Afd.&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Region Sjællands Sygehusvæsen - ROS Neurologisk Afd. (Shak: 3800A80)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;239081000016004&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;OUH Hæmatologisk Afsnit X (Odense)&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Odense Universitetshospital - Svendborg - OUH Hæmatologisk Afsnit X (Odense) (Shak: 4202560)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;239981000016003&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;OUH Neurokirurgisk Afsnit U (Odense)&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Odense Universitetshospital - Svendborg - OUH Neurokirurgisk Afsnit U (Odense) (Shak: 4202150)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;240121000016005&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;OUH Neurologisk Afsnit N&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Odense Universitetshospital - Svendborg - OUH Neurologisk Afsnit N (Shak: 4202160)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;244701000016009&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;SVS Blodsygdomme Afsnit (Esbjerg)&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Sydvestjysk Sygehus - SVS Blodsygdomme Afsnit (Esbjerg) (Shak: 5501053)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;245291000016005&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;SVS Stroke Afsnit (Esbjerg)&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Sydvestjysk Sygehus - SVS Stroke Afsnit (Esbjerg) (Shak: 550105B)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;252961000016000&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Operation&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Rigshospitalet - Operation (Shak: 1301211)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;253081000016000&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Sengeafsnit 2094&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Rigshospitalet - Sengeafsnit 2094 (Shak: 1301221)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;253121000016002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Hukommelsesklinikken, N7&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Rigshospitalet - Hukommelsesklinikken, N7 (Shak: 1301227)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;257721000016006&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Neurologisk afd. akut apopleksi&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Bispebjerg og Frederiksberg Hospitaler - Neurologisk afd. akut apopleksi (Shak: 1309170)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;265621000016001&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Medicinsk sengeafd.&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Bornholms Hospital - Medicinsk sengeafd. (Shak: 4001030)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;275981000016003&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Alb Neurologisk afd.&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Aalborg Universitetshospital - Alb Neurologisk afd. (Shak: 8001191)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;275721000016002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Alb Hæmatologisk afd.&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Aalborg Universitetshospital - Alb Hæmatologisk afd. (Shak: 8001101)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;275991000016001&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Alb Neurologisk amb.&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Aalborg Universitetshospital - Alb Neurologisk amb. (Shak: 8001199)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;276361000016000&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Alb Neurokir. Afd.&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Aalborg Universitetshospital - Alb Neurokir. Afd. (Shak: 8001311)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;380011000016000&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ROS Hæmatologisk Afd.&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Region Sjællands Sygehusvæsen - ROS Hæmatologisk Afd.(Shak: 3800A20)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;384851000016002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;SLB Hæmatologisk Afsnit (Vejle)&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Sygehus Lillebælt - SLB Hæmatologisk Afsnit (Vejle) (Shak: 6008260)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;440051000016002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Hjerne- og Rygkirurgi&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Aarhus Universitetshospital - Hjerne- og Rygkirurgi (Shak: 6620131)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;440081000016006&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Neurologisk Sengeafdeling&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Aarhus Universitetshospital - Neurologisk Sengeafdeling (Shak: 6620151)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;440781000016009&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Blodsygdomme Sengeafsnit&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Aarhus Universitetshospital - Blodsygdomme Sengeafsnit (Shak: 6620141)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;503321000016003&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;SHS Hjerne- og Nervesygdomme Sengeafsnit (Aabenraa)&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Sygehus Sønderjylland - SHS Hjerne- og Nervesygdomme Sengeafsnit (Aabenraa) (Shak: 5000520)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;588351000016004&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Neurologisk Kl. senge GLO&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Rigshospitalet - Neurologisk Kl. senge GLO (Shak: 130122B)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;637201000016005&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;SLB Hjerne- og Nervesygdomme Senge (Kolding)&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Sygehus Lillebælt - SLB Hjerne- og Nervesygdomme Senge (Kolding) (Shak: 6007320)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900651000016000&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Klinik for Blodsygdomme Gødstrup - RHG&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Regionshospitalet Gødstrup - Klinik for Blodsygdomme Gødstrup - RHG (Shak: 664038K)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900791000016001&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Neurologisk Afsnit Gødstrup - RHG&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Regionshospitalet Gødstrup - Neurologisk Afsnit Gødstrup - RHG (Shak: 6640401)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;911061000016003&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Alb Demensenheden, RN&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Aalborg Universitetshospital - Alb Demensenheden, RN (Shak: 800119D)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;926731000016006&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Blodsygdomme L, Senge&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Rigshospitalet - Blodsygdomme L, Senge (Shak: 1301101)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;1095041000016007&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;SHS Blodsygdomme Ambulatorium (Sønderborg)&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Sygehus Sønderjylland - SHS Blodsygdomme Ambulatorium (Sønderborg) (Shak: 500061A)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;1125141000016005&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Neurologisk Stroke Klinik Gødstrup - RHG&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Regionshospitalet Gødstrup - Neurologisk Stroke Klinik Gødstrup - RHG (Shak: 664040I)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;1060711000016001&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;TM Psyk Amb Thy-Mors Psykose&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;TM Psyk Amb Thy-Mors Psykose&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;1060741000016000&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;TM Psyk Amb Thy-Mors Bosted&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;TM Psyk Amb Thy-Mors Bosted&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;1066921000016005&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Frh Psyk Amb Frederikshavn Psykose&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Frh Psyk Amb Frederikshavn Psykose&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;1199951000016004&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ADA Klinik for Depression - AUH&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ADA Klinik for Depression - AUH&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;1200011000016005&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ADA Klinik for Bipolar Sygdom - AUH&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Region Midtjylland - ADA Klinik for Bipolar Sygdom - AUH&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;1223721000016002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;RPG Enhed for Retspsykiatri – Gødstrup&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;RPG Enhed for Retspsykiatri – Gødstrup&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;1223761000016008&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;RPG Team for Retspsykiatri - Gødstrup&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;RPG Team for Retspsykiatri - Gødstrup&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;235611000016000&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Sjælland&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Sjælland&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;235631000016006&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatri ØST Overafd. 01&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatri ØST Overafd. 01&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;235901000016009&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatri ØST Overafd. 05&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatri ØST Overafd. 05&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;236121000016006&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatri VEST Overafd. 10&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatri VEST Overafd. 10&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;236351000016001&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatri VEST Overafd. 15 &quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatri VEST Overafd. 15&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;236831000016003&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatri SYD Overafd. 25&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatri SYD Overafd. 25&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;237021000016009&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Afdeling For Retspsykiatri - Ledelse&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Region Sjællands Sygehusvæsen - Afdeling For Retspsykiatri - Ledelse&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;237031000016006&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PSL Retspsykiatri&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PSL Retspsykiatri&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;237041000016004&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PSL Retspsykiatrisk Afd.&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Region Sjællands Sygehusvæsen - PSL Retspsykiatrisk Afd.&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;237131000016005&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PSL Sikringsafd. &quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PSL Sikringsafd. &quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;243921000016002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PSY Retspsykiatrisk afdeling (Middelfart)&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Region Syddanmark - PSY Retspsykiatrisk afdeling (Middelfart)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;243951000016005&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PSY Retspsykiatrisk Ambulatorium (Middelfart)&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Region Syddanmark - PSY Retspsykiatrisk Ambulatorium (Middelfart)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;261341000016001&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psyk. Center Amager, overafd.&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Region Hovedstadens Psykiatri - Psyk. Center Amager, overafd.&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;261431000016003&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Børne- og Ungdomspsykiatrisk overafdeling, Bispebjerg, B1&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Region Hovedstadens Psykiatri - Børne- og Ungdomspsykiatrisk overafdeling, Bispebjerg, B1&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;261501000016006&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psyk. Center København, overafd. N, Nørrebro-afdelingen&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Region Hovedstadens Psykiatri - Psyk. Center København, overafd. N,  Nørrebro-afdelingen&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;262181000016004&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psyk. Center Sct. Hans, Retspsyk. overafd. R&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Region Hovedstadens Psykiatri - Psyk. Center Sct. Hans, Retspsyk. overafd. R&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;262191000016002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Sct. Hans, Retspsykiatrisk sengeafd. R&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Sct. Hans, Retspsykiatrisk sengeafd. R&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;262221000016007&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psyk. Center Sct. Hans, overafd. M&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Region Hovedstadens Psykiatri - Psyk. Center Sct. Hans, overafd. M&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;262391000016004&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psyk. Center Ballerup, overafd. Ballerup&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Region Hovedstadens Psykiatri - Psyk. Center Ballerup, overafd. Ballerup&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;262511000016000&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psyk. Center Nordsjælland, overafd.&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Region Hovedstadens Psykiatri - Psyk. Center Nordsjælland, overafd.&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;262671000016009&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psyk. Center Glostrup, overafd.&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Region Hovedstadens Psykiatri - Psyk. Center Glostrup, overafd.&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;262681000016006&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PCGL, Psyk. sengeafd.&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Region Hovedstadens Psykiatri - PCGL, Psyk. sengeafd.&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;278121000016009&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PS Almenpsykiatrisk Afdeling, Nord&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Nordjylland - PS Klinik Nord&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;278131000016006&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PS Almenpsykiatrisk, Nord Sengeafsnit&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PS Almenpsykiatrisk, Nord Sengeafsnit&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;278191000016007&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PS Ældrepsykiatrisk Afdeling&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PS Ældrepsykiatrisk Afdeling&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;278201000016009&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PS Ældrepsykiatrisk Sengeafsnit&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PS Ældrepsykiatrisk Sengeafsnit&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;278211000016006&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PS Ældrepsykiatrisk Ambulatorier&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PS Ældrepsykiatrisk Ambulatorier&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;278221000016002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PS Retspsykiatrisk Afdeling&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Nordjylland - PS Retspsykiatri&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;278231000016000&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PS Retspsykiatrisk Sengeafsnit&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Nordjylland - PS Klinik Syd Retspsykiatri&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;278291000016004&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PS Almenpsykiatrisk Afdeling, Syd&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Nordjylland  - PS Klinik Syd&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;278301000016000&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PS Almenpsykiatrisk, Syd Sengeafsnit&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PS Almenpsykiatrisk, Syd Sengeafsnit&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;278321000016007&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PS Almenpsykiatrisk, Syd Ambulatorier&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Nordjylland - PS Klinik Syd Ambulatorier&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;282651000016004&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psyk. Center Bornholm&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Region Hovedstadens Psykiatri - Psyk. Center Bornholm&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;339031000016008&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Børne- og Ungdomspsyk. Center Bispebjerg, B&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Region Hovedstadens Psykiatri - Børne- og Ungdomspsyk. Center Bispebjerg, B&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;366121000016007&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Frh Psyk Amb Frederikshavn&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Frh Psyk Amb Frederikshavn&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;366381000016006&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Alb Amb Personlighedsforstyrrelser&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Alb Amb Personlighedsforstyrrelser&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;366391000016008&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Alb Amb Angst og Tvangssygdom&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Alb Amb Angst og Tvangssygdom&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;366411000016008&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Alb Amb Psykose specialafsnit&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Alb Amb Psykose specialafsnit&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;366431000016002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Alb Amb for Depression&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Alb Amb for Depression&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;387101000016000&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PVE Ambulant psykose enhed - vest&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Region Midtjylland - PVE Ambulant psykose enhed - vest&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;391151000016008&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PMI Regionspsykiatrien Midt&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Region Midtjylland - PMI Regionspsykiatrien Midt&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;391171000016001&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Regionspsykiatrien Randers&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Regionspsykiatrien Randers&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;438091000016005&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Alb Amb Unge med Skizofreni&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Alb Amb Unge med Skizofreni&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;454401000016004&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PMI Sengeafsnit - Regionspsykiatri Midt&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Region Midtjylland - PMI Sengeafsnit - Regionspsykiatri Midt&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;454411000016002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PMI Klinik for depression og mani - Midt&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PMI Klinik for depression og mani - Midt&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;454451000016003&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PMI Klinik for psykoser - Midt&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Region Midtjylland - PMI Klinik for psykoser - Midt&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;454461000016000&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PMI Klinik for retspsykiatri - Midt&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Region Midtjylland - PMI Klinik for retspsykiatri - Midt&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;456481000016000&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Brø Amb Personlighedspsykiatri&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;463791000016008&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PMI Sengeafsnit retspsykiatri - Viborg&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Region Midtjylland - PMI Sengeafsnit retspsykiatri - Viborg&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;479221000016009&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PHO O1 Sengeafsnit Regionspsykiatri - Horsens&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Region Midtjylland - PHO O1 Sengeafsnit Regionspsykiatri - Horsens&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;486741000016006&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PRA Psykiatrisk Klinik 2 - Randers&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Region Midtjylland - PRA Psykiatrisk Klinik 2 - Randers&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;495051000016001&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Thy Psyk Amb Thy-Mors&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Thy Psyk Amb Thy-Mors&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;508591000016003&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Alb Amb for ADHD Voksne&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Alb Amb for ADHD Voksne&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;576481000016005&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Brø Amb Psyk Udviklingshæmmede&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Brø Amb Psyk Udviklingshæmmede&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;603271000016004&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PMI R1 Sengeafsnit retspsykiatri - Viborg&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PMI R1 Sengeafsnit retspsykiatri - Viborg&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;603281000016002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PMI R2 Sengeafsnit retspsykiatri - Viborg&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PMI R2 Sengeafsnit retspsykiatri - Viborg&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;603291000016000&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PHO O1 Akutsengeafsnit - Horsens&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Region Midtjylland - PHO O1 Akutsengeafsnit - Horsens&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;625211000016002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Brø Amb Angst og Tvangssygdom&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Brø Amb Angst og Tvangssygdom&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;685871000016000&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Alb Amb for Bipolar Lidelse&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Alb Amb for Bipolar Lidelse&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;687931000016002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PMI Særlige Pladser - Viborg&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PMI Særlige Pladser - Viborg&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;694221000016003&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Retspsykiatrisk Afdeling - AUH&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Region Midtjylland - Retspsykiatrisk Afdeling - AUH&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;694231000016001&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;RET Psykiatri Sengeafsnit for Retspsykiatri - AUH&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Region Midtjylland - RET Psykiatri Sengeafsnit for Retspsykiatri  - AUH&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;694251000016006&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;RET Retspsykiatrisk Klinik - AUH&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Region Midtjylland - RET Retspsykiatrisk Klinik - AUH&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;694271000016004&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;RET Retspsykiatri - Sengeafsnit 1 - AUH&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;RET Retspsykiatri - Sengeafsnit 1 - AUH&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;694281000016002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;RET Retspsykiatri - Sengeafsnit 2 - AUH&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;RET Retspsykiatri - Sengeafsnit 2 - AUH&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;694291000016000&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;RET Retspsykiatri - Sengeafsnit 3 - AUH&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;RET Retspsykiatri - Sengeafsnit 3 - AUH&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;694301000016001&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;RET Retspsykiatri - Sengeafsnit 4 - AUH&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;RET Retspsykiatri - Sengeafsnit 4 - AUH&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;694331000016005&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;RET Retspsykiatrisk Opsøgende Team - AUH&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;RET Retspsykiatrisk Opsøgende Team - AUH&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;694351000016000&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Afdeling for Depression og Angst - AUH&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Afdeling for Depression og Angst - AUH&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;694441000016007&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;BUA Psykiatrisk Klinik for Unge&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;BUA Psykiatrisk Klinik for Unge&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;694461000016008&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;BUA Børne- og Ungdomspsykiatri - Sengeafsnit&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;BUA Børne- og Ungdomspsykiatri - Sengeafsnit&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;694681000016004&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;BUA Klinik for Mentalobservation - AUH&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Region Midtjylland - BUA Klinik for Mentalobservation - AUH&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;694841000016009&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ADA Klinik for Personlighedsforstyrrelser - AUH&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Region Midtjylland - ADA Klinik for Personlighedsforstyrrelser - AUH&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;694891000016001&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ADA Klinik for Angst og OCD - AUH&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Region Midtjylland - ADA Klinik for Angst og OCD - AUH&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;694901000016000&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ADA Klinik for PTSD og Transkulturel Psykiatri - AUH&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Region Midtjylland - ADA Klinik for PTSD og Transkulturel Psykiatri - AUH&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;695161000016000&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;AFP Psykiatri Sengeafsnit for Psykoser - AUH&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Region Midtjylland - AFP Psykiatri Sengeafsnit for Psykoser - AUH&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;695251000016007&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;AFP Psykiatrisk Klinik 1 - AUH&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Region Midtjylland - AFP Psykiatrisk Klinik 1 - AUH&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;695281000016003&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;AFP Psykiatrisk Klinik 2 - AUH&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Region Midtjylland - AFP Psykiatrisk Klinik 2 - AUH&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;697531000016008&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatri SYD Overafd. 27&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatri SYD Overafd. 27&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;698861000016003&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Brø Amb Midtv. Affektiv&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Nordjylland - Brø Amb Midtv. Affektiv&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;884321000016003&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PMI Team for psykoser - Silkeborg&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PMI Team for psykoser - Silkeborg&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;884331000016001&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PMI Klinik for retspsykiatri - Viborg-Skive&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PMI Klinik for retspsykiatri - Viborg-Skive&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;886951000016001&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psyk. Center Nordsjælland, overafd. - N4&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Region Hovedstadens Psykiatri - Psyk. Center Nordsjælland, overafd. - N4&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;983001000016004&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Alm Amb Psykose Aalborg Nord&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Alm Amb Psykose Aalborg Nord&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;983011000016002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Alb Amb Psykose Aalborg Centrum&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Alb Amb Psykose Aalborg Centrum&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;983021000016006&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Alb Amb Psykose Aalborg SydØst&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Alb Amb Psykose Aalborg SydØst&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;983031000016008&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Alb Amb Psykose Himmerland&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Alb Amb Psykose Himmerland&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;983041000016001&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Brø Amb Midtv. Hjør. Psykose&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Nordjylland - Brø Amb Midtv. Hjør. Psykose&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;983051000016003&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Brø Amb Midtv. Brøn. Psykose&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Psykiatrien Nordjylland - Brø Amb Midtv. Brøn. Psykose&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;986621000016007&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Regionspsykiatrien Gødstrup&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Regionspsykiatrien Gødstrup&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;986631000016009&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;RPG Sengeafdeling Regionpsykiatrien - Gødstrup&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;RPG Sengeafdeling Regionpsykiatrien - Gødstrup&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;479201000016002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PHO Klinik 1 for Psykiatriske Lidelser - Horsens&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PHO Klinik 1 for Psykiatriske Lidelser - Horsens&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;934471000016008&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PHO Team for Retspsykiatri - Horsens&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PHO Team for Retspsykiatri - Horsens&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;391161000016006&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PHO Regionspsykiatrien Horsens&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PHO Regionspsykiatrien Horsens&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;884181000016000&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PMI Team for OCD og Angstlidelser - Silkeborg&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PMI Team for OCD og Angstlidelser - Silkeborg&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;884201000016001&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PMI Team for depression og mani - Silkeborg&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PMI Team for depression og mani - Silkeborg&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;884301000016005&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PMI ADHD og Rusmiddelteam - Silkeborg&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PMI ADHD og Rusmiddelteam - Silkeborg&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;695151000016003&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Afdeling for Psykoser - AUH&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Afdeling for Psykoser - AUH&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;989231000016003&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Hillerød, HI Endokrinologisk og Nefrologisk Overafd. (989231000016003)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;264781000016005&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Herlev, Nefrologisk overafd. B (264781000016005)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;252441000016006&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Rigshospitalet, Nefrologisk Klinik, P (252441000016006)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;265611000016005&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Rønne, Medicinsk overafd. (265611000016005)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;227011000016003&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Holbæk, HOL Medicin – Overafdeling (227011000016003)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;223181000016000&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Roskilde og Nykøbing Falster Sygehus, ROS Medicin – Overafdeling (223181000016000)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;239831000016009&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;OUH Nyremedicinsk Afdeling Y (239831000016009)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;246501000016005&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Esbjerg, SVS Medicinsk Område (246501000016005)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;247441000016006&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Fredericia, SLB Medicinske Sygdomme (Kolding) (247441000016006)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;504361000016006&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Sønderborg, SHS Diabetes, Hormon- og Nyresygdomme (504361000016006)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;453111000016005&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Aarhus/Skejby, Nyresygdomme Overafdeling (453111000016005)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900231000016007&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Holstebro, Gødstrup, Medicinsk Afdeling – RHG (900231000016007)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;507561000016008&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Viborg, Klinik for Nyresygdomme Viborg (507561000016008)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;275931000016002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Aalborg, Nyremedicinsk område (275931000016002)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;590021000016006&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Amager og Hvidovre Hospital, Gynækologisk sengeafdeling&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;590371000016007&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Amager og Hvidovre Hospital, Gynækologisk dagkirurgisk afsnit&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;265661000016007&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Bornholms Hospital, Kirurgisk sengeafd.&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;264671000016001&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Herlev og gentofte Hospital, Gynækologisk afdeling G-1&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;264711000016000&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Herlev og gentofte Hospital, Gynækologisk ambulatorium G-1a&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;219021000016009&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Nordsjællands Hospital, HI Gynækologisk Afd., senge&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;218901000016007&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Nordsjællands Hospital, HI Gynækologisk Afd., amb.&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;976201000016009&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Rigshospitalet, Gynækologisk Klinik GYN, heldøgn&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;226461000016007&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Holbæk Gyn afd., HOL Gynækologisk Afd.&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;226531000016003&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Holbæk Gyn afd., HOL Gynækologisk Amb.&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;229981000016001&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Nykøbing F, NFS Gynækologisk Afd.&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;230071000016009&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Nykøbing F, NFS Gynækologisk Amb.&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;222641000016008&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Roskilde, ROS Gynækologisk Afd.&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;222751000016004&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Roskilde Gyn afd.&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;229441000016002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Slagelse, SLA Gynækologisk Afd.&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;229591000016006&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Slagelse, SLA Gynækologisk Amb.&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;246971000016008&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Kolding Sygehus, SLB Kvindesygdomme og Fødsler (Kolding)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;246931000016006&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Kolding Sygehus, SLB Kvindesygdomme Ambulatorium (Kolding)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;238721000016006&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;OUH Gynækologisk Afsnit (Odense)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;238741000016001&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;OUH Gynækologisk Ambulatorium&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;239391000016000&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;OUH Kirurgisk Afsnit A&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;241141000016008&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;OUH Urinvejskirurgisk Ambulatorium L&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;501671000016009&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;SHS Kvindesygdomme Sengeafsnit (Aabenraa)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;501711000016005&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;SHS Kvindesygdomme Dagkirurgi (Sønderborg)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;245971000016004&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;SVS Kvindesygdomme Afsnit (Esbjerg)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;245951000016006&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;SVS Kvindesygdomme Ambulatorium (Esbjerg)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;453211000016004&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;AUH Kvindesygdomme&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;453221000016008&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;AUH, Dagkirurgi - Kvindesygdomme og Fødsler&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;455661000016001&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;AUH Urinvejskirurgi&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;507481000016002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Hospitalsenhed Midt, Kvindesygdomme og Fødsler Viborg&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;485441000016009&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Hospitalsenhed Midt, Kvindeklinikken Viborg&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;899591000016008&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Regionshospitalet Gødstrup, Afsnit for Kvindesygdomme Gødstrup - RHG&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;899651000016003&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Regionshospitalet Gødstrup, Klinik for Kvindesygdomme Gødstrup - RHG&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;899781000016001&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Regionshospitalet Gødstrup, Kvindesygdomme Ambulant Kirurgi Gødstrup - RHG&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;265971000016007&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Regionshospitalet Horsens, Sengeafdeling for Kvindesygdomme og Fødsler&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;266001000016005&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Regionshospitalet Horsens, Dagkirurgi, Kvindesygdomme&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;271211000016002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Regionshospitalet Randers, Kvindesygdomme og Fødsler - Randers&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;271221000016006&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Regionshospitalet Randers, Kvindesygdomsklinikken - Randers&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;275611000016002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Aalborg Universitetshospital, Alb Gyn.-Obst. Afdeling&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;275641000016001&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Aalborg Universitetshospital, Alb Gyn. Ambulatorium&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;276431000016003&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Aalborg Universitetshospital, Alb Urologisk afd.&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;275661000016000&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Aalborg Universitetshospital, Hob Gyn. Ambulatorium Hobro&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;274781000016002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Aalborg Universitetshospital, Thisted, Thy Gyn.-Obst. sengeafd.&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;277201000016005&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Regionshospital Nordjylland, Hjr Gyn.Obst. Amb.&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;277161000016004&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Regionshospital Nordjylland, Hjr Gyn.-Obst. Sengeafd.&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;464271000016003&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Regionshospital Nordjylland, Hjr Dagafsnit for Kvindesygdomme&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;606291000016007&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Regionshospital Nordjylland, Hjr Uro-gyn Amb&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;1041431000016004&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Adeas Parken&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;492011000016005&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Aleris Privathospitaler, Esbjerg&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;652991000016006&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Aleris Privathospitaler, Ringsted&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;491731000016006&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Aleris Privathospitaler, København&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;491911000016003&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Aleris Privathospitaler, Aalborg&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;491831000016002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Aleris Hospitaler, Aarhus, urologi og gynækologi&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;302311000016004&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;AROS privathospital, beh. Afsnit&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;293191000016008&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Capio A/S - Hellerup sengeafsnit&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;293271000016004&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Capio A/S - Odense sengeafsnit&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;596991000016007&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Capio A/S - Odense ambulatorium&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;688881000016009&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CPH Privathospital A/S, kirurgisk afsnit&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;299421000016004&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Gråbrødreklinikken, beh. afsnit&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;293511000016005&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Privathospitalet Danmark, Charlottenlund&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;574681000016001&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Privathospitalet Mølholm Aarhus, Højbjerg beh.afsnit&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;300771000016007&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Privathospitalet Mølholm Vejle, beh. afsnit&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;298241000016003&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Privathospitalet Møn, Gynækologisk sengeafsnit&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;1048581000016009&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Søernes Privathospital, beh.afsnit&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;106021000016002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Aagaard Gynækologiske Klinik&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;404261000016009&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Aarhus universitetshospital&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;8031000016007&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Rigshospitalet&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;682641000016004&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Afdeling for blodprøver og biokemi, Aarhus Universitetshospital&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;256631000016003&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Afdeling for Klinisk Biokemi – Blegdamsvej&quot; ]
+  ] ) . # 
+
+</pre>
+
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://trifork.com">Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S</a>.  Package dk.kip.rkkp.fhir.ig.core#2.13.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 11, 2025 11:28+0000">2025-11-11</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
