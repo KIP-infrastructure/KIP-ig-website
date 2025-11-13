@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/locationNodal-V2> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "locationNodal-V2"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet locationNodal-V2</b></p><a name=\"locationNodal-V2\"> </a><a name=\"hclocationNodal-V2\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-SKS.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/SKS</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.14.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-T000647\">T000647</a></td><td>Rhinopharynx</td><td>T000647 - Pharynx</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-T000653\">T000653</a></td><td>Waldeyers svælgring inkl. tonsiller</td><td>T000653 - Tonsil og adenoid</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-T001184\">T001184</a></td><td>Halsregion inkl. periclavilulære glandler</td><td>T001184 - Hals</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-T000174\">T000174</a></td><td>Axiller</td><td>T000174 - lymfeknude i aksil</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-T000165\">T000165</a></td><td>Mediastinum og lunge hili</td><td>T000165 - Lymfeknude i mediastinum</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-T000166\">T000166</a></td><td>Intraabdominale glandler</td><td>T000166 - Lymfeknude i abdomen</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-T001227\">T001227</a></td><td>Retroperitoneum</td><td>T001227 - retroperitoneum</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-T000132\">T000132</a></td><td>Milt</td><td>T000132 - milt</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-T000177\">T000177</a></td><td>Femoral regionen/Lyske</td><td>T000177 - lymfeknude i inguen</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://kip.rkkp.dk/fhir/ValueSet/locationNodal-V2"^^xsd:anyURI ;
+     fhir:l <https://kip.rkkp.dk/fhir/ValueSet/locationNodal-V2>
+  ] ; # 
+  fhir:version [ fhir:v "2.14.0"] ; # 
+  fhir:name [ fhir:v "LocationNodal_V2"] ; # 
+  fhir:title [ fhir:v "Sygdomslokalisation er kun nodalt (LYFO) version 2"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-09-01T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sygdomslokalisation i lymfe områder er kun nodalt (LYFO)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/SKS"^^xsd:anyURI ;
+         fhir:l <https://kip.rkkp.dk/fhir/CodeSystem/SKS>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "T000647" ] ;
+         fhir:display [ fhir:v "Rhinopharynx" ]
+       ] [
+         fhir:code [ fhir:v "T000653" ] ;
+         fhir:display [ fhir:v "Waldeyers svælgring inkl. tonsiller" ]
+       ] [
+         fhir:code [ fhir:v "T001184" ] ;
+         fhir:display [ fhir:v "Halsregion inkl. periclavilulære glandler" ]
+       ] [
+         fhir:code [ fhir:v "T000174" ] ;
+         fhir:display [ fhir:v "Axiller" ]
+       ] [
+         fhir:code [ fhir:v "T000165" ] ;
+         fhir:display [ fhir:v "Mediastinum og lunge hili" ]
+       ] [
+         fhir:code [ fhir:v "T000166" ] ;
+         fhir:display [ fhir:v "Intraabdominale glandler" ]
+       ] [
+         fhir:code [ fhir:v "T001227" ] ;
+         fhir:display [ fhir:v "Retroperitoneum" ]
+       ] [
+         fhir:code [ fhir:v "T000132" ] ;
+         fhir:display [ fhir:v "Milt" ]
+       ] [
+         fhir:code [ fhir:v "T000177" ] ;
+         fhir:display [ fhir:v "Femoral regionen/Lyske" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

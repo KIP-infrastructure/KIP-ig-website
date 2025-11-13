@@ -17,11 +17,11 @@
      fhir:v "https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core"^^xsd:anyURI ;
      fhir:l <https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core>
   ] ; # 
-  fhir:version [ fhir:v "2.13.0"] ; # 
+  fhir:version [ fhir:v "2.14.0"] ; # 
   fhir:name [ fhir:v "KIPInfrastructure"] ; # 
   fhir:title [ fhir:v "KIP Infrastructure"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-11-11T11:32:01+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-13T13:58:05+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
@@ -3484,6 +3484,27 @@
          fhir:reference [ fhir:v "ValueSet/TreatmentRegimen" ]
        ] ;
        fhir:name [ fhir:v "Behandlingsplan" ] ;
+       fhir:description [ fhir:v "Behandlingsplan som beskriver specifikke codsering og planlægningen af behandling" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://kip.rkkp.dk/fhir/ValueSet/TreatmentRegimen-2025> ;
+         fhir:reference [ fhir:v "ValueSet/TreatmentRegimen-2025" ]
+       ] ;
+       fhir:name [ fhir:v "Behandlingsplan (2025)" ] ;
        fhir:description [ fhir:v "Behandlingsplan som beskriver specifikke codsering og planlægningen af behandling" ] ;
        fhir:example [
          a fhir:Boolean ;
@@ -19461,8 +19482,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://kip.rkkp.dk/fhir/ValueSet/LocationExtranodalFemale-V2> ;
-         fhir:reference [ fhir:v "ValueSet/LocationExtranodalFemale-V2" ]
+         fhir:l <https://kip.rkkp.dk/fhir/ValueSet/locationExtranodalFemale-V2> ;
+         fhir:reference [ fhir:v "ValueSet/locationExtranodalFemale-V2" ]
        ] ;
        fhir:name [ fhir:v "Sygdomslokalisation er kun ekstranodalt, kvinder (LYFO) version 2" ] ;
        fhir:description [ fhir:v "Sygdomslokalisation i lymfe områder er kun ekstranodalt, og patienten er en kvinde (LYFO)" ] ;
@@ -19503,8 +19524,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://kip.rkkp.dk/fhir/ValueSet/LocationExtranodalMale-V2> ;
-         fhir:reference [ fhir:v "ValueSet/LocationExtranodalMale-V2" ]
+         fhir:l <https://kip.rkkp.dk/fhir/ValueSet/locationExtranodalMale-V2> ;
+         fhir:reference [ fhir:v "ValueSet/locationExtranodalMale-V2" ]
        ] ;
        fhir:name [ fhir:v "Sygdomslokalisation er kun ekstranodalt, mænd (LYFO) version 2" ] ;
        fhir:description [ fhir:v "Sygdomslokalisation i lymfe områder er kun ekstranodalt, og patienten er en mand (LYFO)" ] ;
@@ -19545,8 +19566,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://kip.rkkp.dk/fhir/ValueSet/LocationNodal-V2> ;
-         fhir:reference [ fhir:v "ValueSet/LocationNodal-V2" ]
+         fhir:l <https://kip.rkkp.dk/fhir/ValueSet/locationNodal-V2> ;
+         fhir:reference [ fhir:v "ValueSet/locationNodal-V2" ]
        ] ;
        fhir:name [ fhir:v "Sygdomslokalisation er kun nodalt (LYFO) version 2" ] ;
        fhir:description [ fhir:v "Sygdomslokalisation i lymfe områder er kun nodalt (LYFO)" ] ;

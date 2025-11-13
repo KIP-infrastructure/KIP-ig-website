@@ -1,4 +1,4 @@
-# Home - KIP Infrastructure v2.13.0
+# Home - KIP Infrastructure v2.14.0
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core | *Version*:2.13.0 |
-| Active as of 2025-11-11 | *Computable Name*:KIPInfrastructure |
+| *Official URL*:https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core | *Version*:2.14.0 |
+| Active as of 2025-11-13 | *Computable Name*:KIPInfrastructure |
 
 ### Introduction
 
@@ -23,11 +23,11 @@ This implementation guide is provided to support the use of FHIR®© in the cont
   "resourceType" : "ImplementationGuide",
   "id" : "dk.kip.rkkp.fhir.ig.core",
   "url" : "https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core",
-  "version" : "2.13.0",
+  "version" : "2.14.0",
   "name" : "KIPInfrastructure",
   "title" : "KIP Infrastructure",
   "status" : "active",
-  "date" : "2025-11-11T11:32:01+00:00",
+  "date" : "2025-11-13T13:58:05+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [
     {
@@ -2187,6 +2187,20 @@ This implementation guide is provided to support the use of FHIR®© in the cont
           "reference" : "ValueSet/TreatmentRegimen"
         },
         "name" : "Behandlingsplan",
+        "description" : "Behandlingsplan som beskriver specifikke codsering og planlægningen af behandling",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/TreatmentRegimen-2025"
+        },
+        "name" : "Behandlingsplan (2025)",
         "description" : "Behandlingsplan som beskriver specifikke codsering og planlægningen af behandling",
         "exampleBoolean" : false
       },
@@ -12838,7 +12852,7 @@ This implementation guide is provided to support the use of FHIR®© in the cont
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/LocationExtranodalFemale-V2"
+          "reference" : "ValueSet/locationExtranodalFemale-V2"
         },
         "name" : "Sygdomslokalisation er kun ekstranodalt, kvinder (LYFO) version 2",
         "description" : "Sygdomslokalisation i lymfe områder er kun ekstranodalt, og patienten er en kvinde (LYFO)",
@@ -12866,7 +12880,7 @@ This implementation guide is provided to support the use of FHIR®© in the cont
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/LocationExtranodalMale-V2"
+          "reference" : "ValueSet/locationExtranodalMale-V2"
         },
         "name" : "Sygdomslokalisation er kun ekstranodalt, mænd (LYFO) version 2",
         "description" : "Sygdomslokalisation i lymfe områder er kun ekstranodalt, og patienten er en mand (LYFO)",
@@ -12894,7 +12908,7 @@ This implementation guide is provided to support the use of FHIR®© in the cont
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/LocationNodal-V2"
+          "reference" : "ValueSet/locationNodal-V2"
         },
         "name" : "Sygdomslokalisation er kun nodalt (LYFO) version 2",
         "description" : "Sygdomslokalisation i lymfe områder er kun nodalt (LYFO)",
