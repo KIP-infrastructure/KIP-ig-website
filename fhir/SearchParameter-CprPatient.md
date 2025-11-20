@@ -1,4 +1,4 @@
-# CprPatient - KIP Infrastructure v2.14.0
+# CprPatient - KIP Infrastructure v2.14.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/CprPatient | *Version*:2.14.0 |
-| Active as of 2025-11-13 | *Computable Name*:CprPatient |
+| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/CprPatient | *Version*:2.14.1 |
+| Active as of 2025-11-20 | *Computable Name*:CprPatient |
 
  
 Search by CPR in Patient 
@@ -38,10 +38,10 @@ Search by CPR in Patient
   "resourceType" : "SearchParameter",
   "id" : "CprPatient",
   "url" : "https://kip.rkkp.dk/fhir/SearchParameter/CprPatient",
-  "version" : "2.14.0",
+  "version" : "2.14.1",
   "name" : "CprPatient",
   "status" : "active",
-  "date" : "2025-11-13T13:58:05+00:00",
+  "date" : "2025-11-20T08:59:28+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [
     {

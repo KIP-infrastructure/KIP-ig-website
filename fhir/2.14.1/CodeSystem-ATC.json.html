@@ -1,0 +1,868 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>WHO ATC - JSON Representation - KIP Infrastructure v2.14.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3.997"}
+    h3,h4,h5,h6{--heading-prefix:"3.997"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">KIP Infrastructure</span>
+            <br/>
+            <span style="display:inline-block;">2.14.1 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Search Parameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Extension Definitions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Code Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>WHO ATC</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">This page is part of the KIP Infrastructure (v2.14.1: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-ATC.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-ATC.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-ATC.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: WHO ATC - JSON Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2022-06-14
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-ATC.json" no-download="true">Raw json</a> | <a href="CodeSystem-ATC.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a>" : "ATC",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem ATC&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ATC\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcATC\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;https://kip.rkkp.dk/fhir/CodeSystem/ATC&lt;/code&gt; provides &lt;b&gt;a fragment&lt;/b&gt; that includes following codes in an undefined hierarchy:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Lvl&lt;/b&gt;&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;B01A&lt;a name=\&quot;ATC-B01A\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ANTITHROMBOTIC AGENTS&lt;/td&gt;&lt;td&gt;B01A - ANTITHROMBOTIC AGENTS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0B01AA03&lt;a name=\&quot;ATC-B01AA03\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;warfarin&lt;/td&gt;&lt;td&gt;B01AA03 - warfarin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0B01AB01&lt;a name=\&quot;ATC-B01AB01\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;heparin&lt;/td&gt;&lt;td&gt;B01AB01 - heparin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0B01AB04&lt;a name=\&quot;ATC-B01AB04\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;dalteparin&lt;/td&gt;&lt;td&gt;B01AB04 - dalteparin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0B01AB05&lt;a name=\&quot;ATC-B01AB05\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;enoxaparin&lt;/td&gt;&lt;td&gt;B01AB05 - enoxaparin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0B01AB10&lt;a name=\&quot;ATC-B01AB10\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;tinzaparin&lt;/td&gt;&lt;td&gt;B01AB10 - tinzaparin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0B01AC06&lt;a name=\&quot;ATC-B01AC06\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;acetylsalicylic acid&lt;/td&gt;&lt;td&gt;B01AC06 - acetylsalicylic acid&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0B01AE07&lt;a name=\&quot;ATC-B01AE07\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;dabigatran etexilate&lt;/td&gt;&lt;td&gt;B01AE07 - dabigatran etexilate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0B01AF01&lt;a name=\&quot;ATC-B01AF01\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;rivaroxaban&lt;/td&gt;&lt;td&gt;B01AF01 - rivaroxaban&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0B01AF02&lt;a name=\&quot;ATC-B01AF02\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;apixaban&lt;/td&gt;&lt;td&gt;B01AF02 - apixaban&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0B01AX05&lt;a name=\&quot;ATC-B01AX05\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;fondaparinux&lt;/td&gt;&lt;td&gt;B01AX05 - fondaparinux&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;B02AA02&lt;a name=\&quot;ATC-B02AA02\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;tranexamic acid&lt;/td&gt;&lt;td&gt;B02AA02 - Tranexamic acid&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;B03XA01&lt;a name=\&quot;ATC-B03XA01\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;erythropoietin&lt;/td&gt;&lt;td&gt;B03XA01 - erythropoietin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;C10AA&lt;a name=\&quot;ATC-C10AA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HMG CoA reductase inhibitors&lt;/td&gt;&lt;td&gt;C10AA - HMG CoA reductase inhibitors&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;H02&lt;a name=\&quot;ATC-H02\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CORTICOSTEROIDS FOR SYSTEMIC USE&lt;/td&gt;&lt;td&gt;H02 - CORTICOSTEROIDS FOR SYSTEMIC USE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J01CF01&lt;a name=\&quot;ATC-J01CF01\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;dicloxacillin&lt;/td&gt;&lt;td&gt;J01CF01 - dicloxacillin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J01CF02&lt;a name=\&quot;ATC-J01CF02\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;cloxacillin&lt;/td&gt;&lt;td&gt;J01CF02 - cloxacillin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J01CF03&lt;a name=\&quot;ATC-J01CF03\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;meticillin&lt;/td&gt;&lt;td&gt;J01CF03 - meticillin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J01CF05&lt;a name=\&quot;ATC-J01CF05\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;flucloxacillin&lt;/td&gt;&lt;td&gt;J01CF05 - flucloxacillin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J01DB01&lt;a name=\&quot;ATC-J01DB01\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;cefalexin&lt;/td&gt;&lt;td&gt;J01DB01 - cefalexin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J01DB03&lt;a name=\&quot;ATC-J01DB03\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;cefalotin&lt;/td&gt;&lt;td&gt;J01DB03 - cefalotin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J01DC02&lt;a name=\&quot;ATC-J01DC02\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;cefuroxime&lt;/td&gt;&lt;td&gt;J01DC02 - cefuroxime&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J01FA01&lt;a name=\&quot;ATC-J01FA01\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;erythromycin&lt;/td&gt;&lt;td&gt;J01FA01 - erythromycin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J01GB03&lt;a name=\&quot;ATC-J01GB03\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;gentamicin&lt;/td&gt;&lt;td&gt;J01GB03 - gentamicin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J01XA01&lt;a name=\&quot;ATC-J01XA01\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;vancomycin&lt;/td&gt;&lt;td&gt;J01XA01 - vancomycin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01AA01&lt;a name=\&quot;ATC-L01AA01\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;cyclophosphamide&lt;/td&gt;&lt;td&gt;L01AA01 - cyclophosphamide&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01AA02&lt;a name=\&quot;ATC-L01AA02\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;chlorambucil&lt;/td&gt;&lt;td&gt;L01AA02 - chlorambucil&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01AA03&lt;a name=\&quot;ATC-L01AA03\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;melphalan&lt;/td&gt;&lt;td&gt;L01AA03 - melphalan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01AA06&lt;a name=\&quot;ATC-L01AA06\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ifosfamide&lt;/td&gt;&lt;td&gt;L01AA06 - ifosfamide&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01AA09&lt;a name=\&quot;ATC-L01AA09\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;bendamustine&lt;/td&gt;&lt;td&gt;L01AA09 - bendamustine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01AB01&lt;a name=\&quot;ATC-L01AB01\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;busulfan&lt;/td&gt;&lt;td&gt;L01AB01 - busulfan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01AC01&lt;a name=\&quot;ATC-L01AC01\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;thiotepa&lt;/td&gt;&lt;td&gt;L01AC01 thiotepa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01AD01&lt;a name=\&quot;ATC-L01AD01\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;carmustine&lt;/td&gt;&lt;td&gt;L01AD01 - carmustine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01AX03&lt;a name=\&quot;ATC-L01AX03\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;temozolomide&lt;/td&gt;&lt;td&gt;L01AX03 - temozolomide&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01AX04&lt;a name=\&quot;ATC-L01AX04\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;dacarbazine&lt;/td&gt;&lt;td&gt;L01AX04 - dacarbazine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01BB05&lt;a name=\&quot;ATC-L01BB05\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;fludarabine&lt;/td&gt;&lt;td&gt;L01BB05 - fludarabine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01BC02&lt;a name=\&quot;ATC-L01BC02\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;fluorouracil&lt;/td&gt;&lt;td&gt;L01BC02 - Fluorouracil (5-FU)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01BC05&lt;a name=\&quot;ATC-L01BC05\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;gemcitabine&lt;/td&gt;&lt;td&gt;L01BC02 - Gemcitabine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01BC06&lt;a name=\&quot;ATC-L01BC06\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;capecitabine&lt;/td&gt;&lt;td&gt;L01BC06 - Capecitabine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01BC07&lt;a name=\&quot;ATC-L01BC07\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;azacitidine&lt;/td&gt;&lt;td&gt;L01BC07 - azacitidine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01CA02&lt;a name=\&quot;ATC-L01CA02\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;vincristine&lt;/td&gt;&lt;td&gt;L01CA02 - vincristine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01CA04&lt;a name=\&quot;ATC-L01CA04\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;vinorelbine&lt;/td&gt;&lt;td&gt;L01CA04 - Vinorelbine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01CB01&lt;a name=\&quot;ATC-L01CB01\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;etoposide&lt;/td&gt;&lt;td&gt;L01CB01 - etoposide&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01CD01&lt;a name=\&quot;ATC-L01CD01\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;paclitaxel&lt;/td&gt;&lt;td&gt;L01CD01 - Paclitaxel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01CD02&lt;a name=\&quot;ATC-L01CD02\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;docetaxel&lt;/td&gt;&lt;td&gt;L01CD02 - Docetaxel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01CE02&lt;a name=\&quot;ATC-L01CE02\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;irinotecan&lt;/td&gt;&lt;td&gt;L01CE02 - Irinotecan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01DB01&lt;a name=\&quot;ATC-L01DB01\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;doxorubicin&lt;/td&gt;&lt;td&gt;L01DB01 - Doxorubicin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01DB03&lt;a name=\&quot;ATC-L01DB03\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;epirubicin&lt;/td&gt;&lt;td&gt;L01DB03 - Epirubicin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01DB07&lt;a name=\&quot;ATC-L01DB07\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;mitoxantrone&lt;/td&gt;&lt;td&gt;L01DB07 - mitoxantrone&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01DB11&lt;a name=\&quot;ATC-L01DB11\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;pixantrone&lt;/td&gt;&lt;td&gt;L01DB11 - pixantrone&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01DC01&lt;a name=\&quot;ATC-L01DC01\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;bleomycin&lt;/td&gt;&lt;td&gt;L01DC01 - bleomycin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01EA&lt;a name=\&quot;ATC-L01EA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;BCR-ABL tyrosine kinase inhibitors&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0L01EA01&lt;a name=\&quot;ATC-L01EA01\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;imatinib&lt;/td&gt;&lt;td&gt;L01EA01 - imatinib&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0L01EA02&lt;a name=\&quot;ATC-L01EA02\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;dasatinib&lt;/td&gt;&lt;td&gt;L01EA02 - dasatinib&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0L01EA03&lt;a name=\&quot;ATC-L01EA03\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;nilotinib&lt;/td&gt;&lt;td&gt;L01EA03 - nilotinib&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0L01EA04&lt;a name=\&quot;ATC-L01EA04\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;bosutinib&lt;/td&gt;&lt;td&gt;L01EA04 - bosutinib&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0L01EA05&lt;a name=\&quot;ATC-L01EA05\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ponatinib&lt;/td&gt;&lt;td&gt;L01EA05 - ponatinib&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0L01EA06&lt;a name=\&quot;ATC-L01EA06\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Asciminib&lt;/td&gt;&lt;td&gt;L01EA06 - Asciminib&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01EB&lt;a name=\&quot;ATC-L01EB\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Epidermal growth factor receptor (EGFR) tyrosine kinase inhibitors&lt;/td&gt;&lt;td&gt;L01EB - Epidermal growth factor receptor (EGFR) tyrosine kinase inhibitors&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01EH&lt;a name=\&quot;ATC-L01EH\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Human epidermal growth factor receptor 2 (HER2) tyrosine kinase inhibitors&lt;/td&gt;&lt;td&gt;L01EH - Human epidermal growth factor receptor 2 (HER2) tyrosine kinase inhibitors&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01EJ&lt;a name=\&quot;ATC-L01EJ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Janus-associated kinase (JAK) inhibitors&lt;/td&gt;&lt;td&gt;Janus associerede kinase (JAK) hæmmere&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0L01EJ01&lt;a name=\&quot;ATC-L01EJ01\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ruxolitinib&lt;/td&gt;&lt;td&gt;L01EJ01 - ruxolitinib&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01EK&lt;a name=\&quot;ATC-L01EK\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vascular endothelial growth factor receptor (VEGFR) tyrosine kinase inhibitors&lt;/td&gt;&lt;td&gt;L01EK - Vascular endothelial growth factor receptor (VEGFR) tyrosine kinase inhibitors&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01EL01&lt;a name=\&quot;ATC-L01EL01\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ibrutinib&lt;/td&gt;&lt;td&gt;L01EL01 - ibrutinib&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01EL02&lt;a name=\&quot;ATC-L01EL02\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;acalabrutinib&lt;/td&gt;&lt;td&gt;L01EL02 - acalabrutinib&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01EM01&lt;a name=\&quot;ATC-L01EM01\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;idelalisib&lt;/td&gt;&lt;td&gt;L01EM01 - idelalisib&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01EN&lt;a name=\&quot;ATC-L01EN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fibroblast growth factor receptor (FGFR) tyrosine kinase inhibitors&lt;/td&gt;&lt;td&gt;L01EN - Fibroblast growth factor receptor (FGFR) tyrosine kinase inhibitors&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01FA01&lt;a name=\&quot;ATC-L01FA01\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;rituximab&lt;/td&gt;&lt;td&gt;L01FA01 - rituximab&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01FA02&lt;a name=\&quot;ATC-L01FA02\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ofatumumab&lt;/td&gt;&lt;td&gt;L01FA02 - ofatumumab&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01FA03&lt;a name=\&quot;ATC-L01FA03\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;obinutuzumab&lt;/td&gt;&lt;td&gt;L01FA03 - obinutuzumab&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01FC01&lt;a name=\&quot;ATC-L01FC01\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;daratumumab&lt;/td&gt;&lt;td&gt;L01FC01 - daratumumab&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01FC02&lt;a name=\&quot;ATC-L01FC02\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;isatuximab&lt;/td&gt;&lt;td&gt;L01FC02 - isatuximab&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01FD01&lt;a name=\&quot;ATC-L01FD01\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;trastuzumab&lt;/td&gt;&lt;td&gt;L01FD01 - Trastuzumab&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01FF&lt;a name=\&quot;ATC-L01FF\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PD-1/PDL-1 (Programmed cell death protein 1/death ligand 1) inhibitors&lt;/td&gt;&lt;td&gt;L01FF - PD-1/PDL-1 (Programmed cell death protein 1/death ligand 1) inhibitors&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0L01FF01&lt;a name=\&quot;ATC-L01FF01\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;nivolumab&lt;/td&gt;&lt;td&gt;L01FF01 - Nivolumab&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0L01FF02&lt;a name=\&quot;ATC-L01FF02\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;pembrolizumab&lt;/td&gt;&lt;td&gt;L01FF02 - Pembrolizumab&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01FG01&lt;a name=\&quot;ATC-L01FG01\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;bevacizumab&lt;/td&gt;&lt;td&gt;L01FG01 - Bevacizumab&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01FX05&lt;a name=\&quot;ATC-L01FX05\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;brentuximab vedotin&lt;/td&gt;&lt;td&gt;L01FX05 - brentuximab vedotin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01FX08&lt;a name=\&quot;ATC-L01FX08\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;elotuzumab&lt;/td&gt;&lt;td&gt;L01FX08 - elotuzumab&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01FX14&lt;a name=\&quot;ATC-L01FX14\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;polatuzumab vedotin&lt;/td&gt;&lt;td&gt;L01FX14 - polatuzumab vedotin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01XA01&lt;a name=\&quot;ATC-L01XA01\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;cisplatin&lt;/td&gt;&lt;td&gt;L01XA01 - Cisplatin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01XA02&lt;a name=\&quot;ATC-L01XA02\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;carboplatin&lt;/td&gt;&lt;td&gt;L01XA02 - Carboplatin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01XA03&lt;a name=\&quot;ATC-L01XA03\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;oxaliplatin&lt;/td&gt;&lt;td&gt;L01XA03 - Oxaliplatin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01XG01&lt;a name=\&quot;ATC-L01XG01\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;bortezomib&lt;/td&gt;&lt;td&gt;L01XG01 - bortezomib&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01XG02&lt;a name=\&quot;ATC-L01XG02\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;carfilzomib&lt;/td&gt;&lt;td&gt;L01XG02 - carfilzomib&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01XG03&lt;a name=\&quot;ATC-L01XG03\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ixazomib&lt;/td&gt;&lt;td&gt;L01XG03 - ixazomib&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01XH&lt;a name=\&quot;ATC-L01XH\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Histone deacetylase (HDAC) inhibitors&lt;/td&gt;&lt;td&gt;L01XH - Histone deacetylase (HDAC) inhibitors&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0L01XH01&lt;a name=\&quot;ATC-L01XH01\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;vorinostat&lt;/td&gt;&lt;td&gt;L01XH01 - vorinostat&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0L01XH03&lt;a name=\&quot;ATC-L01XH03\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;panobinostat&lt;/td&gt;&lt;td&gt;L01XH03 - panobinostat&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01XX05&lt;a name=\&quot;ATC-L01XX05\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;hydroxycarbamide&lt;/td&gt;&lt;td&gt;L01XX05 - hydroxycarbamide&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01XX35&lt;a name=\&quot;ATC-L01XX35\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;anagrelide&lt;/td&gt;&lt;td&gt;L01XX35 - anagrelide&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L01XX52&lt;a name=\&quot;ATC-L01XX52\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;venetoclax&lt;/td&gt;&lt;td&gt;L01XX52 - venetoclax&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L03AB&lt;a name=\&quot;ATC-L03AB\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Interferons&lt;/td&gt;&lt;td&gt;L03AB - Interferons&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L04A&lt;a name=\&quot;ATC-L04A\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;IMMUNOSUPPRESSANTS&lt;/td&gt;&lt;td&gt;L04A - IMMUNOSUPPRESSANTS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0L04AA&lt;a name=\&quot;ATC-L04AA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Selective immunosuppressants&lt;/td&gt;&lt;td&gt;L04AA - Selective immunosuppressants&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0\u00a0\u00a0L04AA34&lt;a name=\&quot;ATC-L04AA34\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;alemtuzumab&lt;/td&gt;&lt;td&gt;L04AA34 - alemtuzumab&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0\u00a0\u00a0L04AA40&lt;a name=\&quot;ATC-L04AA40\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;cladribine&lt;/td&gt;&lt;td&gt;L04AA40 - cladribine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L04AD01&lt;a name=\&quot;ATC-L04AD01\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ciclosporin&lt;/td&gt;&lt;td&gt;L04AD01 - ciclosporin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L04AX02&lt;a name=\&quot;ATC-L04AX02\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;thalidomide&lt;/td&gt;&lt;td&gt;L04AX02 - thalidomide&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L04AX04&lt;a name=\&quot;ATC-L04AX04\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;lenalidomide&lt;/td&gt;&lt;td&gt;L04AX04 - lenalidomide&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L04AX06&lt;a name=\&quot;ATC-L04AX06\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;pomalidomide&lt;/td&gt;&lt;td&gt;L04AX06 - pomalidomide&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M05BA03&lt;a name=\&quot;ATC-M05BA03\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;pamidronic acid&lt;/td&gt;&lt;td&gt;M05BA03 - pamidronic acid&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M05BA08&lt;a name=\&quot;ATC-M05BA08\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;zoledronic acid&lt;/td&gt;&lt;td&gt;M05BA08 - zoledronic acid&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M05BX04&lt;a name=\&quot;ATC-M05BX04\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;denosumab&lt;/td&gt;&lt;td&gt;M05BX04 - denosumab&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;S01LA08&lt;a name=\&quot;ATC-S01LA08\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;bevacizumab&lt;/td&gt;&lt;td&gt;S01LA08 - Bevacizumab&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;V10X&lt;a name=\&quot;ATC-V10X\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OTHER THERAPEUTIC RADIOPHARMACEUTICALS&lt;/td&gt;&lt;td&gt;V10X - OTHER THERAPEUTIC RADIOPHARMACEUTICALS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0V10XA53&lt;a name=\&quot;ATC-V10XA53\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;tositumomab/iodine (131I) tositumomab&lt;/td&gt;&lt;td&gt;V10XA53 - tositumomab/iodine (131I) tositumomab&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0V10XX02&lt;a name=\&quot;ATC-V10XX02\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ibritumomab tiuxetan (90Y)&lt;/td&gt;&lt;td&gt;V10XX02 - ibritumomab tiuxetan (90Y)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "https://kip.rkkp.dk/fhir/CodeSystem/ATC",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.identifier">identifier</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "urn:oid:2.16.840.1.113883.6.73"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "2.14.1",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "ATC",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "WHO ATC",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2022-06-14T00:00:00+02:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://trifork.com"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "rbk@trifork.com"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "WHO ATC code system. Link: http://www.whocc.no/atc",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a>" : true,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "fragment",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "B01A",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ANTITHROMBOTIC AGENTS",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "B01A - ANTITHROMBOTIC AGENTS",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "B01AA03",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "warfarin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "B01AA03 - warfarin"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "B01AB01",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "heparin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "B01AB01 - heparin"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "B01AB04",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "dalteparin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "B01AB04 - dalteparin"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "B01AB05",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "enoxaparin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "B01AB05 - enoxaparin"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "B01AB10",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "tinzaparin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "B01AB10 - tinzaparin"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "B01AC06",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "acetylsalicylic acid",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "B01AC06 - acetylsalicylic acid"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "B01AE07",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "dabigatran etexilate",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "B01AE07 - dabigatran etexilate"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "B01AF01",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "rivaroxaban",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "B01AF01 - rivaroxaban"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "B01AF02",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "apixaban",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "B01AF02 - apixaban"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "B01AX05",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "fondaparinux",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "B01AX05 - fondaparinux"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "B02AA02",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "tranexamic acid",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "B02AA02 - Tranexamic acid"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "B03XA01",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "erythropoietin",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "B03XA01 - erythropoietin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "C10AA",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "HMG CoA reductase inhibitors",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "C10AA - HMG CoA reductase inhibitors"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "H02",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CORTICOSTEROIDS FOR SYSTEMIC USE",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "H02 - CORTICOSTEROIDS FOR SYSTEMIC USE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J01CF01",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "dicloxacillin",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "J01CF01 - dicloxacillin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J01CF02",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "cloxacillin",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "J01CF02 - cloxacillin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J01CF03",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "meticillin",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "J01CF03 - meticillin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J01CF05",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "flucloxacillin",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "J01CF05 - flucloxacillin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J01DB01",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "cefalexin",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "J01DB01 - cefalexin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J01DB03",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "cefalotin",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "J01DB03 - cefalotin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J01DC02",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "cefuroxime",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "J01DC02 - cefuroxime"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J01FA01",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "erythromycin",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "J01FA01 - erythromycin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J01GB03",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "gentamicin",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "J01GB03 - gentamicin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J01XA01",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "vancomycin",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "J01XA01 - vancomycin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01AA01",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "cyclophosphamide",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01AA01 - cyclophosphamide"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01AA02",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "chlorambucil",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01AA02 - chlorambucil"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01AA03",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "melphalan",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01AA03 - melphalan"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01AA06",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ifosfamide",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01AA06 - ifosfamide"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01AA09",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "bendamustine",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01AA09 - bendamustine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01AB01",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "busulfan",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01AB01 - busulfan"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01AC01",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "thiotepa",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01AC01 thiotepa"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01AD01",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "carmustine",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01AD01 - carmustine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01AX03",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "temozolomide",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01AX03 - temozolomide"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01AX04",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "dacarbazine",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01AX04 - dacarbazine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01BB05",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "fludarabine",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01BB05 - fludarabine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01BC02",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "fluorouracil",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01BC02 - Fluorouracil (5-FU)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01BC05",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "gemcitabine",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01BC02 - Gemcitabine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01BC06",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "capecitabine",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01BC06 - Capecitabine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01BC07",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "azacitidine",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01BC07 - azacitidine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01CA02",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "vincristine",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01CA02 - vincristine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01CA04",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "vinorelbine",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01CA04 - Vinorelbine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01CB01",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "etoposide",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01CB01 - etoposide"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01CD01",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "paclitaxel",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01CD01 - Paclitaxel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01CD02",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "docetaxel",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01CD02 - Docetaxel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01CE02",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "irinotecan",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01CE02 - Irinotecan"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01DB01",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "doxorubicin",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01DB01 - Doxorubicin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01DB03",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "epirubicin",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01DB03 - Epirubicin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01DB07",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "mitoxantrone",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01DB07 - mitoxantrone"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01DB11",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "pixantrone",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01DB11 - pixantrone"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01DC01",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "bleomycin",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01DC01 - bleomycin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01EA",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "BCR-ABL tyrosine kinase inhibitors",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01EA01",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "imatinib",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01EA01 - imatinib"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01EA02",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "dasatinib",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01EA02 - dasatinib"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01EA03",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "nilotinib",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01EA03 - nilotinib"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01EA04",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "bosutinib",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01EA04 - bosutinib"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01EA05",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ponatinib",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01EA05 - ponatinib"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01EA06",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Asciminib",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01EA06 - Asciminib"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01EB",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Epidermal growth factor receptor (EGFR) tyrosine kinase inhibitors",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01EB - Epidermal growth factor receptor (EGFR) tyrosine kinase inhibitors"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01EH",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Human epidermal growth factor receptor 2 (HER2) tyrosine kinase inhibitors",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01EH - Human epidermal growth factor receptor 2 (HER2) tyrosine kinase inhibitors"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01EJ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Janus-associated kinase (JAK) inhibitors",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Janus associerede kinase (JAK) hæmmere",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01EJ01",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ruxolitinib",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01EJ01 - ruxolitinib"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01EK",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Vascular endothelial growth factor receptor (VEGFR) tyrosine kinase inhibitors",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01EK - Vascular endothelial growth factor receptor (VEGFR) tyrosine kinase inhibitors"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01EL01",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ibrutinib",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01EL01 - ibrutinib"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01EL02",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "acalabrutinib",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01EL02 - acalabrutinib"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01EM01",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "idelalisib",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01EM01 - idelalisib"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01EN",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Fibroblast growth factor receptor (FGFR) tyrosine kinase inhibitors",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01EN - Fibroblast growth factor receptor (FGFR) tyrosine kinase inhibitors"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01FA01",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "rituximab",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01FA01 - rituximab"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01FA02",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ofatumumab",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01FA02 - ofatumumab"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01FA03",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "obinutuzumab",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01FA03 - obinutuzumab"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01FC01",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "daratumumab",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01FC01 - daratumumab"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01FC02",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "isatuximab",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01FC02 - isatuximab"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01FD01",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "trastuzumab",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01FD01 - Trastuzumab"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01FF",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "PD-1/PDL-1 (Programmed cell death protein 1/death ligand 1) inhibitors",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01FF - PD-1/PDL-1 (Programmed cell death protein 1/death ligand 1) inhibitors",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01FF01",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "nivolumab",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01FF01 - Nivolumab"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01FF02",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "pembrolizumab",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01FF02 - Pembrolizumab"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01FG01",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "bevacizumab",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01FG01 - Bevacizumab"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01FX05",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "brentuximab vedotin",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01FX05 - brentuximab vedotin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01FX08",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "elotuzumab",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01FX08 - elotuzumab"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01FX14",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "polatuzumab vedotin",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01FX14 - polatuzumab vedotin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01XA01",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "cisplatin",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01XA01 - Cisplatin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01XA02",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "carboplatin",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01XA02 - Carboplatin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01XA03",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "oxaliplatin",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01XA03 - Oxaliplatin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01XG01",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "bortezomib",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01XG01 - bortezomib"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01XG02",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "carfilzomib",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01XG02 - carfilzomib"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01XG03",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ixazomib",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01XG03 - ixazomib"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01XH",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Histone deacetylase (HDAC) inhibitors",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01XH - Histone deacetylase (HDAC) inhibitors",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01XH01",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "vorinostat",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01XH01 - vorinostat"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01XH03",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "panobinostat",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01XH03 - panobinostat"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01XX05",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "hydroxycarbamide",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01XX05 - hydroxycarbamide"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01XX35",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "anagrelide",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01XX35 - anagrelide"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L01XX52",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "venetoclax",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L01XX52 - venetoclax"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L03AB",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Interferons",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L03AB - Interferons"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L04A",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "IMMUNOSUPPRESSANTS",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L04A - IMMUNOSUPPRESSANTS",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L04AA",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Selective immunosuppressants",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L04AA - Selective immunosuppressants",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L04AA34",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "alemtuzumab",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L04AA34 - alemtuzumab"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L04AA40",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "cladribine",
+              "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L04AA40 - cladribine"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L04AD01",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ciclosporin",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L04AD01 - ciclosporin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L04AX02",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "thalidomide",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L04AX02 - thalidomide"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L04AX04",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "lenalidomide",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L04AX04 - lenalidomide"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L04AX06",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "pomalidomide",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "L04AX06 - pomalidomide"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M05BA03",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "pamidronic acid",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "M05BA03 - pamidronic acid"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M05BA08",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "zoledronic acid",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "M05BA08 - zoledronic acid"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M05BX04",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "denosumab",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "M05BX04 - denosumab"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "S01LA08",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "bevacizumab",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "S01LA08 - Bevacizumab"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "V10X",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "OTHER THERAPEUTIC RADIOPHARMACEUTICALS",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "V10X - OTHER THERAPEUTIC RADIOPHARMACEUTICALS",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "V10XA53",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "tositumomab/iodine (131I) tositumomab",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "V10XA53 - tositumomab/iodine (131I) tositumomab"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "V10XX02",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ibritumomab tiuxetan (90Y)",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "V10XX02 - ibritumomab tiuxetan (90Y)"
+        }
+      ]
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://trifork.com">Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S</a>.  Package dk.kip.rkkp.fhir.ig.core#2.14.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 20, 2025 08:55+0000">2025-11-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
