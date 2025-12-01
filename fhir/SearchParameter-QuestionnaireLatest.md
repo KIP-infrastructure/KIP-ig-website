@@ -1,4 +1,4 @@
-# QuestionnaireLatest - KIP Infrastructure v2.14.1
+# QuestionnaireLatest - KIP Infrastructure v2.14.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/QuestionnaireLatest | *Version*:2.14.1 |
-| Active as of 2025-11-20 | *Computable Name*:QuestionnaireLatest |
+| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/QuestionnaireLatest | *Version*:2.14.2 |
+| Active as of 2025-12-01 | *Computable Name*:QuestionnaireLatest |
 
  
 Search Questionnaire for 'latest' extension 
@@ -38,10 +38,10 @@ Search Questionnaire for 'latest' extension
   "resourceType" : "SearchParameter",
   "id" : "QuestionnaireLatest",
   "url" : "https://kip.rkkp.dk/fhir/SearchParameter/QuestionnaireLatest",
-  "version" : "2.14.1",
+  "version" : "2.14.2",
   "name" : "QuestionnaireLatest",
   "status" : "active",
-  "date" : "2025-11-20T08:59:28+00:00",
+  "date" : "2025-12-01T11:32:09+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [
     {

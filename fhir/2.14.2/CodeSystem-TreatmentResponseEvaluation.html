@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Treatment response evaluation - KIP Infrastructure v2.14.2</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3.981"}
+    h3,h4,h5,h6{--heading-prefix:"3.981"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">KIP Infrastructure</span>
+            <br/>
+            <span style="display:inline-block;">2.14.2 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Search Parameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Extension Definitions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Code Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Treatment response evaluation</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KIP Infrastructure (v2.14.2: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-TreatmentResponseEvaluation.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-TreatmentResponseEvaluation.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-TreatmentResponseEvaluation.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: Treatment response evaluation
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://kip.rkkp.dk/fhir/CodeSystem/TreatmentResponseEvaluation<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/TreatmentResponseEvaluation"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">2.14.2<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/TreatmentResponseEvaluation|2.14.2"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2025-07-10
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">TreatmentResponseEvaluation</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Treatment response evaluation</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-BehandlingsResponsEvalueringLYFO.html">BehandlingsResponsEvalueringLYFO</a></li>
+ <li><a href="ValueSet-BehandlingsresponsCML.html">BehandlingsresponsCML</a></li>
+ <li><a href="ValueSet-TreatmentResponseALD.html">TreatmentResponseALD</a></li>
+ <li><a href="ValueSet-TreatmentResponseDAMYDA.html">TreatmentResponseDAMYDA</a></li>
+ <li><a href="ValueSet-TreatmentResponseEvaluationCLL.html">TreatmentResponseEvaluationCLL</a></li>
+ <li><a href="ValueSet-TreatmentResponseEvaluationLYFO.html">TreatmentResponseEvaluationLYFO</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"></p><a name="TreatmentResponseEvaluation"> </a><a name="hcTreatmentResponseEvaluation"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/TreatmentResponseEvaluation</code> defines the following codes in an undefined hierarchy:</p>
+<table class="codes" data-fhir="generated"><tr><td><b>Lvl</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">complete_remission<a name="TreatmentResponseEvaluation-complete_remission"> </a></td>
+<td>Complete remission (CR)</td>
+<td>Complete remission (CR)</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;complete_remission_incomplete_recovery<a name="TreatmentResponseEvaluation-complete_remission_incomplete_recovery"> </a></td>
+<td>Complete remission with incomplete recovery of bone marrow (CRi)</td>
+<td>Complete remission with incomplete recovery of bone marrow (CRi)</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;uncertain_complete_remission<a name="TreatmentResponseEvaluation-uncertain_complete_remission"> </a></td>
+<td>Uncertain complete remission (CRu)</td>
+<td>Uncertain complete remission (CRu)</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;complete_remission_metabolic_structurally<a name="TreatmentResponseEvaluation-complete_remission_metabolic_structurally"> </a></td>
+<td>Metabolic and strukturally CR</td>
+<td>Metabolic and strukturally CR / CR (metabolisk og skrukturelt CR, bedømt med PET/CT)</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;complete_remission_metabolic<a name="TreatmentResponseEvaluation-complete_remission_metabolic"> </a></td>
+<td>Metabolic CR</td>
+<td>Metabolic CR / CR (metabolisk CR, men med strukturel restsygdom, bedømt med PET/CT)</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;partial_remission<a name="TreatmentResponseEvaluation-partial_remission"> </a></td>
+<td>Partial remission (PR)</td>
+<td>Partial remission (PR)</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;metabolic_cr<a name="TreatmentResponseEvaluation-metabolic_cr"> </a></td>
+<td>CMR (metabolisk CR, deauville 1-3)</td>
+<td>CMR (metabolisk CR, deauville 1-3)</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;metabolic_pmr_4<a name="TreatmentResponseEvaluation-metabolic_pmr_4"> </a></td>
+<td>PMR (metabolisk PR, deauville 4)</td>
+<td>PMR (metabolisk PR, deauville 4)</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;metabolic_pmr_5<a name="TreatmentResponseEvaluation-metabolic_pmr_5"> </a></td>
+<td>PMR (metabolisk PR, deauville 5)</td>
+<td>PMR (metabolisk PR, deauville 5)</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">complete_response<a name="TreatmentResponseEvaluation-complete_response"> </a></td>
+<td>Complete Response</td>
+<td>Complete Response</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;stringent_complete_response<a name="TreatmentResponseEvaluation-stringent_complete_response"> </a></td>
+<td>Stringent Complete Response</td>
+<td>Stringent Complete Response</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;presumed_complete_response<a name="TreatmentResponseEvaluation-presumed_complete_response"> </a></td>
+<td>Presumed Complete Response</td>
+<td>Presumed Complete Response</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;complete_hematological_response<a name="TreatmentResponseEvaluation-complete_hematological_response"> </a></td>
+<td>Complete Hematological response (CHR)</td>
+<td>Complete Hematological response (CHR)</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;complete_cytogenetic_response<a name="TreatmentResponseEvaluation-complete_cytogenetic_response"> </a></td>
+<td>Complete cytogenetic response (CCyR)</td>
+<td>Complete cytogenetic response (CCyR)</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">partial_response<a name="TreatmentResponseEvaluation-partial_response"> </a></td>
+<td>Partial response (PR)</td>
+<td>Partial response (PR)</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;very_good_partial_response<a name="TreatmentResponseEvaluation-very_good_partial_response"> </a></td>
+<td>Very Good Partial Response</td>
+<td>Very Good Partial Response</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;partial_response_lymphocytosis<a name="TreatmentResponseEvaluation-partial_response_lymphocytosis"> </a></td>
+<td>Partial response (PR) lymphocytosis</td>
+<td>Partial response (PR) lymphocytosis</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;partial_cytogenetic_response<a name="TreatmentResponseEvaluation-partial_cytogenetic_response"> </a></td>
+<td>Partial cytogenetic response (PCyR)</td>
+<td>Partial cytogenetic response (PCyR)</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">major_molecular_response<a name="TreatmentResponseEvaluation-major_molecular_response"> </a></td>
+<td>Major molecular response (MMR)</td>
+<td>Major molecular response (MMR)</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">minimal_response<a name="TreatmentResponseEvaluation-minimal_response"> </a></td>
+<td>Minimal response</td>
+<td>Minimal response</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">uncertain_response<a name="TreatmentResponseEvaluation-uncertain_response"> </a></td>
+<td>Uncertain response</td>
+<td>Uncertain response</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">stable_disease<a name="TreatmentResponseEvaluation-stable_disease"> </a></td>
+<td>Stable disease (SD/NC)</td>
+<td>Stable disease (SD/NC)</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">progressive_disease<a name="TreatmentResponseEvaluation-progressive_disease"> </a></td>
+<td>Progressive disease (PD)</td>
+<td>Progressive disease (PD)</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://trifork.com">Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S</a>.  Package dk.kip.rkkp.fhir.ig.core#2.14.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 1, 2025 11:28+0000">2025-12-01</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

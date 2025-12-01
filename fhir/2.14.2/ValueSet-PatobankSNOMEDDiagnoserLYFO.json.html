@@ -1,0 +1,487 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>PatobankSNOMED - Diagnoser (LYFO) - JSON Representation - KIP Infrastructure v2.14.2</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3.498"}
+    h3,h4,h5,h6{--heading-prefix:"3.498"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">KIP Infrastructure</span>
+            <br/>
+            <span style="display:inline-block;">2.14.2 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Search Parameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Extension Definitions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Code Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>PatobankSNOMED - Diagnoser (LYFO)</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">This page is part of the KIP Infrastructure (v2.14.2: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ValueSet-PatobankSNOMEDDiagnoserLYFO.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-PatobankSNOMEDDiagnoserLYFO.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-PatobankSNOMEDDiagnoserLYFO.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: PatobankSNOMED - Diagnoser (LYFO) - JSON Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2022-07-18
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ValueSet-PatobankSNOMEDDiagnoserLYFO.json" no-download="true">Raw json</a> | <a href="ValueSet-PatobankSNOMEDDiagnoserLYFO.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
+  "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">id</a>" : "PatobankSNOMEDDiagnoserLYFO",
+  "<a href="http://hl7.org/fhir/R4/domainresource.html#ValueSet.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet PatobankSNOMEDDiagnoserLYFO&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;PatobankSNOMEDDiagnoserLYFO\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcPatobankSNOMEDDiagnoserLYFO\&quot;&gt; &lt;/a&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;CodeSystem-PatobankSNOMED.html\&quot;&gt;&lt;code&gt;https://kip.rkkp.dk/fhir/CodeSystem/PatobankSNOMED&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated, which means it is fixed to the version provided in this specification\&quot;&gt; version &amp;#x1F4E6;2.14.2&lt;/span&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M97283\&quot;&gt;M97283&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9728 - Precursor B lymphoblastic lymphoma&lt;/td&gt;&lt;td&gt;Precursor B-lymfoblastisk lymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M96703\&quot;&gt;M96703&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9670 - Small lymphocytic lymphoma&lt;/td&gt;&lt;td&gt;Småcellet lymfocytært lymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M96713\&quot;&gt;M96713&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9671 - Lymphoplasmacytic lymphoma&lt;/td&gt;&lt;td&gt;Lymfoplasmacytært lymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M96893\&quot;&gt;M96893&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9689 - Splenic marginal zone lymphoma&lt;/td&gt;&lt;td&gt;Splenisk marginalzone B-cellelymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M96993\&quot;&gt;M96993&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9699 - Marginal zone B-cell lymphoma&lt;/td&gt;&lt;td&gt;marginalzone B-cellelymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M96733\&quot;&gt;M96733&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9673 - Mantle cell lymphoma&lt;/td&gt;&lt;td&gt;Mantlecellelymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M96793\&quot;&gt;M96793&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9679 - Mediastinal (thymic) large B-cell lymphoma&lt;/td&gt;&lt;td&gt;mediastinalt storcellet B-cellelymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M96803\&quot;&gt;M96803&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9680 - Diffuse large B-cell lymphoma&lt;/td&gt;&lt;td&gt;Diffust storcellet B-cellelymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M968H3\&quot;&gt;M968H3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;968H - High Grade B-Lymfom&lt;/td&gt;&lt;td&gt;high-grade B-lymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M968I3\&quot;&gt;M968I3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;968I - High Grade B-Lymfom med MYC og BCL2og/eller BCL-6&lt;/td&gt;&lt;td&gt;high-grade B-lymfom med MYC og BCL2 og/eller BCL6 rearr.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M96783\&quot;&gt;M96783&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9678 - Primary effusion lymphoma&lt;/td&gt;&lt;td&gt;primært effusionslymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M96873\&quot;&gt;M96873&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9687 - Burkitt lymphoma&lt;/td&gt;&lt;td&gt;Burkitt lymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M97353\&quot;&gt;M97353&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9735 - Plasmablastisk lymfom&lt;/td&gt;&lt;td&gt;plasmablastisk lymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M97373\&quot;&gt;M97373&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9737 - Storcellet ALK-positivt B-celle lymfom&lt;/td&gt;&lt;td&gt;storcellet B-cellelymfom, ALK-positivt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M99711\&quot;&gt;M99711&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9970 - Post-transplant lymphoproliferative disorder, polymorphic&lt;/td&gt;&lt;td&gt;post-transplantation lymfoproliferativ sygdom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M97293\&quot;&gt;M97293&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9729 - Precursor T-lymphoblastic lymphoma&lt;/td&gt;&lt;td&gt;precursor T-lymfoblastisk lymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M98273\&quot;&gt;M98273&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9827 - Adult T-cell lymphoma&lt;/td&gt;&lt;td&gt;adult T-cellelymfom/leukæmi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M97193\&quot;&gt;M97193&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9719 - Extranodal NK/Tcell lymphoma, nasal type&lt;/td&gt;&lt;td&gt;ekstranodalt NK/T-cellelymfom, nasal type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M97173\&quot;&gt;M97173&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9717 - Enteropathy-type T-cell lymphoma&lt;/td&gt;&lt;td&gt;enteropati-associeret T-cellelymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M97163\&quot;&gt;M97163&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9716 - Hepatosplenic T-cell lymphoma&lt;/td&gt;&lt;td&gt;hepatosplenisk T-cellelymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M97023\&quot;&gt;M97023&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9702 - Peripheral T-cell lymphoma, unspecified&lt;/td&gt;&lt;td&gt;perifert T-cellelymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M97053\&quot;&gt;M97053&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9705 - Angioimmunoblastic T-cell lymphoma&lt;/td&gt;&lt;td&gt;angioimmunoblastisk T-cellelymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M97143\&quot;&gt;M97143&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9714 - Anaplastic large cell lymphoma&lt;/td&gt;&lt;td&gt;anaplastisk storcellet lymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M97083\&quot;&gt;M97083&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9708 - Subcutaneous panniculitis-like T-cell lymphoma&lt;/td&gt;&lt;td&gt;subkutant panniculit-lignende T-cellelymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M97003\&quot;&gt;M97003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9700 - Mycosis fungoides&lt;/td&gt;&lt;td&gt;mycosis fungoides&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M97013\&quot;&gt;M97013&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9701 - Sezary syndrome&lt;/td&gt;&lt;td&gt;Sezarys syndrom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M97183\&quot;&gt;M97183&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9718 - Primært kutant anaplastisk storcellet lymfom&lt;/td&gt;&lt;td&gt;primært kutant anaplastisk storcellet lymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M97263\&quot;&gt;M97263&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9726 - Primært kutant gamma-delta T-celle lymfom&lt;/td&gt;&lt;td&gt;primært kutant gamma-delta T-cellelymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M96593\&quot;&gt;M96593&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9659 - Nodular lymphocyte predominant Hodgkin lymphoma&lt;/td&gt;&lt;td&gt;Hodgkin lymfom, nodulær, lymfocyt dominans&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M96503\&quot;&gt;M96503&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9650 - Classical Hodgkin lymphoma&lt;/td&gt;&lt;td&gt;Hodgkin lymfom, klassisk type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M96633\&quot;&gt;M96633&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9663 - Nodular sclerosis classical Hodgkin lymphoma&lt;/td&gt;&lt;td&gt;Hodgkin lymfom, klassisk type, nodulær sklerose&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M96513\&quot;&gt;M96513&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9651 - Lymphocyte-rich classical Hodgkin lymphoma&lt;/td&gt;&lt;td&gt;Hodgkin lymfom, klassisk type, lymfocytrig&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M96523\&quot;&gt;M96523&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9652 - Mixed cellularity classical Hodgkin lymphoma&lt;/td&gt;&lt;td&gt;Hodgkin lymfom, klassisk type, mixed cellularitet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M96533\&quot;&gt;M96533&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9653 - Lymphocyte-depleted classical Hodgkin lymphoma&lt;/td&gt;&lt;td&gt;Hodgkin lymfom, klassisk type, lymfocytdepleteret&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-PatobankSNOMED.html#PatobankSNOMED-M96103\&quot;&gt;M96103&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9610 - Modne B-cell neoplasier &lt;/td&gt;&lt;td&gt;B-cellelymfom&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html\&quot;&gt;&lt;code&gt;https://kip.rkkp.dk/fhir/CodeSystem/DiseasesUnspecified&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated, which means it is fixed to the version provided in this specification\&quot;&gt; version &amp;#x1F4E6;2.14.2&lt;/span&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-M96903\&quot;&gt;M96903&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9690 - Follicular lymphoma&lt;/td&gt;&lt;td&gt;Follikulært lymfom ukendt grad&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-M96913\&quot;&gt;M96913&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9691 - Follicular lymphoma grade I&lt;/td&gt;&lt;td&gt;Follikulært lymfom grad 1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-M96953\&quot;&gt;M96953&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9695 - Follicular lymphoma grade II&lt;/td&gt;&lt;td&gt;Follikulært lymfom grad 2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-M96983\&quot;&gt;M96983&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9698 - Follicular lymphoma grade III&lt;/td&gt;&lt;td&gt;Follikulært lymfom grad 3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-Prim.230rt_kutant_CD4_positivt_sm.229_medium_T_celle_lymfom\&quot;&gt;Primært_kutant_CD4_positivt_små_medium_T_celle_lymfom&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9706 - Primært kutant CD4-positivt små/medium T-celle lymfom &lt;/td&gt;&lt;td&gt;Primært kutant CD4-positivt små/medium T-celle lymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-Malignt_lymfom\&quot;&gt;Malignt_lymfom&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9590 - Malignant lymphoma, NOS &lt;/td&gt;&lt;td&gt;Malignt lymfom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-non-Hodgkin_malignt_lymfom\&quot;&gt;non-Hodgkin_malignt_lymfom&lt;/a&gt;&lt;/td&gt;&lt;td&gt;9591 - Malignant non-Hodgkin lymphoma, NOS &lt;/td&gt;&lt;td&gt;non-Hodgkin malignt lymfom&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "https://kip.rkkp.dk/fhir/ValueSet/PatobankSNOMEDDiagnoserLYFO",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "2.14.2",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "PatobankSNOMEDDiagnoserLYFO",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "PatobankSNOMED - Diagnoser (LYFO)",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a>" : true,
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2022-07-18T00:00:00+02:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://trifork.com"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "rbk@trifork.com"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>" : "PatobankSNOMED - Diagnoser (LYFO)",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
+    "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "https://kip.rkkp.dk/fhir/CodeSystem/PatobankSNOMED",
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M97283",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9728 - Precursor B lymphoblastic lymphoma"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M96703",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9670 - Small lymphocytic lymphoma"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M96713",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9671 - Lymphoplasmacytic lymphoma"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M96893",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9689 - Splenic marginal zone lymphoma"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M96993",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9699 - Marginal zone B-cell lymphoma"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M96733",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9673 - Mantle cell lymphoma"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M96793",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9679 - Mediastinal (thymic) large B-cell lymphoma"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M96803",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9680 - Diffuse large B-cell lymphoma"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M968H3",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "968H - High Grade B-Lymfom"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M968I3",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "968I - High Grade B-Lymfom med MYC og BCL2og/eller BCL-6"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M96783",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9678 - Primary effusion lymphoma"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M96873",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9687 - Burkitt lymphoma"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M97353",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9735 - Plasmablastisk lymfom"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M97373",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9737 - Storcellet ALK-positivt B-celle lymfom"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M99711",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9970 - Post-transplant lymphoproliferative disorder, polymorphic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M97293",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9729 - Precursor T-lymphoblastic lymphoma"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M98273",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9827 - Adult T-cell lymphoma"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M97193",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9719 - Extranodal NK/Tcell lymphoma, nasal type"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M97173",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9717 - Enteropathy-type T-cell lymphoma"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M97163",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9716 - Hepatosplenic T-cell lymphoma"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M97023",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9702 - Peripheral T-cell lymphoma, unspecified"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M97053",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9705 - Angioimmunoblastic T-cell lymphoma"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M97143",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9714 - Anaplastic large cell lymphoma"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M97083",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9708 - Subcutaneous panniculitis-like T-cell lymphoma"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M97003",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9700 - Mycosis fungoides"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M97013",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9701 - Sezary syndrome"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M97183",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9718 - Primært kutant anaplastisk storcellet lymfom"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M97263",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9726 - Primært kutant gamma-delta T-celle lymfom"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M96593",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9659 - Nodular lymphocyte predominant Hodgkin lymphoma"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M96503",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9650 - Classical Hodgkin lymphoma"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M96633",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9663 - Nodular sclerosis classical Hodgkin lymphoma"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M96513",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9651 - Lymphocyte-rich classical Hodgkin lymphoma"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M96523",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9652 - Mixed cellularity classical Hodgkin lymphoma"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M96533",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9653 - Lymphocyte-depleted classical Hodgkin lymphoma"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M96103",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9610 - Modne B-cell neoplasier "
+          }
+        ]
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "https://kip.rkkp.dk/fhir/CodeSystem/DiseasesUnspecified",
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M96903",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9690 - Follicular lymphoma"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M96913",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9691 - Follicular lymphoma grade I"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M96953",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9695 - Follicular lymphoma grade II"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "M96983",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9698 - Follicular lymphoma grade III"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "Primært_kutant_CD4_positivt_små_medium_T_celle_lymfom",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9706 - Primært kutant CD4-positivt små/medium T-celle lymfom "
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "Malignt_lymfom",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9590 - Malignant lymphoma, NOS "
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "non-Hodgkin_malignt_lymfom",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "9591 - Malignant non-Hodgkin lymphoma, NOS "
+          }
+        ]
+      }
+    ]
+  }
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://trifork.com">Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S</a>.  Package dk.kip.rkkp.fhir.ig.core#2.14.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 1, 2025 11:28+0000">2025-12-01</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

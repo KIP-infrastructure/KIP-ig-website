@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Chemotherapy regimen - KIP Infrastructure v2.14.2</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3.771"}
+    h3,h4,h5,h6{--heading-prefix:"3.771"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">KIP Infrastructure</span>
+            <br/>
+            <span style="display:inline-block;">2.14.2 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Search Parameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Extension Definitions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Code Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Chemotherapy regimen</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KIP Infrastructure (v2.14.2: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-ChemotherapyRegimen.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-ChemotherapyRegimen.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-ChemotherapyRegimen.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: Chemotherapy regimen
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://kip.rkkp.dk/fhir/CodeSystem/ChemotherapyRegimen<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/ChemotherapyRegimen"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">2.14.2<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/ChemotherapyRegimen|2.14.2"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2022-07-15
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">ChemotherapyRegimen</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Chemotherapy regimen</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-Kemoterapiregime.html">Kemoterapiregime</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"></p><a name="ChemotherapyRegimen"> </a><a name="hcChemotherapyRegimen"> </a><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/ChemotherapyRegimen</code> defines the following codes:</p>
+<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>
+<tr><td style="white-space:nowrap">abvd<a name="ChemotherapyRegimen-abvd"> </a></td>
+<td>ABVD</td>
+<td>ABVD / SKS: BWHA167</td></tr>
+<tr><td style="white-space:nowrap">copp<a name="ChemotherapyRegimen-copp"> </a></td>
+<td>COPP</td>
+<td>COPP / SKS: BWHA156</td></tr>
+<tr><td style="white-space:nowrap">abvd/copp<a name="ChemotherapyRegimen-abvd.47copp"> </a></td>
+<td>ABVD/COPP</td>
+<td>ABVD/COPP</td></tr>
+<tr><td style="white-space:nowrap">acvbp<a name="ChemotherapyRegimen-acvbp"> </a></td>
+<td>ACVBP</td>
+<td>ACVBP</td></tr>
+<tr><td style="white-space:nowrap">all_regime<a name="ChemotherapyRegimen-all_regime"> </a></td>
+<td>ALL regime</td>
+<td>ALL regime</td></tr>
+<tr><td style="white-space:nowrap">adriamycin<a name="ChemotherapyRegimen-adriamycin"> </a></td>
+<td>Adriamycin</td>
+<td>Adriamycin</td></tr>
+<tr><td style="white-space:nowrap">bac<a name="ChemotherapyRegimen-bac"> </a></td>
+<td>BAC</td>
+<td>BAC (Bendamustin Ara-c)</td></tr>
+<tr><td style="white-space:nowrap">bfm<a name="ChemotherapyRegimen-bfm"> </a></td>
+<td>BFM</td>
+<td>BFM</td></tr>
+<tr><td style="white-space:nowrap">cap<a name="ChemotherapyRegimen-cap"> </a></td>
+<td>CAP</td>
+<td>CAP</td></tr>
+<tr><td style="white-space:nowrap">ccvp<a name="ChemotherapyRegimen-ccvp"> </a></td>
+<td>CCVP</td>
+<td>CCVP</td></tr>
+<tr><td style="white-space:nowrap">chic<a name="ChemotherapyRegimen-chic"> </a></td>
+<td>CHIC</td>
+<td>CHIC</td></tr>
+<tr><td style="white-space:nowrap">chlorambucil_vinblastin_procarb<a name="ChemotherapyRegimen-chlorambucil_vinblastin_procarb"> </a></td>
+<td>Chlorambucil og Vinblastin og procarb</td>
+<td>Chlorambucil og Vinblastin og procarb</td></tr>
+<tr><td style="white-space:nowrap">cnsbonn<a name="ChemotherapyRegimen-cnsbonn"> </a></td>
+<td>CNSBONN</td>
+<td>CNSBONN</td></tr>
+<tr><td style="white-space:nowrap">cns_matrix<a name="ChemotherapyRegimen-cns_matrix"> </a></td>
+<td>CNS matrix</td>
+<td>CNS matrix</td></tr>
+<tr><td style="white-space:nowrap">cns_mvbp<a name="ChemotherapyRegimen-cns_mvbp"> </a></td>
+<td>CNS MVBP</td>
+<td>CNS MVBP</td></tr>
+<tr><td style="white-space:nowrap">cns_mvp<a name="ChemotherapyRegimen-cns_mvp"> </a></td>
+<td>CNS MVP</td>
+<td>CNS MVP</td></tr>
+<tr><td style="white-space:nowrap">codox_m/ivac<a name="ChemotherapyRegimen-codox_m.47ivac"> </a></td>
+<td>CODOX-M/IVAC</td>
+<td>CODOX-M/IVAC</td></tr>
+<tr><td style="white-space:nowrap">comp<a name="ChemotherapyRegimen-comp"> </a></td>
+<td>COMP</td>
+<td>COMP</td></tr>
+<tr><td style="white-space:nowrap">cope<a name="ChemotherapyRegimen-cope"> </a></td>
+<td>COPE</td>
+<td>COPE</td></tr>
+<tr><td style="white-space:nowrap">cvbp<a name="ChemotherapyRegimen-cvbp"> </a></td>
+<td>CVBP</td>
+<td>CVBP</td></tr>
+<tr><td style="white-space:nowrap">cvp<a name="ChemotherapyRegimen-cvp"> </a></td>
+<td>CVP</td>
+<td>CVP</td></tr>
+<tr><td style="white-space:nowrap">dexabeam<a name="ChemotherapyRegimen-dexabeam"> </a></td>
+<td>DexaBEAM</td>
+<td>DexaBEAM</td></tr>
+<tr><td style="white-space:nowrap">dhap<a name="ChemotherapyRegimen-dhap"> </a></td>
+<td>DHAP</td>
+<td>DHAP</td></tr>
+<tr><td style="white-space:nowrap">ecapp<a name="ChemotherapyRegimen-ecapp"> </a></td>
+<td>ECAPP</td>
+<td>ECAPP</td></tr>
+<tr><td style="white-space:nowrap">epoch<a name="ChemotherapyRegimen-epoch"> </a></td>
+<td>EPOCH</td>
+<td>EPOCH</td></tr>
+<tr><td style="white-space:nowrap">eshap<a name="ChemotherapyRegimen-eshap"> </a></td>
+<td>ESHAP</td>
+<td>ESHAP</td></tr>
+<tr><td style="white-space:nowrap">fcd<a name="ChemotherapyRegimen-fcd"> </a></td>
+<td>FCD</td>
+<td>FCD</td></tr>
+<tr><td style="white-space:nowrap">fnd<a name="ChemotherapyRegimen-fnd"> </a></td>
+<td>FND</td>
+<td>FND</td></tr>
+<tr><td style="white-space:nowrap">gdp<a name="ChemotherapyRegimen-gdp"> </a></td>
+<td>GDP</td>
+<td>GDP</td></tr>
+<tr><td style="white-space:nowrap">gem_p_28<a name="ChemotherapyRegimen-gem_p_28"> </a></td>
+<td>GEM-P-28</td>
+<td>GEM-P-28</td></tr>
+<tr><td style="white-space:nowrap">gemox<a name="ChemotherapyRegimen-gemox"> </a></td>
+<td>GemOx</td>
+<td>GemOx</td></tr>
+<tr><td style="white-space:nowrap">hd_ara_c<a name="ChemotherapyRegimen-hd_ara_c"> </a></td>
+<td>HD-Ara-C</td>
+<td>HD-Ara-C</td></tr>
+<tr><td style="white-space:nowrap">hd_ctx<a name="ChemotherapyRegimen-hd_ctx"> </a></td>
+<td>HD-CTX</td>
+<td>HD-CTX</td></tr>
+<tr><td style="white-space:nowrap">hd_ctx_vp16<a name="ChemotherapyRegimen-hd_ctx_vp16"> </a></td>
+<td>HD-CTX+VP16</td>
+<td>HD-CTX+VP16</td></tr>
+<tr><td style="white-space:nowrap">hd_vp16<a name="ChemotherapyRegimen-hd_vp16"> </a></td>
+<td>HD-VP16</td>
+<td>HD-VP16</td></tr>
+<tr><td style="white-space:nowrap">hd_mtx<a name="ChemotherapyRegimen-hd_mtx"> </a></td>
+<td>HD-MTX</td>
+<td>HD-MTX</td></tr>
+<tr><td style="white-space:nowrap">hyper_cvad<a name="ChemotherapyRegimen-hyper_cvad"> </a></td>
+<td>Hyper-CVAD/IVAC</td>
+<td>Hyper-CVAD/IVAC</td></tr>
+<tr><td style="white-space:nowrap">ice<a name="ChemotherapyRegimen-ice"> </a></td>
+<td>ICE</td>
+<td>ICE</td></tr>
+<tr><td style="white-space:nowrap">igev<a name="ChemotherapyRegimen-igev"> </a></td>
+<td>IGEV</td>
+<td>IGEV</td></tr>
+<tr><td style="white-space:nowrap">ike<a name="ChemotherapyRegimen-ike"> </a></td>
+<td>IKE</td>
+<td>IKE</td></tr>
+<tr><td style="white-space:nowrap">ive<a name="ChemotherapyRegimen-ive"> </a></td>
+<td>IVE</td>
+<td>IVE</td></tr>
+<tr><td style="white-space:nowrap">it_behandling<a name="ChemotherapyRegimen-it_behandling"> </a></td>
+<td>IT-behandling</td>
+<td>IT-behandling</td></tr>
+<tr><td style="white-space:nowrap">macop_b<a name="ChemotherapyRegimen-macop_b"> </a></td>
+<td>MACOP-B</td>
+<td>MACOP-b</td></tr>
+<tr><td style="white-space:nowrap">mantle_2<a name="ChemotherapyRegimen-mantle_2"> </a></td>
+<td>Mantle 2</td>
+<td>Mantle 2</td></tr>
+<tr><td style="white-space:nowrap">maxi_mime<a name="ChemotherapyRegimen-maxi_mime"> </a></td>
+<td>Maxi-MIME</td>
+<td>Maxi-MIME</td></tr>
+<tr><td style="white-space:nowrap">mini_beam<a name="ChemotherapyRegimen-mini_beam"> </a></td>
+<td>Mini-BEAM</td>
+<td>Mini-BEAM</td></tr>
+<tr><td style="white-space:nowrap">mini_chop<a name="ChemotherapyRegimen-mini_chop"> </a></td>
+<td>Mini-CHOP</td>
+<td>Mini-CHOP</td></tr>
+<tr><td style="white-space:nowrap">nopho<a name="ChemotherapyRegimen-nopho"> </a></td>
+<td>NOPHO</td>
+<td>NOPHO</td></tr>
+<tr><td style="white-space:nowrap">pix_etoposid_benda<a name="ChemotherapyRegimen-pix_etoposid_benda"> </a></td>
+<td>Pix-etoposid-Benda</td>
+<td>Pix-etoposid-Benda</td></tr>
+<tr><td style="white-space:nowrap">peroral_cytostatika<a name="ChemotherapyRegimen-peroral_cytostatika"> </a></td>
+<td>Peroral cytostatika</td>
+<td>Peroral cytostatika</td></tr>
+<tr><td style="white-space:nowrap">smile<a name="ChemotherapyRegimen-smile"> </a></td>
+<td>Smile</td>
+<td>Smile</td></tr>
+<tr><td style="white-space:nowrap">triangle_mantle<a name="ChemotherapyRegimen-triangle_mantle"> </a></td>
+<td>Triangle (Mantle)</td>
+<td>Triangle (Mantle)</td></tr>
+<tr><td style="white-space:nowrap">velbe<a name="ChemotherapyRegimen-velbe"> </a></td>
+<td>Velbe</td>
+<td>Velbe</td></tr>
+<tr><td style="white-space:nowrap">velcade<a name="ChemotherapyRegimen-velcade"> </a></td>
+<td>Velcade</td>
+<td>Velcade</td></tr>
+<tr><td style="white-space:nowrap">copdac<a name="ChemotherapyRegimen-copdac"> </a></td>
+<td>COPDAC</td>
+<td>COPDAC</td></tr>
+<tr><td style="white-space:nowrap">ebvp<a name="ChemotherapyRegimen-ebvp"> </a></td>
+<td>EBVP</td>
+<td>EBVP</td></tr>
+<tr><td style="white-space:nowrap">ipe<a name="ChemotherapyRegimen-ipe"> </a></td>
+<td>IPE</td>
+<td>IPE</td></tr>
+<tr><td style="white-space:nowrap">oepa<a name="ChemotherapyRegimen-oepa"> </a></td>
+<td>OEPA</td>
+<td>OEPA</td></tr>
+<tr><td style="white-space:nowrap">oppa<a name="ChemotherapyRegimen-oppa"> </a></td>
+<td>OPPA</td>
+<td>OPPA</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://trifork.com">Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S</a>.  Package dk.kip.rkkp.fhir.ig.core#2.14.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 1, 2025 11:28+0000">2025-12-01</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
