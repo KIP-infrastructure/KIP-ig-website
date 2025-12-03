@@ -1,0 +1,450 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Alloplasty operation types - JSON Representation - KIP Infrastructure v2.15.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3.742"}
+    h3,h4,h5,h6{--heading-prefix:"3.742"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">KIP Infrastructure</span>
+            <br/>
+            <span style="display:inline-block;">2.15.0 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Search Parameters</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Extension Definitions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Code Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Alloplasty operation types</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">This page is part of the KIP Infrastructure (v2.15.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-AlloplastyTypes.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-AlloplastyTypes.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-AlloplastyTypes.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Alloplasty operation types - JSON Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2025-03-04
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-AlloplastyTypes.json" no-download="true">Raw json</a> | <a href="CodeSystem-AlloplastyTypes.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.id">id</a>" : "AlloplastyTypes",
+  "<a href="http://hl7.org/fhir/R4/domainresource.html#CodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem AlloplastyTypes&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;AlloplastyTypes\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcAlloplastyTypes\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Properties&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;This code system defines the following properties for its concepts&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;URI&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;comment&lt;/td&gt;&lt;td&gt;comment&lt;/td&gt;&lt;td&gt;http://hl7.org/fhir/concept-properties#comment&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td&gt;A string that provides additional detail pertinent to the use or understanding of the concept&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;effectiveDate&lt;/td&gt;&lt;td&gt;effectiveDate&lt;/td&gt;&lt;td&gt;http://hl7.org/fhir/concept-properties#effectiveDate&lt;/td&gt;&lt;td&gt;dateTime&lt;/td&gt;&lt;td&gt;The date at which the concept status was last changed&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;status&lt;/td&gt;&lt;td&gt;status&lt;/td&gt;&lt;td&gt;http://hl7.org/fhir/concept-properties#status&lt;/td&gt;&lt;td&gt;code&lt;/td&gt;&lt;td&gt;A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Inactive&lt;/td&gt;&lt;td&gt;inactive&lt;/td&gt;&lt;td&gt;http://hl7.org/fhir/concept-properties#inactive&lt;/td&gt;&lt;td&gt;boolean&lt;/td&gt;&lt;td&gt;True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Concepts&lt;/b&gt;&lt;/p&gt;&lt;p&gt;This case-insensitive code system &lt;code&gt;https://kip.rkkp.dk/fhir/CodeSystem/AlloplastyTypes&lt;/code&gt; defines the following codes in an undefined hierarchy:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Lvl&lt;/b&gt;&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;comment&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;effectiveDate&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;status&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Inactive&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;hemialloplasty&lt;a name=\&quot;AlloplastyTypes-hemialloplasty\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hemialloplasty&lt;/td&gt;&lt;td&gt;Hemialloplasty&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0cemented&lt;a name=\&quot;AlloplastyTypes-cemented\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cemented component&lt;/td&gt;&lt;td&gt;Cementet component&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;\u00a0\u00a0uncemented&lt;a name=\&quot;AlloplastyTypes-uncemented\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uncemented component&lt;/td&gt;&lt;td&gt;Uncemented component&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;acetabulum_fracture&lt;a name=\&quot;AlloplastyTypes-acetabulum_fracture\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acetabulum fracture&lt;/td&gt;&lt;td&gt;Acetabulum fracture&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;osteosynthesis&lt;a name=\&quot;AlloplastyTypes-osteosynthesis\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Osteosynthesis&lt;/td&gt;&lt;td&gt;Osteosynthesis&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;periacetabular_osteotomy&lt;a name=\&quot;AlloplastyTypes-periacetabular_osteotomy\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Periacetabulær osteotomi&lt;/td&gt;&lt;td&gt;Periacetabulær osteotomi&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;proximal_femur_osteotomy&lt;a name=\&quot;AlloplastyTypes-proximal_femur_osteotomy\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Proximal femur osteotomy&lt;/td&gt;&lt;td&gt;Proximal femur osteotomy&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;total_alloplasty&lt;a name=\&quot;AlloplastyTypes-total_alloplasty\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Total alloplasty&lt;/td&gt;&lt;td&gt;Total alloplasty&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;medial_unilateral_knee&lt;a name=\&quot;AlloplastyTypes-medial_unilateral_knee\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Medial UKA&lt;/td&gt;&lt;td&gt;Medial UKA&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;lateral_unitaleral_knee&lt;a name=\&quot;AlloplastyTypes-lateral_unitaleral_knee\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lateral UKA&lt;/td&gt;&lt;td&gt;Lateral UKA&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;patellofemoral_unitaleral_knee&lt;a name=\&quot;AlloplastyTypes-patellofemoral_unitaleral_knee\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patellofemoral UKA&lt;/td&gt;&lt;td&gt;Patellofemoral UKA&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;hinge_knee&lt;a name=\&quot;AlloplastyTypes-hinge_knee\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Roterende hængselalloplastik&lt;/td&gt;&lt;td&gt;Roterende hængselalloplastik&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;hinge_knee_resection&lt;a name=\&quot;AlloplastyTypes-hinge_knee_resection\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Roterende hængselsalloplastik m. kondylresektion&lt;/td&gt;&lt;td&gt;Roterende hængselsalloplastik m. kondylresektion&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;partial_resurfacing&lt;a name=\&quot;AlloplastyTypes-partial_resurfacing\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Partiel resurfacing&lt;/td&gt;&lt;td&gt;Partiel resurfacing&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;cement_spacer_articulated&lt;a name=\&quot;AlloplastyTypes-cement_spacer_articulated\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cementspacer, artikuleret&lt;/td&gt;&lt;td&gt;Cementspacer, artikuleret&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;cement_spacer_fixated&lt;a name=\&quot;AlloplastyTypes-cement_spacer_fixated\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cementspacer, fikseret&lt;/td&gt;&lt;td&gt;Cementspacer, fikseret&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;spacer_insertion&lt;a name=\&quot;AlloplastyTypes-spacer_insertion\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fjernelse af komponent og isættelse af spacer&lt;/td&gt;&lt;td&gt;Fjernelse af komponent og isættelse af spacer&lt;/td&gt;&lt;td&gt;Added&lt;/td&gt;&lt;td&gt;2025-04-03T00:00:00+01:00&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;td&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;artrodesis&lt;a name=\&quot;AlloplastyTypes-artrodesis\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Artrodese&lt;/td&gt;&lt;td&gt;Artrodese&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;femoral_amputation&lt;a name=\&quot;AlloplastyTypes-femoral_amputation\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Femuramputation&lt;/td&gt;&lt;td&gt;Femuramputation&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "https://kip.rkkp.dk/fhir/CodeSystem/AlloplastyTypes",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "2.15.0",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "AlloplastyTypes",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "Alloplasty operation types",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2025-03-04T00:00:00+02:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://trifork.com"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "rbk@trifork.com"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "Alloplasty operation types",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a>" : false,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a>" : 19,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property">property</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">code</a>" : "comment",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">uri</a>" : "http://hl7.org/fhir/concept-properties#comment",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.description">description</a>" : "A string that provides additional detail pertinent to the use or understanding of the concept",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">type</a>" : "string"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">code</a>" : "effectiveDate",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">uri</a>" : "http://hl7.org/fhir/concept-properties#effectiveDate",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.description">description</a>" : "The date at which the concept status was last changed",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">type</a>" : "dateTime"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">code</a>" : "status",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">uri</a>" : "http://hl7.org/fhir/concept-properties#status",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.description">description</a>" : "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">type</a>" : "code"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">code</a>" : "inactive",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">uri</a>" : "http://hl7.org/fhir/concept-properties#inactive",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.description">description</a>" : "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">type</a>" : "boolean"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "hemialloplasty",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hemialloplasty",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Hemialloplasty",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "cemented",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cemented component",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Cementet component"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "uncemented",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Uncemented component",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Uncemented component"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "acetabulum_fracture",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Acetabulum fracture",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Acetabulum fracture"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "osteosynthesis",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Osteosynthesis",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Osteosynthesis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "periacetabular_osteotomy",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Periacetabulær osteotomi",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Periacetabulær osteotomi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "proximal_femur_osteotomy",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Proximal femur osteotomy",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Proximal femur osteotomy"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "total_alloplasty",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Total alloplasty",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Total alloplasty"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "medial_unilateral_knee",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Medial UKA",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Medial UKA"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "lateral_unitaleral_knee",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Lateral UKA",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Lateral UKA"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "patellofemoral_unitaleral_knee",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Patellofemoral UKA",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Patellofemoral UKA"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "hinge_knee",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Roterende hængselalloplastik",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Roterende hængselalloplastik"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "hinge_knee_resection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Roterende hængselsalloplastik m. kondylresektion",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Roterende hængselsalloplastik m. kondylresektion"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "partial_resurfacing",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Partiel resurfacing",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Partiel resurfacing"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "cement_spacer_articulated",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cementspacer, artikuleret",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Cementspacer, artikuleret"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "cement_spacer_fixated",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cementspacer, fikseret",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Cementspacer, fikseret"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "spacer_insertion",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Fjernelse af komponent og isættelse af spacer",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Fjernelse af komponent og isættelse af spacer",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "Added"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "effectiveDate",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDateTime</a>" : "2025-04-03T00:00:00+01:00"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "status",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCode</a>" : "active"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "inactive",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueBoolean</a>" : false
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "artrodesis",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Artrodese",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Artrodese"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "femoral_amputation",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Femuramputation",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Femuramputation"
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://trifork.com">Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S</a>.  Package dk.kip.rkkp.fhir.ig.core#2.15.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 3, 2025 09:09+0000">2025-12-03</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

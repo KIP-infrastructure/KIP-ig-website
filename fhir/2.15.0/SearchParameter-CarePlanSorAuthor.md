@@ -1,0 +1,69 @@
+# CarePlanSorAuthor - KIP Infrastructure v2.15.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **CarePlanSorAuthor**
+
+## SearchParameter: CarePlanSorAuthor 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/CarePlanSorAuthor | *Version*:2.15.0 |
+| Active as of 2025-12-03 | *Computable Name*:CarePlan SorAuthor |
+
+ 
+Search by SOR-code as author on a CarePlan 
+
+## CarePlan SorAuthor
+
+Parameter `SorAuthor`:`token`
+
+Search by SOR-code as author on a CarePlan
+
+| | |
+| :--- | :--- |
+| Resource | [CarePlan](http://hl7.org/fhir/R4/careplan.html) |
+| Expression | `CarePlan.extension.where(url='SorAuthor')` |
+| Multiples | * multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true
+* multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true
+ |
+| Comparators | Allowed: eq |
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "SearchParameter",
+  "id" : "CarePlanSorAuthor",
+  "url" : "https://kip.rkkp.dk/fhir/SearchParameter/CarePlanSorAuthor",
+  "version" : "2.15.0",
+  "name" : "CarePlan SorAuthor",
+  "status" : "active",
+  "date" : "2025-12-03T09:09:34+00:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [
+    {
+      "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "https://trifork.com"
+        },
+        {
+          "system" : "email",
+          "value" : "rbk@trifork.com"
+        }
+      ]
+    }
+  ],
+  "description" : "Search by SOR-code as author on a CarePlan",
+  "code" : "SorAuthor",
+  "base" : ["CarePlan"],
+  "type" : "token",
+  "expression" : "CarePlan.extension.where(url='SorAuthor')",
+  "comparator" : ["eq"]
+}
+
+```

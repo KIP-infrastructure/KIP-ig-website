@@ -1,0 +1,69 @@
+# CprPatient - KIP Infrastructure v2.15.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **CprPatient**
+
+## SearchParameter: CprPatient 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/CprPatient | *Version*:2.15.0 |
+| Active as of 2025-12-03 | *Computable Name*:CprPatient |
+
+ 
+Search by CPR in Patient 
+
+## CprPatient
+
+Parameter `cpr`:`token`
+
+Search by CPR in Patient
+
+| | |
+| :--- | :--- |
+| Resource | [Patient](http://hl7.org/fhir/R4/patient.html) |
+| Expression | `Patient.identifier.where(system='urn:oid:1.2.208.176.1.2')` |
+| Multiples | * multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true
+* multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true
+ |
+| Comparators | Allowed: eq |
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "SearchParameter",
+  "id" : "CprPatient",
+  "url" : "https://kip.rkkp.dk/fhir/SearchParameter/CprPatient",
+  "version" : "2.15.0",
+  "name" : "CprPatient",
+  "status" : "active",
+  "date" : "2025-12-03T09:09:34+00:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [
+    {
+      "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "https://trifork.com"
+        },
+        {
+          "system" : "email",
+          "value" : "rbk@trifork.com"
+        }
+      ]
+    }
+  ],
+  "description" : "Search by CPR in Patient",
+  "code" : "cpr",
+  "base" : ["Patient"],
+  "type" : "token",
+  "expression" : "Patient.identifier.where(system='urn:oid:1.2.208.176.1.2')",
+  "comparator" : ["eq"]
+}
+
+```
