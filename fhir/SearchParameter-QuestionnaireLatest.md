@@ -1,4 +1,4 @@
-# QuestionnaireLatest - KIP Infrastructure v2.16.0
+# QuestionnaireLatest - KIP Infrastructure v2.17.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,26 +8,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/QuestionnaireLatest | *Version*:2.16.0 |
-| Active as of 2025-12-04 | *Computable Name*:QuestionnaireLatest |
+| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/QuestionnaireLatest | *Version*:2.17.1 |
+| Active as of 2025-12-09 | *Computable Name*:QuestionnaireLatest |
 
  
 Search Questionnaire for 'latest' extension 
-
-## QuestionnaireLatest
-
-Parameter `latest`:`token`
-
-Search Questionnaire for 'latest' extension
-
-| | |
-| :--- | :--- |
-| Resource | [Questionnaire](http://hl7.org/fhir/R4/questionnaire.html) |
-| Expression | `Questionnaire.extension.where(url='latest').value` |
-| Multiples | * multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true
-* multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true
- |
-| Comparators | Allowed: eq |
 
 
 
@@ -38,10 +23,10 @@ Search Questionnaire for 'latest' extension
   "resourceType" : "SearchParameter",
   "id" : "QuestionnaireLatest",
   "url" : "https://kip.rkkp.dk/fhir/SearchParameter/QuestionnaireLatest",
-  "version" : "2.16.0",
+  "version" : "2.17.1",
   "name" : "QuestionnaireLatest",
   "status" : "active",
-  "date" : "2025-12-04T11:26:41+00:00",
+  "date" : "2025-12-09T08:52:30+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [
     {
