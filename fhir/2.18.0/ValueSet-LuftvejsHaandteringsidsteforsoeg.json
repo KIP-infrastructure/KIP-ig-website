@@ -1,0 +1,68 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "LuftvejsHaandteringsidsteforsoeg",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet LuftvejsHaandteringsidsteforsoeg</b></p><a name=\"LuftvejsHaandteringsidsteforsoeg\"> </a><a name=\"hcLuftvejsHaandteringsidsteforsoeg\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-Respiration.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Respiration</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;2.18.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Respiration.html#Respiration-larynx_all\">larynx_all</a></td><td>LMA (alle typer)</td><td>Larynxmaske (alle typer)</td></tr><tr><td><a href=\"CodeSystem-Respiration.html#Respiration-intub_dir_laryngo\">intub_dir_laryngo</a></td><td>Direkte laryngoskopi</td><td>Intubation ved direkte laryngoskopi</td></tr><tr><td><a href=\"CodeSystem-Respiration.html#Respiration-intub_video_laryngo\">intub_video_laryngo</a></td><td>Videolaryngoskopi</td><td>Intubation med videolaryngoskopi</td></tr><tr><td><a href=\"CodeSystem-Respiration.html#Respiration-intub_flex_skop\">intub_flex_skop</a></td><td>Fleksibelt skopi</td><td>Intubation med fleksibelt skopi</td></tr><tr><td><a href=\"CodeSystem-Respiration.html#Respiration-patient\">patient</a></td><td>Vækning af patient</td><td>Vækning af patient</td></tr><tr><td><a href=\"CodeSystem-Respiration.html#Respiration-tracheostomi\">tracheostomi</a></td><td>Tracheostomi i LA</td><td>Tracheostomi</td></tr><tr><td><a href=\"CodeSystem-Respiration.html#Respiration-tracheostomi_emg\">tracheostomi_emg</a></td><td>Nødtracheostomi</td><td>Nødtracheostomi</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;2.18.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Anden teknik</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/LuftvejsHaandteringsidsteforsoeg",
+  "version" : "2.18.0",
+  "name" : "LuftvejsHaandteringsidsteforsoeg",
+  "title" : "Luftvejshåndtering sidste forsøg",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-10-04T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Luftvejshåndtering sidste forsøg",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/Respiration",
+      "concept" : [{
+        "code" : "larynx_all",
+        "display" : "LMA (alle typer)"
+      },
+      {
+        "code" : "intub_dir_laryngo",
+        "display" : "Direkte laryngoskopi"
+      },
+      {
+        "code" : "intub_video_laryngo",
+        "display" : "Videolaryngoskopi"
+      },
+      {
+        "code" : "intub_flex_skop",
+        "display" : "Fleksibelt skopi"
+      },
+      {
+        "code" : "patient",
+        "display" : "Vækning af patient"
+      },
+      {
+        "code" : "tracheostomi",
+        "display" : "Tracheostomi i LA"
+      },
+      {
+        "code" : "tracheostomi_emg",
+        "display" : "Nødtracheostomi"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "other",
+        "display" : "Anden teknik"
+      }]
+    }]
+  }
+}

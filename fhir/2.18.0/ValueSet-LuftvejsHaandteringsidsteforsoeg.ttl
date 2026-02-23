@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/LuftvejsHaandteringsidsteforsoeg> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "LuftvejsHaandteringsidsteforsoeg"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet LuftvejsHaandteringsidsteforsoeg</b></p><a name=\"LuftvejsHaandteringsidsteforsoeg\"> </a><a name=\"hcLuftvejsHaandteringsidsteforsoeg\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-Respiration.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Respiration</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.18.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Respiration.html#Respiration-larynx_all\">larynx_all</a></td><td>LMA (alle typer)</td><td>Larynxmaske (alle typer)</td></tr><tr><td><a href=\"CodeSystem-Respiration.html#Respiration-intub_dir_laryngo\">intub_dir_laryngo</a></td><td>Direkte laryngoskopi</td><td>Intubation ved direkte laryngoskopi</td></tr><tr><td><a href=\"CodeSystem-Respiration.html#Respiration-intub_video_laryngo\">intub_video_laryngo</a></td><td>Videolaryngoskopi</td><td>Intubation med videolaryngoskopi</td></tr><tr><td><a href=\"CodeSystem-Respiration.html#Respiration-intub_flex_skop\">intub_flex_skop</a></td><td>Fleksibelt skopi</td><td>Intubation med fleksibelt skopi</td></tr><tr><td><a href=\"CodeSystem-Respiration.html#Respiration-patient\">patient</a></td><td>Vækning af patient</td><td>Vækning af patient</td></tr><tr><td><a href=\"CodeSystem-Respiration.html#Respiration-tracheostomi\">tracheostomi</a></td><td>Tracheostomi i LA</td><td>Tracheostomi</td></tr><tr><td><a href=\"CodeSystem-Respiration.html#Respiration-tracheostomi_emg\">tracheostomi_emg</a></td><td>Nødtracheostomi</td><td>Nødtracheostomi</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.18.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Anden teknik</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://kip.rkkp.dk/fhir/ValueSet/LuftvejsHaandteringsidsteforsoeg"^^xsd:anyURI ;
+     fhir:l <https://kip.rkkp.dk/fhir/ValueSet/LuftvejsHaandteringsidsteforsoeg>
+  ] ; # 
+  fhir:version [ fhir:v "2.18.0"] ; # 
+  fhir:name [ fhir:v "LuftvejsHaandteringsidsteforsoeg"] ; # 
+  fhir:title [ fhir:v "Luftvejshåndtering sidste forsøg"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2022-10-04T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Luftvejshåndtering sidste forsøg"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/Respiration"^^xsd:anyURI ;
+         fhir:l <https://kip.rkkp.dk/fhir/CodeSystem/Respiration>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "larynx_all" ] ;
+         fhir:display [ fhir:v "LMA (alle typer)" ]
+       ] [
+         fhir:code [ fhir:v "intub_dir_laryngo" ] ;
+         fhir:display [ fhir:v "Direkte laryngoskopi" ]
+       ] [
+         fhir:code [ fhir:v "intub_video_laryngo" ] ;
+         fhir:display [ fhir:v "Videolaryngoskopi" ]
+       ] [
+         fhir:code [ fhir:v "intub_flex_skop" ] ;
+         fhir:display [ fhir:v "Fleksibelt skopi" ]
+       ] [
+         fhir:code [ fhir:v "patient" ] ;
+         fhir:display [ fhir:v "Vækning af patient" ]
+       ] [
+         fhir:code [ fhir:v "tracheostomi" ] ;
+         fhir:display [ fhir:v "Tracheostomi i LA" ]
+       ] [
+         fhir:code [ fhir:v "tracheostomi_emg" ] ;
+         fhir:display [ fhir:v "Nødtracheostomi" ]
+       ] )
+     ] [
+       fhir:system [
+         fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues"^^xsd:anyURI ;
+         fhir:l <https://kip.rkkp.dk/fhir/CodeSystem/GenericValues>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "other" ] ;
+         fhir:display [ fhir:v "Anden teknik" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

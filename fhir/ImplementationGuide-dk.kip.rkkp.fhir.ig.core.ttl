@@ -17,11 +17,11 @@
      fhir:v "https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core"^^xsd:anyURI ;
      fhir:l <https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core>
   ] ; # 
-  fhir:version [ fhir:v "2.17.1"] ; # 
+  fhir:version [ fhir:v "2.18.0"] ; # 
   fhir:name [ fhir:v "KIPInfrastructure"] ; # 
   fhir:title [ fhir:v "KIP Infrastructure"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-12-09T08:52:30+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-23T12:18:41+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
@@ -54,7 +54,7 @@
        fhir:l <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "7.0.0" ]
+     fhir:version [ fhir:v "7.0.1" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -738,7 +738,7 @@
        ] ;
        fhir:value [
          a fhir:Code ;
-         fhir:v "hl7.fhir.uv.tools.r4#0.8.0"
+         fhir:v "hl7.fhir.uv.tools.r4#0.9.0"
        ]
      ] [
        fhir:extension ( [
@@ -2556,6 +2556,27 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://kip.rkkp.dk/fhir/ValueSet/ComplicationAN2026> ;
+         fhir:reference [ fhir:v "ValueSet/ComplicationAN2026" ]
+       ] ;
+       fhir:name [ fhir:v "Anæstesi komplikationer 2026" ] ;
+       fhir:description [ fhir:v "Anæstesi komplikationer" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://kip.rkkp.dk/fhir/ValueSet/AnasthesiaTypeGen> ;
          fhir:reference [ fhir:v "ValueSet/AnasthesiaTypeGen" ]
        ] ;
@@ -2644,6 +2665,48 @@
          fhir:reference [ fhir:v "CodeSystem/AnasthesiaService" ]
        ] ;
        fhir:name [ fhir:v "Anæstesiydelse" ] ;
+       fhir:description [ fhir:v "Anæstesiydelse" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://kip.rkkp.dk/fhir/ValueSet/AnasthesiaService2026> ;
+         fhir:reference [ fhir:v "ValueSet/AnasthesiaService2026" ]
+       ] ;
+       fhir:name [ fhir:v "Anæstesiydelse 2026" ] ;
+       fhir:description [ fhir:v "Anæstesiydelse" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://kip.rkkp.dk/fhir/ValueSet/AnasthesiaServiceDAD> ;
+         fhir:reference [ fhir:v "ValueSet/AnasthesiaServiceDAD" ]
+       ] ;
+       fhir:name [ fhir:v "Anæstesiydelse DAD" ] ;
        fhir:description [ fhir:v "Anæstesiydelse" ] ;
        fhir:example [
          a fhir:Boolean ;
@@ -11586,6 +11649,27 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://kip.rkkp.dk/fhir/ValueSet/LaryngoskopiDegree2026> ;
+         fhir:reference [ fhir:v "ValueSet/LaryngoskopiDegree2026" ]
+       ] ;
+       fhir:name [ fhir:v "Laryngoskopigrad 2026" ] ;
+       fhir:description [ fhir:v "Bedst opnåede laryngoskopigrad ved direkte laryngoskopi efter Cormack & Lehane" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://kip.rkkp.dk/fhir/ValueSet/LedbaandsrekonstruktionDKRR> ;
          fhir:reference [ fhir:v "ValueSet/LedbaandsrekonstruktionDKRR" ]
        ] ;
@@ -11985,8 +12069,71 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://kip.rkkp.dk/fhir/ValueSet/LuftvejsHaandtering2026> ;
+         fhir:reference [ fhir:v "ValueSet/LuftvejsHaandtering2026" ]
+       ] ;
+       fhir:name [ fhir:v "Luftvejshåndtering 2026" ] ;
+       fhir:description [ fhir:v "Anvendte indgreb til luftvejsunderstøttelse" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://kip.rkkp.dk/fhir/ValueSet/LuftvejsHaandteringsidsteforsoeg> ;
+         fhir:reference [ fhir:v "ValueSet/LuftvejsHaandteringsidsteforsoeg" ]
+       ] ;
+       fhir:name [ fhir:v "Luftvejshåndtering sidste forsøg" ] ;
+       fhir:description [ fhir:v "Luftvejshåndtering sidste forsøg" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://kip.rkkp.dk/fhir/ValueSet/Luftvejsplan> ;
          fhir:reference [ fhir:v "ValueSet/Luftvejsplan" ]
+       ] ;
+       fhir:name [ fhir:v "Luftvejsplan" ] ;
+       fhir:description [ fhir:v "Mulige planlagte indgreb til luftvejsunderstøttelse" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://kip.rkkp.dk/fhir/ValueSet/Luftvejsplan2026> ;
+         fhir:reference [ fhir:v "ValueSet/Luftvejsplan2026" ]
        ] ;
        fhir:name [ fhir:v "Luftvejsplan" ] ;
        fhir:description [ fhir:v "Mulige planlagte indgreb til luftvejsunderstøttelse" ] ;
@@ -15454,6 +15601,27 @@
          fhir:reference [ fhir:v "ValueSet/ComplicationPO" ]
        ] ;
        fhir:name [ fhir:v "Postoperativ komplikatione" ] ;
+       fhir:description [ fhir:v "Postoperative komplikationer" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://kip.rkkp.dk/fhir/ValueSet/ComplicationPO2026> ;
+         fhir:reference [ fhir:v "ValueSet/ComplicationPO2026" ]
+       ] ;
+       fhir:name [ fhir:v "Postoperativ komplikationer 2026" ] ;
        fhir:description [ fhir:v "Postoperative komplikationer" ] ;
        fhir:example [
          a fhir:Boolean ;

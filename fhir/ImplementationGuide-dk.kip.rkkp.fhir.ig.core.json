@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide dk.kip.rkkp.fhir.ig.core</b></p><a name=\"dk.kip.rkkp.fhir.ig.core\"> </a><a name=\"hcdk.kip.rkkp.fhir.ig.core\"> </a><h2>KIPInfrastructure</h2><p>The official URL for this implementation guide is: </p><pre>https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core</pre><div><p>The Danish Sundhedsvæsenets Kvalitetsinstitut defines a set of FHIR CodeSystems and ValueSets used for data collection.</p>\n</div></div>"
   },
   "url" : "https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core",
-  "version" : "2.17.1",
+  "version" : "2.18.0",
   "name" : "KIPInfrastructure",
   "title" : "KIP Infrastructure",
   "status" : "active",
-  "date" : "2025-12-09T08:52:30+00:00",
+  "date" : "2026-02-23T12:18:41+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
@@ -35,7 +35,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.0.0"
+    "version" : "7.0.1"
   },
   {
     "id" : "hl7ext",
@@ -353,7 +353,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.8.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.9.0"
     },
     {
       "extension" : [{
@@ -1318,6 +1318,18 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/ComplicationAN2026"
+      },
+      "name" : "Anæstesi komplikationer 2026",
+      "description" : "Anæstesi komplikationer",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/AnasthesiaTypeGen"
       },
       "name" : "Anæstesi Type Generel",
@@ -1369,6 +1381,30 @@
         "reference" : "CodeSystem/AnasthesiaService"
       },
       "name" : "Anæstesiydelse",
+      "description" : "Anæstesiydelse",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/AnasthesiaService2026"
+      },
+      "name" : "Anæstesiydelse 2026",
+      "description" : "Anæstesiydelse",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/AnasthesiaServiceDAD"
+      },
+      "name" : "Anæstesiydelse DAD",
       "description" : "Anæstesiydelse",
       "exampleBoolean" : false
     },
@@ -6478,6 +6514,18 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/LaryngoskopiDegree2026"
+      },
+      "name" : "Laryngoskopigrad 2026",
+      "description" : "Bedst opnåede laryngoskopigrad ved direkte laryngoskopi efter Cormack & Lehane",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/LedbaandsrekonstruktionDKRR"
       },
       "name" : "Ledbåndsrekonstruktioner (DKRR)",
@@ -6706,7 +6754,43 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/LuftvejsHaandtering2026"
+      },
+      "name" : "Luftvejshåndtering 2026",
+      "description" : "Anvendte indgreb til luftvejsunderstøttelse",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/LuftvejsHaandteringsidsteforsoeg"
+      },
+      "name" : "Luftvejshåndtering sidste forsøg",
+      "description" : "Luftvejshåndtering sidste forsøg",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/Luftvejsplan"
+      },
+      "name" : "Luftvejsplan",
+      "description" : "Mulige planlagte indgreb til luftvejsunderstøttelse",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Luftvejsplan2026"
       },
       "name" : "Luftvejsplan",
       "description" : "Mulige planlagte indgreb til luftvejsunderstøttelse",
@@ -8689,6 +8773,18 @@
         "reference" : "ValueSet/ComplicationPO"
       },
       "name" : "Postoperativ komplikatione",
+      "description" : "Postoperative komplikationer",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ComplicationPO2026"
+      },
+      "name" : "Postoperativ komplikationer 2026",
       "description" : "Postoperative komplikationer",
       "exampleBoolean" : false
     },

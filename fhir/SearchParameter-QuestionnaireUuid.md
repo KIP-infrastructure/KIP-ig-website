@@ -1,4 +1,4 @@
-# QuestionnaireUuid - KIP Infrastructure v2.17.1
+# QuestionnaireUuid - KIP Infrastructure v2.18.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/QuestionnaireUuid | *Version*:2.17.1 |
-| Active as of 2025-12-09 | *Computable Name*:QuestionnaireUuid |
+| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/QuestionnaireUuid | *Version*:2.18.0 |
+| Active as of 2026-02-23 | *Computable Name*:QuestionnaireUuid |
 
  
 Search by uuid in Questionnaire 
@@ -23,26 +23,22 @@ Search by uuid in Questionnaire
   "resourceType" : "SearchParameter",
   "id" : "QuestionnaireUuid",
   "url" : "https://kip.rkkp.dk/fhir/SearchParameter/QuestionnaireUuid",
-  "version" : "2.17.1",
+  "version" : "2.18.0",
   "name" : "QuestionnaireUuid",
   "status" : "active",
-  "date" : "2025-12-09T08:52:30+00:00",
+  "date" : "2026-02-23T12:18:41+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
-  "contact" : [
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
     {
-      "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://trifork.com"
-        },
-        {
-          "system" : "email",
-          "value" : "rbk@trifork.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
   "description" : "Search by uuid in Questionnaire",
   "code" : "uuid",
   "base" : ["Questionnaire"],

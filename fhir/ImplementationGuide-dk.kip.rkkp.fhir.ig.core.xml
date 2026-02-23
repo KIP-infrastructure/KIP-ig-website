@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core"/>
-  <version value="2.17.1"/>
+  <version value="2.18.0"/>
   <name value="KIPInfrastructure"/>
   <title value="KIP Infrastructure"/>
   <status value="active"/>
-  <date value="2025-12-09T08:52:30+00:00"/>
+  <date value="2026-02-23T12:18:41+00:00"/>
   <publisher value="Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"/>
   <contact>
     <name value="Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"/>
@@ -34,7 +34,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="7.0.0"/>
+    <version value="7.0.1"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -267,7 +267,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r4#0.8.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.9.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -1095,6 +1095,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/ComplicationAN2026"/>
+      </reference>
+      <name value="Anæstesi komplikationer 2026"/>
+      <description value="Anæstesi komplikationer"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/AnasthesiaTypeGen"/>
       </reference>
       <name value="Anæstesi Type Generel"/>
@@ -1142,6 +1153,28 @@
         <reference value="CodeSystem/AnasthesiaService"/>
       </reference>
       <name value="Anæstesiydelse"/>
+      <description value="Anæstesiydelse"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/AnasthesiaService2026"/>
+      </reference>
+      <name value="Anæstesiydelse 2026"/>
+      <description value="Anæstesiydelse"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/AnasthesiaServiceDAD"/>
+      </reference>
+      <name value="Anæstesiydelse DAD"/>
       <description value="Anæstesiydelse"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -5825,6 +5858,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/LaryngoskopiDegree2026"/>
+      </reference>
+      <name value="Laryngoskopigrad 2026"/>
+      <description value="Bedst opnåede laryngoskopigrad ved direkte laryngoskopi efter Cormack &amp; Lehane"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/LedbaandsrekonstruktionDKRR"/>
       </reference>
       <name value="Ledbåndsrekonstruktioner (DKRR)"/>
@@ -6034,7 +6078,40 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/LuftvejsHaandtering2026"/>
+      </reference>
+      <name value="Luftvejshåndtering 2026"/>
+      <description value="Anvendte indgreb til luftvejsunderstøttelse"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/LuftvejsHaandteringsidsteforsoeg"/>
+      </reference>
+      <name value="Luftvejshåndtering sidste forsøg"/>
+      <description value="Luftvejshåndtering sidste forsøg"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/Luftvejsplan"/>
+      </reference>
+      <name value="Luftvejsplan"/>
+      <description value="Mulige planlagte indgreb til luftvejsunderstøttelse"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/Luftvejsplan2026"/>
       </reference>
       <name value="Luftvejsplan"/>
       <description value="Mulige planlagte indgreb til luftvejsunderstøttelse"/>
@@ -7852,6 +7929,17 @@
         <reference value="ValueSet/ComplicationPO"/>
       </reference>
       <name value="Postoperativ komplikatione"/>
+      <description value="Postoperative komplikationer"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ComplicationPO2026"/>
+      </reference>
+      <name value="Postoperativ komplikationer 2026"/>
       <description value="Postoperative komplikationer"/>
       <exampleBoolean value="false"/>
     </resource>
