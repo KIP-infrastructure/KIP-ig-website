@@ -1,4 +1,4 @@
-# Home - KIP Infrastructure v2.18.0
+# Home - KIP Infrastructure v2.19.1
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core | *Version*:2.18.0 |
-| Active as of 2026-02-23 | *Computable Name*:KIPInfrastructure |
+| *Official URL*:https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core | *Version*:2.19.1 |
+| Active as of 2026-03-03 | *Computable Name*:KIPInfrastructure |
 
 ### Introduction
 
@@ -23,11 +23,11 @@ This implementation guide is provided to support the use of FHIR®© in the cont
   "resourceType" : "ImplementationGuide",
   "id" : "dk.kip.rkkp.fhir.ig.core",
   "url" : "https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core",
-  "version" : "2.18.0",
+  "version" : "2.19.1",
   "name" : "KIPInfrastructure",
   "title" : "KIP Infrastructure",
   "status" : "active",
-  "date" : "2026-02-23T12:18:41+00:00",
+  "date" : "2026-03-03T14:14:05+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
@@ -10327,6 +10327,54 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       },
       "name" : "Search Parameter - write or read access sor on CarePLan",
       "description" : "Search a CarePlan for readAccess or writeAccess SOR code. NOTE May match just the start of a string (https://build.fhir.org/codesystem-search-param-type.html#search-param-type-string)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/semver"
+      },
+      "name" : "semver",
+      "description" : "Composite search parameter representing semantic version (major.minor.patch) extracted from version field.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/semver-major"
+      },
+      "name" : "semver-major",
+      "description" : "Major version number extracted from version field.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/semver-minor"
+      },
+      "name" : "semver-minor",
+      "description" : "Minor version number extracted from version field.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/semver-patch"
+      },
+      "name" : "semver-patch",
+      "description" : "Patch version number extracted from version field.",
       "exampleBoolean" : false
     },
     {

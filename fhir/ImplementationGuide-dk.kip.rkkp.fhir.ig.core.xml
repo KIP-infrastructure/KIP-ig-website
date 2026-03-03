@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core"/>
-  <version value="2.18.0"/>
+  <version value="2.19.1"/>
   <name value="KIPInfrastructure"/>
   <title value="KIP Infrastructure"/>
   <status value="active"/>
-  <date value="2026-02-23T12:18:41+00:00"/>
+  <date value="2026-03-03T14:14:05+00:00"/>
   <publisher value="Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"/>
   <contact>
     <name value="Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"/>
@@ -9338,6 +9338,50 @@
       </reference>
       <name value="Search Parameter - write or read access sor on CarePLan"/>
       <description value="Search a CarePlan for readAccess or writeAccess SOR code. NOTE May match just the start of a string (https://build.fhir.org/codesystem-search-param-type.html#search-param-type-string)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/semver"/>
+      </reference>
+      <name value="semver"/>
+      <description value="Composite search parameter representing semantic version (major.minor.patch) extracted from version field."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/semver-major"/>
+      </reference>
+      <name value="semver-major"/>
+      <description value="Major version number extracted from version field."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/semver-minor"/>
+      </reference>
+      <name value="semver-minor"/>
+      <description value="Minor version number extracted from version field."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/semver-patch"/>
+      </reference>
+      <name value="semver-patch"/>
+      <description value="Patch version number extracted from version field."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
