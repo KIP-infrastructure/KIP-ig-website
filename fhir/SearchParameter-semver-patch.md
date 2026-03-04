@@ -1,4 +1,4 @@
-# semver-patch - KIP Infrastructure v2.19.1
+# semver-patch - KIP Infrastructure v2.19.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/semver-patch | *Version*:2.19.1 |
-| Active as of 2026-03-03 | *Computable Name*:semver-patch |
+| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/semver-patch | *Version*:2.19.2 |
+| Active as of 2026-03-04 | *Computable Name*:semver-patch |
 
  
 Patch version number extracted from version field. 
@@ -23,10 +23,10 @@ Patch version number extracted from version field.
   "resourceType" : "SearchParameter",
   "id" : "semver-patch",
   "url" : "https://kip.rkkp.dk/fhir/SearchParameter/semver-patch",
-  "version" : "2.19.1",
+  "version" : "2.19.2",
   "name" : "semver-patch",
   "status" : "active",
-  "date" : "2026-03-03T14:14:05+00:00",
+  "date" : "2026-03-04T14:42:21+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",

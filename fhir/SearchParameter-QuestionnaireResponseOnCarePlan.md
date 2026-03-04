@@ -1,4 +1,4 @@
-# QuestionnaireResponseOnCarePlan - KIP Infrastructure v2.19.1
+# QuestionnaireResponseOnCarePlan - KIP Infrastructure v2.19.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/QuestionnaireResponseOnCarePlan | *Version*:2.19.1 |
-| Active as of 2026-03-03 | *Computable Name*:QuestionnaireResponseOnCarePlan |
+| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/QuestionnaireResponseOnCarePlan | *Version*:2.19.2 |
+| Active as of 2026-03-04 | *Computable Name*:QuestionnaireResponseOnCarePlan |
 
  
 Search by a QuestionnaireResponse reference for a CarePlan 
@@ -23,10 +23,10 @@ Search by a QuestionnaireResponse reference for a CarePlan
   "resourceType" : "SearchParameter",
   "id" : "QuestionnaireResponseOnCarePlan",
   "url" : "https://kip.rkkp.dk/fhir/SearchParameter/QuestionnaireResponseOnCarePlan",
-  "version" : "2.19.1",
+  "version" : "2.19.2",
   "name" : "QuestionnaireResponseOnCarePlan",
   "status" : "active",
-  "date" : "2026-03-03T14:14:05+00:00",
+  "date" : "2026-03-04T14:42:21+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",

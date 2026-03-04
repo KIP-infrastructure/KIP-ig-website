@@ -1,4 +1,4 @@
-# Home - KIP Infrastructure v2.19.1
+# Home - KIP Infrastructure v2.19.2
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core | *Version*:2.19.1 |
-| Active as of 2026-03-03 | *Computable Name*:KIPInfrastructure |
+| *Official URL*:https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core | *Version*:2.19.2 |
+| Active as of 2026-03-04 | *Computable Name*:KIPInfrastructure |
 
 ### Introduction
 
@@ -23,11 +23,11 @@ This implementation guide is provided to support the use of FHIR®© in the cont
   "resourceType" : "ImplementationGuide",
   "id" : "dk.kip.rkkp.fhir.ig.core",
   "url" : "https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core",
-  "version" : "2.19.1",
+  "version" : "2.19.2",
   "name" : "KIPInfrastructure",
   "title" : "KIP Infrastructure",
   "status" : "active",
-  "date" : "2026-03-03T14:14:05+00:00",
+  "date" : "2026-03-04T14:42:21+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
@@ -6809,7 +6809,7 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "reference" : {
         "reference" : "ValueSet/Luftvejsplan2026"
       },
-      "name" : "Luftvejsplan",
+      "name" : "Luftvejsplan 2026",
       "description" : "Mulige planlagte indgreb til luftvejsunderstøttelse",
       "exampleBoolean" : false
     },
