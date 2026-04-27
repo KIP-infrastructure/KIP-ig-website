@@ -1,4 +1,4 @@
-# PlanDefinitionUuid - KIP Infrastructure v2.19.3
+# PlanDefinitionUuid - KIP Infrastructure v2.19.4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/PlanDefinitionUuid | *Version*:2.19.3 |
-| Active as of 2026-04-23 | *Computable Name*:PlanDefinitionUuid |
+| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/PlanDefinitionUuid | *Version*:2.19.4 |
+| Active as of 2026-04-27 | *Computable Name*:PlanDefinitionUuid |
 
  
 Search by uuid in PlanDefinition 
@@ -23,10 +23,10 @@ Search by uuid in PlanDefinition
   "resourceType" : "SearchParameter",
   "id" : "PlanDefinitionUuid",
   "url" : "https://kip.rkkp.dk/fhir/SearchParameter/PlanDefinitionUuid",
-  "version" : "2.19.3",
+  "version" : "2.19.4",
   "name" : "PlanDefinitionUuid",
   "status" : "active",
-  "date" : "2026-04-23T11:46:51+00:00",
+  "date" : "2026-04-27T08:01:27+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",

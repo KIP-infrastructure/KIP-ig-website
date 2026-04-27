@@ -1,4 +1,4 @@
-# PlanDefinition url+version - KIP Infrastructure v2.19.3
+# PlanDefinition url+version - KIP Infrastructure v2.19.4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://kip.sundk.dk/fhir/SearchParameter/SP-PlanDefinition-urlversion | *Version*:2.19.3 |
-| Active as of 2026-04-23 | *Computable Name*:urlversion |
+| *Official URL*:http://kip.sundk.dk/fhir/SearchParameter/SP-PlanDefinition-urlversion | *Version*:2.19.4 |
+| Active as of 2026-04-27 | *Computable Name*:urlversion |
 
  
 SearchParameter to match PlanDefinition by both url and version 
@@ -23,10 +23,10 @@ SearchParameter to match PlanDefinition by both url and version
   "resourceType" : "SearchParameter",
   "id" : "SP-PlanDefinition-urlversion",
   "url" : "http://kip.sundk.dk/fhir/SearchParameter/SP-PlanDefinition-urlversion",
-  "version" : "2.19.3",
+  "version" : "2.19.4",
   "name" : "urlversion",
   "status" : "active",
-  "date" : "2026-04-23T11:46:51+00:00",
+  "date" : "2026-04-27T08:01:27+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",

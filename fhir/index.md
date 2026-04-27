@@ -1,4 +1,4 @@
-# Home - KIP Infrastructure v2.19.3
+# Home - KIP Infrastructure v2.19.4
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core | *Version*:2.19.3 |
-| Active as of 2026-04-23 | *Computable Name*:KIPInfrastructure |
+| *Official URL*:https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core | *Version*:2.19.4 |
+| Active as of 2026-04-27 | *Computable Name*:KIPInfrastructure |
 
 ### Introduction
 
@@ -23,11 +23,11 @@ This implementation guide is provided to support the use of FHIR®© in the cont
   "resourceType" : "ImplementationGuide",
   "id" : "dk.kip.rkkp.fhir.ig.core",
   "url" : "https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core",
-  "version" : "2.19.3",
+  "version" : "2.19.4",
   "name" : "KIPInfrastructure",
   "title" : "KIP Infrastructure",
   "status" : "active",
-  "date" : "2026-04-23T11:46:51+00:00",
+  "date" : "2026-04-27T08:01:27+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
