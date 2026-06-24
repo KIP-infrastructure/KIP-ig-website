@@ -1,4 +1,4 @@
-# Home - KIP Infrastructure v2.19.4
+# Home - KIP Infrastructure v2.21.0
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core | *Version*:2.19.4 |
-| Active as of 2026-04-27 | *Computable Name*:KIPInfrastructure |
+| *Official URL*:https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core | *Version*:2.21.0 |
+| Active as of 2026-06-24 | *Computable Name*:KIPInfrastructure |
 
 ### Introduction
 
@@ -23,11 +23,11 @@ This implementation guide is provided to support the use of FHIR®© in the cont
   "resourceType" : "ImplementationGuide",
   "id" : "dk.kip.rkkp.fhir.ig.core",
   "url" : "https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core",
-  "version" : "2.19.4",
+  "version" : "2.21.0",
   "name" : "KIPInfrastructure",
   "title" : "KIP Infrastructure",
   "status" : "active",
-  "date" : "2026-04-27T08:01:27+00:00",
+  "date" : "2026-06-24T13:12:25+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
@@ -52,7 +52,7 @@ This implementation guide is provided to support the use of FHIR®© in the cont
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.1.0"
+    "version" : "7.2.0"
   },
   {
     "id" : "hl7ext",
@@ -62,7 +62,7 @@ This implementation guide is provided to support the use of FHIR®© in the cont
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.2.0"
+    "version" : "5.3.0"
   },
   {
     "id" : "hl7_fhir_dk_core",
@@ -3067,6 +3067,18 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       },
       "name" : "Diseases - Unspecified without a code",
       "description" : "Diseases - Unspecified without a code",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/plan-definition-action-display-order"
+      },
+      "name" : "Display Order for PlanDefinition Action",
+      "description" : "Specifies the desired display order of a PlanDefinition action (e.g. Questionnaire references). Lower values are displayed first.",
       "exampleBoolean" : false
     },
     {
@@ -6738,6 +6750,18 @@ This implementation guide is provided to support the use of FHIR®© in the cont
         "reference" : "ValueSet/DSAFundLokation"
       },
       "name" : "Lokation for tromber, fundet vha. DSA",
+      "description" : "Lokation for tromber, fundet vha. digital subtraktionsangiografi (DSA).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DSAFundLokation2026"
+      },
+      "name" : "Lokation for tromber, fundet vha. DSA 2026",
       "description" : "Lokation for tromber, fundet vha. digital subtraktionsangiografi (DSA).",
       "exampleBoolean" : false
     },

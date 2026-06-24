@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/DSAFundLokation2026> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DSAFundLokation2026"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet DSAFundLokation2026</b></p><a name=\"DSAFundLokation2026\"> </a><a name=\"hcDSAFundLokation2026\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-DSAFindingsLocation.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/DSAFindingsLocation</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.21.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-DSAFindingsLocation.html#DSAFindingsLocation-Extracranial\">Extracranial</a></td><td>Extracranial (CCA, ICA)</td><td>Extracranial (CCA, ICA)</td></tr><tr><td><a href=\"CodeSystem-DSAFindingsLocation.html#DSAFindingsLocation-Large_vessel_occlusion\">Large_vessel_occlusion</a></td><td>Large vessel occlusion, LVO (ICA, M1, Proksimal M2)</td><td>Large vessel occlusion, LVO (ICA, M1, Proksimal M2)</td></tr><tr><td><a href=\"CodeSystem-DSAFindingsLocation.html#DSAFindingsLocation-Medium_vessel_occlusion\">Medium_vessel_occlusion</a></td><td>Medium vessel occlusion, MEVO (Distal M2, ACA, PCA)</td><td>Medium vessel occlusion, MEVO (Distal M2, ACA, PCA)</td></tr><tr><td><a href=\"CodeSystem-DSAFindingsLocation.html#DSAFindingsLocation-Posterior_circulation\">Posterior_circulation</a></td><td>Posterior circulation</td><td>Posterior circulation</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ValueSet/DSAFundLokation2026"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.21.0"] ; # 
+  fhir:name [ fhir:v "DSAFundLokation2026"] ; # 
+  fhir:title [ fhir:v "Lokation for tromber, fundet vha. DSA 2026"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2026-06-24T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://trifork.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rbk@trifork.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Lokation for tromber, fundet vha. digital subtraktionsangiografi (DSA)."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://kip.rkkp.dk/fhir/CodeSystem/DSAFindingsLocation"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "Extracranial" ] ;
+         fhir:display [ fhir:v "Extracranial (CCA, ICA)" ]
+       ] [
+         fhir:code [ fhir:v "Large_vessel_occlusion" ] ;
+         fhir:display [ fhir:v "Large vessel occlusion, LVO (ICA, M1, Proksimal M2)" ]
+       ] [
+         fhir:code [ fhir:v "Medium_vessel_occlusion" ] ;
+         fhir:display [ fhir:v "Medium vessel occlusion, MEVO (Distal M2, ACA, PCA)" ]
+       ] [
+         fhir:code [ fhir:v "Posterior_circulation" ] ;
+         fhir:display [ fhir:v "Posterior circulation" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

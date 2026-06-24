@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core"/>
-  <version value="2.19.4"/>
+  <version value="2.21.0"/>
   <name value="KIPInfrastructure"/>
   <title value="KIP Infrastructure"/>
   <status value="active"/>
-  <date value="2026-04-27T08:01:27+00:00"/>
+  <date value="2026-06-24T13:12:25+00:00"/>
   <publisher value="Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"/>
   <contact>
     <name value="Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"/>
@@ -34,7 +34,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="7.1.0"/>
+    <version value="7.2.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -42,7 +42,7 @@
     </extension>
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="5.2.0"/>
+    <version value="5.3.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_dk_core">
     <uri value="http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core"/>
@@ -2683,6 +2683,17 @@
       </reference>
       <name value="Diseases - Unspecified without a code"/>
       <description value="Diseases - Unspecified without a code"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/plan-definition-action-display-order"/>
+      </reference>
+      <name value="Display Order for PlanDefinition Action"/>
+      <description value="Specifies the desired display order of a PlanDefinition action (e.g. Questionnaire references). Lower values are displayed first."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -6048,6 +6059,17 @@
         <reference value="ValueSet/DSAFundLokation"/>
       </reference>
       <name value="Lokation for tromber, fundet vha. DSA"/>
+      <description value="Lokation for tromber, fundet vha. digital subtraktionsangiografi (DSA)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/DSAFundLokation2026"/>
+      </reference>
+      <name value="Lokation for tromber, fundet vha. DSA 2026"/>
       <description value="Lokation for tromber, fundet vha. digital subtraktionsangiografi (DSA)."/>
       <exampleBoolean value="false"/>
     </resource>
