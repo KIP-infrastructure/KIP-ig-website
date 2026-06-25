@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide dk.kip.rkkp.fhir.ig.core</b></p><a name=\"dk.kip.rkkp.fhir.ig.core\"> </a><a name=\"hcdk.kip.rkkp.fhir.ig.core\"> </a><h2>KIPInfrastructure</h2><p>The official URL for this implementation guide is: </p><pre>https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core</pre><div><p>The Danish Sundhedsvæsenets Kvalitetsinstitut defines a set of FHIR CodeSystems and ValueSets used for data collection.</p>\n</div></div>"
   },
   "url" : "https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core",
-  "version" : "2.21.0",
+  "version" : "2.23.0",
   "name" : "KIPInfrastructure",
   "title" : "KIP Infrastructure",
   "status" : "active",
-  "date" : "2026-06-24T13:12:25+00:00",
+  "date" : "2026-06-25T06:10:45+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
@@ -2839,6 +2839,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DeleFoelelser"
+      },
+      "name" : "Dele følelser",
+      "description" : "Dele følelser",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -3854,6 +3866,18 @@
       },
       "name" : "Foerste kontakt sted",
       "description" : "Sted for første kontakt",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KontaktSted2026"
+      },
+      "name" : "Foerste kontakt sted 2026",
+      "description" : "Sted for første kontakt 2026",
       "exampleBoolean" : false
     },
     {
@@ -11395,6 +11419,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/HandProblemer"
+      },
+      "name" : "Taget hånd om problemer",
+      "description" : "Taget hånd om problemer, PRO-PAL-skema 1",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/HaandProblemer"
+      },
+      "name" : "Taget hånd om problemer",
+      "description" : "Taget hånd om problemer, PRO-PAL-skema 1",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -11630,6 +11678,30 @@
       },
       "name" : "Tidspunkt for central blokade",
       "description" : "Tidspunkt for central blokade",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/TilsynAfdeling"
+      },
+      "name" : "TilsynAfdeling - DPD",
+      "description" : "TilsynAfdeling - DPD",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/TilsynAfdeling"
+      },
+      "name" : "TilsynAfdeling - DPD",
+      "description" : "TilsynAfdeling - DPD",
       "exampleBoolean" : false
     },
     {
@@ -12613,6 +12685,18 @@
         "reference" : "ValueSet/VentralHernieTypeDHDB"
       },
       "name" : "Ventral hernie type (DHDB)",
+      "description" : "Ventral hernie type (DHDB)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VentralHernieTypeDHDB2026"
+      },
+      "name" : "Ventral hernie type (DHDB) 2026",
       "description" : "Ventral hernie type (DHDB)",
       "exampleBoolean" : false
     },

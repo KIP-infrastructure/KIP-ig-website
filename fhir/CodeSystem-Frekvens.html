@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Frekvens - KIP Infrastructure v2.21.0</title>
+    <title>Frekvens - KIP Infrastructure v2.23.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"3.827"}
-    h3,h4,h5,h6{--heading-prefix:"3.827"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.832"}
+    h3,h4,h5,h6{--heading-prefix:"3.832"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">KIP Infrastructure</span>
             <br/>
-            <span style="display:inline-block;">2.21.0 - release
+            <span style="display:inline-block;">2.23.0 - release
 
 
             </span>
@@ -142,7 +142,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the KIP Infrastructure (v2.21.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KIP Infrastructure (v2.23.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -195,7 +195,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://kip.rkkp.dk/fhir/CodeSystem/Frekvens<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/Frekvens"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">2.21.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/Frekvens|2.21.0"/></span>
+      <span class="copy-text">2.23.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://kip.rkkp.dk/fhir/CodeSystem/Frekvens|2.23.0"/></span>
       </td>
     </tr>
 
@@ -211,7 +211,7 @@
         
           Active
           
-            as of 2024-02-13
+            as of 2026-06-24
           
         
       </td>
@@ -242,6 +242,7 @@
 
   
 <ul>
+ <li><a href="ValueSet-DeleFoelelser.html">DeleFoelelser</a></li>
  <li><a href="ValueSet-FrekvensLaekDUGA.html">FrekvensLaekDUGA</a></li>
  <li><a href="ValueSet-FrekvensNedsynkningDUGA.html">FrekvensNedsynkningDUGA</a></li>
 </ul>
@@ -269,37 +270,105 @@
 <td>http://hl7.org/fhir/concept-properties#inactive</td>
 <td>boolean</td>
 <td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/Frekvens</code> defines the following codes:</p>
-<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>
+<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>comment</b></td><td><b>effectiveDate</b></td><td><b>status</b></td><td><b>Inactive</b></td></tr>
 <tr><td style="white-space:nowrap">aldrig<a name="Frekvens-aldrig"> </a></td>
 <td>Aldrig</td>
-<td>Aldrig / Slet ikke</td></tr>
+<td>Aldrig / Slet ikke</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">forDetMeste<a name="Frekvens-forDetMeste"> </a></td>
+<td>For det meste</td>
+<td>For det meste</td>
+<td>Added</td>
+<td>2026-06-24T00:00:00+02:00</td>
+<td>active</td>
+<td>false</td></tr>
+<tr><td style="white-space:nowrap">heleTiden<a name="Frekvens-heleTiden"> </a></td>
+<td>Hele tiden</td>
+<td>Hele tiden</td>
+<td>Added</td>
+<td>2026-06-24T00:00:00+02:00</td>
+<td>active</td>
+<td>false</td></tr>
 <tr><td style="white-space:nowrap">konstant<a name="Frekvens-konstant"> </a></td>
 <td>Konstant</td>
-<td>Hele tiden</td></tr>
+<td>Hele tiden</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">nogleGange<a name="Frekvens-nogleGange"> </a></td>
+<td>Nogle gange</td>
+<td>Nogle gange</td>
+<td>Added</td>
+<td>2026-06-24T00:00:00+02:00</td>
+<td>active</td>
+<td>false</td></tr>
+<tr><td style="white-space:nowrap">sjaeldent<a name="Frekvens-sjaeldent"> </a></td>
+<td>Sjældent</td>
+<td>Sjældent</td>
+<td>Added</td>
+<td>2026-06-24T00:00:00+02:00</td>
+<td>active</td>
+<td>false</td></tr>
 <tr><td style="white-space:nowrap">dgl-lt1<a name="Frekvens-dgl-lt1"> </a></td>
 <td>Mindre end 1 gang om dagen</td>
-<td>Mindre end 1 gang om dagen</td></tr>
+<td>Mindre end 1 gang om dagen</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr>
 <tr><td style="white-space:nowrap">dgl-1<a name="Frekvens-dgl-1"> </a></td>
 <td>1 gang om dagen</td>
-<td>1 gang om dagen</td></tr>
+<td>1 gang om dagen</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr>
 <tr><td style="white-space:nowrap">dgl-ge1<a name="Frekvens-dgl-ge1"> </a></td>
 <td>1 eller flere gange om dagen</td>
-<td>1 eller flere gange om dagen</td></tr>
+<td>1 eller flere gange om dagen</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr>
 <tr><td style="white-space:nowrap">ugl-le1<a name="Frekvens-ugl-le1"> </a></td>
 <td>1 gang om ugen eller mindre</td>
-<td>1 gang om ugen eller mindre</td></tr>
+<td>1 gang om ugen eller mindre</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr>
 <tr><td style="white-space:nowrap">ugl-ge1<a name="Frekvens-ugl-ge1"> </a></td>
 <td>1 gang om ugen eller mere</td>
-<td>1 gang om ugen eller mere</td></tr>
+<td>1 gang om ugen eller mere</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr>
 <tr><td style="white-space:nowrap">ugl-2-3<a name="Frekvens-ugl-2-3"> </a></td>
 <td>2-3 gange om ugen</td>
-<td>2-3 gange om ugen</td></tr>
+<td>2-3 gange om ugen</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr>
 <tr><td style="white-space:nowrap">mdl-lt1<a name="Frekvens-mdl-lt1"> </a></td>
 <td>Mindre end 1 gang om måneden</td>
-<td>Mindre end 1 gang om måneden</td></tr>
+<td>Mindre end 1 gang om måneden</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr>
 <tr><td style="white-space:nowrap">mdl-1-4<a name="Frekvens-mdl-1-4"> </a></td>
 <td>1-4 gange om måneden</td>
-<td>1-4 gange om måneden</td></tr></table></div>
+<td>1-4 gange om måneden</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr></table></div>
 
   
 
@@ -326,7 +395,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://trifork.com">Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S</a>.  Package dk.kip.rkkp.fhir.ig.core#2.21.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 24, 2026 13:12+0000">2026-06-24</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://trifork.com">Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S</a>.  Package dk.kip.rkkp.fhir.ig.core#2.23.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 25, 2026 06:10+0000">2026-06-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

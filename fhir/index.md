@@ -1,4 +1,4 @@
-# Home - KIP Infrastructure v2.21.0
+# Home - KIP Infrastructure v2.23.0
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core | *Version*:2.21.0 |
-| Active as of 2026-06-24 | *Computable Name*:KIPInfrastructure |
+| *Official URL*:https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core | *Version*:2.23.0 |
+| Active as of 2026-06-25 | *Computable Name*:KIPInfrastructure |
 
 ### Introduction
 
@@ -23,11 +23,11 @@ This implementation guide is provided to support the use of FHIR®© in the cont
   "resourceType" : "ImplementationGuide",
   "id" : "dk.kip.rkkp.fhir.ig.core",
   "url" : "https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core",
-  "version" : "2.21.0",
+  "version" : "2.23.0",
   "name" : "KIPInfrastructure",
   "title" : "KIP Infrastructure",
   "status" : "active",
-  "date" : "2026-06-24T13:12:25+00:00",
+  "date" : "2026-06-25T06:10:45+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
@@ -2856,6 +2856,18 @@ This implementation guide is provided to support the use of FHIR®© in the cont
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DeleFoelelser"
+      },
+      "name" : "Dele følelser",
+      "description" : "Dele følelser",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -3871,6 +3883,18 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       },
       "name" : "Foerste kontakt sted",
       "description" : "Sted for første kontakt",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KontaktSted2026"
+      },
+      "name" : "Foerste kontakt sted 2026",
+      "description" : "Sted for første kontakt 2026",
       "exampleBoolean" : false
     },
     {
@@ -11412,6 +11436,30 @@ This implementation guide is provided to support the use of FHIR®© in the cont
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/HandProblemer"
+      },
+      "name" : "Taget hånd om problemer",
+      "description" : "Taget hånd om problemer, PRO-PAL-skema 1",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/HaandProblemer"
+      },
+      "name" : "Taget hånd om problemer",
+      "description" : "Taget hånd om problemer, PRO-PAL-skema 1",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -11647,6 +11695,30 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       },
       "name" : "Tidspunkt for central blokade",
       "description" : "Tidspunkt for central blokade",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/TilsynAfdeling"
+      },
+      "name" : "TilsynAfdeling - DPD",
+      "description" : "TilsynAfdeling - DPD",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/TilsynAfdeling"
+      },
+      "name" : "TilsynAfdeling - DPD",
+      "description" : "TilsynAfdeling - DPD",
       "exampleBoolean" : false
     },
     {
@@ -12630,6 +12702,18 @@ This implementation guide is provided to support the use of FHIR®© in the cont
         "reference" : "ValueSet/VentralHernieTypeDHDB"
       },
       "name" : "Ventral hernie type (DHDB)",
+      "description" : "Ventral hernie type (DHDB)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VentralHernieTypeDHDB2026"
+      },
+      "name" : "Ventral hernie type (DHDB) 2026",
       "description" : "Ventral hernie type (DHDB)",
       "exampleBoolean" : false
     },

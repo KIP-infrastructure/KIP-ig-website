@@ -14,11 +14,11 @@
      fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide dk.kip.rkkp.fhir.ig.core</b></p><a name=\"dk.kip.rkkp.fhir.ig.core\"> </a><a name=\"hcdk.kip.rkkp.fhir.ig.core\"> </a><h2>KIPInfrastructure</h2><p>The official URL for this implementation guide is: </p><pre>https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core</pre><div><p>The Danish Sundhedsvæsenets Kvalitetsinstitut defines a set of FHIR CodeSystems and ValueSets used for data collection.</p>\n</div></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "2.21.0"] ; # 
+  fhir:version [ fhir:v "2.23.0"] ; # 
   fhir:name [ fhir:v "KIPInfrastructure"] ; # 
   fhir:title [ fhir:v "KIP Infrastructure"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-06-24T13:12:25+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-25T06:10:45+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
@@ -4172,6 +4172,24 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://kip.rkkp.dk/fhir/ValueSet/DeleFoelelser> ;
+         fhir:reference [ fhir:v "ValueSet/DeleFoelelser" ]
+       ] ;
+       fhir:name [ fhir:v "Dele følelser" ] ;
+       fhir:description [ fhir:v "Dele følelser" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
@@ -5693,6 +5711,24 @@
        ] ;
        fhir:name [ fhir:v "Foerste kontakt sted" ] ;
        fhir:description [ fhir:v "Sted for første kontakt" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://kip.rkkp.dk/fhir/ValueSet/KontaktSted2026> ;
+         fhir:reference [ fhir:v "ValueSet/KontaktSted2026" ]
+       ] ;
+       fhir:name [ fhir:v "Foerste kontakt sted 2026" ] ;
+       fhir:description [ fhir:v "Sted for første kontakt 2026" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -17006,6 +17042,42 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://kip.rkkp.dk/fhir/ValueSet/HandProblemer> ;
+         fhir:reference [ fhir:v "ValueSet/HandProblemer" ]
+       ] ;
+       fhir:name [ fhir:v "Taget hånd om problemer" ] ;
+       fhir:description [ fhir:v "Taget hånd om problemer, PRO-PAL-skema 1" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://kip.rkkp.dk/fhir/CodeSystem/HaandProblemer> ;
+         fhir:reference [ fhir:v "CodeSystem/HaandProblemer" ]
+       ] ;
+       fhir:name [ fhir:v "Taget hånd om problemer" ] ;
+       fhir:description [ fhir:v "Taget hånd om problemer, PRO-PAL-skema 1" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
@@ -17357,6 +17429,42 @@
        ] ;
        fhir:name [ fhir:v "Tidspunkt for central blokade" ] ;
        fhir:description [ fhir:v "Tidspunkt for central blokade" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://kip.rkkp.dk/fhir/ValueSet/TilsynAfdeling> ;
+         fhir:reference [ fhir:v "ValueSet/TilsynAfdeling" ]
+       ] ;
+       fhir:name [ fhir:v "TilsynAfdeling - DPD" ] ;
+       fhir:description [ fhir:v "TilsynAfdeling - DPD" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://kip.rkkp.dk/fhir/CodeSystem/TilsynAfdeling> ;
+         fhir:reference [ fhir:v "CodeSystem/TilsynAfdeling" ]
+       ] ;
+       fhir:name [ fhir:v "TilsynAfdeling - DPD" ] ;
+       fhir:description [ fhir:v "TilsynAfdeling - DPD" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -18832,6 +18940,24 @@
          fhir:reference [ fhir:v "ValueSet/VentralHernieTypeDHDB" ]
        ] ;
        fhir:name [ fhir:v "Ventral hernie type (DHDB)" ] ;
+       fhir:description [ fhir:v "Ventral hernie type (DHDB)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://kip.rkkp.dk/fhir/ValueSet/VentralHernieTypeDHDB2026> ;
+         fhir:reference [ fhir:v "ValueSet/VentralHernieTypeDHDB2026" ]
+       ] ;
+       fhir:name [ fhir:v "Ventral hernie type (DHDB) 2026" ] ;
        fhir:description [ fhir:v "Ventral hernie type (DHDB)" ] ;
        fhir:example [
          a fhir:boolean ;

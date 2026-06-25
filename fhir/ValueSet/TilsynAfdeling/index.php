@@ -1,0 +1,25 @@
+<?php
+function Redirect($url)
+{
+  header('Location: ' . $url, true, 302);
+  exit();
+}
+
+$accept = $_SERVER['HTTP_ACCEPT'];
+if (strpos($accept, 'application/json+fhir') !== false)
+  Redirect('https://kip.rkkp.dk/fhir/2.23.0/ValueSet-TilsynAfdeling.json2');
+elseif (strpos($accept, 'application/fhir+json') !== false)
+  Redirect('https://kip.rkkp.dk/fhir/2.23.0/ValueSet-TilsynAfdeling.json1');
+elseif (strpos($accept, 'json') !== false)
+  Redirect('https://kip.rkkp.dk/fhir/2.23.0/ValueSet-TilsynAfdeling.json');
+elseif (strpos($accept, 'application/xml+fhir') !== false)
+  Redirect('https://kip.rkkp.dk/fhir/2.23.0/ValueSet-TilsynAfdeling.xml2');
+elseif (strpos($accept, 'application/fhir+xml') !== false)
+  Redirect('https://kip.rkkp.dk/fhir/2.23.0/ValueSet-TilsynAfdeling.xml1');
+elseif (strpos($accept, 'html') !== false)
+  Redirect('https://kip.rkkp.dk/fhir/2.23.0/ValueSet-TilsynAfdeling.html');
+else 
+  Redirect('https://kip.rkkp.dk/fhir/2.23.0/ValueSet-TilsynAfdeling.xml');
+?>
+    
+You should not be seeing this page. If you do, PHP has failed badly.

@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core"/>
-  <version value="2.21.0"/>
+  <version value="2.23.0"/>
   <name value="KIPInfrastructure"/>
   <title value="KIP Infrastructure"/>
   <status value="active"/>
-  <date value="2026-06-24T13:12:25+00:00"/>
+  <date value="2026-06-25T06:10:45+00:00"/>
   <publisher value="Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"/>
   <contact>
     <name value="Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"/>
@@ -2489,6 +2489,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/DeleFoelelser"/>
+      </reference>
+      <name value="Dele følelser"/>
+      <description value="Dele følelser"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -3420,6 +3431,17 @@
       </reference>
       <name value="Foerste kontakt sted"/>
       <description value="Sted for første kontakt"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KontaktSted2026"/>
+      </reference>
+      <name value="Foerste kontakt sted 2026"/>
+      <description value="Sted for første kontakt 2026"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -10332,6 +10354,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/HandProblemer"/>
+      </reference>
+      <name value="Taget hånd om problemer"/>
+      <description value="Taget hånd om problemer, PRO-PAL-skema 1"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/HaandProblemer"/>
+      </reference>
+      <name value="Taget hånd om problemer"/>
+      <description value="Taget hånd om problemer, PRO-PAL-skema 1"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -10548,6 +10592,28 @@
       </reference>
       <name value="Tidspunkt for central blokade"/>
       <description value="Tidspunkt for central blokade"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/TilsynAfdeling"/>
+      </reference>
+      <name value="TilsynAfdeling - DPD"/>
+      <description value="TilsynAfdeling - DPD"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/TilsynAfdeling"/>
+      </reference>
+      <name value="TilsynAfdeling - DPD"/>
+      <description value="TilsynAfdeling - DPD"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -11449,6 +11515,17 @@
         <reference value="ValueSet/VentralHernieTypeDHDB"/>
       </reference>
       <name value="Ventral hernie type (DHDB)"/>
+      <description value="Ventral hernie type (DHDB)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VentralHernieTypeDHDB2026"/>
+      </reference>
+      <name value="Ventral hernie type (DHDB) 2026"/>
       <description value="Ventral hernie type (DHDB)"/>
       <exampleBoolean value="false"/>
     </resource>
