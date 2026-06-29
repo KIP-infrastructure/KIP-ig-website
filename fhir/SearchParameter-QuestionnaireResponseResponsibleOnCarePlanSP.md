@@ -1,4 +1,4 @@
-# QuestionnaireResponseResponsibleOnCarePlanSP - KIP Infrastructure v2.23.0
+# QuestionnaireResponseResponsibleOnCarePlanSP - KIP Infrastructure v2.23.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/QuestionnaireResponseResponsibleOnCarePlan | *Version*:2.23.0 |
-| Active as of 2026-06-25 | *Computable Name*:QuestionnaireResponseResponsibleOnCarePlan |
+| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/QuestionnaireResponseResponsibleOnCarePlan | *Version*:2.23.1 |
+| Active as of 2026-06-29 | *Computable Name*:QuestionnaireResponseResponsibleOnCarePlan |
 
  
 Search a CarePlan for responsible SOR code on a QuestionnaireResponse 
@@ -23,10 +23,10 @@ Search a CarePlan for responsible SOR code on a QuestionnaireResponse
   "resourceType" : "SearchParameter",
   "id" : "QuestionnaireResponseResponsibleOnCarePlanSP",
   "url" : "https://kip.rkkp.dk/fhir/SearchParameter/QuestionnaireResponseResponsibleOnCarePlan",
-  "version" : "2.23.0",
+  "version" : "2.23.1",
   "name" : "QuestionnaireResponseResponsibleOnCarePlan",
   "status" : "active",
-  "date" : "2026-06-25T06:10:45+00:00",
+  "date" : "2026-06-29T13:53:30+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",

@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>semver - TTL Representation - KIP Infrastructure v2.23.0</title>
+    <title>semver - TTL Representation - KIP Infrastructure v2.23.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -54,7 +54,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">KIP Infrastructure</span>
             <br/>
-            <span style="display:inline-block;">2.23.0 - release
+            <span style="display:inline-block;">2.23.1 - release
 
 
             </span>
@@ -144,7 +144,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the KIP Infrastructure (v2.23.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the KIP Infrastructure (v2.23.1: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -199,7 +199,7 @@
         
           Active
           
-            as of 2026-06-25
+            as of 2026-06-29
           
         
       </td>
@@ -218,53 +218,81 @@
   <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
 # - resource -------------------------------------------------------------------
 
- a fhir:SearchParameter ;
+&lt;http://hl7.org/fhir/SearchParameter/semver&gt; a fhir:SearchParameter ;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/resource.html#SearchParameter.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;semver&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/domainresource.html#SearchParameter.text">fhir:text</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: SearchParameter semver&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;semver\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcsemver\&quot;&gt; &lt;/a&gt;&lt;h2&gt;semver&lt;/h2&gt;&lt;p&gt;Parameter &lt;code&gt;semver&lt;/code&gt;:&lt;code&gt;composite&lt;/code&gt;&lt;/p&gt;&lt;div&gt;&lt;p&gt;Composite search parameter representing semantic version (major.minor.patch) extracted from version field.&lt;/p&gt;\n&lt;/div&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;Resources&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/structuredefinition.html\&quot;&gt;StructureDefinition&lt;/a&gt;, &lt;a href=\&quot;http://hl7.org/fhir/R4/valueset.html\&quot;&gt;ValueSet&lt;/a&gt;, &lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem.html\&quot;&gt;CodeSystem&lt;/a&gt;, &lt;a href=\&quot;http://hl7.org/fhir/R4/implementationguide.html\&quot;&gt;ImplementationGuide&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Expression&lt;/td&gt;&lt;td&gt;(none)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Multiples&lt;/td&gt;&lt;td&gt;&lt;ul&gt;&lt;li&gt;multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true&lt;/li&gt;&lt;li&gt;multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Component&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-semver-major.html\&quot;&gt;semver-major&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;version.split('.')[0].toInteger()&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;number&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-semver-minor.html\&quot;&gt;semver-minor&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;version.split('.')[1].toInteger()&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;number&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-semver-patch.html\&quot;&gt;semver-patch&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;version.split('.')[2].toInteger()&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;number&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://kip.rkkp.dk/fhir/SearchParameter/semver&quot;^^xsd:anyURI] ; # 
-  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;2.23.0&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;semver&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2026-06-25T06:10:45+00:00&quot;^^xsd:dateTime] ; # 
-  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.contact">fhir:contact</a> ( [
-<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;https://trifork.com&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;email&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;rbk@trifork.com&quot; ]     ] )
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Composite search parameter representing semantic version (major.minor.patch) extracted from version field.&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;semver&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.base">fhir:base</a> ( [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;StructureDefinition&quot;] [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ValueSet&quot;] [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;CodeSystem&quot;] [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ImplementationGuide&quot;] ) ; # 
-  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;composite&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.component">fhir:component</a> ( [
-<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.component.definition">fhir:definition</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://kip.rkkp.dk/fhir/SearchParameter/semver-major&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://kip.rkkp.dk/fhir/SearchParameter/semver-major&gt;     ] ;
-<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.component.expression">fhir:expression</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;version.split('.')[0].toInteger()&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.component.definition">fhir:definition</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://kip.rkkp.dk/fhir/SearchParameter/semver-minor&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://kip.rkkp.dk/fhir/SearchParameter/semver-minor&gt;     ] ;
-<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.component.expression">fhir:expression</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;version.split('.')[1].toInteger()&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.component.definition">fhir:definition</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://kip.rkkp.dk/fhir/SearchParameter/semver-patch&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://kip.rkkp.dk/fhir/SearchParameter/semver-patch&gt;     ] ;
-<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.component.expression">fhir:expression</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;version.split('.')[2].toInteger()&quot; ]
-  ] ) . # 
+  <a href="http://hl7.org/fhir/R4/resource.html#SearchParameter.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;semver&quot;] ;
+  <a href="http://hl7.org/fhir/R4/domainresource.html#SearchParameter.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ] ;
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: SearchParameter semver&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;semver\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcsemver\&quot;&gt; &lt;/a&gt;&lt;h2&gt;semver&lt;/h2&gt;&lt;p&gt;Parameter &lt;code&gt;semver&lt;/code&gt;:&lt;code&gt;composite&lt;/code&gt;&lt;/p&gt;&lt;div&gt;&lt;p&gt;Composite search parameter representing semantic version (major.minor.patch) extracted from version field.&lt;/p&gt;\n&lt;/div&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;Resources&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/structuredefinition.html\&quot;&gt;StructureDefinition&lt;/a&gt;, &lt;a href=\&quot;http://hl7.org/fhir/R4/valueset.html\&quot;&gt;ValueSet&lt;/a&gt;, &lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem.html\&quot;&gt;CodeSystem&lt;/a&gt;, &lt;a href=\&quot;http://hl7.org/fhir/R4/implementationguide.html\&quot;&gt;ImplementationGuide&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Expression&lt;/td&gt;&lt;td&gt;(none)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Multiples&lt;/td&gt;&lt;td&gt;&lt;ul&gt;&lt;li&gt;multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true&lt;/li&gt;&lt;li&gt;multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Component&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-semver-major.html\&quot;&gt;semver-major&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;version.split('.')[0].toInteger()&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;number&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-semver-minor.html\&quot;&gt;semver-minor&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;version.split('.')[1].toInteger()&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;number&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;SearchParameter-semver-patch.html\&quot;&gt;semver-patch&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;version.split('.')[2].toInteger()&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;number&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+  ] ;
+  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.url">fhir:SearchParameter.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://kip.rkkp.dk/fhir/SearchParameter/semver&quot;] ;
+  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.version">fhir:SearchParameter.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;2.23.1&quot;] ;
+  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.name">fhir:SearchParameter.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;semver&quot;] ;
+  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.status">fhir:SearchParameter.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;] ;
+  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.date">fhir:SearchParameter.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-06-29T13:53:30+00:00&quot;^^xsd:dateTime] ;
+  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.publisher">fhir:SearchParameter.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S&quot;] ;
+  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.contact">fhir:SearchParameter.contact</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;url&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;https://trifork.com&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;email&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;rbk@trifork.com&quot; ]
+     ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.description">fhir:SearchParameter.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;Composite search parameter representing semantic version (major.minor.patch) extracted from version field.&quot;] ;
+  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.code">fhir:SearchParameter.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;semver&quot;] ;
+  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.base">fhir:SearchParameter.base</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;StructureDefinition&quot; ;
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0
+  ], [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;ValueSet&quot; ;
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1
+  ], [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;CodeSystem&quot; ;
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2
+  ], [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;ImplementationGuide&quot; ;
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 3
+  ] ;
+  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.type">fhir:SearchParameter.type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;composite&quot;] ;
+  <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.component">fhir:SearchParameter.component</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.component.definition">fhir:SearchParameter.component.definition</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://kip.rkkp.dk/fhir/SearchParameter/semver-major&quot; ;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://kip.rkkp.dk/fhir/SearchParameter/semver-major&gt;
+     ] ;
+     <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.component.expression">fhir:SearchParameter.component.expression</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;version.split('.')[0].toInteger()&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
+     <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.component.definition">fhir:SearchParameter.component.definition</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://kip.rkkp.dk/fhir/SearchParameter/semver-minor&quot; ;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://kip.rkkp.dk/fhir/SearchParameter/semver-minor&gt;
+     ] ;
+     <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.component.expression">fhir:SearchParameter.component.expression</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;version.split('.')[1].toInteger()&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2 ;
+     <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.component.definition">fhir:SearchParameter.component.definition</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://kip.rkkp.dk/fhir/SearchParameter/semver-patch&quot; ;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://kip.rkkp.dk/fhir/SearchParameter/semver-patch&gt;
+     ] ;
+     <a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.component.expression">fhir:SearchParameter.component.expression</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;version.split('.')[2].toInteger()&quot; ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+&lt;http://hl7.org/fhir/SearchParameter/semver.ttl&gt; a owl:Ontology ;
+  owl:imports fhir:fhir.ttl ;
+  owl:versionIRI &lt;http://build.fhir.org/SearchParameter/semver.ttl&gt; .
 
 </code></pre>
 
@@ -291,7 +319,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://trifork.com">Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S</a>.  Package dk.kip.rkkp.fhir.ig.core#2.23.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 25, 2026 06:10+0000">2026-06-25</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://trifork.com">Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S</a>.  Package dk.kip.rkkp.fhir.ig.core#2.23.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 29, 2026 13:53+0000">2026-06-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

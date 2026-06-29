@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,32 +7,52 @@
 
 <https://kip.rkkp.dk/fhir/SearchParameter/semver-minor> a fhir:SearchParameter ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "semver-minor"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter semver-minor</b></p><a name=\"semver-minor\"> </a><a name=\"hcsemver-minor\"> </a><h2>semver-minor</h2><p>Parameter <code>semver-minor</code>:<code>number</code></p><div><p>Minor version number extracted from version field.</p>\n</div><table class=\"grid\"><tr><td>Resources</td><td><a href=\"http://hl7.org/fhir/R4/structuredefinition.html\">StructureDefinition</a>, <a href=\"http://hl7.org/fhir/R4/valueset.html\">ValueSet</a>, <a href=\"http://hl7.org/fhir/R4/codesystem.html\">CodeSystem</a>, <a href=\"http://hl7.org/fhir/R4/implementationguide.html\">ImplementationGuide</a></td></tr><tr><td>Expression</td><td><code>version.split('.')[1].toInteger()</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true</li></ul></td></tr></table></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [ fhir:v "https://kip.rkkp.dk/fhir/SearchParameter/semver-minor"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "2.23.0"] ; # 
-  fhir:name [ fhir:v "semver-minor"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-06-25T06:10:45+00:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://trifork.com" ]
-     ] [
-       fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "rbk@trifork.com" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "Minor version number extracted from version field."] ; # 
-  fhir:code [ fhir:v "semver-minor"] ; # 
-  fhir:base ( [ fhir:v "StructureDefinition"] [ fhir:v "ValueSet"] [ fhir:v "CodeSystem"] [ fhir:v "ImplementationGuide"] ) ; # 
-  fhir:type [ fhir:v "number"] ; # 
-  fhir:expression [ fhir:v "version.split('.')[1].toInteger()"] . # 
+  fhir:Resource.id [ fhir:value "semver-minor"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter semver-minor</b></p><a name=\"semver-minor\"> </a><a name=\"hcsemver-minor\"> </a><h2>semver-minor</h2><p>Parameter <code>semver-minor</code>:<code>number</code></p><div><p>Minor version number extracted from version field.</p>\n</div><table class=\"grid\"><tr><td>Resources</td><td><a href=\"http://hl7.org/fhir/R4/structuredefinition.html\">StructureDefinition</a>, <a href=\"http://hl7.org/fhir/R4/valueset.html\">ValueSet</a>, <a href=\"http://hl7.org/fhir/R4/codesystem.html\">CodeSystem</a>, <a href=\"http://hl7.org/fhir/R4/implementationguide.html\">ImplementationGuide</a></td></tr><tr><td>Expression</td><td><code>version.split('.')[1].toInteger()</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true</li></ul></td></tr></table></div>"
+  ] ;
+  fhir:SearchParameter.url [ fhir:value "https://kip.rkkp.dk/fhir/SearchParameter/semver-minor"] ;
+  fhir:SearchParameter.version [ fhir:value "2.23.1"] ;
+  fhir:SearchParameter.name [ fhir:value "semver-minor"] ;
+  fhir:SearchParameter.status [ fhir:value "active"] ;
+  fhir:SearchParameter.date [ fhir:value "2026-06-29T13:53:30+00:00"^^xsd:dateTime] ;
+  fhir:SearchParameter.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:SearchParameter.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:SearchParameter.description [ fhir:value "Minor version number extracted from version field."] ;
+  fhir:SearchParameter.code [ fhir:value "semver-minor"] ;
+  fhir:SearchParameter.base [
+     fhir:value "StructureDefinition" ;
+     fhir:index 0
+  ], [
+     fhir:value "ValueSet" ;
+     fhir:index 1
+  ], [
+     fhir:value "CodeSystem" ;
+     fhir:index 2
+  ], [
+     fhir:value "ImplementationGuide" ;
+     fhir:index 3
+  ] ;
+  fhir:SearchParameter.type [ fhir:value "number"] ;
+  fhir:SearchParameter.expression [ fhir:value "version.split('.')[1].toInteger()"] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/SearchParameter/semver-minor.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 
