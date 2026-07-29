@@ -1,4 +1,4 @@
-# Home - KIP Infrastructure v2.23.2
+# Home - KIP Infrastructure v2.23.5
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core | *Version*:2.23.2 |
-| Active as of 2026-07-03 | *Computable Name*:KIPInfrastructure |
+| *Official URL*:https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core | *Version*:2.23.5 |
+| Active as of 2026-07-29 | *Computable Name*:KIPInfrastructure |
 
 ### Introduction
 
@@ -23,11 +23,11 @@ This implementation guide is provided to support the use of FHIR®© in the cont
   "resourceType" : "ImplementationGuide",
   "id" : "dk.kip.rkkp.fhir.ig.core",
   "url" : "https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core",
-  "version" : "2.23.2",
+  "version" : "2.23.5",
   "name" : "KIPInfrastructure",
   "title" : "KIP Infrastructure",
   "status" : "active",
-  "date" : "2026-07-03T09:32:11+00:00",
+  "date" : "2026-07-29T08:01:06+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
@@ -52,7 +52,7 @@ This implementation guide is provided to support the use of FHIR®© in the cont
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.2.0"
+    "version" : "7.3.0"
   },
   {
     "id" : "hl7ext",
@@ -673,6 +673,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ALDkemoterapi.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ALDkemoterapi"
@@ -685,6 +689,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AcetabulumKnogletabKlassifikationDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AcetabulumKnogletabKlassifikationDHR"
@@ -697,6 +705,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ICHAction.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ICHAction"
@@ -709,6 +721,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ActivityType.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ActivityType"
@@ -721,6 +737,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AdministrationTypeDCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AdministrationTypeDCCG"
@@ -733,6 +753,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AfdelingDandem.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AfdelingDandem"
@@ -745,6 +769,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AflastendeProcedure.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AflastendeProcedure"
@@ -757,6 +785,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AKBehandlingDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AKBehandlingDKR"
@@ -769,6 +801,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-AKBehandling.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/AKBehandling"
@@ -781,6 +817,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AktivitetDKRR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AktivitetDKRR"
@@ -793,6 +833,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AktivitetSportDKRR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AktivitetSportDKRR"
@@ -805,6 +849,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AktuelSygdomsforlob.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AktuelSygdomsforlob"
@@ -817,6 +865,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-AktuelSygdomsforlob.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/AktuelSygdomsforlob"
@@ -829,6 +881,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Alchohol.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Alchohol"
@@ -841,6 +897,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-AlchoholDrugs.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/AlchoholDrugs"
@@ -853,6 +913,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Alkohol714.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Alkohol714"
@@ -865,6 +929,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Alkohol0til10.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Alkohol0til10"
@@ -877,6 +945,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Alkohol021.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Alkohol021"
@@ -889,6 +961,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AlleMaaleEnheder.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AlleMaaleEnheder"
@@ -901,6 +977,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AlloplastiktypeDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AlloplastiktypeDKR"
@@ -913,6 +993,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-AlloplastyTypes.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/AlloplastyTypes"
@@ -925,6 +1009,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AnastomoseLaekageGradingering.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AnastomoseLaekageGradingering"
@@ -937,6 +1025,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AnastomoseLaekageGraduering.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AnastomoseLaekageGraduering"
@@ -949,6 +1041,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AnastomoselaekageKonsekvens.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AnastomoselaekageKonsekvens"
@@ -961,6 +1057,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Anastomoselaekage.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Anastomoselaekage"
@@ -973,6 +1073,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AnastomoseType1.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AnastomoseType1"
@@ -985,6 +1089,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AnastomoseType2.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AnastomoseType2"
@@ -997,6 +1105,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AnastomoseType3.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AnastomoseType3"
@@ -1009,6 +1121,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-AnastomosisLeak.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/AnastomosisLeak"
@@ -1021,6 +1137,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-AnastomosisLeakConsequence.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/AnastomosisLeakConsequence"
@@ -1033,6 +1153,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-AnastomosisLeakGrading.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/AnastomosisLeakGrading"
@@ -1045,6 +1169,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-AnastomosisType.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/AnastomosisType"
@@ -1057,6 +1185,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AnatomiskLokation1.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AnatomiskLokation1"
@@ -1069,6 +1201,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AnatomiskLokation2.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AnatomiskLokation2"
@@ -1081,6 +1217,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AnatomiskLokation3.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AnatomiskLokation3"
@@ -1093,6 +1233,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AnatomiskLokation4.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AnatomiskLokation4"
@@ -1105,6 +1249,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LokationAneurismeSAH.html"
       }],
       "reference" : {
         "reference" : "ValueSet/LokationAneurismeSAH"
@@ -1117,6 +1265,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-AnatomicalLocations.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/AnatomicalLocations"
@@ -1129,6 +1281,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AndenBloedningDAP.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AndenBloedningDAP"
@@ -1141,6 +1297,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-AneurysmClosure.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/AneurysmClosure"
@@ -1153,6 +1313,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-AneurysmSizeScale.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/AneurysmSizeScale"
@@ -1165,6 +1329,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AnnArborStagingClassification.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AnnArborStagingClassification"
@@ -1177,6 +1345,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-AnnArborStagingClassification.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/AnnArborStagingClassification"
@@ -1189,6 +1361,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AntibiotikaMedUden.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AntibiotikaMedUden"
@@ -1201,6 +1377,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AntibiotikaprofylakseDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AntibiotikaprofylakseDHR"
@@ -1213,6 +1393,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AntibiotikaprofylakseDKRR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AntibiotikaprofylakseDKRR"
@@ -1225,6 +1409,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AnurismeStoerrelseSAH.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AnurismeStoerrelseSAH"
@@ -1237,6 +1425,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-FISHSamples.html"
       }],
       "reference" : {
         "reference" : "ValueSet/FISHSamples"
@@ -1249,6 +1441,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-FISHSamples202502.html"
       }],
       "reference" : {
         "reference" : "ValueSet/FISHSamples202502"
@@ -1261,6 +1457,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AnaestesiLokalGenerel.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AnaestesiLokalGenerel"
@@ -1273,6 +1473,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AnaestesiLokalGenerelSpinalEpidural.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AnaestesiLokalGenerelSpinalEpidural"
@@ -1285,6 +1489,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AnaestesiGenerelSpinalEpiduralLokalanalgesi.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AnaestesiGenerelSpinalEpiduralLokalanalgesi"
@@ -1297,6 +1505,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AnaestesiRegionalDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AnaestesiRegionalDHR"
@@ -1309,6 +1521,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AnaestesiRegionalUniverselKombineret.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AnaestesiRegionalUniverselKombineret"
@@ -1321,6 +1537,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ComplicationAN.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ComplicationAN"
@@ -1333,6 +1553,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ComplicationAN2026.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ComplicationAN2026"
@@ -1345,6 +1569,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AnasthesiaTypeGen.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AnasthesiaTypeGen"
@@ -1357,6 +1585,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-AnasthesiaTypeGen.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/AnasthesiaTypeGen"
@@ -1369,6 +1601,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AnaestesiDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AnaestesiDUGA"
@@ -1381,6 +1617,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AnasthesiaService.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AnasthesiaService"
@@ -1393,6 +1633,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-AnasthesiaService.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/AnasthesiaService"
@@ -1405,6 +1649,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AnasthesiaService2026.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AnasthesiaService2026"
@@ -1417,6 +1665,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AnasthesiaServiceDAD.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AnasthesiaServiceDAD"
@@ -1429,6 +1681,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-APInstabilitetDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/APInstabilitetDKR"
@@ -1441,6 +1697,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ArtritisDSR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ArtritisDSR"
@@ -1453,6 +1713,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ArtrosePlaceringDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ArtrosePlaceringDKR"
@@ -1465,6 +1729,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ArtrosefoelgeDSR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ArtrosefoelgeDSR"
@@ -1477,6 +1745,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AsaIV.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AsaIV"
@@ -1489,6 +1761,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AsaIVkort.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AsaIVkort"
@@ -1501,6 +1777,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ASAIVI.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ASAIVI"
@@ -1513,6 +1793,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ASAIVIkort.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ASAIVIkort"
@@ -1525,6 +1809,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ASAClassification.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ASAClassification"
@@ -1537,6 +1825,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-AssessmentType.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/AssessmentType"
@@ -1549,6 +1841,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-AssistDevices.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/AssistDevices"
@@ -1561,6 +1857,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AssistDevicesBallonStent.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AssistDevicesBallonStent"
@@ -1573,6 +1873,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ATCAntibiotikaprofylakseDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ATCAntibiotikaprofylakseDKR"
@@ -1585,6 +1889,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ATCAntibiotikaprofylakseDosisDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ATCAntibiotikaprofylakseDosisDKR"
@@ -1597,6 +1905,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ATCAntibiotikaprofylakseVarighedDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ATCAntibiotikaprofylakseVarighedDKR"
@@ -1609,6 +1921,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ATCTromboseprofylakseDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ATCTromboseprofylakseDKR"
@@ -1621,6 +1937,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ATCDMPN.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ATCDMPN"
@@ -1633,6 +1953,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ATCDMPN202410.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ATCDMPN202410"
@@ -1645,6 +1969,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ATCChemoPreparation.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ATCChemoPreparation"
@@ -1657,6 +1985,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ATCImmunotherapyCLL.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ATCImmunotherapyCLL"
@@ -1669,6 +2001,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ATCChemoCLL.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ATCChemoCLL"
@@ -1681,6 +2017,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ATCTargetCLL.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ATCTargetCLL"
@@ -1693,6 +2033,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BanffClassifikation.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BanffClassifikation"
@@ -1705,6 +2049,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-BANFF.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/BANFF"
@@ -1717,6 +2065,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-BasicDisorder.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/BasicDisorder"
@@ -1729,6 +2081,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BegrundelseEndoskopiskLokalresektioen.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BegrundelseEndoskopiskLokalresektioen"
@@ -1741,6 +2097,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BehandlingCML.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BehandlingCML"
@@ -1753,6 +2113,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BehandlingDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BehandlingDHR"
@@ -1765,6 +2129,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TreatmentCrossSection.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TreatmentCrossSection"
@@ -1777,6 +2145,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-BehandlingAfbrudt.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/BehandlingAfbrudt"
@@ -1789,6 +2161,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BehandlingPsykofarmakologiskRETSPSYK.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BehandlingPsykofarmakologiskRETSPSYK"
@@ -1801,6 +2177,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BehandlingEndovaskulaerType.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BehandlingEndovaskulaerType"
@@ -1813,6 +2193,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BehandlingKirurgiskEndovaskulaer.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BehandlingKirurgiskEndovaskulaer"
@@ -1825,6 +2209,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BehandlingTilstraekkelig.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BehandlingTilstraekkelig"
@@ -1837,6 +2225,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BehandlingCMMLMDS.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BehandlingCMMLMDS"
@@ -1849,6 +2241,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BehandlingMDS.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BehandlingMDS"
@@ -1861,6 +2257,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BehandlingsindikationKAR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BehandlingsindikationKAR"
@@ -1873,6 +2273,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Behandlingsintention.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Behandlingsintention"
@@ -1885,6 +2289,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TreatmentMethodMRD.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TreatmentMethodMRD"
@@ -1897,6 +2305,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TreatmentRegimen.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TreatmentRegimen"
@@ -1909,6 +2321,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TreatmentRegimen-2025.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TreatmentRegimen-2025"
@@ -1921,6 +2337,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BehandlingsresponsCML.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BehandlingsresponsCML"
@@ -1933,6 +2353,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BehandlingsTypeStamcellestoetteLYFO.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BehandlingsTypeStamcellestoetteLYFO"
@@ -1945,6 +2369,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TreatmentTypeOncology.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TreatmentTypeOncology"
@@ -1957,6 +2385,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BehandlingsVarighedDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BehandlingsVarighedDHR"
@@ -1969,6 +2401,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BenlaengdeDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BenlaengdeDHR"
@@ -1981,6 +2417,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BilateralUnilateral.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BilateralUnilateral"
@@ -1993,6 +2433,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-BinetStagingSystem.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/BinetStagingSystem"
@@ -2005,6 +2449,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BinetStagingSystem.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BinetStagingSystem"
@@ -2017,6 +2465,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Birthplace.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Birthplace"
@@ -2029,6 +2481,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-BleedingStroke.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/BleedingStroke"
@@ -2041,6 +2497,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BlodfortyndendeMedicin.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BlodfortyndendeMedicin"
@@ -2053,6 +2513,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-HematologicalDiseases.html"
       }],
       "reference" : {
         "reference" : "ValueSet/HematologicalDiseases"
@@ -2065,6 +2529,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BloedningsprofylakseDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BloedningsprofylakseDHR"
@@ -2077,6 +2545,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BoligforholdRETSPSYK.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BoligforholdRETSPSYK"
@@ -2089,6 +2561,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Boligform.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Boligform"
@@ -2101,6 +2577,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BoligformDAP.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BoligformDAP"
@@ -2113,6 +2593,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-BoneLossAcetabulumFemurClassification.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/BoneLossAcetabulumFemurClassification"
@@ -2125,6 +2609,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BrusklaesionArealDKRR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BrusklaesionArealDKRR"
@@ -2137,6 +2625,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BrusklaesionBehandlingDKRR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BrusklaesionBehandlingDKRR"
@@ -2149,6 +2641,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-BulkingMaterialeDUGA.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/BulkingMaterialeDUGA"
@@ -2161,6 +2657,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BulkingMaterialeDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BulkingMaterialeDUGA"
@@ -2173,6 +2673,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-CalciumType.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/CalciumType"
@@ -2185,6 +2689,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-CALRGeneType.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/CALRGeneType"
@@ -2197,6 +2705,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-CALRvariant.html"
       }],
       "reference" : {
         "reference" : "ValueSet/CALRvariant"
@@ -2209,6 +2721,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-CancerInvestigation.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/CancerInvestigation"
@@ -2221,6 +2737,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-CancerUdredning.html"
       }],
       "reference" : {
         "reference" : "ValueSet/CancerUdredning"
@@ -2233,6 +2753,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-CancertypeDCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/CancertypeDCCG"
@@ -2245,6 +2769,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-CaputDiameterDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/CaputDiameterDHR"
@@ -2257,6 +2785,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-CaputModulaerTypeDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/CaputModulaerTypeDHR"
@@ -2269,6 +2801,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-CaputTypeDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/CaputTypeDHR"
@@ -2281,6 +2817,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-CaputnekroseDSR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/CaputnekroseDSR"
@@ -2293,6 +2833,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "SearchParameter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "SearchParameter-CarePlanReadOrWriteAccessSP.html"
       }],
       "reference" : {
         "reference" : "SearchParameter/CarePlanReadOrWriteAccessSP"
@@ -2305,6 +2849,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "SearchParameter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "SearchParameter-CarePlanSorAuthor.html"
       }],
       "reference" : {
         "reference" : "SearchParameter/CarePlanSorAuthor"
@@ -2317,6 +2865,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-CauseOfDeath.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/CauseOfDeath"
@@ -2329,6 +2881,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ReoperationCause.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ReoperationCause"
@@ -2341,6 +2897,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-CementDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/CementDKR"
@@ -2353,6 +2913,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-CementFemurTibiaPatellaDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/CementFemurTibiaPatellaDKR"
@@ -2365,6 +2929,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-CementHofteDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/CementHofteDHR"
@@ -2377,6 +2945,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-CementBlandesystemDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/CementBlandesystemDHR"
@@ -2389,6 +2961,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-CementType.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/CementType"
@@ -2401,6 +2977,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-CentralBlock.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/CentralBlock"
@@ -2413,6 +2993,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ScoreCentralBlock.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ScoreCentralBlock"
@@ -2425,6 +3009,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ChemotherapyRegimen.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ChemotherapyRegimen"
@@ -2437,6 +3025,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ChromosomPair.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ChromosomPair"
@@ -2449,6 +3041,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-CivilstandDAP.html"
       }],
       "reference" : {
         "reference" : "ValueSet/CivilstandDAP"
@@ -2461,6 +3057,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-CivilstatusRETSPSYK.html"
       }],
       "reference" : {
         "reference" : "ValueSet/CivilstatusRETSPSYK"
@@ -2473,6 +3073,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ClavienKomplikationsgrad.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ClavienKomplikationsgrad"
@@ -2485,6 +3089,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ClavienKomplikationsgradDCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ClavienKomplikationsgradDCCG"
@@ -2497,6 +3105,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ClavienKomplikationsgradLangDCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ClavienKomplikationsgradLangDCCG"
@@ -2509,6 +3121,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ClinicalProtocolNotParticipated.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ClinicalProtocolNotParticipated"
@@ -2521,6 +3137,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ClinicalProtocolCodes.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ClinicalProtocolCodes"
@@ -2533,6 +3153,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-CognitiveFunctionFinding.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/CognitiveFunctionFinding"
@@ -2545,6 +3169,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-CognitiveTest.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/CognitiveTest"
@@ -2557,6 +3185,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Complications.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Complications"
@@ -2569,6 +3201,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ConferenceParticipants.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ConferenceParticipants"
@@ -2581,6 +3217,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ContactPlace.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ContactPlace"
@@ -2593,6 +3233,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ContaminationDegree.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ContaminationDegree"
@@ -2605,6 +3249,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "SearchParameter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "SearchParameter-CprPatient.html"
       }],
       "reference" : {
         "reference" : "SearchParameter/CprPatient"
@@ -2617,6 +3265,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-BloodThinnersTreatment.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/BloodThinnersTreatment"
@@ -2629,6 +3281,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Cyclus.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Cyclus"
@@ -2641,6 +3297,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Cyclus.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Cyclus"
@@ -2653,6 +3313,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-CytogeneticChanges.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/CytogeneticChanges"
@@ -2665,6 +3329,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-CytogeneticExamination.html"
       }],
       "reference" : {
         "reference" : "ValueSet/CytogeneticExamination"
@@ -2677,6 +3345,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-CytogeneticExamination.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/CytogeneticExamination"
@@ -2689,6 +3361,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-CytogeneticResult.html"
       }],
       "reference" : {
         "reference" : "ValueSet/CytogeneticResult"
@@ -2701,6 +3377,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-CytogeneticResult202410.html"
       }],
       "reference" : {
         "reference" : "ValueSet/CytogeneticResult202410"
@@ -2713,6 +3393,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-CytogeneticRiskGrimwade2010.html"
       }],
       "reference" : {
         "reference" : "ValueSet/CytogeneticRiskGrimwade2010"
@@ -2725,6 +3409,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-CytogeneticRiskGrimwade2010DAMYDA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/CytogeneticRiskGrimwade2010DAMYDA"
@@ -2737,6 +3425,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-CytogeneticChanges.html"
       }],
       "reference" : {
         "reference" : "ValueSet/CytogeneticChanges"
@@ -2749,6 +3441,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-CytogeneticCancerChangesALD.html"
       }],
       "reference" : {
         "reference" : "ValueSet/CytogeneticCancerChangesALD"
@@ -2761,6 +3457,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-CytogeneticRisk.html"
       }],
       "reference" : {
         "reference" : "ValueSet/CytogeneticRisk"
@@ -2773,6 +3473,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Cytopeni.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Cytopeni"
@@ -2785,6 +3489,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-BiobankSamples.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/BiobankSamples"
@@ -2797,6 +3505,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BiobankSamples.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BiobankSamples"
@@ -2809,6 +3521,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-DatabasesKIP.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/DatabasesKIP"
@@ -2821,6 +3537,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DatabasesHAEMA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DatabasesHAEMA"
@@ -2833,6 +3553,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-DefibrilleringAnalyse.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/DefibrilleringAnalyse"
@@ -2845,6 +3569,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DegcMDTBeslutning.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DegcMDTBeslutning"
@@ -2857,6 +3585,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DeleFoelelser.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DeleFoelelser"
@@ -2869,6 +3601,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-PatobankSNOMED.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/PatobankSNOMED"
@@ -2881,6 +3617,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DetectionMethodCR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DetectionMethodCR"
@@ -2893,6 +3633,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-DetectionMethods.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/DetectionMethods"
@@ -2905,6 +3649,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DHDeksklusionskriterie.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DHDeksklusionskriterie"
@@ -2917,6 +3665,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-DHDeksklusionskriterie.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/DHDeksklusionskriterie"
@@ -2929,6 +3681,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DiagnoseCLL.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DiagnoseCLL"
@@ -2941,6 +3697,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DiagnoseDANDEM.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DiagnoseDANDEM"
@@ -2953,6 +3713,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DiagnoseDMPN.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DiagnoseDMPN"
@@ -2965,6 +3729,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DiagnoseDMPNopfoelgning.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DiagnoseDMPNopfoelgning"
@@ -2977,6 +3745,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DiagnosegruppeHAEMA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DiagnosegruppeHAEMA"
@@ -2989,6 +3761,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DiagnosetypeDPD.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DiagnosetypeDPD"
@@ -3001,6 +3777,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Dialyseadgang.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Dialyseadgang"
@@ -3013,6 +3793,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DialyseadgangDNSL.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DialyseadgangDNSL"
@@ -3025,6 +3809,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DialyseOpstartDNSL.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DialyseOpstartDNSL"
@@ -3037,6 +3825,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-DiseaseLocalization.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/DiseaseLocalization"
@@ -3049,6 +3841,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-DiseasePhase.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/DiseasePhase"
@@ -3061,6 +3857,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Sygdomsfase.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Sygdomsfase"
@@ -3073,6 +3873,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-DiseasesUnspecified.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/DiseasesUnspecified"
@@ -3085,6 +3889,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-plan-definition-action-display-order.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/plan-definition-action-display-order"
@@ -3097,6 +3905,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DoedLokation.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DoedLokation"
@@ -3109,6 +3921,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DoedsaarsagCLL.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DoedsaarsagCLL"
@@ -3121,6 +3937,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DomAfslutningRETSPSYK.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DomAfslutningRETSPSYK"
@@ -3133,6 +3953,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DomAnbefalingRETSPSYK.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DomAnbefalingRETSPSYK"
@@ -3145,6 +3969,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DomAnbringelseRETSPSYK.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DomAnbringelseRETSPSYK"
@@ -3157,6 +3985,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DomBehandlingRETSPSYK.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DomBehandlingRETSPSYK"
@@ -3169,6 +4001,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DomBehandlingAmbulantRETSPSYK.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DomBehandlingAmbulantRETSPSYK"
@@ -3181,6 +4017,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DomForanstaltningstypeRETSPSYK.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DomForanstaltningstypeRETSPSYK"
@@ -3193,6 +4033,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DomOphaevelseAarsagRETSPSYK.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DomOphaevelseAarsagRETSPSYK"
@@ -3205,6 +4049,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DomPauseringAarsagRETSPSYK.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DomPauseringAarsagRETSPSYK"
@@ -3217,6 +4065,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DomTidligereRETSPSYK.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DomTidligereRETSPSYK"
@@ -3229,6 +4081,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DomAendringPauseringRETSPSYK.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DomAendringPauseringRETSPSYK"
@@ -3241,6 +4097,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Dosis.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Dosis"
@@ -3253,6 +4113,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DosisAKbehDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DosisAKbehDKR"
@@ -3265,6 +4129,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DVTProfylakseDosisDKRR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DVTProfylakseDosisDKRR"
@@ -3277,6 +4145,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DoedsaarsagLYFO.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DoedsaarsagLYFO"
@@ -3289,6 +4161,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DoedsaarsagALD.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DoedsaarsagALD"
@@ -3301,6 +4177,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DoedsaarsagDAMYDA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DoedsaarsagDAMYDA"
@@ -3313,6 +4193,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DoedsaarsagSAH.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DoedsaarsagSAH"
@@ -3325,6 +4209,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ECOG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ECOG"
@@ -3337,6 +4225,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ECOGHAEMA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ECOGHAEMA"
@@ -3349,6 +4241,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-EconomicSupport.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/EconomicSupport"
@@ -3361,6 +4257,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-EdemaStroke.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/EdemaStroke"
@@ -3373,6 +4273,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-EDTACodes.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/EDTACodes"
@@ -3385,6 +4289,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-EDTAHaemodialyseDNSL.html"
       }],
       "reference" : {
         "reference" : "ValueSet/EDTAHaemodialyseDNSL"
@@ -3397,6 +4305,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-EDTAPeritonedialyseDNSL.html"
       }],
       "reference" : {
         "reference" : "ValueSet/EDTAPeritonedialyseDNSL"
@@ -3409,6 +4321,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-EDTATransplantationDNSL.html"
       }],
       "reference" : {
         "reference" : "ValueSet/EDTATransplantationDNSL"
@@ -3421,6 +4337,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-EducationType.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/EducationType"
@@ -3433,6 +4353,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-EHSIncisionalHerniaClassification.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/EHSIncisionalHerniaClassification"
@@ -3445,6 +4369,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-EHSIncisionalHerniaClassificationType.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/EHSIncisionalHerniaClassificationType"
@@ -3457,6 +4385,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-EHSVentralHernieLateral.html"
       }],
       "reference" : {
         "reference" : "ValueSet/EHSVentralHernieLateral"
@@ -3469,6 +4401,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-EHSVentralHernieMidtlinie.html"
       }],
       "reference" : {
         "reference" : "ValueSet/EHSVentralHernieMidtlinie"
@@ -3481,6 +4417,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-EHSVentralHernieSamlet.html"
       }],
       "reference" : {
         "reference" : "ValueSet/EHSVentralHernieSamlet"
@@ -3493,6 +4433,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-EHSVentralHernieType.html"
       }],
       "reference" : {
         "reference" : "ValueSet/EHSVentralHernieType"
@@ -3505,6 +4449,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ExtraordinaryTreatmenCause.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ExtraordinaryTreatmenCause"
@@ -3517,6 +4465,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SKSExtraModularDisease.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SKSExtraModularDisease"
@@ -3529,6 +4481,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-EndoscopicAppearance.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/EndoscopicAppearance"
@@ -3541,6 +4497,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-EORTC14DPD.html"
       }],
       "reference" : {
         "reference" : "ValueSet/EORTC14DPD"
@@ -3553,6 +4513,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-EORTC17DPD.html"
       }],
       "reference" : {
         "reference" : "ValueSet/EORTC17DPD"
@@ -3565,6 +4529,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-EORTC17DUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/EORTC17DUGA"
@@ -3577,6 +4545,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-EORTC24DPD.html"
       }],
       "reference" : {
         "reference" : "ValueSet/EORTC24DPD"
@@ -3589,6 +4561,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-EORTCQLQC1514.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/EORTCQLQC1514"
@@ -3601,6 +4577,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-EORTCQLQC1517.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/EORTCQLQC1517"
@@ -3613,6 +4593,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ManglendeEORTC.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ManglendeEORTC"
@@ -3625,6 +4609,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-PRDcodes.html"
       }],
       "reference" : {
         "reference" : "ValueSet/PRDcodes"
@@ -3637,6 +4625,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-PRDcodes.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/PRDcodes"
@@ -3649,6 +4641,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ErklaeringRETSPSYK.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ErklaeringRETSPSYK"
@@ -3661,6 +4657,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Faggruppe.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Faggruppe"
@@ -3673,6 +4673,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Faggruppe.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Faggruppe"
@@ -3685,6 +4689,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Competence.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Competence"
@@ -3697,6 +4705,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Competence.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Competence"
@@ -3709,6 +4721,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-FemurKnogletabKlassifikationDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/FemurKnogletabKlassifikationDHR"
@@ -3721,6 +4737,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-FiksationCementeretUcementeret.html"
       }],
       "reference" : {
         "reference" : "ValueSet/FiksationCementeretUcementeret"
@@ -3733,6 +4753,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-FiksationCementeretUcementeretAndet.html"
       }],
       "reference" : {
         "reference" : "ValueSet/FiksationCementeretUcementeretAndet"
@@ -3745,6 +4769,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-FiksationCementeretUcementeretHybrid.html"
       }],
       "reference" : {
         "reference" : "ValueSet/FiksationCementeretUcementeretHybrid"
@@ -3757,6 +4785,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-FiksationFemurDKRR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/FiksationFemurDKRR"
@@ -3769,6 +4801,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-FiksationFemurDKRR202503.html"
       }],
       "reference" : {
         "reference" : "ValueSet/FiksationFemurDKRR202503"
@@ -3781,6 +4817,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-FiksationTibiaDKRR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/FiksationTibiaDKRR"
@@ -3793,6 +4833,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-DSAFindingsLocation.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/DSAFindingsLocation"
@@ -3805,6 +4849,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-FISHProcedure.html"
       }],
       "reference" : {
         "reference" : "ValueSet/FISHProcedure"
@@ -3817,6 +4865,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-FISHVariables.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/FISHVariables"
@@ -3829,6 +4881,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-FisherGrad.html"
       }],
       "reference" : {
         "reference" : "ValueSet/FisherGrad"
@@ -3841,6 +4897,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-FisherGradingScale.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/FisherGradingScale"
@@ -3853,6 +4913,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-FixationCruciateLigaments.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/FixationCruciateLigaments"
@@ -3865,6 +4929,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KontaktType1.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KontaktType1"
@@ -3877,6 +4945,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KontaktSted.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KontaktSted"
@@ -3889,6 +4961,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KontaktSted2026.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KontaktSted2026"
@@ -3901,6 +4977,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ForsoergelsesgrundlagRETSPSYK.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ForsoergelsesgrundlagRETSPSYK"
@@ -3913,6 +4993,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-FrakturFriskhedDSR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/FrakturFriskhedDSR"
@@ -3925,6 +5009,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AKFravalgt.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AKFravalgt"
@@ -3937,6 +5025,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Frekvens.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Frekvens"
@@ -3949,6 +5041,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-FrekvensLaekDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/FrekvensLaekDUGA"
@@ -3961,6 +5057,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-FrekvensNedsynkningDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/FrekvensNedsynkningDUGA"
@@ -3973,6 +5073,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-FunctionGroupAlloplasty.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/FunctionGroupAlloplasty"
@@ -3985,6 +5089,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-FunctionTest.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/FunctionTest"
@@ -3997,6 +5105,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-FunctionalScoreTypes.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/FunctionalScoreTypes"
@@ -4009,6 +5121,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-FunktionTestADLDANDEM.html"
       }],
       "reference" : {
         "reference" : "ValueSet/FunktionTestADLDANDEM"
@@ -4021,6 +5137,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-FunktionsgruppeDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/FunktionsgruppeDKR"
@@ -4033,6 +5153,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-FunktionsgruppeDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/FunktionsgruppeDHR"
@@ -4045,6 +5169,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-FoedselsstedRETSPSYK.html"
       }],
       "reference" : {
         "reference" : "ValueSet/FoedselsstedRETSPSYK"
@@ -4057,6 +5185,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-SizesGeneral.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/SizesGeneral"
@@ -4069,6 +5201,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-GenericValues.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/GenericValues"
@@ -4081,6 +5217,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Genoplivning.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Genoplivning"
@@ -4093,6 +5233,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Genoplivning.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Genoplivning"
@@ -4105,6 +5249,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-GenoplivStoppet.html"
       }],
       "reference" : {
         "reference" : "ValueSet/GenoplivStoppet"
@@ -4117,6 +5265,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-GenoplivStoppet.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/GenoplivStoppet"
@@ -4129,6 +5281,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-GlenoidalkomponentIkkeIndsatDSR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/GlenoidalkomponentIkkeIndsatDSR"
@@ -4141,6 +5297,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-GlenoidalkomponentSupplerendeDSR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/GlenoidalkomponentSupplerendeDSR"
@@ -4153,6 +5313,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-GradAkutDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/GradAkutDHDB"
@@ -4165,6 +5329,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AnurismeAflukning.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AnurismeAflukning"
@@ -4177,6 +5345,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ResttumorGradering.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ResttumorGradering"
@@ -4189,6 +5361,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-GraftDKRR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/GraftDKRR"
@@ -4201,6 +5377,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-GraftACLDKRR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/GraftACLDKRR"
@@ -4213,6 +5393,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-GraftCruciateLigaments.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/GraftCruciateLigaments"
@@ -4225,6 +5409,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ManglendeBehandling.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ManglendeBehandling"
@@ -4237,6 +5425,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-GrundlidelseDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/GrundlidelseDKR"
@@ -4249,6 +5441,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-GrundlidelseDSR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/GrundlidelseDSR"
@@ -4261,6 +5457,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-GrundlidelseDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/GrundlidelseDHR"
@@ -4273,6 +5473,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-GynUndersoegDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/GynUndersoegDUGA"
@@ -4285,6 +5489,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-GynUndersoegDUGA.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/GynUndersoegDUGA"
@@ -4297,6 +5505,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-HarrisHipScoreShoesSocks.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/HarrisHipScoreShoesSocks"
@@ -4309,6 +5521,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-HarrisHipScoreDistanceWalked.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/HarrisHipScoreDistanceWalked"
@@ -4321,6 +5537,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-HarrisHipScoreLimp.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/HarrisHipScoreLimp"
@@ -4333,6 +5553,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-HarrisHipScorePain.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/HarrisHipScorePain"
@@ -4345,6 +5569,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-HarrisHipScorePublicTransportation.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/HarrisHipScorePublicTransportation"
@@ -4357,6 +5585,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-HarrisHipScoreSitting.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/HarrisHipScoreSitting"
@@ -4369,6 +5601,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-HarrisHipScoreStairs.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/HarrisHipScoreStairs"
@@ -4381,6 +5617,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-HarrisHipScoreSupport.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/HarrisHipScoreSupport"
@@ -4393,6 +5633,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-HarrisHipScoreGangafvikling.html"
       }],
       "reference" : {
         "reference" : "ValueSet/HarrisHipScoreGangafvikling"
@@ -4405,6 +5649,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-HarrisHipScoreGangdistance.html"
       }],
       "reference" : {
         "reference" : "ValueSet/HarrisHipScoreGangdistance"
@@ -4417,6 +5665,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-HarrisHipScoreHjaelpemidler.html"
       }],
       "reference" : {
         "reference" : "ValueSet/HarrisHipScoreHjaelpemidler"
@@ -4429,6 +5681,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-HarrisHipScoreOffentligTransport.html"
       }],
       "reference" : {
         "reference" : "ValueSet/HarrisHipScoreOffentligTransport"
@@ -4441,6 +5697,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-HarrisHipScoreSiddefunktion.html"
       }],
       "reference" : {
         "reference" : "ValueSet/HarrisHipScoreSiddefunktion"
@@ -4453,6 +5713,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-HarrisHipScoreSkoStroemper.html"
       }],
       "reference" : {
         "reference" : "ValueSet/HarrisHipScoreSkoStroemper"
@@ -4465,6 +5729,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-HarrisHipScoreSmerter.html"
       }],
       "reference" : {
         "reference" : "ValueSet/HarrisHipScoreSmerter"
@@ -4477,6 +5745,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-HarrisHipScoreTrappegang.html"
       }],
       "reference" : {
         "reference" : "ValueSet/HarrisHipScoreTrappegang"
@@ -4489,6 +5761,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-HemialloplastikFemur.html"
       }],
       "reference" : {
         "reference" : "ValueSet/HemialloplastikFemur"
@@ -4501,6 +5777,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-HenvistFra.html"
       }],
       "reference" : {
         "reference" : "ValueSet/HenvistFra"
@@ -4513,6 +5793,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-HerniaSize.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/HerniaSize"
@@ -4525,6 +5809,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-HernieStoerrelse.html"
       }],
       "reference" : {
         "reference" : "ValueSet/HernieStoerrelse"
@@ -4537,6 +5825,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-HaemoglobinTransf4.html"
       }],
       "reference" : {
         "reference" : "ValueSet/HaemoglobinTransf4"
@@ -4549,6 +5841,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-HaemoglobinTransf4.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/HaemoglobinTransf4"
@@ -4561,6 +5857,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-HipJointArthroplastyComponent.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/HipJointArthroplastyComponent"
@@ -4573,6 +5873,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-TumorClassificationHistology.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/TumorClassificationHistology"
@@ -4585,6 +5889,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-HjerneoedemDAP.html"
       }],
       "reference" : {
         "reference" : "ValueSet/HjerneoedemDAP"
@@ -4597,6 +5905,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-HeartRhythm.html"
       }],
       "reference" : {
         "reference" : "ValueSet/HeartRhythm"
@@ -4609,6 +5921,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Hjerterytme.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Hjerterytme"
@@ -4621,6 +5937,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-HeartRhythm.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/HeartRhythm"
@@ -4633,6 +5953,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Rytme1Obs.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Rytme1Obs"
@@ -4645,6 +5969,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Rytme1Obs.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Rytme1Obs"
@@ -4657,6 +5985,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-HjerterytmeAnalyse.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/HjerterytmeAnalyse"
@@ -4669,6 +6001,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-HeartAttackTypes.html"
       }],
       "reference" : {
         "reference" : "ValueSet/HeartAttackTypes"
@@ -4681,6 +6017,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-HjertestopAarsag.html"
       }],
       "reference" : {
         "reference" : "ValueSet/HjertestopAarsag"
@@ -4693,6 +6033,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-HjertestopAarsag.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/HjertestopAarsag"
@@ -4705,6 +6049,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-HousingType.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/HousingType"
@@ -4717,6 +6065,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-HumeruskomponentDSR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/HumeruskomponentDSR"
@@ -4729,6 +6081,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-HuntHessClassification.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/HuntHessClassification"
@@ -4741,6 +6097,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-HuntHessClassification.html"
       }],
       "reference" : {
         "reference" : "ValueSet/HuntHessClassification"
@@ -4753,6 +6113,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ClinicalProtocolNotParticipated.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ClinicalProtocolNotParticipated"
@@ -4765,6 +6129,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Hyppighed.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Hyppighed"
@@ -4777,6 +6145,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LipomHandlingDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/LipomHandlingDHDB"
@@ -4789,6 +6161,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-HaendelseIndtraeffer.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/HaendelseIndtraeffer"
@@ -4801,6 +6177,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-IDC10DPDCancer.html"
       }],
       "reference" : {
         "reference" : "ValueSet/IDC10DPDCancer"
@@ -4813,6 +6193,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-IDC10DPD.html"
       }],
       "reference" : {
         "reference" : "ValueSet/IDC10DPD"
@@ -4825,6 +6209,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-IDC10DPDNonCancer.html"
       }],
       "reference" : {
         "reference" : "ValueSet/IDC10DPDNonCancer"
@@ -4837,6 +6225,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ICRSGradingSystem.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ICRSGradingSystem"
@@ -4849,6 +6241,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ICRSGraduering14.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ICRSGraduering14"
@@ -4861,6 +6257,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-IkkeBesvaret.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/IkkeBesvaret"
@@ -4873,6 +6273,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-IkkeBesvaret.html"
       }],
       "reference" : {
         "reference" : "ValueSet/IkkeBesvaret"
@@ -4885,6 +6289,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-IkkeUdfoert.html"
       }],
       "reference" : {
         "reference" : "ValueSet/IkkeUdfoert"
@@ -4897,6 +6305,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Imaging.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Imaging"
@@ -4909,6 +6321,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ImagingAngio.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ImagingAngio"
@@ -4921,6 +6337,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Immunoterapi.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Immunoterapi"
@@ -4933,6 +6353,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ImplantComponents.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ImplantComponents"
@@ -4945,6 +6369,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ImplantatAnatomiskDesign.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ImplantatAnatomiskDesign"
@@ -4957,6 +6385,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ImplantatAnatomiskReverse.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ImplantatAnatomiskReverse"
@@ -4969,6 +6401,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ImplantatAnatomiskOffset.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ImplantatAnatomiskOffset"
@@ -4981,6 +6417,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ImplantatMaterialeDSR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ImplantatMaterialeDSR"
@@ -4993,6 +6433,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ImplantatMaterialeKeramikMetalAndet.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ImplantatMaterialeKeramikMetalAndet"
@@ -5005,6 +6449,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ImplantatMaterialePolyethylenKeramikMetal.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ImplantatMaterialePolyethylenKeramikMetal"
@@ -5017,6 +6465,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ImplantatReverseDesign.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ImplantatReverseDesign"
@@ -5029,6 +6481,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ImplantattypeDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ImplantattypeDUGA"
@@ -5041,6 +6497,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ImplantattypeDUGA.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ImplantattypeDUGA"
@@ -5053,6 +6513,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-IncisionChoice.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/IncisionChoice"
@@ -5065,6 +6529,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Incisionsvalg.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Incisionsvalg"
@@ -5077,6 +6545,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-IndgrebComponentsSeparationDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/IndgrebComponentsSeparationDHDB"
@@ -5089,6 +6561,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-IndgrebComponentsSeparationTypeDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/IndgrebComponentsSeparationTypeDHDB"
@@ -5101,6 +6577,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-IndgrebFemoralhernieDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/IndgrebFemoralhernieDHDB"
@@ -5113,6 +6593,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-IndgrebNerveSet.html"
       }],
       "reference" : {
         "reference" : "ValueSet/IndgrebNerveSet"
@@ -5125,6 +6609,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-IndgrebIngvinalhernieDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/IndgrebIngvinalhernieDHDB"
@@ -5137,6 +6625,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-IndgrebVentralhernieDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/IndgrebVentralhernieDHDB"
@@ -5149,6 +6641,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-IndgrebVentralhernieAndenDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/IndgrebVentralhernieAndenDHDB"
@@ -5161,6 +6657,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-IndgrebLaparoskopiskDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/IndgrebLaparoskopiskDHDB"
@@ -5173,6 +6673,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-IndgrebAabenMeshIngvinalhernieDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/IndgrebAabenMeshIngvinalhernieDHDB"
@@ -5185,6 +6689,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-IndgrebAabenIngvinalhernieDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/IndgrebAabenIngvinalhernieDHDB"
@@ -5197,6 +6705,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-IndikationTES.html"
       }],
       "reference" : {
         "reference" : "ValueSet/IndikationTES"
@@ -5209,6 +6721,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-IndsatFjernet.html"
       }],
       "reference" : {
         "reference" : "ValueSet/IndsatFjernet"
@@ -5221,6 +6737,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-IndsatIkkeIndsat.html"
       }],
       "reference" : {
         "reference" : "ValueSet/IndsatIkkeIndsat"
@@ -5233,6 +6753,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Ingen.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Ingen"
@@ -5245,6 +6769,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-IngenBehandling.html"
       }],
       "reference" : {
         "reference" : "ValueSet/IngenBehandling"
@@ -5257,6 +6785,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-IngvinalhernieSpecificering.html"
       }],
       "reference" : {
         "reference" : "ValueSet/IngvinalhernieSpecificering"
@@ -5269,6 +6801,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-InitialRespons.html"
       }],
       "reference" : {
         "reference" : "ValueSet/InitialRespons"
@@ -5281,6 +6817,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-IntervalsExact.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/IntervalsExact"
@@ -5293,6 +6833,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Intervals.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Intervals"
@@ -5305,6 +6849,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Interventionsforloeb.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Interventionsforloeb"
@@ -5317,6 +6865,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Interventionsforloeb.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Interventionsforloeb"
@@ -5329,6 +6881,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Interventionsgruppe.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Interventionsgruppe"
@@ -5341,6 +6897,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-InterventionsgruppeDialyseHaemoDNSL.html"
       }],
       "reference" : {
         "reference" : "ValueSet/InterventionsgruppeDialyseHaemoDNSL"
@@ -5353,6 +6913,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-InterventionsgruppeDialysePeritonealDNSL.html"
       }],
       "reference" : {
         "reference" : "ValueSet/InterventionsgruppeDialysePeritonealDNSL"
@@ -5365,6 +6929,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-InterventionsgruppeTransplantDNSL.html"
       }],
       "reference" : {
         "reference" : "ValueSet/InterventionsgruppeTransplantDNSL"
@@ -5377,6 +6945,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-InterventionsgruppeTransplantExclDNSL.html"
       }],
       "reference" : {
         "reference" : "ValueSet/InterventionsgruppeTransplantExclDNSL"
@@ -5389,6 +6961,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-IntraoperativeLaesionerKDCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/IntraoperativeLaesionerKDCCG"
@@ -5401,6 +6977,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-IntraoperativeLaesionerMDCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/IntraoperativeLaesionerMDCCG"
@@ -5413,6 +6993,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Intubation.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Intubation"
@@ -5425,6 +7009,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Intubation.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Intubation"
@@ -5437,6 +7025,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-IPSSRCytogeneticCategory.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/IPSSRCytogeneticCategory"
@@ -5449,6 +7041,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-IPSSRCytogenetiskRisiko.html"
       }],
       "reference" : {
         "reference" : "ValueSet/IPSSRCytogenetiskRisiko"
@@ -5461,6 +7057,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-JaEnkeltUdfald.html"
       }],
       "reference" : {
         "reference" : "ValueSet/JaEnkeltUdfald"
@@ -5473,6 +7073,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-JaNej.html"
       }],
       "reference" : {
         "reference" : "ValueSet/JaNej"
@@ -5485,6 +7089,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-JaNejBetinget.html"
       }],
       "reference" : {
         "reference" : "ValueSet/JaNejBetinget"
@@ -5497,6 +7105,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-JaNejIkkefagligrelevant.html"
       }],
       "reference" : {
         "reference" : "ValueSet/JaNejIkkefagligrelevant"
@@ -5509,6 +7121,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-JaNejIkkeindiceret.html"
       }],
       "reference" : {
         "reference" : "ValueSet/JaNejIkkeindiceret"
@@ -5521,6 +7137,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-JaNejEjMaalt.html"
       }],
       "reference" : {
         "reference" : "ValueSet/JaNejEjMaalt"
@@ -5533,6 +7153,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-JaNejIkkerelevant.html"
       }],
       "reference" : {
         "reference" : "ValueSet/JaNejIkkerelevant"
@@ -5545,6 +7169,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-JaNejIkkeSpurgt.html"
       }],
       "reference" : {
         "reference" : "ValueSet/JaNejIkkeSpurgt"
@@ -5557,6 +7185,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-JaNejIkkeUdfoert.html"
       }],
       "reference" : {
         "reference" : "ValueSet/JaNejIkkeUdfoert"
@@ -5569,6 +7201,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-JaNejKanIkkeAfgoeres.html"
       }],
       "reference" : {
         "reference" : "ValueSet/JaNejKanIkkeAfgoeres"
@@ -5581,6 +7217,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-JaNejUkendt.html"
       }],
       "reference" : {
         "reference" : "ValueSet/JaNejUkendt"
@@ -5593,6 +7233,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-JaNejUkendtIkkerelevant.html"
       }],
       "reference" : {
         "reference" : "ValueSet/JaNejUkendtIkkerelevant"
@@ -5605,6 +7249,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-JaNejUvist.html"
       }],
       "reference" : {
         "reference" : "ValueSet/JaNejUvist"
@@ -5617,6 +7265,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-JaNejUvistIkkeudfoert.html"
       }],
       "reference" : {
         "reference" : "ValueSet/JaNejUvistIkkeudfoert"
@@ -5629,6 +7281,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-JaNejUvistUkendt.html"
       }],
       "reference" : {
         "reference" : "ValueSet/JaNejUvistUkendt"
@@ -5641,6 +7297,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-JaNejUvistUkendtIkkeRelevant.html"
       }],
       "reference" : {
         "reference" : "ValueSet/JaNejUvistUkendtIkkeRelevant"
@@ -5653,6 +7313,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-CoronaryArteryGraph.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/CoronaryArteryGraph"
@@ -5665,6 +7329,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-CoronaryArteryGraph.html"
       }],
       "reference" : {
         "reference" : "ValueSet/CoronaryArteryGraph"
@@ -5677,6 +7345,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-KellgrenLawrenceKlassifikation.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/KellgrenLawrenceKlassifikation"
@@ -5689,6 +7361,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KellgrenLawsonKlassifikation.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KellgrenLawsonKlassifikation"
@@ -5701,6 +7377,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Chemotherapy.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Chemotherapy"
@@ -5713,6 +7393,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Kemoterapiregime.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Kemoterapiregime"
@@ -5725,6 +7409,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-HeartFailure.html"
       }],
       "reference" : {
         "reference" : "ValueSet/HeartFailure"
@@ -5737,6 +7425,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KirurgiskAdgangDSR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KirurgiskAdgangDSR"
@@ -5749,6 +7441,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MKategoriDCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MKategoriDCCG"
@@ -5761,6 +7457,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-NKategoriDCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/NKategoriDCCG"
@@ -5773,6 +7473,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TKategoriDCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TKategoriDCCG"
@@ -5785,6 +7489,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ClinicalProtocolCodes.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ClinicalProtocolCodes"
@@ -5797,6 +7505,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ClinicalProtocolCodes1.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ClinicalProtocolCodes1"
@@ -5809,6 +7521,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KliniskeSymptomerDCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KliniskeSymptomerDCCG"
@@ -5821,6 +7537,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-KliniskeSymptomerDCCG.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/KliniskeSymptomerDCCG"
@@ -5833,6 +7553,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-KneeJointArthroplastyComponent.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/KneeJointArthroplastyComponent"
@@ -5845,6 +7569,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-KneeLoosenessGrading.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/KneeLoosenessGrading"
@@ -5857,6 +7585,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-RadiologicalBoneChanges.html"
       }],
       "reference" : {
         "reference" : "ValueSet/RadiologicalBoneChanges"
@@ -5869,6 +7601,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-RadiologicalBoneChanges202412.html"
       }],
       "reference" : {
         "reference" : "ValueSet/RadiologicalBoneChanges202412"
@@ -5881,6 +7617,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KnoglegraftDSR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KnoglegraftDSR"
@@ -5893,6 +7633,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KnogletransplantationDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KnogletransplantationDHR"
@@ -5905,6 +7649,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KnaeLoeshedPosterolateral.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KnaeLoeshedPosterolateral"
@@ -5917,6 +7665,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KnaeLoeshedGradering.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KnaeLoeshedGradering"
@@ -5929,6 +7681,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KnaeakseDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KnaeakseDKR"
@@ -5941,6 +7697,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KognitivPaavirkningDANDEM.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KognitivPaavirkningDANDEM"
@@ -5953,6 +7713,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KognitivTestDANDEM.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KognitivTestDANDEM"
@@ -5965,6 +7729,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomplikationerDKRR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomplikationerDKRR"
@@ -5977,6 +7745,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomplAndreDiagDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomplAndreDiagDUGA"
@@ -5989,6 +7761,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomplAndreProcDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomplAndreProcDUGA"
@@ -6001,6 +7777,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomplBlaereDiagDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomplBlaereDiagDUGA"
@@ -6013,6 +7793,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomplBlaereProcDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomplBlaereProcDUGA"
@@ -6025,6 +7809,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomplBloedDiagDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomplBloedDiagDUGA"
@@ -6037,6 +7825,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomplBloedProcDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomplBloedProcDUGA"
@@ -6049,6 +7841,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomplInfektionDiagDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomplInfektionDiagDUGA"
@@ -6061,6 +7857,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomplInfektionProcDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomplInfektionProcDUGA"
@@ -6073,6 +7873,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomplOrganperfDiagDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomplOrganperfDiagDUGA"
@@ -6085,6 +7889,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomplOrganperfProcDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomplOrganperfProcDUGA"
@@ -6097,6 +7905,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomplikationerVaskulaerDMPN.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomplikationerVaskulaerDMPN"
@@ -6109,6 +7921,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomplikationerBehandlingDEGC.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomplikationerBehandlingDEGC"
@@ -6121,6 +7937,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomplikationerEndovaskulaerSAH.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomplikationerEndovaskulaerSAH"
@@ -6133,6 +7953,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomplikationerKirurgiskSAH.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomplikationerKirurgiskSAH"
@@ -6145,6 +7969,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomplikationerPeroperativeDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomplikationerPeroperativeDHR"
@@ -6157,6 +7985,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomplikationerPeroperativeDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomplikationerPeroperativeDKR"
@@ -6169,6 +8001,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomponentAcetabulumDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomponentAcetabulumDHR"
@@ -6181,6 +8017,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomponentAcetabulumStatusDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomponentAcetabulumStatusDHR"
@@ -6193,6 +8033,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomponentFemurDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomponentFemurDHR"
@@ -6205,6 +8049,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomponentFemurDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomponentFemurDKR"
@@ -6217,6 +8065,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomponentFemurDKR202503.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomponentFemurDKR202503"
@@ -6229,6 +8081,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomponentFemurDKRrevision.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomponentFemurDKRrevision"
@@ -6241,6 +8097,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomponentFemurDKRrevision202503.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomponentFemurDKRrevision202503"
@@ -6253,6 +8113,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomponentFemurStatusDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomponentFemurStatusDHR"
@@ -6265,6 +8129,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomponentFemurStatusDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomponentFemurStatusDKR"
@@ -6277,6 +8145,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomponentPatellaDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomponentPatellaDKR"
@@ -6289,6 +8161,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomponentPatellaDKRrevision.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomponentPatellaDKRrevision"
@@ -6301,6 +8177,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomponentPatellaMaterialeDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomponentPatellaMaterialeDKR"
@@ -6313,6 +8193,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomponentSupplementDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomponentSupplementDKR"
@@ -6325,6 +8209,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomponentTibiaDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomponentTibiaDKR"
@@ -6337,6 +8225,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomponentTibiaDKR202503.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomponentTibiaDKR202503"
@@ -6349,6 +8241,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomponentTibiaDKRrevision.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomponentTibiaDKRrevision"
@@ -6361,6 +8257,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomponentTibiaDKRrevision202503.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomponentTibiaDKRrevision202503"
@@ -6373,6 +8273,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomponentTibiaStatusDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomponentTibiaStatusDKR"
@@ -6385,6 +8289,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomponentTypeDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomponentTypeDKR"
@@ -6397,6 +8305,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomponentTypeFemurDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomponentTypeFemurDHR"
@@ -6409,6 +8321,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KomponentTypeHullerUdenhullerDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KomponentTypeHullerUdenhullerDHR"
@@ -6421,6 +8337,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KonferenceDPD.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KonferenceDPD"
@@ -6433,6 +8353,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ContactPatient.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ContactPatient"
@@ -6445,6 +8369,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KontaktPatient.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KontaktPatient"
@@ -6457,6 +8385,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Kontamineringsgrad.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Kontamineringsgrad"
@@ -6469,6 +8401,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KorsbaandEjBevaret.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KorsbaandEjBevaret"
@@ -6481,6 +8417,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-KorsbaandEjBevaret.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/KorsbaandEjBevaret"
@@ -6493,6 +8433,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ChromosomPairs.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ChromosomPairs"
@@ -6505,6 +8449,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KursusregAarsag.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KursusregAarsag"
@@ -6517,6 +8465,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SmerteKvalme.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SmerteKvalme"
@@ -6529,6 +8481,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Gender.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Gender"
@@ -6541,6 +8497,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-LaryngoskopiDegree.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/LaryngoskopiDegree"
@@ -6553,6 +8513,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LaryngoskopiDegree.html"
       }],
       "reference" : {
         "reference" : "ValueSet/LaryngoskopiDegree"
@@ -6565,6 +8529,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LaryngoskopiDegree2026.html"
       }],
       "reference" : {
         "reference" : "ValueSet/LaryngoskopiDegree2026"
@@ -6577,6 +8545,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LedbaandsrekonstruktionDKRR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/LedbaandsrekonstruktionDKRR"
@@ -6589,6 +8561,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LeftRight.html"
       }],
       "reference" : {
         "reference" : "ValueSet/LeftRight"
@@ -6601,6 +8577,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-LesionType.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/LesionType"
@@ -6613,6 +8593,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-PatobankSNOMEDLeukemiaDiagnose.html"
       }],
       "reference" : {
         "reference" : "ValueSet/PatobankSNOMEDLeukemiaDiagnose"
@@ -6625,6 +8609,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LimnavnDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/LimnavnDHDB"
@@ -6637,6 +8625,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LinerCrosslinkedDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/LinerCrosslinkedDHR"
@@ -6649,6 +8641,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-KomponentLiner.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/KomponentLiner"
@@ -6661,6 +8657,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LinerMedPostDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/LinerMedPostDKR"
@@ -6673,6 +8673,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LinerUdenPostDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/LinerUdenPostDKR"
@@ -6685,6 +8689,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LinertypeDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/LinertypeDHR"
@@ -6697,6 +8705,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-LifeStatus.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/LifeStatus"
@@ -6709,6 +8721,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LifeStatus.html"
       }],
       "reference" : {
         "reference" : "ValueSet/LifeStatus"
@@ -6721,6 +8737,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LokalBloedningDAP.html"
       }],
       "reference" : {
         "reference" : "ValueSet/LokalBloedningDAP"
@@ -6733,6 +8753,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LokalisationEsophagusDEGC.html"
       }],
       "reference" : {
         "reference" : "ValueSet/LokalisationEsophagusDEGC"
@@ -6745,6 +8769,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LokalitetDANARREST.html"
       }],
       "reference" : {
         "reference" : "ValueSet/LokalitetDANARREST"
@@ -6757,6 +8785,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-EsophagealLokalization.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/EsophagealLokalization"
@@ -6769,6 +8801,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DSAFundLokation.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DSAFundLokation"
@@ -6781,6 +8817,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DSAFundLokation2026.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DSAFundLokation2026"
@@ -6793,6 +8833,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LuftvejForsoeg.html"
       }],
       "reference" : {
         "reference" : "ValueSet/LuftvejForsoeg"
@@ -6805,6 +8849,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LuftvejsHaandtering.html"
       }],
       "reference" : {
         "reference" : "ValueSet/LuftvejsHaandtering"
@@ -6817,6 +8865,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LuftvejsHaandtering2026.html"
       }],
       "reference" : {
         "reference" : "ValueSet/LuftvejsHaandtering2026"
@@ -6829,6 +8881,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LuftvejsHaandteringsidsteforsoeg.html"
       }],
       "reference" : {
         "reference" : "ValueSet/LuftvejsHaandteringsidsteforsoeg"
@@ -6841,6 +8897,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Luftvejsplan.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Luftvejsplan"
@@ -6853,6 +8913,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Luftvejsplan2026.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Luftvejsplan2026"
@@ -6865,6 +8929,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LukningHudDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/LukningHudDHDB"
@@ -6877,6 +8945,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-MComponentType.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/MComponentType"
@@ -6889,6 +8961,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MComponentTypeLyfo.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MComponentTypeLyfo"
@@ -6901,6 +8977,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MKomponentLaboratoriesvar.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MKomponentLaboratoriesvar"
@@ -6913,6 +8993,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ComplicationsManifestation.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ComplicationsManifestation"
@@ -6925,6 +9009,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ComplicationsManifestation202412.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ComplicationsManifestation202412"
@@ -6937,6 +9025,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-MaritalStatus.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/MaritalStatus"
@@ -6949,6 +9041,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-PatobankSNOMEDMDSDiagnose.html"
       }],
       "reference" : {
         "reference" : "ValueSet/PatobankSNOMEDMDSDiagnose"
@@ -6961,6 +9057,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MDTIkkeFulgt.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MDTIkkeFulgt"
@@ -6973,6 +9073,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-MeasurementDevices.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/MeasurementDevices"
@@ -6985,6 +9089,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-MedicalFixationClosing.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/MedicalFixationClosing"
@@ -6997,6 +9105,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-MedicalScanningTypes.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/MedicalScanningTypes"
@@ -7009,6 +9121,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-MedicalTreatmentDuration.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/MedicalTreatmentDuration"
@@ -7021,6 +9137,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-MedicalTreatmentAdministrationType.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/MedicalTreatmentAdministrationType"
@@ -7033,6 +9153,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-MedicalTreatmentStartOf.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/MedicalTreatmentStartOf"
@@ -7045,6 +9169,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-MedicationName.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/MedicationName"
@@ -7057,6 +9185,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AdministrationType.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AdministrationType"
@@ -7069,6 +9201,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MedicinDANARREST.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MedicinDANARREST"
@@ -7081,6 +9217,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-MedicinDANARREST.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/MedicinDANARREST"
@@ -7093,6 +9233,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MedicinPraeparatDSR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MedicinPraeparatDSR"
@@ -7105,6 +9249,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MedicinVarighedDSR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MedicinVarighedDSR"
@@ -7117,6 +9265,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MedicinalBehandlingPaabegyndtDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MedicinalBehandlingPaabegyndtDHR"
@@ -7129,6 +9281,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Medicine.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Medicine"
@@ -7141,6 +9297,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MenisklaesionBehandlingDKRR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MenisklaesionBehandlingDKRR"
@@ -7153,6 +9313,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MenisklaesionMedialLateralDKRR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MenisklaesionMedialLateralDKRR"
@@ -7165,6 +9329,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MenisklaesionTypeDKRR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MenisklaesionTypeDKRR"
@@ -7177,6 +9345,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-MentalDeclaration.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/MentalDeclaration"
@@ -7189,6 +9361,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MeshFikseringDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MeshFikseringDHDB"
@@ -7201,6 +9377,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-MeshPlacement.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/MeshPlacement"
@@ -7213,6 +9393,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MeshPlaceringDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MeshPlaceringDHDB"
@@ -7225,6 +9409,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-MeshTechnique.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/MeshTechnique"
@@ -7237,6 +9425,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MeshTeknikDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MeshTeknikDHDB"
@@ -7249,6 +9441,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-MeshType.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/MeshType"
@@ -7261,6 +9457,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MeshTypeIngvinalhernieDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MeshTypeIngvinalhernieDHDB"
@@ -7273,6 +9473,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MeshTypeVentralhernieDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MeshTypeVentralhernieDHDB"
@@ -7285,6 +9489,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MLInstabilitetDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MLInstabilitetDKR"
@@ -7297,6 +9505,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ModifiedRaymondRoyKlassification.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ModifiedRaymondRoyKlassification"
@@ -7309,6 +9521,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-MTICIClassification.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/MTICIClassification"
@@ -7321,6 +9537,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MolecularRemission.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MolecularRemission"
@@ -7333,6 +9553,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-MolecularRemission.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/MolecularRemission"
@@ -7345,6 +9569,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MolecurlarBiologyExamination.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MolecurlarBiologyExamination"
@@ -7357,6 +9585,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MorsDiagnosegrupper.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MorsDiagnosegrupper"
@@ -7369,6 +9601,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-MorsDiagnosegrupper.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/MorsDiagnosegrupper"
@@ -7381,6 +9617,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MorsDiagnoseForskelligtDNSL.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MorsDiagnoseForskelligtDNSL"
@@ -7393,6 +9633,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MorsDiagnoseInfektionerDNSL.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MorsDiagnoseInfektionerDNSL"
@@ -7405,6 +9649,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MorsDiagnoseKardialDNSL.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MorsDiagnoseKardialDNSL"
@@ -7417,6 +9665,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MorsDiagnoseLeverDNSL.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MorsDiagnoseLeverDNSL"
@@ -7429,6 +9681,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MorsDiagnoseSocialtDNSL.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MorsDiagnoseSocialtDNSL"
@@ -7441,6 +9697,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MorsDiagnoseUlykkeDNSL.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MorsDiagnoseUlykkeDNSL"
@@ -7453,6 +9713,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MorsDiagnoseVaskulaerDNSL.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MorsDiagnoseVaskulaerDNSL"
@@ -7465,6 +9729,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-MorsDiagnosekoder.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/MorsDiagnosekoder"
@@ -7477,6 +9745,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MTICIReperfusionsgrad.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MTICIReperfusionsgrad"
@@ -7489,6 +9761,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MuligVanskeligUmulig.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MuligVanskeligUmulig"
@@ -7501,6 +9777,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-MuligVanskeligUmulig.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/MuligVanskeligUmulig"
@@ -7513,6 +9793,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MaaleEnhedHAEMA2.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MaaleEnhedHAEMA2"
@@ -7525,6 +9809,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MaaleEnhedHAEMA3.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MaaleEnhedHAEMA3"
@@ -7537,6 +9825,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-MaaleEnheder.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/MaaleEnheder"
@@ -7549,6 +9841,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MaaleudstyrDKRR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MaaleudstyrDKRR"
@@ -7561,6 +9857,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MaalingCalcium.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MaalingCalcium"
@@ -7573,6 +9873,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Maengde.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Maengde"
@@ -7585,6 +9889,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Maengder.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Maengder"
@@ -7597,6 +9905,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-NeoadjuverendeBehandling.html"
       }],
       "reference" : {
         "reference" : "ValueSet/NeoadjuverendeBehandling"
@@ -7609,6 +9921,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-NIHSS10Dysartri.html"
       }],
       "reference" : {
         "reference" : "ValueSet/NIHSS10Dysartri"
@@ -7621,6 +9937,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-NIHSS11EkstinktionInattention.html"
       }],
       "reference" : {
         "reference" : "ValueSet/NIHSS11EkstinktionInattention"
@@ -7633,6 +9953,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-NIHSS1aBevidsthedsniveau.html"
       }],
       "reference" : {
         "reference" : "ValueSet/NIHSS1aBevidsthedsniveau"
@@ -7645,6 +9969,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-NIHSS1bBevidsthedsniveau.html"
       }],
       "reference" : {
         "reference" : "ValueSet/NIHSS1bBevidsthedsniveau"
@@ -7657,6 +9985,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-NIHSS1cBevidsthedsniveau.html"
       }],
       "reference" : {
         "reference" : "ValueSet/NIHSS1cBevidsthedsniveau"
@@ -7669,6 +10001,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-NIHSS2Blik.html"
       }],
       "reference" : {
         "reference" : "ValueSet/NIHSS2Blik"
@@ -7681,6 +10017,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-NIHSS3Synsfelt.html"
       }],
       "reference" : {
         "reference" : "ValueSet/NIHSS3Synsfelt"
@@ -7693,6 +10033,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-NIHSS4Facialisparese.html"
       }],
       "reference" : {
         "reference" : "ValueSet/NIHSS4Facialisparese"
@@ -7705,6 +10049,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-NIHSS5FunktionArm.html"
       }],
       "reference" : {
         "reference" : "ValueSet/NIHSS5FunktionArm"
@@ -7717,6 +10065,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-NIHSS6FunktionBen.html"
       }],
       "reference" : {
         "reference" : "ValueSet/NIHSS6FunktionBen"
@@ -7729,6 +10081,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-NIHSS7Ataksi.html"
       }],
       "reference" : {
         "reference" : "ValueSet/NIHSS7Ataksi"
@@ -7741,6 +10097,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-NIHSS8Sensibilitet.html"
       }],
       "reference" : {
         "reference" : "ValueSet/NIHSS8Sensibilitet"
@@ -7753,6 +10113,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-NIHSS9Sprog.html"
       }],
       "reference" : {
         "reference" : "ValueSet/NIHSS9Sprog"
@@ -7765,6 +10129,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-NYHA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/NYHA"
@@ -7777,6 +10145,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-NYHA.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/NYHA"
@@ -7789,6 +10161,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ObservationPatient.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ObservationPatient"
@@ -7801,6 +10177,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ObservationAfdeling.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ObservationAfdeling"
@@ -7813,6 +10193,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Observationssted.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Observationssted"
@@ -7825,6 +10209,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ObservationsstedAN.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ObservationsstedAN"
@@ -7837,6 +10225,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ObservationsstedPO.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ObservationsstedPO"
@@ -7849,6 +10241,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-OncologyTreatmentCurative.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/OncologyTreatmentCurative"
@@ -7861,6 +10257,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Onkologibehandling.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Onkologibehandling"
@@ -7873,6 +10273,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OnkologibehandlingerKurativ.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OnkologibehandlingerKurativ"
@@ -7885,6 +10289,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OnkologibehandlingerAll.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OnkologibehandlingerAll"
@@ -7897,6 +10305,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OnkologiBehandlingsintention.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OnkologiBehandlingsintention"
@@ -7909,6 +10321,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-OperatingRoom.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/OperatingRoom"
@@ -7921,6 +10337,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OperationerAktuelDKRR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OperationerAktuelDKRR"
@@ -7933,6 +10353,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OperationDanmarkUdlandetDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OperationDanmarkUdlandetDHR"
@@ -7945,6 +10369,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-OperationCanal.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/OperationCanal"
@@ -7957,6 +10385,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OperationIkkeGennemfortDCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OperationIkkeGennemfortDCCG"
@@ -7969,6 +10401,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OperationKanalAntalDKRR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OperationKanalAntalDKRR"
@@ -7981,6 +10417,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OperationKanalFemurPlaceringDKRR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OperationKanalFemurPlaceringDKRR"
@@ -7993,6 +10433,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-OperationType.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/OperationType"
@@ -8005,6 +10449,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OperationerDKRR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OperationerDKRR"
@@ -8017,6 +10465,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Operationserfaring.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Operationserfaring"
@@ -8029,6 +10481,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Operationserfaring.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Operationserfaring"
@@ -8041,6 +10497,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OpkodeGenitalProlapsDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OpkodeGenitalProlapsDUGA"
@@ -8053,6 +10513,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OpkodeUrinInkontinensDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OpkodeUrinInkontinensDUGA"
@@ -8065,6 +10529,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OpkodeUrinGenitalDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OpkodeUrinGenitalDUGA"
@@ -8077,6 +10545,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OperationspaaklaedningDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OperationspaaklaedningDHR"
@@ -8089,6 +10561,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Operationsside.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Operationsside"
@@ -8101,6 +10577,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OperationssideKAR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OperationssideKAR"
@@ -8113,6 +10593,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OperationssideHoejreVenstreDobbeltsidig.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OperationssideHoejreVenstreDobbeltsidig"
@@ -8125,6 +10609,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OperationsstueDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OperationsstueDKR"
@@ -8137,6 +10625,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OperationsstueFlowKonventionel.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OperationsstueFlowKonventionel"
@@ -8149,6 +10641,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OperationssaarInfektionKAR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OperationssaarInfektionKAR"
@@ -8161,6 +10657,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OperationssaarKomplikationerKAR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OperationssaarKomplikationerKAR"
@@ -8173,6 +10673,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OperationstypeFoersteRecidiv.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OperationstypeFoersteRecidiv"
@@ -8185,6 +10689,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OperationstypePrimaerRevision.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OperationstypePrimaerRevision"
@@ -8197,6 +10705,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OperationstypePrimaerSekundaer.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OperationstypePrimaerSekundaer"
@@ -8209,6 +10721,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OperationstypeLYFO.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OperationstypeLYFO"
@@ -8221,6 +10737,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OperativAdgangDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OperativAdgangDKR"
@@ -8233,6 +10753,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OperativProcedureKategoriDCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OperativProcedureKategoriDCCG"
@@ -8245,6 +10769,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OperativProcedureKategoriKolonDCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OperativProcedureKategoriKolonDCCG"
@@ -8257,6 +10785,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OperativProcedureKategoriRektumDCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OperativProcedureKategoriRektumDCCG"
@@ -8269,6 +10801,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OperativeAdgangDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OperativeAdgangDHR"
@@ -8281,6 +10817,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OperativtFundIngvinalhernieDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OperativtFundIngvinalhernieDHDB"
@@ -8293,6 +10833,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OperativtSigteDCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OperativtSigteDCCG"
@@ -8305,6 +10849,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-FollowUp.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/FollowUp"
@@ -8317,6 +10865,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-FollowUp25Y.html"
       }],
       "reference" : {
         "reference" : "ValueSet/FollowUp25Y"
@@ -8329,6 +10881,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-OsteotomiTypeAlmindeligExtendedDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/OsteotomiTypeAlmindeligExtendedDHR"
@@ -8341,6 +10897,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ParagrafferRETSPSYK.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ParagrafferRETSPSYK"
@@ -8353,6 +10913,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Paragraph.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Paragraph"
@@ -8365,6 +10929,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TreatmentResponseALD.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TreatmentResponseALD"
@@ -8377,6 +10945,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TreatmentResponseDAMYDA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TreatmentResponseDAMYDA"
@@ -8389,6 +10961,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-PatobankSNOMEDDMPNDiagnose.html"
       }],
       "reference" : {
         "reference" : "ValueSet/PatobankSNOMEDDMPNDiagnose"
@@ -8401,6 +10977,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-PatobankSNOMEDpTNMpM.html"
       }],
       "reference" : {
         "reference" : "ValueSet/PatobankSNOMEDpTNMpM"
@@ -8413,6 +10993,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-PatobankSNOMEDpTNMpN.html"
       }],
       "reference" : {
         "reference" : "ValueSet/PatobankSNOMEDpTNMpN"
@@ -8425,6 +11009,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-PatobankSNOMEDpTNMpT.html"
       }],
       "reference" : {
         "reference" : "ValueSet/PatobankSNOMEDpTNMpT"
@@ -8437,6 +11025,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-PatobankSNOMEDDiagnoserLYFO2026.html"
       }],
       "reference" : {
         "reference" : "ValueSet/PatobankSNOMEDDiagnoserLYFO2026"
@@ -8449,6 +11041,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-PatobankSNOMEDDiagnoserLYFO.html"
       }],
       "reference" : {
         "reference" : "ValueSet/PatobankSNOMEDDiagnoserLYFO"
@@ -8461,6 +11057,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-PatobankSNOMEDCytogenetikMDS.html"
       }],
       "reference" : {
         "reference" : "ValueSet/PatobankSNOMEDCytogenetikMDS"
@@ -8473,6 +11073,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-PerforationDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/PerforationDUGA"
@@ -8485,6 +11089,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-PerformanceStatusScore.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/PerformanceStatusScore"
@@ -8497,6 +11105,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Periods.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Periods"
@@ -8509,6 +11121,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-PerioderMK.html"
       }],
       "reference" : {
         "reference" : "ValueSet/PerioderMK"
@@ -8521,6 +11137,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-PeritonealdefektLukningDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/PeritonealdefektLukningDHDB"
@@ -8533,6 +11153,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-PeroperativMetastasebehandling.html"
       }],
       "reference" : {
         "reference" : "ValueSet/PeroperativMetastasebehandling"
@@ -8545,6 +11169,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-PersonFamilyRelation.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/PersonFamilyRelation"
@@ -8557,6 +11185,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-PivotShift.html"
       }],
       "reference" : {
         "reference" : "ValueSet/PivotShift"
@@ -8569,6 +11201,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-PivotShiftGrading.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/PivotShiftGrading"
@@ -8581,6 +11217,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-DeathPlace.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/DeathPlace"
@@ -8593,6 +11233,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BrusklaesionPlaceringDKRR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BrusklaesionPlaceringDKRR"
@@ -8605,6 +11249,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ArtrosePlacering.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ArtrosePlacering"
@@ -8617,6 +11265,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Respiration.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Respiration"
@@ -8629,6 +11281,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "SearchParameter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "SearchParameter-SP-PlanDefinition-urlversion.html"
       }],
       "reference" : {
         "reference" : "SearchParameter/SP-PlanDefinition-urlversion"
@@ -8641,6 +11297,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "SearchParameter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "SearchParameter-PlanDefinitionLatest.html"
       }],
       "reference" : {
         "reference" : "SearchParameter/PlanDefinitionLatest"
@@ -8653,6 +11313,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "SearchParameter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "SearchParameter-PlanDefinitionUuid.html"
       }],
       "reference" : {
         "reference" : "SearchParameter/PlanDefinitionUuid"
@@ -8665,6 +11329,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TreatmentScheduledDAMYDA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TreatmentScheduledDAMYDA"
@@ -8677,6 +11345,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TreatmentScheduledALD.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TreatmentScheduledALD"
@@ -8689,6 +11361,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-PlasmaDiagnose.html"
       }],
       "reference" : {
         "reference" : "ValueSet/PlasmaDiagnose"
@@ -8701,6 +11377,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-PlasmaDiagnose202412.html"
       }],
       "reference" : {
         "reference" : "ValueSet/PlasmaDiagnose202412"
@@ -8713,6 +11393,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MComponentTypeDAMYDA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MComponentTypeDAMYDA"
@@ -8725,6 +11409,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-EndoskopiskUdseende.html"
       }],
       "reference" : {
         "reference" : "ValueSet/EndoskopiskUdseende"
@@ -8737,6 +11425,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-POPQAaApDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/POPQAaApDUGA"
@@ -8749,6 +11441,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-POPQBaDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/POPQBaDUGA"
@@ -8761,6 +11457,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-POPQBpDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/POPQBpDUGA"
@@ -8773,6 +11473,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-POPQCDDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/POPQCDDUGA"
@@ -8785,6 +11489,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-POPQGhDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/POPQGhDUGA"
@@ -8797,6 +11505,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-POPQKompartmentDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/POPQKompartmentDUGA"
@@ -8809,6 +11521,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-POPQPbDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/POPQPbDUGA"
@@ -8821,6 +11537,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-POPQTvlDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/POPQTvlDUGA"
@@ -8833,6 +11553,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-HeartAttackSTEMIPosition.html"
       }],
       "reference" : {
         "reference" : "ValueSet/HeartAttackSTEMIPosition"
@@ -8845,6 +11569,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ComplicationPO.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ComplicationPO"
@@ -8857,6 +11585,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ComplicationPO2026.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ComplicationPO2026"
@@ -8869,6 +11601,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-PostoperativeKomplikationerDCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/PostoperativeKomplikationerDCCG"
@@ -8881,6 +11617,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-PreoperativTemplating.html"
       }],
       "reference" : {
         "reference" : "ValueSet/PreoperativTemplating"
@@ -8893,6 +11633,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-PreoperativTemplating.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/PreoperativTemplating"
@@ -8905,6 +11649,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TumorLokalisationDCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TumorLokalisationDCCG"
@@ -8917,6 +11665,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Priority.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Priority"
@@ -8929,6 +11681,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Priority.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Priority"
@@ -8941,6 +11697,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ProcedureDuration.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ProcedureDuration"
@@ -8953,6 +11713,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ProcedureIkkeGennemfortDCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ProcedureIkkeGennemfortDCCG"
@@ -8965,6 +11729,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ProcedureNotCompleted.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ProcedureNotCompleted"
@@ -8977,6 +11745,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ProcedureType.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ProcedureType"
@@ -8989,6 +11761,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ProcedureVarighed15min.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ProcedureVarighed15min"
@@ -9001,6 +11777,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ProcedureVarighed5min.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ProcedureVarighed5min"
@@ -9013,6 +11793,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ProcedureUrogyn.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ProcedureUrogyn"
@@ -9025,6 +11809,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ProcedurerAndreDKRR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ProcedurerAndreDKRR"
@@ -9037,6 +11825,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ProcedureTypeDCCG1.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ProcedureTypeDCCG1"
@@ -9049,6 +11841,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ProcedureTypeDCCG2.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ProcedureTypeDCCG2"
@@ -9061,6 +11857,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ProcedureTypeDCCG3.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ProcedureTypeDCCG3"
@@ -9073,6 +11873,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Profylaksebehandling.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Profylaksebehandling"
@@ -9085,6 +11889,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ProgressionCML.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ProgressionCML"
@@ -9097,6 +11905,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Prosthesis.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Prosthesis"
@@ -9109,6 +11921,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ProteseDSR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ProteseDSR"
@@ -9121,6 +11937,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ProteseFjernelseDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ProteseFjernelseDHR"
@@ -9133,6 +11953,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ProtesestatusDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ProtesestatusDHR"
@@ -9145,6 +11969,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LokalStraaleterapi.html"
       }],
       "reference" : {
         "reference" : "ValueSet/LokalStraaleterapi"
@@ -9157,6 +11985,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-PraeoperativMetastaseBehandlingDCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/PraeoperativMetastaseBehandlingDCCG"
@@ -9169,6 +12001,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-PraeoperativPlanlaegningDSR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/PraeoperativPlanlaegningDSR"
@@ -9181,6 +12017,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-PraeoperativUdrensningDCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/PraeoperativUdrensningDCCG"
@@ -9193,6 +12033,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-PTNMtype.html"
       }],
       "reference" : {
         "reference" : "ValueSet/PTNMtype"
@@ -9205,6 +12049,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-PupilCondition.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/PupilCondition"
@@ -9217,6 +12065,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Pupilforhold.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Pupilforhold"
@@ -9229,6 +12081,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-PaavirkningRETSPSYK.html"
       }],
       "reference" : {
         "reference" : "ValueSet/PaavirkningRETSPSYK"
@@ -9241,6 +12097,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-PaavirkningPaagaaendeRETSPSYK.html"
       }],
       "reference" : {
         "reference" : "ValueSet/PaavirkningPaagaaendeRETSPSYK"
@@ -9253,6 +12113,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-VasospasmerPaavisning.html"
       }],
       "reference" : {
         "reference" : "ValueSet/VasospasmerPaavisning"
@@ -9265,6 +12129,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "SearchParameter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "SearchParameter-SP-Questionnaire-urlversion.html"
       }],
       "reference" : {
         "reference" : "SearchParameter/SP-Questionnaire-urlversion"
@@ -9277,6 +12145,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "SearchParameter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "SearchParameter-QuestionnaireLatest.html"
       }],
       "reference" : {
         "reference" : "SearchParameter/QuestionnaireLatest"
@@ -9289,6 +12161,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "SearchParameter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "SearchParameter-QuestionnaireResponseOnCarePlan.html"
       }],
       "reference" : {
         "reference" : "SearchParameter/QuestionnaireResponseOnCarePlan"
@@ -9301,6 +12177,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "SearchParameter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "SearchParameter-QuestionnaireResponseResponsibleOnCarePlanSP.html"
       }],
       "reference" : {
         "reference" : "SearchParameter/QuestionnaireResponseResponsibleOnCarePlanSP"
@@ -9313,6 +12193,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "SearchParameter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "SearchParameter-QuestionnaireUuid.html"
       }],
       "reference" : {
         "reference" : "SearchParameter/QuestionnaireUuid"
@@ -9325,6 +12209,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-RKlassifikation.html"
       }],
       "reference" : {
         "reference" : "ValueSet/RKlassifikation"
@@ -9337,6 +12225,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-RKlassifikationTilDegc.html"
       }],
       "reference" : {
         "reference" : "ValueSet/RKlassifikationTilDegc"
@@ -9349,6 +12241,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-RadiationTherapyType.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/RadiationTherapyType"
@@ -9361,6 +12257,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Radioimmunoterapi.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Radioimmunoterapi"
@@ -9373,6 +12273,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-RadiologicalBoneChanges.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/RadiologicalBoneChanges"
@@ -9385,6 +12289,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-RaymondRoyClassification.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/RaymondRoyClassification"
@@ -9397,6 +12305,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-MDTNotFollowed.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/MDTNotFollowed"
@@ -9409,6 +12321,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ACTherapyNotGiven.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ACTherapyNotGiven"
@@ -9421,6 +12337,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ActilyseNotGiven.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ActilyseNotGiven"
@@ -9433,6 +12353,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ProcedureReasons.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ProcedureReasons"
@@ -9445,6 +12369,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ReferredFrom.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ReferredFrom"
@@ -9457,6 +12385,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Regioner.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Regioner"
@@ -9469,6 +12401,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Regioner.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Regioner"
@@ -9481,6 +12417,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-RegistreringEksklusionHAEMA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/RegistreringEksklusionHAEMA"
@@ -9493,6 +12433,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Registry.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Registry"
@@ -9505,6 +12449,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-IntubationRelaks.html"
       }],
       "reference" : {
         "reference" : "ValueSet/IntubationRelaks"
@@ -9517,6 +12465,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-IntubationRelaks.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/IntubationRelaks"
@@ -9529,6 +12481,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DonorRelationship.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DonorRelationship"
@@ -9541,6 +12497,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-DonorRelationDNSL.html"
       }],
       "reference" : {
         "reference" : "ValueSet/DonorRelationDNSL"
@@ -9553,6 +12513,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ReoperationAarsagDKRR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ReoperationAarsagDKRR"
@@ -9565,6 +12529,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ResectionCompletion.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ResectionCompletion"
@@ -9577,6 +12545,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ResectionType.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ResectionType"
@@ -9589,6 +12561,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Resektionstype.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Resektionstype"
@@ -9601,6 +12577,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ResidualTumorClassification.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ResidualTumorClassification"
@@ -9613,6 +12593,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ResidualTumorGrading.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ResidualTumorGrading"
@@ -9625,6 +12609,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BehandlingsResponsEvalueringLYFO.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BehandlingsResponsEvalueringLYFO"
@@ -9637,6 +12625,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ResultTest.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ResultTest"
@@ -9649,6 +12641,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Result.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Result"
@@ -9661,6 +12657,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-FISHResult.html"
       }],
       "reference" : {
         "reference" : "ValueSet/FISHResult"
@@ -9673,6 +12673,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-FISHResult202502.html"
       }],
       "reference" : {
         "reference" : "ValueSet/FISHResult202502"
@@ -9685,6 +12689,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ResultTestFISH.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ResultTestFISH"
@@ -9697,6 +12705,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-RevisionDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/RevisionDHR"
@@ -9709,6 +12721,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-RevisionHumerusKomponentDSR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/RevisionHumerusKomponentDSR"
@@ -9721,6 +12737,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-RevisionHumerusCavitasDSR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/RevisionHumerusCavitasDSR"
@@ -9733,6 +12753,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-RevisionIndikationDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/RevisionIndikationDHR"
@@ -9745,6 +12769,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-RevisionIndikationDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/RevisionIndikationDKR"
@@ -9757,6 +12785,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-RevisionIndikationDSR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/RevisionIndikationDSR"
@@ -9769,6 +12801,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-RevisionIndikationAseptiskDSR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/RevisionIndikationAseptiskDSR"
@@ -9781,6 +12817,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-RevisionStatusDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/RevisionStatusDKR"
@@ -9793,6 +12833,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-RevisionUdskiftningDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/RevisionUdskiftningDHR"
@@ -9805,6 +12849,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-RevisionAarsagDKRR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/RevisionAarsagDKRR"
@@ -9817,6 +12865,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-RevisionCause.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/RevisionCause"
@@ -9829,6 +12881,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-RevisionIndication.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/RevisionIndication"
@@ -9841,6 +12897,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-RevisionType.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/RevisionType"
@@ -9853,6 +12913,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-RevisionstypeDSR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/RevisionstypeDSR"
@@ -9865,6 +12929,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-RisikofaktorerDMPN.html"
       }],
       "reference" : {
         "reference" : "ValueSet/RisikofaktorerDMPN"
@@ -9877,6 +12945,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-RisikovurderingRETSPSYK.html"
       }],
       "reference" : {
         "reference" : "ValueSet/RisikovurderingRETSPSYK"
@@ -9889,6 +12961,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-RiskAssessment.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/RiskAssessment"
@@ -9901,6 +12977,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-RiskFactors.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/RiskFactors"
@@ -9913,6 +12993,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-RobotDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/RobotDHDB"
@@ -9925,6 +13009,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-RobotDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/RobotDKR"
@@ -9937,6 +13025,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-RobotAssistDKR.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/RobotAssistDKR"
@@ -9949,6 +13041,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Ryger8uger.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Ryger8uger"
@@ -9961,6 +13057,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Rygning.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Rygning"
@@ -9973,6 +13073,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-RygningDCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/RygningDCCG"
@@ -9985,6 +13089,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-RytmeDefibrilleringMetode.html"
       }],
       "reference" : {
         "reference" : "ValueSet/RytmeDefibrilleringMetode"
@@ -9997,6 +13105,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-RytmeAnalyseMetode.html"
       }],
       "reference" : {
         "reference" : "ValueSet/RytmeAnalyseMetode"
@@ -10009,6 +13121,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-SSSArmLift.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/SSSArmLift"
@@ -10021,6 +13137,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-SSSConsciousness.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/SSSConsciousness"
@@ -10033,6 +13153,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-SSSEyeMotorSkills.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/SSSEyeMotorSkills"
@@ -10045,6 +13169,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-SSSFacialParesis.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/SSSFacialParesis"
@@ -10057,6 +13185,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-SSSHandshake.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/SSSHandshake"
@@ -10069,6 +13201,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-SSSLegLift.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/SSSLegLift"
@@ -10081,6 +13217,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-SSSOrientation.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/SSSOrientation"
@@ -10093,6 +13233,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-SSSSpeech.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/SSSSpeech"
@@ -10105,6 +13249,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-SSSWalk.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/SSSWalk"
@@ -10117,6 +13265,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SSSArmloeft.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SSSArmloeft"
@@ -10129,6 +13281,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SSSBenloeft.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SSSBenloeft"
@@ -10141,6 +13297,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SSSBevidsthed.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SSSBevidsthed"
@@ -10153,6 +13313,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SSSFacialisparese.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SSSFacialisparese"
@@ -10165,6 +13329,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SSSGang.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SSSGang"
@@ -10177,6 +13345,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SSSHaandtryk.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SSSHaandtryk"
@@ -10189,6 +13361,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SSSOrientering.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SSSOrientering"
@@ -10201,6 +13377,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SSSTale.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SSSTale"
@@ -10213,6 +13393,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SSSOejenmotorik.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SSSOejenmotorik"
@@ -10225,6 +13409,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ScanningstyperCTMR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ScanningstyperCTMR"
@@ -10237,6 +13425,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ScoreCentralBlock.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ScoreCentralBlock"
@@ -10249,6 +13441,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ScoreTyperHOFTER.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ScoreTyperHOFTER"
@@ -10261,6 +13457,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-cpr.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/cpr"
@@ -10273,6 +13473,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-PDLatest.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/PDLatest"
@@ -10285,6 +13489,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-QLatest.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/QLatest"
@@ -10297,6 +13505,26 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-VSLatest.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VSLatest"
+      },
+      "name" : "Search Parameter - Latest for ValueSets",
+      "description" : "Limit response of ValueSets to match given Latest.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-questionnaire-response-reference.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/questionnaire-response-reference"
@@ -10309,6 +13537,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-questionnaire-response-responsible-sor.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/questionnaire-response-responsible-sor"
@@ -10321,6 +13553,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-sor.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/sor"
@@ -10333,6 +13569,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-sorCode.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/sorCode"
@@ -10345,6 +13585,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-SorAuthor.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/SorAuthor"
@@ -10357,6 +13601,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-PDUuid.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/PDUuid"
@@ -10369,6 +13617,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-QUuid.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/QUuid"
@@ -10381,6 +13633,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-access-sor-code.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/access-sor-code"
@@ -10393,6 +13649,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "SearchParameter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "SearchParameter-semver.html"
       }],
       "reference" : {
         "reference" : "SearchParameter/semver"
@@ -10405,6 +13665,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "SearchParameter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "SearchParameter-semver-major.html"
       }],
       "reference" : {
         "reference" : "SearchParameter/semver-major"
@@ -10417,6 +13681,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "SearchParameter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "SearchParameter-semver-minor.html"
       }],
       "reference" : {
         "reference" : "SearchParameter/semver-minor"
@@ -10429,6 +13697,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "SearchParameter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "SearchParameter-semver-patch.html"
       }],
       "reference" : {
         "reference" : "SearchParameter/semver-patch"
@@ -10441,6 +13713,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MedicalScanningTypes.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MedicalScanningTypes"
@@ -10453,6 +13729,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MedicalScanningTypes202412.html"
       }],
       "reference" : {
         "reference" : "ValueSet/MedicalScanningTypes202412"
@@ -10465,6 +13745,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Skematype.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Skematype"
@@ -10477,6 +13761,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SKSVentrikelEsophagus.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SKSVentrikelEsophagus"
@@ -10489,6 +13777,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SKSApopleksiDiagnoser.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SKSApopleksiDiagnoser"
@@ -10501,6 +13793,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SKScTNMcM.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SKScTNMcM"
@@ -10513,6 +13809,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SKScTNMcN.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SKScTNMcN"
@@ -10525,6 +13825,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SKScTNMcT.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SKScTNMcT"
@@ -10537,6 +13841,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SKShjertesvigtDHD.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SKShjertesvigtDHD"
@@ -10549,6 +13857,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SKSOperationerKAR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SKSOperationerKAR"
@@ -10561,6 +13873,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SKSSymptomatiskAsymptomatisk.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SKSSymptomatiskAsymptomatisk"
@@ -10573,6 +13889,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SKSUdskrivningsdiagnoserTrombolyse.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SKSUdskrivningsdiagnoserTrombolyse"
@@ -10585,6 +13905,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SlyngeDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SlyngeDUGA"
@@ -10597,6 +13921,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-SlyngeDUGA.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/SlyngeDUGA"
@@ -10609,6 +13937,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-SmerteKvalme.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/SmerteKvalme"
@@ -10621,6 +13953,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Smoking.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Smoking"
@@ -10633,6 +13969,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-SNOMEDCT.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/SNOMEDCT"
@@ -10645,6 +13985,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SORAfdelingerDNSL.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SORAfdelingerDNSL"
@@ -10657,6 +14001,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SORAfdelingerHaema.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SORAfdelingerHaema"
@@ -10669,6 +14017,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SORAfdelingerUHDNSL.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SORAfdelingerUHDNSL"
@@ -10681,6 +14033,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SORafdSkema3Duga.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SORafdSkema3Duga"
@@ -10693,6 +14049,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SORNeurokirurgiskeAfdelingerDAP.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SORNeurokirurgiskeAfdelingerDAP"
@@ -10705,6 +14065,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SORNeurologiskeAfdelingerDAP.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SORNeurologiskeAfdelingerDAP"
@@ -10717,6 +14081,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SOROverflytningRETSPSYK.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SOROverflytningRETSPSYK"
@@ -10729,6 +14097,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SOROverflytningRETSPSYKHS.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SOROverflytningRETSPSYKHS"
@@ -10741,6 +14113,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SOROverflytningRETSPSYKMJ.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SOROverflytningRETSPSYKMJ"
@@ -10753,6 +14129,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SOROverflytningRETSPSYKNJ.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SOROverflytningRETSPSYKNJ"
@@ -10765,6 +14145,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SOROverflytningRETSPSYKSJ.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SOROverflytningRETSPSYKSJ"
@@ -10777,6 +14161,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SOROverflytningRETSPSYKSD.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SOROverflytningRETSPSYKSD"
@@ -10789,6 +14177,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SORTrombolyseenhedDAP.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SORTrombolyseenhedDAP"
@@ -10801,6 +14193,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "SearchParameter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "SearchParameter-SorQuestionnaire.html"
       }],
       "reference" : {
         "reference" : "SearchParameter/SorQuestionnaire"
@@ -10813,6 +14209,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "SearchParameter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "SearchParameter-SorQuestionnaireResponse.html"
       }],
       "reference" : {
         "reference" : "SearchParameter/SorQuestionnaireResponse"
@@ -10825,6 +14225,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-CytogeneticSpecificerFund.html"
       }],
       "reference" : {
         "reference" : "ValueSet/CytogeneticSpecificerFund"
@@ -10837,6 +14241,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ReferredForTraining.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ReferredForTraining"
@@ -10849,6 +14257,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Splenomegali.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Splenomegali"
@@ -10861,6 +14273,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-CytogeneticStemCellType.html"
       }],
       "reference" : {
         "reference" : "ValueSet/CytogeneticStemCellType"
@@ -10873,6 +14289,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Status.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Status"
@@ -10885,6 +14305,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-StemCellType.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/StemCellType"
@@ -10897,6 +14321,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-StemkarakteristikDSR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/StemkarakteristikDSR"
@@ -10909,6 +14337,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-StemlaengdeDSR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/StemlaengdeDSR"
@@ -10921,6 +14353,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-StomiTypeDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/StomiTypeDHDB"
@@ -10933,6 +14369,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-StraffelovsparagrafRETSPSYK.html"
       }],
       "reference" : {
         "reference" : "ValueSet/StraffelovsparagrafRETSPSYK"
@@ -10945,6 +14385,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-StraalebehandlingTA.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/StraalebehandlingTA"
@@ -10957,6 +14401,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-StraalebehandlingMaal.html"
       }],
       "reference" : {
         "reference" : "ValueSet/StraalebehandlingMaal"
@@ -10969,6 +14417,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-StraalebehandlingTAAll.html"
       }],
       "reference" : {
         "reference" : "ValueSet/StraalebehandlingTAAll"
@@ -10981,6 +14433,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-StraaleterapiLYFO.html"
       }],
       "reference" : {
         "reference" : "ValueSet/StraaleterapiLYFO"
@@ -10993,6 +14449,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SubscapularisDSR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SubscapularisDSR"
@@ -11005,6 +14465,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-SKS.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/SKS"
@@ -11017,6 +14481,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-SKSCodeCollection.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/SKSCodeCollection"
@@ -11029,6 +14497,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-SOR.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/SOR"
@@ -11041,6 +14513,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SupplerendeIndgrebDSR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SupplerendeIndgrebDSR"
@@ -11053,6 +14529,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-SurgicalAttire.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/SurgicalAttire"
@@ -11065,6 +14545,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SuspensionDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SuspensionDUGA"
@@ -11077,6 +14561,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SuturMaterialeVentralhernieDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SuturMaterialeVentralhernieDHDB"
@@ -11089,6 +14577,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SuturMonofilamentTypeVentralhernieDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SuturMonofilamentTypeVentralhernieDHDB"
@@ -11101,6 +14593,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SuturTypeVentralhernieDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SuturTypeVentralhernieDHDB"
@@ -11113,6 +14609,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SuturTypeDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SuturTypeDHDB"
@@ -11125,6 +14625,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SuturHurtigResorberbarMonoDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SuturHurtigResorberbarMonoDHDB"
@@ -11137,6 +14641,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SuturHurtigResorberbarMultiDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SuturHurtigResorberbarMultiDHDB"
@@ -11149,6 +14657,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SuturLangsomResorberbarMonoDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SuturLangsomResorberbarMonoDHDB"
@@ -11161,6 +14673,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SuturNonResorberbarMonoDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SuturNonResorberbarMonoDHDB"
@@ -11173,6 +14689,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SuturNonResorberbarMultiDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SuturNonResorberbarMultiDHDB"
@@ -11185,6 +14705,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SygdomMedicinskBehandletDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SygdomMedicinskBehandletDHDB"
@@ -11197,6 +14721,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LocationExtranodalFemale.html"
       }],
       "reference" : {
         "reference" : "ValueSet/LocationExtranodalFemale"
@@ -11209,6 +14737,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-locationExtranodalFemale-V2.html"
       }],
       "reference" : {
         "reference" : "ValueSet/locationExtranodalFemale-V2"
@@ -11221,6 +14753,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LocationExtranodalMale.html"
       }],
       "reference" : {
         "reference" : "ValueSet/LocationExtranodalMale"
@@ -11233,6 +14769,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-locationExtranodalMale-V2.html"
       }],
       "reference" : {
         "reference" : "ValueSet/locationExtranodalMale-V2"
@@ -11245,6 +14785,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LocationNodal.html"
       }],
       "reference" : {
         "reference" : "ValueSet/LocationNodal"
@@ -11257,6 +14801,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-locationNodal-V2.html"
       }],
       "reference" : {
         "reference" : "ValueSet/locationNodal-V2"
@@ -11269,6 +14817,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LocationPriSecNodalFemale.html"
       }],
       "reference" : {
         "reference" : "ValueSet/LocationPriSecNodalFemale"
@@ -11281,6 +14833,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LocationPriSecNodalMale.html"
       }],
       "reference" : {
         "reference" : "ValueSet/LocationPriSecNodalMale"
@@ -11293,6 +14849,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Sygdomsomraader.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Sygdomsomraader"
@@ -11305,6 +14865,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SygdomsomraaderAlle.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SygdomsomraaderAlle"
@@ -11317,6 +14881,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SygdomsomraaderHaema.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SygdomsomraaderHaema"
@@ -11329,6 +14897,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SygdomsomraaderDOF.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SygdomsomraaderDOF"
@@ -11341,6 +14913,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LokationLymphomas.html"
       }],
       "reference" : {
         "reference" : "ValueSet/LokationLymphomas"
@@ -11353,6 +14929,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Skala.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Skala"
@@ -11365,6 +14945,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-SymptomerMikrovaskulaer.html"
       }],
       "reference" : {
         "reference" : "ValueSet/SymptomerMikrovaskulaer"
@@ -11377,6 +14961,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Symptoms.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Symptoms"
@@ -11389,6 +14977,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-SystemiskPraeparat.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/SystemiskPraeparat"
@@ -11401,6 +14993,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TackernavnAbsorberbarDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TackernavnAbsorberbarDHDB"
@@ -11413,6 +15009,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TackernavnNonAbsorberbarDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TackernavnNonAbsorberbarDHDB"
@@ -11425,6 +15025,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TackertypeDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TackertypeDHDB"
@@ -11437,6 +15041,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-HandProblemer.html"
       }],
       "reference" : {
         "reference" : "ValueSet/HandProblemer"
@@ -11449,6 +15057,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-HaandProblemer.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/HaandProblemer"
@@ -11461,6 +15073,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-RadiationTherapyTarget.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/RadiationTherapyTarget"
@@ -11473,6 +15089,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-StopTeam.html"
       }],
       "reference" : {
         "reference" : "ValueSet/StopTeam"
@@ -11485,6 +15105,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-StopTeam.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/StopTeam"
@@ -11497,6 +15121,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-NIHSS10Dysarthria.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/NIHSS10Dysarthria"
@@ -11509,6 +15137,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-NIHSS11ExtinctionInattention.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/NIHSS11ExtinctionInattention"
@@ -11521,6 +15153,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-NIHSS1aLOC.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/NIHSS1aLOC"
@@ -11533,6 +15169,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-NIHSS1bLOC.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/NIHSS1bLOC"
@@ -11545,6 +15185,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-NIHSS1cLOC.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/NIHSS1cLOC"
@@ -11557,6 +15201,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-NIHSS2Gaze.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/NIHSS2Gaze"
@@ -11569,6 +15217,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-NIHSS3Visual.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/NIHSS3Visual"
@@ -11581,6 +15233,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-NIHSS4FacialPalsy.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/NIHSS4FacialPalsy"
@@ -11593,6 +15249,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-NIHSS5MotorArm.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/NIHSS5MotorArm"
@@ -11605,6 +15265,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-NIHSS6MotorLeg.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/NIHSS6MotorLeg"
@@ -11617,6 +15281,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-NIHSS7LimbAtaxia.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/NIHSS7LimbAtaxia"
@@ -11629,6 +15297,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-NIHSS8Sensory.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/NIHSS8Sensory"
@@ -11641,6 +15313,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-NIHSS9Language.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/NIHSS9Language"
@@ -11653,6 +15329,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TidligereIndgrebDSR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TidligereIndgrebDSR"
@@ -11665,6 +15345,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TidligereOperationDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TidligereOperationDKR"
@@ -11677,6 +15361,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TidligereOperationHofte.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TidligereOperationHofte"
@@ -11689,6 +15377,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-CentralBlock.html"
       }],
       "reference" : {
         "reference" : "ValueSet/CentralBlock"
@@ -11701,6 +15393,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TilsynAfdeling.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TilsynAfdeling"
@@ -11713,6 +15409,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-TilsynAfdeling.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/TilsynAfdeling"
@@ -11725,6 +15425,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-HydrocephalusTiltag.html"
       }],
       "reference" : {
         "reference" : "ValueSet/HydrocephalusTiltag"
@@ -11737,6 +15441,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-VasospasmerTiltag.html"
       }],
       "reference" : {
         "reference" : "ValueSet/VasospasmerTiltag"
@@ -11749,6 +15457,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ActilyseIkkeGivet.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ActilyseIkkeGivet"
@@ -11761,6 +15473,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Transplantation.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Transplantation"
@@ -11773,6 +15489,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TransplantationCageAugmentDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TransplantationCageAugmentDHR"
@@ -11785,6 +15505,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TransplantationTypeDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TransplantationTypeDHR"
@@ -11797,6 +15521,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Transplantation1.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Transplantation1"
@@ -11809,6 +15537,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TransplantationcenterALG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TransplantationcenterALG"
@@ -11821,6 +15553,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TransplantationstypeCML.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TransplantationstypeCML"
@@ -11833,6 +15569,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-TreatmentCause.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/TreatmentCause"
@@ -11845,6 +15585,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-TreatmentIndication.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/TreatmentIndication"
@@ -11857,6 +15601,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-TreatmentInitiatives.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/TreatmentInitiatives"
@@ -11869,6 +15617,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-TreatmentLesion.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/TreatmentLesion"
@@ -11881,6 +15633,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-TreatmentMethodMRD.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/TreatmentMethodMRD"
@@ -11893,6 +15649,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-TreatmentNotGiven.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/TreatmentNotGiven"
@@ -11905,6 +15665,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-TreatmentPsychopharmacological.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/TreatmentPsychopharmacological"
@@ -11917,6 +15681,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-TreatmentRegimen.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/TreatmentRegimen"
@@ -11929,6 +15697,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-TreatmentResponseEvaluation.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/TreatmentResponseEvaluation"
@@ -11941,6 +15713,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-TreatmentSchedule.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/TreatmentSchedule"
@@ -11953,6 +15729,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-TreatmentSufficient.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/TreatmentSufficient"
@@ -11965,6 +15745,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-TreatmentType.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/TreatmentType"
@@ -11977,6 +15761,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-TreatmentUnspecified.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/TreatmentUnspecified"
@@ -11989,6 +15777,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-TreatmentIntention.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/TreatmentIntention"
@@ -12001,6 +15793,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TreatmentIndicationCLL.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TreatmentIndicationCLL"
@@ -12013,6 +15809,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TreatmentResponseEvaluationCLL.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TreatmentResponseEvaluationCLL"
@@ -12025,6 +15825,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TreatmentResponseEvaluationLYFO.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TreatmentResponseEvaluationLYFO"
@@ -12037,6 +15841,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TrombektomiPerfusion.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TrombektomiPerfusion"
@@ -12049,6 +15857,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-TrombektomiPerfusion.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/TrombektomiPerfusion"
@@ -12061,6 +15873,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TrombolyseprofylakseDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TrombolyseprofylakseDHR"
@@ -12073,6 +15889,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Trombolysepraeparater.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Trombolysepraeparater"
@@ -12085,6 +15905,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TumorklassifikationBehandlingDEGC.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TumorklassifikationBehandlingDEGC"
@@ -12097,6 +15921,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TumorklassifikationDiagnoseDEGC.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TumorklassifikationDiagnoseDEGC"
@@ -12109,6 +15937,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TumorklassifikationDEGC.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TumorklassifikationDEGC"
@@ -12121,6 +15953,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-IndgrebPrioritetAkutElektiv.html"
       }],
       "reference" : {
         "reference" : "ValueSet/IndgrebPrioritetAkutElektiv"
@@ -12133,6 +15969,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TypeLokalresektionKolonDCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TypeLokalresektionKolonDCCG"
@@ -12145,6 +15985,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TypeLokalresektionRektumDCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TypeLokalresektionRektumDCCG"
@@ -12157,6 +16001,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TypeLokalresektionDCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TypeLokalresektionDCCG"
@@ -12169,6 +16017,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-PTNMType.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/PTNMType"
@@ -12181,6 +16033,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-NerveBlockTypeUpper.html"
       }],
       "reference" : {
         "reference" : "ValueSet/NerveBlockTypeUpper"
@@ -12193,6 +16049,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-NerveBlockTypeLower.html"
       }],
       "reference" : {
         "reference" : "ValueSet/NerveBlockTypeLower"
@@ -12205,6 +16065,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-NerveBlockTypeOther.html"
       }],
       "reference" : {
         "reference" : "ValueSet/NerveBlockTypeOther"
@@ -12217,6 +16081,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-BlockTypes.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/BlockTypes"
@@ -12229,6 +16097,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-CentralBlockType.html"
       }],
       "reference" : {
         "reference" : "ValueSet/CentralBlockType"
@@ -12241,6 +16113,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-UMComponentTypeDAMYDA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/UMComponentTypeDAMYDA"
@@ -12253,6 +16129,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ReferredForTraining.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ReferredForTraining"
@@ -12265,6 +16145,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ResektionUdfoerelseDCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ResektionUdfoerelseDCCG"
@@ -12277,6 +16161,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-UdfoerendeLAB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/UdfoerendeLAB"
@@ -12289,6 +16177,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ProcedureUdfoertDCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ProcedureUdfoertDCCG"
@@ -12301,6 +16193,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ProcedureUdfoertK1DCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ProcedureUdfoertK1DCCG"
@@ -12313,6 +16209,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ProcedureUdfoertK2DCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ProcedureUdfoertK2DCCG"
@@ -12325,6 +16225,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ProcedureUdfoertK3DCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ProcedureUdfoertK3DCCG"
@@ -12337,6 +16241,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ProcedureUdfoertR1DCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ProcedureUdfoertR1DCCG"
@@ -12349,6 +16257,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ProcedureUdfoertR2DCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ProcedureUdfoertR2DCCG"
@@ -12361,6 +16273,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ProcedureUdfoertR3DCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ProcedureUdfoertR3DCCG"
@@ -12373,6 +16289,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ProcedureUdfoertR4DCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ProcedureUdfoertR4DCCG"
@@ -12385,6 +16305,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-UdredningDANDEM.html"
       }],
       "reference" : {
         "reference" : "ValueSet/UdredningDANDEM"
@@ -12397,6 +16321,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-UdredningDANDEM2025.html"
       }],
       "reference" : {
         "reference" : "ValueSet/UdredningDANDEM2025"
@@ -12409,6 +16337,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-UdredningKliniskGenetisk.html"
       }],
       "reference" : {
         "reference" : "ValueSet/UdredningKliniskGenetisk"
@@ -12421,6 +16353,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-UdskrevetTil.html"
       }],
       "reference" : {
         "reference" : "ValueSet/UdskrevetTil"
@@ -12433,6 +16369,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-UdskrevetTil.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/UdskrevetTil"
@@ -12445,6 +16385,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-UndersoegelsesTypeDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/UndersoegelsesTypeDUGA"
@@ -12457,6 +16401,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-UndersoegelsesTypeDUGA.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/UndersoegelsesTypeDUGA"
@@ -12469,6 +16417,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-UndersoendeLAB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/UndersoendeLAB"
@@ -12481,6 +16433,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Undervisning.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Undervisning"
@@ -12493,6 +16449,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Uoplyst.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Uoplyst"
@@ -12505,6 +16465,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-UrniLaekDUGA.html"
       }],
       "reference" : {
         "reference" : "ValueSet/UrniLaekDUGA"
@@ -12517,6 +16481,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Uspecificeret.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Uspecificeret"
@@ -12528,7 +16496,27 @@ This implementation guide is provided to support the use of FHIR®© in the cont
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "SearchParameter-ValueSetLatest.html"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/ValueSetLatest"
+      },
+      "name" : "ValueSetLatest",
+      "description" : "Search ValueSet for 'latest' extension",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-VancouverClassification.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/VancouverClassification"
@@ -12541,6 +16529,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-VancouverKlassifikationDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/VancouverKlassifikationDHR"
@@ -12553,6 +16545,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-VancouverKlassifikationPeroperativDHR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/VancouverKlassifikationPeroperativDHR"
@@ -12565,6 +16561,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-VarighedDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/VarighedDKR"
@@ -12577,6 +16577,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-VarighedPostOPTrombDKR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/VarighedPostOPTrombDKR"
@@ -12589,6 +16593,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-VarighedPostOPTrombDKRVitKanta.html"
       }],
       "reference" : {
         "reference" : "ValueSet/VarighedPostOPTrombDKRVitKanta"
@@ -12601,6 +16609,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-VarighedPostOPTrombDKR1.html"
       }],
       "reference" : {
         "reference" : "ValueSet/VarighedPostOPTrombDKR1"
@@ -12613,6 +16625,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-VarighedPostOPTrombDKR2.html"
       }],
       "reference" : {
         "reference" : "ValueSet/VarighedPostOPTrombDKR2"
@@ -12625,6 +16641,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-VarighedPostOPTrombDKR3.html"
       }],
       "reference" : {
         "reference" : "ValueSet/VarighedPostOPTrombDKR3"
@@ -12637,6 +16657,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-VarighedPostOPTrombDKRNOAK.html"
       }],
       "reference" : {
         "reference" : "ValueSet/VarighedPostOPTrombDKRNOAK"
@@ -12649,6 +16673,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-VarigRespons.html"
       }],
       "reference" : {
         "reference" : "ValueSet/VarigRespons"
@@ -12661,6 +16689,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ICHEvakuering.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ICHEvakuering"
@@ -12673,6 +16705,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-TreatmentPreservation.html"
       }],
       "reference" : {
         "reference" : "ValueSet/TreatmentPreservation"
@@ -12685,6 +16721,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-VentralHernieCicatriceTypeDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/VentralHernieCicatriceTypeDHDB"
@@ -12697,6 +16737,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-VentralHernieTypeDHDB.html"
       }],
       "reference" : {
         "reference" : "ValueSet/VentralHernieTypeDHDB"
@@ -12709,6 +16753,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-VentralHernieTypeDHDB2026.html"
       }],
       "reference" : {
         "reference" : "ValueSet/VentralHernieTypeDHDB2026"
@@ -12721,6 +16769,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Verdict.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Verdict"
@@ -12733,6 +16785,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-VisitationCriteriaNotMet.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/VisitationCriteriaNotMet"
@@ -12745,6 +16801,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ManglendeVisitation.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ManglendeVisitation"
@@ -12757,6 +16817,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-WalchClassification.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/WalchClassification"
@@ -12769,6 +16833,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-WalchKlassifikationDSR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/WalchKlassifikationDSR"
@@ -12781,6 +16849,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-WFNSGradingSystem.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/WFNSGradingSystem"
@@ -12793,6 +16865,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-WFNSGradering.html"
       }],
       "reference" : {
         "reference" : "ValueSet/WFNSGradering"
@@ -12805,6 +16881,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ATC.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ATC"
@@ -12817,6 +16897,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ATCMixedCodes.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ATCMixedCodes"
@@ -12829,6 +16913,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-WHOPerformanceStatus04.html"
       }],
       "reference" : {
         "reference" : "ValueSet/WHOPerformanceStatus04"
@@ -12841,6 +16929,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-WOOS.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/WOOS"
@@ -12853,6 +16945,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-WOOSArmloeftDSR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/WOOSArmloeftDSR"
@@ -12865,6 +16961,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-WOOSHaenderDSR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/WOOSHaenderDSR"
@@ -12877,6 +16977,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-WOOSTraeningDSR.html"
       }],
       "reference" : {
         "reference" : "ValueSet/WOOSTraeningDSR"
@@ -12889,6 +16993,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AarsagTilProcedureDCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AarsagTilProcedureDCCG"
@@ -12901,6 +17009,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-AarsagOphoerDNSL.html"
       }],
       "reference" : {
         "reference" : "ValueSet/AarsagOphoerDNSL"
@@ -12913,6 +17025,10 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BehandlinsplanAendretAarsagDCCG.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BehandlinsplanAendretAarsagDCCG"

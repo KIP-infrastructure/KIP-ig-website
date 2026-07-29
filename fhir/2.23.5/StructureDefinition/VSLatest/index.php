@@ -1,0 +1,25 @@
+<?php
+function Redirect($url)
+{
+  header('Location: ' . $url, true, 302);
+  exit();
+}
+
+$accept = $_SERVER['HTTP_ACCEPT'];
+if (strpos($accept, 'application/json+fhir') !== false)
+  Redirect('https://kip.rkkp.dk/fhir/2.23.5/StructureDefinition-VSLatest.json2');
+elseif (strpos($accept, 'application/fhir+json') !== false)
+  Redirect('https://kip.rkkp.dk/fhir/2.23.5/StructureDefinition-VSLatest.json1');
+elseif (strpos($accept, 'json') !== false)
+  Redirect('https://kip.rkkp.dk/fhir/2.23.5/StructureDefinition-VSLatest.json');
+elseif (strpos($accept, 'application/xml+fhir') !== false)
+  Redirect('https://kip.rkkp.dk/fhir/2.23.5/StructureDefinition-VSLatest.xml2');
+elseif (strpos($accept, 'application/fhir+xml') !== false)
+  Redirect('https://kip.rkkp.dk/fhir/2.23.5/StructureDefinition-VSLatest.xml1');
+elseif (strpos($accept, 'html') !== false)
+  Redirect('https://kip.rkkp.dk/fhir/2.23.5/StructureDefinition-VSLatest.html');
+else 
+  Redirect('https://kip.rkkp.dk/fhir/2.23.5/StructureDefinition-VSLatest.xml');
+?>
+    
+You should not be seeing this page. If you do, PHP has failed badly.

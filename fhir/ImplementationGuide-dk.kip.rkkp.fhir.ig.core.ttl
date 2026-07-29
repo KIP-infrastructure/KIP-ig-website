@@ -13,11 +13,11 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide dk.kip.rkkp.fhir.ig.core</b></p><a name=\"dk.kip.rkkp.fhir.ig.core\"> </a><a name=\"hcdk.kip.rkkp.fhir.ig.core\"> </a><h2>KIPInfrastructure</h2><p>The official URL for this implementation guide is: </p><pre>https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core</pre><div><p>The Danish Sundhedsvæsenets Kvalitetsinstitut defines a set of FHIR CodeSystems and ValueSets used for data collection.</p>\n</div></div>"
   ] ;
   fhir:ImplementationGuide.url [ fhir:value "https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core"] ;
-  fhir:ImplementationGuide.version [ fhir:value "2.23.2"] ;
+  fhir:ImplementationGuide.version [ fhir:value "2.23.5"] ;
   fhir:ImplementationGuide.name [ fhir:value "KIPInfrastructure"] ;
   fhir:ImplementationGuide.title [ fhir:value "KIP Infrastructure"] ;
   fhir:ImplementationGuide.status [ fhir:value "active"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-07-03T09:32:11+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-07-29T08:01:06+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
   fhir:ImplementationGuide.contact [
      fhir:index 0 ;
@@ -52,7 +52,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ] ;
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "7.2.0" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "7.3.0" ]
   ], [
      fhir:index 1 ;
      fhir:Element.id [ fhir:value "hl7ext" ] ;
@@ -11967,6 +11967,20 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://kip.rkkp.dk/fhir/StructureDefinition/VSLatest> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/VSLatest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Search Parameter - Latest for ValueSets" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Limit response of ValueSets to match given Latest." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 803 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://kip.rkkp.dk/fhir/StructureDefinition/questionnaire-response-reference> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/questionnaire-response-reference" ]
        ] ;
@@ -11974,7 +11988,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Find CarePlan which cointains a QuestionnaireResponse" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 803 ;
+       fhir:index 804 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -11988,7 +12002,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Find CarePlan which cointains a QuestionnaireResponse with a specific responsible sorcode" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 804 ;
+       fhir:index 805 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12002,7 +12016,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Limit response of Questionnaires to match given SOR-codes." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 805 ;
+       fhir:index 806 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12016,7 +12030,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Limit response of QuestionnaireResponses to match given SOR-codes." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 806 ;
+       fhir:index 807 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12030,7 +12044,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Limit responses of CarePlan to match the author of the given SOR-code." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 807 ;
+       fhir:index 808 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12044,7 +12058,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Limit response of PlanDefinitions to match given UUID." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 808 ;
+       fhir:index 809 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12058,7 +12072,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Limit response of Questionnaires to match given UUID." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 809 ;
+       fhir:index 810 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12072,7 +12086,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Search a CarePlan for readAccess or writeAccess SOR code. NOTE May match just the start of a string (https://build.fhir.org/codesystem-search-param-type.html#search-param-type-string)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 810 ;
+       fhir:index 811 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12086,7 +12100,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Composite search parameter representing semantic version (major.minor.patch) extracted from version field." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 811 ;
+       fhir:index 812 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12100,7 +12114,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Major version number extracted from version field." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 812 ;
+       fhir:index 813 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12114,7 +12128,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Minor version number extracted from version field." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 813 ;
+       fhir:index 814 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12128,7 +12142,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patch version number extracted from version field." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 814 ;
+       fhir:index 815 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12142,7 +12156,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Forskellige skannings metoder" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 815 ;
+       fhir:index 816 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12156,7 +12170,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Forskellige skannings metoder" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 816 ;
+       fhir:index 817 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12170,7 +12184,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indleveringsform for eksterne skemaer" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 817 ;
+       fhir:index 818 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12184,7 +12198,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SKS koderne for den anatomiske lokation for ventrikel/esophagus" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 818 ;
+       fhir:index 819 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12198,7 +12212,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SKS koderne relevante Apopleksi databasen (DAP)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 819 ;
+       fhir:index 820 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12212,7 +12226,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SKS koderne relevante cM tillægskoder" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 820 ;
+       fhir:index 821 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12226,7 +12240,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SKS koderne relevante cN tillægskoder" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 821 ;
+       fhir:index 822 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12240,7 +12254,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SKS koderne relevante cT tillægskoder" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 822 ;
+       fhir:index 823 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12254,7 +12268,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SKS koder relevante for DHD" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 823 ;
+       fhir:index 824 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12268,7 +12282,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SKS: Operationer (KAR)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 824 ;
+       fhir:index 825 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12282,7 +12296,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SKS koderne for symptomatisk/asymptomatisk" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 825 ;
+       fhir:index 826 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12296,7 +12310,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SKS koderne relevante for Trombolyse (DAP)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 826 ;
+       fhir:index 827 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12310,7 +12324,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Slynge (DUGA)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 827 ;
+       fhir:index 828 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12324,7 +12338,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Slynge - Urogynækologi (DUGA)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 828 ;
+       fhir:index 829 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12338,7 +12352,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Smerter og kvalme målt i forskellige situationer" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 829 ;
+       fhir:index 830 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12352,7 +12366,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Healthfactor smoking" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 830 ;
+       fhir:index 831 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12366,7 +12380,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SNOMED-CT - Codes used in databases. Link: https://browser.ihtsdotools.org/" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 831 ;
+       fhir:index 832 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12380,7 +12394,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SOR: Afdelinger Nyresvigt (DNSL)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 832 ;
+       fhir:index 833 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12394,7 +12408,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SOR: Afdelinger (HÆMA)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 833 ;
+       fhir:index 834 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12408,7 +12422,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SOR: Afdelinger Nyresvigt på nniversitetshospitaler (DNSL)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 834 ;
+       fhir:index 835 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12422,7 +12436,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SOR: afd_Skema3DUGA (DUGA)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 835 ;
+       fhir:index 836 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12436,7 +12450,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SOR: Neurokirurgiske afdelinger (DAP)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 836 ;
+       fhir:index 837 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12450,7 +12464,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SOR: Neurologiske afdelinger (DAP)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 837 ;
+       fhir:index 838 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12464,7 +12478,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SOR: Overflytning (RETSPSYK)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 838 ;
+       fhir:index 839 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12478,7 +12492,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SOR: Overflytning Hovedstaden (RETSPSYK)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 839 ;
+       fhir:index 840 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12492,7 +12506,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SOR: Overflytning Midtjylland (RETSPSYK)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 840 ;
+       fhir:index 841 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12506,7 +12520,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SOR: Overflytning Nordjylland (RETSPSYK)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 841 ;
+       fhir:index 842 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12520,7 +12534,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SOR: Overflytning Sjælland (RETSPSYK)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 842 ;
+       fhir:index 843 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12534,7 +12548,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SOR: Overflytning Syddanmark (RETSPSYK)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 843 ;
+       fhir:index 844 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12548,7 +12562,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SOR: Trombolyseenhed (DAP)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 844 ;
+       fhir:index 845 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12562,7 +12576,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Search By SOR in Questionnaire" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 845 ;
+       fhir:index 846 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12576,7 +12590,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Search By SOR in Questionnaire" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 846 ;
+       fhir:index 847 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12590,7 +12604,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Specificer Cytogenetiske Fund" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 847 ;
+       fhir:index 848 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12604,7 +12618,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Uddybning af hvor patienten er henvist til fysisk træning" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 848 ;
+       fhir:index 849 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12618,7 +12632,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Splenomegali, udvikling og konstatering" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 849 ;
+       fhir:index 850 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12632,7 +12646,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Hvor kommer stamcellerne fra" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 850 ;
+       fhir:index 851 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12646,7 +12660,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Status" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 851 ;
+       fhir:index 852 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12660,7 +12674,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Stem cell type" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 852 ;
+       fhir:index 853 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12674,7 +12688,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Stemkarakteristik (DSR)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 853 ;
+       fhir:index 854 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12688,7 +12702,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Stemlængde (DSR)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 854 ;
+       fhir:index 855 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12702,7 +12716,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Stomi type (DHDB)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 855 ;
+       fhir:index 856 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12716,7 +12730,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Straffelovsparagraf (RETSPSYK)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 856 ;
+       fhir:index 857 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12730,7 +12744,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mål for strålebehandling" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 857 ;
+       fhir:index 858 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12744,7 +12758,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Alle mål for strålebehandling" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 858 ;
+       fhir:index 859 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12758,7 +12772,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Alle mål for strålebehandling" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 859 ;
+       fhir:index 860 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12772,7 +12786,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Stråleterapi LYFO (LYFO)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 860 ;
+       fhir:index 861 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12786,7 +12800,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Subscapularis (DSR)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 861 ;
+       fhir:index 862 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12800,7 +12814,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sundhedsvæsenets klassifikationssystem (SKS) - Udvalgte koder i RKKP. Link: urn:oid:1.2.208.176.2.4" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 862 ;
+       fhir:index 863 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12814,7 +12828,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sundhedsvæsenets klassifikationssystem (SKS) - Udvalgte samlinger af koder i RKKP. Link: urn:oid:1.2.208.176.2.4" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 863 ;
+       fhir:index 864 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12828,7 +12842,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sundhedsvæsenets OrganisationsregisterR (SOR) - Udvalgte koder i RKKP." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 864 ;
+       fhir:index 865 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12842,7 +12856,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supplerende indgreb (DSR)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 865 ;
+       fhir:index 866 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12856,7 +12870,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Surgical attire, during operations" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 866 ;
+       fhir:index 867 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12870,7 +12884,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Procedurekode - Suspension (DUGA)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 867 ;
+       fhir:index 868 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12884,7 +12898,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sutur materiale, ventralhernie (DHDB)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 868 ;
+       fhir:index 869 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12898,7 +12912,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sutur monofilament type, ventralhernie (DHDB)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 869 ;
+       fhir:index 870 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12912,7 +12926,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sutur type, ventralhernie (DHDB)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 870 ;
+       fhir:index 871 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12926,7 +12940,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Suturtype; selvlåsende (DHDB)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 871 ;
+       fhir:index 872 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12940,7 +12954,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Suturtype hurtig resorberbar monofilament ventralhernie, ventralhernie (DHDB)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 872 ;
+       fhir:index 873 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12954,7 +12968,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Suturtype hurtig resorberbar multifilament, ventralhernie (DHDB)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 873 ;
+       fhir:index 874 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12968,7 +12982,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Suturtype langsom resorberbar monofilament, ventralhernie (DHDB)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 874 ;
+       fhir:index 875 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12982,7 +12996,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Suturtype non-resorberbar monofilament, ventralhernie (DHDB)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 875 ;
+       fhir:index 876 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -12996,7 +13010,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Suturtype non-resorberbar multifilament, ventralhernie (DHDB)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 876 ;
+       fhir:index 877 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13010,7 +13024,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sygdom; medicinsk behandlet (DHDB)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 877 ;
+       fhir:index 878 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13024,7 +13038,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sygdomslokalisation i lymfe områder er kun ekstranodalt, og patienten er en kvinde (LYFO)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 878 ;
+       fhir:index 879 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13038,7 +13052,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sygdomslokalisation i lymfe områder er kun ekstranodalt, og patienten er en kvinde (LYFO)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 879 ;
+       fhir:index 880 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13052,7 +13066,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sygdomslokalisation i lymfe områder er kun ekstranodalt, og patienten er en mand (LYFO)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 880 ;
+       fhir:index 881 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13066,7 +13080,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sygdomslokalisation i lymfe områder er kun ekstranodalt, og patienten er en mand (LYFO)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 881 ;
+       fhir:index 882 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13080,7 +13094,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sygdomslokalisation i lymfe områder er kun nodalt (LYFO)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 882 ;
+       fhir:index 883 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13094,7 +13108,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sygdomslokalisation i lymfe områder er kun nodalt (LYFO)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 883 ;
+       fhir:index 884 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13108,7 +13122,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sygdomslokalisation i lymfe områder er primært nodalt, sekundært ekstranodalt eller primært ekstranodalt, sekundært nodalt, og patienten er en kvinde (LYFO)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 884 ;
+       fhir:index 885 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13122,7 +13136,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sygdomslokalisation i lymfe områder er primært nodalt, sekundært ekstranodalt eller primært ekstranodalt, sekundært nodalt, og patienten er en mand (LYFO)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 885 ;
+       fhir:index 886 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13136,7 +13150,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sygdomsområder i KIP" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 886 ;
+       fhir:index 887 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13150,7 +13164,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Alle Sygdomsområder i KIP" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 887 ;
+       fhir:index 888 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13164,7 +13178,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Alle Sygdomsområder i KIP vedr. hæmatologi" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 888 ;
+       fhir:index 889 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13178,7 +13192,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Alle Sygdomsområder i KIP vedr. ortopædkirurgi" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 889 ;
+       fhir:index 890 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13192,7 +13206,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sygdomsudbredelse i lymfe områder" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 890 ;
+       fhir:index 891 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13206,7 +13220,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Symptom skala" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 891 ;
+       fhir:index 892 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13220,7 +13234,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Typer af mikrovaskulære symptomeromplikationer - DMPN" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 892 ;
+       fhir:index 893 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13234,7 +13248,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Symptoms" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 893 ;
+       fhir:index 894 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13248,7 +13262,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Dette er systemiske præperater" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 894 ;
+       fhir:index 895 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13262,7 +13276,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tackernavn; Absorberbare tackers (DHDB)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 895 ;
+       fhir:index 896 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13276,7 +13290,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tackernavn; Non-absorberbare tackers (DHDB)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 896 ;
+       fhir:index 897 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13290,7 +13304,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tackertype; absorberbar/non-absorberbar (DHDB)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 897 ;
+       fhir:index 898 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13304,7 +13318,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Taget hånd om problemer, PRO-PAL-skema 1" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 898 ;
+       fhir:index 899 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13318,7 +13332,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Taget hånd om problemer, PRO-PAL-skema 1" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 899 ;
+       fhir:index 900 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13332,7 +13346,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Target of the radiation therapy" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 900 ;
+       fhir:index 901 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13346,7 +13360,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Teammedlemmer/personale på stopholdet" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 901 ;
+       fhir:index 902 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13360,7 +13374,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Teammedlemmer/personale på stopholdet" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 902 ;
+       fhir:index 903 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13374,7 +13388,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The National Institute of Health Stroke Scale (NIHSS) - 10. Dysarthria; Link: https://www.ninds.nih.gov/stroke-scales-and-related-information" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 903 ;
+       fhir:index 904 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13388,7 +13402,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The National Institute of Health Stroke Scale (NIHSS) - 11. Extinction and Inattention (formerly Neglect); Link: https://www.ninds.nih.gov/stroke-scales-and-related-information" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 904 ;
+       fhir:index 905 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13402,7 +13416,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The National Institute of Health Stroke Scale (NIHSS) - 1a. Level of Consciousness; Link: https://www.ninds.nih.gov/stroke-scales-and-related-information" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 905 ;
+       fhir:index 906 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13416,7 +13430,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The National Institute of Health Stroke Scale (NIHSS) - 1b. Level of Consciousness: Questions; Link: https://www.ninds.nih.gov/stroke-scales-and-related-information" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 906 ;
+       fhir:index 907 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13430,7 +13444,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The National Institute of Health Stroke Scale (NIHSS) - 1c. Level of Consciousness: Commands; Link: https://www.ninds.nih.gov/stroke-scales-and-related-information" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 907 ;
+       fhir:index 908 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13444,7 +13458,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The National Institute of Health Stroke Scale (NIHSS) - 2. Best Gaze; Link: https://www.ninds.nih.gov/stroke-scales-and-related-information" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 908 ;
+       fhir:index 909 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13458,7 +13472,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The National Institute of Health Stroke Scale (NIHSS) - 3. Visual; Link: https://www.ninds.nih.gov/stroke-scales-and-related-information" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 909 ;
+       fhir:index 910 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13472,7 +13486,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The National Institute of Health Stroke Scale (NIHSS) - 4. Facial Palsy; Link: https://www.ninds.nih.gov/stroke-scales-and-related-information" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 910 ;
+       fhir:index 911 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13486,7 +13500,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The National Institute of Health Stroke Scale (NIHSS) - 5. Motor Arm; Link: https://www.ninds.nih.gov/stroke-scales-and-related-information" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 911 ;
+       fhir:index 912 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13500,7 +13514,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The National Institute of Health Stroke Scale (NIHSS) - 6. Motor Leg; Link: https://www.ninds.nih.gov/stroke-scales-and-related-information" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 912 ;
+       fhir:index 913 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13514,7 +13528,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The National Institute of Health Stroke Scale (NIHSS) - 7. Limb Ataxia; Link: https://www.ninds.nih.gov/stroke-scales-and-related-information" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 913 ;
+       fhir:index 914 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13528,7 +13542,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The National Institute of Health Stroke Scale (NIHSS) - 8. Sensory; Link: https://www.ninds.nih.gov/stroke-scales-and-related-information" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 914 ;
+       fhir:index 915 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13542,7 +13556,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The National Institute of Health Stroke Scale (NIHSS) - 9. Best Language; Link: https://www.ninds.nih.gov/stroke-scales-and-related-information" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 915 ;
+       fhir:index 916 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13556,7 +13570,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tidligere indgreb (DSR)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 916 ;
+       fhir:index 917 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13570,7 +13584,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tidligere operation (DKR)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 917 ;
+       fhir:index 918 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13584,7 +13598,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tidligere operation hofte (hoftealloplastik)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 918 ;
+       fhir:index 919 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13598,7 +13612,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tidspunkt for central blokade" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 919 ;
+       fhir:index 920 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13612,7 +13626,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TilsynAfdeling - DPD" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 920 ;
+       fhir:index 921 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13626,7 +13640,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TilsynAfdeling - DPD" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 921 ;
+       fhir:index 922 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13640,7 +13654,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tiltag i forbindelse med hydrocephalus" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 922 ;
+       fhir:index 923 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13654,7 +13668,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tiltag i forbindelse med vasospasmer" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 923 ;
+       fhir:index 924 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13668,7 +13682,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Årsagen til hvorfor Totaldosis i.v. actilyse ikke er givet" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 924 ;
+       fhir:index 925 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13682,7 +13696,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Er en Transplantation udført" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 925 ;
+       fhir:index 926 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13696,7 +13710,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Transplantation - Transplantation/Cage/Augment (DHR)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 926 ;
+       fhir:index 927 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13710,7 +13724,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Transplantation type (DHR)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 927 ;
+       fhir:index 928 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13724,7 +13738,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Er en Transplantation udført" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 928 ;
+       fhir:index 929 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13738,7 +13752,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Transplantationcenterliste til ALG" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 929 ;
+       fhir:index 930 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13752,7 +13766,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Transplantationstype (CML)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 930 ;
+       fhir:index 931 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13766,7 +13780,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Treatment cause - unplanned" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 931 ;
+       fhir:index 932 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13780,7 +13794,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Treatment indication" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 932 ;
+       fhir:index 933 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13794,7 +13808,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Treatment initiatives" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 933 ;
+       fhir:index 934 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13808,7 +13822,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Treatment lesion" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 934 ;
+       fhir:index 935 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13822,7 +13836,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Treatment method - Minimal Residual Disease (MRD)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 935 ;
+       fhir:index 936 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13836,7 +13850,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Treatment not given; cause" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 936 ;
+       fhir:index 937 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13850,7 +13864,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Treatment psychopharmacological" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 937 ;
+       fhir:index 938 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13864,7 +13878,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Treatment regimen" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 938 ;
+       fhir:index 939 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13878,7 +13892,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Treatment response evaluation" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 939 ;
+       fhir:index 940 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13892,7 +13906,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Treatment schedule" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 940 ;
+       fhir:index 941 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13906,7 +13920,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Treatment sufficient" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 941 ;
+       fhir:index 942 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13920,7 +13934,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Treatment type" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 942 ;
+       fhir:index 943 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13934,7 +13948,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Treatment unspecified" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 943 ;
+       fhir:index 944 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13948,7 +13962,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Behandlingsintention for kræft databaserne" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 944 ;
+       fhir:index 945 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13962,7 +13976,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indikation for kemoterapi/behandling - CLL" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 945 ;
+       fhir:index 946 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13976,7 +13990,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indikation for kemoterapi/behandling - CLL" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 946 ;
+       fhir:index 947 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -13990,7 +14004,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indikation for kemoterapi/behandling - LYFO" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 947 ;
+       fhir:index 948 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14004,7 +14018,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Perfusion opnået under trombektomi" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 948 ;
+       fhir:index 949 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14018,7 +14032,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Perfusion opnået under trombektomi" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 949 ;
+       fhir:index 950 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14032,7 +14046,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Trombolyseprofylakse (DHR)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 950 ;
+       fhir:index 951 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14046,7 +14060,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Danstroke Trombolysepræparater" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 951 ;
+       fhir:index 952 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14060,7 +14074,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Histologisk tumorklassifikation i DEGC (behandling)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 952 ;
+       fhir:index 953 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14074,7 +14088,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Histologisk tumorklassifikation i DEGC (diagnose)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 953 ;
+       fhir:index 954 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14088,7 +14102,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Histologisk tumorklassifikation i [DEGC]" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 954 ;
+       fhir:index 955 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14102,7 +14116,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Type af indgreb (akut/elektiv)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 955 ;
+       fhir:index 956 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14116,7 +14130,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Type af præoperativ endoskopisk lokalresektion (Kolon) DCCG" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 956 ;
+       fhir:index 957 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14130,7 +14144,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Type af præoperativ endoskopisk lokalresektion (Rektum) DCCG" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 957 ;
+       fhir:index 958 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14144,7 +14158,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Type af præoperativ endoskopisk lokalresektion DCCG" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 958 ;
+       fhir:index 959 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14158,7 +14172,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Type af pTNM" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 959 ;
+       fhir:index 960 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14172,7 +14186,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Typer af perifer nerveblokade - overekstremiteter" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 960 ;
+       fhir:index 961 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14186,7 +14200,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Typer af perifer nerveblokade - underekstremiteter" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 961 ;
+       fhir:index 962 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14200,7 +14214,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Type Perifer nerveblokade Trunkal/Abdominal/Øvrige" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 962 ;
+       fhir:index 963 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14214,7 +14228,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Blokader - Central, Underekstremitet, Overekstremitet" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 963 ;
+       fhir:index 964 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14228,7 +14242,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Typer af central blokade" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 964 ;
+       fhir:index 965 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14242,7 +14256,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "U-M komponent type [DAMYDA]" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 965 ;
+       fhir:index 966 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14256,7 +14270,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Uddybning af hvor patienten er henvist til fysisk træning" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 966 ;
+       fhir:index 967 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14270,7 +14284,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Udførelse af resektion DCCG" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 967 ;
+       fhir:index 968 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14284,7 +14298,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "UdførendeLAB" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 968 ;
+       fhir:index 969 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14298,7 +14312,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Udført procedure (DCCG)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 969 ;
+       fhir:index 970 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14312,7 +14326,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Udført procedure K1 (DCCG)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 970 ;
+       fhir:index 971 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14326,7 +14340,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Udført procedure K2 (DCCG)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 971 ;
+       fhir:index 972 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14340,7 +14354,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Udført procedure K3 (DCCG)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 972 ;
+       fhir:index 973 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14354,7 +14368,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Udført procedure R1 (DCCG)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 973 ;
+       fhir:index 974 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14368,7 +14382,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Udført procedure R2 (DCCG)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 974 ;
+       fhir:index 975 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14382,7 +14396,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Udført procedure R3 (DCCG)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 975 ;
+       fhir:index 976 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14396,7 +14410,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Udført procedure R4 (DCCG)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 976 ;
+       fhir:index 977 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14410,7 +14424,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Udredning (DANDEM)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 977 ;
+       fhir:index 978 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14424,7 +14438,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Udredning (DANDEM) - Fjernet to udfald og omformuleret no_wish_for_assessment. Erstatter et tidligere VS." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 978 ;
+       fhir:index 979 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14438,7 +14452,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Udredning - Klinisk/genetisk" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 979 ;
+       fhir:index 980 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14452,7 +14466,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Udskrevet til" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 980 ;
+       fhir:index 981 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14466,7 +14480,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Udskrevet til" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 981 ;
+       fhir:index 982 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14480,7 +14494,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Undersøgelsestype (DUGA)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 982 ;
+       fhir:index 983 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14494,7 +14508,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Undersøgelsestype (DUGA)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 983 ;
+       fhir:index 984 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14508,7 +14522,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "UndersøgendeLAB" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 984 ;
+       fhir:index 985 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14522,7 +14536,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Undervisningstype" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 985 ;
+       fhir:index 986 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14536,7 +14550,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Giver mulighed for at svare ukendt/ukendt" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 986 ;
+       fhir:index 987 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14550,7 +14564,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Hvornår lækker urin (DUGA)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 987 ;
+       fhir:index 988 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14564,7 +14578,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Uspecificeret (enkelt udfald)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 988 ;
+       fhir:index 989 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://kip.rkkp.dk/fhir/SearchParameter/ValueSetLatest> ;
+         fhir:Reference.reference [ fhir:value "SearchParameter/ValueSetLatest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSetLatest" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Search ValueSet for 'latest' extension" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 990 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14578,7 +14606,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Vancouver classification of periprosthetic hip fractures; Link: https://radiopaedia.org/articles/vancouver-classification-of-periprosthetic-hip-fractures" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 989 ;
+       fhir:index 991 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14592,7 +14620,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Vancouver klassifikation (DHR)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 990 ;
+       fhir:index 992 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14606,7 +14634,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Vancouver klassifikation - Peroperativ (DHR)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 991 ;
+       fhir:index 993 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14620,7 +14648,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Varighed (DKR)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 992 ;
+       fhir:index 994 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14634,7 +14662,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Planlagt varighed Postoperativ trombolyseprofylakse (DKR)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 993 ;
+       fhir:index 995 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14648,7 +14676,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Planlagt varighed Postoperativ trombolyseprofylakse (DKR)VitK_anta" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 994 ;
+       fhir:index 996 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14662,7 +14690,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Planlagt varighed Postoperativ trombolyseprofylakse (DKR)1" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 995 ;
+       fhir:index 997 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14676,7 +14704,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Planlagt varighed Postoperativ trombolyseprofylakse (DKR)2" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 996 ;
+       fhir:index 998 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14690,7 +14718,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Planlagt varighed Postoperativ trombolyseprofylakse (DKR)3" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 997 ;
+       fhir:index 999 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14704,7 +14732,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Planlagt varighed Postoperativ trombolyseprofylakse (DKR) NOAK" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 998 ;
+       fhir:index 1000 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14718,7 +14746,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "VarigRespons" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 999 ;
+       fhir:index 1001 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14732,7 +14760,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ved fund af intracerebralt hæmatom (ICH), skal der evkaueres eller ej" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1000 ;
+       fhir:index 1002 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14746,7 +14774,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Hvilken vedligeholdelsesbehandling er der påbegyndt" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1001 ;
+       fhir:index 1003 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14760,7 +14788,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ventral hernie cicatrice type (DHDB)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1002 ;
+       fhir:index 1004 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14774,7 +14802,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ventral hernie type (DHDB)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1003 ;
+       fhir:index 1005 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14788,7 +14816,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ventral hernie type (DHDB)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1004 ;
+       fhir:index 1006 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14802,7 +14830,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Verdict" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1005 ;
+       fhir:index 1007 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14816,7 +14844,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Visitation criteria not met; cause" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1006 ;
+       fhir:index 1008 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14830,7 +14858,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Hvilke visitationskriterier var ikke opfyldt" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1007 ;
+       fhir:index 1009 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14844,7 +14872,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Walch classification; Link: https://radiopaedia.org/articles/walch-classification-of-glenoid-morphology-1" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1008 ;
+       fhir:index 1010 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14858,7 +14886,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Walch klassifikation (DSR)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1009 ;
+       fhir:index 1011 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14872,7 +14900,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "World Federation of Neurosurgical Societies (WFNS) grading system; Link: https://radiopaedia.org/articles/wfns-grading-system" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1010 ;
+       fhir:index 1012 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14886,7 +14914,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "World Federation of Neurosurgical Societies (WFNS) grad." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1011 ;
+       fhir:index 1013 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14900,7 +14928,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "WHO ATC code system. Link: http://www.whocc.no/atc" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1012 ;
+       fhir:index 1014 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14914,7 +14942,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "WHO ATC code system; Mixed codes. Link: http://www.whocc.no/atc" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1013 ;
+       fhir:index 1015 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14928,7 +14956,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "WHO Performance status grad 1-4" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1014 ;
+       fhir:index 1016 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14942,7 +14970,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "WOOS" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1015 ;
+       fhir:index 1017 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14956,7 +14984,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "WOOS - Armløft (DSR)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1016 ;
+       fhir:index 1018 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14970,7 +14998,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "WOOS - Hænder (DSR)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1017 ;
+       fhir:index 1019 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14984,7 +15012,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "WOOS - Træning (DSR)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1018 ;
+       fhir:index 1020 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -14998,7 +15026,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Årsag til anden/aflastende procedure colorectal cancer" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1019 ;
+       fhir:index 1021 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -15012,7 +15040,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Årsager til interventionsforløb er ophørt" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1020 ;
+       fhir:index 1022 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;

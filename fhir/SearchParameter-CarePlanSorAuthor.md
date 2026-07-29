@@ -1,4 +1,4 @@
-# CarePlanSorAuthor - KIP Infrastructure v2.23.2
+# CarePlanSorAuthor - KIP Infrastructure v2.23.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/CarePlanSorAuthor | *Version*:2.23.2 |
-| Active as of 2026-07-03 | *Computable Name*:CarePlan SorAuthor |
+| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/CarePlanSorAuthor | *Version*:2.23.5 |
+| Active as of 2026-07-29 | *Computable Name*:CarePlan SorAuthor |
 
  
 Search by SOR-code as author on a CarePlan 
@@ -23,10 +23,10 @@ Search by SOR-code as author on a CarePlan
   "resourceType" : "SearchParameter",
   "id" : "CarePlanSorAuthor",
   "url" : "https://kip.rkkp.dk/fhir/SearchParameter/CarePlanSorAuthor",
-  "version" : "2.23.2",
+  "version" : "2.23.5",
   "name" : "CarePlan SorAuthor",
   "status" : "active",
-  "date" : "2026-07-03T09:32:11+00:00",
+  "date" : "2026-07-29T08:01:06+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",

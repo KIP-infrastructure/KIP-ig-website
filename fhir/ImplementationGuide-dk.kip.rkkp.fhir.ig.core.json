@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide dk.kip.rkkp.fhir.ig.core</b></p><a name=\"dk.kip.rkkp.fhir.ig.core\"> </a><a name=\"hcdk.kip.rkkp.fhir.ig.core\"> </a><h2>KIPInfrastructure</h2><p>The official URL for this implementation guide is: </p><pre>https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core</pre><div><p>The Danish Sundhedsvæsenets Kvalitetsinstitut defines a set of FHIR CodeSystems and ValueSets used for data collection.</p>\n</div></div>"
   },
   "url" : "https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core",
-  "version" : "2.23.2",
+  "version" : "2.23.5",
   "name" : "KIPInfrastructure",
   "title" : "KIP Infrastructure",
   "status" : "active",
-  "date" : "2026-07-03T09:32:11+00:00",
+  "date" : "2026-07-29T08:01:06+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
@@ -35,7 +35,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.2.0"
+    "version" : "7.3.0"
   },
   {
     "id" : "hl7ext",
@@ -10282,6 +10282,18 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/VSLatest"
+      },
+      "name" : "Search Parameter - Latest for ValueSets",
+      "description" : "Limit response of ValueSets to match given Latest.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/questionnaire-response-reference"
       },
       "name" : "Search Parameter - QuestionnaireReponse on CarePLan",
@@ -12506,6 +12518,18 @@
       },
       "name" : "Uspecificeret (enkelt udfald)",
       "description" : "Uspecificeret (enkelt udfald)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/ValueSetLatest"
+      },
+      "name" : "ValueSetLatest",
+      "description" : "Search ValueSet for 'latest' extension",
       "exampleBoolean" : false
     },
     {
