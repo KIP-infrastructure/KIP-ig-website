@@ -1,4 +1,4 @@
-# Home - KIP Infrastructure v2.23.5
+# Home - KIP Infrastructure v2.24.0
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core | *Version*:2.23.5 |
-| Active as of 2026-07-29 | *Computable Name*:KIPInfrastructure |
+| *Official URL*:https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core | *Version*:2.24.0 |
+| Active as of 2026-08-05 | *Computable Name*:KIPInfrastructure |
 
 ### Introduction
 
@@ -23,11 +23,11 @@ This implementation guide is provided to support the use of FHIR®© in the cont
   "resourceType" : "ImplementationGuide",
   "id" : "dk.kip.rkkp.fhir.ig.core",
   "url" : "https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core",
-  "version" : "2.23.5",
+  "version" : "2.24.0",
   "name" : "KIPInfrastructure",
   "title" : "KIP Infrastructure",
   "status" : "active",
-  "date" : "2026-07-29T08:01:06+00:00",
+  "date" : "2026-08-05T12:34:48+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
@@ -5476,6 +5476,22 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-GrundlidelseDHR-2026-07.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/GrundlidelseDHR-2026-07"
+      },
+      "name" : "Grundlidelse [DHR] 2026-07",
+      "description" : "Grundlidelse [DHR]",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "ValueSet-GynUndersoegDUGA.html"
       }],
       "reference" : {
@@ -6442,6 +6458,22 @@ This implementation guide is provided to support the use of FHIR®© in the cont
         "reference" : "ValueSet/ImplantatMaterialeKeramikMetalAndet"
       },
       "name" : "Implantat - materiale (keramik, metal, andet)",
+      "description" : "Implantat - materiale (keramik, metal, andet)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ImplantatMateriale-KeramikMetalAndet-2026-07.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ImplantatMateriale-KeramikMetalAndet-2026-07"
+      },
+      "name" : "Implantat - materiale (keramik, metal, andet) 2026-07",
       "description" : "Implantat - materiale (keramik, metal, andet)",
       "exampleBoolean" : false
     },
@@ -13034,6 +13066,22 @@ This implementation guide is provided to support the use of FHIR®© in the cont
         "reference" : "CodeSystem/RobotAssistDKR"
       },
       "name" : "Robot (DKR)",
+      "description" : "Robottyper til robot assisteret kirurgi (DKR)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Robot-DKR-2026-07.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Robot-DKR-2026-07"
+      },
+      "name" : "Robot (DKR)-2026-07",
       "description" : "Robottyper til robot assisteret kirurgi (DKR)",
       "exampleBoolean" : false
     },

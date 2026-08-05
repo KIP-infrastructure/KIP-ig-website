@@ -1,4 +1,4 @@
-# QuestionnaireUuid - KIP Infrastructure v2.23.5
+# QuestionnaireUuid - KIP Infrastructure v2.24.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/QuestionnaireUuid | *Version*:2.23.5 |
-| Active as of 2026-07-29 | *Computable Name*:QuestionnaireUuid |
+| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/QuestionnaireUuid | *Version*:2.24.0 |
+| Active as of 2026-08-05 | *Computable Name*:QuestionnaireUuid |
 
  
 Search by uuid in Questionnaire 
@@ -23,10 +23,10 @@ Search by uuid in Questionnaire
   "resourceType" : "SearchParameter",
   "id" : "QuestionnaireUuid",
   "url" : "https://kip.rkkp.dk/fhir/SearchParameter/QuestionnaireUuid",
-  "version" : "2.23.5",
+  "version" : "2.24.0",
   "name" : "QuestionnaireUuid",
   "status" : "active",
-  "date" : "2026-07-29T08:01:06+00:00",
+  "date" : "2026-08-05T12:34:48+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
