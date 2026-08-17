@@ -33,7 +33,7 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Replace kip.rkkp base url in history.html
-        uses: richardrigutins/replace-in-files@5b141bbfcb4cbf3eea03a9658645166eef3f9030 # v3.1.1
+        uses: richardrigutins/replace-in-files@0c92dfb8bb0cd7d4a5704dabe9b3bfcb3342f1a5 # v3.1.2
         with:
           files: '**/history.html'
           search-text: 'https://kip.rkkp.dk/fhir'
@@ -42,7 +42,7 @@ jobs:
           max-parallelism: 10
                              
       - name: Replace build.fhir base url in history.html
-        uses: richardrigutins/replace-in-files@5b141bbfcb4cbf3eea03a9658645166eef3f9030 # v3.1.1
+        uses: richardrigutins/replace-in-files@0c92dfb8bb0cd7d4a5704dabe9b3bfcb3342f1a5 # v3.1.2
         with:
           files: '**/history.html'
           search-text: 'https://build.fhir.org/ig/kip-infrastructure/implementation-guide/'
@@ -51,7 +51,7 @@ jobs:
           max-parallelism: 10
                              
       - name: Replace full-ig.zip with package.tgz in history.html
-        uses: richardrigutins/replace-in-files@5b141bbfcb4cbf3eea03a9658645166eef3f9030 # v3.1.1
+        uses: richardrigutins/replace-in-files@0c92dfb8bb0cd7d4a5704dabe9b3bfcb3342f1a5 # v3.1.2
         with:
           files: '**/history.html'
           search-text: 'full-ig.zip'
@@ -60,7 +60,7 @@ jobs:
           max-parallelism: 10
       
       - name: Replace the Directory of published versions url
-        uses: richardrigutins/replace-in-files@5b141bbfcb4cbf3eea03a9658645166eef3f9030 # v3.1.1
+        uses: richardrigutins/replace-in-files@0c92dfb8bb0cd7d4a5704dabe9b3bfcb3342f1a5 # v3.1.2
         with:
           files: '**/*.html'
           search-text: 'https://kip.rkkp.dk/fhir/history.html' 
