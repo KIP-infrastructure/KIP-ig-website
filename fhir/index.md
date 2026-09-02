@@ -1,4 +1,4 @@
-# Home - KIP Infrastructure v2.24.0
+# Home - KIP Infrastructure v2.19.5
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core | *Version*:2.24.0 |
-| Active as of 2026-08-05 | *Computable Name*:KIPInfrastructure |
+| *Official URL*:https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core | *Version*:2.19.5 |
+| Active as of 2026-09-02 | *Computable Name*:KIPInfrastructure |
 
 ### Introduction
 
@@ -23,11 +23,11 @@ This implementation guide is provided to support the use of FHIR®© in the cont
   "resourceType" : "ImplementationGuide",
   "id" : "dk.kip.rkkp.fhir.ig.core",
   "url" : "https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core",
-  "version" : "2.24.0",
+  "version" : "2.19.5",
   "name" : "KIPInfrastructure",
   "title" : "KIP Infrastructure",
   "status" : "active",
-  "date" : "2026-08-05T12:34:48+00:00",
+  "date" : "2026-09-02T10:10:20+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
@@ -2836,12 +2836,12 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "SearchParameter-CarePlanReadOrWriteAccessSP.html"
+        "valueUri" : "SearchParameter-CarePlanReadOrWriteAccess.html"
       }],
       "reference" : {
-        "reference" : "SearchParameter/CarePlanReadOrWriteAccessSP"
+        "reference" : "SearchParameter/CarePlanReadOrWriteAccess"
       },
-      "name" : "CarePlanReadOrWriteAccessSP",
+      "name" : "CarePlanReadOrWriteAccess",
       "description" : "Search a CarePlan for readAccess or writeAccess SOR code",
       "exampleBoolean" : false
     },
@@ -3883,22 +3883,6 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       },
       "name" : "Diseases - Unspecified without a code",
       "description" : "Diseases - Unspecified without a code",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-plan-definition-action-display-order.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/plan-definition-action-display-order"
-      },
-      "name" : "Display Order for PlanDefinition Action",
-      "description" : "Specifies the desired display order of a PlanDefinition action (e.g. Questionnaire references). Lower values are displayed first.",
       "exampleBoolean" : false
     },
     {
@@ -5476,22 +5460,6 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-GrundlidelseDHR-2026-07.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/GrundlidelseDHR-2026-07"
-      },
-      "name" : "Grundlidelse [DHR] 2026-07",
-      "description" : "Grundlidelse [DHR]",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "ValueSet-GynUndersoegDUGA.html"
       }],
       "reference" : {
@@ -6458,22 +6426,6 @@ This implementation guide is provided to support the use of FHIR®© in the cont
         "reference" : "ValueSet/ImplantatMaterialeKeramikMetalAndet"
       },
       "name" : "Implantat - materiale (keramik, metal, andet)",
-      "description" : "Implantat - materiale (keramik, metal, andet)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ImplantatMateriale-KeramikMetalAndet-2026-07.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ImplantatMateriale-KeramikMetalAndet-2026-07"
-      },
-      "name" : "Implantat - materiale (keramik, metal, andet) 2026-07",
       "description" : "Implantat - materiale (keramik, metal, andet)",
       "exampleBoolean" : false
     },
@@ -8852,22 +8804,6 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-DSAFundLokation2026.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/DSAFundLokation2026"
-      },
-      "name" : "Lokation for tromber, fundet vha. DSA 2026",
-      "description" : "Lokation for tromber, fundet vha. digital subtraktionsangiografi (DSA).",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "ValueSet-LuftvejForsoeg.html"
       }],
       "reference" : {
@@ -11060,28 +10996,12 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-PatobankSNOMEDDiagnoserLYFO2026.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/PatobankSNOMEDDiagnoserLYFO2026"
-      },
-      "name" : "PatobankSNOMED - Diagnoser (LYFO)",
-      "description" : "PatobankSNOMED - Diagnoser (LYFO)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "ValueSet-PatobankSNOMEDDiagnoserLYFO.html"
       }],
       "reference" : {
         "reference" : "ValueSet/PatobankSNOMEDDiagnoserLYFO"
       },
-      "name" : "PatobankSNOMED - Diagnoser (LYFO) (retired)",
+      "name" : "PatobankSNOMED - Diagnoser (LYFO)",
       "description" : "PatobankSNOMED - Diagnoser (LYFO)",
       "exampleBoolean" : false
     },
@@ -12212,12 +12132,12 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "SearchParameter-QuestionnaireResponseResponsibleOnCarePlanSP.html"
+        "valueUri" : "SearchParameter-QuestionnaireResponseResponsibleOnCarePlan.html"
       }],
       "reference" : {
-        "reference" : "SearchParameter/QuestionnaireResponseResponsibleOnCarePlanSP"
+        "reference" : "SearchParameter/QuestionnaireResponseResponsibleOnCarePlan"
       },
-      "name" : "QuestionnaireResponseResponsibleOnCarePlanSP",
+      "name" : "QuestionnaireResponseResponsibleOnCarePlan",
       "description" : "Search a CarePlan for responsible SOR code on a QuestionnaireResponse",
       "exampleBoolean" : false
     },
@@ -13076,22 +12996,6 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-Robot-DKR-2026-07.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/Robot-DKR-2026-07"
-      },
-      "name" : "Robot (DKR)-2026-07",
-      "description" : "Robottyper til robot assisteret kirurgi (DKR)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "ValueSet-Ryger8uger.html"
       }],
       "reference" : {
@@ -13547,22 +13451,6 @@ This implementation guide is provided to support the use of FHIR®© in the cont
       },
       "name" : "Search Parameter - Latest for Questionnaires",
       "description" : "Limit response of Questionnaires to match given Latest.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-VSLatest.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/VSLatest"
-      },
-      "name" : "Search Parameter - Latest for ValueSets",
-      "description" : "Limit response of ValueSets to match given Latest.",
       "exampleBoolean" : false
     },
     {
@@ -16544,22 +16432,6 @@ This implementation guide is provided to support the use of FHIR®© in the cont
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "SearchParameter-ValueSetLatest.html"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/ValueSetLatest"
-      },
-      "name" : "ValueSetLatest",
-      "description" : "Search ValueSet for 'latest' extension",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       },
       {
@@ -16794,22 +16666,6 @@ This implementation guide is provided to support the use of FHIR®© in the cont
         "reference" : "ValueSet/VentralHernieTypeDHDB"
       },
       "name" : "Ventral hernie type (DHDB)",
-      "description" : "Ventral hernie type (DHDB)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-VentralHernieTypeDHDB2026.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/VentralHernieTypeDHDB2026"
-      },
-      "name" : "Ventral hernie type (DHDB) 2026",
       "description" : "Ventral hernie type (DHDB)",
       "exampleBoolean" : false
     },

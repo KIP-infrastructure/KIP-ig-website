@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide dk.kip.rkkp.fhir.ig.core</b></p><a name=\"dk.kip.rkkp.fhir.ig.core\"> </a><a name=\"hcdk.kip.rkkp.fhir.ig.core\"> </a><h2>KIPInfrastructure</h2><p>The official URL for this implementation guide is: </p><pre>https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core</pre><div><p>The Danish Sundhedsvæsenets Kvalitetsinstitut defines a set of FHIR CodeSystems and ValueSets used for data collection.</p>\n</div></div>"
   },
   "url" : "https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core",
-  "version" : "2.24.0",
+  "version" : "2.19.5",
   "name" : "KIPInfrastructure",
   "title" : "KIP Infrastructure",
   "status" : "active",
-  "date" : "2026-08-05T12:34:48+00:00",
+  "date" : "2026-09-02T10:10:20+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
@@ -2278,9 +2278,9 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/CarePlanReadOrWriteAccessSP"
+        "reference" : "SearchParameter/CarePlanReadOrWriteAccess"
       },
-      "name" : "CarePlanReadOrWriteAccessSP",
+      "name" : "CarePlanReadOrWriteAccess",
       "description" : "Search a CarePlan for readAccess or writeAccess SOR code",
       "exampleBoolean" : false
     },
@@ -3062,18 +3062,6 @@
       },
       "name" : "Diseases - Unspecified without a code",
       "description" : "Diseases - Unspecified without a code",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/plan-definition-action-display-order"
-      },
-      "name" : "Display Order for PlanDefinition Action",
-      "description" : "Specifies the desired display order of a PlanDefinition action (e.g. Questionnaire references). Lower values are displayed first.",
       "exampleBoolean" : false
     },
     {
@@ -4258,18 +4246,6 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/GrundlidelseDHR-2026-07"
-      },
-      "name" : "Grundlidelse [DHR] 2026-07",
-      "description" : "Grundlidelse [DHR]",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
         "reference" : "ValueSet/GynUndersoegDUGA"
       },
       "name" : "Gynækologisk undersøgelsesmetode (DUGA)",
@@ -4993,18 +4969,6 @@
         "reference" : "ValueSet/ImplantatMaterialeKeramikMetalAndet"
       },
       "name" : "Implantat - materiale (keramik, metal, andet)",
-      "description" : "Implantat - materiale (keramik, metal, andet)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ImplantatMateriale-KeramikMetalAndet-2026-07"
-      },
-      "name" : "Implantat - materiale (keramik, metal, andet) 2026-07",
       "description" : "Implantat - materiale (keramik, metal, andet)",
       "exampleBoolean" : false
     },
@@ -6790,18 +6754,6 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/DSAFundLokation2026"
-      },
-      "name" : "Lokation for tromber, fundet vha. DSA 2026",
-      "description" : "Lokation for tromber, fundet vha. digital subtraktionsangiografi (DSA).",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
         "reference" : "ValueSet/LuftvejForsoeg"
       },
       "name" : "LuftvejForsøgsplan",
@@ -8446,21 +8398,9 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/PatobankSNOMEDDiagnoserLYFO2026"
-      },
-      "name" : "PatobankSNOMED - Diagnoser (LYFO)",
-      "description" : "PatobankSNOMED - Diagnoser (LYFO)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
         "reference" : "ValueSet/PatobankSNOMEDDiagnoserLYFO"
       },
-      "name" : "PatobankSNOMED - Diagnoser (LYFO) (retired)",
+      "name" : "PatobankSNOMED - Diagnoser (LYFO)",
       "description" : "PatobankSNOMED - Diagnoser (LYFO)",
       "exampleBoolean" : false
     },
@@ -9310,9 +9250,9 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/QuestionnaireResponseResponsibleOnCarePlanSP"
+        "reference" : "SearchParameter/QuestionnaireResponseResponsibleOnCarePlan"
       },
-      "name" : "QuestionnaireResponseResponsibleOnCarePlanSP",
+      "name" : "QuestionnaireResponseResponsibleOnCarePlan",
       "description" : "Search a CarePlan for responsible SOR code on a QuestionnaireResponse",
       "exampleBoolean" : false
     },
@@ -9958,18 +9898,6 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/Robot-DKR-2026-07"
-      },
-      "name" : "Robot (DKR)-2026-07",
-      "description" : "Robottyper til robot assisteret kirurgi (DKR)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
         "reference" : "ValueSet/Ryger8uger"
       },
       "name" : "Ryger op til 8 uger",
@@ -10310,18 +10238,6 @@
       },
       "name" : "Search Parameter - Latest for Questionnaires",
       "description" : "Limit response of Questionnaires to match given Latest.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/VSLatest"
-      },
-      "name" : "Search Parameter - Latest for ValueSets",
-      "description" : "Limit response of ValueSets to match given Latest.",
       "exampleBoolean" : false
     },
     {
@@ -12559,18 +12475,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/ValueSetLatest"
-      },
-      "name" : "ValueSetLatest",
-      "description" : "Search ValueSet for 'latest' extension",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -12745,18 +12649,6 @@
         "reference" : "ValueSet/VentralHernieTypeDHDB"
       },
       "name" : "Ventral hernie type (DHDB)",
-      "description" : "Ventral hernie type (DHDB)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/VentralHernieTypeDHDB2026"
-      },
-      "name" : "Ventral hernie type (DHDB) 2026",
       "description" : "Ventral hernie type (DHDB)",
       "exampleBoolean" : false
     },

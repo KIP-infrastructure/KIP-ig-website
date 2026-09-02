@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core"/>
-  <version value="2.24.0"/>
+  <version value="2.19.5"/>
   <name value="KIPInfrastructure"/>
   <title value="KIP Infrastructure"/>
   <status value="active"/>
-  <date value="2026-08-05T12:34:48+00:00"/>
+  <date value="2026-09-02T10:10:20+00:00"/>
   <publisher value="Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"/>
   <contact>
     <name value="Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"/>
@@ -1975,9 +1975,9 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/CarePlanReadOrWriteAccessSP"/>
+        <reference value="SearchParameter/CarePlanReadOrWriteAccess"/>
       </reference>
-      <name value="CarePlanReadOrWriteAccessSP"/>
+      <name value="CarePlanReadOrWriteAccess"/>
       <description value="Search a CarePlan for readAccess or writeAccess SOR code"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -2694,17 +2694,6 @@
       </reference>
       <name value="Diseases - Unspecified without a code"/>
       <description value="Diseases - Unspecified without a code"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/plan-definition-action-display-order"/>
-      </reference>
-      <name value="Display Order for PlanDefinition Action"/>
-      <description value="Specifies the desired display order of a PlanDefinition action (e.g. Questionnaire references). Lower values are displayed first."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -3790,17 +3779,6 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/GrundlidelseDHR-2026-07"/>
-      </reference>
-      <name value="Grundlidelse [DHR] 2026-07"/>
-      <description value="Grundlidelse [DHR]"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/GynUndersoegDUGA"/>
       </reference>
       <name value="Gynækologisk undersøgelsesmetode (DUGA)"/>
@@ -4464,17 +4442,6 @@
         <reference value="ValueSet/ImplantatMaterialeKeramikMetalAndet"/>
       </reference>
       <name value="Implantat - materiale (keramik, metal, andet)"/>
-      <description value="Implantat - materiale (keramik, metal, andet)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ImplantatMateriale-KeramikMetalAndet-2026-07"/>
-      </reference>
-      <name value="Implantat - materiale (keramik, metal, andet) 2026-07"/>
       <description value="Implantat - materiale (keramik, metal, andet)"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -6111,17 +6078,6 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/DSAFundLokation2026"/>
-      </reference>
-      <name value="Lokation for tromber, fundet vha. DSA 2026"/>
-      <description value="Lokation for tromber, fundet vha. digital subtraktionsangiografi (DSA)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/LuftvejForsoeg"/>
       </reference>
       <name value="LuftvejForsøgsplan"/>
@@ -7629,20 +7585,9 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/PatobankSNOMEDDiagnoserLYFO2026"/>
-      </reference>
-      <name value="PatobankSNOMED - Diagnoser (LYFO)"/>
-      <description value="PatobankSNOMED - Diagnoser (LYFO)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/PatobankSNOMEDDiagnoserLYFO"/>
       </reference>
-      <name value="PatobankSNOMED - Diagnoser (LYFO) (retired)"/>
+      <name value="PatobankSNOMED - Diagnoser (LYFO)"/>
       <description value="PatobankSNOMED - Diagnoser (LYFO)"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -8421,9 +8366,9 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/QuestionnaireResponseResponsibleOnCarePlanSP"/>
+        <reference value="SearchParameter/QuestionnaireResponseResponsibleOnCarePlan"/>
       </reference>
-      <name value="QuestionnaireResponseResponsibleOnCarePlanSP"/>
+      <name value="QuestionnaireResponseResponsibleOnCarePlan"/>
       <description value="Search a CarePlan for responsible SOR code on a QuestionnaireResponse"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -9015,17 +8960,6 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/Robot-DKR-2026-07"/>
-      </reference>
-      <name value="Robot (DKR)-2026-07"/>
-      <description value="Robottyper til robot assisteret kirurgi (DKR)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/Ryger8uger"/>
       </reference>
       <name value="Ryger op til 8 uger"/>
@@ -9338,17 +9272,6 @@
       </reference>
       <name value="Search Parameter - Latest for Questionnaires"/>
       <description value="Limit response of Questionnaires to match given Latest."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/VSLatest"/>
-      </reference>
-      <name value="Search Parameter - Latest for ValueSets"/>
-      <description value="Limit response of ValueSets to match given Latest."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -11399,17 +11322,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/ValueSetLatest"/>
-      </reference>
-      <name value="ValueSetLatest"/>
-      <description value="Search ValueSet for 'latest' extension"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -11570,17 +11482,6 @@
         <reference value="ValueSet/VentralHernieTypeDHDB"/>
       </reference>
       <name value="Ventral hernie type (DHDB)"/>
-      <description value="Ventral hernie type (DHDB)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/VentralHernieTypeDHDB2026"/>
-      </reference>
-      <name value="Ventral hernie type (DHDB) 2026"/>
       <description value="Ventral hernie type (DHDB)"/>
       <exampleBoolean value="false"/>
     </resource>
