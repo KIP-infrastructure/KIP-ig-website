@@ -1,4 +1,4 @@
-# ValueSetLatest - KIP Infrastructure v2.24.0
+# ValueSetLatest - KIP Infrastructure v2.25.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/ValueSetLatest | *Version*:2.24.0 |
-| Active as of 2026-08-05 | *Computable Name*:ValueSetLatest |
+| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/ValueSetLatest | *Version*:2.25.0 |
+| Active as of 2026-09-07 | *Computable Name*:ValueSetLatest |
 
  
 Search ValueSet for 'latest' extension 
@@ -23,10 +23,10 @@ Search ValueSet for 'latest' extension
   "resourceType" : "SearchParameter",
   "id" : "ValueSetLatest",
   "url" : "https://kip.rkkp.dk/fhir/SearchParameter/ValueSetLatest",
-  "version" : "2.24.0",
+  "version" : "2.25.0",
   "name" : "ValueSetLatest",
   "status" : "active",
-  "date" : "2026-08-05T12:34:48+00:00",
+  "date" : "2026-09-07T12:27:48+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
