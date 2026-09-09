@@ -1,4 +1,4 @@
-# CarePlanReadOrWriteAccessSP - KIP Infrastructure v2.25.0
+# CarePlanReadOrWriteAccessSP - KIP Infrastructure v1.25.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/CarePlanReadOrWriteAccess | *Version*:2.25.0 |
-| Active as of 2026-09-07 | *Computable Name*:CarePlanReadOrWriteAccess |
+| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/CarePlanReadOrWriteAccess | *Version*:1.25.1 |
+| Active as of 2026-09-09 | *Computable Name*:CarePlanReadOrWriteAccess |
 
  
 Search a CarePlan for readAccess or writeAccess SOR code 
@@ -23,10 +23,10 @@ Search a CarePlan for readAccess or writeAccess SOR code
   "resourceType" : "SearchParameter",
   "id" : "CarePlanReadOrWriteAccessSP",
   "url" : "https://kip.rkkp.dk/fhir/SearchParameter/CarePlanReadOrWriteAccess",
-  "version" : "2.25.0",
+  "version" : "1.25.1",
   "name" : "CarePlanReadOrWriteAccess",
   "status" : "active",
-  "date" : "2026-09-07T12:27:48+00:00",
+  "date" : "2026-09-09T09:26:10+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",

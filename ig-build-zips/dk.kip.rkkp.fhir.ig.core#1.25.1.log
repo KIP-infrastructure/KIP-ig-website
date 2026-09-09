@@ -1,0 +1,326 @@
+FHIR IG Publisher Version 2.3.4 (Git# 7ae92f79415a). Built 2026-09-04T06:21:07.840Z (5 days old)
+Detected Java version: 25.0.4 from /opt/java/openjdk on amd64 (64bit). 3998MB available
+dir = /__w/implementation-guide/implementation-guide, path = /opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+Parameters: -go-publish -source ig/ -web web/ -registry registry/fhir-ig-list.json -history history/ -templates web/templates
+---------------
+Publication Run: publish ig/ to web/
+Publication URL of 'https://kip.rkkp.dk/fhir' is not consistent with the required base URL of 'https://kip.sundk.dk'
+Relative directory for IG is '/fhir'
+===== Web Publication Run Details ===============================
+ Source IG: dk.kip.rkkp.fhir.ig.core#1.25.1 : https://kip.rkkp.dk/fhir (R4) from ig/
+All checks passed. Do the publication build from /__w/implementation-guide/implementation-guide/ig and publish to /tmp/web-root/run-20260909/fhir
+Prepare Build space in /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1
+Build IG at /__w/implementation-guide/implementation-guide/ig: final copy suitable for publication (in /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1)
+FHIR IG Publisher Version 2.3.4 (Git# 7ae92f79415a). Built 2026-09-04T06:21:07.840Z (5 days old)    
+Detected Java version: 25.0.4 from /opt/java/openjdk on Linux/amd64 (64bit). 3998MB available       
+dir = /__w/implementation-guide/implementation-guide, path = /opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+Parameters: -publish https://kip.rkkp.dk/fhir/1.25.1 -no-exit -ig /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1 -resetTx
+Character encoding = UTF-8 / UTF-8                                                                  
+Start Clock @ Wednesday, September 9, 2026, 9:19:34 AM Coordinated Universal Time (2026-09-09T09:19:34Z)
+                                                                                                    
+Build FHIR IG from /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1                                    (00:00.202 / 00:00.203, 121Mb)
+Build Formal Publication package, intended for https://kip.rkkp.dk/fhir/1.25.1                       (00:00.001 / 00:00.204, 121Mb)
+No FHIR settings file at /root/.fhir/fhir-settings.json; using defaults (no API keys or npm path)    (00:00.000 / 00:00.204, 121Mb)
+Package Cache: /root/.fhir/packages                                                                  (00:00.001 / 00:00.206, 121Mb)
+Run Sushi on /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1                                          (00:00.001 / 00:00.208, 121Mb)
+Sushi: info  Running SUSHI v3.20.1 (implements FHIR Shorthand specification v3.0.0)                  (00:00.271 / 00:00.479, 124Mb)
+Sushi: info  Arguments:                                                                              (00:00.000 / 00:00.480, 124Mb)
+Sushi: info    --require-latest                                                                      (00:00.000 / 00:00.480, 124Mb)
+Sushi: info    --out /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1                                  (00:00.000 / 00:00.480, 124Mb)
+Sushi: info    /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1                                        (00:00.000 / 00:00.481, 124Mb)
+Sushi: info  Using configuration file: /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1/sushi-config.yaml (00:00.338 / 00:00.820, 124Mb)
+Sushi: info  Importing FSH text...                                                                   (00:00.063 / 00:00.883, 124Mb)
+Sushi: info  Preprocessed 1030 documents with 11 aliases.                                            (00:00.888 / 00:01.771, 124Mb)
+Sushi: info  Imported 1011 definitions and 18 instances.                                             (00:00.122 / 00:01.894, 124Mb)
+Sushi: info  Loaded virtual package sushi-r5forR4#1.0.0 with 7 resources                             (00:00.155 / 00:02.049, 124Mb)
+Sushi: info  Resolved hl7.fhir.uv.tools.r4#latest to concrete version 1.1.2                          (00:00.732 / 00:02.781, 124Mb)
+Sushi: info  Loaded hl7.fhir.uv.tools.r4#1.1.2 with 119 resources                                    (00:00.029 / 00:02.811, 124Mb)
+Sushi: info  Resolved hl7.terminology.r4#latest to concrete version 7.3.0                            (00:00.138 / 00:02.950, 124Mb)
+Sushi: info  Loaded hl7.terminology.r4#7.3.0 with 4176 resources                                     (00:00.644 / 00:03.594, 124Mb)
+Sushi: info  Loaded hl7.fhir.dk.core#2.0.0 with 36 resources                                         (00:00.006 / 00:03.600, 124Mb)
+Sushi: info  Loaded hl7.fhir.r4.core#4.0.1 with 4581 resources                                       (00:00.595 / 00:04.196, 124Mb)
+Sushi: info  Resolved hl7.fhir.uv.extensions.r4#latest to concrete version 5.3.0                     (00:00.146 / 00:04.342, 124Mb)
+Sushi: info  Loaded hl7.fhir.uv.extensions.r4#5.3.0 with 885 resources                               (00:00.136 / 00:04.479, 124Mb)
+Sushi: info  Loaded virtual package sushi-local#LOCAL with 0 resources                               (00:00.007 / 00:04.486, 124Mb)
+Sushi: info  Converting FSH to FHIR resources...                                                     (00:00.010 / 00:04.497, 124Mb)
+Sushi: info  Converted 13 FHIR StructureDefinitions.                                                 (00:00.404 / 00:04.901, 124Mb)
+Sushi: info  Converted 267 FHIR CodeSystems.                                                         (00:16.261 / 00:21.163, 124Mb)
+Sushi: info  Converted 731 FHIR ValueSets.                                                           (00:09.813 / 00:30.977, 124Mb)
+Sushi: info  Converted 18 FHIR instances.                                                            (00:00.212 / 00:31.189, 124Mb)
+Sushi: info  Exporting FHIR resources as JSON...                                                     (00:00.000 / 00:31.190, 124Mb)
+Sushi: info  Exported 1029 FHIR resources as JSON.                                                   (00:00.063 / 00:31.253, 124Mb)
+Sushi: info  Assembling Implementation Guide sources...                                              (00:00.013 / 00:31.267, 124Mb)
+Sushi: info  Generated ImplementationGuide-dk.kip.rkkp.fhir.ig.core.json                             (00:00.022 / 00:31.290, 124Mb)
+Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.                         (00:00.000 / 00:31.290, 124Mb)
+Sushi: info  The _build script hosted at https://github.com/HL7/ig-publisher-scripts is useful for downloading and running the IG Publisher. (00:00.000 / 00:31.290, 124Mb)
+Sushi: ========================= SUSHI RESULTS ===========================                           (00:00.000 / 00:31.291, 124Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:31.292, 124Mb)
+Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |                           (00:00.001 / 00:31.293, 124Mb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.000 / 00:31.293, 124Mb)
+Sushi: | |       0       |      13      |      0       |       0       | |                           (00:00.000 / 00:31.294, 124Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:31.294, 124Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:31.295, 124Mb)
+Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |                           (00:00.000 / 00:31.295, 124Mb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.000 / 00:31.295, 124Mb)
+Sushi: | |        731         |        267        |         18         | |                           (00:00.000 / 00:31.296, 124Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:31.296, 124Mb)
+Sushi: |                                                                 |                           (00:00.000 / 00:31.296, 124Mb)
+Sushi: ===================================================================                           (00:00.000 / 00:31.297, 124Mb)
+Sushi: | You're catching on now!                0 Errors      0 Warnings |                           (00:00.000 / 00:31.297, 124Mb)
+Sushi: ===================================================================                           (00:00.000 / 00:31.297, 124Mb)
+Root directory: /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1                                       (00:00.016 / 00:31.314, 124Mb)
+Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:00.328 / 00:31.643, 32Mb)
+Load Template from fhir.base.template#current                                                        (00:00.419 / 00:32.062, 79Mb)
+[33mThis content depends on fhir.base.template which is no longer considered secure to use
+[0;39m[33mSee Security notification at https://www.fhir.org/guides/security-notices/2026-03-npm-dependencies.html
+[0;39mScanning directory: /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1/template
+======================================================================
+Terminology Cache is at /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1/input-cache/txcache. Clearing now (00:04.431 / 00:36.493, 150Mb)
+Core Package hl7.fhir.r4.core#4.0.1                                                                  (00:00.000 / 00:36.494, 150Mb)
+Running Terminology Log: /tmp/ohfu-fhir-ig-2183153580084850211.html
+Connect to Terminology Server at https://tx.fhir.org                                                 (00:02.292 / 00:38.787, 369Mb)
+[39mLoad Package hl7.fhir.pubpack#0.2.5
+[0;39m[39mLoad Package hl7.fhir.xver-extensions#0.1.0
+[0;39m[39mLoad Package hl7.terminology.r4#7.3.0
+[0;39m[39mLoad Package hl7.fhir.uv.extensions.r4#5.3.0
+[0;39m[39mLoad Package hl7.terminology.r4#3.1.0
+[0;39m[39mLoad Package hl7.fhir.dk.core#2.0.0
+[0;39m[39mLoad Package hl7.fhir.uv.tools.r4#1.1.2
+[0;39mLoad R5 Specials
+Initialization complete                                                                              (00:03.970 / 00:42.757, 498Mb)
+Load IG                                                                                              (00:00.000 / 00:42.758, 498Mb)
+Load Content                                                                                         (00:00.003 / 00:42.761, 499Mb)
+Using en-US as the default narrative language. (no language information in Implementation Guide)     (00:00.083 / 00:42.845, 523Mb)
+Process Loaded Resources                                                                             (00:01.044 / 00:43.889, 512Mb)
+Generating Snapshots                                                                                 (00:00.752 / 00:44.642, 577Mb)
+
+Signing Certificate: RSA key for Subject: OU=IG Publisher, L=Ann Arbor, CN=hl7.org, O=HL7, ST=Missouri, C=us from: OU=IG Publisher, L=Ann Arbor, CN=hl7.org, O=HL7, ST=Missouri, C=us
+Fetch https://kip.rkkp.dk/fhir/package-list.json for version check                                   (00:00.279 / 00:44.921, 600Mb)
+Checking Language                                                                                    (00:49.405 / 01:34.327, 681Mb)
+Load Dependency Info                                                                                 (00:00.011 / 01:34.339, 685Mb)
+Load Info                                                                                            (00:00.026 / 01:34.366, 685Mb)
+Load Paths                                                                                           (00:00.001 / 01:34.368, 687Mb)
+Check R4 / R4B                                                                                       (00:00.001 / 01:34.369, 687Mb)
+Assign Comparison Ids                                                                                (00:00.089 / 01:34.459, 812Mb)
+Propagating status                                                                                   (00:00.001 / 01:34.461, 812Mb)
+Generating Narratives                                                                                (00:00.000 / 01:34.461, 812Mb)
+Validating Conformance Resources                                                                     (00:01.868 / 01:36.329, 676Mb)
+Check profiles & code systems                                                                        (00:06.343 / 01:42.673, 1Gb)
+Check realm rules                                                                                    (00:00.004 / 01:42.677, 1Gb)
+Previous Version Comparison                                                                          (00:00.001 / 01:42.678, 1Gb)
+.. loaded. Process                                                                                   (00:00.000 / 01:42.678, 1Gb)
+finish previous version comparison                                                                   (00:00.000 / 01:42.679, 1Gb)
+finish ipa version                                                                                   (00:00.000 / 01:42.679, 1Gb)
+finish ips version                                                                                   (00:00.000 / 01:42.680, 1Gb)
+comparisons done                                                                                     (00:00.000 / 01:42.680, 1Gb)
+Checking for Bundles to sign                                                                         (00:00.030 / 01:42.710, 1Gb)
+Validating Resources                                                                                 (00:00.000 / 01:42.710, 1Gb)
+Processing Provenance Records                                                                        (00:00.097 / 01:42.808, 1Gb)
+Generating Outputs in /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1/output                          (00:00.001 / 01:42.809, 1Gb)
+Generate Native Outputs                                                                              (00:00.644 / 01:43.453, 886Mb)
+Run Template                                                                                         (02:26.882 / 04:10.336, 883Mb)
+Generate HTML Outputs                                                                                (00:01.764 / 04:12.100, 781Mb)
+Generate Spreadsheets                                                                                (00:10.484 / 04:22.584, 1Gb)
+Generate Summaries                                                                                   (00:00.555 / 04:23.140, 919Mb)
+Generating Summary Outputs                                                                           (00:00.000 / 04:23.141, 919Mb)
+Table of contents has a section with more than 222 entries.  Collapsing will not work reliably
+DB Cumulative Time invested: 00:00:24.250
+Sending Usage Stats to Server                                                                        (00:02.276 / 04:25.417, 1Gb)
+## Memory (MB): Use = 1464, Free = 55, Total = 1520, Max = 3998                                      (00:00.001 / 04:25.419, 1Gb)
+Reclaiming memory...                                                                                 (00:00.000 / 04:25.419, 1Gb)
+Generating combined package                                                                          (00:00.094 / 04:25.514, 1Gb)
+Error generating combined package: /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1/output/package.tgz (No such file or directory) (00:00.002 / 04:25.517, 1Gb)
+## Memory (MB): Use = 765, Free = 754, Total = 1520, Max = 3998                                      (00:00.409 / 04:25.926, 766Mb)
+Run jekyll: jekyll build --destination "/tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1/output" (in folder /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1/temp/pages) (00:00.001 / 04:25.927, 766Mb)
+Troubleshooting Note: usual cases for Jekyll to fail are:                                            (00:00.000 / 04:25.928, 766Mb)
+* A failure to produce a fragment that is already logged in the output above                         (00:00.000 / 04:25.928, 766Mb)
+* A reference to a manually edited file that hasn't been provided                                    (00:00.000 / 04:25.928, 766Mb)
+Jekyll: Source: /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1/temp/pages                            (00:00.240 / 04:26.169, 769Mb)
+Jekyll: Generating...                                                                                (00:00.000 / 04:26.169, 769Mb)
+Jekyll: done in 10.414 seconds.                                                                      (00:10.413 / 04:36.583, 769Mb)
+[39m
+[0;39m[39mInstalling dk.kip.rkkp.fhir.ig.core#1.25.1
+[0;39m[39m done.
+[0;39m[39m loaded @ /root/.fhir/packages/dk.kip.rkkp.fhir.ig.core#1.25.1
+[0;39mChecking Output HTML                                                                                 (00:15.040 / 04:51.624, 1Gb)
+Processed /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1/output - % reduction = 98 (149148687 ==> 4417563)
+found 11922 files                                                                                    (00:06.844 / 04:58.469, 1022Mb)
+........................................
+........................................
+  ... 11922 html files, 0 pages invalid xhtml (0%)                                                   (00:32.724 / 05:31.193, 1Gb)
+  ... 461878 links, 11 broken links (0%)                                                             (00:00.001 / 05:31.195, 1Gb)
+Generate fragment-usage-analysis.csv                                                                 (00:00.000 / 05:31.195, 1Gb)
+Build final .zip                                                                                     (00:00.010 / 05:31.206, 1Gb)
+Final .zip built                                                                                     (00:05.888 / 05:37.094, 970Mb)
+Built. Times: loading: 00:51.567, generate: 04:55.055, narrative generation: 00:01.867, realm-rules: 00:00.001, previous-version: 00:00.001, jekyll: 00:10.697, validation: 00:06.315 (#1030), template: 00:01.789 (#3) (00:52.289 / 06:29.383, 1Gb)
+Generating QA                                                                                        (00:00.000 / 06:29.384, 1Gb)
+Validation output in /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1/output/qa.html
+Errors: 27, Warnings: 2238, Info: 3537, Broken Links: 11 (00:01.639 / 06:31.024, 945Mb)
+Finished @ 9/9/26, 9:26 AM. Max Memory Used = 1Gb. Log file saved in /tmp/fhir-ig-publisher-tmp.log  (00:00.096 / 06:31.120, 955Mb)
+Prepare Build space in /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1-milestone
+Build IG at /__w/implementation-guide/implementation-guide/ig: final copy suitable for publication (in /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1-milestone) (milestone build)
+FHIR IG Publisher Version 2.3.4 (Git# 7ae92f79415a). Built 2026-09-04T06:21:07.840Z (5 days old)    
+Detected Java version: 25.0.4 from /opt/java/openjdk on Linux/amd64 (64bit). 3998MB available       
+dir = /__w/implementation-guide/implementation-guide, path = /opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+Parameters: -publish https://kip.rkkp.dk/fhir/1.25.1 -no-exit -ig /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1-milestone -milestone
+Character encoding = UTF-8 / UTF-8                                                                  
+Start Clock @ Wednesday, September 9, 2026, 9:26:10 AM Coordinated Universal Time (2026-09-09T09:26:10Z)
+                                                                                                    
+Build FHIR IG from /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1-milestone                          (00:00.002 / 00:00.002, 1Gb)
+Build Formal Publication package, intended for https://kip.rkkp.dk/fhir/1.25.1                       (00:00.000 / 00:00.002, 1Gb)
+No FHIR settings file at /root/.fhir/fhir-settings.json; using defaults (no API keys or npm path)    (00:00.000 / 00:00.003, 1Gb)
+Package Cache: /root/.fhir/packages                                                                  (00:00.000 / 00:00.003, 1Gb)
+Run Sushi on /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1-milestone                                (00:00.000 / 00:00.004, 1Gb)
+Sushi: info  Running SUSHI v3.20.1 (implements FHIR Shorthand specification v3.0.0)                  (00:00.268 / 00:00.273, 1Gb)
+Sushi: info  Arguments:                                                                              (00:00.000 / 00:00.273, 1Gb)
+Sushi: info    --require-latest                                                                      (00:00.000 / 00:00.274, 1Gb)
+Sushi: info    --out /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1-milestone                        (00:00.000 / 00:00.274, 1Gb)
+Sushi: info    /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1-milestone                              (00:00.000 / 00:00.274, 1Gb)
+Sushi: info  Using configuration file: /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1-milestone/sushi-config.yaml (00:00.324 / 00:00.599, 1Gb)
+Sushi: info  Importing FSH text...                                                                   (00:00.064 / 00:00.663, 1Gb)
+Sushi: info  Preprocessed 1030 documents with 11 aliases.                                            (00:00.915 / 00:01.579, 1Gb)
+Sushi: info  Imported 1011 definitions and 18 instances.                                             (00:00.126 / 00:01.706, 1Gb)
+Sushi: info  Loaded virtual package sushi-r5forR4#1.0.0 with 7 resources                             (00:00.193 / 00:01.899, 1Gb)
+Sushi: info  Resolved hl7.fhir.uv.tools.r4#latest to concrete version 1.1.2                          (00:00.699 / 00:02.599, 1Gb)
+Sushi: info  Loaded hl7.fhir.uv.tools.r4#1.1.2 with 119 resources                                    (00:00.035 / 00:02.634, 1Gb)
+Sushi: info  Resolved hl7.terminology.r4#latest to concrete version 7.3.0                            (00:00.139 / 00:02.774, 1Gb)
+Sushi: info  Loaded hl7.terminology.r4#7.3.0 with 4176 resources                                     (00:00.675 / 00:03.449, 1Gb)
+Sushi: info  Loaded hl7.fhir.dk.core#2.0.0 with 36 resources                                         (00:00.009 / 00:03.458, 1Gb)
+Sushi: info  Loaded hl7.fhir.r4.core#4.0.1 with 4581 resources                                       (00:00.650 / 00:04.109, 1Gb)
+Sushi: info  Resolved hl7.fhir.uv.extensions.r4#latest to concrete version 5.3.0                     (00:00.146 / 00:04.255, 1Gb)
+Sushi: info  Loaded hl7.fhir.uv.extensions.r4#5.3.0 with 885 resources                               (00:00.140 / 00:04.396, 1Gb)
+Sushi: info  Loaded virtual package sushi-local#LOCAL with 0 resources                               (00:00.008 / 00:04.404, 1Gb)
+Sushi: info  Converting FSH to FHIR resources...                                                     (00:00.011 / 00:04.416, 1Gb)
+Sushi: info  Converted 13 FHIR StructureDefinitions.                                                 (00:00.416 / 00:04.832, 1Gb)
+Sushi: info  Converted 267 FHIR CodeSystems.                                                         (00:15.673 / 00:20.505, 1Gb)
+Sushi: info  Converted 731 FHIR ValueSets.                                                           (00:09.910 / 00:30.416, 1Gb)
+Sushi: info  Converted 18 FHIR instances.                                                            (00:00.187 / 00:30.604, 1Gb)
+Sushi: info  Exporting FHIR resources as JSON...                                                     (00:00.000 / 00:30.604, 1Gb)
+Sushi: info  Exported 1029 FHIR resources as JSON.                                                   (00:00.063 / 00:30.668, 1Gb)
+Sushi: info  Assembling Implementation Guide sources...                                              (00:00.013 / 00:30.681, 1Gb)
+Sushi: info  Generated ImplementationGuide-dk.kip.rkkp.fhir.ig.core.json                             (00:00.021 / 00:30.702, 1Gb)
+Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.                         (00:00.000 / 00:30.703, 1Gb)
+Sushi: info  The _build script hosted at https://github.com/HL7/ig-publisher-scripts is useful for downloading and running the IG Publisher. (00:00.000 / 00:30.703, 1Gb)
+Sushi: ========================= SUSHI RESULTS ===========================                           (00:00.000 / 00:30.703, 1Gb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:30.704, 1Gb)
+Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |                           (00:00.000 / 00:30.704, 1Gb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.000 / 00:30.704, 1Gb)
+Sushi: | |       0       |      13      |      0       |       0       | |                           (00:00.000 / 00:30.705, 1Gb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:30.705, 1Gb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:30.705, 1Gb)
+Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |                           (00:00.000 / 00:30.705, 1Gb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.000 / 00:30.706, 1Gb)
+Sushi: | |        731         |        267        |         18         | |                           (00:00.000 / 00:30.706, 1Gb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:30.706, 1Gb)
+Sushi: |                                                                 |                           (00:00.000 / 00:30.706, 1Gb)
+Sushi: ===================================================================                           (00:00.000 / 00:30.707, 1Gb)
+Sushi: | You are dolphinitely doing great!      0 Errors      0 Warnings |                           (00:00.000 / 00:30.707, 1Gb)
+Sushi: ===================================================================                           (00:00.000 / 00:30.707, 1Gb)
+Root directory: /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1-milestone                             (00:00.024 / 00:30.731, 1Gb)
+Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:00.018 / 00:30.750, 1Gb)
+Load Template from fhir.base.template#current                                                        (00:00.051 / 00:30.802, 1Gb)
+[33mThis content depends on fhir.base.template which is no longer considered secure to use
+[0;39m[33mSee Security notification at https://www.fhir.org/guides/security-notices/2026-03-npm-dependencies.html
+[0;39mScanning directory: /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1-milestone/template
+======================================================================
+Terminology Cache is at /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1-milestone/input-cache/txcache. 4 files in cache (00:01.961 / 00:32.763, 1Gb)
+Core Package hl7.fhir.r4.core#4.0.1                                                                  (00:00.000 / 00:32.763, 1Gb)
+Running Terminology Log: /tmp/ohfu-fhir-ig-14021015570203702595.html
+Connect to Terminology Server at https://tx.fhir.org                                                 (00:01.927 / 00:34.691, 877Mb)
+[39mLoad Package hl7.fhir.pubpack#0.2.5
+[0;39m[39mLoad Package hl7.fhir.xver-extensions#0.1.0
+[0;39m[39mLoad Package hl7.terminology.r4#7.3.0
+[0;39m[39mLoad Package hl7.fhir.uv.extensions.r4#5.3.0
+[0;39m[39mLoad Package hl7.terminology.r4#3.1.0
+[0;39m[39mLoad Package hl7.fhir.dk.core#2.0.0
+[0;39m[39mLoad Package hl7.fhir.uv.tools.r4#1.1.2
+[0;39mLoad R5 Specials
+Initialization complete                                                                              (00:02.960 / 00:37.652, 834Mb)
+Load IG                                                                                              (00:00.000 / 00:37.652, 834Mb)
+Load Content                                                                                         (00:00.002 / 00:37.654, 835Mb)
+Using en-US as the default narrative language. (no language information in Implementation Guide)     (00:00.046 / 00:37.701, 858Mb)
+Process Loaded Resources                                                                             (00:00.714 / 00:38.416, 544Mb)
+Generating Snapshots                                                                                 (00:00.705 / 00:39.121, 1Gb)
+
+Signing Certificate: RSA key for Subject: OU=IG Publisher, L=Ann Arbor, CN=hl7.org, O=HL7, ST=Missouri, C=us from: OU=IG Publisher, L=Ann Arbor, CN=hl7.org, O=HL7, ST=Missouri, C=us
+Fetch https://kip.rkkp.dk/fhir/package-list.json for version check                                   (00:00.101 / 00:39.222, 1Gb)
+Checking Language                                                                                    (00:49.289 / 01:28.512, 564Mb)
+Load Dependency Info                                                                                 (00:00.007 / 01:28.520, 568Mb)
+Load Info                                                                                            (00:00.002 / 01:28.522, 568Mb)
+Load Paths                                                                                           (00:00.002 / 01:28.524, 569Mb)
+Check R4 / R4B                                                                                       (00:00.000 / 01:28.525, 570Mb)
+Assign Comparison Ids                                                                                (00:00.089 / 01:28.615, 698Mb)
+Propagating status                                                                                   (00:00.001 / 01:28.616, 698Mb)
+Generating Narratives                                                                                (00:00.000 / 01:28.616, 698Mb)
+Validating Conformance Resources                                                                     (00:00.983 / 01:29.600, 939Mb)
+Check profiles & code systems                                                                        (00:06.098 / 01:35.698, 1Gb)
+Check realm rules                                                                                    (00:00.003 / 01:35.702, 1Gb)
+Previous Version Comparison                                                                          (00:00.001 / 01:35.703, 1Gb)
+.. loaded. Process                                                                                   (00:00.000 / 01:35.704, 1Gb)
+finish previous version comparison                                                                   (00:00.000 / 01:35.704, 1Gb)
+finish ipa version                                                                                   (00:00.000 / 01:35.705, 1Gb)
+finish ips version                                                                                   (00:00.000 / 01:35.705, 1Gb)
+comparisons done                                                                                     (00:00.000 / 01:35.705, 1Gb)
+Checking for Bundles to sign                                                                         (00:00.033 / 01:35.739, 1Gb)
+Validating Resources                                                                                 (00:00.000 / 01:35.739, 1Gb)
+Processing Provenance Records                                                                        (00:00.090 / 01:35.830, 1Gb)
+Generating Outputs in /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1-milestone/output                (00:00.000 / 01:35.831, 1Gb)
+Generate Native Outputs                                                                              (00:01.665 / 01:37.496, 1Gb)
+Run Template                                                                                         (03:16.013 / 04:53.509, 1Gb)
+Generate HTML Outputs                                                                                (00:00.893 / 04:54.403, 1Gb)
+Generate Spreadsheets                                                                                (00:09.622 / 05:04.026, 938Mb)
+Generate Summaries                                                                                   (00:00.271 / 05:04.298, 1Gb)
+Generating Summary Outputs                                                                           (00:00.000 / 05:04.298, 1Gb)
+Table of contents has a section with more than 222 entries.  Collapsing will not work reliably
+DB Cumulative Time invested: 00:00:27.71
+Sending Usage Stats to Server                                                                        (00:02.222 / 05:06.520, 1Gb)
+## Memory (MB): Use = 1476, Free = 675, Total = 2152, Max = 3998                                     (00:00.001 / 05:06.522, 1Gb)
+Reclaiming memory...                                                                                 (00:00.000 / 05:06.522, 1Gb)
+Generating combined package                                                                          (00:00.242 / 05:06.765, 1Gb)
+Error generating combined package: /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1-milestone/output/package.tgz (No such file or directory) (00:00.000 / 05:06.766, 1Gb)
+## Memory (MB): Use = 767, Free = 1384, Total = 2152, Max = 3998                                     (00:00.353 / 05:07.119, 768Mb)
+Run jekyll: jekyll build --destination "/tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1-milestone/output" (in folder /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1-milestone/temp/pages) (00:00.001 / 05:07.120, 768Mb)
+Troubleshooting Note: usual cases for Jekyll to fail are:                                            (00:00.000 / 05:07.121, 768Mb)
+* A failure to produce a fragment that is already logged in the output above                         (00:00.000 / 05:07.121, 768Mb)
+* A reference to a manually edited file that hasn't been provided                                    (00:00.000 / 05:07.121, 768Mb)
+Jekyll: Source: /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1-milestone/temp/pages                  (00:00.242 / 05:07.364, 771Mb)
+Jekyll: Generating...                                                                                (00:00.000 / 05:07.365, 771Mb)
+Jekyll: done in 10.785 seconds.                                                                      (00:10.784 / 05:18.149, 771Mb)
+[39m
+[0;39m[39mInstalling dk.kip.rkkp.fhir.ig.core#1.25.1
+[0;39m[39m loaded @ /root/.fhir/packages/dk.kip.rkkp.fhir.ig.core#1.25.1
+[0;39mChecking Output HTML                                                                                 (00:11.362 / 05:29.512, 1Gb)
+Processed /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1-milestone/output - % reduction = 98 (149148687 ==> 4417563)
+found 11922 files                                                                                    (00:07.636 / 05:37.149, 849Mb)
+........................................
+........................................
+  ... 11922 html files, 0 pages invalid xhtml (0%)                                                   (00:32.183 / 06:09.332, 824Mb)
+  ... 461878 links, 11 broken links (0%)                                                             (00:00.001 / 06:09.333, 824Mb)
+Generate fragment-usage-analysis.csv                                                                 (00:00.000 / 06:09.334, 824Mb)
+Build final .zip                                                                                     (00:00.008 / 06:09.342, 825Mb)
+Final .zip built                                                                                     (00:06.294 / 06:15.636, 973Mb)
+Built. Times: loading: 00:50.858, generate: 05:39.108, narrative generation: 00:00.983, realm-rules: 00:00.001, previous-version: 00:00.002, jekyll: 00:11.071, validation: 00:06.073 (#1030), template: 00:00.896 (#3) (00:51.984 / 07:07.621, 1Gb)
+Generating QA                                                                                        (00:00.000 / 07:07.622, 1Gb)
+Validation output in /tmp/ig-builds/dk.kip.rkkp.fhir.ig.core#1.25.1-milestone/output/qa.html
+Errors: 27, Warnings: 2238, Info: 3537, Broken Links: 11 (00:01.510 / 07:09.134, 1014Mb)
+Finished @ 9/9/26, 9:33 AM. Max Memory Used = 1Gb. Log file saved in /tmp/fhir-ig-publisher-tmp.log  (00:00.074 / 07:09.207, 1Gb)
+Keep a copy of the build directory at /tmp/web-root/run-20260909/ig-build-zips/dk.kip.rkkp.fhir.ig.core#1.25.1.zip
+
+ok. All checks passed. Publish v1.25.1 to /tmp/web-root/run-20260909/fhir/1.25.1
+Copy the IG to /tmp/web-root/run-20260909/fhir/1.25.1
+Update /tmp/web-root/run-20260909/fhir/package-list.json
+Publish Box Statement: This page is part of the KIP Infrastructure (v1.25.1: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a>
+  .. 6204 files checked, 6204 updated
+  .. 1030 redirections (1030 created/updated)
+This is a milestone release - publish v1.25.1 to /tmp/web-root/run-20260909/fhir
+Publish Box Statement: This page is part of the KIP Infrastructure (v1.25.1: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://kip.rkkp.dk/fhir/history.html">Directory of published versions</a>
+  .. 6204 files checked, 6204 updated
+  .. 1030 redirections (1030 created/updated)
+Check for Files to delete
+  ... 0 files
+Copy to new IG /tmp/web-root/run-20260909/fhir
+Error in package-list.json:path to build.fhir.org should not use https://
+dk.kip.rkkp.fhir.ig.core (https://kip.rkkp.dk/fhir): KIP Infrastructure @ http://build.fhir.org/ig/kip-infrastructure/implementation-guide
+  edition: Releases 1.25.1/4.0.1 @ https://kip.rkkp.dk/fhir/1.25.1
+Build is complete. Copy from /tmp/web-root/run-20260909
+Update history page at /tmp/web-root/run-20260909/fhir from /__w/implementation-guide/implementation-guide/history and web/templates

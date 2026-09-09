@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/LokalBloedningTrombolyse> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "LokalBloedningTrombolyse"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet LokalBloedningTrombolyse</b></p><a name=\"LokalBloedningTrombolyse\"> </a><a name=\"hcLokalBloedningTrombolyse\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-BleedingStroke.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/BleedingStroke</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.25.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-BleedingStroke.html#BleedingStroke-hi_1\">hi_1</a></td><td style=\"color: #cccccc\">HI 1</td><td>HI 1</td></tr><tr><td><a href=\"CodeSystem-BleedingStroke.html#BleedingStroke-hi_2\">hi_2</a></td><td style=\"color: #cccccc\">HI 2</td><td>HI 2</td></tr><tr><td><a href=\"CodeSystem-BleedingStroke.html#BleedingStroke-ph_1\">ph_1</a></td><td style=\"color: #cccccc\">PH 1</td><td>PH 1</td></tr><tr><td><a href=\"CodeSystem-BleedingStroke.html#BleedingStroke-ph_2\">ph_2</a></td><td style=\"color: #cccccc\">PH 2</td><td>PH 2</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/LokalBloedningTrombolyse"] ;
+  fhir:ValueSet.version [ fhir:value "1.25.1"] ;
+  fhir:ValueSet.name [ fhir:value "LokalBloedningTrombolyse"] ;
+  fhir:ValueSet.title [ fhir:value "Lokal blødning Trombolyse"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2026-09-07T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Lokal blødning fundet i forbindelse med billeddiagnostisk undersøgelse (DAP)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/BleedingStroke" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "hi_1" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "hi_2" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ph_1" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ph_2" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/LokalBloedningTrombolyse.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

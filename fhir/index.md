@@ -1,4 +1,4 @@
-# Home - KIP Infrastructure v2.25.0
+# Home - KIP Infrastructure v1.25.1
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core | *Version*:2.25.0 |
-| Active as of 2026-09-07 | *Computable Name*:KIPInfrastructure |
+| *Official URL*:https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core | *Version*:1.25.1 |
+| Active as of 2026-09-09 | *Computable Name*:KIPInfrastructure |
 
 ### Introduction
 
@@ -23,11 +23,11 @@ This implementation guide is provided to support the use of FHIR®© in the cont
   "resourceType" : "ImplementationGuide",
   "id" : "dk.kip.rkkp.fhir.ig.core",
   "url" : "https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core",
-  "version" : "2.25.0",
+  "version" : "1.25.1",
   "name" : "KIPInfrastructure",
   "title" : "KIP Infrastructure",
   "status" : "active",
-  "date" : "2026-09-07T12:27:48+00:00",
+  "date" : "2026-09-09T09:26:10+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
@@ -8810,6 +8810,22 @@ This implementation guide is provided to support the use of FHIR®© in the cont
         "reference" : "ValueSet/LokalBloedningDAP"
       },
       "name" : "Lokal blødning (DAP)",
+      "description" : "Lokal blødning fundet i forbindelse med billeddiagnostisk undersøgelse (DAP)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-LokalBloedningTrombolyse.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/LokalBloedningTrombolyse"
+      },
+      "name" : "Lokal blødning Trombolyse",
       "description" : "Lokal blødning fundet i forbindelse med billeddiagnostisk undersøgelse (DAP)",
       "exampleBoolean" : false
     },
