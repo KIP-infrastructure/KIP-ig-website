@@ -1,4 +1,4 @@
-# semver-major - KIP Infrastructure v2.26.0
+# semver-major - KIP Infrastructure v2.26.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/semver-major | *Version*:2.26.0 |
-| Active as of 2026-09-09 | *Computable Name*:semver-major |
+| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/semver-major | *Version*:2.26.1 |
+| Active as of 2026-09-29 | *Computable Name*:semver-major |
 
  
 Major version number extracted from version field. 
@@ -23,10 +23,10 @@ Major version number extracted from version field.
   "resourceType" : "SearchParameter",
   "id" : "semver-major",
   "url" : "https://kip.rkkp.dk/fhir/SearchParameter/semver-major",
-  "version" : "2.26.0",
+  "version" : "2.26.1",
   "name" : "semver-major",
   "status" : "active",
-  "date" : "2026-09-09T13:53:50+00:00",
+  "date" : "2026-09-29T07:25:32+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
