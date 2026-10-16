@@ -1,0 +1,128 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/Cyclus> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "Cyclus"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem Cyclus</b></p><a name=\"Cyclus\"> </a><a name=\"hcCyclus\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/Cyclus</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">0-6-dage<a name=\"Cyclus-0-6-dage\"> </a></td><td>0-6 dage</td><td>0-6 dage</td></tr><tr><td style=\"white-space:nowrap\">1-2-dage<a name=\"Cyclus-1-2-dage\"> </a></td><td>1-2 dage</td><td>1-2 dage</td></tr><tr><td style=\"white-space:nowrap\">3-4-dage<a name=\"Cyclus-3-4-dage\"> </a></td><td>3-4 dage</td><td>3-4 dage</td></tr><tr><td style=\"white-space:nowrap\">le5-dage<a name=\"Cyclus-le5-dage\"> </a></td><td>&lt;=5 dage</td><td>&lt;=5 dage</td></tr><tr><td style=\"white-space:nowrap\">5-6-dage<a name=\"Cyclus-5-6-dage\"> </a></td><td>5-6 dage</td><td>5-6 dage</td></tr><tr><td style=\"white-space:nowrap\">6-10-dage<a name=\"Cyclus-6-10-dage\"> </a></td><td>6-10 dage</td><td>6-10 dage</td></tr><tr><td style=\"white-space:nowrap\">ge7-dage<a name=\"Cyclus-ge7-dage\"> </a></td><td>&gt;=7 dage</td><td>&gt;=7 dage</td></tr><tr><td style=\"white-space:nowrap\">gt10-dage<a name=\"Cyclus-gt10-dage\"> </a></td><td>&gt;10 dage</td><td>&gt;10 dage</td></tr><tr><td style=\"white-space:nowrap\">14-dage<a name=\"Cyclus-14-dage\"> </a></td><td>14 dage</td><td>14 dage</td></tr><tr><td style=\"white-space:nowrap\">21-dage<a name=\"Cyclus-21-dage\"> </a></td><td>21 dage</td><td>21 dage</td></tr><tr><td style=\"white-space:nowrap\">28-dage<a name=\"Cyclus-28-dage\"> </a></td><td>28 dage</td><td>28 dage</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/Cyclus"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.0"] ;
+  fhir:CodeSystem.name [ fhir:value "CyclusCS"] ;
+  fhir:CodeSystem.title [ fhir:value "Cyclus"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2023-05-17T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Cyclus længde"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "11"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0-6-dage" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "0-6 dage" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "0-6 dage" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1-2-dage" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "1-2 dage" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "1-2 dage" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3-4-dage" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "3-4 dage" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "3-4 dage" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "le5-dage" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "<=5 dage" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "<=5 dage" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "5-6-dage" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "5-6 dage" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "5-6 dage" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "6-10-dage" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "6-10 dage" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "6-10 dage" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ge7-dage" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value ">=7 dage" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value ">=7 dage" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "gt10-dage" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value ">10 dage" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value ">10 dage" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "14-dage" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "14 dage" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "14 dage" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "21-dage" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "21 dage" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "21 dage" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "28-dage" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "28 dage" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "28 dage" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/Cyclus.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

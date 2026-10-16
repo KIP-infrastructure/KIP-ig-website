@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/AflastendeProcedure> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "AflastendeProcedure"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet AflastendeProcedure</b></p><a name=\"AflastendeProcedure\"> </a><a name=\"hcAflastendeProcedure\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-none\">none</a></td><td>Ingen</td><td>None - used to choose none of the available values</td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Anden</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-ProcedureType.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-stent\">stent</a></td><td>Stent</td><td>Stent / SNOMED-CT: 65818007</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-stoma_shunt\">stoma_shunt</a></td><td>Aflastende stomi</td><td>Kun aflastende stomi eller intern shunt</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-damage_control\">damage_control</a></td><td>Damage controle</td><td>Damage control</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/AflastendeProcedure"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.0"] ;
+  fhir:ValueSet.name [ fhir:value "AflastendeProcedure"] ;
+  fhir:ValueSet.title [ fhir:value "Aflastende procedure DCCG"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-09-07T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Aflastende procedure DCCG"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "none" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ingen" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anden" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "stent" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stent" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "stoma_shunt" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aflastende stomi" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "damage_control" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Damage controle" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/AflastendeProcedure.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

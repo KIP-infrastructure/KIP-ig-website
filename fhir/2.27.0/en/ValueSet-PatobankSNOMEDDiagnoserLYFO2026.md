@@ -1,0 +1,236 @@
+# PatobankSNOMED - Diagnoser (LYFO) - KIP Infrastructure v2.27.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **PatobankSNOMED - Diagnoser (LYFO)**
+
+## ValueSet: PatobankSNOMED - Diagnoser (LYFO) 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/PatobankSNOMEDDiagnoserLYFO2026 | *Version*:2.27.0 |
+| Active as of 2022-07-18 | *Computable Name*:PatobankSNOMEDDiagnoserLYFO2026 |
+
+ 
+PatobankSNOMED - Diagnoser (LYFO) 
+
+ **References** 
+
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+
+### Logical Definition (CLD)
+
+ 
+
+### Expansion
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "PatobankSNOMEDDiagnoserLYFO2026",
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/PatobankSNOMEDDiagnoserLYFO2026",
+  "version" : "2.27.0",
+  "name" : "PatobankSNOMEDDiagnoserLYFO2026",
+  "title" : "PatobankSNOMED - Diagnoser (LYFO)",
+  "status" : "active",
+  "date" : "2022-07-18T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "PatobankSNOMED - Diagnoser (LYFO)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/PatobankSNOMED",
+      "concept" : [{
+        "code" : "M97283",
+        "display" : "9728 - Precursor B lymphoblastic lymphoma"
+      },
+      {
+        "code" : "M96703",
+        "display" : "9670 - Small lymphocytic lymphoma"
+      },
+      {
+        "code" : "M96713",
+        "display" : "9671 - Lymphoplasmacytic lymphoma"
+      },
+      {
+        "code" : "M96893",
+        "display" : "9689 - Splenic marginal zone lymphoma"
+      },
+      {
+        "code" : "M96993",
+        "display" : "9699 - Marginal zone B-cell lymphoma"
+      },
+      {
+        "code" : "M96733",
+        "display" : "9673 - Mantle cell lymphoma"
+      },
+      {
+        "code" : "M96793",
+        "display" : "9679 - Mediastinal (thymic) large B-cell lymphoma"
+      },
+      {
+        "code" : "M96803",
+        "display" : "9680 - Diffuse large B-cell lymphoma"
+      },
+      {
+        "code" : "M968H3",
+        "display" : "968H - High Grade B-Lymfom"
+      },
+      {
+        "code" : "M968I3",
+        "display" : "968I - High Grade B-Lymfom med MYC og BCL2og/eller BCL-6"
+      },
+      {
+        "code" : "M96783",
+        "display" : "9678 - Primary effusion lymphoma"
+      },
+      {
+        "code" : "M96873",
+        "display" : "9687 - Burkitt lymphoma"
+      },
+      {
+        "code" : "M97353",
+        "display" : "9735 - Plasmablastisk lymfom"
+      },
+      {
+        "code" : "M97373",
+        "display" : "9737 - Storcellet ALK-positivt B-celle lymfom"
+      },
+      {
+        "code" : "M99711",
+        "display" : "9970 - Post-transplant lymphoproliferative disorder, polymorphic"
+      },
+      {
+        "code" : "M97293",
+        "display" : "9729 - Precursor T-lymphoblastic lymphoma"
+      },
+      {
+        "code" : "M98273",
+        "display" : "9827 - Adult T-cell lymphoma"
+      },
+      {
+        "code" : "M97193",
+        "display" : "9719 - Extranodal NK/Tcell lymphoma, nasal type"
+      },
+      {
+        "code" : "M97173",
+        "display" : "9717 - Enteropathy-type T-cell lymphoma"
+      },
+      {
+        "code" : "M97163",
+        "display" : "9716 - Hepatosplenic T-cell lymphoma"
+      },
+      {
+        "code" : "M97023",
+        "display" : "9702 - Peripheral T-cell lymphoma, unspecified"
+      },
+      {
+        "code" : "M97053",
+        "display" : "9705 - Angioimmunoblastic T-cell lymphoma"
+      },
+      {
+        "code" : "M97143",
+        "display" : "9714 - Anaplastic large cell lymphoma"
+      },
+      {
+        "code" : "M97083",
+        "display" : "9708 - Subcutaneous panniculitis-like T-cell lymphoma"
+      },
+      {
+        "code" : "M97003",
+        "display" : "9700 - Mycosis fungoides"
+      },
+      {
+        "code" : "M97013",
+        "display" : "9701 - Sezary syndrome"
+      },
+      {
+        "code" : "M97183",
+        "display" : "9718 - Primært kutant anaplastisk storcellet lymfom"
+      },
+      {
+        "code" : "M97263",
+        "display" : "9726 - Primært kutant gamma-delta T-celle lymfom"
+      },
+      {
+        "code" : "M96593",
+        "display" : "9659 - Nodular lymphocyte predominant Hodgkin lymphoma"
+      },
+      {
+        "code" : "M96503",
+        "display" : "9650 - Classical Hodgkin lymphoma"
+      },
+      {
+        "code" : "M96633",
+        "display" : "9663 - Nodular sclerosis classical Hodgkin lymphoma"
+      },
+      {
+        "code" : "M96513",
+        "display" : "9651 - Lymphocyte-rich classical Hodgkin lymphoma"
+      },
+      {
+        "code" : "M96523",
+        "display" : "9652 - Mixed cellularity classical Hodgkin lymphoma"
+      },
+      {
+        "code" : "M96533",
+        "display" : "9653 - Lymphocyte-depleted classical Hodgkin lymphoma"
+      },
+      {
+        "code" : "M96103",
+        "display" : "9610 - Modne B-cell neoplasier "
+      },
+      {
+        "code" : "M97063",
+        "display" : "9706 - Primært kutant CD4-positivt små/medium T-celle lymfom "
+      },
+      {
+        "code" : "M95903",
+        "display" : "9590 - Malignant lymphoma, NOS "
+      },
+      {
+        "code" : "M95913",
+        "display" : "9591 - Malignant non-Hodgkin lymphoma, NOS "
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/DiseasesUnspecified",
+      "concept" : [{
+        "code" : "M96903",
+        "display" : "9690 - Follicular lymphoma"
+      },
+      {
+        "code" : "M96913",
+        "display" : "9691 - Follicular lymphoma grade I"
+      },
+      {
+        "code" : "M96953",
+        "display" : "9695 - Follicular lymphoma grade II"
+      },
+      {
+        "code" : "M96983",
+        "display" : "9698 - Follicular lymphoma grade III"
+      }]
+    }]
+  }
+}
+
+```

@@ -1,0 +1,86 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/Luftvejsplan> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "Luftvejsplan"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Luftvejsplan</b></p><a name=\"Luftvejsplan\"> </a><a name=\"hcLuftvejsplan\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Respiration.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Respiration</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Respiration.html#Respiration-spontane_resp\">spontane_resp</a></td><td>Spontan respiration</td><td>Spontan respiration</td></tr><tr><td><a href=\"CodeSystem-Respiration.html#Respiration-mask_vent\">mask_vent</a></td><td>Maskeventilation</td><td>Maskeventilation</td></tr><tr><td><a href=\"CodeSystem-Respiration.html#Respiration-larynx_all\">larynx_all</a></td><td>Larynxmaske (alle typer)</td><td>Larynxmaske (alle typer)</td></tr><tr><td><a href=\"CodeSystem-Respiration.html#Respiration-intub_dir_laryngo\">intub_dir_laryngo</a></td><td>Intubation ved direkte laryngoskopi</td><td>Intubation ved direkte laryngoskopi</td></tr><tr><td><a href=\"CodeSystem-Respiration.html#Respiration-intub_video_laryngo\">intub_video_laryngo</a></td><td>Intubation med videolaryngoskopi</td><td>Intubation med videolaryngoskopi</td></tr><tr><td><a href=\"CodeSystem-Respiration.html#Respiration-intub_flex_skop\">intub_flex_skop</a></td><td>Intubation med fleksibelt skop</td><td>Intubation med fleksibelt skopi</td></tr><tr><td><a href=\"CodeSystem-Respiration.html#Respiration-intub_diff\">intub_diff</a></td><td>Intubation ved anden metode</td><td>Intubation ved anden metode</td></tr><tr><td><a href=\"CodeSystem-Respiration.html#Respiration-tracheostomi_loc\">tracheostomi_loc</a></td><td>Tracheostomi i lokalanæstesi</td><td>Tracheostomi i lokalanæstesi</td></tr><tr><td><a href=\"CodeSystem-Respiration.html#Respiration-is_intub_trach\">is_intub_trach</a></td><td>Ikke relevant / Er intuberet/tracheostomeret</td><td>Er intuberet/tracheostomeret</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/Luftvejsplan"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.0"] ;
+  fhir:ValueSet.name [ fhir:value "Luftvejsplan"] ;
+  fhir:ValueSet.title [ fhir:value "Luftvejsplan"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-06-01T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Mulige planlagte indgreb til luftvejsunderstøttelse"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/Respiration" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "spontane_resp" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spontan respiration" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "mask_vent" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Maskeventilation" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "larynx_all" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Larynxmaske (alle typer)" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "intub_dir_laryngo" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intubation ved direkte laryngoskopi" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "intub_video_laryngo" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intubation med videolaryngoskopi" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "intub_flex_skop" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intubation med fleksibelt skop" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "intub_diff" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intubation ved anden metode" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "tracheostomi_loc" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tracheostomi i lokalanæstesi" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "is_intub_trach" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ikke relevant / Er intuberet/tracheostomeret" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/Luftvejsplan.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

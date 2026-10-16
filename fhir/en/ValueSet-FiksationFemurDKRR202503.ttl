@@ -1,0 +1,239 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/FiksationFemurDKRR202503> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "FiksationFemurDKRR202503"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet FiksationFemurDKRR202503</b></p><a name=\"FiksationFemurDKRR202503\"> </a><a name=\"hcFiksationFemurDKRR202503\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-FixationCruciateLigaments.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/FixationCruciateLigaments</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-arthrex_biotenodesis_plla\">arthrex_biotenodesis_plla</a></td><td>Arthrex Biotenodesis PLLA skrue</td><td>Arthrex Biotenodesis PLLA skrue [Femur]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-arthrex_peek\">arthrex_peek</a></td><td>Arthrex PEEK Skrue</td><td>Arthrex PEEK Skrue [Femur + Tibia]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-arthrex_plla\">arthrex_plla</a></td><td>Arthrex PLLA skrue</td><td>Arthrex PLLA skrue [Femur]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-arthrex_retrobutton\">arthrex_retrobutton</a></td><td>Arthrex Retrobutton</td><td>Arthrex Retrobutton [Femur]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-arthrex_tight_rope\">arthrex_tight_rope</a></td><td>Arthrex Tight Rope</td><td>Arthrex Tight Rope [Femur + Tibia]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-arthrex_titanium\">arthrex_titanium</a></td><td>Arthrex Titanium skrue</td><td>Arthrex Titanium skrue [Femur]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-arthrex_transfix\">arthrex_transfix</a></td><td>Arthrex Transfix</td><td>Arthrex Transfix [Femur]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-arthrocare_bilok_trans\">arthrocare_bilok_trans</a></td><td>Arthrocare Bilok Trans-skrue</td><td>Arthrocare Bilok Trans-skrue [Femur]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-atlantech_bilok\">atlantech_bilok</a></td><td>Atlantech Bilok Skrue</td><td>Atlantech Bilok Skrue [Femur + Tibia]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-atlantech_metal\">atlantech_metal</a></td><td>Atlantech metal skrue</td><td>Atlantech metal skrue [Femur + Tibia]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-biomet_ez_loc\">biomet_ez_loc</a></td><td>Biomet EZ Loc</td><td>Biomet EZ Loc [Femur]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-biomet_metal_tunneloc\">biomet_metal_tunneloc</a></td><td>Biomet metal skrue (Tunneloc)</td><td>Biomet metal skrue (Tunneloc) [Femur + Tibia]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-biomet_plla_gentlethread\">biomet_plla_gentlethread</a></td><td>Biomet PLLA skrue (Gentletread)</td><td>Biomet PLLA skrue (Gentletread) [Femur + Tibia]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-biomet_togglelock_zipploop\">biomet_togglelock_zipploop</a></td><td>Biomet Togglelock Zipploop</td><td>Biomet Togglelock Zipploop [Femur]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-cayenne_aperfix\">cayenne_aperfix</a></td><td>Cayenne Aperfix</td><td>Cayenne Aperfix [Femur + Tibia]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-conmed_guardsman\">conmed_guardsman</a></td><td>Conmed Guardsman metal</td><td>ConMed Guardsman metal [Femur]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-conmed_metal_propel\">conmed_metal_propel</a></td><td>ConMed Metal skrue (Propel)</td><td>ConMed Metal skrue (Propel) [Femur + Tibia]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-conmed_plla_bioscrew\">conmed_plla_bioscrew</a></td><td>ConMed PLLA skrue (Bioscrew)</td><td>ConMed PLLA skrue (Bioscrew) [Femur + Tibia]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-conmed_xo_button\">conmed_xo_button</a></td><td>ConMed XO Button</td><td>ConMed XO Button [Femur]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-depuy_mitek_femoral_intrafix\">depuy_mitek_femoral_intrafix</a></td><td>Depuy Mitek Femoral Intrafix</td><td>Depuy Mitek Femoral Intrafix [Femur]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-depuy_mitek_milagro\">depuy_mitek_milagro</a></td><td>Depuy Mitek Milagro skrue</td><td>Depuy Mitek Milagro skrue [Femur + Tibia]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-depuy_mitek_rigidfix\">depuy_mitek_rigidfix</a></td><td>Depuy Mitek Rigidfix</td><td>Depuy Mitek Rigidfix [Femur]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-depuy_mitek_titanium\">depuy_mitek_titanium</a></td><td>Depuy Mitek Titanium skrue</td><td>Depuy Mitek Titanium skrue [Femur + Tibia]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-depuy_rigidfix_curve\">depuy_rigidfix_curve</a></td><td>Depuy Rigidfix CURVE</td><td>Depuy Rigidfix CURVE [Femur]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-depuy_rigidloop_adjustable_loop\">depuy_rigidloop_adjustable_loop</a></td><td>Depuy RIGIDLOOP adjustable loop</td><td>Depuy RIGIDLOOP adjustable loop [Femur]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-depuy_rigidloop_fixed_loop\">depuy_rigidloop_fixed_loop</a></td><td>Depuy RIGIDLOOP fixed loop</td><td>Depuy RIGIDLOOP fixed loop [Femur]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-femoral_intrafix\">femoral_intrafix</a></td><td>Femoral Intrafix</td><td>Femoral Intrafix [Femur]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-inion_hexalon\">inion_hexalon</a></td><td>Inion Hexalon skrue</td><td>Inion Hexalon skrue [Femur + Tibia]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-smith.38nephew_biosure_peek\">smith&amp;nephew_biosure_peek</a></td><td>Smith &amp; Nephew Biosure PEEK skrue</td><td>Smith &amp; Nephew Biosure PEEK skrue [Femur + Tibia]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-smith.38nephew_calaxo\">smith&amp;nephew_calaxo</a></td><td>Smith &amp; Nephew Calaxo</td><td>Smith &amp; Nephew Calaxo [Femur]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-smith.38nephew_endobutton_cl\">smith&amp;nephew_endobutton_cl</a></td><td>Smith &amp; Nephew Endobutton CL</td><td>Smith &amp; Nephew Endobutton CL [Femur]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-smith.38nephew_rci_metal\">smith&amp;nephew_rci_metal</a></td><td>Smith &amp; Nephew RCI metal</td><td>Smith &amp; Nephew RCI metal [Femur + Tibia]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-smith.38nephew_rci_plla\">smith&amp;nephew_rci_plla</a></td><td>Smith &amp; Nephew RCI PLLA</td><td>Smith &amp; Nephew RCI PLLA [Femur + Tibia]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-smith.38nephew_rci_plla.47ha\">smith&amp;nephew_rci_plla/ha</a></td><td>Smith &amp; Nephew RCI PLLA/HA</td><td>Smith &amp; Nephew RCI PLLA/HA [Femur + Tibia]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-smith.38nephew_softsilk_metal\">smith&amp;nephew_softsilk_metal</a></td><td>Smith &amp; Nephew Softsilk metal</td><td>Smith &amp; Nephew Softsilk metal [Femur + Tibia]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-smith.38nephew_ultrabutton\">smith&amp;nephew_ultrabutton</a></td><td>Smith &amp; Nephew UltraButton</td><td>Smith &amp; Nephew UltraButton [Femur]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-storz_flip-tac\">storz_flip-tac</a></td><td>Storz Flip-Tac</td><td>Storz Flip-Tac [Femur]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-stryker_bioosteon\">stryker_bioosteon</a></td><td>Stryker Bioosteon skrue</td><td>Stryker Bioosteon skrue [Femur + Tibia]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-stryker_crossscrew_ha.47plla\">stryker_crossscrew_ha/plla</a></td><td>Stryker Crossscrew (HA/PLLA)</td><td>Stryker Crossscrew (HA/PLLA) [Femur + Tibia]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-stryker_crossscrew_titanium\">stryker_crossscrew_titanium</a></td><td>Stryker Crossscrew (Titanium)</td><td>Stryker Crossscrew (Titanium) [Femur + Tibia]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-stryker_plla\">stryker_plla</a></td><td>Stryker PLLA skrue</td><td>Stryker PLLA skrue [Femur + Tibia]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-stryker_procinch\">stryker_procinch</a></td><td>Stryker ProCinch</td><td>Stryker ProCinch [Femur + Tibia]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-stryker_titanium\">stryker_titanium</a></td><td>Stryker titanium skrue</td><td>Stryker titanium skrue [Femur + Tibia]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-stryker_versitomic_g-lok\">stryker_versitomic_g-lok</a></td><td>Stryker VersiTomic G-lok</td><td>Stryker VersiTomic G-lok [Femur]</td></tr><tr><td><a href=\"CodeSystem-FixationCruciateLigaments.html#FixationCruciateLigaments-screw.47washer\">screw/washer</a></td><td>Skrue/washer</td><td>Skrue/washer [Femur + Tibia]</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/FiksationFemurDKRR202503"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.0"] ;
+  fhir:ValueSet.name [ fhir:value "FiksationFemurDKRR202503"] ;
+  fhir:ValueSet.title [ fhir:value "Fiksation, Femur (DKRR) 2025"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2025-09-21T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Fiksation, Femur (DKRR) 2025 rettelse"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/FixationCruciateLigaments" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "arthrex_biotenodesis_plla" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Arthrex Biotenodesis PLLA skrue" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "arthrex_peek" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Arthrex PEEK Skrue" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "arthrex_plla" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Arthrex PLLA skrue" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "arthrex_retrobutton" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Arthrex Retrobutton" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "arthrex_tight_rope" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Arthrex Tight Rope" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "arthrex_titanium" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Arthrex Titanium skrue" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "arthrex_transfix" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Arthrex Transfix" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "arthrocare_bilok_trans" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Arthrocare Bilok Trans-skrue" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "atlantech_bilok" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Atlantech Bilok Skrue" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "atlantech_metal" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Atlantech metal skrue" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "biomet_ez_loc" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Biomet EZ Loc" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "biomet_metal_tunneloc" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Biomet metal skrue (Tunneloc)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "biomet_plla_gentlethread" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Biomet PLLA skrue (Gentletread)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "biomet_togglelock_zipploop" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Biomet Togglelock Zipploop" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "cayenne_aperfix" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cayenne Aperfix" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "conmed_guardsman" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Conmed Guardsman metal" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "conmed_metal_propel" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ConMed Metal skrue (Propel)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "conmed_plla_bioscrew" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ConMed PLLA skrue (Bioscrew)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "conmed_xo_button" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ConMed XO Button" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "depuy_mitek_femoral_intrafix" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Depuy Mitek Femoral Intrafix" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "depuy_mitek_milagro" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Depuy Mitek Milagro skrue" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "depuy_mitek_rigidfix" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Depuy Mitek Rigidfix" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "depuy_mitek_titanium" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Depuy Mitek Titanium skrue" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "depuy_rigidfix_curve" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Depuy Rigidfix CURVE" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "depuy_rigidloop_adjustable_loop" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Depuy RIGIDLOOP adjustable loop" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "depuy_rigidloop_fixed_loop" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Depuy RIGIDLOOP fixed loop" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "femoral_intrafix" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Femoral Intrafix" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "inion_hexalon" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Inion Hexalon skrue" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "smith&nephew_biosure_peek" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Smith & Nephew Biosure PEEK skrue" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "smith&nephew_calaxo" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Smith & Nephew Calaxo" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "smith&nephew_endobutton_cl" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Smith & Nephew Endobutton CL" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "smith&nephew_rci_metal" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Smith & Nephew RCI metal" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "smith&nephew_rci_plla" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Smith & Nephew RCI PLLA" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "smith&nephew_rci_plla/ha" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Smith & Nephew RCI PLLA/HA" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "smith&nephew_softsilk_metal" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Smith & Nephew Softsilk metal" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "smith&nephew_ultrabutton" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Smith & Nephew UltraButton" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "storz_flip-tac" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Storz Flip-Tac" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "stryker_bioosteon" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stryker Bioosteon skrue" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "stryker_crossscrew_ha/plla" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stryker Crossscrew (HA/PLLA)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "stryker_crossscrew_titanium" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stryker Crossscrew (Titanium)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "stryker_plla" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stryker PLLA skrue" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "stryker_procinch" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stryker ProCinch" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "stryker_titanium" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stryker titanium skrue" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "stryker_versitomic_g-lok" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stryker VersiTomic G-lok" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "screw/washer" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Skrue/washer" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Andet" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/FiksationFemurDKRR202503.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

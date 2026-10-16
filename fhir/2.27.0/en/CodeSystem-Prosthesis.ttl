@@ -1,0 +1,243 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/Prosthesis> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "Prosthesis"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem Prosthesis</b></p><a name=\"Prosthesis\"> </a><a name=\"hcProsthesis\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/Prosthesis</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">arthrex_eclipse<a name=\"Prosthesis-arthrex_eclipse\"> </a></td><td>Arthrex: Eclipse</td><td>Arthrex: Eclipse</td></tr><tr><td style=\"white-space:nowrap\">arthrex_universe<a name=\"Prosthesis-arthrex_universe\"> </a></td><td>Arthrex: Universe</td><td>Arthrex: Universe</td></tr><tr><td style=\"white-space:nowrap\">biomet_comprehensive_fraktur<a name=\"Prosthesis-biomet_comprehensive_fraktur\"> </a></td><td>Biomet: Comprehensive - Fraktur</td><td>Biomet: Comprehensive - Fraktur</td></tr><tr><td style=\"white-space:nowrap\">biomet_comprehensive_nano<a name=\"Prosthesis-biomet_comprehensive_nano\"> </a></td><td>Biomet: Comprehensive - Nano</td><td>Biomet: Comprehensive - Nano</td></tr><tr><td style=\"white-space:nowrap\">biomet_comprehensive_reverse<a name=\"Prosthesis-biomet_comprehensive_reverse\"> </a></td><td>Biomet: Comprehensive - Reverse</td><td>Biomet: Comprehensive - Reverse</td></tr><tr><td style=\"white-space:nowrap\">biomet_comprehensive_standard<a name=\"Prosthesis-biomet_comprehensive_standard\"> </a></td><td>Biomet: Comprehensive - Standard</td><td>Biomet: Comprehensive - Standard</td></tr><tr><td style=\"white-space:nowrap\">biomet_copeland<a name=\"Prosthesis-biomet_copeland\"> </a></td><td>Biomet: Copeland</td><td>Biomet: Copeland</td></tr><tr><td style=\"white-space:nowrap\">depuy_delta_extend<a name=\"Prosthesis-depuy_delta_extend\"> </a></td><td>Depuy: Delta - Extend</td><td>Depuy: Delta - Extend</td></tr><tr><td style=\"white-space:nowrap\">depuy_global_advantage<a name=\"Prosthesis-depuy_global_advantage\"> </a></td><td>Depuy: Global - Advantage</td><td>Depuy: Global - Advantage</td></tr><tr><td style=\"white-space:nowrap\">depuy_global_cap<a name=\"Prosthesis-depuy_global_cap\"> </a></td><td>Depuy: Global - C.A.P</td><td>Depuy: Global - C.A.P</td></tr><tr><td style=\"white-space:nowrap\">depuy_global_fx_fraktur<a name=\"Prosthesis-depuy_global_fx_fraktur\"> </a></td><td>Depuy: Global - FX (fraktur)</td><td>Depuy: Global - FX (fraktur)</td></tr><tr><td style=\"white-space:nowrap\">depuy_global_unite<a name=\"Prosthesis-depuy_global_unite\"> </a></td><td>Depuy: Global - Unite</td><td>Depuy: Global - Unite</td></tr><tr><td style=\"white-space:nowrap\">exactech_equinoxe_fracture<a name=\"Prosthesis-exactech_equinoxe_fracture\"> </a></td><td>Exactech: Equinoxe - Fracture</td><td>Exactech: Equinoxe - Fracture</td></tr><tr><td style=\"white-space:nowrap\">exactech_equinoxe_primary<a name=\"Prosthesis-exactech_equinoxe_primary\"> </a></td><td>Exactech: Equinoxe - Primary</td><td>Exactech: Equinoxe - Primary</td></tr><tr><td style=\"white-space:nowrap\">exactech_equinoxe_reversed<a name=\"Prosthesis-exactech_equinoxe_reversed\"> </a></td><td>Exactech: Equinoxe - Reversed</td><td>Exactech: Equinoxe - Reversed</td></tr><tr><td style=\"white-space:nowrap\">lima_smr_anatomic<a name=\"Prosthesis-lima_smr_anatomic\"> </a></td><td>Lima SMR: Anatomic</td><td>Lima SMR: Anatomic</td></tr><tr><td style=\"white-space:nowrap\">lima_smr_fracture<a name=\"Prosthesis-lima_smr_fracture\"> </a></td><td>Lima SMR: Fracture</td><td>Lima SMR: Fracture</td></tr><tr><td style=\"white-space:nowrap\">lima_smr_resurfacing<a name=\"Prosthesis-lima_smr_resurfacing\"> </a></td><td>Lima SMR: Resurfacing</td><td>Lima SMR: Resurfacing</td></tr><tr><td style=\"white-space:nowrap\">lima_smr_reverse<a name=\"Prosthesis-lima_smr_reverse\"> </a></td><td>Lima SMR: Reverse</td><td>Lima SMR: Reverse</td></tr><tr><td style=\"white-space:nowrap\">lima_smr_stemless<a name=\"Prosthesis-lima_smr_stemless\"> </a></td><td>Lima SMR: Stemless</td><td>Lima SMR: Stemless</td></tr><tr><td style=\"white-space:nowrap\">smith&amp;nephew_neer_3<a name=\"Prosthesis-smith.38nephew_neer_3\"> </a></td><td>Smith &amp; Nephew: Neer 3</td><td>Smith &amp; Nephew: Neer 3</td></tr><tr><td style=\"white-space:nowrap\">tornier_aequalis_fracture<a name=\"Prosthesis-tornier_aequalis_fracture\"> </a></td><td>Tornier: Aequalis - Fracture</td><td>Tornier: Aequalis - Fracture</td></tr><tr><td style=\"white-space:nowrap\">tornier_aequalis_resurfacing<a name=\"Prosthesis-tornier_aequalis_resurfacing\"> </a></td><td>Tornier: Aequalis - Resurfacing</td><td>Tornier: Aequalis - Resurfacing</td></tr><tr><td style=\"white-space:nowrap\">tornier_aequalis_reverse<a name=\"Prosthesis-tornier_aequalis_reverse\"> </a></td><td>Tornier: Aequalis - Reverse</td><td>Tornier: Aequalis - Reverse</td></tr><tr><td style=\"white-space:nowrap\">tornier_aequalis_standard<a name=\"Prosthesis-tornier_aequalis_standard\"> </a></td><td>Tornier: Aequalis - Standard</td><td>Tornier: Aequalis - Standard</td></tr><tr><td style=\"white-space:nowrap\">tornier_ascend_flex<a name=\"Prosthesis-tornier_ascend_flex\"> </a></td><td>Tornier: Ascend Flex</td><td>Tornier: Ascend Flex</td></tr><tr><td style=\"white-space:nowrap\">tornier_simpliciti<a name=\"Prosthesis-tornier_simpliciti\"> </a></td><td>Tornier: Simpliciti</td><td>Tornier: Simpliciti</td></tr><tr><td style=\"white-space:nowrap\">zimmer_anatomical_fracture<a name=\"Prosthesis-zimmer_anatomical_fracture\"> </a></td><td>Zimmer: Anatomical - Fracture</td><td>Zimmer: Anatomical - Fracture</td></tr><tr><td style=\"white-space:nowrap\">zimmer_anatomical_reverse<a name=\"Prosthesis-zimmer_anatomical_reverse\"> </a></td><td>Zimmer: Anatomical - Reverse</td><td>Zimmer: Anatomical - Reverse</td></tr><tr><td style=\"white-space:nowrap\">zimmer_anatomical_shoulder_combined<a name=\"Prosthesis-zimmer_anatomical_shoulder_combined\"> </a></td><td>Zimmer: Anatomical - Shoulder Combined</td><td>Zimmer: Anatomical - Shoulder Combined</td></tr><tr><td style=\"white-space:nowrap\">zimmer_anatomical_standard<a name=\"Prosthesis-zimmer_anatomical_standard\"> </a></td><td>Zimmer: Anatomical - Standard</td><td>Zimmer: Anatomical - Standard</td></tr><tr><td style=\"white-space:nowrap\">zimmer_bigliani_flatow<a name=\"Prosthesis-zimmer_bigliani_flatow\"> </a></td><td>Zimmer: Bigliani-Flatow</td><td>Zimmer: Bigliani-Flatow</td></tr><tr><td style=\"white-space:nowrap\">zimmer_sidus<a name=\"Prosthesis-zimmer_sidus\"> </a></td><td>Zimmer: Sidus</td><td>Zimmer: Sidus</td></tr><tr><td style=\"white-space:nowrap\">zimmer_tm_reverse<a name=\"Prosthesis-zimmer_tm_reverse\"> </a></td><td>Zimmer: TM Reverse</td><td>Zimmer: TM Reverse</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/Prosthesis"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.0"] ;
+  fhir:CodeSystem.name [ fhir:value "Prosthesis"] ;
+  fhir:CodeSystem.title [ fhir:value "Prosthesis"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2022-10-07T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Prosthesis"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "34"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "arthrex_eclipse" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Arthrex: Eclipse" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Arthrex: Eclipse" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "arthrex_universe" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Arthrex: Universe" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Arthrex: Universe" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "biomet_comprehensive_fraktur" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Biomet: Comprehensive - Fraktur" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Biomet: Comprehensive - Fraktur" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "biomet_comprehensive_nano" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Biomet: Comprehensive - Nano" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Biomet: Comprehensive - Nano" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "biomet_comprehensive_reverse" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Biomet: Comprehensive - Reverse" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Biomet: Comprehensive - Reverse" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "biomet_comprehensive_standard" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Biomet: Comprehensive - Standard" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Biomet: Comprehensive - Standard" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "biomet_copeland" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Biomet: Copeland" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Biomet: Copeland" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "depuy_delta_extend" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Depuy: Delta - Extend" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Depuy: Delta - Extend" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "depuy_global_advantage" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Depuy: Global - Advantage" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Depuy: Global - Advantage" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "depuy_global_cap" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Depuy: Global - C.A.P" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Depuy: Global - C.A.P" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "depuy_global_fx_fraktur" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Depuy: Global - FX (fraktur)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Depuy: Global - FX (fraktur)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "depuy_global_unite" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Depuy: Global - Unite" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Depuy: Global - Unite" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "exactech_equinoxe_fracture" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Exactech: Equinoxe - Fracture" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Exactech: Equinoxe - Fracture" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "exactech_equinoxe_primary" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Exactech: Equinoxe - Primary" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Exactech: Equinoxe - Primary" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "exactech_equinoxe_reversed" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Exactech: Equinoxe - Reversed" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Exactech: Equinoxe - Reversed" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "lima_smr_anatomic" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lima SMR: Anatomic" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Lima SMR: Anatomic" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "lima_smr_fracture" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lima SMR: Fracture" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Lima SMR: Fracture" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "lima_smr_resurfacing" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lima SMR: Resurfacing" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Lima SMR: Resurfacing" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "lima_smr_reverse" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lima SMR: Reverse" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Lima SMR: Reverse" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "lima_smr_stemless" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lima SMR: Stemless" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Lima SMR: Stemless" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "smith&nephew_neer_3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Smith & Nephew: Neer 3" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Smith & Nephew: Neer 3" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tornier_aequalis_fracture" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tornier: Aequalis - Fracture" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Tornier: Aequalis - Fracture" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tornier_aequalis_resurfacing" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tornier: Aequalis - Resurfacing" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Tornier: Aequalis - Resurfacing" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tornier_aequalis_reverse" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tornier: Aequalis - Reverse" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Tornier: Aequalis - Reverse" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tornier_aequalis_standard" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tornier: Aequalis - Standard" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Tornier: Aequalis - Standard" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tornier_ascend_flex" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tornier: Ascend Flex" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Tornier: Ascend Flex" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tornier_simpliciti" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tornier: Simpliciti" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Tornier: Simpliciti" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zimmer_anatomical_fracture" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zimmer: Anatomical - Fracture" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Zimmer: Anatomical - Fracture" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zimmer_anatomical_reverse" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zimmer: Anatomical - Reverse" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Zimmer: Anatomical - Reverse" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zimmer_anatomical_shoulder_combined" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zimmer: Anatomical - Shoulder Combined" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Zimmer: Anatomical - Shoulder Combined" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zimmer_anatomical_standard" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zimmer: Anatomical - Standard" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Zimmer: Anatomical - Standard" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zimmer_bigliani_flatow" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zimmer: Bigliani-Flatow" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Zimmer: Bigliani-Flatow" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zimmer_sidus" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zimmer: Sidus" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Zimmer: Sidus" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zimmer_tm_reverse" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zimmer: TM Reverse" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Zimmer: TM Reverse" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/Prosthesis.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

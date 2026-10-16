@@ -1,0 +1,850 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/DiseasesUnspecified> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "DiseasesUnspecified"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DiseasesUnspecified</b></p><a name=\"DiseasesUnspecified\"> </a><a name=\"hcDiseasesUnspecified\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/DiseasesUnspecified</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>comment</b></td><td><b>effectiveDate</b></td><td><b>status</b></td><td><b>Inactive</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">diabetes<a name=\"DiseasesUnspecified-diabetes\"> </a></td><td>Diabetes</td><td>Diabetes / Diabetes</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">heart_disease<a name=\"DiseasesUnspecified-heart_disease\"> </a></td><td>Heart disease</td><td>Heart disease / Hjertesygdom</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">lung_disease<a name=\"DiseasesUnspecified-lung_disease\"> </a></td><td>Lung disease</td><td>Lung disease / Lungesygdom</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">al<a name=\"DiseasesUnspecified-al\"> </a></td><td>Akut leukæmi (AL)</td><td>Akut leumæmi (AL)</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">cll<a name=\"DiseasesUnspecified-cll\"> </a></td><td>Kronisk lymfatisk leukæmi (CLL)</td><td>Kronisk lymfatisk leukæmi (CLL)</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">lymfom<a name=\"DiseasesUnspecified-lymfom\"> </a></td><td>Lymfom (LYFO)</td><td>Lymfom (LYFO)</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">mds<a name=\"DiseasesUnspecified-mds\"> </a></td><td>Myelodysplasi (MDS)</td><td>Myelodysplasi (MDS)</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">myeloproliferativ_sygdom<a name=\"DiseasesUnspecified-myeloproliferativ_sygdom\"> </a></td><td>Myeloproliferativ sygdom</td><td>Myeloproliferativ sygdom</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">myelomatose<a name=\"DiseasesUnspecified-myelomatose\"> </a></td><td>Myelomatose</td><td>Myelomatose</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">M96903<a name=\"DiseasesUnspecified-M96903\"> </a></td><td>Follikulært lymfom ukendt grad</td><td>Follikulært lymfom ukendt grad</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">M96913<a name=\"DiseasesUnspecified-M96913\"> </a></td><td>Follikulært lymfom grad 1</td><td>Follikulært lymfom grad 1</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">M96953<a name=\"DiseasesUnspecified-M96953\"> </a></td><td>Follikulært lymfom grad 2</td><td>Follikulært lymfom grad 2</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">M96983<a name=\"DiseasesUnspecified-M96983\"> </a></td><td>Follikulært lymfom grad 3</td><td>Follikulært lymfom grad 3</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">amyloidose&lt;2012<a name=\"DiseasesUnspecified-amyloidose.602012\"> </a></td><td>Amyloidose før 2012</td><td>Amyloidose før 2012</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">all&lt;2005<a name=\"DiseasesUnspecified-all.602005\"> </a></td><td>ALL før 2005</td><td>ALL før 2005</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">all&lt;2000<a name=\"DiseasesUnspecified-all.602000\"> </a></td><td>AML før 2000</td><td>AML før 2000</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">cll&lt;2008<a name=\"DiseasesUnspecified-cll.602008\"> </a></td><td>CLL før 2008</td><td>CLL før 2008</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">hodgkin&lt;1998<a name=\"DiseasesUnspecified-hodgkin.601998\"> </a></td><td>Hodgkin diagnosticeret før 1998 (2000 ØstDK)</td><td>Hodgkin diagnosticeret før 1998 (2000 ØstDK)</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">lymfom&lt;1983<a name=\"DiseasesUnspecified-lymfom.601983\"> </a></td><td>Lymfom diagnosticeret før 1983 (2000 ØstDK)</td><td>Lymfom diagnosticeret før 1983 (2000 ØstDK)</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">mds&lt;2010<a name=\"DiseasesUnspecified-mds.602010\"> </a></td><td>MDS diagnosticeret før 2010</td><td>MDS diagnosticeret før 2010</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">mgus&lt;2013<a name=\"DiseasesUnspecified-mgus.602013\"> </a></td><td>MGUS eller Amyloidose før 2013</td><td>MGUS eller Amyloidose før 2013</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">myelom&lt;2005<a name=\"DiseasesUnspecified-myelom.602005\"> </a></td><td>Myelomatose diagnosticeret før 2005</td><td>Myelomatose diagnosticeret før 2005</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">mpn&lt;2010<a name=\"DiseasesUnspecified-mpn.602010\"> </a></td><td>Myeloproliferativ sygdom diagnosticeret før 2010</td><td>Myeloproliferativ sygdom diagnosticeret før 2010</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">leukaemi_haarcelle<a name=\"DiseasesUnspecified-leukaemi_haarcelle\"> </a></td><td>Hårcelle leukæmi</td><td>Hårcelle leukæmi</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">lgl<a name=\"DiseasesUnspecified-lgl\"> </a></td><td>Large Granular Leukemia (LGL)</td><td>Large Granular Leukemia (LGL)</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">t_pll<a name=\"DiseasesUnspecified-t_pll\"> </a></td><td>T-Prolymfocytleukæmi</td><td>T-Prolymfocytleukæmi</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">myelodysplastic_syndrome<a name=\"DiseasesUnspecified-myelodysplastic_syndrome\"> </a></td><td>Myelodysplastic syndrome</td><td>Myelodysplastic syndrome / Myelodyspl. syndrom (undt. CMML)</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">chronic_myelomonocytic_leukemia<a name=\"DiseasesUnspecified-chronic_myelomonocytic_leukemia\"> </a></td><td>Chronic myelomonocytic leukemia (CMML)</td><td>Chronic myelomonocytic leukemia / CMML (Kronisk MyeloMonocytLeuk.)</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">essential_thrombocytosis<a name=\"DiseasesUnspecified-essential_thrombocytosis\"> </a></td><td>Essential thrombocytosis</td><td>Essential thrombocytosis / Ess. thrombocytose</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">polycythemia_vera<a name=\"DiseasesUnspecified-polycythemia_vera\"> </a></td><td>Polycythemia vera</td><td>Polycythemia vera / Polycytæmia vera</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">myelofibrosis<a name=\"DiseasesUnspecified-myelofibrosis\"> </a></td><td>Myelofibrosis</td><td>Myelofibrosis / Myelofibrose</td><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  primary<a name=\"DiseasesUnspecified-primary\"> </a></td><td>Primary myelofibrosis</td><td>Primary myelofibrosis / Primær Myelofibrose</td><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  prefibrotic<a name=\"DiseasesUnspecified-prefibrotic\"> </a></td><td>Prefibrotic myelofibrosis</td><td>Prefibrotic myelofibrosis / Præfibrotisk Myelofibrose</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">smouldering_mm<a name=\"DiseasesUnspecified-smouldering_mm\"> </a></td><td>Smouldering MM</td><td>Smouldering MM</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">myelomatosis<a name=\"DiseasesUnspecified-myelomatosis\"> </a></td><td>Myelomatosis</td><td>Myelomatosis / Myelomatose</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">solitary_myelom_osseus<a name=\"DiseasesUnspecified-solitary_myelom_osseus\"> </a></td><td>Solitary myelom (osseus)</td><td>Solitary myelom (osseus) / Solitært myelom (ossøst)</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">solitary_myelom_extra_osseus<a name=\"DiseasesUnspecified-solitary_myelom_extra_osseus\"> </a></td><td>Solitary myelom (extra osseus)</td><td>Solitary myelom (extra osseus) / Solitært myelom (ekstraossøst)</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">plasma_cell_leukemia<a name=\"DiseasesUnspecified-plasma_cell_leukemia\"> </a></td><td>Plasma cell leukemia</td><td>Plasma cell leukemia / Plasmacelleleukæmi</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">DD472<a name=\"DiseasesUnspecified-DD472\"> </a></td><td>Monoklonal gammopati med ubestemt signifikans (MGUS)</td><td>Monoklonal gammopati med ubestemt signifikans (MGUS)</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">ZM973A3<a name=\"DiseasesUnspecified-ZM973A3\"> </a></td><td>Osteosklerotisk myelom (POEMS syndrom)</td><td>Osteosklerotisk myelom (POEMS syndrom)</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">paraprotein_associated_polyneuropathy<a name=\"DiseasesUnspecified-paraprotein_associated_polyneuropathy\"> </a></td><td>Paraprotein associated polyneuropathy</td><td>Paraprotein associated polyneuropathy / Paraprotein associeret polyneuropati</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">chronic_myeloid_leukemia<a name=\"DiseasesUnspecified-chronic_myeloid_leukemia\"> </a></td><td>Chronic myeloid leukemia</td><td>Chronic myeloid leukemia / Kronisk Myeloid Leukæmi (BCR-ABL1 positiv) (CML)</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">myeloproliferative_unclassified<a name=\"DiseasesUnspecified-myeloproliferative_unclassified\"> </a></td><td>Unclassified myeloproliferative</td><td>Unclassified myeloproliferative / Uklassificerbar Myeloproliferativ sygdom</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">anemia<a name=\"DiseasesUnspecified-anemia\"> </a></td><td>Anemia</td><td>Anemia / Anæmi</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">thrombocytopenic_disorder<a name=\"DiseasesUnspecified-thrombocytopenic_disorder\"> </a></td><td>Thrombocytopenic disorder</td><td>Thrombocytopenic disorder / Trombocytopeni</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">neutropenia<a name=\"DiseasesUnspecified-neutropenia\"> </a></td><td>Neutropenia</td><td>Neutropenia / Neutropeni</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">alzheimers_dementia<a name=\"DiseasesUnspecified-alzheimers_dementia\"> </a></td><td>Alzheimers demens</td><td>Alzheimers demens</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">lewy_body_dementia<a name=\"DiseasesUnspecified-lewy_body_dementia\"> </a></td><td>Lewy Body demens</td><td>Lewy Body demens</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">parkinson_dementia<a name=\"DiseasesUnspecified-parkinson_dementia\"> </a></td><td>Parkinson demens</td><td>Parkinson demens</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">vascular_dementia<a name=\"DiseasesUnspecified-vascular_dementia\"> </a></td><td>Vaskulær demens</td><td>Vaskulær demens</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">mixed_dementia<a name=\"DiseasesUnspecified-mixed_dementia\"> </a></td><td>Mixed demens (Alzheimers + vaskulær)</td><td>Mixed demens (Alzheimers + vaskulær)</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">frontotemporal_dementia<a name=\"DiseasesUnspecified-frontotemporal_dementia\"> </a></td><td>Frontotemporal demens</td><td>Frontotemporal demens</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">atypical_parkinson_dementia<a name=\"DiseasesUnspecified-atypical_parkinson_dementia\"> </a></td><td>Atypisk Parkinson demens</td><td>Atypisk Parkinson demens</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">hydrocephalus_dementia<a name=\"DiseasesUnspecified-hydrocephalus_dementia\"> </a></td><td>Normaltryks hydrocephalus demens</td><td>Normaltryks hydrocephalus demens</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">huntingtons_chorea_dementia<a name=\"DiseasesUnspecified-huntingtons_chorea_dementia\"> </a></td><td>Huntingtons Chorea demens</td><td>Huntingtons Chorea demens</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">alchohol_dementia<a name=\"DiseasesUnspecified-alchohol_dementia\"> </a></td><td>Alkohol demens</td><td>Alkohol demens</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">neurodegenerative_dementia<a name=\"DiseasesUnspecified-neurodegenerative_dementia\"> </a></td><td>Neurodegenerativ demens</td><td>Neurodegenerativ demens</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">not_affective_dementia<a name=\"DiseasesUnspecified-not_affective_dementia\"> </a></td><td>Ikke-affektiv demens</td><td>Ikke-affektiv demens</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">affective_dementia<a name=\"DiseasesUnspecified-affective_dementia\"> </a></td><td>Affektiv demens</td><td>Affektiv demens</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">ventral_hernia<a name=\"DiseasesUnspecified-ventral_hernia\"> </a></td><td/><td/><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  incisional<a name=\"DiseasesUnspecified-incisional\"> </a></td><td>Incisional</td><td>Incisional / Incisionelt</td><td/><td/><td/><td/></tr><tr><td>3</td><td style=\"white-space:nowrap\">    length_cicatrice<a name=\"DiseasesUnspecified-length_cicatrice\"> </a></td><td/><td/><td/><td/><td/><td/></tr><tr><td>3</td><td style=\"white-space:nowrap\">    cross_cicatrice<a name=\"DiseasesUnspecified-cross_cicatrice\"> </a></td><td/><td/><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  umbilical<a name=\"DiseasesUnspecified-umbilical\"> </a></td><td>Umbilical</td><td>Umbilical / Umbilicalt</td><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  linea_alba<a name=\"DiseasesUnspecified-linea_alba\"> </a></td><td>Linea alba</td><td>Linea alba</td><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  spiegel<a name=\"DiseasesUnspecified-spiegel\"> </a></td><td>Spiegel</td><td>Spiegel</td><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  stomi<a name=\"DiseasesUnspecified-stomi\"> </a></td><td>Stomi</td><td>Stomi</td><td/><td/><td/><td/></tr><tr><td>3</td><td style=\"white-space:nowrap\">    stomi_herniotomi<a name=\"DiseasesUnspecified-stomi_herniotomi\"> </a></td><td>Stomi and herniotomi</td><td>Stomi and herniotomi / Stomi og herniotomi</td><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  port<a name=\"DiseasesUnspecified-port\"> </a></td><td>Port</td><td>Port</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">colostomy<a name=\"DiseasesUnspecified-colostomy\"> </a></td><td>Colostomy</td><td>Colostomy / Colostomi / SNOMED-CT: 264585001</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">ileostomy<a name=\"DiseasesUnspecified-ileostomy\"> </a></td><td>Ileostomy</td><td>Ileostomy / Ileostomi / SNOMED-CT: 264364002</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">urologicalstomy<a name=\"DiseasesUnspecified-urologicalstomy\"> </a></td><td>Urological stomy</td><td>Urological stomy / Urostomi / SNOMED-CT: 281601009</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC00-DC14<a name=\"DiseasesUnspecified-DC00-DC14\"> </a></td><td>Kræft i læber, mundhule og svælg</td><td>Kræft i læber, mundhule og svælg</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC15<a name=\"DiseasesUnspecified-DC15\"> </a></td><td>Kræft i spiserøret</td><td>Kræft i spiserøret</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC16<a name=\"DiseasesUnspecified-DC16\"> </a></td><td>Kræft i mavesækken</td><td>Kræft i mavesækken</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC17<a name=\"DiseasesUnspecified-DC17\"> </a></td><td>Kræft i tyndtarmen</td><td>Kræft i tyndtarmen</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC18-DC20<a name=\"DiseasesUnspecified-DC18-DC20\"> </a></td><td>Kræft i tyktarm og endetarm</td><td>Kræft i tyktarm og endetarm</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC22<a name=\"DiseasesUnspecified-DC22\"> </a></td><td>Kræft i leveren og intrahepatiske galdegange</td><td>Kræft i leveren og intrahepatiske galdegange</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC25<a name=\"DiseasesUnspecified-DC25\"> </a></td><td>Kræft i bugspytkirtlen</td><td>Kræft i bugspytkirtlen</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC32<a name=\"DiseasesUnspecified-DC32\"> </a></td><td>Kræft i strubehovedet</td><td>Kræft i strubehovedet</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC33-DC34<a name=\"DiseasesUnspecified-DC33-DC34\"> </a></td><td>Kræft i luftrøret og bronkier og lunge</td><td>Kræft i luftrøret og bronkier og lunge</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC43<a name=\"DiseasesUnspecified-DC43\"> </a></td><td>Modermærkekræft i huden</td><td>Modermærkekræft i huden</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC50<a name=\"DiseasesUnspecified-DC50\"> </a></td><td>Brystkræft</td><td>Brystkræft</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC53<a name=\"DiseasesUnspecified-DC53\"> </a></td><td>Kræft i livmoderhalsen</td><td>Kræft i livmoderhalsen</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC54-DC55<a name=\"DiseasesUnspecified-DC54-DC55\"> </a></td><td>Kræft i livmoderen (inkl. uspecifik)</td><td>Kræft i livmoderen (inkl. uspecifik)</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC56+DC570-DC574<a name=\"DiseasesUnspecified-DC56.43DC570-DC574\"> </a></td><td>Kræft i æggestok og æggeleder</td><td>Kræft i æggestok og æggeleder</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC61<a name=\"DiseasesUnspecified-DC61\"> </a></td><td>Kræft i blærehalskirtlen</td><td>Kræft i blærehalskirtlen</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC62<a name=\"DiseasesUnspecified-DC62\"> </a></td><td>Testikelkræft</td><td>Testikelkræft</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC67<a name=\"DiseasesUnspecified-DC67\"> </a></td><td>Kræft i urinblæren</td><td>Kræft i urinblæren</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC64-DC66<a name=\"DiseasesUnspecified-DC64-DC66\"> </a></td><td>Kræft i nyre, nyrebækken og urinleder</td><td>Kræft i nyre, nyrebækken og urinleder</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC70-DC72+DC751-DC753<a name=\"DiseasesUnspecified-DC70-DC72.43DC751-DC753\"> </a></td><td>Kræft i centralnervesystem</td><td>Kræft i centralnervesystem</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC73<a name=\"DiseasesUnspecified-DC73\"> </a></td><td>Kræft i skjoldbruskkirtlen</td><td>Kræft i skjoldbruskkirtlen</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC81<a name=\"DiseasesUnspecified-DC81\"> </a></td><td>Hodgkin lymfomer</td><td>Hodgkin lymfomer</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC82-DC85<a name=\"DiseasesUnspecified-DC82-DC85\"> </a></td><td>Non-hodking malignt lymform</td><td>Non-hodking malignt lymform</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC90<a name=\"DiseasesUnspecified-DC90\"> </a></td><td>Maligne plasmacelle neoplasier</td><td>Maligne plasmacelle neoplasier</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC91-DC95<a name=\"DiseasesUnspecified-DC91-DC95\"> </a></td><td>Leukæmi</td><td>Leukæmi</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC45-DC49<a name=\"DiseasesUnspecified-DC45-DC49\"> </a></td><td>Kræft i mesotel, bindevæv og andet bløddelsvæv</td><td>Kræft i mesotel, bindevæv og andet bløddelsvæv</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">DC76-DC80<a name=\"DiseasesUnspecified-DC76-DC80\"> </a></td><td>Kræft med dårligt specificerede, sekundære og ikke specificerede lokalisationer</td><td>Kræft med dårligt specificerede, sekundære og ikke specificerede lokalisationer</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">acute_extremity_ischaemia<a name=\"DiseasesUnspecified-acute_extremity_ischaemia\"> </a></td><td>akut ekstremitetsiskæmi</td><td>akut ekstremitetsiskæmi</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">amurosis_fugax<a name=\"DiseasesUnspecified-amurosis_fugax\"> </a></td><td>amaurosis fugax</td><td>amaurosis fugax</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">aneurysm_asymptomatic<a name=\"DiseasesUnspecified-aneurysm_asymptomatic\"> </a></td><td>aneurisme - asymptomatisk</td><td>aneurisme - asymptomatisk</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">aneurysm_symptomatic<a name=\"DiseasesUnspecified-aneurysm_symptomatic\"> </a></td><td>aneurisme - symptomatisk</td><td>aneurisme - symptomatisk</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">aneurysm_ruptured<a name=\"DiseasesUnspecified-aneurysm_ruptured\"> </a></td><td>aneurisme - rumperet</td><td>aneurisme - rumperet</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">aneurysm_clotted<a name=\"DiseasesUnspecified-aneurysm_clotted\"> </a></td><td>aneurisme - tromboseret</td><td>aneurisme - tromboseret</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">aneurysm_pseudo<a name=\"DiseasesUnspecified-aneurysm_pseudo\"> </a></td><td>aneurisme - pseudo</td><td>aneurisme - pseudo</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">aneurysm_mycotic<a name=\"DiseasesUnspecified-aneurysm_mycotic\"> </a></td><td>aneurisme - mykotisk</td><td>aneurisme - mykotisk</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">bleeding<a name=\"DiseasesUnspecified-bleeding\"> </a></td><td>blødning / hæmatom</td><td>blødning / hæmatom</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">infection<a name=\"DiseasesUnspecified-infection\"> </a></td><td>infektion (ikke proteseinfektion = 55)</td><td>infektion (ikke proteseinfektion = 55)</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">intestinal_ischaemia<a name=\"DiseasesUnspecified-intestinal_ischaemia\"> </a></td><td>intestinal iskæmi, angina abdominalis</td><td>intestinal iskæmi, angina abdominalis</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">function_dependent_ischaemia<a name=\"DiseasesUnspecified-function_dependent_ischaemia\"> </a></td><td>funktionsbetinget iskæmi, claudicatio intermittens</td><td>funktionsbetinget iskæmi, claudicatio intermittens</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">chronic_ischaemia_rest_pain<a name=\"DiseasesUnspecified-chronic_ischaemia_rest_pain\"> </a></td><td>kronisk iskæmi - hvilesmerter</td><td>kronisk iskæmi - hvilesmerter</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">chronic_ischaemia_wound<a name=\"DiseasesUnspecified-chronic_ischaemia_wound\"> </a></td><td>kronisk iskæmi - sår</td><td>kronisk iskæmi - sår</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">chronic_ischaemia_gangrene<a name=\"DiseasesUnspecified-chronic_ischaemia_gangrene\"> </a></td><td>kronisk iskæmi - gangræn</td><td>kronisk iskæmi - gangræn</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">hypertension_renovascular<a name=\"DiseasesUnspecified-hypertension_renovascular\"> </a></td><td>renovaskulær hypertension</td><td>renovaskulær hypertension</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">stroke<a name=\"DiseasesUnspecified-stroke\"> </a></td><td>stroke</td><td>stroke</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">tos<a name=\"DiseasesUnspecified-tos\"> </a></td><td>thoracic outlet syndrom (TOS)</td><td>thoracic outlet syndrom (TOS)</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">tia<a name=\"DiseasesUnspecified-tia\"> </a></td><td>transitorisk iskæmisk attack (TIA)</td><td>transitorisk iskæmisk attack (TIA)</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">trauma<a name=\"DiseasesUnspecified-trauma\"> </a></td><td>traume</td><td>traume</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">thrombosis_vascular_reconstruction<a name=\"DiseasesUnspecified-thrombosis_vascular_reconstruction\"> </a></td><td>trombose af karrekonstruktion</td><td>trombose af karrekonstruktion</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">uremia<a name=\"DiseasesUnspecified-uremia\"> </a></td><td>uræmi</td><td>uræmi</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">varices<a name=\"DiseasesUnspecified-varices\"> </a></td><td>varicer</td><td>varicer</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">vasospasms<a name=\"DiseasesUnspecified-vasospasms\"> </a></td><td>vasospasme/ Raynaud</td><td>vasospasme/ Raynaud</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">venus_thrombosis<a name=\"DiseasesUnspecified-venus_thrombosis\"> </a></td><td>venetrombose</td><td>venetrombose</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">reconstruction_failure<a name=\"DiseasesUnspecified-reconstruction_failure\"> </a></td><td>truende rekonstruktionssvigt</td><td>truende rekonstruktionssvigt</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">permanent_central_venous_access<a name=\"DiseasesUnspecified-permanent_central_venous_access\"> </a></td><td>permanent central venøs adgang</td><td>permanent central venøs adgang</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">wound_complication<a name=\"DiseasesUnspecified-wound_complication\"> </a></td><td>sårkomplikation</td><td>sårkomplikation</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">fascial_rupture<a name=\"DiseasesUnspecified-fascial_rupture\"> </a></td><td>fascieruptur</td><td>fascieruptur</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">ileus<a name=\"DiseasesUnspecified-ileus\"> </a></td><td>ileus</td><td>ileus</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">intestine_ischaemia<a name=\"DiseasesUnspecified-intestine_ischaemia\"> </a></td><td>tarmiskæmi</td><td>tarmiskæmi</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">aorto/prosthesis_intestinal_fistula<a name=\"DiseasesUnspecified-aorto.47prosthesis_intestinal_fistula\"> </a></td><td>aorto/protese-instestinal fistel</td><td>aorto/protese-instestinal fistel</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">prosthetic_infection<a name=\"DiseasesUnspecified-prosthetic_infection\"> </a></td><td>proteseinfektion</td><td>proteseinfektion</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">extremity_compartment<a name=\"DiseasesUnspecified-extremity_compartment\"> </a></td><td>ekstremittets kompartment</td><td>ekstremittets kompartment</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">prolonged_intubation<a name=\"DiseasesUnspecified-prolonged_intubation\"> </a></td><td>langvarig intubation</td><td>langvarig intubation</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">retroperitoneal_fibrosis<a name=\"DiseasesUnspecified-retroperitoneal_fibrosis\"> </a></td><td>retroperitoneal fibrose</td><td>retroperitoneal fibrose</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">abdominal_compartment<a name=\"DiseasesUnspecified-abdominal_compartment\"> </a></td><td>abdominal kompartment</td><td>abdominal kompartment</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">entrapment<a name=\"DiseasesUnspecified-entrapment\"> </a></td><td>entrapment</td><td>entrapment</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">emergency_aortic_dissection<a name=\"DiseasesUnspecified-emergency_aortic_dissection\"> </a></td><td>akut aortadissektion</td><td>akut aortadissektion</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">chronic_aortic_dissection<a name=\"DiseasesUnspecified-chronic_aortic_dissection\"> </a></td><td>kronisk aortadissektion</td><td>kronisk aortadissektion</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">dissection_unspecified<a name=\"DiseasesUnspecified-dissection_unspecified\"> </a></td><td>dissektion uden nærmere specifikation</td><td>dissektion uden nærmere specifikation</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">High_grade_B_lymfom_NOS<a name=\"DiseasesUnspecified-High_grade_B_lymfom_NOS\"> </a></td><td>High-grade B-lymfom NOS</td><td>High-grade B-lymfom NOS </td><td/><td/><td/><td/></tr><tr style=\"background-color: #ffeeee\"><td>1</td><td style=\"white-space:nowrap\">Primært_kutant_CD4_positivt_små_medium_T_celle_lymfom<a name=\"DiseasesUnspecified-Prim.230rt_kutant_CD4_positivt_sm.229_medium_T_celle_lymfom\"> </a></td><td>Primært kutant CD4-positivt små/medium T-celle lymfom</td><td>Primært kutant CD4-positivt små/medium T-celle lymfom</td><td>Removed</td><td>2026-03-10T00:00:00+01:00</td><td>retired</td><td>true</td></tr><tr style=\"background-color: #ffeeee\"><td>1</td><td style=\"white-space:nowrap\">Malignt_lymfom<a name=\"DiseasesUnspecified-Malignt_lymfom\"> </a></td><td>Malignt lymfom</td><td>Malignt lymfom</td><td>Removed</td><td>2026-03-10T00:00:00+01:00</td><td>retired</td><td>true</td></tr><tr style=\"background-color: #ffeeee\"><td>1</td><td style=\"white-space:nowrap\">non-Hodgkin_malignt_lymfom<a name=\"DiseasesUnspecified-non-Hodgkin_malignt_lymfom\"> </a></td><td>non-Hodgkin malignt lymfom</td><td>non-Hodgkin malignt lymfom</td><td>Removed</td><td>2026-03-10T00:00:00+01:00</td><td>retired</td><td>true</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">ascites_lymfom<a name=\"DiseasesUnspecified-ascites_lymfom\"> </a></td><td>Ascites med lymfomceller</td><td>Ascites med lymfomceller</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">perikardieeksudat_lymfom<a name=\"DiseasesUnspecified-perikardieeksudat_lymfom\"> </a></td><td>Perikardieeksudat med lymfomceller</td><td>Perikardieeksudat med lymfomceller</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">pleuraeksudat_lymfom<a name=\"DiseasesUnspecified-pleuraeksudat_lymfom\"> </a></td><td>Pleuraeksudat med lymfomceller</td><td/><td/><td/><td/><td/></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/DiseasesUnspecified"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.0"] ;
+  fhir:CodeSystem.name [ fhir:value "DiseasesUnspecified"] ;
+  fhir:CodeSystem.title [ fhir:value "Diseases - Unspecified without a code"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2022-06-07T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Diseases - Unspecified without a code"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "146"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index 0 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "diabetes" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Diabetes" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Diabetes / Diabetes" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "heart_disease" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Heart disease" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Heart disease / Hjertesygdom" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "lung_disease" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lung disease" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Lung disease / Lungesygdom" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "al" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Akut leukæmi (AL)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Akut leumæmi (AL)" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cll" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kronisk lymfatisk leukæmi (CLL)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kronisk lymfatisk leukæmi (CLL)" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "lymfom" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lymfom (LYFO)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Lymfom (LYFO)" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "mds" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Myelodysplasi (MDS)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Myelodysplasi (MDS)" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "myeloproliferativ_sygdom" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Myeloproliferativ sygdom" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Myeloproliferativ sygdom" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "myelomatose" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Myelomatose" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Myelomatose" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "M96903" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Follikulært lymfom ukendt grad" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Follikulært lymfom ukendt grad" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "M96913" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Follikulært lymfom grad 1" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Follikulært lymfom grad 1" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "M96953" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Follikulært lymfom grad 2" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Follikulært lymfom grad 2" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "M96983" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Follikulært lymfom grad 3" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Follikulært lymfom grad 3" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "amyloidose<2012" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Amyloidose før 2012" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Amyloidose før 2012" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "all<2005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ALL før 2005" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "ALL før 2005" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "all<2000" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "AML før 2000" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "AML før 2000" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cll<2008" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CLL før 2008" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "CLL før 2008" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "hodgkin<1998" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hodgkin diagnosticeret før 1998 (2000 ØstDK)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Hodgkin diagnosticeret før 1998 (2000 ØstDK)" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "lymfom<1983" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lymfom diagnosticeret før 1983 (2000 ØstDK)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Lymfom diagnosticeret før 1983 (2000 ØstDK)" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "mds<2010" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "MDS diagnosticeret før 2010" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "MDS diagnosticeret før 2010" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "mgus<2013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "MGUS eller Amyloidose før 2013" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "MGUS eller Amyloidose før 2013" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "myelom<2005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Myelomatose diagnosticeret før 2005" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Myelomatose diagnosticeret før 2005" ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "mpn<2010" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Myeloproliferativ sygdom diagnosticeret før 2010" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Myeloproliferativ sygdom diagnosticeret før 2010" ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "leukaemi_haarcelle" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hårcelle leukæmi" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Hårcelle leukæmi" ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "lgl" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Large Granular Leukemia (LGL)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Large Granular Leukemia (LGL)" ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "t_pll" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "T-Prolymfocytleukæmi" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "T-Prolymfocytleukæmi" ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "myelodysplastic_syndrome" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Myelodysplastic syndrome" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Myelodysplastic syndrome / Myelodyspl. syndrom (undt. CMML)" ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "chronic_myelomonocytic_leukemia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Chronic myelomonocytic leukemia (CMML)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Chronic myelomonocytic leukemia / CMML (Kronisk MyeloMonocytLeuk.)" ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "essential_thrombocytosis" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Essential thrombocytosis" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Essential thrombocytosis / Ess. thrombocytose" ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "polycythemia_vera" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Polycythemia vera" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Polycythemia vera / Polycytæmia vera" ]
+  ], [
+     fhir:index 30 ;
+     fhir:CodeSystem.concept.code [ fhir:value "myelofibrosis" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Myelofibrosis" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Myelofibrosis / Myelofibrose" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.code [ fhir:value "primary" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Primary myelofibrosis" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Primary myelofibrosis / Primær Myelofibrose" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "prefibrotic" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Prefibrotic myelofibrosis" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Prefibrotic myelofibrosis / Præfibrotisk Myelofibrose" ]
+     ]
+  ], [
+     fhir:index 31 ;
+     fhir:CodeSystem.concept.code [ fhir:value "smouldering_mm" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Smouldering MM" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Smouldering MM" ]
+  ], [
+     fhir:index 32 ;
+     fhir:CodeSystem.concept.code [ fhir:value "myelomatosis" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Myelomatosis" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Myelomatosis / Myelomatose" ]
+  ], [
+     fhir:index 33 ;
+     fhir:CodeSystem.concept.code [ fhir:value "solitary_myelom_osseus" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Solitary myelom (osseus)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Solitary myelom (osseus) / Solitært myelom (ossøst)" ]
+  ], [
+     fhir:index 34 ;
+     fhir:CodeSystem.concept.code [ fhir:value "solitary_myelom_extra_osseus" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Solitary myelom (extra osseus)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Solitary myelom (extra osseus) / Solitært myelom (ekstraossøst)" ]
+  ], [
+     fhir:index 35 ;
+     fhir:CodeSystem.concept.code [ fhir:value "plasma_cell_leukemia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Plasma cell leukemia" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Plasma cell leukemia / Plasmacelleleukæmi" ]
+  ], [
+     fhir:index 36 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DD472" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Monoklonal gammopati med ubestemt signifikans (MGUS)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Monoklonal gammopati med ubestemt signifikans (MGUS)" ]
+  ], [
+     fhir:index 37 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ZM973A3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Osteosklerotisk myelom (POEMS syndrom)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Osteosklerotisk myelom (POEMS syndrom)" ]
+  ], [
+     fhir:index 38 ;
+     fhir:CodeSystem.concept.code [ fhir:value "paraprotein_associated_polyneuropathy" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Paraprotein associated polyneuropathy" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Paraprotein associated polyneuropathy / Paraprotein associeret polyneuropati" ]
+  ], [
+     fhir:index 39 ;
+     fhir:CodeSystem.concept.code [ fhir:value "chronic_myeloid_leukemia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Chronic myeloid leukemia" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Chronic myeloid leukemia / Kronisk Myeloid Leukæmi (BCR-ABL1 positiv) (CML)" ]
+  ], [
+     fhir:index 40 ;
+     fhir:CodeSystem.concept.code [ fhir:value "myeloproliferative_unclassified" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Unclassified myeloproliferative" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Unclassified myeloproliferative / Uklassificerbar Myeloproliferativ sygdom" ]
+  ], [
+     fhir:index 41 ;
+     fhir:CodeSystem.concept.code [ fhir:value "anemia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anemia" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Anemia / Anæmi" ]
+  ], [
+     fhir:index 42 ;
+     fhir:CodeSystem.concept.code [ fhir:value "thrombocytopenic_disorder" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Thrombocytopenic disorder" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Thrombocytopenic disorder / Trombocytopeni" ]
+  ], [
+     fhir:index 43 ;
+     fhir:CodeSystem.concept.code [ fhir:value "neutropenia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Neutropenia" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Neutropenia / Neutropeni" ]
+  ], [
+     fhir:index 44 ;
+     fhir:CodeSystem.concept.code [ fhir:value "alzheimers_dementia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Alzheimers demens" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Alzheimers demens" ]
+  ], [
+     fhir:index 45 ;
+     fhir:CodeSystem.concept.code [ fhir:value "lewy_body_dementia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lewy Body demens" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Lewy Body demens" ]
+  ], [
+     fhir:index 46 ;
+     fhir:CodeSystem.concept.code [ fhir:value "parkinson_dementia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Parkinson demens" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Parkinson demens" ]
+  ], [
+     fhir:index 47 ;
+     fhir:CodeSystem.concept.code [ fhir:value "vascular_dementia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vaskulær demens" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Vaskulær demens" ]
+  ], [
+     fhir:index 48 ;
+     fhir:CodeSystem.concept.code [ fhir:value "mixed_dementia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mixed demens (Alzheimers + vaskulær)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Mixed demens (Alzheimers + vaskulær)" ]
+  ], [
+     fhir:index 49 ;
+     fhir:CodeSystem.concept.code [ fhir:value "frontotemporal_dementia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Frontotemporal demens" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Frontotemporal demens" ]
+  ], [
+     fhir:index 50 ;
+     fhir:CodeSystem.concept.code [ fhir:value "atypical_parkinson_dementia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Atypisk Parkinson demens" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Atypisk Parkinson demens" ]
+  ], [
+     fhir:index 51 ;
+     fhir:CodeSystem.concept.code [ fhir:value "hydrocephalus_dementia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Normaltryks hydrocephalus demens" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Normaltryks hydrocephalus demens" ]
+  ], [
+     fhir:index 52 ;
+     fhir:CodeSystem.concept.code [ fhir:value "huntingtons_chorea_dementia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Huntingtons Chorea demens" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Huntingtons Chorea demens" ]
+  ], [
+     fhir:index 53 ;
+     fhir:CodeSystem.concept.code [ fhir:value "alchohol_dementia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Alkohol demens" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Alkohol demens" ]
+  ], [
+     fhir:index 54 ;
+     fhir:CodeSystem.concept.code [ fhir:value "neurodegenerative_dementia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Neurodegenerativ demens" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Neurodegenerativ demens" ]
+  ], [
+     fhir:index 55 ;
+     fhir:CodeSystem.concept.code [ fhir:value "not_affective_dementia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ikke-affektiv demens" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Ikke-affektiv demens" ]
+  ], [
+     fhir:index 56 ;
+     fhir:CodeSystem.concept.code [ fhir:value "affective_dementia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Affektiv demens" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Affektiv demens" ]
+  ], [
+     fhir:index 57 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ventral_hernia" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.code [ fhir:value "incisional" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Incisional" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Incisional / Incisionelt" ] ;
+       fhir:CodeSystem.concept.concept [
+         fhir:index 0 ;
+         fhir:CodeSystem.concept.code [ fhir:value "length_cicatrice" ]
+       ], [
+         fhir:index 1 ;
+         fhir:CodeSystem.concept.code [ fhir:value "cross_cicatrice" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "umbilical" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Umbilical" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Umbilical / Umbilicalt" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.code [ fhir:value "linea_alba" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Linea alba" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Linea alba" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.code [ fhir:value "spiegel" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Spiegel" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Spiegel" ]
+     ], [
+       fhir:index 4 ;
+       fhir:CodeSystem.concept.code [ fhir:value "stomi" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Stomi" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Stomi" ] ;
+       fhir:CodeSystem.concept.concept [
+         fhir:index 0 ;
+         fhir:CodeSystem.concept.code [ fhir:value "stomi_herniotomi" ] ;
+         fhir:CodeSystem.concept.display [ fhir:value "Stomi and herniotomi" ] ;
+         fhir:CodeSystem.concept.definition [ fhir:value "Stomi and herniotomi / Stomi og herniotomi" ]
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:CodeSystem.concept.code [ fhir:value "port" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Port" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Port" ]
+     ]
+  ], [
+     fhir:index 58 ;
+     fhir:CodeSystem.concept.code [ fhir:value "colostomy" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Colostomy" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Colostomy / Colostomi / SNOMED-CT: 264585001" ]
+  ], [
+     fhir:index 59 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ileostomy" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ileostomy" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Ileostomy / Ileostomi / SNOMED-CT: 264364002" ]
+  ], [
+     fhir:index 60 ;
+     fhir:CodeSystem.concept.code [ fhir:value "urologicalstomy" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Urological stomy" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Urological stomy / Urostomi / SNOMED-CT: 281601009" ]
+  ], [
+     fhir:index 61 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DC00-DC14" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kræft i læber, mundhule og svælg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kræft i læber, mundhule og svælg" ]
+  ], [
+     fhir:index 62 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DC15" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kræft i spiserøret" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kræft i spiserøret" ]
+  ], [
+     fhir:index 63 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DC16" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kræft i mavesækken" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kræft i mavesækken" ]
+  ], [
+     fhir:index 64 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DC17" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kræft i tyndtarmen" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kræft i tyndtarmen" ]
+  ], [
+     fhir:index 65 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DC18-DC20" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kræft i tyktarm og endetarm" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kræft i tyktarm og endetarm" ]
+  ], [
+     fhir:index 66 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DC22" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kræft i leveren og intrahepatiske galdegange" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kræft i leveren og intrahepatiske galdegange" ]
+  ], [
+     fhir:index 67 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DC25" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kræft i bugspytkirtlen" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kræft i bugspytkirtlen" ]
+  ], [
+     fhir:index 68 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DC32" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kræft i strubehovedet" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kræft i strubehovedet" ]
+  ], [
+     fhir:index 69 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DC33-DC34" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kræft i luftrøret og bronkier og lunge" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kræft i luftrøret og bronkier og lunge" ]
+  ], [
+     fhir:index 70 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DC43" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Modermærkekræft i huden" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Modermærkekræft i huden" ]
+  ], [
+     fhir:index 71 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DC50" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Brystkræft" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Brystkræft" ]
+  ], [
+     fhir:index 72 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DC53" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kræft i livmoderhalsen" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kræft i livmoderhalsen" ]
+  ], [
+     fhir:index 73 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DC54-DC55" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kræft i livmoderen (inkl. uspecifik)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kræft i livmoderen (inkl. uspecifik)" ]
+  ], [
+     fhir:index 74 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DC56+DC570-DC574" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kræft i æggestok og æggeleder" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kræft i æggestok og æggeleder" ]
+  ], [
+     fhir:index 75 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DC61" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kræft i blærehalskirtlen" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kræft i blærehalskirtlen" ]
+  ], [
+     fhir:index 76 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DC62" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Testikelkræft" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Testikelkræft" ]
+  ], [
+     fhir:index 77 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DC67" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kræft i urinblæren" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kræft i urinblæren" ]
+  ], [
+     fhir:index 78 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DC64-DC66" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kræft i nyre, nyrebækken og urinleder" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kræft i nyre, nyrebækken og urinleder" ]
+  ], [
+     fhir:index 79 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DC70-DC72+DC751-DC753" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kræft i centralnervesystem" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kræft i centralnervesystem" ]
+  ], [
+     fhir:index 80 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DC73" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kræft i skjoldbruskkirtlen" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kræft i skjoldbruskkirtlen" ]
+  ], [
+     fhir:index 81 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DC81" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hodgkin lymfomer" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Hodgkin lymfomer" ]
+  ], [
+     fhir:index 82 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DC82-DC85" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Non-hodking malignt lymform" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Non-hodking malignt lymform" ]
+  ], [
+     fhir:index 83 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DC90" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Maligne plasmacelle neoplasier" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Maligne plasmacelle neoplasier" ]
+  ], [
+     fhir:index 84 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DC91-DC95" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Leukæmi" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Leukæmi" ]
+  ], [
+     fhir:index 85 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DC45-DC49" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kræft i mesotel, bindevæv og andet bløddelsvæv" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kræft i mesotel, bindevæv og andet bløddelsvæv" ]
+  ], [
+     fhir:index 86 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DC76-DC80" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kræft med dårligt specificerede, sekundære og ikke specificerede lokalisationer" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kræft med dårligt specificerede, sekundære og ikke specificerede lokalisationer" ]
+  ], [
+     fhir:index 87 ;
+     fhir:CodeSystem.concept.code [ fhir:value "acute_extremity_ischaemia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "akut ekstremitetsiskæmi" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "akut ekstremitetsiskæmi" ]
+  ], [
+     fhir:index 88 ;
+     fhir:CodeSystem.concept.code [ fhir:value "amurosis_fugax" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "amaurosis fugax" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "amaurosis fugax" ]
+  ], [
+     fhir:index 89 ;
+     fhir:CodeSystem.concept.code [ fhir:value "aneurysm_asymptomatic" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "aneurisme - asymptomatisk" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "aneurisme - asymptomatisk" ]
+  ], [
+     fhir:index 90 ;
+     fhir:CodeSystem.concept.code [ fhir:value "aneurysm_symptomatic" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "aneurisme - symptomatisk" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "aneurisme - symptomatisk" ]
+  ], [
+     fhir:index 91 ;
+     fhir:CodeSystem.concept.code [ fhir:value "aneurysm_ruptured" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "aneurisme - rumperet" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "aneurisme - rumperet" ]
+  ], [
+     fhir:index 92 ;
+     fhir:CodeSystem.concept.code [ fhir:value "aneurysm_clotted" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "aneurisme - tromboseret" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "aneurisme - tromboseret" ]
+  ], [
+     fhir:index 93 ;
+     fhir:CodeSystem.concept.code [ fhir:value "aneurysm_pseudo" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "aneurisme - pseudo" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "aneurisme - pseudo" ]
+  ], [
+     fhir:index 94 ;
+     fhir:CodeSystem.concept.code [ fhir:value "aneurysm_mycotic" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "aneurisme - mykotisk" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "aneurisme - mykotisk" ]
+  ], [
+     fhir:index 95 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bleeding" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "blødning / hæmatom" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "blødning / hæmatom" ]
+  ], [
+     fhir:index 96 ;
+     fhir:CodeSystem.concept.code [ fhir:value "infection" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "infektion (ikke proteseinfektion = 55)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "infektion (ikke proteseinfektion = 55)" ]
+  ], [
+     fhir:index 97 ;
+     fhir:CodeSystem.concept.code [ fhir:value "intestinal_ischaemia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "intestinal iskæmi, angina abdominalis" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "intestinal iskæmi, angina abdominalis" ]
+  ], [
+     fhir:index 98 ;
+     fhir:CodeSystem.concept.code [ fhir:value "function_dependent_ischaemia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "funktionsbetinget iskæmi, claudicatio intermittens" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "funktionsbetinget iskæmi, claudicatio intermittens" ]
+  ], [
+     fhir:index 99 ;
+     fhir:CodeSystem.concept.code [ fhir:value "chronic_ischaemia_rest_pain" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "kronisk iskæmi - hvilesmerter" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "kronisk iskæmi - hvilesmerter" ]
+  ], [
+     fhir:index 100 ;
+     fhir:CodeSystem.concept.code [ fhir:value "chronic_ischaemia_wound" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "kronisk iskæmi - sår" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "kronisk iskæmi - sår" ]
+  ], [
+     fhir:index 101 ;
+     fhir:CodeSystem.concept.code [ fhir:value "chronic_ischaemia_gangrene" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "kronisk iskæmi - gangræn" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "kronisk iskæmi - gangræn" ]
+  ], [
+     fhir:index 102 ;
+     fhir:CodeSystem.concept.code [ fhir:value "hypertension_renovascular" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "renovaskulær hypertension" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "renovaskulær hypertension" ]
+  ], [
+     fhir:index 103 ;
+     fhir:CodeSystem.concept.code [ fhir:value "stroke" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "stroke" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "stroke" ]
+  ], [
+     fhir:index 104 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tos" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "thoracic outlet syndrom (TOS)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "thoracic outlet syndrom (TOS)" ]
+  ], [
+     fhir:index 105 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "transitorisk iskæmisk attack (TIA)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "transitorisk iskæmisk attack (TIA)" ]
+  ], [
+     fhir:index 106 ;
+     fhir:CodeSystem.concept.code [ fhir:value "trauma" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "traume" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "traume" ]
+  ], [
+     fhir:index 107 ;
+     fhir:CodeSystem.concept.code [ fhir:value "thrombosis_vascular_reconstruction" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "trombose af karrekonstruktion" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "trombose af karrekonstruktion" ]
+  ], [
+     fhir:index 108 ;
+     fhir:CodeSystem.concept.code [ fhir:value "uremia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "uræmi" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "uræmi" ]
+  ], [
+     fhir:index 109 ;
+     fhir:CodeSystem.concept.code [ fhir:value "varices" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "varicer" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "varicer" ]
+  ], [
+     fhir:index 110 ;
+     fhir:CodeSystem.concept.code [ fhir:value "vasospasms" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "vasospasme/ Raynaud" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "vasospasme/ Raynaud" ]
+  ], [
+     fhir:index 111 ;
+     fhir:CodeSystem.concept.code [ fhir:value "venus_thrombosis" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "venetrombose" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "venetrombose" ]
+  ], [
+     fhir:index 112 ;
+     fhir:CodeSystem.concept.code [ fhir:value "reconstruction_failure" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "truende rekonstruktionssvigt" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "truende rekonstruktionssvigt" ]
+  ], [
+     fhir:index 113 ;
+     fhir:CodeSystem.concept.code [ fhir:value "permanent_central_venous_access" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "permanent central venøs adgang" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "permanent central venøs adgang" ]
+  ], [
+     fhir:index 114 ;
+     fhir:CodeSystem.concept.code [ fhir:value "wound_complication" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "sårkomplikation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "sårkomplikation" ]
+  ], [
+     fhir:index 115 ;
+     fhir:CodeSystem.concept.code [ fhir:value "fascial_rupture" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "fascieruptur" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "fascieruptur" ]
+  ], [
+     fhir:index 116 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ileus" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ileus" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "ileus" ]
+  ], [
+     fhir:index 117 ;
+     fhir:CodeSystem.concept.code [ fhir:value "intestine_ischaemia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "tarmiskæmi" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "tarmiskæmi" ]
+  ], [
+     fhir:index 118 ;
+     fhir:CodeSystem.concept.code [ fhir:value "aorto/prosthesis_intestinal_fistula" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "aorto/protese-instestinal fistel" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "aorto/protese-instestinal fistel" ]
+  ], [
+     fhir:index 119 ;
+     fhir:CodeSystem.concept.code [ fhir:value "prosthetic_infection" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "proteseinfektion" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "proteseinfektion" ]
+  ], [
+     fhir:index 120 ;
+     fhir:CodeSystem.concept.code [ fhir:value "extremity_compartment" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ekstremittets kompartment" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "ekstremittets kompartment" ]
+  ], [
+     fhir:index 121 ;
+     fhir:CodeSystem.concept.code [ fhir:value "prolonged_intubation" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "langvarig intubation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "langvarig intubation" ]
+  ], [
+     fhir:index 122 ;
+     fhir:CodeSystem.concept.code [ fhir:value "retroperitoneal_fibrosis" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "retroperitoneal fibrose" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "retroperitoneal fibrose" ]
+  ], [
+     fhir:index 123 ;
+     fhir:CodeSystem.concept.code [ fhir:value "abdominal_compartment" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "abdominal kompartment" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "abdominal kompartment" ]
+  ], [
+     fhir:index 124 ;
+     fhir:CodeSystem.concept.code [ fhir:value "entrapment" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "entrapment" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "entrapment" ]
+  ], [
+     fhir:index 125 ;
+     fhir:CodeSystem.concept.code [ fhir:value "emergency_aortic_dissection" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "akut aortadissektion" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "akut aortadissektion" ]
+  ], [
+     fhir:index 126 ;
+     fhir:CodeSystem.concept.code [ fhir:value "chronic_aortic_dissection" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "kronisk aortadissektion" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "kronisk aortadissektion" ]
+  ], [
+     fhir:index 127 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dissection_unspecified" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "dissektion uden nærmere specifikation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "dissektion uden nærmere specifikation" ]
+  ], [
+     fhir:index 128 ;
+     fhir:CodeSystem.concept.code [ fhir:value "High_grade_B_lymfom_NOS" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "High-grade B-lymfom NOS" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "High-grade B-lymfom NOS " ]
+  ], [
+     fhir:index 129 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Primært_kutant_CD4_positivt_små_medium_T_celle_lymfom" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Primært kutant CD4-positivt små/medium T-celle lymfom" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Primært kutant CD4-positivt små/medium T-celle lymfom" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "comment" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Removed" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "effectiveDate" ] ;
+       fhir:CodeSystem.concept.property.valueDateTime [ fhir:value "2026-03-10T00:00:00+01:00"^^xsd:dateTime ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "status" ] ;
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "retired" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "inactive" ] ;
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ]
+  ], [
+     fhir:index 130 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Malignt_lymfom" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Malignt lymfom" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Malignt lymfom" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "comment" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Removed" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "effectiveDate" ] ;
+       fhir:CodeSystem.concept.property.valueDateTime [ fhir:value "2026-03-10T00:00:00+01:00"^^xsd:dateTime ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "status" ] ;
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "retired" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "inactive" ] ;
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ]
+  ], [
+     fhir:index 131 ;
+     fhir:CodeSystem.concept.code [ fhir:value "non-Hodgkin_malignt_lymfom" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "non-Hodgkin malignt lymfom" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "non-Hodgkin malignt lymfom" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "comment" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Removed" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "effectiveDate" ] ;
+       fhir:CodeSystem.concept.property.valueDateTime [ fhir:value "2026-03-10T00:00:00+01:00"^^xsd:dateTime ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "status" ] ;
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "retired" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "inactive" ] ;
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ]
+  ], [
+     fhir:index 132 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ascites_lymfom" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ascites med lymfomceller" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Ascites med lymfomceller" ]
+  ], [
+     fhir:index 133 ;
+     fhir:CodeSystem.concept.code [ fhir:value "perikardieeksudat_lymfom" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Perikardieeksudat med lymfomceller" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Perikardieeksudat med lymfomceller" ]
+  ], [
+     fhir:index 134 ;
+     fhir:CodeSystem.concept.code [ fhir:value "pleuraeksudat_lymfom" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pleuraeksudat med lymfomceller" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/DiseasesUnspecified.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

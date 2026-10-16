@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/FISHProcedure> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "FISHProcedure"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet FISHProcedure</b></p><a name=\"FISHProcedure\"> </a><a name=\"hcFISHProcedure\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-FISHVariables.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/FISHVariables</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-cd138_sort\">cd138_sort</a></td><td>plasmacelleindentifikation (CD138 sort)</td><td>CD138 sort</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-antibodies\">antibodies</a></td><td>plasmacelleindentifikation (antistof)</td><td>Antibodies / Antistof</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-plasma_cell_identifikation_unspecific\">plasma_cell_identifikation_unspecific</a></td><td>plasmacelleindentifikation (anden)</td><td>Plasma cell identification, unspecific / Plasmacelleidentifikation, uspecifik</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>uden plasmacelleidentifikation</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/FISHProcedure"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.0"] ;
+  fhir:ValueSet.name [ fhir:value "FISHProcedure"] ;
+  fhir:ValueSet.title [ fhir:value "FISH plasma identifikation"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-07-15T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "FISH plasma identifikation"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/FISHVariables" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "cd138_sort" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "plasmacelleindentifikation (CD138 sort)" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "antibodies" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "plasmacelleindentifikation (antistof)" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "plasma_cell_identifikation_unspecific" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "plasmacelleindentifikation (anden)" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "uden plasmacelleidentifikation" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/FISHProcedure.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

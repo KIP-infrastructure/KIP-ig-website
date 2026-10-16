@@ -1,0 +1,122 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/BehandlingAfbrudt> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "BehandlingAfbrudt"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem BehandlingAfbrudt</b></p><a name=\"BehandlingAfbrudt\"> </a><a name=\"hcBehandlingAfbrudt\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/BehandlingAfbrudt</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">transplant<a name=\"BehandlingAfbrudt-transplant\"> </a></td><td>Transplantation</td><td>Transplantation</td></tr><tr><td style=\"white-space:nowrap\">peritonitis<a name=\"BehandlingAfbrudt-peritonitis\"> </a></td><td>Peritonitis</td><td>Peritonitis</td></tr><tr><td style=\"white-space:nowrap\">ultrafilt_svigt<a name=\"BehandlingAfbrudt-ultrafilt_svigt\"> </a></td><td>Ultrafiltrationssvigt</td><td>Ultrafiltrationssvigt</td></tr><tr><td style=\"white-space:nowrap\">inadekvat_dialyse<a name=\"BehandlingAfbrudt-inadekvat_dialyse\"> </a></td><td>Inadekvat dialyse</td><td>Inadekvat dialyse</td></tr><tr><td style=\"white-space:nowrap\">hernia<a name=\"BehandlingAfbrudt-hernia\"> </a></td><td>Hernia (inkl Diafragma)</td><td>Hernia (inkl Diafragma)</td></tr><tr><td style=\"white-space:nowrap\">teknisk<a name=\"BehandlingAfbrudt-teknisk\"> </a></td><td>Teknisk (fx kateterproblem)</td><td>Teknisk (fx kateterproblem)</td></tr><tr><td style=\"white-space:nowrap\">anden_medicinsk<a name=\"BehandlingAfbrudt-anden_medicinsk\"> </a></td><td>Andre medicinske årsager (fx apopleksi)</td><td>Andre medicinske årsager (fx apopleksi)</td></tr><tr><td style=\"white-space:nowrap\">patient_valg<a name=\"BehandlingAfbrudt-patient_valg\"> </a></td><td>Patient valg</td><td>Patient valg</td></tr><tr><td style=\"white-space:nowrap\">socialt<a name=\"BehandlingAfbrudt-socialt\"> </a></td><td>Socialt</td><td>Socialt</td></tr><tr><td style=\"white-space:nowrap\">abdominal_op<a name=\"BehandlingAfbrudt-abdominal_op\"> </a></td><td>Abdominal operation</td><td>Abdominal operation</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/BehandlingAfbrudt"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.0"] ;
+  fhir:CodeSystem.name [ fhir:value "BehandlingAfbrudt"] ;
+  fhir:CodeSystem.title [ fhir:value "Behandling afbrudt/ophørt"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2024-01-10T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Årsager til behandling eller forløb er afbrudt/ophørt"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "10"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index 0 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "transplant" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Transplantation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Transplantation" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "peritonitis" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Peritonitis" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Peritonitis" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ultrafilt_svigt" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ultrafiltrationssvigt" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Ultrafiltrationssvigt" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "inadekvat_dialyse" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Inadekvat dialyse" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Inadekvat dialyse" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "hernia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hernia (inkl Diafragma)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Hernia (inkl Diafragma)" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "teknisk" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Teknisk (fx kateterproblem)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Teknisk (fx kateterproblem)" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "anden_medicinsk" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Andre medicinske årsager (fx apopleksi)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Andre medicinske årsager (fx apopleksi)" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "patient_valg" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient valg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Patient valg" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "socialt" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Socialt" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Socialt" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "abdominal_op" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Abdominal operation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Abdominal operation" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/BehandlingAfbrudt.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

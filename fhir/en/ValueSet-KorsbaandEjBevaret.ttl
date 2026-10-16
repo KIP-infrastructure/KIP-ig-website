@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/KorsbaandEjBevaret> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "KorsbaandEjBevaret"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KorsbaandEjBevaret</b></p><a name=\"KorsbaandEjBevaret\"> </a><a name=\"hcKorsbaandEjBevaret\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-KorsbaandEjBevaret.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/KorsbaandEjBevaret</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-KorsbaandEjBevaret.html#KorsbaandEjBevaret-ofret\">ofret</a></td><td>Ofret ved kirurgi</td><td>Ofret ved kirurgi</td></tr><tr><td><a href=\"CodeSystem-KorsbaandEjBevaret.html#KorsbaandEjBevaret-fravaerende\">fravaerende</a></td><td>Fraværende</td><td>Fraværende</td></tr><tr><td><a href=\"CodeSystem-KorsbaandEjBevaret.html#KorsbaandEjBevaret-beskadiget\">beskadiget</a></td><td>Beskadiget</td><td>Beskadiget</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/KorsbaandEjBevaret"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.0"] ;
+  fhir:ValueSet.name [ fhir:value "KorsbaandEjBevaret"] ;
+  fhir:ValueSet.title [ fhir:value "Korsbånd ikke bevaret"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2023-12-18T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Korsbånd ikke bevaret efter operation"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/KorsbaandEjBevaret" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ofret" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ofret ved kirurgi" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "fravaerende" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fraværende" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "beskadiget" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Beskadiget" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/KorsbaandEjBevaret.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

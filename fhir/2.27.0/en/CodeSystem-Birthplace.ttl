@@ -1,0 +1,129 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/Birthplace> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "Birthplace"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem Birthplace</b></p><a name=\"Birthplace\"> </a><a name=\"hcBirthplace\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/Birthplace</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">DK<a name=\"Birthplace-DK\"> </a></td><td>Denmark</td><td>Denmark / Danmark</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">GL<a name=\"Birthplace-GL\"> </a></td><td>Greenland</td><td>Greenland / Grønland</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">IR<a name=\"Birthplace-IR\"> </a></td><td>Iran</td><td>Iran</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">eastern_europe<a name=\"Birthplace-eastern_europe\"> </a></td><td>Eastern Europe</td><td>Eastern Europe / Østeuropa</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">west<a name=\"Birthplace-west\"> </a></td><td>West</td><td>West / Vesten</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">middle_east<a name=\"Birthplace-middle_east\"> </a></td><td>Middle East</td><td>Middle East / Mellemøsten</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">far_east<a name=\"Birthplace-far_east\"> </a></td><td>Far East</td><td>Far East / Fjernøsten</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">africa<a name=\"Birthplace-africa\"> </a></td><td>Africa</td><td>Africa / Afrika</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  north_africa<a name=\"Birthplace-north_africa\"> </a></td><td>North Africa</td><td>North Africa / Nordafrika</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">rest_of_world<a name=\"Birthplace-rest_of_world\"> </a></td><td>Rest of World</td><td>Rest of World / Resten af verden</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">abroad<a name=\"Birthplace-abroad\"> </a></td><td>Abroad</td><td>Abroad / Udlandet</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/Birthplace"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.0"] ;
+  fhir:CodeSystem.name [ fhir:value "Birthplace"] ;
+  fhir:CodeSystem.title [ fhir:value "Birthplace"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2022-09-30T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Birthplace"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "11"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DK" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Denmark" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Denmark / Danmark" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "GL" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Greenland" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Greenland / Grønland" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IR" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Iran" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Iran" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "eastern_europe" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Eastern Europe" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Eastern Europe / Østeuropa" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "west" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "West" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "West / Vesten" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "middle_east" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Middle East" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Middle East / Mellemøsten" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "far_east" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Far East" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Far East / Fjernøsten" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "africa" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Africa" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Africa / Afrika" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "north_africa" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "North Africa" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "North Africa / Nordafrika" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "rest_of_world" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rest of World" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Rest of World / Resten af verden" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "abroad" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Abroad" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Abroad / Udlandet" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/Birthplace.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

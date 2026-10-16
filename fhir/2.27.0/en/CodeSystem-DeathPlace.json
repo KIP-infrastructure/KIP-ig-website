@@ -1,0 +1,78 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "DeathPlace",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DeathPlace</b></p><a name=\"DeathPlace\"> </a><a name=\"hcDeathPlace\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/DeathPlace</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">home<a name=\"DeathPlace-home\"> </a></td><td>Home</td><td>Home / Hjemmet</td></tr><tr><td style=\"white-space:nowrap\">palliative<a name=\"DeathPlace-palliative\"> </a></td><td>This palliative department</td><td>This palliative department / I denne palliative afdeling</td></tr><tr><td style=\"white-space:nowrap\">other_palliative<a name=\"DeathPlace-other_palliative\"> </a></td><td>Other palliative department</td><td>Other palliative department / I anden palliativ afdeling</td></tr><tr><td style=\"white-space:nowrap\">non_palliative<a name=\"DeathPlace-non_palliative\"> </a></td><td/><td>Ikke-palliativ sygehusafdeling</td></tr><tr><td style=\"white-space:nowrap\">relief_area<a name=\"DeathPlace-relief_area\"> </a></td><td/><td>Aflastningsplads</td></tr></table></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/CodeSystem/DeathPlace",
+  "version" : "2.27.0",
+  "name" : "DeathPlace",
+  "title" : "Place of death",
+  "status" : "active",
+  "date" : "2022-08-23T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Place of death",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 5,
+  "property" : [{
+    "code" : "comment",
+    "uri" : "http://hl7.org/fhir/concept-properties#comment",
+    "description" : "A string that provides additional detail pertinent to the use or understanding of the concept",
+    "type" : "string"
+  },
+  {
+    "code" : "effectiveDate",
+    "uri" : "http://hl7.org/fhir/concept-properties#effectiveDate",
+    "description" : "The date at which the concept status was last changed",
+    "type" : "dateTime"
+  },
+  {
+    "code" : "status",
+    "uri" : "http://hl7.org/fhir/concept-properties#status",
+    "description" : "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired",
+    "type" : "code"
+  },
+  {
+    "code" : "inactive",
+    "uri" : "http://hl7.org/fhir/concept-properties#inactive",
+    "description" : "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive",
+    "type" : "boolean"
+  }],
+  "concept" : [{
+    "code" : "home",
+    "display" : "Home",
+    "definition" : "Home / Hjemmet"
+  },
+  {
+    "code" : "palliative",
+    "display" : "This palliative department",
+    "definition" : "This palliative department / I denne palliative afdeling"
+  },
+  {
+    "code" : "other_palliative",
+    "display" : "Other palliative department",
+    "definition" : "Other palliative department / I anden palliativ afdeling"
+  },
+  {
+    "code" : "non_palliative",
+    "definition" : "Ikke-palliativ sygehusafdeling"
+  },
+  {
+    "code" : "relief_area",
+    "definition" : "Aflastningsplads"
+  }]
+}

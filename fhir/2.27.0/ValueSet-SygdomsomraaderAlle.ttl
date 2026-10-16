@@ -1,0 +1,158 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/SygdomsomraaderAlle> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "SygdomsomraaderAlle"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SygdomsomraaderAlle</b></p><a name=\"SygdomsomraaderAlle\"> </a><a name=\"hcSygdomsomraaderAlle\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Sygdomsomraader.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Sygdomsomraader</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-ald\">ald</a></td><td>ALD</td><td>Dansk Akut Leukæmi Database</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-cll\">cll</a></td><td>CLL</td><td>Dansk Kronisk Lymfatisk Leukæmi Database</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-dad\">dad</a></td><td>DAD</td><td>Dansk Anæstesi Database</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-damyda\">damyda</a></td><td>DAMYDA</td><td>Dansk Myelomatose Database</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-danaks\">danaks</a></td><td>DANAKS</td><td>Dansk Register for Akut Koronart Syndrom</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-danarrest\">danarrest</a></td><td>DANARREST</td><td>DANARREST - Registrering af hjertestop på hospital</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-dandem\">dandem</a></td><td>DANDEM</td><td>Dansk Klinisk Kvalitetsdatabase for Demens</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-danstroke\">danstroke</a></td><td>DANSTROKE</td><td>Dansk Stroke Register</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-dccg\">dccg</a></td><td>DCCG</td><td>Dansk Kolorektal Cancer Database</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-degc\">degc</a></td><td>DEGC</td><td>Dansk EsophagoGastrisk Cancer Gruppe database</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-dhd\">dhd</a></td><td>DHD</td><td>Dansk Hjertesvigts Database</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-dhdb\">dhdb</a></td><td>DHDB</td><td>Dansk Hernie Database</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-dhr\">dhr</a></td><td>DHR</td><td>Dansk Hoftealloplastik Register</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-dkr\">dkr</a></td><td>DKR</td><td>Dansk Knæalloplastik Register</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-dkrr\">dkrr</a></td><td>DKRR</td><td>Dansk Korsbåndsregister</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-dmpn\">dmpn</a></td><td>DMPN</td><td>Dansk Database for Kroniske Myeloproliferative Neoplasier</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-dnsl\">dnsl</a></td><td>DNSL</td><td>Dansk Nefrologisk Selskabs Landsregister</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-dpd\">dpd</a></td><td>DPD</td><td>Dansk Palliativ Database</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-dsr\">dsr</a></td><td>DSR</td><td>Dansk Skulderalloplastik Register</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-dts\">dts</a></td><td>DTS</td><td>Dansk Tarmkræftscreeningsdataabase</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-duga\">duga</a></td><td>DUGA</td><td>Dansk Urogynækologisk Database</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-hofter\">hofter</a></td><td>HOFTER</td><td>Dansk Tværfagligt Register for Hoftenære Lårbensbrud</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-kar\">kar</a></td><td>KAR</td><td>Landsregistret Karbase</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-lyfo\">lyfo</a></td><td>LYFO</td><td>Dansk Lymfom Database</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-mds\">mds</a></td><td>MDS</td><td>Myelodysplastisk Neoplasi Database</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-retspsyk\">retspsyk</a></td><td>RETSPSYK</td><td>Dansk Retspsykiatrisk Database</td></tr><tr><td><a href=\"CodeSystem-Sygdomsomraader.html#Sygdomsomraader-hemgenix\">hemgenix</a></td><td>HEMGENIX (Amgros)</td><td>Amgros – Hemgenix, effektmål til kontrakt</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/SygdomsomraaderAlle"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.0"] ;
+  fhir:ValueSet.name [ fhir:value "SygdomsomraaderAlle"] ;
+  fhir:ValueSet.title [ fhir:value "Sygdomsområder - alle"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2023-05-10T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Alle Sygdomsområder i KIP"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/Sygdomsomraader" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ald" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ALD" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "cll" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CLL" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "dad" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "DAD" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "damyda" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "DAMYDA" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "danaks" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "DANAKS" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "danarrest" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "DANARREST" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "dandem" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "DANDEM" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "danstroke" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "DANSTROKE" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "dccg" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "DCCG" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "degc" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "DEGC" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "dhd" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "DHD" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "dhdb" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "DHDB" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "dhr" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "DHR" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "dkr" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "DKR" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "dkrr" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "DKRR" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "dmpn" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "DMPN" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "dnsl" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "DNSL" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "dpd" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "DPD" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "dsr" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "DSR" ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "dts" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "DTS" ]
+       ], [
+         fhir:index 20 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "duga" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "DUGA" ]
+       ], [
+         fhir:index 21 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "hofter" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HOFTER" ]
+       ], [
+         fhir:index 22 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "kar" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "KAR" ]
+       ], [
+         fhir:index 23 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "lyfo" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "LYFO" ]
+       ], [
+         fhir:index 24 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "mds" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "MDS" ]
+       ], [
+         fhir:index 25 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "retspsyk" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "RETSPSYK" ]
+       ], [
+         fhir:index 26 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "hemgenix" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HEMGENIX (Amgros)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/SygdomsomraaderAlle.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

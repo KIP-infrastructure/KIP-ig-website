@@ -1,0 +1,110 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/DiagnoseDANDEM> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "DiagnoseDANDEM"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet DiagnoseDANDEM</b></p><a name=\"DiagnoseDANDEM\"> </a><a name=\"hcDiagnoseDANDEM\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-DiseasesUnspecified.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/DiseasesUnspecified</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-alzheimers_dementia\">alzheimers_dementia</a></td><td>Alzheimer sygdom</td><td>Alzheimers demens</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-lewy_body_dementia\">lewy_body_dementia</a></td><td>Lewy Body sygdom</td><td>Lewy Body demens</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-parkinson_dementia\">parkinson_dementia</a></td><td>Parkinson sygdom</td><td>Parkinson demens</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-vascular_dementia\">vascular_dementia</a></td><td>Cerebrovaskulær sygdom </td><td>Vaskulær demens</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-mixed_dementia\">mixed_dementia</a></td><td>Mixed (Alzheimer + Cerebrovaskulær)</td><td>Mixed demens (Alzheimers + vaskulær)</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-frontotemporal_dementia\">frontotemporal_dementia</a></td><td>Frontotemporal demens</td><td>Frontotemporal demens</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-atypical_parkinson_dementia\">atypical_parkinson_dementia</a></td><td>Atypisk Parkinson (MSA, CBS, PSP)</td><td>Atypisk Parkinson demens</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-hydrocephalus_dementia\">hydrocephalus_dementia</a></td><td>Normaltryks hydrocephalus (NPH)</td><td>Normaltryks hydrocephalus demens</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-huntingtons_chorea_dementia\">huntingtons_chorea_dementia</a></td><td>Huntingtons sygdom</td><td>Huntingtons Chorea demens</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-alchohol_dementia\">alchohol_dementia</a></td><td>Alkohol</td><td>Alkohol demens</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-neurodegenerative_dementia\">neurodegenerative_dementia</a></td><td>Anden specifik neurodegenerativ sygdom</td><td>Neurodegenerativ demens</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-not_affective_dementia\">not_affective_dementia</a></td><td>Anden ikke neurodegenerativ sygdom</td><td>Ikke-affektiv demens</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-affective_dementia\">affective_dementia</a></td><td>Psykiatrisk sygdom</td><td>Affektiv demens</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-uncercertain\">uncercertain</a></td><td>Uafklaret ætiologi</td><td>Uncertain / SNOMED-CT: 64957009</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/DiagnoseDANDEM"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.0"] ;
+  fhir:ValueSet.name [ fhir:value "DiagnoseDANDEM"] ;
+  fhir:ValueSet.title [ fhir:value "Diagnose (DANDEM)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-07-19T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Diagnose (DANDEM)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/DiseasesUnspecified" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "alzheimers_dementia" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alzheimer sygdom" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "lewy_body_dementia" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lewy Body sygdom" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "parkinson_dementia" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Parkinson sygdom" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "vascular_dementia" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cerebrovaskulær sygdom " ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "mixed_dementia" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mixed (Alzheimer + Cerebrovaskulær)" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "frontotemporal_dementia" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Frontotemporal demens" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "atypical_parkinson_dementia" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Atypisk Parkinson (MSA, CBS, PSP)" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "hydrocephalus_dementia" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Normaltryks hydrocephalus (NPH)" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "huntingtons_chorea_dementia" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Huntingtons sygdom" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "alchohol_dementia" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alkohol" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "neurodegenerative_dementia" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anden specifik neurodegenerativ sygdom" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "not_affective_dementia" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anden ikke neurodegenerativ sygdom" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "affective_dementia" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Psykiatrisk sygdom" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "uncercertain" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Uafklaret ætiologi" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/DiagnoseDANDEM.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

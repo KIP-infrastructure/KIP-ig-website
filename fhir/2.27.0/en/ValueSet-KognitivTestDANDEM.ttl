@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/KognitivTestDANDEM> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "KognitivTestDANDEM"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KognitivTestDANDEM</b></p><a name=\"KognitivTestDANDEM\"> </a><a name=\"hcKognitivTestDANDEM\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-CognitiveTest.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/CognitiveTest</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-CognitiveTest.html#CognitiveTest-mmse\">mmse</a></td><td>MMSE</td><td>MMSE</td></tr><tr><td><a href=\"CodeSystem-CognitiveTest.html#CognitiveTest-ace\">ace</a></td><td>ACE</td><td>ACE</td></tr><tr><td><a href=\"CodeSystem-CognitiveTest.html#CognitiveTest-basic\">basic</a></td><td>BASIC</td><td>BASIC</td></tr><tr><td><a href=\"CodeSystem-CognitiveTest.html#CognitiveTest-camcog\">camcog</a></td><td>CAMcog</td><td>CAMcog</td></tr><tr><td><a href=\"CodeSystem-CognitiveTest.html#CognitiveTest-moca\">moca</a></td><td>MoCa</td><td>MoCa</td></tr><tr><td><a href=\"CodeSystem-CognitiveTest.html#CognitiveTest-rudas\">rudas</a></td><td>RUDAS</td><td>RUDAS</td></tr><tr><td><a href=\"CodeSystem-CognitiveTest.html#CognitiveTest-MCE\">MCE</a></td><td>MCE</td><td>MCE</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/KognitivTestDANDEM"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.0"] ;
+  fhir:ValueSet.name [ fhir:value "KognitivTestDANDEM"] ;
+  fhir:ValueSet.title [ fhir:value "Kognitiv test (DANDEM)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2025-05-09T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Kognitiv test (DANDEM)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/CognitiveTest" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "mmse" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "MMSE" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ace" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ACE" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "basic" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "BASIC" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "camcog" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CAMcog" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "moca" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "MoCa" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "rudas" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "RUDAS" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "MCE" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "MCE" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/KognitivTestDANDEM.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

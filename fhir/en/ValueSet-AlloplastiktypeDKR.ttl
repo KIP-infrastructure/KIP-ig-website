@@ -1,0 +1,95 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/AlloplastiktypeDKR> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "AlloplastiktypeDKR"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet AlloplastiktypeDKR</b></p><a name=\"AlloplastiktypeDKR\"> </a><a name=\"hcAlloplastiktypeDKR\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-AlloplastyTypes.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/AlloplastyTypes</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-AlloplastyTypes.html#AlloplastyTypes-total_alloplasty\">total_alloplasty</a></td><td>Totalalloplastik</td><td>Total alloplasty</td></tr><tr><td><a href=\"CodeSystem-AlloplastyTypes.html#AlloplastyTypes-medial_unilateral_knee\">medial_unilateral_knee</a></td><td>Medial UKA</td><td>Medial UKA</td></tr><tr><td><a href=\"CodeSystem-AlloplastyTypes.html#AlloplastyTypes-lateral_unitaleral_knee\">lateral_unitaleral_knee</a></td><td>Lateral UKA</td><td>Lateral UKA</td></tr><tr><td><a href=\"CodeSystem-AlloplastyTypes.html#AlloplastyTypes-patellofemoral_unitaleral_knee\">patellofemoral_unitaleral_knee</a></td><td>Patellofemoral UKA</td><td>Patellofemoral UKA</td></tr><tr><td><a href=\"CodeSystem-AlloplastyTypes.html#AlloplastyTypes-hinge_knee\">hinge_knee</a></td><td>Roterende hængselalloplastik</td><td>Roterende hængselalloplastik</td></tr><tr><td><a href=\"CodeSystem-AlloplastyTypes.html#AlloplastyTypes-hinge_knee_resection\">hinge_knee_resection</a></td><td>Roterende hængselsalloplastik m. kondylresektion</td><td>Roterende hængselsalloplastik m. kondylresektion</td></tr><tr><td><a href=\"CodeSystem-AlloplastyTypes.html#AlloplastyTypes-partial_resurfacing\">partial_resurfacing</a></td><td>Partiel resurfacing</td><td>Partiel resurfacing</td></tr><tr><td><a href=\"CodeSystem-AlloplastyTypes.html#AlloplastyTypes-cement_spacer_articulated\">cement_spacer_articulated</a></td><td>Spacer, artikuleret</td><td>Cementspacer, artikuleret</td></tr><tr><td><a href=\"CodeSystem-AlloplastyTypes.html#AlloplastyTypes-cement_spacer_fixated\">cement_spacer_fixated</a></td><td>Spacer, fikseret</td><td>Cementspacer, fikseret</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/AlloplastiktypeDKR"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.0"] ;
+  fhir:ValueSet.name [ fhir:value "AlloplastiktypeDKR"] ;
+  fhir:ValueSet.title [ fhir:value "Alloplastiktype (DKR)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-10-13T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Alloplastiktype (DKR)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/AlloplastyTypes" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "total_alloplasty" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Totalalloplastik" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "medial_unilateral_knee" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medial UKA" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "lateral_unitaleral_knee" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lateral UKA" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "patellofemoral_unitaleral_knee" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patellofemoral UKA" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "hinge_knee" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Roterende hængselalloplastik" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "hinge_knee_resection" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Roterende hængselsalloplastik m. kondylresektion" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "partial_resurfacing" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Partiel resurfacing" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "cement_spacer_articulated" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spacer, artikuleret" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "cement_spacer_fixated" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spacer, fikseret" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Andet" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/AlloplastiktypeDKR.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

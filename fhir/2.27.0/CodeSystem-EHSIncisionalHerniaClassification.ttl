@@ -1,0 +1,157 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/EHSIncisionalHerniaClassification> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "EHSIncisionalHerniaClassification"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem EHSIncisionalHerniaClassification</b></p><a name=\"EHSIncisionalHerniaClassification\"> </a><a name=\"hcEHSIncisionalHerniaClassification\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/EHSIncisionalHerniaClassification</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">m1<a name=\"EHSIncisionalHerniaClassification-m1\"> </a></td><td>M1</td><td>M1 - Subxiphoidal</td></tr><tr><td style=\"white-space:nowrap\">m2<a name=\"EHSIncisionalHerniaClassification-m2\"> </a></td><td>M2</td><td>M2 - Epigastric</td></tr><tr><td style=\"white-space:nowrap\">m3<a name=\"EHSIncisionalHerniaClassification-m3\"> </a></td><td>M3</td><td>M3 - Umbilical</td></tr><tr><td style=\"white-space:nowrap\">m4<a name=\"EHSIncisionalHerniaClassification-m4\"> </a></td><td>M4</td><td>M4 - Infraumbilical</td></tr><tr><td style=\"white-space:nowrap\">m5<a name=\"EHSIncisionalHerniaClassification-m5\"> </a></td><td>M5</td><td>M5 - Suprapubic</td></tr><tr><td style=\"white-space:nowrap\">l1<a name=\"EHSIncisionalHerniaClassification-l1\"> </a></td><td>L1</td><td>L1 - Subcostal</td></tr><tr><td style=\"white-space:nowrap\">l2<a name=\"EHSIncisionalHerniaClassification-l2\"> </a></td><td>L2</td><td>L2 - Flank</td></tr><tr><td style=\"white-space:nowrap\">l3<a name=\"EHSIncisionalHerniaClassification-l3\"> </a></td><td>L3</td><td>L3 - Iliac</td></tr><tr><td style=\"white-space:nowrap\">l4<a name=\"EHSIncisionalHerniaClassification-l4\"> </a></td><td>L4</td><td>L4 - Lumbar</td></tr><tr><td style=\"white-space:nowrap\">l1l<a name=\"EHSIncisionalHerniaClassification-l1l\"> </a></td><td>L1</td><td>L1 - Subcostal (Left)</td></tr><tr><td style=\"white-space:nowrap\">l2l<a name=\"EHSIncisionalHerniaClassification-l2l\"> </a></td><td>L2</td><td>L2 - Flank (Left)</td></tr><tr><td style=\"white-space:nowrap\">l3l<a name=\"EHSIncisionalHerniaClassification-l3l\"> </a></td><td>L3</td><td>L3 - Iliac (Left)</td></tr><tr><td style=\"white-space:nowrap\">l4l<a name=\"EHSIncisionalHerniaClassification-l4l\"> </a></td><td>L4</td><td>L4 - Lumbar (Left)</td></tr><tr><td style=\"white-space:nowrap\">l1r<a name=\"EHSIncisionalHerniaClassification-l1r\"> </a></td><td>L1</td><td>L1 - Subcostal (Right)</td></tr><tr><td style=\"white-space:nowrap\">l2r<a name=\"EHSIncisionalHerniaClassification-l2r\"> </a></td><td>L2</td><td>L2 - Flank (Right)</td></tr><tr><td style=\"white-space:nowrap\">l3r<a name=\"EHSIncisionalHerniaClassification-l3r\"> </a></td><td>L3</td><td>L3 - Iliac (Right)</td></tr><tr><td style=\"white-space:nowrap\">l4r<a name=\"EHSIncisionalHerniaClassification-l4r\"> </a></td><td>L4</td><td>L4 - Lumbar (Right)</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/EHSIncisionalHerniaClassification"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.0"] ;
+  fhir:CodeSystem.name [ fhir:value "EHSIncisionalHerniaClassification"] ;
+  fhir:CodeSystem.title [ fhir:value "EHS - Incisional hernia classification"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2022-06-28T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "EHS (European Hernia Society) - Incisional hernia classification; Link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2719726/"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "17"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index 0 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "m1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "M1" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "M1 - Subxiphoidal" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "m2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "M2" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "M2 - Epigastric" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "m3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "M3" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "M3 - Umbilical" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "m4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "M4" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "M4 - Infraumbilical" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "m5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "M5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "M5 - Suprapubic" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "l1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "L1" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "L1 - Subcostal" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "l2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "L2" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "L2 - Flank" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "l3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "L3" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "L3 - Iliac" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "l4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "L4" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "L4 - Lumbar" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "l1l" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "L1" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "L1 - Subcostal (Left)" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "l2l" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "L2" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "L2 - Flank (Left)" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "l3l" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "L3" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "L3 - Iliac (Left)" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "l4l" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "L4" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "L4 - Lumbar (Left)" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "l1r" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "L1" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "L1 - Subcostal (Right)" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "l2r" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "L2" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "L2 - Flank (Right)" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "l3r" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "L3" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "L3 - Iliac (Right)" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "l4r" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "L4" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "L4 - Lumbar (Right)" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/EHSIncisionalHerniaClassification.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

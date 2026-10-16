@@ -1,0 +1,142 @@
+# Histologisk klassifikation (fordøjelsessystemet) - KIP Infrastructure v2.27.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Histologisk klassifikation (fordøjelsessystemet)**
+
+## CodeSystem: Histologisk klassifikation (fordøjelsessystemet) 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/TumorClassificationHistology | *Version*:2.27.0 |
+| Active as of 2022-05-31 | *Computable Name*:TumorClassificationHistology |
+
+ 
+Tumor klassificeres histologisk jvf. WHO Classification of Tumours of the Digestive System. Link: https://dccg.dk/wp-content/uploads/2017/08/Tumorklassifikation.pdf 
+
+This Code system is referenced in the definition of the following value sets:
+
+* [Tumorklassifikation](ValueSet-TumorklassifikationBehandlingDEGC.md)
+* [Tumorklassifikation [DEGC]](ValueSet-TumorklassifikationDEGC.md)
+* [Tumorklassifikation](ValueSet-TumorklassifikationDiagnoseDEGC.md)
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "CodeSystem",
+  "id" : "TumorClassificationHistology",
+  "url" : "https://kip.rkkp.dk/fhir/CodeSystem/TumorClassificationHistology",
+  "version" : "2.27.0",
+  "name" : "TumorClassificationHistology",
+  "title" : "Histologisk\tklassifikation (fordøjelsessystemet)",
+  "status" : "active",
+  "date" : "2022-05-31T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Tumor klassificeres histologisk jvf. WHO Classification of Tumours of the Digestive System. Link: https://dccg.dk/wp-content/uploads/2017/08/Tumorklassifikation.pdf",
+  "content" : "complete",
+  "count" : 12,
+  "property" : [{
+    "code" : "comment",
+    "uri" : "http://hl7.org/fhir/concept-properties#comment",
+    "description" : "A string that provides additional detail pertinent to the use or understanding of the concept",
+    "type" : "string"
+  },
+  {
+    "code" : "effectiveDate",
+    "uri" : "http://hl7.org/fhir/concept-properties#effectiveDate",
+    "description" : "The date at which the concept status was last changed",
+    "type" : "dateTime"
+  },
+  {
+    "code" : "status",
+    "uri" : "http://hl7.org/fhir/concept-properties#status",
+    "description" : "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired",
+    "type" : "code"
+  },
+  {
+    "code" : "inactive",
+    "uri" : "http://hl7.org/fhir/concept-properties#inactive",
+    "description" : "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive",
+    "type" : "boolean"
+  }],
+  "concept" : [{
+    "code" : "adenocarcinoma",
+    "display" : "Adenokarcinom",
+    "definition" : "Adenokarcinom",
+    "concept" : [{
+      "code" : "glandular",
+      "display" : "Adenokarcinom (glandulær)",
+      "definition" : "Adenokarcinom af glandulær type"
+    },
+    {
+      "code" : "lowdifferentiated",
+      "display" : "Adenokarcinom (lavt differentieret)",
+      "definition" : "Lavt differentieret adenokarcinom"
+    },
+    {
+      "code" : "mucinous",
+      "display" : "Adenokarcinom (mucinøst)",
+      "definition" : "Mucinøst adenokarcinom (> 50% af tumorarealet udgøres af mucin)"
+    }]
+  },
+  {
+    "code" : "carcinoma",
+    "display" : "Karcinom",
+    "definition" : "Karcinom",
+    "concept" : [{
+      "code" : "signetringcell",
+      "display" : "Signetringscelle karcinom",
+      "definition" : "Signetringscelle karcinom (> 50% af tumorcellerne er signetringsceller)"
+    },
+    {
+      "code" : "planocellular",
+      "display" : "Planocellulært karcinom",
+      "definition" : "Planocellulært karcinom"
+    },
+    {
+      "code" : "adenoquamous",
+      "display" : "Adenoskvamøst karcinom",
+      "definition" : "Adenoskvamøst karcinom"
+    },
+    {
+      "code" : "undifferentiated",
+      "display" : "Udifferentieret karcinom",
+      "definition" : "Udifferentieret karcinom"
+    },
+    {
+      "code" : "medullary",
+      "display" : "Medullært karcinom",
+      "definition" : "Medullært karcinom"
+    },
+    {
+      "code" : "other",
+      "display" : "Anden type karcinom",
+      "definition" : "Anden type karcinom"
+    },
+    {
+      "code" : "noresidualtumor",
+      "display" : "Ingen resttumor",
+      "definition" : "Ingen resttumor"
+    }]
+  }]
+}
+
+```

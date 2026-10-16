@@ -1,0 +1,130 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/ICRSGradingSystem> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ICRSGradingSystem"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ICRSGradingSystem</b></p><a name=\"ICRSGradingSystem\"> </a><a name=\"hcICRSGradingSystem\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/ICRSGradingSystem</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">grade_0<a name=\"ICRSGradingSystem-grade_0\"> </a></td><td>Grade 0: Normal</td><td>Grade 0: Normal</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">grade_1<a name=\"ICRSGradingSystem-grade_1\"> </a></td><td>Grade 1: Nearly normal, superficial lesions</td><td>Grade 1: Nearly normal, superficial lesions</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  grade_1a<a name=\"ICRSGradingSystem-grade_1a\"> </a></td><td>Grade 1A: Soft indentations</td><td>Grade 1A: Soft indentations</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  grade_1b<a name=\"ICRSGradingSystem-grade_1b\"> </a></td><td>Grade 1B: Superficial fissures and cracks</td><td>Grade 1B: Superficial fissures and cracks</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">grade_2<a name=\"ICRSGradingSystem-grade_2\"> </a></td><td>Grade 2: Abnormal</td><td>Grade 2: Abnormal, lesiosn extending down to &lt;50% of cartilage depth</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">grade_3<a name=\"ICRSGradingSystem-grade_3\"> </a></td><td>Grade 3: Severely abnormal</td><td>Grade 3: Severely abnormal, cartilage defects extending down &gt;50% of cartilage depth</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  grade_3a<a name=\"ICRSGradingSystem-grade_3a\"> </a></td><td>Grade 3A: Severely abnormal</td><td>Grade 3A: Cartilage defects extending down &gt;50% of cartilage depth...</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  grade_3b<a name=\"ICRSGradingSystem-grade_3b\"> </a></td><td>Grade 3B: Severely abnormal</td><td>Grade 3B: ...as well as down to calcified layer...</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  grade_3c<a name=\"ICRSGradingSystem-grade_3c\"> </a></td><td>Grade 3C: Severely abnormal</td><td>Grade 3C: ...and down to but not through the sunchondral bone.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  grade_3d<a name=\"ICRSGradingSystem-grade_3d\"> </a></td><td>Grade 3D: Severely abnormal</td><td>Grade 3D: Blisters are included in this grade.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">grade_4<a name=\"ICRSGradingSystem-grade_4\"> </a></td><td>Grade 4: Severely abnormal</td><td>Grade 4: Severely abnormal</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/ICRSGradingSystem"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.0"] ;
+  fhir:CodeSystem.name [ fhir:value "ICRSGradingSystem"] ;
+  fhir:CodeSystem.title [ fhir:value "ICRS grading system"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2022-09-19T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "ICRS grading system; Link: https://www.researchgate.net/figure/The-International-Cartilage-Repair-Society-ICRS-Cartilage-Lesion-Classification-System_fig2_224847959"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "11"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "grade_0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Grade 0: Normal" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Grade 0: Normal" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "grade_1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Grade 1: Nearly normal, superficial lesions" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Grade 1: Nearly normal, superficial lesions" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "grade_1a" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Grade 1A: Soft indentations" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Grade 1A: Soft indentations" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "grade_1b" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Grade 1B: Superficial fissures and cracks" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Grade 1B: Superficial fissures and cracks" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "grade_2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Grade 2: Abnormal" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Grade 2: Abnormal, lesiosn extending down to <50% of cartilage depth" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "grade_3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Grade 3: Severely abnormal" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Grade 3: Severely abnormal, cartilage defects extending down >50% of cartilage depth" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "grade_3a" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Grade 3A: Severely abnormal" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Grade 3A: Cartilage defects extending down >50% of cartilage depth..." ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "grade_3b" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Grade 3B: Severely abnormal" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Grade 3B: ...as well as down to calcified layer..." ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "grade_3c" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Grade 3C: Severely abnormal" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Grade 3C: ...and down to but not through the sunchondral bone." ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "grade_3d" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Grade 3D: Severely abnormal" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Grade 3D: Blisters are included in this grade." ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "grade_4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Grade 4: Severely abnormal" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Grade 4: Severely abnormal" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/ICRSGradingSystem.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

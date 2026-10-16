@@ -1,0 +1,83 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/UrniLaekDUGA> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "UrniLaekDUGA"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet UrniLaekDUGA</b></p><a name=\"UrniLaekDUGA\"> </a><a name=\"hcUrniLaekDUGA\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-HaendelseIndtraeffer.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/HaendelseIndtraeffer</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-HaendelseIndtraeffer.html#HaendelseIndtraeffer-aldrig\">aldrig</a></td><td>Lækker aldrig urin</td><td>Aldrig</td></tr><tr><td><a href=\"CodeSystem-HaendelseIndtraeffer.html#HaendelseIndtraeffer-inden-toilet\">inden-toilet</a></td><td>Lækker før jeg kan nå på toilettet</td><td>Inden toilet</td></tr><tr><td><a href=\"CodeSystem-HaendelseIndtraeffer.html#HaendelseIndtraeffer-hoste\">hoste</a></td><td>Lækker når jeg hoster eller nyser</td><td>Ved hoste</td></tr><tr><td><a href=\"CodeSystem-HaendelseIndtraeffer.html#HaendelseIndtraeffer-sover\">sover</a></td><td>Lækker når jeg sover</td><td>Sover</td></tr><tr><td><a href=\"CodeSystem-HaendelseIndtraeffer.html#HaendelseIndtraeffer-aktiv\">aktiv</a></td><td>Lækker når jeg er fysisk aktiv</td><td>Fysisk aktiv</td></tr><tr><td><a href=\"CodeSystem-HaendelseIndtraeffer.html#HaendelseIndtraeffer-efter-toilet\">efter-toilet</a></td><td>Lækker når jeg er færdig med at lade vandet og har fået tøj på</td><td>Efter toilet</td></tr><tr><td><a href=\"CodeSystem-HaendelseIndtraeffer.html#HaendelseIndtraeffer-uden-grund\">uden-grund</a></td><td>Lækker uden nogen grund</td><td>Uden grund</td></tr><tr><td><a href=\"CodeSystem-HaendelseIndtraeffer.html#HaendelseIndtraeffer-altid\">altid</a></td><td>Lækker hele tiden</td><td>Hele tiden</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/UrniLaekDUGA"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.0"] ;
+  fhir:ValueSet.name [ fhir:value "UrniLaekDUGA"] ;
+  fhir:ValueSet.title [ fhir:value "Urin lækker (DUGA)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2024-02-13T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Hvornår lækker urin (DUGA)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/HaendelseIndtraeffer" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "aldrig" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lækker aldrig urin" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "inden-toilet" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lækker før jeg kan nå på toilettet" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "hoste" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lækker når jeg hoster eller nyser" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "sover" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lækker når jeg sover" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "aktiv" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lækker når jeg er fysisk aktiv" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "efter-toilet" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lækker når jeg er færdig med at lade vandet og har fået tøj på" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "uden-grund" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lækker uden nogen grund" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "altid" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lækker hele tiden" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/UrniLaekDUGA.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

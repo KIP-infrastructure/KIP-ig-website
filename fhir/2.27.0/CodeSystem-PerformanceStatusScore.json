@@ -1,0 +1,83 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "PerformanceStatusScore",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PerformanceStatusScore</b></p><a name=\"PerformanceStatusScore\"> </a><a name=\"hcPerformanceStatusScore\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/PerformanceStatusScore</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">grade_0<a name=\"PerformanceStatusScore-grade_0\"> </a></td><td>0</td><td>Fully active, able to carry on all pre-disease performance without restriction</td></tr><tr><td style=\"white-space:nowrap\">grade_1<a name=\"PerformanceStatusScore-grade_1\"> </a></td><td>1</td><td>Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g., light house work, office work</td></tr><tr><td style=\"white-space:nowrap\">grade_2<a name=\"PerformanceStatusScore-grade_2\"> </a></td><td>2</td><td>Ambulatory and capable of all selfcare but unable to carry out any work activities; up and about more than 50% of waking hours</td></tr><tr><td style=\"white-space:nowrap\">grade_3<a name=\"PerformanceStatusScore-grade_3\"> </a></td><td>3</td><td>Capable of only limited selfcare; confined to bed or chair more than 50% of waking hours</td></tr><tr><td style=\"white-space:nowrap\">grade_4<a name=\"PerformanceStatusScore-grade_4\"> </a></td><td>4</td><td>Completely disabled; cannot carry on any selfcare; totally confined to bed or chair</td></tr><tr><td style=\"white-space:nowrap\">grade_5<a name=\"PerformanceStatusScore-grade_5\"> </a></td><td>5</td><td>Dead</td></tr></table></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/CodeSystem/PerformanceStatusScore",
+  "version" : "2.27.0",
+  "name" : "PerformanceStatusScore",
+  "title" : "Performance Status score (ECOG/WHO/Zubrod)",
+  "status" : "active",
+  "date" : "2022-05-31T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Score udviklet til performance for cancerpatienter. Kaldes både ECOG, WHO eller Zubrod. Link: https://ecog-acrin.org/resources/ecog-performance-status/",
+  "content" : "complete",
+  "count" : 6,
+  "property" : [{
+    "code" : "comment",
+    "uri" : "http://hl7.org/fhir/concept-properties#comment",
+    "description" : "A string that provides additional detail pertinent to the use or understanding of the concept",
+    "type" : "string"
+  },
+  {
+    "code" : "effectiveDate",
+    "uri" : "http://hl7.org/fhir/concept-properties#effectiveDate",
+    "description" : "The date at which the concept status was last changed",
+    "type" : "dateTime"
+  },
+  {
+    "code" : "status",
+    "uri" : "http://hl7.org/fhir/concept-properties#status",
+    "description" : "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired",
+    "type" : "code"
+  },
+  {
+    "code" : "inactive",
+    "uri" : "http://hl7.org/fhir/concept-properties#inactive",
+    "description" : "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive",
+    "type" : "boolean"
+  }],
+  "concept" : [{
+    "code" : "grade_0",
+    "display" : "0",
+    "definition" : "Fully active, able to carry on all pre-disease performance without restriction"
+  },
+  {
+    "code" : "grade_1",
+    "display" : "1",
+    "definition" : "Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g., light house work, office work"
+  },
+  {
+    "code" : "grade_2",
+    "display" : "2",
+    "definition" : "Ambulatory and capable of all selfcare but unable to carry out any work activities; up and about more than 50% of waking hours"
+  },
+  {
+    "code" : "grade_3",
+    "display" : "3",
+    "definition" : "Capable of only limited selfcare; confined to bed or chair more than 50% of waking hours"
+  },
+  {
+    "code" : "grade_4",
+    "display" : "4",
+    "definition" : "Completely disabled; cannot carry on any selfcare; totally confined to bed or chair"
+  },
+  {
+    "code" : "grade_5",
+    "display" : "5",
+    "definition" : "Dead"
+  }]
+}

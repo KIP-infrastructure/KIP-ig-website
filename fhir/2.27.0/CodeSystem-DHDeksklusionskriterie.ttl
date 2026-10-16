@@ -1,0 +1,121 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/DHDeksklusionskriterie> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "DHDeksklusionskriterie"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DHDeksklusionskriterie</b></p><a name=\"DHDeksklusionskriterie\"> </a><a name=\"hcDHDeksklusionskriterie\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/DHDeksklusionskriterie</code> provides <b>a fragment</b> that includes following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">DHDA1<a name=\"DHDeksklusionskriterie-DHDA1\"> </a></td><td>A1</td><td>A1: Patienten har tidligere kendt og korrekt diagnosticeret og behandlet hjertesvigt</td></tr><tr><td style=\"white-space:nowrap\">DHDA2<a name=\"DHDeksklusionskriterie-DHDA2\"> </a></td><td>A2</td><td>A2: Patienter med akut myokardieinfarkt (AMI) med nedsat ejection fraction (EF/LVEF), hvor AMI er A-diagnosen</td></tr><tr><td style=\"white-space:nowrap\">DHDA3<a name=\"DHDeksklusionskriterie-DHDA3\"> </a></td><td>A3</td><td>A3: Patienten har ikke korrigerbar strukturel hjertesygdom og deraf følgende hjertesvigt</td></tr><tr><td style=\"white-space:nowrap\">DHDA4<a name=\"DHDeksklusionskriterie-DHDA4\"> </a></td><td>A4</td><td>A4: Primær årsag til hjertesvigt er hjerteklapsygdom og deraf følgende hjertesvigt</td></tr><tr><td style=\"white-space:nowrap\">DHDA5<a name=\"DHDeksklusionskriterie-DHDA5\"> </a></td><td>A5</td><td>A5: Primær årsag til hjertesvigt er hurtig hjerteryme (ofte atrieflimren) (kræver kardiologisk vurdering)</td></tr><tr><td style=\"white-space:nowrap\">DHDA6<a name=\"DHDeksklusionskriterie-DHDA6\"> </a></td><td>A6</td><td>A6: Patienten har cor pulmunale</td></tr><tr><td style=\"white-space:nowrap\">DHDA7<a name=\"DHDeksklusionskriterie-DHDA7\"> </a></td><td>A7</td><td>A7: Patienten har isoleret højresidig hjertesvigt</td></tr><tr><td style=\"white-space:nowrap\">DHDA8<a name=\"DHDeksklusionskriterie-DHDA8\"> </a></td><td>A8</td><td>A8: Patienten har gået hos privatpraktiserende speciallæge i kardiologi og er blevet diagnosticeret og behandlet hos denne</td></tr><tr><td style=\"white-space:nowrap\">DHDA9<a name=\"DHDeksklusionskriterie-DHDA9\"> </a></td><td>A9</td><td>A9: A-diagnose er ikke hjertesvigt</td></tr><tr><td style=\"white-space:nowrap\">DHDA10<a name=\"DHDeksklusionskriterie-DHDA10\"> </a></td><td>A10</td><td>A10: Patientforløb flyttet i KIP til behandlingsansvarlig afd</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/DHDeksklusionskriterie"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.0"] ;
+  fhir:CodeSystem.name [ fhir:value "DHDeksklusionskriterieCS"] ;
+  fhir:CodeSystem.title [ fhir:value "DHD eksklusionskriterier"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2022-06-22T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Patienten skal ikke indberettes til DHD, fordi patienten opfylder et af følgende eksklusionskriterier."] ;
+  fhir:CodeSystem.content [ fhir:value "fragment"] ;
+  fhir:CodeSystem.count [ fhir:value "10"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index 0 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DHDA1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "A1" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "A1: Patienten har tidligere kendt og korrekt diagnosticeret og behandlet hjertesvigt" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DHDA2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "A2" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "A2: Patienter med akut myokardieinfarkt (AMI) med nedsat ejection fraction (EF/LVEF), hvor AMI er A-diagnosen" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DHDA3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "A3" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "A3: Patienten har ikke korrigerbar strukturel hjertesygdom og deraf følgende hjertesvigt" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DHDA4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "A4" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "A4: Primær årsag til hjertesvigt er hjerteklapsygdom og deraf følgende hjertesvigt" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DHDA5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "A5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "A5: Primær årsag til hjertesvigt er hurtig hjerteryme (ofte atrieflimren) (kræver kardiologisk vurdering)" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DHDA6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "A6" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "A6: Patienten har cor pulmunale" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DHDA7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "A7" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "A7: Patienten har isoleret højresidig hjertesvigt" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DHDA8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "A8" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "A8: Patienten har gået hos privatpraktiserende speciallæge i kardiologi og er blevet diagnosticeret og behandlet hos denne" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DHDA9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "A9" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "A9: A-diagnose er ikke hjertesvigt" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DHDA10" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "A10" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "A10: Patientforløb flyttet i KIP til behandlingsansvarlig afd" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/DHDeksklusionskriterie.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

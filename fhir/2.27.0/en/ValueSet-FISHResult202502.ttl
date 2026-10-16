@@ -1,0 +1,103 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/FISHResult202502> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "FISHResult202502"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet FISHResult202502</b></p><a name=\"FISHResult202502\"> </a><a name=\"hcFISHResult202502\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-FISHVariables.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/FISHVariables</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-igh_fgfr3\">igh_fgfr3</a></td><td>t(4;14)/IGH-FGFR3</td><td>t(4;14)/IGH-FGFR3</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-igh_ccnd1\">igh_ccnd1</a></td><td>t(11;14)/IGH-CCND1</td><td>t(11;14)/IGH-CCND1</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-igh_mbf\">igh_mbf</a></td><td>t(14;16)/IGH-MBF</td><td>t(14;16)/IGH-MBF</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-igh_mafb\">igh_mafb</a></td><td>t(14;20)/IGH-MAFB</td><td>t(14;20)/IGH-MAFB</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-tp53_deletion\">tp53_deletion</a></td><td>TP53 deletion</td><td>TP53 deletion</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-1q21gain\">1q21gain</a></td><td>1q21 gain (3 spot)</td><td>1q21 gain (3 spot)</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-1q21\">1q21</a></td><td>1q21 amplifikation (≥ 4 spot)</td><td>1q21 amplifikation</td></tr><tr><td><a href=\"CodeSystem-FISHVariables.html#FISHVariables-1qdeletion\">1qdeletion</a></td><td>1p deletion</td><td>1p deletion</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-ResultTest.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ResultTest</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ResultTest.html#ResultTest-changes\">changes</a></td><td>Andre forandringer påvist</td><td>Changes / Forandringer [FISH]</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Anden IGH translokation</td><td>Other - used to choose unspecific value not in a valueset</td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-none\">none</a></td><td>Ingen forandringer påvist</td><td>None - used to choose none of the available values</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/FISHResult202502"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.0"] ;
+  fhir:ValueSet.name [ fhir:value "FISHResult202502"] ;
+  fhir:ValueSet.title [ fhir:value "Resultat af FISH 202502"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2025-02-21T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Resultat af FISH 202502 - Fjernet udgået udfald og tilføjet nye"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/FISHVariables" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "igh_fgfr3" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "t(4;14)/IGH-FGFR3" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "igh_ccnd1" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "t(11;14)/IGH-CCND1" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "igh_mbf" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "t(14;16)/IGH-MBF" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "igh_mafb" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "t(14;20)/IGH-MAFB" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "tp53_deletion" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "TP53 deletion" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1q21gain" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "1q21 gain (3 spot)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1q21" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "1q21 amplifikation (≥ 4 spot)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1qdeletion" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "1p deletion" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/ResultTest" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "changes" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Andre forandringer påvist" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anden IGH translokation" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "none" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ingen forandringer påvist" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/FISHResult202502.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,87 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/StraaleterapiLYFO> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "StraaleterapiLYFO"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet StraaleterapiLYFO</b></p><a name=\"StraaleterapiLYFO\"> </a><a name=\"hcStraaleterapiLYFO\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-none\">none</a></td><td>Ingen stråleterapi</td><td>None - used to choose none of the available values</td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet / Uspecificeret</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-RadiationTherapyType.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/RadiationTherapyType</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-RadiationTherapyType.html#RadiationTherapyType-involved_node\">involved_node</a></td><td>Involved node</td><td>Involved node</td></tr><tr><td><a href=\"CodeSystem-RadiationTherapyType.html#RadiationTherapyType-involved_field\">involved_field</a></td><td>Involved field</td><td>Involved field</td></tr><tr><td><a href=\"CodeSystem-RadiationTherapyType.html#RadiationTherapyType-extended_field\">extended_field</a></td><td>Extended field</td><td>Extended field</td></tr><tr><td><a href=\"CodeSystem-RadiationTherapyType.html#RadiationTherapyType-total_body_irradiation\">total_body_irradiation</a></td><td>Total body irradiation</td><td>Total body irradiation</td></tr><tr><td><a href=\"CodeSystem-RadiationTherapyType.html#RadiationTherapyType-coat_field\">coat_field</a></td><td>Kappefelt</td><td>Coat field</td></tr><tr><td><a href=\"CodeSystem-RadiationTherapyType.html#RadiationTherapyType-tbi_involed_field\">tbi_involed_field</a></td><td>TBI + Involved field</td><td>TBI + Involved field</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/StraaleterapiLYFO"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.0"] ;
+  fhir:ValueSet.name [ fhir:value "StraaleterapiLYFO"] ;
+  fhir:ValueSet.title [ fhir:value "Stråleterapi (LYFO)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-07-18T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Stråleterapi LYFO (LYFO)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "none" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ingen stråleterapi" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Andet / Uspecificeret" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/RadiationTherapyType" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "involved_node" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Involved node" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "involved_field" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Involved field" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "extended_field" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Extended field" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "total_body_irradiation" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Total body irradiation" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "coat_field" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kappefelt" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "tbi_involed_field" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "TBI + Involved field" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/StraaleterapiLYFO.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

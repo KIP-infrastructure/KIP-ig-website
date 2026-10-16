@@ -1,0 +1,425 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/MeshType> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "MeshType"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem MeshType</b></p><a name=\"MeshType\"> </a><a name=\"hcMeshType\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/MeshType</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>comment</b></td><td><b>effectiveDate</b></td><td><b>status</b></td><td><b>Inactive</b></td></tr><tr><td style=\"white-space:nowrap\">adhesix<a name=\"MeshType-adhesix\"> </a></td><td>Adhesix</td><td>Adhesix</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">adhesix_bard<a name=\"MeshType-adhesix_bard\"> </a></td><td>Adhesix, BARD</td><td>Adhesix, BARD</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">adhesix_lap<a name=\"MeshType-adhesix_lap\"> </a></td><td>Adhesix lap.</td><td>Adhesix lap.</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">bard_3d<a name=\"MeshType-bard_3d\"> </a></td><td>BARD 3D</td><td>BARD 3D</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">bard_3d_light<a name=\"MeshType-bard_3d_light\"> </a></td><td>Bard 3D Light</td><td>Bard 3D Light</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">bard_flatmesh<a name=\"MeshType-bard_flatmesh\"> </a></td><td>BARD Flatmesh</td><td>BARD Flatmesh</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">bard_perfix_plug<a name=\"MeshType-bard_perfix_plug\"> </a></td><td>BARD PerFix Plug</td><td>BARD PerFix Plug</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">bard_polysoft<a name=\"MeshType-bard_polysoft\"> </a></td><td>BARD PolySoft Hernia Patch</td><td>BARD PolySoft Hernia Patch</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">bard_soft<a name=\"MeshType-bard_soft\"> </a></td><td>BARD Soft</td><td>BARD Soft</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">bio_a<a name=\"MeshType-bio_a\"> </a></td><td>BIO-A</td><td>BIO-A</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">cabs_air<a name=\"MeshType-cabs_air\"> </a></td><td>CABS AIR Composite, Cousin Biotech</td><td>CABS AIR Composite, Cousin Biotech</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">cousin<a name=\"MeshType-cousin\"> </a></td><td>Cousin</td><td>Cousin</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">dextile_medtronic<a name=\"MeshType-dextile_medtronic\"> </a></td><td>Dextile fra Medtronic</td><td>Dextile fra Medtronic</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">dynamesh_kebomed<a name=\"MeshType-dynamesh_kebomed\"> </a></td><td>Dynamesh, Kebomed</td><td>Dynamesh, Kebomed</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">dynamesh_ipom<a name=\"MeshType-dynamesh_ipom\"> </a></td><td>Dynamesh IPOM, Kebomed</td><td>Dynamesh IPOM, Kebomed</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">dynamesh_pp<a name=\"MeshType-dynamesh_pp\"> </a></td><td>Dynamesh PP</td><td>Dynamesh PP</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">dynamesh_visible<a name=\"MeshType-dynamesh_visible\"> </a></td><td>Dynamesh Visible</td><td>Dynamesh Visible</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">galmesh<a name=\"MeshType-galmesh\"> </a></td><td>Galmesh</td><td>Galmesh</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">galmesh_light<a name=\"MeshType-galmesh_light\"> </a></td><td>Galmesh Light</td><td>Galmesh Light</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">galmesh_umbilical<a name=\"MeshType-galmesh_umbilical\"> </a></td><td>Galmesh Umbilical</td><td>Galmesh Umbilical</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">gore_dualmesh<a name=\"MeshType-gore_dualmesh\"> </a></td><td>Gore Dualmesh, ViCare Medical</td><td>Gore Dualmesh, ViCare Medical</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">intramesh<a name=\"MeshType-intramesh\"> </a></td><td>Intramesh (T1/P8/W3), Cousin Biotech</td><td>Intramesh (T1/P8/W3), Cousin Biotech</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">klas<a name=\"MeshType-klas\"> </a></td><td>Klas</td><td>Klas</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">medcare_prolene<a name=\"MeshType-medcare_prolene\"> </a></td><td>Medcare Prolene</td><td>Medcare Prolene</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">optilene_mesh<a name=\"MeshType-optilene_mesh\"> </a></td><td>Optilene Mesh</td><td>Optilene Mesh</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">optilene_mesh_elastic<a name=\"MeshType-optilene_mesh_elastic\"> </a></td><td>Optilene Mesh Elastic</td><td>Optilene Mesh Elastic</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">optilene_mesh_lp<a name=\"MeshType-optilene_mesh_lp\"> </a></td><td>Optilene Mesh LP</td><td>Optilene Mesh LP</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">parietene<a name=\"MeshType-parietene\"> </a></td><td>Parietene</td><td>Parietene</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">parietene_composite<a name=\"MeshType-parietene_composite\"> </a></td><td>Parietene Composite</td><td>Parietene Composite</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">parietene_covidien<a name=\"MeshType-parietene_covidien\"> </a></td><td>Parietene Covidien</td><td>Parietene Covidien</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">parietex<a name=\"MeshType-parietex\"> </a></td><td>Parietex</td><td>Parietex</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">parietex_composite<a name=\"MeshType-parietex_composite\"> </a></td><td>Parietex Composite (incl. Optimized), Covidien</td><td>Parietex Composite (incl. Optimized), Covidien</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">parietex_covidien<a name=\"MeshType-parietex_covidien\"> </a></td><td>Parietex Covidien</td><td>Parietex Covidien</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">parietex_ventral<a name=\"MeshType-parietex_ventral\"> </a></td><td>Parietex Ventral Patch</td><td>Parietex Ventral Patch</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">parietex_progrip<a name=\"MeshType-parietex_progrip\"> </a></td><td>Parietex Progrip</td><td>Parietex Progrip</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">permacol_covidien<a name=\"MeshType-permacol_covidien\"> </a></td><td>Permacol, Covidien</td><td>Permacol, Covidien</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">phasix<a name=\"MeshType-phasix\"> </a></td><td>Phasix</td><td>Phasix</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">phasix_st<a name=\"MeshType-phasix_st\"> </a></td><td>Phasix ST</td><td>Phasix ST</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">physiomesh<a name=\"MeshType-physiomesh\"> </a></td><td>Physiomesh</td><td>Physiomesh</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">physiomesh_ethicon<a name=\"MeshType-physiomesh_ethicon\"> </a></td><td>Physiomesh, Ethicon</td><td>Physiomesh, Ethicon</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">polypropylene<a name=\"MeshType-polypropylene\"> </a></td><td>Polypropylene</td><td>Polypropylene</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">proceed_ehticon<a name=\"MeshType-proceed_ehticon\"> </a></td><td>Proceed, Ethicon</td><td>Proceed, Ethicon</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">proceed_ventral<a name=\"MeshType-proceed_ventral\"> </a></td><td>Proceed Ventral Patch, Ethicon</td><td>Proceed Ventral Patch, Ethicon</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">progrip<a name=\"MeshType-progrip\"> </a></td><td>Progrip</td><td>Progrip</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">progrip_polypropylene<a name=\"MeshType-progrip_polypropylene\"> </a></td><td>Progrip polypropylene</td><td>Progrip polypropylene</td><td>Added</td><td>2026-06-24T00:00:00+02:00</td><td>active</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">prolene<a name=\"MeshType-prolene\"> </a></td><td>Prolene</td><td>Prolene</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">prolite<a name=\"MeshType-prolite\"> </a></td><td>Prolite</td><td>Prolite</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">softmesh_bard<a name=\"MeshType-softmesh_bard\"> </a></td><td>SoftMesh, BARD</td><td>SoftMesh, BARD</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">strattice_lifecell<a name=\"MeshType-strattice_lifecell\"> </a></td><td>Strattice, Lifecell</td><td>Strattice, Lifecell</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">supramesh<a name=\"MeshType-supramesh\"> </a></td><td>Supramesh</td><td>Supramesh</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">supromesh<a name=\"MeshType-supromesh\"> </a></td><td>Supromesh</td><td>Supromesh</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">surgimesh<a name=\"MeshType-surgimesh\"> </a></td><td>Surgimesh</td><td>Surgimesh</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">surgipro<a name=\"MeshType-surgipro\"> </a></td><td>Surgipro</td><td>Surgipro</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">symbotex_composite<a name=\"MeshType-symbotex_composite\"> </a></td><td>Symbotex Composite</td><td>Symbotex Composite</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">tigr<a name=\"MeshType-tigr\"> </a></td><td>TIGR</td><td>TIGR</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">timesh<a name=\"MeshType-timesh\"> </a></td><td>TiMesh</td><td>TiMesh</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">ultrapro<a name=\"MeshType-ultrapro\"> </a></td><td>Ultrapro</td><td>Ultrapro</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">ultrapro_advanced<a name=\"MeshType-ultrapro_advanced\"> </a></td><td>Ultrapro Advanced</td><td>Ultrapro Advanced</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">ultrapro_ethicon<a name=\"MeshType-ultrapro_ethicon\"> </a></td><td>Ultrapro, Ethicon</td><td>Ultrapro, Ethicon</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">ventralex_st_bard<a name=\"MeshType-ventralex_st_bard\"> </a></td><td>Ventralex ST, BARD</td><td>Ventralex ST, BARD</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">ventralight_st_bard<a name=\"MeshType-ventralight_st_bard\"> </a></td><td>Ventralight ST, BARD</td><td>Ventralight ST, BARD</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">ventrio_hernia_st_bard<a name=\"MeshType-ventrio_hernia_st_bard\"> </a></td><td>Ventrio Hernia ST, BARD</td><td>Ventrio Hernia ST, BARD</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">versatex<a name=\"MeshType-versatex\"> </a></td><td>Versatex</td><td>Versatex</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">versatex_monofilament_mesh<a name=\"MeshType-versatex_monofilament_mesh\"> </a></td><td>Versatex Monofilament Mesh</td><td>Versatex Monofilament Mesh</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">vypro<a name=\"MeshType-vypro\"> </a></td><td>Vypro</td><td>Vypro</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">vypro_ethicon<a name=\"MeshType-vypro_ethicon\"> </a></td><td>Vypro, Ethicon</td><td>Vypro, Ethicon</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">xenmatrix<a name=\"MeshType-xenmatrix\"> </a></td><td>Xenmatrix</td><td>Xenmatrix</td><td/><td/><td/><td/></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/MeshType"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.0"] ;
+  fhir:CodeSystem.name [ fhir:value "MeshType"] ;
+  fhir:CodeSystem.title [ fhir:value "Mesh type"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2022-07-20T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Mesh type"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "67"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "adhesix" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Adhesix" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Adhesix" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "adhesix_bard" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Adhesix, BARD" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Adhesix, BARD" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "adhesix_lap" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Adhesix lap." ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Adhesix lap." ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bard_3d" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "BARD 3D" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "BARD 3D" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bard_3d_light" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bard 3D Light" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Bard 3D Light" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bard_flatmesh" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "BARD Flatmesh" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "BARD Flatmesh" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bard_perfix_plug" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "BARD PerFix Plug" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "BARD PerFix Plug" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bard_polysoft" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "BARD PolySoft Hernia Patch" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "BARD PolySoft Hernia Patch" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bard_soft" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "BARD Soft" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "BARD Soft" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bio_a" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "BIO-A" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "BIO-A" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cabs_air" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CABS AIR Composite, Cousin Biotech" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "CABS AIR Composite, Cousin Biotech" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cousin" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cousin" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Cousin" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dextile_medtronic" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dextile fra Medtronic" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Dextile fra Medtronic" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dynamesh_kebomed" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dynamesh, Kebomed" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Dynamesh, Kebomed" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dynamesh_ipom" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dynamesh IPOM, Kebomed" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Dynamesh IPOM, Kebomed" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dynamesh_pp" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dynamesh PP" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Dynamesh PP" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dynamesh_visible" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dynamesh Visible" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Dynamesh Visible" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "galmesh" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Galmesh" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Galmesh" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "galmesh_light" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Galmesh Light" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Galmesh Light" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "galmesh_umbilical" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Galmesh Umbilical" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Galmesh Umbilical" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "gore_dualmesh" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Gore Dualmesh, ViCare Medical" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Gore Dualmesh, ViCare Medical" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "intramesh" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Intramesh (T1/P8/W3), Cousin Biotech" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Intramesh (T1/P8/W3), Cousin Biotech" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "klas" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Klas" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Klas" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "medcare_prolene" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Medcare Prolene" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Medcare Prolene" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "optilene_mesh" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Optilene Mesh" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Optilene Mesh" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "optilene_mesh_elastic" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Optilene Mesh Elastic" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Optilene Mesh Elastic" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "optilene_mesh_lp" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Optilene Mesh LP" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Optilene Mesh LP" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "parietene" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Parietene" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Parietene" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "parietene_composite" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Parietene Composite" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Parietene Composite" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "parietene_covidien" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Parietene Covidien" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Parietene Covidien" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "parietex" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Parietex" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Parietex" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "parietex_composite" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Parietex Composite (incl. Optimized), Covidien" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Parietex Composite (incl. Optimized), Covidien" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "parietex_covidien" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Parietex Covidien" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Parietex Covidien" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "parietex_ventral" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Parietex Ventral Patch" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Parietex Ventral Patch" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "parietex_progrip" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Parietex Progrip" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Parietex Progrip" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "permacol_covidien" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Permacol, Covidien" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Permacol, Covidien" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "phasix" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Phasix" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Phasix" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "phasix_st" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Phasix ST" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Phasix ST" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "physiomesh" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Physiomesh" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Physiomesh" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "physiomesh_ethicon" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Physiomesh, Ethicon" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Physiomesh, Ethicon" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "polypropylene" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Polypropylene" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Polypropylene" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "proceed_ehticon" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Proceed, Ethicon" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Proceed, Ethicon" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "proceed_ventral" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Proceed Ventral Patch, Ethicon" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Proceed Ventral Patch, Ethicon" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "progrip" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Progrip" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Progrip" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "progrip_polypropylene" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Progrip polypropylene" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Progrip polypropylene" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "comment" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Added" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "effectiveDate" ] ;
+       fhir:CodeSystem.concept.property.valueDateTime [ fhir:value "2026-06-24T00:00:00+02:00"^^xsd:dateTime ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "status" ] ;
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "active" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "inactive" ] ;
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "prolene" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Prolene" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Prolene" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "prolite" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Prolite" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Prolite" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "softmesh_bard" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SoftMesh, BARD" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "SoftMesh, BARD" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "strattice_lifecell" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Strattice, Lifecell" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Strattice, Lifecell" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "supramesh" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Supramesh" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Supramesh" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "supromesh" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Supromesh" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Supromesh" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "surgimesh" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Surgimesh" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Surgimesh" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "surgipro" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Surgipro" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Surgipro" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "symbotex_composite" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Symbotex Composite" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Symbotex Composite" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tigr" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TIGR" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "TIGR" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "timesh" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TiMesh" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "TiMesh" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ultrapro" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ultrapro" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Ultrapro" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ultrapro_advanced" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ultrapro Advanced" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Ultrapro Advanced" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ultrapro_ethicon" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ultrapro, Ethicon" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Ultrapro, Ethicon" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ventralex_st_bard" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ventralex ST, BARD" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Ventralex ST, BARD" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ventralight_st_bard" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ventralight ST, BARD" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Ventralight ST, BARD" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ventrio_hernia_st_bard" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ventrio Hernia ST, BARD" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Ventrio Hernia ST, BARD" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "versatex" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Versatex" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Versatex" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "versatex_monofilament_mesh" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Versatex Monofilament Mesh" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Versatex Monofilament Mesh" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "vypro" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vypro" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Vypro" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "vypro_ethicon" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vypro, Ethicon" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Vypro, Ethicon" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "xenmatrix" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Xenmatrix" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Xenmatrix" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/MeshType.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

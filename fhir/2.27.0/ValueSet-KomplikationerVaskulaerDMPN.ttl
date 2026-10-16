@@ -1,0 +1,78 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/KomplikationerVaskulaerDMPN> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "KomplikationerVaskulaerDMPN"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KomplikationerVaskulaerDMPN</b></p><a name=\"KomplikationerVaskulaerDMPN\"> </a><a name=\"hcKomplikationerVaskulaerDMPN\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Complications.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Complications</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-dvt\">dvt</a></td><td>Dyb vene trombose</td><td>Dyb vene trombose</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-pulmonaryembolism\">pulmonaryembolism</a></td><td>Lungeemboli</td><td>Lungeemboli</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-ami\">ami</a></td><td>Myocardieinfarkt</td><td>AMI - Myocardieinfarkt</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-apoplexia_cerebri\">apoplexia_cerebri</a></td><td>Apoplexia cerebri</td><td>Apopleksi cerebri</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-abdominal\">abdominal</a></td><td>Abdominal/hepatisk/milt trombose</td><td>Abdominal /hepatisk/milt trombose</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-tci\">tci</a></td><td>TCI</td><td>TCI</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-thromboembolic\">thromboembolic</a></td><td>Anden trombo/emboli</td><td>Tromboemboliske komplikationer som medfører infarkt inden for 24 timer</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/KomplikationerVaskulaerDMPN"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.0"] ;
+  fhir:ValueSet.name [ fhir:value "KomplikationerVaskulaerDMPN"] ;
+  fhir:ValueSet.title [ fhir:value "Komplikationer Vaskulær DMPN"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-07-14T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Typer af komplikationer ved vaskulære events - DMPN"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/Complications" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "dvt" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dyb vene trombose" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "pulmonaryembolism" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lungeemboli" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ami" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Myocardieinfarkt" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "apoplexia_cerebri" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Apoplexia cerebri" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "abdominal" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Abdominal/hepatisk/milt trombose" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "tci" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "TCI" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "thromboembolic" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anden trombo/emboli" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/KomplikationerVaskulaerDMPN.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/ManglendeVisitation> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ManglendeVisitation"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ManglendeVisitation</b></p><a name=\"ManglendeVisitation\"> </a><a name=\"hcManglendeVisitation\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-VisitationCriteriaNotMet.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/VisitationCriteriaNotMet</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-VisitationCriteriaNotMet.html#VisitationCriteriaNotMet-not_terminally_ill\">not_terminally_ill</a></td><td>Ikke uhelbredeligt syg</td><td>Not terminally ill / Ikke uhelbredeligt syg</td></tr><tr><td><a href=\"CodeSystem-VisitationCriteriaNotMet.html#VisitationCriteriaNotMet-no_symptomatology\">no_symptomatology</a></td><td>Ikke symptomatologi, som kræver en specialiseret/tværfaglig indsats</td><td>No symptomatology / Ikke symptomatologi, som kræver en specialiseret/tværfaglig indsats</td></tr><tr><td><a href=\"CodeSystem-VisitationCriteriaNotMet.html#VisitationCriteriaNotMet-not_diagnostically_completed\">not_diagnostically_completed</a></td><td>Ikke diagnostisk færdigudredt</td><td>Not diagnostically completed / Ikke diagnostisk færdigudredt</td></tr><tr><td><a href=\"CodeSystem-VisitationCriteriaNotMet.html#VisitationCriteriaNotMet-not_informed\">not_informed</a></td><td>Patienten ikke velinformeret om sin sygdom</td><td>Patient not well informed / Patienten ikke velinformeret om sin sygdom</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/ManglendeVisitation"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.0"] ;
+  fhir:ValueSet.name [ fhir:value "ManglendeVisitation"] ;
+  fhir:ValueSet.title [ fhir:value "Visitationskriterier uopfyldt"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-09-06T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Hvilke visitationskriterier var ikke opfyldt"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/VisitationCriteriaNotMet" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "not_terminally_ill" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ikke uhelbredeligt syg" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "no_symptomatology" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ikke symptomatologi, som kræver en specialiseret/tværfaglig indsats" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "not_diagnostically_completed" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ikke diagnostisk færdigudredt" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "not_informed" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patienten ikke velinformeret om sin sygdom" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Andet" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/ManglendeVisitation.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

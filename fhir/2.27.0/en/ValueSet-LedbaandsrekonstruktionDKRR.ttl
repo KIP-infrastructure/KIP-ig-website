@@ -1,0 +1,91 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/LedbaandsrekonstruktionDKRR> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "LedbaandsrekonstruktionDKRR"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet LedbaandsrekonstruktionDKRR</b></p><a name=\"LedbaandsrekonstruktionDKRR\"> </a><a name=\"hcLedbaandsrekonstruktionDKRR\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-AnatomicalLocations.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/AnatomicalLocations</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-acl\">acl</a></td><td>ACL</td><td>ACL</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-pcl\">pcl</a></td><td>PCL</td><td>PCL</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-mcl\">mcl</a></td><td>MCL</td><td>MCL</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-lcl\">lcl</a></td><td>LCL</td><td>LCL</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-plc\">plc</a></td><td>PLC</td><td>PLC</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-all\">all</a></td><td>ALL</td><td>ALL</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-ProcedureType.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-luxation\">luxation</a></td><td>Knæluksation</td><td>Luxation / Luksation</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-tractus_tendonesis\">tractus_tendonesis</a></td><td>Tractus tendonesis</td><td>Tractus tendonesis</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-internal_brace\">internal_brace</a></td><td>Syntetisk forstærkning/internal brace</td><td>Internal brace / Syntetisk forstærkning</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/LedbaandsrekonstruktionDKRR"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.0"] ;
+  fhir:ValueSet.name [ fhir:value "LedbaandsrekonstruktionDKRR"] ;
+  fhir:ValueSet.title [ fhir:value "Ledbåndsrekonstruktioner (DKRR)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-09-19T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Ledbåndsrekonstruktioner (DKRR)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/AnatomicalLocations" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "acl" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ACL" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "pcl" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "PCL" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "mcl" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "MCL" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "lcl" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "LCL" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "plc" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "PLC" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "all" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ALL" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "luxation" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Knæluksation" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "tractus_tendonesis" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tractus tendonesis" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "internal_brace" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Syntetisk forstærkning/internal brace" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/LedbaandsrekonstruktionDKRR.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

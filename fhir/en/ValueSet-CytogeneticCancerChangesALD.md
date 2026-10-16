@@ -1,0 +1,120 @@
+# Cytogenetiske kræft forandringer - KIP Infrastructure v2.27.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Cytogenetiske kræft forandringer**
+
+## ValueSet: Cytogenetiske kræft forandringer 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/CytogeneticCancerChangesALD | *Version*:2.27.0 |
+| Active as of 2022-07-13 | *Computable Name*:CytogeneticCancerChangesALD |
+
+ 
+Cytogenetiske WHO specifikke recurrente forandringer i forhold til kræft [ALD] 
+
+ **References** 
+
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+
+### Logical Definition (CLD)
+
+ 
+
+### Expansion
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "CytogeneticCancerChangesALD",
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/CytogeneticCancerChangesALD",
+  "version" : "2.27.0",
+  "name" : "CytogeneticCancerChangesALD",
+  "title" : "Cytogenetiske kræft forandringer",
+  "status" : "active",
+  "date" : "2022-07-13T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Cytogenetiske WHO specifikke recurrente forandringer i forhold til kræft [ALD]",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/PatobankSNOMED",
+      "concept" : [{
+        "code" : "M98963",
+        "display" : "t(8;21)(q22;q22) RUNX1-RUNX1T1"
+      },
+      {
+        "code" : "M98713",
+        "display" : "inv(16)(p13.1q22) or t(16;16)(p13.1q22) CBFB-/MYH11"
+      },
+      {
+        "code" : "M98663",
+        "display" : "t(15;17)(q22;q21) PML-RARA"
+      },
+      {
+        "code" : "M98973",
+        "display" : "t(9;11)(p22;q23) MLLT3-MLL"
+      },
+      {
+        "code" : "M98653",
+        "display" : "t(6;9)(p22;q34) DEK-NUP214"
+      },
+      {
+        "code" : "M98693",
+        "display" : "inv(3)(q21q26.2) eller t(3;3)(q21q26.2) RPN1-EV1"
+      },
+      {
+        "code" : "M99113",
+        "display" : "t(1;22)(p13;q13) RBM15-MKL1"
+      },
+      {
+        "code" : "M98063",
+        "display" : "t(9;22)(q34;q11.2) BCR-ABL1"
+      },
+      {
+        "code" : "M98073",
+        "display" : "t(v;11q23) MLL rearrangeret"
+      },
+      {
+        "code" : "M98143",
+        "display" : "t(12;21)(p13;q22) d"
+      },
+      {
+        "code" : "M98173",
+        "display" : "t(5;14)(q31;q32) IL3-IGH@"
+      },
+      {
+        "code" : "M98153",
+        "display" : "B-lymfoblast leukæmi med hyperdiploidi"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "none",
+        "display" : "Ingen"
+      }]
+    }]
+  }
+}
+
+```
