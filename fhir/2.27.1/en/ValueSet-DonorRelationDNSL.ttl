@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/DonorRelationDNSL> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "DonorRelationDNSL"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet DonorRelationDNSL</b></p><a name=\"DonorRelationDNSL\"> </a><a name=\"hcDonorRelationDNSL\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-SNOMEDCT.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/SNOMEDCT</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-SNOMEDCT.html#SNOMEDCT-40683002\">40683002</a></td><td>Forælder</td><td>Forælder</td></tr><tr><td><a href=\"CodeSystem-SNOMEDCT.html#SNOMEDCT-375005\">375005</a></td><td>Søster/Bror</td><td>Søster/Bror</td></tr><tr><td><a href=\"CodeSystem-SNOMEDCT.html#SNOMEDCT-10896006\">10896006</a></td><td>Tvilling (monozygot)</td><td>Tvilling (monocygot)</td></tr><tr><td><a href=\"CodeSystem-SNOMEDCT.html#SNOMEDCT-713369009\">713369009</a></td><td>Anden levende familiedonor</td><td>Levende familiedonor</td></tr><tr><td><a href=\"CodeSystem-SNOMEDCT.html#SNOMEDCT-394863008\">394863008</a></td><td>Levende non-related donor</td><td>Non-family member</td></tr><tr><td><a href=\"CodeSystem-SNOMEDCT.html#SNOMEDCT-713183000\">713183000</a></td><td>Nekronyre</td><td>Afdød donor (Nekronyre)</td></tr><tr><td><a href=\"CodeSystem-SNOMEDCT.html#SNOMEDCT-105457003\">105457003</a></td><td>Afdød</td><td>Afdød donor</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/DonorRelationDNSL"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.1"] ;
+  fhir:ValueSet.name [ fhir:value "DonorRelationDNSL"] ;
+  fhir:ValueSet.title [ fhir:value "Relationen til donor (DNSL)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2024-10-01T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Familie relation til donor (DNSL)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/SNOMEDCT" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "40683002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Forælder" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "375005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Søster/Bror" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10896006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tvilling (monozygot)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "713369009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anden levende familiedonor" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "394863008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Levende non-related donor" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "713183000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nekronyre" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "105457003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Afdød" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/DonorRelationDNSL.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

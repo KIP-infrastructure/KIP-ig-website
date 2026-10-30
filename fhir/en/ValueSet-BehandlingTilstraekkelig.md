@@ -1,4 +1,4 @@
-# Behandling; Udfald for at angive om det er en tilstrækkelig behandling - KIP Infrastructure v2.27.0
+# Behandling; Udfald for at angive om det er en tilstrækkelig behandling - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/BehandlingTilstraekkelig | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/BehandlingTilstraekkelig | *Version*:2.27.1 |
 | Active as of 2022-06-29 | *Computable Name*:BehandlingTilstraekkelig |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "BehandlingTilstraekkelig",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/BehandlingTilstraekkelig",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "BehandlingTilstraekkelig",
   "title" : "Behandling; Udfald for at angive om det er en tilstrækkelig behandling",
   "status" : "active",

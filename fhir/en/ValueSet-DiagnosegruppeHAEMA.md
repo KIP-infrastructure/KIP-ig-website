@@ -1,4 +1,4 @@
-# Diagnosegruppe (HAEMA) - KIP Infrastructure v2.27.0
+# Diagnosegruppe (HAEMA) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/DiagnosegruppeHAEMA | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/DiagnosegruppeHAEMA | *Version*:2.27.1 |
 | Active as of 2022-08-22 | *Computable Name*:DiagnosegruppeHAEMA |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "DiagnosegruppeHAEMA",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/DiagnosegruppeHAEMA",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "DiagnosegruppeHAEMA",
   "title" : "Diagnosegruppe (HAEMA)",
   "status" : "active",

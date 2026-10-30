@@ -1,4 +1,4 @@
-# Varighed (DKR) - KIP Infrastructure v2.27.0
+# Varighed (DKR) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/VarighedDKR | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/VarighedDKR | *Version*:2.27.1 |
 | Active as of 2023-05-17 | *Computable Name*:VarighedDKR |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "VarighedDKR",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/VarighedDKR",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "VarighedDKR",
   "title" : "Varighed (DKR)",
   "status" : "active",

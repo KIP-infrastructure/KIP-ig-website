@@ -1,4 +1,4 @@
-# Revision, indikation (DKR) - KIP Infrastructure v2.27.0
+# Revision, indikation (DKR) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/RevisionIndikationDKR | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/RevisionIndikationDKR | *Version*:2.27.1 |
 | Active as of 2022-10-14 | *Computable Name*:RevisionIndikationDKR |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "RevisionIndikationDKR",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/RevisionIndikationDKR",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "RevisionIndikationDKR",
   "title" : "Revision, indikation (DKR)",
   "status" : "active",

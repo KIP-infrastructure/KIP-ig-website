@@ -1,0 +1,91 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/AarsagOphoerDNSL> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "AarsagOphoerDNSL"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet AarsagOphoerDNSL</b></p><a name=\"AarsagOphoerDNSL\"> </a><a name=\"hcAarsagOphoerDNSL\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-BehandlingAfbrudt.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/BehandlingAfbrudt</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-BehandlingAfbrudt.html#BehandlingAfbrudt-transplant\">transplant</a></td><td>Transplantation</td><td>Transplantation</td></tr><tr><td><a href=\"CodeSystem-BehandlingAfbrudt.html#BehandlingAfbrudt-peritonitis\">peritonitis</a></td><td>Peritonitis</td><td>Peritonitis</td></tr><tr><td><a href=\"CodeSystem-BehandlingAfbrudt.html#BehandlingAfbrudt-ultrafilt_svigt\">ultrafilt_svigt</a></td><td>Ultrafiltrationssvigt</td><td>Ultrafiltrationssvigt</td></tr><tr><td><a href=\"CodeSystem-BehandlingAfbrudt.html#BehandlingAfbrudt-inadekvat_dialyse\">inadekvat_dialyse</a></td><td>Inadekvat dialyse</td><td>Inadekvat dialyse</td></tr><tr><td><a href=\"CodeSystem-BehandlingAfbrudt.html#BehandlingAfbrudt-hernia\">hernia</a></td><td>Hernia (inkl Diafragma)</td><td>Hernia (inkl Diafragma)</td></tr><tr><td><a href=\"CodeSystem-BehandlingAfbrudt.html#BehandlingAfbrudt-teknisk\">teknisk</a></td><td>Teknisk (fx kateterproblem)</td><td>Teknisk (fx kateterproblem)</td></tr><tr><td><a href=\"CodeSystem-BehandlingAfbrudt.html#BehandlingAfbrudt-anden_medicinsk\">anden_medicinsk</a></td><td>Andre medicinske årsager (fx apopleksi)</td><td>Andre medicinske årsager (fx apopleksi)</td></tr><tr><td><a href=\"CodeSystem-BehandlingAfbrudt.html#BehandlingAfbrudt-patient_valg\">patient_valg</a></td><td>Patient valg</td><td>Patient valg</td></tr><tr><td><a href=\"CodeSystem-BehandlingAfbrudt.html#BehandlingAfbrudt-socialt\">socialt</a></td><td>Socialt</td><td>Socialt</td></tr><tr><td><a href=\"CodeSystem-BehandlingAfbrudt.html#BehandlingAfbrudt-abdominal_op\">abdominal_op</a></td><td>Abdominal operation</td><td>Abdominal operation</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/AarsagOphoerDNSL"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.1"] ;
+  fhir:ValueSet.name [ fhir:value "AarsagOphoerDNSL"] ;
+  fhir:ValueSet.title [ fhir:value "Årsag til ophør (DNSL)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2024-01-10T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Årsager til interventionsforløb er ophørt"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/BehandlingAfbrudt" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "transplant" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Transplantation" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "peritonitis" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Peritonitis" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ultrafilt_svigt" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ultrafiltrationssvigt" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "inadekvat_dialyse" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Inadekvat dialyse" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "hernia" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hernia (inkl Diafragma)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "teknisk" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Teknisk (fx kateterproblem)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "anden_medicinsk" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Andre medicinske årsager (fx apopleksi)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "patient_valg" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patient valg" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "socialt" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Socialt" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "abdominal_op" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Abdominal operation" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/AarsagOphoerDNSL.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

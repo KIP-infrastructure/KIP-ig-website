@@ -1,4 +1,4 @@
-# Kontakt til patient - KIP Infrastructure v2.27.0
+# Kontakt til patient - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/ContactPatient | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/ContactPatient | *Version*:2.27.1 |
 | Active as of 2024-02-21 | *Computable Name*:ContactPatient |
 
  
@@ -32,7 +32,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "ContactPatient",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/ContactPatient",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "ContactPatient",
   "title" : "Kontakt til patient",
   "status" : "active",

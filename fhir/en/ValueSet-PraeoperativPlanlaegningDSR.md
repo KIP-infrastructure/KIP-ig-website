@@ -1,4 +1,4 @@
-# Præoperativ planlægning (DSR) - KIP Infrastructure v2.27.0
+# Præoperativ planlægning (DSR) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/PraeoperativPlanlaegningDSR | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/PraeoperativPlanlaegningDSR | *Version*:2.27.1 |
 | Active as of 2022-10-06 | *Computable Name*:PraeoperativPlanlaegningDSR |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "PraeoperativPlanlaegningDSR",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/PraeoperativPlanlaegningDSR",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "PraeoperativPlanlaegningDSR",
   "title" : "Præoperativ planlægning (DSR)",
   "status" : "active",

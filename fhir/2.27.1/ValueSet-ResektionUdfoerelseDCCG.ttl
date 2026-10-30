@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/ResektionUdfoerelseDCCG> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ResektionUdfoerelseDCCG"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ResektionUdfoerelseDCCG</b></p><a name=\"ResektionUdfoerelseDCCG\"> </a><a name=\"hcResektionUdfoerelseDCCG\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-ResectionCompletion.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ResectionCompletion</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ResectionCompletion.html#ResectionCompletion-missing_radicality_sektion\">missing_radicality_sektion</a></td><td>Manglende radikalitet af endoskopiske lokalresektion</td><td>Manglende radikalitet af endoskopiske lokalresektion</td></tr><tr><td><a href=\"CodeSystem-ResectionCompletion.html#ResectionCompletion-undeterminable_radicality_piecemeal\">undeterminable_radicality_piecemeal</a></td><td>Radikalitet af lokalresektionen kan ikke vurderes på grund af piecemeal teknik</td><td>Radikalitet af lokalresektionen kan ikke vurderes på grund af piecemeal teknik</td></tr><tr><td><a href=\"CodeSystem-ResectionCompletion.html#ResectionCompletion-pathology_risk_factors\">pathology_risk_factors</a></td><td>Tilstedeværelse af en eller flere patologirisikofaktorer</td><td>Tilstedeværelse af en eller flere patologirisikofaktorer</td></tr><tr><td><a href=\"CodeSystem-ResectionCompletion.html#ResectionCompletion-missing_radicality_risk\">missing_radicality_risk</a></td><td>Manglende radikalitet og tilstedeværelse af risikofaktorer</td><td>Manglende radikalitet og tilstedeværelse af risikofaktorer</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Anden begrundelse inkl. patientønske</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/ResektionUdfoerelseDCCG"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.1"] ;
+  fhir:ValueSet.name [ fhir:value "ResektionUdfoerelseDCCG"] ;
+  fhir:ValueSet.title [ fhir:value "Udførelse af resektion DCCG"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-09-07T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Udførelse af resektion DCCG"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/ResectionCompletion" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "missing_radicality_sektion" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Manglende radikalitet af endoskopiske lokalresektion" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "undeterminable_radicality_piecemeal" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Radikalitet af lokalresektionen kan ikke vurderes på grund af piecemeal teknik" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "pathology_risk_factors" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tilstedeværelse af en eller flere patologirisikofaktorer" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "missing_radicality_risk" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Manglende radikalitet og tilstedeværelse af risikofaktorer" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anden begrundelse inkl. patientønske" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/ResektionUdfoerelseDCCG.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

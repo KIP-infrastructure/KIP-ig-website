@@ -1,0 +1,100 @@
+# Clavien komplikationsgrad lang DCCG - KIP Infrastructure v2.27.1
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Clavien komplikationsgrad lang DCCG**
+
+## ValueSet: Clavien komplikationsgrad lang DCCG 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ClavienKomplikationsgradLangDCCG | *Version*:2.27.1 |
+| Active as of 2023-06-20 | *Computable Name*:ClavienKomplikationsgradLangDCCG |
+
+ 
+Clavien komplikationsgrad lang DCCG 
+
+ **References** 
+
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+
+### Logical Definition (CLD)
+
+ 
+
+### Expansion
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "ClavienKomplikationsgradLangDCCG",
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/ClavienKomplikationsgradLangDCCG",
+  "version" : "2.27.1",
+  "name" : "ClavienKomplikationsgradLangDCCG",
+  "title" : "Clavien komplikationsgrad lang DCCG",
+  "status" : "active",
+  "date" : "2023-06-20T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Clavien komplikationsgrad lang DCCG",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "none",
+        "display" : "Ingen"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/SKS",
+      "concept" : [{
+        "code" : "ZDA03A1",
+        "display" : "Grad 1: Enhver afvigelse fra det normale postoperative forløb uden kirurgisk, endoskopisk, radiologisk eller farmakologisk intervention med undtagelse af\nvæskebehandling, behandling med antiemetika, febernedsættende medicin, smertestillende medicin eller diuretika og fysioterapi. Omfatter\nsårspaltning bed-side og hjerteinsufficiens som udelukkende behandles med diuretika"
+      },
+      {
+        "code" : "ZDA03A2",
+        "display" : "Grad 2: Medicinsk behandling inkl. blodtransfusion eller parenteral ernæring, men eksklusiv væskebehandling og behandling med antiemetika,\nfebernedsættende medicin, smertestillende medicin eller diuretika"
+      },
+      {
+        "code" : "ZDA03A3A",
+        "display" : "Grad 3a: Komplikation som er behandlet kirurgisk, endoskopisk eller radiologisk (perkutan drænage) behandling uden narkose, men inkl. eventuel rus"
+      },
+      {
+        "code" : "ZDA03A3B",
+        "display" : "Grad 3b: Komplikation som er behandlet kirurgisk, endoskopisk eller radiologisk (perkutan drænage) behandling i narkose ekskl. rus"
+      },
+      {
+        "code" : "ZDA03A4A",
+        "display" : "Grad 4a: Livstruende komplikation (inkl. CNS) som krævede indlæggelse på en intensiv afdeling, med svigt af et organ (inkl. dialyse)"
+      },
+      {
+        "code" : "ZDA03A4B",
+        "display" : "Grad 4b: Livstruende komplikation (inkl. CNS) som krævede indlæggelse på en intensiv afdeling med multiorgansvigt"
+      },
+      {
+        "code" : "ZDA03A5",
+        "display" : "Grad 5: Død"
+      }]
+    }]
+  }
+}
+
+```

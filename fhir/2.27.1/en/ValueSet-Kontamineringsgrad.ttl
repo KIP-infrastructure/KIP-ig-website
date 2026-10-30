@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/Kontamineringsgrad> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "Kontamineringsgrad"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Kontamineringsgrad</b></p><a name=\"Kontamineringsgrad\"> </a><a name=\"hcKontamineringsgrad\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-ContaminationDegree.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ContaminationDegree</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ContaminationDegree.html#ContaminationDegree-clean\">clean</a></td><td>Ren</td><td>Clean / Ren</td></tr><tr><td><a href=\"CodeSystem-ContaminationDegree.html#ContaminationDegree-potentially_contaminated\">potentially_contaminated</a></td><td>Potentielt kontamineret</td><td>Potentially contaminated / Potentielt kontamineret</td></tr><tr><td><a href=\"CodeSystem-ContaminationDegree.html#ContaminationDegree-contaminated\">contaminated</a></td><td>Kontamineret</td><td>Contaminated / Kontamineret</td></tr><tr><td><a href=\"CodeSystem-ContaminationDegree.html#ContaminationDegree-dirty\">dirty</a></td><td>Snavset</td><td>Dirty / Snavset</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/Kontamineringsgrad"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.1"] ;
+  fhir:ValueSet.name [ fhir:value "Kontamineringsgrad"] ;
+  fhir:ValueSet.title [ fhir:value "Kontamineringsgrad"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-07-20T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Kontamineringsgrad"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/ContaminationDegree" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "clean" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ren" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "potentially_contaminated" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Potentielt kontamineret" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "contaminated" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kontamineret" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "dirty" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Snavset" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/Kontamineringsgrad.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

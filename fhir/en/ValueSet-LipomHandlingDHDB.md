@@ -1,4 +1,4 @@
-# Håndtering af lipom (DHDB) - KIP Infrastructure v2.27.0
+# Håndtering af lipom (DHDB) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/LipomHandlingDHDB | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/LipomHandlingDHDB | *Version*:2.27.1 |
 | Active as of 2024-09-10 | *Computable Name*:LipomHandlingDHDB |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "LipomHandlingDHDB",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/LipomHandlingDHDB",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "LipomHandlingDHDB",
   "title" : "Håndtering af lipom (DHDB)",
   "status" : "active",

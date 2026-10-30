@@ -1,0 +1,368 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/ChemotherapyRegimen> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ChemotherapyRegimen"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ChemotherapyRegimen</b></p><a name=\"ChemotherapyRegimen\"> </a><a name=\"hcChemotherapyRegimen\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/ChemotherapyRegimen</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">abvd<a name=\"ChemotherapyRegimen-abvd\"> </a></td><td>ABVD</td><td>ABVD / SKS: BWHA167</td></tr><tr><td style=\"white-space:nowrap\">copp<a name=\"ChemotherapyRegimen-copp\"> </a></td><td>COPP</td><td>COPP / SKS: BWHA156</td></tr><tr><td style=\"white-space:nowrap\">abvd/copp<a name=\"ChemotherapyRegimen-abvd.47copp\"> </a></td><td>ABVD/COPP</td><td>ABVD/COPP</td></tr><tr><td style=\"white-space:nowrap\">acvbp<a name=\"ChemotherapyRegimen-acvbp\"> </a></td><td>ACVBP</td><td>ACVBP</td></tr><tr><td style=\"white-space:nowrap\">all_regime<a name=\"ChemotherapyRegimen-all_regime\"> </a></td><td>ALL regime</td><td>ALL regime</td></tr><tr><td style=\"white-space:nowrap\">adriamycin<a name=\"ChemotherapyRegimen-adriamycin\"> </a></td><td>Adriamycin</td><td>Adriamycin</td></tr><tr><td style=\"white-space:nowrap\">bac<a name=\"ChemotherapyRegimen-bac\"> </a></td><td>BAC</td><td>BAC (Bendamustin Ara-c)</td></tr><tr><td style=\"white-space:nowrap\">bfm<a name=\"ChemotherapyRegimen-bfm\"> </a></td><td>BFM</td><td>BFM</td></tr><tr><td style=\"white-space:nowrap\">cap<a name=\"ChemotherapyRegimen-cap\"> </a></td><td>CAP</td><td>CAP</td></tr><tr><td style=\"white-space:nowrap\">ccvp<a name=\"ChemotherapyRegimen-ccvp\"> </a></td><td>CCVP</td><td>CCVP</td></tr><tr><td style=\"white-space:nowrap\">chic<a name=\"ChemotherapyRegimen-chic\"> </a></td><td>CHIC</td><td>CHIC</td></tr><tr><td style=\"white-space:nowrap\">chlorambucil_vinblastin_procarb<a name=\"ChemotherapyRegimen-chlorambucil_vinblastin_procarb\"> </a></td><td>Chlorambucil og Vinblastin og procarb</td><td>Chlorambucil og Vinblastin og procarb</td></tr><tr><td style=\"white-space:nowrap\">cnsbonn<a name=\"ChemotherapyRegimen-cnsbonn\"> </a></td><td>CNSBONN</td><td>CNSBONN</td></tr><tr><td style=\"white-space:nowrap\">cns_matrix<a name=\"ChemotherapyRegimen-cns_matrix\"> </a></td><td>CNS matrix</td><td>CNS matrix</td></tr><tr><td style=\"white-space:nowrap\">cns_mvbp<a name=\"ChemotherapyRegimen-cns_mvbp\"> </a></td><td>CNS MVBP</td><td>CNS MVBP</td></tr><tr><td style=\"white-space:nowrap\">cns_mvp<a name=\"ChemotherapyRegimen-cns_mvp\"> </a></td><td>CNS MVP</td><td>CNS MVP</td></tr><tr><td style=\"white-space:nowrap\">codox_m/ivac<a name=\"ChemotherapyRegimen-codox_m.47ivac\"> </a></td><td>CODOX-M/IVAC</td><td>CODOX-M/IVAC</td></tr><tr><td style=\"white-space:nowrap\">comp<a name=\"ChemotherapyRegimen-comp\"> </a></td><td>COMP</td><td>COMP</td></tr><tr><td style=\"white-space:nowrap\">cope<a name=\"ChemotherapyRegimen-cope\"> </a></td><td>COPE</td><td>COPE</td></tr><tr><td style=\"white-space:nowrap\">cvbp<a name=\"ChemotherapyRegimen-cvbp\"> </a></td><td>CVBP</td><td>CVBP</td></tr><tr><td style=\"white-space:nowrap\">cvp<a name=\"ChemotherapyRegimen-cvp\"> </a></td><td>CVP</td><td>CVP</td></tr><tr><td style=\"white-space:nowrap\">dexabeam<a name=\"ChemotherapyRegimen-dexabeam\"> </a></td><td>DexaBEAM</td><td>DexaBEAM</td></tr><tr><td style=\"white-space:nowrap\">dhap<a name=\"ChemotherapyRegimen-dhap\"> </a></td><td>DHAP</td><td>DHAP</td></tr><tr><td style=\"white-space:nowrap\">ecapp<a name=\"ChemotherapyRegimen-ecapp\"> </a></td><td>ECAPP</td><td>ECAPP</td></tr><tr><td style=\"white-space:nowrap\">epoch<a name=\"ChemotherapyRegimen-epoch\"> </a></td><td>EPOCH</td><td>EPOCH</td></tr><tr><td style=\"white-space:nowrap\">eshap<a name=\"ChemotherapyRegimen-eshap\"> </a></td><td>ESHAP</td><td>ESHAP</td></tr><tr><td style=\"white-space:nowrap\">fcd<a name=\"ChemotherapyRegimen-fcd\"> </a></td><td>FCD</td><td>FCD</td></tr><tr><td style=\"white-space:nowrap\">fnd<a name=\"ChemotherapyRegimen-fnd\"> </a></td><td>FND</td><td>FND</td></tr><tr><td style=\"white-space:nowrap\">gdp<a name=\"ChemotherapyRegimen-gdp\"> </a></td><td>GDP</td><td>GDP</td></tr><tr><td style=\"white-space:nowrap\">gem_p_28<a name=\"ChemotherapyRegimen-gem_p_28\"> </a></td><td>GEM-P-28</td><td>GEM-P-28</td></tr><tr><td style=\"white-space:nowrap\">gemox<a name=\"ChemotherapyRegimen-gemox\"> </a></td><td>GemOx</td><td>GemOx</td></tr><tr><td style=\"white-space:nowrap\">hd_ara_c<a name=\"ChemotherapyRegimen-hd_ara_c\"> </a></td><td>HD-Ara-C</td><td>HD-Ara-C</td></tr><tr><td style=\"white-space:nowrap\">hd_ctx<a name=\"ChemotherapyRegimen-hd_ctx\"> </a></td><td>HD-CTX</td><td>HD-CTX</td></tr><tr><td style=\"white-space:nowrap\">hd_ctx_vp16<a name=\"ChemotherapyRegimen-hd_ctx_vp16\"> </a></td><td>HD-CTX+VP16</td><td>HD-CTX+VP16</td></tr><tr><td style=\"white-space:nowrap\">hd_vp16<a name=\"ChemotherapyRegimen-hd_vp16\"> </a></td><td>HD-VP16</td><td>HD-VP16</td></tr><tr><td style=\"white-space:nowrap\">hd_mtx<a name=\"ChemotherapyRegimen-hd_mtx\"> </a></td><td>HD-MTX</td><td>HD-MTX</td></tr><tr><td style=\"white-space:nowrap\">hyper_cvad<a name=\"ChemotherapyRegimen-hyper_cvad\"> </a></td><td>Hyper-CVAD/IVAC</td><td>Hyper-CVAD/IVAC</td></tr><tr><td style=\"white-space:nowrap\">ice<a name=\"ChemotherapyRegimen-ice\"> </a></td><td>ICE</td><td>ICE</td></tr><tr><td style=\"white-space:nowrap\">igev<a name=\"ChemotherapyRegimen-igev\"> </a></td><td>IGEV</td><td>IGEV</td></tr><tr><td style=\"white-space:nowrap\">ike<a name=\"ChemotherapyRegimen-ike\"> </a></td><td>IKE</td><td>IKE</td></tr><tr><td style=\"white-space:nowrap\">ive<a name=\"ChemotherapyRegimen-ive\"> </a></td><td>IVE</td><td>IVE</td></tr><tr><td style=\"white-space:nowrap\">it_behandling<a name=\"ChemotherapyRegimen-it_behandling\"> </a></td><td>IT-behandling</td><td>IT-behandling</td></tr><tr><td style=\"white-space:nowrap\">macop_b<a name=\"ChemotherapyRegimen-macop_b\"> </a></td><td>MACOP-B</td><td>MACOP-b</td></tr><tr><td style=\"white-space:nowrap\">mantle_2<a name=\"ChemotherapyRegimen-mantle_2\"> </a></td><td>Mantle 2</td><td>Mantle 2</td></tr><tr><td style=\"white-space:nowrap\">maxi_mime<a name=\"ChemotherapyRegimen-maxi_mime\"> </a></td><td>Maxi-MIME</td><td>Maxi-MIME</td></tr><tr><td style=\"white-space:nowrap\">mini_beam<a name=\"ChemotherapyRegimen-mini_beam\"> </a></td><td>Mini-BEAM</td><td>Mini-BEAM</td></tr><tr><td style=\"white-space:nowrap\">mini_chop<a name=\"ChemotherapyRegimen-mini_chop\"> </a></td><td>Mini-CHOP</td><td>Mini-CHOP</td></tr><tr><td style=\"white-space:nowrap\">nopho<a name=\"ChemotherapyRegimen-nopho\"> </a></td><td>NOPHO</td><td>NOPHO</td></tr><tr><td style=\"white-space:nowrap\">pix_etoposid_benda<a name=\"ChemotherapyRegimen-pix_etoposid_benda\"> </a></td><td>Pix-etoposid-Benda</td><td>Pix-etoposid-Benda</td></tr><tr><td style=\"white-space:nowrap\">peroral_cytostatika<a name=\"ChemotherapyRegimen-peroral_cytostatika\"> </a></td><td>Peroral cytostatika</td><td>Peroral cytostatika</td></tr><tr><td style=\"white-space:nowrap\">smile<a name=\"ChemotherapyRegimen-smile\"> </a></td><td>Smile</td><td>Smile</td></tr><tr><td style=\"white-space:nowrap\">triangle_mantle<a name=\"ChemotherapyRegimen-triangle_mantle\"> </a></td><td>Triangle (Mantle)</td><td>Triangle (Mantle)</td></tr><tr><td style=\"white-space:nowrap\">velbe<a name=\"ChemotherapyRegimen-velbe\"> </a></td><td>Velbe</td><td>Velbe</td></tr><tr><td style=\"white-space:nowrap\">velcade<a name=\"ChemotherapyRegimen-velcade\"> </a></td><td>Velcade</td><td>Velcade</td></tr><tr><td style=\"white-space:nowrap\">copdac<a name=\"ChemotherapyRegimen-copdac\"> </a></td><td>COPDAC</td><td>COPDAC</td></tr><tr><td style=\"white-space:nowrap\">ebvp<a name=\"ChemotherapyRegimen-ebvp\"> </a></td><td>EBVP</td><td>EBVP</td></tr><tr><td style=\"white-space:nowrap\">ipe<a name=\"ChemotherapyRegimen-ipe\"> </a></td><td>IPE</td><td>IPE</td></tr><tr><td style=\"white-space:nowrap\">oepa<a name=\"ChemotherapyRegimen-oepa\"> </a></td><td>OEPA</td><td>OEPA</td></tr><tr><td style=\"white-space:nowrap\">oppa<a name=\"ChemotherapyRegimen-oppa\"> </a></td><td>OPPA</td><td>OPPA</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/ChemotherapyRegimen"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.1"] ;
+  fhir:CodeSystem.name [ fhir:value "ChemotherapyRegimen"] ;
+  fhir:CodeSystem.title [ fhir:value "Chemotherapy regimen"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2022-07-15T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Chemotherapy regimen"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "59"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "abvd" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ABVD" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "ABVD / SKS: BWHA167" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "copp" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "COPP" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "COPP / SKS: BWHA156" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "abvd/copp" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ABVD/COPP" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "ABVD/COPP" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "acvbp" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ACVBP" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "ACVBP" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "all_regime" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ALL regime" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "ALL regime" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "adriamycin" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Adriamycin" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Adriamycin" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bac" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "BAC" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "BAC (Bendamustin Ara-c)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bfm" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "BFM" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "BFM" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cap" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CAP" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "CAP" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ccvp" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CCVP" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "CCVP" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "chic" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CHIC" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "CHIC" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "chlorambucil_vinblastin_procarb" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Chlorambucil og Vinblastin og procarb" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Chlorambucil og Vinblastin og procarb" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cnsbonn" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CNSBONN" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "CNSBONN" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cns_matrix" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CNS matrix" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "CNS matrix" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cns_mvbp" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CNS MVBP" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "CNS MVBP" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cns_mvp" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CNS MVP" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "CNS MVP" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "codox_m/ivac" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CODOX-M/IVAC" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "CODOX-M/IVAC" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "comp" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "COMP" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "COMP" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cope" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "COPE" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "COPE" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cvbp" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CVBP" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "CVBP" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cvp" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CVP" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "CVP" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dexabeam" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "DexaBEAM" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "DexaBEAM" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dhap" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "DHAP" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "DHAP" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ecapp" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ECAPP" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "ECAPP" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "epoch" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "EPOCH" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "EPOCH" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "eshap" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ESHAP" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "ESHAP" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "fcd" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "FCD" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "FCD" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "fnd" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "FND" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "FND" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "gdp" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "GDP" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "GDP" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "gem_p_28" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "GEM-P-28" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "GEM-P-28" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "gemox" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "GemOx" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "GemOx" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "hd_ara_c" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "HD-Ara-C" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "HD-Ara-C" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "hd_ctx" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "HD-CTX" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "HD-CTX" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "hd_ctx_vp16" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "HD-CTX+VP16" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "HD-CTX+VP16" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "hd_vp16" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "HD-VP16" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "HD-VP16" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "hd_mtx" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "HD-MTX" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "HD-MTX" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "hyper_cvad" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hyper-CVAD/IVAC" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Hyper-CVAD/IVAC" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ice" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ICE" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "ICE" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "igev" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "IGEV" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "IGEV" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ike" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "IKE" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "IKE" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ive" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "IVE" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "IVE" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "it_behandling" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "IT-behandling" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "IT-behandling" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "macop_b" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "MACOP-B" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "MACOP-b" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "mantle_2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mantle 2" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Mantle 2" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "maxi_mime" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Maxi-MIME" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Maxi-MIME" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "mini_beam" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mini-BEAM" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Mini-BEAM" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "mini_chop" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mini-CHOP" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Mini-CHOP" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "nopho" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "NOPHO" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "NOPHO" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "pix_etoposid_benda" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pix-etoposid-Benda" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Pix-etoposid-Benda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "peroral_cytostatika" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Peroral cytostatika" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Peroral cytostatika" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "smile" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Smile" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Smile" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "triangle_mantle" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Triangle (Mantle)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Triangle (Mantle)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "velbe" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Velbe" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Velbe" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "velcade" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Velcade" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Velcade" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "copdac" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "COPDAC" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "COPDAC" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ebvp" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "EBVP" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "EBVP" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ipe" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "IPE" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "IPE" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "oepa" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "OEPA" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "OEPA" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "oppa" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "OPPA" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "OPPA" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/ChemotherapyRegimen.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

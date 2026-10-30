@@ -1,0 +1,328 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/IntervalsExact> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "IntervalsExact"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IntervalsExact</b></p><a name=\"IntervalsExact\"> </a><a name=\"hcIntervalsExact\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/IntervalsExact</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">m10<a name=\"IntervalsExact-m10\"> </a></td><td>-10</td><td>-10,0</td></tr><tr><td style=\"white-space:nowrap\">m9-5<a name=\"IntervalsExact-m9-5\"> </a></td><td>-9,5</td><td>-9,5</td></tr><tr><td style=\"white-space:nowrap\">m9<a name=\"IntervalsExact-m9\"> </a></td><td>-9</td><td>-9,0</td></tr><tr><td style=\"white-space:nowrap\">m8-5<a name=\"IntervalsExact-m8-5\"> </a></td><td>-8,5</td><td>-8,5</td></tr><tr><td style=\"white-space:nowrap\">m8<a name=\"IntervalsExact-m8\"> </a></td><td>-8</td><td>-8,0</td></tr><tr><td style=\"white-space:nowrap\">m7-5<a name=\"IntervalsExact-m7-5\"> </a></td><td>-7,5</td><td>-7,5</td></tr><tr><td style=\"white-space:nowrap\">m7<a name=\"IntervalsExact-m7\"> </a></td><td>-7</td><td>-7,0</td></tr><tr><td style=\"white-space:nowrap\">m6-5<a name=\"IntervalsExact-m6-5\"> </a></td><td>-6,5</td><td>-6,5</td></tr><tr><td style=\"white-space:nowrap\">m6<a name=\"IntervalsExact-m6\"> </a></td><td>-6</td><td>-6,0</td></tr><tr><td style=\"white-space:nowrap\">m5-5<a name=\"IntervalsExact-m5-5\"> </a></td><td>-5,5</td><td>-5,5</td></tr><tr><td style=\"white-space:nowrap\">m5<a name=\"IntervalsExact-m5\"> </a></td><td>-5</td><td>-5,0</td></tr><tr><td style=\"white-space:nowrap\">m4-5<a name=\"IntervalsExact-m4-5\"> </a></td><td>-4,5</td><td>-4,5</td></tr><tr><td style=\"white-space:nowrap\">m4<a name=\"IntervalsExact-m4\"> </a></td><td>-4</td><td>-4,0</td></tr><tr><td style=\"white-space:nowrap\">m3-5<a name=\"IntervalsExact-m3-5\"> </a></td><td>-3,5</td><td>-3,5</td></tr><tr><td style=\"white-space:nowrap\">m3<a name=\"IntervalsExact-m3\"> </a></td><td>-3</td><td>-3,0</td></tr><tr><td style=\"white-space:nowrap\">m2-5<a name=\"IntervalsExact-m2-5\"> </a></td><td>-2,5</td><td>-2,5</td></tr><tr><td style=\"white-space:nowrap\">m2<a name=\"IntervalsExact-m2\"> </a></td><td>-2</td><td>-2,0</td></tr><tr><td style=\"white-space:nowrap\">m1-5<a name=\"IntervalsExact-m1-5\"> </a></td><td>-1,5</td><td>-1,5</td></tr><tr><td style=\"white-space:nowrap\">m1<a name=\"IntervalsExact-m1\"> </a></td><td>-1</td><td>-1,0</td></tr><tr><td style=\"white-space:nowrap\">m0-5<a name=\"IntervalsExact-m0-5\"> </a></td><td>-0,5</td><td>-0,5</td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"IntervalsExact-0\"> </a></td><td>0</td><td>0,0</td></tr><tr><td style=\"white-space:nowrap\">0-5<a name=\"IntervalsExact-0-5\"> </a></td><td>0,5</td><td>0,5</td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"IntervalsExact-1\"> </a></td><td>1</td><td>1,0</td></tr><tr><td style=\"white-space:nowrap\">1-5<a name=\"IntervalsExact-1-5\"> </a></td><td>1,5</td><td>1,5</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"IntervalsExact-2\"> </a></td><td>2</td><td>2,0</td></tr><tr><td style=\"white-space:nowrap\">2-5<a name=\"IntervalsExact-2-5\"> </a></td><td>2,5</td><td>2,5</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"IntervalsExact-3\"> </a></td><td>3</td><td>3,0</td></tr><tr><td style=\"white-space:nowrap\">3-5<a name=\"IntervalsExact-3-5\"> </a></td><td>3,5</td><td>3,5</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"IntervalsExact-4\"> </a></td><td>4</td><td>4,0</td></tr><tr><td style=\"white-space:nowrap\">4-5<a name=\"IntervalsExact-4-5\"> </a></td><td>4,5</td><td>4,5</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"IntervalsExact-5\"> </a></td><td>5</td><td>5,0</td></tr><tr><td style=\"white-space:nowrap\">5-5<a name=\"IntervalsExact-5-5\"> </a></td><td>5,5</td><td>5,5</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"IntervalsExact-6\"> </a></td><td>6</td><td>6,0</td></tr><tr><td style=\"white-space:nowrap\">6-5<a name=\"IntervalsExact-6-5\"> </a></td><td>6,5</td><td>6,5</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"IntervalsExact-7\"> </a></td><td>7</td><td>7,0</td></tr><tr><td style=\"white-space:nowrap\">7-5<a name=\"IntervalsExact-7-5\"> </a></td><td>7,5</td><td>7,5</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"IntervalsExact-8\"> </a></td><td>8</td><td>8,0</td></tr><tr><td style=\"white-space:nowrap\">8-5<a name=\"IntervalsExact-8-5\"> </a></td><td>8,5</td><td>8,5</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"IntervalsExact-9\"> </a></td><td>9</td><td>9,0</td></tr><tr><td style=\"white-space:nowrap\">9-5<a name=\"IntervalsExact-9-5\"> </a></td><td>9,5</td><td>9,5</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"IntervalsExact-10\"> </a></td><td>10</td><td>10,0</td></tr><tr><td style=\"white-space:nowrap\">10-5<a name=\"IntervalsExact-10-5\"> </a></td><td>10,5</td><td>10,5</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"IntervalsExact-11\"> </a></td><td>11</td><td>11,0</td></tr><tr><td style=\"white-space:nowrap\">11-5<a name=\"IntervalsExact-11-5\"> </a></td><td>11,5</td><td>1,5</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"IntervalsExact-12\"> </a></td><td>12</td><td>12,0</td></tr><tr><td style=\"white-space:nowrap\">12-5<a name=\"IntervalsExact-12-5\"> </a></td><td>12,5</td><td>2,5</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"IntervalsExact-13\"> </a></td><td>13</td><td>13,0</td></tr><tr><td style=\"white-space:nowrap\">13-5<a name=\"IntervalsExact-13-5\"> </a></td><td>13,5</td><td>3,5</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"IntervalsExact-14\"> </a></td><td>14</td><td>14,0</td></tr><tr><td style=\"white-space:nowrap\">14-5<a name=\"IntervalsExact-14-5\"> </a></td><td>14,5</td><td>4,5</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"IntervalsExact-15\"> </a></td><td>15</td><td>15,0</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/IntervalsExact"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.1"] ;
+  fhir:CodeSystem.name [ fhir:value "IntervalsExact"] ;
+  fhir:CodeSystem.title [ fhir:value "Intervaller eksakte værdier"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2024-02-13T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Intervaller med varierende eksakte værdier"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "51"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "m10" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "-10" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "-10,0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "m9-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "-9,5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "-9,5" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "m9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "-9" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "-9,0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "m8-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "-8,5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "-8,5" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "m8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "-8" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "-8,0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "m7-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "-7,5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "-7,5" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "m7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "-7" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "-7,0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "m6-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "-6,5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "-6,5" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "m6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "-6" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "-6,0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "m5-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "-5,5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "-5,5" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "m5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "-5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "-5,0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "m4-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "-4,5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "-4,5" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "m4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "-4" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "-4,0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "m3-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "-3,5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "-3,5" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "m3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "-3" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "-3,0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "m2-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "-2,5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "-2,5" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "m2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "-2" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "-2,0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "m1-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "-1,5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "-1,5" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "m1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "-1" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "-1,0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "m0-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "-0,5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "-0,5" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "0" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "0,0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "0,5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "0,5" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "1" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "1,0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "1,5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "1,5" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "2" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "2,0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "2,5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "2,5" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "3" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "3,0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "3,5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "3,5" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "4" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "4,0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "4,5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "4,5" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "5,0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "5-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "5,5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "5,5" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "6" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "6,0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "6-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "6,5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "6,5" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "7" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "7,0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "7-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "7,5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "7,5" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "8" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "8,0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "8-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "8,5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "8,5" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "9" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "9,0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "9,5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "9,5" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "10" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "10" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "10,0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "10-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "10,5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "10,5" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "11" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "11" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "11,0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "11-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "11,5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "1,5" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "12" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "12" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "12,0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "12-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "12,5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "2,5" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "13" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "13" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "13,0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "13-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "13,5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "3,5" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "14" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "14" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "14,0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "14-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "14,5" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "4,5" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "15" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "15" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "15,0" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/IntervalsExact.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,81 @@
+# Ryger op til 8 uger - KIP Infrastructure v2.27.1
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Ryger op til 8 uger**
+
+## ValueSet: Ryger op til 8 uger 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/Ryger8uger | *Version*:2.27.1 |
+| Active as of 2022-06-15 | *Computable Name*:Ryger8uger |
+
+ 
+Ryger eller ophørt indenfor 8 uger 
+
+ **References** 
+
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+
+### Logical Definition (CLD)
+
+ 
+
+### Expansion
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "Ryger8uger",
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/Ryger8uger",
+  "version" : "2.27.1",
+  "name" : "Ryger8uger",
+  "title" : "Ryger op til 8 uger",
+  "status" : "active",
+  "date" : "2022-06-15T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Ryger eller ophørt indenfor 8 uger",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/Smoking",
+      "concept" : [{
+        "code" : "non-smoker",
+        "display" : "Ikke ryger"
+      },
+      {
+        "code" : "smoker",
+        "display" : "Ryger eller ophørt indenfor 8 uger"
+      }]
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0532",
+      "version" : "3.0.0",
+      "concept" : [{
+        "code" : "UNK",
+        "display" : "Uoplyst"
+      }]
+    }]
+  }
+}
+
+```

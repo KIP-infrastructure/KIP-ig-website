@@ -1,4 +1,4 @@
-# Oncology Treatment (curative) - KIP Infrastructure v2.27.0
+# Oncology Treatment (curative) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/OncologyTreatmentCurative | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/OncologyTreatmentCurative | *Version*:2.27.1 |
 | Active as of 2022-04-28 | *Computable Name*:OncologyTreatmentCurative |
 
  
@@ -32,7 +32,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "OncologyTreatmentCurative",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/OncologyTreatmentCurative",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "OncologyTreatmentCurative",
   "title" : "Oncology Treatment (curative)",
   "status" : "active",

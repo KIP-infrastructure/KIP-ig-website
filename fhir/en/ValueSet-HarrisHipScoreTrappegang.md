@@ -1,4 +1,4 @@
-# Harris Hip Score - Trappegang - KIP Infrastructure v2.27.0
+# Harris Hip Score - Trappegang - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/HarrisHipScoreTrappegang | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/HarrisHipScoreTrappegang | *Version*:2.27.1 |
 | Active as of 2022-11-15 | *Computable Name*:HarrisHipScoreTrappegang |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "HarrisHipScoreTrappegang",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/HarrisHipScoreTrappegang",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "HarrisHipScoreTrappegang",
   "title" : "Harris Hip Score - Trappegang",
   "status" : "active",

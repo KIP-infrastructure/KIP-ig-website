@@ -1,4 +1,4 @@
-# Priority - KIP Infrastructure v2.27.0
+# Priority - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/Priority | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/Priority | *Version*:2.27.1 |
 | Active as of 2022-05-31 | *Computable Name*:Priority |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "Priority",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/Priority",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "Priority",
   "title" : "Priority",
   "status" : "active",

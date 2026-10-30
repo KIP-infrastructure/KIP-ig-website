@@ -1,4 +1,4 @@
-# Type af pTNM - KIP Infrastructure v2.27.0
+# Type af pTNM - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/PTNMType | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/PTNMType | *Version*:2.27.1 |
 | Active as of 2022-06-07 | *Computable Name*:PTNMType |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "PTNMType",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/PTNMType",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "PTNMType",
   "title" : "Type af pTNM",
   "status" : "active",

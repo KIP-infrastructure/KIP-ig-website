@@ -1,4 +1,4 @@
-# Relaksation til intubation - KIP Infrastructure v2.27.0
+# Relaksation til intubation - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/IntubationRelaks | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/IntubationRelaks | *Version*:2.27.1 |
 | Active as of 2022-06-09 | *Computable Name*:IntubationRelaksCS |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "IntubationRelaks",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/IntubationRelaks",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "IntubationRelaksCS",
   "title" : "Relaksation til intubation",
   "status" : "active",

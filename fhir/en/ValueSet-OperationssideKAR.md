@@ -1,4 +1,4 @@
-# Operationsside (højre/venstre/centralt) (KAR) - KIP Infrastructure v2.27.0
+# Operationsside (højre/venstre/centralt) (KAR) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/OperationssideKAR | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/OperationssideKAR | *Version*:2.27.1 |
 | Active as of 2022-09-27 | *Computable Name*:OperationssideKAR |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "OperationssideKAR",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/OperationssideKAR",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "OperationssideKAR",
   "title" : "Operationsside (højre/venstre/centralt) (KAR)",
   "status" : "active",

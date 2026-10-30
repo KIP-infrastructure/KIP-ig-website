@@ -1,4 +1,4 @@
-# Straffelovsparagraf (RETSPSYK) - KIP Infrastructure v2.27.0
+# Straffelovsparagraf (RETSPSYK) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/StraffelovsparagrafRETSPSYK | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/StraffelovsparagrafRETSPSYK | *Version*:2.27.1 |
 | Active as of 2022-09-28 | *Computable Name*:StraffelovsparagrafRETSPSYK |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "StraffelovsparagrafRETSPSYK",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/StraffelovsparagrafRETSPSYK",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "StraffelovsparagrafRETSPSYK",
   "title" : "Straffelovsparagraf (RETSPSYK)",
   "status" : "active",

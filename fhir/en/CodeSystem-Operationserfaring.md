@@ -1,4 +1,4 @@
-# Operationserfaring - KIP Infrastructure v2.27.0
+# Operationserfaring - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/Operationserfaring | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/Operationserfaring | *Version*:2.27.1 |
 | Active as of 2024-02-15 | *Computable Name*:OperationserfaringCS |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "Operationserfaring",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/Operationserfaring",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "OperationserfaringCS",
   "title" : "Operationserfaring",
   "status" : "active",

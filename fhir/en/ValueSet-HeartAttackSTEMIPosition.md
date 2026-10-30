@@ -1,4 +1,4 @@
-# Position af STEMI hjertestop - KIP Infrastructure v2.27.0
+# Position af STEMI hjertestop - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/HeartAttackSTEMIPosition | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/HeartAttackSTEMIPosition | *Version*:2.27.1 |
 | Active as of 2022-06-07 | *Computable Name*:HeartAttackSTEMIPosition |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "HeartAttackSTEMIPosition",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/HeartAttackSTEMIPosition",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "HeartAttackSTEMIPosition",
   "title" : "Position af STEMI hjertestop",
   "status" : "active",

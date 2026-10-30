@@ -1,0 +1,204 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/Verdict> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "Verdict"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem Verdict</b></p><a name=\"Verdict\"> </a><a name=\"hcVerdict\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/Verdict</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">ordinary_penalty<a name=\"Verdict-ordinary_penalty\"> </a></td><td>Almindelig straf</td><td>Almindelig straf</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">placement_psychiatric_ward<a name=\"Verdict-placement_psychiatric_ward\"> </a></td><td>Dom til anbringelse i psykiatrisk afdeling</td><td>Dom til anbringelse i psykiatrisk afdeling</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">placement_psychiatric_ward_etc<a name=\"Verdict-placement_psychiatric_ward_etc\"> </a></td><td>Dom til anbringelse på psykiatrisk afdeling etc.</td><td>Dom til anbringelse på psykiatrisk afdeling etc.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">placement_secure_ward<a name=\"Verdict-placement_secure_ward\"> </a></td><td>Dom til anbringelse på sikringsafdelingen</td><td>Dom til anbringelse på sikringsafdelingen</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">treatment<a name=\"Verdict-treatment\"> </a></td><td>Dom til behandling på psykiatrisk afdeling</td><td>Dom til behandling på psykiatrisk afdeling</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">treatment_correctional<a name=\"Verdict-treatment_correctional\"> </a></td><td>Dom til behandling på psykiatrisk afdeling med tilsyn af Kriminalforsorgen</td><td>Dom til behandling på psykiatrisk afdeling med tilsyn af Kriminalforsorgen</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">treatment_outpatient<a name=\"Verdict-treatment_outpatient\"> </a></td><td>Dom til ambulant behandling ved psykiatrisk afdeling</td><td>Dom til ambulant behandling ved psykiatrisk afdeling</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">treatment_outpatient_admission<a name=\"Verdict-treatment_outpatient_admission\"> </a></td><td>Dom til ambulant behandling ved psykiatrisk afdeling med mulighed for indlæggelse</td><td>Dom til ambulant behandling ved psykiatrisk afdeling med mulighed for indlæggelse</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">treatment_outpatient_correctional<a name=\"Verdict-treatment_outpatient_correctional\"> </a></td><td>Dom til ambulant behandling ved psykiatrisk afdeling med tilsyn af Kriminalforsorgen</td><td>Dom til ambulant behandling ved psykiatrisk afdeling med tilsyn af Kriminalforsorgen</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">treatment_outpatient_correctional_admission<a name=\"Verdict-treatment_outpatient_correctional_admission\"> </a></td><td>Dom til ambulant behandling ved psykiatrisk afdeling med tilsyn af Kriminalforsorgen og mulighed for indlæggelse</td><td>Dom til ambulant behandling ved psykiatrisk afdeling med tilsyn af Kriminalforsorgen og mulighed for indlæggelse</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">sustainment<a name=\"Verdict-sustainment\"> </a></td><td>Sustainment</td><td>Sustainment / Opretholdelse</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">extension_time<a name=\"Verdict-extension_time\"> </a></td><td>Extension, time</td><td>Extension, time / Forlængelse af længstetid</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">extension_measure<a name=\"Verdict-extension_measure\"> </a></td><td>Extension, measure</td><td>Extension, measure / Forlængelse af foranstaltning</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">cancellation<a name=\"Verdict-cancellation\"> </a></td><td>Cancellation</td><td>Cancellation / Ophævelse</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  criminality<a name=\"Verdict-criminality\"> </a></td><td>Dom ophæves pga. ny kriminalitet, men ingen ny foranstaltning</td><td>Dom ophæves pga. ny kriminalitet, men ingen ny foranstaltning</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  criminality_measure<a name=\"Verdict-criminality_measure\"> </a></td><td>Dom ophæves pga. ny kriminalitet og ny foranstaltning</td><td>Dom ophæves pga. ny kriminalitet og ny foranstaltning</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  psychiatry<a name=\"Verdict-psychiatry\"> </a></td><td>Dom ophæves: patienten afsluttes til psykiatrien i sygehusregi eller egen læge</td><td>Dom ophæves: patienten afsluttes til psykiatrien i sygehusregi eller egen læge</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  disease_expelled_travelled_missing<a name=\"Verdict-disease_expelled_travelled_missing\"> </a></td><td>Dom ophæves pga. alvorlig somatisk sygdom, udvist, udrejst eller forsvundet</td><td>Dom ophæves pga. alvorlig somatisk sygdom, udvist, udrejst eller forsvundet</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  expire<a name=\"Verdict-expire\"> </a></td><td>Dom ophæves / udløbet (ingen ny kriminalitet)</td><td>Dom ophæves / udløbet (ingen ny kriminalitet)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">intensification<a name=\"Verdict-intensification\"> </a></td><td>Intesification</td><td>Intensification / Skærpelse</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">relaxation<a name=\"Verdict-relaxation\"> </a></td><td>Relaxation</td><td>Relaxation / Lempelse</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">change<a name=\"Verdict-change\"> </a></td><td>Change of verdict</td><td>Change of verdict / Ændring af dom</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">pause<a name=\"Verdict-pause\"> </a></td><td>Pause of verdict</td><td>Pause of verdict / Pausering af dom</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  expelled<a name=\"Verdict-expelled\"> </a></td><td>Cause of pause: Expelled</td><td>Cause of pause: Expelled / Udvist</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  travelled_away<a name=\"Verdict-travelled_away\"> </a></td><td>Cause of pause: Travelled away</td><td>Cause of pause: Travelled away / Udrejst</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  missing<a name=\"Verdict-missing\"> </a></td><td>Cause of pause: Missing</td><td>Cause of pause: Missing / Forsvundet</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/Verdict"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.1"] ;
+  fhir:CodeSystem.name [ fhir:value "Verdict"] ;
+  fhir:CodeSystem.title [ fhir:value "Verdict"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2022-09-28T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Verdict"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "26"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index 0 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ordinary_penalty" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Almindelig straf" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Almindelig straf" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "placement_psychiatric_ward" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dom til anbringelse i psykiatrisk afdeling" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Dom til anbringelse i psykiatrisk afdeling" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "placement_psychiatric_ward_etc" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dom til anbringelse på psykiatrisk afdeling etc." ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Dom til anbringelse på psykiatrisk afdeling etc." ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "placement_secure_ward" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dom til anbringelse på sikringsafdelingen" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Dom til anbringelse på sikringsafdelingen" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "treatment" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dom til behandling på psykiatrisk afdeling" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Dom til behandling på psykiatrisk afdeling" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "treatment_correctional" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dom til behandling på psykiatrisk afdeling med tilsyn af Kriminalforsorgen" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Dom til behandling på psykiatrisk afdeling med tilsyn af Kriminalforsorgen" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "treatment_outpatient" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dom til ambulant behandling ved psykiatrisk afdeling" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Dom til ambulant behandling ved psykiatrisk afdeling" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "treatment_outpatient_admission" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dom til ambulant behandling ved psykiatrisk afdeling med mulighed for indlæggelse" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Dom til ambulant behandling ved psykiatrisk afdeling med mulighed for indlæggelse" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "treatment_outpatient_correctional" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dom til ambulant behandling ved psykiatrisk afdeling med tilsyn af Kriminalforsorgen" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Dom til ambulant behandling ved psykiatrisk afdeling med tilsyn af Kriminalforsorgen" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "treatment_outpatient_correctional_admission" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dom til ambulant behandling ved psykiatrisk afdeling med tilsyn af Kriminalforsorgen og mulighed for indlæggelse" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Dom til ambulant behandling ved psykiatrisk afdeling med tilsyn af Kriminalforsorgen og mulighed for indlæggelse" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sustainment" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sustainment" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Sustainment / Opretholdelse" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "extension_time" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Extension, time" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Extension, time / Forlængelse af længstetid" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "extension_measure" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Extension, measure" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Extension, measure / Forlængelse af foranstaltning" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cancellation" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cancellation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Cancellation / Ophævelse" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.code [ fhir:value "criminality" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Dom ophæves pga. ny kriminalitet, men ingen ny foranstaltning" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Dom ophæves pga. ny kriminalitet, men ingen ny foranstaltning" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "criminality_measure" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Dom ophæves pga. ny kriminalitet og ny foranstaltning" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Dom ophæves pga. ny kriminalitet og ny foranstaltning" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.code [ fhir:value "psychiatry" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Dom ophæves: patienten afsluttes til psykiatrien i sygehusregi eller egen læge" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Dom ophæves: patienten afsluttes til psykiatrien i sygehusregi eller egen læge" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.code [ fhir:value "disease_expelled_travelled_missing" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Dom ophæves pga. alvorlig somatisk sygdom, udvist, udrejst eller forsvundet" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Dom ophæves pga. alvorlig somatisk sygdom, udvist, udrejst eller forsvundet" ]
+     ], [
+       fhir:index 4 ;
+       fhir:CodeSystem.concept.code [ fhir:value "expire" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Dom ophæves / udløbet (ingen ny kriminalitet)" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Dom ophæves / udløbet (ingen ny kriminalitet)" ]
+     ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "intensification" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Intesification" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Intensification / Skærpelse" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "relaxation" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Relaxation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Relaxation / Lempelse" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "change" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Change of verdict" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Change of verdict / Ændring af dom" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "pause" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pause of verdict" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Pause of verdict / Pausering af dom" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.code [ fhir:value "expelled" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Cause of pause: Expelled" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Cause of pause: Expelled / Udvist" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "travelled_away" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Cause of pause: Travelled away" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Cause of pause: Travelled away / Udrejst" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.code [ fhir:value "missing" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Cause of pause: Missing" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Cause of pause: Missing / Forsvundet" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/Verdict.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,4 +1,4 @@
-# Aneurysm closure - KIP Infrastructure v2.27.0
+# Aneurysm closure - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/AneurysmClosure | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/AneurysmClosure | *Version*:2.27.1 |
 | Active as of 2022-06-29 | *Computable Name*:AneurysmClosure |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "AneurysmClosure",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/AneurysmClosure",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "AneurysmClosure",
   "title" : "Aneurysm closure",
   "status" : "active",

@@ -1,4 +1,4 @@
-# SOR: Neurokirurgiske afdelinger (DAP) - KIP Infrastructure v2.27.0
+# SOR: Neurokirurgiske afdelinger (DAP) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SORNeurokirurgiskeAfdelingerDAP | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SORNeurokirurgiskeAfdelingerDAP | *Version*:2.27.1 |
 | Active as of 2022-09-06 | *Computable Name*:SORNeurokirurgiskeAfdelingerDAP |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "SORNeurokirurgiskeAfdelingerDAP",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/SORNeurokirurgiskeAfdelingerDAP",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "SORNeurokirurgiskeAfdelingerDAP",
   "title" : "SOR: Neurokirurgiske afdelinger (DAP)",
   "status" : "active",

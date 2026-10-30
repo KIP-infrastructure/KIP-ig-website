@@ -1,0 +1,106 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/LokationAneurismeSAH> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "LokationAneurismeSAH"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet LokationAneurismeSAH</b></p><a name=\"LokationAneurismeSAH\"> </a><a name=\"hcLokationAneurismeSAH\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-SKS.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/SKS</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-T000526\">T000526</a></td><td>A. communicans anterior</td><td>T000526 - arteria communicans anterior</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-T000527\">T000527</a></td><td>A. cerebri anterior (inkl. a. pericallosa)</td><td>T000527 - arteria cerebri anterior</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-T000522\">T000522</a></td><td>A. carotis interna (inkl. paraopthalmisk)</td><td>T000522 - arteria carotis interna</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-T000528\">T000528</a></td><td>A. cerebri media</td><td>T000528 - arteria cerebri media</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-T000523\">T000523</a></td><td>A. communicans posterior</td><td>T000523 - arteria communicans posterior</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-T000530\">T000530</a></td><td>A. basilaris (inkl. Basilaris toppen)</td><td>T000530 - arteria basilaris</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-T000529\">T000529</a></td><td>A. vertebralis</td><td>T000529 - arteria vertebralis</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-AnatomicalLocations.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/AnatomicalLocations</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-acarotistop\">acarotistop</a></td><td>Carotistop aneurisme</td><td>Top of arteria catoris</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-acerebellisuperior\">acerebellisuperior</a></td><td>A. cerebelli superior</td><td>Arteria cerebelli superior</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-acerebelliantinf\">acerebelliantinf</a></td><td>A. cerebelli anterior inferior</td><td>Arteria cerebelli anterior inferior</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-acerebelliposinf\">acerebelliposinf</a></td><td>A. cerebelli posterior inferior</td><td>Arteria cerebelli posterior inferior</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/LokationAneurismeSAH"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.1"] ;
+  fhir:ValueSet.name [ fhir:value "LokationAneurismeSAH"] ;
+  fhir:ValueSet.title [ fhir:value "Anatomisk lokation for anurisme [SAH]"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-06-08T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Anatomisk lokation for anurisme [SAH]"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/SKS" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T000526" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "A. communicans anterior" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T000527" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "A. cerebri anterior (inkl. a. pericallosa)" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T000522" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "A. carotis interna (inkl. paraopthalmisk)" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T000528" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "A. cerebri media" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T000523" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "A. communicans posterior" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T000530" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "A. basilaris (inkl. Basilaris toppen)" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T000529" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "A. vertebralis" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/AnatomicalLocations" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "acarotistop" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Carotistop aneurisme" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "acerebellisuperior" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "A. cerebelli superior" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "acerebelliantinf" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "A. cerebelli anterior inferior" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "acerebelliposinf" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "A. cerebelli posterior inferior" ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Andet" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/LokationAneurismeSAH.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,4 +1,4 @@
-# Luftvejsplan 2026 - KIP Infrastructure v2.27.0
+# Luftvejsplan 2026 - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/Luftvejsplan2026 | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/Luftvejsplan2026 | *Version*:2.27.1 |
 | Retired as of 2022-06-01 | *Computable Name*:Luftvejsplan2026 |
 
  
@@ -39,7 +39,7 @@ Expansions are not generated for retired value sets
   "resourceType" : "ValueSet",
   "id" : "Luftvejsplan2026",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/Luftvejsplan2026",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "Luftvejsplan2026",
   "title" : "Luftvejsplan 2026",
   "status" : "retired",

@@ -1,4 +1,4 @@
-# Komponent - femur (DHR) - KIP Infrastructure v2.27.0
+# Komponent - femur (DHR) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/KomponentFemurDHR | *Version*:2.27.0 |
-| Active as of 2026-07-31 | *Computable Name*:KomponentFemurDHR |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/KomponentFemurDHR | *Version*:2.27.1 |
+| Active as of 2026-10-30 | *Computable Name*:KomponentFemurDHR |
 
  
 Komponent - femur (DHR) 
@@ -37,11 +37,11 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "KomponentFemurDHR",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/KomponentFemurDHR",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "KomponentFemurDHR",
   "title" : "Komponent - femur (DHR)",
   "status" : "active",
-  "date" : "2026-07-31T00:00:00+02:00",
+  "date" : "2026-10-30T00:00:00+01:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
@@ -67,14 +67,8 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
         "display" : "DePuy: Corail u/krave"
       },
       {
-        "code" : "depuy_actis_collared"
-      },
-      {
         "code" : "depuy_corail_revision_stem",
         "display" : "DePuy: Corail Revision Stem - KAR"
-      },
-      {
-        "code" : "depuy_corail_cemented"
       },
       {
         "code" : "depuy_c_stem_amt",

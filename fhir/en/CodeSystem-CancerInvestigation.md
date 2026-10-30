@@ -1,4 +1,4 @@
-# Cancer investigation - KIP Infrastructure v2.27.0
+# Cancer investigation - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/CancerInvestigation | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/CancerInvestigation | *Version*:2.27.1 |
 | Active as of 2022-05-31 | *Computable Name*:CancerInvestigation |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "CancerInvestigation",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/CancerInvestigation",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "CancerInvestigation",
   "title" : "Cancer investigation",
   "status" : "active",

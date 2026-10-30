@@ -1,0 +1,116 @@
+# Modified treatment in cerebral ischemia (mTICI) score - KIP Infrastructure v2.27.1
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Modified treatment in cerebral ischemia (mTICI) score**
+
+## CodeSystem: Modified treatment in cerebral ischemia (mTICI) score 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/MTICIClassification | *Version*:2.27.1 |
+| Active as of 2022-06-28 | *Computable Name*:MTICIClassification |
+
+ 
+Modified treatment in cerebral ischemia (mTICI) score; Link: https://radiopaedia.org/articles/modified-treatment-in-cerebral-ischaemia-mtici-score 
+
+This Code system is referenced in the definition of the following value sets:
+
+* [mTICI reperfusionsgrad](ValueSet-MTICIReperfusionsgrad.md)
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "CodeSystem",
+  "id" : "MTICIClassification",
+  "url" : "https://kip.rkkp.dk/fhir/CodeSystem/MTICIClassification",
+  "version" : "2.27.1",
+  "name" : "MTICIClassification",
+  "title" : "Modified treatment in cerebral ischemia (mTICI) score",
+  "status" : "active",
+  "date" : "2022-06-28T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Modified treatment in cerebral ischemia (mTICI) score; Link: https://radiopaedia.org/articles/modified-treatment-in-cerebral-ischaemia-mtici-score",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 7,
+  "property" : [{
+    "code" : "comment",
+    "uri" : "http://hl7.org/fhir/concept-properties#comment",
+    "description" : "A string that provides additional detail pertinent to the use or understanding of the concept",
+    "type" : "string"
+  },
+  {
+    "code" : "effectiveDate",
+    "uri" : "http://hl7.org/fhir/concept-properties#effectiveDate",
+    "description" : "The date at which the concept status was last changed",
+    "type" : "dateTime"
+  },
+  {
+    "code" : "status",
+    "uri" : "http://hl7.org/fhir/concept-properties#status",
+    "description" : "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired",
+    "type" : "code"
+  },
+  {
+    "code" : "inactive",
+    "uri" : "http://hl7.org/fhir/concept-properties#inactive",
+    "description" : "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive",
+    "type" : "boolean"
+  }],
+  "concept" : [{
+    "code" : "grade0",
+    "display" : "Grade 0",
+    "definition" : "Grade 0: No perfusion"
+  },
+  {
+    "code" : "grade1",
+    "display" : "Grade 1",
+    "definition" : "Grade 1: Antegrade reperfusion past the initial occlusion, but limited distal branch filling with little or slow distal reperfusion"
+  },
+  {
+    "code" : "grade2",
+    "display" : "Grade 2",
+    "definition" : "Grade 2",
+    "concept" : [{
+      "code" : "grade2a",
+      "display" : "Grade 2a",
+      "definition" : "Grade 2a: Antegrade reperfusion of less than half of the occluded target artery previously ischemic territory (e.g. in one major division of the middle cerebral artery (MCA) and its territory)"
+    },
+    {
+      "code" : "grade2b",
+      "display" : "Grade 2b",
+      "definition" : "Grade 2b: Antegrade reperfusion of more than half of the previously occluded target artery ischemic territory (e.g. in two major divisions of the MCA and their territories)"
+    },
+    {
+      "code" : "grade2c",
+      "display" : "Grade 2c",
+      "definition" : "Grade 2c: Near complete perfusion except for slow flow or distal emboli in a few distal cortical vessels"
+    }]
+  },
+  {
+    "code" : "grade3",
+    "display" : "Grade 3",
+    "definition" : "Grade 3: Complete antegrade reperfusion of the previously occluded target artery ischemic territory, with absence of visualized occlusion in all distal branches"
+  }]
+}
+
+```

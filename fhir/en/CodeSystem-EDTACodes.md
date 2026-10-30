@@ -1,4 +1,4 @@
-# EDTA koder (DNSL) - KIP Infrastructure v2.27.0
+# EDTA koder (DNSL) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/EDTACodes | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/EDTACodes | *Version*:2.27.1 |
 | Active as of 2024-01-10 | *Computable Name*:EDTACodes |
 
  
@@ -33,7 +33,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "EDTACodes",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/EDTACodes",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "EDTACodes",
   "title" : "EDTA koder (DNSL)",
   "status" : "active",

@@ -1,0 +1,143 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/FISHVariables> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "FISHVariables"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem FISHVariables</b></p><a name=\"FISHVariables\"> </a><a name=\"hcFISHVariables\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/FISHVariables</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">plasma_cell_identifikation_unspecific<a name=\"FISHVariables-plasma_cell_identifikation_unspecific\"> </a></td><td>Plasma cell identification</td><td>Plasma cell identification, unspecific / Plasmacelleidentifikation, uspecifik</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  cd138_sort<a name=\"FISHVariables-cd138_sort\"> </a></td><td>CD138 sort</td><td>CD138 sort</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  antibodies<a name=\"FISHVariables-antibodies\"> </a></td><td>Antibodies</td><td>Antibodies / Antistof</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">igh_fgfr3<a name=\"FISHVariables-igh_fgfr3\"> </a></td><td>t(4;14)/IGH-FGFR3</td><td>t(4;14)/IGH-FGFR3</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">igh_ccnd1<a name=\"FISHVariables-igh_ccnd1\"> </a></td><td>t(11;14)/IGH-CCND1</td><td>t(11;14)/IGH-CCND1</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">igh_mbf<a name=\"FISHVariables-igh_mbf\"> </a></td><td>t(14;16)/IGH-MBF</td><td>t(14;16)/IGH-MBF</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">igh_mafb<a name=\"FISHVariables-igh_mafb\"> </a></td><td>t(14;20)/IGH-MAFB</td><td>t(14;20)/IGH-MAFB</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">igh_split_signal<a name=\"FISHVariables-igh_split_signal\"> </a></td><td>IgH split signal</td><td>IgH split signal</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">13q_deletion<a name=\"FISHVariables-13q_deletion\"> </a></td><td>13q deletion</td><td>13q deletion</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">tp53_deletion<a name=\"FISHVariables-tp53_deletion\"> </a></td><td>TP53 deletion</td><td>TP53 deletion</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1q21<a name=\"FISHVariables-1q21\"> </a></td><td>1q21 amplifikation</td><td>1q21 amplifikation</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">11q22<a name=\"FISHVariables-11q22\"> </a></td><td>11q22/ATM amplifikation</td><td>11q22/ATM amplifikation</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1q21gain<a name=\"FISHVariables-1q21gain\"> </a></td><td>1q21 gain (3 spot)</td><td>1q21 gain (3 spot)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1qdeletion<a name=\"FISHVariables-1qdeletion\"> </a></td><td>1p deletion</td><td>1p deletion</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/FISHVariables"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.1"] ;
+  fhir:CodeSystem.name [ fhir:value "FISHVariables"] ;
+  fhir:CodeSystem.title [ fhir:value "FISH variables; test"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2025-02-21T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "FISH variables; test"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "14"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index 0 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "plasma_cell_identifikation_unspecific" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Plasma cell identification" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Plasma cell identification, unspecific / Plasmacelleidentifikation, uspecifik" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.code [ fhir:value "cd138_sort" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "CD138 sort" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "CD138 sort" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "antibodies" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Antibodies" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Antibodies / Antistof" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "igh_fgfr3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "t(4;14)/IGH-FGFR3" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "t(4;14)/IGH-FGFR3" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "igh_ccnd1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "t(11;14)/IGH-CCND1" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "t(11;14)/IGH-CCND1" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "igh_mbf" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "t(14;16)/IGH-MBF" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "t(14;16)/IGH-MBF" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "igh_mafb" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "t(14;20)/IGH-MAFB" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "t(14;20)/IGH-MAFB" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "igh_split_signal" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "IgH split signal" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "IgH split signal" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "13q_deletion" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "13q deletion" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "13q deletion" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tp53_deletion" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TP53 deletion" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "TP53 deletion" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1q21" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "1q21 amplifikation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "1q21 amplifikation" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "11q22" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "11q22/ATM amplifikation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "11q22/ATM amplifikation" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1q21gain" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "1q21 gain (3 spot)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "1q21 gain (3 spot)" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1qdeletion" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "1p deletion" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "1p deletion" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/FISHVariables.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,82 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/VentralHernieTypeDHDB2026> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "VentralHernieTypeDHDB2026"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VentralHernieTypeDHDB2026</b></p><a name=\"VentralHernieTypeDHDB2026\"> </a><a name=\"hcVentralHernieTypeDHDB2026\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-DiseasesUnspecified.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/DiseasesUnspecified</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-umbilical\">umbilical</a></td><td>Umbilicalt</td><td>Umbilical / Umbilicalt</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-incisional\">incisional</a></td><td>Incisionelt</td><td>Incisional / Incisionelt</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-linea_alba\">linea_alba</a></td><td>Linea alba</td><td>Linea alba</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-stomi\">stomi</a></td><td>Stomi-hernie</td><td>Stomi</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-stomi_herniotomi\">stomi_herniotomi</a></td><td>Tilbagelægning eller flytning af stomi + herniotomi</td><td>Stomi and herniotomi / Stomi og herniotomi</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-spiegel\">spiegel</a></td><td>Spiegel-hernie</td><td>Spiegel</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Anden hernietype</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/VentralHernieTypeDHDB2026"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.1"] ;
+  fhir:ValueSet.name [ fhir:value "VentralHernieTypeDHDB2026"] ;
+  fhir:ValueSet.title [ fhir:value "Ventral hernie type (DHDB) 2026"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2026-06-24T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Ventral hernie type (DHDB)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/DiseasesUnspecified" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "umbilical" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Umbilicalt" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "incisional" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Incisionelt" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "linea_alba" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Linea alba" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "stomi" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stomi-hernie" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "stomi_herniotomi" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tilbagelægning eller flytning af stomi + herniotomi" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "spiegel" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spiegel-hernie" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anden hernietype" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/VentralHernieTypeDHDB2026.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

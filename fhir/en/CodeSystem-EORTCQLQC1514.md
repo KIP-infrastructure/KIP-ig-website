@@ -1,4 +1,4 @@
-# EORTC QLQ-C15-PAL 1-4 - KIP Infrastructure v2.27.0
+# EORTC QLQ-C15-PAL 1-4 - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/EORTCQLQC1514 | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/EORTCQLQC1514 | *Version*:2.27.1 |
 | Active as of 2022-07-28 | *Computable Name*:EORTCQLQC1514 |
 
  
@@ -33,7 +33,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "EORTCQLQC1514",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/EORTCQLQC1514",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "EORTCQLQC1514",
   "title" : "EORTC QLQ-C15-PAL 1-4",
   "status" : "active",

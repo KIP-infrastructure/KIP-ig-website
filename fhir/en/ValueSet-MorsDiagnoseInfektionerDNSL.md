@@ -1,4 +1,4 @@
-# Mors Diagnosekode - Infektioner (DNSL) - KIP Infrastructure v2.27.0
+# Mors Diagnosekode - Infektioner (DNSL) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/MorsDiagnoseInfektionerDNSL | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/MorsDiagnoseInfektionerDNSL | *Version*:2.27.1 |
 | Active as of 2024-01-10 | *Computable Name*:MorsDiagnoseInfektionerDNSL |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "MorsDiagnoseInfektionerDNSL",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/MorsDiagnoseInfektionerDNSL",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "MorsDiagnoseInfektionerDNSL",
   "title" : "Mors Diagnosekode - Infektioner (DNSL)",
   "status" : "active",

@@ -1,0 +1,80 @@
+# Undervisningstype - KIP Infrastructure v2.27.1
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Undervisningstype**
+
+## ValueSet: Undervisningstype 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/Undervisning | *Version*:2.27.1 |
+| Active as of 2023-09-05 | *Computable Name*:Undervisning |
+
+ 
+Undervisningstype 
+
+ **References** 
+
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+
+### Logical Definition (CLD)
+
+ 
+
+### Expansion
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "Undervisning",
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/Undervisning",
+  "version" : "2.27.1",
+  "name" : "Undervisning",
+  "title" : "Undervisningstype",
+  "status" : "active",
+  "date" : "2023-09-05T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Undervisningstype",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/EducationType",
+      "concept" : [{
+        "code" : "onsite",
+        "display" : "Personligt fremmøde"
+      },
+      {
+        "code" : "elearn",
+        "display" : "e-læring"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "all",
+        "display" : "Begge dele"
+      }]
+    }]
+  }
+}
+
+```

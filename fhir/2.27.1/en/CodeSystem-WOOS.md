@@ -1,0 +1,123 @@
+# WOOS - KIP Infrastructure v2.27.1
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **WOOS**
+
+## CodeSystem: WOOS 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/WOOS | *Version*:2.27.1 |
+| Active as of 2022-10-07 | *Computable Name*:WOOS |
+
+ 
+WOOS 
+
+This Code system is referenced in the definition of the following value sets:
+
+* [WOOS - Armløft (DSR)](ValueSet-WOOSArmloeftDSR.md)
+* [WOOS - Hænder (DSR)](ValueSet-WOOSHaenderDSR.md)
+* [WOOS - Træning (DSR)](ValueSet-WOOSTraeningDSR.md)
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "CodeSystem",
+  "id" : "WOOS",
+  "url" : "https://kip.rkkp.dk/fhir/CodeSystem/WOOS",
+  "version" : "2.27.1",
+  "name" : "WOOS",
+  "title" : "WOOS",
+  "status" : "active",
+  "date" : "2022-10-07T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "WOOS",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 8,
+  "property" : [{
+    "code" : "comment",
+    "uri" : "http://hl7.org/fhir/concept-properties#comment",
+    "description" : "A string that provides additional detail pertinent to the use or understanding of the concept",
+    "type" : "string"
+  },
+  {
+    "code" : "effectiveDate",
+    "uri" : "http://hl7.org/fhir/concept-properties#effectiveDate",
+    "description" : "The date at which the concept status was last changed",
+    "type" : "dateTime"
+  },
+  {
+    "code" : "status",
+    "uri" : "http://hl7.org/fhir/concept-properties#status",
+    "description" : "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired",
+    "type" : "code"
+  },
+  {
+    "code" : "inactive",
+    "uri" : "http://hl7.org/fhir/concept-properties#inactive",
+    "description" : "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive",
+    "type" : "boolean"
+  }],
+  "concept" : [{
+    "code" : "unable_to_life_arm",
+    "display" : "Kan slet ikke løfte armen",
+    "definition" : "Kan slet ikke løfte armen"
+  },
+  {
+    "code" : "left_handed",
+    "display" : "Venstrehåndet",
+    "definition" : "Venstrehåndet"
+  },
+  {
+    "code" : "right_handed",
+    "display" : "Højrehåndet",
+    "definition" : "Højrehåndet"
+  },
+  {
+    "code" : "both_hands",
+    "display" : "Bruger begge hænder lige godt",
+    "definition" : "Bruger begge hænder lige godt"
+  },
+  {
+    "code" : "no_physiotherapy",
+    "display" : "Ingen fysioterapi",
+    "definition" : "Ingen fysioterapi"
+  },
+  {
+    "code" : "home_training",
+    "display" : "Hjemmetræning efter instruks",
+    "definition" : "Hjemmetræning efter instruks"
+  },
+  {
+    "code" : "supervised_municipality",
+    "display" : "Superviseret fysioterapi via kommunen  (træning eller noget af denne foregår hos fysioterapeut i kommunen hvor du bor)",
+    "definition" : "Superviseret fysioterapi via kommunen  (træning eller noget af denne foregår hos fysioterapeut i kommunen hvor du bor)"
+  },
+  {
+    "code" : "supervised_hospital",
+    "display" : "Superviseret fysioterapi på sygehus/hospital  (træningen eller noget af denne foregår hos fysioterapi på sygehus)",
+    "definition" : "Superviseret fysioterapi på sygehus/hospital  (træningen eller noget af denne foregår hos fysioterapi på sygehus)"
+  }]
+}
+
+```

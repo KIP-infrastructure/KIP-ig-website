@@ -1,4 +1,4 @@
-# Treatment_Response_Evaluation_LYFO - KIP Infrastructure v2.27.0
+# Treatment_Response_Evaluation_LYFO - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/TreatmentResponseEvaluationLYFO | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/TreatmentResponseEvaluationLYFO | *Version*:2.27.1 |
 | Active as of 2022-07-27 | *Computable Name*:TreatmentResponseEvaluationLYFO |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "TreatmentResponseEvaluationLYFO",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/TreatmentResponseEvaluationLYFO",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "TreatmentResponseEvaluationLYFO",
   "title" : "Treatment_Response_Evaluation_LYFO",
   "status" : "active",

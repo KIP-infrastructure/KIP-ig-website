@@ -1,4 +1,4 @@
-# Education Type - KIP Infrastructure v2.27.0
+# Education Type - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/EducationType | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/EducationType | *Version*:2.27.1 |
 | Active as of 2023-09-05 | *Computable Name*:EducationType |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "EducationType",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/EducationType",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "EducationType",
   "title" : "Education Type",
   "status" : "active",

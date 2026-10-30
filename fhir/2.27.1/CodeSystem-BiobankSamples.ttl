@@ -1,0 +1,125 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/BiobankSamples> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "BiobankSamples"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem BiobankSamples</b></p><a name=\"BiobankSamples\"> </a><a name=\"hcBiobankSamples\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/BiobankSamples</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">serum/plasma<a name=\"BiobankSamples-serum.47plasma\"> </a></td><td>Serum/plasma</td><td>Serum/plasma</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">marrow_plasma<a name=\"BiobankSamples-marrow_plasma\"> </a></td><td>Marrow plasma</td><td>Marrow plasma</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">marrow_cells<a name=\"BiobankSamples-marrow_cells\"> </a></td><td>Marrow cells</td><td>Marrow cells (unspecified/other)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  mononuclear<a name=\"BiobankSamples-mononuclear\"> </a></td><td>Mononuclear marrow cells</td><td>Mononuclear marrow cells (unspecified/other)</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    vital_frozen<a name=\"BiobankSamples-vital_frozen\"> </a></td><td>Vital frozen</td><td>Vital frozen / Vitalfrosne; dvs. usorterede ved -196°C</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    not_vital_frozen<a name=\"BiobankSamples-not_vital_frozen\"> </a></td><td>Not vital frozen</td><td>Not vital frozen / Ikke vitalfrosne; dvs. usorterede ved -80°C</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">myeloma_cells<a name=\"BiobankSamples-myeloma_cells\"> </a></td><td>Myeloma cells</td><td>Myeloma cells (unespecified/other)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  isolated<a name=\"BiobankSamples-isolated\"> </a></td><td>Isolated myolema cells</td><td>Isolated myolema cells</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">dna<a name=\"BiobankSamples-dna\"> </a></td><td>DNA</td><td>DNA</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">rna<a name=\"BiobankSamples-rna\"> </a></td><td>RNA</td><td>RNA</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/BiobankSamples"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.1"] ;
+  fhir:CodeSystem.name [ fhir:value "BiobankSamplesCS"] ;
+  fhir:CodeSystem.title [ fhir:value "Danish National Biobank - Samples/materials"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2022-07-08T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Danish National Biobank - Samples/materials"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "10"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index 0 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "serum/plasma" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Serum/plasma" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Serum/plasma" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "marrow_plasma" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Marrow plasma" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Marrow plasma" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "marrow_cells" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Marrow cells" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Marrow cells (unspecified/other)" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.code [ fhir:value "mononuclear" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Mononuclear marrow cells" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Mononuclear marrow cells (unspecified/other)" ] ;
+       fhir:CodeSystem.concept.concept [
+         fhir:index 0 ;
+         fhir:CodeSystem.concept.code [ fhir:value "vital_frozen" ] ;
+         fhir:CodeSystem.concept.display [ fhir:value "Vital frozen" ] ;
+         fhir:CodeSystem.concept.definition [ fhir:value "Vital frozen / Vitalfrosne; dvs. usorterede ved -196°C" ]
+       ], [
+         fhir:index 1 ;
+         fhir:CodeSystem.concept.code [ fhir:value "not_vital_frozen" ] ;
+         fhir:CodeSystem.concept.display [ fhir:value "Not vital frozen" ] ;
+         fhir:CodeSystem.concept.definition [ fhir:value "Not vital frozen / Ikke vitalfrosne; dvs. usorterede ved -80°C" ]
+       ]
+     ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "myeloma_cells" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Myeloma cells" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Myeloma cells (unespecified/other)" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.code [ fhir:value "isolated" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Isolated myolema cells" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Isolated myolema cells" ]
+     ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dna" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "DNA" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "DNA" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "rna" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "RNA" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/BiobankSamples.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

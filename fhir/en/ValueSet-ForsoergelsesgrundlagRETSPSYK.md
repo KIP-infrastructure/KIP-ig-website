@@ -1,4 +1,4 @@
-# Forsørgelsesgrundlag (RETSPSYK) - KIP Infrastructure v2.27.0
+# Forsørgelsesgrundlag (RETSPSYK) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ForsoergelsesgrundlagRETSPSYK | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ForsoergelsesgrundlagRETSPSYK | *Version*:2.27.1 |
 | Active as of 2022-09-30 | *Computable Name*:ForsoergelsesgrundlagRETSPSYK |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "ForsoergelsesgrundlagRETSPSYK",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/ForsoergelsesgrundlagRETSPSYK",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "ForsoergelsesgrundlagRETSPSYK",
   "title" : "Forsørgelsesgrundlag (RETSPSYK)",
   "status" : "active",

@@ -1,0 +1,259 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/BlockTypes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "BlockTypes"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem BlockTypes</b></p><a name=\"BlockTypes\"> </a><a name=\"hcBlockTypes\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/BlockTypes</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">central_block_types<a name=\"BlockTypes-central_block_types\"> </a></td><td>Block given peropratively</td><td>Blokade anlagt peroperativt</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  epidural_cervical<a name=\"BlockTypes-epidural_cervical\"> </a></td><td>Epidural Cervical</td><td>Epidural Cervical</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  epidural_thorakal<a name=\"BlockTypes-epidural_thorakal\"> </a></td><td>Epidural Thorakal</td><td>Epidural Thorakal</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  epidural_lumbal<a name=\"BlockTypes-epidural_lumbal\"> </a></td><td>Epidural Lumbal</td><td>Epidural Lumbal</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  epidural_sakral<a name=\"BlockTypes-epidural_sakral\"> </a></td><td>Epidural Sakral</td><td>Epidural Sakral</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  epidural+spinal<a name=\"BlockTypes-epidural.43spinal\"> </a></td><td>Epidural+Spinal</td><td>Epidural+Spinal</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  spinal_lumbal\"<a name=\"BlockTypes-spinal_lumbal.34\"> </a></td><td>Spinal lumbal</td><td>Spinal lumbal</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  spinal_catheter<a name=\"BlockTypes-spinal_catheter\"> </a></td><td>Spinal catheter</td><td>Spinal kateter</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">nerve-block_upper_extr<a name=\"BlockTypes-nerve-block_upper_extr\"> </a></td><td>Block types upper extremities</td><td>Type Perifer nerveblokade Overekstremitet</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  plexus_cervicalis\"<a name=\"BlockTypes-plexus_cervicalis.34\"> </a></td><td>Plexus cervicalis</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  interscalener\"<a name=\"BlockTypes-interscalener.34\"> </a></td><td>Interscalener (Skalener)</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  supraclavicular\"<a name=\"BlockTypes-supraclavicular.34\"> </a></td><td>Supraklavikulær</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  infraclavicular\"<a name=\"BlockTypes-infraclavicular.34\"> </a></td><td>Infraklavikulær</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  aksil\"<a name=\"BlockTypes-aksil.34\"> </a></td><td>Aksil</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  suprascapularis\"<a name=\"BlockTypes-suprascapularis.34\"> </a></td><td>N. Suprascapularis</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  axillaris\"<a name=\"BlockTypes-axillaris.34\"> </a></td><td>N. Axillaris</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  musculocutaneus\"<a name=\"BlockTypes-musculocutaneus.34\"> </a></td><td>N. Musculocutaneus</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  medianus\"<a name=\"BlockTypes-medianus.34\"> </a></td><td>N. Medianus</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  radialis\"<a name=\"BlockTypes-radialis.34\"> </a></td><td>N. Radialis</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  ulnaris\"<a name=\"BlockTypes-ulnaris.34\"> </a></td><td>N. Ulnaris</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">nerve-block_lower_extr<a name=\"BlockTypes-nerve-block_lower_extr\"> </a></td><td>Block types lower extremities</td><td>Type Perifer nerveblokade Underekstremitet</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  plexus_lumbalis<a name=\"BlockTypes-plexus_lumbalis\"> </a></td><td>Plexus lumbalis</td><td>Plexus lumbalis</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  plexus_lumbosacralis<a name=\"BlockTypes-plexus_lumbosacralis\"> </a></td><td>Plexus lumbosacralis</td><td>Plexus lumbosacralis</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  plexus_sacralis<a name=\"BlockTypes-plexus_sacralis\"> </a></td><td>Plexus sacralis</td><td>Plexus sacralis</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  femoralis<a name=\"BlockTypes-femoralis\"> </a></td><td>N. Femoralis</td><td>N. Femoralis</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  cutaneus_femoris_lateralis<a name=\"BlockTypes-cutaneus_femoris_lateralis\"> </a></td><td>N. Cutaneus femoris lateralis</td><td>N. Cutaneus femoris lateralis</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  saphenus<a name=\"BlockTypes-saphenus\"> </a></td><td>N. Saphenus</td><td>N. Saphenus</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  obturatorius<a name=\"BlockTypes-obturatorius\"> </a></td><td>N. Obturatoriusblock</td><td>N. Obturatoriusblokade</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  ischiadicus_poplitea<a name=\"BlockTypes-ischiadicus_poplitea\"> </a></td><td>N. Ischiadicus/poplitea block</td><td>N. Ischiadicus/poplitea blokade</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  tibialis<a name=\"BlockTypes-tibialis\"> </a></td><td>N. Tibialis</td><td>N. Tibialis</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  peroneus<a name=\"BlockTypes-peroneus\"> </a></td><td>Peroneus (communis) block</td><td>Peroneus (communis) blokade</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">nerve-block_other<a name=\"BlockTypes-nerve-block_other\"> </a></td><td>Block types other</td><td>Type Perifer nerveblokade Trunkal/Abdominal/Øvrige</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  thorakal_Paravertebral<a name=\"BlockTypes-thorakal_Paravertebral\"> </a></td><td>Thorakal Paravertebral block</td><td>Thorakal Paravertebral blokade</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  intercostal<a name=\"BlockTypes-intercostal\"> </a></td><td>Intercostal block</td><td>Intercostal blokade</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  quadratus_lumborum<a name=\"BlockTypes-quadratus_lumborum\"> </a></td><td>Quadratus lumborum block</td><td>Quadratus lumborum blokade</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  transversus_abdominis<a name=\"BlockTypes-transversus_abdominis\"> </a></td><td>Transversus abdominis plane (TAP) block</td><td>Transversus abdominis plane (TAP) blokade</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  ilioinguinalis_iliohypogastricus<a name=\"BlockTypes-ilioinguinalis_iliohypogastricus\"> </a></td><td>Ilioinguinalis/iliohypogastricus</td><td>Ilioinguinalis/iliohypogastricus</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  pectoralis<a name=\"BlockTypes-pectoralis\"> </a></td><td>N. Pectoralis</td><td>N. Pectoralis</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">other<a name=\"BlockTypes-other\"> </a></td><td>Other block type</td><td>Anden blokadetype</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/BlockTypes"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.1"] ;
+  fhir:CodeSystem.name [ fhir:value "BlockTypes"] ;
+  fhir:CodeSystem.title [ fhir:value "Typer af blokader"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2022-06-09T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Blokader - Central, Underekstremitet, Overekstremitet"] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "39"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index 0 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "central_block_types" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Block given peropratively" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Blokade anlagt peroperativt" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.code [ fhir:value "epidural_cervical" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Epidural Cervical" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Epidural Cervical" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "epidural_thorakal" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Epidural Thorakal" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Epidural Thorakal" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.code [ fhir:value "epidural_lumbal" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Epidural Lumbal" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Epidural Lumbal" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.code [ fhir:value "epidural_sakral" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Epidural Sakral" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Epidural Sakral" ]
+     ], [
+       fhir:index 4 ;
+       fhir:CodeSystem.concept.code [ fhir:value "epidural+spinal" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Epidural+Spinal" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Epidural+Spinal" ]
+     ], [
+       fhir:index 5 ;
+       fhir:CodeSystem.concept.code [ fhir:value "spinal_lumbal\"" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Spinal lumbal" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Spinal lumbal" ]
+     ], [
+       fhir:index 6 ;
+       fhir:CodeSystem.concept.code [ fhir:value "spinal_catheter" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Spinal catheter" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Spinal kateter" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "nerve-block_upper_extr" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Block types upper extremities" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Type Perifer nerveblokade Overekstremitet" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.code [ fhir:value "plexus_cervicalis\"" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Plexus cervicalis" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "interscalener\"" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Interscalener (Skalener)" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.code [ fhir:value "supraclavicular\"" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Supraklavikulær" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.code [ fhir:value "infraclavicular\"" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Infraklavikulær" ]
+     ], [
+       fhir:index 4 ;
+       fhir:CodeSystem.concept.code [ fhir:value "aksil\"" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Aksil" ]
+     ], [
+       fhir:index 5 ;
+       fhir:CodeSystem.concept.code [ fhir:value "suprascapularis\"" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "N. Suprascapularis" ]
+     ], [
+       fhir:index 6 ;
+       fhir:CodeSystem.concept.code [ fhir:value "axillaris\"" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "N. Axillaris" ]
+     ], [
+       fhir:index 7 ;
+       fhir:CodeSystem.concept.code [ fhir:value "musculocutaneus\"" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "N. Musculocutaneus" ]
+     ], [
+       fhir:index 8 ;
+       fhir:CodeSystem.concept.code [ fhir:value "medianus\"" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "N. Medianus" ]
+     ], [
+       fhir:index 9 ;
+       fhir:CodeSystem.concept.code [ fhir:value "radialis\"" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "N. Radialis" ]
+     ], [
+       fhir:index 10 ;
+       fhir:CodeSystem.concept.code [ fhir:value "ulnaris\"" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "N. Ulnaris" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "nerve-block_lower_extr" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Block types lower extremities" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Type Perifer nerveblokade Underekstremitet" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.code [ fhir:value "plexus_lumbalis" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Plexus lumbalis" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Plexus lumbalis" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "plexus_lumbosacralis" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Plexus lumbosacralis" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Plexus lumbosacralis" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.code [ fhir:value "plexus_sacralis" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Plexus sacralis" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Plexus sacralis" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.code [ fhir:value "femoralis" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "N. Femoralis" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "N. Femoralis" ]
+     ], [
+       fhir:index 4 ;
+       fhir:CodeSystem.concept.code [ fhir:value "cutaneus_femoris_lateralis" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "N. Cutaneus femoris lateralis" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "N. Cutaneus femoris lateralis" ]
+     ], [
+       fhir:index 5 ;
+       fhir:CodeSystem.concept.code [ fhir:value "saphenus" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "N. Saphenus" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "N. Saphenus" ]
+     ], [
+       fhir:index 6 ;
+       fhir:CodeSystem.concept.code [ fhir:value "obturatorius" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "N. Obturatoriusblock" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "N. Obturatoriusblokade" ]
+     ], [
+       fhir:index 7 ;
+       fhir:CodeSystem.concept.code [ fhir:value "ischiadicus_poplitea" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "N. Ischiadicus/poplitea block" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "N. Ischiadicus/poplitea blokade" ]
+     ], [
+       fhir:index 8 ;
+       fhir:CodeSystem.concept.code [ fhir:value "tibialis" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "N. Tibialis" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "N. Tibialis" ]
+     ], [
+       fhir:index 9 ;
+       fhir:CodeSystem.concept.code [ fhir:value "peroneus" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Peroneus (communis) block" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Peroneus (communis) blokade" ]
+     ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "nerve-block_other" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Block types other" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Type Perifer nerveblokade Trunkal/Abdominal/Øvrige" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.code [ fhir:value "thorakal_Paravertebral" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Thorakal Paravertebral block" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Thorakal Paravertebral blokade" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "intercostal" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Intercostal block" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Intercostal blokade" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.code [ fhir:value "quadratus_lumborum" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Quadratus lumborum block" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Quadratus lumborum blokade" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.code [ fhir:value "transversus_abdominis" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Transversus abdominis plane (TAP) block" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Transversus abdominis plane (TAP) blokade" ]
+     ], [
+       fhir:index 4 ;
+       fhir:CodeSystem.concept.code [ fhir:value "ilioinguinalis_iliohypogastricus" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Ilioinguinalis/iliohypogastricus" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Ilioinguinalis/iliohypogastricus" ]
+     ], [
+       fhir:index 5 ;
+       fhir:CodeSystem.concept.code [ fhir:value "pectoralis" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "N. Pectoralis" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "N. Pectoralis" ]
+     ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "other" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other block type" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Anden blokadetype" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/BlockTypes.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

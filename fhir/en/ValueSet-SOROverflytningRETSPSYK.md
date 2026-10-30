@@ -1,4 +1,4 @@
-# SOR: Overflytning (RETSPSYK) - KIP Infrastructure v2.27.0
+# SOR: Overflytning (RETSPSYK) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SOROverflytningRETSPSYK | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SOROverflytningRETSPSYK | *Version*:2.27.1 |
 | Active as of 2022-11-01 | *Computable Name*:SOROverflytningRETSPSYK |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "SOROverflytningRETSPSYK",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/SOROverflytningRETSPSYK",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "SOROverflytningRETSPSYK",
   "title" : "SOR: Overflytning (RETSPSYK)",
   "status" : "active",

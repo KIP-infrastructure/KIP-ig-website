@@ -1,4 +1,4 @@
-# Search Parameter - Latest for ValueSets - KIP Infrastructure v2.27.0
+# Search Parameter - Latest for ValueSets - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/StructureDefinition/VSLatest | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/StructureDefinition/VSLatest | *Version*:2.27.1 |
 | Active as of 2026-07-09 | *Computable Name*:SearchParameterValueSetLatest |
 
 Limit response of ValueSets to match given Latest.
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-VSLatest.csv), [E
   "resourceType" : "StructureDefinition",
   "id" : "VSLatest",
   "url" : "https://kip.rkkp.dk/fhir/StructureDefinition/VSLatest",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "SearchParameterValueSetLatest",
   "title" : "Search Parameter - Latest for ValueSets",
   "status" : "active",

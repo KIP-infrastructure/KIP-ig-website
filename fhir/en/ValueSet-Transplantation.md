@@ -1,4 +1,4 @@
-# Transplantation - KIP Infrastructure v2.27.0
+# Transplantation - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/Transplantation | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/Transplantation | *Version*:2.27.1 |
 | Active as of 2022-07-13 | *Computable Name*:Transplantation |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "Transplantation",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/Transplantation",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "Transplantation",
   "title" : "Transplantation",
   "status" : "active",

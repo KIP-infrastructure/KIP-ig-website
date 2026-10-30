@@ -1,4 +1,4 @@
-# Patobank SNOMED: pTNM klassifikation, pM - KIP Infrastructure v2.27.0
+# Patobank SNOMED: pTNM klassifikation, pM - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/PatobankSNOMEDpTNMpM | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/PatobankSNOMEDpTNMpM | *Version*:2.27.1 |
 | Active as of 2022-06-08 | *Computable Name*:PatobankSNOMEDpTNMpM |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "PatobankSNOMEDpTNMpM",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/PatobankSNOMEDpTNMpM",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "PatobankSNOMEDpTNMpM",
   "title" : "Patobank SNOMED: pTNM klassifikation, pM",
   "status" : "active",

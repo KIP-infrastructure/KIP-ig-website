@@ -1,4 +1,4 @@
-# Measurement devices - KIP Infrastructure v2.27.0
+# Measurement devices - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/MeasurementDevices | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/MeasurementDevices | *Version*:2.27.1 |
 | Active as of 2022-09-15 | *Computable Name*:MeasurementDevices |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "MeasurementDevices",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/MeasurementDevices",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "MeasurementDevices",
   "title" : "Measurement devices",
   "status" : "active",

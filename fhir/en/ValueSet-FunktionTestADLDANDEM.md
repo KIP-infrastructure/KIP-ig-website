@@ -1,4 +1,4 @@
-# Funktion test ADL (DANDEM) - KIP Infrastructure v2.27.0
+# Funktion test ADL (DANDEM) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/FunktionTestADLDANDEM | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/FunktionTestADLDANDEM | *Version*:2.27.1 |
 | Active as of 2022-07-19 | *Computable Name*:FunktionTestADLDANDEM |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "FunktionTestADLDANDEM",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/FunktionTestADLDANDEM",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "FunktionTestADLDANDEM",
   "title" : "Funktion test ADL (DANDEM)",
   "status" : "active",

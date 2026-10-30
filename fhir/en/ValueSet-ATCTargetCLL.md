@@ -1,4 +1,4 @@
-# ATC_CLL_target - KIP Infrastructure v2.27.0
+# ATC_CLL_target - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ATCTargetCLL | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ATCTargetCLL | *Version*:2.27.1 |
 | Active as of 2022-07-13 | *Computable Name*:ATCTargetCLL |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "ATCTargetCLL",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/ATCTargetCLL",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "ATCTargetCLL",
   "title" : "ATC_CLL_target",
   "status" : "active",

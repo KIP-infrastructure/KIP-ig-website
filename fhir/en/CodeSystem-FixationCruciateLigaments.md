@@ -1,4 +1,4 @@
-# Fixation for cruciate ligaments (femur and tibia); types of screws - KIP Infrastructure v2.27.0
+# Fixation for cruciate ligaments (femur and tibia); types of screws - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/FixationCruciateLigaments | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/FixationCruciateLigaments | *Version*:2.27.1 |
 | Active as of 2025-03-04 | *Computable Name*:FixationCruciateLigaments |
 
  
@@ -33,7 +33,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "FixationCruciateLigaments",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/FixationCruciateLigaments",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "FixationCruciateLigaments",
   "title" : "Fixation for cruciate ligaments (femur and tibia); types of screws",
   "status" : "active",

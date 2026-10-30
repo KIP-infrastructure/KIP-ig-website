@@ -1,4 +1,4 @@
-# Grundlidelse (DSR) - KIP Infrastructure v2.27.0
+# Grundlidelse (DSR) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/GrundlidelseDSR | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/GrundlidelseDSR | *Version*:2.27.1 |
 | Active as of 2022-10-05 | *Computable Name*:GrundlidelseDSR |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "GrundlidelseDSR",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/GrundlidelseDSR",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "GrundlidelseDSR",
   "title" : "Grundlidelse (DSR)",
   "status" : "active",

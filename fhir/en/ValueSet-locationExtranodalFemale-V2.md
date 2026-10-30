@@ -1,4 +1,4 @@
-# Sygdomslokalisation er kun ekstranodalt, kvinder (LYFO) version 2 - KIP Infrastructure v2.27.0
+# Sygdomslokalisation er kun ekstranodalt, kvinder (LYFO) version 2 - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/locationExtranodalFemale-V2 | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/locationExtranodalFemale-V2 | *Version*:2.27.1 |
 | Active as of 2025-01-09 | *Computable Name*:LocationExtranodalFemale_V2 |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "locationExtranodalFemale-V2",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/locationExtranodalFemale-V2",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "LocationExtranodalFemale_V2",
   "title" : "Sygdomslokalisation er kun ekstranodalt, kvinder (LYFO) version 2",
   "status" : "active",

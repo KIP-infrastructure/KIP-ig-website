@@ -1,0 +1,191 @@
+# Treatment type - KIP Infrastructure v2.27.1
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Treatment type**
+
+## CodeSystem: Treatment type 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/TreatmentType | *Version*:2.27.1 |
+| Active as of 2022-06-03 | *Computable Name*:TreatmentType |
+
+ 
+Treatment type 
+
+This Code system is referenced in the definition of the following value sets:
+
+* [Behandling (DHR)](ValueSet-BehandlingDHR.md)
+* [Behandling; Endovaskulære behandlinger](ValueSet-BehandlingEndovaskulaerType.md)
+* [Behandling; kirurgisk og endovaskulær](ValueSet-BehandlingKirurgiskEndovaskulaer.md)
+* [Håndtering af lipom (DHDB)](ValueSet-LipomHandlingDHDB.md)
+* [Præoperativ lokal stråleterapi ved malign indikation for TES](ValueSet-LokalStraaleterapi.md)
+* [Neoadjuverende behandling DCCG](ValueSet-NeoadjuverendeBehandling.md)
+* [Behandling af tværsnit](ValueSet-TreatmentCrossSection.md)
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "CodeSystem",
+  "id" : "TreatmentType",
+  "url" : "https://kip.rkkp.dk/fhir/CodeSystem/TreatmentType",
+  "version" : "2.27.1",
+  "name" : "TreatmentType",
+  "title" : "Treatment type",
+  "status" : "active",
+  "date" : "2022-06-03T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Treatment type",
+  "content" : "complete",
+  "count" : 21,
+  "property" : [{
+    "code" : "comment",
+    "uri" : "http://hl7.org/fhir/concept-properties#comment",
+    "description" : "A string that provides additional detail pertinent to the use or understanding of the concept",
+    "type" : "string"
+  },
+  {
+    "code" : "effectiveDate",
+    "uri" : "http://hl7.org/fhir/concept-properties#effectiveDate",
+    "description" : "The date at which the concept status was last changed",
+    "type" : "dateTime"
+  },
+  {
+    "code" : "status",
+    "uri" : "http://hl7.org/fhir/concept-properties#status",
+    "description" : "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired",
+    "type" : "code"
+  },
+  {
+    "code" : "inactive",
+    "uri" : "http://hl7.org/fhir/concept-properties#inactive",
+    "description" : "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive",
+    "type" : "boolean"
+  }],
+  "concept" : [{
+    "code" : "endovascular",
+    "display" : "Endovascular",
+    "definition" : "Endovascular treatment",
+    "concept" : [{
+      "code" : "coil",
+      "display" : "Coil",
+      "definition" : "Coil"
+    },
+    {
+      "code" : "intrasakkulat",
+      "display" : "Intrasakkulat flowdiversion",
+      "definition" : "Intrasakkulat flowdiversion"
+    },
+    {
+      "code" : "ekstrasakkulat",
+      "display" : "Ekstrasakkulat flowdiversion",
+      "definition" : "Ekstrasakkulat flowdiversion"
+    }]
+  },
+  {
+    "code" : "surgical",
+    "display" : "Surgical",
+    "definition" : "Surgical treatment"
+  },
+  {
+    "code" : "operation",
+    "display" : "Operation",
+    "definition" : "Operation"
+  },
+  {
+    "code" : "radiotherapy",
+    "display" : "radiotherapy",
+    "definition" : "Radiation / Strålebehandling"
+  },
+  {
+    "code" : "chemotherapy",
+    "display" : "Chemoterapy",
+    "definition" : "Chemotherapy / Kemoterapi"
+  },
+  {
+    "code" : "chemoradiationtherapy",
+    "display" : "Chemoradiationtherapy",
+    "definition" : "Chemoradiationtherapy / Kemostråleterapi"
+  },
+  {
+    "code" : "immunotherapy",
+    "display" : "Immunotherapy",
+    "definition" : "Immunotherapy / Immunterapi"
+  },
+  {
+    "code" : "neoadjuvant",
+    "display" : "Neoadjuvant",
+    "definition" : "Neoadjuvant / Neoadjuverende"
+  },
+  {
+    "code" : "watchfull_waiting",
+    "display" : "Watchfull waiting",
+    "definition" : "Watchfull waiting"
+  },
+  {
+    "code" : "cerclage",
+    "display" : "Cerclage",
+    "definition" : "Cerclage / SNOMED-CT: 1455007"
+  },
+  {
+    "code" : "trochantergrip",
+    "display" : "Trochantergrip",
+    "definition" : "Trochantergrip"
+  },
+  {
+    "code" : "splint",
+    "display" : "Splint",
+    "definition" : "Splint / SNOMED-CT: 16650009"
+  },
+  {
+    "code" : "skinne",
+    "display" : "Skinne",
+    "definition" : "Skinne"
+  },
+  {
+    "code" : "stem",
+    "display" : "Stem",
+    "definition" : "Stem"
+  },
+  {
+    "code" : "uns",
+    "display" : "UNS",
+    "definition" : "UNS"
+  },
+  {
+    "code" : "retrahere",
+    "display" : "Retrahere",
+    "definition" : "Retraheret - Tilbagetrækning, skrumpning"
+  },
+  {
+    "code" : "exidere",
+    "display" : "Exidere",
+    "definition" : "Exideret - Fjerne"
+  },
+  {
+    "code" : "in_situ",
+    "display" : "Left in situ",
+    "definition" : "Efterladt in situ"
+  }]
+}
+
+```

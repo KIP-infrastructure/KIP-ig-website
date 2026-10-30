@@ -1,4 +1,4 @@
-# Artifacts Summary - KIP Infrastructure v2.27.0
+# Artifacts Summary - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**
@@ -269,7 +269,6 @@ These define sets of codes used by systems conforming to this implementation gui
 | [ Grundlidelse (DKR)  ](ValueSet-GrundlidelseDKR.md) | Grundlidelse (DKR) |
 | [ Grundlidelse (DSR)  ](ValueSet-GrundlidelseDSR.md) | Grundlidelse (DSR) |
 | [ Grundlidelse [DHR]  ](ValueSet-GrundlidelseDHR.md) | Grundlidelse [DHR] |
-| [ Grundlidelse [DHR] 2026-07  ](ValueSet-GrundlidelseDHR-2026-07.md) | Grundlidelse [DHR] |
 | [ Gynækologisk undersøgelsesmetode (DUGA)  ](ValueSet-GynUndersoegDUGA.md) | Gynækologisk undersøgelsesmetode (DUGA) |
 | [ HGBTransfusion4  ](ValueSet-HaemoglobinTransf4.md) | Hæmoglobinværdi før blodtransfusion - 4 valg |
 | [ Harris Hip Score - Gangafvikling  ](ValueSet-HarrisHipScoreGangafvikling.md) | Harris Hip Score - Gangafvikling |
@@ -309,7 +308,6 @@ These define sets of codes used by systems conforming to this implementation gui
 | [ Implantat - anatomisk: offset  ](ValueSet-ImplantatAnatomiskOffset.md) | Implantat - anatomisk: offset |
 | [ Implantat - materiale (DSR)  ](ValueSet-ImplantatMaterialeDSR.md) | Implantat - materiale (DSR) |
 | [ Implantat - materiale (keramik, metal, andet)  ](ValueSet-ImplantatMaterialeKeramikMetalAndet.md) | Implantat - materiale (keramik, metal, andet) |
-| [ Implantat - materiale (keramik, metal, andet) 2026-07  ](ValueSet-ImplantatMateriale-KeramikMetalAndet-2026-07.md) | Implantat - materiale (keramik, metal, andet) |
 | [ Implantat - materiale (polyethylen, keramik, metal)  ](ValueSet-ImplantatMaterialePolyethylenKeramikMetal.md) | Implantat - materiale (polyethylen, keramik, metal) |
 | [ Implantat - reverse design  ](ValueSet-ImplantatReverseDesign.md) | Implantat - reverse design |
 | [ Implantattype (DUGA)  ](ValueSet-ImplantattypeDUGA.md) | Implantattype (DUGA) |
@@ -623,7 +621,6 @@ These define sets of codes used by systems conforming to this implementation gui
 | [ Risikovurdering (RETSPSYK)  ](ValueSet-RisikovurderingRETSPSYK.md) | Risikovurdering (RETSPSYK) |
 | [ Robot (DHDB)  ](ValueSet-RobotDHDB.md) | Robot assisteret metode (DHDB) |
 | [ Robot (DKR)  ](ValueSet-RobotDKR.md) | Robottyper til robot assisteret kirurgi (DKR) |
-| [ Robot (DKR)-2026-07  ](ValueSet-Robot-DKR-2026-07.md) | Robottyper til robot assisteret kirurgi (DKR) |
 | [ Ryger op til 8 uger  ](ValueSet-Ryger8uger.md) | Ryger eller ophørt indenfor 8 uger |
 | [ Rygning  ](ValueSet-Rygning.md) | Udfald for rygning |
 | [ Rygning (DCCG)  ](ValueSet-RygningDCCG.md) | Udfald for rygning |

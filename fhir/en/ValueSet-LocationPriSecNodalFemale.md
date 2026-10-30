@@ -1,4 +1,4 @@
-# Sygdomslokalisation er prim. nodalt, sek. ekstranodalt eller omv, kvinder (LYFO) - KIP Infrastructure v2.27.0
+# Sygdomslokalisation er prim. nodalt, sek. ekstranodalt eller omv, kvinder (LYFO) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/LocationPriSecNodalFemale | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/LocationPriSecNodalFemale | *Version*:2.27.1 |
 | Active as of 2023-03-15 | *Computable Name*:LocationPriSecNodalFemale |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "LocationPriSecNodalFemale",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/LocationPriSecNodalFemale",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "LocationPriSecNodalFemale",
   "title" : "Sygdomslokalisation er prim. nodalt, sek. ekstranodalt eller omv, kvinder (LYFO)",
   "status" : "active",

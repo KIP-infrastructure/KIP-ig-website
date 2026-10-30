@@ -1,0 +1,91 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/FoedselsstedRETSPSYK> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "FoedselsstedRETSPSYK"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet FoedselsstedRETSPSYK</b></p><a name=\"FoedselsstedRETSPSYK\"> </a><a name=\"hcFoedselsstedRETSPSYK\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Birthplace.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Birthplace</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Birthplace.html#Birthplace-DK\">DK</a></td><td>Danmark</td><td>Denmark / Danmark</td></tr><tr><td><a href=\"CodeSystem-Birthplace.html#Birthplace-west\">west</a></td><td>Vesten</td><td>West / Vesten</td></tr><tr><td><a href=\"CodeSystem-Birthplace.html#Birthplace-eastern_europe\">eastern_europe</a></td><td>Østeuropa</td><td>Eastern Europe / Østeuropa</td></tr><tr><td><a href=\"CodeSystem-Birthplace.html#Birthplace-IR\">IR</a></td><td>Iran</td><td>Iran</td></tr><tr><td><a href=\"CodeSystem-Birthplace.html#Birthplace-middle_east\">middle_east</a></td><td>Mellemøsten</td><td>Middle East / Mellemøsten</td></tr><tr><td><a href=\"CodeSystem-Birthplace.html#Birthplace-north_africa\">north_africa</a></td><td>Nordafrika</td><td>North Africa / Nordafrika</td></tr><tr><td><a href=\"CodeSystem-Birthplace.html#Birthplace-africa\">africa</a></td><td>Afrika - øvrige</td><td>Africa / Afrika</td></tr><tr><td><a href=\"CodeSystem-Birthplace.html#Birthplace-far_east\">far_east</a></td><td>Fjernøsten</td><td>Far East / Fjernøsten</td></tr><tr><td><a href=\"CodeSystem-Birthplace.html#Birthplace-rest_of_world\">rest_of_world</a></td><td>Resten af verden</td><td>Rest of World / Resten af verden</td></tr><tr><td><a href=\"CodeSystem-Birthplace.html#Birthplace-GL\">GL</a></td><td>Grønland</td><td>Greenland / Grønland</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/FoedselsstedRETSPSYK"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.1"] ;
+  fhir:ValueSet.name [ fhir:value "FoedselsstedRETSPSYK"] ;
+  fhir:ValueSet.title [ fhir:value "Fødselssted (RETSPSYK)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-09-30T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Fødselssted (RETSPSYK)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/Birthplace" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DK" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Danmark" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "west" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vesten" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "eastern_europe" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Østeuropa" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "IR" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Iran" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "middle_east" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mellemøsten" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "north_africa" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nordafrika" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "africa" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Afrika - øvrige" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "far_east" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fjernøsten" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "rest_of_world" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Resten af verden" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "GL" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Grønland" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/FoedselsstedRETSPSYK.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

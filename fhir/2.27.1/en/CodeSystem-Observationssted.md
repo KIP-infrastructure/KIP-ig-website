@@ -1,0 +1,148 @@
+# Observationssted - KIP Infrastructure v2.27.1
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Observationssted**
+
+## CodeSystem: Observationssted 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/Observationssted | *Version*:2.27.1 |
+| Active as of 2022-06-13 | *Computable Name*:Observationssted |
+
+ 
+Sted hvor anæstesien observeres 
+
+This Code system is referenced in the definition of the following value sets:
+
+* [Lokalitet DANARREST](ValueSet-LokalitetDANARREST.md)
+* [Observation afdeling](ValueSet-ObservationAfdeling.md)
+* [Observationssted anæstesi](ValueSet-ObservationsstedAN.md)
+* [Observationssted postoperativt](ValueSet-ObservationsstedPO.md)
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "CodeSystem",
+  "id" : "Observationssted",
+  "url" : "https://kip.rkkp.dk/fhir/CodeSystem/Observationssted",
+  "version" : "2.27.1",
+  "name" : "Observationssted",
+  "title" : "Observationssted",
+  "status" : "active",
+  "date" : "2022-06-13T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Sted hvor anæstesien observeres",
+  "content" : "complete",
+  "count" : 13,
+  "property" : [{
+    "code" : "comment",
+    "uri" : "http://hl7.org/fhir/concept-properties#comment",
+    "description" : "A string that provides additional detail pertinent to the use or understanding of the concept",
+    "type" : "string"
+  },
+  {
+    "code" : "effectiveDate",
+    "uri" : "http://hl7.org/fhir/concept-properties#effectiveDate",
+    "description" : "The date at which the concept status was last changed",
+    "type" : "dateTime"
+  },
+  {
+    "code" : "status",
+    "uri" : "http://hl7.org/fhir/concept-properties#status",
+    "description" : "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired",
+    "type" : "code"
+  },
+  {
+    "code" : "inactive",
+    "uri" : "http://hl7.org/fhir/concept-properties#inactive",
+    "description" : "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive",
+    "type" : "boolean"
+  }],
+  "concept" : [{
+    "code" : "ambulat",
+    "display" : "Ambulatorium",
+    "definition" : "Ambulatorium"
+  },
+  {
+    "code" : "akutmodt",
+    "display" : "Akutmodtagelse",
+    "definition" : "Akutmodtagelse"
+  },
+  {
+    "code" : "andet_obs",
+    "display" : "Andet observationsafsnit",
+    "definition" : "Andet observationsafsnit"
+  },
+  {
+    "code" : "central_obs",
+    "display" : "Centralt observationsafsnit",
+    "definition" : "Centralt observationsafsnit"
+  },
+  {
+    "code" : "intensiv",
+    "display" : "Intensiv",
+    "definition" : "Intensiv afdeling"
+  },
+  {
+    "code" : "kardio_lab",
+    "display" : "Kardiologisk laboratorium",
+    "definition" : "Kardiologisk laboratorium"
+  },
+  {
+    "code" : "neonatal",
+    "display" : "Neonatalafdeling",
+    "definition" : "Neonatalafdeling"
+  },
+  {
+    "code" : "opergang",
+    "display" : "Operationsgangen",
+    "definition" : "Operationsgangen"
+  },
+  {
+    "code" : "opvaagn",
+    "display" : "Opvågningsafdeling",
+    "definition" : "Opvågningsafdeling"
+  },
+  {
+    "code" : "sengeafd",
+    "display" : "Sengeafdeling",
+    "definition" : "Sengeafdeling"
+  },
+  {
+    "code" : "skadestue",
+    "display" : "Skadestue / modtagelse",
+    "definition" : "Skadestue / modtagelse"
+  },
+  {
+    "code" : "egenafd",
+    "display" : "Egen afdeling",
+    "definition" : "Egen afdeling"
+  },
+  {
+    "code" : "andet",
+    "display" : "Andet",
+    "definition" : "Andet"
+  }]
+}
+
+```

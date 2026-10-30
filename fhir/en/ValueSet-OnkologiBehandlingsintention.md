@@ -1,4 +1,4 @@
-# Onkologisk behandlingsintention - KIP Infrastructure v2.27.0
+# Onkologisk behandlingsintention - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/OnkologiBehandlingsintention | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/OnkologiBehandlingsintention | *Version*:2.27.1 |
 | Active as of 2022-05-16 | *Computable Name*:OnkologiBehandlingsintention |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "OnkologiBehandlingsintention",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/OnkologiBehandlingsintention",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "OnkologiBehandlingsintention",
   "title" : "Onkologisk behandlingsintention",
   "status" : "active",

@@ -1,0 +1,131 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/WalchClassification> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "WalchClassification"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem WalchClassification</b></p><a name=\"WalchClassification\"> </a><a name=\"hcWalchClassification\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/WalchClassification</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">type_a<a name=\"WalchClassification-type_a\"> </a></td><td>Type A</td><td>Type A: centered humeral head, concentric wear, no subluxation of the humeral head</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  type_a1<a name=\"WalchClassification-type_a1\"> </a></td><td>Type A1</td><td>Type A1: minor central erosion</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  type_a2<a name=\"WalchClassification-type_a2\"> </a></td><td>Type A2</td><td>Type A2: major central erosion, humeral head protruding into the glenoid cavity</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">type_b<a name=\"WalchClassification-type_b\"> </a></td><td>Type B</td><td>Type B: humeral head subluxated posteriorly, biconcave glenoid with asymmetric wear</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  type_b1<a name=\"WalchClassification-type_b1\"> </a></td><td>Type B1</td><td>Type B1: narrowing of the posterior joint space, subchondral sclerosis, osteophytes</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  type_b2<a name=\"WalchClassification-type_b2\"> </a></td><td>Type B2</td><td>Type B2: biconcave aspect of the glenoid with posterior rim erosion and retroverted glenoid</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  type_b3<a name=\"WalchClassification-type_b3\"> </a></td><td>Type B3</td><td>Type B3: monoconcave and posterior wear with &gt;15° retroversion or &gt;70% posterior humeral head subluxation, or both</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">type_c<a name=\"WalchClassification-type_c\"> </a></td><td>Type C</td><td>Type C: Dysplastic glenoid with at least 25° of retroversion not caused by erosion</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  type_c1<a name=\"WalchClassification-type_c1\"> </a></td><td>Type C1</td><td>Type C1: dysplastic glenoid with &gt;25° retroversion regardless of the erosion</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  type_c2<a name=\"WalchClassification-type_c2\"> </a></td><td>Type C2</td><td>Type C2: biconcave, posterior bone loss, posterior translation of the humeral head</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">type_d<a name=\"WalchClassification-type_d\"> </a></td><td>Type D</td><td>Type D: glenoid anteversion or anterior humeral head subluxation &lt;40°</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/WalchClassification"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.1"] ;
+  fhir:CodeSystem.name [ fhir:value "WalchClassification"] ;
+  fhir:CodeSystem.title [ fhir:value "Walch classification"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2022-10-06T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Walch classification; Link: https://radiopaedia.org/articles/walch-classification-of-glenoid-morphology-1"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "11"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "type_a" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Type A" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Type A: centered humeral head, concentric wear, no subluxation of the humeral head" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "type_a1" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Type A1" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Type A1: minor central erosion" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "type_a2" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Type A2" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Type A2: major central erosion, humeral head protruding into the glenoid cavity" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "type_b" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Type B" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Type B: humeral head subluxated posteriorly, biconcave glenoid with asymmetric wear" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "type_b1" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Type B1" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Type B1: narrowing of the posterior joint space, subchondral sclerosis, osteophytes" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "type_b2" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Type B2" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Type B2: biconcave aspect of the glenoid with posterior rim erosion and retroverted glenoid" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "type_b3" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Type B3" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Type B3: monoconcave and posterior wear with >15° retroversion or >70% posterior humeral head subluxation, or both" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "type_c" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Type C" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Type C: Dysplastic glenoid with at least 25° of retroversion not caused by erosion" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "type_c1" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Type C1" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Type C1: dysplastic glenoid with >25° retroversion regardless of the erosion" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "type_c2" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Type C2" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Type C2: biconcave, posterior bone loss, posterior translation of the humeral head" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "type_d" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Type D" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Type D: glenoid anteversion or anterior humeral head subluxation <40°" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/WalchClassification.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

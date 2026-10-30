@@ -1,4 +1,4 @@
-# Knee joint arthroplasty - components - KIP Infrastructure v2.27.0
+# Knee joint arthroplasty - components - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/KneeJointArthroplastyComponent | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/KneeJointArthroplastyComponent | *Version*:2.27.1 |
 | Active as of 2025-03-04 | *Computable Name*:KneeJointArthroplastyComponent |
 
  
@@ -38,7 +38,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "KneeJointArthroplastyComponent",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/KneeJointArthroplastyComponent",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "KneeJointArthroplastyComponent",
   "title" : "Knee joint arthroplasty - components",
   "status" : "active",

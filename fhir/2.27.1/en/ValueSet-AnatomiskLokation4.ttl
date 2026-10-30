@@ -1,0 +1,91 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/AnatomiskLokation4> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "AnatomiskLokation4"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet AnatomiskLokation4</b></p><a name=\"AnatomiskLokation4\"> </a><a name=\"hcAnatomiskLokation4\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-AnatomicalLocations.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/AnatomicalLocations</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-ileocolica_centralt\">ileocolica_centralt</a></td><td>Ileocolica centralt</td><td>Ileocolica centralt</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-ileocolica_perifert\">ileocolica_perifert</a></td><td>Ileocolica perifert</td><td>Ileocolica perifert</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-a_colica_media_centralt\">a_colica_media_centralt</a></td><td>A. colica media centralt</td><td>A. colica media centralt</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-a_colica_media_hoejre\">a_colica_media_hoejre</a></td><td>Højre gren af  a. colica media</td><td>Højre gren af a. colica media</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-a_colica_media_venstre\">a_colica_media_venstre</a></td><td>Venstre gren af  a. colica media</td><td>Venstre gren af  a. colica media</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-a_mesenterica_inferior\">a_mesenterica_inferior</a></td><td>A. mesenterica inf.</td><td>A. mesenterica inf.</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-a_colica_sinistra\">a_colica_sinistra</a></td><td>A. colica sin.</td><td>A. colica sin.</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-a_mesenterica_inferior_perifert\">a_mesenterica_inferior_perifert</a></td><td>A. mesenterica inf perifert</td><td>A. mesenterica inf perifert</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-aa_sigmoideae\">aa_sigmoideae</a></td><td>Aa. sigmoideae</td><td>Aa. sigmoideae</td></tr><tr><td><a href=\"CodeSystem-AnatomicalLocations.html#AnatomicalLocations-a_rectalis_superior\">a_rectalis_superior</a></td><td>A. rectalis superior</td><td>A. rectalis superior</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/AnatomiskLokation4"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.1"] ;
+  fhir:ValueSet.name [ fhir:value "AnatomiskLokation4"] ;
+  fhir:ValueSet.title [ fhir:value "Anatomisk lokation 4"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-10-19T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Anatomisk lokation 4"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/AnatomicalLocations" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ileocolica_centralt" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ileocolica centralt" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ileocolica_perifert" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ileocolica perifert" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "a_colica_media_centralt" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "A. colica media centralt" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "a_colica_media_hoejre" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Højre gren af  a. colica media" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "a_colica_media_venstre" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Venstre gren af  a. colica media" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "a_mesenterica_inferior" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "A. mesenterica inf." ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "a_colica_sinistra" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "A. colica sin." ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "a_mesenterica_inferior_perifert" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "A. mesenterica inf perifert" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "aa_sigmoideae" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aa. sigmoideae" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "a_rectalis_superior" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "A. rectalis superior" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/AnatomiskLokation4.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,4 +1,4 @@
-# LuftvejForsøgsplan - KIP Infrastructure v2.27.0
+# LuftvejForsøgsplan - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/LuftvejForsoeg | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/LuftvejForsoeg | *Version*:2.27.1 |
 | Active as of 2022-06-01 | *Computable Name*:LuftvejForsoeg |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "LuftvejForsoeg",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/LuftvejForsoeg",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "LuftvejForsoeg",
   "title" : "LuftvejForsøgsplan",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Left or right - KIP Infrastructure v2.27.0
+# Left or right - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/LeftRight | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/LeftRight | *Version*:2.27.1 |
 | Active as of 2022-07-12 | *Computable Name*:LeftRight |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "LeftRight",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/LeftRight",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "LeftRight",
   "title" : "Left or right",
   "status" : "active",

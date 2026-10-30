@@ -1,4 +1,4 @@
-# Ingvinalhernie specificering - KIP Infrastructure v2.27.0
+# Ingvinalhernie specificering - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/IngvinalhernieSpecificering | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/IngvinalhernieSpecificering | *Version*:2.27.1 |
 | Active as of 2022-07-20 | *Computable Name*:IngvinalhernieSpecificering |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "IngvinalhernieSpecificering",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/IngvinalhernieSpecificering",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "IngvinalhernieSpecificering",
   "title" : "Ingvinalhernie specificering",
   "status" : "active",

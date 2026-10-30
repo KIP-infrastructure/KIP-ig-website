@@ -1,4 +1,4 @@
-# Caput type - (DHR) - KIP Infrastructure v2.27.0
+# Caput type - (DHR) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/CaputTypeDHR | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/CaputTypeDHR | *Version*:2.27.1 |
 | Active as of 2022-11-02 | *Computable Name*:CaputTypeDHR |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "CaputTypeDHR",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/CaputTypeDHR",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "CaputTypeDHR",
   "title" : "Caput type - (DHR)",
   "status" : "active",

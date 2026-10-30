@@ -1,4 +1,4 @@
-# Cytogenetisk risiki Grimwade 2010 - KIP Infrastructure v2.27.0
+# Cytogenetisk risiki Grimwade 2010 - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/CytogeneticRiskGrimwade2010 | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/CytogeneticRiskGrimwade2010 | *Version*:2.27.1 |
 | Active as of 2022-07-13 | *Computable Name*:CytogeneticRiskGrimwade2010 |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "CytogeneticRiskGrimwade2010",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/CytogeneticRiskGrimwade2010",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "CytogeneticRiskGrimwade2010",
   "title" : "Cytogenetisk risiki Grimwade 2010",
   "status" : "active",

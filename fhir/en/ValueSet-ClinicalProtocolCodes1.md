@@ -1,4 +1,4 @@
-# Kliniske protokolleret koder 1 - KIP Infrastructure v2.27.0
+# Kliniske protokolleret koder 1 - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ClinicalProtocolCodes1 | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ClinicalProtocolCodes1 | *Version*:2.27.1 |
 | Active as of 2024-04-10 | *Computable Name*:ClinicalProtocolCodes1 |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "ClinicalProtocolCodes1",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/ClinicalProtocolCodes1",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "ClinicalProtocolCodes1",
   "title" : "Kliniske protokolleret koder 1",
   "status" : "active",

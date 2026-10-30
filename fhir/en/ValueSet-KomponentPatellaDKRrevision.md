@@ -1,4 +1,4 @@
-# Komponent - patella (DKR) revision - KIP Infrastructure v2.27.0
+# Komponent - patella (DKR) revision - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/KomponentPatellaDKRrevision | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/KomponentPatellaDKRrevision | *Version*:2.27.1 |
 | Active as of 2023-01-16 | *Computable Name*:KomponentPatellaDKRrevision |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "KomponentPatellaDKRrevision",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/KomponentPatellaDKRrevision",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "KomponentPatellaDKRrevision",
   "title" : "Komponent - patella (DKR) revision",
   "status" : "active",

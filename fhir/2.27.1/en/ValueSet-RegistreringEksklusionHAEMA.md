@@ -1,0 +1,148 @@
+# Registrering - Eksklusionsårsag (HAEMA) - KIP Infrastructure v2.27.1
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Registrering - Eksklusionsårsag (HAEMA)**
+
+## ValueSet: Registrering - Eksklusionsårsag (HAEMA) 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/RegistreringEksklusionHAEMA | *Version*:2.27.1 |
+| Active as of 2022-08-22 | *Computable Name*:RegistreringEksklusionHAEMA |
+
+ 
+Registrering - Eksklusionsårsag (HAEMA) 
+
+ **References** 
+
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+
+### Logical Definition (CLD)
+
+ 
+
+### Expansion
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "RegistreringEksklusionHAEMA",
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/RegistreringEksklusionHAEMA",
+  "version" : "2.27.1",
+  "name" : "RegistreringEksklusionHAEMA",
+  "title" : "Registrering - Eksklusionsårsag (HAEMA)",
+  "status" : "active",
+  "date" : "2022-08-22T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Registrering - Eksklusionsårsag (HAEMA)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/DiseasesUnspecified",
+      "concept" : [{
+        "code" : "amyloidose<2012",
+        "display" : "Amyloidose før 2012"
+      },
+      {
+        "code" : "all<2005",
+        "display" : "ALL før 2005"
+      },
+      {
+        "code" : "all<2000",
+        "display" : "AML før 2000"
+      },
+      {
+        "code" : "cll<2008",
+        "display" : "CLL før 2008"
+      },
+      {
+        "code" : "hodgkin<1998",
+        "display" : "Hodgkin diagnosticeret før 1998 (2000 ØstDK)"
+      },
+      {
+        "code" : "lymfom<1983",
+        "display" : "Lymfom diagnosticeret før 1983 (2000 ØstDK)"
+      },
+      {
+        "code" : "mds<2010",
+        "display" : "MDS diagnosticeret før 2010"
+      },
+      {
+        "code" : "mgus<2013",
+        "display" : "MGUS eller Amyloidose før 2013"
+      },
+      {
+        "code" : "myelom<2005",
+        "display" : "Myelomatose diagnosticeret før 2005"
+      },
+      {
+        "code" : "mpn<2010",
+        "display" : "Myeloproliferativ sygdom diagnosticeret før 2010"
+      },
+      {
+        "code" : "leukaemi_haarcelle",
+        "display" : "Hårcelle leukæmi"
+      },
+      {
+        "code" : "lgl",
+        "display" : "Large Granular Leukemia (LGL)"
+      },
+      {
+        "code" : "t_pll",
+        "display" : "T-Prolymfocytleukæmi"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/Registry",
+      "concept" : [{
+        "code" : "ej_reg_pligtig",
+        "display" : "Ej registreringspligtig hæmatologisk sygdom"
+      },
+      {
+        "code" : "eksisterende",
+        "display" : "Eksisterende registreringer dækker over de(n) hæmatologiske sygdomme pt har"
+      },
+      {
+        "code" : "udland",
+        "display" : "Bosiddende i udlandet på diagnosetidspunktet"
+      },
+      {
+        "code" : "flyttet",
+        "display" : "Patientforløb flyttet til anden hæmatologisk afdeling"
+      },
+      {
+        "code" : "barn",
+        "display" : "Behandlet på børneafdeling el anden IKKE hæmatologisk afd"
+      },
+      {
+        "code" : "ej_relaps",
+        "display" : "Pt har ikke relaps/progression"
+      },
+      {
+        "code" : "afsluttet",
+        "display" : "Afsluttet: Patientens forløb er afsluttet fra afdeling og følges IKKE på anden hæmatologisk afdeling"
+      }]
+    }]
+  }
+}
+
+```

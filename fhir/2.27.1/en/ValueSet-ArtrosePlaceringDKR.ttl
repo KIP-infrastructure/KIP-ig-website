@@ -1,0 +1,71 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/ArtrosePlaceringDKR> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ArtrosePlaceringDKR"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ArtrosePlaceringDKR</b></p><a name=\"ArtrosePlaceringDKR\"> </a><a name=\"hcArtrosePlaceringDKR\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-ArtrosePlacering.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ArtrosePlacering</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ArtrosePlacering.html#ArtrosePlacering-hmedial\">hmedial</a></td><td>Medial artrose</td><td>Medial artrose</td></tr><tr><td><a href=\"CodeSystem-ArtrosePlacering.html#ArtrosePlacering-lateral\">lateral</a></td><td>Lateral artrose</td><td>Lateral artrose</td></tr><tr><td><a href=\"CodeSystem-ArtrosePlacering.html#ArtrosePlacering-patellofemoral\">patellofemoral</a></td><td>Patellofemoral artrose</td><td>Patellofemoral artrose</td></tr><tr><td><a href=\"CodeSystem-ArtrosePlacering.html#ArtrosePlacering-2kammer\">2kammer</a></td><td>2-kammer artrose</td><td>2-kammer artrose</td></tr><tr><td><a href=\"CodeSystem-ArtrosePlacering.html#ArtrosePlacering-3kammer\">3kammer</a></td><td>3-kammer artrose</td><td>3-kammer artrose</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/ArtrosePlaceringDKR"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.1"] ;
+  fhir:ValueSet.name [ fhir:value "ArtrosePlaceringDKR"] ;
+  fhir:ValueSet.title [ fhir:value "Artrose Placering (DKR)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2023-12-19T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Artrose Placering (DKR)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/ArtrosePlacering" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "hmedial" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medial artrose" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "lateral" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lateral artrose" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "patellofemoral" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patellofemoral artrose" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2kammer" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "2-kammer artrose" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3kammer" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "3-kammer artrose" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/ArtrosePlaceringDKR.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

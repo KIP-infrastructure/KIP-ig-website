@@ -1,4 +1,4 @@
-# Bulking materiale - Urogynækologi (DUGA) - KIP Infrastructure v2.27.0
+# Bulking materiale - Urogynækologi (DUGA) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/BulkingMaterialeDUGA | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/BulkingMaterialeDUGA | *Version*:2.27.1 |
 | Active as of 2024-02-14 | *Computable Name*:BulkingMaterialeDUGACS |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "BulkingMaterialeDUGA",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/BulkingMaterialeDUGA",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "BulkingMaterialeDUGACS",
   "title" : "Bulking materiale - Urogynækologi (DUGA)",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Operationspåklædning [DHR] - KIP Infrastructure v2.27.0
+# Operationspåklædning [DHR] - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/OperationspaaklaedningDHR | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/OperationspaaklaedningDHR | *Version*:2.27.1 |
 | Active as of 2022-07-06 | *Computable Name*:OperationspaaklaedningDHR |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "OperationspaaklaedningDHR",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/OperationspaaklaedningDHR",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "OperationspaaklaedningDHR",
   "title" : "Operationspåklædning [DHR]",
   "status" : "active",

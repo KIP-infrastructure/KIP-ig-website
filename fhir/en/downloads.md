@@ -1,4 +1,4 @@
-# Downloads - KIP Infrastructure v2.27.0
+# Downloads - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * **Downloads**

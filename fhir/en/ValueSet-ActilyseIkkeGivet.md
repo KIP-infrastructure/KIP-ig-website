@@ -1,4 +1,4 @@
-# Totaldosis i.v. actilyse er ikke givet; årsag - KIP Infrastructure v2.27.0
+# Totaldosis i.v. actilyse er ikke givet; årsag - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ActilyseIkkeGivet | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ActilyseIkkeGivet | *Version*:2.27.1 |
 | Active as of 2022-06-28 | *Computable Name*:ActilyseIkkeGivet |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "ActilyseIkkeGivet",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/ActilyseIkkeGivet",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "ActilyseIkkeGivet",
   "title" : "Totaldosis i.v. actilyse er ikke givet; årsag",
   "status" : "active",

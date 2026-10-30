@@ -1,4 +1,4 @@
-# Grund til manglende behandling - KIP Infrastructure v2.27.0
+# Grund til manglende behandling - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ManglendeBehandling | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ManglendeBehandling | *Version*:2.27.1 |
 | Active as of 2022-09-06 | *Computable Name*:ManglendeBehandling |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "ManglendeBehandling",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/ManglendeBehandling",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "ManglendeBehandling",
   "title" : "Grund til manglende behandling",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Contact; Place of contact - KIP Infrastructure v2.27.0
+# Contact; Place of contact - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/ContactPlace | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/ContactPlace | *Version*:2.27.1 |
 | Active as of 2022-08-23 | *Computable Name*:ContactPlace |
 
  
@@ -32,7 +32,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "ContactPlace",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/ContactPlace",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "ContactPlace",
   "title" : "Contact; Place of contact",
   "status" : "active",

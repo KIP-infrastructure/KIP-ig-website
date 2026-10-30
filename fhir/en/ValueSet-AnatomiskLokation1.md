@@ -1,4 +1,4 @@
-# Anatomisk lokation 1 - KIP Infrastructure v2.27.0
+# Anatomisk lokation 1 - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/AnatomiskLokation1 | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/AnatomiskLokation1 | *Version*:2.27.1 |
 | Active as of 2022-10-12 | *Computable Name*:AnatomiskLokation1 |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "AnatomiskLokation1",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/AnatomiskLokation1",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "AnatomiskLokation1",
   "title" : "Anatomisk lokation 1",
   "status" : "active",

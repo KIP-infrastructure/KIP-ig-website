@@ -1,4 +1,4 @@
-# Kognitiv påvirkning (DANDEM) - KIP Infrastructure v2.27.0
+# Kognitiv påvirkning (DANDEM) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/KognitivPaavirkningDANDEM | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/KognitivPaavirkningDANDEM | *Version*:2.27.1 |
 | Active as of 2022-07-19 | *Computable Name*:KognitivPaavirkningDANDEM |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "KognitivPaavirkningDANDEM",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/KognitivPaavirkningDANDEM",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "KognitivPaavirkningDANDEM",
   "title" : "Kognitiv påvirkning (DANDEM)",
   "status" : "active",

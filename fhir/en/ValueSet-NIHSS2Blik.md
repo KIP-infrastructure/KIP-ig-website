@@ -1,4 +1,4 @@
-# NIHSS - 2. Blik - KIP Infrastructure v2.27.0
+# NIHSS - 2. Blik - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/NIHSS2Blik | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/NIHSS2Blik | *Version*:2.27.1 |
 | Active as of 2022-06-27 | *Computable Name*:NIHSS2Blik |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "NIHSS2Blik",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/NIHSS2Blik",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "NIHSS2Blik",
   "title" : "NIHSS - 2. Blik",
   "status" : "active",

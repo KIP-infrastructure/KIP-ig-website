@@ -1,4 +1,4 @@
-# Disease localization - KIP Infrastructure v2.27.0
+# Disease localization - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/DiseaseLocalization | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/DiseaseLocalization | *Version*:2.27.1 |
 | Active as of 2022-06-07 | *Computable Name*:DiseaseLocalization |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "DiseaseLocalization",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/DiseaseLocalization",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "DiseaseLocalization",
   "title" : "Disease localization",
   "status" : "active",

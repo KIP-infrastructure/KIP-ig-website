@@ -1,4 +1,4 @@
-# Responsevaluering på behandling (LYFO) - KIP Infrastructure v2.27.0
+# Responsevaluering på behandling (LYFO) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/BehandlingsResponsEvalueringLYFO | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/BehandlingsResponsEvalueringLYFO | *Version*:2.27.1 |
 | Active as of 2022-07-18 | *Computable Name*:BehandlingsResponsEvalueringLYFO |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "BehandlingsResponsEvalueringLYFO",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/BehandlingsResponsEvalueringLYFO",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "BehandlingsResponsEvalueringLYFO",
   "title" : "Responsevaluering på behandling (LYFO)",
   "status" : "active",

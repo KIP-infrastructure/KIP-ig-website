@@ -1,4 +1,4 @@
-# POP-Q undersøgelse C+D (DUGA) - KIP Infrastructure v2.27.0
+# POP-Q undersøgelse C+D (DUGA) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/POPQCDDUGA | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/POPQCDDUGA | *Version*:2.27.1 |
 | Active as of 2024-02-13 | *Computable Name*:POPQCDDUGA |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "POPQCDDUGA",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/POPQCDDUGA",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "POPQCDDUGA",
   "title" : "POP-Q undersøgelse C+D (DUGA)",
   "status" : "active",

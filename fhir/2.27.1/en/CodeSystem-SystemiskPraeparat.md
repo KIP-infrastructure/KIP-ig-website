@@ -1,0 +1,175 @@
+# Systemiske præperater - KIP Infrastructure v2.27.1
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Systemiske præperater**
+
+## CodeSystem: Systemiske præperater 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/SystemiskPraeparat | *Version*:2.27.1 |
+| Active as of 2022-04-26 | *Computable Name*:SystemiskPraeparat |
+
+ 
+Dette er systemiske præperater 
+
+This Code system is referenced in the definition of the following value sets:
+
+* This CodeSystem is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "CodeSystem",
+  "id" : "SystemiskPraeparat",
+  "url" : "https://kip.rkkp.dk/fhir/CodeSystem/SystemiskPraeparat",
+  "version" : "2.27.1",
+  "name" : "SystemiskPraeparat",
+  "title" : "Systemiske præperater",
+  "status" : "active",
+  "date" : "2022-04-26T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Dette er systemiske præperater",
+  "content" : "complete",
+  "count" : 19,
+  "property" : [{
+    "code" : "comment",
+    "uri" : "http://hl7.org/fhir/concept-properties#comment",
+    "description" : "A string that provides additional detail pertinent to the use or understanding of the concept",
+    "type" : "string"
+  },
+  {
+    "code" : "effectiveDate",
+    "uri" : "http://hl7.org/fhir/concept-properties#effectiveDate",
+    "description" : "The date at which the concept status was last changed",
+    "type" : "dateTime"
+  },
+  {
+    "code" : "status",
+    "uri" : "http://hl7.org/fhir/concept-properties#status",
+    "description" : "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired",
+    "type" : "code"
+  },
+  {
+    "code" : "inactive",
+    "uri" : "http://hl7.org/fhir/concept-properties#inactive",
+    "description" : "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive",
+    "type" : "boolean"
+  }],
+  "concept" : [{
+    "code" : "cisplatin",
+    "display" : "Cisplatin",
+    "definition" : "Et produkt der hedder Cisplatin"
+  },
+  {
+    "code" : "carboplatin",
+    "display" : "Carboplatin",
+    "definition" : "Et andet produkt, der hedder Carboplatin"
+  },
+  {
+    "code" : "oxaliplatin",
+    "display" : "Oxaliplatin",
+    "definition" : "Et produkt med navnet Oxaliplatin"
+  },
+  {
+    "code" : "5fu",
+    "display" : "5-FU",
+    "definition" : "Noget forkortet 5-FU"
+  },
+  {
+    "code" : "ironetecan",
+    "display" : "Irontecan",
+    "definition" : "Noget med jern i"
+  },
+  {
+    "code" : "doxorubicin",
+    "display" : "Doxorubicin",
+    "definition" : "Dette er Doxurubicin"
+  },
+  {
+    "code" : "paciltaxel",
+    "display" : "Paciltaxel",
+    "definition" : "Muligheden for Paciltaxel"
+  },
+  {
+    "code" : "docetaxel",
+    "display" : "Docetaxel",
+    "definition" : "Præperat Docetaxel"
+  },
+  {
+    "code" : "gemcitabine",
+    "display" : "Gamcitabine",
+    "definition" : "Her er Gemcitabine"
+  },
+  {
+    "code" : "vinorelbine",
+    "display" : "Vinorelbine",
+    "definition" : "Dette er Vinorelbine"
+  },
+  {
+    "code" : "leucovorin",
+    "display" : "Leucovorin",
+    "definition" : "Leucovorin-præperat"
+  },
+  {
+    "code" : "epirubicin",
+    "display" : "Epirubicin",
+    "definition" : "Epirubicin mod smerter"
+  },
+  {
+    "code" : "pembrolizumab",
+    "display" : "Pembrolizumab",
+    "definition" : "Præperatet Pembrolizumab"
+  },
+  {
+    "code" : "dtdTpi",
+    "display" : "FTD/TPI",
+    "definition" : "En kombo af FTD/TPI"
+  },
+  {
+    "code" : "nivolumab",
+    "display" : "Nivolumab",
+    "definition" : "Dette er Nivolumab"
+  },
+  {
+    "code" : "bevacizumab",
+    "display" : "Bevacizumab",
+    "definition" : "Her er Bevacizumab"
+  },
+  {
+    "code" : "trastuzumab",
+    "display" : "Trastuzumab",
+    "definition" : "Dette kaldes Trastuzumab"
+  },
+  {
+    "code" : "capecitabine",
+    "display" : "Capecitabine",
+    "definition" : "Muligheden Capecitabine"
+  },
+  {
+    "code" : "andet",
+    "display" : "Andet",
+    "definition" : "Hvis du har givet andet"
+  }]
+}
+
+```

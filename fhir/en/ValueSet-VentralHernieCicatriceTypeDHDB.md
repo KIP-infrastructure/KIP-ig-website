@@ -1,4 +1,4 @@
-# Ventral hernie cicatrice type (DHDB) - KIP Infrastructure v2.27.0
+# Ventral hernie cicatrice type (DHDB) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/VentralHernieCicatriceTypeDHDB | *Version*:2.27.0 |
-| Active as of 2026-09-26 | *Computable Name*:VentralHernieCicatriceTypeDHDB |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/VentralHernieCicatriceTypeDHDB | *Version*:2.27.1 |
+| Active as of 2026-10-30 | *Computable Name*:VentralHernieCicatriceTypeDHDB |
 
  
 Ventral hernie cicatrice type (DHDB) 
@@ -37,11 +37,11 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "VentralHernieCicatriceTypeDHDB",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/VentralHernieCicatriceTypeDHDB",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "VentralHernieCicatriceTypeDHDB",
   "title" : "Ventral hernie cicatrice type (DHDB)",
   "status" : "active",
-  "date" : "2026-09-26T00:00:00+02:00",
+  "date" : "2026-10-30T00:00:00+01:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
@@ -64,11 +64,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
       },
       {
         "code" : "cross_cicatrice",
-        "display" : "Tværcicatrice"
-      },
-      {
-        "code" : "port",
-        "display" : "Port-hernie"
+        "display" : "Tværcicatrice Port-hernie"
       }]
     },
     {

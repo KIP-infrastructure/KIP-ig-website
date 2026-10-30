@@ -1,4 +1,4 @@
-# Gynækologisk undersøgelsesmetode (DUGA) - KIP Infrastructure v2.27.0
+# Gynækologisk undersøgelsesmetode (DUGA) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/GynUndersoegDUGA | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/GynUndersoegDUGA | *Version*:2.27.1 |
 | Active as of 2024-02-13 | *Computable Name*:GynUndersoegDUGA |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "GynUndersoegDUGA",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/GynUndersoegDUGA",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "GynUndersoegDUGA",
   "title" : "Gynækologisk undersøgelsesmetode (DUGA)",
   "status" : "active",

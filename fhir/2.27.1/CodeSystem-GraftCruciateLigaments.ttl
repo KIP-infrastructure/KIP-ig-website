@@ -1,0 +1,152 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/GraftCruciateLigaments> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "GraftCruciateLigaments"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem GraftCruciateLigaments</b></p><a name=\"GraftCruciateLigaments\"> </a><a name=\"hcGraftCruciateLigaments\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/GraftCruciateLigaments</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">acl_repair_synthetic_reinforced<a name=\"GraftCruciateLigaments-acl_repair_synthetic_reinforced\"> </a></td><td>ACL repair med syntetisk forstærkning</td><td>ACL repair med syntetisk forstærkning</td></tr><tr><td style=\"white-space:nowrap\">bach-allo<a name=\"GraftCruciateLigaments-bach-allo\"> </a></td><td>BACH-Allo</td><td>BACH-Allo</td></tr><tr><td style=\"white-space:nowrap\">bptb<a name=\"GraftCruciateLigaments-bptb\"> </a></td><td>BPTB</td><td>BPTB</td></tr><tr><td style=\"white-space:nowrap\">bptb-allo<a name=\"GraftCruciateLigaments-bptb-allo\"> </a></td><td>BPTB-Allo</td><td>BPTB-Allo</td></tr><tr><td style=\"white-space:nowrap\">bqt<a name=\"GraftCruciateLigaments-bqt\"> </a></td><td>BQT</td><td>BQT</td></tr><tr><td style=\"white-space:nowrap\">bqt-allo<a name=\"GraftCruciateLigaments-bqt-allo\"> </a></td><td>BQT-Allo</td><td>BQT-Allo</td></tr><tr><td style=\"white-space:nowrap\">direct_suture<a name=\"GraftCruciateLigaments-direct_suture\"> </a></td><td>Direkte sutur</td><td>Direkte sutur</td></tr><tr><td style=\"white-space:nowrap\">double-bundle_bqt<a name=\"GraftCruciateLigaments-double-bundle_bqt\"> </a></td><td>Double-bundle BQT</td><td>Double-bundle BQT</td></tr><tr><td style=\"white-space:nowrap\">double-bundle_st<a name=\"GraftCruciateLigaments-double-bundle_st\"> </a></td><td>Double-bundle ST</td><td>Double-bundle ST</td></tr><tr><td style=\"white-space:nowrap\">qt_without_bone_block<a name=\"GraftCruciateLigaments-qt_without_bone_block\"> </a></td><td>QT uden knogleklods</td><td>QT uden knogleklods</td></tr><tr><td style=\"white-space:nowrap\">st_double<a name=\"GraftCruciateLigaments-st_double\"> </a></td><td>ST - Double</td><td>ST - Double</td></tr><tr><td style=\"white-space:nowrap\">st_quadro<a name=\"GraftCruciateLigaments-st_quadro\"> </a></td><td>ST - Quadro</td><td>ST - Quadro</td></tr><tr><td style=\"white-space:nowrap\">st_triple<a name=\"GraftCruciateLigaments-st_triple\"> </a></td><td>ST - Triple</td><td>ST - Triple</td></tr><tr><td style=\"white-space:nowrap\">st/gr<a name=\"GraftCruciateLigaments-st.47gr\"> </a></td><td>ST/GR</td><td>ST/GR</td></tr><tr><td style=\"white-space:nowrap\">st/gr_allo<a name=\"GraftCruciateLigaments-st.47gr_allo\"> </a></td><td>ST/GR allo</td><td>ST/GR allo</td></tr><tr><td style=\"white-space:nowrap\">synthetic<a name=\"GraftCruciateLigaments-synthetic\"> </a></td><td>Syntetisk graft</td><td>Syntetisk graft</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/GraftCruciateLigaments"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.1"] ;
+  fhir:CodeSystem.name [ fhir:value "GraftCruciateLigaments"] ;
+  fhir:CodeSystem.title [ fhir:value "Grafts for cruciate ligaments; types of grafts"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2022-09-19T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Grafts for cruciate ligaments, types of grafts"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "16"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index 0 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "acl_repair_synthetic_reinforced" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ACL repair med syntetisk forstærkning" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "ACL repair med syntetisk forstærkning" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bach-allo" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "BACH-Allo" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "BACH-Allo" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bptb" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "BPTB" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "BPTB" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bptb-allo" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "BPTB-Allo" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "BPTB-Allo" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bqt" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "BQT" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "BQT" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bqt-allo" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "BQT-Allo" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "BQT-Allo" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "direct_suture" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Direkte sutur" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Direkte sutur" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "double-bundle_bqt" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Double-bundle BQT" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Double-bundle BQT" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "double-bundle_st" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Double-bundle ST" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Double-bundle ST" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "qt_without_bone_block" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "QT uden knogleklods" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "QT uden knogleklods" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "st_double" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ST - Double" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "ST - Double" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "st_quadro" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ST - Quadro" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "ST - Quadro" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "st_triple" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ST - Triple" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "ST - Triple" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "st/gr" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ST/GR" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "ST/GR" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "st/gr_allo" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ST/GR allo" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "ST/GR allo" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "synthetic" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Syntetisk graft" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Syntetisk graft" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/GraftCruciateLigaments.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,4 +1,4 @@
-# Skannings metoder 202412 - KIP Infrastructure v2.27.0
+# Skannings metoder 202412 - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/MedicalScanningTypes202412 | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/MedicalScanningTypes202412 | *Version*:2.27.1 |
 | Active as of 2022-07-14 | *Computable Name*:MedicalScanningTypes202412 |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "MedicalScanningTypes202412",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/MedicalScanningTypes202412",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "MedicalScanningTypes202412",
   "title" : "Skannings metoder 202412",
   "status" : "active",

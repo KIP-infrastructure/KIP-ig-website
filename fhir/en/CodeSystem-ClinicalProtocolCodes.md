@@ -1,4 +1,4 @@
-# Clinical protocol; name - KIP Infrastructure v2.27.0
+# Clinical protocol; name - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/ClinicalProtocolCodes | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/ClinicalProtocolCodes | *Version*:2.27.1 |
 | Active as of 2022-07-12 | *Computable Name*:ClinicalProtocolCodesCS |
 
  
@@ -32,7 +32,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "ClinicalProtocolCodes",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/ClinicalProtocolCodes",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "ClinicalProtocolCodesCS",
   "title" : "Clinical protocol; name",
   "status" : "active",

@@ -1,4 +1,4 @@
-# General size scale - KIP Infrastructure v2.27.0
+# General size scale - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/SizesGeneral | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/SizesGeneral | *Version*:2.27.1 |
 | Active as of 2023-05-23 | *Computable Name*:SizesGeneral |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "SizesGeneral",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/SizesGeneral",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "SizesGeneral",
   "title" : "General size scale",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Sutur monofilament type, ventralhernie (DHDB) - KIP Infrastructure v2.27.0
+# Sutur monofilament type, ventralhernie (DHDB) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SuturMonofilamentTypeVentralhernieDHDB | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SuturMonofilamentTypeVentralhernieDHDB | *Version*:2.27.1 |
 | Active as of 2022-07-20 | *Computable Name*:SuturMonofilamentTypeVentralhernieDHDB |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "SuturMonofilamentTypeVentralhernieDHDB",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/SuturMonofilamentTypeVentralhernieDHDB",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "SuturMonofilamentTypeVentralhernieDHDB",
   "title" : "Sutur monofilament type, ventralhernie (DHDB)",
   "status" : "active",

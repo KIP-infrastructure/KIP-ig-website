@@ -1,4 +1,4 @@
-# Laryngoskopi grad - KIP Infrastructure v2.27.0
+# Laryngoskopi grad - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/LaryngoskopiDegree | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/LaryngoskopiDegree | *Version*:2.27.1 |
 | Active as of 2022-06-09 | *Computable Name*:LaryngoskopiDegreeCS |
 
  
@@ -32,7 +32,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "LaryngoskopiDegree",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/LaryngoskopiDegree",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "LaryngoskopiDegreeCS",
   "title" : "Laryngoskopi grad",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Banff Classifikation - KIP Infrastructure v2.27.0
+# Banff Classifikation - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/BANFF | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/BANFF | *Version*:2.27.1 |
 | Active as of 2024-10-01 | *Computable Name*:BANFF |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "BANFF",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/BANFF",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "BANFF",
   "title" : "Banff Classifikation",
   "status" : "active",

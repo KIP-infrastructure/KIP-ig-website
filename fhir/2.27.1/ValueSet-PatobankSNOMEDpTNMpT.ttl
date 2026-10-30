@@ -1,0 +1,94 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/PatobankSNOMEDpTNMpT> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "PatobankSNOMEDpTNMpT"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet PatobankSNOMEDpTNMpT</b></p><a name=\"PatobankSNOMEDpTNMpT\"> </a><a name=\"hcPatobankSNOMEDpTNMpT\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-PatobankSNOMED.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/PatobankSNOMED</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-PatobankSNOMED.html#PatobankSNOMED-AEF1810\">AEF1810</a></td><td>pTis (ÆF1810)</td><td>ÆF1810 - pTis</td></tr><tr><td><a href=\"CodeSystem-PatobankSNOMED.html#PatobankSNOMED-AEF1820\">AEF1820</a></td><td>pT0 (ÆF1820)</td><td>ÆF1820 - pT0</td></tr><tr><td><a href=\"CodeSystem-PatobankSNOMED.html#PatobankSNOMED-AEF1830\">AEF1830</a></td><td>pT1 (ÆF1830)</td><td>ÆF1830 - pT1</td></tr><tr><td><a href=\"CodeSystem-PatobankSNOMED.html#PatobankSNOMED-AEF1831\">AEF1831</a></td><td>pT1a (ÆF1831)</td><td>ÆF1831 - pT1a</td></tr><tr><td><a href=\"CodeSystem-PatobankSNOMED.html#PatobankSNOMED-AEF1832\">AEF1832</a></td><td>pT1b (ÆF1832)</td><td>ÆF1832 - pT1b</td></tr><tr><td><a href=\"CodeSystem-PatobankSNOMED.html#PatobankSNOMED-AEF1840\">AEF1840</a></td><td>pT2 (ÆF1840)</td><td>ÆF1840 - pT2</td></tr><tr><td><a href=\"CodeSystem-PatobankSNOMED.html#PatobankSNOMED-AEF1850\">AEF1850</a></td><td>pT3 (ÆF1850)</td><td>ÆF1850 - pT3</td></tr><tr><td><a href=\"CodeSystem-PatobankSNOMED.html#PatobankSNOMED-AEF1860\">AEF1860</a></td><td>pT4 (ÆF1860)</td><td>ÆF1860 - pT4</td></tr><tr><td><a href=\"CodeSystem-PatobankSNOMED.html#PatobankSNOMED-AEF1861\">AEF1861</a></td><td>pT4a (ÆF1861)</td><td>ÆF1861 - pT4a</td></tr><tr><td><a href=\"CodeSystem-PatobankSNOMED.html#PatobankSNOMED-AEF1862\">AEF1862</a></td><td>pT4b (ÆF1862)</td><td>ÆF1862 - pT4b</td></tr><tr><td><a href=\"CodeSystem-PatobankSNOMED.html#PatobankSNOMED-AEF1870\">AEF1870</a></td><td>pTx (ÆF1870)</td><td>ÆF1870 - pTx</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/PatobankSNOMEDpTNMpT"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.1"] ;
+  fhir:ValueSet.name [ fhir:value "PatobankSNOMEDpTNMpT"] ;
+  fhir:ValueSet.title [ fhir:value "Patobank SNOMED: pTNM klassifikation, pT"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-06-08T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "SNOMED koderne relevante pT tillægskoder"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/PatobankSNOMED" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "AEF1810" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pTis (ÆF1810)" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "AEF1820" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pT0 (ÆF1820)" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "AEF1830" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pT1 (ÆF1830)" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "AEF1831" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pT1a (ÆF1831)" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "AEF1832" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pT1b (ÆF1832)" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "AEF1840" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pT2 (ÆF1840)" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "AEF1850" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pT3 (ÆF1850)" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "AEF1860" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pT4 (ÆF1860)" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "AEF1861" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pT4a (ÆF1861)" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "AEF1862" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pT4b (ÆF1862)" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "AEF1870" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pTx (ÆF1870)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/PatobankSNOMEDpTNMpT.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

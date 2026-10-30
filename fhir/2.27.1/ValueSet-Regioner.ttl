@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/Regioner> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "Regioner"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Regioner</b></p><a name=\"Regioner\"> </a><a name=\"hcRegioner\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Regioner.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Regioner</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Regioner.html#Regioner-hovedstaden\">hovedstaden</a></td><td>Hovedstaden</td><td>Hovedstaden</td></tr><tr><td><a href=\"CodeSystem-Regioner.html#Regioner-midtjylland\">midtjylland</a></td><td>Midtjylland</td><td>Midtjylland</td></tr><tr><td><a href=\"CodeSystem-Regioner.html#Regioner-nordjylland\">nordjylland</a></td><td>Nordjylland</td><td>Nordjylland</td></tr><tr><td><a href=\"CodeSystem-Regioner.html#Regioner-sjaelland\">sjaelland</a></td><td>Sjælland</td><td>Sjælland</td></tr><tr><td><a href=\"CodeSystem-Regioner.html#Regioner-syddanmark\">syddanmark</a></td><td>Syddanmark</td><td>Syddanmark</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/Regioner"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.1"] ;
+  fhir:ValueSet.name [ fhir:value "Regioner"] ;
+  fhir:ValueSet.title [ fhir:value "Regioner"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2024-03-13T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Danske Regioner"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/Regioner" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "hovedstaden" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hovedstaden" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "midtjylland" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Midtjylland" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "nordjylland" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nordjylland" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "sjaelland" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sjælland" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "syddanmark" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Syddanmark" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/Regioner.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

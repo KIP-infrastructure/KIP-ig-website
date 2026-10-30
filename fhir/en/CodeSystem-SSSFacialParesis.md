@@ -1,4 +1,4 @@
-# Scandinavian Stroke Scale (SSS) - Facial paresis - KIP Infrastructure v2.27.0
+# Scandinavian Stroke Scale (SSS) - Facial paresis - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/SSSFacialParesis | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/SSSFacialParesis | *Version*:2.27.1 |
 | Active as of 2022-06-23 | *Computable Name*:SSSFacialParesis |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "SSSFacialParesis",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/SSSFacialParesis",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "SSSFacialParesis",
   "title" : "Scandinavian Stroke Scale (SSS) - Facial paresis",
   "status" : "active",

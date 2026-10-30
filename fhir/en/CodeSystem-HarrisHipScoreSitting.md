@@ -1,4 +1,4 @@
-# Harris Hip Score (HHS) - Sitting - KIP Infrastructure v2.27.0
+# Harris Hip Score (HHS) - Sitting - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/HarrisHipScoreSitting | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/HarrisHipScoreSitting | *Version*:2.27.1 |
 | Active as of 2022-07-06 | *Computable Name*:HarrisHipScoreSitting |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "HarrisHipScoreSitting",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/HarrisHipScoreSitting",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "HarrisHipScoreSitting",
   "title" : "Harris Hip Score (HHS) - Sitting",
   "status" : "active",

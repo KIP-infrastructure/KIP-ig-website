@@ -1,0 +1,82 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/PlasmaDiagnose> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "PlasmaDiagnose"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet PlasmaDiagnose</b></p><a name=\"PlasmaDiagnose\"> </a><a name=\"hcPlasmaDiagnose\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-DiseasesUnspecified.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/DiseasesUnspecified</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-smouldering_mm\">smouldering_mm</a></td><td>Smouldering MM</td><td>Smouldering MM</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-myelomatosis\">myelomatosis</a></td><td>Myelomatose</td><td>Myelomatosis / Myelomatose</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-solitary_myelom_osseus\">solitary_myelom_osseus</a></td><td>Solitært myelom (ossøst)</td><td>Solitary myelom (osseus) / Solitært myelom (ossøst)</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-solitary_myelom_extra_osseus\">solitary_myelom_extra_osseus</a></td><td>Solitært myelom (ekstraossøst)</td><td>Solitary myelom (extra osseus) / Solitært myelom (ekstraossøst)</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-plasma_cell_leukemia\">plasma_cell_leukemia</a></td><td>Plasmacelleleukæmi</td><td>Plasma cell leukemia / Plasmacelleleukæmi</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-DD472\">DD472</a></td><td>MGUS</td><td>Monoklonal gammopati med ubestemt signifikans (MGUS)</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-ZM973A3\">ZM973A3</a></td><td>POEMS</td><td>Osteosklerotisk myelom (POEMS syndrom)</td></tr><tr><td><a href=\"CodeSystem-DiseasesUnspecified.html#DiseasesUnspecified-paraprotein_associated_polyneuropathy\">paraprotein_associated_polyneuropathy</a></td><td>Paraproteinassocieret polyneuropati</td><td>Paraprotein associated polyneuropathy / Paraprotein associeret polyneuropati</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/PlasmaDiagnose"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.1"] ;
+  fhir:ValueSet.name [ fhir:value "PlasmaDiagnose"] ;
+  fhir:ValueSet.title [ fhir:value "Plasma Analyse - kræft diagnose"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-07-14T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Plasma analyse - kræft diagnose kriterier [DAMYDA]"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/DiseasesUnspecified" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "smouldering_mm" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Smouldering MM" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "myelomatosis" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Myelomatose" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "solitary_myelom_osseus" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Solitært myelom (ossøst)" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "solitary_myelom_extra_osseus" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Solitært myelom (ekstraossøst)" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "plasma_cell_leukemia" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Plasmacelleleukæmi" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DD472" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "MGUS" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ZM973A3" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "POEMS" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "paraprotein_associated_polyneuropathy" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Paraproteinassocieret polyneuropati" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/PlasmaDiagnose.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

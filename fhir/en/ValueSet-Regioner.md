@@ -1,4 +1,4 @@
-# Regioner - KIP Infrastructure v2.27.0
+# Regioner - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/Regioner | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/Regioner | *Version*:2.27.1 |
 | Active as of 2024-03-13 | *Computable Name*:Regioner |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "Regioner",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/Regioner",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "Regioner",
   "title" : "Regioner",
   "status" : "active",

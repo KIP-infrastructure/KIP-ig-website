@@ -1,4 +1,4 @@
-# Complications - KIP Infrastructure v2.27.0
+# Complications - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/Complications | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/Complications | *Version*:2.27.1 |
 | Active as of 2022-06-07 | *Computable Name*:Complications |
 
  
@@ -55,7 +55,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "Complications",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/Complications",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "Complications",
   "title" : "Complications",
   "status" : "active",

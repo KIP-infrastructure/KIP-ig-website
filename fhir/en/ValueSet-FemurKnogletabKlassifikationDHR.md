@@ -1,4 +1,4 @@
-# Femur knogletab klassifikation (DHR) - KIP Infrastructure v2.27.0
+# Femur knogletab klassifikation (DHR) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/FemurKnogletabKlassifikationDHR | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/FemurKnogletabKlassifikationDHR | *Version*:2.27.1 |
 | Active as of 2022-11-08 | *Computable Name*:FemurKnogletabKlassifikationDHR |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "FemurKnogletabKlassifikationDHR",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/FemurKnogletabKlassifikationDHR",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "FemurKnogletabKlassifikationDHR",
   "title" : "Femur knogletab klassifikation (DHR)",
   "status" : "active",

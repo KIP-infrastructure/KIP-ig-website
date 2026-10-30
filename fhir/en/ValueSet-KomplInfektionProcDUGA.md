@@ -1,4 +1,4 @@
-# Komplikationer pga. infektion eller erosion - Procedurekoder (DUGA) - KIP Infrastructure v2.27.0
+# Komplikationer pga. infektion eller erosion - Procedurekoder (DUGA) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/KomplInfektionProcDUGA | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/KomplInfektionProcDUGA | *Version*:2.27.1 |
 | Active as of 2024-02-21 | *Computable Name*:KomplInfektionProcDUGA |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "KomplInfektionProcDUGA",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/KomplInfektionProcDUGA",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "KomplInfektionProcDUGA",
   "title" : "Komplikationer pga. infektion eller erosion - Procedurekoder (DUGA)",
   "status" : "active",

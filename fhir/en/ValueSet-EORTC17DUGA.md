@@ -1,4 +1,4 @@
-# EORTC Grad 1-7 (DUGA) - KIP Infrastructure v2.27.0
+# EORTC Grad 1-7 (DUGA) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/EORTC17DUGA | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/EORTC17DUGA | *Version*:2.27.1 |
 | Active as of 2024-03-06 | *Computable Name*:EORTC17DUGA |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "EORTC17DUGA",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/EORTC17DUGA",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "EORTC17DUGA",
   "title" : "EORTC Grad 1-7 (DUGA)",
   "status" : "active",

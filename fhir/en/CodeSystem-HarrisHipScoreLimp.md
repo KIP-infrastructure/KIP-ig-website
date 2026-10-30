@@ -1,4 +1,4 @@
-# Harris Hip Score (HHS) - Limp - KIP Infrastructure v2.27.0
+# Harris Hip Score (HHS) - Limp - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/HarrisHipScoreLimp | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/HarrisHipScoreLimp | *Version*:2.27.1 |
 | Active as of 2022-07-06 | *Computable Name*:HarrisHipScoreLimp |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "HarrisHipScoreLimp",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/HarrisHipScoreLimp",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "HarrisHipScoreLimp",
   "title" : "Harris Hip Score (HHS) - Limp",
   "status" : "active",

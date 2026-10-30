@@ -1,0 +1,91 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/RevisionAarsagDKRR> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "RevisionAarsagDKRR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet RevisionAarsagDKRR</b></p><a name=\"RevisionAarsagDKRR\"> </a><a name=\"hcRevisionAarsagDKRR\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-RevisionCause.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/RevisionCause</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-RevisionCause.html#RevisionCause-trauma\">trauma</a></td><td>Nyt traume</td><td>Trauma / traume</td></tr><tr><td><a href=\"CodeSystem-RevisionCause.html#RevisionCause-tunnelwidening\">tunnelwidening</a></td><td>Tunnelwidening</td><td>Tunnelwidening</td></tr><tr><td><a href=\"CodeSystem-RevisionCause.html#RevisionCause-suboptimal_graft_tibia\">suboptimal_graft_tibia</a></td><td>Suboptimal graft placering i tibia</td><td>Suboptimal graft; placement in tibia / Suboptimal graft placering i tibia</td></tr><tr><td><a href=\"CodeSystem-RevisionCause.html#RevisionCause-suboptimal_graft_femur\">suboptimal_graft_femur</a></td><td>Suboptimal graft placering i femur</td><td>Suboptimal graft; placement in femur / Suboptimal graft placering i femur</td></tr><tr><td><a href=\"CodeSystem-RevisionCause.html#RevisionCause-infection\">infection</a></td><td>Infektion</td><td>Infection / Infektion</td></tr><tr><td><a href=\"CodeSystem-RevisionCause.html#RevisionCause-ligamental_instability\">ligamental_instability</a></td><td>Anden ligamentær løshed som årsag til ny instabilitet</td><td>Other ligamental looseness causing instability / Anden ligamentær løshed som årsag til ny instabilitet</td></tr></table></li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/7.5.0/CodeSystem-v2-0532.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0532</code></a><span title=\"Version is explicitly stated to be 3.0.0\"> version ?3.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/7.5.0/CodeSystem-v2-0532.html#v2-0532-UNK\">UNK</a></td><td>Ukendt årsag til ny instabilitet</td><td>unknown</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/RevisionAarsagDKRR"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.1"] ;
+  fhir:ValueSet.name [ fhir:value "RevisionAarsagDKRR"] ;
+  fhir:ValueSet.title [ fhir:value "Revision, årsag (DKRR)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-09-21T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Revision, årsag (DKRR)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/RevisionCause" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "trauma" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nyt traume" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "tunnelwidening" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tunnelwidening" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "suboptimal_graft_tibia" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Suboptimal graft placering i tibia" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "suboptimal_graft_femur" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Suboptimal graft placering i femur" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "infection" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Infektion" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ligamental_instability" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anden ligamentær løshed som årsag til ny instabilitet" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0532" ] ;
+       fhir:ValueSet.compose.include.version [ fhir:value "3.0.0" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "UNK" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ukendt årsag til ny instabilitet" ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Andet" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/RevisionAarsagDKRR.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

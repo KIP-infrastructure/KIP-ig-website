@@ -1,4 +1,4 @@
-# Komponent - tibia (DKR) revision - KIP Infrastructure v2.27.0
+# Komponent - tibia (DKR) revision - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/KomponentTibiaDKRrevision | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/KomponentTibiaDKRrevision | *Version*:2.27.1 |
 | Active as of 2025-03-04 | *Computable Name*:KomponentTibiaDKRrevision |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "KomponentTibiaDKRrevision",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/KomponentTibiaDKRrevision",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "KomponentTibiaDKRrevision",
   "title" : "Komponent - tibia (DKR) revision",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Korsbånd ikke bevaret - KIP Infrastructure v2.27.0
+# Korsbånd ikke bevaret - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/KorsbaandEjBevaret | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/KorsbaandEjBevaret | *Version*:2.27.1 |
 | Active as of 2023-12-18 | *Computable Name*:KorsbaandEjBevaret |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "KorsbaandEjBevaret",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/KorsbaandEjBevaret",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "KorsbaandEjBevaret",
   "title" : "Korsbånd ikke bevaret",
   "status" : "active",

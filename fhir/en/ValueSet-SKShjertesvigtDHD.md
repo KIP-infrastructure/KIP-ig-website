@@ -1,4 +1,4 @@
-# SKS: hjertesvigt til DHD - KIP Infrastructure v2.27.0
+# SKS: hjertesvigt til DHD - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SKShjertesvigtDHD | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SKShjertesvigtDHD | *Version*:2.27.1 |
 | Active as of 2022-07-21 | *Computable Name*:SKShjertesvigtDHD |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "SKShjertesvigtDHD",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/SKShjertesvigtDHD",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "SKShjertesvigtDHD",
   "title" : "SKS: hjertesvigt til DHD",
   "status" : "active",

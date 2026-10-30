@@ -1,4 +1,4 @@
-# Symptomer Mikrovaskulære - KIP Infrastructure v2.27.0
+# Symptomer Mikrovaskulære - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SymptomerMikrovaskulaer | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SymptomerMikrovaskulaer | *Version*:2.27.1 |
 | Active as of 2022-07-18 | *Computable Name*:SymptomerMikrovaskulaer |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "SymptomerMikrovaskulaer",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/SymptomerMikrovaskulaer",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "SymptomerMikrovaskulaer",
   "title" : "Symptomer Mikrovaskulære",
   "status" : "active",

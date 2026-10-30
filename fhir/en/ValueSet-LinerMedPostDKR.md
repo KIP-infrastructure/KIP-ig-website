@@ -1,4 +1,4 @@
-# Liner komponent med Post (DKR) - KIP Infrastructure v2.27.0
+# Liner komponent med Post (DKR) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/LinerMedPostDKR | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/LinerMedPostDKR | *Version*:2.27.1 |
 | Active as of 2023-12-18 | *Computable Name*:LinerMedPostDKR |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "LinerMedPostDKR",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/LinerMedPostDKR",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "LinerMedPostDKR",
   "title" : "Liner komponent med Post (DKR)",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Visitation criteria not met; cause - KIP Infrastructure v2.27.0
+# Visitation criteria not met; cause - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/VisitationCriteriaNotMet | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/VisitationCriteriaNotMet | *Version*:2.27.1 |
 | Active as of 2022-08-23 | *Computable Name*:VisitationCriteriaNotMet |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "VisitationCriteriaNotMet",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/VisitationCriteriaNotMet",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "VisitationCriteriaNotMet",
   "title" : "Visitation criteria not met; cause",
   "status" : "active",

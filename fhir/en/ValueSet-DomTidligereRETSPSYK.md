@@ -1,4 +1,4 @@
-# Dom - Tidligere (RETSPSYK) - KIP Infrastructure v2.27.0
+# Dom - Tidligere (RETSPSYK) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/DomTidligereRETSPSYK | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/DomTidligereRETSPSYK | *Version*:2.27.1 |
 | Active as of 2022-09-28 | *Computable Name*:DomTidligereRETSPSYK |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "DomTidligereRETSPSYK",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/DomTidligereRETSPSYK",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "DomTidligereRETSPSYK",
   "title" : "Dom - Tidligere (RETSPSYK)",
   "status" : "active",

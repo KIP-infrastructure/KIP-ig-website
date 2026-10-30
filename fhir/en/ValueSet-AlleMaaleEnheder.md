@@ -1,4 +1,4 @@
-# Alle Måleenheder - KIP Infrastructure v2.27.0
+# Alle Måleenheder - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/AlleMaaleEnheder | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/AlleMaaleEnheder | *Version*:2.27.1 |
 | Active as of 2022-08-04 | *Computable Name*:AlleMaaleEnheder |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "AlleMaaleEnheder",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/AlleMaaleEnheder",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "AlleMaaleEnheder",
   "title" : "Alle Måleenheder",
   "status" : "active",

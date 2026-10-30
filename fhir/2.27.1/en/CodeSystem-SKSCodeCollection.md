@@ -1,0 +1,182 @@
+# Sundhedsvæsenets klassifikationssystem (SKS) - Samlinger af koder - KIP Infrastructure v2.27.1
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Sundhedsvæsenets klassifikationssystem (SKS) - Samlinger af koder**
+
+## CodeSystem: Sundhedsvæsenets klassifikationssystem (SKS) - Samlinger af koder 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/SKSCodeCollection | *Version*:2.27.1 |
+| Active as of 2022-06-07 | *Computable Name*:SKSCodeCollection |
+| *Other Identifiers:*OID:1.2.208.176.2.4 | |
+
+ 
+Sundhedsvæsenets klassifikationssystem (SKS) - Udvalgte samlinger af koder i RKKP. Link: urn:oid:1.2.208.176.2.4 
+
+This Code system is referenced in the definition of the following value sets:
+
+* [Diagnosetype - DPD](ValueSet-DiagnosetypeDPD.md)
+* [ICD 10 koder til DPD](ValueSet-IDC10DPD.md)
+* [ICD 10 cancer koder til DPD](ValueSet-IDC10DPDCancer.md)
+* [ICD 10 non-cancer koder til DPD](ValueSet-IDC10DPDNonCancer.md)
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "CodeSystem",
+  "id" : "SKSCodeCollection",
+  "url" : "https://kip.rkkp.dk/fhir/CodeSystem/SKSCodeCollection",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:1.2.208.176.2.4"
+  }],
+  "version" : "2.27.1",
+  "name" : "SKSCodeCollection",
+  "title" : "Sundhedsvæsenets klassifikationssystem (SKS) - Samlinger af koder",
+  "status" : "active",
+  "date" : "2022-06-07T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Sundhedsvæsenets klassifikationssystem (SKS) - Udvalgte samlinger af koder i RKKP. Link: urn:oid:1.2.208.176.2.4",
+  "content" : "fragment",
+  "property" : [{
+    "code" : "comment",
+    "uri" : "http://hl7.org/fhir/concept-properties#comment",
+    "description" : "A string that provides additional detail pertinent to the use or understanding of the concept",
+    "type" : "string"
+  },
+  {
+    "code" : "effectiveDate",
+    "uri" : "http://hl7.org/fhir/concept-properties#effectiveDate",
+    "description" : "The date at which the concept status was last changed",
+    "type" : "dateTime"
+  },
+  {
+    "code" : "status",
+    "uri" : "http://hl7.org/fhir/concept-properties#status",
+    "description" : "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired",
+    "type" : "code"
+  },
+  {
+    "code" : "inactive",
+    "uri" : "http://hl7.org/fhir/concept-properties#inactive",
+    "description" : "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive",
+    "type" : "boolean"
+  }],
+  "concept" : [{
+    "code" : "cancer_diseases",
+    "display" : "Kræft sygdomme",
+    "definition" : "Kræft sygdomme",
+    "concept" : [{
+      "code" : "lips_mouth_throat",
+      "display" : "Kræft i læber, mundhule og svælg (DC00-DC14)",
+      "definition" : "Kræft i læber, mundhule og svælg (DC00-DC14)"
+    },
+    {
+      "code" : "colon_rectum",
+      "display" : "Kræft i tyktarm og endetarm (DC18-DC20)",
+      "definition" : "Kræft i tyktarm og endetarm (DC18-DC20)"
+    },
+    {
+      "code" : "trachea_bronchi_lung",
+      "display" : "Kræft i luftrøret og bronkier og lunge (DC33-DC34)",
+      "definition" : "Kræft i luftrøret og bronkier og lunge (DC33-DC34)"
+    },
+    {
+      "code" : "uterus",
+      "display" : "Kræft i livmoderen (inkl. uspecifik) (DC54-DC55)",
+      "definition" : "Kræft i livmoderen (inkl. uspecifik) (DC54-DC55)"
+    },
+    {
+      "code" : "ovary_fallopian_tube",
+      "display" : "Kræft i æggestok og æggeleder (DC56+DC570-DC574)",
+      "definition" : "Kræft i æggestok og æggeleder (DC56+DC570-DC574)"
+    },
+    {
+      "code" : "kidney_pelvis_ureter",
+      "display" : "Kræft i nyre, nyrebækken og urinleder (DC64-DC66)",
+      "definition" : "Kræft i nyre, nyrebækken og urinleder (DC64-DC66)"
+    },
+    {
+      "code" : "central_nervous_system",
+      "display" : "Kræft i centralnervesystem (DC70-DC72+DC751-DC753)",
+      "definition" : "Kræft i centralnervesystem (DC70-DC72+DC751-DC753)"
+    },
+    {
+      "code" : "non_hodgkin",
+      "display" : "Non-hodgkin malignt lymform (DC82-DC85)",
+      "definition" : "Non-hodking malignt lymform (DC82-DC85)"
+    },
+    {
+      "code" : "leukemia",
+      "display" : "Leukæmi (DC91-DC95)",
+      "definition" : "Leukæmi (DC91-DC95)"
+    },
+    {
+      "code" : "mesotel_tissue",
+      "display" : "Kræft i mesotel, bindevæv og andet bløddelsvæv (DC45-DC49)",
+      "definition" : "Kræft i mesotel, bindevæv og andet bløddelsvæv (DC45-DC49)"
+    },
+    {
+      "code" : "unspecific",
+      "display" : "Kræft med dårligt specificerede, sekundære, ikke specificerede og ukendte lokalisationer (DC76-DC80+DD37-DD48)",
+      "definition" : "Kræft med dårligt specificerede, sekundære, ikke specificerede og ukendte lokalisationer (DC76-DC80+DD37-DD48)"
+    },
+    {
+      "code" : "other_cancer_diseases",
+      "display" : "Ikke-kræft sygdomme",
+      "definition" : "Ikke-kræft sygdomme"
+    }]
+  },
+  {
+    "code" : "non_cancer_diseases",
+    "display" : "Ikke kræft",
+    "definition" : "Ikke kræft",
+    "concept" : [{
+      "code" : "heart_vessel",
+      "display" : "Hjertekar sygdom (DI00-DI52+DI70-DI99)",
+      "definition" : "Hjertekar sygdom (DI00-DI52+DI70-DI99)"
+    },
+    {
+      "code" : "neurological",
+      "display" : "Neurologisk sygdom (ikke apopleksi) (DI64-DI69+DG00-DG99+DF00-DF03)",
+      "definition" : "Neurologisk sygdom (ikke apopleksi) (DI64-DI69+DG00-DG99+DF00-DF03)"
+    },
+    {
+      "code" : "apoplexia",
+      "display" : "Apopleksi (cerebral thrombose/hæmorrhagi) (DI60-DI63)",
+      "definition" : "Apopleksi (cerebral thrombose/hæmorrhagi) (DI60-DI63)"
+    },
+    {
+      "code" : "lung",
+      "display" : "Lungesygdomme (DJ00-DJ99+DE84)",
+      "definition" : "Lungesygdomme (DJ00-DJ99+DE84)"
+    },
+    {
+      "code" : "kidney",
+      "display" : "Nyresygdomme (DN00-DN29)",
+      "definition" : "Nyresygdomme (DN00-DN29)"
+    }]
+  }]
+}
+
+```

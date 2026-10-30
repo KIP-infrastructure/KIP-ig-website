@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="Priority"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem Priority</b></p><a name="Priority"> </a><a name="hcPriority"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class="grid"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/Priority</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">emergency<a name="Priority-emergency"> </a></td><td>Emergency</td><td>Emergency / Akut / SNOMED-CT: 25876001</td></tr><tr><td style="white-space:nowrap">elective<a name="Priority-elective"> </a></td><td>Elective</td><td>Elective / Elektiv / SNOMED-CT: 103390000</td></tr><tr><td style="white-space:nowrap">hasten<a name="Priority-hasten"> </a></td><td>Hastened</td><td>Fremskyndet (dage)</td></tr><tr><td style="white-space:nowrap">urgent<a name="Priority-urgent"> </a></td><td>Urgent</td><td>Hastende (timer) / SNOMED-CT: 103391001</td></tr><tr><td style="white-space:nowrap">lethal<a name="Priority-lethal"> </a></td><td>Life-threatening</td><td>Umiddelbart livstruende</td></tr><tr><td style="white-space:nowrap">24hrs<a name="Priority-24hrs"> </a></td><td>Within 24 hours</td><td>Indenfor 24 timer</td></tr><tr><td style="white-space:nowrap">72hrs<a name="Priority-72hrs"> </a></td><td>Within 72 hours</td><td>Indenfor 72 timer</td></tr><tr><td style="white-space:nowrap">14days<a name="Priority-14days"> </a></td><td>Within 14 days</td><td>Indenfor 14 dage</td></tr></table></div>
+  </text>
+  <url value="https://kip.rkkp.dk/fhir/CodeSystem/Priority"/>
+  <version value="2.27.1"/>
+  <name value="PriorityCS"/>
+  <title value="Prioritering"/>
+  <status value="active"/>
+  <date value="2022-05-31T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"/>
+  <contact>
+    <name value="Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Patientens prioriteringsbehov"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="8"/>
+  <property>
+    <code value="comment"/>
+    <uri value="http://hl7.org/fhir/concept-properties#comment"/>
+    <description value="A string that provides additional detail pertinent to the use or understanding of the concept"/>
+    <type value="string"/>
+  </property>
+  <property>
+    <code value="effectiveDate"/>
+    <uri value="http://hl7.org/fhir/concept-properties#effectiveDate"/>
+    <description value="The date at which the concept status was last changed"/>
+    <type value="dateTime"/>
+  </property>
+  <property>
+    <code value="status"/>
+    <uri value="http://hl7.org/fhir/concept-properties#status"/>
+    <description value="A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired"/>
+    <type value="code"/>
+  </property>
+  <property>
+    <code value="inactive"/>
+    <uri value="http://hl7.org/fhir/concept-properties#inactive"/>
+    <description value="True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive"/>
+    <type value="boolean"/>
+  </property>
+  <concept>
+    <code value="emergency"/>
+    <display value="Emergency"/>
+    <definition value="Emergency / Akut / SNOMED-CT: 25876001"/>
+  </concept>
+  <concept>
+    <code value="elective"/>
+    <display value="Elective"/>
+    <definition value="Elective / Elektiv / SNOMED-CT: 103390000"/>
+  </concept>
+  <concept>
+    <code value="hasten"/>
+    <display value="Hastened"/>
+    <definition value="Fremskyndet (dage)"/>
+  </concept>
+  <concept>
+    <code value="urgent"/>
+    <display value="Urgent"/>
+    <definition value="Hastende (timer) / SNOMED-CT: 103391001"/>
+  </concept>
+  <concept>
+    <code value="lethal"/>
+    <display value="Life-threatening"/>
+    <definition value="Umiddelbart livstruende"/>
+  </concept>
+  <concept>
+    <code value="24hrs"/>
+    <display value="Within 24 hours"/>
+    <definition value="Indenfor 24 timer"/>
+  </concept>
+  <concept>
+    <code value="72hrs"/>
+    <display value="Within 72 hours"/>
+    <definition value="Indenfor 72 timer"/>
+  </concept>
+  <concept>
+    <code value="14days"/>
+    <display value="Within 14 days"/>
+    <definition value="Indenfor 14 dage"/>
+  </concept>
+</CodeSystem>

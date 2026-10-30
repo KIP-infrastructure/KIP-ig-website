@@ -1,0 +1,98 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/MComponentTypeDAMYDA> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "MComponentTypeDAMYDA"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet MComponentTypeDAMYDA</b></p><a name=\"MComponentTypeDAMYDA\"> </a><a name=\"hcMComponentTypeDAMYDA\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-MComponentType.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/MComponentType</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-MComponentType.html#MComponentType-iga_kappa\">iga_kappa</a></td><td>IgA kappa</td><td>IgA kappa</td></tr><tr><td><a href=\"CodeSystem-MComponentType.html#MComponentType-iga_lambda\">iga_lambda</a></td><td>IgA lambda</td><td>IgA lambda</td></tr><tr><td><a href=\"CodeSystem-MComponentType.html#MComponentType-igg_kappa\">igg_kappa</a></td><td>IgG kappa</td><td>IgG kappa</td></tr><tr><td><a href=\"CodeSystem-MComponentType.html#MComponentType-igg_lambda\">igg_lambda</a></td><td>IgG lambda</td><td>IgG lambda</td></tr><tr><td><a href=\"CodeSystem-MComponentType.html#MComponentType-igm_kappa\">igm_kappa</a></td><td>IgM kappa</td><td>IgM kappa</td></tr><tr><td><a href=\"CodeSystem-MComponentType.html#MComponentType-igm_lambda\">igm_lambda</a></td><td>IgM lambda</td><td>IgM lambda</td></tr><tr><td><a href=\"CodeSystem-MComponentType.html#MComponentType-igd_kappa\">igd_kappa</a></td><td>IgD kappa</td><td>IgD kappa</td></tr><tr><td><a href=\"CodeSystem-MComponentType.html#MComponentType-igd_lambda\">igd_lambda</a></td><td>IgD lambda</td><td>IgD lambda</td></tr><tr><td><a href=\"CodeSystem-MComponentType.html#MComponentType-ige_kappa\">ige_kappa</a></td><td>IgE kappa</td><td>IgE kappa</td></tr><tr><td><a href=\"CodeSystem-MComponentType.html#MComponentType-ige_lambda\">ige_lambda</a></td><td>IgE lambda</td><td>IgE lambda</td></tr><tr><td><a href=\"CodeSystem-MComponentType.html#MComponentType-kappa\">kappa</a></td><td>Kappa (frie kæder)</td><td>Kappa (frie kæder)</td></tr><tr><td><a href=\"CodeSystem-MComponentType.html#MComponentType-lambda\">lambda</a></td><td>Lambda (frie kæder)</td><td>Lambda (frie kæder)</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/MComponentTypeDAMYDA"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.1"] ;
+  fhir:ValueSet.name [ fhir:value "MComponentTypeDAMYDA"] ;
+  fhir:ValueSet.title [ fhir:value "Plasma M komponent (Myeloma protein) type"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-06-08T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Plasma M komponent (Myeloma protein) type [DAMYDA]"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/MComponentType" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "iga_kappa" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "IgA kappa" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "iga_lambda" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "IgA lambda" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "igg_kappa" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "IgG kappa" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "igg_lambda" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "IgG lambda" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "igm_kappa" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "IgM kappa" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "igm_lambda" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "IgM lambda" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "igd_kappa" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "IgD kappa" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "igd_lambda" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "IgD lambda" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ige_kappa" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "IgE kappa" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ige_lambda" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "IgE lambda" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "kappa" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kappa (frie kæder)" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "lambda" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lambda (frie kæder)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/MComponentTypeDAMYDA.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

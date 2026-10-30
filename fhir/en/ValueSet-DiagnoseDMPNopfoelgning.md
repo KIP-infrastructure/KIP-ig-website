@@ -1,4 +1,4 @@
-# Diagnose DMPN opfølgning - KIP Infrastructure v2.27.0
+# Diagnose DMPN opfølgning - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/DiagnoseDMPNopfoelgning | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/DiagnoseDMPNopfoelgning | *Version*:2.27.1 |
 | Active as of 2023-02-03 | *Computable Name*:DiagnoseDMPNopfoelgning |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "DiagnoseDMPNopfoelgning",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/DiagnoseDMPNopfoelgning",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "DiagnoseDMPNopfoelgning",
   "title" : "Diagnose DMPN opfølgning",
   "status" : "active",

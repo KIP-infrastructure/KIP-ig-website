@@ -1,0 +1,95 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/AKFravalgt> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "AKFravalgt"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet AKFravalgt</b></p><a name=\"AKFravalgt\"> </a><a name=\"hcAKFravalgt\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-ACTherapyNotGiven.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ACTherapyNotGiven</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ACTherapyNotGiven.html#ACTherapyNotGiven-activebleeding\">activebleeding</a></td><td>Aktiv blødning</td><td>Aktiv blødning</td></tr><tr><td><a href=\"CodeSystem-ACTherapyNotGiven.html#ACTherapyNotGiven-intracerebralhaemorrhage\">intracerebralhaemorrhage</a></td><td>Nylig intracerebral blødning</td><td>Nylig intracerebral blødning</td></tr><tr><td><a href=\"CodeSystem-ACTherapyNotGiven.html#ACTherapyNotGiven-hypertension\">hypertension</a></td><td>Ukontrolleret hypertension (≥160 mmHg)</td><td>Ukontrolleret hypertension (≥160 mmHg)</td></tr><tr><td><a href=\"CodeSystem-ACTherapyNotGiven.html#ACTherapyNotGiven-diathesis\">diathesis</a></td><td>Hæmoragisk diatese</td><td>Hæmoragisk diatese</td></tr><tr><td><a href=\"CodeSystem-ACTherapyNotGiven.html#ACTherapyNotGiven-othertreatment\">othertreatment</a></td><td>Anden behandling (aurikellukning, LMWH i terapeutiske doser)</td><td>Anden behandling (aurikellukning, LMWH i terapeutiske doser)</td></tr><tr><td><a href=\"CodeSystem-ACTherapyNotGiven.html#ACTherapyNotGiven-dementia\">dementia</a></td><td>Svær demens</td><td>Svær demens</td></tr><tr><td><a href=\"CodeSystem-ACTherapyNotGiven.html#ACTherapyNotGiven-reducedfunctionlevel\">reducedfunctionlevel</a></td><td>Betydelig reduceret funktionsniveau (mRS ≥4)</td><td>Betydelig reduceret funktionsniveau (mRS ≥4)</td></tr><tr><td><a href=\"CodeSystem-ACTherapyNotGiven.html#ACTherapyNotGiven-lifespanbelow3months\">lifespanbelow3months</a></td><td>Forventet livslængde under 3 måneder</td><td>Forventet livslængde under 3 måneder</td></tr><tr><td><a href=\"CodeSystem-ACTherapyNotGiven.html#ACTherapyNotGiven-nopatientconsent\">nopatientconsent</a></td><td>Manglende patientsamtykke</td><td>Manglende patientsamtykke</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Anden årsag</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/AKFravalgt"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.1"] ;
+  fhir:ValueSet.name [ fhir:value "AKFravalgt"] ;
+  fhir:ValueSet.title [ fhir:value "Fravalg af antikoagulationsbehandling; årsag"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-06-23T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Årsagen til hvorfor antikoagulationsbehandling er fravalgt"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/ACTherapyNotGiven" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "activebleeding" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aktiv blødning" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "intracerebralhaemorrhage" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nylig intracerebral blødning" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "hypertension" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ukontrolleret hypertension (≥160 mmHg)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "diathesis" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hæmoragisk diatese" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "othertreatment" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anden behandling (aurikellukning, LMWH i terapeutiske doser)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "dementia" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Svær demens" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "reducedfunctionlevel" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Betydelig reduceret funktionsniveau (mRS ≥4)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "lifespanbelow3months" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Forventet livslængde under 3 måneder" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "nopatientconsent" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Manglende patientsamtykke" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anden årsag" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/AKFravalgt.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

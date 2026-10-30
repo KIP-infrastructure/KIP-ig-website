@@ -1,4 +1,4 @@
-# Antibiotika (med/uden) - KIP Infrastructure v2.27.0
+# Antibiotika (med/uden) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/AntibiotikaMedUden | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/AntibiotikaMedUden | *Version*:2.27.1 |
 | Active as of 2022-12-21 | *Computable Name*:AntibiotikaMedUden |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "AntibiotikaMedUden",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/AntibiotikaMedUden",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "AntibiotikaMedUden",
   "title" : "Antibiotika (med/uden)",
   "status" : "active",

@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/ObservationsstedAN> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ObservationsstedAN"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ObservationsstedAN</b></p><a name=\"ObservationsstedAN\"> </a><a name=\"hcObservationsstedAN\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Observationssted.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Observationssted</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Observationssted.html#Observationssted-central_obs\">central_obs</a></td><td>Centralt observationsafsnit</td><td>Centralt observationsafsnit</td></tr><tr><td><a href=\"CodeSystem-Observationssted.html#Observationssted-andet_obs\">andet_obs</a></td><td>Andet observationsafsnit</td><td>Andet observationsafsnit</td></tr><tr><td><a href=\"CodeSystem-Observationssted.html#Observationssted-opergang\">opergang</a></td><td>Operationsgangen</td><td>Operationsgangen</td></tr><tr><td><a href=\"CodeSystem-Observationssted.html#Observationssted-intensiv\">intensiv</a></td><td>Intensiv</td><td>Intensiv afdeling</td></tr><tr><td><a href=\"CodeSystem-Observationssted.html#Observationssted-sengeafd\">sengeafd</a></td><td>Sengeafdeling</td><td>Sengeafdeling</td></tr><tr><td><a href=\"CodeSystem-Observationssted.html#Observationssted-skadestue\">skadestue</a></td><td>Skadestue / modtagelse</td><td>Skadestue / modtagelse</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/ObservationsstedAN"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.1"] ;
+  fhir:ValueSet.name [ fhir:value "ObservationsstedAN"] ;
+  fhir:ValueSet.title [ fhir:value "Observationssted anæstesi"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-05-16T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Observationssted anæstesi"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/Observationssted" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "central_obs" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Centralt observationsafsnit" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "andet_obs" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Andet observationsafsnit" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "opergang" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Operationsgangen" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "intensiv" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intensiv" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "sengeafd" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sengeafdeling" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "skadestue" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Skadestue / modtagelse" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/ObservationsstedAN.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,4 +1,4 @@
-# PlanDefinitionLatest - KIP Infrastructure v2.27.0
+# PlanDefinitionLatest - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/PlanDefinitionLatest | *Version*:2.27.0 |
-| Active as of 2026-10-16 | *Computable Name*:PlanDefinitionLatest |
+| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/PlanDefinitionLatest | *Version*:2.27.1 |
+| Active as of 2026-10-30 | *Computable Name*:PlanDefinitionLatest |
 
  
 Search PlanDefinition for 'latest' extension 
@@ -23,10 +23,10 @@ Search PlanDefinition for 'latest' extension
   "resourceType" : "SearchParameter",
   "id" : "PlanDefinitionLatest",
   "url" : "https://kip.rkkp.dk/fhir/SearchParameter/PlanDefinitionLatest",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "PlanDefinitionLatest",
   "status" : "active",
-  "date" : "2026-10-16T06:55:49+00:00",
+  "date" : "2026-10-30T13:20:18+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",

@@ -1,4 +1,4 @@
-# Search Parameter - Sor QuestionnaireResponse - KIP Infrastructure v2.27.0
+# Search Parameter - Sor QuestionnaireResponse - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/StructureDefinition/sorCode | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/StructureDefinition/sorCode | *Version*:2.27.1 |
 | Active as of 2022-11-14 | *Computable Name*:SearchParameterSorQuestionnaireResponse |
 
 Limit response of QuestionnaireResponses to match given SOR-codes.
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-sorCode.csv), [Ex
   "resourceType" : "StructureDefinition",
   "id" : "sorCode",
   "url" : "https://kip.rkkp.dk/fhir/StructureDefinition/sorCode",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "SearchParameterSorQuestionnaireResponse",
   "title" : "Search Parameter - Sor QuestionnaireResponse",
   "status" : "active",

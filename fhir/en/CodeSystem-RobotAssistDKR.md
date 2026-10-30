@@ -1,4 +1,4 @@
-# Robot (DKR) - KIP Infrastructure v2.27.0
+# Robot (DKR) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/RobotAssistDKR | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/RobotAssistDKR | *Version*:2.27.1 |
 | Active as of 2024-12-02 | *Computable Name*:RobotAssistDKR |
 
  
@@ -16,7 +16,6 @@ Robottyper til robot assisteret kirurgi (DKR)
 
 This Code system is referenced in the definition of the following value sets:
 
-* [Robot (DKR)-2026-07](ValueSet-Robot-DKR-2026-07.md)
 * [Robot (DKR)](ValueSet-RobotDKR.md)
 
 -------
@@ -32,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "RobotAssistDKR",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/RobotAssistDKR",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "RobotAssistDKR",
   "title" : "Robot (DKR)",
   "status" : "active",

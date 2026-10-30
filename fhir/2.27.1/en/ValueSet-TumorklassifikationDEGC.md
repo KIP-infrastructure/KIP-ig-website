@@ -1,0 +1,77 @@
+# Tumorklassifikation [DEGC] - KIP Infrastructure v2.27.1
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Tumorklassifikation [DEGC]**
+
+## ValueSet: Tumorklassifikation [DEGC] 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/TumorklassifikationDEGC | *Version*:2.27.1 |
+| Active as of 2022-06-14 | *Computable Name*:TumorklassifikationDEGC |
+
+ 
+Histologisk tumorklassifikation i [DEGC] 
+
+ **References** 
+
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+
+### Logical Definition (CLD)
+
+ 
+
+### Expansion
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "TumorklassifikationDEGC",
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/TumorklassifikationDEGC",
+  "version" : "2.27.1",
+  "name" : "TumorklassifikationDEGC",
+  "title" : "Tumorklassifikation [DEGC]",
+  "status" : "active",
+  "date" : "2022-06-14T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Histologisk tumorklassifikation i [DEGC]",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/TumorClassificationHistology",
+      "concept" : [{
+        "code" : "planocellular",
+        "display" : "Planocellulært"
+      },
+      {
+        "code" : "adenocarcinoma",
+        "display" : "Adenocarcinom"
+      },
+      {
+        "code" : "other",
+        "display" : "Anden"
+      }]
+    }]
+  }
+}
+
+```

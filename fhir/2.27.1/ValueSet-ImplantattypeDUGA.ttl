@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/ImplantattypeDUGA> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ImplantattypeDUGA"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ImplantattypeDUGA</b></p><a name=\"ImplantattypeDUGA\"> </a><a name=\"hcImplantattypeDUGA\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-ImplantattypeDUGA.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ImplantattypeDUGA</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ImplantattypeDUGA.html#ImplantattypeDUGA-mesh_resorberbar\">mesh_resorberbar</a></td><td>Syntetisk mesh, resorberbar</td><td>Syntetisk mesh, resorberbar</td></tr><tr><td><a href=\"CodeSystem-ImplantattypeDUGA.html#ImplantattypeDUGA-mesh_non_resorberbar\">mesh_non_resorberbar</a></td><td>Syntetisk mesh, non-resorberbar</td><td>Syntetisk mesh, non-resorberbar</td></tr><tr><td><a href=\"CodeSystem-ImplantattypeDUGA.html#ImplantattypeDUGA-bio_autolog_graft\">bio_autolog_graft</a></td><td>Biologisk implantat, autolog graft</td><td>Biologisk implantat, autolog graft</td></tr><tr><td><a href=\"CodeSystem-ImplantattypeDUGA.html#ImplantattypeDUGA-bio_allograft\">bio_allograft</a></td><td>Biologisk implantat, allograft</td><td>Biologisk implantat, allograft</td></tr><tr><td><a href=\"CodeSystem-ImplantattypeDUGA.html#ImplantattypeDUGA-bio_xenograft\">bio_xenograft</a></td><td>Biologisk implantat, xenograft</td><td>Biologisk implantat, xenograft</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/ImplantattypeDUGA"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.1"] ;
+  fhir:ValueSet.name [ fhir:value "ImplantattypeDUGA"] ;
+  fhir:ValueSet.title [ fhir:value "Implantattype (DUGA)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2024-02-14T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Implantattype (DUGA)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/ImplantattypeDUGA" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "mesh_resorberbar" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Syntetisk mesh, resorberbar" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "mesh_non_resorberbar" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Syntetisk mesh, non-resorberbar" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "bio_autolog_graft" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Biologisk implantat, autolog graft" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "bio_allograft" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Biologisk implantat, allograft" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "bio_xenograft" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Biologisk implantat, xenograft" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/ImplantattypeDUGA.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

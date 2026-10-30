@@ -1,0 +1,220 @@
+# Verdict - KIP Infrastructure v2.27.1
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Verdict**
+
+## CodeSystem: Verdict 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/Verdict | *Version*:2.27.1 |
+| Active as of 2022-09-28 | *Computable Name*:Verdict |
+
+ 
+Verdict 
+
+This Code system is referenced in the definition of the following value sets:
+
+* [Dom - Ændring/pausering (RETSPSYK)](ValueSet-DomAendringPauseringRETSPSYK.md)
+* [Dom - Afslutning (RETSPSYK)](ValueSet-DomAfslutningRETSPSYK.md)
+* [Dom - Anbefaling (RETSPSYK)](ValueSet-DomAnbefalingRETSPSYK.md)
+* [Dom - Anbringelse (RETSPSYK)](ValueSet-DomAnbringelseRETSPSYK.md)
+* [Dom - Behandling, ambulant (RETSPSYK)](ValueSet-DomBehandlingAmbulantRETSPSYK.md)
+* [Dom - Behandling (RETSPSYK)](ValueSet-DomBehandlingRETSPSYK.md)
+* [Dom - Foranstaltningstype (RETSPSYK)](ValueSet-DomForanstaltningstypeRETSPSYK.md)
+* [Dom - Ophævelse, årsag (RETSPSYK)](ValueSet-DomOphaevelseAarsagRETSPSYK.md)
+* [Dom - Pausering, årsag (RETSPSYK)](ValueSet-DomPauseringAarsagRETSPSYK.md)
+* [Dom - Tidligere (RETSPSYK)](ValueSet-DomTidligereRETSPSYK.md)
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "CodeSystem",
+  "id" : "Verdict",
+  "url" : "https://kip.rkkp.dk/fhir/CodeSystem/Verdict",
+  "version" : "2.27.1",
+  "name" : "Verdict",
+  "title" : "Verdict",
+  "status" : "active",
+  "date" : "2022-09-28T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Verdict",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 26,
+  "property" : [{
+    "code" : "comment",
+    "uri" : "http://hl7.org/fhir/concept-properties#comment",
+    "description" : "A string that provides additional detail pertinent to the use or understanding of the concept",
+    "type" : "string"
+  },
+  {
+    "code" : "effectiveDate",
+    "uri" : "http://hl7.org/fhir/concept-properties#effectiveDate",
+    "description" : "The date at which the concept status was last changed",
+    "type" : "dateTime"
+  },
+  {
+    "code" : "status",
+    "uri" : "http://hl7.org/fhir/concept-properties#status",
+    "description" : "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired",
+    "type" : "code"
+  },
+  {
+    "code" : "inactive",
+    "uri" : "http://hl7.org/fhir/concept-properties#inactive",
+    "description" : "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive",
+    "type" : "boolean"
+  }],
+  "concept" : [{
+    "code" : "ordinary_penalty",
+    "display" : "Almindelig straf",
+    "definition" : "Almindelig straf"
+  },
+  {
+    "code" : "placement_psychiatric_ward",
+    "display" : "Dom til anbringelse i psykiatrisk afdeling",
+    "definition" : "Dom til anbringelse i psykiatrisk afdeling"
+  },
+  {
+    "code" : "placement_psychiatric_ward_etc",
+    "display" : "Dom til anbringelse på psykiatrisk afdeling etc.",
+    "definition" : "Dom til anbringelse på psykiatrisk afdeling etc."
+  },
+  {
+    "code" : "placement_secure_ward",
+    "display" : "Dom til anbringelse på sikringsafdelingen",
+    "definition" : "Dom til anbringelse på sikringsafdelingen"
+  },
+  {
+    "code" : "treatment",
+    "display" : "Dom til behandling på psykiatrisk afdeling",
+    "definition" : "Dom til behandling på psykiatrisk afdeling"
+  },
+  {
+    "code" : "treatment_correctional",
+    "display" : "Dom til behandling på psykiatrisk afdeling med tilsyn af Kriminalforsorgen",
+    "definition" : "Dom til behandling på psykiatrisk afdeling med tilsyn af Kriminalforsorgen"
+  },
+  {
+    "code" : "treatment_outpatient",
+    "display" : "Dom til ambulant behandling ved psykiatrisk afdeling",
+    "definition" : "Dom til ambulant behandling ved psykiatrisk afdeling"
+  },
+  {
+    "code" : "treatment_outpatient_admission",
+    "display" : "Dom til ambulant behandling ved psykiatrisk afdeling med mulighed for indlæggelse",
+    "definition" : "Dom til ambulant behandling ved psykiatrisk afdeling med mulighed for indlæggelse"
+  },
+  {
+    "code" : "treatment_outpatient_correctional",
+    "display" : "Dom til ambulant behandling ved psykiatrisk afdeling med tilsyn af Kriminalforsorgen",
+    "definition" : "Dom til ambulant behandling ved psykiatrisk afdeling med tilsyn af Kriminalforsorgen"
+  },
+  {
+    "code" : "treatment_outpatient_correctional_admission",
+    "display" : "Dom til ambulant behandling ved psykiatrisk afdeling med tilsyn af Kriminalforsorgen og mulighed for indlæggelse",
+    "definition" : "Dom til ambulant behandling ved psykiatrisk afdeling med tilsyn af Kriminalforsorgen og mulighed for indlæggelse"
+  },
+  {
+    "code" : "sustainment",
+    "display" : "Sustainment",
+    "definition" : "Sustainment / Opretholdelse"
+  },
+  {
+    "code" : "extension_time",
+    "display" : "Extension, time",
+    "definition" : "Extension, time / Forlængelse af længstetid"
+  },
+  {
+    "code" : "extension_measure",
+    "display" : "Extension, measure",
+    "definition" : "Extension, measure / Forlængelse af foranstaltning"
+  },
+  {
+    "code" : "cancellation",
+    "display" : "Cancellation",
+    "definition" : "Cancellation / Ophævelse",
+    "concept" : [{
+      "code" : "criminality",
+      "display" : "Dom ophæves pga. ny kriminalitet, men ingen ny foranstaltning",
+      "definition" : "Dom ophæves pga. ny kriminalitet, men ingen ny foranstaltning"
+    },
+    {
+      "code" : "criminality_measure",
+      "display" : "Dom ophæves pga. ny kriminalitet og ny foranstaltning",
+      "definition" : "Dom ophæves pga. ny kriminalitet og ny foranstaltning"
+    },
+    {
+      "code" : "psychiatry",
+      "display" : "Dom ophæves: patienten afsluttes til psykiatrien i sygehusregi eller egen læge",
+      "definition" : "Dom ophæves: patienten afsluttes til psykiatrien i sygehusregi eller egen læge"
+    },
+    {
+      "code" : "disease_expelled_travelled_missing",
+      "display" : "Dom ophæves pga. alvorlig somatisk sygdom, udvist, udrejst eller forsvundet",
+      "definition" : "Dom ophæves pga. alvorlig somatisk sygdom, udvist, udrejst eller forsvundet"
+    },
+    {
+      "code" : "expire",
+      "display" : "Dom ophæves / udløbet (ingen ny kriminalitet)",
+      "definition" : "Dom ophæves / udløbet (ingen ny kriminalitet)"
+    }]
+  },
+  {
+    "code" : "intensification",
+    "display" : "Intesification",
+    "definition" : "Intensification / Skærpelse"
+  },
+  {
+    "code" : "relaxation",
+    "display" : "Relaxation",
+    "definition" : "Relaxation / Lempelse"
+  },
+  {
+    "code" : "change",
+    "display" : "Change of verdict",
+    "definition" : "Change of verdict / Ændring af dom"
+  },
+  {
+    "code" : "pause",
+    "display" : "Pause of verdict",
+    "definition" : "Pause of verdict / Pausering af dom",
+    "concept" : [{
+      "code" : "expelled",
+      "display" : "Cause of pause: Expelled",
+      "definition" : "Cause of pause: Expelled / Udvist"
+    },
+    {
+      "code" : "travelled_away",
+      "display" : "Cause of pause: Travelled away",
+      "definition" : "Cause of pause: Travelled away / Udrejst"
+    },
+    {
+      "code" : "missing",
+      "display" : "Cause of pause: Missing",
+      "definition" : "Cause of pause: Missing / Forsvundet"
+    }]
+  }]
+}
+
+```

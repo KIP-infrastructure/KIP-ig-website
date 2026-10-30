@@ -1,4 +1,4 @@
-# Kellgren-Lawrence Klassifikation - KIP Infrastructure v2.27.0
+# Kellgren-Lawrence Klassifikation - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/KellgrenLawrenceKlassifikation | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/KellgrenLawrenceKlassifikation | *Version*:2.27.1 |
 | Active as of 2023-12-19 | *Computable Name*:KellgrenLawrenceKlassifikation |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "KellgrenLawrenceKlassifikation",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/KellgrenLawrenceKlassifikation",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "KellgrenLawrenceKlassifikation",
   "title" : "Kellgren-Lawrence Klassifikation",
   "status" : "active",

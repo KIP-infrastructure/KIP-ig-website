@@ -1,0 +1,75 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/HarrisHipScoreHjaelpemidler> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "HarrisHipScoreHjaelpemidler"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet HarrisHipScoreHjaelpemidler</b></p><a name=\"HarrisHipScoreHjaelpemidler\"> </a><a name=\"hcHarrisHipScoreHjaelpemidler\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-HarrisHipScoreSupport.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/HarrisHipScoreSupport</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-HarrisHipScoreSupport.html#HarrisHipScoreSupport-11\">11</a></td><td>Ingen</td><td>None (11)</td></tr><tr><td><a href=\"CodeSystem-HarrisHipScoreSupport.html#HarrisHipScoreSupport-7\">7</a></td><td>Én stok ved lange ture</td><td>Cane/Walking stick for long walks (7)</td></tr><tr><td><a href=\"CodeSystem-HarrisHipScoreSupport.html#HarrisHipScoreSupport-5\">5</a></td><td>Næsten altid én stok</td><td>Cane/Walking stick most of the time (5)</td></tr><tr><td><a href=\"CodeSystem-HarrisHipScoreSupport.html#HarrisHipScoreSupport-3\">3</a></td><td>Én albue-/aksilkrykke</td><td>One crutch (3)</td></tr><tr><td><a href=\"CodeSystem-HarrisHipScoreSupport.html#HarrisHipScoreSupport-2\">2</a></td><td>To stokke</td><td>Two Canes/Walking sticks (2)</td></tr><tr><td><a href=\"CodeSystem-HarrisHipScoreSupport.html#HarrisHipScoreSupport-0\">0</a></td><td>To albue-/aksilkrykker eller rollator</td><td>Two crutches, walker or not able to walk (0)</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/HarrisHipScoreHjaelpemidler"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.1"] ;
+  fhir:ValueSet.name [ fhir:value "HarrisHipScoreHjaelpemidler"] ;
+  fhir:ValueSet.title [ fhir:value "Harris Hip Score - Hjælpemidler"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-11-15T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Harris Hip Score - Hjælpemidler"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/HarrisHipScoreSupport" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ingen" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Én stok ved lange ture" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "5" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Næsten altid én stok" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Én albue-/aksilkrykke" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "To stokke" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "To albue-/aksilkrykker eller rollator" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/HarrisHipScoreHjaelpemidler.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

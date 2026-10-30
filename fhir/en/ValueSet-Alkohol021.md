@@ -1,4 +1,4 @@
-# Alkohol 0-21 - KIP Infrastructure v2.27.0
+# Alkohol 0-21 - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/Alkohol021 | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/Alkohol021 | *Version*:2.27.1 |
 | Active as of 2022-06-15 | *Computable Name*:Alkohol021 |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "Alkohol021",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/Alkohol021",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "Alkohol021",
   "title" : "Alkohol 0-21",
   "status" : "active",

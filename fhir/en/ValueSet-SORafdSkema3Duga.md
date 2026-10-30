@@ -1,4 +1,4 @@
-# SOR: afd_Skema3DUGA (DUGA) - KIP Infrastructure v2.27.0
+# SOR: afd_Skema3DUGA (DUGA) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SORafdSkema3Duga | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SORafdSkema3Duga | *Version*:2.27.1 |
 | Active as of 2024-05-17 | *Computable Name*:SORafdSkema3Duga |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "SORafdSkema3Duga",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/SORafdSkema3Duga",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "SORafdSkema3Duga",
   "title" : "SOR: afd_Skema3DUGA (DUGA)",
   "status" : "active",

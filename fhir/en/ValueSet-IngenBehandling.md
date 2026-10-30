@@ -1,4 +1,4 @@
-# Ingen Behandling(enkelt udfald) - KIP Infrastructure v2.27.0
+# Ingen Behandling(enkelt udfald) - KIP Infrastructure v2.27.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/IngenBehandling | *Version*:2.27.0 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/IngenBehandling | *Version*:2.27.1 |
 | Active as of 2023-02-03 | *Computable Name*:IngenBehandling |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "IngenBehandling",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/IngenBehandling",
-  "version" : "2.27.0",
+  "version" : "2.27.1",
   "name" : "IngenBehandling",
   "title" : "Ingen Behandling(enkelt udfald)",
   "status" : "active",
