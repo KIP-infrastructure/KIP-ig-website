@@ -1,4 +1,4 @@
-# Komplikationer pga. organperforation - Procedurekoder (DUGA) - KIP Infrastructure v2.27.2
+# Komplikationer pga. organperforation - Procedurekoder (DUGA) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/KomplOrganperfProcDUGA | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/KomplOrganperfProcDUGA | *Version*:2.27.3 |
 | Active as of 2024-02-21 | *Computable Name*:KomplOrganperfProcDUGA |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "KomplOrganperfProcDUGA",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/KomplOrganperfProcDUGA",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "KomplOrganperfProcDUGA",
   "title" : "Komplikationer pga. organperforation - Procedurekoder (DUGA)",
   "status" : "active",

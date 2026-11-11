@@ -1,4 +1,4 @@
-# Intraoperative læsioner - Kvinder (DCCG) - KIP Infrastructure v2.27.2
+# Intraoperative læsioner - Kvinder (DCCG) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/IntraoperativeLaesionerKDCCG | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/IntraoperativeLaesionerKDCCG | *Version*:2.27.3 |
 | Active as of 2022-11-10 | *Computable Name*:IntraoperativeLaesionerKDCCG |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "IntraoperativeLaesionerKDCCG",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/IntraoperativeLaesionerKDCCG",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "IntraoperativeLaesionerKDCCG",
   "title" : "Intraoperative læsioner - Kvinder (DCCG)",
   "status" : "active",

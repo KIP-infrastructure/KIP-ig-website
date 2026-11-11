@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/Competence> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "Competence"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Competence</b></p><a name=\"Competence\"> </a><a name=\"hcCompetence\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Competence.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Competence</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.3</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Competence.html#Competence-nu_anesthesia\">nu_anesthesia</a></td><td>Anæstesisygeplejerske</td><td>Sygeplejerske med specialuddannelse i anæstesi</td></tr><tr><td><a href=\"CodeSystem-Competence.html#Competence-nu_anesthesia_edu\">nu_anesthesia_edu</a></td><td>Sygeplejerske (uddannelse)</td><td>Sygeplejerske under uddannelse til anæstesisygeplejerske</td></tr><tr><td><a href=\"CodeSystem-Competence.html#Competence-anesthesiologist\">anesthesiologist</a></td><td>Speciallæge i anæstesi</td><td>Læge som har specialuddannelse i anæstesiologi</td></tr><tr><td><a href=\"CodeSystem-Competence.html#Competence-doc\">doc</a></td><td>Læge</td><td>Læge som ikke er under uddannelse til speciallæge i anæstesiologi</td></tr><tr><td><a href=\"CodeSystem-Competence.html#Competence-doc_edu_anae_main\">doc_edu_anae_main</a></td><td>Hoveduddannelsesforløb</td><td>Læge som er i hoveduddannelsesforløb til speciallæge i anæstesiologi</td></tr><tr><td><a href=\"CodeSystem-Competence.html#Competence-doc_edu_anae_intro\">doc_edu_anae_intro</a></td><td>Introduktionsforløb</td><td>Læge som er i introduktionsforløb til anæstesiologi</td></tr><tr><td><a href=\"CodeSystem-Competence.html#Competence-nu_recovery\">nu_recovery</a></td><td>Opvågningsygeplejerske</td><td>Opvågningsygeplejerske</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/Competence"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.3"] ;
+  fhir:ValueSet.name [ fhir:value "Competence"] ;
+  fhir:ValueSet.title [ fhir:value "FagligtNiveau - DAD"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-06-01T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Fagligt niveau for udførende anæstesi personale"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/Competence" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "nu_anesthesia" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anæstesisygeplejerske" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "nu_anesthesia_edu" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sygeplejerske (uddannelse)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "anesthesiologist" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Speciallæge i anæstesi" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "doc" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Læge" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "doc_edu_anae_main" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hoveduddannelsesforløb" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "doc_edu_anae_intro" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Introduktionsforløb" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "nu_recovery" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Opvågningsygeplejerske" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/Competence.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

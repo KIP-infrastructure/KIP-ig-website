@@ -1,4 +1,4 @@
-# Procedure type: Codes for different durations - KIP Infrastructure v2.27.2
+# Procedure type: Codes for different durations - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType | *Version*:2.27.3 |
 | Active as of 2022-07-20 | *Computable Name*:ProcedureType |
 
  
@@ -69,7 +69,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "ProcedureType",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "ProcedureType",
   "title" : "Procedure type: Codes for different durations",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Preoperativ templating - KIP Infrastructure v2.27.2
+# Preoperativ templating - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/PreoperativTemplating | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/PreoperativTemplating | *Version*:2.27.3 |
 | Active as of 2024-01-03 | *Computable Name*:PreoperativTemplatingCS |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "PreoperativTemplating",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/PreoperativTemplating",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "PreoperativTemplatingCS",
   "title" : "Preoperativ templating",
   "status" : "active",

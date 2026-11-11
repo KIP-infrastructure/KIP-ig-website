@@ -1,4 +1,4 @@
-# Questionnaire url+version - KIP Infrastructure v2.27.2
+# Questionnaire url+version - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://kip.sundk.dk/fhir/SearchParameter/SP-Questionnaire-urlversion | *Version*:2.27.2 |
+| *Official URL*:http://kip.sundk.dk/fhir/SearchParameter/SP-Questionnaire-urlversion | *Version*:2.27.3 |
 | Active as of 2026-11-11 | *Computable Name*:urlversion |
 
  
@@ -23,10 +23,10 @@ SearchParameter to match Questionnaire by both url and version
   "resourceType" : "SearchParameter",
   "id" : "SP-Questionnaire-urlversion",
   "url" : "http://kip.sundk.dk/fhir/SearchParameter/SP-Questionnaire-urlversion",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "urlversion",
   "status" : "active",
-  "date" : "2026-11-11T13:11:08+00:00",
+  "date" : "2026-11-11T13:51:51+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",

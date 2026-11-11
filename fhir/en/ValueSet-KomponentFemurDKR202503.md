@@ -1,4 +1,4 @@
-# Komponent - femur (DKR) 2025 - KIP Infrastructure v2.27.2
+# Komponent - femur (DKR) 2025 - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/KomponentFemurDKR202503 | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/KomponentFemurDKR202503 | *Version*:2.27.3 |
 | Retired as of 2025-03-04 | *Computable Name*:KomponentFemurDKR202503 |
 
  
@@ -39,7 +39,7 @@ Expansions are not generated for retired value sets
   "resourceType" : "ValueSet",
   "id" : "KomponentFemurDKR202503",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/KomponentFemurDKR202503",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "KomponentFemurDKR202503",
   "title" : "Komponent - femur (DKR) 2025",
   "status" : "retired",

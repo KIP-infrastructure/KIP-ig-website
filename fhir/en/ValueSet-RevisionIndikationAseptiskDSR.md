@@ -1,4 +1,4 @@
-# Revision, indikation - Aseptisk løsning (DSR) - KIP Infrastructure v2.27.2
+# Revision, indikation - Aseptisk løsning (DSR) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/RevisionIndikationAseptiskDSR | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/RevisionIndikationAseptiskDSR | *Version*:2.27.3 |
 | Active as of 2022-10-07 | *Computable Name*:RevisionIndikationAseptiskDSR |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "RevisionIndikationAseptiskDSR",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/RevisionIndikationAseptiskDSR",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "RevisionIndikationAseptiskDSR",
   "title" : "Revision, indikation - Aseptisk løsning (DSR)",
   "status" : "active",

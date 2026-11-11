@@ -1,4 +1,4 @@
-# Perioder - KIP Infrastructure v2.27.2
+# Perioder - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/Periods | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/Periods | *Version*:2.27.3 |
 | Active as of 2022-11-21 | *Computable Name*:Periods |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "Periods",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/Periods",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "Periods",
   "title" : "Perioder",
   "status" : "active",

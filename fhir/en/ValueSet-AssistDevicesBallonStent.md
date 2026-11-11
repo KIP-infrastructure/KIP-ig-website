@@ -1,4 +1,4 @@
-# Assist devices; Ballon og stent - KIP Infrastructure v2.27.2
+# Assist devices; Ballon og stent - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/AssistDevicesBallonStent | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/AssistDevicesBallonStent | *Version*:2.27.3 |
 | Active as of 2022-06-29 | *Computable Name*:AssistDevicesBallonStent |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "AssistDevicesBallonStent",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/AssistDevicesBallonStent",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "AssistDevicesBallonStent",
   "title" : "Assist devices; Ballon og stent",
   "status" : "active",

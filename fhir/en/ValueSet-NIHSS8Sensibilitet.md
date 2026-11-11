@@ -1,4 +1,4 @@
-# NIHSS - 8. Sensibilitet - KIP Infrastructure v2.27.2
+# NIHSS - 8. Sensibilitet - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/NIHSS8Sensibilitet | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/NIHSS8Sensibilitet | *Version*:2.27.3 |
 | Active as of 2022-06-27 | *Computable Name*:NIHSS8Sensibilitet |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "NIHSS8Sensibilitet",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/NIHSS8Sensibilitet",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "NIHSS8Sensibilitet",
   "title" : "NIHSS - 8. Sensibilitet",
   "status" : "active",

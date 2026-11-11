@@ -1,4 +1,4 @@
-# Påvirkning (RETSPSYK) - KIP Infrastructure v2.27.2
+# Påvirkning (RETSPSYK) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/PaavirkningRETSPSYK | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/PaavirkningRETSPSYK | *Version*:2.27.3 |
 | Active as of 2022-09-30 | *Computable Name*:PaavirkningRETSPSYK |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "PaavirkningRETSPSYK",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/PaavirkningRETSPSYK",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "PaavirkningRETSPSYK",
   "title" : "Påvirkning (RETSPSYK)",
   "status" : "active",

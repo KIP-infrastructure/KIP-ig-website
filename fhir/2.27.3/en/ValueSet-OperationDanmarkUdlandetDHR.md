@@ -1,0 +1,73 @@
+# Operation - Danmark/Udlandet (DHR) - KIP Infrastructure v2.27.3
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Operation - Danmark/Udlandet (DHR)**
+
+## ValueSet: Operation - Danmark/Udlandet (DHR) 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/OperationDanmarkUdlandetDHR | *Version*:2.27.3 |
+| Active as of 2022-11-07 | *Computable Name*:OperationDanmarkUdlandetDHR |
+
+ 
+Operation - Danmark/Udlandet (DHR) 
+
+ **References** 
+
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+
+### Logical Definition (CLD)
+
+ 
+
+### Expansion
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "OperationDanmarkUdlandetDHR",
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/OperationDanmarkUdlandetDHR",
+  "version" : "2.27.3",
+  "name" : "OperationDanmarkUdlandetDHR",
+  "title" : "Operation - Danmark/Udlandet (DHR)",
+  "status" : "active",
+  "date" : "2022-11-07T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Operation - Danmark/Udlandet (DHR)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/Birthplace",
+      "concept" : [{
+        "code" : "DK",
+        "display" : "Opereret i Danmark"
+      },
+      {
+        "code" : "abroad",
+        "display" : "Opereret i udlandet"
+      }]
+    }]
+  }
+}
+
+```

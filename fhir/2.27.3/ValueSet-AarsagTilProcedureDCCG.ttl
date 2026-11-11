@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/AarsagTilProcedureDCCG> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "AarsagTilProcedureDCCG"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet AarsagTilProcedureDCCG</b></p><a name=\"AarsagTilProcedureDCCG\"> </a><a name=\"hcAarsagTilProcedureDCCG\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-ProcedureReasons.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ProcedureReasons</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.3</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ProcedureReasons.html#ProcedureReasons-patients_wish\">patients_wish</a></td><td>Patientønske</td><td>Patient's wish / Patientønske</td></tr><tr><td><a href=\"CodeSystem-ProcedureReasons.html#ProcedureReasons-non_resectable\">non_resectable</a></td><td>Tumor ikke resektabel</td><td>Non resectable / Ikke resektabel</td></tr><tr><td><a href=\"CodeSystem-ProcedureReasons.html#ProcedureReasons-non_operable\">non_operable</a></td><td>Patienten er non-operabel</td><td>Patienten er blevet non-operabel</td></tr><tr><td><a href=\"CodeSystem-ProcedureReasons.html#ProcedureReasons-disseminated_disease\">disseminated_disease</a></td><td>Dissemineret tarmkræft</td><td>Disseminated disease / Dissemineret sygdom</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.3</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Anden begrundelse</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/AarsagTilProcedureDCCG"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.3"] ;
+  fhir:ValueSet.name [ fhir:value "AarsagTilProcedureDCCG"] ;
+  fhir:ValueSet.title [ fhir:value "Årsag til anden/aflastende procedure colorectal cancer"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-10-04T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Årsag til anden/aflastende procedure colorectal cancer"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/ProcedureReasons" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "patients_wish" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patientønske" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "non_resectable" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tumor ikke resektabel" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "non_operable" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patienten er non-operabel" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "disseminated_disease" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dissemineret tarmkræft" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anden begrundelse" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/AarsagTilProcedureDCCG.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,4 +1,4 @@
-# ASA klassifikation I-VI Kort - KIP Infrastructure v2.27.2
+# ASA klassifikation I-VI Kort - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ASAIVIkort | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ASAIVIkort | *Version*:2.27.3 |
 | Active as of 2022-10-19 | *Computable Name*:ASAIVIkort |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "ASAIVIkort",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/ASAIVIkort",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "ASAIVIkort",
   "title" : "ASA klassifikation I-VI Kort",
   "status" : "active",

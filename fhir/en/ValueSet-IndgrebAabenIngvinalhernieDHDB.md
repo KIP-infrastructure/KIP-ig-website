@@ -1,4 +1,4 @@
-# Indgreb, åben uden mesh - ingvinalhernie (DHDB) - KIP Infrastructure v2.27.2
+# Indgreb, åben uden mesh - ingvinalhernie (DHDB) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/IndgrebAabenIngvinalhernieDHDB | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/IndgrebAabenIngvinalhernieDHDB | *Version*:2.27.3 |
 | Active as of 2022-07-20 | *Computable Name*:IndgrebAabenIngvinalhernieDHDB |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "IndgrebAabenIngvinalhernieDHDB",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/IndgrebAabenIngvinalhernieDHDB",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "IndgrebAabenIngvinalhernieDHDB",
   "title" : "Indgreb, åben uden mesh - ingvinalhernie (DHDB)",
   "status" : "active",

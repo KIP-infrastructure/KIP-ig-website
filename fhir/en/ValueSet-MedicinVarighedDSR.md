@@ -1,4 +1,4 @@
-# Medicin varighed (DSR) - KIP Infrastructure v2.27.2
+# Medicin varighed (DSR) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/MedicinVarighedDSR | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/MedicinVarighedDSR | *Version*:2.27.3 |
 | Active as of 2022-10-06 | *Computable Name*:MedicinVarighedDSR |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "MedicinVarighedDSR",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/MedicinVarighedDSR",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "MedicinVarighedDSR",
   "title" : "Medicin varighed (DSR)",
   "status" : "active",

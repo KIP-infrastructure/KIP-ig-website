@@ -1,4 +1,4 @@
-# Medical fixation and closing - KIP Infrastructure v2.27.2
+# Medical fixation and closing - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/MedicalFixationClosing | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/MedicalFixationClosing | *Version*:2.27.3 |
 | Active as of 2022-07-20 | *Computable Name*:MedicalFixationClosing |
 
  
@@ -47,7 +47,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "MedicalFixationClosing",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/MedicalFixationClosing",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "MedicalFixationClosing",
   "title" : "Medical fixation and closing",
   "status" : "active",

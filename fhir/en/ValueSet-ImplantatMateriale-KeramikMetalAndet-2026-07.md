@@ -1,4 +1,4 @@
-# Implantat - materiale (keramik, metal, andet) 2026-07 - KIP Infrastructure v2.27.2
+# Implantat - materiale (keramik, metal, andet) 2026-07 - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ImplantatMateriale-KeramikMetalAndet-2026-07 | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ImplantatMateriale-KeramikMetalAndet-2026-07 | *Version*:2.27.3 |
 | Active as of 2026-11-05 | *Computable Name*:ImplantatMaterialeKeramikMetalAndet202607 |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "ImplantatMateriale-KeramikMetalAndet-2026-07",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/ImplantatMateriale-KeramikMetalAndet-2026-07",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "ImplantatMaterialeKeramikMetalAndet202607",
   "title" : "Implantat - materiale (keramik, metal, andet) 2026-07",
   "status" : "active",

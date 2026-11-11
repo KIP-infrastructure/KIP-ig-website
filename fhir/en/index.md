@@ -1,4 +1,4 @@
-# Home - KIP Infrastructure v2.27.2
+# Home - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,7 +7,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core | *Version*:2.27.3 |
 | Active as of 2026-11-11 | *Computable Name*:KIP_Infrastructure |
 
 ### Introduction

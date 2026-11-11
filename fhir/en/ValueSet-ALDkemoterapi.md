@@ -1,4 +1,4 @@
-#  ALD_Kemoterapi - KIP Infrastructure v2.27.2
+#  ALD_Kemoterapi - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ALDkemoterapi | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ALDkemoterapi | *Version*:2.27.3 |
 | Active as of 2024-07-25 | *Computable Name*:ALDkemoterapi |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "ALDkemoterapi",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/ALDkemoterapi",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "ALDkemoterapi",
   "title" : " ALD_Kemoterapi",
   "status" : "active",

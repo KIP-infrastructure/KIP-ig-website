@@ -1,4 +1,4 @@
-# Medication name - KIP Infrastructure v2.27.2
+# Medication name - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/MedicationName | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/MedicationName | *Version*:2.27.3 |
 | Active as of 2022-11-18 | *Computable Name*:MedicationName |
 
  
@@ -32,7 +32,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "MedicationName",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/MedicationName",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "MedicationName",
   "title" : "Medication name",
   "status" : "active",

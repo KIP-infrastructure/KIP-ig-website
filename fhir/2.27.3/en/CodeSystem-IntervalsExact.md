@@ -1,0 +1,343 @@
+# Intervaller eksakte værdier - KIP Infrastructure v2.27.3
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Intervaller eksakte værdier**
+
+## CodeSystem: Intervaller eksakte værdier 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/IntervalsExact | *Version*:2.27.3 |
+| Active as of 2024-02-13 | *Computable Name*:IntervalsExact |
+
+ 
+Intervaller med varierende eksakte værdier 
+
+This Code system is referenced in the definition of the following value sets:
+
+* [POP-Q undersøgelse Aa+Ap (DUGA)](ValueSet-POPQAaApDUGA.md)
+* [POP-Q undersøgelse Ba (DUGA)](ValueSet-POPQBaDUGA.md)
+* [POP-Q undersøgelse Bp (DUGA)](ValueSet-POPQBpDUGA.md)
+* [POP-Q undersøgelse C+D (DUGA)](ValueSet-POPQCDDUGA.md)
+* [POP-Q undersøgelse Gh (DUGA)](ValueSet-POPQGhDUGA.md)
+* [POP-Q undersøgelse Kompartment (DUGA)](ValueSet-POPQKompartmentDUGA.md)
+* [POP-Q undersøgelse Pb (DUGA)](ValueSet-POPQPbDUGA.md)
+* [POP-Q undersøgelse Tvl (DUGA)](ValueSet-POPQTvlDUGA.md)
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "CodeSystem",
+  "id" : "IntervalsExact",
+  "url" : "https://kip.rkkp.dk/fhir/CodeSystem/IntervalsExact",
+  "version" : "2.27.3",
+  "name" : "IntervalsExact",
+  "title" : "Intervaller eksakte værdier",
+  "status" : "active",
+  "date" : "2024-02-13T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Intervaller med varierende eksakte værdier",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 51,
+  "property" : [{
+    "code" : "comment",
+    "uri" : "http://hl7.org/fhir/concept-properties#comment",
+    "description" : "A string that provides additional detail pertinent to the use or understanding of the concept",
+    "type" : "string"
+  },
+  {
+    "code" : "effectiveDate",
+    "uri" : "http://hl7.org/fhir/concept-properties#effectiveDate",
+    "description" : "The date at which the concept status was last changed",
+    "type" : "dateTime"
+  },
+  {
+    "code" : "status",
+    "uri" : "http://hl7.org/fhir/concept-properties#status",
+    "description" : "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired",
+    "type" : "code"
+  },
+  {
+    "code" : "inactive",
+    "uri" : "http://hl7.org/fhir/concept-properties#inactive",
+    "description" : "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive",
+    "type" : "boolean"
+  }],
+  "concept" : [{
+    "code" : "m10",
+    "display" : "-10",
+    "definition" : "-10,0"
+  },
+  {
+    "code" : "m9-5",
+    "display" : "-9,5",
+    "definition" : "-9,5"
+  },
+  {
+    "code" : "m9",
+    "display" : "-9",
+    "definition" : "-9,0"
+  },
+  {
+    "code" : "m8-5",
+    "display" : "-8,5",
+    "definition" : "-8,5"
+  },
+  {
+    "code" : "m8",
+    "display" : "-8",
+    "definition" : "-8,0"
+  },
+  {
+    "code" : "m7-5",
+    "display" : "-7,5",
+    "definition" : "-7,5"
+  },
+  {
+    "code" : "m7",
+    "display" : "-7",
+    "definition" : "-7,0"
+  },
+  {
+    "code" : "m6-5",
+    "display" : "-6,5",
+    "definition" : "-6,5"
+  },
+  {
+    "code" : "m6",
+    "display" : "-6",
+    "definition" : "-6,0"
+  },
+  {
+    "code" : "m5-5",
+    "display" : "-5,5",
+    "definition" : "-5,5"
+  },
+  {
+    "code" : "m5",
+    "display" : "-5",
+    "definition" : "-5,0"
+  },
+  {
+    "code" : "m4-5",
+    "display" : "-4,5",
+    "definition" : "-4,5"
+  },
+  {
+    "code" : "m4",
+    "display" : "-4",
+    "definition" : "-4,0"
+  },
+  {
+    "code" : "m3-5",
+    "display" : "-3,5",
+    "definition" : "-3,5"
+  },
+  {
+    "code" : "m3",
+    "display" : "-3",
+    "definition" : "-3,0"
+  },
+  {
+    "code" : "m2-5",
+    "display" : "-2,5",
+    "definition" : "-2,5"
+  },
+  {
+    "code" : "m2",
+    "display" : "-2",
+    "definition" : "-2,0"
+  },
+  {
+    "code" : "m1-5",
+    "display" : "-1,5",
+    "definition" : "-1,5"
+  },
+  {
+    "code" : "m1",
+    "display" : "-1",
+    "definition" : "-1,0"
+  },
+  {
+    "code" : "m0-5",
+    "display" : "-0,5",
+    "definition" : "-0,5"
+  },
+  {
+    "code" : "0",
+    "display" : "0",
+    "definition" : "0,0"
+  },
+  {
+    "code" : "0-5",
+    "display" : "0,5",
+    "definition" : "0,5"
+  },
+  {
+    "code" : "1",
+    "display" : "1",
+    "definition" : "1,0"
+  },
+  {
+    "code" : "1-5",
+    "display" : "1,5",
+    "definition" : "1,5"
+  },
+  {
+    "code" : "2",
+    "display" : "2",
+    "definition" : "2,0"
+  },
+  {
+    "code" : "2-5",
+    "display" : "2,5",
+    "definition" : "2,5"
+  },
+  {
+    "code" : "3",
+    "display" : "3",
+    "definition" : "3,0"
+  },
+  {
+    "code" : "3-5",
+    "display" : "3,5",
+    "definition" : "3,5"
+  },
+  {
+    "code" : "4",
+    "display" : "4",
+    "definition" : "4,0"
+  },
+  {
+    "code" : "4-5",
+    "display" : "4,5",
+    "definition" : "4,5"
+  },
+  {
+    "code" : "5",
+    "display" : "5",
+    "definition" : "5,0"
+  },
+  {
+    "code" : "5-5",
+    "display" : "5,5",
+    "definition" : "5,5"
+  },
+  {
+    "code" : "6",
+    "display" : "6",
+    "definition" : "6,0"
+  },
+  {
+    "code" : "6-5",
+    "display" : "6,5",
+    "definition" : "6,5"
+  },
+  {
+    "code" : "7",
+    "display" : "7",
+    "definition" : "7,0"
+  },
+  {
+    "code" : "7-5",
+    "display" : "7,5",
+    "definition" : "7,5"
+  },
+  {
+    "code" : "8",
+    "display" : "8",
+    "definition" : "8,0"
+  },
+  {
+    "code" : "8-5",
+    "display" : "8,5",
+    "definition" : "8,5"
+  },
+  {
+    "code" : "9",
+    "display" : "9",
+    "definition" : "9,0"
+  },
+  {
+    "code" : "9-5",
+    "display" : "9,5",
+    "definition" : "9,5"
+  },
+  {
+    "code" : "10",
+    "display" : "10",
+    "definition" : "10,0"
+  },
+  {
+    "code" : "10-5",
+    "display" : "10,5",
+    "definition" : "10,5"
+  },
+  {
+    "code" : "11",
+    "display" : "11",
+    "definition" : "11,0"
+  },
+  {
+    "code" : "11-5",
+    "display" : "11,5",
+    "definition" : "1,5"
+  },
+  {
+    "code" : "12",
+    "display" : "12",
+    "definition" : "12,0"
+  },
+  {
+    "code" : "12-5",
+    "display" : "12,5",
+    "definition" : "2,5"
+  },
+  {
+    "code" : "13",
+    "display" : "13",
+    "definition" : "13,0"
+  },
+  {
+    "code" : "13-5",
+    "display" : "13,5",
+    "definition" : "3,5"
+  },
+  {
+    "code" : "14",
+    "display" : "14",
+    "definition" : "14,0"
+  },
+  {
+    "code" : "14-5",
+    "display" : "14,5",
+    "definition" : "4,5"
+  },
+  {
+    "code" : "15",
+    "display" : "15",
+    "definition" : "15,0"
+  }]
+}
+
+```

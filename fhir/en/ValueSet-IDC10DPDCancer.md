@@ -1,4 +1,4 @@
-# ICD 10 cancer koder til DPD - KIP Infrastructure v2.27.2
+# ICD 10 cancer koder til DPD - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/IDC10DPDCancer | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/IDC10DPDCancer | *Version*:2.27.3 |
 | Active as of 2022-08-25 | *Computable Name*:IDC10DPDCancer |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "IDC10DPDCancer",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/IDC10DPDCancer",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "IDC10DPDCancer",
   "title" : "ICD 10 cancer koder til DPD",
   "status" : "active",

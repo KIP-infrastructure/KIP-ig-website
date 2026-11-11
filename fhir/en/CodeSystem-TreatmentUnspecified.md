@@ -1,4 +1,4 @@
-# Treatment unspecified - KIP Infrastructure v2.27.2
+# Treatment unspecified - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/TreatmentUnspecified | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/TreatmentUnspecified | *Version*:2.27.3 |
 | Active as of 2025-07-10 | *Computable Name*:TreatmentUnspecified |
 
  
@@ -35,7 +35,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "TreatmentUnspecified",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/TreatmentUnspecified",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "TreatmentUnspecified",
   "title" : "Treatment unspecified",
   "status" : "active",

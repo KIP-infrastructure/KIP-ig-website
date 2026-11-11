@@ -1,4 +1,4 @@
-# WHO ATC - KIP Infrastructure v2.27.2
+# WHO ATC - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/ATC | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/ATC | *Version*:2.27.3 |
 | Active as of 2022-06-14 | *Computable Name*:ATC |
 | *Other Identifiers:*urn:oid:2.16.840.1.113883.6.73 | |
 
@@ -54,7 +54,7 @@ This Code system is referenced in the definition of the following value sets:
   "identifier" : [{
     "value" : "urn:oid:2.16.840.1.113883.6.73"
   }],
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "ATC",
   "title" : "WHO ATC",
   "status" : "active",

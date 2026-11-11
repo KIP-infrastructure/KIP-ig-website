@@ -1,4 +1,4 @@
-# Hunt and Hess scale - KIP Infrastructure v2.27.2
+# Hunt and Hess scale - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/HuntHessClassification | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/HuntHessClassification | *Version*:2.27.3 |
 | Active as of 2022-06-28 | *Computable Name*:HuntHessClassificationCS |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "HuntHessClassification",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/HuntHessClassification",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "HuntHessClassificationCS",
   "title" : "Hunt and Hess scale",
   "status" : "active",

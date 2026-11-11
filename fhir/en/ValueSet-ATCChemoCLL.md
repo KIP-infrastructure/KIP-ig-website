@@ -1,4 +1,4 @@
-# ATC_CLL_kemo - KIP Infrastructure v2.27.2
+# ATC_CLL_kemo - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ATCChemoCLL | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ATCChemoCLL | *Version*:2.27.3 |
 | Active as of 2022-07-13 | *Computable Name*:ATCChemoCLL |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "ATCChemoCLL",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/ATCChemoCLL",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "ATCChemoCLL",
   "title" : "ATC_CLL_kemo",
   "status" : "active",

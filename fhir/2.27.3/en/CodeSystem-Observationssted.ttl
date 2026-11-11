@@ -1,0 +1,137 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/Observationssted> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "Observationssted"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem Observationssted</b></p><a name=\"Observationssted\"> </a><a name=\"hcObservationssted\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/Observationssted</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">ambulat<a name=\"Observationssted-ambulat\"> </a></td><td>Ambulatorium</td><td>Ambulatorium</td></tr><tr><td style=\"white-space:nowrap\">akutmodt<a name=\"Observationssted-akutmodt\"> </a></td><td>Akutmodtagelse</td><td>Akutmodtagelse</td></tr><tr><td style=\"white-space:nowrap\">andet_obs<a name=\"Observationssted-andet_obs\"> </a></td><td>Andet observationsafsnit</td><td>Andet observationsafsnit</td></tr><tr><td style=\"white-space:nowrap\">central_obs<a name=\"Observationssted-central_obs\"> </a></td><td>Centralt observationsafsnit</td><td>Centralt observationsafsnit</td></tr><tr><td style=\"white-space:nowrap\">intensiv<a name=\"Observationssted-intensiv\"> </a></td><td>Intensiv</td><td>Intensiv afdeling</td></tr><tr><td style=\"white-space:nowrap\">kardio_lab<a name=\"Observationssted-kardio_lab\"> </a></td><td>Kardiologisk laboratorium</td><td>Kardiologisk laboratorium</td></tr><tr><td style=\"white-space:nowrap\">neonatal<a name=\"Observationssted-neonatal\"> </a></td><td>Neonatalafdeling</td><td>Neonatalafdeling</td></tr><tr><td style=\"white-space:nowrap\">opergang<a name=\"Observationssted-opergang\"> </a></td><td>Operationsgangen</td><td>Operationsgangen</td></tr><tr><td style=\"white-space:nowrap\">opvaagn<a name=\"Observationssted-opvaagn\"> </a></td><td>Opvågningsafdeling</td><td>Opvågningsafdeling</td></tr><tr><td style=\"white-space:nowrap\">sengeafd<a name=\"Observationssted-sengeafd\"> </a></td><td>Sengeafdeling</td><td>Sengeafdeling</td></tr><tr><td style=\"white-space:nowrap\">skadestue<a name=\"Observationssted-skadestue\"> </a></td><td>Skadestue / modtagelse</td><td>Skadestue / modtagelse</td></tr><tr><td style=\"white-space:nowrap\">egenafd<a name=\"Observationssted-egenafd\"> </a></td><td>Egen afdeling</td><td>Egen afdeling</td></tr><tr><td style=\"white-space:nowrap\">andet<a name=\"Observationssted-andet\"> </a></td><td>Andet</td><td>Andet</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/Observationssted"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.3"] ;
+  fhir:CodeSystem.name [ fhir:value "Observationssted"] ;
+  fhir:CodeSystem.title [ fhir:value "Observationssted"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2022-06-13T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Sted hvor anæstesien observeres"] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "13"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ambulat" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ambulatorium" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Ambulatorium" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "akutmodt" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Akutmodtagelse" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Akutmodtagelse" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "andet_obs" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Andet observationsafsnit" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Andet observationsafsnit" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "central_obs" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Centralt observationsafsnit" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Centralt observationsafsnit" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "intensiv" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Intensiv" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Intensiv afdeling" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "kardio_lab" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kardiologisk laboratorium" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kardiologisk laboratorium" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "neonatal" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Neonatalafdeling" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Neonatalafdeling" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "opergang" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Operationsgangen" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Operationsgangen" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "opvaagn" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Opvågningsafdeling" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Opvågningsafdeling" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sengeafd" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sengeafdeling" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Sengeafdeling" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "skadestue" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Skadestue / modtagelse" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Skadestue / modtagelse" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "egenafd" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Egen afdeling" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Egen afdeling" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "andet" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Andet" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Andet" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/Observationssted.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

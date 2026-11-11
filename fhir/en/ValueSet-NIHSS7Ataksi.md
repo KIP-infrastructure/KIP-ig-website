@@ -1,4 +1,4 @@
-# NIHSS - 7. Ekstremitets ataksi - KIP Infrastructure v2.27.2
+# NIHSS - 7. Ekstremitets ataksi - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/NIHSS7Ataksi | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/NIHSS7Ataksi | *Version*:2.27.3 |
 | Active as of 2022-06-27 | *Computable Name*:NIHSS7Ataksi |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "NIHSS7Ataksi",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/NIHSS7Ataksi",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "NIHSS7Ataksi",
   "title" : "NIHSS - 7. Ekstremitets ataksi",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Reoperation årsager (DKRR) - KIP Infrastructure v2.27.2
+# Reoperation årsager (DKRR) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ReoperationAarsagDKRR | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ReoperationAarsagDKRR | *Version*:2.27.3 |
 | Active as of 2022-06-01 | *Computable Name*:ReoperationAarsagDKRR |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "ReoperationAarsagDKRR",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/ReoperationAarsagDKRR",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "ReoperationAarsagDKRR",
   "title" : "Reoperation årsager (DKRR)",
   "status" : "active",

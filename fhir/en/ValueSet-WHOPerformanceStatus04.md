@@ -1,4 +1,4 @@
-# WHO Performance status grad 1-4 - KIP Infrastructure v2.27.2
+# WHO Performance status grad 1-4 - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/WHOPerformanceStatus04 | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/WHOPerformanceStatus04 | *Version*:2.27.3 |
 | Active as of 2022-11-08 | *Computable Name*:WHOPerformanceStatus04 |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "WHOPerformanceStatus04",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/WHOPerformanceStatus04",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "WHOPerformanceStatus04",
   "title" : "WHO Performance status grad 1-4",
   "status" : "active",

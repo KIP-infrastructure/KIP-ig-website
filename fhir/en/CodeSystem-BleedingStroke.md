@@ -1,4 +1,4 @@
-# Bleeding - Stroke - KIP Infrastructure v2.27.2
+# Bleeding - Stroke - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/BleedingStroke | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/BleedingStroke | *Version*:2.27.3 |
 | Active as of 2022-09-01 | *Computable Name*:BleedingStroke |
 
  
@@ -33,7 +33,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "BleedingStroke",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/BleedingStroke",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "BleedingStroke",
   "title" : "Bleeding - Stroke",
   "status" : "active",

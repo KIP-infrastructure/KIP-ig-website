@@ -1,4 +1,4 @@
-# Intervaller eksakte værdier - KIP Infrastructure v2.27.2
+# Intervaller eksakte værdier - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/IntervalsExact | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/IntervalsExact | *Version*:2.27.3 |
 | Active as of 2024-02-13 | *Computable Name*:IntervalsExact |
 
  
@@ -38,7 +38,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "IntervalsExact",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/IntervalsExact",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "IntervalsExact",
   "title" : "Intervaller eksakte værdier",
   "status" : "active",

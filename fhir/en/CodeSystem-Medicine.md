@@ -1,4 +1,4 @@
-# Medicine - KIP Infrastructure v2.27.2
+# Medicine - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/Medicine | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/Medicine | *Version*:2.27.3 |
 | Active as of 2022-10-06 | *Computable Name*:Medicine |
 
  
@@ -38,7 +38,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "Medicine",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/Medicine",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "Medicine",
   "title" : "Medicine",
   "status" : "active",

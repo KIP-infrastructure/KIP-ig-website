@@ -1,4 +1,4 @@
-# Brusklæsion, behandling (DKRR) - KIP Infrastructure v2.27.2
+# Brusklæsion, behandling (DKRR) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/BrusklaesionBehandlingDKRR | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/BrusklaesionBehandlingDKRR | *Version*:2.27.3 |
 | Active as of 2022-09-19 | *Computable Name*:BrusklaesionBehandlingDKRR |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "BrusklaesionBehandlingDKRR",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/BrusklaesionBehandlingDKRR",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "BrusklaesionBehandlingDKRR",
   "title" : "Brusklæsion, behandling (DKRR)",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Robot (DHDB) - KIP Infrastructure v2.27.2
+# Robot (DHDB) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/RobotDHDB | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/RobotDHDB | *Version*:2.27.3 |
 | Active as of 2024-09-10 | *Computable Name*:RobotDHDB |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "RobotDHDB",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/RobotDHDB",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "RobotDHDB",
   "title" : "Robot (DHDB)",
   "status" : "active",

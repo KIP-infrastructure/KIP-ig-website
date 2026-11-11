@@ -1,4 +1,4 @@
-# Revision; type - KIP Infrastructure v2.27.2
+# Revision; type - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/RevisionType | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/RevisionType | *Version*:2.27.3 |
 | Active as of 2022-10-07 | *Computable Name*:RevisionType |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "RevisionType",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/RevisionType",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "RevisionType",
   "title" : "Revision; type",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Disease phase - KIP Infrastructure v2.27.2
+# Disease phase - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/DiseasePhase | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/DiseasePhase | *Version*:2.27.3 |
 | Active as of 2022-06-07 | *Computable Name*:DiseasePhase |
 
  
@@ -32,7 +32,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "DiseasePhase",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/DiseasePhase",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "DiseasePhase",
   "title" : "Disease phase",
   "status" : "active",

@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/KellgrenLawsonKlassifikation> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "KellgrenLawsonKlassifikation"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KellgrenLawsonKlassifikation</b></p><a name=\"KellgrenLawsonKlassifikation\"> </a><a name=\"hcKellgrenLawsonKlassifikation\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-KellgrenLawrenceKlassifikation.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/KellgrenLawrenceKlassifikation</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.3</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-KellgrenLawrenceKlassifikation.html#KellgrenLawrenceKlassifikation-tvivlsom\">tvivlsom</a></td><td>Tvivlsom (normal ledspalte)</td><td>Tvivlsom (normal ledspalte)</td></tr><tr><td><a href=\"CodeSystem-KellgrenLawrenceKlassifikation.html#KellgrenLawrenceKlassifikation-mild\">mild</a></td><td>Mild (osteofyt dannelse, normal ledspalte)</td><td>Mild (osteofyt dannelse, normal ledspalte)</td></tr><tr><td><a href=\"CodeSystem-KellgrenLawrenceKlassifikation.html#KellgrenLawrenceKlassifikation-moderat\">moderat</a></td><td>Moderat (reduktion af ledspalte)</td><td>Moderat (reduktion af ledspalte)</td></tr><tr><td><a href=\"CodeSystem-KellgrenLawrenceKlassifikation.html#KellgrenLawrenceKlassifikation-svaer\">svaer</a></td><td>Svær (markant reduktion af ledspalte)</td><td>Svær (markant reduktion af ledspalte)</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/KellgrenLawsonKlassifikation"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.3"] ;
+  fhir:ValueSet.name [ fhir:value "KellgrenLawsonKlassifikation"] ;
+  fhir:ValueSet.title [ fhir:value "Kellgren-Lawrence Klassifikation (DKR)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2023-12-19T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Kellgren-Lawrence Klassifikation (DKR)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/KellgrenLawrenceKlassifikation" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "tvivlsom" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tvivlsom (normal ledspalte)" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "mild" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mild (osteofyt dannelse, normal ledspalte)" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "moderat" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Moderat (reduktion af ledspalte)" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "svaer" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Svær (markant reduktion af ledspalte)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/KellgrenLawsonKlassifikation.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

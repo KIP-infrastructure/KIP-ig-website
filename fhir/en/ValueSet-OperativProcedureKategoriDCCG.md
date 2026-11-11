@@ -1,4 +1,4 @@
-# Operativ Procedurekategori (DCCG) - KIP Infrastructure v2.27.2
+# Operativ Procedurekategori (DCCG) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/OperativProcedureKategoriDCCG | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/OperativProcedureKategoriDCCG | *Version*:2.27.3 |
 | Retired as of 2022-11-09 | *Computable Name*:OperativProcedureKategoriDCCG |
 
  
@@ -39,7 +39,7 @@ Expansions are not generated for retired value sets
   "resourceType" : "ValueSet",
   "id" : "OperativProcedureKategoriDCCG",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/OperativProcedureKategoriDCCG",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "OperativProcedureKategoriDCCG",
   "title" : "Operativ Procedurekategori (DCCG)",
   "status" : "retired",

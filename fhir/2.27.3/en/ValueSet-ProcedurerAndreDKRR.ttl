@@ -1,0 +1,91 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/ProcedurerAndreDKRR> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ProcedurerAndreDKRR"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ProcedurerAndreDKRR</b></p><a name=\"ProcedurerAndreDKRR\"> </a><a name=\"hcProcedurerAndreDKRR\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-ProcedureType.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.3</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-synovectomy\">synovectomy</a></td><td>Synovektomi</td><td>Synovectomy / Synovektomi</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-implant_removal\">implant_removal</a></td><td>Implantatfjernelse</td><td>Implant removal / Implantatfjernelse</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-osteotomy\">osteotomy</a></td><td>Osteotomi</td><td>Osteotomy / Osteotomi</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-osteosynthesis\">osteosynthesis</a></td><td>Osteosyntese</td><td>Osteosynthesis / Osteosyntese</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-operation_infection\">operation_infection</a></td><td>Operation pga. infektion</td><td>Operation because of an infection / Operation pga. infektion</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-bone_transplantation\">bone_transplantation</a></td><td>Knogletransplantation</td><td>Bone transplantation / Knogletransplantation</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-operational_mobilization\">operational_mobilization</a></td><td>Operativ mobilisering</td><td>Operational mobilization / Operativ mobilisering</td></tr><tr><td><a href=\"CodeSystem-ProcedureType.html#ProcedureType-tenodesis\">tenodesis</a></td><td>Tenodesis</td><td>Tenodesis</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.3</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/ProcedurerAndreDKRR"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.3"] ;
+  fhir:ValueSet.name [ fhir:value "ProcedurerAndreDKRR"] ;
+  fhir:ValueSet.title [ fhir:value "Procedurer, andre (DKRR)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-09-19T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Procedurer, andre (DKRR)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "synovectomy" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Synovektomi" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "implant_removal" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Implantatfjernelse" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "osteotomy" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Osteotomi" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "osteosynthesis" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Osteosyntese" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "operation_infection" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Operation pga. infektion" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "bone_transplantation" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Knogletransplantation" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "operational_mobilization" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Operativ mobilisering" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "tenodesis" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tenodesis" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Andet" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/ProcedurerAndreDKRR.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

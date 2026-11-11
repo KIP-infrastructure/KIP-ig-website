@@ -1,4 +1,4 @@
-# Anastomosis leak consequence - KIP Infrastructure v2.27.2
+# Anastomosis leak consequence - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/AnastomosisLeakConsequence | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/AnastomosisLeakConsequence | *Version*:2.27.3 |
 | Active as of 2022-08-22 | *Computable Name*:AnastomosisLeakConsequence |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "AnastomosisLeakConsequence",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/AnastomosisLeakConsequence",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "AnastomosisLeakConsequence",
   "title" : "Anastomosis leak consequence",
   "status" : "active",

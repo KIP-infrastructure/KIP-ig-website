@@ -1,4 +1,4 @@
-# Mors Diagnosegrupper (DNSL) - KIP Infrastructure v2.27.2
+# Mors Diagnosegrupper (DNSL) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/MorsDiagnosegrupper | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/MorsDiagnosegrupper | *Version*:2.27.3 |
 | Active as of 2024-01-10 | *Computable Name*:MorsDiagnosegrupper |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "MorsDiagnosegrupper",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/MorsDiagnosegrupper",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "MorsDiagnosegrupper",
   "title" : "Mors Diagnosegrupper (DNSL)",
   "status" : "active",

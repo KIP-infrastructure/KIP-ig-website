@@ -1,0 +1,91 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/BiobankSamples> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "BiobankSamples"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet BiobankSamples</b></p><a name=\"BiobankSamples\"> </a><a name=\"hcBiobankSamples\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-BiobankSamples.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/BiobankSamples</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.3</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-BiobankSamples.html#BiobankSamples-serum.47plasma\">serum/plasma</a></td><td>Serum / Plasma</td><td>Serum/plasma</td></tr><tr><td><a href=\"CodeSystem-BiobankSamples.html#BiobankSamples-vital_frozen\">vital_frozen</a></td><td>Mononukleære marvceller (Vitalfrosne)</td><td>Vital frozen / Vitalfrosne; dvs. usorterede ved -196°C</td></tr><tr><td><a href=\"CodeSystem-BiobankSamples.html#BiobankSamples-not_vital_frozen\">not_vital_frozen</a></td><td>Mononukleære marvceller (Ikke Vitalfrosne)</td><td>Not vital frozen / Ikke vitalfrosne; dvs. usorterede ved -80°C</td></tr><tr><td><a href=\"CodeSystem-BiobankSamples.html#BiobankSamples-isolated\">isolated</a></td><td>Isolerede myelomceller</td><td>Isolated myolema cells</td></tr><tr><td><a href=\"CodeSystem-BiobankSamples.html#BiobankSamples-marrow_cells\">marrow_cells</a></td><td>Andre marvceller</td><td>Marrow cells (unspecified/other)</td></tr><tr><td><a href=\"CodeSystem-BiobankSamples.html#BiobankSamples-rna\">rna</a></td><td>RNA</td><td>RNA</td></tr><tr><td><a href=\"CodeSystem-BiobankSamples.html#BiobankSamples-dna\">dna</a></td><td>DNA</td><td>DNA</td></tr><tr><td><a href=\"CodeSystem-BiobankSamples.html#BiobankSamples-marrow_plasma\">marrow_plasma</a></td><td>Marvplasma</td><td>Marrow plasma</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.3</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/BiobankSamples"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.3"] ;
+  fhir:ValueSet.name [ fhir:value "BiobankSamples"] ;
+  fhir:ValueSet.title [ fhir:value "Dansk national biobank"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-06-29T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Dansk national biobank - Samples og matrialer"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/BiobankSamples" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "serum/plasma" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Serum / Plasma" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "vital_frozen" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mononukleære marvceller (Vitalfrosne)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "not_vital_frozen" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mononukleære marvceller (Ikke Vitalfrosne)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "isolated" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Isolerede myelomceller" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "marrow_cells" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Andre marvceller" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "rna" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "RNA" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "dna" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "DNA" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "marrow_plasma" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Marvplasma" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Andet" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/BiobankSamples.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

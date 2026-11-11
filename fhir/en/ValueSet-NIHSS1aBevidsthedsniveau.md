@@ -1,4 +1,4 @@
-# NIHSS - 1a. Bevidsthedsniveau - KIP Infrastructure v2.27.2
+# NIHSS - 1a. Bevidsthedsniveau - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/NIHSS1aBevidsthedsniveau | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/NIHSS1aBevidsthedsniveau | *Version*:2.27.3 |
 | Active as of 2022-06-24 | *Computable Name*:NIHSS1aBevidsthedsniveau |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "NIHSS1aBevidsthedsniveau",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/NIHSS1aBevidsthedsniveau",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "NIHSS1aBevidsthedsniveau",
   "title" : "NIHSS - 1a. Bevidsthedsniveau",
   "status" : "active",

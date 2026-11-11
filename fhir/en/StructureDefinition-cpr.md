@@ -1,4 +1,4 @@
-# Search Parameter - CPR for Patient - KIP Infrastructure v2.27.2
+# Search Parameter - CPR for Patient - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/StructureDefinition/cpr | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/StructureDefinition/cpr | *Version*:2.27.3 |
 | Active as of 2022-11-14 | *Computable Name*:SearchParameterCprPatient |
 
 Limit response of Patient to match given CPR.
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-cpr.csv), [Excel]
   "resourceType" : "StructureDefinition",
   "id" : "cpr",
   "url" : "https://kip.rkkp.dk/fhir/StructureDefinition/cpr",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "SearchParameterCprPatient",
   "title" : "Search Parameter - CPR for Patient",
   "status" : "active",

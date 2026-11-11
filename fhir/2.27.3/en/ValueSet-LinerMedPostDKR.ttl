@@ -1,0 +1,71 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/LinerMedPostDKR> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "LinerMedPostDKR"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet LinerMedPostDKR</b></p><a name=\"LinerMedPostDKR\"> </a><a name=\"hcLinerMedPostDKR\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-KomponentLiner.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/KomponentLiner</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.3</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-KomponentLiner.html#KomponentLiner-ps_traditional_ap\">ps_traditional_ap</a></td><td>PS (traditionel PS post med AP constraint)</td></tr><tr><td><a href=\"CodeSystem-KomponentLiner.html#KomponentLiner-ps_rotating\">ps_rotating</a></td><td>PS med roterende platform</td></tr><tr><td><a href=\"CodeSystem-KomponentLiner.html#KomponentLiner-ckk_VV\">ckk_VV</a></td><td>CCK (Constrained Condylar - Post med VV og rotations constraint)</td></tr><tr><td><a href=\"CodeSystem-KomponentLiner.html#KomponentLiner-ckk_rotating\">ckk_rotating</a></td><td>CCK med roterende platform</td></tr><tr><td><a href=\"CodeSystem-KomponentLiner.html#KomponentLiner-bi_cs\">bi_cs</a></td><td>Bi-CS: bicruciate substituting (forreste og bageste korsbånd ofres og substitueres med post og 2 cams)</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/LinerMedPostDKR"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.3"] ;
+  fhir:ValueSet.name [ fhir:value "LinerMedPostDKR"] ;
+  fhir:ValueSet.title [ fhir:value "Liner komponent med Post (DKR)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2023-12-18T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Liner komponent med Post (DKR)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/KomponentLiner" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ps_traditional_ap" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "PS (traditionel PS post med AP constraint)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ps_rotating" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "PS med roterende platform" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ckk_VV" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CCK (Constrained Condylar - Post med VV og rotations constraint)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ckk_rotating" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CCK med roterende platform" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "bi_cs" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bi-CS: bicruciate substituting (forreste og bageste korsbånd ofres og substitueres med post og 2 cams)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/LinerMedPostDKR.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

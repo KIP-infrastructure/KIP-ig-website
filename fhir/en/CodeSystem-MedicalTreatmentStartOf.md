@@ -1,4 +1,4 @@
-# Medical treatment: when did the treatment begin - KIP Infrastructure v2.27.2
+# Medical treatment: when did the treatment begin - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/MedicalTreatmentStartOf | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/MedicalTreatmentStartOf | *Version*:2.27.3 |
 | Active as of 2022-07-06 | *Computable Name*:MedicalTreatmentStartOf |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "MedicalTreatmentStartOf",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/MedicalTreatmentStartOf",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "MedicalTreatmentStartOf",
   "title" : "Medical treatment: when did the treatment begin",
   "status" : "active",

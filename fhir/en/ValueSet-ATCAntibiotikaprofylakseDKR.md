@@ -1,4 +1,4 @@
-# ATC - Antibiotikaprofylakse (DKR) - KIP Infrastructure v2.27.2
+# ATC - Antibiotikaprofylakse (DKR) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ATCAntibiotikaprofylakseDKR | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ATCAntibiotikaprofylakseDKR | *Version*:2.27.3 |
 | Active as of 2022-10-14 | *Computable Name*:ATCAntibiotikaprofylakseDKR |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "ATCAntibiotikaprofylakseDKR",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/ATCAntibiotikaprofylakseDKR",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "ATCAntibiotikaprofylakseDKR",
   "title" : "ATC - Antibiotikaprofylakse (DKR)",
   "status" : "active",

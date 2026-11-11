@@ -1,4 +1,4 @@
-# Scandinavian Stroke Scale (SSS) - Arm lift - KIP Infrastructure v2.27.2
+# Scandinavian Stroke Scale (SSS) - Arm lift - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/SSSArmLift | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/SSSArmLift | *Version*:2.27.3 |
 | Active as of 2022-06-23 | *Computable Name*:SSSArmLift |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "SSSArmLift",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/SSSArmLift",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "SSSArmLift",
   "title" : "Scandinavian Stroke Scale (SSS) - Arm lift",
   "status" : "active",

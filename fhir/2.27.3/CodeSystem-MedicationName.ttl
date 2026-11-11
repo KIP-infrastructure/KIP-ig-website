@@ -1,0 +1,202 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/MedicationName> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "MedicationName"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem MedicationName</b></p><a name=\"MedicationName\"> </a><a name=\"hcMedicationName\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/MedicationName</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">abboticin<a name=\"MedicationName-abboticin\"> </a></td><td>Abboticin (J01FA01)</td><td>Abboticin (J01FA01)</td></tr><tr><td style=\"white-space:nowrap\">apixaban<a name=\"MedicationName-apixaban\"> </a></td><td>Apixaban (B01AF02)</td><td>Apixaban (B01AF02)</td></tr><tr><td style=\"white-space:nowrap\">arixtra<a name=\"MedicationName-arixtra\"> </a></td><td>Arixtra (B01AX05)</td><td>Arixtra (B01AX05)</td></tr><tr><td style=\"white-space:nowrap\">axacef<a name=\"MedicationName-axacef\"> </a></td><td>Axacef (J01DC02)</td><td>Axacef (J01DC02)</td></tr><tr><td style=\"white-space:nowrap\">clindamycin<a name=\"MedicationName-clindamycin\"> </a></td><td>Clindamycin</td><td>Clindamycin</td></tr><tr><td style=\"white-space:nowrap\">cloxacillin<a name=\"MedicationName-cloxacillin\"> </a></td><td>Cloxacillin</td><td>Cloxacillin</td></tr><tr><td style=\"white-space:nowrap\">dicillin<a name=\"MedicationName-dicillin\"> </a></td><td>Dicillin (J01CF01)</td><td>Dicillin (J01CF01)</td></tr><tr><td style=\"white-space:nowrap\">diclosil<a name=\"MedicationName-diclosil\"> </a></td><td>Diclosil (J01CF01)</td><td>Diclosil (J01CF01)</td></tr><tr><td style=\"white-space:nowrap\">ekvacillin<a name=\"MedicationName-ekvacillin\"> </a></td><td>Ekvacillin (J01CF02)</td><td>Ekvacillin (J01CF02)</td></tr><tr><td style=\"white-space:nowrap\">fragmin<a name=\"MedicationName-fragmin\"> </a></td><td>Fragmin (B01AB04)</td><td>Fragmin (B01AB04)</td></tr><tr><td style=\"white-space:nowrap\">heracillin<a name=\"MedicationName-heracillin\"> </a></td><td>Heracillin (J01CF05)</td><td>Heracillin (J01CF05)</td></tr><tr><td style=\"white-space:nowrap\">hexamycin<a name=\"MedicationName-hexamycin\"> </a></td><td>Hexamycin (J01GB03)</td><td>Hexamycin (J01GB03)</td></tr><tr><td style=\"white-space:nowrap\">innohep<a name=\"MedicationName-innohep\"> </a></td><td>Innohep (B01AB10)</td><td>Innohep (B01AB10)</td></tr><tr><td style=\"white-space:nowrap\">keflex<a name=\"MedicationName-keflex\"> </a></td><td>Keflex (J01DB01)</td><td>Keflex (J01DB01)</td></tr><tr><td style=\"white-space:nowrap\">keflin<a name=\"MedicationName-keflin\"> </a></td><td>Keflin (J01DB03)</td><td>Keflin (J01DB03)</td></tr><tr><td style=\"white-space:nowrap\">klexane<a name=\"MedicationName-klexane\"> </a></td><td>Klexane (B01AB05)</td><td>Klexane (B01AB05)</td></tr><tr><td style=\"white-space:nowrap\">logiparin<a name=\"MedicationName-logiparin\"> </a></td><td>Logiparin (B01AB10)</td><td>Logiparin (B01AB10)</td></tr><tr><td style=\"white-space:nowrap\">lucopenin<a name=\"MedicationName-lucopenin\"> </a></td><td>Lucopenin (J01CF03)</td><td>Lucopenin (J01CF03)</td></tr><tr><td style=\"white-space:nowrap\">mandokef<a name=\"MedicationName-mandokef\"> </a></td><td>Mandokef (J01DC03)</td><td>Mandokef (J01DC03)</td></tr><tr><td style=\"white-space:nowrap\">marevan<a name=\"MedicationName-marevan\"> </a></td><td>Marevan (B01AA03)</td><td>Marevan (B01AA03)</td></tr><tr><td style=\"white-space:nowrap\">noparin<a name=\"MedicationName-noparin\"> </a></td><td>Noparin (B01AB01)</td><td>Noparin (B01AB01)</td></tr><tr><td style=\"white-space:nowrap\">pradaxa<a name=\"MedicationName-pradaxa\"> </a></td><td>Pradaxa (B01AE07)</td><td>Pradaxa (B01AE07)</td></tr><tr><td style=\"white-space:nowrap\">tinzaparin<a name=\"MedicationName-tinzaparin\"> </a></td><td>Tinzaparin (B01AB10)</td><td>Tinzaparin (B01AB10)</td></tr><tr><td style=\"white-space:nowrap\">xarelto<a name=\"MedicationName-xarelto\"> </a></td><td>Xarelto (B01AF01)</td><td>Xarelto (B01AF01)</td></tr><tr><td style=\"white-space:nowrap\">zinacef<a name=\"MedicationName-zinacef\"> </a></td><td>Zinacef (J01DC02)</td><td>Zinacef (J01DC02)</td></tr><tr><td style=\"white-space:nowrap\">zinnat<a name=\"MedicationName-zinnat\"> </a></td><td>Zinnat (J01DC02)</td><td>Zinnat (J01DC02)</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/MedicationName"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.3"] ;
+  fhir:CodeSystem.name [ fhir:value "MedicationName"] ;
+  fhir:CodeSystem.title [ fhir:value "Medication name"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2022-11-18T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Medication name"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "26"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index 0 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "abboticin" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Abboticin (J01FA01)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Abboticin (J01FA01)" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "apixaban" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Apixaban (B01AF02)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Apixaban (B01AF02)" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "arixtra" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Arixtra (B01AX05)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Arixtra (B01AX05)" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "axacef" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Axacef (J01DC02)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Axacef (J01DC02)" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "clindamycin" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Clindamycin" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Clindamycin" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cloxacillin" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cloxacillin" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Cloxacillin" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dicillin" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dicillin (J01CF01)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Dicillin (J01CF01)" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "diclosil" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Diclosil (J01CF01)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Diclosil (J01CF01)" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ekvacillin" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ekvacillin (J01CF02)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Ekvacillin (J01CF02)" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "fragmin" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fragmin (B01AB04)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Fragmin (B01AB04)" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "heracillin" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Heracillin (J01CF05)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Heracillin (J01CF05)" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "hexamycin" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hexamycin (J01GB03)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Hexamycin (J01GB03)" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "innohep" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Innohep (B01AB10)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Innohep (B01AB10)" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "keflex" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Keflex (J01DB01)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Keflex (J01DB01)" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "keflin" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Keflin (J01DB03)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Keflin (J01DB03)" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "klexane" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Klexane (B01AB05)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Klexane (B01AB05)" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "logiparin" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Logiparin (B01AB10)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Logiparin (B01AB10)" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "lucopenin" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lucopenin (J01CF03)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Lucopenin (J01CF03)" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "mandokef" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mandokef (J01DC03)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Mandokef (J01DC03)" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "marevan" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Marevan (B01AA03)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Marevan (B01AA03)" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "noparin" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Noparin (B01AB01)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Noparin (B01AB01)" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "pradaxa" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pradaxa (B01AE07)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Pradaxa (B01AE07)" ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tinzaparin" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tinzaparin (B01AB10)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Tinzaparin (B01AB10)" ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "xarelto" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Xarelto (B01AF01)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Xarelto (B01AF01)" ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zinacef" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zinacef (J01DC02)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Zinacef (J01DC02)" ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zinnat" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zinnat (J01DC02)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Zinnat (J01DC02)" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/MedicationName.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

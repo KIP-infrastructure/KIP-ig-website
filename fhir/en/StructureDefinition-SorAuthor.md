@@ -1,4 +1,4 @@
-# Search Parameter - SOR-code author on a CarePlan - KIP Infrastructure v2.27.2
+# Search Parameter - SOR-code author on a CarePlan - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/StructureDefinition/SorAuthor | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/StructureDefinition/SorAuthor | *Version*:2.27.3 |
 | Active as of 2024-06-28 | *Computable Name*:SearchParameterCarePlanSorAuthor |
 
 Limit responses of CarePlan to match the author of the given SOR-code.
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-SorAuthor.csv), [
   "resourceType" : "StructureDefinition",
   "id" : "SorAuthor",
   "url" : "https://kip.rkkp.dk/fhir/StructureDefinition/SorAuthor",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "SearchParameterCarePlanSorAuthor",
   "title" : "Search Parameter - SOR-code author on a CarePlan",
   "status" : "active",

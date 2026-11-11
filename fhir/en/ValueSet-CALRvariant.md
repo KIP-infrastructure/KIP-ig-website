@@ -1,4 +1,4 @@
-# CALR variant - KIP Infrastructure v2.27.2
+# CALR variant - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/CALRvariant | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/CALRvariant | *Version*:2.27.3 |
 | Active as of 2022-07-18 | *Computable Name*:CALRvariant |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "CALRvariant",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/CALRvariant",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "CALRvariant",
   "title" : "CALR variant",
   "status" : "active",

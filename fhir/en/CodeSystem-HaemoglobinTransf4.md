@@ -1,4 +1,4 @@
-# HGBTransfusion4 - KIP Infrastructure v2.27.2
+# HGBTransfusion4 - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/HaemoglobinTransf4 | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/HaemoglobinTransf4 | *Version*:2.27.3 |
 | Active as of 2022-06-13 | *Computable Name*:HaemoglobinTransf4CS |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "HaemoglobinTransf4",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/HaemoglobinTransf4",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "HaemoglobinTransf4CS",
   "title" : "HGBTransfusion4",
   "status" : "active",

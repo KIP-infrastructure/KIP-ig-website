@@ -1,4 +1,4 @@
-# Scandinavian Stroke Scale (SSS) - Eye motor skills - KIP Infrastructure v2.27.2
+# Scandinavian Stroke Scale (SSS) - Eye motor skills - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/SSSEyeMotorSkills | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/SSSEyeMotorSkills | *Version*:2.27.3 |
 | Active as of 2022-06-23 | *Computable Name*:SSSEyeMotorSkills |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "SSSEyeMotorSkills",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/SSSEyeMotorSkills",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "SSSEyeMotorSkills",
   "title" : "Scandinavian Stroke Scale (SSS) - Eye motor skills",
   "status" : "active",

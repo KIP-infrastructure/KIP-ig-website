@@ -1,4 +1,4 @@
-# Smerter og kvalme - KIP Infrastructure v2.27.2
+# Smerter og kvalme - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/SmerteKvalme | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/SmerteKvalme | *Version*:2.27.3 |
 | Active as of 2022-06-14 | *Computable Name*:SmerteKvalmeCS |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "SmerteKvalme",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/SmerteKvalme",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "SmerteKvalmeCS",
   "title" : "Smerter og kvalme",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Planlagt eller iværksat behandling - KIP Infrastructure v2.27.2
+# Planlagt eller iværksat behandling - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/TreatmentScheduledALD | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/TreatmentScheduledALD | *Version*:2.27.3 |
 | Active as of 2022-12-07 | *Computable Name*:TreatmentScheduledALD |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "TreatmentScheduledALD",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/TreatmentScheduledALD",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "TreatmentScheduledALD",
   "title" : "Planlagt eller iværksat behandling",
   "status" : "active",

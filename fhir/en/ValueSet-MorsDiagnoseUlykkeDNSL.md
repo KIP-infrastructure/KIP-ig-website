@@ -1,4 +1,4 @@
-# Mors Diagnosekode - Ulykke (DNSL) - KIP Infrastructure v2.27.2
+# Mors Diagnosekode - Ulykke (DNSL) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/MorsDiagnoseUlykkeDNSL | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/MorsDiagnoseUlykkeDNSL | *Version*:2.27.3 |
 | Active as of 2024-01-10 | *Computable Name*:MorsDiagnoseUlykkeDNSL |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "MorsDiagnoseUlykkeDNSL",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/MorsDiagnoseUlykkeDNSL",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "MorsDiagnoseUlykkeDNSL",
   "title" : "Mors Diagnosekode - Ulykke (DNSL)",
   "status" : "active",

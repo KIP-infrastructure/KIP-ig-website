@@ -1,4 +1,4 @@
-# EDTA koder Transplantation (DNSL) - KIP Infrastructure v2.27.2
+# EDTA koder Transplantation (DNSL) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/EDTATransplantationDNSL | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/EDTATransplantationDNSL | *Version*:2.27.3 |
 | Active as of 2024-01-10 | *Computable Name*:EDTATransplantationDNSL |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "EDTATransplantationDNSL",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/EDTATransplantationDNSL",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "EDTATransplantationDNSL",
   "title" : "EDTA koder Transplantation (DNSL)",
   "status" : "active",

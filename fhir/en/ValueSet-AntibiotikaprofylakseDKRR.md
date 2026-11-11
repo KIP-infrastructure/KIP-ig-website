@@ -1,4 +1,4 @@
-# Antibiotikaprofylakse (DKRR) - KIP Infrastructure v2.27.2
+# Antibiotikaprofylakse (DKRR) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/AntibiotikaprofylakseDKRR | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/AntibiotikaprofylakseDKRR | *Version*:2.27.3 |
 | Active as of 2022-09-19 | *Computable Name*:AntibiotikaprofylakseDKRR |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "AntibiotikaprofylakseDKRR",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/AntibiotikaprofylakseDKRR",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "AntibiotikaprofylakseDKRR",
   "title" : "Antibiotikaprofylakse (DKRR)",
   "status" : "active",

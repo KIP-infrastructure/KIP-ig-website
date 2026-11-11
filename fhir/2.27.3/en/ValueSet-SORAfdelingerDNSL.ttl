@@ -1,0 +1,107 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/SORAfdelingerDNSL> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "SORAfdelingerDNSL"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SORAfdelingerDNSL</b></p><a name=\"SORAfdelingerDNSL\"> </a><a name=\"hcSORAfdelingerDNSL\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-SOR.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/SOR</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.3</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-989231000016003\">989231000016003</a></td><td>Hillerød, HI Endokrinologisk og Nefrologisk Overafd. (989231000016003)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-264781000016005\">264781000016005</a></td><td>Herlev, Nefrologisk overafd. B (264781000016005)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-252441000016006\">252441000016006</a></td><td>Rigshospitalet, Nefrologisk Klinik, P (252441000016006)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-265611000016005\">265611000016005</a></td><td>Rønne, Medicinsk overafd. (265611000016005)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-227011000016003\">227011000016003</a></td><td>Holbæk, HOL Medicin – Overafdeling (227011000016003)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-223181000016000\">223181000016000</a></td><td>Roskilde og Nykøbing Falster Sygehus, ROS Medicin – Overafdeling (223181000016000)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-239831000016009\">239831000016009</a></td><td>OUH Nyremedicinsk Afdeling Y (239831000016009)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-246501000016005\">246501000016005</a></td><td>Esbjerg, SVS Medicinsk Område (246501000016005)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-247441000016006\">247441000016006</a></td><td>Fredericia, SLB Medicinske Sygdomme (Kolding) (247441000016006)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-504361000016006\">504361000016006</a></td><td>Sønderborg, SHS Diabetes, Hormon- og Nyresygdomme (504361000016006)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-453111000016005\">453111000016005</a></td><td>Aarhus/Skejby, Nyresygdomme Overafdeling (453111000016005)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-900231000016007\">900231000016007</a></td><td>Holstebro, Gødstrup, Medicinsk Afdeling – RHG (900231000016007)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-507561000016008\">507561000016008</a></td><td>Viborg, Klinik for Nyresygdomme Viborg (507561000016008)</td></tr><tr><td><a href=\"CodeSystem-SOR.html#SOR-275931000016002\">275931000016002</a></td><td>Aalborg, Nyremedicinsk område (275931000016002)</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/SORAfdelingerDNSL"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.3"] ;
+  fhir:ValueSet.name [ fhir:value "SORAfdelingerDNSL"] ;
+  fhir:ValueSet.title [ fhir:value "SOR: Afdelinger (DNSL)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2024-01-31T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "SOR: Afdelinger Nyresvigt (DNSL)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/SOR" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "989231000016003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hillerød, HI Endokrinologisk og Nefrologisk Overafd. (989231000016003)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "264781000016005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Herlev, Nefrologisk overafd. B (264781000016005)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "252441000016006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rigshospitalet, Nefrologisk Klinik, P (252441000016006)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "265611000016005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rønne, Medicinsk overafd. (265611000016005)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "227011000016003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Holbæk, HOL Medicin – Overafdeling (227011000016003)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "223181000016000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Roskilde og Nykøbing Falster Sygehus, ROS Medicin – Overafdeling (223181000016000)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "239831000016009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "OUH Nyremedicinsk Afdeling Y (239831000016009)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "246501000016005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Esbjerg, SVS Medicinsk Område (246501000016005)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "247441000016006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fredericia, SLB Medicinske Sygdomme (Kolding) (247441000016006)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "504361000016006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sønderborg, SHS Diabetes, Hormon- og Nyresygdomme (504361000016006)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "453111000016005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aarhus/Skejby, Nyresygdomme Overafdeling (453111000016005)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "900231000016007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Holstebro, Gødstrup, Medicinsk Afdeling – RHG (900231000016007)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "507561000016008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Viborg, Klinik for Nyresygdomme Viborg (507561000016008)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "275931000016002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aalborg, Nyremedicinsk område (275931000016002)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/SORAfdelingerDNSL.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

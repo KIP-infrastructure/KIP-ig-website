@@ -1,4 +1,4 @@
-# EHS - Incisional hernia classification - KIP Infrastructure v2.27.2
+# EHS - Incisional hernia classification - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/EHSIncisionalHerniaClassification | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/EHSIncisionalHerniaClassification | *Version*:2.27.3 |
 | Active as of 2022-06-28 | *Computable Name*:EHSIncisionalHerniaClassification |
 
  
@@ -33,7 +33,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "EHSIncisionalHerniaClassification",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/EHSIncisionalHerniaClassification",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "EHSIncisionalHerniaClassification",
   "title" : "EHS - Incisional hernia classification",
   "status" : "active",

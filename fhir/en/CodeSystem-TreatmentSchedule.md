@@ -1,4 +1,4 @@
-# Treatment schedule - KIP Infrastructure v2.27.2
+# Treatment schedule - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/TreatmentSchedule | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/TreatmentSchedule | *Version*:2.27.3 |
 | Active as of 2022-06-03 | *Computable Name*:TreatmentSchedule |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "TreatmentSchedule",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/TreatmentSchedule",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "TreatmentSchedule",
   "title" : "Treatment schedule",
   "status" : "active",

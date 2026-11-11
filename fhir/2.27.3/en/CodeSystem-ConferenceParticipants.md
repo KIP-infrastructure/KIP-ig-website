@@ -1,0 +1,90 @@
+# Conference Participants - KIP Infrastructure v2.27.3
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Conference Participants**
+
+## CodeSystem: Conference Participants 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/ConferenceParticipants | *Version*:2.27.3 |
+| Active as of 2025-04-07 | *Computable Name*:ConferenceParticipants |
+
+ 
+Deltagende faggrupper 
+
+This Code system is referenced in the definition of the following value sets:
+
+* [Konference DPD](ValueSet-KonferenceDPD.md)
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ConferenceParticipants",
+  "url" : "https://kip.rkkp.dk/fhir/CodeSystem/ConferenceParticipants",
+  "version" : "2.27.3",
+  "name" : "ConferenceParticipants",
+  "title" : "Conference Participants",
+  "status" : "active",
+  "date" : "2025-04-07T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Deltagende faggrupper",
+  "content" : "complete",
+  "count" : 2,
+  "property" : [{
+    "code" : "comment",
+    "uri" : "http://hl7.org/fhir/concept-properties#comment",
+    "description" : "A string that provides additional detail pertinent to the use or understanding of the concept",
+    "type" : "string"
+  },
+  {
+    "code" : "effectiveDate",
+    "uri" : "http://hl7.org/fhir/concept-properties#effectiveDate",
+    "description" : "The date at which the concept status was last changed",
+    "type" : "dateTime"
+  },
+  {
+    "code" : "status",
+    "uri" : "http://hl7.org/fhir/concept-properties#status",
+    "description" : "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired",
+    "type" : "code"
+  },
+  {
+    "code" : "inactive",
+    "uri" : "http://hl7.org/fhir/concept-properties#inactive",
+    "description" : "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive",
+    "type" : "boolean"
+  }],
+  "concept" : [{
+    "code" : "4+",
+    "display" : "minimum 4 professions",
+    "definition" : "minimum 4 specificerede faggrupper"
+  },
+  {
+    "code" : "2-3",
+    "display" : "2 - 3 professions",
+    "definition" : "2 - 3 specificerede faggrupper"
+  }]
+}
+
+```

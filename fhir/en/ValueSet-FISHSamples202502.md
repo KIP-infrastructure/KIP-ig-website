@@ -1,4 +1,4 @@
-# Anvendte FISH prober 202502 - KIP Infrastructure v2.27.2
+# Anvendte FISH prober 202502 - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/FISHSamples202502 | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/FISHSamples202502 | *Version*:2.27.3 |
 | Active as of 2025-02-21 | *Computable Name*:FISHSamples202502 |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "FISHSamples202502",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/FISHSamples202502",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "FISHSamples202502",
   "title" : "Anvendte FISH prober 202502",
   "status" : "active",

@@ -1,4 +1,4 @@
-# SKS: Symptomatisk/Asymptomatisk koder - KIP Infrastructure v2.27.2
+# SKS: Symptomatisk/Asymptomatisk koder - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SKSSymptomatiskAsymptomatisk | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SKSSymptomatiskAsymptomatisk | *Version*:2.27.3 |
 | Active as of 2022-06-21 | *Computable Name*:SKSSymptomatiskAsymptomatisk |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "SKSSymptomatiskAsymptomatisk",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/SKSSymptomatiskAsymptomatisk",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "SKSSymptomatiskAsymptomatisk",
   "title" : "SKS: Symptomatisk/Asymptomatisk koder",
   "status" : "active",

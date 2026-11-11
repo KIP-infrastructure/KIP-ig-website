@@ -1,4 +1,4 @@
-# Henvist fra - KIP Infrastructure v2.27.2
+# Henvist fra - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/HenvistFra | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/HenvistFra | *Version*:2.27.3 |
 | Active as of 2022-09-06 | *Computable Name*:HenvistFra |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "HenvistFra",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/HenvistFra",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "HenvistFra",
   "title" : "Henvist fra",
   "status" : "active",

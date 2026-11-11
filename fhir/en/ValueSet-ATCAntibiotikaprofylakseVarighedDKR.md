@@ -1,4 +1,4 @@
-# ATC - Antibiotikaprofylakse, varighed (DKR) - KIP Infrastructure v2.27.2
+# ATC - Antibiotikaprofylakse, varighed (DKR) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ATCAntibiotikaprofylakseVarighedDKR | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ATCAntibiotikaprofylakseVarighedDKR | *Version*:2.27.3 |
 | Active as of 2022-10-14 | *Computable Name*:ATCAntibiotikaprofylakseVarighedDKR |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "ATCAntibiotikaprofylakseVarighedDKR",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/ATCAntibiotikaprofylakseVarighedDKR",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "ATCAntibiotikaprofylakseVarighedDKR",
   "title" : "ATC - Antibiotikaprofylakse, varighed (DKR)",
   "status" : "active",

@@ -1,4 +1,4 @@
-# POP-Q undersøgelse Kompartment (DUGA) - KIP Infrastructure v2.27.2
+# POP-Q undersøgelse Kompartment (DUGA) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/POPQKompartmentDUGA | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/POPQKompartmentDUGA | *Version*:2.27.3 |
 | Active as of 2024-02-13 | *Computable Name*:POPQKompartmentDUGA |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "POPQKompartmentDUGA",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/POPQKompartmentDUGA",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "POPQKompartmentDUGA",
   "title" : "POP-Q undersøgelse Kompartment (DUGA)",
   "status" : "active",

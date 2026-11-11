@@ -1,4 +1,4 @@
-# Cause of reoperation - KIP Infrastructure v2.27.2
+# Cause of reoperation - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/ReoperationCause | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/ReoperationCause | *Version*:2.27.3 |
 | Active as of 2022-12-06 | *Computable Name*:ReoperationCause |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "ReoperationCause",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/ReoperationCause",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "ReoperationCause",
   "title" : "Cause of reoperation",
   "status" : "active",

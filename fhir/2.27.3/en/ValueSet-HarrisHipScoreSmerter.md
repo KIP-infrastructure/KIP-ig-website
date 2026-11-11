@@ -1,0 +1,89 @@
+# Harris Hip Score - Smerter - KIP Infrastructure v2.27.3
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Harris Hip Score - Smerter**
+
+## ValueSet: Harris Hip Score - Smerter 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/HarrisHipScoreSmerter | *Version*:2.27.3 |
+| Active as of 2022-11-15 | *Computable Name*:HarrisHipScoreSmerter |
+
+ 
+Harris Hip Score - Smerter 
+
+ **References** 
+
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+
+### Logical Definition (CLD)
+
+ 
+
+### Expansion
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "HarrisHipScoreSmerter",
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/HarrisHipScoreSmerter",
+  "version" : "2.27.3",
+  "name" : "HarrisHipScoreSmerter",
+  "title" : "Harris Hip Score - Smerter",
+  "status" : "active",
+  "date" : "2022-11-15T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Harris Hip Score - Smerter",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/HarrisHipScorePain",
+      "concept" : [{
+        "code" : "44",
+        "display" : "Ingen"
+      },
+      {
+        "code" : "40",
+        "display" : "Lette, ingen aktivitetsbegrænsning"
+      },
+      {
+        "code" : "30",
+        "display" : "Milde, ej ved aktivitet men ved sværere anstrengelse"
+      },
+      {
+        "code" : "20",
+        "display" : "Moderate, kun ved dagl. aktivitet + arbejde, dagl. analgetika"
+      },
+      {
+        "code" : "10",
+        "display" : "Sværere, stærk begrænsning i de daglige aktiviteter"
+      },
+      {
+        "code" : "0",
+        "display" : "Invaliderende hvilesmerter"
+      }]
+    }]
+  }
+}
+
+```

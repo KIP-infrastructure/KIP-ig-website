@@ -1,4 +1,4 @@
-# Scanningstyper; CT, MR - KIP Infrastructure v2.27.2
+# Scanningstyper; CT, MR - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ScanningstyperCTMR | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ScanningstyperCTMR | *Version*:2.27.3 |
 | Active as of 2022-06-27 | *Computable Name*:ScanningstyperCTMR |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "ScanningstyperCTMR",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/ScanningstyperCTMR",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "ScanningstyperCTMR",
   "title" : "Scanningstyper; CT, MR",
   "status" : "active",

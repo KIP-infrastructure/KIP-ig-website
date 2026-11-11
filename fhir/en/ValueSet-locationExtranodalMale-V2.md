@@ -1,4 +1,4 @@
-# Sygdomslokalisation er kun ekstranodalt, mænd (LYFO) version 2 - KIP Infrastructure v2.27.2
+# Sygdomslokalisation er kun ekstranodalt, mænd (LYFO) version 2 - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/locationExtranodalMale-V2 | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/locationExtranodalMale-V2 | *Version*:2.27.3 |
 | Active as of 2025-01-09 | *Computable Name*:LocationExtranodalMale_V2 |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "locationExtranodalMale-V2",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/locationExtranodalMale-V2",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "LocationExtranodalMale_V2",
   "title" : "Sygdomslokalisation er kun ekstranodalt, mænd (LYFO) version 2",
   "status" : "active",

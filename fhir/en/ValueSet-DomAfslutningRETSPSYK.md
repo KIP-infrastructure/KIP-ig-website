@@ -1,4 +1,4 @@
-# Dom - Afslutning (RETSPSYK) - KIP Infrastructure v2.27.2
+# Dom - Afslutning (RETSPSYK) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/DomAfslutningRETSPSYK | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/DomAfslutningRETSPSYK | *Version*:2.27.3 |
 | Active as of 2022-10-03 | *Computable Name*:DomAfslutningRETSPSYK |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "DomAfslutningRETSPSYK",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/DomAfslutningRETSPSYK",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "DomAfslutningRETSPSYK",
   "title" : "Dom - Afslutning (RETSPSYK)",
   "status" : "active",

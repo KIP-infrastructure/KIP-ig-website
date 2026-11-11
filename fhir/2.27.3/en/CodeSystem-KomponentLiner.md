@@ -1,0 +1,121 @@
+# Liner komponent - KIP Infrastructure v2.27.3
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Liner komponent**
+
+## CodeSystem: Liner komponent 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/KomponentLiner | *Version*:2.27.3 |
+| Active as of 2023-12-18 | *Computable Name*:KomponentLiner |
+
+ 
+Liner komponenter med/uden post 
+
+This Code system is referenced in the definition of the following value sets:
+
+* [Liner komponent med Post (DKR)](ValueSet-LinerMedPostDKR.md)
+* [Liner komponent uden Post (DKR)](ValueSet-LinerUdenPostDKR.md)
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "CodeSystem",
+  "id" : "KomponentLiner",
+  "url" : "https://kip.rkkp.dk/fhir/CodeSystem/KomponentLiner",
+  "version" : "2.27.3",
+  "name" : "KomponentLiner",
+  "title" : "Liner komponent",
+  "status" : "active",
+  "date" : "2023-12-18T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Liner komponenter med/uden post",
+  "content" : "complete",
+  "count" : 10,
+  "property" : [{
+    "code" : "comment",
+    "uri" : "http://hl7.org/fhir/concept-properties#comment",
+    "description" : "A string that provides additional detail pertinent to the use or understanding of the concept",
+    "type" : "string"
+  },
+  {
+    "code" : "effectiveDate",
+    "uri" : "http://hl7.org/fhir/concept-properties#effectiveDate",
+    "description" : "The date at which the concept status was last changed",
+    "type" : "dateTime"
+  },
+  {
+    "code" : "status",
+    "uri" : "http://hl7.org/fhir/concept-properties#status",
+    "description" : "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired",
+    "type" : "code"
+  },
+  {
+    "code" : "inactive",
+    "uri" : "http://hl7.org/fhir/concept-properties#inactive",
+    "description" : "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive",
+    "type" : "boolean"
+  }],
+  "concept" : [{
+    "code" : "ps_traditional_ap",
+    "display" : "PS (traditionel PS post med AP constraint)"
+  },
+  {
+    "code" : "ps_rotating",
+    "display" : "PS med roterende platform"
+  },
+  {
+    "code" : "ckk_VV",
+    "display" : "CCK (Constrained Condylar - Post med VV og rotations constraint)"
+  },
+  {
+    "code" : "ckk_rotating",
+    "display" : "CCK med roterende platform"
+  },
+  {
+    "code" : "bi_cs",
+    "display" : "Bi-CS: bicruciate substituting (forreste og bageste korsbånd ofres og substitueres med post og 2 cams)"
+  },
+  {
+    "code" : "traditional_cr",
+    "display" : "Ingen constraint (traditionel CR)"
+  },
+  {
+    "code" : "medial",
+    "display" : "Medial stabilized (øget kongruens og konformitet kun medialt)"
+  },
+  {
+    "code" : "medial_lateral",
+    "display" : "Medial og lateral øget constraint (typisk er der øget constraint anteriort)"
+  },
+  {
+    "code" : "rotating",
+    "display" : "Rotating platform"
+  },
+  {
+    "code" : "bi_retain",
+    "display" : "Bi-cruciate retaining (begge korsbånd bevaret)"
+  }]
+}
+
+```

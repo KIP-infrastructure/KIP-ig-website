@@ -1,4 +1,4 @@
-# Search Parameter - write or read access sor on CarePLan - KIP Infrastructure v2.27.2
+# Search Parameter - write or read access sor on CarePLan - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/StructureDefinition/access-sor-code | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/StructureDefinition/access-sor-code | *Version*:2.27.3 |
 | Active as of 2022-11-14 | *Computable Name*:CarePlanReadOrWriteAccess |
 
 Search a CarePlan for readAccess or writeAccess SOR code. NOTE May match just the start of a string (https://build.fhir.org/codesystem-search-param-type.html#search-param-type-string)
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-sor-code.c
   "resourceType" : "StructureDefinition",
   "id" : "access-sor-code",
   "url" : "https://kip.rkkp.dk/fhir/StructureDefinition/access-sor-code",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "CarePlanReadOrWriteAccess",
   "title" : "Search Parameter - write or read access sor on CarePLan",
   "status" : "active",

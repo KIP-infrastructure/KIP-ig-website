@@ -1,0 +1,209 @@
+# Intervals - KIP Infrastructure v2.27.3
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Intervals**
+
+## CodeSystem: Intervals 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/Intervals | *Version*:2.27.3 |
+| Active as of 2022-09-19 | *Computable Name*:Intervals |
+
+ 
+Intervals. Generic intervals. 
+
+This Code system is referenced in the definition of the following value sets:
+
+* [AP-instabilitet (DKR)](ValueSet-APInstabilitetDKR.md)
+* [ATC - Antibiotikaprofylakse, dosis (DKR)](ValueSet-ATCAntibiotikaprofylakseDosisDKR.md)
+* [ATC - Antibiotikaprofylakse, varighed (DKR)](ValueSet-ATCAntibiotikaprofylakseVarighedDKR.md)
+* [Benlængde (DHR)](ValueSet-BenlaengdeDHR.md)
+* [Brusklæsion, areal (DKRR)](ValueSet-BrusklaesionArealDKRR.md)
+* [DVT profylakse, dosis (DKRR)](ValueSet-DVTProfylakseDosisDKRR.md)
+* [Fraktur; friskhed (DSR)](ValueSet-FrakturFriskhedDSR.md)
+* [Knæakse (DKR)](ValueSet-KnaeakseDKR.md)
+* [ML-instabilitet (DKR)](ValueSet-MLInstabilitetDKR.md)
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "CodeSystem",
+  "id" : "Intervals",
+  "url" : "https://kip.rkkp.dk/fhir/CodeSystem/Intervals",
+  "version" : "2.27.3",
+  "name" : "Intervals",
+  "title" : "Intervals",
+  "status" : "active",
+  "date" : "2022-09-19T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Intervals. Generic intervals.",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 24,
+  "property" : [{
+    "code" : "comment",
+    "uri" : "http://hl7.org/fhir/concept-properties#comment",
+    "description" : "A string that provides additional detail pertinent to the use or understanding of the concept",
+    "type" : "string"
+  },
+  {
+    "code" : "effectiveDate",
+    "uri" : "http://hl7.org/fhir/concept-properties#effectiveDate",
+    "description" : "The date at which the concept status was last changed",
+    "type" : "dateTime"
+  },
+  {
+    "code" : "status",
+    "uri" : "http://hl7.org/fhir/concept-properties#status",
+    "description" : "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired",
+    "type" : "code"
+  },
+  {
+    "code" : "inactive",
+    "uri" : "http://hl7.org/fhir/concept-properties#inactive",
+    "description" : "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive",
+    "type" : "boolean"
+  }],
+  "concept" : [{
+    "code" : "<0",
+    "display" : "<0",
+    "definition" : "<0"
+  },
+  {
+    "code" : "=<1",
+    "display" : "=<1",
+    "definition" : "=<1"
+  },
+  {
+    "code" : ">1",
+    "display" : ">1",
+    "definition" : ">1"
+  },
+  {
+    "code" : "=<2",
+    "display" : "=<2",
+    "definition" : "=<2"
+  },
+  {
+    "code" : ">2",
+    "display" : ">2",
+    "definition" : ">2"
+  },
+  {
+    "code" : ">3",
+    "display" : ">3",
+    "definition" : ">3"
+  },
+  {
+    "code" : "<5",
+    "display" : "<5",
+    "definition" : "<5"
+  },
+  {
+    "code" : "=<5",
+    "display" : "=<5",
+    "definition" : "=<5"
+  },
+  {
+    "code" : ">5",
+    "display" : ">5",
+    "definition" : ">5"
+  },
+  {
+    "code" : "=<6",
+    "display" : "=<6",
+    "definition" : "=<6"
+  },
+  {
+    "code" : ">6",
+    "display" : ">6",
+    "definition" : ">6"
+  },
+  {
+    "code" : "<8",
+    "display" : "<8",
+    "definition" : "<8"
+  },
+  {
+    "code" : "=>8",
+    "display" : "=>8",
+    "definition" : "=>8"
+  },
+  {
+    "code" : ">10",
+    "display" : ">10",
+    "definition" : ">10"
+  },
+  {
+    "code" : ">14",
+    "display" : ">14",
+    "definition" : ">14"
+  },
+  {
+    "code" : "=<15",
+    "display" : "=<15",
+    "definition" : "=<15"
+  },
+  {
+    "code" : ">15",
+    "display" : ">15",
+    "definition" : ">15"
+  },
+  {
+    "code" : "1-2",
+    "display" : "1-2",
+    "definition" : "1-2"
+  },
+  {
+    "code" : "2-3",
+    "display" : "2-3",
+    "definition" : "2-3"
+  },
+  {
+    "code" : "0-4",
+    "display" : "0-4",
+    "definition" : "0-4"
+  },
+  {
+    "code" : "5-9",
+    "display" : "5-9",
+    "definition" : "5-9"
+  },
+  {
+    "code" : "5-10",
+    "display" : "5-10",
+    "definition" : "5-10"
+  },
+  {
+    "code" : "10-14",
+    "display" : "10-14",
+    "definition" : "10-14"
+  },
+  {
+    "code" : "11-15",
+    "display" : "11-15",
+    "definition" : "11-15"
+  }]
+}
+
+```

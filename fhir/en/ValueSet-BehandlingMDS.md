@@ -1,4 +1,4 @@
-# Behandlinger foretaget i forbindelse med MDS (MDS) - KIP Infrastructure v2.27.2
+# Behandlinger foretaget i forbindelse med MDS (MDS) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/BehandlingMDS | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/BehandlingMDS | *Version*:2.27.3 |
 | Active as of 2022-07-19 | *Computable Name*:BehandlingMDS |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "BehandlingMDS",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/BehandlingMDS",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "BehandlingMDS",
   "title" : "Behandlinger foretaget i forbindelse med MDS (MDS)",
   "status" : "active",

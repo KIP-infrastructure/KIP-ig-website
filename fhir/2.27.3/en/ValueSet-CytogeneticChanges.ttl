@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/CytogeneticChanges> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "CytogeneticChanges"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet CytogeneticChanges</b></p><a name=\"CytogeneticChanges\"> </a><a name=\"hcCytogeneticChanges\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-CytogeneticChanges.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/CytogeneticChanges</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.3</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-CytogeneticChanges.html#CytogeneticChanges-hyperdiploidy\">hyperdiploidy</a></td><td>Hyperdiploid</td><td>hyperdiploidi / hyperdiploidi / SNOMED-CT: 55597007</td></tr><tr><td><a href=\"CodeSystem-CytogeneticChanges.html#CytogeneticChanges-hypodiploidy\">hypodiploidy</a></td><td>Hypodiploid</td><td>Hypoploidy / hypodiploidi / SNOMED-CT: 15486006</td></tr><tr><td><a href=\"CodeSystem-CytogeneticChanges.html#CytogeneticChanges-pseudodiploidy\">pseudodiploidy</a></td><td>Pseudodiploid</td><td>Pseudodiploidy / Pseudodiploidi</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/CytogeneticChanges"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.3"] ;
+  fhir:ValueSet.name [ fhir:value "CytogeneticChanges"] ;
+  fhir:ValueSet.title [ fhir:value "Cytogenetiske forandringer"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-07-15T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Cytogenetiske forandringer"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/CytogeneticChanges" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "hyperdiploidy" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hyperdiploid" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "hypodiploidy" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hypodiploid" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "pseudodiploidy" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pseudodiploid" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/CytogeneticChanges.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

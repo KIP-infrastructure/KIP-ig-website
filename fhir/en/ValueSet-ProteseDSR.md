@@ -1,4 +1,4 @@
-# Protese (DSR) - KIP Infrastructure v2.27.2
+# Protese (DSR) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ProteseDSR | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ProteseDSR | *Version*:2.27.3 |
 | Active as of 2022-10-07 | *Computable Name*:ProteseDSR |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "ProteseDSR",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/ProteseDSR",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "ProteseDSR",
   "title" : "Protese (DSR)",
   "status" : "active",

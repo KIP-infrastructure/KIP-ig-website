@@ -1,4 +1,4 @@
-# Udført procedure R1 (DCCG) - KIP Infrastructure v2.27.2
+# Udført procedure R1 (DCCG) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ProcedureUdfoertR1DCCG | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ProcedureUdfoertR1DCCG | *Version*:2.27.3 |
 | Active as of 2023-03-02 | *Computable Name*:ProcedureUdfoertR1DCCG |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "ProcedureUdfoertR1DCCG",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/ProcedureUdfoertR1DCCG",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "ProcedureUdfoertR1DCCG",
   "title" : "Udført procedure R1 (DCCG)",
   "status" : "active",

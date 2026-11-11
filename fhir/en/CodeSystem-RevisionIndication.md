@@ -1,4 +1,4 @@
-# Revision; indication - KIP Infrastructure v2.27.2
+# Revision; indication - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/RevisionIndication | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/RevisionIndication | *Version*:2.27.3 |
 | Active as of 2022-10-07 | *Computable Name*:RevisionIndication |
 
  
@@ -34,7 +34,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "RevisionIndication",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/RevisionIndication",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "RevisionIndication",
   "title" : "Revision; indication",
   "status" : "active",

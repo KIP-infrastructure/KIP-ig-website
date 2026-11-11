@@ -1,4 +1,4 @@
-# Sygdomsområder - alle - KIP Infrastructure v2.27.2
+# Sygdomsområder - alle - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SygdomsomraaderAlle | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SygdomsomraaderAlle | *Version*:2.27.3 |
 | Active as of 2023-05-10 | *Computable Name*:SygdomsomraaderAlle |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "SygdomsomraaderAlle",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/SygdomsomraaderAlle",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "SygdomsomraaderAlle",
   "title" : "Sygdomsområder - alle",
   "status" : "active",

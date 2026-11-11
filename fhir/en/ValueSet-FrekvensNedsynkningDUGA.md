@@ -1,4 +1,4 @@
-# Frekvens Nedsynkning (DUGA) - KIP Infrastructure v2.27.2
+# Frekvens Nedsynkning (DUGA) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/FrekvensNedsynkningDUGA | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/FrekvensNedsynkningDUGA | *Version*:2.27.3 |
 | Active as of 2024-02-13 | *Computable Name*:FrekvensNedsynkningDUGA |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "FrekvensNedsynkningDUGA",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/FrekvensNedsynkningDUGA",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "FrekvensNedsynkningDUGA",
   "title" : "Frekvens Nedsynkning (DUGA)",
   "status" : "active",

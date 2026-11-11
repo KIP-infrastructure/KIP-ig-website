@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/EHSVentralHernieType> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "EHSVentralHernieType"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet EHSVentralHernieType</b></p><a name=\"EHSVentralHernieType\"> </a><a name=\"hcEHSVentralHernieType\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-EHSIncisionalHerniaClassificationType.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/EHSIncisionalHerniaClassificationType</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.3</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-EHSIncisionalHerniaClassificationType.html#EHSIncisionalHerniaClassificationType-ehslr\">ehslr</a></td><td>EHS-klassifikation lateral - Højre</td><td>EHS Klassifikation Lateral - Højre</td></tr><tr><td><a href=\"CodeSystem-EHSIncisionalHerniaClassificationType.html#EHSIncisionalHerniaClassificationType-ehsm\">ehsm</a></td><td>EHS-klassifikation - Midtlinje</td><td>EHS Klassifikation - Midtlinje</td></tr><tr><td><a href=\"CodeSystem-EHSIncisionalHerniaClassificationType.html#EHSIncisionalHerniaClassificationType-ehsll\">ehsll</a></td><td>EHS-klassifikation lateral - Venstre</td><td>EHS Klassifikation Lateral - Venstre</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/EHSVentralHernieType"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.3"] ;
+  fhir:ValueSet.name [ fhir:value "EHSVentralHernieType"] ;
+  fhir:ValueSet.title [ fhir:value "EHS ventral hernie type"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2023-07-06T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "EHS ventral hernie type - lateral højre/venstre og midtlinje"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/EHSIncisionalHerniaClassificationType" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ehslr" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "EHS-klassifikation lateral - Højre" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ehsm" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "EHS-klassifikation - Midtlinje" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ehsll" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "EHS-klassifikation lateral - Venstre" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/EHSVentralHernieType.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

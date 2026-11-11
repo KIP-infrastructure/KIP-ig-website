@@ -1,4 +1,4 @@
-# Hjertestop Årsag - KIP Infrastructure v2.27.2
+# Hjertestop Årsag - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/HjertestopAarsag | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/HjertestopAarsag | *Version*:2.27.3 |
 | Active as of 2022-06-29 | *Computable Name*:HjertestopAarsagCS |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "HjertestopAarsag",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/HjertestopAarsag",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "HjertestopAarsagCS",
   "title" : "Hjertestop Årsag",
   "status" : "active",

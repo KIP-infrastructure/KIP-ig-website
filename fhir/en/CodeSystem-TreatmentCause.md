@@ -1,4 +1,4 @@
-# Treatment cause - unplanned - KIP Infrastructure v2.27.2
+# Treatment cause - unplanned - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/TreatmentCause | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/TreatmentCause | *Version*:2.27.3 |
 | Active as of 2022-06-29 | *Computable Name*:TreatmentCause |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "TreatmentCause",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/TreatmentCause",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "TreatmentCause",
   "title" : "Treatment cause - unplanned",
   "status" : "active",

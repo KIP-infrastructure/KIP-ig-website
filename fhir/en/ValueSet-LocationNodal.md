@@ -1,4 +1,4 @@
-# Sygdomslokalisation er kun nodalt (LYFO) - KIP Infrastructure v2.27.2
+# Sygdomslokalisation er kun nodalt (LYFO) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/LocationNodal | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/LocationNodal | *Version*:2.27.3 |
 | Active as of 2023-03-15 | *Computable Name*:LocationNodal |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "LocationNodal",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/LocationNodal",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "LocationNodal",
   "title" : "Sygdomslokalisation er kun nodalt (LYFO)",
   "status" : "active",

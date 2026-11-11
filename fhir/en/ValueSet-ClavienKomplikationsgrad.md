@@ -1,4 +1,4 @@
-# Clavien komplikationsgrad - KIP Infrastructure v2.27.2
+# Clavien komplikationsgrad - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ClavienKomplikationsgrad | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ClavienKomplikationsgrad | *Version*:2.27.3 |
 | Active as of 2022-10-04 | *Computable Name*:ClavienKomplikationsgrad |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "ClavienKomplikationsgrad",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/ClavienKomplikationsgrad",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "ClavienKomplikationsgrad",
   "title" : "Clavien komplikationsgrad",
   "status" : "active",

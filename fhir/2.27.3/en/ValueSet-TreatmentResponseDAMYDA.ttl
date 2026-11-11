@@ -1,0 +1,100 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/TreatmentResponseDAMYDA> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "TreatmentResponseDAMYDA"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet TreatmentResponseDAMYDA</b></p><a name=\"TreatmentResponseDAMYDA\"> </a><a name=\"hcTreatmentResponseDAMYDA\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-TreatmentResponseEvaluation.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/TreatmentResponseEvaluation</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.3</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-stringent_complete_response\">stringent_complete_response</a></td><td>Stringent Complete Response</td><td>Stringent Complete Response</td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-complete_response\">complete_response</a></td><td>Complete Response</td><td>Complete Response</td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-presumed_complete_response\">presumed_complete_response</a></td><td>Formodet CR</td><td>Presumed Complete Response</td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-very_good_partial_response\">very_good_partial_response</a></td><td>Very Good Partiel Response</td><td>Very Good Partial Response</td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-partial_response\">partial_response</a></td><td>Partiel Response</td><td>Partial response (PR)</td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-minimal_response\">minimal_response</a></td><td>Minimal Response</td><td>Minimal response</td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-stable_disease\">stable_disease</a></td><td>Stable Disease (No change/plateau)</td><td>Stable disease (SD/NC)</td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-progressive_disease\">progressive_disease</a></td><td>Progressive Disease</td><td>Progressive disease (PD)</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-Complications.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Complications</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.3</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-mors\">mors</a></td><td>Mors</td><td>Mors, uventet</td></tr></table></li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/7.5.0/CodeSystem-v2-0532.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0532</code></a><span title=\"Version is explicitly stated to be 3.0.0\"> version ?3.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/7.5.0/CodeSystem-v2-0532.html#v2-0532-UKN\">UKN</a></td><td>Ukendt</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/TreatmentResponseDAMYDA"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.3"] ;
+  fhir:ValueSet.name [ fhir:value "TreatmentResponseDAMYDA"] ;
+  fhir:ValueSet.title [ fhir:value "Patient respons på behandling (DAMYDA)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-07-14T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Hvordan reagerer patienten på behandlingen [DAMYDA]"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/TreatmentResponseEvaluation" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "stringent_complete_response" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stringent Complete Response" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "complete_response" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Complete Response" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "presumed_complete_response" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Formodet CR" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "very_good_partial_response" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Very Good Partiel Response" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "partial_response" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Partiel Response" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "minimal_response" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Minimal Response" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "stable_disease" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stable Disease (No change/plateau)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "progressive_disease" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Progressive Disease" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/Complications" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "mors" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mors" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0532" ] ;
+       fhir:ValueSet.compose.include.version [ fhir:value "3.0.0" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "UKN" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ukendt" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/TreatmentResponseDAMYDA.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

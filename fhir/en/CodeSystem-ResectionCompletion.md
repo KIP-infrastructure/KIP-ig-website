@@ -1,4 +1,4 @@
-# Resection completion; justification - KIP Infrastructure v2.27.2
+# Resection completion; justification - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/ResectionCompletion | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/ResectionCompletion | *Version*:2.27.3 |
 | Active as of 2022-06-07 | *Computable Name*:ResectionCompletion |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "ResectionCompletion",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/ResectionCompletion",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "ResectionCompletion",
   "title" : "Resection completion; justification",
   "status" : "active",

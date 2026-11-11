@@ -1,4 +1,4 @@
-# Indsat / fjernet - KIP Infrastructure v2.27.2
+# Indsat / fjernet - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/IndsatFjernet | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/IndsatFjernet | *Version*:2.27.3 |
 | Active as of 2022-10-07 | *Computable Name*:IndsatFjernet |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "IndsatFjernet",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/IndsatFjernet",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "IndsatFjernet",
   "title" : "Indsat / fjernet",
   "status" : "active",

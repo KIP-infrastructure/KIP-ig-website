@@ -10,11 +10,11 @@
   "id" : "dk.kip.rkkp.fhir.ig.core",
   "language" : "en",
   "url" : "https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "KIP_Infrastructure",
   "title" : "KIP Infrastructure",
   "status" : "active",
-  "date" : "2026-11-11T13:11:08+00:00",
+  "date" : "2026-11-11T13:51:51+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",

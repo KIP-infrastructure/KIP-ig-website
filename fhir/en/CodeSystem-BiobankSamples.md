@@ -1,4 +1,4 @@
-# Danish National Biobank - Samples/materials - KIP Infrastructure v2.27.2
+# Danish National Biobank - Samples/materials - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/BiobankSamples | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/BiobankSamples | *Version*:2.27.3 |
 | Active as of 2022-07-08 | *Computable Name*:BiobankSamplesCS |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "BiobankSamples",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/BiobankSamples",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "BiobankSamplesCS",
   "title" : "Danish National Biobank - Samples/materials",
   "status" : "active",

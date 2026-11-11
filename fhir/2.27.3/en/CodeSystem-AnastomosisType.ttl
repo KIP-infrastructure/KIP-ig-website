@@ -1,0 +1,123 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/AnastomosisType> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "AnastomosisType"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem AnastomosisType</b></p><a name=\"AnastomosisType\"> </a><a name=\"hcAnastomosisType\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/AnastomosisType</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">hand_sewn<a name=\"AnastomosisType-hand_sewn\"> </a></td><td>Hand sewn</td><td>Hand sewn / Håndsyet</td></tr><tr><td style=\"white-space:nowrap\">stapled<a name=\"AnastomosisType-stapled\"> </a></td><td>Stapled</td><td>Stapled / Staplet</td></tr><tr><td style=\"white-space:nowrap\">intracorporeal<a name=\"AnastomosisType-intracorporeal\"> </a></td><td>Intracorporeal</td><td>Intracorporeal / Intrakorporalt</td></tr><tr><td style=\"white-space:nowrap\">extracorporeal<a name=\"AnastomosisType-extracorporeal\"> </a></td><td>Extracorporeal</td><td>extracorporeal / Ekstrakorporalt</td></tr><tr><td style=\"white-space:nowrap\">end_to_end<a name=\"AnastomosisType-end_to_end\"> </a></td><td>End-to-end</td><td>End-to-end</td></tr><tr><td style=\"white-space:nowrap\">side_to_end<a name=\"AnastomosisType-side_to_end\"> </a></td><td>Side-to-end</td><td>Side-to-end</td></tr><tr><td style=\"white-space:nowrap\">end_to_side<a name=\"AnastomosisType-end_to_side\"> </a></td><td>End-to-side</td><td>End-to-side</td></tr><tr><td style=\"white-space:nowrap\">side_to_side<a name=\"AnastomosisType-side_to_side\"> </a></td><td>Side-to-side</td><td>Side-to-side</td></tr><tr><td style=\"white-space:nowrap\">functional_end_to_end<a name=\"AnastomosisType-functional_end_to_end\"> </a></td><td>Functional end-to-end</td><td>Functional end-to-end / Funktionelt end-to-end</td></tr><tr><td style=\"white-space:nowrap\">pouch<a name=\"AnastomosisType-pouch\"> </a></td><td>Pouch</td><td>Pouch</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/AnastomosisType"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.3"] ;
+  fhir:CodeSystem.name [ fhir:value "AnastomosisType"] ;
+  fhir:CodeSystem.title [ fhir:value "Anastomosis type"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2022-08-22T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Anastomosis type"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "10"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "hand_sewn" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hand sewn" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Hand sewn / Håndsyet" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "stapled" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Stapled" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Stapled / Staplet" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "intracorporeal" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Intracorporeal" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Intracorporeal / Intrakorporalt" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "extracorporeal" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Extracorporeal" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "extracorporeal / Ekstrakorporalt" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "end_to_end" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "End-to-end" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "End-to-end" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "side_to_end" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Side-to-end" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Side-to-end" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "end_to_side" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "End-to-side" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "End-to-side" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "side_to_side" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Side-to-side" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Side-to-side" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "functional_end_to_end" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Functional end-to-end" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Functional end-to-end / Funktionelt end-to-end" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "pouch" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pouch" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Pouch" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/AnastomosisType.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

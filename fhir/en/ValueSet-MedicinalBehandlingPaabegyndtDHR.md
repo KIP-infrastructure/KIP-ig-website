@@ -1,4 +1,4 @@
-# Medicinal behandling - Hvornår bliver dette giver i forhold til proceduren/operatioen? [DHR] - KIP Infrastructure v2.27.2
+# Medicinal behandling - Hvornår bliver dette giver i forhold til proceduren/operatioen? [DHR] - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/MedicinalBehandlingPaabegyndtDHR | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/MedicinalBehandlingPaabegyndtDHR | *Version*:2.27.3 |
 | Active as of 2022-07-07 | *Computable Name*:MedicinalBehandlingPaabegyndtDHR |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "MedicinalBehandlingPaabegyndtDHR",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/MedicinalBehandlingPaabegyndtDHR",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "MedicinalBehandlingPaabegyndtDHR",
   "title" : "Medicinal behandling - Hvornår bliver dette giver i forhold til proceduren/operatioen? [DHR]",
   "status" : "active",

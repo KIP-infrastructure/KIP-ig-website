@@ -1,4 +1,4 @@
-# Mesh fiksering (DHDB) - KIP Infrastructure v2.27.2
+# Mesh fiksering (DHDB) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/MeshFikseringDHDB | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/MeshFikseringDHDB | *Version*:2.27.3 |
 | Active as of 2022-07-20 | *Computable Name*:MeshFikseringDHDB |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "MeshFikseringDHDB",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/MeshFikseringDHDB",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "MeshFikseringDHDB",
   "title" : "Mesh fiksering (DHDB)",
   "status" : "active",

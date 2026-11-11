@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ASAClassification"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ASAClassification</b></p><a name="ASAClassification"> </a><a name="hcASAClassification"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class="grid"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/ASAClassification</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">asai<a name="ASAClassification-asai"> </a></td><td>ASA I</td><td>A normal healthy patient</td></tr><tr><td style="white-space:nowrap">asaii<a name="ASAClassification-asaii"> </a></td><td>ASA II</td><td>A patient with mild systemic disease</td></tr><tr><td style="white-space:nowrap">asaiii<a name="ASAClassification-asaiii"> </a></td><td>ASA III</td><td>A patient with severe systemic disease</td></tr><tr><td style="white-space:nowrap">asaiv<a name="ASAClassification-asaiv"> </a></td><td>ASA IV</td><td>A patient with severe systemic disease that is a constant threat to life</td></tr><tr><td style="white-space:nowrap">asav<a name="ASAClassification-asav"> </a></td><td>ASA V</td><td>A moribund patient who is not expected to survive without the operation</td></tr><tr><td style="white-space:nowrap">asavi<a name="ASAClassification-asavi"> </a></td><td>ASA VI</td><td>A declared brain-dead patient whose organs are being removed for donor purposes</td></tr></table></div>
+  </text>
+  <url value="https://kip.rkkp.dk/fhir/CodeSystem/ASAClassification"/>
+  <version value="2.27.3"/>
+  <name value="ASAClassification"/>
+  <title value="ASA Physical Status Classification System"/>
+  <status value="active"/>
+  <date value="2022-05-31T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"/>
+  <contact>
+    <name value="Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Score udviklet til vurdering af det fysiske helbred. Link: https://www.asahq.org/standards-and-guidelines/asa-physical-status-classification-system"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <property>
+    <code value="comment"/>
+    <uri value="http://hl7.org/fhir/concept-properties#comment"/>
+    <description value="A string that provides additional detail pertinent to the use or understanding of the concept"/>
+    <type value="string"/>
+  </property>
+  <property>
+    <code value="effectiveDate"/>
+    <uri value="http://hl7.org/fhir/concept-properties#effectiveDate"/>
+    <description value="The date at which the concept status was last changed"/>
+    <type value="dateTime"/>
+  </property>
+  <property>
+    <code value="status"/>
+    <uri value="http://hl7.org/fhir/concept-properties#status"/>
+    <description value="A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired"/>
+    <type value="code"/>
+  </property>
+  <property>
+    <code value="inactive"/>
+    <uri value="http://hl7.org/fhir/concept-properties#inactive"/>
+    <description value="True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive"/>
+    <type value="boolean"/>
+  </property>
+  <concept>
+    <code value="asai"/>
+    <display value="ASA I"/>
+    <definition value="A normal healthy patient"/>
+  </concept>
+  <concept>
+    <code value="asaii"/>
+    <display value="ASA II"/>
+    <definition value="A patient with mild systemic disease"/>
+  </concept>
+  <concept>
+    <code value="asaiii"/>
+    <display value="ASA III"/>
+    <definition value="A patient with severe systemic disease"/>
+  </concept>
+  <concept>
+    <code value="asaiv"/>
+    <display value="ASA IV"/>
+    <definition value="A patient with severe systemic disease that is a constant threat to life"/>
+  </concept>
+  <concept>
+    <code value="asav"/>
+    <display value="ASA V"/>
+    <definition value="A moribund patient who is not expected to survive without the operation"/>
+  </concept>
+  <concept>
+    <code value="asavi"/>
+    <display value="ASA VI"/>
+    <definition value="A declared brain-dead patient whose organs are being removed for donor purposes"/>
+  </concept>
+</CodeSystem>

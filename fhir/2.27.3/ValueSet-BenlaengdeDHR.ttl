@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/BenlaengdeDHR> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "BenlaengdeDHR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet BenlaengdeDHR</b></p><a name=\"BenlaengdeDHR\"> </a><a name=\"hcBenlaengdeDHR\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Intervals.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Intervals</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.3</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Intervals.html#Intervals-.61.601\">=&lt;1</a></td><td>Lige lange +/- 1 cm</td><td>=&lt;1</td></tr><tr><td><a href=\"CodeSystem-Intervals.html#Intervals-1-2\">1-2</a></td><td>1-2 cm forskel</td><td>1-2</td></tr><tr><td><a href=\"CodeSystem-Intervals.html#Intervals-2-3\">2-3</a></td><td>2-3 cm forskel</td><td>2-3</td></tr><tr><td><a href=\"CodeSystem-Intervals.html#Intervals-.623\">&gt;3</a></td><td>&gt;3 cm</td><td>&gt;3</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/BenlaengdeDHR"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.3"] ;
+  fhir:ValueSet.name [ fhir:value "BenlaengdeDHR"] ;
+  fhir:ValueSet.title [ fhir:value "Benlængde (DHR)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-11-15T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Benlængde (DHR)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/Intervals" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "=<1" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lige lange +/- 1 cm" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1-2" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "1-2 cm forskel" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2-3" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "2-3 cm forskel" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value ">3" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value ">3 cm" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/BenlaengdeDHR.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

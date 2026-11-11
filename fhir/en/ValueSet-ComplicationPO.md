@@ -1,4 +1,4 @@
-# Postoperativ komplikatione - KIP Infrastructure v2.27.2
+# Postoperativ komplikatione - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ComplicationPO | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ComplicationPO | *Version*:2.27.3 |
 | Active as of 2022-06-01 | *Computable Name*:ComplicationPO |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "ComplicationPO",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/ComplicationPO",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "ComplicationPO",
   "title" : "Postoperativ komplikatione",
   "status" : "active",

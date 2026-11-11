@@ -1,4 +1,4 @@
-# Databaser i HÆMA - KIP Infrastructure v2.27.2
+# Databaser i HÆMA - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/DatabasesHAEMA | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/DatabasesHAEMA | *Version*:2.27.3 |
 | Active as of 2023-03-15 | *Computable Name*:DatabasesHAEMA |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "DatabasesHAEMA",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/DatabasesHAEMA",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "DatabasesHAEMA",
   "title" : "Databaser i HÆMA",
   "status" : "active",

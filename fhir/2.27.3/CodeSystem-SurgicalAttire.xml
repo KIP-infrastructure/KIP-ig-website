@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="SurgicalAttire"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem SurgicalAttire</b></p><a name="SurgicalAttire"> </a><a name="hcSurgicalAttire"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class="grid"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/SurgicalAttire</code> defines the following codes in an undefined hierarchy:</p><table class="codes"><tr><td><b>Lvl</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style="white-space:nowrap">helmet<a name="SurgicalAttire-helmet"> </a></td><td>Helmet</td><td>Helmet</td></tr><tr><td>2</td><td style="white-space:nowrap">  with_venting<a name="SurgicalAttire-with_venting"> </a></td><td>Helmet with venting</td><td>Helmet with venting</td></tr><tr><td>2</td><td style="white-space:nowrap">  without_venting<a name="SurgicalAttire-without_venting"> </a></td><td>Helmet without venting</td><td>Helmet without venting</td></tr></table></div>
+  </text>
+  <url value="https://kip.rkkp.dk/fhir/CodeSystem/SurgicalAttire"/>
+  <version value="2.27.3"/>
+  <name value="SurgicalAttire"/>
+  <title value="Surgical attire, during operations"/>
+  <status value="active"/>
+  <date value="2022-07-04T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"/>
+  <contact>
+    <name value="Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Surgical attire, during operations"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <property>
+    <code value="comment"/>
+    <uri value="http://hl7.org/fhir/concept-properties#comment"/>
+    <description value="A string that provides additional detail pertinent to the use or understanding of the concept"/>
+    <type value="string"/>
+  </property>
+  <property>
+    <code value="effectiveDate"/>
+    <uri value="http://hl7.org/fhir/concept-properties#effectiveDate"/>
+    <description value="The date at which the concept status was last changed"/>
+    <type value="dateTime"/>
+  </property>
+  <property>
+    <code value="status"/>
+    <uri value="http://hl7.org/fhir/concept-properties#status"/>
+    <description value="A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired"/>
+    <type value="code"/>
+  </property>
+  <property>
+    <code value="inactive"/>
+    <uri value="http://hl7.org/fhir/concept-properties#inactive"/>
+    <description value="True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive"/>
+    <type value="boolean"/>
+  </property>
+  <concept>
+    <code value="helmet"/>
+    <display value="Helmet"/>
+    <definition value="Helmet"/>
+    <concept>
+      <code value="with_venting"/>
+      <display value="Helmet with venting"/>
+      <definition value="Helmet with venting"/>
+    </concept>
+    <concept>
+      <code value="without_venting"/>
+      <display value="Helmet without venting"/>
+      <definition value="Helmet without venting"/>
+    </concept>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,217 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/MaaleEnheder> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "MaaleEnheder"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem MaaleEnheder</b></p><a name=\"MaaleEnheder\"> </a><a name=\"hcMaaleEnheder\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/MaaleEnheder</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">procent<a name=\"MaaleEnheder-procent\"> </a></td><td>%</td><td>Procent</td></tr><tr><td style=\"white-space:nowrap\">nm<a name=\"MaaleEnheder-nm\"> </a></td><td>nm</td><td>Nanometer</td></tr><tr><td style=\"white-space:nowrap\">μm<a name=\"MaaleEnheder-.956m\"> </a></td><td>μm</td><td>Micrometer</td></tr><tr><td style=\"white-space:nowrap\">mm<a name=\"MaaleEnheder-mm\"> </a></td><td>mm</td><td>Millimeter</td></tr><tr><td style=\"white-space:nowrap\">cm<a name=\"MaaleEnheder-cm\"> </a></td><td>cm</td><td>Centimeter</td></tr><tr><td style=\"white-space:nowrap\">mg<a name=\"MaaleEnheder-mg\"> </a></td><td>mg</td><td>Milligram</td></tr><tr><td style=\"white-space:nowrap\">g<a name=\"MaaleEnheder-g\"> </a></td><td>g</td><td>Gram</td></tr><tr><td style=\"white-space:nowrap\">kg<a name=\"MaaleEnheder-kg\"> </a></td><td>kg</td><td>Kilogram</td></tr><tr><td style=\"white-space:nowrap\">mol-l<a name=\"MaaleEnheder-mol-l\"> </a></td><td>mol-l</td><td>Molær koncentration per liter</td></tr><tr><td style=\"white-space:nowrap\">mmol-l<a name=\"MaaleEnheder-mmol-l\"> </a></td><td>mmol/L</td><td>Millimol per liter</td></tr><tr><td style=\"white-space:nowrap\">μmol-l<a name=\"MaaleEnheder-.956mol-l\"> </a></td><td>μmol/L</td><td>Mikromol per liter</td></tr><tr><td style=\"white-space:nowrap\">nmol-l<a name=\"MaaleEnheder-nmol-l\"> </a></td><td>nmol/L</td><td>Nanomol per liter</td></tr><tr><td style=\"white-space:nowrap\">u-l<a name=\"MaaleEnheder-u-l\"> </a></td><td>U/L</td><td>Enhed U per liter</td></tr><tr><td style=\"white-space:nowrap\">kiu-l<a name=\"MaaleEnheder-kiu-l\"> </a></td><td>kiU/L</td><td>Kilo antistof enhed per liter</td></tr><tr><td style=\"white-space:nowrap\">mia-L<a name=\"MaaleEnheder-mia-L\"> </a></td><td>mia/L</td><td>Antal milliarder per liter</td></tr><tr><td style=\"white-space:nowrap\">fl<a name=\"MaaleEnheder-fl\"> </a></td><td>fl</td><td>10^-15 L</td></tr><tr><td style=\"white-space:nowrap\">g-l<a name=\"MaaleEnheder-g-l\"> </a></td><td>g/L</td><td>Gram per liter</td></tr><tr><td style=\"white-space:nowrap\">arb-enh<a name=\"MaaleEnheder-arb-enh\"> </a></td><td>arb.enh</td><td>Arbejdsenheder</td></tr><tr><td style=\"white-space:nowrap\">g-24h<a name=\"MaaleEnheder-g-24h\"> </a></td><td>g/24h</td><td>Gram per døgn</td></tr><tr><td style=\"white-space:nowrap\">mg-l<a name=\"MaaleEnheder-mg-l\"> </a></td><td>mg/L</td><td>Milligram per liter</td></tr><tr><td style=\"white-space:nowrap\">microglobulin-l<a name=\"MaaleEnheder-microglobulin-l\"> </a></td><td>microglobulin/L</td><td>Microglobulin per liter</td></tr><tr><td style=\"white-space:nowrap\">volfr<a name=\"MaaleEnheder-volfr\"> </a></td><td>vol.fr</td><td>volumenfraktion</td></tr><tr><td style=\"white-space:nowrap\">μg-l<a name=\"MaaleEnheder-.956g-l\"> </a></td><td>μg/L</td><td>Mikrogram per liter</td></tr><tr><td style=\"white-space:nowrap\">mCi-kg<a name=\"MaaleEnheder-mCi-kg\"> </a></td><td>mCi/kg</td><td>milliCurie/kg</td></tr><tr><td style=\"white-space:nowrap\">gy<a name=\"MaaleEnheder-gy\"> </a></td><td>Gy</td><td>Gray</td></tr><tr><td style=\"white-space:nowrap\">liter<a name=\"MaaleEnheder-liter\"> </a></td><td>l</td><td>Liter</td></tr><tr><td style=\"white-space:nowrap\">deciliter<a name=\"MaaleEnheder-deciliter\"> </a></td><td>dl</td><td>Deciliter</td></tr><tr><td style=\"white-space:nowrap\">centiliter<a name=\"MaaleEnheder-centiliter\"> </a></td><td>cl</td><td>Centiliter</td></tr><tr><td style=\"white-space:nowrap\">milliliter<a name=\"MaaleEnheder-milliliter\"> </a></td><td>ml</td><td>Milliliter</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/MaaleEnheder"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.3"] ;
+  fhir:CodeSystem.name [ fhir:value "MaaleEnheder"] ;
+  fhir:CodeSystem.title [ fhir:value "Måleenheder"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2022-08-01T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Enheder til dokumentation af mængde, vægt, længde mm."] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "29"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "procent" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "%" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Procent" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "nm" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "nm" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Nanometer" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "μm" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "μm" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Micrometer" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "mm" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "mm" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Millimeter" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cm" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "cm" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Centimeter" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "mg" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Milligram" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "g" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "g" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Gram" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "kg" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "kg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kilogram" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "mol-l" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "mol-l" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Molær koncentration per liter" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "mmol-l" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "mmol/L" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Millimol per liter" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "μmol-l" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "μmol/L" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Mikromol per liter" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "nmol-l" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "nmol/L" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Nanomol per liter" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "u-l" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "U/L" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Enhed U per liter" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "kiu-l" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "kiU/L" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kilo antistof enhed per liter" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "mia-L" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "mia/L" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Antal milliarder per liter" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "fl" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "fl" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "10^-15 L" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "g-l" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "g/L" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Gram per liter" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "arb-enh" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "arb.enh" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Arbejdsenheder" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "g-24h" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "g/24h" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Gram per døgn" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "mg-l" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "mg/L" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Milligram per liter" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "microglobulin-l" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "microglobulin/L" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Microglobulin per liter" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "volfr" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "vol.fr" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "volumenfraktion" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "μg-l" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "μg/L" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Mikrogram per liter" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "mCi-kg" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "mCi/kg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "milliCurie/kg" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "gy" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Gy" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Gray" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "liter" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "l" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Liter" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "deciliter" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "dl" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Deciliter" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "centiliter" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "cl" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Centiliter" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "milliliter" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ml" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Milliliter" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/MaaleEnheder.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

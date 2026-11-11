@@ -1,4 +1,4 @@
-# Placering af indikationsgivne artrose - KIP Infrastructure v2.27.2
+# Placering af indikationsgivne artrose - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/ArtrosePlacering | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/ArtrosePlacering | *Version*:2.27.3 |
 | Active as of 2023-12-19 | *Computable Name*:ArtrosePlacering |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "ArtrosePlacering",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/ArtrosePlacering",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "ArtrosePlacering",
   "title" : "Placering af indikationsgivne artrose",
   "status" : "active",

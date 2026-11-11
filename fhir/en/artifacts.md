@@ -1,4 +1,4 @@
-# Artifacts Summary - KIP Infrastructure v2.27.2
+# Artifacts Summary - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**

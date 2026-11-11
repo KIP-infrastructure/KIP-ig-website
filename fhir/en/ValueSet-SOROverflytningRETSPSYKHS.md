@@ -1,4 +1,4 @@
-# SOR: Overflytning Hovedstaden (RETSPSYK) - KIP Infrastructure v2.27.2
+# SOR: Overflytning Hovedstaden (RETSPSYK) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SOROverflytningRETSPSYKHS | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SOROverflytningRETSPSYKHS | *Version*:2.27.3 |
 | Active as of 2024-03-13 | *Computable Name*:SOROverflytningRETSPSYKHS |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "SOROverflytningRETSPSYKHS",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/SOROverflytningRETSPSYKHS",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "SOROverflytningRETSPSYKHS",
   "title" : "SOR: Overflytning Hovedstaden (RETSPSYK)",
   "status" : "active",

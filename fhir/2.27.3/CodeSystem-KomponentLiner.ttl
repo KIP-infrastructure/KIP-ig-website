@@ -1,0 +1,111 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/KomponentLiner> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "KomponentLiner"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KomponentLiner</b></p><a name=\"KomponentLiner\"> </a><a name=\"hcKomponentLiner\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/KomponentLiner</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">ps_traditional_ap<a name=\"KomponentLiner-ps_traditional_ap\"> </a></td><td>PS (traditionel PS post med AP constraint)</td></tr><tr><td style=\"white-space:nowrap\">ps_rotating<a name=\"KomponentLiner-ps_rotating\"> </a></td><td>PS med roterende platform</td></tr><tr><td style=\"white-space:nowrap\">ckk_VV<a name=\"KomponentLiner-ckk_VV\"> </a></td><td>CCK (Constrained Condylar - Post med VV og rotations constraint)</td></tr><tr><td style=\"white-space:nowrap\">ckk_rotating<a name=\"KomponentLiner-ckk_rotating\"> </a></td><td>CCK med roterende platform</td></tr><tr><td style=\"white-space:nowrap\">bi_cs<a name=\"KomponentLiner-bi_cs\"> </a></td><td>Bi-CS: bicruciate substituting (forreste og bageste korsbånd ofres og substitueres med post og 2 cams)</td></tr><tr><td style=\"white-space:nowrap\">traditional_cr<a name=\"KomponentLiner-traditional_cr\"> </a></td><td>Ingen constraint (traditionel CR)</td></tr><tr><td style=\"white-space:nowrap\">medial<a name=\"KomponentLiner-medial\"> </a></td><td>Medial stabilized (øget kongruens og konformitet kun medialt)</td></tr><tr><td style=\"white-space:nowrap\">medial_lateral<a name=\"KomponentLiner-medial_lateral\"> </a></td><td>Medial og lateral øget constraint (typisk er der øget constraint anteriort)</td></tr><tr><td style=\"white-space:nowrap\">rotating<a name=\"KomponentLiner-rotating\"> </a></td><td>Rotating platform</td></tr><tr><td style=\"white-space:nowrap\">bi_retain<a name=\"KomponentLiner-bi_retain\"> </a></td><td>Bi-cruciate retaining (begge korsbånd bevaret)</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/KomponentLiner"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.3"] ;
+  fhir:CodeSystem.name [ fhir:value "KomponentLiner"] ;
+  fhir:CodeSystem.title [ fhir:value "Liner komponent"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2023-12-18T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Liner komponenter med/uden post"] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "10"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index 0 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ps_traditional_ap" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "PS (traditionel PS post med AP constraint)" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ps_rotating" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "PS med roterende platform" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ckk_VV" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CCK (Constrained Condylar - Post med VV og rotations constraint)" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ckk_rotating" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CCK med roterende platform" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bi_cs" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bi-CS: bicruciate substituting (forreste og bageste korsbånd ofres og substitueres med post og 2 cams)" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "traditional_cr" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ingen constraint (traditionel CR)" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "medial" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Medial stabilized (øget kongruens og konformitet kun medialt)" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "medial_lateral" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Medial og lateral øget constraint (typisk er der øget constraint anteriort)" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "rotating" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rotating platform" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bi_retain" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bi-cruciate retaining (begge korsbånd bevaret)" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/KomponentLiner.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

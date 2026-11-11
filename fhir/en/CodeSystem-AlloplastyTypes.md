@@ -1,4 +1,4 @@
-# Alloplasty operation types - KIP Infrastructure v2.27.2
+# Alloplasty operation types - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/AlloplastyTypes | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/AlloplastyTypes | *Version*:2.27.3 |
 | Active as of 2025-03-04 | *Computable Name*:AlloplastyTypes |
 
  
@@ -38,7 +38,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "AlloplastyTypes",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/AlloplastyTypes",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "AlloplastyTypes",
   "title" : "Alloplasty operation types",
   "status" : "active",

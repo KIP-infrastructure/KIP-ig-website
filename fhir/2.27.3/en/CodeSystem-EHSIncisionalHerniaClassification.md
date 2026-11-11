@@ -1,0 +1,168 @@
+# EHS - Incisional hernia classification - KIP Infrastructure v2.27.3
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **EHS - Incisional hernia classification**
+
+## CodeSystem: EHS - Incisional hernia classification 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/EHSIncisionalHerniaClassification | *Version*:2.27.3 |
+| Active as of 2022-06-28 | *Computable Name*:EHSIncisionalHerniaClassification |
+
+ 
+EHS (European Hernia Society) - Incisional hernia classification; Link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2719726/ 
+
+This Code system is referenced in the definition of the following value sets:
+
+* [EHS ventral hernie - lateral](ValueSet-EHSVentralHernieLateral.md)
+* [EHS ventral hernie - midtlinie](ValueSet-EHSVentralHernieMidtlinie.md)
+* [EHS ventral hernie - samlet](ValueSet-EHSVentralHernieSamlet.md)
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "CodeSystem",
+  "id" : "EHSIncisionalHerniaClassification",
+  "url" : "https://kip.rkkp.dk/fhir/CodeSystem/EHSIncisionalHerniaClassification",
+  "version" : "2.27.3",
+  "name" : "EHSIncisionalHerniaClassification",
+  "title" : "EHS - Incisional hernia classification",
+  "status" : "active",
+  "date" : "2022-06-28T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "EHS (European Hernia Society) - Incisional hernia classification; Link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2719726/",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 17,
+  "property" : [{
+    "code" : "comment",
+    "uri" : "http://hl7.org/fhir/concept-properties#comment",
+    "description" : "A string that provides additional detail pertinent to the use or understanding of the concept",
+    "type" : "string"
+  },
+  {
+    "code" : "effectiveDate",
+    "uri" : "http://hl7.org/fhir/concept-properties#effectiveDate",
+    "description" : "The date at which the concept status was last changed",
+    "type" : "dateTime"
+  },
+  {
+    "code" : "status",
+    "uri" : "http://hl7.org/fhir/concept-properties#status",
+    "description" : "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired",
+    "type" : "code"
+  },
+  {
+    "code" : "inactive",
+    "uri" : "http://hl7.org/fhir/concept-properties#inactive",
+    "description" : "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive",
+    "type" : "boolean"
+  }],
+  "concept" : [{
+    "code" : "m1",
+    "display" : "M1",
+    "definition" : "M1 - Subxiphoidal"
+  },
+  {
+    "code" : "m2",
+    "display" : "M2",
+    "definition" : "M2 - Epigastric"
+  },
+  {
+    "code" : "m3",
+    "display" : "M3",
+    "definition" : "M3 - Umbilical"
+  },
+  {
+    "code" : "m4",
+    "display" : "M4",
+    "definition" : "M4 - Infraumbilical"
+  },
+  {
+    "code" : "m5",
+    "display" : "M5",
+    "definition" : "M5 - Suprapubic"
+  },
+  {
+    "code" : "l1",
+    "display" : "L1",
+    "definition" : "L1 - Subcostal"
+  },
+  {
+    "code" : "l2",
+    "display" : "L2",
+    "definition" : "L2 - Flank"
+  },
+  {
+    "code" : "l3",
+    "display" : "L3",
+    "definition" : "L3 - Iliac"
+  },
+  {
+    "code" : "l4",
+    "display" : "L4",
+    "definition" : "L4 - Lumbar"
+  },
+  {
+    "code" : "l1l",
+    "display" : "L1",
+    "definition" : "L1 - Subcostal (Left)"
+  },
+  {
+    "code" : "l2l",
+    "display" : "L2",
+    "definition" : "L2 - Flank (Left)"
+  },
+  {
+    "code" : "l3l",
+    "display" : "L3",
+    "definition" : "L3 - Iliac (Left)"
+  },
+  {
+    "code" : "l4l",
+    "display" : "L4",
+    "definition" : "L4 - Lumbar (Left)"
+  },
+  {
+    "code" : "l1r",
+    "display" : "L1",
+    "definition" : "L1 - Subcostal (Right)"
+  },
+  {
+    "code" : "l2r",
+    "display" : "L2",
+    "definition" : "L2 - Flank (Right)"
+  },
+  {
+    "code" : "l3r",
+    "display" : "L3",
+    "definition" : "L3 - Iliac (Right)"
+  },
+  {
+    "code" : "l4r",
+    "display" : "L4",
+    "definition" : "L4 - Lumbar (Right)"
+  }]
+}
+
+```

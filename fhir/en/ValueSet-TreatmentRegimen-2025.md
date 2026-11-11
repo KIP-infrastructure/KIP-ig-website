@@ -1,4 +1,4 @@
-# Behandlingsplan (2025) - KIP Infrastructure v2.27.2
+# Behandlingsplan (2025) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/TreatmentRegimen-2025 | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/TreatmentRegimen-2025 | *Version*:2.27.3 |
 | Active as of 2025-10-31 | *Computable Name*:TreatmentRegimen2025 |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "TreatmentRegimen-2025",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/TreatmentRegimen-2025",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "TreatmentRegimen2025",
   "title" : "Behandlingsplan (2025)",
   "status" : "active",

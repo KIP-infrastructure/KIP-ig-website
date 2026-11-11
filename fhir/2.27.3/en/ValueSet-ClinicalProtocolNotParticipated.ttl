@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/ClinicalProtocolNotParticipated> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ClinicalProtocolNotParticipated"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ClinicalProtocolNotParticipated</b></p><a name=\"ClinicalProtocolNotParticipated\"> </a><a name=\"hcClinicalProtocolNotParticipated\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-ClinicalProtocolNotParticipated.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ClinicalProtocolNotParticipated</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.3</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ClinicalProtocolNotParticipated.html#ClinicalProtocolNotParticipated-rejected\">rejected</a></td><td>Tilbudt klinisk forsøg, men deltagelse afvist af patient</td><td>Patient rejected invitation</td></tr><tr><td><a href=\"CodeSystem-ClinicalProtocolNotParticipated.html#ClinicalProtocolNotParticipated-deselected\">deselected</a></td><td>Patienten var kandidat til et klinisk forsøg, men deltagelse fravalgt af afdelingen</td><td>Health department deselected patient</td></tr><tr><td><a href=\"CodeSystem-ClinicalProtocolNotParticipated.html#ClinicalProtocolNotParticipated-no_invitation\">no_invitation</a></td><td>Afdelingen har ikke et tilbud om deltagelse i klinisk forsøg</td><td>Patient was not invited</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/ClinicalProtocolNotParticipated"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.3"] ;
+  fhir:ValueSet.name [ fhir:value "ClinicalProtocolNotParticipated"] ;
+  fhir:ValueSet.title [ fhir:value "Hvorfor er patienten ikke involveret"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-06-07T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Hvorfor er patienten ikke involveret"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/ClinicalProtocolNotParticipated" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "rejected" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tilbudt klinisk forsøg, men deltagelse afvist af patient" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "deselected" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patienten var kandidat til et klinisk forsøg, men deltagelse fravalgt af afdelingen" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "no_invitation" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Afdelingen har ikke et tilbud om deltagelse i klinisk forsøg" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/ClinicalProtocolNotParticipated.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

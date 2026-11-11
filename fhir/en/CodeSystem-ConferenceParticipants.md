@@ -1,4 +1,4 @@
-# Conference Participants - KIP Infrastructure v2.27.2
+# Conference Participants - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/ConferenceParticipants | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/ConferenceParticipants | *Version*:2.27.3 |
 | Active as of 2025-04-07 | *Computable Name*:ConferenceParticipants |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "ConferenceParticipants",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/ConferenceParticipants",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "ConferenceParticipants",
   "title" : "Conference Participants",
   "status" : "active",

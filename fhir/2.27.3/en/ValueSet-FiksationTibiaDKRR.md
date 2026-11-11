@@ -1,0 +1,252 @@
+# Fiksation, Tibia (DKRR) - KIP Infrastructure v2.27.3
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Fiksation, Tibia (DKRR)**
+
+## ValueSet: Fiksation, Tibia (DKRR) 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/FiksationTibiaDKRR | *Version*:2.27.3 |
+| Active as of 2022-09-21 | *Computable Name*:FiksationTibiaDKRR |
+
+ 
+Fiksation, Tibia (DKRR) 
+
+ **References** 
+
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+
+### Logical Definition (CLD)
+
+ 
+
+### Expansion
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "FiksationTibiaDKRR",
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/FiksationTibiaDKRR",
+  "version" : "2.27.3",
+  "name" : "FiksationTibiaDKRR",
+  "title" : "Fiksation, Tibia (DKRR)",
+  "status" : "active",
+  "date" : "2022-09-21T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Fiksation, Tibia (DKRR)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/FixationCruciateLigaments",
+      "concept" : [{
+        "code" : "arthrek_biotenodesis_plla",
+        "display" : "Arthrex Biotenodesis PLLA skrue"
+      },
+      {
+        "code" : "arthrek_plla_retro",
+        "display" : "Arthrex PLLA retro-skrue"
+      },
+      {
+        "code" : "arthrek_plla",
+        "display" : "Arthrex PLLA skrue"
+      },
+      {
+        "code" : "arthrek_titanium",
+        "display" : "Arthrex Titanium skrue"
+      },
+      {
+        "code" : "arthrex_delta",
+        "display" : "Arthrex Deltaskrue"
+      },
+      {
+        "code" : "arthrex_graftbolt",
+        "display" : "Arthrex GraftBolt"
+      },
+      {
+        "code" : "arthrex_peek",
+        "display" : "Arthrex PEEK Skrue"
+      },
+      {
+        "code" : "arthrex_tight_rope",
+        "display" : "Arthrex Tight Rope"
+      },
+      {
+        "code" : "atlantech_bilok",
+        "display" : "Atlantech Bilok Skrue"
+      },
+      {
+        "code" : "atlantech_cobra",
+        "display" : "Atlantech Cobra"
+      },
+      {
+        "code" : "atlantech_metal",
+        "display" : "Atlantech metal skrue"
+      },
+      {
+        "code" : "biomet_centraloc",
+        "display" : "Biomet Centraloc"
+      },
+      {
+        "code" : "biomet_metal_tunneloc",
+        "display" : "Biomet metal skrue (Tunneloc)"
+      },
+      {
+        "code" : "biomet_peek_tibia_nail_tunneloc",
+        "display" : "Biomet peek tibia nail (Tunneloc)"
+      },
+      {
+        "code" : "biomet_plla_gentlethread",
+        "display" : "Biomet PLLA skrue (Gentletread)"
+      },
+      {
+        "code" : "biomet_washerloc",
+        "display" : "Biomet Washerloc"
+      },
+      {
+        "code" : "cayenne_aperfix",
+        "display" : "Cayenne Aperfix"
+      },
+      {
+        "code" : "conmed_martryx",
+        "display" : "ConMed Martryx"
+      },
+      {
+        "code" : "conmed_metal_propel",
+        "display" : "ConMed Metal skrue (Propel)"
+      },
+      {
+        "code" : "conmed_plla_bioscrew",
+        "display" : "ConMed PLLA skrue (Bioscrew)"
+      },
+      {
+        "code" : "depuy_milagro_advance_peek",
+        "display" : "Depuy Milagro ADVANCE PEEK"
+      },
+      {
+        "code" : "depuy_mitek_intrafix",
+        "display" : "Depuy Mitek Intrafix"
+      },
+      {
+        "code" : "depuy_mitek_intrafix_bio",
+        "display" : "Depuy Mitek Intrafix Bio"
+      },
+      {
+        "code" : "depuy_mitek_milagro",
+        "display" : "Depuy Mitek Milagro skrue"
+      },
+      {
+        "code" : "depuy_mitek_titanium",
+        "display" : "Depuy Mitek Titanium skrue"
+      },
+      {
+        "code" : "depuy_rigidloop_adjustable",
+        "display" : "Depuy Rigidloop Adjustable"
+      },
+      {
+        "code" : "inion_hexalon",
+        "display" : "Inion Hexalon skrue"
+      },
+      {
+        "code" : "intrafix_advance",
+        "display" : "Intrafix Advance"
+      },
+      {
+        "code" : "kramper",
+        "display" : "Kramper"
+      },
+      {
+        "code" : "smith&nephew_biosure_peek",
+        "display" : "Smith & Nephew Biosure PEEK skrue"
+      },
+      {
+        "code" : "smith&nephew_biosure_regensorb",
+        "display" : "Smith & Nephew Biosure Regensorb"
+      },
+      {
+        "code" : "smith&nephew_rci_calaxo",
+        "display" : "Smith & Nephew RCI Calaxo"
+      },
+      {
+        "code" : "smith&nephew_rci_metal",
+        "display" : "Smith & Nephew RCI metal"
+      },
+      {
+        "code" : "smith&nephew_rci_plla",
+        "display" : "Smith & Nephew RCI PLLA"
+      },
+      {
+        "code" : "smith&nephew_rci_plla/ha",
+        "display" : "Smith & Nephew RCI PLLA/HA"
+      },
+      {
+        "code" : "smith&nephew_softsilk_metal",
+        "display" : "Smith & Nephew Softsilk metal"
+      },
+      {
+        "code" : "storz_megafix",
+        "display" : "Storz Megafix"
+      },
+      {
+        "code" : "stryker_bioosteon",
+        "display" : "Stryker Bioosteon skrue"
+      },
+      {
+        "code" : "stryker_crossscrew_ha/plla",
+        "display" : "Stryker Crossscrew (HA/PLLA)"
+      },
+      {
+        "code" : "stryker_crossscrew_titanium",
+        "display" : "Stryker Crossscrew (Titanium)"
+      },
+      {
+        "code" : "stryker_plla",
+        "display" : "Stryker PLLA skrue"
+      },
+      {
+        "code" : "stryker_procinch",
+        "display" : "Stryker ProCinch"
+      },
+      {
+        "code" : "stryker_titanium",
+        "display" : "Stryker titanium skrue"
+      },
+      {
+        "code" : "bona_canal",
+        "display" : "Knoglekanal"
+      },
+      {
+        "code" : "screw/washer",
+        "display" : "Skrue/washer"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "other",
+        "display" : "Andet"
+      }]
+    }]
+  }
+}
+
+```

@@ -1,4 +1,4 @@
-# SOR: Overflytning Syddanmark (RETSPSYK) - KIP Infrastructure v2.27.2
+# SOR: Overflytning Syddanmark (RETSPSYK) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SOROverflytningRETSPSYKSD | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SOROverflytningRETSPSYKSD | *Version*:2.27.3 |
 | Active as of 2024-03-13 | *Computable Name*:SOROverflytningRETSPSYKSD |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "SOROverflytningRETSPSYKSD",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/SOROverflytningRETSPSYKSD",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "SOROverflytningRETSPSYKSD",
   "title" : "SOR: Overflytning Syddanmark (RETSPSYK)",
   "status" : "active",

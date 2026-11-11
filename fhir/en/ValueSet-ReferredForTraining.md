@@ -1,4 +1,4 @@
-# Uddybning af hvor patienten er henvist til fysisk træning - KIP Infrastructure v2.27.2
+# Uddybning af hvor patienten er henvist til fysisk træning - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ReferredForTraining | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ReferredForTraining | *Version*:2.27.3 |
 | Active as of 2022-07-21 | *Computable Name*:ReferredForTraining |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "ReferredForTraining",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/ReferredForTraining",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "ReferredForTraining",
   "title" : "Uddybning af hvor patienten er henvist til fysisk træning",
   "status" : "active",

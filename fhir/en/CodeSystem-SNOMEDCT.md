@@ -1,4 +1,4 @@
-# SNOMED-CT - KIP Infrastructure v2.27.2
+# SNOMED-CT - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/SNOMEDCT | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/SNOMEDCT | *Version*:2.27.3 |
 | Active as of 2022-06-07 | *Computable Name*:SNOMEDCT |
 | *Other Identifiers:*OID:2.16.840.1.113883.6.96 | |
 
@@ -37,7 +37,7 @@ This Code system is referenced in the definition of the following value sets:
     "system" : "urn:ietf:rfc:3986",
     "value" : "urn:oid:2.16.840.1.113883.6.96"
   }],
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "SNOMEDCT",
   "title" : "SNOMED-CT",
   "status" : "active",

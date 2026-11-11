@@ -1,4 +1,4 @@
-# EORTC Grad 2-4 (DPD) - KIP Infrastructure v2.27.2
+# EORTC Grad 2-4 (DPD) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/EORTC24DPD | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/EORTC24DPD | *Version*:2.27.3 |
 | Active as of 2022-10-24 | *Computable Name*:EORTC24DPD |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "EORTC24DPD",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/EORTC24DPD",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "EORTC24DPD",
   "title" : "EORTC Grad 2-4 (DPD)",
   "status" : "active",

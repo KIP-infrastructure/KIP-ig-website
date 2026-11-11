@@ -1,0 +1,172 @@
+# Sygdomslokalisation er kun ekstranodalt, mænd (LYFO) version 2 - KIP Infrastructure v2.27.3
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Sygdomslokalisation er kun ekstranodalt, mænd (LYFO) version 2**
+
+## ValueSet: Sygdomslokalisation er kun ekstranodalt, mænd (LYFO) version 2 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/locationExtranodalMale-V2 | *Version*:2.27.3 |
+| Active as of 2025-01-09 | *Computable Name*:LocationExtranodalMale_V2 |
+
+ 
+Sygdomslokalisation i lymfe områder er kun ekstranodalt, og patienten er en mand (LYFO) 
+
+ **References** 
+
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+
+### Logical Definition (CLD)
+
+ 
+
+### Expansion
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "locationExtranodalMale-V2",
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/locationExtranodalMale-V2",
+  "version" : "2.27.3",
+  "name" : "LocationExtranodalMale_V2",
+  "title" : "Sygdomslokalisation er kun ekstranodalt, mænd (LYFO) version 2",
+  "status" : "active",
+  "date" : "2025-01-09T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Sygdomslokalisation i lymfe områder er kun ekstranodalt, og patienten er en mand (LYFO)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/SKS",
+      "concept" : [{
+        "code" : "T001182",
+        "display" : "Orbital incl tårekirtlen"
+      },
+      {
+        "code" : "T001127",
+        "display" : "Øjeæble inklusiv nervus opticus og corpus vitreum"
+      },
+      {
+        "code" : "T000352",
+        "display" : "Bihuler"
+      },
+      {
+        "code" : "T000347",
+        "display" : "Cavum nasi"
+      },
+      {
+        "code" : "T000569",
+        "display" : "Mundhule"
+      },
+      {
+        "code" : "T000600",
+        "display" : "Spytkirtler"
+      },
+      {
+        "code" : "T001022",
+        "display" : "Gl. thyroidea"
+      },
+      {
+        "code" : "T000438",
+        "display" : "Cor"
+      },
+      {
+        "code" : "T000094",
+        "display" : "Mamma"
+      },
+      {
+        "code" : "T000398",
+        "display" : "Lunger"
+      },
+      {
+        "code" : "T000670",
+        "display" : "Ventrikel"
+      },
+      {
+        "code" : "T000706",
+        "display" : "Tarm"
+      },
+      {
+        "code" : "T000638",
+        "display" : "Pankreas"
+      },
+      {
+        "code" : "T000773",
+        "display" : "Nyrer og binyrer"
+      },
+      {
+        "code" : "T000607",
+        "display" : "Lever"
+      },
+      {
+        "code" : "T000812",
+        "display" : "Urinblære"
+      },
+      {
+        "code" : "T000842",
+        "display" : "Testis"
+      },
+      {
+        "code" : "T000010",
+        "display" : "Hud"
+      },
+      {
+        "code" : "T000298",
+        "display" : "Muskulatur"
+      },
+      {
+        "code" : "T000224",
+        "display" : "Knogler"
+      },
+      {
+        "code" : "T000113",
+        "display" : "Knoglemarv"
+      },
+      {
+        "code" : "T001039",
+        "display" : "CNS"
+      },
+      {
+        "code" : "T001057",
+        "display" : "Leptomeninges"
+      },
+      {
+        "code" : "T000492",
+        "display" : "Intravaskulært"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/DiseasesUnspecified",
+      "concept" : [{
+        "code" : "ascites_lymfom",
+        "display" : "Ascites med lymfomceller"
+      },
+      {
+        "code" : "perikardieeksudat_lymfom",
+        "display" : "Exudater med lymfom celler"
+      }]
+    }]
+  }
+}
+
+```

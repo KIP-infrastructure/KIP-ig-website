@@ -1,4 +1,4 @@
-# Binet staging system for Chroniz Lymphocytic Leukemia - KIP Infrastructure v2.27.2
+# Binet staging system for Chroniz Lymphocytic Leukemia - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/BinetStagingSystem | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/BinetStagingSystem | *Version*:2.27.3 |
 | Active as of 2022-05-31 | *Computable Name*:BinetStagingSystemCS |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "BinetStagingSystem",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/BinetStagingSystem",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "BinetStagingSystemCS",
   "title" : "Binet staging system for Chroniz Lymphocytic Leukemia",
   "status" : "active",

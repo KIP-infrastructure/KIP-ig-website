@@ -1,4 +1,4 @@
-# The National Institute of Health Stroke Scale (NIHSS) - 3. Visual - KIP Infrastructure v2.27.2
+# The National Institute of Health Stroke Scale (NIHSS) - 3. Visual - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/NIHSS3Visual | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/NIHSS3Visual | *Version*:2.27.3 |
 | Active as of 2022-06-23 | *Computable Name*:NIHSS3Visual |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "NIHSS3Visual",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/NIHSS3Visual",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "NIHSS3Visual",
   "title" : "The National Institute of Health Stroke Scale (NIHSS) - 3. Visual",
   "status" : "active",

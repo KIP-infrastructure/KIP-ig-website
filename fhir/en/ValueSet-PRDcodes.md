@@ -1,4 +1,4 @@
-# ERA PRD Codes - KIP Infrastructure v2.27.2
+# ERA PRD Codes - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/PRDcodes | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/PRDcodes | *Version*:2.27.3 |
 | Active as of 2024-01-10 | *Computable Name*:PRDcodes |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "PRDcodes",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/PRDcodes",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "PRDcodes",
   "title" : "ERA PRD Codes",
   "status" : "active",

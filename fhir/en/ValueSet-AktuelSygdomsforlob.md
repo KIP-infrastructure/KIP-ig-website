@@ -1,4 +1,4 @@
-# Aktuel Sygdomsforløb - KIP Infrastructure v2.27.2
+# Aktuel Sygdomsforløb - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/AktuelSygdomsforlob | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/AktuelSygdomsforlob | *Version*:2.27.3 |
 | Active as of 2022-06-22 | *Computable Name*:AktuelSygdomsforlob |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "AktuelSygdomsforlob",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/AktuelSygdomsforlob",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "AktuelSygdomsforlob",
   "title" : "Aktuel Sygdomsforløb",
   "status" : "active",

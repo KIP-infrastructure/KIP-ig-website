@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/KognitivPaavirkningDANDEM> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "KognitivPaavirkningDANDEM"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KognitivPaavirkningDANDEM</b></p><a name=\"KognitivPaavirkningDANDEM\"> </a><a name=\"hcKognitivPaavirkningDANDEM\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-CognitiveFunctionFinding.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/CognitiveFunctionFinding</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.3</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-CognitiveFunctionFinding.html#CognitiveFunctionFinding-normal\">normal</a></td><td>Habituel kognitiv funktion</td><td>Normal cognition / Normal kognitiv funktion / SNOMED-CT: 449888003</td></tr><tr><td><a href=\"CodeSystem-CognitiveFunctionFinding.html#CognitiveFunctionFinding-impaired\">impaired</a></td><td>Kognitiv svækkelse, men ikke dement</td><td>Impaired cognition / Svækket erkendelsesevne / SNOMED-CT: 386806002</td></tr><tr><td><a href=\"CodeSystem-CognitiveFunctionFinding.html#CognitiveFunctionFinding-mild\">mild</a></td><td>Demens i let grad jævnfør (ICD kriterier)</td><td>Mild / Let / SNOMED-CT: 255604002</td></tr><tr><td><a href=\"CodeSystem-CognitiveFunctionFinding.html#CognitiveFunctionFinding-moderate\">moderate</a></td><td>Demens i moderat grad jævnfør (ICD kriterier)</td><td>Moderate / Moderat / SNOMED-CT: 6736007</td></tr><tr><td><a href=\"CodeSystem-CognitiveFunctionFinding.html#CognitiveFunctionFinding-severe\">severe</a></td><td>Demens i svær grad jævnfør (ICD kriterier)</td><td>Severe / Svær / SNOMED-CT: 24484000</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/KognitivPaavirkningDANDEM"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.3"] ;
+  fhir:ValueSet.name [ fhir:value "KognitivPaavirkningDANDEM"] ;
+  fhir:ValueSet.title [ fhir:value "Kognitiv påvirkning (DANDEM)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-07-19T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Kognitiv påvirkning (DANDEM)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/CognitiveFunctionFinding" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "normal" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Habituel kognitiv funktion" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "impaired" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kognitiv svækkelse, men ikke dement" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "mild" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Demens i let grad jævnfør (ICD kriterier)" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "moderate" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Demens i moderat grad jævnfør (ICD kriterier)" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "severe" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Demens i svær grad jævnfør (ICD kriterier)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/KognitivPaavirkningDANDEM.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

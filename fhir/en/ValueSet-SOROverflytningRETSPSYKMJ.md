@@ -1,4 +1,4 @@
-# SOR: Overflytning Midtjylland (RETSPSYK) - KIP Infrastructure v2.27.2
+# SOR: Overflytning Midtjylland (RETSPSYK) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SOROverflytningRETSPSYKMJ | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SOROverflytningRETSPSYKMJ | *Version*:2.27.3 |
 | Active as of 2024-03-13 | *Computable Name*:SOROverflytningRETSPSYKMJ |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "SOROverflytningRETSPSYKMJ",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/SOROverflytningRETSPSYKMJ",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "SOROverflytningRETSPSYKMJ",
   "title" : "SOR: Overflytning Midtjylland (RETSPSYK)",
   "status" : "active",

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="Intubation"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem Intubation</b></p><a name="Intubation"> </a><a name="hcIntubation"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class="grid"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/Intubation</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">max2_dir<a name="Intubation-max2_dir"> </a></td><td>Max 2 attempts, final by direct laryngoscopy</td><td>Højest 2 forsøg, seneste ved direkte laryngoskopi</td></tr><tr><td style="white-space:nowrap">max2_video<a name="Intubation-max2_video"> </a></td><td>Max 2 attempts, final by videolaryngoscopy</td><td>Højest 2 forsøg, seneste ved videolaryngoskopi</td></tr><tr><td style="white-space:nowrap">max2_flex<a name="Intubation-max2_flex"> </a></td><td>Max 2 attempts, final by flexible laryngoscopy</td><td>Højest 2 forsøg, seneste ved fleksibel skopi</td></tr><tr><td style="white-space:nowrap">max2_other<a name="Intubation-max2_other"> </a></td><td>Max 2 attempts, final by different method than above mentioned</td><td>Højest 2 forsøg seneste ved andet end ovennævnte metoder</td></tr><tr><td style="white-space:nowrap">3_or_more<a name="Intubation-3_or_more"> </a></td><td>3 or more attempts method regardless</td><td>3 forsøg eller flere uanset metode</td></tr><tr><td style="white-space:nowrap">abandon<a name="Intubation-abandon"> </a></td><td>Intubation abandonned</td><td>Intubation opgivet</td></tr></table></div>
+  </text>
+  <url value="https://kip.rkkp.dk/fhir/CodeSystem/Intubation"/>
+  <version value="2.27.3"/>
+  <name value="IntubationCS"/>
+  <title value="Intubation"/>
+  <status value="active"/>
+  <date value="2022-06-09T00:00:00+02:00"/>
+  <publisher value="Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"/>
+  <contact>
+    <name value="Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://trifork.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rbk@trifork.com"/>
+    </telecom>
+  </contact>
+  <description value="Resultat af luftvejshåndtering vha. intubation"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <property>
+    <code value="comment"/>
+    <uri value="http://hl7.org/fhir/concept-properties#comment"/>
+    <description value="A string that provides additional detail pertinent to the use or understanding of the concept"/>
+    <type value="string"/>
+  </property>
+  <property>
+    <code value="effectiveDate"/>
+    <uri value="http://hl7.org/fhir/concept-properties#effectiveDate"/>
+    <description value="The date at which the concept status was last changed"/>
+    <type value="dateTime"/>
+  </property>
+  <property>
+    <code value="status"/>
+    <uri value="http://hl7.org/fhir/concept-properties#status"/>
+    <description value="A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired"/>
+    <type value="code"/>
+  </property>
+  <property>
+    <code value="inactive"/>
+    <uri value="http://hl7.org/fhir/concept-properties#inactive"/>
+    <description value="True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive"/>
+    <type value="boolean"/>
+  </property>
+  <concept>
+    <code value="max2_dir"/>
+    <display value="Max 2 attempts, final by direct laryngoscopy"/>
+    <definition value="Højest 2 forsøg, seneste ved direkte laryngoskopi"/>
+  </concept>
+  <concept>
+    <code value="max2_video"/>
+    <display value="Max 2 attempts, final by videolaryngoscopy"/>
+    <definition value="Højest 2 forsøg, seneste ved videolaryngoskopi"/>
+  </concept>
+  <concept>
+    <code value="max2_flex"/>
+    <display value="Max 2 attempts, final by flexible laryngoscopy"/>
+    <definition value="Højest 2 forsøg, seneste ved fleksibel skopi"/>
+  </concept>
+  <concept>
+    <code value="max2_other"/>
+    <display value="Max 2 attempts, final by different method than above mentioned"/>
+    <definition value="Højest 2 forsøg seneste ved andet end ovennævnte metoder"/>
+  </concept>
+  <concept>
+    <code value="3_or_more"/>
+    <display value="3 or more attempts method regardless"/>
+    <definition value="3 forsøg eller flere uanset metode"/>
+  </concept>
+  <concept>
+    <code value="abandon"/>
+    <display value="Intubation abandonned"/>
+    <definition value="Intubation opgivet"/>
+  </concept>
+</CodeSystem>

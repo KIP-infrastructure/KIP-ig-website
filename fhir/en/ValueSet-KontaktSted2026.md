@@ -1,4 +1,4 @@
-# Foerste kontakt sted 2026 - KIP Infrastructure v2.27.2
+# Foerste kontakt sted 2026 - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/KontaktSted2026 | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/KontaktSted2026 | *Version*:2.27.3 |
 | Active as of 2026-06-24 | *Computable Name*:KontaktSted2026 |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "KontaktSted2026",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/KontaktSted2026",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "KontaktSted2026",
   "title" : "Foerste kontakt sted 2026",
   "status" : "active",

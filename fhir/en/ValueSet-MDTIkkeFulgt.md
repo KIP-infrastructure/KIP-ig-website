@@ -1,4 +1,4 @@
-# MDT-beslutning ikke fulgt; årsag - KIP Infrastructure v2.27.2
+# MDT-beslutning ikke fulgt; årsag - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/MDTIkkeFulgt | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/MDTIkkeFulgt | *Version*:2.27.3 |
 | Active as of 2022-06-08 | *Computable Name*:MDTIkkeFulgt |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "MDTIkkeFulgt",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/MDTIkkeFulgt",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "MDTIkkeFulgt",
   "title" : "MDT-beslutning ikke fulgt; årsag",
   "status" : "active",

@@ -1,4 +1,4 @@
-# ICD 10 koder til DPD - KIP Infrastructure v2.27.2
+# ICD 10 koder til DPD - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/IDC10DPD | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/IDC10DPD | *Version*:2.27.3 |
 | Active as of 2022-08-25 | *Computable Name*:IDC10DPD |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "IDC10DPD",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/IDC10DPD",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "IDC10DPD",
   "title" : "ICD 10 koder til DPD",
   "status" : "active",

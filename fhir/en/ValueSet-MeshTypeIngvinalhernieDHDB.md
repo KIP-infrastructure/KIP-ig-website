@@ -1,4 +1,4 @@
-# Mesh type - Ingvinalhernie (DHDB) - KIP Infrastructure v2.27.2
+# Mesh type - Ingvinalhernie (DHDB) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/MeshTypeIngvinalhernieDHDB | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/MeshTypeIngvinalhernieDHDB | *Version*:2.27.3 |
 | Active as of 2022-07-20 | *Computable Name*:MeshTypeIngvinalhernieDHDB |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "MeshTypeIngvinalhernieDHDB",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/MeshTypeIngvinalhernieDHDB",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "MeshTypeIngvinalhernieDHDB",
   "title" : "Mesh type - Ingvinalhernie (DHDB)",
   "status" : "active",

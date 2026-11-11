@@ -1,4 +1,4 @@
-# Progression CML - KIP Infrastructure v2.27.2
+# Progression CML - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ProgressionCML | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ProgressionCML | *Version*:2.27.3 |
 | Active as of 2022-07-18 | *Computable Name*:ProgressionCML |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "ProgressionCML",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/ProgressionCML",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "ProgressionCML",
   "title" : "Progression CML",
   "status" : "active",

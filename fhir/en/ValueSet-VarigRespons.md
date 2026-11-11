@@ -1,4 +1,4 @@
-# VarigRespons - KIP Infrastructure v2.27.2
+# VarigRespons - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/VarigRespons | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/VarigRespons | *Version*:2.27.3 |
 | Active as of 2024-06-25 | *Computable Name*:VarigRespons |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "VarigRespons",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/VarigRespons",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "VarigRespons",
   "title" : "VarigRespons",
   "status" : "active",

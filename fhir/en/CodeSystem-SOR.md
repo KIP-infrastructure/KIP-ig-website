@@ -1,4 +1,4 @@
-# Sundhedsvæsenets Organisationsregister (SOR) - KIP Infrastructure v2.27.2
+# Sundhedsvæsenets Organisationsregister (SOR) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/SOR | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/SOR | *Version*:2.27.3 |
 | Active as of 2022-09-06 | *Computable Name*:SOR |
 
  
@@ -47,7 +47,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "SOR",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/SOR",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "SOR",
   "title" : "Sundhedsvæsenets Organisationsregister (SOR)",
   "status" : "active",

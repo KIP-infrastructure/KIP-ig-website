@@ -1,4 +1,4 @@
-# Ventral hernie type (DHDB) - KIP Infrastructure v2.27.2
+# Ventral hernie type (DHDB) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/VentralHernieTypeDHDB | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/VentralHernieTypeDHDB | *Version*:2.27.3 |
 | Active as of 2022-07-20 | *Computable Name*:VentralHernieTypeDHDB |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "VentralHernieTypeDHDB",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/VentralHernieTypeDHDB",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "VentralHernieTypeDHDB",
   "title" : "Ventral hernie type (DHDB)",
   "status" : "active",

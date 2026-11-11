@@ -1,0 +1,82 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/TumorLokalisationDCCG> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "TumorLokalisationDCCG"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet TumorLokalisationDCCG</b></p><a name=\"TumorLokalisationDCCG\"> </a><a name=\"hcTumorLokalisationDCCG\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-SKS.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/SKS</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.3</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-DC180\">DC180</a></td><td>Caecum</td><td>Kræft i caecum</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-DC182\">DC182</a></td><td>Colon ascendens</td><td>Kræft i colon ascendens</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-DC183\">DC183</a></td><td>Højre colon fleksur</td><td>Kræft i flexura coli dextra</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-DC184\">DC184</a></td><td>Colon transversum</td><td>Kræft i colon transversum</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-DC185\">DC185</a></td><td>Venstre colon fleksur</td><td>Kræft i flexura coli sinistra</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-DC186\">DC186</a></td><td>Colon descendens</td><td>Kræft i colon descendens</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-DC187\">DC187</a></td><td>Colon sigmoideum</td><td>Kræft i colon sigmoideum</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-DC189\">DC189</a></td><td>Colon UNS</td><td>Kræft i tyktarmen UNS</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/TumorLokalisationDCCG"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.3"] ;
+  fhir:ValueSet.name [ fhir:value "TumorLokalisationDCCG"] ;
+  fhir:ValueSet.title [ fhir:value "Primærtumors lokalisation DCCG"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-09-07T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Primærtumors lokalisation DCCG"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/SKS" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DC180" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Caecum" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DC182" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Colon ascendens" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DC183" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Højre colon fleksur" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DC184" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Colon transversum" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DC185" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Venstre colon fleksur" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DC186" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Colon descendens" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DC187" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Colon sigmoideum" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DC189" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Colon UNS" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/TumorLokalisationDCCG.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

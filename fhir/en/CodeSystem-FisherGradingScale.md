@@ -1,4 +1,4 @@
-# Fisher grading scale - KIP Infrastructure v2.27.2
+# Fisher grading scale - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/FisherGradingScale | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/FisherGradingScale | *Version*:2.27.3 |
 | Active as of 2022-06-28 | *Computable Name*:FisherGradingScale |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "FisherGradingScale",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/FisherGradingScale",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "FisherGradingScale",
   "title" : "Fisher grading scale",
   "status" : "active",

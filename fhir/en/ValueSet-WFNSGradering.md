@@ -1,4 +1,4 @@
-# WFSN grad - KIP Infrastructure v2.27.2
+# WFSN grad - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/WFNSGradering | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/WFNSGradering | *Version*:2.27.3 |
 | Active as of 2022-06-28 | *Computable Name*:WFNSGradering |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "WFNSGradering",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/WFNSGradering",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "WFNSGradering",
   "title" : "WFSN grad",
   "status" : "active",

@@ -1,0 +1,87 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/TreatmentResponseALD> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "TreatmentResponseALD"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet TreatmentResponseALD</b></p><a name=\"TreatmentResponseALD\"> </a><a name=\"hcTreatmentResponseALD\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-TreatmentResponseEvaluation.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/TreatmentResponseEvaluation</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.3</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-complete_remission\">complete_remission</a></td><td>Complete Remission</td><td>Complete remission (CR)</td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-partial_remission\">partial_remission</a></td><td>Partiel Remission</td><td>Partial remission (PR)</td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-stable_disease\">stable_disease</a></td><td>Stable Disease</td><td>Stable disease (SD/NC)</td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-progressive_disease\">progressive_disease</a></td><td>Progressive Disease</td><td>Progressive disease (PD)</td></tr><tr><td><a href=\"CodeSystem-TreatmentResponseEvaluation.html#TreatmentResponseEvaluation-uncertain_response\">uncertain_response</a></td><td>Usikkert respons</td><td>Uncertain response</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-Complications.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Complications</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.3</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-mors\">mors</a></td><td>Mors (før evaluering)</td><td>Mors, uventet</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.3</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-not_performed\">not_performed</a></td><td>Ej evalueret</td><td>Not performed - used to indicate, if a procedure or test has not been performed</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/TreatmentResponseALD"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.3"] ;
+  fhir:ValueSet.name [ fhir:value "TreatmentResponseALD"] ;
+  fhir:ValueSet.title [ fhir:value "Patient respons på behandling (ALD)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-07-13T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Hvordan reagerer patienten på behandlingen [ALD]"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/TreatmentResponseEvaluation" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "complete_remission" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Complete Remission" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "partial_remission" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Partiel Remission" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "stable_disease" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stable Disease" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "progressive_disease" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Progressive Disease" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "uncertain_response" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Usikkert respons" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/Complications" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "mors" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mors (før evaluering)" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "not_performed" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ej evalueret" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/TreatmentResponseALD.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

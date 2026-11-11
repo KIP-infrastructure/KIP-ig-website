@@ -1,4 +1,4 @@
-# Alkohol - 7/14 genstande per uge - KIP Infrastructure v2.27.2
+# Alkohol - 7/14 genstande per uge - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/Alkohol714 | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/Alkohol714 | *Version*:2.27.3 |
 | Active as of 2022-06-08 | *Computable Name*:Alkohol714 |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "Alkohol714",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/Alkohol714",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "Alkohol714",
   "title" : "Alkohol - 7/14 genstande per uge",
   "status" : "active",

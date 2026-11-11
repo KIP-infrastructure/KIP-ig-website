@@ -1,4 +1,4 @@
-# Knogle forandringer 202412 - KIP Infrastructure v2.27.2
+# Knogle forandringer 202412 - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/RadiologicalBoneChanges202412 | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/RadiologicalBoneChanges202412 | *Version*:2.27.3 |
 | Active as of 2024-11-29 | *Computable Name*:RadiologicalBoneChanges202412 |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "RadiologicalBoneChanges202412",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/RadiologicalBoneChanges202412",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "RadiologicalBoneChanges202412",
   "title" : "Knogle forandringer 202412",
   "status" : "active",

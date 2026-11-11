@@ -1,4 +1,4 @@
-# Harris Hip Score (HHS) - Stairs - KIP Infrastructure v2.27.2
+# Harris Hip Score (HHS) - Stairs - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/HarrisHipScoreStairs | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/HarrisHipScoreStairs | *Version*:2.27.3 |
 | Active as of 2022-07-06 | *Computable Name*:HarrisHipScoreStairs |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "HarrisHipScoreStairs",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/HarrisHipScoreStairs",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "HarrisHipScoreStairs",
   "title" : "Harris Hip Score (HHS) - Stairs",
   "status" : "active",

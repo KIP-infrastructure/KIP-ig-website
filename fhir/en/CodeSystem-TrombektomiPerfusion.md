@@ -1,4 +1,4 @@
-# Trombektomi-Perfusion (Danstroke) - KIP Infrastructure v2.27.2
+# Trombektomi-Perfusion (Danstroke) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/TrombektomiPerfusion | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/TrombektomiPerfusion | *Version*:2.27.3 |
 | Active as of 2026-06-29 | *Computable Name*:TrombektomiPerfusionCS |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "TrombektomiPerfusion",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/TrombektomiPerfusion",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "TrombektomiPerfusionCS",
   "title" : "Trombektomi-Perfusion (Danstroke)",
   "status" : "active",

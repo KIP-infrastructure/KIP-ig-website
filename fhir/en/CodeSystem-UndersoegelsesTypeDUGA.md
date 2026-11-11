@@ -1,4 +1,4 @@
-# Undersøgelsestype (DUGA) - KIP Infrastructure v2.27.2
+# Undersøgelsestype (DUGA) - KIP Infrastructure v2.27.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/UndersoegelsesTypeDUGA | *Version*:2.27.2 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/UndersoegelsesTypeDUGA | *Version*:2.27.3 |
 | Active as of 2024-03-06 | *Computable Name*:UndersoegelsesTypeDUGACS |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "UndersoegelsesTypeDUGA",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/UndersoegelsesTypeDUGA",
-  "version" : "2.27.2",
+  "version" : "2.27.3",
   "name" : "UndersoegelsesTypeDUGACS",
   "title" : "Undersøgelsestype (DUGA)",
   "status" : "active",
