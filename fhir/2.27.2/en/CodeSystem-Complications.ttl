@@ -1,0 +1,496 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/Complications> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "Complications"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem Complications</b></p><a name=\"Complications\"> </a><a name=\"hcComplications\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/Complications</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>comment</b></td><td><b>effectiveDate</b></td><td><b>status</b></td><td><b>Inactive</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">ami<a name=\"Complications-ami\"> </a></td><td>AMI</td><td>AMI - Myocardieinfarkt</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">chylothorax<a name=\"Complications-chylothorax\"> </a></td><td>Chylothorax</td><td>Chylothorax</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">fascierupture<a name=\"Complications-fascierupture\"> </a></td><td>Fascieruptur</td><td>Fascieruptur</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">ileus<a name=\"Complications-ileus\"> </a></td><td>Ileus</td><td>Ileus</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">intrathoracicbleeding<a name=\"Complications-intrathoracicbleeding\"> </a></td><td>Intrathorakal blødning</td><td>Intrathorakal blødning</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">intraabdominalabscess<a name=\"Complications-intraabdominalabscess\"> </a></td><td>Intraabdominal absces</td><td>Intraabdominal absces</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">intraabdominalbleeding<a name=\"Complications-intraabdominalbleeding\"> </a></td><td>Intraabdominal blødning</td><td>Intraabdominal blødning</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">pulmonaryembolism<a name=\"Complications-pulmonaryembolism\"> </a></td><td>Lungeemboli</td><td>Lungeemboli</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">perforation<a name=\"Complications-perforation\"> </a></td><td>Perforation</td><td>Perforation</td><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  bloodvessel/aneurysm<a name=\"Complications-bloodvessel.47aneurysm\"> </a></td><td>Kar/anurisme</td><td>Perforation af kar eller aneurisme</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">pleuraexudate<a name=\"Complications-pleuraexudate\"> </a></td><td>Pleuraeksudat</td><td>Pleuraeksudat</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">pneumonia<a name=\"Complications-pneumonia\"> </a></td><td>Pneumoni</td><td>Pneumoni</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">infection<a name=\"Complications-infection\"> </a></td><td>Sårinfektion</td><td>Sårinfektion</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">anafylSchock<a name=\"Complications-anafylSchock\"> </a></td><td>Anafylaktisk reaktion/shock</td><td>Anafylaktisk reaktion/shock</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">anInterrupt<a name=\"Complications-anInterrupt\"> </a></td><td>Anæstesi afbrudt</td><td>Anæstesi afbrudt</td><td/><td/><td/><td/></tr><tr style=\"background-color: #ffeeee\"><td>1</td><td style=\"white-space:nowrap\">appFailure<a name=\"Complications-appFailure\"> </a></td><td>Apparaturfejl</td><td>Apparaturfejl</td><td>Removed</td><td>2026-03-04T00:00:00+01:00</td><td>retired</td><td>true</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">aspiration<a name=\"Complications-aspiration\"> </a></td><td>Aspiration</td><td>Aspiration</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">duraptAcc<a name=\"Complications-duraptAcc\"> </a></td><td>Durapunktur accidentel</td><td>Durapunktur accidentel</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">heartFail<a name=\"Complications-heartFail\"> </a></td><td>Hjertestop</td><td>Hjertestop</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">huskeAN<a name=\"Complications-huskeAN\"> </a></td><td>Huskeanæstesi</td><td>Huskeanæstesi</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">malignHyp<a name=\"Complications-malignHyp\"> </a></td><td>Malign Hypertermi mistanke</td><td>Malign Hypertermi mistanke</td><td/><td/><td/><td/></tr><tr style=\"background-color: #ffeeee\"><td>1</td><td style=\"white-space:nowrap\">medFail<a name=\"Complications-medFail\"> </a></td><td>Medicineringsfejl</td><td>Medicineringsfejl</td><td>Removed</td><td>2026-03-04T00:00:00+01:00</td><td>retired</td><td>true</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">neuMuscBlock<a name=\"Complications-neuMuscBlock\"> </a></td><td>Neuromuskulær blokade, forlænget virkning</td><td>Neuromuskulær blokade, forlænget virkning</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">dentInj<a name=\"Complications-dentInj\"> </a></td><td>Tandskade</td><td>Tandskade</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">mors<a name=\"Complications-mors\"> </a></td><td>Mors, uventet</td><td>Mors, uventet</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">dissection<a name=\"Complications-dissection\"> </a></td><td>Dissektion</td><td>Dissektion</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">thromboembolic<a name=\"Complications-thromboembolic\"> </a></td><td>Tromboemboliske komplikationer</td><td>Tromboemboliske komplikationer som medfører infarkt inden for 24 timer</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">groinbleeding<a name=\"Complications-groinbleeding\"> </a></td><td>Blødning fra lysken</td><td>Alvorlig blødning fra lysken</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">mechanical<a name=\"Complications-mechanical\"> </a></td><td>Mekaniske</td><td>Mekaniske komplikationer</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">bloodvesselocclusion<a name=\"Complications-bloodvesselocclusion\"> </a></td><td>Aflukning af kar</td><td>Aflukning af kar medførende infarkt indenfor 24 timer</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">peroperativebleeding<a name=\"Complications-peroperativebleeding\"> </a></td><td>Peroperativ blødning</td><td>Livstruende peroperativ blødning, der ikke kan kontrolleres inden for få sekunder</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">other<a name=\"Complications-other\"> </a></td><td>Other</td><td>Other</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">vascular-unspecific<a name=\"Complications-vascular-unspecific\"> </a></td><td>Vascular, unspecific</td><td>Vascular, unspecific</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">infarction-unspecific<a name=\"Complications-infarction-unspecific\"> </a></td><td>Cerebral infarction and bleeding, unspecific</td><td>Cerebral infarction and bleeding, unspecific</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">post_polypectomy_syndrome<a name=\"Complications-post_polypectomy_syndrome\"> </a></td><td>Post polypectomy syndrome</td><td>Post polypectomy syndrome / Postpolypektomisyndrom</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">urinary_retention<a name=\"Complications-urinary_retention\"> </a></td><td>Urinary retention</td><td>Urinary retention / Urinretention</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">medical<a name=\"Complications-medical\"> </a></td><td>Medical complication</td><td>Medical complication / Medicinsk komplikation</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">movement_restriction<a name=\"Complications-movement_restriction\"> </a></td><td>Movement restriction</td><td>Movement restriction / Bevægelsesindskrænkning</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">chronic_pain<a name=\"Complications-chronic_pain\"> </a></td><td>Chronic pain</td><td>Chronic pain / Kronisk smerte</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">reoperation<a name=\"Complications-reoperation\"> </a></td><td>Reoperation</td><td>Reoperation</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">rupture<a name=\"Complications-rupture\"> </a></td><td>Rupture</td><td>Rupture / Ruptur</td><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  rupture_patella_ligament<a name=\"Complications-rupture_patella_ligament\"> </a></td><td>Rupture of patella ligament</td><td>Rupture of patella ligament / Ruptur af patellasene</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">thrombosis<a name=\"Complications-thrombosis\"> </a></td><td>Thrombosis</td><td>Thrombosis / Trombose</td><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  dvt<a name=\"Complications-dvt\"> </a></td><td>Dyb vene trombose</td><td>Dyb vene trombose</td><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  abdominal<a name=\"Complications-abdominal\"> </a></td><td>Abdominal /hepatisk/milt trombose</td><td>Abdominal /hepatisk/milt trombose</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">marrow_relapse<a name=\"Complications-marrow_relapse\"> </a></td><td>Marrow relapse</td><td>Marrow relapse / Marv relaps</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">rising_m_component<a name=\"Complications-rising_m_component\"> </a></td><td>Rising M-component</td><td>Rising M-component / Stigende M-komponent</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">hypercalcemia<a name=\"Complications-hypercalcemia\"> </a></td><td>Hypercalcemia</td><td>Hypercalcemia / Hypercalcæmi</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">osteolytic_foci<a name=\"Complications-osteolytic_foci\"> </a></td><td>Progressive osteolytic foci</td><td>Progressive osteolytic foci / Progression af osteolytiske foci</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">medullary_cross_sectional_syndrome<a name=\"Complications-medullary_cross_sectional_syndrome\"> </a></td><td>Medullary cross-sectional syndrome</td><td>Medullary cross-sectional syndrome / Medullært tværsnitssyndrom</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">extremedullery_myeloma<a name=\"Complications-extremedullery_myeloma\"> </a></td><td>Extremedullary Myeloma</td><td>Extremedullary Myeloma / Ekstramedullære Myelomer</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">plasma_cell_leukemia<a name=\"Complications-plasma_cell_leukemia\"> </a></td><td>Plasma cell leukemia</td><td>Plasma cell leukemia / Plasmacelle leukæmi</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">uremia<a name=\"Complications-uremia\"> </a></td><td>Uremia</td><td>Uremia / Uræmi / SNOMED-CT: 44730006</td><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  uremia_clinically<a name=\"Complications-uremia_clinically\"> </a></td><td>Uremia (clinically significant)</td><td>Uremia (clinically significant) / Uræmi (klinisk betydende)</td><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  uremia_dialysis<a name=\"Complications-uremia_dialysis\"> </a></td><td>Uremia (chronic dialysis requiring)</td><td>Uremia (chronic dialysis requiring) / Uræmi (kronisk dialysekrævende)</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">amyloidosis<a name=\"Complications-amyloidosis\"> </a></td><td>Amyloidosis</td><td>Amyloidosis / Amyloidose / SNOMED-CT: 17602002</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">neuropathy<a name=\"Complications-neuropathy\"> </a></td><td>Neuropathy</td><td>Neuropathy / Neuropati / SNOMED-CT: 386033004</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">hyperviscosity<a name=\"Complications-hyperviscosity\"> </a></td><td>Hyperviscosity</td><td>Hyperviscosity / Hyperviskositet / SNOMED-CT: 64088006</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">tci<a name=\"Complications-tci\"> </a></td><td>TCI</td><td>TCI</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">bleeding<a name=\"Complications-bleeding\"> </a></td><td>Bleeding</td><td>Bleeding / Blødning</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">apoplexia_cerebri<a name=\"Complications-apoplexia_cerebri\"> </a></td><td>Apopleksi cerebri</td><td>Apopleksi cerebri</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">hematoma<a name=\"Complications-hematoma\"> </a></td><td>Surgery required hematoma</td><td>Surgery required hematoma / operationskrævende hæmatom</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">lymph_leakage<a name=\"Complications-lymph_leakage\"> </a></td><td>Lymph leakage over 2 days</td><td>Lymph leakage over 2 days / lymfesiven over 2 døgn (forlænger indlæggelsen)</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">necrosis<a name=\"Complications-necrosis\"> </a></td><td>Surgery required necrosis</td><td>Surgery required necrosis / operationskrævende randnekrose</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">lymphocele<a name=\"Complications-lymphocele\"> </a></td><td>Surgery required lymphocele</td><td>Surgery required lymphocele / operationskrævende lymfocele</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">superficial_subcutaneous_infection<a name=\"Complications-superficial_subcutaneous_infection\"> </a></td><td>Superficial/subcutaneous infection</td><td>overfladisk / subcutan infektion (ved antibiotika eller operation)</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">deep_prosthesis_infection<a name=\"Complications-deep_prosthesis_infection\"> </a></td><td>Deep/prosthesis infection</td><td>Deep/prosthesis infection / dyb / protese infektion (ved antibiotika eller operation)</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">segment_elevation_myocardial_infarction<a name=\"Complications-segment_elevation_myocardial_infarction\"> </a></td><td>Type of heart attack</td><td>Type of heart attack that mainly affects your hearts lower chambers</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">bundle_branch_block_myocardial_infarction<a name=\"Complications-bundle_branch_block_myocardial_infarction\"> </a></td><td>Type of heart attack</td><td>--</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">non_segment_elevation_myocardial_infarction<a name=\"Complications-non_segment_elevation_myocardial_infarction\"> </a></td><td>Type of heart attack</td><td>--</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">unstable_agina<a name=\"Complications-unstable_agina\"> </a></td><td>Heart failure?</td><td>--</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">rulled_out_heart_attack<a name=\"Complications-rulled_out_heart_attack\"> </a></td><td>No heart attack/failur</td><td>--</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">anterior_segment_elevation_myocardial_infarction<a name=\"Complications-anterior_segment_elevation_myocardial_infarction\"> </a></td><td>Postion</td><td>--</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">non_anterior_segment_elevation_myocardial_infarction<a name=\"Complications-non_anterior_segment_elevation_myocardial_infarction\"> </a></td><td>Position</td><td>--</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">heart_failur_class_2<a name=\"Complications-heart_failur_class_2\"> </a></td><td>Class 2 heartfailure</td><td>--</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">heart_failur_class_3<a name=\"Complications-heart_failur_class_3\"> </a></td><td>Class 3 heartfailure</td><td>--</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">heart_failur_class_4<a name=\"Complications-heart_failur_class_4\"> </a></td><td>Class 4 heartfailure</td><td>--</td><td/><td/><td/><td/></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/Complications"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.2"] ;
+  fhir:CodeSystem.name [ fhir:value "Complications"] ;
+  fhir:CodeSystem.title [ fhir:value "Complications"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2022-06-07T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Complications - several procedures"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "77"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ami" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "AMI" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "AMI - Myocardieinfarkt" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "chylothorax" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Chylothorax" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Chylothorax" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "fascierupture" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fascieruptur" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Fascieruptur" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ileus" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ileus" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Ileus" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "intrathoracicbleeding" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Intrathorakal blødning" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Intrathorakal blødning" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "intraabdominalabscess" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Intraabdominal absces" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Intraabdominal absces" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "intraabdominalbleeding" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Intraabdominal blødning" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Intraabdominal blødning" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "pulmonaryembolism" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lungeemboli" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Lungeemboli" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "perforation" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Perforation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Perforation" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "bloodvessel/aneurysm" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Kar/anurisme" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Perforation af kar eller aneurisme" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "pleuraexudate" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pleuraeksudat" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Pleuraeksudat" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "pneumonia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pneumoni" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Pneumoni" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "infection" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sårinfektion" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Sårinfektion" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "anafylSchock" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anafylaktisk reaktion/shock" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Anafylaktisk reaktion/shock" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "anInterrupt" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anæstesi afbrudt" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Anæstesi afbrudt" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "appFailure" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Apparaturfejl" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Apparaturfejl" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "comment" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Removed" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "effectiveDate" ] ;
+       fhir:CodeSystem.concept.property.valueDateTime [ fhir:value "2026-03-04T00:00:00+01:00"^^xsd:dateTime ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "status" ] ;
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "retired" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "inactive" ] ;
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "aspiration" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Aspiration" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Aspiration" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "duraptAcc" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Durapunktur accidentel" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Durapunktur accidentel" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "heartFail" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hjertestop" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Hjertestop" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "huskeAN" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Huskeanæstesi" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Huskeanæstesi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "malignHyp" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Malign Hypertermi mistanke" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Malign Hypertermi mistanke" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "medFail" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Medicineringsfejl" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Medicineringsfejl" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "comment" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Removed" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "effectiveDate" ] ;
+       fhir:CodeSystem.concept.property.valueDateTime [ fhir:value "2026-03-04T00:00:00+01:00"^^xsd:dateTime ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "status" ] ;
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "retired" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "inactive" ] ;
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "neuMuscBlock" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Neuromuskulær blokade, forlænget virkning" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Neuromuskulær blokade, forlænget virkning" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dentInj" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tandskade" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Tandskade" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "mors" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mors, uventet" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Mors, uventet" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dissection" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dissektion" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Dissektion" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "thromboembolic" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tromboemboliske komplikationer" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Tromboemboliske komplikationer som medfører infarkt inden for 24 timer" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "groinbleeding" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Blødning fra lysken" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Alvorlig blødning fra lysken" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "mechanical" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mekaniske" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Mekaniske komplikationer" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bloodvesselocclusion" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Aflukning af kar" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Aflukning af kar medførende infarkt indenfor 24 timer" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "peroperativebleeding" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Peroperativ blødning" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Livstruende peroperativ blødning, der ikke kan kontrolleres inden for få sekunder" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "other" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Other" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "vascular-unspecific" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vascular, unspecific" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Vascular, unspecific" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "infarction-unspecific" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cerebral infarction and bleeding, unspecific" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Cerebral infarction and bleeding, unspecific" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "post_polypectomy_syndrome" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Post polypectomy syndrome" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Post polypectomy syndrome / Postpolypektomisyndrom" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "urinary_retention" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Urinary retention" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Urinary retention / Urinretention" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "medical" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Medical complication" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Medical complication / Medicinsk komplikation" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "movement_restriction" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Movement restriction" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Movement restriction / Bevægelsesindskrænkning" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "chronic_pain" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Chronic pain" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Chronic pain / Kronisk smerte" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "reoperation" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Reoperation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Reoperation" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "rupture" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rupture" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Rupture / Ruptur" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "rupture_patella_ligament" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Rupture of patella ligament" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Rupture of patella ligament / Ruptur af patellasene" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "thrombosis" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Thrombosis" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Thrombosis / Trombose" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "dvt" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Dyb vene trombose" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Dyb vene trombose" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "abdominal" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Abdominal /hepatisk/milt trombose" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Abdominal /hepatisk/milt trombose" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "marrow_relapse" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Marrow relapse" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Marrow relapse / Marv relaps" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "rising_m_component" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rising M-component" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Rising M-component / Stigende M-komponent" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "hypercalcemia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hypercalcemia" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Hypercalcemia / Hypercalcæmi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "osteolytic_foci" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Progressive osteolytic foci" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Progressive osteolytic foci / Progression af osteolytiske foci" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "medullary_cross_sectional_syndrome" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Medullary cross-sectional syndrome" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Medullary cross-sectional syndrome / Medullært tværsnitssyndrom" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "extremedullery_myeloma" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Extremedullary Myeloma" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Extremedullary Myeloma / Ekstramedullære Myelomer" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "plasma_cell_leukemia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Plasma cell leukemia" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Plasma cell leukemia / Plasmacelle leukæmi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "uremia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Uremia" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Uremia / Uræmi / SNOMED-CT: 44730006" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "uremia_clinically" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Uremia (clinically significant)" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Uremia (clinically significant) / Uræmi (klinisk betydende)" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "uremia_dialysis" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Uremia (chronic dialysis requiring)" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Uremia (chronic dialysis requiring) / Uræmi (kronisk dialysekrævende)" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "amyloidosis" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Amyloidosis" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Amyloidosis / Amyloidose / SNOMED-CT: 17602002" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "neuropathy" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Neuropathy" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Neuropathy / Neuropati / SNOMED-CT: 386033004" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "hyperviscosity" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hyperviscosity" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Hyperviscosity / Hyperviskositet / SNOMED-CT: 64088006" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tci" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TCI" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "TCI" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bleeding" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bleeding" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Bleeding / Blødning" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "apoplexia_cerebri" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Apopleksi cerebri" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Apopleksi cerebri" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "hematoma" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Surgery required hematoma" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Surgery required hematoma / operationskrævende hæmatom" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "lymph_leakage" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lymph leakage over 2 days" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Lymph leakage over 2 days / lymfesiven over 2 døgn (forlænger indlæggelsen)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "necrosis" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Surgery required necrosis" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Surgery required necrosis / operationskrævende randnekrose" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "lymphocele" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Surgery required lymphocele" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Surgery required lymphocele / operationskrævende lymfocele" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "superficial_subcutaneous_infection" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Superficial/subcutaneous infection" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "overfladisk / subcutan infektion (ved antibiotika eller operation)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "deep_prosthesis_infection" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Deep/prosthesis infection" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Deep/prosthesis infection / dyb / protese infektion (ved antibiotika eller operation)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "segment_elevation_myocardial_infarction" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Type of heart attack" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Type of heart attack that mainly affects your hearts lower chambers" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bundle_branch_block_myocardial_infarction" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Type of heart attack" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "--" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "non_segment_elevation_myocardial_infarction" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Type of heart attack" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "--" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "unstable_agina" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Heart failure?" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "--" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "rulled_out_heart_attack" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "No heart attack/failur" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "--" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "anterior_segment_elevation_myocardial_infarction" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Postion" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "--" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "non_anterior_segment_elevation_myocardial_infarction" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Position" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "--" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "heart_failur_class_2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Class 2 heartfailure" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "--" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "heart_failur_class_3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Class 3 heartfailure" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "--" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "heart_failur_class_4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Class 4 heartfailure" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "--" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/Complications.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

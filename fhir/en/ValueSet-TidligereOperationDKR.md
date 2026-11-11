@@ -1,4 +1,4 @@
-# Tidligere operation (DKR) - KIP Infrastructure v2.27.1
+# Tidligere operation (DKR) - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/TidligereOperationDKR | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/TidligereOperationDKR | *Version*:2.27.2 |
 | Active as of 2022-10-12 | *Computable Name*:TidligereOperationDKR |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "TidligereOperationDKR",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/TidligereOperationDKR",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "TidligereOperationDKR",
   "title" : "Tidligere operation (DKR)",
   "status" : "active",

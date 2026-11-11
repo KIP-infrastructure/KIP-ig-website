@@ -1,4 +1,4 @@
-# Plasma Analyse - kræft diagnose - KIP Infrastructure v2.27.1
+# Plasma Analyse - kræft diagnose - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/PlasmaDiagnose | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/PlasmaDiagnose | *Version*:2.27.2 |
 | Active as of 2022-07-14 | *Computable Name*:PlasmaDiagnose |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "PlasmaDiagnose",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/PlasmaDiagnose",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "PlasmaDiagnose",
   "title" : "Plasma Analyse - kræft diagnose",
   "status" : "active",

@@ -1,4 +1,4 @@
-# SKS: cTNM klassifikation, cM - KIP Infrastructure v2.27.1
+# SKS: cTNM klassifikation, cM - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SKScTNMcM | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SKScTNMcM | *Version*:2.27.2 |
 | Active as of 2022-06-08 | *Computable Name*:SKScTNMcM |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "SKScTNMcM",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/SKScTNMcM",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "SKScTNMcM",
   "title" : "SKS: cTNM klassifikation, cM",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Type af præoperativ endoskopisk lokalresektion DCCG - KIP Infrastructure v2.27.1
+# Type af præoperativ endoskopisk lokalresektion DCCG - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/TypeLokalresektionDCCG | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/TypeLokalresektionDCCG | *Version*:2.27.2 |
 | Retired as of 2022-09-07 | *Computable Name*:TypeLokalresektionDCCG |
 
  
@@ -39,7 +39,7 @@ Expansions are not generated for retired value sets
   "resourceType" : "ValueSet",
   "id" : "TypeLokalresektionDCCG",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/TypeLokalresektionDCCG",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "TypeLokalresektionDCCG",
   "title" : "Type af præoperativ endoskopisk lokalresektion DCCG",
   "status" : "retired",

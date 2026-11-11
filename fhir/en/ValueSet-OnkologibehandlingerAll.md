@@ -1,4 +1,4 @@
-# Onkologibehandlinger - alle - KIP Infrastructure v2.27.1
+# Onkologibehandlinger - alle - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/OnkologibehandlingerAll | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/OnkologibehandlingerAll | *Version*:2.27.2 |
 | Active as of 2022-04-28 | *Computable Name*:OnkologibehandlingerAll |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "OnkologibehandlingerAll",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/OnkologibehandlingerAll",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "OnkologibehandlingerAll",
   "title" : "Onkologibehandlinger - alle",
   "status" : "active",

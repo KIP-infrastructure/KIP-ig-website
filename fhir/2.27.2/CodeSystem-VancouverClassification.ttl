@@ -1,0 +1,130 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/VancouverClassification> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "VancouverClassification"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem VancouverClassification</b></p><a name=\"VancouverClassification\"> </a><a name=\"hcVancouverClassification\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/VancouverClassification</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">type_a<a name=\"VancouverClassification-type_a\"> </a></td><td>Type A: fractures involve the trochanteric area</td><td>Type A: fractures involve the trochanteric area</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  type_ag<a name=\"VancouverClassification-type_ag\"> </a></td><td>Type A(G): greater trochanter</td><td>Type A(G): greater trochanter</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  type_al<a name=\"VancouverClassification-type_al\"> </a></td><td>Type A(L): lesser trochanter</td><td>Type A(L): lesser trochanter</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">type_b<a name=\"VancouverClassification-type_b\"> </a></td><td>Type B: around the stem or just below it</td><td>Type B: around the stem or just below it</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  type_b1<a name=\"VancouverClassification-type_b1\"> </a></td><td>Type B1: stem stable</td><td>Type B1: stem stable</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  type_b2<a name=\"VancouverClassification-type_b2\"> </a></td><td>Type B2: stem loose</td><td>Type B2: stem loose</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  type_b3<a name=\"VancouverClassification-type_b3\"> </a></td><td>Type B3: stem loose, bone stock inadequate</td><td>Type B3: stem loose, bone stock inadequate</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">type_c<a name=\"VancouverClassification-type_c\"> </a></td><td>Type C: well below the stem</td><td>Type C: well below the stem</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  type_c1<a name=\"VancouverClassification-type_c1\"> </a></td><td>Type C1</td><td>Type C1</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  type_c2<a name=\"VancouverClassification-type_c2\"> </a></td><td>Type C2</td><td>Type C2</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  type_c3<a name=\"VancouverClassification-type_c3\"> </a></td><td>Type C3</td><td>Type C3</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/VancouverClassification"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.2"] ;
+  fhir:CodeSystem.name [ fhir:value "VancouverClassification"] ;
+  fhir:CodeSystem.title [ fhir:value "Vancouver classification of periprosthetic hip fractures"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2022-11-07T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Vancouver classification of periprosthetic hip fractures; Link: https://radiopaedia.org/articles/vancouver-classification-of-periprosthetic-hip-fractures"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "11"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index 0 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "type_a" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Type A: fractures involve the trochanteric area" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Type A: fractures involve the trochanteric area" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.code [ fhir:value "type_ag" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Type A(G): greater trochanter" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Type A(G): greater trochanter" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "type_al" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Type A(L): lesser trochanter" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Type A(L): lesser trochanter" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "type_b" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Type B: around the stem or just below it" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Type B: around the stem or just below it" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.code [ fhir:value "type_b1" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Type B1: stem stable" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Type B1: stem stable" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "type_b2" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Type B2: stem loose" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Type B2: stem loose" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.code [ fhir:value "type_b3" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Type B3: stem loose, bone stock inadequate" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Type B3: stem loose, bone stock inadequate" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "type_c" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Type C: well below the stem" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Type C: well below the stem" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.code [ fhir:value "type_c1" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Type C1" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Type C1" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "type_c2" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Type C2" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Type C2" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.code [ fhir:value "type_c3" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Type C3" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Type C3" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/VancouverClassification.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

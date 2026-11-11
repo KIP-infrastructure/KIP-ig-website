@@ -1,0 +1,134 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/CementHofteDHR> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "CementHofteDHR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet CementHofteDHR</b></p><a name=\"CementHofteDHR\"> </a><a name=\"hcCementHofteDHR\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-CementType.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/CementType</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.2</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-CementType.html#CementType-biomet_cement_lv\">biomet_cement_lv</a></td><td>Biomet: Bone Cement LV</td><td>Biomet: Bone Cement LV</td></tr><tr><td><a href=\"CodeSystem-CementType.html#CementType-biomet_cement_r\">biomet_cement_r</a></td><td>Biomet: Bone Cement R</td><td>Biomet: Bone Cement R</td></tr><tr><td><a href=\"CodeSystem-CementType.html#CementType-biomet_cement_v\">biomet_cement_v</a></td><td>Biomet: Bone Cement V</td><td>Biomet: Bone Cement V</td></tr><tr><td><a href=\"CodeSystem-CementType.html#CementType-biomet_cement_plus\">biomet_cement_plus</a></td><td>Biomet: Plus Bone Cement</td><td>Biomet: Plus Bone Cement</td></tr><tr><td><a href=\"CodeSystem-CementType.html#CementType-cmw1\">cmw1</a></td><td>CMW I</td><td>CMW I</td></tr><tr><td><a href=\"CodeSystem-CementType.html#CementType-cmw2\">cmw2</a></td><td>CMW II</td><td>CMW II</td></tr><tr><td><a href=\"CodeSystem-CementType.html#CementType-cmw3\">cmw3</a></td><td>CMW III</td><td>CMW III</td></tr><tr><td><a href=\"CodeSystem-CementType.html#CementType-copal_gc\">copal_gc</a></td><td>Copal G+C</td><td>Copal G+C</td></tr><tr><td><a href=\"CodeSystem-CementType.html#CementType-lvc_standard\">lvc_standard</a></td><td>LVC-standard</td><td>LVC-standard</td></tr><tr><td><a href=\"CodeSystem-CementType.html#CementType-palacos\">palacos</a></td><td>Palacos</td><td>Palacos</td></tr><tr><td><a href=\"CodeSystem-CementType.html#CementType-palacos_low\">palacos_low</a></td><td>Palacos low</td><td>Palacos low</td></tr><tr><td><a href=\"CodeSystem-CementType.html#CementType-refobacin_cement_lv\">refobacin_cement_lv</a></td><td>Refobacin: Bone Cement LV</td><td>Refobacin: Bone Cement LV</td></tr><tr><td><a href=\"CodeSystem-CementType.html#CementType-refobacin_cement_r\">refobacin_cement_r</a></td><td>Refobacin: Bone Cement R</td><td>Refobacin: Bone Cement R</td></tr><tr><td><a href=\"CodeSystem-CementType.html#CementType-refobacin_cement_plus\">refobacin_cement_plus</a></td><td>Refobacin: Plus Bone Cement</td><td>Refobacin: Plus Bone Cement</td></tr><tr><td><a href=\"CodeSystem-CementType.html#CementType-refobacin_revision\">refobacin_revision</a></td><td>Refobacin: Revision</td><td>Refobacin: Revision</td></tr><tr><td><a href=\"CodeSystem-CementType.html#CementType-simplex_p\">simplex_p</a></td><td>Simplex P</td><td>Simplex P</td></tr><tr><td><a href=\"CodeSystem-CementType.html#CementType-smartmix\">smartmix</a></td><td>SmartMix</td><td>SmartMix</td></tr><tr><td><a href=\"CodeSystem-CementType.html#CementType-smartset\">smartset</a></td><td>SmartSet</td><td>SmartSet</td></tr><tr><td><a href=\"CodeSystem-CementType.html#CementType-sulfix\">sulfix</a></td><td>Sulfix</td><td>Sulfix</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.2</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Anden cement med eller uden antibiotika</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/CementHofteDHR"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.2"] ;
+  fhir:ValueSet.name [ fhir:value "CementHofteDHR"] ;
+  fhir:ValueSet.title [ fhir:value "Cement - hofte (DHR)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-11-16T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Cement - hofte (DHR)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/CementType" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "biomet_cement_lv" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Biomet: Bone Cement LV" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "biomet_cement_r" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Biomet: Bone Cement R" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "biomet_cement_v" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Biomet: Bone Cement V" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "biomet_cement_plus" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Biomet: Plus Bone Cement" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "cmw1" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CMW I" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "cmw2" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CMW II" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "cmw3" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CMW III" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "copal_gc" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Copal G+C" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "lvc_standard" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "LVC-standard" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "palacos" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Palacos" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "palacos_low" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Palacos low" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "refobacin_cement_lv" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Refobacin: Bone Cement LV" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "refobacin_cement_r" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Refobacin: Bone Cement R" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "refobacin_cement_plus" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Refobacin: Plus Bone Cement" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "refobacin_revision" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Refobacin: Revision" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "simplex_p" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Simplex P" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "smartmix" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "SmartMix" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "smartset" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "SmartSet" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "sulfix" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sulfix" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anden cement med eller uden antibiotika" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/CementHofteDHR.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

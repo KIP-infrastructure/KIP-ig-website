@@ -1,4 +1,4 @@
-# Ved fund af ICH, skal der evkaueres eller ej - KIP Infrastructure v2.27.1
+# Ved fund af ICH, skal der evkaueres eller ej - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ICHEvakuering | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ICHEvakuering | *Version*:2.27.2 |
 | Active as of 2022-06-23 | *Computable Name*:ICHEvakuering |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "ICHEvakuering",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/ICHEvakuering",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "ICHEvakuering",
   "title" : "Ved fund af ICH, skal der evkaueres eller ej",
   "status" : "active",

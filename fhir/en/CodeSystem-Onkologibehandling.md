@@ -1,4 +1,4 @@
-# Onkologibehandlinger - KIP Infrastructure v2.27.1
+# Onkologibehandlinger - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/Onkologibehandling | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/Onkologibehandling | *Version*:2.27.2 |
 | Active as of 2022-04-28 | *Computable Name*:Onkologibehandling |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "Onkologibehandling",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/Onkologibehandling",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "Onkologibehandling",
   "title" : "Onkologibehandlinger",
   "status" : "active",

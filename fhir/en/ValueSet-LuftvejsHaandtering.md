@@ -1,4 +1,4 @@
-# Luftvejshåndtering - KIP Infrastructure v2.27.1
+# Luftvejshåndtering - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/LuftvejsHaandtering | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/LuftvejsHaandtering | *Version*:2.27.2 |
 | Active as of 2022-06-01 | *Computable Name*:LuftvejsHaandtering |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "LuftvejsHaandtering",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/LuftvejsHaandtering",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "LuftvejsHaandtering",
   "title" : "Luftvejshåndtering",
   "status" : "active",

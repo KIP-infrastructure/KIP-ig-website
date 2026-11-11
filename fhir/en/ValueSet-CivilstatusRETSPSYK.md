@@ -1,4 +1,4 @@
-# Civilstatus (RETSPSYK) - KIP Infrastructure v2.27.1
+# Civilstatus (RETSPSYK) - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/CivilstatusRETSPSYK | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/CivilstatusRETSPSYK | *Version*:2.27.2 |
 | Active as of 2022-09-30 | *Computable Name*:CivilstatusRETSPSYK |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "CivilstatusRETSPSYK",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/CivilstatusRETSPSYK",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "CivilstatusRETSPSYK",
   "title" : "Civilstatus (RETSPSYK)",
   "status" : "active",

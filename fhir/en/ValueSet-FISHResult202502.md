@@ -1,4 +1,4 @@
-# Resultat af FISH 202502 - KIP Infrastructure v2.27.1
+# Resultat af FISH 202502 - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/FISHResult202502 | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/FISHResult202502 | *Version*:2.27.2 |
 | Active as of 2025-02-21 | *Computable Name*:FISHResult202502 |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "FISHResult202502",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/FISHResult202502",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "FISHResult202502",
   "title" : "Resultat af FISH 202502",
   "status" : "active",

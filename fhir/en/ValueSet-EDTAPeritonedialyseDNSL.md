@@ -1,4 +1,4 @@
-# EDTA koder Peritonedialyse (DNSL) - KIP Infrastructure v2.27.1
+# EDTA koder Peritonedialyse (DNSL) - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/EDTAPeritonedialyseDNSL | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/EDTAPeritonedialyseDNSL | *Version*:2.27.2 |
 | Active as of 2024-01-31 | *Computable Name*:EDTAPeritonedialyseDNSL |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "EDTAPeritonedialyseDNSL",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/EDTAPeritonedialyseDNSL",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "EDTAPeritonedialyseDNSL",
   "title" : "EDTA koder Peritonedialyse (DNSL)",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Postoperative komplikationer (DCCG) - KIP Infrastructure v2.27.1
+# Postoperative komplikationer (DCCG) - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/PostoperativeKomplikationerDCCG | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/PostoperativeKomplikationerDCCG | *Version*:2.27.2 |
 | Active as of 2022-11-10 | *Computable Name*:PostoperativeKomplikationerDCCG |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "PostoperativeKomplikationerDCCG",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/PostoperativeKomplikationerDCCG",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "PostoperativeKomplikationerDCCG",
   "title" : "Postoperative komplikationer (DCCG)",
   "status" : "active",

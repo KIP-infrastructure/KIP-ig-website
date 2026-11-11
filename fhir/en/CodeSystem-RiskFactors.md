@@ -1,4 +1,4 @@
-# Risk factors - KIP Infrastructure v2.27.1
+# Risk factors - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/RiskFactors | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/RiskFactors | *Version*:2.27.2 |
 | Active as of 2022-07-11 | *Computable Name*:RiskFactors |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "RiskFactors",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/RiskFactors",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "RiskFactors",
   "title" : "Risk factors",
   "status" : "active",

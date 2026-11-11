@@ -1,4 +1,4 @@
-# NIHSS - 9. Sprog - KIP Infrastructure v2.27.1
+# NIHSS - 9. Sprog - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/NIHSS9Sprog | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/NIHSS9Sprog | *Version*:2.27.2 |
 | Active as of 2022-06-27 | *Computable Name*:NIHSS9Sprog |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "NIHSS9Sprog",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/NIHSS9Sprog",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "NIHSS9Sprog",
   "title" : "NIHSS - 9. Sprog",
   "status" : "active",

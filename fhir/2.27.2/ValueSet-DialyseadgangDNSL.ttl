@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/DialyseadgangDNSL> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "DialyseadgangDNSL"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet DialyseadgangDNSL</b></p><a name=\"DialyseadgangDNSL\"> </a><a name=\"hcDialyseadgangDNSL\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Dialyseadgang.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Dialyseadgang</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.2</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-Dialyseadgang.html#Dialyseadgang-av_fistel\">av_fistel</a></td><td>AV fistel</td></tr><tr><td><a href=\"CodeSystem-Dialyseadgang.html#Dialyseadgang-hd_permanent\">hd_permanent</a></td><td>Permanent HD kateter som patientens blivende adgang</td></tr><tr><td><a href=\"CodeSystem-Dialyseadgang.html#Dialyseadgang-hd_temp\">hd_temp</a></td><td>Midlertidig HD kateter</td></tr><tr><td><a href=\"CodeSystem-Dialyseadgang.html#Dialyseadgang-hd_permanent_av\">hd_permanent_av</a></td><td>Permanent HD kateter, hvor der planlægges senere AV fistel</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/DialyseadgangDNSL"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.2"] ;
+  fhir:ValueSet.name [ fhir:value "DialyseadgangDNSL"] ;
+  fhir:ValueSet.title [ fhir:value "Dialyseadgang ved første dialyse (DNSL)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2024-01-10T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Dialyseadgang ved første dialyse"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/Dialyseadgang" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "av_fistel" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "AV fistel" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "hd_permanent" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Permanent HD kateter som patientens blivende adgang" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "hd_temp" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Midlertidig HD kateter" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "hd_permanent_av" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Permanent HD kateter, hvor der planlægges senere AV fistel" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/DialyseadgangDNSL.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

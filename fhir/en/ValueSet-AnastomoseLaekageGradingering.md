@@ -1,4 +1,4 @@
-# AnastomoseLaekage gradingering - KIP Infrastructure v2.27.1
+# AnastomoseLaekage gradingering - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/AnastomoseLaekageGradingering | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/AnastomoseLaekageGradingering | *Version*:2.27.2 |
 | Retired as of 2022-10-19 | *Computable Name*:AnastomoseLaekageGradingering |
 
  
@@ -39,7 +39,7 @@ Expansions are not generated for retired value sets
   "resourceType" : "ValueSet",
   "id" : "AnastomoseLaekageGradingering",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/AnastomoseLaekageGradingering",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "AnastomoseLaekageGradingering",
   "title" : "AnastomoseLaekage gradingering",
   "status" : "retired",

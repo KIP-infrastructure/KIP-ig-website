@@ -1,4 +1,4 @@
-# Polyppens endoskopiske udseende - KIP Infrastructure v2.27.1
+# Polyppens endoskopiske udseende - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/EndoskopiskUdseende | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/EndoskopiskUdseende | *Version*:2.27.2 |
 | Active as of 2022-09-07 | *Computable Name*:EndoskopiskUdseende |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "EndoskopiskUdseende",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/EndoskopiskUdseende",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "EndoskopiskUdseende",
   "title" : "Polyppens endoskopiske udseende",
   "status" : "active",

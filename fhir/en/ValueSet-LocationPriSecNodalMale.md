@@ -1,4 +1,4 @@
-# Sygdomslokalisation er prim. nodalt, sek. ekstranodalt eller omv, mænd (LYFO) - KIP Infrastructure v2.27.1
+# Sygdomslokalisation er prim. nodalt, sek. ekstranodalt eller omv, mænd (LYFO) - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/LocationPriSecNodalMale | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/LocationPriSecNodalMale | *Version*:2.27.2 |
 | Active as of 2023-03-15 | *Computable Name*:LocationPriSecNodalMale |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "LocationPriSecNodalMale",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/LocationPriSecNodalMale",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "LocationPriSecNodalMale",
   "title" : "Sygdomslokalisation er prim. nodalt, sek. ekstranodalt eller omv, mænd (LYFO)",
   "status" : "active",

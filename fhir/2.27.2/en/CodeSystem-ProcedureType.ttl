@@ -1,0 +1,535 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ProcedureType"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ProcedureType</b></p><a name=\"ProcedureType\"> </a><a name=\"hcProcedureType\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">lichtenstein<a name=\"ProcedureType-lichtenstein\"> </a></td><td>Lichtenstein</td><td>Lichtenstein</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">maclichtenstein<a name=\"ProcedureType-maclichtenstein\"> </a></td><td>Modified Lichtenstein/MacLichtenstein</td><td>Modificeret Lichtenstein/MacLichtenstein</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">onstep<a name=\"ProcedureType-onstep\"> </a></td><td>Onstep</td><td>Onstep</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">open_mesh<a name=\"ProcedureType-open_mesh\"> </a></td><td>Open mesh</td><td>Open mesh / Åbent mesh</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  plug<a name=\"ProcedureType-plug\"> </a></td><td>Plug</td><td>Plug</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  plug_plate<a name=\"ProcedureType-plug_plate\"> </a></td><td>Plug and plate</td><td>Plug and plate / Plug og plade</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">open<a name=\"ProcedureType-open\"> </a></td><td>Open</td><td>Open / Åbent</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  anuloraphi<a name=\"ProcedureType-anuloraphi\"> </a></td><td>Anuloraphi</td><td>Anuloraphi</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  mcvay<a name=\"ProcedureType-mcvay\"> </a></td><td>McVay</td><td>McVay</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  bassini<a name=\"ProcedureType-bassini\"> </a></td><td>Bassini</td><td>Bassini</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  shouldice<a name=\"ProcedureType-shouldice\"> </a></td><td>Shouldice</td><td>Shouldice</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">laparoscopic<a name=\"ProcedureType-laparoscopic\"> </a></td><td>Laparoscopic</td><td>Laparoscopic / Laparoskopisk</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  transperitoneal<a name=\"ProcedureType-transperitoneal\"> </a></td><td>Transperitoneal</td><td>Transperitoneal</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  extraperitoneal<a name=\"ProcedureType-extraperitoneal\"> </a></td><td>Extraperitoneal</td><td>Extraperitoneal</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  multiple_ports<a name=\"ProcedureType-multiple_ports\"> </a></td><td>Multiple ports</td><td>Multiple ports / Flerport</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">laparotomy<a name=\"ProcedureType-laparotomy\"> </a></td><td>Laparotomy</td><td>Laparotomy / Laparotomi / SNOMED-CT: 86481000</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">converted_open<a name=\"ProcedureType-converted_open\"> </a></td><td>Converted to open from laparoscopic</td><td>Converted to open from laparoscopic / Konverteret til åben fra laparoskopisk</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">converted_open_to_lap<a name=\"ProcedureType-converted_open_to_lap\"> </a></td><td>Converted from open to laparoscopic</td><td>Open converted to laparoscopic / Åben konverteret til laparoskopisk</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">combined_open<a name=\"ProcedureType-combined_open\"> </a></td><td>Combined open</td><td>Combined open / Kombineret åben</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">robot_assisted<a name=\"ProcedureType-robot_assisted\"> </a></td><td>Robot assisted</td><td>Robot assisted / Robotassisteret</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  robot_laparoscopic<a name=\"ProcedureType-robot_laparoscopic\"> </a></td><td>Robot assisted laparoscopic</td><td>Robot assisted laparoscopic / Robot-assisteret laparoskopisk</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  robot_converted_laparoscopic<a name=\"ProcedureType-robot_converted_laparoscopic\"> </a></td><td>Robot assisted laparoscopic converted to laparoscopic</td><td>Robot assisted laparoscopic converted to laparoscopic / Robot-assisteret laparoskopisk konverteret til laparoskopisk</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  robot_converted_open<a name=\"ProcedureType-robot_converted_open\"> </a></td><td>Robot assisted laparoscopic converted to open</td><td>Robot assisted laparoscopic converted to open / Robot-assisteret laparoskopisk konverteret til åben</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">milos<a name=\"ProcedureType-milos\"> </a></td><td>MILOS</td><td>MILOS</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">emilos<a name=\"ProcedureType-emilos\"> </a></td><td>eMILOS</td><td>eMILOS</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">etep<a name=\"ProcedureType-etep\"> </a></td><td>eTEP</td><td>eTEP - Robot-assisteret metode</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">tarup<a name=\"ProcedureType-tarup\"> </a></td><td>TARUP</td><td>TARUP - Robot-assisteret metode</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">tapp<a name=\"ProcedureType-tapp\"> </a></td><td>TAPP</td><td>TAPP - Robot-assisteret metode</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">endoscopic<a name=\"ProcedureType-endoscopic\"> </a></td><td>Endoscopic</td><td>Endoscopic / Endoskopisk</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  local_resection<a name=\"ProcedureType-local_resection\"> </a></td><td>Local ressection</td><td>Local ressection / Lokalresektion</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  local_resection_tes<a name=\"ProcedureType-local_resection_tes\"> </a></td><td>Local ressection (incl. TES)</td><td>Local ressection followed by TES / Lokalresektion efterfulgt af TES</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  local_resection_ex_tes<a name=\"ProcedureType-local_resection_ex_tes\"> </a></td><td>Local ressection (excl. TES)</td><td>Local ressection (excl. TES) / Endoskopisk lokalresektion (ekskl. TES)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  transanal_resection<a name=\"ProcedureType-transanal_resection\"> </a></td><td>Transanal endoskopisk lokalresektion (TES)</td><td>Transanal endoskopisk lokalresektion (TES)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  full_wall_resection<a name=\"ProcedureType-full_wall_resection\"> </a></td><td>Endoskopisk fuldvægsresektion</td><td>Endoskopisk fuldvægsresektion</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  other_endoscopic<a name=\"ProcedureType-other_endoscopic\"> </a></td><td>Anden endoskopisk procedure</td><td>Anden endoskopisk procedure</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">cels<a name=\"ProcedureType-cels\"> </a></td><td>Kombineret endoskopisk og laparoskopisk procedure (CELS)</td><td>Kombineret endoskopisk og laparoskopisk procedure (CELS)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">externus_obliquus<a name=\"ProcedureType-externus_obliquus\"> </a></td><td>Externus Obliquus</td><td>Externus Obliquus</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">transversus_abdominis<a name=\"ProcedureType-transversus_abdominis\"> </a></td><td>Transversus Abdominis</td><td>Transversus Abdominis</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">dissection<a name=\"ProcedureType-dissection\"> </a></td><td>Dissection</td><td>Dissection / Dissektion / SNOMED-CT: 122459003</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  transanal_dissection<a name=\"ProcedureType-transanal_dissection\"> </a></td><td>Transanal dissection</td><td>Transanal dissektion</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">polypectomy<a name=\"ProcedureType-polypectomy\"> </a></td><td>Polypektomi</td><td>Polypektomi</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">emr<a name=\"ProcedureType-emr\"> </a></td><td>EMR inkl. piecemeal EMR</td><td>EMR inkl. piecemeal EMR</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">piecemeal_resection<a name=\"ProcedureType-piecemeal_resection\"> </a></td><td>Piecemeal resektion</td><td>Piecemeal resektion</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">stent<a name=\"ProcedureType-stent\"> </a></td><td>Stent</td><td>Stent / SNOMED-CT: 65818007</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  stent_rectum<a name=\"ProcedureType-stent_rectum\"> </a></td><td>Stentanlæggelse i rektum</td><td>Stentanlæggelse i rektum</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  stent_colon<a name=\"ProcedureType-stent_colon\"> </a></td><td>Stentanlæggelse i colon</td><td>Stentanlæggelse i colon</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">stoma<a name=\"ProcedureType-stoma\"> </a></td><td>Stoma</td><td>Stoma / Stomi / SNOMED-CT: 245857005</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">damage_control<a name=\"ProcedureType-damage_control\"> </a></td><td>Damage control</td><td>Damage control</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">tme<a name=\"ProcedureType-tme\"> </a></td><td>TME</td><td>TME</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">tem<a name=\"ProcedureType-tem\"> </a></td><td>TEM</td><td>TEM</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">pme<a name=\"ProcedureType-pme\"> </a></td><td>PME</td><td>PME</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">extensive_excision<a name=\"ProcedureType-extensive_excision\"> </a></td><td>Extensive excision</td><td>Extensive excision / Ekstensiv excision af peritoneum og  HIPEC</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">rfa<a name=\"ProcedureType-rfa\"> </a></td><td>RFA</td><td>RFA / RFA af hepar</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">metasis_resection<a name=\"ProcedureType-metasis_resection\"> </a></td><td>Metastasis resection</td><td>Metastasis resection / Metastaseresektion</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">ape_conventional<a name=\"ProcedureType-ape_conventional\"> </a></td><td>APE, konventionel</td><td>APE, konventionel</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">proctocolectomy_pouch<a name=\"ProcedureType-proctocolectomy_pouch\"> </a></td><td>Proktokolektomi med ileoanal pouch</td><td>Proktokolektomi med ileoanal pouch</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">stoma_shunt<a name=\"ProcedureType-stoma_shunt\"> </a></td><td>Kun aflastende stomi eller intern shunt</td><td>Kun aflastende stomi eller intern shunt</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">exploratory_intervention<a name=\"ProcedureType-exploratory_intervention\"> </a></td><td>Kun eksplorativt indgreb</td><td>Kun eksplorativt indgreb</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">esd<a name=\"ProcedureType-esd\"> </a></td><td>ESD inkl. piecemeal ESD</td><td>ESD inkl. piecemeal ESD</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">tamis<a name=\"ProcedureType-tamis\"> </a></td><td>TAMIS</td><td>TAMIS</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">teo<a name=\"ProcedureType-teo\"> </a></td><td>TEO</td><td>TEO</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">other_transanal<a name=\"ProcedureType-other_transanal\"> </a></td><td>Anden transanal adgang/teknik</td><td>Anden transanal adgang/teknik</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">transplant<a name=\"ProcedureType-transplant\"> </a></td><td>Transplant</td><td>Transplant / Transplantation</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  cage<a name=\"ProcedureType-cage\"> </a></td><td>Cage</td><td>Cage</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  augments<a name=\"ProcedureType-augments\"> </a></td><td>Augments</td><td>Augments</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">luxation<a name=\"ProcedureType-luxation\"> </a></td><td>Luxation</td><td>Luxation / Luksation</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">tractus_tendonesis<a name=\"ProcedureType-tractus_tendonesis\"> </a></td><td>Tractus tendonesis</td><td>Tractus tendonesis</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">internal_brace<a name=\"ProcedureType-internal_brace\"> </a></td><td>Internal brace</td><td>Internal brace / Syntetisk forstærkning</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">multiple_ligaments_reconstruction<a name=\"ProcedureType-multiple_ligaments_reconstruction\"> </a></td><td>Multiple ligaments reconstruction</td><td>Multiple ligaments reconstruction / Flerligament-rekonstruktion (inkl. isoleret PCL, LCL, MCL)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">synovectomy<a name=\"ProcedureType-synovectomy\"> </a></td><td>Synovectomy</td><td>Synovectomy / Synovektomi</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">implant_removal<a name=\"ProcedureType-implant_removal\"> </a></td><td>Implant removal</td><td>Implant removal / Implantatfjernelse</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">osteotomy<a name=\"ProcedureType-osteotomy\"> </a></td><td>Osteotomy</td><td>Osteotomy / Osteotomi</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">osteosynthesis<a name=\"ProcedureType-osteosynthesis\"> </a></td><td>Osteosynthesis</td><td>Osteosynthesis / Osteosyntese</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">operation_infection<a name=\"ProcedureType-operation_infection\"> </a></td><td>Operation because of an infection</td><td>Operation because of an infection / Operation pga. infektion</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">bone_transplantation<a name=\"ProcedureType-bone_transplantation\"> </a></td><td>Bone transplantation</td><td>Bone transplantation / Knogletransplantation</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">operational_mobilization<a name=\"ProcedureType-operational_mobilization\"> </a></td><td>Operational mobilization</td><td>Operational mobilization / Operativ mobilisering</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">tenodesis<a name=\"ProcedureType-tenodesis\"> </a></td><td>Tenodesis</td><td>Tenodesis</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">stabilizing<a name=\"ProcedureType-stabilizing\"> </a></td><td>Stabilizing</td><td>Stabilizing / Stabiliserende indgreb</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">cuff_reconstruction<a name=\"ProcedureType-cuff_reconstruction\"> </a></td><td>Cuff reconstruction</td><td>Cuff reconstruction / Cuff rekonstruktion</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">arthroscopic<a name=\"ProcedureType-arthroscopic\"> </a></td><td>Arthroscopic operation</td><td>Arthroscopic operation / Artroskopisk operation uden indsættelse af fremmedlegeme</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">templating<a name=\"ProcedureType-templating\"> </a></td><td>Templating</td><td>Templating</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">psi<a name=\"ProcedureType-psi\"> </a></td><td>PSI (Patient specific instruments)</td><td>PSI (Patient specific instruments) / PSI (Patientspecifikke instrumenter)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">tenotomy<a name=\"ProcedureType-tenotomy\"> </a></td><td>Tenotomy</td><td>Tenotomy / Tenotomi / SNOMED-CT: 78545003</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">meniscetomy<a name=\"ProcedureType-meniscetomy\"> </a></td><td>Meniscectomy</td><td>Meniscectomy / Meniskektomi</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">arthroscopy<a name=\"ProcedureType-arthroscopy\"> </a></td><td>Artroskopi</td><td>Artroskopi</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">reconstruction_cruciate_ligaments<a name=\"ProcedureType-reconstruction_cruciate_ligaments\"> </a></td><td>Reconstruction of cruciate ligaments</td><td>Reconstruction of cruciate ligaments / Korsbåndsrekonstruktion</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">proximal_tibial_osteotomy<a name=\"ProcedureType-proximal_tibial_osteotomy\"> </a></td><td>Proksimal tibiaosteotomi</td><td>Proksimal tibiaosteotomi</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">osteosynthesis_condyle_fracture<a name=\"ProcedureType-osteosynthesis_condyle_fracture\"> </a></td><td>Osteosyntese af kondylfraktur</td><td>Osteosyntese af kondylfraktur</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">patellectomy<a name=\"ProcedureType-patellectomy\"> </a></td><td>Patellektomi</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">arthrodesis<a name=\"ProcedureType-arthrodesis\"> </a></td><td>Artrodese</td><td>Artrodese</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">tumor_resection<a name=\"ProcedureType-tumor_resection\"> </a></td><td>Tumor resection</td><td>Resektion af tumorbærende tarmsegment</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.2"] ;
+  fhir:CodeSystem.name [ fhir:value "ProcedureType"] ;
+  fhir:CodeSystem.title [ fhir:value "Procedure type: Codes for different durations"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2022-07-20T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Procedure type: Codes for different durations"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "91"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "lichtenstein" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lichtenstein" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Lichtenstein" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "maclichtenstein" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Modified Lichtenstein/MacLichtenstein" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Modificeret Lichtenstein/MacLichtenstein" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "onstep" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Onstep" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Onstep" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "open_mesh" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Open mesh" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Open mesh / Åbent mesh" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "plug" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Plug" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Plug" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "plug_plate" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Plug and plate" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Plug and plate / Plug og plade" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "open" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Open" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Open / Åbent" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "anuloraphi" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Anuloraphi" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Anuloraphi" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "mcvay" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "McVay" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "McVay" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "bassini" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Bassini" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Bassini" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "shouldice" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Shouldice" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Shouldice" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "laparoscopic" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Laparoscopic" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Laparoscopic / Laparoskopisk" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "transperitoneal" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Transperitoneal" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Transperitoneal" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "extraperitoneal" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Extraperitoneal" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Extraperitoneal" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "multiple_ports" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Multiple ports" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Multiple ports / Flerport" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "laparotomy" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Laparotomy" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Laparotomy / Laparotomi / SNOMED-CT: 86481000" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "converted_open" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Converted to open from laparoscopic" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Converted to open from laparoscopic / Konverteret til åben fra laparoskopisk" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "converted_open_to_lap" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Converted from open to laparoscopic" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Open converted to laparoscopic / Åben konverteret til laparoskopisk" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "combined_open" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Combined open" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Combined open / Kombineret åben" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "robot_assisted" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Robot assisted" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Robot assisted / Robotassisteret" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "robot_laparoscopic" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Robot assisted laparoscopic" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Robot assisted laparoscopic / Robot-assisteret laparoskopisk" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "robot_converted_laparoscopic" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Robot assisted laparoscopic converted to laparoscopic" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Robot assisted laparoscopic converted to laparoscopic / Robot-assisteret laparoskopisk konverteret til laparoskopisk" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "robot_converted_open" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Robot assisted laparoscopic converted to open" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Robot assisted laparoscopic converted to open / Robot-assisteret laparoskopisk konverteret til åben" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "milos" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "MILOS" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "MILOS" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "emilos" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "eMILOS" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "eMILOS" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "etep" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "eTEP" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "eTEP - Robot-assisteret metode" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tarup" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TARUP" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "TARUP - Robot-assisteret metode" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tapp" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TAPP" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "TAPP - Robot-assisteret metode" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "endoscopic" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Endoscopic" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Endoscopic / Endoskopisk" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "local_resection" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Local ressection" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Local ressection / Lokalresektion" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "local_resection_tes" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Local ressection (incl. TES)" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Local ressection followed by TES / Lokalresektion efterfulgt af TES" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "local_resection_ex_tes" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Local ressection (excl. TES)" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Local ressection (excl. TES) / Endoskopisk lokalresektion (ekskl. TES)" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "transanal_resection" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Transanal endoskopisk lokalresektion (TES)" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Transanal endoskopisk lokalresektion (TES)" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "full_wall_resection" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Endoskopisk fuldvægsresektion" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Endoskopisk fuldvægsresektion" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "other_endoscopic" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Anden endoskopisk procedure" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Anden endoskopisk procedure" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cels" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kombineret endoskopisk og laparoskopisk procedure (CELS)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kombineret endoskopisk og laparoskopisk procedure (CELS)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "externus_obliquus" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Externus Obliquus" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Externus Obliquus" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "transversus_abdominis" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Transversus Abdominis" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Transversus Abdominis" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dissection" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dissection" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Dissection / Dissektion / SNOMED-CT: 122459003" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "transanal_dissection" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Transanal dissection" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Transanal dissektion" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "polypectomy" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Polypektomi" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Polypektomi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "emr" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "EMR inkl. piecemeal EMR" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "EMR inkl. piecemeal EMR" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "piecemeal_resection" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Piecemeal resektion" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Piecemeal resektion" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "stent" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Stent" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Stent / SNOMED-CT: 65818007" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "stent_rectum" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Stentanlæggelse i rektum" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Stentanlæggelse i rektum" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "stent_colon" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Stentanlæggelse i colon" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Stentanlæggelse i colon" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "stoma" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Stoma" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Stoma / Stomi / SNOMED-CT: 245857005" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "damage_control" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Damage control" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Damage control" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tme" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TME" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "TME" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tem" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TEM" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "TEM" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "pme" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "PME" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "PME" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "extensive_excision" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Extensive excision" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Extensive excision / Ekstensiv excision af peritoneum og  HIPEC" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "rfa" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RFA" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "RFA / RFA af hepar" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "metasis_resection" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Metastasis resection" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Metastasis resection / Metastaseresektion" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ape_conventional" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "APE, konventionel" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "APE, konventionel" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "proctocolectomy_pouch" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Proktokolektomi med ileoanal pouch" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Proktokolektomi med ileoanal pouch" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "stoma_shunt" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kun aflastende stomi eller intern shunt" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kun aflastende stomi eller intern shunt" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "exploratory_intervention" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kun eksplorativt indgreb" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kun eksplorativt indgreb" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "esd" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ESD inkl. piecemeal ESD" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "ESD inkl. piecemeal ESD" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tamis" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TAMIS" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "TAMIS" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "teo" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TEO" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "TEO" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "other_transanal" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anden transanal adgang/teknik" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Anden transanal adgang/teknik" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "transplant" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Transplant" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Transplant / Transplantation" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "cage" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Cage" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Cage" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "augments" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Augments" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Augments" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "luxation" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Luxation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Luxation / Luksation" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tractus_tendonesis" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tractus tendonesis" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Tractus tendonesis" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "internal_brace" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Internal brace" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Internal brace / Syntetisk forstærkning" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "multiple_ligaments_reconstruction" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Multiple ligaments reconstruction" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Multiple ligaments reconstruction / Flerligament-rekonstruktion (inkl. isoleret PCL, LCL, MCL)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "synovectomy" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Synovectomy" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Synovectomy / Synovektomi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "implant_removal" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Implant removal" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Implant removal / Implantatfjernelse" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "osteotomy" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Osteotomy" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Osteotomy / Osteotomi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "osteosynthesis" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Osteosynthesis" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Osteosynthesis / Osteosyntese" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "operation_infection" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Operation because of an infection" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Operation because of an infection / Operation pga. infektion" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bone_transplantation" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bone transplantation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Bone transplantation / Knogletransplantation" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "operational_mobilization" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Operational mobilization" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Operational mobilization / Operativ mobilisering" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tenodesis" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tenodesis" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Tenodesis" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "stabilizing" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Stabilizing" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Stabilizing / Stabiliserende indgreb" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cuff_reconstruction" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cuff reconstruction" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Cuff reconstruction / Cuff rekonstruktion" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "arthroscopic" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Arthroscopic operation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Arthroscopic operation / Artroskopisk operation uden indsættelse af fremmedlegeme" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "templating" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Templating" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Templating" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "psi" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "PSI (Patient specific instruments)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "PSI (Patient specific instruments) / PSI (Patientspecifikke instrumenter)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tenotomy" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tenotomy" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Tenotomy / Tenotomi / SNOMED-CT: 78545003" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "meniscetomy" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Meniscectomy" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Meniscectomy / Meniskektomi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "arthroscopy" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Artroskopi" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Artroskopi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "reconstruction_cruciate_ligaments" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Reconstruction of cruciate ligaments" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Reconstruction of cruciate ligaments / Korsbåndsrekonstruktion" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "proximal_tibial_osteotomy" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Proksimal tibiaosteotomi" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Proksimal tibiaosteotomi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "osteosynthesis_condyle_fracture" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Osteosyntese af kondylfraktur" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Osteosyntese af kondylfraktur" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "patellectomy" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patellektomi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "arthrodesis" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Artrodese" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Artrodese" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tumor_resection" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tumor resection" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Resektion af tumorbærende tarmsegment" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/ProcedureType.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

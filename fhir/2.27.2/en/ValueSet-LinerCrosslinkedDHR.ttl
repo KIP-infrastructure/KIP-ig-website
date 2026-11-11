@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/LinerCrosslinkedDHR> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "LinerCrosslinkedDHR"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet LinerCrosslinkedDHR</b></p><a name=\"LinerCrosslinkedDHR\"> </a><a name=\"hcLinerCrosslinkedDHR\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-ImplantComponents.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/ImplantComponents</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.2</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ImplantComponents.html#ImplantComponents-non_highy_crosslinked\">non_highy_crosslinked</a></td><td>Ikke highly-crosslinked</td><td>Ikke highly-crosslinked</td></tr><tr><td><a href=\"CodeSystem-ImplantComponents.html#ImplantComponents-highly_crosslinked\">highly_crosslinked</a></td><td>Highly crosslinked</td><td>Highly crosslinked</td></tr><tr><td><a href=\"CodeSystem-ImplantComponents.html#ImplantComponents-highly_crosslinked_antioxidant\">highly_crosslinked_antioxidant</a></td><td>Highly crosslinked med antioxidant (Vitamin E og AOX)</td><td>Highly crosslinked med antioxidant (Vitamin E og AOX)</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/LinerCrosslinkedDHR"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.2"] ;
+  fhir:ValueSet.name [ fhir:value "LinerCrosslinkedDHR"] ;
+  fhir:ValueSet.title [ fhir:value "Liner - Crosslinked (DHR)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-11-08T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Liner - Crosslinked (DHR)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/ImplantComponents" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "non_highy_crosslinked" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ikke highly-crosslinked" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "highly_crosslinked" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Highly crosslinked" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "highly_crosslinked_antioxidant" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Highly crosslinked med antioxidant (Vitamin E og AOX)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/LinerCrosslinkedDHR.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

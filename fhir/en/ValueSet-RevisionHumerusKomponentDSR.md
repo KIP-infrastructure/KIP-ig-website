@@ -1,4 +1,4 @@
-# Revision - Humerus komponent (DSR) - KIP Infrastructure v2.27.1
+# Revision - Humerus komponent (DSR) - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/RevisionHumerusKomponentDSR | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/RevisionHumerusKomponentDSR | *Version*:2.27.2 |
 | Active as of 2022-10-07 | *Computable Name*:RevisionHumerusKomponentDSR |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "RevisionHumerusKomponentDSR",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/RevisionHumerusKomponentDSR",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "RevisionHumerusKomponentDSR",
   "title" : "Revision - Humerus komponent (DSR)",
   "status" : "active",

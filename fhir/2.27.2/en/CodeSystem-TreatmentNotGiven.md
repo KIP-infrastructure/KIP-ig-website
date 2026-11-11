@@ -1,0 +1,112 @@
+# Treatment not given; cause - KIP Infrastructure v2.27.2
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Treatment not given; cause**
+
+## CodeSystem: Treatment not given; cause 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/TreatmentNotGiven | *Version*:2.27.2 |
+| Active as of 2022-08-23 | *Computable Name*:TreatmentNotGiven |
+
+ 
+Treatment not given; cause 
+
+This Code system is referenced in the definition of the following value sets:
+
+* [Grund til manglende behandling](ValueSet-ManglendeBehandling.md)
+* [EORTC skema mangler](ValueSet-ManglendeEORTC.md)
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "CodeSystem",
+  "id" : "TreatmentNotGiven",
+  "url" : "https://kip.rkkp.dk/fhir/CodeSystem/TreatmentNotGiven",
+  "version" : "2.27.2",
+  "name" : "TreatmentNotGiven",
+  "title" : "Treatment not given; cause",
+  "status" : "active",
+  "date" : "2022-08-23T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Treatment not given; cause",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 6,
+  "property" : [{
+    "code" : "comment",
+    "uri" : "http://hl7.org/fhir/concept-properties#comment",
+    "description" : "A string that provides additional detail pertinent to the use or understanding of the concept",
+    "type" : "string"
+  },
+  {
+    "code" : "effectiveDate",
+    "uri" : "http://hl7.org/fhir/concept-properties#effectiveDate",
+    "description" : "The date at which the concept status was last changed",
+    "type" : "dateTime"
+  },
+  {
+    "code" : "status",
+    "uri" : "http://hl7.org/fhir/concept-properties#status",
+    "description" : "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired",
+    "type" : "code"
+  },
+  {
+    "code" : "inactive",
+    "uri" : "http://hl7.org/fhir/concept-properties#inactive",
+    "description" : "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive",
+    "type" : "boolean"
+  }],
+  "concept" : [{
+    "code" : "unsuitable",
+    "display" : "Unsuitable for treatment",
+    "definition" : "Unsuitable for treatment / Uegnet til behandling"
+  },
+  {
+    "code" : "unwanted",
+    "display" : "Unwanted treatment",
+    "definition" : "Unwanted treatment / Ønskede ikke behandling"
+  },
+  {
+    "code" : "died",
+    "display" : "Died before treatment",
+    "definition" : "Died before treatment / Døde før behandling"
+  },
+  {
+    "code" : "lack_capacity",
+    "display" : "Lack of capacity",
+    "definition" : "Lack of capacity / Manglende kapacitet"
+  },
+  {
+    "code" : "other_palliative_department",
+    "display" : "Other palliative department",
+    "definition" : "Other palliative department / Behandlet af anden palliativ enhed"
+  },
+  {
+    "code" : "bad_condition",
+    "display" : "Bad condition",
+    "definition" : "Bad condition / For dårlig"
+  }]
+}
+
+```

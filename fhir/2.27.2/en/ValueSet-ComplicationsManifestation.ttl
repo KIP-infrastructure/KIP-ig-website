@@ -1,0 +1,99 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/ComplicationsManifestation> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ComplicationsManifestation"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ComplicationsManifestation</b></p><a name=\"ComplicationsManifestation\"> </a><a name=\"hcComplicationsManifestation\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Complications.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Complications</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.2</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-marrow_relapse\">marrow_relapse</a></td><td>Marv relaps</td><td>Marrow relapse / Marv relaps</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-rising_m_component\">rising_m_component</a></td><td>Stigende M-komponent</td><td>Rising M-component / Stigende M-komponent</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-hypercalcemia\">hypercalcemia</a></td><td>Hypercalcæmi (klinisk betydende)</td><td>Hypercalcemia / Hypercalcæmi</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-osteolytic_foci\">osteolytic_foci</a></td><td>Progression af osteolytiske foci</td><td>Progressive osteolytic foci / Progression af osteolytiske foci</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-medullary_cross_sectional_syndrome\">medullary_cross_sectional_syndrome</a></td><td>Medullært tværsnitssyndrom</td><td>Medullary cross-sectional syndrome / Medullært tværsnitssyndrom</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-extremedullery_myeloma\">extremedullery_myeloma</a></td><td>Ekstramedullære Myelomer</td><td>Extremedullary Myeloma / Ekstramedullære Myelomer</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-plasma_cell_leukemia\">plasma_cell_leukemia</a></td><td>Plasmacelle leukæmi</td><td>Plasma cell leukemia / Plasmacelle leukæmi</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-uremia_clinically\">uremia_clinically</a></td><td>Uræmi (klinisk betydende)</td><td>Uremia (clinically significant) / Uræmi (klinisk betydende)</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-uremia_dialysis\">uremia_dialysis</a></td><td>Uræmi (kronisk dialysekrævende)</td><td>Uremia (chronic dialysis requiring) / Uræmi (kronisk dialysekrævende)</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-amyloidosis\">amyloidosis</a></td><td>Amyloidose</td><td>Amyloidosis / Amyloidose / SNOMED-CT: 17602002</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-neuropathy\">neuropathy</a></td><td>Neuropati</td><td>Neuropathy / Neuropati / SNOMED-CT: 386033004</td></tr><tr><td><a href=\"CodeSystem-Complications.html#Complications-hyperviscosity\">hyperviscosity</a></td><td>Hyperviskositet</td><td>Hyperviscosity / Hyperviskositet / SNOMED-CT: 64088006</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/ComplicationsManifestation"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.2"] ;
+  fhir:ValueSet.name [ fhir:value "ComplicationsManifestation"] ;
+  fhir:ValueSet.title [ fhir:value "Manifeste komplikationer"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-07-14T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Manifeste komplikationer [DAMYDA]"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/Complications" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "marrow_relapse" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Marv relaps" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "rising_m_component" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stigende M-komponent" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "hypercalcemia" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hypercalcæmi (klinisk betydende)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "osteolytic_foci" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Progression af osteolytiske foci" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "medullary_cross_sectional_syndrome" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medullært tværsnitssyndrom" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "extremedullery_myeloma" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ekstramedullære Myelomer" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "plasma_cell_leukemia" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Plasmacelle leukæmi" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "uremia_clinically" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Uræmi (klinisk betydende)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "uremia_dialysis" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Uræmi (kronisk dialysekrævende)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "amyloidosis" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Amyloidose" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "neuropathy" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neuropati" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "hyperviscosity" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hyperviskositet" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/ComplicationsManifestation.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,71 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/AnaestesiDUGA> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "AnaestesiDUGA"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet AnaestesiDUGA</b></p><a name=\"AnaestesiDUGA\"> </a><a name=\"hcAnaestesiDUGA\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-AnasthesiaService.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/AnasthesiaService</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.2</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-AnasthesiaService.html#AnasthesiaService-rus\">rus</a></td><td>Rus</td><td>Rus</td></tr><tr><td><a href=\"CodeSystem-AnasthesiaService.html#AnasthesiaService-epidural\">epidural</a></td><td>Epidural anæstesi</td><td>Epidural</td></tr><tr><td><a href=\"CodeSystem-AnasthesiaService.html#AnasthesiaService-universal\">universal</a></td><td>Universal anæstesi</td><td>Universal</td></tr><tr><td><a href=\"CodeSystem-AnasthesiaService.html#AnasthesiaService-local_anesthesia\">local_anesthesia</a></td><td>Lokal anæstesi</td><td>Lokal anæstesi / SNOMED-CT: 386761002</td></tr><tr><td><a href=\"CodeSystem-AnasthesiaService.html#AnasthesiaService-spinal\">spinal</a></td><td>Spinal anæstesi</td><td>Spinal</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/AnaestesiDUGA"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.2"] ;
+  fhir:ValueSet.name [ fhir:value "AnaestesiDUGA"] ;
+  fhir:ValueSet.title [ fhir:value "Anæstesiform (DUGA)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2024-02-15T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Anæstesiform (DUGA)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/AnasthesiaService" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "rus" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rus" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "epidural" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Epidural anæstesi" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "universal" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Universal anæstesi" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "local_anesthesia" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lokal anæstesi" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "spinal" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spinal anæstesi" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/AnaestesiDUGA.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

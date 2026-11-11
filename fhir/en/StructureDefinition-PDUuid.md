@@ -1,4 +1,4 @@
-# Search Parameter - UUID for PlanDefinitions - KIP Infrastructure v2.27.1
+# Search Parameter - UUID for PlanDefinitions - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/StructureDefinition/PDUuid | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/StructureDefinition/PDUuid | *Version*:2.27.2 |
 | Active as of 2023-07-07 | *Computable Name*:SearchParameterPlanDefinitionUuid |
 
 Limit response of PlanDefinitions to match given UUID.
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-PDUuid.csv), [Exc
   "resourceType" : "StructureDefinition",
   "id" : "PDUuid",
   "url" : "https://kip.rkkp.dk/fhir/StructureDefinition/PDUuid",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "SearchParameterPlanDefinitionUuid",
   "title" : "Search Parameter - UUID for PlanDefinitions",
   "status" : "active",

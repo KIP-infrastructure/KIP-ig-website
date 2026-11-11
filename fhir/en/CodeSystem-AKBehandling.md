@@ -1,4 +1,4 @@
-# AK Behandling (DKR) - KIP Infrastructure v2.27.1
+# AK Behandling (DKR) - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/AKBehandling | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/AKBehandling | *Version*:2.27.2 |
 | Active as of 2023-12-18 | *Computable Name*:AKBehandling |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "AKBehandling",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/AKBehandling",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "AKBehandling",
   "title" : "AK Behandling (DKR)",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Revision - Humerus/cavitas (DSR) - KIP Infrastructure v2.27.1
+# Revision - Humerus/cavitas (DSR) - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/RevisionHumerusCavitasDSR | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/RevisionHumerusCavitasDSR | *Version*:2.27.2 |
 | Active as of 2022-10-07 | *Computable Name*:RevisionHumerusCavitasDSR |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "RevisionHumerusCavitasDSR",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/RevisionHumerusCavitasDSR",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "RevisionHumerusCavitasDSR",
   "title" : "Revision - Humerus/cavitas (DSR)",
   "status" : "active",

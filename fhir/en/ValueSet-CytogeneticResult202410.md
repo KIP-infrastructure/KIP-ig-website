@@ -1,4 +1,4 @@
-# Cytogenetic resultater 202410 - KIP Infrastructure v2.27.1
+# Cytogenetic resultater 202410 - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/CytogeneticResult202410 | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/CytogeneticResult202410 | *Version*:2.27.2 |
 | Active as of 2024-10-02 | *Computable Name*:CytogeneticResult202410 |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "CytogeneticResult202410",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/CytogeneticResult202410",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "CytogeneticResult202410",
   "title" : "Cytogenetic resultater 202410",
   "status" : "active",

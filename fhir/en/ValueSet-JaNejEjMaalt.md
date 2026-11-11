@@ -1,4 +1,4 @@
-# Ja / Nej / Ikke målt - KIP Infrastructure v2.27.1
+# Ja / Nej / Ikke målt - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/JaNejEjMaalt | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/JaNejEjMaalt | *Version*:2.27.2 |
 | Active as of 2022-05-16 | *Computable Name*:JaNejEjMaalt |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "JaNejEjMaalt",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/JaNejEjMaalt",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "JaNejEjMaalt",
   "title" : "Ja / Nej / Ikke målt",
   "status" : "active",

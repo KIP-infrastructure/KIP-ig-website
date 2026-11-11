@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/IDC10DPDNonCancer> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "IDC10DPDNonCancer"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet IDC10DPDNonCancer</b></p><a name=\"IDC10DPDNonCancer\"> </a><a name=\"hcIDC10DPDNonCancer\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-SKSCodeCollection.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/SKSCodeCollection</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.2</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-SKSCodeCollection.html#SKSCodeCollection-heart_vessel\">heart_vessel</a></td><td>Hjertekar sygdom (DI00-DI52+DI70-DI99)</td><td>Hjertekar sygdom (DI00-DI52+DI70-DI99)</td></tr><tr><td><a href=\"CodeSystem-SKSCodeCollection.html#SKSCodeCollection-neurological\">neurological</a></td><td>Neurologisk sygdom (ikke apopleksi) (DI64-DI69+DG00-DG99+DF00-DF03)</td><td>Neurologisk sygdom (ikke apopleksi) (DI64-DI69+DG00-DG99+DF00-DF03)</td></tr><tr><td><a href=\"CodeSystem-SKSCodeCollection.html#SKSCodeCollection-apoplexia\">apoplexia</a></td><td>Apopleksi (cerebral thrombose/hæmorrhagi) (DI60-DI63)</td><td>Apopleksi (cerebral thrombose/hæmorrhagi) (DI60-DI63)</td></tr><tr><td><a href=\"CodeSystem-SKSCodeCollection.html#SKSCodeCollection-lung\">lung</a></td><td>Lungesygdomme (DJ00-DJ99+DE84)</td><td>Lungesygdomme (DJ00-DJ99+DE84)</td></tr><tr><td><a href=\"CodeSystem-SKSCodeCollection.html#SKSCodeCollection-kidney\">kidney</a></td><td>Nyresygdomme (DN00-DN29)</td><td>Nyresygdomme (DN00-DN29)</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.2</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Anden sygdom</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/IDC10DPDNonCancer"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.2"] ;
+  fhir:ValueSet.name [ fhir:value "IDC10DPDNonCancer"] ;
+  fhir:ValueSet.title [ fhir:value "ICD 10 non-cancer koder til DPD"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-08-25T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "ICD 10 non-cancer koder til DPD"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/SKSCodeCollection" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "heart_vessel" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hjertekar sygdom (DI00-DI52+DI70-DI99)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "neurological" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neurologisk sygdom (ikke apopleksi) (DI64-DI69+DG00-DG99+DF00-DF03)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "apoplexia" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Apopleksi (cerebral thrombose/hæmorrhagi) (DI60-DI63)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "lung" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lungesygdomme (DJ00-DJ99+DE84)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "kidney" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nyresygdomme (DN00-DN29)" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anden sygdom" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/IDC10DPDNonCancer.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

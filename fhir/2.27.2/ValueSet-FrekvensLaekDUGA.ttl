@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/FrekvensLaekDUGA> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "FrekvensLaekDUGA"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet FrekvensLaekDUGA</b></p><a name=\"FrekvensLaekDUGA\"> </a><a name=\"hcFrekvensLaekDUGA\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Frekvens.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Frekvens</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.2</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Frekvens.html#Frekvens-aldrig\">aldrig</a></td><td>Aldrig</td><td>Aldrig / Slet ikke</td></tr><tr><td><a href=\"CodeSystem-Frekvens.html#Frekvens-ugl-le1\">ugl-le1</a></td><td>Ca. 1 gang om ugen eller mindre</td><td>1 gang om ugen eller mindre</td></tr><tr><td><a href=\"CodeSystem-Frekvens.html#Frekvens-ugl-2-3\">ugl-2-3</a></td><td>2-3 gange om ugen</td><td>2-3 gange om ugen</td></tr><tr><td><a href=\"CodeSystem-Frekvens.html#Frekvens-dgl-1\">dgl-1</a></td><td>Ca. 1 gang dagligt</td><td>1 gang om dagen</td></tr><tr><td><a href=\"CodeSystem-Frekvens.html#Frekvens-dgl-ge1\">dgl-ge1</a></td><td>Flere gange om dagen</td><td>1 eller flere gange om dagen</td></tr><tr><td><a href=\"CodeSystem-Frekvens.html#Frekvens-konstant\">konstant</a></td><td>Hele tiden</td><td>Hele tiden</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/FrekvensLaekDUGA"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.2"] ;
+  fhir:ValueSet.name [ fhir:value "FrekvensLaekDUGA"] ;
+  fhir:ValueSet.title [ fhir:value "Frekvens læk (DUGA)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2024-02-13T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Hvor ofte lækkes urin (DUGA)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/Frekvens" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "aldrig" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aldrig" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ugl-le1" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ca. 1 gang om ugen eller mindre" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ugl-2-3" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "2-3 gange om ugen" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "dgl-1" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ca. 1 gang dagligt" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "dgl-ge1" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Flere gange om dagen" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "konstant" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hele tiden" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/FrekvensLaekDUGA.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

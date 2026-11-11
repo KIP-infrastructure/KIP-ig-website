@@ -1,0 +1,103 @@
+# Medical treatment: Medication administration - KIP Infrastructure v2.27.2
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Medical treatment: Medication administration**
+
+## CodeSystem: Medical treatment: Medication administration 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/MedicalTreatmentAdministrationType | *Version*:2.27.2 |
+| Active as of 2022-08-17 | *Computable Name*:MedicalTreatmentAdministrationType |
+
+ 
+Medical treatment: Medication administration 
+
+This Code system is referenced in the definition of the following value sets:
+
+* [Medicin administration Type](ValueSet-AdministrationType.md)
+* [Administrationstype Jern (DCCG)](ValueSet-AdministrationTypeDCCG.md)
+* [Præoperativ Udrensning (DCCG)](ValueSet-PraeoperativUdrensningDCCG.md)
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "CodeSystem",
+  "id" : "MedicalTreatmentAdministrationType",
+  "url" : "https://kip.rkkp.dk/fhir/CodeSystem/MedicalTreatmentAdministrationType",
+  "version" : "2.27.2",
+  "name" : "MedicalTreatmentAdministrationType",
+  "title" : "Medical treatment: Medication administration",
+  "status" : "active",
+  "date" : "2022-08-17T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Medical treatment: Medication administration",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 4,
+  "property" : [{
+    "code" : "comment",
+    "uri" : "http://hl7.org/fhir/concept-properties#comment",
+    "description" : "A string that provides additional detail pertinent to the use or understanding of the concept",
+    "type" : "string"
+  },
+  {
+    "code" : "effectiveDate",
+    "uri" : "http://hl7.org/fhir/concept-properties#effectiveDate",
+    "description" : "The date at which the concept status was last changed",
+    "type" : "dateTime"
+  },
+  {
+    "code" : "status",
+    "uri" : "http://hl7.org/fhir/concept-properties#status",
+    "description" : "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired",
+    "type" : "code"
+  },
+  {
+    "code" : "inactive",
+    "uri" : "http://hl7.org/fhir/concept-properties#inactive",
+    "description" : "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive",
+    "type" : "boolean"
+  }],
+  "concept" : [{
+    "code" : "oral",
+    "display" : "Oral",
+    "definition" : "Oral / SNOMED-CT: 260548002"
+  },
+  {
+    "code" : "intravenous",
+    "display" : "Intravenous",
+    "definition" : "Intravenous / Intravenøs / SNOMED-CT: 255560000"
+  },
+  {
+    "code" : "peroral",
+    "display" : "Peroral",
+    "definition" : "Medication administration: oral / peroral medicingivning / SNOMED-CT: 386359008"
+  },
+  {
+    "code" : "rectum",
+    "display" : "Rectum",
+    "definition" : "Medication administration: rectal / Medicingivning i rectum / SNOMED-CT: 386360003"
+  }]
+}
+
+```

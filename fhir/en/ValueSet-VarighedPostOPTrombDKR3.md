@@ -1,4 +1,4 @@
-# Varighed PostOP trombolyseprofylakse (DKR)3 - KIP Infrastructure v2.27.1
+# Varighed PostOP trombolyseprofylakse (DKR)3 - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/VarighedPostOPTrombDKR3 | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/VarighedPostOPTrombDKR3 | *Version*:2.27.2 |
 | Retired as of 2024-05-13 | *Computable Name*:VarighedPostOPTrombDKR3 |
 
  
@@ -39,7 +39,7 @@ Expansions are not generated for retired value sets
   "resourceType" : "ValueSet",
   "id" : "VarighedPostOPTrombDKR3",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/VarighedPostOPTrombDKR3",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "VarighedPostOPTrombDKR3",
   "title" : "Varighed PostOP trombolyseprofylakse (DKR)3",
   "status" : "retired",

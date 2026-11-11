@@ -1,4 +1,4 @@
-# Dom - Behandling, ambulant (RETSPSYK) - KIP Infrastructure v2.27.1
+# Dom - Behandling, ambulant (RETSPSYK) - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/DomBehandlingAmbulantRETSPSYK | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/DomBehandlingAmbulantRETSPSYK | *Version*:2.27.2 |
 | Active as of 2022-09-28 | *Computable Name*:DomBehandlingAmbulantRETSPSYK |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "DomBehandlingAmbulantRETSPSYK",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/DomBehandlingAmbulantRETSPSYK",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "DomBehandlingAmbulantRETSPSYK",
   "title" : "Dom - Behandling, ambulant (RETSPSYK)",
   "status" : "active",

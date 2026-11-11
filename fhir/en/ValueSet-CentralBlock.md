@@ -1,4 +1,4 @@
-# Tidspunkt for central blokade - KIP Infrastructure v2.27.1
+# Tidspunkt for central blokade - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/CentralBlock | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/CentralBlock | *Version*:2.27.2 |
 | Active as of 2022-06-09 | *Computable Name*:CentralBlock |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "CentralBlock",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/CentralBlock",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "CentralBlock",
   "title" : "Tidspunkt for central blokade",
   "status" : "active",

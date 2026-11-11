@@ -1,4 +1,4 @@
-# Klinisk M-kategori DCCG - KIP Infrastructure v2.27.1
+# Klinisk M-kategori DCCG - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/MKategoriDCCG | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/MKategoriDCCG | *Version*:2.27.2 |
 | Active as of 2022-09-07 | *Computable Name*:MKategoriDCCG |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "MKategoriDCCG",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/MKategoriDCCG",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "MKategoriDCCG",
   "title" : "Klinisk M-kategori DCCG",
   "status" : "active",

@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/VarighedPostOPTrombDKR> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "VarighedPostOPTrombDKR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VarighedPostOPTrombDKR</b></p><a name=\"VarighedPostOPTrombDKR\"> </a><a name=\"hcVarighedPostOPTrombDKR\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-Cyclus.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Cyclus</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.2</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Cyclus.html#Cyclus-le5-dage\">le5-dage</a></td><td>&lt;= 5 dage (kun under indlæggelse)</td><td>&lt;=5 dage</td></tr><tr><td><a href=\"CodeSystem-Cyclus.html#Cyclus-6-10-dage\">6-10-dage</a></td><td>6-10 dage (forlænget profylakse)</td><td>6-10 dage</td></tr><tr><td><a href=\"CodeSystem-Cyclus.html#Cyclus-gt10-dage\">gt10-dage</a></td><td>&gt;10 dage (ekstra forlænget profylakse)</td><td>&gt;10 dage</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-Medicine.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Medicine</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.2</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Medicine.html#Medicine-beh-vitamin_k\">beh-vitamin_k</a></td><td>Patienten er i varig behandling med Vitamin-K-antagonist og fortsætter med tromboseprofylakse umiddelbart postoperativt indtil INR er i niveau</td><td>Behandling med vitamin-K-antagonist</td></tr><tr><td><a href=\"CodeSystem-Medicine.html#Medicine-noak_a\">noak_a</a></td><td>Patienten er i varig NOAK-behandling og fortsætter med vanligt præparat i halv dosering de første 1-2 postoperative døgn</td><td>NOAK halv dosis</td></tr><tr><td><a href=\"CodeSystem-Medicine.html#Medicine-noak_b\">noak_b</a></td><td>Patienten er i varig NOAK-behandling og fortsætter med vanligt præparat i fuld dosering umiddelbart (på operationsdagen)</td><td>NOAK fuld dosis</td></tr><tr><td><a href=\"CodeSystem-Medicine.html#Medicine-noak_c\">noak_c</a></td><td>Patienten er i varig NOAK-behandling og fortsætter med vanligt præparat i fuld dosering fra første postoperative dag</td><td>NOAK fuld dosis postop</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.2</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/VarighedPostOPTrombDKR"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.2"] ;
+  fhir:ValueSet.name [ fhir:value "VarighedPostOPTrombDKR"] ;
+  fhir:ValueSet.title [ fhir:value "Varighed PostOP trombolyseprofylakse (DKR)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2025-12-01T00:00:00+01:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Planlagt varighed Postoperativ trombolyseprofylakse (DKR)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/Cyclus" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "le5-dage" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "<= 5 dage (kun under indlæggelse)" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "6-10-dage" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "6-10 dage (forlænget profylakse)" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "gt10-dage" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value ">10 dage (ekstra forlænget profylakse)" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/Medicine" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "beh-vitamin_k" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patienten er i varig behandling med Vitamin-K-antagonist og fortsætter med tromboseprofylakse umiddelbart postoperativt indtil INR er i niveau" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "noak_a" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patienten er i varig NOAK-behandling og fortsætter med vanligt præparat i halv dosering de første 1-2 postoperative døgn" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "noak_b" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patienten er i varig NOAK-behandling og fortsætter med vanligt præparat i fuld dosering umiddelbart (på operationsdagen)" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "noak_c" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patienten er i varig NOAK-behandling og fortsætter med vanligt præparat i fuld dosering fra første postoperative dag" ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Andet" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/VarighedPostOPTrombDKR.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

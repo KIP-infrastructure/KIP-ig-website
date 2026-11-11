@@ -1,4 +1,4 @@
-# M-komponent; laboratoriesvar - KIP Infrastructure v2.27.1
+# M-komponent; laboratoriesvar - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/MKomponentLaboratoriesvar | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/MKomponentLaboratoriesvar | *Version*:2.27.2 |
 | Active as of 2022-10-05 | *Computable Name*:MKomponentLaboratoriesvar |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "MKomponentLaboratoriesvar",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/MKomponentLaboratoriesvar",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "MKomponentLaboratoriesvar",
   "title" : "M-komponent; laboratoriesvar",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Implant components - KIP Infrastructure v2.27.1
+# Implant components - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/ImplantComponents | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/ImplantComponents | *Version*:2.27.2 |
 | Active as of 2022-07-04 | *Computable Name*:ImplantComponents |
 
  
@@ -28,6 +28,7 @@ This Code system is referenced in the definition of the following value sets:
 * [Implantat - anatomisk design](ValueSet-ImplantatAnatomiskDesign.md)
 * [Implantat - anatomisk: offset](ValueSet-ImplantatAnatomiskOffset.md)
 * [Implantat - anatomisk/reverse](ValueSet-ImplantatAnatomiskReverse.md)
+* [Implantat - materiale (keramik, metal, andet) 2026-07](ValueSet-ImplantatMateriale-KeramikMetalAndet-2026-07.md)
 * [Implantat - materiale (DSR)](ValueSet-ImplantatMaterialeDSR.md)
 * [Implantat - materiale (keramik, metal, andet)](ValueSet-ImplantatMaterialeKeramikMetalAndet.md)
 * [Implantat - materiale (polyethylen, keramik, metal)](ValueSet-ImplantatMaterialePolyethylenKeramikMetal.md)
@@ -66,7 +67,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "ImplantComponents",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/ImplantComponents",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "ImplantComponents",
   "title" : "Implant components",
   "status" : "active",

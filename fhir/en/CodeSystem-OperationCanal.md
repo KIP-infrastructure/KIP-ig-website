@@ -1,4 +1,4 @@
-# Operation canal - KIP Infrastructure v2.27.1
+# Operation canal - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/OperationCanal | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/OperationCanal | *Version*:2.27.2 |
 | Active as of 2022-09-15 | *Computable Name*:OperationCanal |
 
  
@@ -32,7 +32,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "OperationCanal",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/OperationCanal",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "OperationCanal",
   "title" : "Operation canal",
   "status" : "active",

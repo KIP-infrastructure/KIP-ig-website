@@ -1,4 +1,4 @@
-# Endoscopic appearance - KIP Infrastructure v2.27.1
+# Endoscopic appearance - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/EndoscopicAppearance | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/EndoscopicAppearance | *Version*:2.27.2 |
 | Active as of 2022-08-22 | *Computable Name*:EndoscopicAppearance |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "EndoscopicAppearance",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/EndoscopicAppearance",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "EndoscopicAppearance",
   "title" : "Endoscopic appearance",
   "status" : "active",

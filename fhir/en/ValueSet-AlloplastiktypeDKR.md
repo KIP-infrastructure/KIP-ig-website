@@ -1,4 +1,4 @@
-# Alloplastiktype (DKR) - KIP Infrastructure v2.27.1
+# Alloplastiktype (DKR) - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/AlloplastiktypeDKR | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/AlloplastiktypeDKR | *Version*:2.27.2 |
 | Active as of 2022-10-13 | *Computable Name*:AlloplastiktypeDKR |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "AlloplastiktypeDKR",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/AlloplastiktypeDKR",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "AlloplastiktypeDKR",
   "title" : "Alloplastiktype (DKR)",
   "status" : "active",

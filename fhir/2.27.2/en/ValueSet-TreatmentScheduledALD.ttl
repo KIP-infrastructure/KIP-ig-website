@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/TreatmentScheduledALD> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "TreatmentScheduledALD"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet TreatmentScheduledALD</b></p><a name=\"TreatmentScheduledALD\"> </a><a name=\"hcTreatmentScheduledALD\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-TreatmentSchedule.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/TreatmentSchedule</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.2</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-TreatmentSchedule.html#TreatmentSchedule-implemented\">implemented</a></td><td>Ja</td><td>Implemented or planned implementation of treatment / Iværksat eller planlagt iværksættelse af behandling</td></tr><tr><td><a href=\"CodeSystem-TreatmentSchedule.html#TreatmentSchedule-wait_and_watch\">wait_and_watch</a></td><td>Wait-and-watch strategi.</td><td>Wait and watch (WAW) strategy / Wait and watch strategi</td></tr><tr><td><a href=\"CodeSystem-TreatmentSchedule.html#TreatmentSchedule-no_planned_treatment\">no_planned_treatment</a></td><td>Nej</td><td>No planned treatment / Ingen planlagt behandling er iværksat</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/TreatmentScheduledALD"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.2"] ;
+  fhir:ValueSet.name [ fhir:value "TreatmentScheduledALD"] ;
+  fhir:ValueSet.title [ fhir:value "Planlagt eller iværksat behandling"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-12-07T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Planlagt eller iværksat behandling"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/TreatmentSchedule" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "implemented" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ja" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "wait_and_watch" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Wait-and-watch strategi." ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "no_planned_treatment" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nej" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/TreatmentScheduledALD.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

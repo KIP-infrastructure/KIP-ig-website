@@ -1,4 +1,4 @@
-# Hip joint arthroplasty - components - KIP Infrastructure v2.27.1
+# Hip joint arthroplasty - components - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/HipJointArthroplastyComponent | *Version*:2.27.1 |
-| Active as of 2026-10-30 | *Computable Name*:HipJointArthroplastyComponent |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/HipJointArthroplastyComponent | *Version*:2.27.2 |
+| Active as of 2026-11-05 | *Computable Name*:HipJointArthroplastyComponent |
 
  
 Hip joint arthroplasty - components 
@@ -32,11 +32,11 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "HipJointArthroplastyComponent",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/HipJointArthroplastyComponent",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "HipJointArthroplastyComponent",
   "title" : "Hip joint arthroplasty - components",
   "status" : "active",
-  "date" : "2026-10-30T00:00:00+01:00",
+  "date" : "2026-11-05T00:00:00+01:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
@@ -52,7 +52,7 @@ This Code system is referenced in the definition of the following value sets:
   "description" : "Hip joint arthroplasty - components",
   "caseSensitive" : false,
   "content" : "complete",
-  "count" : 83,
+  "count" : 85,
   "property" : [{
     "code" : "comment",
     "uri" : "http://hl7.org/fhir/concept-properties#comment",
@@ -308,9 +308,51 @@ This Code system is referenced in the definition of the following value sets:
     "definition" : "DePuy: Corail u/krave"
   },
   {
+    "code" : "depuy_actis_collared",
+    "display" : "DePuy: Actis Collared",
+    "definition" : "DePuy: Actis Collared",
+    "property" : [{
+      "code" : "comment",
+      "valueString" : "Added"
+    },
+    {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2026-07-31T00:00:00+02:00"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "inactive",
+      "valueBoolean" : false
+    }]
+  },
+  {
     "code" : "depuy_corail_revision_stem",
     "display" : "DePuy: Corail Revision Stem - KAR",
     "definition" : "DePuy: Corail Revision Stem - KAR"
+  },
+  {
+    "code" : "depuy_corail_cemented",
+    "display" : "DePuy: Corail cementeret",
+    "definition" : "DePuy: Corail cementeret",
+    "property" : [{
+      "code" : "comment",
+      "valueString" : "Added"
+    },
+    {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2026-07-31T00:00:00+02:00"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "inactive",
+      "valueBoolean" : false
+    }]
   },
   {
     "code" : "depuy_c_stem_amt",

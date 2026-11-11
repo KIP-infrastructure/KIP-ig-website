@@ -1,0 +1,110 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/RevisionIndikationDKR> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "RevisionIndikationDKR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet RevisionIndikationDKR</b></p><a name=\"RevisionIndikationDKR\"> </a><a name=\"hcRevisionIndikationDKR\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-RevisionIndication.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/RevisionIndication</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.2</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-RevisionIndication.html#RevisionIndication-second_part_two_stage_revision\">second_part_two_stage_revision</a></td><td>2. del af 2-stadie revision</td><td>2. del af 2-stadie revision</td></tr><tr><td><a href=\"CodeSystem-RevisionIndication.html#RevisionIndication-aseptic_solution\">aseptic_solution</a></td><td>Aseptisk løsning</td><td>Aseptisk løsning</td></tr><tr><td><a href=\"CodeSystem-RevisionIndication.html#RevisionIndication-pain\">pain</a></td><td>Smerter uden løsning</td><td>Pain / Smerter</td></tr><tr><td><a href=\"CodeSystem-RevisionIndication.html#RevisionIndication-instability\">instability</a></td><td>Instabilitet</td><td>Instabilitet</td></tr><tr><td><a href=\"CodeSystem-RevisionIndication.html#RevisionIndication-infection\">infection</a></td><td>Dyb infektion (mikrobiologisk verificeret)</td><td>Infection / Infektion</td></tr><tr><td><a href=\"CodeSystem-RevisionIndication.html#RevisionIndication-suspected_infection\">suspected_infection</a></td><td>Dyb infektion (mistænkt)</td><td>Mistænkt eller manifest infektion</td></tr><tr><td><a href=\"CodeSystem-RevisionIndication.html#RevisionIndication-secondary_insertion\">secondary_insertion</a></td><td>Sekundær isættelse af patellakomponent</td><td>Sekundær isættelse</td></tr><tr><td><a href=\"CodeSystem-RevisionIndication.html#RevisionIndication-polyethylene_failure_patella\">polyethylene_failure_patella</a></td><td>Polyetylen-svigt patella</td><td>Polyethylen-svigt (patella)</td></tr><tr><td><a href=\"CodeSystem-RevisionIndication.html#RevisionIndication-polyethylene_failure_tibia\">polyethylene_failure_tibia</a></td><td>Polyetylen-svigt tibia</td><td>Polyethylen-svigt (tibia)</td></tr><tr><td><a href=\"CodeSystem-RevisionIndication.html#RevisionIndication-arthrosis_progression\">arthrosis_progression</a></td><td>Progression af artrose</td><td>Athrosis progression / Artrose progression</td></tr><tr><td><a href=\"CodeSystem-RevisionIndication.html#RevisionIndication-periprosthetic_fracture\">periprosthetic_fracture</a></td><td>Periprostetisk fraktur</td><td>Periprostetisk fraktur</td></tr><tr><td><a href=\"CodeSystem-RevisionIndication.html#RevisionIndication-malplaced_component\">malplaced_component</a></td><td>Malposition af komponenter</td><td>Malplaceret komponent</td></tr><tr><td><a href=\"CodeSystem-RevisionIndication.html#RevisionIndication-constrained_mobility\">constrained_mobility</a></td><td>Indskrænket bevægelighed</td><td>Indskrænket bevægelighed</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.2</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/RevisionIndikationDKR"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.2"] ;
+  fhir:ValueSet.name [ fhir:value "RevisionIndikationDKR"] ;
+  fhir:ValueSet.title [ fhir:value "Revision, indikation (DKR)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-10-14T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Revision, indikation (DKR)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/RevisionIndication" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "second_part_two_stage_revision" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "2. del af 2-stadie revision" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "aseptic_solution" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aseptisk løsning" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "pain" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Smerter uden løsning" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "instability" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Instabilitet" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "infection" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dyb infektion (mikrobiologisk verificeret)" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "suspected_infection" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dyb infektion (mistænkt)" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "secondary_insertion" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sekundær isættelse af patellakomponent" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "polyethylene_failure_patella" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Polyetylen-svigt patella" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "polyethylene_failure_tibia" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Polyetylen-svigt tibia" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "arthrosis_progression" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Progression af artrose" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "periprosthetic_fracture" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Periprostetisk fraktur" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "malplaced_component" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Malposition af komponenter" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "constrained_mobility" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Indskrænket bevægelighed" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Andet" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/RevisionIndikationDKR.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

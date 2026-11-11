@@ -1,4 +1,4 @@
-# Basic disorder - KIP Infrastructure v2.27.1
+# Basic disorder - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/BasicDisorder | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/BasicDisorder | *Version*:2.27.2 |
 | Active as of 2022-07-04 | *Computable Name*:BasicDisorder |
 
  
@@ -20,6 +20,7 @@ This Code system is referenced in the definition of the following value sets:
 * [Artrosefølge (DSR)](ValueSet-ArtrosefoelgeDSR.md)
 * [Caputnekrose (DSR)](ValueSet-CaputnekroseDSR.md)
 * [Grundlidelse [DHR]](ValueSet-GrundlidelseDHR.md)
+* [Grundlidelse [DHR] 2026-07](ValueSet-GrundlidelseDHR-2026-07.md)
 * [Grundlidelse (DKR)](ValueSet-GrundlidelseDKR.md)
 * [Grundlidelse (DSR)](ValueSet-GrundlidelseDSR.md)
 * [Komplikationer, peroperative (DKR)](ValueSet-KomplikationerPeroperativeDKR.md)
@@ -37,7 +38,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "BasicDisorder",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/BasicDisorder",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "BasicDisorder",
   "title" : "Basic disorder",
   "status" : "active",

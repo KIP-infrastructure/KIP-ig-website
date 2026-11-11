@@ -1,4 +1,4 @@
-# Procedure not completed; cause - KIP Infrastructure v2.27.1
+# Procedure not completed; cause - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/ProcedureNotCompleted | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/ProcedureNotCompleted | *Version*:2.27.2 |
 | Active as of 2022-08-22 | *Computable Name*:ProcedureNotCompleted |
 
  
@@ -34,7 +34,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "ProcedureNotCompleted",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/ProcedureNotCompleted",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "ProcedureNotCompleted",
   "title" : "Procedure not completed; cause",
   "status" : "active",

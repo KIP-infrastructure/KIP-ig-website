@@ -1,4 +1,4 @@
-# Medicin administration Type - KIP Infrastructure v2.27.1
+# Medicin administration Type - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/AdministrationType | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/AdministrationType | *Version*:2.27.2 |
 | Active as of 2022-10-11 | *Computable Name*:AdministrationType |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "AdministrationType",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/AdministrationType",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "AdministrationType",
   "title" : "Medicin administration Type",
   "status" : "active",

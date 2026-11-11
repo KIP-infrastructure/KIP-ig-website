@@ -1,0 +1,474 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/ImplantComponents> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ImplantComponents"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ImplantComponents</b></p><a name=\"ImplantComponents\"> </a><a name=\"hcImplantComponents\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/ImplantComponents</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">cement_spacer<a name=\"ImplantComponents-cement_spacer\"> </a></td><td>Cement spacer</td><td>Cement spacer</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">implant<a name=\"ImplantComponents-implant\"> </a></td><td>Implant</td><td>Implant / Implantat</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">cavitas_untouched<a name=\"ImplantComponents-cavitas_untouched\"> </a></td><td>Cavitas urørt</td><td>Cavitas urørt</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">cavitas_inforeret<a name=\"ImplantComponents-cavitas_inforeret\"> </a></td><td>Cavitas inforeret</td><td>Cavitas inforeret</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">cavitas_reamet<a name=\"ImplantComponents-cavitas_reamet\"> </a></td><td>Cavitas reamet</td><td>Cavitas reamet</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">cavitas_removed<a name=\"ImplantComponents-cavitas_removed\"> </a></td><td>Cavitas fjernet</td><td>Cavitas fjernet</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">resurfacing<a name=\"ImplantComponents-resurfacing\"> </a></td><td>Resurfacing</td><td>Resurfacing</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">stemless<a name=\"ImplantComponents-stemless\"> </a></td><td>Stemless</td><td>Stemless</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">stem<a name=\"ImplantComponents-stem\"> </a></td><td>Stem</td><td>Stem</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  standard_length<a name=\"ImplantComponents-standard_length\"> </a></td><td>Standard length</td><td>Standard length / Standard længde</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  extra_length<a name=\"ImplantComponents-extra_length\"> </a></td><td>Extra length</td><td>Extra length / Extra længde</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  short_mini_length<a name=\"ImplantComponents-short_mini_length\"> </a></td><td>Short/mini</td><td>Short/mini / Short/mini</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  stem_femur<a name=\"ImplantComponents-stem_femur\"> </a></td><td>Stem (femur)</td><td>Stem (femur)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  stem_tibia<a name=\"ImplantComponents-stem_tibia\"> </a></td><td>Stem (tibia)</td><td>Stem (tibia)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">augment<a name=\"ImplantComponents-augment\"> </a></td><td>Augment</td><td>Augment</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  augment_femur<a name=\"ImplantComponents-augment_femur\"> </a></td><td>Augment (femur)</td><td>Augment (femur)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  augment_tibia<a name=\"ImplantComponents-augment_tibia\"> </a></td><td>Augment (tibia)</td><td>Augment (tibia)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">cone_sleeve<a name=\"ImplantComponents-cone_sleeve\"> </a></td><td>Cone/sleeve</td><td>Cone/sleeve</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  cone_sleeve_femur<a name=\"ImplantComponents-cone_sleeve_femur\"> </a></td><td>Cone/sleeve (femur)</td><td>Cone/sleeve (femur)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  cone_sleeve_tibia<a name=\"ImplantComponents-cone_sleeve_tibia\"> </a></td><td>Cone/sleeve (tibia)</td><td>Cone/sleeve (tibia)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">cemented<a name=\"ImplantComponents-cemented\"> </a></td><td>Cemented</td><td>Cemented / Cementeret</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">uncemented<a name=\"ImplantComponents-uncemented\"> </a></td><td>Uncemented</td><td>Uncemented / Ucementeret</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">hybrid<a name=\"ImplantComponents-hybrid\"> </a></td><td>Hybrid</td><td>Hybrid</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  hybrid_a<a name=\"ImplantComponents-hybrid_a\"> </a></td><td>Hybrid A</td><td>Hybrid A</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  hybrid_b<a name=\"ImplantComponents-hybrid_b\"> </a></td><td>Hybrid B</td><td>Hybrid B</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">girdlestone<a name=\"ImplantComponents-girdlestone\"> </a></td><td>Girdlestone</td><td>Girdlestone</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">anatomic<a name=\"ImplantComponents-anatomic\"> </a></td><td>Anatomic</td><td>Anatomic / Anatomisk / SNOMED-CT: 36298004</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  symmetrical<a name=\"ImplantComponents-symmetrical\"> </a></td><td>Symmetrical</td><td>Symmetrical / Symmetrisk / SNOMED-CT: 255473004</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  offset<a name=\"ImplantComponents-offset\"> </a></td><td>Offset</td><td>Offset</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  helplast<a name=\"ImplantComponents-helplast\"> </a></td><td>Helplast</td><td>Helplast</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  metalbacked<a name=\"ImplantComponents-metalbacked\"> </a></td><td>Metalbacked</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">reverse<a name=\"ImplantComponents-reverse\"> </a></td><td>Reverse</td><td>Reverse</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  standard<a name=\"ImplantComponents-standard\"> </a></td><td>Standard</td><td>Standard</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  eccentric<a name=\"ImplantComponents-eccentric\"> </a></td><td>Excentrisk</td><td>Excentrisk</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">modular<a name=\"ImplantComponents-modular\"> </a></td><td>Modular</td><td>Modular / Modulært</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  firm_neck<a name=\"ImplantComponents-firm_neck\"> </a></td><td>Firm neck</td><td>Firm neck / Fast hals</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  detachable_neck<a name=\"ImplantComponents-detachable_neck\"> </a></td><td>Detachable neck</td><td>Detachable neck / Aftagelig hals</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">adherent<a name=\"ImplantComponents-adherent\"> </a></td><td>Adherent</td><td>Adherent / Fastsiddende</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">ordninary<a name=\"ImplantComponents-ordninary\"> </a></td><td>Ordinary</td><td>Ordinary / Almindelig</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">extended<a name=\"ImplantComponents-extended\"> </a></td><td>Extended</td><td>Extended</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">with_holes<a name=\"ImplantComponents-with_holes\"> </a></td><td>With holes</td><td>With holes / Med huller</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">without_holes<a name=\"ImplantComponents-without_holes\"> </a></td><td>Without holes</td><td>Without holes / Uden huller</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">metal<a name=\"ImplantComponents-metal\"> </a></td><td>Metal</td><td>Metal / SNOMED-CT: 425620007</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">metal_pegs<a name=\"ImplantComponents-metal_pegs\"> </a></td><td>Metal pegs</td><td>Metal pegs</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">metal_backing<a name=\"ImplantComponents-metal_backing\"> </a></td><td>Metal-backing</td><td>Metal-backing</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">screws<a name=\"ImplantComponents-screws\"> </a></td><td>Skruer</td><td>Skruer</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">augmented<a name=\"ImplantComponents-augmented\"> </a></td><td>Augmented</td><td>Augmented</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">polyethylene<a name=\"ImplantComponents-polyethylene\"> </a></td><td>Polyethylene</td><td>Polyethylene / Polyethylen / SNOMED-CT: 71463006</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  polyethylene_cool<a name=\"ImplantComponents-polyethylene_cool\"> </a></td><td>Polyethylen køl</td><td>Polyethylen køl</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  polyethylene_pegs<a name=\"ImplantComponents-polyethylene_pegs\"> </a></td><td>Polyethylen pegs</td><td>Polyethylen pegs</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">pyrocarbon<a name=\"ImplantComponents-pyrocarbon\"> </a></td><td>Pyrocarbon</td><td>Pyrocarbon</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">ceramics<a name=\"ImplantComponents-ceramics\"> </a></td><td>Ceramics</td><td>Ceramics / Keramik</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">spongiotic<a name=\"ImplantComponents-spongiotic\"> </a></td><td>Spongiotic</td><td>Spongiotic / Spongiøs</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">structural<a name=\"ImplantComponents-structural\"> </a></td><td>Structural</td><td>Structural / Strukturel</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">constrained<a name=\"ImplantComponents-constrained\"> </a></td><td>Constrained</td><td>Constrained</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">non_constrained<a name=\"ImplantComponents-non_constrained\"> </a></td><td>Non-constrained</td><td>Non-constrained / Ikke-constrained</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">double_mobility<a name=\"ImplantComponents-double_mobility\"> </a></td><td>Double mobility</td><td>Double mobility</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">non_highy_crosslinked<a name=\"ImplantComponents-non_highy_crosslinked\"> </a></td><td>Ikke highly-crosslinked</td><td>Ikke highly-crosslinked</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">highly_crosslinked<a name=\"ImplantComponents-highly_crosslinked\"> </a></td><td>Highly crosslinked</td><td>Highly crosslinked</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">highly_crosslinked_antioxidant<a name=\"ImplantComponents-highly_crosslinked_antioxidant\"> </a></td><td>Highly crosslinked med antioxidant (Vitamin E og AOX)</td><td>Highly crosslinked med antioxidant (Vitamin E og AOX)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">humerus<a name=\"ImplantComponents-humerus\"> </a></td><td>Humerus</td><td>Humerus</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  liner<a name=\"ImplantComponents-liner\"> </a></td><td>Liner</td><td>Liner</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  caput<a name=\"ImplantComponents-caput\"> </a></td><td>Caput</td><td>Caput</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  component<a name=\"ImplantComponents-component\"> </a></td><td>Komponent</td><td>Komponent</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">cavitas<a name=\"ImplantComponents-cavitas\"> </a></td><td>Cavitas</td><td>Cavitas</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">acetabulum_component<a name=\"ImplantComponents-acetabulum_component\"> </a></td><td>Acetabulumkomponent</td><td>Acetabulumkomponent</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">acetabulum_liner<a name=\"ImplantComponents-acetabulum_liner\"> </a></td><td>Acetabulumliner</td><td>Acetabulumliner</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">femur_component<a name=\"ImplantComponents-femur_component\"> </a></td><td>Femurkomponent</td><td>Femurkomponent</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">tibia_component<a name=\"ImplantComponents-tibia_component\"> </a></td><td>Tibiakomponent</td><td>Tibiakomponent</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">patella_component<a name=\"ImplantComponents-patella_component\"> </a></td><td>Patellakomponent</td><td>Patellakomponent</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">soft_tissue<a name=\"ImplantComponents-soft_tissue\"> </a></td><td>Bløddelsrevisioner uden udskiftning af protesekomponenter</td><td>Bløddelsrevisioner uden udskiftning af protesekomponenter</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">polyethylene_change<a name=\"ImplantComponents-polyethylene_change\"> </a></td><td>Polyethylen-skift (ved revision)</td><td>Polyethylen-skift (ved revision) (Tibia)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">long<a name=\"ImplantComponents-long\"> </a></td><td>Long</td><td>Long / Lang</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">dysplasia_prosthesis<a name=\"ImplantComponents-dysplasia_prosthesis\"> </a></td><td>Dysplasia prosthesis</td><td>Dysplasia prosthesis / Dysplasiprotese</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">resection_prosthesis<a name=\"ImplantComponents-resection_prosthesis\"> </a></td><td>Resection prosthesis</td><td>Resection prosthesis / Resektionsprotese</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">open_mixture<a name=\"ImplantComponents-open_mixture\"> </a></td><td>Open mixture</td><td>Open mixture / Åben blanding af væske og pulver</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">closed_mixture<a name=\"ImplantComponents-closed_mixture\"> </a></td><td>Closed mixture</td><td>Closed mixture / Fuldstændig lukket blanding af væske og pulver</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">massive_transplant<a name=\"ImplantComponents-massive_transplant\"> </a></td><td>Massive transplant</td><td>Massiv transplantering</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">crumble<a name=\"ImplantComponents-crumble\"> </a></td><td>Minor crumble</td><td>Lidt smuld</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/ImplantComponents"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.2"] ;
+  fhir:CodeSystem.name [ fhir:value "ImplantComponents"] ;
+  fhir:CodeSystem.title [ fhir:value "Implant components"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2022-07-04T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Implant components"] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "79"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index 0 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cement_spacer" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cement spacer" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Cement spacer" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "implant" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Implant" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Implant / Implantat" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cavitas_untouched" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cavitas urørt" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Cavitas urørt" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cavitas_inforeret" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cavitas inforeret" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Cavitas inforeret" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cavitas_reamet" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cavitas reamet" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Cavitas reamet" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cavitas_removed" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cavitas fjernet" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Cavitas fjernet" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "resurfacing" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Resurfacing" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Resurfacing" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "stemless" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Stemless" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Stemless" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "stem" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Stem" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Stem" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.code [ fhir:value "standard_length" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Standard length" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Standard length / Standard længde" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "extra_length" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Extra length" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Extra length / Extra længde" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.code [ fhir:value "short_mini_length" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Short/mini" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Short/mini / Short/mini" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.code [ fhir:value "stem_femur" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Stem (femur)" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Stem (femur)" ]
+     ], [
+       fhir:index 4 ;
+       fhir:CodeSystem.concept.code [ fhir:value "stem_tibia" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Stem (tibia)" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Stem (tibia)" ]
+     ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "augment" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Augment" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Augment" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.code [ fhir:value "augment_femur" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Augment (femur)" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Augment (femur)" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "augment_tibia" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Augment (tibia)" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Augment (tibia)" ]
+     ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cone_sleeve" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cone/sleeve" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Cone/sleeve" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.code [ fhir:value "cone_sleeve_femur" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Cone/sleeve (femur)" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Cone/sleeve (femur)" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "cone_sleeve_tibia" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Cone/sleeve (tibia)" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Cone/sleeve (tibia)" ]
+     ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cemented" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cemented" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Cemented / Cementeret" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "uncemented" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Uncemented" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Uncemented / Ucementeret" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "hybrid" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hybrid" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Hybrid" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.code [ fhir:value "hybrid_a" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Hybrid A" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Hybrid A" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "hybrid_b" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Hybrid B" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Hybrid B" ]
+     ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "girdlestone" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Girdlestone" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Girdlestone" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "anatomic" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anatomic" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Anatomic / Anatomisk / SNOMED-CT: 36298004" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.code [ fhir:value "symmetrical" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Symmetrical" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Symmetrical / Symmetrisk / SNOMED-CT: 255473004" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "offset" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Offset" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Offset" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.code [ fhir:value "helplast" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Helplast" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Helplast" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.code [ fhir:value "metalbacked" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Metalbacked" ]
+     ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "reverse" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Reverse" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Reverse" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.code [ fhir:value "standard" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Standard" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Standard" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "eccentric" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Excentrisk" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Excentrisk" ]
+     ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "modular" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Modular" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Modular / Modulært" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.code [ fhir:value "firm_neck" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Firm neck" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Firm neck / Fast hals" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "detachable_neck" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Detachable neck" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Detachable neck / Aftagelig hals" ]
+     ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "adherent" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Adherent" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Adherent / Fastsiddende" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ordninary" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ordinary" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Ordinary / Almindelig" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "extended" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Extended" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Extended" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "with_holes" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "With holes" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "With holes / Med huller" ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "without_holes" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Without holes" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Without holes / Uden huller" ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "metal" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Metal" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Metal / SNOMED-CT: 425620007" ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "metal_pegs" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Metal pegs" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Metal pegs" ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "metal_backing" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Metal-backing" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Metal-backing" ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "screws" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Skruer" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Skruer" ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "augmented" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Augmented" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Augmented" ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "polyethylene" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Polyethylene" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Polyethylene / Polyethylen / SNOMED-CT: 71463006" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.code [ fhir:value "polyethylene_cool" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Polyethylen køl" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Polyethylen køl" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "polyethylene_pegs" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Polyethylen pegs" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Polyethylen pegs" ]
+     ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "pyrocarbon" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pyrocarbon" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Pyrocarbon" ]
+  ], [
+     fhir:index 30 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ceramics" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ceramics" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Ceramics / Keramik" ]
+  ], [
+     fhir:index 31 ;
+     fhir:CodeSystem.concept.code [ fhir:value "spongiotic" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Spongiotic" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Spongiotic / Spongiøs" ]
+  ], [
+     fhir:index 32 ;
+     fhir:CodeSystem.concept.code [ fhir:value "structural" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Structural" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Structural / Strukturel" ]
+  ], [
+     fhir:index 33 ;
+     fhir:CodeSystem.concept.code [ fhir:value "constrained" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Constrained" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Constrained" ]
+  ], [
+     fhir:index 34 ;
+     fhir:CodeSystem.concept.code [ fhir:value "non_constrained" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Non-constrained" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Non-constrained / Ikke-constrained" ]
+  ], [
+     fhir:index 35 ;
+     fhir:CodeSystem.concept.code [ fhir:value "double_mobility" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Double mobility" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Double mobility" ]
+  ], [
+     fhir:index 36 ;
+     fhir:CodeSystem.concept.code [ fhir:value "non_highy_crosslinked" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ikke highly-crosslinked" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Ikke highly-crosslinked" ]
+  ], [
+     fhir:index 37 ;
+     fhir:CodeSystem.concept.code [ fhir:value "highly_crosslinked" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Highly crosslinked" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Highly crosslinked" ]
+  ], [
+     fhir:index 38 ;
+     fhir:CodeSystem.concept.code [ fhir:value "highly_crosslinked_antioxidant" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Highly crosslinked med antioxidant (Vitamin E og AOX)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Highly crosslinked med antioxidant (Vitamin E og AOX)" ]
+  ], [
+     fhir:index 39 ;
+     fhir:CodeSystem.concept.code [ fhir:value "humerus" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Humerus" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Humerus" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.code [ fhir:value "liner" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Liner" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Liner" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "caput" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Caput" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Caput" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.code [ fhir:value "component" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Komponent" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Komponent" ]
+     ]
+  ], [
+     fhir:index 40 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cavitas" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cavitas" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Cavitas" ]
+  ], [
+     fhir:index 41 ;
+     fhir:CodeSystem.concept.code [ fhir:value "acetabulum_component" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Acetabulumkomponent" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Acetabulumkomponent" ]
+  ], [
+     fhir:index 42 ;
+     fhir:CodeSystem.concept.code [ fhir:value "acetabulum_liner" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Acetabulumliner" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Acetabulumliner" ]
+  ], [
+     fhir:index 43 ;
+     fhir:CodeSystem.concept.code [ fhir:value "femur_component" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Femurkomponent" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Femurkomponent" ]
+  ], [
+     fhir:index 44 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tibia_component" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tibiakomponent" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Tibiakomponent" ]
+  ], [
+     fhir:index 45 ;
+     fhir:CodeSystem.concept.code [ fhir:value "patella_component" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patellakomponent" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Patellakomponent" ]
+  ], [
+     fhir:index 46 ;
+     fhir:CodeSystem.concept.code [ fhir:value "soft_tissue" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bløddelsrevisioner uden udskiftning af protesekomponenter" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Bløddelsrevisioner uden udskiftning af protesekomponenter" ]
+  ], [
+     fhir:index 47 ;
+     fhir:CodeSystem.concept.code [ fhir:value "polyethylene_change" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Polyethylen-skift (ved revision)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Polyethylen-skift (ved revision) (Tibia)" ]
+  ], [
+     fhir:index 48 ;
+     fhir:CodeSystem.concept.code [ fhir:value "long" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Long" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Long / Lang" ]
+  ], [
+     fhir:index 49 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dysplasia_prosthesis" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dysplasia prosthesis" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Dysplasia prosthesis / Dysplasiprotese" ]
+  ], [
+     fhir:index 50 ;
+     fhir:CodeSystem.concept.code [ fhir:value "resection_prosthesis" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Resection prosthesis" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Resection prosthesis / Resektionsprotese" ]
+  ], [
+     fhir:index 51 ;
+     fhir:CodeSystem.concept.code [ fhir:value "open_mixture" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Open mixture" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Open mixture / Åben blanding af væske og pulver" ]
+  ], [
+     fhir:index 52 ;
+     fhir:CodeSystem.concept.code [ fhir:value "closed_mixture" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Closed mixture" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Closed mixture / Fuldstændig lukket blanding af væske og pulver" ]
+  ], [
+     fhir:index 53 ;
+     fhir:CodeSystem.concept.code [ fhir:value "massive_transplant" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Massive transplant" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Massiv transplantering" ]
+  ], [
+     fhir:index 54 ;
+     fhir:CodeSystem.concept.code [ fhir:value "crumble" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Minor crumble" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Lidt smuld" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/ImplantComponents.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

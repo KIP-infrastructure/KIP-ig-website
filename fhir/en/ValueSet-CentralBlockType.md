@@ -1,4 +1,4 @@
-# Typer af central blokade - KIP Infrastructure v2.27.1
+# Typer af central blokade - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/CentralBlockType | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/CentralBlockType | *Version*:2.27.2 |
 | Active as of 2022-06-09 | *Computable Name*:CentralBlockType |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "CentralBlockType",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/CentralBlockType",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "CentralBlockType",
   "title" : "Typer af central blokade",
   "status" : "active",

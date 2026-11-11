@@ -1,0 +1,87 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/LokalitetDANARREST> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "LokalitetDANARREST"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet LokalitetDANARREST</b></p><a name=\"LokalitetDANARREST\"> </a><a name=\"hcLokalitetDANARREST\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Observationssted.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Observationssted</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.2</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Observationssted.html#Observationssted-akutmodt\">akutmodt</a></td><td>Akutmodtagelse</td><td>Akutmodtagelse</td></tr><tr><td><a href=\"CodeSystem-Observationssted.html#Observationssted-ambulat\">ambulat</a></td><td>Ambulatorium</td><td>Ambulatorium</td></tr><tr><td><a href=\"CodeSystem-Observationssted.html#Observationssted-sengeafd\">sengeafd</a></td><td>Sengeafdeling</td><td>Sengeafdeling</td></tr><tr><td><a href=\"CodeSystem-Observationssted.html#Observationssted-opergang\">opergang</a></td><td>Operationsgang</td><td>Operationsgangen</td></tr><tr><td><a href=\"CodeSystem-Observationssted.html#Observationssted-opvaagn\">opvaagn</a></td><td>Opvågningsafdeling</td><td>Opvågningsafdeling</td></tr><tr><td><a href=\"CodeSystem-Observationssted.html#Observationssted-intensiv\">intensiv</a></td><td>Intensivafdeling</td><td>Intensiv afdeling</td></tr><tr><td><a href=\"CodeSystem-Observationssted.html#Observationssted-kardio_lab\">kardio_lab</a></td><td>Kardiologisk laboratorium</td><td>Kardiologisk laboratorium</td></tr><tr><td><a href=\"CodeSystem-Observationssted.html#Observationssted-neonatal\">neonatal</a></td><td>Neonatalafdeling</td><td>Neonatalafdeling</td></tr><tr><td><a href=\"CodeSystem-Observationssted.html#Observationssted-andet\">andet</a></td><td>Andet</td><td>Andet</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/LokalitetDANARREST"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.2"] ;
+  fhir:ValueSet.name [ fhir:value "LokalitetDANARREST"] ;
+  fhir:ValueSet.title [ fhir:value "Lokalitet DANARREST"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-06-29T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Lokalitet DANARREST"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/Observationssted" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "akutmodt" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Akutmodtagelse" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ambulat" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ambulatorium" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "sengeafd" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sengeafdeling" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "opergang" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Operationsgang" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "opvaagn" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Opvågningsafdeling" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "intensiv" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intensivafdeling" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "kardio_lab" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kardiologisk laboratorium" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "neonatal" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neonatalafdeling" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "andet" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Andet" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/LokalitetDANARREST.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

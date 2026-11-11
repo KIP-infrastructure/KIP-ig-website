@@ -1,4 +1,4 @@
-# FISH variables; test - KIP Infrastructure v2.27.1
+# FISH variables; test - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/FISHVariables | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/FISHVariables | *Version*:2.27.2 |
 | Active as of 2025-02-21 | *Computable Name*:FISHVariables |
 
  
@@ -35,7 +35,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "FISHVariables",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/FISHVariables",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "FISHVariables",
   "title" : "FISH variables; test",
   "status" : "active",

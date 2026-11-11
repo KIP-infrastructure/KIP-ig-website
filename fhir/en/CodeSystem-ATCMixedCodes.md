@@ -1,4 +1,4 @@
-# WHO ATC; Mixed codes - KIP Infrastructure v2.27.1
+# WHO ATC; Mixed codes - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/ATCMixedCodes | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/ATCMixedCodes | *Version*:2.27.2 |
 | Active as of 2022-07-14 | *Computable Name*:ATCMixedCodes |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "ATCMixedCodes",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/ATCMixedCodes",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "ATCMixedCodes",
   "title" : "WHO ATC; Mixed codes",
   "status" : "active",

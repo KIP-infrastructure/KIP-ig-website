@@ -1,4 +1,4 @@
-# Scandinavian Stroke Scale - Orientering - KIP Infrastructure v2.27.1
+# Scandinavian Stroke Scale - Orientering - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SSSOrientering | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SSSOrientering | *Version*:2.27.2 |
 | Active as of 2022-06-23 | *Computable Name*:SSSOrientering |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "SSSOrientering",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/SSSOrientering",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "SSSOrientering",
   "title" : "Scandinavian Stroke Scale - Orientering",
   "status" : "active",

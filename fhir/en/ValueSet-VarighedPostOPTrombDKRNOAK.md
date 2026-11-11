@@ -1,4 +1,4 @@
-# Varighed PostOP trombolyseprofylakse (DKR)NOAK - KIP Infrastructure v2.27.1
+# Varighed PostOP trombolyseprofylakse (DKR)NOAK - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/VarighedPostOPTrombDKRNOAK | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/VarighedPostOPTrombDKRNOAK | *Version*:2.27.2 |
 | Active as of 2024-05-13 | *Computable Name*:VarighedPostOPTrombDKRNOAK |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "VarighedPostOPTrombDKRNOAK",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/VarighedPostOPTrombDKRNOAK",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "VarighedPostOPTrombDKRNOAK",
   "title" : "Varighed PostOP trombolyseprofylakse (DKR)NOAK",
   "status" : "active",

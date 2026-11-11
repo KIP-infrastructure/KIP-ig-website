@@ -1,0 +1,472 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/ProcedureUrogyn> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ProcedureUrogyn"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ProcedureUrogyn</b></p><a name=\"ProcedureUrogyn\"> </a><a name=\"hcProcedureUrogyn\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/ProcedureUrogyn</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">KKDG00<a name=\"ProcedureUrogyn-KKDG00\"> </a></td><td>Retropubisk supension af urinrør</td><td>Retropubisk supension af urinrør</td></tr><tr><td style=\"white-space:nowrap\">KKDG30<a name=\"ProcedureUrogyn-KKDG30\"> </a></td><td>Abdominal uretrocystopeksi med slynge</td><td>Abdominal uretrocystopeksi med slynge</td></tr><tr><td style=\"white-space:nowrap\">KKDV22<a name=\"ProcedureUrogyn-KKDV22\"> </a></td><td>Uretroskopisk submukøs injektionsbehandling i urinrør</td><td>Uretroskopisk submukøs injektionsbehandling i urinrør</td></tr><tr><td style=\"white-space:nowrap\">KLEG10<a name=\"ProcedureUrogyn-KLEG10\"> </a></td><td>Vaginal uretrocystopeksi med slynge</td><td>Vaginal uretrocystopeksi med slynge</td></tr><tr><td style=\"white-space:nowrap\">KLEG10A<a name=\"ProcedureUrogyn-KLEG10A\"> </a></td><td>Vaginal uretrocystopeksi med slynge gennem foramen obturatum</td><td>Vaginal uretrocystopeksi med slynge gennem foramen obturatum</td></tr><tr><td style=\"white-space:nowrap\">KLEF00<a name=\"ProcedureUrogyn-KLEF00\"> </a></td><td>Forreste kolporafi</td><td>Forreste kolporafi</td></tr><tr><td style=\"white-space:nowrap\">KLEF00A<a name=\"ProcedureUrogyn-KLEF00A\"> </a></td><td>Forreste kolporafi med meche</td><td>Forreste kolporafi med meche</td></tr><tr><td style=\"white-space:nowrap\">KLEF03<a name=\"ProcedureUrogyn-KLEF03\"> </a></td><td>Bageste kolporafi</td><td>Bageste kolporafi</td></tr><tr><td style=\"white-space:nowrap\">KLEF03A<a name=\"ProcedureUrogyn-KLEF03A\"> </a></td><td>Bageste kolporafi med meche</td><td>Bageste kolporafi med meche</td></tr><tr><td style=\"white-space:nowrap\">KLEF20<a name=\"ProcedureUrogyn-KLEF20\"> </a></td><td>Partiel kolpokleise</td><td>Partiel kolpokleise</td></tr><tr><td style=\"white-space:nowrap\">KLEF40<a name=\"ProcedureUrogyn-KLEF40\"> </a></td><td>Vaginal operation for enterocele</td><td>Vaginal operation for enterocele</td></tr><tr><td style=\"white-space:nowrap\">KLEF40A<a name=\"ProcedureUrogyn-KLEF40A\"> </a></td><td>Vaginal operation for enterocele med meche</td><td>Vaginal operation for enterocele med meche</td></tr><tr><td style=\"white-space:nowrap\">KLEF43<a name=\"ProcedureUrogyn-KLEF43\"> </a></td><td>Abdominal operation for enterocele</td><td>Abdominal operation for enterocele</td></tr><tr><td style=\"white-space:nowrap\">KLEF43A<a name=\"ProcedureUrogyn-KLEF43A\"> </a></td><td>Abdominal operation for enterocele med meche</td><td>Abdominal operation for enterocele med meche</td></tr><tr><td style=\"white-space:nowrap\">KLEF50<a name=\"ProcedureUrogyn-KLEF50\"> </a></td><td>Abdominal apikal kolpopeksi efter tidligere hysterektomi</td><td>Abdominal apikal kolpopeksi efter tidligere hysterektomi</td></tr><tr><td style=\"white-space:nowrap\">KLEF50A<a name=\"ProcedureUrogyn-KLEF50A\"> </a></td><td>Abdominal apikal kolpopeksi eft. tidl. hysterektomi m. meche</td><td>Abdominal apikal kolpopeksi eft. tidl. hysterektomi m. meche</td></tr><tr><td style=\"white-space:nowrap\">KLEF51<a name=\"ProcedureUrogyn-KLEF51\"> </a></td><td>Laparoskopisk apikal kolpopeksi efter tidligere hysterektomi</td><td>Laparoskopisk apikal kolpopeksi efter tidligere hysterektomi</td></tr><tr><td style=\"white-space:nowrap\">KLEF51A<a name=\"ProcedureUrogyn-KLEF51A\"> </a></td><td>Laparoskop. apikal kolpopeksi eft.tidl. hysterektomi m. meche</td><td>Laparoskop. apikal kolpopeksi eft.tidl. hysterektomi m. meche</td></tr><tr><td style=\"white-space:nowrap\">KLEF53<a name=\"ProcedureUrogyn-KLEF53\"> </a></td><td>Vaginal apikal kolpopeksi efter tidligere hysterektomi</td><td>Vaginal apikal kolpopeksi efter tidligere hysterektomi</td></tr><tr><td style=\"white-space:nowrap\">KLEF53A<a name=\"ProcedureUrogyn-KLEF53A\"> </a></td><td>Vaginal apikal kolpopeksi efter tidl. hysterektomi med meche</td><td>Vaginal apikal kolpopeksi efter tidl. hysterektomi med meche</td></tr><tr><td style=\"white-space:nowrap\">KLEF53B<a name=\"ProcedureUrogyn-KLEF53B\"> </a></td><td>Vaginal apikal kolpopeksi til det sakrospinøse ligament</td><td>Vaginal apikal kolpopeksi til det sakrospinøse ligament</td></tr><tr><td style=\"white-space:nowrap\">KLEF60<a name=\"ProcedureUrogyn-KLEF60\"> </a></td><td>Vaginal lateral kolpopeksi</td><td>Vaginal lateral kolpopeksi</td></tr><tr><td style=\"white-space:nowrap\">KLEF63<a name=\"ProcedureUrogyn-KLEF63\"> </a></td><td>Abdominal lateral kolpopeksi</td><td>Abdominal lateral kolpopeksi</td></tr><tr><td style=\"white-space:nowrap\">KLCG20<a name=\"ProcedureUrogyn-KLCG20\"> </a></td><td>Hysteropeksi</td><td>Hysteropeksi</td></tr><tr><td style=\"white-space:nowrap\">KLCG21<a name=\"ProcedureUrogyn-KLCG21\"> </a></td><td>Laparoskopisk hysteropeksi</td><td>Laparoskopisk hysteropeksi</td></tr><tr><td style=\"white-space:nowrap\">KLCG21A<a name=\"ProcedureUrogyn-KLCG21A\"> </a></td><td>Laparoskopisk hysteropeksi med mesh</td><td>Laparoskopisk hysteropeksi med mesh</td></tr><tr><td style=\"white-space:nowrap\">KLCD10<a name=\"ProcedureUrogyn-KLCD10\"> </a></td><td>Vaginal hysterektomi</td><td>Vaginal hysterektomi</td></tr><tr><td style=\"white-space:nowrap\">KLDC10<a name=\"ProcedureUrogyn-KLDC10\"> </a></td><td>Resektion af livmoderhals</td><td>Resektion af livmoderhals</td></tr><tr><td style=\"white-space:nowrap\">KLED00<a name=\"ProcedureUrogyn-KLED00\"> </a></td><td>Kolpektomi</td><td>Kolpektomi</td></tr><tr><td style=\"white-space:nowrap\">KZLA01<a name=\"ProcedureUrogyn-KZLA01\"> </a></td><td>Suspension af vaginaltop a.m. McCall</td><td>Suspension af vaginaltop a.m. McCall</td></tr><tr><td style=\"white-space:nowrap\">KZLA02<a name=\"ProcedureUrogyn-KZLA02\"> </a></td><td>Suspension af vaginaltop a.m. Bob Shull</td><td>Suspension af vaginaltop a.m. Bob Shull</td></tr><tr><td style=\"white-space:nowrap\">KLEE00<a name=\"ProcedureUrogyn-KLEE00\"> </a></td><td>Sutur af vagina</td><td>Sutur af vagina</td></tr><tr><td style=\"white-space:nowrap\">KLFE00<a name=\"ProcedureUrogyn-KLFE00\"> </a></td><td>Sutur af vulva</td><td>Sutur af vulva</td></tr><tr><td style=\"white-space:nowrap\">KLFE96<a name=\"ProcedureUrogyn-KLFE96\"> </a></td><td>Anden rekonstruktion på vulva eller perineum</td><td>Anden rekonstruktion på vulva eller perineum</td></tr><tr><td style=\"white-space:nowrap\">KJHC10<a name=\"ProcedureUrogyn-KJHC10\"> </a></td><td>Rekonstruktion af sphincter ani</td><td>Rekonstruktion af sphincter ani</td></tr><tr><td style=\"white-space:nowrap\">KUKC02<a name=\"ProcedureUrogyn-KUKC02\"> </a></td><td>Cystoskopi</td><td>Cystoskopi</td></tr><tr><td style=\"white-space:nowrap\">KZXF84A<a name=\"ProcedureUrogyn-KZXF84A\"> </a></td><td>Ikke resorberbar sutur</td><td>Ikke resorberbar sutur</td></tr><tr><td style=\"white-space:nowrap\">KZXF84B<a name=\"ProcedureUrogyn-KZXF84B\"> </a></td><td>Korttidsresorberbar sutur (&lt; 3 uger)</td><td>Korttidsresorberbar sutur (&lt; 3 uger)</td></tr><tr><td style=\"white-space:nowrap\">KZXF84C<a name=\"ProcedureUrogyn-KZXF84C\"> </a></td><td>Forsinket resorberbar sutur</td><td>Forsinket resorberbar sutur</td></tr><tr><td style=\"white-space:nowrap\">KZXX00<a name=\"ProcedureUrogyn-KZXX00\"> </a></td><td>Anvendelse af robot</td><td>Anvendelse af robot</td></tr><tr><td style=\"white-space:nowrap\">DN393<a name=\"ProcedureUrogyn-DN393\"> </a></td><td>Stress-inkontinens</td><td>Stress-inkontinens</td></tr><tr><td style=\"white-space:nowrap\">DN895D<a name=\"ProcedureUrogyn-DN895D\"> </a></td><td>Vaginal striktur</td><td>Vaginal striktur</td></tr><tr><td style=\"white-space:nowrap\">DR102B<a name=\"ProcedureUrogyn-DR102B\"> </a></td><td>Mavesmerter lokaliseret til bækken</td><td>Mavesmerter lokaliseret til bækken</td></tr><tr><td style=\"white-space:nowrap\">DR339D<a name=\"ProcedureUrogyn-DR339D\"> </a></td><td>Residualurin</td><td>Residualurin</td></tr><tr><td style=\"white-space:nowrap\">DR391<a name=\"ProcedureUrogyn-DR391\"> </a></td><td>Vandladningsbesvær UNS</td><td>Vandladningsbesvær UNS</td></tr><tr><td style=\"white-space:nowrap\">DR522B<a name=\"ProcedureUrogyn-DR522B\"> </a></td><td>Smerter i kønsorganer</td><td>Smerter i kønsorganer</td></tr><tr><td style=\"white-space:nowrap\">DT810G<a name=\"ProcedureUrogyn-DT810G\"> </a></td><td>Postoperativ blødning UNS</td><td>Postoperativ blødning UNS</td></tr><tr><td style=\"white-space:nowrap\">DT810H<a name=\"ProcedureUrogyn-DT810H\"> </a></td><td>Postoperativt hæmatom UNS</td><td>Postoperativt hæmatom UNS</td></tr><tr><td style=\"white-space:nowrap\">DT812G<a name=\"ProcedureUrogyn-DT812G\"> </a></td><td>Utilsigtet peroperativ punktur eller læsion af gastrointestinalkanalen</td><td>Utilsigtet peroperativ punktur eller læsion af gastrointestinalkanalen</td></tr><tr><td style=\"white-space:nowrap\">DT812H<a name=\"ProcedureUrogyn-DT812H\"> </a></td><td>Utilsigtet peroperativ punktur eller læsion af kvindeligt kønsorgan</td><td>Utilsigtet peroperativ punktur eller læsion af kvindeligt kønsorgan</td></tr><tr><td style=\"white-space:nowrap\">DT812UC<a name=\"ProcedureUrogyn-DT812UC\"> </a></td><td>Utilsigtet peroperativ punktur eller læsion af urinleder</td><td>Utilsigtet peroperativ punktur eller læsion af urinleder</td></tr><tr><td style=\"white-space:nowrap\">DT812UD<a name=\"ProcedureUrogyn-DT812UD\"> </a></td><td>Utilsigtet peroperativ punktur eller læsion af urinblære</td><td>Utilsigtet peroperativ punktur eller læsion af urinblære</td></tr><tr><td style=\"white-space:nowrap\">DT812UE<a name=\"ProcedureUrogyn-DT812UE\"> </a></td><td>Utilsigtet peroperativ punktur eller læsion af urinrør</td><td>Utilsigtet peroperativ punktur eller læsion af urinrør</td></tr><tr><td style=\"white-space:nowrap\">DT814F<a name=\"ProcedureUrogyn-DT814F\"> </a></td><td>Postoperativ sårinfektion</td><td>Postoperativ sårinfektion</td></tr><tr><td style=\"white-space:nowrap\">DT814U<a name=\"ProcedureUrogyn-DT814U\"> </a></td><td>Postoperativ urinvejsinfektion</td><td>Postoperativ urinvejsinfektion</td></tr><tr><td style=\"white-space:nowrap\">DT818F<a name=\"ProcedureUrogyn-DT818F\"> </a></td><td>Peroperativ blødning UNS</td><td>Peroperativ blødning UNS</td></tr><tr><td style=\"white-space:nowrap\">DT835<a name=\"ProcedureUrogyn-DT835\"> </a></td><td>Infektion eller inflammation omkring protese, implantat eller transplantat i urinvejene</td><td>Infektion eller inflammation omkring protese, implantat eller transplantat i urinvejene</td></tr><tr><td style=\"white-space:nowrap\">DT836<a name=\"ProcedureUrogyn-DT836\"> </a></td><td>Infektion eller inflammation omkring protese, implantat eller transplantat i kønsorganerne</td><td>Infektion eller inflammation omkring protese, implantat eller transplantat i kønsorganerne</td></tr><tr><td style=\"white-space:nowrap\">DT983C<a name=\"ProcedureUrogyn-DT983C\"> </a></td><td>Postoperativ seksuel dysfunktion</td><td>Postoperativ seksuel dysfunktion</td></tr><tr><td style=\"white-space:nowrap\">KKBF00<a name=\"ProcedureUrogyn-KKBF00\"> </a></td><td>Fjernelse af fremmedlegeme i urinleder</td><td>Fjernelse af fremmedlegeme i urinleder</td></tr><tr><td style=\"white-space:nowrap\">KKCF01<a name=\"ProcedureUrogyn-KKCF01\"> </a></td><td>Perkutan endoskopisk fjernelse af fremmedlegeme i urinblære</td><td>Perkutan endoskopisk fjernelse af fremmedlegeme i urinblære</td></tr><tr><td style=\"white-space:nowrap\">KKDE20<a name=\"ProcedureUrogyn-KKDE20\"> </a></td><td>Fjernelse af fremmedlegeme fra urinrør</td><td>Fjernelse af fremmedlegeme fra urinrør</td></tr><tr><td style=\"white-space:nowrap\">KLWB00<a name=\"ProcedureUrogyn-KLWB00\"> </a></td><td>Reoperation ved overfladisk infektion efter gynækologisk operation</td><td>Reoperation ved overfladisk infektion efter gynækologisk operation</td></tr><tr><td style=\"white-space:nowrap\">KLWC00<a name=\"ProcedureUrogyn-KLWC00\"> </a></td><td>Reoperation ved dyb infektion efter gynækologisk operation</td><td>Reoperation ved dyb infektion efter gynækologisk operation</td></tr><tr><td style=\"white-space:nowrap\">KLWC01<a name=\"ProcedureUrogyn-KLWC01\"> </a></td><td>Laparoskopisk reoperation ved dyb infektion efter gynækologisk operation</td><td>Laparoskopisk reoperation ved dyb infektion efter gynækologisk operation</td></tr><tr><td style=\"white-space:nowrap\">KLWD00<a name=\"ProcedureUrogyn-KLWD00\"> </a></td><td>Reoperation for overfladisk blødning efter gynækologisk operation</td><td>Reoperation for overfladisk blødning efter gynækologisk operation</td></tr><tr><td style=\"white-space:nowrap\">KLWE00<a name=\"ProcedureUrogyn-KLWE00\"> </a></td><td>Reoperation for dyb blødning efter gynækologisk operation</td><td>Reoperation for dyb blødning efter gynækologisk operation</td></tr><tr><td style=\"white-space:nowrap\">KLWE01<a name=\"ProcedureUrogyn-KLWE01\"> </a></td><td>Laparoskopisk reoperation for dyb blødning efter gynækologisk operation</td><td>Laparoskopisk reoperation for dyb blødning efter gynækologisk operation</td></tr><tr><td style=\"white-space:nowrap\">KLWW96<a name=\"ProcedureUrogyn-KLWW96\"> </a></td><td>Anden reoperation efter gynækologisk operation</td><td>Anden reoperation efter gynækologisk operation</td></tr><tr><td style=\"white-space:nowrap\">KLWW96A<a name=\"ProcedureUrogyn-KLWW96A\"> </a></td><td>Fjernelse af fremmedlegeme i bækkenhulen efter gynækologisk operation</td><td>Fjernelse af fremmedlegeme i bækkenhulen efter gynækologisk operation</td></tr><tr><td style=\"white-space:nowrap\">KLWW97A<a name=\"ProcedureUrogyn-KLWW97A\"> </a></td><td>Laparoskopisk fjernelse af fremmedlegeme i bækkenhulen efter gynækologisk operation</td><td>Laparoskopisk fjernelse af fremmedlegeme i bækkenhulen efter gynækologisk operation</td></tr><tr><td style=\"white-space:nowrap\">KTLE10<a name=\"ProcedureUrogyn-KTLE10\"> </a></td><td>Fjernelse af fremmedlegeme fra vagina</td><td>Fjernelse af fremmedlegeme fra vagina</td></tr><tr><td style=\"white-space:nowrap\">KTLW99A<a name=\"ProcedureUrogyn-KTLW99A\"> </a></td><td>Løsning eller overskæring af vaginal slynge</td><td>Løsning eller overskæring af vaginal slynge</td></tr><tr><td style=\"white-space:nowrap\">KTLW99B<a name=\"ProcedureUrogyn-KTLW99B\"> </a></td><td>Stramning af vaginal slynge</td><td>Stramning af vaginal slynge</td></tr><tr><td style=\"white-space:nowrap\">BJAA0<a name=\"ProcedureUrogyn-BJAA0\"> </a></td><td>Engangskateterisation af blæren</td><td>Engangskateterisation af blæren</td></tr><tr><td style=\"white-space:nowrap\">BJAZ0<a name=\"ProcedureUrogyn-BJAZ0\"> </a></td><td>Anlæggelse af blærekateter</td><td>Anlæggelse af blærekateter</td></tr><tr><td style=\"white-space:nowrap\">BJKA02<a name=\"ProcedureUrogyn-BJKA02\"> </a></td><td>Vejledning og undervisning i selvkateterisation</td><td>Vejledning og undervisning i selvkateterisation</td></tr><tr><td style=\"white-space:nowrap\">BOQA0<a name=\"ProcedureUrogyn-BOQA0\"> </a></td><td>Blodtransfusion</td><td>Blodtransfusion</td></tr><tr><td style=\"white-space:nowrap\">BPH<a name=\"ProcedureUrogyn-BPH\"> </a></td><td>Systemisk antibiotikabehandling af infektionssygdomme</td><td>Systemisk antibiotikabehandling af infektionssygdomme</td></tr><tr><td style=\"white-space:nowrap\">ZZ1295<a name=\"ProcedureUrogyn-ZZ1295\"> </a></td><td>Væske og vandladningsskema</td><td>Væske og vandladningsskema</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/ProcedureUrogyn"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.2"] ;
+  fhir:CodeSystem.name [ fhir:value "ProcedureUrogyn"] ;
+  fhir:CodeSystem.title [ fhir:value "Procedurekoder - Urogynækologi (DUGA)"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2024-02-14T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Procedurekoder - Urogynækolog (DUGA)"] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "80"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KKDG00" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Retropubisk supension af urinrør" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Retropubisk supension af urinrør" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KKDG30" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Abdominal uretrocystopeksi med slynge" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Abdominal uretrocystopeksi med slynge" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KKDV22" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Uretroskopisk submukøs injektionsbehandling i urinrør" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Uretroskopisk submukøs injektionsbehandling i urinrør" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLEG10" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vaginal uretrocystopeksi med slynge" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Vaginal uretrocystopeksi med slynge" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLEG10A" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vaginal uretrocystopeksi med slynge gennem foramen obturatum" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Vaginal uretrocystopeksi med slynge gennem foramen obturatum" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLEF00" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Forreste kolporafi" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Forreste kolporafi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLEF00A" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Forreste kolporafi med meche" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Forreste kolporafi med meche" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLEF03" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bageste kolporafi" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Bageste kolporafi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLEF03A" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bageste kolporafi med meche" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Bageste kolporafi med meche" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLEF20" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Partiel kolpokleise" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Partiel kolpokleise" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLEF40" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vaginal operation for enterocele" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Vaginal operation for enterocele" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLEF40A" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vaginal operation for enterocele med meche" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Vaginal operation for enterocele med meche" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLEF43" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Abdominal operation for enterocele" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Abdominal operation for enterocele" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLEF43A" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Abdominal operation for enterocele med meche" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Abdominal operation for enterocele med meche" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLEF50" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Abdominal apikal kolpopeksi efter tidligere hysterektomi" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Abdominal apikal kolpopeksi efter tidligere hysterektomi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLEF50A" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Abdominal apikal kolpopeksi eft. tidl. hysterektomi m. meche" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Abdominal apikal kolpopeksi eft. tidl. hysterektomi m. meche" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLEF51" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Laparoskopisk apikal kolpopeksi efter tidligere hysterektomi" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Laparoskopisk apikal kolpopeksi efter tidligere hysterektomi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLEF51A" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Laparoskop. apikal kolpopeksi eft.tidl. hysterektomi m. meche" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Laparoskop. apikal kolpopeksi eft.tidl. hysterektomi m. meche" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLEF53" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vaginal apikal kolpopeksi efter tidligere hysterektomi" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Vaginal apikal kolpopeksi efter tidligere hysterektomi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLEF53A" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vaginal apikal kolpopeksi efter tidl. hysterektomi med meche" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Vaginal apikal kolpopeksi efter tidl. hysterektomi med meche" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLEF53B" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vaginal apikal kolpopeksi til det sakrospinøse ligament" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Vaginal apikal kolpopeksi til det sakrospinøse ligament" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLEF60" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vaginal lateral kolpopeksi" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Vaginal lateral kolpopeksi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLEF63" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Abdominal lateral kolpopeksi" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Abdominal lateral kolpopeksi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLCG20" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hysteropeksi" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Hysteropeksi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLCG21" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Laparoskopisk hysteropeksi" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Laparoskopisk hysteropeksi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLCG21A" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Laparoskopisk hysteropeksi med mesh" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Laparoskopisk hysteropeksi med mesh" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLCD10" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vaginal hysterektomi" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Vaginal hysterektomi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLDC10" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Resektion af livmoderhals" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Resektion af livmoderhals" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLED00" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kolpektomi" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kolpektomi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KZLA01" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Suspension af vaginaltop a.m. McCall" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Suspension af vaginaltop a.m. McCall" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KZLA02" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Suspension af vaginaltop a.m. Bob Shull" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Suspension af vaginaltop a.m. Bob Shull" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLEE00" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sutur af vagina" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Sutur af vagina" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLFE00" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sutur af vulva" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Sutur af vulva" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLFE96" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anden rekonstruktion på vulva eller perineum" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Anden rekonstruktion på vulva eller perineum" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KJHC10" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rekonstruktion af sphincter ani" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Rekonstruktion af sphincter ani" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KUKC02" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cystoskopi" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Cystoskopi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KZXF84A" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ikke resorberbar sutur" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Ikke resorberbar sutur" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KZXF84B" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Korttidsresorberbar sutur (< 3 uger)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Korttidsresorberbar sutur (< 3 uger)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KZXF84C" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Forsinket resorberbar sutur" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Forsinket resorberbar sutur" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KZXX00" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anvendelse af robot" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Anvendelse af robot" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DN393" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Stress-inkontinens" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Stress-inkontinens" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DN895D" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vaginal striktur" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Vaginal striktur" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DR102B" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mavesmerter lokaliseret til bækken" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Mavesmerter lokaliseret til bækken" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DR339D" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Residualurin" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Residualurin" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DR391" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vandladningsbesvær UNS" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Vandladningsbesvær UNS" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DR522B" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Smerter i kønsorganer" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Smerter i kønsorganer" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DT810G" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Postoperativ blødning UNS" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Postoperativ blødning UNS" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DT810H" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Postoperativt hæmatom UNS" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Postoperativt hæmatom UNS" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DT812G" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Utilsigtet peroperativ punktur eller læsion af gastrointestinalkanalen" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Utilsigtet peroperativ punktur eller læsion af gastrointestinalkanalen" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DT812H" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Utilsigtet peroperativ punktur eller læsion af kvindeligt kønsorgan" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Utilsigtet peroperativ punktur eller læsion af kvindeligt kønsorgan" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DT812UC" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Utilsigtet peroperativ punktur eller læsion af urinleder" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Utilsigtet peroperativ punktur eller læsion af urinleder" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DT812UD" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Utilsigtet peroperativ punktur eller læsion af urinblære" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Utilsigtet peroperativ punktur eller læsion af urinblære" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DT812UE" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Utilsigtet peroperativ punktur eller læsion af urinrør" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Utilsigtet peroperativ punktur eller læsion af urinrør" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DT814F" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Postoperativ sårinfektion" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Postoperativ sårinfektion" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DT814U" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Postoperativ urinvejsinfektion" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Postoperativ urinvejsinfektion" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DT818F" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Peroperativ blødning UNS" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Peroperativ blødning UNS" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DT835" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Infektion eller inflammation omkring protese, implantat eller transplantat i urinvejene" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Infektion eller inflammation omkring protese, implantat eller transplantat i urinvejene" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DT836" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Infektion eller inflammation omkring protese, implantat eller transplantat i kønsorganerne" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Infektion eller inflammation omkring protese, implantat eller transplantat i kønsorganerne" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DT983C" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Postoperativ seksuel dysfunktion" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Postoperativ seksuel dysfunktion" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KKBF00" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fjernelse af fremmedlegeme i urinleder" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Fjernelse af fremmedlegeme i urinleder" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KKCF01" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Perkutan endoskopisk fjernelse af fremmedlegeme i urinblære" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Perkutan endoskopisk fjernelse af fremmedlegeme i urinblære" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KKDE20" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fjernelse af fremmedlegeme fra urinrør" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Fjernelse af fremmedlegeme fra urinrør" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLWB00" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Reoperation ved overfladisk infektion efter gynækologisk operation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Reoperation ved overfladisk infektion efter gynækologisk operation" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLWC00" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Reoperation ved dyb infektion efter gynækologisk operation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Reoperation ved dyb infektion efter gynækologisk operation" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLWC01" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Laparoskopisk reoperation ved dyb infektion efter gynækologisk operation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Laparoskopisk reoperation ved dyb infektion efter gynækologisk operation" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLWD00" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Reoperation for overfladisk blødning efter gynækologisk operation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Reoperation for overfladisk blødning efter gynækologisk operation" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLWE00" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Reoperation for dyb blødning efter gynækologisk operation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Reoperation for dyb blødning efter gynækologisk operation" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLWE01" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Laparoskopisk reoperation for dyb blødning efter gynækologisk operation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Laparoskopisk reoperation for dyb blødning efter gynækologisk operation" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLWW96" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anden reoperation efter gynækologisk operation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Anden reoperation efter gynækologisk operation" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLWW96A" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fjernelse af fremmedlegeme i bækkenhulen efter gynækologisk operation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Fjernelse af fremmedlegeme i bækkenhulen efter gynækologisk operation" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KLWW97A" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Laparoskopisk fjernelse af fremmedlegeme i bækkenhulen efter gynækologisk operation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Laparoskopisk fjernelse af fremmedlegeme i bækkenhulen efter gynækologisk operation" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KTLE10" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fjernelse af fremmedlegeme fra vagina" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Fjernelse af fremmedlegeme fra vagina" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KTLW99A" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Løsning eller overskæring af vaginal slynge" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Løsning eller overskæring af vaginal slynge" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KTLW99B" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Stramning af vaginal slynge" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Stramning af vaginal slynge" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "BJAA0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Engangskateterisation af blæren" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Engangskateterisation af blæren" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "BJAZ0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anlæggelse af blærekateter" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Anlæggelse af blærekateter" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "BJKA02" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vejledning og undervisning i selvkateterisation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Vejledning og undervisning i selvkateterisation" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "BOQA0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Blodtransfusion" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Blodtransfusion" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "BPH" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Systemisk antibiotikabehandling af infektionssygdomme" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Systemisk antibiotikabehandling af infektionssygdomme" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ZZ1295" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Væske og vandladningsskema" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Væske og vandladningsskema" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/ProcedureUrogyn.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

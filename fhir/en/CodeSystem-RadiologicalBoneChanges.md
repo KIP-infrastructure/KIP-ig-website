@@ -1,4 +1,4 @@
-# Radiological bone changes - Indication of changes in bones - KIP Infrastructure v2.27.1
+# Radiological bone changes - Indication of changes in bones - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/RadiologicalBoneChanges | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/RadiologicalBoneChanges | *Version*:2.27.2 |
 | Active as of 2022-06-07 | *Computable Name*:RadiologicalBoneChangesCS |
 
  
@@ -32,7 +32,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "RadiologicalBoneChanges",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/RadiologicalBoneChanges",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "RadiologicalBoneChangesCS",
   "title" : "Radiological bone changes - Indication of changes in bones",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Revision; cause - KIP Infrastructure v2.27.1
+# Revision; cause - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/RevisionCause | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/RevisionCause | *Version*:2.27.2 |
 | Active as of 2022-09-15 | *Computable Name*:RevisionCause |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "RevisionCause",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/RevisionCause",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "RevisionCause",
   "title" : "Revision; cause",
   "status" : "active",

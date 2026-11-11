@@ -1,0 +1,91 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/DHDeksklusionskriterie> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "DHDeksklusionskriterie"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet DHDeksklusionskriterie</b></p><a name=\"DHDeksklusionskriterie\"> </a><a name=\"hcDHDeksklusionskriterie\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-DHDeksklusionskriterie.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/DHDeksklusionskriterie</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.2</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-DHDeksklusionskriterie.html#DHDeksklusionskriterie-DHDA1\">DHDA1</a></td><td>A1: Patienten har tidligere kendt og korrekt diagnosticeret og behandlet hjertesvigt</td><td>A1: Patienten har tidligere kendt og korrekt diagnosticeret og behandlet hjertesvigt</td></tr><tr><td><a href=\"CodeSystem-DHDeksklusionskriterie.html#DHDeksklusionskriterie-DHDA2\">DHDA2</a></td><td>A2: Patienter med akut myokardieinfarkt (AMI) med nedsat ejection fraction (EF/LVEF), hvor AMI er A-diagnosen</td><td>A2: Patienter med akut myokardieinfarkt (AMI) med nedsat ejection fraction (EF/LVEF), hvor AMI er A-diagnosen</td></tr><tr><td><a href=\"CodeSystem-DHDeksklusionskriterie.html#DHDeksklusionskriterie-DHDA3\">DHDA3</a></td><td>A3: Patienten har ikke korrigerbar strukturel hjertesygdom og deraf følgende hjertesvigt</td><td>A3: Patienten har ikke korrigerbar strukturel hjertesygdom og deraf følgende hjertesvigt</td></tr><tr><td><a href=\"CodeSystem-DHDeksklusionskriterie.html#DHDeksklusionskriterie-DHDA4\">DHDA4</a></td><td>A4: Primær årsag til hjertesvigt er hjerteklapsygdom og deraf følgende hjertesvigt</td><td>A4: Primær årsag til hjertesvigt er hjerteklapsygdom og deraf følgende hjertesvigt</td></tr><tr><td><a href=\"CodeSystem-DHDeksklusionskriterie.html#DHDeksklusionskriterie-DHDA5\">DHDA5</a></td><td>A5: Primær årsag til hjertesvigt er hurtig hjerteryme (ofte atrieflimren) (kræver kardiologisk vurdering)</td><td>A5: Primær årsag til hjertesvigt er hurtig hjerteryme (ofte atrieflimren) (kræver kardiologisk vurdering)</td></tr><tr><td><a href=\"CodeSystem-DHDeksklusionskriterie.html#DHDeksklusionskriterie-DHDA6\">DHDA6</a></td><td>A6: Patienten har cor pulmunale</td><td>A6: Patienten har cor pulmunale</td></tr><tr><td><a href=\"CodeSystem-DHDeksklusionskriterie.html#DHDeksklusionskriterie-DHDA7\">DHDA7</a></td><td>A7: Patienten har isoleret højresidig hjertesvigt</td><td>A7: Patienten har isoleret højresidig hjertesvigt</td></tr><tr><td><a href=\"CodeSystem-DHDeksklusionskriterie.html#DHDeksklusionskriterie-DHDA8\">DHDA8</a></td><td>A8: Patienten har gået hos privatpraktiserende speciallæge i kardiologi og er blevet diagnosticeret og behandlet hos denne</td><td>A8: Patienten har gået hos privatpraktiserende speciallæge i kardiologi og er blevet diagnosticeret og behandlet hos denne</td></tr><tr><td><a href=\"CodeSystem-DHDeksklusionskriterie.html#DHDeksklusionskriterie-DHDA9\">DHDA9</a></td><td>A9: A-diagnose er ikke hjertesvigt</td><td>A9: A-diagnose er ikke hjertesvigt</td></tr><tr><td><a href=\"CodeSystem-DHDeksklusionskriterie.html#DHDeksklusionskriterie-DHDA10\">DHDA10</a></td><td>A10: Patientforløb flyttet i KIP til behandlingsansvarlig afd</td><td>A10: Patientforløb flyttet i KIP til behandlingsansvarlig afd</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/DHDeksklusionskriterie"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.2"] ;
+  fhir:ValueSet.name [ fhir:value "DHDeksklusionskriterie"] ;
+  fhir:ValueSet.title [ fhir:value "DHD eksklusionskriterie"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-06-22T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Patienten skal ikke indberettes til DHD, fordi patienten opfylder et af følgende eksklusionskriterier"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/DHDeksklusionskriterie" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DHDA1" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "A1: Patienten har tidligere kendt og korrekt diagnosticeret og behandlet hjertesvigt" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DHDA2" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "A2: Patienter med akut myokardieinfarkt (AMI) med nedsat ejection fraction (EF/LVEF), hvor AMI er A-diagnosen" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DHDA3" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "A3: Patienten har ikke korrigerbar strukturel hjertesygdom og deraf følgende hjertesvigt" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DHDA4" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "A4: Primær årsag til hjertesvigt er hjerteklapsygdom og deraf følgende hjertesvigt" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DHDA5" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "A5: Primær årsag til hjertesvigt er hurtig hjerteryme (ofte atrieflimren) (kræver kardiologisk vurdering)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DHDA6" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "A6: Patienten har cor pulmunale" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DHDA7" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "A7: Patienten har isoleret højresidig hjertesvigt" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DHDA8" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "A8: Patienten har gået hos privatpraktiserende speciallæge i kardiologi og er blevet diagnosticeret og behandlet hos denne" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DHDA9" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "A9: A-diagnose er ikke hjertesvigt" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DHDA10" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "A10: Patientforløb flyttet i KIP til behandlingsansvarlig afd" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/DHDeksklusionskriterie.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

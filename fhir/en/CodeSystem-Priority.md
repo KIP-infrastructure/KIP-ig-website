@@ -1,4 +1,4 @@
-# Prioritering - KIP Infrastructure v2.27.1
+# Prioritering - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/Priority | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/Priority | *Version*:2.27.2 |
 | Active as of 2022-05-31 | *Computable Name*:PriorityCS |
 
  
@@ -33,7 +33,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "Priority",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/Priority",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "PriorityCS",
   "title" : "Prioritering",
   "status" : "active",

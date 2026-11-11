@@ -1,4 +1,4 @@
-# Graft (DKRR) - KIP Infrastructure v2.27.1
+# Graft (DKRR) - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/GraftDKRR | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/GraftDKRR | *Version*:2.27.2 |
 | Active as of 2022-09-19 | *Computable Name*:GraftDKRR |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "GraftDKRR",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/GraftDKRR",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "GraftDKRR",
   "title" : "Graft (DKRR)",
   "status" : "active",

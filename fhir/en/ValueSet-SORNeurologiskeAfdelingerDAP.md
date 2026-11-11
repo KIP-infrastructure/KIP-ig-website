@@ -1,4 +1,4 @@
-# SOR: Neurologiske afdelinger (DAP) - KIP Infrastructure v2.27.1
+# SOR: Neurologiske afdelinger (DAP) - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SORNeurologiskeAfdelingerDAP | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SORNeurologiskeAfdelingerDAP | *Version*:2.27.2 |
 | Active as of 2022-09-06 | *Computable Name*:SORNeurologiskeAfdelingerDAP |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "SORNeurologiskeAfdelingerDAP",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/SORNeurologiskeAfdelingerDAP",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "SORNeurologiskeAfdelingerDAP",
   "title" : "SOR: Neurologiske afdelinger (DAP)",
   "status" : "active",

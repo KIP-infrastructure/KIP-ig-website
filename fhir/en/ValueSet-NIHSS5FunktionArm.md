@@ -1,4 +1,4 @@
-# NIHSS - 5. Motorisk funktion i arm - KIP Infrastructure v2.27.1
+# NIHSS - 5. Motorisk funktion i arm - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/NIHSS5FunktionArm | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/NIHSS5FunktionArm | *Version*:2.27.2 |
 | Active as of 2022-06-27 | *Computable Name*:NIHSS5FunktionArm |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "NIHSS5FunktionArm",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/NIHSS5FunktionArm",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "NIHSS5FunktionArm",
   "title" : "NIHSS - 5. Motorisk funktion i arm",
   "status" : "active",

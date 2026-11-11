@@ -1,4 +1,4 @@
-# EORTC skema mangler - KIP Infrastructure v2.27.1
+# EORTC skema mangler - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ManglendeEORTC | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ManglendeEORTC | *Version*:2.27.2 |
 | Active as of 2022-09-06 | *Computable Name*:ManglendeEORTC |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "ManglendeEORTC",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/ManglendeEORTC",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "ManglendeEORTC",
   "title" : "EORTC skema mangler",
   "status" : "active",

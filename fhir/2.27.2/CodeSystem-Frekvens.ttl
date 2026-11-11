@@ -1,0 +1,210 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/Frekvens> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "Frekvens"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem Frekvens</b></p><a name=\"Frekvens\"> </a><a name=\"hcFrekvens\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/Frekvens</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>comment</b></td><td><b>effectiveDate</b></td><td><b>status</b></td><td><b>Inactive</b></td></tr><tr><td style=\"white-space:nowrap\">aldrig<a name=\"Frekvens-aldrig\"> </a></td><td>Aldrig</td><td>Aldrig / Slet ikke</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">forDetMeste<a name=\"Frekvens-forDetMeste\"> </a></td><td>For det meste</td><td>For det meste</td><td>Added</td><td>2026-06-24T00:00:00+02:00</td><td>active</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">heleTiden<a name=\"Frekvens-heleTiden\"> </a></td><td>Hele tiden</td><td>Hele tiden</td><td>Added</td><td>2026-06-24T00:00:00+02:00</td><td>active</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">konstant<a name=\"Frekvens-konstant\"> </a></td><td>Konstant</td><td>Hele tiden</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">nogleGange<a name=\"Frekvens-nogleGange\"> </a></td><td>Nogle gange</td><td>Nogle gange</td><td>Added</td><td>2026-06-24T00:00:00+02:00</td><td>active</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">sjaeldent<a name=\"Frekvens-sjaeldent\"> </a></td><td>Sjældent</td><td>Sjældent</td><td>Added</td><td>2026-06-24T00:00:00+02:00</td><td>active</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">dgl-lt1<a name=\"Frekvens-dgl-lt1\"> </a></td><td>Mindre end 1 gang om dagen</td><td>Mindre end 1 gang om dagen</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">dgl-1<a name=\"Frekvens-dgl-1\"> </a></td><td>1 gang om dagen</td><td>1 gang om dagen</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">dgl-ge1<a name=\"Frekvens-dgl-ge1\"> </a></td><td>1 eller flere gange om dagen</td><td>1 eller flere gange om dagen</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">ugl-le1<a name=\"Frekvens-ugl-le1\"> </a></td><td>1 gang om ugen eller mindre</td><td>1 gang om ugen eller mindre</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">ugl-ge1<a name=\"Frekvens-ugl-ge1\"> </a></td><td>1 gang om ugen eller mere</td><td>1 gang om ugen eller mere</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">ugl-2-3<a name=\"Frekvens-ugl-2-3\"> </a></td><td>2-3 gange om ugen</td><td>2-3 gange om ugen</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">mdl-lt1<a name=\"Frekvens-mdl-lt1\"> </a></td><td>Mindre end 1 gang om måneden</td><td>Mindre end 1 gang om måneden</td><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">mdl-1-4<a name=\"Frekvens-mdl-1-4\"> </a></td><td>1-4 gange om måneden</td><td>1-4 gange om måneden</td><td/><td/><td/><td/></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/Frekvens"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.2"] ;
+  fhir:CodeSystem.name [ fhir:value "Frekvens"] ;
+  fhir:CodeSystem.title [ fhir:value "Frekvens"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2026-06-24T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Frekvens for hvor ofte en given hændelse optræder"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "14"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index 0 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "aldrig" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Aldrig" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Aldrig / Slet ikke" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "forDetMeste" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "For det meste" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "For det meste" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "comment" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Added" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "effectiveDate" ] ;
+       fhir:CodeSystem.concept.property.valueDateTime [ fhir:value "2026-06-24T00:00:00+02:00"^^xsd:dateTime ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "status" ] ;
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "active" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "inactive" ] ;
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "heleTiden" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hele tiden" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Hele tiden" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "comment" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Added" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "effectiveDate" ] ;
+       fhir:CodeSystem.concept.property.valueDateTime [ fhir:value "2026-06-24T00:00:00+02:00"^^xsd:dateTime ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "status" ] ;
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "active" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "inactive" ] ;
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+     ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "konstant" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Konstant" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Hele tiden" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "nogleGange" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nogle gange" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Nogle gange" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "comment" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Added" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "effectiveDate" ] ;
+       fhir:CodeSystem.concept.property.valueDateTime [ fhir:value "2026-06-24T00:00:00+02:00"^^xsd:dateTime ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "status" ] ;
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "active" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "inactive" ] ;
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+     ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sjaeldent" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sjældent" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Sjældent" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "comment" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Added" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "effectiveDate" ] ;
+       fhir:CodeSystem.concept.property.valueDateTime [ fhir:value "2026-06-24T00:00:00+02:00"^^xsd:dateTime ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "status" ] ;
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "active" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "inactive" ] ;
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+     ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dgl-lt1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mindre end 1 gang om dagen" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Mindre end 1 gang om dagen" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dgl-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "1 gang om dagen" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "1 gang om dagen" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dgl-ge1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "1 eller flere gange om dagen" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "1 eller flere gange om dagen" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ugl-le1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "1 gang om ugen eller mindre" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "1 gang om ugen eller mindre" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ugl-ge1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "1 gang om ugen eller mere" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "1 gang om ugen eller mere" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ugl-2-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "2-3 gange om ugen" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "2-3 gange om ugen" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "mdl-lt1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mindre end 1 gang om måneden" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Mindre end 1 gang om måneden" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "mdl-1-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "1-4 gange om måneden" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "1-4 gange om måneden" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/Frekvens.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

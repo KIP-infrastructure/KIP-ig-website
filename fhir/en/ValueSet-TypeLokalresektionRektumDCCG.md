@@ -1,4 +1,4 @@
-# Type af præoperativ endoskopisk lokalresektion (Rektum) DCCG - KIP Infrastructure v2.27.1
+# Type af præoperativ endoskopisk lokalresektion (Rektum) DCCG - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/TypeLokalresektionRektumDCCG | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/TypeLokalresektionRektumDCCG | *Version*:2.27.2 |
 | Active as of 2023-04-13 | *Computable Name*:TypeLokalresektionRektumDCCG |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "TypeLokalresektionRektumDCCG",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/TypeLokalresektionRektumDCCG",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "TypeLokalresektionRektumDCCG",
   "title" : "Type af præoperativ endoskopisk lokalresektion (Rektum) DCCG",
   "status" : "active",

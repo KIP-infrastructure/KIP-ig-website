@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "LifeStatus",
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet LifeStatus</b></p><a name=\"LifeStatus\"> </a><a name=\"hcLifeStatus\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-LifeStatus.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/LifeStatus</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;2.27.2</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-LifeStatus.html#LifeStatus-alive\">alive</a></td><td>Levende</td><td>Patienten udskrives levende</td></tr><tr><td><a href=\"CodeSystem-LifeStatus.html#LifeStatus-dead\">dead</a></td><td>Død</td><td>Patienten udskrives død</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/LifeStatus",
+  "version" : "2.27.2",
+  "name" : "LifeStatus",
+  "title" : "Livstatus",
+  "status" : "active",
+  "date" : "2022-06-22T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Status ved udskrivelse",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/LifeStatus",
+      "concept" : [{
+        "code" : "alive",
+        "display" : "Levende"
+      },
+      {
+        "code" : "dead",
+        "display" : "Død"
+      }]
+    }]
+  }
+}

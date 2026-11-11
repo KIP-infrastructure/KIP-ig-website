@@ -1,0 +1,173 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/IncisionChoice> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "IncisionChoice"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IncisionChoice</b></p><a name=\"IncisionChoice\"> </a><a name=\"hcIncisionChoice\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/IncisionChoice</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">abdomnial<a name=\"IncisionChoice-abdomnial\"> </a></td><td>Abdominal adgang</td><td>Abdominal adgang</td></tr><tr><td style=\"white-space:nowrap\">abdominal_thoracic<a name=\"IncisionChoice-abdominal_thoracic\"> </a></td><td>Separat abdominal og torakal adgang</td><td>Separat abdominal og torakal adgang</td></tr><tr><td style=\"white-space:nowrap\">toracoabdominal<a name=\"IncisionChoice-toracoabdominal\"> </a></td><td>Torakabdominal adgang</td><td>Torakabdominal adgang med deling af diafragma</td></tr><tr><td style=\"white-space:nowrap\">transhiatal_siewert<a name=\"IncisionChoice-transhiatal_siewert\"> </a></td><td>Transhiatal adgang (a.m. Siewert)</td><td>Transhiatal adgang (a.m. Siewert)</td></tr><tr><td style=\"white-space:nowrap\">transhiatal_neck<a name=\"IncisionChoice-transhiatal_neck\"> </a></td><td>Transhiatal adgang og anastomose på hals</td><td>Transhiatal adgang og anastomose på hals</td></tr><tr><td style=\"white-space:nowrap\">abdominal_thoracoskopic<a name=\"IncisionChoice-abdominal_thoracoskopic\"> </a></td><td>Separat abdominal &amp; torakoskopisk</td><td>Separat abdominal &amp; torakoskopisk</td></tr><tr><td style=\"white-space:nowrap\">laparoscopic_thoracoskopic<a name=\"IncisionChoice-laparoscopic_thoracoskopic\"> </a></td><td>Laparoskopisk &amp; torakoskopisk</td><td>Laparoskopisk &amp; torakoskopisk</td></tr><tr><td style=\"white-space:nowrap\">laparoscopic_thoracotomy<a name=\"IncisionChoice-laparoscopic_thoracotomy\"> </a></td><td>Laparoskopisk &amp; separat torakotomi</td><td>Laparoskopisk &amp; separat torakotomi</td></tr><tr><td style=\"white-space:nowrap\">laparoscopic<a name=\"IncisionChoice-laparoscopic\"> </a></td><td>Laparoskopisk</td><td>Laparoskopisk</td></tr><tr><td style=\"white-space:nowrap\">endoscopic<a name=\"IncisionChoice-endoscopic\"> </a></td><td>Endoskopisk</td><td>Endoskopisk</td></tr><tr><td style=\"white-space:nowrap\">cervical<a name=\"IncisionChoice-cervical\"> </a></td><td>Cervikal adgang</td><td>Cervikal adgang (frit tyndtarmstransplantat)</td></tr><tr><td style=\"white-space:nowrap\">delto_pectoral<a name=\"IncisionChoice-delto_pectoral\"> </a></td><td>Delto-pectoral</td><td>Delto-pectoral</td></tr><tr><td style=\"white-space:nowrap\">mackenzie<a name=\"IncisionChoice-mackenzie\"> </a></td><td>Antero-superior (MacKenzie)</td><td>Antero-superior (MacKenzie)</td></tr><tr><td style=\"white-space:nowrap\">lateral_for_patella<a name=\"IncisionChoice-lateral_for_patella\"> </a></td><td>Lateral for patella</td><td>Lateral for patella</td></tr><tr><td style=\"white-space:nowrap\">medial_for_patella<a name=\"IncisionChoice-medial_for_patella\"> </a></td><td>Medial for patella</td><td>Medial for patella</td></tr><tr><td style=\"white-space:nowrap\">medial_parapatellar_quadriceps<a name=\"IncisionChoice-medial_parapatellar_quadriceps\"> </a></td><td>Medial parapatellar, gennem quadricepssenen</td><td>Medial parapatellar, gennem quadricepssenen</td></tr><tr><td style=\"white-space:nowrap\">medial_parapatellar_vastus_medialis<a name=\"IncisionChoice-medial_parapatellar_vastus_medialis\"> </a></td><td>Medial parapatellar, vastus medialis split</td><td>Medial parapatellar, vastus medialis split</td></tr><tr><td style=\"white-space:nowrap\">center_quadriceps<a name=\"IncisionChoice-center_quadriceps\"> </a></td><td>Midtlinie, gennem quadricepssenen</td><td>Midtlinie, gennem quadricepssenen</td></tr><tr><td style=\"white-space:nowrap\">center_vastus_medialis<a name=\"IncisionChoice-center_vastus_medialis\"> </a></td><td>Midtlinie, vastus medialis split</td><td>Midtlinie, vastus medialis split</td></tr><tr><td style=\"white-space:nowrap\">minimal_invasive<a name=\"IncisionChoice-minimal_invasive\"> </a></td><td>Minimal invasiv kirurgi</td><td>Minimal invasiv kirurgi</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/IncisionChoice"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.2"] ;
+  fhir:CodeSystem.name [ fhir:value "IncisionChoice"] ;
+  fhir:CodeSystem.title [ fhir:value "Incision choice"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2022-06-03T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Incisionsvalg eller operativ adgang"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "20"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "abdomnial" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Abdominal adgang" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Abdominal adgang" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "abdominal_thoracic" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Separat abdominal og torakal adgang" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Separat abdominal og torakal adgang" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "toracoabdominal" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Torakabdominal adgang" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Torakabdominal adgang med deling af diafragma" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "transhiatal_siewert" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Transhiatal adgang (a.m. Siewert)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Transhiatal adgang (a.m. Siewert)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "transhiatal_neck" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Transhiatal adgang og anastomose på hals" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Transhiatal adgang og anastomose på hals" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "abdominal_thoracoskopic" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Separat abdominal & torakoskopisk" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Separat abdominal & torakoskopisk" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "laparoscopic_thoracoskopic" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Laparoskopisk & torakoskopisk" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Laparoskopisk & torakoskopisk" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "laparoscopic_thoracotomy" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Laparoskopisk & separat torakotomi" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Laparoskopisk & separat torakotomi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "laparoscopic" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Laparoskopisk" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Laparoskopisk" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "endoscopic" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Endoskopisk" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Endoskopisk" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cervical" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cervikal adgang" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Cervikal adgang (frit tyndtarmstransplantat)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "delto_pectoral" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Delto-pectoral" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Delto-pectoral" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "mackenzie" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Antero-superior (MacKenzie)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Antero-superior (MacKenzie)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "lateral_for_patella" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lateral for patella" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Lateral for patella" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "medial_for_patella" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Medial for patella" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Medial for patella" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "medial_parapatellar_quadriceps" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Medial parapatellar, gennem quadricepssenen" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Medial parapatellar, gennem quadricepssenen" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "medial_parapatellar_vastus_medialis" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Medial parapatellar, vastus medialis split" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Medial parapatellar, vastus medialis split" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "center_quadriceps" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Midtlinie, gennem quadricepssenen" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Midtlinie, gennem quadricepssenen" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "center_vastus_medialis" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Midtlinie, vastus medialis split" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Midtlinie, vastus medialis split" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "minimal_invasive" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Minimal invasiv kirurgi" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Minimal invasiv kirurgi" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/IncisionChoice.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

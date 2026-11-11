@@ -1,4 +1,4 @@
-# Treatment response evaluation - KIP Infrastructure v2.27.1
+# Treatment response evaluation - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/TreatmentResponseEvaluation | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/TreatmentResponseEvaluation | *Version*:2.27.2 |
 | Active as of 2025-07-10 | *Computable Name*:TreatmentResponseEvaluation |
 
  
@@ -36,7 +36,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "TreatmentResponseEvaluation",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/TreatmentResponseEvaluation",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "TreatmentResponseEvaluation",
   "title" : "Treatment response evaluation",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Suturtype hurtig resorberbar monofilament ventralhernie (DHDB) - KIP Infrastructure v2.27.1
+# Suturtype hurtig resorberbar monofilament ventralhernie (DHDB) - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SuturHurtigResorberbarMonoDHDB | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SuturHurtigResorberbarMonoDHDB | *Version*:2.27.2 |
 | Active as of 2023-07-06 | *Computable Name*:SuturHurtigResorberbarMonoDHDB |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "SuturHurtigResorberbarMonoDHDB",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/SuturHurtigResorberbarMonoDHDB",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "SuturHurtigResorberbarMonoDHDB",
   "title" : "Suturtype hurtig resorberbar monofilament ventralhernie (DHDB)",
   "status" : "active",

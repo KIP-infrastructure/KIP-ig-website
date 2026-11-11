@@ -1,4 +1,4 @@
-# Hernia size - KIP Infrastructure v2.27.1
+# Hernia size - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/HerniaSize | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/HerniaSize | *Version*:2.27.2 |
 | Active as of 2022-06-14 | *Computable Name*:HerniaSize |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "HerniaSize",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/HerniaSize",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "HerniaSize",
   "title" : "Hernia size",
   "status" : "active",

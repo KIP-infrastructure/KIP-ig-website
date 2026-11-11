@@ -1,4 +1,4 @@
-# Udredning (DANDEM) 2025 - KIP Infrastructure v2.27.1
+# Udredning (DANDEM) 2025 - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/UdredningDANDEM2025 | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/UdredningDANDEM2025 | *Version*:2.27.2 |
 | Active as of 2025-05-09 | *Computable Name*:UdredningDANDEM2025 |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "UdredningDANDEM2025",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/UdredningDANDEM2025",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "UdredningDANDEM2025",
   "title" : "Udredning (DANDEM) 2025",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Operationskode - Urin-inkontinens og genital prolaps (DUGA) - KIP Infrastructure v2.27.1
+# Operationskode - Urin-inkontinens og genital prolaps (DUGA) - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/OpkodeUrinGenitalDUGA | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/OpkodeUrinGenitalDUGA | *Version*:2.27.2 |
 | Active as of 2024-02-14 | *Computable Name*:OpkodeUrinGenitalDUGA |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "OpkodeUrinGenitalDUGA",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/OpkodeUrinGenitalDUGA",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "OpkodeUrinGenitalDUGA",
   "title" : "Operationskode - Urin-inkontinens og genital prolaps (DUGA)",
   "status" : "active",

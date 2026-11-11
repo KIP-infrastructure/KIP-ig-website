@@ -1,4 +1,4 @@
-# Harris Hip Score - Hjælpemidler - KIP Infrastructure v2.27.1
+# Harris Hip Score - Hjælpemidler - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/HarrisHipScoreHjaelpemidler | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/HarrisHipScoreHjaelpemidler | *Version*:2.27.2 |
 | Active as of 2022-11-15 | *Computable Name*:HarrisHipScoreHjaelpemidler |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "HarrisHipScoreHjaelpemidler",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/HarrisHipScoreHjaelpemidler",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "HarrisHipScoreHjaelpemidler",
   "title" : "Harris Hip Score - Hjælpemidler",
   "status" : "active",

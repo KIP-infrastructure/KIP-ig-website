@@ -1,4 +1,4 @@
-# Cytogenetiske kræft forandringer - KIP Infrastructure v2.27.1
+# Cytogenetiske kræft forandringer - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/CytogeneticCancerChangesALD | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/CytogeneticCancerChangesALD | *Version*:2.27.2 |
 | Active as of 2022-07-13 | *Computable Name*:CytogeneticCancerChangesALD |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "CytogeneticCancerChangesALD",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/CytogeneticCancerChangesALD",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "CytogeneticCancerChangesALD",
   "title" : "Cytogenetiske kræft forandringer",
   "status" : "active",

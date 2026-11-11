@@ -1,4 +1,4 @@
-# Transplantation - Transplant/Cage/Augment (DHR) - KIP Infrastructure v2.27.1
+# Transplantation - Transplant/Cage/Augment (DHR) - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/TransplantationCageAugmentDHR | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/TransplantationCageAugmentDHR | *Version*:2.27.2 |
 | Active as of 2022-11-07 | *Computable Name*:TransplantationCageAugmentDHR |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "TransplantationCageAugmentDHR",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/TransplantationCageAugmentDHR",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "TransplantationCageAugmentDHR",
   "title" : "Transplantation - Transplant/Cage/Augment (DHR)",
   "status" : "active",

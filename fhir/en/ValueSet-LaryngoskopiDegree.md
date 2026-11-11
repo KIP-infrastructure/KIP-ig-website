@@ -1,4 +1,4 @@
-# Laryngoskopigrad - KIP Infrastructure v2.27.1
+# Laryngoskopigrad - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/LaryngoskopiDegree | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/LaryngoskopiDegree | *Version*:2.27.2 |
 | Active as of 2022-06-09 | *Computable Name*:LaryngoskopiDegree |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "LaryngoskopiDegree",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/LaryngoskopiDegree",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "LaryngoskopiDegree",
   "title" : "Laryngoskopigrad",
   "status" : "active",

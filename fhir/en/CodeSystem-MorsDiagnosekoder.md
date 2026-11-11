@@ -1,4 +1,4 @@
-# Mors Diagnosekoder (DNSL) - KIP Infrastructure v2.27.1
+# Mors Diagnosekoder (DNSL) - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/MorsDiagnosekoder | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/MorsDiagnosekoder | *Version*:2.27.2 |
 | Active as of 2024-01-31 | *Computable Name*:MorsDiagnosekoder |
 
  
@@ -37,7 +37,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "MorsDiagnosekoder",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/MorsDiagnosekoder",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "MorsDiagnosekoder",
   "title" : "Mors Diagnosekoder (DNSL)",
   "status" : "active",

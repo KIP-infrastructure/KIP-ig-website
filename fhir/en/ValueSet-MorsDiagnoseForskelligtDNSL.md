@@ -1,4 +1,4 @@
-# Mors Diagnosekode - Forskelligt (DNSL) - KIP Infrastructure v2.27.1
+# Mors Diagnosekode - Forskelligt (DNSL) - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/MorsDiagnoseForskelligtDNSL | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/MorsDiagnoseForskelligtDNSL | *Version*:2.27.2 |
 | Active as of 2024-01-10 | *Computable Name*:MorsDiagnoseForskelligtDNSL |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "MorsDiagnoseForskelligtDNSL",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/MorsDiagnoseForskelligtDNSL",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "MorsDiagnoseForskelligtDNSL",
   "title" : "Mors Diagnosekode - Forskelligt (DNSL)",
   "status" : "active",

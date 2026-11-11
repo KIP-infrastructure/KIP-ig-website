@@ -1,4 +1,4 @@
-# The National Institute of Health Stroke Scale (NIHSS) - 1b. Level of Consciousness: Questions - KIP Infrastructure v2.27.1
+# The National Institute of Health Stroke Scale (NIHSS) - 1b. Level of Consciousness: Questions - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/NIHSS1bLOC | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/NIHSS1bLOC | *Version*:2.27.2 |
 | Active as of 2022-06-23 | *Computable Name*:NIHSS1bLOC |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "NIHSS1bLOC",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/NIHSS1bLOC",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "NIHSS1bLOC",
   "title" : "The National Institute of Health Stroke Scale (NIHSS) - 1b. Level of Consciousness: Questions",
   "status" : "active",

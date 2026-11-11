@@ -1,4 +1,4 @@
-# SorQuestionnaireResponse - KIP Infrastructure v2.27.1
+# SorQuestionnaireResponse - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/SorQuestionnaireResponse | *Version*:2.27.1 |
-| Active as of 2026-10-30 | *Computable Name*:SorQuestionnaireResponse |
+| *Official URL*:https://kip.rkkp.dk/fhir/SearchParameter/SorQuestionnaireResponse | *Version*:2.27.2 |
+| Active as of 2026-11-11 | *Computable Name*:SorQuestionnaireResponse |
 
  
 Search By SOR in Questionnaire 
@@ -23,10 +23,10 @@ Search By SOR in Questionnaire
   "resourceType" : "SearchParameter",
   "id" : "SorQuestionnaireResponse",
   "url" : "https://kip.rkkp.dk/fhir/SearchParameter/SorQuestionnaireResponse",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "SorQuestionnaireResponse",
   "status" : "active",
-  "date" : "2026-10-30T13:20:18+00:00",
+  "date" : "2026-11-11T13:11:08+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",

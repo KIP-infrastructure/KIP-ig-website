@@ -1,0 +1,155 @@
+# FISH variables; test - KIP Infrastructure v2.27.2
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **FISH variables; test**
+
+## CodeSystem: FISH variables; test 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/FISHVariables | *Version*:2.27.2 |
+| Active as of 2025-02-21 | *Computable Name*:FISHVariables |
+
+ 
+FISH variables; test 
+
+This Code system is referenced in the definition of the following value sets:
+
+* [FISH plasma identifikation](ValueSet-FISHProcedure.md)
+* [Resultat af FISH](ValueSet-FISHResult.md)
+* [Resultat af FISH 202502](ValueSet-FISHResult202502.md)
+* [Anvendte FISH prober](ValueSet-FISHSamples.md)
+* [Anvendte FISH prober 202502](ValueSet-FISHSamples202502.md)
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "CodeSystem",
+  "id" : "FISHVariables",
+  "url" : "https://kip.rkkp.dk/fhir/CodeSystem/FISHVariables",
+  "version" : "2.27.2",
+  "name" : "FISHVariables",
+  "title" : "FISH variables; test",
+  "status" : "active",
+  "date" : "2025-02-21T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "FISH variables; test",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 14,
+  "property" : [{
+    "code" : "comment",
+    "uri" : "http://hl7.org/fhir/concept-properties#comment",
+    "description" : "A string that provides additional detail pertinent to the use or understanding of the concept",
+    "type" : "string"
+  },
+  {
+    "code" : "effectiveDate",
+    "uri" : "http://hl7.org/fhir/concept-properties#effectiveDate",
+    "description" : "The date at which the concept status was last changed",
+    "type" : "dateTime"
+  },
+  {
+    "code" : "status",
+    "uri" : "http://hl7.org/fhir/concept-properties#status",
+    "description" : "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired",
+    "type" : "code"
+  },
+  {
+    "code" : "inactive",
+    "uri" : "http://hl7.org/fhir/concept-properties#inactive",
+    "description" : "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive",
+    "type" : "boolean"
+  }],
+  "concept" : [{
+    "code" : "plasma_cell_identifikation_unspecific",
+    "display" : "Plasma cell identification",
+    "definition" : "Plasma cell identification, unspecific / Plasmacelleidentifikation, uspecifik",
+    "concept" : [{
+      "code" : "cd138_sort",
+      "display" : "CD138 sort",
+      "definition" : "CD138 sort"
+    },
+    {
+      "code" : "antibodies",
+      "display" : "Antibodies",
+      "definition" : "Antibodies / Antistof"
+    }]
+  },
+  {
+    "code" : "igh_fgfr3",
+    "display" : "t(4;14)/IGH-FGFR3",
+    "definition" : "t(4;14)/IGH-FGFR3"
+  },
+  {
+    "code" : "igh_ccnd1",
+    "display" : "t(11;14)/IGH-CCND1",
+    "definition" : "t(11;14)/IGH-CCND1"
+  },
+  {
+    "code" : "igh_mbf",
+    "display" : "t(14;16)/IGH-MBF",
+    "definition" : "t(14;16)/IGH-MBF"
+  },
+  {
+    "code" : "igh_mafb",
+    "display" : "t(14;20)/IGH-MAFB",
+    "definition" : "t(14;20)/IGH-MAFB"
+  },
+  {
+    "code" : "igh_split_signal",
+    "display" : "IgH split signal",
+    "definition" : "IgH split signal"
+  },
+  {
+    "code" : "13q_deletion",
+    "display" : "13q deletion",
+    "definition" : "13q deletion"
+  },
+  {
+    "code" : "tp53_deletion",
+    "display" : "TP53 deletion",
+    "definition" : "TP53 deletion"
+  },
+  {
+    "code" : "1q21",
+    "display" : "1q21 amplifikation",
+    "definition" : "1q21 amplifikation"
+  },
+  {
+    "code" : "11q22",
+    "display" : "11q22/ATM amplifikation",
+    "definition" : "11q22/ATM amplifikation"
+  },
+  {
+    "code" : "1q21gain",
+    "display" : "1q21 gain (3 spot)",
+    "definition" : "1q21 gain (3 spot)"
+  },
+  {
+    "code" : "1qdeletion",
+    "display" : "1p deletion",
+    "definition" : "1p deletion"
+  }]
+}
+
+```

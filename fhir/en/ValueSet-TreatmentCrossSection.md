@@ -1,4 +1,4 @@
-# Behandling af tværsnit - KIP Infrastructure v2.27.1
+# Behandling af tværsnit - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/TreatmentCrossSection | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/TreatmentCrossSection | *Version*:2.27.2 |
 | Active as of 2022-12-07 | *Computable Name*:TreatmentCrossSection |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "TreatmentCrossSection",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/TreatmentCrossSection",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "TreatmentCrossSection",
   "title" : "Behandling af tværsnit",
   "status" : "active",

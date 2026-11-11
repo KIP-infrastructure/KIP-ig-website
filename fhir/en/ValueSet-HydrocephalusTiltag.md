@@ -1,4 +1,4 @@
-# Tiltag i forbindelse med hydrocephalus - KIP Infrastructure v2.27.1
+# Tiltag i forbindelse med hydrocephalus - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/HydrocephalusTiltag | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/HydrocephalusTiltag | *Version*:2.27.2 |
 | Active as of 2022-06-29 | *Computable Name*:HydrocephalusTiltag |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "HydrocephalusTiltag",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/HydrocephalusTiltag",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "HydrocephalusTiltag",
   "title" : "Tiltag i forbindelse med hydrocephalus",
   "status" : "active",

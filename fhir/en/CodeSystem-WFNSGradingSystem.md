@@ -1,4 +1,4 @@
-# WFNS grading system - KIP Infrastructure v2.27.1
+# WFNS grading system - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/WFNSGradingSystem | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/WFNSGradingSystem | *Version*:2.27.2 |
 | Active as of 2022-06-28 | *Computable Name*:WFNSGradingSystem |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "WFNSGradingSystem",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/WFNSGradingSystem",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "WFNSGradingSystem",
   "title" : "WFNS grading system",
   "status" : "active",

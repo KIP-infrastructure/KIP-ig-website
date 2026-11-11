@@ -1,4 +1,4 @@
-# Generic values - KIP Infrastructure v2.27.1
+# Generic values - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/GenericValues | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/GenericValues | *Version*:2.27.2 |
 | Active as of 2022-07-06 | *Computable Name*:GenericValues |
 
  
@@ -110,6 +110,7 @@ This Code system is referenced in the definition of the following value sets:
 * [Graft, ACL (DKRR)](ValueSet-GraftACLDKRR.md)
 * [Graft (DKRR)](ValueSet-GraftDKRR.md)
 * [Grundlidelse [DHR]](ValueSet-GrundlidelseDHR.md)
+* [Grundlidelse [DHR] 2026-07](ValueSet-GrundlidelseDHR-2026-07.md)
 * [Grundlidelse (DKR)](ValueSet-GrundlidelseDKR.md)
 * [Grundlidelse (DSR)](ValueSet-GrundlidelseDSR.md)
 * [Hjerterytme](ValueSet-HeartRhythm.md)
@@ -293,7 +294,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "GenericValues",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "GenericValues",
   "title" : "Generic values",
   "status" : "active",

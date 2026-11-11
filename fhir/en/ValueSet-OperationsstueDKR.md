@@ -1,4 +1,4 @@
-# Operationsstue (DKR) - KIP Infrastructure v2.27.1
+# Operationsstue (DKR) - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/OperationsstueDKR | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/OperationsstueDKR | *Version*:2.27.2 |
 | Active as of 2024-06-10 | *Computable Name*:OperationsstueDKR |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "OperationsstueDKR",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/OperationsstueDKR",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "OperationsstueDKR",
   "title" : "Operationsstue (DKR)",
   "status" : "active",

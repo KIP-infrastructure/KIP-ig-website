@@ -1,4 +1,4 @@
-# Indgreb - hvad gøres hvis en nerve er set - KIP Infrastructure v2.27.1
+# Indgreb - hvad gøres hvis en nerve er set - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/IndgrebNerveSet | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/IndgrebNerveSet | *Version*:2.27.2 |
 | Active as of 2022-07-20 | *Computable Name*:IndgrebNerveSet |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "IndgrebNerveSet",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/IndgrebNerveSet",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "IndgrebNerveSet",
   "title" : "Indgreb - hvad gøres hvis en nerve er set",
   "status" : "active",

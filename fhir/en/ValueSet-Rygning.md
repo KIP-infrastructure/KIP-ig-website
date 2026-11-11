@@ -1,4 +1,4 @@
-# Rygning - KIP Infrastructure v2.27.1
+# Rygning - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/Rygning | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/Rygning | *Version*:2.27.2 |
 | Active as of 2022-06-08 | *Computable Name*:Rygning |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "Rygning",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/Rygning",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "Rygning",
   "title" : "Rygning",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Function test - KIP Infrastructure v2.27.1
+# Function test - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/FunctionTest | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/FunctionTest | *Version*:2.27.2 |
 | Active as of 2022-07-19 | *Computable Name*:FunctionTest |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "FunctionTest",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/FunctionTest",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "FunctionTest",
   "title" : "Function test",
   "status" : "active",

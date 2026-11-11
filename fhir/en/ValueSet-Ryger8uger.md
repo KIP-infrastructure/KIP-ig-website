@@ -1,4 +1,4 @@
-# Ryger op til 8 uger - KIP Infrastructure v2.27.1
+# Ryger op til 8 uger - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/Ryger8uger | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/Ryger8uger | *Version*:2.27.2 |
 | Active as of 2022-06-15 | *Computable Name*:Ryger8uger |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "Ryger8uger",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/Ryger8uger",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "Ryger8uger",
   "title" : "Ryger op til 8 uger",
   "status" : "active",

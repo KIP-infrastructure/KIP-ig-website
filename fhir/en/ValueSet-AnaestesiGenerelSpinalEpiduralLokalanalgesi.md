@@ -1,4 +1,4 @@
-# Anæstesi - Generel, lokalanalgesi og spinal/epidural anæstesi - KIP Infrastructure v2.27.1
+# Anæstesi - Generel, lokalanalgesi og spinal/epidural anæstesi - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/AnaestesiGenerelSpinalEpiduralLokalanalgesi | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/AnaestesiGenerelSpinalEpiduralLokalanalgesi | *Version*:2.27.2 |
 | Active as of 2023-01-18 | *Computable Name*:AnaestesiGenerelSpinalEpiduralLokalanalgesi |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "AnaestesiGenerelSpinalEpiduralLokalanalgesi",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/AnaestesiGenerelSpinalEpiduralLokalanalgesi",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "AnaestesiGenerelSpinalEpiduralLokalanalgesi",
   "title" : "Anæstesi - Generel, lokalanalgesi og spinal/epidural anæstesi",
   "status" : "active",

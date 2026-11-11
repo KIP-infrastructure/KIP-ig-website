@@ -1,0 +1,229 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/RevisionIndication> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "RevisionIndication"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem RevisionIndication</b></p><a name=\"RevisionIndication\"> </a><a name=\"hcRevisionIndication\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/RevisionIndication</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">aseptic_solution<a name=\"RevisionIndication-aseptic_solution\"> </a></td><td>Aseptisk løsning</td><td>Aseptisk løsning</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  glenoid<a name=\"RevisionIndication-glenoid\"> </a></td><td>Glenoid</td><td>Glenoid</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  humerus<a name=\"RevisionIndication-humerus\"> </a></td><td>Humerus</td><td>Humerus</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  acetabulum<a name=\"RevisionIndication-acetabulum\"> </a></td><td>Acetabulum</td><td>Acetabulum</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  acetabulum_osteolysis<a name=\"RevisionIndication-acetabulum_osteolysis\"> </a></td><td>Acetabulum med osteolyse</td><td>Acetabulum med osteolyse</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  femur<a name=\"RevisionIndication-femur\"> </a></td><td>Femur</td><td>Femur</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  femur_osteolysis<a name=\"RevisionIndication-femur_osteolysis\"> </a></td><td>Femur med osteolyse</td><td>Femur med osteolyse</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  femur_acetabulum<a name=\"RevisionIndication-femur_acetabulum\"> </a></td><td>Femur og acetabulum</td><td>Femur og acetabulum</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  femur_acetabulum_osteolysis<a name=\"RevisionIndication-femur_acetabulum_osteolysis\"> </a></td><td>Femur og acetabulum med osteolyse</td><td>Femur og acetabulum med osteolyse</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">osteolysis<a name=\"RevisionIndication-osteolysis\"> </a></td><td>Osteolyse</td><td>Osteolyse</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">suspected_infection<a name=\"RevisionIndication-suspected_infection\"> </a></td><td>Mistænkt eller manifest infektion</td><td>Mistænkt eller manifest infektion</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">infection<a name=\"RevisionIndication-infection\"> </a></td><td>Infection</td><td>Infection / Infektion</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">instability<a name=\"RevisionIndication-instability\"> </a></td><td>Instabilitet</td><td>Instabilitet</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">dislocation<a name=\"RevisionIndication-dislocation\"> </a></td><td>Luksation</td><td>Luksation</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">rotator_cuff<a name=\"RevisionIndication-rotator_cuff\"> </a></td><td>Rotator cuff ruptur / insufficiens</td><td>Rotator cuff ruptur / insufficiens</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">cavitas_erosion<a name=\"RevisionIndication-cavitas_erosion\"> </a></td><td>Cavitas erosion</td><td>Cavitas erosion</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">prosthetic_joint_fracture<a name=\"RevisionIndication-prosthetic_joint_fracture\"> </a></td><td>Protesenær fraktur</td><td>Protesenær fraktur</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">periprosthetic_fracture<a name=\"RevisionIndication-periprosthetic_fracture\"> </a></td><td>Periprostetisk fraktur</td><td>Periprostetisk fraktur</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">malplaced_component<a name=\"RevisionIndication-malplaced_component\"> </a></td><td>Malplaceret komponent</td><td>Malplaceret komponent</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">component_failure<a name=\"RevisionIndication-component_failure\"> </a></td><td>Komponentsvigt</td><td>Komponentsvigt</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">implant_failure<a name=\"RevisionIndication-implant_failure\"> </a></td><td>Implantat failure</td><td>Implantat failure</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">pain<a name=\"RevisionIndication-pain\"> </a></td><td>Pain</td><td>Pain / Smerter</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">constrained_mobility<a name=\"RevisionIndication-constrained_mobility\"> </a></td><td>Indskrænket bevægelighed</td><td>Indskrænket bevægelighed</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">arthrosis_progression<a name=\"RevisionIndication-arthrosis_progression\"> </a></td><td>Athrosis progression</td><td>Athrosis progression / Artrose progression</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">second_part_two_stage_revision<a name=\"RevisionIndication-second_part_two_stage_revision\"> </a></td><td>2. del af 2-stadie revision</td><td>2. del af 2-stadie revision</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">secondary_insertion<a name=\"RevisionIndication-secondary_insertion\"> </a></td><td>Sekundær isættelse</td><td>Sekundær isættelse</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">polyethylene_wear<a name=\"RevisionIndication-polyethylene_wear\"> </a></td><td>Polyethylenslitage</td><td>Polyethylenslitage</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">polyethylene_failure<a name=\"RevisionIndication-polyethylene_failure\"> </a></td><td>Polyethylen-svigt</td><td>Polyethylen-svigt</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  polyethylene_failure_tibia<a name=\"RevisionIndication-polyethylene_failure_tibia\"> </a></td><td>Polyethylen-svigt (tibia)</td><td>Polyethylen-svigt (tibia)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  polyethylene_failure_patella<a name=\"RevisionIndication-polyethylene_failure_patella\"> </a></td><td>Polyethylen-svigt (patella)</td><td>Polyethylen-svigt (patella)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">femur_fracture<a name=\"RevisionIndication-femur_fracture\"> </a></td><td>Femurfraktur</td><td>Femurfraktur</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/RevisionIndication"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.2"] ;
+  fhir:CodeSystem.name [ fhir:value "RevisionIndication"] ;
+  fhir:CodeSystem.title [ fhir:value "Revision; indication"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2022-10-07T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Revision; indication"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "31"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index 0 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "aseptic_solution" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Aseptisk løsning" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Aseptisk løsning" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.code [ fhir:value "glenoid" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Glenoid" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Glenoid" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "humerus" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Humerus" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Humerus" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.code [ fhir:value "acetabulum" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Acetabulum" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Acetabulum" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.code [ fhir:value "acetabulum_osteolysis" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Acetabulum med osteolyse" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Acetabulum med osteolyse" ]
+     ], [
+       fhir:index 4 ;
+       fhir:CodeSystem.concept.code [ fhir:value "femur" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Femur" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Femur" ]
+     ], [
+       fhir:index 5 ;
+       fhir:CodeSystem.concept.code [ fhir:value "femur_osteolysis" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Femur med osteolyse" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Femur med osteolyse" ]
+     ], [
+       fhir:index 6 ;
+       fhir:CodeSystem.concept.code [ fhir:value "femur_acetabulum" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Femur og acetabulum" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Femur og acetabulum" ]
+     ], [
+       fhir:index 7 ;
+       fhir:CodeSystem.concept.code [ fhir:value "femur_acetabulum_osteolysis" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Femur og acetabulum med osteolyse" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Femur og acetabulum med osteolyse" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "osteolysis" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Osteolyse" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Osteolyse" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "suspected_infection" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mistænkt eller manifest infektion" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Mistænkt eller manifest infektion" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "infection" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Infection" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Infection / Infektion" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "instability" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Instabilitet" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Instabilitet" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dislocation" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Luksation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Luksation" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "rotator_cuff" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rotator cuff ruptur / insufficiens" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Rotator cuff ruptur / insufficiens" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cavitas_erosion" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cavitas erosion" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Cavitas erosion" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "prosthetic_joint_fracture" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Protesenær fraktur" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Protesenær fraktur" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "periprosthetic_fracture" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Periprostetisk fraktur" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Periprostetisk fraktur" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "malplaced_component" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Malplaceret komponent" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Malplaceret komponent" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "component_failure" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Komponentsvigt" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Komponentsvigt" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "implant_failure" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Implantat failure" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Implantat failure" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "pain" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pain" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Pain / Smerter" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "constrained_mobility" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Indskrænket bevægelighed" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Indskrænket bevægelighed" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "arthrosis_progression" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Athrosis progression" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Athrosis progression / Artrose progression" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "second_part_two_stage_revision" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "2. del af 2-stadie revision" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "2. del af 2-stadie revision" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "secondary_insertion" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sekundær isættelse" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Sekundær isættelse" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "polyethylene_wear" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Polyethylenslitage" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Polyethylenslitage" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "polyethylene_failure" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Polyethylen-svigt" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Polyethylen-svigt" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.code [ fhir:value "polyethylene_failure_tibia" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Polyethylen-svigt (tibia)" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Polyethylen-svigt (tibia)" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "polyethylene_failure_patella" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Polyethylen-svigt (patella)" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Polyethylen-svigt (patella)" ]
+     ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "femur_fracture" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Femurfraktur" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Femurfraktur" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/RevisionIndication.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

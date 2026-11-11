@@ -1,4 +1,4 @@
-# Search Parameter - QuestionnaireReponse responsible sor on CarePLan - KIP Infrastructure v2.27.1
+# Search Parameter - QuestionnaireReponse responsible sor on CarePLan - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/StructureDefinition/questionnaire-response-responsible-sor | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/StructureDefinition/questionnaire-response-responsible-sor | *Version*:2.27.2 |
 | Active as of 2022-11-14 | *Computable Name*:QuestionnaireResponseResponsibleOnCarePlan |
 
 Find CarePlan which cointains a QuestionnaireResponse with a specific responsible sorcode
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-questionnaire-res
   "resourceType" : "StructureDefinition",
   "id" : "questionnaire-response-responsible-sor",
   "url" : "https://kip.rkkp.dk/fhir/StructureDefinition/questionnaire-response-responsible-sor",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "QuestionnaireResponseResponsibleOnCarePlan",
   "title" : "Search Parameter - QuestionnaireReponse responsible sor on CarePLan",
   "status" : "active",

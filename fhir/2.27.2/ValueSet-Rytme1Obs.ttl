@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/Rytme1Obs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "Rytme1Obs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Rytme1Obs</b></p><a name=\"Rytme1Obs\"> </a><a name=\"hcRytme1Obs\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-Rytme1Obs.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/Rytme1Obs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.2</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-Rytme1Obs.html#Rytme1Obs-vf\">vf</a></td><td>VF</td><td>VF</td></tr><tr><td><a href=\"CodeSystem-Rytme1Obs.html#Rytme1Obs-pulslos_vt\">pulslos_vt</a></td><td>Pulsløs VT</td><td>Pulsløs VT</td></tr><tr><td><a href=\"CodeSystem-Rytme1Obs.html#Rytme1Obs-pea\">pea</a></td><td>PEA</td><td>PEA</td></tr><tr><td><a href=\"CodeSystem-Rytme1Obs.html#Rytme1Obs-asystoli\">asystoli</a></td><td>Asystoli</td><td>Asystoli</td></tr><tr><td><a href=\"CodeSystem-Rytme1Obs.html#Rytme1Obs-ingen_man\">ingen_man</a></td><td>Ingen manuel rytmeanalyse</td><td>Ingen manuel rytmeanalyse</td></tr><tr><td><a href=\"CodeSystem-Rytme1Obs.html#Rytme1Obs-pulsgiv\">pulsgiv</a></td><td>Pulsgivende</td><td>Pulsgivende</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/Rytme1Obs"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.2"] ;
+  fhir:ValueSet.name [ fhir:value "Rytme1Obs"] ;
+  fhir:ValueSet.title [ fhir:value "Hjerterytme - første obs"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-06-29T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Første observerede hjerterytme"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/Rytme1Obs" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "vf" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "VF" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "pulslos_vt" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pulsløs VT" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "pea" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "PEA" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "asystoli" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Asystoli" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ingen_man" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ingen manuel rytmeanalyse" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "pulsgiv" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pulsgivende" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/Rytme1Obs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

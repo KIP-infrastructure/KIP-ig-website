@@ -1,0 +1,510 @@
+# Implant components - KIP Infrastructure v2.27.2
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Implant components**
+
+## CodeSystem: Implant components 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/ImplantComponents | *Version*:2.27.2 |
+| Active as of 2022-07-04 | *Computable Name*:ImplantComponents |
+
+ 
+Implant components 
+
+This Code system is referenced in the definition of the following value sets:
+
+* [Caput modulær type - (DHR)](ValueSet-CaputModulaerTypeDHR.md)
+* [Caput type - (DHR)](ValueSet-CaputTypeDHR.md)
+* [Cement blandesystem (DHR)](ValueSet-CementBlandesystemDHR.md)
+* [Fiksation - cementeret/ucementeret](ValueSet-FiksationCementeretUcementeret.md)
+* [Fiksation - cementeret/ucementeret/andet](ValueSet-FiksationCementeretUcementeretAndet.md)
+* [Fiksation - cementeret/ucementeret/hybrid](ValueSet-FiksationCementeretUcementeretHybrid.md)
+* [Glenoidalkomponent - ikke indsat (DSR)](ValueSet-GlenoidalkomponentIkkeIndsatDSR.md)
+* [Glenoidalkomponent - supplerende (DSR)](ValueSet-GlenoidalkomponentSupplerendeDSR.md)
+* [Humeruskomponent (DSR)](ValueSet-HumeruskomponentDSR.md)
+* [Implantat - anatomisk design](ValueSet-ImplantatAnatomiskDesign.md)
+* [Implantat - anatomisk: offset](ValueSet-ImplantatAnatomiskOffset.md)
+* [Implantat - anatomisk/reverse](ValueSet-ImplantatAnatomiskReverse.md)
+* [Implantat - materiale (keramik, metal, andet) 2026-07](ValueSet-ImplantatMateriale-KeramikMetalAndet-2026-07.md)
+* [Implantat - materiale (DSR)](ValueSet-ImplantatMaterialeDSR.md)
+* [Implantat - materiale (keramik, metal, andet)](ValueSet-ImplantatMaterialeKeramikMetalAndet.md)
+* [Implantat - materiale (polyethylen, keramik, metal)](ValueSet-ImplantatMaterialePolyethylenKeramikMetal.md)
+* [Implantat - reverse design](ValueSet-ImplantatReverseDesign.md)
+* [Knoglegraft (DSR)](ValueSet-KnoglegraftDSR.md)
+* [Knogletransplantation (DHR)](ValueSet-KnogletransplantationDHR.md)
+* [Komponent - patella (DKR)](ValueSet-KomponentPatellaDKR.md)
+* [Komponent - patella (DKR) revision](ValueSet-KomponentPatellaDKRrevision.md)
+* [Komponent - patella materiale (DKR)](ValueSet-KomponentPatellaMaterialeDKR.md)
+* [Komponent - supplement (DKR)](ValueSet-KomponentSupplementDKR.md)
+* [Komponent - tibia, status (DKR)](ValueSet-KomponentTibiaStatusDKR.md)
+* [Komponent type (DKR)](ValueSet-KomponentTypeDKR.md)
+* [Komponent type - femur (DHR)](ValueSet-KomponentTypeFemurDHR.md)
+* [Komponent type - Huller/Uden huller (DHR)](ValueSet-KomponentTypeHullerUdenhullerDHR.md)
+* [Liner - Crosslinked (DHR)](ValueSet-LinerCrosslinkedDHR.md)
+* [Linertype - (DHR)](ValueSet-LinertypeDHR.md)
+* [Osteotomi type - Almindelig/Extended (DHR)](ValueSet-OsteotomiTypeAlmindeligExtendedDHR.md)
+* [Protese fjernelse (DHR)](ValueSet-ProteseFjernelseDHR.md)
+* [Protesestatus (DHR)](ValueSet-ProtesestatusDHR.md)
+* [Revision - Humerus/cavitas (DSR)](ValueSet-RevisionHumerusCavitasDSR.md)
+* [Revision - Humerus komponent (DSR)](ValueSet-RevisionHumerusKomponentDSR.md)
+* [Revision, udskiftning (DHR)](ValueSet-RevisionUdskiftningDHR.md)
+* [Stemkarakteristik (DSR)](ValueSet-StemkarakteristikDSR.md)
+* [Stemlængde (DSR)](ValueSet-StemlaengdeDSR.md)
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ImplantComponents",
+  "url" : "https://kip.rkkp.dk/fhir/CodeSystem/ImplantComponents",
+  "version" : "2.27.2",
+  "name" : "ImplantComponents",
+  "title" : "Implant components",
+  "status" : "active",
+  "date" : "2022-07-04T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Implant components",
+  "content" : "complete",
+  "count" : 79,
+  "property" : [{
+    "code" : "comment",
+    "uri" : "http://hl7.org/fhir/concept-properties#comment",
+    "description" : "A string that provides additional detail pertinent to the use or understanding of the concept",
+    "type" : "string"
+  },
+  {
+    "code" : "effectiveDate",
+    "uri" : "http://hl7.org/fhir/concept-properties#effectiveDate",
+    "description" : "The date at which the concept status was last changed",
+    "type" : "dateTime"
+  },
+  {
+    "code" : "status",
+    "uri" : "http://hl7.org/fhir/concept-properties#status",
+    "description" : "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired",
+    "type" : "code"
+  },
+  {
+    "code" : "inactive",
+    "uri" : "http://hl7.org/fhir/concept-properties#inactive",
+    "description" : "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive",
+    "type" : "boolean"
+  }],
+  "concept" : [{
+    "code" : "cement_spacer",
+    "display" : "Cement spacer",
+    "definition" : "Cement spacer"
+  },
+  {
+    "code" : "implant",
+    "display" : "Implant",
+    "definition" : "Implant / Implantat"
+  },
+  {
+    "code" : "cavitas_untouched",
+    "display" : "Cavitas urørt",
+    "definition" : "Cavitas urørt"
+  },
+  {
+    "code" : "cavitas_inforeret",
+    "display" : "Cavitas inforeret",
+    "definition" : "Cavitas inforeret"
+  },
+  {
+    "code" : "cavitas_reamet",
+    "display" : "Cavitas reamet",
+    "definition" : "Cavitas reamet"
+  },
+  {
+    "code" : "cavitas_removed",
+    "display" : "Cavitas fjernet",
+    "definition" : "Cavitas fjernet"
+  },
+  {
+    "code" : "resurfacing",
+    "display" : "Resurfacing",
+    "definition" : "Resurfacing"
+  },
+  {
+    "code" : "stemless",
+    "display" : "Stemless",
+    "definition" : "Stemless"
+  },
+  {
+    "code" : "stem",
+    "display" : "Stem",
+    "definition" : "Stem",
+    "concept" : [{
+      "code" : "standard_length",
+      "display" : "Standard length",
+      "definition" : "Standard length / Standard længde"
+    },
+    {
+      "code" : "extra_length",
+      "display" : "Extra length",
+      "definition" : "Extra length / Extra længde"
+    },
+    {
+      "code" : "short_mini_length",
+      "display" : "Short/mini",
+      "definition" : "Short/mini / Short/mini"
+    },
+    {
+      "code" : "stem_femur",
+      "display" : "Stem (femur)",
+      "definition" : "Stem (femur)"
+    },
+    {
+      "code" : "stem_tibia",
+      "display" : "Stem (tibia)",
+      "definition" : "Stem (tibia)"
+    }]
+  },
+  {
+    "code" : "augment",
+    "display" : "Augment",
+    "definition" : "Augment",
+    "concept" : [{
+      "code" : "augment_femur",
+      "display" : "Augment (femur)",
+      "definition" : "Augment (femur)"
+    },
+    {
+      "code" : "augment_tibia",
+      "display" : "Augment (tibia)",
+      "definition" : "Augment (tibia)"
+    }]
+  },
+  {
+    "code" : "cone_sleeve",
+    "display" : "Cone/sleeve",
+    "definition" : "Cone/sleeve",
+    "concept" : [{
+      "code" : "cone_sleeve_femur",
+      "display" : "Cone/sleeve (femur)",
+      "definition" : "Cone/sleeve (femur)"
+    },
+    {
+      "code" : "cone_sleeve_tibia",
+      "display" : "Cone/sleeve (tibia)",
+      "definition" : "Cone/sleeve (tibia)"
+    }]
+  },
+  {
+    "code" : "cemented",
+    "display" : "Cemented",
+    "definition" : "Cemented / Cementeret"
+  },
+  {
+    "code" : "uncemented",
+    "display" : "Uncemented",
+    "definition" : "Uncemented / Ucementeret"
+  },
+  {
+    "code" : "hybrid",
+    "display" : "Hybrid",
+    "definition" : "Hybrid",
+    "concept" : [{
+      "code" : "hybrid_a",
+      "display" : "Hybrid A",
+      "definition" : "Hybrid A"
+    },
+    {
+      "code" : "hybrid_b",
+      "display" : "Hybrid B",
+      "definition" : "Hybrid B"
+    }]
+  },
+  {
+    "code" : "girdlestone",
+    "display" : "Girdlestone",
+    "definition" : "Girdlestone"
+  },
+  {
+    "code" : "anatomic",
+    "display" : "Anatomic",
+    "definition" : "Anatomic / Anatomisk / SNOMED-CT: 36298004",
+    "concept" : [{
+      "code" : "symmetrical",
+      "display" : "Symmetrical",
+      "definition" : "Symmetrical / Symmetrisk / SNOMED-CT: 255473004"
+    },
+    {
+      "code" : "offset",
+      "display" : "Offset",
+      "definition" : "Offset"
+    },
+    {
+      "code" : "helplast",
+      "display" : "Helplast",
+      "definition" : "Helplast"
+    },
+    {
+      "code" : "metalbacked",
+      "display" : "Metalbacked"
+    }]
+  },
+  {
+    "code" : "reverse",
+    "display" : "Reverse",
+    "definition" : "Reverse",
+    "concept" : [{
+      "code" : "standard",
+      "display" : "Standard",
+      "definition" : "Standard"
+    },
+    {
+      "code" : "eccentric",
+      "display" : "Excentrisk",
+      "definition" : "Excentrisk"
+    }]
+  },
+  {
+    "code" : "modular",
+    "display" : "Modular",
+    "definition" : "Modular / Modulært",
+    "concept" : [{
+      "code" : "firm_neck",
+      "display" : "Firm neck",
+      "definition" : "Firm neck / Fast hals"
+    },
+    {
+      "code" : "detachable_neck",
+      "display" : "Detachable neck",
+      "definition" : "Detachable neck / Aftagelig hals"
+    }]
+  },
+  {
+    "code" : "adherent",
+    "display" : "Adherent",
+    "definition" : "Adherent / Fastsiddende"
+  },
+  {
+    "code" : "ordninary",
+    "display" : "Ordinary",
+    "definition" : "Ordinary / Almindelig"
+  },
+  {
+    "code" : "extended",
+    "display" : "Extended",
+    "definition" : "Extended"
+  },
+  {
+    "code" : "with_holes",
+    "display" : "With holes",
+    "definition" : "With holes / Med huller"
+  },
+  {
+    "code" : "without_holes",
+    "display" : "Without holes",
+    "definition" : "Without holes / Uden huller"
+  },
+  {
+    "code" : "metal",
+    "display" : "Metal",
+    "definition" : "Metal / SNOMED-CT: 425620007"
+  },
+  {
+    "code" : "metal_pegs",
+    "display" : "Metal pegs",
+    "definition" : "Metal pegs"
+  },
+  {
+    "code" : "metal_backing",
+    "display" : "Metal-backing",
+    "definition" : "Metal-backing"
+  },
+  {
+    "code" : "screws",
+    "display" : "Skruer",
+    "definition" : "Skruer"
+  },
+  {
+    "code" : "augmented",
+    "display" : "Augmented",
+    "definition" : "Augmented"
+  },
+  {
+    "code" : "polyethylene",
+    "display" : "Polyethylene",
+    "definition" : "Polyethylene / Polyethylen / SNOMED-CT: 71463006",
+    "concept" : [{
+      "code" : "polyethylene_cool",
+      "display" : "Polyethylen køl",
+      "definition" : "Polyethylen køl"
+    },
+    {
+      "code" : "polyethylene_pegs",
+      "display" : "Polyethylen pegs",
+      "definition" : "Polyethylen pegs"
+    }]
+  },
+  {
+    "code" : "pyrocarbon",
+    "display" : "Pyrocarbon",
+    "definition" : "Pyrocarbon"
+  },
+  {
+    "code" : "ceramics",
+    "display" : "Ceramics",
+    "definition" : "Ceramics / Keramik"
+  },
+  {
+    "code" : "spongiotic",
+    "display" : "Spongiotic",
+    "definition" : "Spongiotic / Spongiøs"
+  },
+  {
+    "code" : "structural",
+    "display" : "Structural",
+    "definition" : "Structural / Strukturel"
+  },
+  {
+    "code" : "constrained",
+    "display" : "Constrained",
+    "definition" : "Constrained"
+  },
+  {
+    "code" : "non_constrained",
+    "display" : "Non-constrained",
+    "definition" : "Non-constrained / Ikke-constrained"
+  },
+  {
+    "code" : "double_mobility",
+    "display" : "Double mobility",
+    "definition" : "Double mobility"
+  },
+  {
+    "code" : "non_highy_crosslinked",
+    "display" : "Ikke highly-crosslinked",
+    "definition" : "Ikke highly-crosslinked"
+  },
+  {
+    "code" : "highly_crosslinked",
+    "display" : "Highly crosslinked",
+    "definition" : "Highly crosslinked"
+  },
+  {
+    "code" : "highly_crosslinked_antioxidant",
+    "display" : "Highly crosslinked med antioxidant (Vitamin E og AOX)",
+    "definition" : "Highly crosslinked med antioxidant (Vitamin E og AOX)"
+  },
+  {
+    "code" : "humerus",
+    "display" : "Humerus",
+    "definition" : "Humerus",
+    "concept" : [{
+      "code" : "liner",
+      "display" : "Liner",
+      "definition" : "Liner"
+    },
+    {
+      "code" : "caput",
+      "display" : "Caput",
+      "definition" : "Caput"
+    },
+    {
+      "code" : "component",
+      "display" : "Komponent",
+      "definition" : "Komponent"
+    }]
+  },
+  {
+    "code" : "cavitas",
+    "display" : "Cavitas",
+    "definition" : "Cavitas"
+  },
+  {
+    "code" : "acetabulum_component",
+    "display" : "Acetabulumkomponent",
+    "definition" : "Acetabulumkomponent"
+  },
+  {
+    "code" : "acetabulum_liner",
+    "display" : "Acetabulumliner",
+    "definition" : "Acetabulumliner"
+  },
+  {
+    "code" : "femur_component",
+    "display" : "Femurkomponent",
+    "definition" : "Femurkomponent"
+  },
+  {
+    "code" : "tibia_component",
+    "display" : "Tibiakomponent",
+    "definition" : "Tibiakomponent"
+  },
+  {
+    "code" : "patella_component",
+    "display" : "Patellakomponent",
+    "definition" : "Patellakomponent"
+  },
+  {
+    "code" : "soft_tissue",
+    "display" : "Bløddelsrevisioner uden udskiftning af protesekomponenter",
+    "definition" : "Bløddelsrevisioner uden udskiftning af protesekomponenter"
+  },
+  {
+    "code" : "polyethylene_change",
+    "display" : "Polyethylen-skift (ved revision)",
+    "definition" : "Polyethylen-skift (ved revision) (Tibia)"
+  },
+  {
+    "code" : "long",
+    "display" : "Long",
+    "definition" : "Long / Lang"
+  },
+  {
+    "code" : "dysplasia_prosthesis",
+    "display" : "Dysplasia prosthesis",
+    "definition" : "Dysplasia prosthesis / Dysplasiprotese"
+  },
+  {
+    "code" : "resection_prosthesis",
+    "display" : "Resection prosthesis",
+    "definition" : "Resection prosthesis / Resektionsprotese"
+  },
+  {
+    "code" : "open_mixture",
+    "display" : "Open mixture",
+    "definition" : "Open mixture / Åben blanding af væske og pulver"
+  },
+  {
+    "code" : "closed_mixture",
+    "display" : "Closed mixture",
+    "definition" : "Closed mixture / Fuldstændig lukket blanding af væske og pulver"
+  },
+  {
+    "code" : "massive_transplant",
+    "display" : "Massive transplant",
+    "definition" : "Massiv transplantering"
+  },
+  {
+    "code" : "crumble",
+    "display" : "Minor crumble",
+    "definition" : "Lidt smuld"
+  }]
+}
+
+```

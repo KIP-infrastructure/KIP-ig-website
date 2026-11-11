@@ -1,4 +1,4 @@
-# Scandinavian Stroke Scale - Facialisparese - KIP Infrastructure v2.27.1
+# Scandinavian Stroke Scale - Facialisparese - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SSSFacialisparese | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/SSSFacialisparese | *Version*:2.27.2 |
 | Active as of 2022-06-23 | *Computable Name*:SSSFacialisparese |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "SSSFacialisparese",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/SSSFacialisparese",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "SSSFacialisparese",
   "title" : "Scandinavian Stroke Scale - Facialisparese",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Dialyseadgang ved første dialyse (DNSL) - KIP Infrastructure v2.27.1
+# Dialyseadgang ved første dialyse (DNSL) - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/DialyseadgangDNSL | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/DialyseadgangDNSL | *Version*:2.27.2 |
 | Active as of 2024-01-10 | *Computable Name*:DialyseadgangDNSL |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "DialyseadgangDNSL",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/DialyseadgangDNSL",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "DialyseadgangDNSL",
   "title" : "Dialyseadgang ved første dialyse (DNSL)",
   "status" : "active",

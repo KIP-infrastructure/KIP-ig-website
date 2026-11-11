@@ -1,0 +1,104 @@
+# Anvendte FISH prober 202502 - KIP Infrastructure v2.27.2
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Anvendte FISH prober 202502**
+
+## ValueSet: Anvendte FISH prober 202502 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/FISHSamples202502 | *Version*:2.27.2 |
+| Active as of 2025-02-21 | *Computable Name*:FISHSamples202502 |
+
+ 
+Anvendte FISH prober 202502 - Fjernet udgået udfald og tilføjet nye 
+
+ **References** 
+
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+
+### Logical Definition (CLD)
+
+ 
+
+### Expansion
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "FISHSamples202502",
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/FISHSamples202502",
+  "version" : "2.27.2",
+  "name" : "FISHSamples202502",
+  "title" : "Anvendte FISH prober 202502",
+  "status" : "active",
+  "date" : "2025-02-21T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Anvendte FISH prober 202502 - Fjernet udgået udfald og tilføjet nye",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/FISHVariables",
+      "concept" : [{
+        "code" : "igh_fgfr3",
+        "display" : "t(4;14)/IGH-FGFR3"
+      },
+      {
+        "code" : "igh_ccnd1",
+        "display" : "t(11;14)/IGH-CCND1"
+      },
+      {
+        "code" : "igh_mbf",
+        "display" : "t(14;16)/IGH-MBF"
+      },
+      {
+        "code" : "igh_mafb",
+        "display" : "t(14;20)/IGH-MAFB"
+      },
+      {
+        "code" : "tp53_deletion",
+        "display" : "TP53 deletion"
+      },
+      {
+        "code" : "1q21gain",
+        "display" : "1q21 gain (3 spot)"
+      },
+      {
+        "code" : "1q21",
+        "display" : "1q21 amplifikation (≥ 4 spot)"
+      },
+      {
+        "code" : "1qdeletion",
+        "display" : "1p deletion"
+      }]
+    },
+    {
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues",
+      "concept" : [{
+        "code" : "other",
+        "display" : "Anden IGH translokation"
+      }]
+    }]
+  }
+}
+
+```

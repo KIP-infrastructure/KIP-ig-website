@@ -1,4 +1,4 @@
-# Udskrevet til - KIP Infrastructure v2.27.1
+# Udskrevet til - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/UdskrevetTil | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/UdskrevetTil | *Version*:2.27.2 |
 | Active as of 2022-06-13 | *Computable Name*:UdskrevetTilCS |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "UdskrevetTil",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/UdskrevetTil",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "UdskrevetTilCS",
   "title" : "Udskrevet til",
   "status" : "active",

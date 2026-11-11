@@ -1,4 +1,4 @@
-# Proceduretyper til DCCG 2 - KIP Infrastructure v2.27.1
+# Proceduretyper til DCCG 2 - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ProcedureTypeDCCG2 | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ProcedureTypeDCCG2 | *Version*:2.27.2 |
 | Active as of 2022-10-11 | *Computable Name*:ProcedureTypeDCCG2 |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "ProcedureTypeDCCG2",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/ProcedureTypeDCCG2",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "ProcedureTypeDCCG2",
   "title" : "Proceduretyper til DCCG 2",
   "status" : "active",

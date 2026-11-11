@@ -1,4 +1,4 @@
-# Anæstesi Type Generel - KIP Infrastructure v2.27.1
+# Anæstesi Type Generel - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/AnasthesiaTypeGen | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/AnasthesiaTypeGen | *Version*:2.27.2 |
 | Active as of 2022-06-30 | *Computable Name*:AnasthesiaTypeGenCS |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "AnasthesiaTypeGen",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/AnasthesiaTypeGen",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "AnasthesiaTypeGenCS",
   "title" : "Anæstesi Type Generel",
   "status" : "active",

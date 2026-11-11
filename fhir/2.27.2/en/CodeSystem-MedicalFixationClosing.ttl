@@ -1,0 +1,313 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/MedicalFixationClosing> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "MedicalFixationClosing"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem MedicalFixationClosing</b></p><a name=\"MedicalFixationClosing\"> </a><a name=\"hcMedicalFixationClosing\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/MedicalFixationClosing</code> provides <b>a fragment</b> that includes following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>comment</b></td><td><b>effectiveDate</b></td><td><b>status</b></td><td><b>Inactive</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">suture<a name=\"MedicalFixationClosing-suture\"> </a></td><td>Suture</td><td>Suture / Sutur / SNODMED-CT: 408099007</td><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  not_self_locking<a name=\"MedicalFixationClosing-not_self_locking\"> </a></td><td>Not self-locking</td><td>Not self-locking / Ikke selvlåsende</td><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  self_locking<a name=\"MedicalFixationClosing-self_locking\"> </a></td><td>Self-locking</td><td>Self-locking / Selvlåsende</td><td/><td/><td/><td/></tr><tr><td>3</td><td style=\"white-space:nowrap\">    v_loc<a name=\"MedicalFixationClosing-v_loc\"> </a></td><td>Self-locking (V-LOC)</td><td>Self-locking (V-LOC) / Selflåsende (V-LOC)</td><td/><td/><td/><td/></tr><tr><td>3</td><td style=\"white-space:nowrap\">    stratafix<a name=\"MedicalFixationClosing-stratafix\"> </a></td><td>Self-locking (Stratafix)</td><td>Self-locking (Stratafix) / Selflåsende (Stratafix)</td><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  multifilament<a name=\"MedicalFixationClosing-multifilament\"> </a></td><td>Multifilament</td><td>Multifilament</td><td/><td/><td/><td/></tr><tr><td>3</td><td style=\"white-space:nowrap\">    ethibond<a name=\"MedicalFixationClosing-ethibond\"> </a></td><td>Ethibond</td><td>Ethibond</td><td/><td/><td/><td/></tr><tr><td>3</td><td style=\"white-space:nowrap\">    mersilene<a name=\"MedicalFixationClosing-mersilene\"> </a></td><td>Mersilene</td><td>Mersilene</td><td/><td/><td/><td/></tr><tr><td>3</td><td style=\"white-space:nowrap\">    vicryl<a name=\"MedicalFixationClosing-vicryl\"> </a></td><td>Vicryl</td><td>Vicryl</td><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  monofilament<a name=\"MedicalFixationClosing-monofilament\"> </a></td><td>Monofilament</td><td>Monofilament</td><td/><td/><td/><td/></tr><tr><td>3</td><td style=\"white-space:nowrap\">    pds<a name=\"MedicalFixationClosing-pds\"> </a></td><td>PDS</td><td>PDS</td><td/><td/><td/><td/></tr><tr><td>3</td><td style=\"white-space:nowrap\">    dexon<a name=\"MedicalFixationClosing-dexon\"> </a></td><td>Dexon</td><td>Dexon</td><td/><td/><td/><td/></tr><tr><td>3</td><td style=\"white-space:nowrap\">    maxon<a name=\"MedicalFixationClosing-maxon\"> </a></td><td>Maxon</td><td>Maxon</td><td/><td/><td/><td/></tr><tr><td>3</td><td style=\"white-space:nowrap\">    monocryl<a name=\"MedicalFixationClosing-monocryl\"> </a></td><td>Monocryl</td><td>Monocryl</td><td/><td/><td/><td/></tr><tr><td>3</td><td style=\"white-space:nowrap\">    monoplus<a name=\"MedicalFixationClosing-monoplus\"> </a></td><td>MonoPlus</td><td>MonoPlus</td><td/><td/><td/><td/></tr><tr><td>3</td><td style=\"white-space:nowrap\">    momomax<a name=\"MedicalFixationClosing-momomax\"> </a></td><td>MonoMax</td><td>MonoMax</td><td/><td/><td/><td/></tr><tr><td>3</td><td style=\"white-space:nowrap\">    nylon<a name=\"MedicalFixationClosing-nylon\"> </a></td><td>Nylon</td><td>Nylon</td><td/><td/><td/><td/></tr><tr><td>3</td><td style=\"white-space:nowrap\">    prolene<a name=\"MedicalFixationClosing-prolene\"> </a></td><td>Prolene</td><td>Prolene</td><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  fast_resorbable<a name=\"MedicalFixationClosing-fast_resorbable\"> </a></td><td>Fast resorbable</td><td>Fast resorbable / Hurtig resorberbar</td><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  slow_resorbable<a name=\"MedicalFixationClosing-slow_resorbable\"> </a></td><td>Slow resorbable</td><td>Slow resorbable / Langsom resorberbar</td><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  non_resorbable<a name=\"MedicalFixationClosing-non_resorbable\"> </a></td><td>Non resorbable</td><td>Non resorbable / Non-resorberbar</td><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  intracutaneous<a name=\"MedicalFixationClosing-intracutaneous\"> </a></td><td>Intracutaneous</td><td>Intracutaneous / Intrakutan</td><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  not_intracutaneous<a name=\"MedicalFixationClosing-not_intracutaneous\"> </a></td><td>Not intracutaneous</td><td>Not intracutaneous / Ikke intrakutan</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">tack<a name=\"MedicalFixationClosing-tack\"> </a></td><td>Tack</td><td>Tack / SNOMED-CT: 705723004</td><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  absorbable<a name=\"MedicalFixationClosing-absorbable\"> </a></td><td>Absorbable</td><td>Absorbable / Absorberbar</td><td/><td/><td/><td/></tr><tr><td>3</td><td style=\"white-space:nowrap\">    absorbatack<a name=\"MedicalFixationClosing-absorbatack\"> </a></td><td>Absorbatack</td><td>Absorbatack</td><td/><td/><td/><td/></tr><tr><td>3</td><td style=\"white-space:nowrap\">    optifix<a name=\"MedicalFixationClosing-optifix\"> </a></td><td>Optifix</td><td>Optifix</td><td/><td/><td/><td/></tr><tr><td>3</td><td style=\"white-space:nowrap\">    reliatack<a name=\"MedicalFixationClosing-reliatack\"> </a></td><td>Reliatack</td><td>Reliatack</td><td/><td/><td/><td/></tr><tr><td>3</td><td style=\"white-space:nowrap\">    securestrap<a name=\"MedicalFixationClosing-securestrap\"> </a></td><td>Securestrap</td><td>Securestrap</td><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  non_absorbable<a name=\"MedicalFixationClosing-non_absorbable\"> </a></td><td>Non-absorbable</td><td>Non-absorbable / Non-absorberbar</td><td/><td/><td/><td/></tr><tr><td>3</td><td style=\"white-space:nowrap\">    capsure<a name=\"MedicalFixationClosing-capsure\"> </a></td><td>Capsure</td><td>Capsure</td><td/><td/><td/><td/></tr><tr><td>3</td><td style=\"white-space:nowrap\">    protack<a name=\"MedicalFixationClosing-protack\"> </a></td><td>Protack</td><td>Protack</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">clip<a name=\"MedicalFixationClosing-clip\"> </a></td><td>Clip</td><td>Clip / Clip / SNOMED-CT: 77720000</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">surgical_glue<a name=\"MedicalFixationClosing-surgical_glue\"> </a></td><td>Surgical glue</td><td>Surgical glue / Kirurgisk lim / SNOMED-CT: 303532007</td><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  histoacryl<a name=\"MedicalFixationClosing-histoacryl\"> </a></td><td>Histoacryl</td><td>Histoacryl</td><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  tisseel<a name=\"MedicalFixationClosing-tisseel\"> </a></td><td>Tisseel</td><td>Tisseel</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">self_fixative_mesh<a name=\"MedicalFixationClosing-self_fixative_mesh\"> </a></td><td>Self-fixative mesh</td><td>Self-fixative mesh / Selvfikserende mesh</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">surgical_staple<a name=\"MedicalFixationClosing-surgical_staple\"> </a></td><td>Surgical staple</td><td>Surgical staple / Kirurgisk hæfteklamme / SNOMED-CT: 386014009</td><td/><td/><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">combi_fixation<a name=\"MedicalFixationClosing-combi_fixation\"> </a></td><td>Combined fixation methods</td><td>Kombinerede fiksationer</td><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  tack_sutur<a name=\"MedicalFixationClosing-tack_sutur\"> </a></td><td>Tack + suture</td><td>Tack + sutur</td><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  glue_sutur<a name=\"MedicalFixationClosing-glue_sutur\"> </a></td><td>Glue + suture</td><td>Lim + sutur</td><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  glue_tack_clip<a name=\"MedicalFixationClosing-glue_tack_clip\"> </a></td><td>Glue + tack/clip</td><td>Lim + Tack/clips</td><td/><td/><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  Suturmesh<a name=\"MedicalFixationClosing-Suturmesh\"> </a></td><td>Suturmesh (eks. Duramesh)</td><td>Suturmesh (eks. Duramesh)</td><td>Added</td><td>2026-06-24T00:00:00+02:00</td><td>active</td><td>false</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/MedicalFixationClosing"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.2"] ;
+  fhir:CodeSystem.name [ fhir:value "MedicalFixationClosing"] ;
+  fhir:CodeSystem.title [ fhir:value "Medical fixation and closing"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2022-07-20T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Medical fixation and closing"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "fragment"] ;
+  fhir:CodeSystem.property [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "suture" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Suture" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Suture / Sutur / SNODMED-CT: 408099007" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "not_self_locking" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Not self-locking" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Not self-locking / Ikke selvlåsende" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "self_locking" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Self-locking" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Self-locking / Selvlåsende" ] ;
+       fhir:CodeSystem.concept.concept [
+         fhir:index -1 ;
+         fhir:CodeSystem.concept.code [ fhir:value "v_loc" ] ;
+         fhir:CodeSystem.concept.display [ fhir:value "Self-locking (V-LOC)" ] ;
+         fhir:CodeSystem.concept.definition [ fhir:value "Self-locking (V-LOC) / Selflåsende (V-LOC)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CodeSystem.concept.code [ fhir:value "stratafix" ] ;
+         fhir:CodeSystem.concept.display [ fhir:value "Self-locking (Stratafix)" ] ;
+         fhir:CodeSystem.concept.definition [ fhir:value "Self-locking (Stratafix) / Selflåsende (Stratafix)" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "multifilament" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Multifilament" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Multifilament" ] ;
+       fhir:CodeSystem.concept.concept [
+         fhir:index -1 ;
+         fhir:CodeSystem.concept.code [ fhir:value "ethibond" ] ;
+         fhir:CodeSystem.concept.display [ fhir:value "Ethibond" ] ;
+         fhir:CodeSystem.concept.definition [ fhir:value "Ethibond" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CodeSystem.concept.code [ fhir:value "mersilene" ] ;
+         fhir:CodeSystem.concept.display [ fhir:value "Mersilene" ] ;
+         fhir:CodeSystem.concept.definition [ fhir:value "Mersilene" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CodeSystem.concept.code [ fhir:value "vicryl" ] ;
+         fhir:CodeSystem.concept.display [ fhir:value "Vicryl" ] ;
+         fhir:CodeSystem.concept.definition [ fhir:value "Vicryl" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "monofilament" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Monofilament" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Monofilament" ] ;
+       fhir:CodeSystem.concept.concept [
+         fhir:index -1 ;
+         fhir:CodeSystem.concept.code [ fhir:value "pds" ] ;
+         fhir:CodeSystem.concept.display [ fhir:value "PDS" ] ;
+         fhir:CodeSystem.concept.definition [ fhir:value "PDS" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CodeSystem.concept.code [ fhir:value "dexon" ] ;
+         fhir:CodeSystem.concept.display [ fhir:value "Dexon" ] ;
+         fhir:CodeSystem.concept.definition [ fhir:value "Dexon" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CodeSystem.concept.code [ fhir:value "maxon" ] ;
+         fhir:CodeSystem.concept.display [ fhir:value "Maxon" ] ;
+         fhir:CodeSystem.concept.definition [ fhir:value "Maxon" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CodeSystem.concept.code [ fhir:value "monocryl" ] ;
+         fhir:CodeSystem.concept.display [ fhir:value "Monocryl" ] ;
+         fhir:CodeSystem.concept.definition [ fhir:value "Monocryl" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CodeSystem.concept.code [ fhir:value "monoplus" ] ;
+         fhir:CodeSystem.concept.display [ fhir:value "MonoPlus" ] ;
+         fhir:CodeSystem.concept.definition [ fhir:value "MonoPlus" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CodeSystem.concept.code [ fhir:value "momomax" ] ;
+         fhir:CodeSystem.concept.display [ fhir:value "MonoMax" ] ;
+         fhir:CodeSystem.concept.definition [ fhir:value "MonoMax" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CodeSystem.concept.code [ fhir:value "nylon" ] ;
+         fhir:CodeSystem.concept.display [ fhir:value "Nylon" ] ;
+         fhir:CodeSystem.concept.definition [ fhir:value "Nylon" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CodeSystem.concept.code [ fhir:value "prolene" ] ;
+         fhir:CodeSystem.concept.display [ fhir:value "Prolene" ] ;
+         fhir:CodeSystem.concept.definition [ fhir:value "Prolene" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "fast_resorbable" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Fast resorbable" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Fast resorbable / Hurtig resorberbar" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "slow_resorbable" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Slow resorbable" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Slow resorbable / Langsom resorberbar" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "non_resorbable" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Non resorbable" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Non resorbable / Non-resorberbar" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "intracutaneous" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Intracutaneous" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Intracutaneous / Intrakutan" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "not_intracutaneous" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Not intracutaneous" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Not intracutaneous / Ikke intrakutan" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tack" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tack" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Tack / SNOMED-CT: 705723004" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "absorbable" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Absorbable" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Absorbable / Absorberbar" ] ;
+       fhir:CodeSystem.concept.concept [
+         fhir:index -1 ;
+         fhir:CodeSystem.concept.code [ fhir:value "absorbatack" ] ;
+         fhir:CodeSystem.concept.display [ fhir:value "Absorbatack" ] ;
+         fhir:CodeSystem.concept.definition [ fhir:value "Absorbatack" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CodeSystem.concept.code [ fhir:value "optifix" ] ;
+         fhir:CodeSystem.concept.display [ fhir:value "Optifix" ] ;
+         fhir:CodeSystem.concept.definition [ fhir:value "Optifix" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CodeSystem.concept.code [ fhir:value "reliatack" ] ;
+         fhir:CodeSystem.concept.display [ fhir:value "Reliatack" ] ;
+         fhir:CodeSystem.concept.definition [ fhir:value "Reliatack" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CodeSystem.concept.code [ fhir:value "securestrap" ] ;
+         fhir:CodeSystem.concept.display [ fhir:value "Securestrap" ] ;
+         fhir:CodeSystem.concept.definition [ fhir:value "Securestrap" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "non_absorbable" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Non-absorbable" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Non-absorbable / Non-absorberbar" ] ;
+       fhir:CodeSystem.concept.concept [
+         fhir:index -1 ;
+         fhir:CodeSystem.concept.code [ fhir:value "capsure" ] ;
+         fhir:CodeSystem.concept.display [ fhir:value "Capsure" ] ;
+         fhir:CodeSystem.concept.definition [ fhir:value "Capsure" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CodeSystem.concept.code [ fhir:value "protack" ] ;
+         fhir:CodeSystem.concept.display [ fhir:value "Protack" ] ;
+         fhir:CodeSystem.concept.definition [ fhir:value "Protack" ]
+       ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "clip" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Clip" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Clip / Clip / SNOMED-CT: 77720000" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "surgical_glue" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Surgical glue" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Surgical glue / Kirurgisk lim / SNOMED-CT: 303532007" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "histoacryl" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Histoacryl" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Histoacryl" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "tisseel" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Tisseel" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Tisseel" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "self_fixative_mesh" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Self-fixative mesh" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Self-fixative mesh / Selvfikserende mesh" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "surgical_staple" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Surgical staple" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Surgical staple / Kirurgisk hæfteklamme / SNOMED-CT: 386014009" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "combi_fixation" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Combined fixation methods" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kombinerede fiksationer" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "tack_sutur" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Tack + suture" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Tack + sutur" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "glue_sutur" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Glue + suture" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Lim + sutur" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "glue_tack_clip" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Glue + tack/clip" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Lim + Tack/clips" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "Suturmesh" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Suturmesh (eks. Duramesh)" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Suturmesh (eks. Duramesh)" ] ;
+       fhir:CodeSystem.concept.property [
+         fhir:index -1 ;
+         fhir:CodeSystem.concept.property.code [ fhir:value "comment" ] ;
+         fhir:CodeSystem.concept.property.valueString [ fhir:value "Added" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CodeSystem.concept.property.code [ fhir:value "effectiveDate" ] ;
+         fhir:CodeSystem.concept.property.valueDateTime [ fhir:value "2026-06-24T00:00:00+02:00"^^xsd:dateTime ]
+       ], [
+         fhir:index -1 ;
+         fhir:CodeSystem.concept.property.code [ fhir:value "status" ] ;
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "active" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CodeSystem.concept.property.code [ fhir:value "inactive" ] ;
+         fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/MedicalFixationClosing.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

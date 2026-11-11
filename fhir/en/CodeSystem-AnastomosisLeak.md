@@ -1,4 +1,4 @@
-# Anastomosis leak - KIP Infrastructure v2.27.1
+# Anastomosis leak - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/AnastomosisLeak | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/AnastomosisLeak | *Version*:2.27.2 |
 | Active as of 2022-06-07 | *Computable Name*:AnastomosisLeak |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "AnastomosisLeak",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/AnastomosisLeak",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "AnastomosisLeak",
   "title" : "Anastomosis leak",
   "status" : "active",

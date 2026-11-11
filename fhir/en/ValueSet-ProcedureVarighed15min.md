@@ -1,4 +1,4 @@
-# Procedure varighed; over/under 15 min. - KIP Infrastructure v2.27.1
+# Procedure varighed; over/under 15 min. - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ProcedureVarighed15min | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/ProcedureVarighed15min | *Version*:2.27.2 |
 | Active as of 2022-06-29 | *Computable Name*:ProcedureVarighed15min |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "ProcedureVarighed15min",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/ProcedureVarighed15min",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "ProcedureVarighed15min",
   "title" : "Procedure varighed; over/under 15 min.",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Display Order for PlanDefinition Action - KIP Infrastructure v2.27.1
+# Display Order for PlanDefinition Action - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/StructureDefinition/plan-definition-action-display-order | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/StructureDefinition/plan-definition-action-display-order | *Version*:2.27.2 |
 | Active as of 2026-03-24 | *Computable Name*:PlanDefinitionActionDisplayOrder |
 
 Specifies the desired display order of a PlanDefinition action (e.g. Questionnaire references). Lower values are displayed first.
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-plan-definition-a
   "resourceType" : "StructureDefinition",
   "id" : "plan-definition-action-display-order",
   "url" : "https://kip.rkkp.dk/fhir/StructureDefinition/plan-definition-action-display-order",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "PlanDefinitionActionDisplayOrder",
   "title" : "Display Order for PlanDefinition Action",
   "status" : "active",

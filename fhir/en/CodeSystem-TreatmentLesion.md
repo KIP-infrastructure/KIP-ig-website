@@ -1,4 +1,4 @@
-# Treatment lesion - KIP Infrastructure v2.27.1
+# Treatment lesion - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/TreatmentLesion | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/TreatmentLesion | *Version*:2.27.2 |
 | Active as of 2022-09-19 | *Computable Name*:TreatmentLesion |
 
  
@@ -32,7 +32,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "TreatmentLesion",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/TreatmentLesion",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "TreatmentLesion",
   "title" : "Treatment lesion",
   "status" : "active",

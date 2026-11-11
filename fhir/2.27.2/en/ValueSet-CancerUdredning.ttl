@@ -1,0 +1,87 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/CancerUdredning> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "CancerUdredning"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet CancerUdredning</b></p><a name=\"CancerUdredning\"> </a><a name=\"hcCancerUdredning\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-CancerInvestigation.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/CancerInvestigation</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.2</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-CancerInvestigation.html#CancerInvestigation-eus\">eus</a></td><td>EUS</td><td>EUS</td></tr><tr><td><a href=\"CodeSystem-CancerInvestigation.html#CancerInvestigation-lap.47lus\">lap/lus</a></td><td>Lap/LUS</td><td>Lap/LUS</td></tr><tr><td><a href=\"CodeSystem-CancerInvestigation.html#CancerInvestigation-ct\">ct</a></td><td>CT</td><td>CT</td></tr><tr><td><a href=\"CodeSystem-CancerInvestigation.html#CancerInvestigation-pet.47ct\">pet/ct</a></td><td>PET/CT</td><td>PET/CT</td></tr><tr><td><a href=\"CodeSystem-CancerInvestigation.html#CancerInvestigation-mr\">mr</a></td><td>MR</td><td>MR</td></tr><tr><td><a href=\"CodeSystem-CancerInvestigation.html#CancerInvestigation-abdomen\">abdomen</a></td><td>UL abdomen</td><td>UL abdomen</td></tr><tr><td><a href=\"CodeSystem-CancerInvestigation.html#CancerInvestigation-neck\">neck</a></td><td>UL hals</td><td>UL hals</td></tr><tr><td><a href=\"CodeSystem-CancerInvestigation.html#CancerInvestigation-ebus\">ebus</a></td><td>EBUS</td><td>EBUS</td></tr><tr><td><a href=\"CodeSystem-CancerInvestigation.html#CancerInvestigation-other\">other</a></td><td>Øvrige</td><td>Øvrige</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/CancerUdredning"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.2"] ;
+  fhir:ValueSet.name [ fhir:value "CancerUdredning"] ;
+  fhir:ValueSet.title [ fhir:value "Cancer udredning"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-06-08T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Valgmulighederne for cancer udredning"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/CancerInvestigation" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "eus" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "EUS" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "lap/lus" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lap/LUS" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ct" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CT" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "pet/ct" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "PET/CT" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "mr" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "MR" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "abdomen" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "UL abdomen" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "neck" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "UL hals" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ebus" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "EBUS" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Øvrige" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/CancerUdredning.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

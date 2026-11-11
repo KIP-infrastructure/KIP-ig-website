@@ -1,4 +1,4 @@
-# Laryngoskopigrad 2026 - KIP Infrastructure v2.27.1
+# Laryngoskopigrad 2026 - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/LaryngoskopiDegree2026 | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/LaryngoskopiDegree2026 | *Version*:2.27.2 |
 | Active as of 2022-06-09 | *Computable Name*:LaryngoskopiDegree2026 |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "LaryngoskopiDegree2026",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/LaryngoskopiDegree2026",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "LaryngoskopiDegree2026",
   "title" : "Laryngoskopigrad 2026",
   "status" : "active",

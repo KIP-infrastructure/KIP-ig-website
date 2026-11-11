@@ -1,4 +1,4 @@
-# Sundhedsvæsenets klassifikationssystem (SKS) - Samlinger af koder - KIP Infrastructure v2.27.1
+# Sundhedsvæsenets klassifikationssystem (SKS) - Samlinger af koder - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/SKSCodeCollection | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/SKSCodeCollection | *Version*:2.27.2 |
 | Active as of 2022-06-07 | *Computable Name*:SKSCodeCollection |
 | *Other Identifiers:*OID:1.2.208.176.2.4 | |
 
@@ -39,7 +39,7 @@ This Code system is referenced in the definition of the following value sets:
     "system" : "urn:ietf:rfc:3986",
     "value" : "urn:oid:1.2.208.176.2.4"
   }],
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "SKSCodeCollection",
   "title" : "Sundhedsvæsenets klassifikationssystem (SKS) - Samlinger af koder",
   "status" : "active",

@@ -1,0 +1,122 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/Medicine> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "Medicine"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem Medicine</b></p><a name=\"Medicine\"> </a><a name=\"hcMedicine\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/Medicine</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">beh-vitamin_k<a name=\"Medicine-beh-vitamin_k\"> </a></td><td>Vitamin-K-antagonist</td><td>Behandling med vitamin-K-antagonist</td></tr><tr><td style=\"white-space:nowrap\">noak_a<a name=\"Medicine-noak_a\"> </a></td><td>NOAK halv dosis</td><td>NOAK halv dosis</td></tr><tr><td style=\"white-space:nowrap\">noak_b<a name=\"Medicine-noak_b\"> </a></td><td>NOAK fuld dosis</td><td>NOAK fuld dosis</td></tr><tr><td style=\"white-space:nowrap\">noak_c<a name=\"Medicine-noak_c\"> </a></td><td>NOAK fuld dosis postop</td><td>NOAK fuld dosis postop</td></tr><tr><td style=\"white-space:nowrap\">antibiotics<a name=\"Medicine-antibiotics\"> </a></td><td>Antibiotics</td><td>Antibiotics / Antibiotika</td></tr><tr><td style=\"white-space:nowrap\">penicillin<a name=\"Medicine-penicillin\"> </a></td><td>Penicillin</td><td>Penicillin</td></tr><tr><td style=\"white-space:nowrap\">penicillinase_stabile<a name=\"Medicine-penicillinase_stabile\"> </a></td><td>Penicillinasestabilt penicilin</td><td>Penicillinasestabilt penicilin</td></tr><tr><td style=\"white-space:nowrap\">cephalosporin<a name=\"Medicine-cephalosporin\"> </a></td><td>Cefalosporin</td><td>Cefalosporin</td></tr><tr><td style=\"white-space:nowrap\">alteplase<a name=\"Medicine-alteplase\"> </a></td><td>Actilyse (alteplase)</td><td>Actilyse (alteplase)</td></tr><tr><td style=\"white-space:nowrap\">tenecteplase<a name=\"Medicine-tenecteplase\"> </a></td><td>Metalyse (tenecteplase)</td><td>Metalyse (tenecteplase)</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/Medicine"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.2"] ;
+  fhir:CodeSystem.name [ fhir:value "Medicine"] ;
+  fhir:CodeSystem.title [ fhir:value "Medicine"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2022-10-06T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Medicine"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "10"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index 0 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "beh-vitamin_k" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vitamin-K-antagonist" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Behandling med vitamin-K-antagonist" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "noak_a" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "NOAK halv dosis" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "NOAK halv dosis" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "noak_b" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "NOAK fuld dosis" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "NOAK fuld dosis" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "noak_c" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "NOAK fuld dosis postop" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "NOAK fuld dosis postop" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "antibiotics" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Antibiotics" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Antibiotics / Antibiotika" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "penicillin" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Penicillin" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Penicillin" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "penicillinase_stabile" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Penicillinasestabilt penicilin" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Penicillinasestabilt penicilin" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cephalosporin" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cefalosporin" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Cefalosporin" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "alteplase" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Actilyse (alteplase)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Actilyse (alteplase)" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tenecteplase" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Metalyse (tenecteplase)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Metalyse (tenecteplase)" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/Medicine.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -10,11 +10,11 @@
   "id" : "dk.kip.rkkp.fhir.ig.core",
   "language" : "en",
   "url" : "https://kip.rkkp.dk/fhir/ImplementationGuide/dk.kip.rkkp.fhir.ig.core",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "KIP_Infrastructure",
   "title" : "KIP Infrastructure",
   "status" : "active",
-  "date" : "2026-10-30T13:20:18+00:00",
+  "date" : "2026-11-11T13:11:08+00:00",
   "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
   "contact" : [{
     "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
@@ -5177,6 +5177,22 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-GrundlidelseDHR-2026-07.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/GrundlidelseDHR-2026-07"
+      },
+      "name" : "Grundlidelse [DHR] 2026-07",
+      "description" : "Grundlidelse [DHR]",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "ValueSet-GynUndersoegDUGA.html"
       }],
       "reference" : {
@@ -6143,6 +6159,22 @@
         "reference" : "ValueSet/ImplantatMaterialeKeramikMetalAndet"
       },
       "name" : "Implantat - materiale (keramik, metal, andet)",
+      "description" : "Implantat - materiale (keramik, metal, andet)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ImplantatMateriale-KeramikMetalAndet-2026-07.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ImplantatMateriale-KeramikMetalAndet-2026-07"
+      },
+      "name" : "Implantat - materiale (keramik, metal, andet) 2026-07",
       "description" : "Implantat - materiale (keramik, metal, andet)",
       "exampleBoolean" : false
     },
@@ -12783,6 +12815,22 @@
         "reference" : "CodeSystem/RobotAssistDKR"
       },
       "name" : "Robot (DKR)",
+      "description" : "Robottyper til robot assisteret kirurgi (DKR)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Robot-DKR-2026-07.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Robot-DKR-2026-07"
+      },
+      "name" : "Robot (DKR)-2026-07",
       "description" : "Robottyper til robot assisteret kirurgi (DKR)",
       "exampleBoolean" : false
     },

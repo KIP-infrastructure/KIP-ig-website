@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/HernieStoerrelse> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "HernieStoerrelse"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet HernieStoerrelse</b></p><a name=\"HernieStoerrelse\"> </a><a name=\"hcHernieStoerrelse\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-HerniaSize.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/HerniaSize</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.2</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-HerniaSize.html#HerniaSize-.601\">&lt;1</a></td><td>&lt;1 finger</td><td>&lt;1 finger / &lt;1 finger</td></tr><tr><td><a href=\"CodeSystem-HerniaSize.html#HerniaSize-1\">1</a></td><td>1 finger</td><td>1 finger</td></tr><tr><td><a href=\"CodeSystem-HerniaSize.html#HerniaSize-2\">2</a></td><td>2 fingre</td><td>2 fingers / 2 fingre</td></tr><tr><td><a href=\"CodeSystem-HerniaSize.html#HerniaSize-.62.613\">&gt;=3</a></td><td>&gt;=3 fingre</td><td>&gt;=3 fingers / &gt;=3 fingre</td></tr></table></li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/7.5.0/CodeSystem-v2-0532.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0532</code></a><span title=\"Version is explicitly stated to be 3.0.0\"> version ?3.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/7.5.0/CodeSystem-v2-0532.html#v2-0532-UNK\">UNK</a></td><td>Ukendt</td><td>unknown</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/HernieStoerrelse"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.2"] ;
+  fhir:ValueSet.name [ fhir:value "HernieStoerrelse"] ;
+  fhir:ValueSet.title [ fhir:value "Hernie størrelse"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-07-20T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Hernie størrelse"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/HerniaSize" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "<1" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "<1 finger" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "1 finger" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "2 fingre" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value ">=3" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value ">=3 fingre" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0532" ] ;
+       fhir:ValueSet.compose.include.version [ fhir:value "3.0.0" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "UNK" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ukendt" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/HernieStoerrelse.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

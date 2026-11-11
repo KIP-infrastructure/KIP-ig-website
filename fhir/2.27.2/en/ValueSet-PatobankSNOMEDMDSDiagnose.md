@@ -1,0 +1,93 @@
+# MDS diagnoser (Patobank SNOMED) - KIP Infrastructure v2.27.2
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **MDS diagnoser (Patobank SNOMED)**
+
+## ValueSet: MDS diagnoser (Patobank SNOMED) 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/PatobankSNOMEDMDSDiagnose | *Version*:2.27.2 |
+| Active as of 2022-06-08 | *Computable Name*:PatobankSNOMEDMDSDiagnose |
+
+ 
+MDS diagnoser (Patobank SNOMED) 
+
+ **References** 
+
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+
+### Logical Definition (CLD)
+
+ 
+
+### Expansion
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "PatobankSNOMEDMDSDiagnose",
+  "url" : "https://kip.rkkp.dk/fhir/ValueSet/PatobankSNOMEDMDSDiagnose",
+  "version" : "2.27.2",
+  "name" : "PatobankSNOMEDMDSDiagnose",
+  "title" : "MDS diagnoser (Patobank SNOMED)",
+  "status" : "active",
+  "date" : "2022-06-08T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "MDS diagnoser (Patobank SNOMED)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://kip.rkkp.dk/fhir/CodeSystem/PatobankSNOMED",
+      "concept" : [{
+        "code" : "M99453",
+        "display" : "Kronisk myelomonocytær leukæmi (CMML)"
+      },
+      {
+        "code" : "M99803",
+        "display" : "MDS med unilinie dysplasi"
+      },
+      {
+        "code" : "M99823",
+        "display" : "MDS med ringsideroblaster og unilinie dysplasi"
+      },
+      {
+        "code" : "M99853",
+        "display" : "MDS med multilineær dysplasi"
+      },
+      {
+        "code" : "M99833",
+        "display" : "MDS med overskud af blaster"
+      },
+      {
+        "code" : "M99863",
+        "display" : "MDS med isoleret del(5q) kromosomafvigelse"
+      },
+      {
+        "code" : "M99893",
+        "display" : "MDS - uklassificerbar"
+      }]
+    }]
+  }
+}
+
+```

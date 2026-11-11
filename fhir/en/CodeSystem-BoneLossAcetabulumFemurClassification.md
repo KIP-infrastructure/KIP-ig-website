@@ -1,4 +1,4 @@
-# Bone loss - Acetabulum Femur Classification - KIP Infrastructure v2.27.1
+# Bone loss - Acetabulum Femur Classification - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/BoneLossAcetabulumFemurClassification | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/BoneLossAcetabulumFemurClassification | *Version*:2.27.2 |
 | Active as of 2022-10-06 | *Computable Name*:BoneLossAcetabulumFemurClassification |
 
  
@@ -32,7 +32,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "BoneLossAcetabulumFemurClassification",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/BoneLossAcetabulumFemurClassification",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "BoneLossAcetabulumFemurClassification",
   "title" : "Bone loss - Acetabulum Femur Classification",
   "status" : "active",

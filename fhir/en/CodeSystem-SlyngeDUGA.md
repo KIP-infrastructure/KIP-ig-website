@@ -1,4 +1,4 @@
-# Slynge - Urogynækologi (DUGA) - KIP Infrastructure v2.27.1
+# Slynge - Urogynækologi (DUGA) - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/SlyngeDUGA | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/SlyngeDUGA | *Version*:2.27.2 |
 | Active as of 2024-02-14 | *Computable Name*:SlyngeDUGACS |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "SlyngeDUGA",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/SlyngeDUGA",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "SlyngeDUGACS",
   "title" : "Slynge - Urogynækologi (DUGA)",
   "status" : "active",

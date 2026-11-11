@@ -1,0 +1,94 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "Priority",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem Priority</b></p><a name=\"Priority\"> </a><a name=\"hcPriority\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/Priority</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">emergency<a name=\"Priority-emergency\"> </a></td><td>Emergency</td><td>Emergency / Akut / SNOMED-CT: 25876001</td></tr><tr><td style=\"white-space:nowrap\">elective<a name=\"Priority-elective\"> </a></td><td>Elective</td><td>Elective / Elektiv / SNOMED-CT: 103390000</td></tr><tr><td style=\"white-space:nowrap\">hasten<a name=\"Priority-hasten\"> </a></td><td>Hastened</td><td>Fremskyndet (dage)</td></tr><tr><td style=\"white-space:nowrap\">urgent<a name=\"Priority-urgent\"> </a></td><td>Urgent</td><td>Hastende (timer) / SNOMED-CT: 103391001</td></tr><tr><td style=\"white-space:nowrap\">lethal<a name=\"Priority-lethal\"> </a></td><td>Life-threatening</td><td>Umiddelbart livstruende</td></tr><tr><td style=\"white-space:nowrap\">24hrs<a name=\"Priority-24hrs\"> </a></td><td>Within 24 hours</td><td>Indenfor 24 timer</td></tr><tr><td style=\"white-space:nowrap\">72hrs<a name=\"Priority-72hrs\"> </a></td><td>Within 72 hours</td><td>Indenfor 72 timer</td></tr><tr><td style=\"white-space:nowrap\">14days<a name=\"Priority-14days\"> </a></td><td>Within 14 days</td><td>Indenfor 14 dage</td></tr></table></div>"
+  },
+  "url" : "https://kip.rkkp.dk/fhir/CodeSystem/Priority",
+  "version" : "2.27.2",
+  "name" : "PriorityCS",
+  "title" : "Prioritering",
+  "status" : "active",
+  "date" : "2022-05-31T00:00:00+02:00",
+  "publisher" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+  "contact" : [{
+    "name" : "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://trifork.com"
+    },
+    {
+      "system" : "email",
+      "value" : "rbk@trifork.com"
+    }]
+  }],
+  "description" : "Patientens prioriteringsbehov",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 8,
+  "property" : [{
+    "code" : "comment",
+    "uri" : "http://hl7.org/fhir/concept-properties#comment",
+    "description" : "A string that provides additional detail pertinent to the use or understanding of the concept",
+    "type" : "string"
+  },
+  {
+    "code" : "effectiveDate",
+    "uri" : "http://hl7.org/fhir/concept-properties#effectiveDate",
+    "description" : "The date at which the concept status was last changed",
+    "type" : "dateTime"
+  },
+  {
+    "code" : "status",
+    "uri" : "http://hl7.org/fhir/concept-properties#status",
+    "description" : "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired",
+    "type" : "code"
+  },
+  {
+    "code" : "inactive",
+    "uri" : "http://hl7.org/fhir/concept-properties#inactive",
+    "description" : "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive",
+    "type" : "boolean"
+  }],
+  "concept" : [{
+    "code" : "emergency",
+    "display" : "Emergency",
+    "definition" : "Emergency / Akut / SNOMED-CT: 25876001"
+  },
+  {
+    "code" : "elective",
+    "display" : "Elective",
+    "definition" : "Elective / Elektiv / SNOMED-CT: 103390000"
+  },
+  {
+    "code" : "hasten",
+    "display" : "Hastened",
+    "definition" : "Fremskyndet (dage)"
+  },
+  {
+    "code" : "urgent",
+    "display" : "Urgent",
+    "definition" : "Hastende (timer) / SNOMED-CT: 103391001"
+  },
+  {
+    "code" : "lethal",
+    "display" : "Life-threatening",
+    "definition" : "Umiddelbart livstruende"
+  },
+  {
+    "code" : "24hrs",
+    "display" : "Within 24 hours",
+    "definition" : "Indenfor 24 timer"
+  },
+  {
+    "code" : "72hrs",
+    "display" : "Within 72 hours",
+    "definition" : "Indenfor 72 timer"
+  },
+  {
+    "code" : "14days",
+    "display" : "Within 14 days",
+    "definition" : "Indenfor 14 dage"
+  }]
+}

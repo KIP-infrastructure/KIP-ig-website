@@ -1,4 +1,4 @@
-# Cytogenetisk risiki Grimwade 2010 [DAMYDA] - KIP Infrastructure v2.27.1
+# Cytogenetisk risiki Grimwade 2010 [DAMYDA] - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/CytogeneticRiskGrimwade2010DAMYDA | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/CytogeneticRiskGrimwade2010DAMYDA | *Version*:2.27.2 |
 | Active as of 2022-07-13 | *Computable Name*:CytogeneticRiskGrimwade2010DAMYDA |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "CytogeneticRiskGrimwade2010DAMYDA",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/CytogeneticRiskGrimwade2010DAMYDA",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "CytogeneticRiskGrimwade2010DAMYDA",
   "title" : "Cytogenetisk risiki Grimwade 2010 [DAMYDA]",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Cognitive test - KIP Infrastructure v2.27.1
+# Cognitive test - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/CognitiveTest | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/CognitiveTest | *Version*:2.27.2 |
 | Active as of 2025-05-09 | *Computable Name*:CognitiveTest |
 
  
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "CognitiveTest",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/CognitiveTest",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "CognitiveTest",
   "title" : "Cognitive test",
   "status" : "active",

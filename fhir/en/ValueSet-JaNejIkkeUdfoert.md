@@ -1,4 +1,4 @@
-# Ja / Nej / Ikke udført - KIP Infrastructure v2.27.1
+# Ja / Nej / Ikke udført - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/JaNejIkkeUdfoert | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/JaNejIkkeUdfoert | *Version*:2.27.2 |
 | Active as of 2022-07-12 | *Computable Name*:JaNejIkkeUdfoert |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "JaNejIkkeUdfoert",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/JaNejIkkeUdfoert",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "JaNejIkkeUdfoert",
   "title" : "Ja / Nej / Ikke udført",
   "status" : "active",

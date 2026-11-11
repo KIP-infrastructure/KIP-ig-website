@@ -1,4 +1,4 @@
-# Anæstesiydelse 2026 - KIP Infrastructure v2.27.1
+# Anæstesiydelse 2026 - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/AnasthesiaService2026 | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/AnasthesiaService2026 | *Version*:2.27.2 |
 | Active as of 2022-06-09 | *Computable Name*:AnasthesiaService2026 |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "AnasthesiaService2026",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/AnasthesiaService2026",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "AnasthesiaService2026",
   "title" : "Anæstesiydelse 2026",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Performance Status score (ECOG/WHO/Zubrod) - KIP Infrastructure v2.27.1
+# Performance Status score (ECOG/WHO/Zubrod) - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/PerformanceStatusScore | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/CodeSystem/PerformanceStatusScore | *Version*:2.27.2 |
 | Active as of 2022-05-31 | *Computable Name*:PerformanceStatusScore |
 
  
@@ -33,7 +33,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "PerformanceStatusScore",
   "url" : "https://kip.rkkp.dk/fhir/CodeSystem/PerformanceStatusScore",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "PerformanceStatusScore",
   "title" : "Performance Status score (ECOG/WHO/Zubrod)",
   "status" : "active",

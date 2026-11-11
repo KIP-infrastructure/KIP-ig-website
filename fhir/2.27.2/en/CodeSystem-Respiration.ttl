@@ -1,0 +1,152 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/Respiration> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "Respiration"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem Respiration</b></p><a name=\"Respiration\"> </a><a name=\"hcRespiration\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This  code system <code>https://kip.rkkp.dk/fhir/CodeSystem/Respiration</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">spontane_resp<a name=\"Respiration-spontane_resp\"> </a></td><td>Spontane respiration</td><td>Spontan respiration</td></tr><tr><td style=\"white-space:nowrap\">spontane_resp_only<a name=\"Respiration-spontane_resp_only\"> </a></td><td>Spontane respiration ONLY</td><td>KUN spontan respiration</td></tr><tr><td style=\"white-space:nowrap\">mask_vent<a name=\"Respiration-mask_vent\"> </a></td><td>Mask ventilation</td><td>Maskeventilation</td></tr><tr><td style=\"white-space:nowrap\">larynx_all<a name=\"Respiration-larynx_all\"> </a></td><td>Larynx mask (all types)</td><td>Larynxmaske (alle typer)</td></tr><tr><td style=\"white-space:nowrap\">intubation<a name=\"Respiration-intubation\"> </a></td><td>Intubation</td><td>Intubation</td></tr><tr><td style=\"white-space:nowrap\">intub_dir_laryngo<a name=\"Respiration-intub_dir_laryngo\"> </a></td><td>Intubation by direct laryngoskopia</td><td>Intubation ved direkte laryngoskopi</td></tr><tr><td style=\"white-space:nowrap\">intub_video_laryngo<a name=\"Respiration-intub_video_laryngo\"> </a></td><td>Intubation using videolaryngoskopia</td><td>Intubation med videolaryngoskopi</td></tr><tr><td style=\"white-space:nowrap\">intub_flex_skop<a name=\"Respiration-intub_flex_skop\"> </a></td><td>Intubation using flexibal skop</td><td>Intubation med fleksibelt skopi</td></tr><tr><td style=\"white-space:nowrap\">intub_diff<a name=\"Respiration-intub_diff\"> </a></td><td>Intubation using different method</td><td>Intubation ved anden metode</td></tr><tr><td style=\"white-space:nowrap\">tracheostomi<a name=\"Respiration-tracheostomi\"> </a></td><td>Tracheostomi</td><td>Tracheostomi</td></tr><tr><td style=\"white-space:nowrap\">tracheostomi_loc<a name=\"Respiration-tracheostomi_loc\"> </a></td><td>Tracheostomi in local anesthesia</td><td>Tracheostomi i lokalanæstesi</td></tr><tr><td style=\"white-space:nowrap\">tracheostomi_emg<a name=\"Respiration-tracheostomi_emg\"> </a></td><td>Emergency tracheostomi</td><td>Nødtracheostomi</td></tr><tr><td style=\"white-space:nowrap\">patient<a name=\"Respiration-patient\"> </a></td><td>Vækning af patient</td><td>Vækning af patient</td></tr><tr><td style=\"white-space:nowrap\">is_intub_trach<a name=\"Respiration-is_intub_trach\"> </a></td><td>Already intubated/tracheostometered</td><td>Er intuberet/tracheostomeret</td></tr><tr><td style=\"white-space:nowrap\">without_further<a name=\"Respiration-without_further\"> </a></td><td>No further action relevant</td><td>Intet yderligere</td></tr><tr><td style=\"white-space:nowrap\">na<a name=\"Respiration-na\"> </a></td><td>Not applicable</td><td>Ikke relevant</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/Respiration"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.2"] ;
+  fhir:CodeSystem.name [ fhir:value "Respiration"] ;
+  fhir:CodeSystem.title [ fhir:value "Plan for eller støtte til luftvejsassistance"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2022-06-01T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Mulige indgreb vedr luftvejsstøtte"] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "16"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "spontane_resp" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Spontane respiration" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Spontan respiration" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "spontane_resp_only" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Spontane respiration ONLY" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "KUN spontan respiration" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "mask_vent" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mask ventilation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Maskeventilation" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "larynx_all" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Larynx mask (all types)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Larynxmaske (alle typer)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "intubation" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Intubation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Intubation" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "intub_dir_laryngo" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Intubation by direct laryngoskopia" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Intubation ved direkte laryngoskopi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "intub_video_laryngo" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Intubation using videolaryngoskopia" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Intubation med videolaryngoskopi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "intub_flex_skop" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Intubation using flexibal skop" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Intubation med fleksibelt skopi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "intub_diff" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Intubation using different method" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Intubation ved anden metode" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tracheostomi" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tracheostomi" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Tracheostomi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tracheostomi_loc" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tracheostomi in local anesthesia" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Tracheostomi i lokalanæstesi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tracheostomi_emg" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Emergency tracheostomi" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Nødtracheostomi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "patient" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vækning af patient" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Vækning af patient" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "is_intub_trach" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Already intubated/tracheostometered" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Er intuberet/tracheostomeret" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "without_further" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "No further action relevant" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Intet yderligere" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "na" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Not applicable" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Ikke relevant" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/Respiration.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

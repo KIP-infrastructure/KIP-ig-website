@@ -1,0 +1,75 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/EDTAPeritonedialyseDNSL> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "EDTAPeritonedialyseDNSL"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet EDTAPeritonedialyseDNSL</b></p><a name=\"EDTAPeritonedialyseDNSL\"> </a><a name=\"hcEDTAPeritonedialyseDNSL\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-EDTACodes.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/EDTACodes</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.2</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-EDTACodes.html#EDTACodes-EDTA30\">EDTA30</a></td><td>EDTA 30, IPD-dialyse (hospital)</td><td>EDTA 30, IPD-dialyse (hospital)</td></tr><tr><td><a href=\"CodeSystem-EDTACodes.html#EDTACodes-EDTA40\">EDTA40</a></td><td>EDTA 40, CAPD-dialyse</td><td>EDTA 40, CAPD-dialyse</td></tr><tr><td><a href=\"CodeSystem-EDTACodes.html#EDTACodes-EDTA41\">EDTA41</a></td><td>EDTA 41, APD-dialyse</td><td>EDTA 41, APD-dialyse</td></tr><tr><td><a href=\"CodeSystem-EDTACodes.html#EDTACodes-EDTA45\">EDTA45</a></td><td>EDTA 45, Blandet PDHD-dialyse</td><td>EDTA 45, Blandet PDHD-dialyse</td></tr><tr><td><a href=\"CodeSystem-EDTACodes.html#EDTACodes-EDTA46a\">EDTA46a</a></td><td>EDTA46a, Assisteret CAPD (kun professionel)</td><td>EDTA 46a, Assisteret CAPD (kun professionel)</td></tr><tr><td><a href=\"CodeSystem-EDTACodes.html#EDTACodes-EDTA46b\">EDTA46b</a></td><td>EDTA46b, Assisteret APD (kun professionel)</td><td>EDTA 46b, Assisteret APD (kun professionel)</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/EDTAPeritonedialyseDNSL"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.2"] ;
+  fhir:ValueSet.name [ fhir:value "EDTAPeritonedialyseDNSL"] ;
+  fhir:ValueSet.title [ fhir:value "EDTA koder Peritonedialyse (DNSL)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2024-01-31T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "EDTA koder Peritonedialyse (DNSL)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/EDTACodes" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "EDTA30" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "EDTA 30, IPD-dialyse (hospital)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "EDTA40" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "EDTA 40, CAPD-dialyse" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "EDTA41" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "EDTA 41, APD-dialyse" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "EDTA45" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "EDTA 45, Blandet PDHD-dialyse" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "EDTA46a" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "EDTA46a, Assisteret CAPD (kun professionel)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "EDTA46b" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "EDTA46b, Assisteret APD (kun professionel)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/EDTAPeritonedialyseDNSL.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

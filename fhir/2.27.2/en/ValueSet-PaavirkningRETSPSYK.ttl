@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/PaavirkningRETSPSYK> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "PaavirkningRETSPSYK"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet PaavirkningRETSPSYK</b></p><a name=\"PaavirkningRETSPSYK\"> </a><a name=\"hcPaavirkningRETSPSYK\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-AlchoholDrugs.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/AlchoholDrugs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.2</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-AlchoholDrugs.html#AlchoholDrugs-alchohol\">alchohol</a></td><td>Alkohol</td><td>Alchohol / Alkohol</td></tr><tr><td><a href=\"CodeSystem-AlchoholDrugs.html#AlchoholDrugs-cannabis\">cannabis</a></td><td>Hash</td><td>Cannabis</td></tr><tr><td><a href=\"CodeSystem-AlchoholDrugs.html#AlchoholDrugs-central_stimulants\">central_stimulants</a></td><td>Centralstimulerende stoffer</td><td>Central stimulants / Centralstimulerende stoffer</td></tr><tr><td><a href=\"CodeSystem-AlchoholDrugs.html#AlchoholDrugs-opioids\">opioids</a></td><td>Opioider</td><td>Opioids / Opioider</td></tr><tr><td><a href=\"CodeSystem-AlchoholDrugs.html#AlchoholDrugs-benzodiazepines\">benzodiazepines</a></td><td>Benzodiazepiner</td><td>Benzodiazepines / Benzodiazepiner</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-GenericValues.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/GenericValues</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.2</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-GenericValues.html#GenericValues-other\">other</a></td><td>Andet (anfør hvilke)</td><td>Other - used to choose unspecific value not in a valueset</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/PaavirkningRETSPSYK"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.2"] ;
+  fhir:ValueSet.name [ fhir:value "PaavirkningRETSPSYK"] ;
+  fhir:ValueSet.title [ fhir:value "Påvirkning (RETSPSYK)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-09-30T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Påvirkning (RETSPSYK)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/AlchoholDrugs" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "alchohol" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alkohol" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "cannabis" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hash" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "central_stimulants" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Centralstimulerende stoffer" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "opioids" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Opioider" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "benzodiazepines" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Benzodiazepiner" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/GenericValues" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Andet (anfør hvilke)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/PaavirkningRETSPSYK.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,4 +1,4 @@
-# Kellgren-Lawrence Klassifikation (DKR) - KIP Infrastructure v2.27.1
+# Kellgren-Lawrence Klassifikation (DKR) - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/KellgrenLawsonKlassifikation | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/KellgrenLawsonKlassifikation | *Version*:2.27.2 |
 | Active as of 2023-12-19 | *Computable Name*:KellgrenLawsonKlassifikation |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "KellgrenLawsonKlassifikation",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/KellgrenLawsonKlassifikation",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "KellgrenLawsonKlassifikation",
   "title" : "Kellgren-Lawrence Klassifikation (DKR)",
   "status" : "active",

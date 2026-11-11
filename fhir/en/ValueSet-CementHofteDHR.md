@@ -1,4 +1,4 @@
-# Cement - hofte (DHR) - KIP Infrastructure v2.27.1
+# Cement - hofte (DHR) - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/CementHofteDHR | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/CementHofteDHR | *Version*:2.27.2 |
 | Active as of 2022-11-16 | *Computable Name*:CementHofteDHR |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "CementHofteDHR",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/CementHofteDHR",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "CementHofteDHR",
   "title" : "Cement - hofte (DHR)",
   "status" : "active",

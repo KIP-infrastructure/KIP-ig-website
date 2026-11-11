@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/SKSApopleksiDiagnoser> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "SKSApopleksiDiagnoser"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SKSApopleksiDiagnoser</b></p><a name=\"SKSApopleksiDiagnoser\"> </a><a name=\"hcSKSApopleksiDiagnoser\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-SKS.html\"><code>https://kip.rkkp.dk/fhir/CodeSystem/SKS</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.27.2</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-DI60\">DI60</a></td><td>Aneurysmal Subarachnoidalblødning (SAH I60)</td><td>DI60 - Subaraknoidalblødning</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-DI61\">DI61</a></td><td>Hjerneblødning  (ICH I61)</td><td>DI61 - Hjerneblødning</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-DI63\">DI63</a></td><td>Hjerneinfarkt  (I63)</td><td>DI63 - Hjerneinfarkt</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-DI64\">DI64</a></td><td>Akut apopleksi uden specifikation (I64)</td><td>DI64 - Slagtilfælde uden oplysning om blødning eller infarkt</td></tr><tr><td><a href=\"CodeSystem-SKS.html#SKS-DG45\">DG45</a></td><td>Transitorisk cerebral iskæmi og beslægtede syndromer (TIA) (G45)</td><td>DG45 - Transitorisk cerebral iskæmi og beslægtede syndromer</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://kip.rkkp.dk/fhir/ValueSet/SKSApopleksiDiagnoser"] ;
+  fhir:ValueSet.version [ fhir:value "2.27.2"] ;
+  fhir:ValueSet.name [ fhir:value "SKSApopleksiDiagnoser"] ;
+  fhir:ValueSet.title [ fhir:value "SKS: Apopleksi diagnoser"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.date [ fhir:value "2022-06-21T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "SKS koderne relevante Apopleksi databasen (DAP)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/SKS" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DI60" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aneurysmal Subarachnoidalblødning (SAH I60)" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DI61" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hjerneblødning  (ICH I61)" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DI63" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hjerneinfarkt  (I63)" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DI64" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Akut apopleksi uden specifikation (I64)" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DG45" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Transitorisk cerebral iskæmi og beslægtede syndromer (TIA) (G45)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/ValueSet/SKSApopleksiDiagnoser.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

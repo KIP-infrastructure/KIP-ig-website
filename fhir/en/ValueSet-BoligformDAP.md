@@ -1,4 +1,4 @@
-# Boligform [DAP] - KIP Infrastructure v2.27.1
+# Boligform [DAP] - KIP Infrastructure v2.27.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/BoligformDAP | *Version*:2.27.1 |
+| *Official URL*:https://kip.rkkp.dk/fhir/ValueSet/BoligformDAP | *Version*:2.27.2 |
 | Active as of 2022-06-23 | *Computable Name*:BoligformDAP |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "BoligformDAP",
   "url" : "https://kip.rkkp.dk/fhir/ValueSet/BoligformDAP",
-  "version" : "2.27.1",
+  "version" : "2.27.2",
   "name" : "BoligformDAP",
   "title" : "Boligform [DAP]",
   "status" : "active",

@@ -1,0 +1,362 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/Paragraph> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "Paragraph"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem Paragraph</b></p><a name=\"Paragraph\"> </a><a name=\"hcParagraph\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>comment</td><td>comment</td><td>http://hl7.org/fhir/concept-properties#comment</td><td>string</td><td>A string that provides additional detail pertinent to the use or understanding of the concept</td></tr><tr><td>effectiveDate</td><td>effectiveDate</td><td>http://hl7.org/fhir/concept-properties#effectiveDate</td><td>dateTime</td><td>The date at which the concept status was last changed</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://kip.rkkp.dk/fhir/CodeSystem/Paragraph</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">§16<a name=\"Paragraph-.16716\"> </a></td><td>§16</td><td>§16</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">§69<a name=\"Paragraph-.16769\"> </a></td><td>§69</td><td>§69</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">§73<a name=\"Paragraph-.16773\"> </a></td><td>§73</td><td>§73</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">§119<a name=\"Paragraph-.167119\"> </a></td><td>Vold og lign. mod nogen i offentlig tjeneste § 119</td><td>Vold og lign. mod nogen i offentlig tjeneste § 119</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  §119_§21<a name=\"Paragraph-.167119_.16721\"> </a></td><td>Vold og lign. mod nogen i offentlig tjeneste, forsøg § 119, jf. § 21</td><td>Vold og lign. mod nogen i offentlig tjeneste, forsøg § 119, jf. § 21</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">§123<a name=\"Paragraph-.167123\"> </a></td><td>Trusler, vidnetrusler §123</td><td>Trusler, vidnetrusler §123</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">§180<a name=\"Paragraph-.167180\"> </a></td><td>Brandstiftelse, kvalificeret § 180</td><td>Brandstiftelse, kvalificeret § 180</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  §180_§21<a name=\"Paragraph-.167180_.16721\"> </a></td><td>Brandstiftelse, kvalificeret, forsøg § 180, jf. § 21</td><td>Brandstiftelse, kvalificeret, forsøg § 180, jf. § 21</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">§181<a name=\"Paragraph-.167181\"> </a></td><td>Brandstiftelse, forsætlig § 181</td><td>Brandstiftelse, forsætlig § 181</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  §181_§21<a name=\"Paragraph-.167181_.16721\"> </a></td><td>Brandstiftelse, forsætlig, forsøg § 181, jf. § 21</td><td>Brandstiftelse, forsætlig, forsøg § 181, jf. § 21</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">§191<a name=\"Paragraph-.167191\"> </a></td><td>Narkotikakriminalitet § 191</td><td>Narkotikakriminalitet § 191</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  §191_§21<a name=\"Paragraph-.167191_.16721\"> </a></td><td>Narkotikakriminalitet, forsøg § 191, jf. § 21</td><td>Narkotikakriminalitet, forsøg § 191, jf. § 21</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">§216<a name=\"Paragraph-.167216\"> </a></td><td>Voldtægt § 216</td><td>Voldtægt § 216</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  §216_§21<a name=\"Paragraph-.167216_.16721\"> </a></td><td>Voldtægt, forsøg § 216, jf. § 21</td><td>Voldtægt, forsøg § 216, jf. § 21</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">§244<a name=\"Paragraph-.167244\"> </a></td><td>Vold § 244</td><td>Vold § 244</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  §244_§21<a name=\"Paragraph-.167244_.16721\"> </a></td><td>Vold, forsøg § 244, jf. § 21</td><td>Vold, forsøg § 244, jf. § 21</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">§245<a name=\"Paragraph-.167245\"> </a></td><td>Kvalificeret vold m/skade på legeme eller helbred § 245</td><td>Kvalificeret vold m/skade på legeme eller helbred § 245</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  §245_§21<a name=\"Paragraph-.167245_.16721\"> </a></td><td>Kvalificeret vold m/skade på legeme eller helbred, forsøg § 245, jf. § 21</td><td>Kvalificeret vold m/skade på legeme eller helbred, forsøg § 245, jf. § 21</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">§246<a name=\"Paragraph-.167246\"> </a></td><td>Kvalificeret vold m/grov skade § 246</td><td>Kvalificeret vold m/grov skade § 246</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  §246_§21<a name=\"Paragraph-.167246_.16721\"> </a></td><td>Kvalificeret vold m/grov skade, forsøg § 246, jf. § 21</td><td>Kvalificeret vold m/grov skade, forsøg § 246, jf. § 21</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">§276<a name=\"Paragraph-.167276\"> </a></td><td>Tyveri § 276</td><td>Tyveri § 276</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  §276_§21<a name=\"Paragraph-.167276_.16721\"> </a></td><td>Tyveri, forsøg § 276, jf. § 21</td><td>Tyveri, forsøg § 276, jf. § 21</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">§288<a name=\"Paragraph-.167288\"> </a></td><td>Røveri §288</td><td>Røveri §288</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  §288_1<a name=\"Paragraph-.167288_1\"> </a></td><td>Røveri § 288, stk. 1</td><td>Røveri § 288, stk. 1</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    §288_1_§21<a name=\"Paragraph-.167288_1_.16721\"> </a></td><td>Røveri, forsøg § 288, stk. 1, jf. § 21</td><td>Røveri, forsøg § 288, stk. 1, jf. § 21</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  §288_2<a name=\"Paragraph-.167288_2\"> </a></td><td>Røveri, særligt farligt, § 288, stk. 2</td><td>Røveri, særligt farligt, § 288, stk. 2</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    §288_2_§21<a name=\"Paragraph-.167288_2_.16721\"> </a></td><td>Røveri, særligt farligt, forsøg § 288, stk. 2, jf. § 21</td><td>Røveri, særligt farligt, forsøg § 288, stk. 2, jf. § 21</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">§291<a name=\"Paragraph-.167291\"> </a></td><td>Hærværk § 291</td><td>Hærværk § 291</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  §291_§21<a name=\"Paragraph-.167291_.16721\"> </a></td><td>Hærværk, forsøg § 291, jf. § 21</td><td>Hærværk, forsøg § 291, jf. § 21</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">§§210-236<a name=\"Paragraph-.167.167210-236\"> </a></td><td>Anden sædelighed §§ 210-236 (- § 216)</td><td>Anden sædelighed §§ 210-236 (- § 216)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  §§210-236_§21<a name=\"Paragraph-.167.167210-236_.16721\"> </a></td><td>Anden sædelighed, forsøg §§ 210-236 (- § 216), jf. § 21</td><td>Anden sædelighed, forsøg §§ 210-236 (- § 216), jf. § 21</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">§§237-241<a name=\"Paragraph-.167.167237-241\"> </a></td><td>Manddrab §§ 237-241</td><td>Manddrab §§ 237-241</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  §§237-241_§21<a name=\"Paragraph-.167.167237-241_.16721\"> </a></td><td>Manddrab, forsøg §§ 237-241, jf. § 21</td><td>Manddrab, forsøg §§ 237-241, jf. § 21</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">§§249-255<a name=\"Paragraph-.167.167249-255\"> </a></td><td>Anden personfarlig kriminalitet § 249-255</td><td>Anden personfarlig kriminalitet § 249-255</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  §§249-255_§21<a name=\"Paragraph-.167.167249-255_.16721\"> </a></td><td>Anden personfarlig kriminalitet, forsøg § 249-255, jf. § 21</td><td>Anden personfarlig kriminalitet, forsøg § 249-255, jf. § 21</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">§§260-262<a name=\"Paragraph-.167.167260-262\"> </a></td><td>Ulovlig tvang §§ 260-262</td><td>Ulovlig tvang §§ 260-262</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  §§260-262_attempt<a name=\"Paragraph-.167.167260-262_attempt\"> </a></td><td>Ulovlig tvang, forsøg §§ 260-262</td><td>Ulovlig tvang, forsøg §§ 260-262</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">§§265-266<a name=\"Paragraph-.167.167265-266\"> </a></td><td>Trusler § 265-266</td><td>Trusler § 265-266</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  §§265-266_attempt<a name=\"Paragraph-.167.167265-266_attempt\"> </a></td><td>Trusler, forsøg § 265-266</td><td>Trusler, forsøg § 265-266</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">§§278-280<a name=\"Paragraph-.167.167278-280\"> </a></td><td>Bedrageri mv. §§ 278-280</td><td>Bedrageri mv. §§ 278-280</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  §§278-280_§21<a name=\"Paragraph-.167.167278-280_.16721\"> </a></td><td>Bedrageri mv., forsøg §§ 278-280, jf. § 21</td><td>Bedrageri mv., forsøg §§ 278-280, jf. § 21</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">narcotics<a name=\"Paragraph-narcotics\"> </a></td><td>Lov om euforiserende stoffer</td><td>Lov om euforiserende stoffer</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  narcotics_attempt<a name=\"Paragraph-narcotics_attempt\"> </a></td><td>Lov om euforiserende stoffer, forsøg</td><td>Lov om euforiserende stoffer, forsøg</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">criminal_law_other<a name=\"Paragraph-criminal_law_other\"> </a></td><td>Straffeloven, øvrige</td><td>Straffeloven, øvrige</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  criminal_law_other_attempt<a name=\"Paragraph-criminal_law_other_attempt\"> </a></td><td>Straffeloven, øvrige, forsøg</td><td>Straffeloven, øvrige, forsøg</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">weapons_decree<a name=\"Paragraph-weapons_decree\"> </a></td><td>Våbenbekendtgørelsen</td><td>Våbenbekendtgørelsen</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  weapons_decree_attempt<a name=\"Paragraph-weapons_decree_attempt\"> </a></td><td>Våbenbekendtgørelsen, forsøg</td><td>Våbenbekendtgørelsen, forsøg</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">traffic_law<a name=\"Paragraph-traffic_law\"> </a></td><td>Færdselsloven</td><td>Færdselsloven</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  traffic_law_attempt<a name=\"Paragraph-traffic_law_attempt\"> </a></td><td>Færdselsloven, forsøg</td><td>Færdselsloven, forsøg</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">special_law<a name=\"Paragraph-special_law\"> </a></td><td>Særloven, øvrige</td><td>Særloven, øvrige</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  special_law_attempt<a name=\"Paragraph-special_law_attempt\"> </a></td><td>Særloven, øvrige, forsøg</td><td>Særloven, øvrige, forsøg</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">pardon_petition<a name=\"Paragraph-pardon_petition\"> </a></td><td>Benådningsandragende</td><td>Benådningsandragende</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">asylum_seeker<a name=\"Paragraph-asylum_seeker\"> </a></td><td>Asylansøger</td><td>Asylansøger</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://kip.rkkp.dk/fhir/CodeSystem/Paragraph"] ;
+  fhir:CodeSystem.version [ fhir:value "2.27.2"] ;
+  fhir:CodeSystem.name [ fhir:value "Paragraph"] ;
+  fhir:CodeSystem.title [ fhir:value "Paragraph"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2022-09-28T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S"] ;
+  fhir:CodeSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Sundhedsvæsenets Kvalitetsinstitut with Trifork Digital Health A/S" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://trifork.com" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "rbk@trifork.com" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Paragraph"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "53"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "comment" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#comment" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A string that provides additional detail pertinent to the use or understanding of the concept" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "effectiveDate" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#effectiveDate" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "The date at which the concept status was last changed" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "dateTime" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "status" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#status" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "inactive" ] ;
+     fhir:CodeSystem.property.uri [ fhir:value "http://hl7.org/fhir/concept-properties#inactive" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "§16" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "§16" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "§16" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "§69" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "§69" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "§69" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "§73" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "§73" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "§73" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "§119" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vold og lign. mod nogen i offentlig tjeneste § 119" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Vold og lign. mod nogen i offentlig tjeneste § 119" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "§119_§21" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Vold og lign. mod nogen i offentlig tjeneste, forsøg § 119, jf. § 21" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Vold og lign. mod nogen i offentlig tjeneste, forsøg § 119, jf. § 21" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "§123" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trusler, vidnetrusler §123" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Trusler, vidnetrusler §123" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "§180" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Brandstiftelse, kvalificeret § 180" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Brandstiftelse, kvalificeret § 180" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "§180_§21" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Brandstiftelse, kvalificeret, forsøg § 180, jf. § 21" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Brandstiftelse, kvalificeret, forsøg § 180, jf. § 21" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "§181" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Brandstiftelse, forsætlig § 181" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Brandstiftelse, forsætlig § 181" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "§181_§21" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Brandstiftelse, forsætlig, forsøg § 181, jf. § 21" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Brandstiftelse, forsætlig, forsøg § 181, jf. § 21" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "§191" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Narkotikakriminalitet § 191" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Narkotikakriminalitet § 191" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "§191_§21" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Narkotikakriminalitet, forsøg § 191, jf. § 21" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Narkotikakriminalitet, forsøg § 191, jf. § 21" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "§216" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Voldtægt § 216" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Voldtægt § 216" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "§216_§21" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Voldtægt, forsøg § 216, jf. § 21" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Voldtægt, forsøg § 216, jf. § 21" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "§244" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vold § 244" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Vold § 244" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "§244_§21" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Vold, forsøg § 244, jf. § 21" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Vold, forsøg § 244, jf. § 21" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "§245" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kvalificeret vold m/skade på legeme eller helbred § 245" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kvalificeret vold m/skade på legeme eller helbred § 245" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "§245_§21" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Kvalificeret vold m/skade på legeme eller helbred, forsøg § 245, jf. § 21" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Kvalificeret vold m/skade på legeme eller helbred, forsøg § 245, jf. § 21" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "§246" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kvalificeret vold m/grov skade § 246" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kvalificeret vold m/grov skade § 246" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "§246_§21" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Kvalificeret vold m/grov skade, forsøg § 246, jf. § 21" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Kvalificeret vold m/grov skade, forsøg § 246, jf. § 21" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "§276" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tyveri § 276" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Tyveri § 276" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "§276_§21" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Tyveri, forsøg § 276, jf. § 21" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Tyveri, forsøg § 276, jf. § 21" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "§288" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Røveri §288" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Røveri §288" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "§288_1" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Røveri § 288, stk. 1" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Røveri § 288, stk. 1" ] ;
+       fhir:CodeSystem.concept.concept [
+         fhir:index -1 ;
+         fhir:CodeSystem.concept.code [ fhir:value "§288_1_§21" ] ;
+         fhir:CodeSystem.concept.display [ fhir:value "Røveri, forsøg § 288, stk. 1, jf. § 21" ] ;
+         fhir:CodeSystem.concept.definition [ fhir:value "Røveri, forsøg § 288, stk. 1, jf. § 21" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "§288_2" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Røveri, særligt farligt, § 288, stk. 2" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Røveri, særligt farligt, § 288, stk. 2" ] ;
+       fhir:CodeSystem.concept.concept [
+         fhir:index -1 ;
+         fhir:CodeSystem.concept.code [ fhir:value "§288_2_§21" ] ;
+         fhir:CodeSystem.concept.display [ fhir:value "Røveri, særligt farligt, forsøg § 288, stk. 2, jf. § 21" ] ;
+         fhir:CodeSystem.concept.definition [ fhir:value "Røveri, særligt farligt, forsøg § 288, stk. 2, jf. § 21" ]
+       ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "§291" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hærværk § 291" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Hærværk § 291" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "§291_§21" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Hærværk, forsøg § 291, jf. § 21" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Hærværk, forsøg § 291, jf. § 21" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "§§210-236" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anden sædelighed §§ 210-236 (- § 216)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Anden sædelighed §§ 210-236 (- § 216)" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "§§210-236_§21" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Anden sædelighed, forsøg §§ 210-236 (- § 216), jf. § 21" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Anden sædelighed, forsøg §§ 210-236 (- § 216), jf. § 21" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "§§237-241" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Manddrab §§ 237-241" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Manddrab §§ 237-241" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "§§237-241_§21" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Manddrab, forsøg §§ 237-241, jf. § 21" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Manddrab, forsøg §§ 237-241, jf. § 21" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "§§249-255" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anden personfarlig kriminalitet § 249-255" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Anden personfarlig kriminalitet § 249-255" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "§§249-255_§21" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Anden personfarlig kriminalitet, forsøg § 249-255, jf. § 21" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Anden personfarlig kriminalitet, forsøg § 249-255, jf. § 21" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "§§260-262" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ulovlig tvang §§ 260-262" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Ulovlig tvang §§ 260-262" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "§§260-262_attempt" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Ulovlig tvang, forsøg §§ 260-262" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Ulovlig tvang, forsøg §§ 260-262" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "§§265-266" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trusler § 265-266" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Trusler § 265-266" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "§§265-266_attempt" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Trusler, forsøg § 265-266" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Trusler, forsøg § 265-266" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "§§278-280" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bedrageri mv. §§ 278-280" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Bedrageri mv. §§ 278-280" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "§§278-280_§21" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Bedrageri mv., forsøg §§ 278-280, jf. § 21" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Bedrageri mv., forsøg §§ 278-280, jf. § 21" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "narcotics" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lov om euforiserende stoffer" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Lov om euforiserende stoffer" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "narcotics_attempt" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Lov om euforiserende stoffer, forsøg" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Lov om euforiserende stoffer, forsøg" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "criminal_law_other" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Straffeloven, øvrige" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Straffeloven, øvrige" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "criminal_law_other_attempt" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Straffeloven, øvrige, forsøg" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Straffeloven, øvrige, forsøg" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "weapons_decree" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Våbenbekendtgørelsen" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Våbenbekendtgørelsen" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "weapons_decree_attempt" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Våbenbekendtgørelsen, forsøg" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Våbenbekendtgørelsen, forsøg" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "traffic_law" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Færdselsloven" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Færdselsloven" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "traffic_law_attempt" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Færdselsloven, forsøg" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Færdselsloven, forsøg" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "special_law" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Særloven, øvrige" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Særloven, øvrige" ] ;
+     fhir:CodeSystem.concept.concept [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.code [ fhir:value "special_law_attempt" ] ;
+       fhir:CodeSystem.concept.display [ fhir:value "Særloven, øvrige, forsøg" ] ;
+       fhir:CodeSystem.concept.definition [ fhir:value "Særloven, øvrige, forsøg" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "pardon_petition" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Benådningsandragende" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Benådningsandragende" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "asylum_seeker" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Asylansøger" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Asylansøger" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kip.rkkp.dk/fhir/CodeSystem/Paragraph.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
